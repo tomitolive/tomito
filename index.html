@@ -14,28 +14,34 @@
     <!-- الهيدر -->
     <header class="site-header" id="site-header">
         <div class="header-left">
-            <div class="logo">TOMITO</div>
-            <button class="dropdown-toggle" id="dropdownToggle" aria-label="القائمة المنسدلة">
-                <span>التصنيفات</span>
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="#E50914">
+                    <path d="M12 2L2 7V17L12 22L22 17V7L12 2ZM12 4.5L19.5 8.25V15.75L12 19.5L4.5 15.75V8.25L12 4.5ZM12 8.5L7 11.25V16.5L12 19.25L17 16.5V11.25L12 8.5Z"/>
+                </svg>
+                <span>TOMITO</span>
+            </div>
+            
+            <!-- زر القائمة المنسدلة - يظهر فقط على الجوال -->
+            <button class="dropdown-toggle" id="dropdownToggle" aria-label="قائمة التصنيفات">
+                <i class="fas fa-bars"></i>
+                <span class="dropdown-text">التصنيفات</span>
                 <i class="dropdown-icon">▼</i>
             </button>
-            <a href="favorites.html" class="favorites-page-btn">
-                <i class="fas fa-heart"></i> المفضلة (<span id="favorites-count">0</span>)
+            
+            <!-- زر الانتقال للمسلسلات -->
+            <a href="tv.html" class="page-switch-btn">
+                <i class="fas fa-tv"></i>
+                <span>المسلسلات</span>
             </a>
         </div>
 
-        <nav class="nav" id="genre-nav">
-            <a href="#" data-genre="" class="active"><i class="fas fa-film"></i> الكل</a>
-            <a href="#" data-genre="28"><i class="fas fa-fire"></i> أكشن</a>
-            <a href="#" data-genre="35"><i class="fas fa-laugh"></i> كوميديا</a>
-            <a href="#" data-genre="18"><i class="fas fa-theater-masks"></i> دراما</a>
-            <a href="#" data-genre="27"><i class="fas fa-ghost"></i> رعب</a>
-            <a href="#" data-genre="10749"><i class="fas fa-heart"></i> رومانسية</a>
-            <a href="#" data-genre="16"><i class="fas fa-dragon"></i> أنيمي</a>
-            <a href="#" data-genre="878"><i class="fas fa-robot"></i> خيال علمي</a>
-            <a href="#" data-genre="12"><i class="fas fa-mountain"></i> مغامرة</a>
-            <a href="#" data-genre="53"><i class="fas fa-user-secret"></i> إثارة</a>
+        <!-- شريط/قائمة التصنيفات -->
+        <nav class="genre-nav" id="genre-nav">
+            <!-- سيتم ملؤه بواسطة JavaScript -->
         </nav>
+        
+        <!-- خلفية ضبابية عند فتح القائمة على الجوال -->
+        <div class="nav-backdrop" id="navBackdrop"></div>
     </header>
 
     <!-- شريط البحث -->
@@ -94,5 +100,7 @@
 
     <!-- ملف JavaScript -->
     <script src="api.js"></script>
+    <script src="header.js"></script>
+
 </body>
 </html>
