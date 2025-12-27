@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomito - مشاهدة الفيلم</title>
+    <link rel="stylesheet" href="watch.css">
+</head>
+<body>
+    <!-- شريط التقدم -->
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <!-- شاشة التحميل -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">جاري التحميل...</div>
+    </div>
+
+    <!-- الهيدر -->
+    <header class="site-header">
+        <div class="header-content">
+            <div class="header-left">
+                <a href="index.html" class="logo">TOMITO</a>
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-right"></i>
+                    <span>العودة</span>
+                </a>
+            </div>
+            <div class="header-right">
+                <div class="movie-title-header" id="movie-title">جاري التحميل...</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- البانر العلوي -->
+    <section class="movie-banner" id="movie-banner">
+        <div class="banner-background"></div>
+        <div class="banner-content">
+            <h2 id="banner-title">الطوفان العظيم</h2>
+            <p id="banner-description">في ما قد يكون اليوم الأخير على الأرض، سرعان ما يتحول صراع ما بين الحياة أو الموت في شقة غارقة إلى بصيص الأمل الوحيد لنجاة البشرية وبقائها....</p>
+            <div class="banner-actions">
+                <button class="play-btn-sm" id="play-now-btn">
+                    <i class="fas fa-play"></i> مشاهدة الآن
+                </button>
+                <button class="save-btn-sm" id="save-movie-btn">
+                    <i class="far fa-heart"></i> حفظ
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفيديو -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-wrapper">
+                <iframe id="video-player" 
+                        frameborder="0" 
+                        allowfullscreen
+                        allow="autoplay; fullscreen; picture-in-picture; encrypted-media">
+                </iframe>
+            </div>
+
+            <!-- أزرار السيرفر -->
+            <div class="server-buttons" id="server-buttons">
+                <!-- سيتم تعبئتها بالجافاسكريبت -->
+            </div>
+        </div>
+    </section>
+
+    <!-- معلومات الفيلم -->
+    <section class="movie-info-section">
+        <div class="container">
+            <div class="movie-details">
+                <div class="poster-container">
+                    <img id="movie-poster" class="poster" alt="ملصق الفيلم">
+                </div>
+                
+                <div class="info-content">
+                    <h1 id="movie-title-full">...</h1>
+                    
+                    <div class="movie-meta-grid" id="movie-meta"></div>
+                    
+                    <div class="movie-overview">
+                        <h3><i class="fas fa-book-open"></i> القصة</h3>
+                        <p id="overview-text">...</p>
+                    </div>
+                    
+                    <div class="movie-genres">
+                        <h3><i class="fas fa-tags"></i> الأنواع</h3>
+                        <div class="genres-container" id="genres-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الممثلين -->
+    <section class="cast-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-users"></i> الممثلين</h2>
+            <div class="cast-grid" id="cast-list"></div>
+        </div>
+    </section>
+
+    <!-- أفلام مشابهة -->
+    <section class="similar-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-film"></i> أفلام مشابهة</h2>
+            <div class="similar-grid" id="similar-list"></div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">TOMITO</div>
+                <p class="footer-description">منصة ترفيهية لمشاهدة الأفلام والمسلسلات</p>
+                <p class="copyright">© 2024 جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ملف JavaScript -->
+    <script src="watch.js"></script>
+</body>
+</html>

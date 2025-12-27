@@ -1,0 +1,336 @@
+/* Reset وتنسيقات عامة */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    line-height: 1.4;
+    direction: rtl;
+}
+
+
+/* الترويسة - Netflix Style */
+
+.site-header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+    padding: 20px 4%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.4s;
+}
+
+.site-header.scrolled {
+    background-color: #141414;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-family: 'Arial Black', sans-serif;
+    text-decoration: none;
+    letter-spacing: -1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.back-btn {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background-color: rgba(109, 109, 110, 0.7);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.back-btn:hover {
+    background-color: rgba(109, 109, 110, 0.9);
+    color: #fff;
+}
+
+
+/* قسم الأفلام */
+
+.movies-section {
+    padding: 100px 4% 40px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+    border-right: 4px solid #e50914;
+    padding-right: 15px;
+}
+
+
+/* حاوية الأفلام */
+
+.movies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+/* بطاقة الفيلم */
+
+.movie-card {
+    background-color: #181818;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    z-index: 10;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+}
+
+.movie-card:hover .movie-poster {
+    filter: brightness(1.2);
+}
+
+.movie-poster-container {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.movie-poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.movie-info {
+    padding: 15px;
+    position: relative;
+}
+
+.movie-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.movie-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #a3a3a3;
+}
+
+.movie-year {
+    color: #a3a3a3;
+}
+
+.movie-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #ffc107;
+}
+
+.star-icon {
+    color: #ffc107;
+    font-size: 0.9rem;
+}
+
+
+/* تأثيرات عند التمرير */
+
+.movie-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(to right, #e50914, #ff7b00);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.movie-card:hover::before {
+    opacity: 1;
+}
+
+
+/* حالة فارغة - عندما لا توجد أفلام مفضلة */
+
+.empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.empty-state-icon {
+    font-size: 4rem;
+    color: #e50914;
+    margin-bottom: 20px;
+}
+
+.empty-state h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.empty-state p {
+    color: #a3a3a3;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.explore-btn {
+    display: inline-block;
+    background-color: #e50914;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #f40612;
+}
+
+
+/* زر الحذف من المفضلة */
+
+.remove-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    z-index: 2;
+}
+
+.movie-card:hover .remove-btn {
+    opacity: 1;
+}
+
+.remove-btn:hover {
+    background-color: #e50914;
+}
+
+
+/* تأثير التحميل */
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    grid-column: 1 / -1;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(229, 9, 20, 0.3);
+    border-top-color: #e50914;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* تنسيقات للشاشات الصغيرة */
+
+@media (max-width: 768px) {
+    .movies-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+    .movie-poster-container {
+        height: 220px;
+    }
+    .logo {
+        font-size: 1.8rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .movies-section {
+        padding: 90px 4% 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .movies-container {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+    .movie-poster-container {
+        height: 190px;
+    }
+    .movie-info {
+        padding: 10px;
+    }
+    .movie-title {
+        font-size: 1rem;
+    }
+    .header-left {
+        gap: 15px;
+    }
+    .back-btn {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
