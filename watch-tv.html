@@ -3,237 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomito - مشاهدة المسلسل</title>
-    <link rel="stylesheet" href="watch.css">
+    <title>TomitoZ - المسلسلات</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* ✅ إصلاح عرض الفيديو */
-        .video-wrapper {
-            width: 100%;
-            position: relative;
-            padding-top: 56.25%; /* نسبة 16:9 */
-            background: #000;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-        }
-        
-        #video-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        
-        #video-player {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        
-        #video-placeholder {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-size: 18px;
-            text-align: center;
-            z-index: 1;
-        }
-        
-        #video-placeholder i {
-            font-size: 60px;
-            margin-bottom: 20px;
-            color: #e74c3c;
-            animation: pulse 2s ease-in-out infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(1.1); }
-        }
-        
-        /* إخفاء الإعلانات فقط */
-        .ad-block,
-        .advertisement,
-        .adsbygoogle,
-        .ad-container,
-        .ad-banner,
-        iframe[src*="ads"],
-        iframe[src*="advertisement"],
-        iframe[src*="doubleclick"],
-        iframe[src*="googleads"] {
-            display: none !important;
-            visibility: hidden !important;
-            opacity: 0 !important;
-            height: 0 !important;
-            width: 0 !important;
-            position: absolute !important;
-            z-index: -9999 !important;
-        }
-    </style>
 </head>
 <body>
     <!-- شريط التقدم -->
     <div class="progress-bar" id="progress-bar"></div>
 
-    <!-- شاشة التحميل -->
-    <div class="loading-screen" id="loading-screen">
-        <div class="loading-spinner"></div>
-        <div class="loading-text">جاري تحميل المسلسل...</div>
-    </div>
-
     <!-- الهيدر -->
-    <header class="site-header">
-        <div class="header-content">
-            <div class="header-left">
-                <a href="tv.html" class="logo">TOMITO</a>
-                <a href="tv.html" class="back-btn">
-                    <i class="fas fa-arrow-right"></i>
-                    <span>العودة</span>
-                </a>
+    <header class="site-header" id="site-header">
+        <div class="header-left">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="#E50914">
+                    <path d="M12 2L2 7V17L12 22L22 17V7L12 2ZM12 4.5L19.5 8.25V15.75L12 19.5L4.5 15.75V8.25L12 4.5ZM12 8.5L7 11.25V16.5L12 19.25L17 16.5V11.25L12 8.5Z"/>
+                </svg>
+                <span>TOMITO</span>
             </div>
-            <div class="header-right">
-                <div class="movie-title-header" id="movie-title">جاري التحميل...</div>
-            </div>
+            
+            <!-- زر القائمة المنسدلة للجوال -->
+            <button class="dropdown-toggle" id="dropdownToggle" aria-label="قائمة التنقل">
+                <i class="fas fa-bars"></i>
+                <span class="dropdown-text">القائمة</span>
+                <i class="dropdown-icon">▼</i>
+            </button>
+            
+            <!-- زر الانتقال للأفلام -->
+            <a href="index.html" class="page-switch-btn">
+                <i class="fas fa-film"></i>
+                <span>الأفلام</span>
+            </a>
         </div>
+
+        <!-- قائمة التنقل -->
+        <nav class="genre-nav" id="genre-nav">
+            <a href="#" data-section="all" class="active">
+                <i class="fas fa-tv"></i> الكل
+            </a>
+        </nav>
+        
+        <!-- خلفية ضبابية عند فتح القائمة على الجوال -->
+        <div class="nav-backdrop" id="navBackdrop"></div>
     </header>
 
-    <!-- البانر العلوي -->
-    <section class="movie-banner" id="movie-banner">
-        <div class="banner-background"></div>
-        <div class="banner-content">
-            <h2 id="banner-title">جاري التحميل...</h2>
-            <p id="banner-description">جاري تحميل وصف المسلسل...</p>
-            <div class="banner-actions">
-                <button class="play-btn-sm" id="play-now-btn">
-                    <i class="fas fa-play"></i> مشاهدة الآن
-                </button>
-                <button class="save-btn-sm" id="save-movie-btn">
-                    <i class="far fa-heart"></i> حفظ
-                </button>
-            </div>
+    <!-- شريط البحث -->
+    <div class="search-container">
+        <input type="text" id="search" placeholder="🔍 ابحث عن مسلسل...">
+    </div>
+
+    <!-- البانر الرئيسي -->
+    <section class="banner-section">
+        <h2 class="section-title"><i class="fas fa-crown"></i> المسلسلات الأكثر مشاهدة</h2>
+        <div class="banner-carousel">
+            <button class="carousel-btn prev-btn" aria-label="السابق"><i class="fas fa-chevron-right"></i></button>
+            <div class="banner-container" id="banner-container"></div>
+            <button class="carousel-btn next-btn" aria-label="التالي"><i class="fas fa-chevron-left"></i></button>
+            <div class="banner-indicators" id="banner-indicators"></div>
         </div>
     </section>
 
-    <!-- الفيديو -->
-    <section class="video-section">
-        <div class="container">
-            <div class="video-wrapper">
-                <div id="video-container">
-                    <iframe id="video-player" 
-                            frameborder="0" 
-                            allowfullscreen
-                            webkitallowfullscreen
-                            mozallowfullscreen
-                            allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
-                            scrolling="no">
-                    </iframe>
-                    <div id="video-placeholder">
-                        <i class="fas fa-tv"></i>
-                        <p style="font-size: 20px; font-weight: 600; margin: 10px 0;">اختر الموسم والحلقة</p>
-                        <p style="font-size: 14px; opacity: 0.7;">ثم انقر على "مشاهدة الآن"</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- أزرار السيرفر -->
-            <div class="server-buttons" id="server-buttons">
-                <!-- سيتم تعبئتها بالجافاسكريبت -->
-            </div>
-        </div>
+    <!-- قسم: مسلسلات جديدة -->
+    <section class="movies-section">
+        <h2 class="section-title"><i class="fas fa-sparkles"></i> مسلسلات جديدة</h2>
+        <div class="movies-container" id="new-shows"></div>
     </section>
 
-    <!-- معلومات المسلسل -->
-    <section class="movie-info-section">
-        <div class="container">
-            <div class="movie-details">
-                <div class="poster-container">
-                    <img id="movie-poster" class="poster" 
-                         src="https://via.placeholder.com/300x450/1a1a1a/ffffff?text=Loading..." 
-                         alt="ملصق المسلسل">
-                </div>
-                
-                <div class="info-content">
-                    <h1 id="movie-title-full">جاري التحميل...</h1>
-                    
-                    <div class="movie-meta-grid" id="movie-meta">
-                        <!-- سيتم تعبئتها بالجافاسكريبت -->
-                    </div>
-                    
-                    <div class="movie-overview">
-                        <h3><i class="fas fa-book-open"></i> القصة</h3>
-                        <p id="overview-text">جاري تحميل قصة المسلسل...</p>
-                    </div>
-                    
-                    <!-- اختيار الموسم والحلقات -->
-                    <div class="season-selector" id="season-selector" style="display: none;">
-                        <h3><i class="fas fa-layer-group"></i> المواسم</h3>
-                        <div class="season-buttons" id="season-buttons">
-                            <!-- سيتم تعبئتها بالجافاسكريبت -->
-                        </div>
-                    </div>
-                    
-                    <div class="episode-selector" id="episode-selector" style="display: none;">
-                        <h3><i class="fas fa-list-ol"></i> الحلقات</h3>
-                        <div class="episode-grid" id="episode-grid">
-                            <!-- سيتم تعبئتها بالجافاسكريبت -->
-                        </div>
-                    </div>
-                    
-                    <div class="movie-genres">
-                        <h3><i class="fas fa-tags"></i> الأنواع</h3>
-                        <div class="genres-container" id="genres-list">
-                            <!-- سيتم تعبئتها بالجافاسكريبت -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- قسم: شائع حالياً -->
+    <section class="movies-section">
+        <h2 class="section-title"><i class="fas fa-fire"></i> شائع حالياً</h2>
+        <div class="movies-container" id="trending-shows"></div>
     </section>
 
-    <!-- الممثلين -->
-    <section class="cast-section">
-        <div class="container">
-            <h2 class="section-title"><i class="fas fa-users"></i> الممثلين</h2>
-            <div class="cast-grid" id="cast-list">
-                <!-- سيتم تعبئتها بالجافاسكريبت -->
-            </div>
-        </div>
+    <!-- قسم: أحدث المسلسلات -->
+    <section class="movies-section">
+        <h2 class="section-title"><i class="fas fa-star"></i> أحدث المسلسلات</h2>
+        <div class="movies-container" id="latest-shows"></div>
     </section>
 
-    <!-- مسلسلات مشابهة -->
-    <section class="similar-section">
-        <div class="container">
-            <h2 class="section-title"><i class="fas fa-tv"></i> مسلسلات مشابهة</h2>
-            <div class="similar-grid" id="similar-list">
-                <!-- سيتم تعبئتها بالجافاسكريبت -->
-            </div>
-        </div>
+    <!-- قسم: قريباً -->
+    <section class="movies-section">
+        <h2 class="section-title"><i class="fas fa-calendar-alt"></i> قريباً</h2>
+        <div class="movies-container" id="upcoming-shows"></div>
     </section>
 
     <!-- الفوتر -->
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">TOMITO</div>
-                <p class="footer-description">منصة ترفيهية لمشاهدة الأفلام والمسلسلات</p>
-                <p class="copyright">© 2024 جميع الحقوق محفوظة</p>
+        <div class="footer-content">
+            <div class="logo">Tomito</div>
+            <p>منصة ترفيهية لمشاهدة الأفلام والمسلسلات بأفضل جودة وبدون إعلانات</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
             </div>
+            <p class="copyright">
+                © 2024 Tomito. جميع الحقوق محفوظة.<br> هذا الموقع يستخدم بيانات من TMDb API.
+            </p>
         </div>
     </footer>
 
-    <script src="watch-tv.js"></script>
+    <script src="tv.js"></script>
 </body>
 </html>
