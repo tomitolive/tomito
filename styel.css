@@ -1669,4 +1669,6 @@ body[class*="tv-"] .genre-nav a[href="tv.html"]:not(.nav-switch)::before {
     transform: translateY(-2px);
     border: 1px solid #ff1a1a;
     transition: all 0.3s ease;
+
+    
 }
