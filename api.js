@@ -232,26 +232,60 @@ function setupBanner(movies) {
     
     if (!container || !indicators) return;
     
+    // تنظيف الحاويات
     container.innerHTML = "";
     indicators.innerHTML = "";
     
+    // إذا لم توجد أفلام
+    if (!movies || movies.length === 0) {
+        container.innerHTML = `
+            <div class="banner-card active" style="opacity: 1; z-index: 2;">
+                <img src="https://via.placeholder.com/1280x500/222/fff?text=لا+توجد+أفلام" alt="لا توجد أفلام">
+                <div class="banner-overlay">
+                    <h2>لا توجد أفلام متاحة</h2>
+                    <p>يرجى المحاولة لاحقاً</p>
+                </div>
+            </div>
+        `;
+        return;
+    }
+    
+    // إضافة البطاقات
     movies.forEach((movie, index) => {
         const card = document.createElement("div");
         card.className = `banner-card ${index === 0 ? "active" : ""}`;
         
+        // تطبيق الـ CSS مباشرة
+        card.style.position = 'absolute';
+        card.style.top = '0';
+        card.style.left = '0';
+        card.style.width = '100%';
+        card.style.height = '100%';
+        card.style.opacity = index === 0 ? '1' : '0';
+        card.style.zIndex = index === 0 ? '2' : '1';
+        card.style.transition = 'opacity 0.5s ease';
+        
         const isSaved = savedMovies.some(m => m.id === movie.id);
+        const backdropUrl = movie.backdrop_path ? IMG_URL + movie.backdrop_path : 
+                          "https://via.placeholder.com/1280x500/333/fff?text=No+Image";
+        const title = movie.title || "بدون عنوان";
+        const overview = movie.overview ? movie.overview.substring(0, 200) + "..." : "لا يوجد وصف";
+        
+        // تنظيف النص
+        const cleanTitle = title.replace(/'/g, "\\'").replace(/"/g, '\\"');
+        const cleanPosterPath = (movie.poster_path || "").replace(/'/g, "\\'");
         
         card.innerHTML = `
-            <img src="${IMG_URL + movie.backdrop_path}" alt="${movie.title}" loading="lazy">
+            <img src="${backdropUrl}" alt="${title}" style="width:100%;height:100%;object-fit:cover;">
             <div class="banner-overlay">
-                <h2>${movie.title}</h2>
-                <p>${movie.overview ? movie.overview.substring(0, 200) + "..." : ""}</p>
+                <h2>${title}</h2>
+                <p>${overview}</p>
                 <div class="banner-actions">
                     <button class="banner-play-btn" onclick="playMovie(${movie.id})">
                         <i class="fas fa-play"></i> مشاهدة الآن
                     </button>
                     <button class="banner-save-btn ${isSaved ? 'saved' : ''}" 
-                            onclick="toggleSave(${movie.id}, '${movie.title}', '${movie.poster_path}', ${movie.vote_average}, this)">
+                            onclick="toggleSave(${movie.id}, '${cleanTitle}', '${cleanPosterPath}', ${movie.vote_average || 0}, this)">
                         <i class="${isSaved ? 'fas' : 'far'} fa-heart"></i> ${isSaved ? 'محفوظ' : 'حفظ'}
                     </button>
                 </div>
@@ -260,16 +294,23 @@ function setupBanner(movies) {
         
         container.appendChild(card);
         
+        // إضافة المؤشر
         const indicator = document.createElement("button");
         indicator.className = `indicator ${index === 0 ? "active" : ""}`;
         indicator.onclick = () => changeBannerSlide(index);
         indicators.appendChild(indicator);
     });
     
+    // إعداد التحكم
     setupBannerControls();
-    startBannerAutoPlay();
+    
+    // بدء التشغيل التلقائي
+    if (movies.length > 1) {
+        startBannerAutoPlay();
+    }
+    
+    console.log(`✅ تم إعداد ${movies.length} بطاقة في البانر`);
 }
-
 function setupBannerControls() {
     const prevBtn = document.querySelector(".prev-btn");
     const nextBtn = document.querySelector(".next-btn");
@@ -284,26 +325,52 @@ function changeBannerSlide(index) {
     
     if (slides.length === 0) return;
     
+    // حساب الفهرس الجديد
     if (index < 0) index = slides.length - 1;
     if (index >= slides.length) index = 0;
     
+    // 1. إخفاء البطاقة الحالية تدريجياً
+    slides[currentBannerIndex].style.opacity = '0';
+    slides[currentBannerIndex].style.zIndex = '1';
     slides[currentBannerIndex].classList.remove("active");
+    
+    // 2. إخفاء المؤشر الحالي
     indicators[currentBannerIndex].classList.remove("active");
     
-    slides[index].classList.add("active");
+    // 3. إظهار البطاقة الجديدة
+    setTimeout(() => {
+        slides[index].style.opacity = '1';
+        slides[index].style.zIndex = '2';
+        slides[index].classList.add("active");
+    }, 50); // تأخير بسيط للتأثير
+    
+    // 4. إظهار المؤشر الجديد
     indicators[index].classList.add("active");
     
+    // 5. تحديث الفهرس
     currentBannerIndex = index;
+    
+    // 6. إعادة تشغيل التشغيل التلقائي
     restartBannerAutoPlay();
+    
+    console.log(`🔄 تغيير البانر إلى: ${index + 1}/${slides.length}`);
 }
-
 function startBannerAutoPlay() {
     if (bannerInterval) clearInterval(bannerInterval);
-    if (bannerMovies.length > 1) {
-        bannerInterval = setInterval(() => {
-            changeBannerSlide(currentBannerIndex + 1);
-        }, 6000);
+    
+    // التأكد من وجود أكثر من بطاقة
+    const slides = document.querySelectorAll(".banner-card");
+    if (slides.length <= 1) {
+        console.log("⚠️  بطاقة واحدة فقط، تعطيل التشغيل التلقائي");
+        return;
     }
+    
+    bannerInterval = setInterval(() => {
+        console.log("⏱️  تبديل تلقائي...");
+        changeBannerSlide(currentBannerIndex + 1);
+    }, 6000);
+    
+    console.log("▶️  بدأ التشغيل التلقائي");
 }
 
 function restartBannerAutoPlay() {
@@ -638,4 +705,39 @@ window.loadMoviesByGenre = loadMoviesByGenre;
 window.closeMobileAd = () => {
     const mobileAd = document.getElementById('mobile-ad');
     if (mobileAd) mobileAd.style.display = 'none';
+};// ========================================
+// BANNER FIX FUNCTION
+// ========================================
+
+function fixBanner() {
+    console.log("🔧 إصلاح البانر...");
+    
+    const cards = document.querySelectorAll('.banner-card');
+    console.log(`🔍 عدد البطاقات: ${cards.length}`);
+    
+    if (cards.length > 0) {
+        // تطبيق الـ CSS الصحيح مباشرة
+        cards.forEach((card, index) => {
+            card.style.position = 'absolute';
+            card.style.top = '0';
+            card.style.left = '0';
+            card.style.width = '100%';
+            card.style.height = '100%';
+            card.style.opacity = index === currentBannerIndex ? '1' : '0';
+            card.style.zIndex = index === currentBannerIndex ? '2' : '1';
+            card.style.transition = 'opacity 0.5s ease';
+        });
+        
+        console.log("✅ تم إصلاح البانر");
+    }
+}
+
+// استدعاء الإصلاح بعد تحميل الصفحة
+setTimeout(fixBanner, 1500);
+
+// وأيضاً عند تغيير الشريحة
+const originalChangeBannerSlide = window.changeBannerSlide;
+window.changeBannerSlide = function(index) {
+    originalChangeBannerSlide(index);
+    setTimeout(fixBanner, 100);
 };
