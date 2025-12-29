@@ -1,816 +1,642 @@
-// watch-tv.js - مشاهدة المسلسلات (سيرفرات محدثة 2025)
-// ========================================
-// 🔧 الإعدادات الأساسية
-// ========================================
-const API_KEY_WATCH_TV = '882e741f7283dc9ba1654d4692ec30f6';
-const BASE_URL_WATCH_TV = 'https://api.themoviedb.org/3';
-const IMAGE_BASE_URL_WATCH_TV = 'https://image.tmdb.org/t/p/w500';
-const BACKDROP_BASE_URL_WATCH_TV = 'https://image.tmdb.org/t/p/w1280';
+// ===========================================
+// الإعدادات الأساسية
+// ===========================================
+const CONFIG = {
+    API_KEY: "882e741f7283dc9ba1654d4692ec30f6",
+    BASE_URL: "https://api.themoviedb.org/3",
+    BASE_IMG: "https://image.tmdb.org/t/p",
+    AD_BLOCK_ENABLED: true
+};
 
-// ========================================
-// 🛡️ نظام AdBlock المحسّن (معطل مؤقتاً)
-// ========================================
-const WatchTVAdBlock = {
-    enabled: false, // ⚠️ معطل للاختبار
-    
-    blockedDomains: [
-        'doubleclick.net', 'googleadservices.com', 'googlesyndication.com',
-        'advertising.com', 'ads.yahoo.com', 'adnxs.com', 'adsco.re'
-    ],
-    
-    adKeywords: ['advertisement', 'sponsored', 'ad-container', 'adsbygoogle'],
-    stats: { blocked: 0, requests: 0 },
+// ===========================================
+// قائمة الخوادم
+// ===========================================
+const SERVERS = [
+    {
+        id: 'server1',
+        name: '🎬 الخادم الأول',
+        url: 'https://vidsrc.me/embed/tv/',
+        quality: '720p',
+        icon: 'fa-film',
+        color: '#e74c3c'
+    },
+    {
+        id: 'server2',
+        name: '📺 الخادم الثاني',
+        url: 'https://vidstream.pro/embed/tmdb/tv/',
+        quality: '1080p',
+        icon: 'fa-server',
+        color: '#3498db'
+    },
+    {
+        id: 'server3',
+        name: '⚡ الخادم الثالث',
+        url: 'https://vidcloud.pro/embed/tmdb/tv/',
+        quality: '720p',
+        icon: 'fa-bolt',
+        color: '#2ecc71'
+    },
+    {
+        id: 'server4',
+        name: '🌐 الخادم الرابع',
+        url: 'https://2embed.org/embed/tvdb/',
+        quality: '1080p',
+        icon: 'fa-globe',
+        color: '#f39c12'
+    }
+];
 
-    init() {
-        if (!this.enabled) {
-            console.log('⚠️ AdBlock معطل');
+// ===========================================
+// مشغل المسلسلات الرئيسي
+// ===========================================
+class SeriesPlayer {
+    constructor() {
+        this.seriesId = null;
+        this.seriesData = null;
+        this.currentServer = SERVERS[0];
+        this.currentSeason = 1;
+        this.currentEpisode = 1;
+        this.episodes = [];
+        this.savedSeries = JSON.parse(localStorage.getItem('savedSeries') || '[]');
+        
+        this.init();
+    }
+    
+    async init() {
+        this.showLoading(true);
+        
+        // استخراج معرف المسلسل
+        const params = new URLSearchParams(window.location.search);
+        this.seriesId = params.get('id');
+        
+        if (!this.seriesId) {
+            this.showError('لم يتم العثور على معرف المسلسل');
             return;
         }
         
-        console.log('🛡️ تفعيل AdBlock...');
-        this.blockExistingAds();
-        this.watchForNewAds();
-        this.protectFetchAPI();
-        console.log('✅ AdBlock نشط');
-    },
+        await this.loadSeriesData();
+        this.createServerButtons();
+        this.setupEventListeners();
+        this.updateEpisodeSelector();
+        this.showLoading(false);
+    }
     
-    disable() {
-        this.enabled = false;
-        console.log('⚠️ تم تعطيل AdBlock');
-    },
-
-    blockExistingAds() {
-        const elements = document.querySelectorAll('script[src], iframe, img');
-        elements.forEach(el => {
-            const src = el.getAttribute('src');
-            if (src && this.isAdUrl(src) && !this.isVideoPlayer(src)) {
-                el.remove();
-                this.stats.blocked++;
-                console.log('🚫 حظر:', src.substring(0, 50));
-            }
-        });
-    },
-
-    watchForNewAds() {
-        const observer = new MutationObserver(mutations => {
-            mutations.forEach(mutation => {
-                mutation.addedNodes.forEach(node => {
-                    if (node.nodeType === 1) {
-                        const src = node.src || node.getAttribute?.('src');
-                        if (src && this.isAdUrl(src) && !this.isVideoPlayer(src)) {
-                            node.remove();
-                            this.stats.blocked++;
-                            console.log('🚫 حظر ديناميكي:', src.substring(0, 50));
-                        }
-                    }
-                });
-            });
+    setupEventListeners() {
+        // زر مشاهدة الآن
+        document.getElementById('play-now-btn').addEventListener('click', () => {
+            this.playVideo();
         });
         
-        observer.observe(document.body, { 
-            childList: true, 
-            subtree: true 
+        // زر حفظ المسلسل
+        document.getElementById('save-series-btn').addEventListener('click', () => {
+            this.toggleSaveSeries();
         });
-    },
-
-    protectFetchAPI() {
-        if (!this.enabled) return;
         
-        const originalFetch = window.fetch;
-        const self = this;
+        // زر الإعلان التشويقي
+        document.getElementById('trailer-btn').addEventListener('click', () => {
+            this.playTrailer();
+        });
         
-        window.fetch = function(url, ...args) {
-            self.stats.requests++;
+        // تغيير الموسم
+        document.getElementById('season-select').addEventListener('change', (e) => {
+            this.currentSeason = parseInt(e.target.value);
+            this.updateEpisodesList();
+        });
+        
+        // تغيير الحلقة
+        document.getElementById('episode-select').addEventListener('change', (e) => {
+            this.currentEpisode = parseInt(e.target.value);
+        });
+    }
+    
+    async loadSeriesData() {
+        try {
+            const [series, credits, similar] = await Promise.all([
+                this.fetchData(`/tv/${this.seriesId}?language=ar&append_to_response=content_ratings,external_ids`),
+                this.fetchData(`/tv/${this.seriesId}/credits?language=ar`),
+                this.fetchData(`/tv/${this.seriesId}/similar?language=ar&page=1`)
+            ]);
             
-            if (self.enabled && self.isAdUrl(url)) {
-                self.stats.blocked++;
-                console.log('🚫 حظر fetch:', url.substring(0, 50));
-                return Promise.reject(new Error('Blocked by AdBlock'));
-            }
+            this.seriesData = { series, credits, similar };
+            this.updateUI();
             
-            return originalFetch.apply(window, [url, ...args]);
-        };
-    },
-
-    isAdUrl(url) {
-        if (!url || typeof url !== 'string') return false;
-        
-        const urlLower = url.toLowerCase();
-        
-        if (this.blockedDomains.some(domain => urlLower.includes(domain))) {
-            return true;
+        } catch (error) {
+            console.error('خطأ:', error);
+            this.showError('فشل تحميل بيانات المسلسل');
         }
+    }
+    
+    async fetchData(endpoint) {
+        const url = `${CONFIG.BASE_URL}${endpoint}&api_key=${CONFIG.API_KEY}`;
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+    }
+    
+    updateUI() {
+        const { series, credits, similar } = this.seriesData;
         
-        if (this.adKeywords.some(keyword => urlLower.includes(keyword))) {
-            return true;
+        // تحديث البانر العلوي
+        this.updateBanner(series);
+        
+        // تحديث بقية الواجهة
+        this.updateSeriesDetails(series, credits, similar);
+        
+        // تحديث حالة زر الحفظ
+        this.updateSaveButton();
+        
+        // تحديث قائمة المواسم
+        this.updateSeasonsList(series.seasons || []);
+    }
+    
+    updateBanner(series) {
+        const bannerTitle = document.getElementById('banner-title');
+        const bannerDesc = document.getElementById('banner-description');
+        const seasonsCount = document.getElementById('seasons-text');
+        const statusText = document.getElementById('status-text');
+        
+        bannerTitle.textContent = series.name || 'بدون عنوان';
+        bannerDesc.textContent = series.overview ? series.overview.substring(0, 200) + '...' : 'لا يوجد وصف';
+        
+        // عدد المواسم
+        const seasons = series.seasons?.filter(s => s.season_number > 0) || [];
+        seasonsCount.textContent = `${seasons.length} موسم${seasons.length !== 1 ? 'ات' : ''}`;
+        
+        // حالة المسلسل
+        const status = series.status === 'Returning Series' ? 'مستمر' : 
+                      series.status === 'Ended' ? 'منتهي' : 
+                      series.status === 'Canceled' ? 'ملغي' : 
+                      series.status || 'غير معروف';
+        statusText.textContent = status;
+        
+        // تعيين خلفية البانر
+        const banner = document.querySelector('.series-banner .banner-background');
+        if (series.backdrop_path) {
+            banner.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('${CONFIG.BASE_IMG}/original${series.backdrop_path}')`;
+            banner.style.backgroundSize = 'cover';
+            banner.style.backgroundPosition = 'center';
         }
+    }
+    
+    updateSeriesDetails(series, credits, similar) {
+        // العنوان
+        document.title = `${series.name} - Tomito`;
+        document.getElementById('series-title').textContent = series.name;
+        document.getElementById('series-title-full').textContent = series.name;
         
-        return false;
-    },
-
-    isVideoPlayer(url) {
-        if (!url || typeof url !== 'string') return false;
+        // الملصق
+        const poster = document.getElementById('series-poster');
+        poster.src = series.poster_path 
+            ? `${CONFIG.BASE_IMG}/w500${series.poster_path}`
+            : 'https://via.placeholder.com/300x450/1a1a1a/fff?text=No+Image';
         
-        // قائمة بيضاء موسعة للسيرفرات الموثوقة
-        const allowedPlayers = [
-            'vidsrc', 'embed', 'multiembed', 'vidlink', 'smashystream',
-            '2embed', 'streamingnow', 'player.smashy', 'vidsrc.xyz',
-            'vidsrc.cc', 'vidsrc.me', 'vidsrc.to', 'embed.su',
-            'vidlink.pro', 'multiembed.mov', 'themoviedb.org',
-            'fonts.gstatic.com', 'cdnjs.cloudflare.com'
+        // الميتاداتا
+        this.updateMetaData(series);
+        
+        // القصة
+        document.getElementById('overview-text').textContent = series.overview || 'لا يوجد وصف متوفر.';
+        
+        // الأنواع
+        this.updateGenres(series.genres || []);
+        
+        // شبكات البث
+        this.updateNetworks(series.networks || []);
+        
+        // الممثلين
+        this.updateCast(credits.cast || []);
+        
+        // المسلسلات المشابهة
+        this.updateSimilar(similar.results || []);
+    }
+    
+    updateMetaData(series) {
+        const metaGrid = document.getElementById('series-meta');
+        const firstAirDate = series.first_air_date ? new Date(series.first_air_date).getFullYear() : '--';
+        const lastAirDate = series.last_air_date ? new Date(series.last_air_date).getFullYear() : '--';
+        
+        const metaData = [
+            { icon: 'calendar', label: 'سنة الإصدار', value: `${firstAirDate} - ${lastAirDate}` },
+            { icon: 'clock', label: 'مدة الحلقة', value: series.episode_run_time?.[0] ? `${series.episode_run_time[0]} دقيقة` : 'غير معروف' },
+            { icon: 'star', label: 'التقييم', value: series.vote_average?.toFixed(1) || '--' },
+            { icon: 'users', label: 'الأصوات', value: series.vote_count ? series.vote_count.toLocaleString('ar') : '--' },
+            { icon: 'language', label: 'اللغة', value: series.original_language?.toUpperCase() || '--' },
+            { icon: 'flag', label: 'البلد', value: series.origin_country?.[0] || '--' }
         ];
         
-        return allowedPlayers.some(player => url.toLowerCase().includes(player));
-    }
-};
-
-// تفعيل AdBlock
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => WatchTVAdBlock.init());
-} else {
-    WatchTVAdBlock.init();
-}
-
-// ========================================
-// 📺 متغيرات المسلسل
-// ========================================
-let watchTvId = null;
-let watchTvData = null;
-let watchTvSavedMovies = JSON.parse(localStorage.getItem('savedMovies')) || [];
-let watchTvCurrentServer = 'server1';
-let watchTvCurrentSeason = 1;
-let watchTvCurrentEpisode = 1;
-let watchTvSeasonsData = [];
-
-// ========================================
-// 🎬 سيرفرات التشغيل المجربة (تعمل 100%)
-// ========================================
-const watchTvServers = {
-    server1: {
-        name: 'VidSrc.to',
-        quality: '1080p',
-        getUrl: (id, s, e) => `https://vidsrc.to/embed/tv/${id}/${s}/${e}`
-    },
-    server2: {
-        name: 'VidSrc.in',
-        quality: '1080p',
-        getUrl: (id, s, e) => `https://vidsrc.in/embed/tv/${id}/${s}/${e}`
-    },
-    server3: {
-        name: 'VidSrc.pm',
-        quality: '720p',
-        getUrl: (id, s, e) => `https://vidsrc.pm/embed/tv/${id}/${s}/${e}`
-    },
-    server4: {
-        name: 'VidSrc.net',
-        quality: '1080p',
-        getUrl: (id, s, e) => `https://vidsrc.net/embed/tv/${id}/${s}/${e}`
-    },
-    server5: {
-        name: '2Embed',
-        quality: '720p',
-        getUrl: (id, s, e) => `https://www.2embed.cc/embedtv/${id}&s=${s}&e=${e}`
-    },
-    server6: {
-        name: 'Embed.su',
-        quality: '1080p',
-        getUrl: (id, s, e) => `https://embed.su/embed/tv/${id}/${s}/${e}`
-    },
-    server7: {
-        name: 'VidSrc.xyz',
-        quality: '1080p',
-        getUrl: (id, s, e) => `https://vidsrc.xyz/embed/tv/${id}/${s}/${e}`
-    },
-    server8: {
-        name: 'VidSrc Pro',
-        quality: '720p',
-        getUrl: (id, s, e) => `https://vidsrc.me/embed/tv?tmdb=${id}&season=${s}&episode=${e}`
-    }
-};
-
-// ========================================
-// 🎬 تهيئة التطبيق
-// ========================================
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('='.repeat(50));
-    console.log('🎬 بدء تحميل صفحة المسلسل');
-    console.log('='.repeat(50));
-    
-    const urlParams = new URLSearchParams(window.location.search);
-    watchTvId = urlParams.get('id');
-    
-    console.log('📍 URL:', window.location.href);
-    console.log('📍 معرف المسلسل:', watchTvId);
-    
-    if (!watchTvId) {
-        console.error('❌ لم يتم توفير معرف المسلسل');
-        showWatchTvError('لم يتم العثور على المسلسل');
-        hideWatchTvLoading();
-        return;
-    }
-    
-    console.log('✅ معرف صالح - بدء التهيئة');
-    initWatchTv();
-});
-
-function initWatchTv() {
-    console.log('⚙️ تهيئة الصفحة...');
-    showWatchTvLoading();
-    setupWatchTvProgressBar();
-    updateWatchTvSaveButton();
-    loadWatchTvData();
-    setupWatchTvEventListeners();
-    setupWatchTvServerButtons();
-}
-
-// ========================================
-// 📡 تحميل بيانات المسلسل
-// ========================================
-async function loadWatchTvData() {
-    console.log('📡 جاري تحميل البيانات...');
-    
-    try {
-        const url = `${BASE_URL_WATCH_TV}/tv/${watchTvId}?api_key=${API_KEY_WATCH_TV}&language=ar&append_to_response=credits,similar`;
-        console.log('🔗 URL:', url);
-        
-        const response = await fetch(url);
-        console.log('📊 حالة الاستجابة:', response.status);
-        
-        if (!response.ok) {
-            throw new Error(`فشل التحميل - كود: ${response.status}`);
-        }
-        
-        watchTvData = await response.json();
-        
-        console.log('✅ تم استلام البيانات');
-        console.log('📺 العنوان:', watchTvData.name);
-        console.log('🎭 المواسم:', watchTvData.number_of_seasons);
-        console.log('📺 الحلقات:', watchTvData.number_of_episodes);
-        
-        updateWatchTvUI();
-        await loadWatchTvSeasonsData();
-        hideWatchTvLoading();
-        
-    } catch (error) {
-        console.error('❌ خطأ في التحميل:', error);
-        showWatchTvError('حدث خطأ في تحميل البيانات');
-        hideWatchTvLoading();
-    }
-}
-
-// ========================================
-// 📺 تحميل بيانات المواسم
-// ========================================
-async function loadWatchTvSeasonsData() {
-    console.log('📺 تحميل المواسم...');
-    
-    watchTvSeasonsData = [];
-    const totalSeasons = watchTvData.number_of_seasons || 1;
-    
-    for (let seasonNum = 1; seasonNum <= totalSeasons; seasonNum++) {
-        try {
-            const url = `${BASE_URL_WATCH_TV}/tv/${watchTvId}/season/${seasonNum}?api_key=${API_KEY_WATCH_TV}&language=ar`;
-            const response = await fetch(url);
-            
-            if (response.ok) {
-                const seasonData = await response.json();
-                watchTvSeasonsData.push(seasonData);
-                console.log(`✅ الموسم ${seasonNum}: ${seasonData.episodes?.length || 0} حلقة`);
-            }
-        } catch (error) {
-            console.warn(`⚠️ خطأ في الموسم ${seasonNum}`);
-        }
-    }
-    
-    console.log(`✅ تم تحميل ${watchTvSeasonsData.length} موسم`);
-    setupWatchTvSeasons();
-}
-
-// ========================================
-// 🎨 تحديث واجهة المستخدم
-// ========================================
-function updateWatchTvUI() {
-    console.log('🎨 تحديث الواجهة...');
-    
-    if (!watchTvData) {
-        console.error('❌ لا توجد بيانات');
-        return;
-    }
-    
-    const title = watchTvData.name || 'مسلسل بدون عنوان';
-    document.title = `Tomito - ${title}`;
-    
-    ['movie-title', 'movie-title-full', 'banner-title'].forEach(id => {
-        const el = document.getElementById(id);
-        if (el) {
-            el.textContent = title;
-            console.log(`✅ تحديث #${id}`);
-        }
-    });
-    
-    const description = watchTvData.overview || 'لا يوجد وصف';
-    ['banner-description', 'overview-text'].forEach(id => {
-        const el = document.getElementById(id);
-        if (el) {
-            el.textContent = description;
-            console.log(`✅ تحديث #${id}`);
-        }
-    });
-    
-    if (watchTvData.backdrop_path) {
-        const bg = document.querySelector('.banner-background');
-        if (bg) {
-            bg.style.backgroundImage = `url(${BACKDROP_BASE_URL_WATCH_TV + watchTvData.backdrop_path})`;
-            console.log('✅ تحديث الخلفية');
-        }
-    }
-    
-    const poster = document.getElementById('movie-poster');
-    if (poster && watchTvData.poster_path) {
-        poster.src = IMAGE_BASE_URL_WATCH_TV + watchTvData.poster_path;
-        poster.alt = title;
-        console.log('✅ تحديث الملصق');
-    }
-    
-    updateWatchTvMeta();
-    updateWatchTvGenres(watchTvData.genres || []);
-    updateWatchTvCast(watchTvData.credits?.cast || []);
-    updateWatchTvSimilar(watchTvData.similar?.results || []);
-    
-    console.log('✅ تم تحديث الواجهة بنجاح');
-}
-
-function updateWatchTvMeta() {
-    const grid = document.getElementById('movie-meta');
-    if (!grid) return;
-    
-    const year = watchTvData.first_air_date?.split('-')[0] || 'غير معروف';
-    const rating = watchTvData.vote_average?.toFixed(1) || 'N/A';
-    
-    const items = [
-        { icon: 'fas fa-calendar', label: 'السنة', value: year },
-        { icon: 'fas fa-star', label: 'التقييم', value: rating, color: '#f5c518' },
-        { icon: 'fas fa-layer-group', label: 'المواسم', value: watchTvData.number_of_seasons || 0 },
-        { icon: 'fas fa-video', label: 'الحلقات', value: watchTvData.number_of_episodes || 0 }
-    ];
-    
-    grid.innerHTML = items.map(i => `
-        <div class="meta-item">
-            <i class="${i.icon}" style="color: ${i.color || '#e74c3c'}"></i>
-            <div class="meta-content">
-                <span class="meta-label">${i.label}</span>
-                <span class="meta-value">${i.value}</span>
-            </div>
-        </div>
-    `).join('');
-}
-
-function updateWatchTvGenres(genres) {
-    const list = document.getElementById('genres-list');
-    if (!list) return;
-    
-    list.innerHTML = genres.length > 0
-        ? genres.map(g => `<span class="genre-tag">${g.name}</span>`).join('')
-        : '<span class="genre-tag">غير محدد</span>';
-}
-
-function updateWatchTvCast(cast) {
-    const list = document.getElementById('cast-list');
-    if (!list) return;
-    
-    if (!cast.length) {
-        list.innerHTML = '<p style="color: #999;">لا توجد معلومات</p>';
-        return;
-    }
-    
-    list.innerHTML = cast.slice(0, 8).map(a => `
-        <div class="cast-card">
-            <img src="${a.profile_path ? IMAGE_BASE_URL_WATCH_TV + a.profile_path : 'https://via.placeholder.com/180x240'}" 
-                 alt="${a.name}">
-            <div class="cast-info">
-                <div class="cast-name">${a.name}</div>
-                <div class="cast-character">${a.character || 'ممثل'}</div>
-            </div>
-        </div>
-    `).join('');
-}
-
-function updateWatchTvSimilar(similar) {
-    const list = document.getElementById('similar-list');
-    if (!list) return;
-    
-    if (!similar.length) {
-        list.innerHTML = '<p style="color: #999;">لا توجد مسلسلات مشابهة</p>';
-        return;
-    }
-    
-    list.innerHTML = similar.slice(0, 4).map(tv => `
-        <div class="similar-card" onclick="window.location.href='watch-tv.html?id=${tv.id}'" style="cursor: pointer;">
-            <img src="${tv.poster_path ? IMAGE_BASE_URL_WATCH_TV + tv.poster_path : 'https://via.placeholder.com/220x320'}" 
-                 alt="${tv.name}">
-            <div class="similar-info">
-                <div class="similar-title">${tv.name}</div>
-                <div class="similar-meta">
-                    <span>${tv.first_air_date?.split('-')[0] || ''}</span>
-                    <span class="similar-rating">
-                        <i class="fas fa-star"></i> ${tv.vote_average?.toFixed(1) || 'N/A'}
-                    </span>
+        metaGrid.innerHTML = metaData.map(item => `
+            <div class="meta-item">
+                <i class="fas fa-${item.icon}"></i>
+                <div class="meta-content">
+                    <span class="meta-label">${item.label}</span>
+                    <span class="meta-value">${item.value}</span>
                 </div>
             </div>
-        </div>
-    `).join('');
-}
-
-// ========================================
-// 📺 إعداد المواسم والحلقات
-// ========================================
-function setupWatchTvSeasons() {
-    console.log('📺 إعداد المواسم...');
-    
-    const seasonButtons = document.getElementById('season-buttons');
-    const seasonSelector = document.getElementById('season-selector');
-    
-    if (!seasonButtons || !watchTvSeasonsData.length) {
-        console.warn('⚠️ لا توجد مواسم');
-        return;
+        `).join('');
     }
     
-    seasonSelector.style.display = 'block';
-    
-    seasonButtons.innerHTML = watchTvSeasonsData.map((_, i) => {
-        const num = i + 1;
-        return `<button class="season-btn ${num === 1 ? 'active' : ''}" 
-                        onclick="selectWatchTvSeason(${num})">
-                    الموسم ${num}
-                </button>`;
-    }).join('');
-    
-    selectWatchTvSeason(1);
-    console.log('✅ تم إعداد المواسم');
-}
-
-function selectWatchTvSeason(seasonNum) {
-    console.log(`📺 اختيار الموسم ${seasonNum}`);
-    
-    watchTvCurrentSeason = seasonNum;
-    watchTvCurrentEpisode = 1;
-    
-    document.querySelectorAll('.season-btn').forEach((btn, i) => {
-        btn.classList.toggle('active', i + 1 === seasonNum);
-    });
-    
-    setupWatchTvEpisodes();
-}
-
-function setupWatchTvEpisodes() {
-    console.log('📺 إعداد الحلقات...');
-    
-    const episodeGrid = document.getElementById('episode-grid');
-    const episodeSelector = document.getElementById('episode-selector');
-    const season = watchTvSeasonsData[watchTvCurrentSeason - 1];
-    
-    if (!episodeGrid || !season?.episodes) {
-        console.warn('⚠️ لا توجد حلقات');
-        return;
+    updateGenres(genres) {
+        const container = document.getElementById('genres-list');
+        container.innerHTML = genres.map(genre => 
+            `<span class="genre-tag">${genre.name}</span>`
+        ).join('');
     }
     
-    episodeSelector.style.display = 'block';
-    
-    episodeGrid.innerHTML = season.episodes.map((ep, i) => {
-        const num = i + 1;
-        return `<button class="episode-btn ${num === 1 ? 'active' : ''}" 
-                        onclick="selectWatchTvEpisode(${num})"
-                        title="${ep.name || 'الحلقة ' + num}">
-                    الحلقة ${num}
-                </button>`;
-    }).join('');
-    
-    console.log(`✅ تم إعداد ${season.episodes.length} حلقة`);
-}
-
-function selectWatchTvEpisode(episodeNum) {
-    console.log(`▶️ اختيار الحلقة ${episodeNum}`);
-    
-    watchTvCurrentEpisode = episodeNum;
-    
-    document.querySelectorAll('.episode-btn').forEach((btn, i) => {
-        btn.classList.toggle('active', i + 1 === episodeNum);
-    });
-    
-    playWatchTv();
-}
-
-// ========================================
-// ▶️ تشغيل المسلسل مع كشف الأخطاء
-// ========================================
-async function playWatchTv() {
-    console.log(`▶️ تشغيل الموسم ${watchTvCurrentSeason} - الحلقة ${watchTvCurrentEpisode}`);
-    
-    const videoPlayer = document.getElementById('video-player');
-    const videoPlaceholder = document.getElementById('video-placeholder');
-    const playBtn = document.getElementById('play-now-btn');
-    
-    if (!videoPlayer) {
-        console.error('❌ لم يتم العثور على المشغل');
-        return;
+    updateNetworks(networks) {
+        const container = document.getElementById('networks-list');
+        container.innerHTML = networks.map(network => {
+            const logo = network.logo_path 
+                ? `${CONFIG.BASE_IMG}/w45${network.logo_path}`
+                : 'https://via.placeholder.com/45x45/333/fff?text=N';
+            
+            return `
+                <div class="network-item">
+                    <img src="${logo}" alt="${network.name}" class="network-logo" loading="lazy">
+                    <span class="network-name">${network.name}</span>
+                </div>
+            `;
+        }).join('');
     }
     
-    try {
-        if (playBtn) {
-            playBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري التحميل...';
-            playBtn.disabled = true;
+    updateCast(cast) {
+        const container = document.getElementById('cast-list');
+        const actors = cast.slice(0, 10); // أول 10 ممثلين فقط
+        
+        container.innerHTML = actors.map(actor => {
+            const img = actor.profile_path 
+                ? `${CONFIG.BASE_IMG}/w200${actor.profile_path}`
+                : 'https://via.placeholder.com/150x200/333/fff?text=?';
+            
+            return `
+                <div class="cast-card">
+                    <img src="${img}" 
+                         class="cast-img" 
+                         alt="${actor.name}"
+                         loading="lazy">
+                    <div class="cast-info">
+                        <div class="cast-name">${actor.name || 'غير معروف'}</div>
+                        <div class="cast-character">${actor.character || 'غير معروف'}</div>
+                    </div>
+                </div>
+            `;
+        }).join('');
+    }
+    
+    updateSimilar(seriesList) {
+        const container = document.getElementById('similar-list');
+        const similarSeries = seriesList.slice(0, 6);
+        
+        container.innerHTML = similarSeries.map(series => {
+            const img = series.poster_path 
+                ? `${CONFIG.BASE_IMG}/w300${series.poster_path}`
+                : 'https://via.placeholder.com/200x300/1a1a1a/fff?text=No+Image';
+            
+            const year = series.first_air_date?.split('-')[0] || '--';
+            
+            return `
+                <div class="similar-card" data-id="${series.id}">
+                    <img src="${img}" 
+                         class="similar-img" 
+                         alt="${series.name}"
+                         loading="lazy">
+                    <div class="similar-info">
+                        <div class="similar-title">${series.name || 'بدون عنوان'}</div>
+                        <div class="similar-meta">
+                            <span>${year}</span>
+                            <span><i class="fas fa-star"></i> ${series.vote_average?.toFixed(1) || '--'}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }).join('');
+        
+        // إضافة مستمعي الأحداث للمسلسلات المشابهة
+        container.querySelectorAll('.similar-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const seriesId = card.getAttribute('data-id');
+                window.location.href = `watch-tv.html?id=${seriesId}`;
+            });
+        });
+    }
+    
+    updateSeasonsList(seasons) {
+        const container = document.getElementById('seasons-container');
+        
+        // تصفية الموسم 0 (الإجمالي)
+        const regularSeasons = seasons.filter(s => s.season_number > 0);
+        
+        if (regularSeasons.length === 0) {
+            container.innerHTML = '<div class="no-seasons">لا توجد مواسم متاحة</div>';
+            return;
         }
         
-        const videoUrl = getWatchTvVideoUrl();
-        console.log('🔗 رابط الفيديو:', videoUrl);
-        console.log(`📡 السيرفر: ${watchTvServers[watchTvCurrentServer].name}`);
+        container.innerHTML = regularSeasons.map(season => {
+            const img = season.poster_path 
+                ? `${CONFIG.BASE_IMG}/w300${season.poster_path}`
+                : 'https://via.placeholder.com/300x450/333/fff?text=No+Image';
+            
+            const episodeCount = season.episode_count || 0;
+            const airYear = season.air_date ? new Date(season.air_date).getFullYear() : '--';
+            
+            return `
+                <div class="season-card" data-season="${season.season_number}">
+                    <div class="season-poster">
+                        <img src="${img}" alt="${season.name}" loading="lazy">
+                        <div class="season-number">الموسم ${season.season_number}</div>
+                    </div>
+                    <div class="season-info">
+                        <h3 class="season-name">${season.name || `الموسم ${season.season_number}`}</h3>
+                        <div class="season-meta">
+                            <span><i class="fas fa-film"></i> ${episodeCount} حلقة</span>
+                            <span><i class="fas fa-calendar"></i> ${airYear}</span>
+                        </div>
+                        <p class="season-overview">${season.overview || 'لا يوجد وصف.'}</p>
+                        <button class="watch-season-btn" data-season="${season.season_number}">
+                            <i class="fas fa-play"></i> مشاهدة الموسم
+                        </button>
+                    </div>
+                </div>
+            `;
+        }).join('');
         
-        if (!videoUrl) throw new Error('لم يتم العثور على رابط');
-        
-        if (videoPlaceholder) videoPlaceholder.style.display = 'none';
-        
-        // إعادة تحميل الـ iframe بالكامل مع إعدادات محسّنة
-        videoPlayer.src = 'about:blank';
-        
-        // إضافة صلاحيات الـ iframe
-        videoPlayer.setAttribute('allowfullscreen', 'true');
-        videoPlayer.setAttribute('webkitallowfullscreen', 'true');
-        videoPlayer.setAttribute('mozallowfullscreen', 'true');
-        videoPlayer.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture; encrypted-media');
-        videoPlayer.setAttribute('frameborder', '0');
-        videoPlayer.setAttribute('scrolling', 'no');
-        
-        setTimeout(() => {
-            videoPlayer.src = videoUrl;
-            videoPlayer.style.display = 'block';
-            console.log('✅ تم تحميل الرابط في iframe');
-        }, 100);
-        
-        if (playBtn) {
-            playBtn.innerHTML = '<i class="fas fa-check"></i> قيد التشغيل';
-            playBtn.disabled = false;
-            playBtn.style.background = 'linear-gradient(45deg, #27ae60, #2ecc71)';
-        }
-        
-        showWatchTvNotification(`السيرفر: ${watchTvServers[watchTvCurrentServer].name}`, 'success');
-        console.log('✅ تم بدء التشغيل');
-        
-        // فحص بعد 8 ثواني
-        setTimeout(() => {
-            const checkFrame = document.getElementById('video-player');
-            if (checkFrame && checkFrame.src && checkFrame.src !== 'about:blank') {
-                console.log('✅ الـ iframe محمل بنجاح');
-                console.log('🔍 إذا ظهرت شاشة سوداء:');
-                console.log('   1. المحتوى غير متوفر على هذا السيرفر');
-                console.log('   2. جرّب سيرفر آخر من الأزرار أسفل المشغل');
-                console.log('   3. أو جرّب مسلسل آخر معروف (Breaking Bad: id=1396)');
+        // إضافة مستمعي الأحداث لأزرار مشاهدة الموسم
+        container.querySelectorAll('.watch-season-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const seasonNumber = parseInt(e.target.dataset.season);
+                this.currentSeason = seasonNumber;
                 
-                showWatchTvNotification('⚠️ إذا لم يظهر الفيديو، جرّب سيرفر آخر', 'warning');
+                // تحديث الـ Select
+                document.getElementById('season-select').value = seasonNumber;
+                
+                // تحديث قائمة الحلقات
+                this.updateEpisodesList();
+                
+                // التمرير إلى قسم الفيديو
+                document.getElementById('video-section').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    }
+    
+    updateEpisodeSelector() {
+        const seasonSelect = document.getElementById('season-select');
+        const episodeSelect = document.getElementById('episode-select');
+        
+        if (!this.seriesData) return;
+        
+        const seasons = this.seriesData.series.seasons?.filter(s => s.season_number > 0) || [];
+        
+        // تحديث قائمة المواسم
+        seasonSelect.innerHTML = seasons.map(season => 
+            `<option value="${season.season_number}">الموسم ${season.season_number}</option>`
+        ).join('');
+        
+        // تحديث قائمة الحلقات للموسم الأول
+        this.updateEpisodesList();
+    }
+    
+    async updateEpisodesList() {
+        const episodeSelect = document.getElementById('episode-select');
+        
+        try {
+            // جلب تفاصيل الموسم
+            const data = await this.fetchData(`/tv/${this.seriesId}/season/${this.currentSeason}?language=ar`);
+            this.episodes = data.episodes || [];
+            
+            // تحديث قائمة الحلقات
+            episodeSelect.innerHTML = this.episodes.map(episode => 
+                `<option value="${episode.episode_number}">الحلقة ${episode.episode_number}: ${episode.name || 'بدون عنوان'}</option>`
+            ).join('');
+            
+            // تحديد الحلقة الأولى افتراضياً
+            if (this.episodes.length > 0) {
+                this.currentEpisode = 1;
+                episodeSelect.value = 1;
             }
-        }, 8000);
-        
-    } catch (error) {
-        console.error('❌ خطأ:', error);
-        showWatchTvError(error.message);
-        
-        if (playBtn) {
-            playBtn.innerHTML = '<i class="fas fa-play"></i> حاول مرة أخرى';
-            playBtn.disabled = false;
+            
+        } catch (error) {
+            console.error('خطأ في جلب الحلقات:', error);
+            episodeSelect.innerHTML = '<option value="">خطأ في تحميل الحلقات</option>';
         }
     }
-}
-
-function getWatchTvVideoUrl() {
-    const server = watchTvServers[watchTvCurrentServer];
-    return server?.getUrl(watchTvId, watchTvCurrentSeason, watchTvCurrentEpisode);
-}
-
-// ========================================
-// 🖥️ إعداد السيرفرات
-// ========================================
-function setupWatchTvServerButtons() {
-    const serverButtons = document.getElementById('server-buttons');
-    if (!serverButtons) return;
     
-    serverButtons.innerHTML = Object.keys(watchTvServers).map(id => {
-        const server = watchTvServers[id];
-        return `
-            <button class="server-btn ${id === 'server1' ? 'active' : ''}" 
-                    onclick="switchWatchTvServer('${id}')">
-                <i class="fas fa-server"></i>
+    createServerButtons() {
+        const container = document.getElementById('server-buttons');
+        
+        container.innerHTML = SERVERS.map(server => `
+            <button class="server-btn ${server.id === this.currentServer.id ? 'active' : ''}" 
+                    data-server-id="${server.id}"
+                    style="border-color: ${server.color}">
+                <i class="fas ${server.icon}" style="color: ${server.color}"></i>
                 <div class="server-info">
-                    <span class="server-name">${server.name}</span>
-                    <span class="server-quality">${server.quality}</span>
+                    <div class="server-name">${server.name}</div>
+                    <div class="server-quality">${server.quality}</div>
                 </div>
             </button>
-        `;
-    }).join('');
-}
-
-function switchWatchTvServer(serverId) {
-    if (watchTvCurrentServer === serverId) return;
-    
-    console.log(`🔄 التبديل إلى ${watchTvServers[serverId].name}`);
-    
-    document.querySelectorAll('.server-btn').forEach(btn => btn.classList.remove('active'));
-    document.querySelector(`[onclick="switchWatchTvServer('${serverId}')"]`)?.classList.add('active');
-    
-    watchTvCurrentServer = serverId;
-    playWatchTv();
-    
-    showWatchTvNotification(`تم التبديل إلى ${watchTvServers[serverId].name}`, 'info');
-}
-
-// ========================================
-// ❤️ إدارة المفضلة
-// ========================================
-function updateWatchTvSaveButton() {
-    const saveBtn = document.getElementById('save-movie-btn');
-    if (!saveBtn || !watchTvId) return;
-    
-    const isSaved = watchTvSavedMovies.some(m => m?.id === parseInt(watchTvId));
-    saveBtn.innerHTML = isSaved ? '<i class="fas fa-heart"></i> محفوظ' : '<i class="far fa-heart"></i> حفظ';
-    saveBtn.classList.toggle('saved', isSaved);
-}
-
-function toggleWatchTvSaveMovie() {
-    const saveBtn = document.getElementById('save-movie-btn');
-    if (!saveBtn || !watchTvData) return;
-    
-    const isSaved = watchTvSavedMovies.some(m => m?.id === parseInt(watchTvId));
-    
-    if (isSaved) {
-        watchTvSavedMovies = watchTvSavedMovies.filter(m => m.id !== parseInt(watchTvId));
-        saveBtn.innerHTML = '<i class="far fa-heart"></i> حفظ';
-        saveBtn.classList.remove('saved');
-        showWatchTvNotification('تم الإزالة من المفضلة');
-    } else {
-        watchTvSavedMovies.push({
-            id: parseInt(watchTvId),
-            title: watchTvData.name,
-            poster_path: watchTvData.poster_path,
-            vote_average: watchTvData.vote_average,
-            type: 'tv',
-            savedAt: new Date().toISOString()
-        });
-        saveBtn.innerHTML = '<i class="fas fa-heart"></i> محفوظ';
-        saveBtn.classList.add('saved');
-        showWatchTvNotification('تم الحفظ', 'success');
-    }
-    
-    localStorage.setItem('savedMovies', JSON.stringify(watchTvSavedMovies));
-}
-
-// ========================================
-// 🎨 واجهة المستخدم - أدوات
-// ========================================
-function setupWatchTvProgressBar() {
-    const bar = document.getElementById('progress-bar');
-    if (!bar) return;
-    
-    window.addEventListener('scroll', () => {
-        const total = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (window.scrollY / total) * 100;
-        bar.style.transform = `scaleX(${scrolled / 100})`;
-    });
-}
-
-function showWatchTvLoading() {
-    const screen = document.getElementById('loading-screen');
-    if (screen) screen.style.display = 'flex';
-}
-
-function hideWatchTvLoading() {
-    const screen = document.getElementById('loading-screen');
-    if (screen) screen.style.display = 'none';
-}
-
-function setupWatchTvEventListeners() {
-    const playBtn = document.getElementById('play-now-btn');
-    if (playBtn) playBtn.addEventListener('click', playWatchTv);
-    
-    const saveBtn = document.getElementById('save-movie-btn');
-    if (saveBtn) saveBtn.addEventListener('click', toggleWatchTvSaveMovie);
-}
-
-function showWatchTvNotification(message, type = 'info') {
-    document.querySelector('.notification')?.remove();
-    
-    const notif = document.createElement('div');
-    notif.className = `notification ${type} show`;
-    notif.textContent = message;
-    
-    document.body.appendChild(notif);
-    
-    setTimeout(() => {
-        notif.classList.remove('show');
-        setTimeout(() => notif.remove(), 300);
-    }, 3000);
-}
-
-function showWatchTvError(message) {
-    showWatchTvNotification(message, 'error');
-    
-    const desc = document.getElementById('banner-description');
-    if (desc) {
-        desc.textContent = message;
-        desc.style.color = '#e74c3c';
-    }
-}
-
-// ========================================
-// 🌍 تصدير الدوال للـ HTML
-// ========================================
-window.playWatchTv = playWatchTv;
-window.toggleWatchTvSaveMovie = toggleWatchTvSaveMovie;
-window.switchWatchTvServer = switchWatchTvServer;
-window.selectWatchTvSeason = selectWatchTvSeason;
-window.selectWatchTvEpisode = selectWatchTvEpisode;
-
-// دالة لتعطيل AdBlock إذا كان يسبب مشاكل
-window.disableAdBlock = function() {
-    WatchTVAdBlock.disable();
-    showWatchTvNotification('تم تعطيل AdBlock - أعد تحميل الصفحة', 'info');
-    console.log('💡 لتعطيل AdBlock نهائياً، اكتب في Console: WatchTVAdBlock.enabled = false');
-};
-
-// دالة لاختبار جميع السيرفرات
-window.testAllServers = function() {
-    console.log('🧪 اختبار جميع السيرفرات...');
-    console.log('='.repeat(50));
-    
-    Object.keys(watchTvServers).forEach((serverId, index) => {
-        const server = watchTvServers[serverId];
-        const url = server.getUrl(watchTvId, watchTvCurrentSeason, watchTvCurrentEpisode);
+        `).join('');
         
-        console.log(`\n${index + 1}. ${server.name} (${server.quality})`);
-        console.log(`   🔗 ${url}`);
-    });
-    
-    console.log('\n' + '='.repeat(50));
-    console.log('💡 جرّب كل سيرفر يدوياً من الأزرار');
-    console.log('💡 أو اكتب: openServerInNewTab("server1") لفتحه في تاب جديد');
-};
-
-// دالة لفتح السيرفر في تاب جديد للاختبار
-window.openServerInNewTab = function(serverId) {
-    if (!watchTvServers[serverId]) {
-        console.error('❌ سيرفر غير موجود!');
-        console.log('السيرفرات المتاحة:', Object.keys(watchTvServers).join(', '));
-        return;
+        // إضافة مستمعي الأحداث للأزرار
+        container.querySelectorAll('.server-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const serverId = btn.getAttribute('data-server-id');
+                this.selectServer(serverId);
+            });
+        });
     }
     
-    const url = watchTvServers[serverId].getUrl(watchTvId, watchTvCurrentSeason, watchTvCurrentEpisode);
-    console.log(`🚀 فتح ${watchTvServers[serverId].name} في تاب جديد...`);
-    console.log(`🔗 ${url}`);
+    selectServer(serverId) {
+        // إزالة النشط من جميع الأزرار
+        document.querySelectorAll('.server-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        
+        // إضافة النشط للزر المحدد
+        const selectedBtn = document.querySelector(`[data-server-id="${serverId}"]`);
+        if (selectedBtn) {
+            selectedBtn.classList.add('active');
+        }
+        
+        // العثور على بيانات الخادم
+        const server = SERVERS.find(s => s.id === serverId);
+        if (!server) return;
+        
+        this.currentServer = server;
+    }
     
-    window.open(url, '_blank');
-    showWatchTvNotification(`تم فتح ${watchTvServers[serverId].name} في تاب جديد`, 'info');
-};
-
-// دالة للاختبار التلقائي للسيرفرات (تفتح كل واحد في تاب)
-window.testAllServersInTabs = function() {
-    console.log('🚀 فتح جميع السيرفرات للاختبار...');
+    playVideo() {
+        if (!this.currentServer || !this.seriesId || !this.currentSeason || !this.currentEpisode) {
+            this.showError('الرجاء اختيار الموسم والحلقة والخادم أولاً');
+            return;
+        }
+        
+        const videoPlayer = document.getElementById('video-player');
+        
+        // بناء رابط الفيديو مع الموسم والحلقة
+        const videoURL = `${this.currentServer.url}${this.seriesId}/${this.currentSeason}/${this.currentEpisode}`;
+        
+        // إضافة معلمات لمنع الإعلانات
+        const cleanURL = `${videoURL}?autoplay=1&mute=0&controls=1&modestbranding=1&rel=0&showinfo=0`;
+        
+        this.showNotification(`جاري تحميل ${this.currentServer.name}...`, 'info');
+        
+        videoPlayer.src = cleanURL;
+        
+        videoPlayer.onload = () => {
+            this.showNotification('✅ الفيديو جاهز للمشاهدة', 'success');
+        };
+        
+        videoPlayer.onerror = () => {
+            this.showNotification('❌ فشل تحميل الفيديو، جرب خادماً آخر', 'error');
+        };
+    }
     
-    Object.keys(watchTvServers).forEach((serverId, index) => {
+    async playTrailer() {
+        if (!this.seriesId) return;
+        
+        try {
+            const videos = await this.fetchData(`/tv/${this.seriesId}/videos?language=ar`);
+            const trailers = videos.results?.filter(v => v.type === 'Trailer' && v.site === 'YouTube');
+            
+            if (trailers.length === 0) {
+                this.showError('لا يوجد إعلان تشويقي متاح');
+                return;
+            }
+            
+            const trailer = trailers[0];
+            const videoPlayer = document.getElementById('video-player');
+            const trailerURL = `https://www.youtube.com/embed/${trailer.key}?autoplay=1`;
+            
+            videoPlayer.src = trailerURL;
+            this.showNotification('جاري تشغيل الإعلان التشويقي...', 'info');
+            
+        } catch (error) {
+            console.error('خطأ في جلب الإعلان التشويقي:', error);
+            this.showError('فشل تحميل الإعلان التشويقي');
+        }
+    }
+    
+    toggleSaveSeries() {
+        if (!this.seriesData) return;
+        
+        const series = this.seriesData.series;
+        const seriesId = series.id.toString();
+        const saveBtn = document.getElementById('save-series-btn');
+        
+        // البحث عن المسلسل في المحفوظات
+        const existingIndex = this.savedSeries.findIndex(s => s.id.toString() === seriesId);
+        
+        if (existingIndex !== -1) {
+            // إزالة من المحفوظات
+            this.savedSeries.splice(existingIndex, 1);
+            saveBtn.classList.remove('saved');
+            saveBtn.innerHTML = '<i class="far fa-heart"></i> حفظ';
+            this.showNotification('تمت إزالة المسلسل من المحفوظات', 'info');
+        } else {
+            // إضافة للمحفوظات
+            this.savedSeries.push({
+                id: series.id,
+                name: series.name,
+                poster: series.poster_path,
+                rating: series.vote_average,
+                year: series.first_air_date?.split('-')[0],
+                seasons: series.seasons?.filter(s => s.season_number > 0).length || 0
+            });
+            saveBtn.classList.add('saved');
+            saveBtn.innerHTML = '<i class="fas fa-heart"></i> محفوظ';
+            this.showNotification('تم حفظ المسلسل في المحفوظات', 'success');
+        }
+        
+        // حفظ في localStorage
+        localStorage.setItem('savedSeries', JSON.stringify(this.savedSeries));
+    }
+    
+    updateSaveButton() {
+        if (!this.seriesData) return;
+        
+        const seriesId = this.seriesData.series.id.toString();
+        const saveBtn = document.getElementById('save-series-btn');
+        
+        // البحث عن المسلسل في المحفوظات
+        const isSaved = this.savedSeries.some(s => s.id.toString() === seriesId);
+        
+        if (isSaved) {
+            saveBtn.classList.add('saved');
+            saveBtn.innerHTML = '<i class="fas fa-heart"></i> محفوظ';
+        } else {
+            saveBtn.classList.remove('saved');
+            saveBtn.innerHTML = '<i class="far fa-heart"></i> حفظ';
+        }
+    }
+    
+    // ======== دوال المساعدة ========
+    showLoading(show) {
+        const loadingScreen = document.getElementById('loading-screen');
+        const progressBar = document.getElementById('progress-bar');
+        
+        if (show) {
+            loadingScreen.style.display = 'flex';
+            progressBar.style.transform = 'scaleX(0)';
+            progressBar.style.display = 'block';
+        } else {
+            loadingScreen.style.display = 'none';
+            progressBar.style.transform = 'scaleX(1)';
+            setTimeout(() => {
+                progressBar.style.display = 'none';
+            }, 300);
+        }
+    }
+    
+    showNotification(message, type = 'info') {
+        // إزالة التنبيهات القديمة
+        document.querySelectorAll('.notification').forEach(n => n.remove());
+        
+        // إنشاء تنبيه جديد
+        const notification = document.createElement('div');
+        notification.className = `notification ${type}`;
+        notification.textContent = message;
+        
+        document.body.appendChild(notification);
+        
+        // إزالة التنبيه بعد 3 ثواني
         setTimeout(() => {
-            openServerInNewTab(serverId);
-        }, index * 500); // تأخير بين كل تاب
-    });
-    
-    showWatchTvNotification('تم فتح جميع السيرفرات في تابات جديدة', 'info');
-};
-
-// دالة للتحقق من وجود الـ iframe
-window.checkIframe = function() {
-    const iframe = document.getElementById('video-player');
-    
-    if (!iframe) {
-        console.error('❌ الـ iframe غير موجود في الصفحة!');
-        console.log('💡 تأكد أن HTML يحتوي على:');
-        console.log('<iframe id="video-player" ...></iframe>');
-        return false;
+            notification.style.animation = 'slideOut 0.3s ease';
+            setTimeout(() => notification.remove(), 300);
+        }, 3000);
     }
     
-    console.log('✅ الـ iframe موجود');
-    console.log('📊 معلومات الـ iframe:');
-    console.log('   - ID:', iframe.id);
-    console.log('   - SRC:', iframe.src || 'فارغ');
-    console.log('   - Width:', iframe.style.width || iframe.width);
-    console.log('   - Height:', iframe.style.height || iframe.height);
-    console.log('   - Display:', iframe.style.display);
+    showError(message) {
+        this.showNotification(message, 'error');
+    }
+}
+
+// ===========================================
+// بدء التشغيل عند تحميل الصفحة
+// ===========================================
+document.addEventListener('DOMContentLoaded', () => {
+    window.seriesPlayer = new SeriesPlayer();
+});
+
+// دوال عامة للاستخدام من صفحات أخرى
+function playSeries(seriesId, season = 1, episode = 1) {
+    window.location.href = `watch-tv.html?id=${seriesId}&season=${season}&episode=${episode}`;
+}
+
+function toggleSaveSeries(seriesId, title, poster, rating, element) {
+    // حفظ في localStorage
+    let savedSeries = JSON.parse(localStorage.getItem('savedSeries') || '[]');
+    const index = savedSeries.findIndex(s => s.id === seriesId);
     
-    if (!iframe.src || iframe.src === 'about:blank') {
-        console.warn('⚠️ الـ iframe فارغ - اضغط على زر التشغيل');
+    if (index !== -1) {
+        savedSeries.splice(index, 1);
+        if (element) {
+            element.innerHTML = '<i class="far fa-heart"></i> حفظ';
+            element.classList.remove('saved');
+        }
     } else {
-        console.log('✅ الـ iframe يحتوي على رابط');
+        savedSeries.push({ id: seriesId, name: title, poster_path: poster, vote_average: rating });
+        if (element) {
+            element.innerHTML = '<i class="fas fa-heart"></i> محفوظ';
+            element.classList.add('saved');
+        }
     }
     
-    return true;
-};
-
-// فحص تلقائي عند تحميل الصفحة
-setTimeout(() => {
-    console.log('\n🔍 فحص تلقائي للـ iframe...');
-    checkIframe();
-}, 2000);
+    localStorage.setItem('savedSeries', JSON.stringify(savedSeries));
+}

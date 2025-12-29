@@ -297,12 +297,14 @@ class MoviePlayer {
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         return response.json();
     }
-    
     updateUI() {
         const { movie, credits, similar } = this.movieData;
         
         // تحديث البانر العلوي
         this.updateBanner(movie);
+        
+        // تحديث الميتاداتا في البانر
+        this.updateBannerMeta(movie);
         
         // تحديث بقية الواجهة
         this.updateMovieDetails(movie, credits, similar);
@@ -311,6 +313,20 @@ class MoviePlayer {
         this.updateSaveButton();
     }
     
+    updateBannerMeta(movie) {
+        const yearText = document.getElementById('year-text');
+        const durationText = document.getElementById('duration-text');
+        const ratingText = document.getElementById('rating-text');
+        
+        // السنة
+        yearText.textContent = movie.release_date?.split('-')[0] || '--';
+        
+        // المدة
+        durationText.textContent = movie.runtime ? `${movie.runtime} دقيقة` : 'غير معروف';
+        
+        // التقييم
+        ratingText.textContent = movie.vote_average?.toFixed(1) || '--';
+    }
     updateBanner(movie) {
         const bannerTitle = document.getElementById('banner-title');
         const bannerDesc = document.getElementById('banner-description');
@@ -637,4 +653,35 @@ function toggleSaveMovie(movieId, title, poster, rating, element) {
     }
     
     localStorage.setItem('savedMovies', JSON.stringify(savedMovies));
+}// إعداد أزرار التحكم
+function setupPlayerControls() {
+    // زر تغيير الجودة
+    const qualityToggle = document.getElementById('quality-toggle');
+    if (qualityToggle) {
+        qualityToggle.addEventListener('click', () => {
+            // هنا يمكنك إضافة منطق تغيير الجودة
+            moviePlayer.showNotification('ميزة تغيير الجودة قريباً', 'info');
+        });
+    }
+    
+    // زر ملء الشاشة
+    const fullscreenBtn = document.getElementById('fullscreen-btn');
+    if (fullscreenBtn) {
+        fullscreenBtn.addEventListener('click', () => {
+            const videoPlayer = document.getElementById('video-player');
+            if (videoPlayer.requestFullscreen) {
+                videoPlayer.requestFullscreen();
+            } else if (videoPlayer.webkitRequestFullscreen) {
+                videoPlayer.webkitRequestFullscreen();
+            } else if (videoPlayer.msRequestFullscreen) {
+                videoPlayer.msRequestFullscreen();
+            }
+        });
+    }
 }
+
+// استدعاء عند تحميل الصفحة
+document.addEventListener('DOMContentLoaded', () => {
+    window.moviePlayer = new MoviePlayer();
+    setupPlayerControls();
+});

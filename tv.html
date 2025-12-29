@@ -14,27 +14,64 @@
     <!-- الهيدر -->
     <header class="site-header" id="site-header">
         <div class="header-left">
-            <div class="logo">TOMITO</div>
-            <button class="dropdown-toggle" id="dropdownToggle" aria-label="القائمة المنسدلة">
-                <span>التصنيفات</span>
-                <i class="dropdown-icon">▼</i>
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="#E50914">
+                    <path d="M12 2L2 7V17L12 22L22 17V7L12 2ZM12 4.5L19.5 8.25V15.75L12 19.5L4.5 15.75V8.25L12 4.5ZM12 8.5L7 11.25V16.5L12 19.25L17 16.5V11.25L12 8.5Z"/>
+                </svg>
+                <span>TOMITO</span>
+            </div>
+            
+            <!-- زر القائمة المنسدلة للجوال -->
+            <button class="dropdown-toggle" id="dropdownToggle" aria-label="قائمة التنقل">
+                <i class="fas fa-bars"></i>
+                <span class="dropdown-text">القائمة</span>
             </button>
-            <a href="index.html" class="favorites-page-btn">
-                الافلام
+            
+            <!-- زر الانتقال للأفلام -->
+            <a href="index.html" class="page-switch-btn">
+                <i class="fas fa-film"></i>
+                <span>الأفلام</span>
             </a>
         </div>
 
-        <nav class="nav" id="genre-nav">
-            <a href="index.html" class="nav-switch"><i class="fas fa-film"></i> الأفلام</a>
-            <a href="#" data-genre="" class="active"><i class="fas fa-tv"></i> الكل</a>
-            <a href="#" data-genre="10759"><i class="fas fa-fire"></i> أكشن ومغامرة</a>
-            <a href="#" data-genre="35"><i class="fas fa-laugh"></i> كوميديا</a>
-            <a href="#" data-genre="18"><i class="fas fa-theater-masks"></i> دراما</a>
-            <a href="#" data-genre="10765"><i class="fas fa-robot"></i> خيال علمي</a>
-            <a href="#" data-genre="9648"><i class="fas fa-user-secret"></i> غموض</a>
-            <a href="#" data-genre="10762"><i class="fas fa-child"></i> أطفال</a>
-            <a href="#" data-genre="10766"><i class="fas fa-heart"></i> دراما</a>
+        <!-- شريط تصنيفات المسلسلات -->
+        <div class="genre-strip" id="genre-strip">
+            <button class="genre-btn active" data-genre="">
+                <i class="fas fa-tv"></i> الكل
+            </button>
+            <button class="genre-btn" data-genre="10759">
+                <i class="fas fa-fire"></i> أكشن ومغامرة
+            </button>
+            <button class="genre-btn" data-genre="35">
+                <i class="fas fa-laugh"></i> كوميديا
+            </button>
+            <button class="genre-btn" data-genre="18">
+                <i class="fas fa-theater-masks"></i> دراما
+            </button>
+            <button class="genre-btn" data-genre="10765">
+                <i class="fas fa-robot"></i> خيال علمي
+            </button>
+            <button class="more-genres-btn" id="moreGenresBtn">
+                <i class="fas fa-ellipsis-h"></i> المزيد
+            </button>
+        </div>
+
+        <!-- قائمة التنقل -->
+        <nav class="genre-nav" id="genre-nav">
+            <a href="index.html" class="nav-switch">
+                <i class="fas fa-film"></i> الأفلام
+            </a>
+            <a href="#" data-section="all" class="active" onclick="loadAllSeries(); return false;">
+                <i class="fas fa-tv"></i> الكل
+            </a>
+            <a href="#" data-section="watchlist" id="watchlist-btn" onclick="showWatchlist(); return false;">
+                <i class="fas fa-bookmark"></i> المحفوظات
+                <span class="watchlist-count" id="watchlistCount">0</span>
+            </a>
         </nav>
+        
+        <!-- خلفية ضبابية -->
+        <div class="nav-backdrop" id="navBackdrop"></div>
     </header>
 
     <!-- شريط البحث -->
@@ -42,56 +79,77 @@
         <input type="text" id="search" placeholder="🔍 ابحث عن مسلسل...">
     </div>
 
-    <!-- البانر -->
-    <section class="banner-section">
-        <h2 class="section-title"><i class="fas fa-crown"></i> المسلسلات الأكثر مشاهدة</h2>
+    <!-- Container رئيسي -->
+    <main class="main-container">
+        <!-- البانر الرئيسي -->
+        <section class="banner-section">
+            <h2 class="section-title"><i class="fas fa-crown"></i> المسلسلات الأكثر مشاهدة</h2>
+            <div class="banner-carousel">
+                <button class="carousel-btn prev-btn" aria-label="السابق"><i class="fas fa-chevron-right"></i></button>
+                <div class="banner-container" id="banner-container"></div>
+                <button class="carousel-btn next-btn" aria-label="التالي"><i class="fas fa-chevron-left"></i></button>
+                <div class="banner-indicators" id="banner-indicators"></div>
+            </div>
+        </section>
 
-        <div class="banner-carousel">
-            <button class="carousel-btn prev-btn"><i class="fas fa-chevron-right"></i></button>
-            <div class="banner-container" id="banner-container"></div>
-            <button class="carousel-btn next-btn"><i class="fas fa-chevron-left"></i></button>
+        <!-- قسم: مسلسلات جديدة -->
+        <section class="series-section">
+            <h2 class="section-title"><i class="fas fa-sparkles"></i> مسلسلات جديدة</h2>
+            <div class="series-container" id="new-series"></div>
+            <button class="more-btn" onclick="loadMoreSeries('new-series', 'airing_today')">
+                <i class="fas fa-plus-circle"></i> المزيد من المسلسلات الجديدة
+            </button>
+        </section>
 
-            <!-- مؤشرات البانر -->
-            <div class="banner-indicators" id="banner-indicators"></div>
-        </div>
-    </section>
+        <!-- قسم: شائع حالياً -->
+        <section class="series-section">
+            <h2 class="section-title"><i class="fas fa-fire"></i> شائع حالياً</h2>
+            <div class="series-container" id="trending-series"></div>
+            <button class="more-btn" onclick="loadMoreSeries('trending-series', 'trending')">
+                <i class="fas fa-plus-circle"></i> المزيد من المسلسلات الشائعة
+            </button>
+        </section>
 
-    <!-- قسم المسلسلات -->
-    <section class="movies-section">
-        <h2 class="section-title"><i class="fas fa-star"></i> أحدث المسلسلات</h2>
+        <!-- قسم: أعلى التقييمات -->
+        <section class="series-section">
+            <h2 class="section-title"><i class="fas fa-star"></i> أعلى التقييمات</h2>
+            <div class="series-container" id="top-series"></div>
+            <button class="more-btn" onclick="loadMoreSeries('top-series', 'top_rated')">
+                <i class="fas fa-plus-circle"></i> المزيد من أعلى التقييمات
+            </button>
+        </section>
 
-        <div class="movies-container" id="movies-container">
-            <!-- سيتم ملؤها بواسطة JavaScript -->
-        </div>
-    </section>
-
-    <!-- زر تحميل المزيد -->
-    <div class="load-more-container">
-        <button id="loadMore">
-            <i class="fas fa-plus-circle"></i>
-            تحميل المزيد
-        </button>
-    </div>
+        <!-- قسم: قريباً -->
+        <section class="series-section">
+            <h2 class="section-title"><i class="fas fa-calendar-alt"></i> قريباً</h2>
+            <div class="series-container" id="upcoming-series"></div>
+            <button class="more-btn" onclick="loadMoreSeries('upcoming-series', 'on_the_air')">
+                <i class="fas fa-plus-circle"></i> المزيد من المسلسلات القادمة
+            </button>
+        </section>
+    </main>
 
     <!-- الفوتر -->
     <footer class="site-footer">
         <div class="footer-content">
             <div class="logo">Tomito</div>
-            <p>منصة ترفيهية لمشاهدة الأفلام والمسلسلات بأفضل جودة وبدون إعلانات</p>
+            <p>منصة ترفيهية لمشاهدة الأفلام والمسلسلات بأفضل جودة</p>
             <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
             </div>
+            
             <p class="copyright">
                 © 2024 Tomito. جميع الحقوق محفوظة.<br> هذا الموقع يستخدم بيانات من TMDb API.
             </p>
         </div>
     </footer>
 
-    <!-- ملف JavaScript -->
     <script src="tv.js"></script>
+    <script src="header-tv.js"></script>
+    <script src="ads.js"></script>
 </body>
 </html>

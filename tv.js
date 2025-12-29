@@ -1,670 +1,666 @@
-// tv.js - صفحة المسلسلات (مصحح 100% + شرح كامل)
 // ========================================
-// 🔧 الإصلاح: أسماء متغيرات فريدة لصفحة المسلسلات
+// TMDB API CONFIGURATION FOR TV SERIES
 // ========================================
-const API_KEY_TV_PAGE = "882e741f7283dc9ba1654d4692ec30f6";
-const BASE_URL_TV_PAGE = "https://api.themoviedb.org/3";
-const IMAGE_BASE_URL_TV_PAGE = "https://image.tmdb.org/t/p/w1280";
-const IMAGE_BASE_URL_500_TV_PAGE = "https://image.tmdb.org/t/p/w500";
+
+const API_KEY = "882e741f7283dc9ba1654d4692ec30f6";
+const BASE_URL = "https://api.themoviedb.org/3";
+const IMG_URL = "https://image.tmdb.org/t/p/w1280";
+const IMG_500 = "https://image.tmdb.org/t/p/w500";
 
 // ========================================
-// 🛡️ نظام AdBlock المحسّن لصفحة المسلسلات
+// STATE MANAGEMENT
 // ========================================
-const TVPageAdBlock = {
-    blockedDomains: [
-        'doubleclick.net', 'googleadservices.com', 'googlesyndication.com',
-        'adservice.google.com', 'advertising.com', 'ads.yahoo.com',
-        'ads.microsoft.com', 'adnxs.com', 'adsystem.com'
-    ],
-    
-    adKeywords: [
-        'advertisement', 'sponsored', 'ad-container', 'ad-banner',
-        'ad-slot', 'google-ad', 'adsense', 'adsbygoogle'
-    ],
-    
-    stats: { blocked: 0, requests: 0 },
 
-    init() {
-        console.log('🛡️ تفعيل AdBlock...');
-        this.blockExistingAds();
-        this.watchForNewAds();
-        this.protectFetchAPI();
-        console.log('✅ تم تفعيل AdBlock');
-    },
-
-    blockExistingAds() {
-        document.querySelectorAll('script[src], iframe, img').forEach(el => {
-            const src = el.getAttribute('src');
-            if (src && this.isAdUrl(src) && !this.isVideoPlayer(src)) {
-                el.remove();
-                this.stats.blocked++;
-            }
-        });
-    },
-
-    watchForNewAds() {
-        new MutationObserver(mutations => {
-            mutations.forEach(m => {
-                m.addedNodes.forEach(node => {
-                    if (node.nodeType === 1) {
-                        const src = node.src || node.getAttribute?.('src');
-                        if (src && this.isAdUrl(src) && !this.isVideoPlayer(src)) {
-                            node.remove();
-                            this.stats.blocked++;
-                        }
-                    }
-                });
-            });
-        }).observe(document.body, { childList: true, subtree: true });
-    },
-
-    // 🔧 الإصلاح الرئيسي: fetch بطريقة صحيحة
-    protectFetchAPI() {
-        const originalFetch = window.fetch.bind(window); // ربط fetch بـ window
-        const self = this;
-        
-        window.fetch = function(url, ...args) {
-            self.stats.requests++;
-            
-            if (self.isAdUrl(url)) {
-                self.stats.blocked++;
-                console.log('🚫 حظر:', url);
-                return Promise.reject(new Error('Blocked'));
-            }
-            
-            // استخدام originalFetch المربوط بـ window
-            return originalFetch(url, ...args);
-        };
-    },
-
-    isAdUrl(url) {
-        if (!url || typeof url !== 'string') return false;
-        const lower = url.toLowerCase();
-        return this.blockedDomains.some(d => lower.includes(d)) ||
-               this.adKeywords.some(k => lower.includes(k));
-    },
-
-    isVideoPlayer(url) {
-        if (!url || typeof url !== 'string') return false;
-        return ['vidsrc', '2embed', 'multiembed'].some(p => url.toLowerCase().includes(p));
-    }
+let bannerSeries = [];
+let currentBannerIndex = 0;
+let bannerInterval;
+let savedSeries = JSON.parse(localStorage.getItem("savedSeries")) || [];
+let currentPage = {
+    'new-series': 1,
+    'trending-series': 1,
+    'top-series': 1,
+    'upcoming-series': 1
 };
 
-// تفعيل AdBlock
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => TVPageAdBlock.init());
-} else {
-    TVPageAdBlock.init();
-}
+// TV Genres
+const TV_GENRES = [
+    { id: "", name: "الكل", icon: "fas fa-tv" },
+    { id: "10759", name: "أكشن ومغامرة", icon: "fas fa-fire" },
+    { id: "35", name: "كوميديا", icon: "fas fa-laugh" },
+    { id: "18", name: "دراما", icon: "fas fa-theater-masks" },
+    { id: "10765", name: "خيال علمي", icon: "fas fa-robot" },
+    { id: "9648", name: "غموض", icon: "fas fa-user-secret" },
+    { id: "10762", name: "أطفال", icon: "fas fa-child" },
+    { id: "10766", name: "دراما", icon: "fas fa-heart" },
+    { id: "80", name: "جريمة", icon: "fas fa-user-secret" },
+    { id: "99", name: "وثائقي", icon: "fas fa-camera" },
+    { id: "10763", name: "أخبار", icon: "fas fa-newspaper" },
+    { id: "10764", name: "واقعي", icon: "fas fa-video" },
+    { id: "10767", name: "توك شو", icon: "fas fa-microphone" },
+    { id: "10768", name: "حرب وسياسة", icon: "fas fa-flag" },
+    { id: "10751", name: "عائلي", icon: "fas fa-home" },
+    { id: "10749", name: "رومانسي", icon: "fas fa-heart" }
+];
 
 // ========================================
-// 📺 متغيرات صفحة المسلسلات (أسماء فريدة)
+// PAGE INITIALIZATION
 // ========================================
-let tvPageCurrentPage = 1;
-let tvPageCurrentGenre = "";
-let tvPageCurrentQuery = "";
-let tvPageTotalPages = 1;
-let tvPageIsLoading = false;
-let tvPageSavedMovies = JSON.parse(localStorage.getItem("savedMovies")) || [];
-let tvPageBannerShows = [];
-let tvPageCurrentBannerIndex = 0;
-let tvPageBannerInterval;
-let tvPageIsSearching = false;
 
-const tvPageGenreNames = {
-    "10759": "أكشن ومغامرة",
-    "16": "رسوم متحركة",
-    "35": "كوميديا",
-    "80": "جريمة",
-    "99": "وثائقي",
-    "18": "دراما",
-    "10751": "عائلي"
-};
-
-// ========================================
-// 🎬 تهيئة الصفحة
-// ========================================
-document.addEventListener("DOMContentLoaded", function() {
-    console.log('🎬 بدء تحميل صفحة المسلسلات');
-    tvPageInit();
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("📺 تهيئة صفحة المسلسلات...");
+    initTVPage();
 });
 
-function tvPageInit() {
-    tvPageUpdateFavoritesCount();
-    tvPageSetupEventListeners();
-    tvPageSetupScrollHeader();
-    tvPageShowProgressBar();
-    tvPageSetupAccessibility();
-    tvPageGetTVShows();
+function initTVPage() {
+    console.log("⚙️ بدء تحميل صفحة المسلسلات");
+    setupSearch();
+    updateWatchlistCounter();
+    loadAllSeries();
 }
 
 // ========================================
-// 📊 عداد المفضلة
+// SEARCH FUNCTIONALITY
 // ========================================
-function tvPageUpdateFavoritesCount() {
-    const count = tvPageSavedMovies.filter(item => item?.type === 'tv').length;
-    const el = document.getElementById("favorites-count");
-    if (el) el.textContent = count;
-}
 
-// ========================================
-// 🎯 إعداد المستمعين
-// ========================================
-function tvPageSetupEventListeners() {
-    // روابط التصنيفات
-    document.querySelectorAll(".nav a").forEach(link => {
-        link.addEventListener("click", function(e) {
-            e.preventDefault();
-            
-            // رابط الأفلام
-            if (link.classList.contains('nav-switch')) {
-                window.location.href = 'index.html';
-                return;
-            }
-            
-            tvPageChangeGenre(link);
-        });
-    });
-
-    // البحث
+function setupSearch() {
     const searchInput = document.getElementById("search");
-    if (searchInput) {
-        let searchTimeout;
-        searchInput.addEventListener("input", function(e) {
-            clearTimeout(searchTimeout);
-            if (tvPageIsSearching) return;
-            
-            const value = e.target.value.trim();
-            searchTimeout = setTimeout(() => {
-                tvPageIsSearching = true;
-                searchInput.classList.add("searching");
-                tvPageSearchTVShows(value);
-                setTimeout(() => {
-                    tvPageIsSearching = false;
-                    searchInput.classList.remove("searching");
-                }, 500);
-            }, 300);
-        });
-    }
-
-    // زر تحميل المزيد
-    const loadMoreBtn = document.getElementById("loadMore");
-    if (loadMoreBtn) {
-        loadMoreBtn.addEventListener("click", tvPageLoadMore);
-    }
-}
-
-// ========================================
-// 📂 تغيير التصنيف
-// ========================================
-function tvPageChangeGenre(link) {
-    const genreId = link.getAttribute("data-genre") || "";
+    if (!searchInput) return;
     
-    document.querySelectorAll(".nav a:not(.nav-switch)").forEach(l => {
-        l.classList.remove("active");
+    let searchTimeout;
+    
+    searchInput.addEventListener("input", (e) => {
+        clearTimeout(searchTimeout);
+        const query = e.target.value.trim();
+        
+        if (query.length < 2) {
+            loadAllSeries();
+            return;
+        }
+        
+        searchTimeout = setTimeout(() => {
+            searchSeries(query);
+        }, 500);
     });
-    link.classList.add("active");
-
-    tvPageCurrentGenre = genreId;
-    tvPageCurrentQuery = "";
-    tvPageCurrentPage = 1;
-
-    const searchInput = document.getElementById("search");
-    if (searchInput) searchInput.value = "";
-
-    tvPageResetContainer();
-    tvPageGetTVShows();
-    tvPageScrollToShows();
 }
 
-// ========================================
-// 🔍 البحث
-// ========================================
-function tvPageSearchTVShows(query) {
-    if (query.length < 2) {
-        tvPageCurrentQuery = "";
-        tvPageCurrentGenre = "";
-        tvPageCurrentPage = 1;
-        
-        document.querySelectorAll(".nav a:not(.nav-switch)").forEach(l => {
-            l.classList.remove("active");
-        });
-        
-        const allLink = document.querySelector(".nav a[data-genre='']");
-        if (allLink) allLink.classList.add("active");
-        
-        tvPageResetContainer();
-        tvPageGetTVShows();
-        return;
-    }
-
-    tvPageCurrentQuery = query;
-    tvPageCurrentGenre = "";
-    tvPageCurrentPage = 1;
-
-    document.querySelectorAll(".nav a:not(.nav-switch)").forEach(l => {
-        l.classList.remove("active");
-    });
-
-    tvPageResetContainer();
-    tvPageGetTVShows();
-}
-
-// ========================================
-// 📡 جلب المسلسلات من API
-// ========================================
-async function tvPageGetTVShows() {
-    if (tvPageIsLoading) return;
-
-    tvPageIsLoading = true;
-    tvPageShowLoading();
-
+async function searchSeries(query) {
     try {
-        let url;
-        const params = new URLSearchParams({
-            api_key: API_KEY_TV_PAGE,
-            page: tvPageCurrentPage,
-            language: "ar",
-            include_adult: "false"
-        });
-
-        if (tvPageCurrentQuery) {
-            params.append("query", tvPageCurrentQuery);
-            url = `${BASE_URL_TV_PAGE}/search/tv?${params}`;
-        } else if (tvPageCurrentGenre) {
-            params.append("with_genres", tvPageCurrentGenre);
-            params.append("sort_by", "popularity.desc");
-            url = `${BASE_URL_TV_PAGE}/discover/tv?${params}`;
-        } else {
-            url = `${BASE_URL_TV_PAGE}/tv/popular?${params}`;
-        }
-
-        console.log('📡 جلب المسلسلات من:', url);
-        const response = await fetch(url);
+        showProgress();
+        console.log(`🔍 البحث عن مسلسل: ${query}`);
         
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+        const url = `${BASE_URL}/search/tv?api_key=${API_KEY}&language=ar&query=${encodeURIComponent(query)}&page=1`;
+        const res = await fetch(url);
+        const data = await res.json();
+        
+        // إخفاء أزرار "المزيد"
+        document.querySelectorAll('.more-btn').forEach(btn => btn.style.display = 'none');
+        
+        // عرض نتائج البحث
+        displaySeries(data.results, "new-series", true);
+        
+        // تحديث العنوان
+        const titleEl = document.querySelector("#new-series").parentNode.querySelector(".section-title");
+        if (titleEl) {
+            titleEl.innerHTML = `<i class="fas fa-search"></i> نتائج البحث: "${query}"`;
         }
+        
+        console.log(`✅ وجدنا ${data.results.length} نتيجة`);
+    } catch (error) {
+        console.error("❌ خطأ في البحث:", error);
+    } finally {
+        hideProgress();
+    }
+}
 
-        const data = await response.json();
-        tvPageTotalPages = data.total_pages || 1;
+// ========================================
+// GENRE BASED LOADING
+// ========================================
 
-        console.log(`✅ تم تحميل ${data.results?.length || 0} مسلسل`);
-
-        // البانر للصفحة الأولى فقط
-        if (tvPageCurrentPage === 1 && !tvPageCurrentQuery) {
-            tvPageBannerShows = (data.results || [])
-                .filter(tv => tv.backdrop_path)
-                .slice(0, 5);
-            
-            if (tvPageBannerShows.length > 0) {
-                tvPageSetupBanner(tvPageBannerShows);
+async function loadSeriesByGenre(genreId) {
+    try {
+        showProgress();
+        console.log(`📺 تحميل مسلسلات التصنيف: ${genreId}`);
+        
+        let url;
+        
+        if (!genreId || genreId === "") {
+            url = `${BASE_URL}/tv/airing_today?api_key=${API_KEY}&language=ar&page=1`;
+        } else {
+            url = `${BASE_URL}/discover/tv?api_key=${API_KEY}&language=ar&with_genres=${genreId}&sort_by=popularity.desc&page=1`;
+        }
+        
+        const res = await fetch(url);
+        const data = await res.json();
+        
+        const container = document.getElementById("new-series");
+        const title = document.querySelector("#new-series").parentNode.querySelector(".section-title");
+        
+        // تحديث العنوان
+        if (genreId && genreId !== "") {
+            const genre = TV_GENRES.find(g => g.id === genreId);
+            const genreName = genre ? genre.name : "غير معروف";
+            title.innerHTML = `<i class="${genre?.icon || 'fas fa-tv'}"></i> مسلسلات ${genreName}`;
+        } else {
+            title.innerHTML = '<i class="fas fa-sparkles"></i> مسلسلات جديدة';
+        }
+        
+        // عرض المسلسلات
+        if (data.results.length === 0) {
+            container.innerHTML = '<div class="no-movies">لا توجد مسلسلات في هذا التصنيف</div>';
+        } else {
+            displaySeries(data.results.slice(0, 10), "new-series");
+        }
+        
+        // تحديث زر "المزيد"
+        const moreBtn = container.nextElementSibling;
+        if (moreBtn && moreBtn.classList.contains('more-btn')) {
+            if (genreId && genreId !== "") {
+                moreBtn.innerHTML = `<i class="fas fa-plus-circle"></i> المزيد من هذا التصنيف`;
+                moreBtn.onclick = () => loadMoreGenreSeries(genreId, 'new-series');
+            } else {
+                moreBtn.innerHTML = '<i class="fas fa-plus-circle"></i> المزيد من المسلسلات الجديدة';
+                moreBtn.onclick = () => loadMoreSeries('new-series', 'airing_today');
             }
         }
-
-        tvPageDisplayTVShows(data.results || []);
-        tvPageUpdateLoadMoreButton();
-
+        
+        console.log(`✅ تم تحميل ${data.results.length} مسلسل`);
     } catch (error) {
-        console.error("❌ خطأ:", error);
-        tvPageShowError("حدث خطأ في تحميل المسلسلات");
+        console.error("❌ خطأ في تحميل مسلسلات التصنيف:", error);
     } finally {
-        tvPageIsLoading = false;
-        tvPageHideLoading();
-        tvPageHideProgressBar();
+        hideProgress();
+    }
+}
+
+async function loadMoreGenreSeries(genreId, containerId) {
+    try {
+        showProgress();
+        
+        currentPage[containerId] = (currentPage[containerId] || 0) + 1;
+        const page = currentPage[containerId];
+        
+        const url = `${BASE_URL}/discover/tv?api_key=${API_KEY}&language=ar&with_genres=${genreId}&sort_by=popularity.desc&page=${page}`;
+        const res = await fetch(url);
+        const data = await res.json();
+        
+        if (data.results.length > 0) {
+            displayMoreSeries(data.results, containerId);
+            console.log(`✅ تم تحميل ${data.results.length} مسلسل إضافي`);
+        } else {
+            const btn = document.querySelector(`#${containerId} + .more-btn`);
+            if (btn) {
+                btn.innerHTML = '<i class="fas fa-check"></i> لا توجد مسلسلات أكثر';
+                btn.disabled = true;
+            }
+        }
+    } catch (error) {
+        console.error("❌ خطأ في تحميل المزيد:", error);
+    } finally {
+        hideProgress();
     }
 }
 
 // ========================================
-// 📺 عرض المسلسلات
+// LOAD ALL SECTIONS
 // ========================================
-function tvPageDisplayTVShows(tvShows) {
-    const container = document.getElementById("movies-container");
-    if (!container) return;
 
-    if (!tvShows || tvShows.length === 0) {
-        if (tvPageCurrentPage === 1) {
-            container.innerHTML = `
-                <div class="no-results">
-                    <i class="fas fa-tv" style="font-size: 80px; color: #e74c3c;"></i>
-                    <p>لم يتم العثور على مسلسلات</p>
+async function loadAllSeries() {
+    try {
+        showProgress();
+        console.log("📺 بدء تحميل جميع أقسام المسلسلات...");
+        
+        await Promise.all([
+            loadBannerSeries(),
+            loadNewSeries(),
+            loadTrendingSeries(),
+            loadTopRatedSeries(),
+            loadUpcomingSeries()
+        ]);
+        
+        console.log("✅ تم تحميل جميع الأقسام بنجاح");
+    } catch (error) {
+        console.error("❌ خطأ في تحميل الأقسام:", error);
+    } finally {
+        hideProgress();
+    }
+}
+
+// ========================================
+// BANNER SECTION
+// ========================================
+
+async function loadBannerSeries() {
+    try {
+        console.log("🎬 تحميل بانر المسلسلات...");
+        
+        const url = `${BASE_URL}/tv/popular?api_key=${API_KEY}&language=ar&page=1`;
+        const res = await fetch(url);
+        const data = await res.json();
+        
+        bannerSeries = data.results.filter(s => s.backdrop_path).slice(0, 5);
+        setupBannerSeries(bannerSeries);
+        
+        console.log(`✅ تم تحميل ${bannerSeries.length} مسلسل للبانر`);
+    } catch (error) {
+        console.error("❌ خطأ في تحميل البانر:", error);
+    }
+}
+function setupBannerSeries(series) {
+    const container = document.getElementById("banner-container");
+    const indicators = document.getElementById("banner-indicators");
+    
+    if (!container || !indicators) return;
+    
+    // تفريغ الحاويات أولاً
+    container.innerHTML = "";
+    indicators.innerHTML = "";
+    
+    // التأكد من وجود مسلسلات
+    if (!series || series.length === 0) {
+        console.error("❌ لا توجد مسلسلات لعرضها في البانر");
+        // عرض صورة افتراضية
+        container.innerHTML = `
+            <div class="banner-card active">
+                <img src="https://via.placeholder.com/1280x500/333/fff?text=No+Banner+Available" alt="لا توجد صور">
+                <div class="banner-overlay">
+                    <h2>لا توجد مسلسلات حالياً</h2>
+                    <p>جاري تحميل المسلسلات، يرجى الانتظار...</p>
                 </div>
-            `;
-        }
+            </div>
+        `;
         return;
     }
-
-    const fragment = document.createDocumentFragment();
-    tvShows.forEach(tv => {
-        if (tv?.id) fragment.appendChild(tvPageCreateCard(tv));
-    });
-    container.appendChild(fragment);
-}
-
-// ========================================
-// 🎴 إنشاء كرت مسلسل
-// ========================================
-function tvPageCreateCard(tv) {
-    const card = document.createElement("div");
-    card.className = "movie-card fade-in";
-    card.setAttribute("data-id", tv.id);
     
-    card.addEventListener('click', function(e) {
-        if (!e.target.closest('.play-btn-sm, .save-btn-sm')) {
-            tvPageWatchShow(tv.id);
-        }
-    });
-
-    const isSaved = tvPageSavedMovies.some(m => m?.id === tv.id && m.type === 'tv');
-    const posterUrl = tv.poster_path ? 
-        IMAGE_BASE_URL_500_TV_PAGE + tv.poster_path : 
-        "https://via.placeholder.com/300x450";
-    
-    const title = tv.name || "بدون عنوان";
-    const overview = tv.overview ? 
-        tv.overview.substring(0, 120) + "..." : 
-        "لا يوجد وصف";
-    
-    const rating = tv.vote_average?.toFixed(1) || "N/A";
-    const year = tv.first_air_date?.split('-')[0] || "";
-
-    card.innerHTML = `
-        <img src="${posterUrl}" alt="${title}" loading="lazy">
-        <div class="movie-overlay">
-            <div class="movie-header">
-                <h3>${title}</h3>
-                <div style="display: flex; gap: 10px;">
-                    ${year ? `<span style="color: #999;">${year}</span>` : ''}
-                    <span class="movie-rating">
-                        <i class="fas fa-star"></i> ${rating}
-                    </span>
-                </div>
-            </div>
-            <p class="movie-description">${overview}</p>
-            <div class="movie-actions">
-                <button class="play-btn-sm" onclick="tvPageWatchShow(${tv.id}, event)">
-                    <i class="fas fa-play"></i> مشاهدة
-                </button>
-                <button class="save-btn-sm ${isSaved ? 'saved' : ''}" 
-                        onclick="tvPageToggleSave(${tv.id}, '${title.replace(/'/g, "\\'")}', '${tv.poster_path || ''}', ${tv.vote_average || 0}, event)">
-                    <i class="${isSaved ? 'fas' : 'far'} fa-heart"></i>
-                    ${isSaved ? 'محفوظ' : 'حفظ'}
-                </button>
-            </div>
-        </div>
-    `;
-
-    return card;
-}
-
-// ========================================
-// ▶️ مشاهدة المسلسل
-// ========================================
-function tvPageWatchShow(id, event = null) {
-    if (event) {
-        event.stopPropagation();
-        event.preventDefault();
-    }
-    
-    tvPageShowProgressBar();
-    setTimeout(() => {
-        window.location.href = `watch-tv.html?id=${id}`;
-    }, 300);
-}
-
-// ========================================
-// ❤️ حفظ/إلغاء حفظ
-// ========================================
-function tvPageToggleSave(id, title, posterPath, rating, event = null) {
-    if (event) {
-        event.stopPropagation();
-        event.preventDefault();
-    }
-
-    const tvShow = {
-        id, 
-        title, 
-        poster_path: posterPath, 
-        vote_average: rating,
-        type: 'tv', 
-        savedAt: new Date().toISOString()
-    };
-
-    const index = tvPageSavedMovies.findIndex(m => m?.id === id);
-    const btn = event?.currentTarget;
-
-    if (index === -1) {
-        tvPageSavedMovies.push(tvShow);
-        if (btn) {
-            btn.innerHTML = '<i class="fas fa-heart"></i> محفوظ';
-            btn.classList.add("saved");
-        }
-        tvPageShowNotification(`✅ تم حفظ "${title}"`);
-    } else {
-        tvPageSavedMovies.splice(index, 1);
-        if (btn) {
-            btn.innerHTML = '<i class="far fa-heart"></i> حفظ';
-            btn.classList.remove("saved");
-        }
-        tvPageShowNotification(`❌ تم إزالة "${title}"`);
-    }
-
-    localStorage.setItem("savedMovies", JSON.stringify(tvPageSavedMovies));
-    tvPageUpdateFavoritesCount();
-}
-
-// ========================================
-// 🎨 البانر
-// ========================================
-function tvPageSetupBanner(tvShows) {
-    const bannerContainer = document.getElementById("banner-container");
-    const indicatorsContainer = document.getElementById("banner-indicators");
-
-    if (!bannerContainer || !tvShows?.length) return;
-
-    bannerContainer.innerHTML = "";
-    if (indicatorsContainer) indicatorsContainer.innerHTML = "";
-
-    tvShows.forEach((tv, index) => {
-        if (!tv.backdrop_path) return;
-
-        const isSaved = tvPageSavedMovies.some(m => m?.id === tv.id && m.type === 'tv');
-        const title = tv.name || "بدون عنوان";
-        const overview = tv.overview?.substring(0, 200) + "..." || "لا يوجد وصف";
-
+    series.forEach((show, index) => {
         const card = document.createElement("div");
         card.className = `banner-card ${index === 0 ? "active" : ""}`;
+        
+        const isSaved = savedSeries.some(s => s.id === show.id);
+        const backdropUrl = show.backdrop_path ? IMG_URL + show.backdrop_path : 
+                          "https://via.placeholder.com/1280x500/333/fff?text=No+Image";
+        const title = show.name || "بدون عنوان";
+        const overview = show.overview ? show.overview.substring(0, 200) + "..." : "لا يوجد وصف";
+        
+        // تنظيف النص من علامات التنصيص
+        const cleanTitle = title.replace(/'/g, "\\'").replace(/"/g, '\\"');
+        const cleanPosterPath = (show.poster_path || "").replace(/'/g, "\\'");
+        
         card.innerHTML = `
-            <img src="${IMAGE_BASE_URL_TV_PAGE + tv.backdrop_path}" alt="${title}">
+            <img src="${backdropUrl}" alt="${title}" loading="lazy" class="banner-img">
             <div class="banner-overlay">
                 <h2>${title}</h2>
                 <p>${overview}</p>
                 <div class="banner-actions">
-                    <button class="banner-play-btn" onclick="tvPageWatchShow(${tv.id}, event)">
+                    <button class="banner-play-btn" onclick="playSeries(${show.id})">
                         <i class="fas fa-play"></i> مشاهدة الآن
                     </button>
                     <button class="banner-save-btn ${isSaved ? 'saved' : ''}" 
-                            onclick="tvPageToggleSave(${tv.id}, '${title.replace(/'/g, "\\'")}', '${tv.backdrop_path}', ${tv.vote_average || 0}, event)">
-                        <i class="${isSaved ? 'fas' : 'far'} fa-heart"></i>
-                        ${isSaved ? 'محفوظ' : 'حفظ'}
+                            onclick="toggleSaveSeries(${show.id}, '${cleanTitle}', '${cleanPosterPath}', ${show.vote_average || 0}, this)">
+                        <i class="${isSaved ? 'fas' : 'far'} fa-heart"></i> ${isSaved ? 'محفوظ' : 'حفظ'}
                     </button>
                 </div>
             </div>
         `;
-        bannerContainer.appendChild(card);
-
-        if (indicatorsContainer) {
-            const indicator = document.createElement("button");
-            indicator.className = `indicator ${index === 0 ? "active" : ""}`;
-            indicator.onclick = () => tvPageChangeBannerSlide(index);
-            indicatorsContainer.appendChild(indicator);
-        }
+        
+        container.appendChild(card);
+        
+        const indicator = document.createElement("button");
+        indicator.className = `indicator ${index === 0 ? "active" : ""}`;
+        indicator.setAttribute("aria-label", `الشريحة ${index + 1}`);
+        indicator.onclick = () => changeBannerSlide(index);
+        indicators.appendChild(indicator);
     });
-
-    tvPageSetupBannerControls();
-    tvPageStartBannerAutoPlay();
+    
+    // إعداد عناصر التحكم
+    setupBannerControls();
+    
+    // بدء التشغيل التلقائي
+    startBannerAutoPlay();
+    
+    console.log(`✅ تم إعداد ${series.length} بانر`);
 }
-
-function tvPageSetupBannerControls() {
+function setupBannerControls() {
     const prevBtn = document.querySelector(".prev-btn");
     const nextBtn = document.querySelector(".next-btn");
-
+    
     if (prevBtn) {
-        prevBtn.onclick = e => {
-            e.stopPropagation();
-            tvPageChangeBannerSlide(tvPageCurrentBannerIndex - 1);
-        };
+        prevBtn.onclick = () => changeBannerSlide(currentBannerIndex - 1);
     }
     
     if (nextBtn) {
-        nextBtn.onclick = e => {
-            e.stopPropagation();
-            tvPageChangeBannerSlide(tvPageCurrentBannerIndex + 1);
-        };
+        nextBtn.onclick = () => changeBannerSlide(currentBannerIndex + 1);
     }
+    
+    console.log("🎮 تم إعداد عناصر تحكم البانر");
 }
-
-function tvPageChangeBannerSlide(index) {
+function changeBannerSlide(index) {
     const slides = document.querySelectorAll(".banner-card");
     const indicators = document.querySelectorAll(".indicator");
-
-    if (!slides.length) return;
-
+    
+    if (slides.length === 0) return;
+    
     if (index < 0) index = slides.length - 1;
     if (index >= slides.length) index = 0;
-
-    slides[tvPageCurrentBannerIndex].classList.remove("active");
-    indicators[tvPageCurrentBannerIndex]?.classList.remove("active");
-
+    
+    // إزالة النشط من الشريحة الحالية
+    slides[currentBannerIndex].classList.remove("active");
+    slides[currentBannerIndex].classList.add("fading-out");
+    
+    // إزالة النشط من المؤشر الحالي
+    indicators[currentBannerIndex].classList.remove("active");
+    
+    // إضافة النشط للشريحة الجديدة
+    slides[index].classList.remove("fading-out");
     slides[index].classList.add("active");
-    indicators[index]?.classList.add("active");
-
-    tvPageCurrentBannerIndex = index;
-    tvPageRestartBannerAutoPlay();
+    
+    // إضافة النشط للمؤشر الجديد
+    indicators[index].classList.add("active");
+    
+    currentBannerIndex = index;
+    restartBannerAutoPlay();
+    
+    console.log(`🔄 تغيير البانر إلى الشريحة: ${index + 1}`);
 }
 
-function tvPageStartBannerAutoPlay() {
-    if (tvPageBannerInterval) clearInterval(tvPageBannerInterval);
-    
-    if (tvPageBannerShows.length > 1) {
-        tvPageBannerInterval = setInterval(() => {
-            tvPageChangeBannerSlide(tvPageCurrentBannerIndex + 1);
+function startBannerAutoPlay() {
+    if (bannerInterval) clearInterval(bannerInterval);
+    if (bannerSeries.length > 1) {
+        bannerInterval = setInterval(() => {
+            changeBannerSlide(currentBannerIndex + 1);
         }, 6000);
     }
 }
 
-function tvPageRestartBannerAutoPlay() {
-    if (tvPageBannerInterval) clearInterval(tvPageBannerInterval);
-    tvPageStartBannerAutoPlay();
+function restartBannerAutoPlay() {
+    if (bannerInterval) clearInterval(bannerInterval);
+    startBannerAutoPlay();
 }
 
 // ========================================
-// 📥 تحميل المزيد
+// LOAD TV SERIES SECTIONS
 // ========================================
-function tvPageLoadMore() {
-    if (tvPageIsLoading || tvPageCurrentPage >= tvPageTotalPages) return;
+
+async function loadNewSeries() {
+    try {
+        console.log("📺 تحميل مسلسلات جديدة...");
+        
+        currentPage['new-series'] = 1;
+        const url = `${BASE_URL}/tv/airing_today?api_key=${API_KEY}&language=ar&page=1`;
+        const res = await fetch(url);
+        const data = await res.json();
+        displaySeries(data.results.slice(0, 10), "new-series");
+        
+        console.log(`✅ تم تحميل ${Math.min(10, data.results.length)} مسلسل جديد`);
+    } catch (error) {
+        console.error("❌ خطأ في تحميل المسلسلات الجديدة:", error);
+    }
+}
+
+async function loadTrendingSeries() {
+    try {
+        console.log("🔥 تحميل المسلسلات الشائعة...");
+        
+        currentPage['trending-series'] = 1;
+        const url = `${BASE_URL}/trending/tv/week?api_key=${API_KEY}&language=ar`;
+        const res = await fetch(url);
+        const data = await res.json();
+        displaySeries(data.results.slice(0, 10), "trending-series");
+        
+        console.log(`✅ تم تحميل ${Math.min(10, data.results.length)} مسلسل شائع`);
+    } catch (error) {
+        console.error("❌ خطأ في تحميل المسلسلات الشائعة:", error);
+    }
+}
+
+async function loadTopRatedSeries() {
+    try {
+        console.log("⭐ تحميل أعلى التقييمات...");
+        
+        currentPage['top-series'] = 1;
+        const url = `${BASE_URL}/tv/top_rated?api_key=${API_KEY}&language=ar&page=1`;
+        const res = await fetch(url);
+        const data = await res.json();
+        displaySeries(data.results.slice(0, 10), "top-series");
+        
+        console.log(`✅ تم تحميل ${Math.min(10, data.results.length)} مسلسل من أعلى التقييمات`);
+    } catch (error) {
+        console.error("❌ خطأ في تحميل أعلى التقييمات:", error);
+    }
+}
+
+async function loadUpcomingSeries() {
+    try {
+        console.log("📅 تحميل المسلسلات القادمة...");
+        
+        currentPage['upcoming-series'] = 1;
+        const url = `${BASE_URL}/tv/on_the_air?api_key=${API_KEY}&language=ar&page=1`;
+        const res = await fetch(url);
+        const data = await res.json();
+        displaySeries(data.results.slice(0, 10), "upcoming-series");
+        
+        console.log(`✅ تم تحميل ${Math.min(10, data.results.length)} مسلسل قادم`);
+    } catch (error) {
+        console.error("❌ خطأ في تحميل المسلسلات القادمة:", error);
+    }
+}
+
+// ========================================
+// LOAD MORE SERIES
+// ========================================
+
+async function loadMoreSeries(containerId, type) {
+    try {
+        showProgress();
+        
+        currentPage[containerId]++;
+        const page = currentPage[containerId];
+        
+        let url;
+        
+        switch(type) {
+            case 'airing_today':
+                url = `${BASE_URL}/tv/airing_today?api_key=${API_KEY}&language=ar&page=${page}`;
+                break;
+            case 'trending':
+                url = `${BASE_URL}/trending/tv/week?api_key=${API_KEY}&language=ar&page=${page}`;
+                break;
+            case 'top_rated':
+                url = `${BASE_URL}/tv/top_rated?api_key=${API_KEY}&language=ar&page=${page}`;
+                break;
+            case 'on_the_air':
+                url = `${BASE_URL}/tv/on_the_air?api_key=${API_KEY}&language=ar&page=${page}`;
+                break;
+            default:
+                url = `${BASE_URL}/tv/popular?api_key=${API_KEY}&language=ar&page=${page}`;
+        }
+        
+        const res = await fetch(url);
+        const data = await res.json();
+        
+        if (data.results.length > 0) {
+            displayMoreSeries(data.results, containerId);
+            console.log(`✅ تم تحميل ${data.results.length} مسلسل إضافي`);
+        } else {
+            const btn = document.querySelector(`#${containerId} + .more-btn`);
+            if (btn) {
+                btn.innerHTML = '<i class="fas fa-check"></i> لا توجد مسلسلات أكثر';
+                btn.disabled = true;
+            }
+        }
+    } catch (error) {
+        console.error("❌ خطأ في تحميل المزيد:", error);
+    } finally {
+        hideProgress();
+    }
+}
+
+// ========================================
+// DISPLAY SERIES
+// ========================================
+
+function displaySeries(series, containerId, isSearch = false) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
     
-    tvPageCurrentPage++;
-    tvPageGetTVShows();
-
-    const btn = document.getElementById("loadMore");
-    if (btn) {
-        btn.disabled = true;
-        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري التحميل...';
+    if (isSearch || currentPage[containerId] === 1) {
+        container.innerHTML = "";
     }
-}
-
-function tvPageUpdateLoadMoreButton() {
-    const btn = document.getElementById("loadMore");
-    if (!btn) return;
-
-    if (tvPageCurrentPage >= tvPageTotalPages) {
-        btn.style.display = "none";
-    } else {
-        btn.style.display = "inline-flex";
-        btn.disabled = false;
-        btn.innerHTML = '<i class="fas fa-plus-circle"></i> تحميل المزيد';
-    }
-}
-
-// ========================================
-// 🎨 واجهة المستخدم - أدوات
-// ========================================
-function tvPageShowLoading() {
-    const container = document.getElementById("movies-container");
-    if (tvPageCurrentPage === 1 && container && !container.children.length) {
-        container.innerHTML = '<div class="loading"><p>جاري التحميل...</p></div>';
-    }
-}
-
-function tvPageHideLoading() {
-    const container = document.getElementById("movies-container");
-    container?.querySelector(".loading")?.remove();
-}
-
-function tvPageResetContainer() {
-    const container = document.getElementById("movies-container");
-    if (container) container.innerHTML = "";
-}
-
-function tvPageScrollToShows() {
-    const section = document.querySelector(".movies-section");
-    if (section) {
-        window.scrollTo({ 
-            top: section.offsetTop - 100, 
-            behavior: "smooth" 
-        });
-    }
-}
-
-function tvPageSetupScrollHeader() {
-    const header = document.getElementById("site-header");
-    if (!header) return;
     
-    window.addEventListener("scroll", () => {
-        header.classList.toggle("scrolled", window.scrollY > 100);
+    if (!series || series.length === 0) {
+        container.innerHTML = '<div class="no-movies">لا توجد مسلسلات</div>';
+        return;
+    }
+    
+    series.forEach(show => {
+        const card = createSeriesCard(show);
+        container.appendChild(card);
     });
 }
 
-function tvPageShowNotification(message) {
-    document.querySelector(".notification")?.remove();
-
-    const notif = document.createElement("div");
-    notif.className = "notification show";
-    notif.textContent = message;
-    notif.style.cssText = `
-        position: fixed; top: 20px; right: 20px;
-        background: rgba(231, 76, 60, 0.95);
-        color: white; padding: 15px 30px;
-        border-radius: 8px; z-index: 10000;
-    `;
-
-    document.body.appendChild(notif);
+function displayMoreSeries(series, containerId) {
+    const container = document.getElementById(containerId);
+    if (!container || !series || series.length === 0) return;
     
-    setTimeout(() => {
-        notif.style.animation = "slideOut 0.3s ease";
-        setTimeout(() => notif.remove(), 300);
-    }, 3000);
+    const seriesToAdd = series.slice(0, 10);
+    seriesToAdd.forEach(show => {
+        const card = createSeriesCard(show);
+        container.appendChild(card);
+    });
 }
 
-function tvPageShowError(message) {
-    const container = document.getElementById("movies-container");
-    if (container && tvPageCurrentPage === 1) {
-        container.innerHTML = `
-            <div class="loading">
-                <i class="fas fa-exclamation-triangle" style="font-size: 60px; color: #e74c3c;"></i>
-                <p style="color: #e74c3c;">${message}</p>
-                <button onclick="location.reload()" 
-                        style="background: #e74c3c; color: white; border: none; 
-                               padding: 12px 30px; border-radius: 8px; cursor: pointer;">
-                    إعادة المحاولة
+function createSeriesCard(show) {
+    const card = document.createElement("div");
+    card.className = "series-card";
+    
+    const isSaved = savedSeries.some(s => s.id === show.id);
+    const posterUrl = show.poster_path ? IMG_500 + show.poster_path : "https://via.placeholder.com/300x450";
+    const title = show.name || "بدون عنوان";
+    const overview = show.overview ? show.overview.substring(0, 120) + "..." : "لا يوجد وصف";
+    const rating = show.vote_average ? show.vote_average.toFixed(1) : "N/A";
+    const seasons = show.seasons ? show.seasons.length : 0;
+    
+    card.innerHTML = `
+        <img src="${posterUrl}" alt="${title}" loading="lazy">
+        ${seasons > 0 ? `<span class="season-badge">${seasons} ${seasons === 1 ? 'موسم' : 'مواسم'}</span>` : ''}
+        <div class="series-overlay">
+            <div class="series-header">
+                <h3>${title}</h3>
+                <span class="series-rating">
+                    <i class="fas fa-star"></i> ${rating}
+                </span>
+            </div>
+            <p class="series-description">${overview}</p>
+            <div class="series-actions">
+                <button class="series-play-btn" onclick="playSeries(${show.id})">
+                    <i class="fas fa-play"></i> مشاهدة
+                </button>
+                <button class="series-save-btn ${isSaved ? 'saved' : ''}" 
+                        onclick="toggleSaveSeries(${show.id}, '${title}', '${show.poster_path}', ${show.vote_average}, this)">
+                    <i class="${isSaved ? 'fas' : 'far'} fa-heart"></i> ${isSaved ? 'محفوظ' : 'حفظ'}
                 </button>
             </div>
+        </div>
+    `;
+    
+    return card;
+}
+
+// ========================================
+// WATCHLIST FUNCTIONS FOR SERIES
+// ========================================
+
+function showWatchlist() {
+    const newSeriesContainer = document.getElementById("new-series");
+    const title = document.querySelector("#new-series").parentNode.querySelector(".section-title");
+    
+    if (savedSeries.length === 0) {
+        newSeriesContainer.innerHTML = `
+            <div class="no-movies">
+                <i class="fas fa-bookmark" style="font-size: 40px; color: #666; margin-bottom: 15px;"></i>
+                <h3>القائمة المحفوظة فارغة</h3>
+                <p>احفظ مسلسلاتك المفضلة لتشاهدها لاحقاً</p>
+            </div>
         `;
+        title.innerHTML = '<i class="fas fa-bookmark"></i> المحفوظات';
+        return;
+    }
+    
+    title.innerHTML = '<i class="fas fa-bookmark"></i> المحفوظات';
+    displaySeries(savedSeries, "new-series");
+    
+    // إخفاء أزرار "المزيد"
+    document.querySelectorAll('.more-btn').forEach(btn => {
+        if (!btn.textContent.includes('عودة')) {
+            btn.style.display = 'none';
+        }
+    });
+    
+    // إضافة زر العودة
+    const moreBtn = newSeriesContainer.nextElementSibling;
+    if (moreBtn && moreBtn.classList.contains('more-btn')) {
+        moreBtn.innerHTML = '<i class="fas fa-arrow-left"></i> العودة للمسلسلات الجديدة';
+        moreBtn.onclick = () => {
+            loadNewSeries();
+            title.innerHTML = '<i class="fas fa-sparkles"></i> مسلسلات جديدة';
+            
+            document.querySelectorAll('.more-btn').forEach(btn => {
+                btn.style.display = 'block';
+                if (btn === moreBtn) {
+                    btn.innerHTML = '<i class="fas fa-plus-circle"></i> المزيد من المسلسلات الجديدة';
+                    btn.onclick = () => loadMoreSeries('new-series', 'airing_today');
+                }
+            });
+        };
     }
 }
 
-function tvPageShowProgressBar() {
+function updateWatchlistCounter() {
+    const watchlistCount = document.getElementById("watchlistCount");
+    if (watchlistCount) {
+        if (savedSeries.length > 0) {
+            watchlistCount.textContent = savedSeries.length;
+            watchlistCount.classList.add("show");
+        } else {
+            watchlistCount.classList.remove("show");
+        }
+    }
+}
+
+function toggleSaveSeries(id, title, posterPath, rating, btn) {
+    const series = { id, name: title, poster_path: posterPath, vote_average: rating };
+    const index = savedSeries.findIndex(s => s.id === id);
+    
+    if (index === -1) {
+        savedSeries.push(series);
+        btn.innerHTML = '<i class="fas fa-heart"></i> محفوظ';
+        btn.classList.add("saved");
+        console.log(`❤️ تم حفظ المسلسل: ${title}`);
+    } else {
+        savedSeries.splice(index, 1);
+        btn.innerHTML = '<i class="far fa-heart"></i> حفظ';
+        btn.classList.remove("saved");
+        console.log(`💔 تم حذف المسلسل من المحفوظات: ${title}`);
+    }
+    
+    localStorage.setItem("savedSeries", JSON.stringify(savedSeries));
+    updateWatchlistCounter();
+}
+
+// ========================================
+// PLAYER
+// ========================================
+
+function playSeries(id) {
+    showProgress();
+    setTimeout(() => {
+        window.location.href = "watch-tv.html?id=" + id;
+    }, 300);
+}
+
+// ========================================
+// PROGRESS BAR
+// ========================================
+
+function showProgress() {
     const bar = document.getElementById("progress-bar");
     if (bar) {
         bar.style.display = "block";
@@ -672,36 +668,55 @@ function tvPageShowProgressBar() {
     }
 }
 
-function tvPageHideProgressBar() {
+function hideProgress() {
     const bar = document.getElementById("progress-bar");
     if (bar) {
         bar.style.transform = "scaleX(1)";
-        setTimeout(() => bar.style.display = "none", 300);
+        setTimeout(() => {
+            bar.style.display = "none";
+        }, 300);
     }
 }
 
-function tvPageSetupAccessibility() {
-    document.addEventListener("keydown", e => {
-        if (e.ctrlKey && e.key === "f") {
-            e.preventDefault();
-            document.getElementById("search")?.focus();
-        }
-        
-        if (e.key === "Escape") {
-            const searchInput = document.getElementById("search");
-            if (searchInput?.value) {
-                searchInput.value = "";
-                tvPageSearchTVShows("");
-            }
-        }
+// ========================================
+// PAGE VISIBILITY
+// ========================================
+
+document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+        if (bannerInterval) clearInterval(bannerInterval);
+    } else {
+        restartBannerAutoPlay();
+    }
+});
+
+// ========================================
+// GLOBAL FUNCTIONS
+// ========================================
+
+window.playSeries = playSeries;
+window.toggleSaveSeries = toggleSaveSeries;
+window.changeBannerSlide = changeBannerSlide;
+window.loadMoreSeries = loadMoreSeries;
+window.loadMoreGenreSeries = loadMoreGenreSeries;
+window.showWatchlist = showWatchlist;
+window.loadSeriesByGenre = loadSeriesByGenre;
+window.loadAllSeries = loadAllSeries;
+// اختبار البانر بعد تحميل الصفحة
+window.addEventListener('load', function() {
+    console.log("📋 اختبار البانر...");
+    
+    // اختبار إذا كان البانر موجود
+    const bannerCards = document.querySelectorAll('.banner-card');
+    console.log(`عدد بطاقات البانر: ${bannerCards.length}`);
+    
+    // اختبار إذا كانت هناك بطاقة نشطة
+    const activeCard = document.querySelector('.banner-card.active');
+    console.log(`البطاقة النشطة: ${activeCard ? 'موجودة' : 'غير موجودة'}`);
+    
+    // اختبار الصور
+    bannerCards.forEach((card, index) => {
+        const img = card.querySelector('img');
+        console.log(`البطاقة ${index + 1}: ${img ? 'لها صورة' : 'بدون صورة'}`);
     });
-}
-
-// ========================================
-// 🌍 تصدير الدوال للـ HTML
-// ========================================
-window.tvPageWatchShow = tvPageWatchShow;
-window.tvPageToggleSave = tvPageToggleSave;
-window.tvPageChangeBannerSlide = tvPageChangeBannerSlide;
-
-console.log('✅ تم تحميل tv.js بنجاح');
+});
