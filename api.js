@@ -239,8 +239,8 @@ function setupBanner(movies) {
     // إذا لم توجد أفلام
     if (!movies || movies.length === 0) {
         container.innerHTML = `
-            <div class="banner-card active" style="opacity: 1; z-index: 2;">
-                <img src="https://via.placeholder.com/1280x500/222/fff?text=لا+توجد+أفلام" alt="لا توجد أفلام">
+            <div class="banner-card active">
+                <img src="https://via.placeholder.com/1280x500/222/fff?text=لا+توجد+أفلام" alt="لا توجد أفلام" loading="lazy">
                 <div class="banner-overlay">
                     <h2>لا توجد أفلام متاحة</h2>
                     <p>يرجى المحاولة لاحقاً</p>
@@ -255,37 +255,32 @@ function setupBanner(movies) {
         const card = document.createElement("div");
         card.className = `banner-card ${index === 0 ? "active" : ""}`;
         
-        // تطبيق الـ CSS مباشرة
-        card.style.position = 'absolute';
-        card.style.top = '0';
-        card.style.left = '0';
-        card.style.width = '100%';
-        card.style.height = '100%';
-        card.style.opacity = index === 0 ? '1' : '0';
-        card.style.zIndex = index === 0 ? '2' : '1';
-        card.style.transition = 'opacity 0.5s ease';
-        
         const isSaved = savedMovies.some(m => m.id === movie.id);
         const backdropUrl = movie.backdrop_path ? IMG_URL + movie.backdrop_path : 
                           "https://via.placeholder.com/1280x500/333/fff?text=No+Image";
         const title = movie.title || "بدون عنوان";
-        const overview = movie.overview ? movie.overview.substring(0, 200) + "..." : "لا يوجد وصف";
         
-        // تنظيف النص
-        const cleanTitle = title.replace(/'/g, "\\'").replace(/"/g, '\\"');
-        const cleanPosterPath = (movie.poster_path || "").replace(/'/g, "\\'");
+        // وصف قصير جداً للهاتف
+        let overview;
+        if (window.innerWidth <= 480) {
+            overview = movie.overview ? movie.overview.substring(0, 60) + "..." : "لا يوجد وصف";
+        } else if (window.innerWidth <= 768) {
+            overview = movie.overview ? movie.overview.substring(0, 100) + "..." : "لا يوجد وصف";
+        } else {
+            overview = movie.overview ? movie.overview.substring(0, 200) + "..." : "لا يوجد وصف";
+        }
         
         card.innerHTML = `
-            <img src="${backdropUrl}" alt="${title}" style="width:100%;height:100%;object-fit:cover;">
+            <img src="${backdropUrl}" alt="${title}" loading="lazy">
             <div class="banner-overlay">
                 <h2>${title}</h2>
                 <p>${overview}</p>
                 <div class="banner-actions">
                     <button class="banner-play-btn" onclick="playMovie(${movie.id})">
-                        <i class="fas fa-play"></i> مشاهدة الآن
+                        <i class="fas fa-play"></i> مشاهدة
                     </button>
                     <button class="banner-save-btn ${isSaved ? 'saved' : ''}" 
-                            onclick="toggleSave(${movie.id}, '${cleanTitle}', '${cleanPosterPath}', ${movie.vote_average || 0}, this)">
+                            onclick="toggleSave(${movie.id}, '${title.replace(/'/g, "\\'")}', '${movie.poster_path || ''}', ${movie.vote_average || 0}, this)">
                         <i class="${isSaved ? 'fas' : 'far'} fa-heart"></i> ${isSaved ? 'محفوظ' : 'حفظ'}
                     </button>
                 </div>
@@ -300,6 +295,29 @@ function setupBanner(movies) {
         indicator.onclick = () => changeBannerSlide(index);
         indicators.appendChild(indicator);
     });
+    
+    // تطبيق CSS مباشرة بعد إضافة البطاقات
+    setTimeout(() => {
+        const cards = document.querySelectorAll('.banner-card');
+        cards.forEach((card, index) => {
+            card.style.position = 'absolute';
+            card.style.top = '0';
+            card.style.left = '0';
+            card.style.width = '100%';
+            card.style.height = '100%';
+            card.style.opacity = index === 0 ? '1' : '0';
+            card.style.zIndex = index === 0 ? '2' : '1';
+            card.style.transition = 'opacity 0.5s ease';
+            
+            // تأكد من أن الصور تملأ الحاوية
+            const img = card.querySelector('img');
+            if (img) {
+                img.style.width = '100%';
+                img.style.height = '100%';
+                img.style.objectFit = 'cover';
+            }
+        });
+    }, 100);
     
     // إعداد التحكم
     setupBannerControls();
