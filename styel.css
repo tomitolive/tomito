@@ -245,12 +245,10 @@ body {
 .nav-backdrop.active {
     display: block;
 }
-
-/* ===== SEARCH CONTAINER ===== */
 .search-container {
-    max-width: 800px;
-    margin: 140px auto 20px;
-    padding: 0 20px;
+    display: block;
+    width: 100%;
+    padding: 10px;
 }
 
 .search-container input {
@@ -1650,4 +1648,10 @@ body[class*="tv-"] .genre-nav a[href="tv.html"]:not(.nav-switch)::before {
         height: 250px;
         margin: 0 auto 20px;
     }
+}.search-container {
+    position: relative;
+    z-index: 1005; /* أعلى من الهيدر */
+    max-width: 800px;
+    margin: 200px auto 40px;
+    padding: 0 20px;
 }
