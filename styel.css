@@ -1650,4 +1650,93 @@ body[class*="tv-"] .genre-nav a[href="tv.html"]:not(.nav-switch)::before {
         height: 250px;
         margin: 0 auto 20px;
     }
+}/* ===== FIXED HEADER + GENRE STRIP + SEARCH ===== */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px; /* ارتفاع الهيدر */
+    background: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 1000;
+    border-bottom: 2px solid #E50914;
+}
+
+/* شريط التصنيفات فوق المحتوى */
+.genre-strip {
+    position: fixed;
+    top: 60px; /* تحت الهيدر مباشرة */
+    left: 0;
+    right: 0;
+    height: 50px; /* ارتفاع الشريط */
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    overflow-x: auto;
+    background: linear-gradient(90deg, #141414 0%, #1a1a1a 100%);
+    border-bottom: 1px solid #222;
+    z-index: 1001;
+    scrollbar-width: none;
+}
+
+.genre-strip::-webkit-scrollbar {
+    display: none;
+}
+
+/* البحث تحت الهيدر + شريط التصنيفات بمسافة */
+.search-container {
+    position: relative;
+    z-index: 1002; /* فوق كلشي */
+    max-width: 800px;
+    margin: 130px auto 40px; /* ارتفاع الهيدر + شريط التصنيفات + مسافة إضافية */
+    padding: 0 20px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 15px 20px;
+    background: #1a1a1a;
+    border: 2px solid #333;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: #E50914;
+    box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.1);
+}
+
+/* المحتوى الرئيسي */
+.main-container {
+    margin-top: 180px; /* ضمان أن المحتوى تحت search-container */
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .genre-strip {
+        top: 50px;
+    }
+    .search-container {
+        margin: 110px auto 30px;
+    }
+    .main-container {
+        margin-top: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .genre-strip {
+        top: 45px;
+    }
+    .search-container {
+        margin: 100px auto 20px;
+    }
+    .main-container {
+        margin-top: 150px;
+    }
 }
