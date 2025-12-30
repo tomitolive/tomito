@@ -1638,3 +1638,95 @@ body[class*="tv-"] .genre-nav a[href="tv.html"]:not(.nav-switch)::before {
     margin: 200px auto 40px;
     padding: 0 20px;
 }
+/* ===== FIXED HEADER + SEARCH + GENRE STRIP ===== */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 1000;
+    border-bottom: 2px solid #E50914;
+}
+
+/* شريط التصنيفات فوق المحتوى */
+.genre-strip {
+    position: fixed;
+    top: 60px; /* ارتفاع الهيدر */
+    left: 0;
+    right: 0;
+    padding: 12px 20px;
+    gap: 10px;
+    display: flex;
+    overflow-x: auto;
+    background: linear-gradient(90deg, #141414 0%, #1a1a1a 100%);
+    border-bottom: 1px solid #222;
+    z-index: 1001;
+    scrollbar-width: none;
+}
+
+.genre-strip::-webkit-scrollbar {
+    display: none;
+}
+
+/* البحث */
+.search-container {
+    position: relative;
+    z-index: 1005; /* أعلى من الهيدر */
+    max-width: 800px;
+    margin: 180px auto 40px; /* مسافة كافية تحت الهيدر + شريط التصنيفات */
+    padding: 0 20px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 15px 20px;
+    background: #1a1a1a;
+    border: 2px solid #333;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: #E50914;
+    box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.1);
+}
+
+/* المحتوى الرئيسي */
+.main-container {
+    margin-top: 240px; /* ارتفاع الهيدر + شريط التصنيفات */
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .search-container {
+        margin: 160px auto 30px;
+    }
+
+    .main-container {
+        margin-top: 220px;
+    }
+
+    .genre-strip {
+        top: 50px; /* يقلل على الجوال */
+    }
+}
+
+@media (max-width: 480px) {
+    .search-container {
+        margin: 140px auto 20px;
+    }
+
+    .main-container {
+        margin-top: 200px;
+    }
+
+    .genre-strip {
+        top: 45px; /* يقلل أكثر على الهاتف */
+    }
+}
