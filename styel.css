@@ -10,8 +10,6 @@ body {
     background: #0a0a0a;
     color: #fff;
     line-height: 1.6;
-    direction: ltr;
-    text-align: left;
 }
 
 /* ===== PROGRESS BAR ===== */
@@ -19,10 +17,10 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     height: 3px;
     background: linear-gradient(90deg, #E50914 0%, #ff0a16 50%, #E50914 100%);
-    z-index: 1004;
+    z-index: 1001;
     transform-origin: left;
     display: none;
 }
@@ -32,17 +30,16 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    background: rgba(10, 10, 10, 0.98);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    right: 0;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
     z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     border-bottom: 2px solid #E50914;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .site-header.scrolled {
-    background: rgba(10, 10, 10, 0.99);
+    background: rgba(10, 10, 10, 0.98);
 }
 
 .header-left {
@@ -60,7 +57,6 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-    text-decoration: none;
 }
 
 .logo svg {
@@ -81,7 +77,6 @@ body {
     border-bottom: 1px solid #222;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    direction: ltr;
 }
 
 .genre-strip::-webkit-scrollbar {
@@ -161,6 +156,10 @@ body {
     background: #E50914;
 }
 
+.dropdown-text {
+    margin-left: 5px;
+}
+
 /* ===== PAGE SWITCH BUTTON ===== */
 .page-switch-btn {
     display: flex;
@@ -182,17 +181,14 @@ body {
 /* ===== GENRE NAV ===== */
 .genre-nav {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    right: 0;
     background: #141414;
     padding: 20px;
     border-top: 1px solid #222;
-    z-index: 1002;
-    max-height: calc(100vh - 120px);
-    overflow-y: auto;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    z-index: 999;
 }
 
 .genre-nav.open {
@@ -221,7 +217,7 @@ body {
 
 .watchlist-count {
     position: absolute;
-    right: 10px;
+    left: 10px;
     top: 50%;
     transform: translateY(-50%);
     background: #E50914;
@@ -239,12 +235,11 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    z-index: 1001;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 998;
 }
 
 .nav-backdrop.active {
@@ -254,7 +249,7 @@ body {
 /* ===== SEARCH CONTAINER ===== */
 .search-container {
     max-width: 800px;
-    margin: 120px auto 40px;
+    margin: 140px auto 20px;
     padding: 0 20px;
 }
 
@@ -275,9 +270,23 @@ body {
     box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.1);
 }
 
-/* ===== MAIN CONTENT ===== */
-.main-container {
-    margin-top: 60px;
+/* ===== AD CONTAINER ===== */
+.ad-container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 468px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    overflow: hidden;
+}
+
+.ad-label {
+    font-size: 11px;
+    color: #888;
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
 }
 
 /* ===== BANNER SECTION ===== */
@@ -302,48 +311,44 @@ body {
 .banner-carousel {
     position: relative;
     max-width: 1200px;
-    margin: 0 auto 40px;
-    height: 500px;
-    border-radius: 15px;
-    overflow: hidden;
-    background: #000;
+    margin: 0 auto;
 }
 
 .banner-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .banner-card {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    position: relative;
     opacity: 0;
-    transition: opacity 0.8s ease-in-out;
-    z-index: 1;
+    transform: scale(0.95);
+    transition: all 0.5s ease;
 }
 
 .banner-card.active {
     opacity: 1;
-    z-index: 2;
+    transform: scale(1);
 }
 
 .banner-card img {
     width: 100%;
-    height: 100%;
+    height: 500px;
     object-fit: cover;
+    border-radius: 15px;
 }
 
 .banner-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     padding: 40px;
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    border-radius: 0 0 15px 15px;
 }
 
 .banner-overlay h2 {
@@ -429,11 +434,11 @@ body {
 }
 
 .prev-btn {
-    left: 20px;
+    right: 20px;
 }
 
 .next-btn {
-    right: 20px;
+    left: 20px;
 }
 
 .banner-indicators {
@@ -500,7 +505,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     padding: 20px;
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
     transform: translateY(100%);
@@ -585,147 +590,6 @@ body {
 
 .save-btn-sm.saved {
     background: #E50914;
-}
-
-/* ===== SERIES SECTION ===== */
-.series-section {
-    padding: 0 20px;
-    margin-bottom: 50px;
-}
-
-.series-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 25px;
-    margin-bottom: 30px;
-}
-
-.series-card {
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    background: #1a1a1a;
-    transition: all 0.3s ease;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-.series-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-}
-
-.series-card img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.series-card:hover img {
-    transform: scale(1.05);
-}
-
-.series-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-}
-
-.series-card:hover .series-overlay {
-    transform: translateY(0);
-}
-
-.series-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    margin-bottom: 10px;
-}
-
-.series-header h3 {
-    font-size: 16px;
-    color: #fff;
-    flex: 1;
-    margin-right: 10px;
-}
-
-.series-rating {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 14px;
-    color: #ffd700;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.series-description {
-    color: #ccc;
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 15px;
-    height: 60px;
-    overflow: hidden;
-}
-
-.series-actions {
-    display: flex;
-    gap: 10px;
-}
-
-.series-play-btn,
-.series-save-btn {
-    flex: 1;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 20px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
-.series-play-btn {
-    background: #E50914;
-    color: white;
-}
-
-.series-play-btn:hover {
-    background: #ff0a16;
-}
-
-.series-save-btn {
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-}
-
-.series-save-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.series-save-btn.saved {
-    background: #E50914;
-}
-
-.season-badge {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: rgba(229, 9, 20, 0.9);
-    color: white;
-    padding: 4px 8px;
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: bold;
 }
 
 /* ===== MORE BUTTON ===== */
@@ -816,13 +680,773 @@ body {
     border-top: 1px solid #333;
 }
 
-/* ===== GENRES MODAL ===== */
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1200px) {
+    .movies-container {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 20px;
+    }
+    
+    .banner-card img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-left {
+        padding: 12px 15px;
+    }
+    
+    .genre-strip {
+        padding: 10px 15px;
+        gap: 8px;
+    }
+    
+    .genre-btn {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+    
+    .more-genres-btn {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+    
+    .search-container {
+        margin-top: 150px;
+        padding: 0 15px;
+    }
+    
+    .banner-section,
+    .movies-section {
+        padding: 0 15px;
+    }
+    
+    .movies-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+    
+    .movie-card img {
+        height: 250px;
+    }
+    
+    .banner-card img {
+        height: 300px;
+    }
+    
+    .banner-overlay {
+        padding: 25px;
+    }
+    
+    .banner-overlay h2 {
+        font-size: 24px;
+    }
+    
+    .banner-overlay p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .banner-play-btn,
+    .banner-save-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+    
+    .ad-container {
+        max-width: 100%;
+        margin: 15px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .genre-strip {
+        padding: 8px 12px;
+    }
+    
+    .genre-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .more-genres-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .movies-container {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 12px;
+    }
+    
+    .movie-card img {
+        height: 200px;
+    }
+    
+    .banner-card img {
+        height: 250px;
+    }
+    
+    .banner-overlay {
+        padding: 20px;
+    }
+    
+    .banner-overlay h2 {
+        font-size: 20px;
+    }
+    
+    .banner-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .more-btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}/* في نهاية style.css أضف */
+
+/* ===== SERIES SECTION ===== */
+.series-section {
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+
+.series-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.series-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #1a1a1a;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.series-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.series-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.series-card:hover img {
+    transform: scale(1.05);
+}
+
+.series-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.series-card:hover .series-overlay {
+    transform: translateY(0);
+}
+
+.series-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.series-header h3 {
+    font-size: 16px;
+    color: #fff;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.series-rating {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    color: #ffd700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.series-description {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.series-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.series-play-btn,
+.series-save-btn {
+    flex: 1;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.series-play-btn {
+    background: #E50914;
+    color: white;
+}
+
+.series-play-btn:hover {
+    background: #ff0a16;
+}
+
+.series-save-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.series-save-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.series-save-btn.saved {
+    background: #E50914;
+}
+
+/* فصل المسلسل */
+.season-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(229, 9, 20, 0.9);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}/* ===== PAGE SWITCH BUTTON ACTIVE STATE ===== */
+.page-switch-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: #222;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-switch-btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(229, 9, 20, 0.3);
+}
+
+.page-switch-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s;
+}
+
+.page-switch-btn:hover::after {
+    left: 100%;
+}
+
+/* ===== NAV-SWITCH LINK IN GENRE-NAV ===== */
+.genre-nav .nav-switch {
+    background: rgba(229, 9, 20, 0.1) !important;
+    border: 1px solid rgba(229, 9, 20, 0.3) !important;
+    color: #E50914 !important;
+    font-weight: bold !important;
+}
+
+.genre-nav .nav-switch:hover {
+    background: rgba(229, 9, 20, 0.2) !important;
+    border-color: rgba(229, 9, 20, 0.5) !important;
+}
+
+/* ===== ACTIVE STATE FOR CURRENT PAGE ===== */
+.genre-nav a[href="index.html"]:not(.nav-switch),
+.genre-nav a[href="tv.html"]:not(.nav-switch) {
+    position: relative;
+}
+
+.genre-nav a[href="index.html"]:not(.nav-switch)::before,
+.genre-nav a[href="tv.html"]:not(.nav-switch)::before {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background: #E50914;
+    border-radius: 50%;
+    display: none;
+}
+
+/* عندما تكون الصفحة الحالية هي الأفلام */
+body:not([class*="tv-"]) .genre-nav a[href="index.html"]:not(.nav-switch)::before {
+    display: block;
+}
+
+/* عندما تكون الصفحة الحالية هي المسلسلات */
+body[class*="tv-"] .genre-nav a[href="tv.html"]:not(.nav-switch)::before {
+    display: block;
+}/* ===== SITE HEADER ===== */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #E50914;
+}
+
+/* إضافة مساحة للمحتوى تحت الهيدر */
+.main-container {
+    margin-top: 180px; /* تعديل حسب ارتفاع الهيدر */
+}
+
+/* عند التمرير */
+.site-header.scrolled {
+    background: rgba(10, 10, 10, 0.99);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* تحسين شريط التصنيفات */
+.genre-strip {
+    display: flex;
+    padding: 12px 20px;
+    gap: 10px;
+    overflow-x: auto;
+    background: linear-gradient(90deg, #141414 0%, #1a1a1a 100%);
+    border-bottom: 1px solid #222;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    position: relative;
+    z-index: 1001;
+}
+
+/* منع التداخل مع القائمة المنسدلة */
+.genre-nav {
+    display: none;
+    position: fixed; /* تغيير من absolute إلى fixed */
+    top: 120px; /* تعديل حسب ارتفاع الهيدر */
+    left: 0;
+    right: 0;
+    background: #141414;
+    padding: 20px;
+    border-top: 1px solid #222;
+    z-index: 1002; /* أعلى من الهيدر */
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* خلفية ضبابية */
+.nav-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 1001; /* تحت القائمة وفوق الهيدر */
+}
+
+.nav-backdrop.active {
+    display: block;
+}
+
+/* تحسين search-container */
+.search-container {
+    max-width: 800px;
+    margin: 200px auto 40px; /* زيادة الهامش العلوي */
+    padding: 0 20px;
+}
+
+/* تعديل البانر */
+.banner-section {
+    padding: 0 20px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== PROGRESS BAR ===== */
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #E50914 0%, #ff0a16 50%, #E50914 100%);
+    z-index: 1003; /* أعلى من كل شيء */
+    transform-origin: left;
+    display: none;
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 768px) {
+    .main-container {
+        margin-top: 160px; /* تقليل للجوال */
+    }
+    
+    .search-container {
+        margin-top: 170px;
+        padding: 0 15px;
+    }
+    
+    .genre-nav {
+        top: 110px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        margin-top: 140px;
+    }
+    
+    .search-container {
+        margin-top: 150px;
+    }
+}/* ===== FIXED HEADER SOLUTION ===== */
+
+/* الهيدر الثابت */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #E50914;
+}
+
+/* هذه هي الحل الرئيسي: إضافة padding-top للمحتوى */
+.main-container {
+ /* ارتفاع الهيدر بالكامل */
+    position: relative;
+    z-index: 1;
+}
+
+/* تحسين شريط التصنيفات */
+.genre-strip {
+    display: flex;
+    padding: 12px 20px;
+    gap: 10px;
+    overflow-x: auto;
+    background: linear-gradient(90deg, #141414 0%, #1a1a1a 100%);
+    border-bottom: 1px solid #222;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* إصلاح القائمة المنسدلة */
+.genre-nav {
+    display: none;
+    position: absolute;
+    top: 100%; /* تحت الهيدر مباشرة */
+    left: 0;
+    right: 0;
+    background: #141414;
+    padding: 20px;
+    border-top: 1px solid #222;
+    z-index: 1002; /* أعلى من الهيدر */
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* خلفية ضبابية */
+.nav-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 1001;
+}
+
+.nav-backdrop.active {
+    display: block;
+}
+
+/* ===== SEARCH CONTAINER ===== */
+.search-container {
+    max-width: 800px;
+    margin: 40px auto 40px; /* تعديل */
+    padding: 0 20px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 15px 20px;
+    background: #1a1a1a;
+    border: 2px solid #333;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: #E50914;
+    box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.1);
+}
+
+/* ===== SERIES SECTION ===== */
+.series-section {
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+
+.series-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.series-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #1a1a1a;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.series-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.series-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.series-card:hover img {
+    transform: scale(1.05);
+}
+
+.series-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.series-card:hover .series-overlay {
+    transform: translateY(0);
+}
+
+.series-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.series-header h3 {
+    font-size: 16px;
+    color: #fff;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.series-rating {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    color: #ffd700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.series-description {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.series-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.series-play-btn,
+.series-save-btn {
+    flex: 1;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.series-play-btn {
+    background: #E50914;
+    color: white;
+}
+
+.series-play-btn:hover {
+    background: #ff0a16;
+}
+
+.series-save-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.series-save-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.series-save-btn.saved {
+    background: #E50914;
+}
+
+/* فصل المسلسل */
+.season-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* تعديل لاتجاه RTL */
+    background: rgba(229, 9, 20, 0.9);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* ===== PAGE SWITCH BUTTON ACTIVE STATE ===== */
+.page-switch-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: #222;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-switch-btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(229, 9, 20, 0.3);
+}
+
+.page-switch-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s;
+}
+
+.page-switch-btn:hover::after {
+    left: 100%;
+}
+
+/* ===== NAV-SWITCH LINK IN GENRE-NAV ===== */
+.genre-nav .nav-switch {
+    background: rgba(229, 9, 20, 0.1) !important;
+    border: 1px solid rgba(229, 9, 20, 0.3) !important;
+    color: #E50914 !important;
+    font-weight: bold !important;
+}
+
+.genre-nav .nav-switch:hover {
+    background: rgba(229, 9, 20, 0.2) !important;
+    border-color: rgba(229, 9, 20, 0.5) !important;
+}
+
+/* ===== MORE GENRES MODAL STYLES ===== */
 .genres-modal {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -915,27 +1539,18 @@ body {
     font-size: 20px;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 1200px) {
-    .movies-container,
-    .series-container {
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-        gap: 20px;
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 768px) {
+    .main-container {
+        padding-top: 200px;
     }
     
-    .banner-carousel {
-        height: 400px;
-    }
-}
-
-@media (max-width: 768px) {
-    .header-left {
-        padding: 12px 15px;
+    .search-container {
+        margin-top: 30px;
     }
     
     .genre-strip {
         padding: 10px 15px;
-        gap: 8px;
     }
     
     .genre-btn {
@@ -943,61 +1558,13 @@ body {
         font-size: 13px;
     }
     
-    .more-genres-btn {
-        padding: 8px 12px;
-        font-size: 13px;
-    }
-    
-    .search-container {
-        margin: 100px auto 30px;
-        padding: 0 15px;
-    }
-    
-    .banner-section,
-    .movies-section,
-    .series-section {
-        padding: 0 15px;
-    }
-    
-    .banner-carousel {
-        height: 350px;
-        margin: 0 auto 30px;
-    }
-    
-    .movies-container,
     .series-container {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 15px;
     }
     
-    .movie-card img,
     .series-card img {
         height: 250px;
-    }
-    
-    .banner-overlay {
-        padding: 25px;
-    }
-    
-    .banner-overlay h2 {
-        font-size: 24px;
-    }
-    
-    .banner-overlay p {
-        font-size: 14px;
-        margin-bottom: 20px;
-    }
-    
-    .banner-play-btn,
-    .banner-save-btn {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-    
-    .carousel-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
     }
     
     .genres-modal .modal-body {
@@ -1006,60 +1573,81 @@ body {
 }
 
 @media (max-width: 480px) {
-    .genre-strip {
-        padding: 8px 12px;
+    .main-container {
+        padding-top: 180px;
     }
     
-    .genre-btn {
-        padding: 6px 12px;
-        font-size: 12px;
-    }
-    
-    .more-genres-btn {
-        padding: 6px 10px;
-        font-size: 12px;
-    }
-    
-    .search-container {
-        margin: 90px auto 20px;
-    }
-    
-    .banner-carousel {
-        height: 250px;
-        margin: 0 auto 20px;
-    }
-    
-    .movies-container,
     .series-container {
         grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
         gap: 12px;
     }
     
-    .movie-card img,
     .series-card img {
         height: 200px;
     }
-    
-    .banner-overlay {
-        padding: 20px;
+}
+
+/* ===== PROGRESS BAR ===== */
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #E50914 0%, #ff0a16 50%, #E50914 100%);
+    z-index: 1004;
+    transform-origin: left;
+    display: none;
+}/* إصلاح نهائي للبانر */
+.banner-carousel {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #000;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    z-index: 1;
+}
+
+.banner-card.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.banner-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* تحسينات للجوال */
+@media (max-width: 768px) {
+    .banner-carousel {
+        height: 350px;
+        margin: 0 auto 30px;
     }
-    
-    .banner-overlay h2 {
-        font-size: 20px;
+}
+
+@media (max-width: 480px) {
+    .banner-carousel {
+        height: 250px;
+        margin: 0 auto 20px;
     }
-    
-    .banner-actions {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .more-btn {
-        padding: 10px 25px;
-        font-size: 14px;
-    }
-}/* ===== SEARCH CONTAINER ===== */
-.search-container {
-    max-width: 800px;
-    margin: 140px auto 40px; /* غير من 120px إلى 140px */
-    padding: 0 20px;
 }
