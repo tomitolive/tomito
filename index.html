@@ -67,15 +67,24 @@
         <!-- خلفية ضبابية -->
         <div class="nav-backdrop" id="navBackdrop"></div>
     </header>
-<!-- استبدل هذا -->
-<!-- استبدل هذا الكود -->
-<div class="search-container">
-    <div class="autocomplete-container">
-        <input type="text" id="search" placeholder="🔍 ابحث عن فيلم...">
-        <div class="autocomplete-suggestions" id="autocomplete-suggestions"></div>
-    </div>
-</div>
 
+    <!-- شريط البحث -->
+    <div class="search-container">
+        <input type="text" id="search" placeholder="🔍 ابحث عن فيلم...">
+    </div>
+
+    <!-- Container رئيسي -->
+    <main class="main-container">
+        <!-- البانر الرئيسي -->
+        <section class="banner-section">
+            <h2 class="section-title"><i class="fas fa-crown"></i> الأفلام الأكثر مشاهدة</h2>
+            <div class="banner-carousel">
+                <button class="carousel-btn prev-btn" aria-label="السابق"><i class="fas fa-chevron-right"></i></button>
+                <div class="banner-container" id="banner-container"></div>
+                <button class="carousel-btn next-btn" aria-label="التالي"><i class="fas fa-chevron-left"></i></button>
+                <div class="banner-indicators" id="banner-indicators"></div>
+            </div>
+        </section>
 
         <!-- قسم: أفلام جديدة -->
         <section class="movies-section">
