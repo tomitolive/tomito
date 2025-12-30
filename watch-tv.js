@@ -105,9 +105,22 @@ class SeriesPlayer {
         
         // تغيير الحلقة
         document.getElementById('episode-select').addEventListener('change', (e) => {
-            this.currentEpisode = parseInt(e.target.value);
+            const newEpisode = parseInt(e.target.value);
+            
+            if (newEpisode !== this.currentEpisode) {
+                console.log(`🔄 تغيير الحلقة إلى: ${newEpisode}`);
+                this.currentEpisode = newEpisode;
+                
+                // تحديث معلومات الحلقة
+                this.updateEpisodeInfo();
+                
+                // تشغيل الفيديو تلقائياً بعد تغيير الحلقة
+                setTimeout(() => {
+                    this.playVideo();
+                }, 500); // تأخير 500ms لراحة المستخدم
+            }
         });
-    }
+    };
     
     async loadSeriesData() {
         try {
@@ -461,33 +474,98 @@ class SeriesPlayer {
         this.currentServer = server;
     }
     
-    playVideo() {
-        if (!this.currentServer || !this.seriesId || !this.currentSeason || !this.currentEpisode) {
-            this.showError('الرجاء اختيار الموسم والحلقة والخادم أولاً');
-            return;
-        }
-        
-        const videoPlayer = document.getElementById('video-player');
-        
-        // بناء رابط الفيديو مع الموسم والحلقة
-        const videoURL = `${this.currentServer.url}${this.seriesId}/${this.currentSeason}/${this.currentEpisode}`;
-        
-        // إضافة معلمات لمنع الإعلانات
-        const cleanURL = `${videoURL}?autoplay=1&mute=0&controls=1&modestbranding=1&rel=0&showinfo=0`;
-        
-        this.showNotification(`جاري تحميل ${this.currentServer.name}...`, 'info');
-        
-        videoPlayer.src = cleanURL;
-        
-        videoPlayer.onload = () => {
-            this.showNotification('✅ الفيديو جاهز للمشاهدة', 'success');
-        };
-        
-        videoPlayer.onerror = () => {
-            this.showNotification('❌ فشل تحميل الفيديو، جرب خادماً آخر', 'error');
-        };
+   // ===========================================
+// ابحث عن دالة playVideo في watch.js (حوالي السطر 400)
+// واستبدلها بالكود التالي:
+// ===========================================
+
+playVideo() {
+    if (!this.currentServer || !this.seriesId || !this.currentSeason || !this.currentEpisode) {
+        this.showError('الرجاء اختيار الموسم والحلقة والخادم أولاً');
+        return;
     }
     
+    const videoPlayer = document.getElementById('video-player');
+    const playBtn = document.getElementById('play-now-btn');
+    
+    // تعطيل الزر مؤقتاً
+    if (playBtn) {
+        playBtn.disabled = true;
+        playBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري التحميل...';
+    }
+    
+    // 1. إيقاف الفيديو الحالي
+    try {
+        videoPlayer.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+    } catch (e) {}
+    
+    // 2. مسح الرابط القديم
+    videoPlayer.src = '';
+    videoPlayer.removeAttribute('src');
+    
+    // 3. بناء الرابط الجديد
+    const videoURL = this.buildVideoURL();
+    const cleanURL = `${videoURL}?autoplay=1&mute=0&controls=1&rel=0&modestbranding=1`;
+    
+    console.log('🎬 رابط الفيديو الجديد:', cleanURL);
+    
+    // 4. تأخير ثم تعيين الرابط الجديد
+    setTimeout(() => {
+        videoPlayer.src = cleanURL;
+        
+        // 5. تحديث الواجهة
+        this.updateCurrentPlaying();
+        this.showNotification(`جاري تحميل الحلقة ${this.currentEpisode}...`, 'info');
+        
+        // 6. إعادة تمكين الزر
+        if (playBtn) {
+            setTimeout(() => {
+                playBtn.disabled = false;
+                playBtn.innerHTML = '<i class="fas fa-play-circle"></i> تشغيل الآن';
+            }, 2000);
+        }
+        
+    }, 300); // تأخير 300ms للتأكد من مسح القديم
+}
+
+// ===========================================
+// أضف هذه الدالة بعد دالة playVideo
+// ===========================================
+
+buildVideoURL() {
+    const server = this.currentServer;
+    const { seriesId, currentSeason, currentEpisode } = this;
+    
+    switch(server.id) {
+        case 'server1':
+            return `${server.url}${seriesId}/${currentSeason}/${currentEpisode}`;
+        case 'server2':
+            return `${server.url}${seriesId}?season=${currentSeason}&episode=${currentEpisode}`;
+        case 'server3':
+            return `${server.url}${seriesId}?season=${currentSeason}&episode=${currentEpisode}`;
+        case 'server4':
+            return `${server.url}${seriesId}/${currentSeason}/${currentEpisode}`;
+        default:
+            return `${server.url}${seriesId}/${currentSeason}/${currentEpisode}`;
+    }
+}
+
+// ===========================================
+// أضف هذه الدالة لتحديث الواجهة
+// ===========================================
+
+updateCurrentPlaying() {
+    const currentEl = document.getElementById('current-playing');
+    if (currentEl) {
+        currentEl.textContent = `الموسم ${this.currentSeason} - الحلقة ${this.currentEpisode}`;
+    }
+    
+    // تحديث زر التشغيل أيضاً
+    const playBtn = document.getElementById('play-now-btn');
+    if (playBtn) {
+        playBtn.innerHTML = `<i class="fas fa-play-circle"></i> تشغيل الحلقة ${this.currentEpisode}`;
+    }
+}
     async playTrailer() {
         if (!this.seriesId) return;
         
@@ -639,4 +717,51 @@ function toggleSaveSeries(seriesId, title, poster, rating, element) {
     }
     
     localStorage.setItem('savedSeries', JSON.stringify(savedSeries));
+}// ===========================================
+// الحل النهائي - إعادة إنشاء الـ iframe كاملاً
+// ===========================================
+
+function reloadVideoPlayer() {
+    const container = document.querySelector('.video-wrapper');
+    const iframe = document.getElementById('video-player');
+    
+    if (!container || !iframe) return;
+    
+    // 1. أخذ الأبعاد والخصائص
+    const width = iframe.style.width;
+    const height = iframe.style.height;
+    const currentSrc = iframe.src;
+    
+    // 2. إزالة الـ iframe القديم
+    iframe.remove();
+    
+    // 3. إنشاء iframe جديد
+    const newIframe = document.createElement('iframe');
+    newIframe.id = 'video-player';
+    newIframe.src = currentSrc;
+    newIframe.style.width = width || '100%';
+    newIframe.style.height = height || '600px';
+    newIframe.frameBorder = '0';
+    newIframe.allowFullscreen = true;
+    newIframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    newIframe.title = 'مشغل فيديو المسلسل';
+    
+    // 4. إضافة الـ iframe الجديد
+    container.appendChild(newIframe);
+    
+    console.log('✅ تم إعادة إنشاء مشغل الفيديو');
 }
+
+// تحديث مستمع الأحداث
+document.addEventListener('DOMContentLoaded', function() {
+    // بعد تحميل الصفحة، أضف مستمع للأحداث
+    setTimeout(() => {
+        const episodeSelect = document.getElementById('episode-select');
+        if (episodeSelect) {
+            episodeSelect.addEventListener('change', function() {
+                // بعد 1 ثانية من تغيير الحلقة، أعد تحميل المشغل
+                setTimeout(reloadVideoPlayer, 1000);
+            });
+        }
+    }, 2000);
+});

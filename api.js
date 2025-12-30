@@ -740,4 +740,312 @@ const originalChangeBannerSlide = window.changeBannerSlide;
 window.changeBannerSlide = function(index) {
     originalChangeBannerSlide(index);
     setTimeout(fixBanner, 100);
-};
+};// ========================================
+// AUTOCOMPLETE FUNCTIONS - UPDATED
+// ========================================
+
+let autocompleteTimeout;
+let currentSearchQuery = '';
+
+// استبدل دالة setupSearch الموجودة بهذا
+function setupSearch() {
+    const searchInput = document.getElementById("search");
+    if (!searchInput) {
+        console.error("❌ لم يتم العثور على حقل البحث");
+        return;
+    }
+
+    console.log("✅ حقل البحث موجود، جاهز للعمل");
+
+    // عند الكتابة
+    searchInput.addEventListener("input", (e) => {
+        clearTimeout(autocompleteTimeout);
+        currentSearchQuery = e.target.value.trim();
+        
+        console.log(`⌨️ كتابة: "${currentSearchQuery}"`);
+
+        if (currentSearchQuery.length < 2) {
+            hideAutocomplete();
+            if (currentSearchQuery.length === 0) {
+                loadAllSections();
+            }
+            return;
+        }
+
+        // عرض مؤشر التحميل
+        const container = document.getElementById("autocomplete-suggestions");
+        if (container) {
+            container.innerHTML = `
+                <div class="loading-suggestions">
+                    <i class="fas fa-spinner"></i>
+                    جاري البحث عن "${currentSearchQuery}"...
+                </div>
+            `;
+            container.classList.add("show");
+        }
+
+        autocompleteTimeout = setTimeout(async () => {
+            console.log(`🔍 بحث عن: "${currentSearchQuery}"`);
+            const suggestions = await fetchAutocompleteSuggestions(currentSearchQuery);
+            showAutocomplete(suggestions, currentSearchQuery);
+        }, 300);
+    });
+
+    // عند الضغط على Enter
+    searchInput.addEventListener("keypress", (e) => {
+        if (e.key === 'Enter') {
+            const query = searchInput.value.trim();
+            if (query.length > 0) {
+                console.log(`↵ Enter: بحث مباشر عن "${query}"`);
+                searchMovies(query);
+                hideAutocomplete();
+            }
+        }
+    });
+
+    // عند فقدان التركيز
+    searchInput.addEventListener("blur", () => {
+        setTimeout(() => {
+            hideAutocomplete();
+        }, 200);
+    });
+
+    // إغلاق بالضغط على Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            hideAutocomplete();
+        }
+    });
+}
+
+// دالة جلب الاقتراحات
+async function fetchAutocompleteSuggestions(query) {
+    if (!query || query.length < 2) {
+        return [];
+    }
+    
+    try {
+        console.log(`🌐 جلب اقتراحات لـ: "${query}"`);
+        const url = `${BASE_URL}/search/movie?api_key=${API_KEY}&language=ar&query=${encodeURIComponent(query)}&page=1`;
+        const res = await fetch(url);
+        
+        if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        
+        const data = await res.json();
+        console.log(`✅ تم جلب ${data.results?.length || 0} اقتراح`);
+        
+        // ترتيب النتائج
+        return (data.results || []).sort((a, b) => {
+            const aStartsWith = a.title?.toLowerCase().startsWith(query.toLowerCase());
+            const bStartsWith = b.title?.toLowerCase().startsWith(query.toLowerCase());
+            
+            if (aStartsWith && !bStartsWith) return -1;
+            if (!aStartsWith && bStartsWith) return 1;
+            
+            return b.popularity - a.popularity;
+        }).slice(0, 8);
+    } catch (error) {
+        console.error("❌ خطأ في جلب الاقتراحات:", error);
+        return [];
+    }
+}
+
+// دالة عرض الاقتراحات
+function showAutocomplete(suggestions, query) {
+    const container = document.getElementById("autocomplete-suggestions");
+    if (!container) return;
+    
+    if (!suggestions || suggestions.length === 0) {
+        container.innerHTML = `
+            <div class="no-suggestions">
+                <i class="fas fa-search"></i>
+                <p>لا توجد نتائج لـ "${query}"</p>
+            </div>
+        `;
+        container.classList.add("show");
+        return;
+    }
+    
+    let html = '';
+    
+    suggestions.forEach(movie => {
+        const title = movie.title || "بدون عنوان";
+        const year = movie.release_date ? movie.release_date.substring(0, 4) : "غير معروف";
+        const rating = movie.vote_average ? movie.vote_average.toFixed(1) : "N/A";
+        const posterUrl = movie.poster_path ? `https://image.tmdb.org/t/p/w92${movie.poster_path}` : 
+                         'https://via.placeholder.com/40x60/333/fff?text=No+Image';
+        
+        // تسليط الضوء على النص المتطابق
+        let highlightedTitle = title;
+        if (query.length > 1) {
+            const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const regex = new RegExp(`(${escapedQuery})`, 'gi');
+            highlightedTitle = title.replace(regex, '<span style="color:#E50914;font-weight:bold">$1</span>');
+        }
+        
+        // تنظيف النص للـ onclick
+        const safeTitle = title.replace(/'/g, "\\'").replace(/"/g, '\\"');
+        
+        html += `
+            <div class="suggestion-item" onclick="selectSuggestion(${movie.id}, '${safeTitle}')">
+                <img src="${posterUrl}" alt="${title}" loading="lazy">
+                <div class="suggestion-info">
+                    <div class="suggestion-title">${highlightedTitle}</div>
+                    <div class="suggestion-year">${year} • ${movie.original_language?.toUpperCase() || 'N/A'}</div>
+                </div>
+                <div class="suggestion-rating">
+                    <i class="fas fa-star"></i> ${rating}
+                </div>
+            </div>
+        `;
+    });
+    
+    container.innerHTML = html;
+    container.classList.add("show");
+    console.log(`✅ عرض ${suggestions.length} اقتراح`);
+}
+
+// دالة إخفاء الاقتراحات
+function hideAutocomplete() {
+    const container = document.getElementById("autocomplete-suggestions");
+    if (container) {
+        container.classList.remove("show");
+    }
+}
+
+// دالة اختيار اقتراح
+function selectSuggestion(movieId, movieTitle) {
+    console.log(`🎬 اختيار فيلم: ${movieTitle} (ID: ${movieId})`);
+    
+    const searchInput = document.getElementById("search");
+    if (searchInput) {
+        searchInput.value = movieTitle;
+    }
+    
+    hideAutocomplete();
+    searchMovies(movieTitle);
+}
+
+// ========================================
+// UPDATED SEARCH MOVIES FUNCTION
+// ========================================
+
+async function searchMovies(query) {
+    if (!query || query.trim() === '') {
+        console.log("⚠️  استعلام بحث فارغ");
+        return;
+    }
+    
+    try {
+        showProgress();
+        console.log(`🔍 بحث TMDb عن: "${query}"`);
+        
+        const url = `${BASE_URL}/search/movie?api_key=${API_KEY}&language=ar&query=${encodeURIComponent(query)}&page=1`;
+        const res = await fetch(url);
+        
+        if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        
+        const data = await res.json();
+        console.log(`✅ وجدنا ${data.results?.length || 0} نتيجة`);
+        
+        // إخفاء أزرار المزيد
+        document.querySelectorAll('.more-btn').forEach(btn => {
+            btn.style.display = 'none';
+        });
+        
+        // عرض نتائج البحث
+        displayMovies(data.results || [], "new-movies", true);
+        
+        // تحديث العنوان
+        const titleEl = document.querySelector("#new-movies")?.parentNode?.querySelector(".section-title");
+        if (titleEl) {
+            titleEl.innerHTML = `<i class="fas fa-search"></i> نتائج البحث: "${query}"`;
+        }
+        
+        // إذا لم توجد نتائج
+        if (!data.results || data.results.length === 0) {
+            const container = document.getElementById("new-movies");
+            if (container) {
+                container.innerHTML = `
+                    <div class="no-movies" style="text-align:center; padding:40px 20px;">
+                        <i class="fas fa-search" style="font-size: 48px; color: #666; margin-bottom: 20px;"></i>
+                        <h3 style="margin-bottom: 10px;">لا توجد نتائج لـ "${query}"</h3>
+                        <p style="color: #888;">حاول البحث بكلمات أخرى</p>
+                    </div>
+                `;
+            }
+        }
+        
+    } catch (error) {
+        console.error("❌ خطأ في البحث:", error);
+        
+        // عرض رسالة خطأ للمستخدم
+        const container = document.getElementById("new-movies");
+        if (container) {
+            container.innerHTML = `
+                <div class="no-movies" style="text-align:center; padding:40px 20px;">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 48px; color: #E50914; margin-bottom: 20px;"></i>
+                    <h3 style="margin-bottom: 10px;">خطأ في الاتصال</h3>
+                    <p style="color: #888;">تعذر الاتصال بخادم TMDb. يرجى المحاولة لاحقاً.</p>
+                </div>
+            `;
+        }
+    } finally {
+        hideProgress();
+    }
+}
+
+// ========================================
+// INITIALIZE AUTOCOMPLETE
+// ========================================
+
+function initAutocomplete() {
+    console.log("🔧 تهيئة نظام الاقتراحات التلقائية...");
+    
+    const searchInput = document.getElementById("search");
+    if (!searchInput) {
+        console.error("❌ لم يتم العثور على حقل البحث!");
+        return;
+    }
+    
+    // التحقق من وجود حاوية الاقتراحات
+    if (!document.getElementById("autocomplete-suggestions")) {
+        console.log("📦 إنشاء حاوية الاقتراحات...");
+        
+        const autocompleteDiv = document.createElement('div');
+        autocompleteDiv.className = 'autocomplete-suggestions';
+        autocompleteDiv.id = 'autocomplete-suggestions';
+        
+        const searchContainer = document.querySelector('.search-container .autocomplete-container');
+        if (searchContainer) {
+            searchContainer.appendChild(autocompleteDiv);
+            console.log("✅ تم إنشاء حاوية الاقتراحات");
+        } else {
+            console.error("❌ لم يتم العثور على حاوية autocomplete-container");
+        }
+    }
+    
+    console.log("✅ نظام الاقتراحات التلقائية جاهز");
+}
+
+// ========================================
+// UPDATE initPage FUNCTION
+// ========================================
+
+function initPage() {
+    console.log("⚙️ بدء تحميل الصفحة الرئيسية");
+    initAutocomplete();  // أضف هذا السطر
+    setupSearch();       // ثم استدعاء setupSearch
+    updateWatchlistCounter();
+    loadAllSections();
+    
+    // اختبار النظام
+    console.log("🧪 اختبار النظام:");
+    console.log("- حقل البحث موجود:", !!document.getElementById('search'));
+    console.log("- حاوية الاقتراحات موجودة:", !!document.getElementById('autocomplete-suggestions'));
+    console.log("- نظام البحث جاهز!");
+}
