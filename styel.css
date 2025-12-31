@@ -1740,3 +1740,130 @@ body[class*="tv-"] .genre-nav a[href="tv.html"]:not(.nav-switch)::before {
         margin-top: 150px;
     }
 }
+/* أضف هذا الكود في نهاية الملف */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px; /* ارتفاع الهيدر */
+    background: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 1000;
+    border-bottom: 2px solid #E50914;
+}
+
+.genre-strip {
+    position: fixed;
+    top: 60px; /* تحت الهيدر مباشرة */
+    left: 0;
+    right: 0;
+    height: 50px; /* ارتفاع الشريط */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    overflow-x: auto;
+    background: linear-gradient(90deg, #141414 0%, #1a1a1a 100%);
+    border-bottom: 1px solid #222;
+    z-index: 1001;
+    scrollbar-width: none;
+}
+
+.genre-strip::-webkit-scrollbar {
+    display: none;
+}
+
+/* تعديل الهيدر اليساري ليصبح داخل الهيدر الأساسي */
+.header-left {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: none;
+}
+
+/* البحث تحت الهيدر + شريط التصنيفات */
+.search-container {
+    position: relative;
+    z-index: 1002;
+    max-width: 800px;
+    margin: 130px auto 40px; /* 60 + 50 + 20 */
+    padding: 0 20px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 15px 20px;
+    background: #1a1a1a;
+    border: 2px solid #333;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: #E50914;
+    box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.1);
+}
+
+/* تعديل القائمة المنسدلة */
+.genre-nav {
+    top: 110px; /* تحت الهيدر + شريط التصنيفات */
+}
+
+/* المحتوى الرئيسي */
+.main-container {
+    margin-top: 180px; /* إضافة مسافة إضافية */
+}
+
+/* تعديلات الجوال */
+@media (max-width: 768px) {
+    .site-header {
+        height: 50px;
+    }
+    
+    .genre-strip {
+        top: 50px;
+        height: 45px;
+    }
+    
+    .search-container {
+        margin: 115px auto 30px; /* 50 + 45 + 20 */
+    }
+    
+    .genre-nav {
+        top: 95px;
+    }
+    
+    .main-container {
+        margin-top: 165px;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header {
+        height: 45px;
+    }
+    
+    .genre-strip {
+        top: 45px;
+        height: 40px;
+    }
+    
+    .search-container {
+        margin: 105px auto 20px; /* 45 + 40 + 20 */
+    }
+    
+    .genre-nav {
+        top: 85px;
+    }
+    
+    .main-container {
+        margin-top: 155px;
+    }
+}
