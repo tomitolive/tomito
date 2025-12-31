@@ -480,7 +480,6 @@ body {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    border: solid 3px darkgoldenrod;
     transition: all 0.3s ease;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     height: 320px; /* اختار القياس لي بغيتي */
