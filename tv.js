@@ -293,10 +293,7 @@ function setupBannerSeries(series) {
                     <button class="banner-play-btn" onclick="playSeries(${show.id})">
                         <i class="fas fa-play"></i> مشاهدة الآن
                     </button>
-                    <button class="banner-save-btn ${isSaved ? 'saved' : ''}" 
-                            onclick="toggleSaveSeries(${show.id}, '${cleanTitle}', '${cleanPosterPath}', ${show.vote_average || 0}, this)">
-                        <i class="${isSaved ? 'fas' : 'far'} fa-heart"></i> ${isSaved ? 'محفوظ' : 'حفظ'}
-                    </button>
+                   
                 </div>
             </div>
         `;

@@ -279,10 +279,7 @@ function setupBanner(movies) {
                     <button class="banner-play-btn" onclick="playMovie(${movie.id})">
                         <i class="fas fa-play"></i> مشاهدة
                     </button>
-                    <button class="banner-save-btn ${isSaved ? 'saved' : ''}" 
-                            onclick="toggleSave(${movie.id}, '${title.replace(/'/g, "\\'")}', '${movie.poster_path || ''}', ${movie.vote_average || 0}, this)">
-                        <i class="${isSaved ? 'fas' : 'far'} fa-heart"></i> ${isSaved ? 'محفوظ' : 'حفظ'}
-                    </button>
+                  
                 </div>
             </div>
         `;
@@ -572,10 +569,7 @@ function createMovieCard(movie) {
                 <button class="play-btn-sm" onclick="playMovie(${movie.id})">
                     <i class="fas fa-play"></i> مشاهدة
                 </button>
-                <button class="save-btn-sm ${isSaved ? 'saved' : ''}" 
-                        onclick="toggleSave(${movie.id}, '${title}', '${movie.poster_path}', ${movie.vote_average}, this)">
-                    <i class="${isSaved ? 'fas' : 'far'} fa-heart"></i> ${isSaved ? 'محفوظ' : 'حفظ'}
-                </button>
+            
             </div>
         </div>
     `;
