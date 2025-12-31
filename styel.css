@@ -480,9 +480,10 @@ body {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    background: #1a1a1a;
+    border: solid 3px darkgoldenrod;
     transition: all 0.3s ease;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    height: 320px; /* اختار القياس لي بغيتي */
 }
 
 .movie-card:hover {
@@ -492,10 +493,11 @@ body {
 
 .movie-card img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    height: 100%;
+    object-fit: cover; /* مهم بزاف */
+    display: block;
 }
+
 
 .movie-card:hover img {
     transform: scale(1.05);
