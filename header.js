@@ -163,9 +163,7 @@ function createMovieCard(movie) {
                 <button class="play-btn-sm" onclick="playMovie(${movie.id})">
                     <i class="fas fa-play"></i> مشاهدة
                 </button>
-                <button class="save-btn-sm" onclick="toggleSave(${movie.id}, '${title.replace(/'/g, "\\'")}', '${movie.poster_path}', ${movie.vote_average}, this)">
-                    <i class="far fa-heart"></i> حفظ
-                </button>
+              
             </div>
         </div>
     `;
