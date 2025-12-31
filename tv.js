@@ -300,7 +300,7 @@ function setupBannerSeries(series) {
                 </div>
             </div>
         `;
-        
+            
         container.appendChild(card);
         
         const indicator = document.createElement("button");
