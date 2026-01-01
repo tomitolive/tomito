@@ -341,7 +341,7 @@ class MoviePlayer {
         banner.style.backgroundSize = 'cover';
         banner.style.backgroundPosition = 'center';
     }
-}
+}     
 
     updateMovieDetails(movie, credits, similar) {
         // العنوان
