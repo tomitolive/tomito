@@ -550,10 +550,7 @@ function createSeriesCard(show) {
                 <button class="series-play-btn" onclick="playSeries(${show.id})">
                     <i class="fas fa-play"></i> مشاهدة
                 </button>
-                <button class="series-save-btn ${isSaved ? 'saved' : ''}" 
-                        onclick="toggleSaveSeries(${show.id}, '${title}', '${show.poster_path}', ${show.vote_average}, this)">
-                    <i class="${isSaved ? 'fas' : 'far'} fa-heart"></i> ${isSaved ? 'محفوظ' : 'حفظ'}
-                </button>
+               
             </div>
         </div>
     `;
