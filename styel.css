@@ -3,10 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Cairo" ; 
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Cairo", sans-serif;
     background: #0a0a0a;
     color: #fff;
     line-height: 1.6;
@@ -286,7 +287,7 @@ body {
     font-size: 11px;
     color: #888;
     margin-bottom: 5px;
-    font-family: Arial, sans-serif;
+    font-family: "Cairo";
 }
 
 /* ===== BANNER SECTION ===== */
@@ -1526,7 +1527,7 @@ body[class*="tv-"] .genre-nav a[href="tv.html"]:not(.nav-switch)::before {
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    font-family: inherit;
+    font-family: "Cairo";
     font-size: 14px;
 }
 
