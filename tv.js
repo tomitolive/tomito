@@ -558,7 +558,7 @@ function createSeriesCard(show) {
     return card;
 }
 
-// ========================================
+//          
 // WATCHLIST FUNCTIONS FOR SERIES
 // ========================================
 
