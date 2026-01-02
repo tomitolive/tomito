@@ -227,18 +227,30 @@ async function loadAllSeries() {
 // ========================================
 // BANNER SECTION
 // ========================================
-
 async function loadBannerSeries() {
     try {
         console.log("🎬 تحميل بانر المسلسلات...");
-        
+
         const url = `${BASE_URL}/tv/popular?api_key=${API_KEY}&language=en&page=1`;
         const res = await fetch(url);
         const data = await res.json();
-        
-        bannerSeries = data.results.filter(s => s.backdrop_path).slice(0, 5);
+
+        // ناخدو 5 فقط وعندهم صورة
+        const baseSeries = data.results.filter(s => s.backdrop_path).slice(0, 5);
+
+        // نضيفو الوصف العربي لكل مسلسل
+        bannerSeries = await Promise.all(
+            baseSeries.map(async (show) => {
+                const arabicOverview = await getArabicOverviewTV(show.id);
+                return {
+                    ...show,
+                    bannerOverviewAR: arabicOverview // خاص بالبانر فقط
+                };
+            })
+        );
+
         setupBannerSeries(bannerSeries);
-        
+
         console.log(`✅ تم تحميل ${bannerSeries.length} مسلسل للبانر`);
     } catch (error) {
         console.error("❌ خطأ في تحميل البانر:", error);
@@ -279,8 +291,10 @@ function setupBannerSeries(series) {
         const backdropUrl = show.backdrop_path ? IMG_URL + show.backdrop_path : 
         "https://via.placeholder.com/1280x500/333/fff?text=No+Image";
         
-        const title = show.name || "No Title";
-        const overview = show.overview ? show.overview.substring(0, 200) + "..." : "No overview available";
+        const title = show.name || show.original_name || "No Title"; // EN
+        const overview = show.bannerOverviewAR
+            ? show.bannerOverviewAR.substring(0, 200) + "..."
+            : "لا يوجد وصف"; // AR
         
         // تنظيف النص من علامات التنصيص
         const cleanTitle = title.replace(/'/g, "\\'").replace(/"/g, '\\"');

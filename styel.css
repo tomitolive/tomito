@@ -2089,4 +2089,90 @@ body[class*="tv-"] .genre-nav a[href="tv.html"]:not(.nav-switch)::before {
         padding: 7px 12px;
         font-size: 13px;
     }
+}/* ===== BANNER RATING STYLES ===== */
+.banner-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.banner-rating i {
+    color: #ffd700;
+}
+
+/* ===== ARABIC TEXT SUPPORT ===== */
+.banner-overlay h2 {
+    font-family: inherit; /* سيستخدم Cairo تلقائيًا */
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: right;
+    direction: ltr; /* العنوان بالإنجليزية من اليسار لليمين */
+}
+
+.banner-overlay p {
+    font-family: "Cairo", sans-serif;
+    color: #ccc;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+    text-align: right;
+    direction: rtl; /* الوصف بالعربية من اليمين لليسار */
+}
+
+/* ===== BANNER BUTTONS ===== */
+.banner-play-btn,
+.banner-save-btn {
+    font-family: "Cairo", sans-serif;
+    font-weight: 600;
+}
+
+.banner-play-btn i,
+.banner-save-btn i {
+    margin-left: 8px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .banner-overlay h2 {
+        font-size: 24px;
+        text-align: right;
+    }
+    
+    .banner-overlay p {
+        font-size: 14px;
+        text-align: right;
+        direction: rtl;
+    }
+    
+    .banner-rating {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-overlay h2 {
+        font-size: 20px;
+        text-align: right;
+    }
+    
+    .banner-overlay p {
+        font-size: 13px;
+        text-align: right;
+        direction: rtl;
+    }
+    
+    .banner-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
