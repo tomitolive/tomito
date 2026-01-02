@@ -1,267 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TomitoZ - الأفلام</title>
-        <link rel="stylesheet" href="styel.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    </head>
-    <body>
-        <!-- شريط التقدم -->
-        <div class="progress-bar" id="progress-bar"></div>
-        <!-- الهيدر -->
-        <header class="site-header" id="site-header">
-            <div class="header-left">
-                <div class="logo">
-                    <svg
-                        width="32"
-                        height="32"
-                        viewBox="0 0 24 24"
-                        fill="#E50914"
-                    >
-                        <path d="M12 2L2 7V17L12 22L22 17V7L12 2ZM12 4.5L19.5 8.25V15.75L12 19.5L4.5 15.75V8.25L12 4.5ZM12 8.5L7 11.25V16.5L12 19.25L17 16.5V11.25L12 8.5Z"/>
-                    </svg>
-                    <span>TOMITO</span>
-                </div>
-                <!-- زر القائمة المنسدلة للجوال -->
-                <!-- <button class="dropdown-toggle" id="dropdownToggle" aria-label="قائمة التنقل">
-                <i class="fas fa-bars"></i>
-                <span class="dropdown-text">القائمة</span>
-            </button> -->
-                <!-- زر الانتقال للمسلسلات -->
-                <div style="display:flex; align-items:center; gap:10px;">
-                    <!-- زر المفضلة بسيط -->
-                    <a href="favorites.html"  class="favorites-btn" title="المفضلة">
-                        <i style="font-size: 36px;" class="fas fa-heart"></i>
-                    </a>
-                    <a href="tv.html"  class="page-switch-btn" >
-                        <i class="fas fa-tv"></i>
-                        <span>المسلسلات</span>
-                    </a>
-                </div>
-            </div>
-            <!-- الشريط الجديد: 3 تصنيفات + زر المزيد -->
-            <div class="genre-strip" id="genre-strip">
-                <button class="genre-btn active" data-genre="">
-                    <i class="fas fa-film"></i>
-                    الكل
-                </button>
-                <button class="genre-btn" data-genre="28">
-                    <i class="fas fa-fire"></i>
-                    أكشن
-                </button>
-                <button class="genre-btn" data-genre="35">
-                    <i class="fas fa-laugh"></i>
-                    كوميديا
-                </button>
-                <button class="genre-btn" data-genre="18">
-                    <i class="fas fa-theater-masks"></i>
-                    دراما
-                </button>
-                <button class="more-genres-btn" id="moreGenresBtn">
-                    <i class="fas fa-ellipsis-h"></i>
-                    المزيد
-                </button>
-            </div>
-            <!-- قائمة التنقل -->
-            <nav class="genre-nav" id="genre-nav">
-                <a
-                    href="#"
-                    data-section="all"
-                    class="active"
-                    onclick="loadAllSections(); return false;"
-                >
-                    <i class="fas fa-film"></i>
-                    الكل
-                </a>
-                <a
-                    href="#"
-                    data-section="watchlist"
-                    id="watchlist-btn"
-                    onclick="showWatchlist(); return false;"
-                >
-                    <i class="fas fa-bookmark"></i>
-                    المحفوظات
-                    <span class="watchlist-count" id="watchlistCount">0</span>
-                </a>
-            </nav>
-            <!-- خلفية ضبابية -->
-            <div class="nav-backdrop" id="navBackdrop"></div>
-        </header>
-        <!-- شريط البحث -->
-        <div class="search-container">
-            <input type="text" id="search" placeholder="🔍 ابحث عن فيلم...">
-        </div>
-        <!-- Container رئيسي -->
-        <main class="main-container">
-            <!-- البانر الرئيسي -->
-            <section class="banner-section">
-                <h2 class="section-title">
-                    <i class="fas fa-crown"></i> الأفلام الأكثر مشاهدة
-                </h2>
-                <div class="banner-carousel">
-                    <button class="carousel-btn prev-btn" aria-label="السابق">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                    <div class="banner-container" id="banner-container"></div>
-                    <button class="carousel-btn next-btn" aria-label="التالي">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <div class="banner-indicators" id="banner-indicators"></div>
-                </div>
-            </section>
-
-            <div class="ad-container" style="text-align: center; width: 100%;">
-                <script>
-                    atOptions = {
-                      'key' : '5be3550eee7e7ca7d699408c1681db41',
-                      'format' : 'iframe',
-                      'height' : 90,
-                      'width' : 728,
-                      'params' : {}
-                    };
-                  </script>
-                  <script src="https://www.highperformanceformat.com/5be3550eee7e7ca7d699408c1681db41/invoke.js"></script>
-            </div>
-            <!-- قسم: أفلام جديدة -->
-            <section class="movies-section">
-                <h2 class="section-title">
-                    <i class="fas fa-sparkles"></i> أفلام جديدة
-                </h2>
-                <div class="movies-container" id="new-movies"></div>
-                <button class="more-btn" onclick="loadMoreMovies('new-movies', 'now_playing')">
-                    <i class="fas fa-plus-circle"></i>
-                    المزيد من الأفلام الجديدة
-                </button>
-            </section>
-
-            <div class="ad-container" style="text-align: center; width: 100%;">
-                <script>
-                    atOptions = {
-                      'key' : '5be3550eee7e7ca7d699408c1681db41',
-                      'format' : 'iframe',
-                      'height' : 90,
-                      'width' : 728,
-                      'params' : {}
-                    };
-                  </script>
-                  <script src="https://www.highperformanceformat.com/5be3550eee7e7ca7d699408c1681db41/invoke.js"></script>
-            </div>
-            <!-- قسم: شائع حالياً -->
-            <section class="movies-section">
-                <h2 class="section-title">
-                    <i class="fas fa-fire"></i> شائع حالياً
-                </h2>
-                <div class="movies-container" id="trending-movies"></div>
-                <button class="more-btn" onclick="loadMoreMovies('trending-movies', 'trending')">
-                    <i class="fas fa-plus-circle"></i>
-                    المزيد من الأفلام الشائعة
-                </button>
-            </section>
-            <div class="ad-container" style="text-align: center; width: 100%;">
-                <script>
-                    atOptions = {
-                      'key' : '5be3550eee7e7ca7d699408c1681db41',
-                      'format' : 'iframe',
-                      'height' : 90,
-                      'width' : 728,
-                      'params' : {}
-                    };
-                  </script>
-                  <script src="https://www.highperformanceformat.com/5be3550eee7e7ca7d699408c1681db41/invoke.js"></script>
-            </div>
-            <!-- قسم: أحدث الأفلام -->
-            <section class="movies-section">
-                <h2 class="section-title">
-                    <i class="fas fa-star"></i> أحدث الأفلام
-                </h2>
-                <div class="movies-container" id="latest-movies"></div>
-                <button class="more-btn" onclick="loadMoreMovies('latest-movies', 'popular')">
-                    <i class="fas fa-plus-circle"></i>
-                    المزيد من أحدث الأفلام
-                </button>
-            </section>
-            <div class="ad-container" style="text-align: center; width: 100%;">
-                <script>
-                    atOptions = {
-                      'key' : '5be3550eee7e7ca7d699408c1681db41',
-                      'format' : 'iframe',
-                      'height' : 90,
-                      'width' : 728,
-                      'params' : {}
-                    };
-                  </script>
-                  <script src="https://www.highperformanceformat.com/5be3550eee7e7ca7d699408c1681db41/invoke.js"></script>
-            </div>
-            <!-- قسم: قريباً -->
-            <section class="movies-section">
-                <h2 class="section-title">
-                    <i class="fas fa-calendar-alt"></i> قريباً
-                </h2>
-                <div class="movies-container" id="upcoming-movies"></div>
-                <button class="more-btn" onclick="loadMoreMovies('upcoming-movies', 'upcoming')">
-                    <i class="fas fa-plus-circle"></i>
-                    المزيد من الأفلام القادمة
-                </button>
-            </section>
-            <div class="ad-container" style="text-align: center; width: 100%;">
-                <script>
-                    atOptions = {
-                      'key' : '5be3550eee7e7ca7d699408c1681db41',
-                      'format' : 'iframe',
-                      'height' : 90,
-                      'width' : 728,
-                      'params' : {}
-                    };
-                  </script>
-                  <script src="https://www.highperformanceformat.com/5be3550eee7e7ca7d699408c1681db41/invoke.js"></script>
-            </div>
-        </main>
-        <!-- الفوتر -->
-        <footer class="site-footer">
-            <div class="footer-content">
-                <div class="logo">Tomito</div>
-                <p>منصة ترفيهية لمشاهدة الأفلام والمسلسلات بأفضل جودة</p>
-                <div class="social-links">
-                    <a href="#" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" aria-label="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="#" aria-label="TikTok">
-                        <i class="fab fa-tiktok"></i>
-                    </a>
-                </div>
-
-
-                <div class="ad-container" style="text-align: center; width: 100%;">
-                    <script>
-                        atOptions = {
-                          'key' : '5a17ef98d1b1d05521619f8d157cc0ee',
-                          'format' : 'iframe',
-                          'height' : 60,
-                          'width' : 468,
-                          'params' : {}
-                        };
-                      </script>
-                      <script src="https://www.highperformanceformat.com/5a17ef98d1b1d05521619f8d157cc0ee/invoke.js"></script>
-                </div>
-                <p class="copyright">
-                    © 2024 Tomito. جميع الحقوق محفوظة.
-                    <br>
-                    هذا الموقع يستخدم بيانات من TMDb API.
-                </p>
-            </div>
-        </footer>
-        <script src="api.js"></script>
-        <script src="header.js"></script>
-    </body>
-</html>

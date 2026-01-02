@@ -281,7 +281,6 @@ class MoviePlayer {
                 this.fetchData(`/movie/${this.movieId}/credits?language=ar`),
                 this.fetchData(`/movie/${this.movieId}/similar?language=ar&page=1`)
             ]);
-            
             this.movieData = { movie, credits, similar };
             this.updateUI();
             
@@ -327,28 +326,23 @@ class MoviePlayer {
         // التقييم
         ratingText.textContent = movie.vote_average?.toFixed(1) || '--';
     }
-    updateBanner(movie) {
-        const bannerTitle = document.getElementById('banner-title');
-        const bannerDesc = document.getElementById('banner-description');
-        
-        // إذا كان الفيلم "الطوفان العظيم" (ID: 982843)
-        if (this.movieId === '982843') {
-            bannerTitle.textContent = 'الطوفان العظيم';
-            bannerDesc.textContent = 'في ما قد يكون اليوم الأخير على الأرض، سرعان ما يتحول صراع ما بين الحياة أو الموت في شقة غارقة إلى بصيص الأمل الوحيد لنجاة البشرية وبقائها....';
-        } else {
-            bannerTitle.textContent = movie.title;
-            bannerDesc.textContent = movie.overview ? movie.overview.substring(0, 200) + '...' : '';
-        }
-        
-        // تعيين خلفية البانر
-        const banner = document.querySelector('.movie-banner .banner-background');
-        if (movie.backdrop_path) {
-            banner.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('${CONFIG.BASE_IMG}/original${movie.backdrop_path}')`;
-            banner.style.backgroundSize = 'cover';
-            banner.style.backgroundPosition = 'center';
-        }
-    }
+   updateBanner(movie) {
+    const bannerTitle = document.getElementById('banner-title');
+    const bannerDesc = document.getElementById('banner-description');
     
+    // العنوان بالإنجليزية والوصف بالعربية
+    bannerTitle.textContent = movie.title || movie.original_title || 'بدون عنوان';
+    bannerDesc.textContent = movie.overview || 'لا يوجد وصف متوفر.';
+    
+    // تعيين خلفية البانر
+    const banner = document.querySelector('.movie-banner .banner-background');
+    if (movie.backdrop_path) {
+        banner.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('${CONFIG.BASE_IMG}/original${movie.backdrop_path}')`;
+        banner.style.backgroundSize = 'cover';
+        banner.style.backgroundPosition = 'center';
+    }
+}     
+
     updateMovieDetails(movie, credits, similar) {
         // العنوان
         document.title = `${movie.title} - Tomito`;

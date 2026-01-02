@@ -88,7 +88,7 @@ async function searchSeries(query) {
         showProgress();
         console.log(`🔍 البحث عن مسلسل: ${query}`);
         
-        const url = `${BASE_URL}/search/tv?api_key=${API_KEY}&language=ar&query=${encodeURIComponent(query)}&page=1`;
+        const url = `${BASE_URL}/search/tv?api_key=${API_KEY}&language=en&query=${encodeURIComponent(query)}&page=1`;
         const res = await fetch(url);
         const data = await res.json();
         
@@ -124,9 +124,9 @@ async function loadSeriesByGenre(genreId) {
         let url;
         
         if (!genreId || genreId === "") {
-            url = `${BASE_URL}/tv/airing_today?api_key=${API_KEY}&language=ar&page=1`;
+            url = `${BASE_URL}/tv/airing_today?api_key=${API_KEY}&language=en&page=1`;
         } else {
-            url = `${BASE_URL}/discover/tv?api_key=${API_KEY}&language=ar&with_genres=${genreId}&sort_by=popularity.desc&page=1`;
+            url = `${BASE_URL}/discover/tv?api_key=${API_KEY}&language=en&with_genres=${genreId}&sort_by=popularity.desc&page=1`;
         }
         
         const res = await fetch(url);
@@ -178,7 +178,7 @@ async function loadMoreGenreSeries(genreId, containerId) {
         currentPage[containerId] = (currentPage[containerId] || 0) + 1;
         const page = currentPage[containerId];
         
-        const url = `${BASE_URL}/discover/tv?api_key=${API_KEY}&language=ar&with_genres=${genreId}&sort_by=popularity.desc&page=${page}`;
+        const url = `${BASE_URL}/discover/tv?api_key=${API_KEY}&language=en&with_genres=${genreId}&sort_by=popularity.desc&page=${page}`;
         const res = await fetch(url);
         const data = await res.json();
         
@@ -227,23 +227,36 @@ async function loadAllSeries() {
 // ========================================
 // BANNER SECTION
 // ========================================
-
 async function loadBannerSeries() {
     try {
         console.log("🎬 تحميل بانر المسلسلات...");
-        
-        const url = `${BASE_URL}/tv/popular?api_key=${API_KEY}&language=ar&page=1`;
+
+        const url = `${BASE_URL}/tv/popular?api_key=${API_KEY}&language=en&page=1`;
         const res = await fetch(url);
         const data = await res.json();
-        
-        bannerSeries = data.results.filter(s => s.backdrop_path).slice(0, 5);
+
+        // ناخدو 5 فقط وعندهم صورة
+        const baseSeries = data.results.filter(s => s.backdrop_path).slice(0, 5);
+
+        // نضيفو الوصف العربي لكل مسلسل
+        bannerSeries = await Promise.all(
+            baseSeries.map(async (show) => {
+                const arabicOverview = await getArabicOverviewTV(show.id);
+                return {
+                    ...show,
+                    bannerOverviewAR: arabicOverview // خاص بالبانر فقط
+                };
+            })
+        );
+
         setupBannerSeries(bannerSeries);
-        
+
         console.log(`✅ تم تحميل ${bannerSeries.length} مسلسل للبانر`);
     } catch (error) {
         console.error("❌ خطأ في تحميل البانر:", error);
     }
 }
+
 function setupBannerSeries(series) {
     const container = document.getElementById("banner-container");
     const indicators = document.getElementById("banner-indicators");
@@ -276,9 +289,12 @@ function setupBannerSeries(series) {
         
         const isSaved = savedSeries.some(s => s.id === show.id);
         const backdropUrl = show.backdrop_path ? IMG_URL + show.backdrop_path : 
-                          "https://via.placeholder.com/1280x500/333/fff?text=No+Image";
-        const title = show.name || "بدون عنوان";
-        const overview = show.overview ? show.overview.substring(0, 200) + "..." : "لا يوجد وصف";
+        "https://via.placeholder.com/1280x500/333/fff?text=No+Image";
+        
+        const title = show.name || show.original_name || "No Title"; // EN
+        const overview = show.bannerOverviewAR
+            ? show.bannerOverviewAR.substring(0, 200) + "..."
+            : "لا يوجد وصف"; // AR
         
         // تنظيف النص من علامات التنصيص
         const cleanTitle = title.replace(/'/g, "\\'").replace(/"/g, '\\"');
@@ -293,14 +309,10 @@ function setupBannerSeries(series) {
                     <button class="banner-play-btn" onclick="playSeries(${show.id})">
                         <i class="fas fa-play"></i> مشاهدة الآن
                     </button>
-                    <button class="banner-save-btn ${isSaved ? 'saved' : ''}" 
-                            onclick="toggleSaveSeries(${show.id}, '${cleanTitle}', '${cleanPosterPath}', ${show.vote_average || 0}, this)">
-                        <i class="${isSaved ? 'fas' : 'far'} fa-heart"></i> ${isSaved ? 'محفوظ' : 'حفظ'}
-                    </button>
                 </div>
             </div>
         `;
-        
+            
         container.appendChild(card);
         
         const indicator = document.createElement("button");
@@ -318,6 +330,7 @@ function setupBannerSeries(series) {
     
     console.log(`✅ تم إعداد ${series.length} بانر`);
 }
+
 function setupBannerControls() {
     const prevBtn = document.querySelector(".prev-btn");
     const nextBtn = document.querySelector(".next-btn");
@@ -332,6 +345,7 @@ function setupBannerControls() {
     
     console.log("🎮 تم إعداد عناصر تحكم البانر");
 }
+
 function changeBannerSlide(index) {
     const slides = document.querySelectorAll(".banner-card");
     const indicators = document.querySelectorAll(".indicator");
@@ -384,7 +398,7 @@ async function loadNewSeries() {
         console.log("📺 تحميل مسلسلات جديدة...");
         
         currentPage['new-series'] = 1;
-        const url = `${BASE_URL}/tv/airing_today?api_key=${API_KEY}&language=ar&page=1`;
+        const url = `${BASE_URL}/tv/airing_today?api_key=${API_KEY}&language=en&page=1`;
         const res = await fetch(url);
         const data = await res.json();
         displaySeries(data.results.slice(0, 10), "new-series");
@@ -400,7 +414,7 @@ async function loadTrendingSeries() {
         console.log("🔥 تحميل المسلسلات الشائعة...");
         
         currentPage['trending-series'] = 1;
-        const url = `${BASE_URL}/trending/tv/week?api_key=${API_KEY}&language=ar`;
+        const url = `${BASE_URL}/trending/tv/week?api_key=${API_KEY}&language=en`;
         const res = await fetch(url);
         const data = await res.json();
         displaySeries(data.results.slice(0, 10), "trending-series");
@@ -416,7 +430,7 @@ async function loadTopRatedSeries() {
         console.log("⭐ تحميل أعلى التقييمات...");
         
         currentPage['top-series'] = 1;
-        const url = `${BASE_URL}/tv/top_rated?api_key=${API_KEY}&language=ar&page=1`;
+        const url = `${BASE_URL}/tv/top_rated?api_key=${API_KEY}&language=en&page=1`;
         const res = await fetch(url);
         const data = await res.json();
         displaySeries(data.results.slice(0, 10), "top-series");
@@ -432,7 +446,7 @@ async function loadUpcomingSeries() {
         console.log("📅 تحميل المسلسلات القادمة...");
         
         currentPage['upcoming-series'] = 1;
-        const url = `${BASE_URL}/tv/on_the_air?api_key=${API_KEY}&language=ar&page=1`;
+        const url = `${BASE_URL}/tv/on_the_air?api_key=${API_KEY}&language=en&page=1`;
         const res = await fetch(url);
         const data = await res.json();
         displaySeries(data.results.slice(0, 10), "upcoming-series");
@@ -458,19 +472,19 @@ async function loadMoreSeries(containerId, type) {
         
         switch(type) {
             case 'airing_today':
-                url = `${BASE_URL}/tv/airing_today?api_key=${API_KEY}&language=ar&page=${page}`;
+                url = `${BASE_URL}/tv/airing_today?api_key=${API_KEY}&language=en&page=${page}`;
                 break;
             case 'trending':
-                url = `${BASE_URL}/trending/tv/week?api_key=${API_KEY}&language=ar&page=${page}`;
+                url = `${BASE_URL}/trending/tv/week?api_key=${API_KEY}&language=en&page=${page}`;
                 break;
             case 'top_rated':
-                url = `${BASE_URL}/tv/top_rated?api_key=${API_KEY}&language=ar&page=${page}`;
+                url = `${BASE_URL}/tv/top_rated?api_key=${API_KEY}&language=en&page=${page}`;
                 break;
             case 'on_the_air':
-                url = `${BASE_URL}/tv/on_the_air?api_key=${API_KEY}&language=ar&page=${page}`;
+                url = `${BASE_URL}/tv/on_the_air?api_key=${API_KEY}&language=en&page=${page}`;
                 break;
             default:
-                url = `${BASE_URL}/tv/popular?api_key=${API_KEY}&language=ar&page=${page}`;
+                url = `${BASE_URL}/tv/popular?api_key=${API_KEY}&language=&page=${page}`;
         }
         
         const res = await fetch(url);
@@ -507,10 +521,13 @@ function displaySeries(series, containerId, isSearch = false) {
     
     if (!series || series.length === 0) {
         container.innerHTML = '<div class="no-movies">لا توجد مسلسلات</div>';
-        return;
+        return;  
     }
     
-    series.forEach(show => {
+    series.forEach(async (show) => {
+        const arabicOverview = await getArabicOverviewTV(show.id);
+        show.overview = arabicOverview;
+    
         const card = createSeriesCard(show);
         container.appendChild(card);
     });
@@ -553,10 +570,6 @@ function createSeriesCard(show) {
                 <button class="series-play-btn" onclick="playSeries(${show.id})">
                     <i class="fas fa-play"></i> مشاهدة
                 </button>
-                <button class="series-save-btn ${isSaved ? 'saved' : ''}" 
-                        onclick="toggleSaveSeries(${show.id}, '${title}', '${show.poster_path}', ${show.vote_average}, this)">
-                    <i class="${isSaved ? 'fas' : 'far'} fa-heart"></i> ${isSaved ? 'محفوظ' : 'حفظ'}
-                </button>
             </div>
         </div>
     `;
@@ -564,7 +577,7 @@ function createSeriesCard(show) {
     return card;
 }
 
-// ========================================
+//          
 // WATCHLIST FUNCTIONS FOR SERIES
 // ========================================
 
@@ -691,6 +704,20 @@ document.addEventListener("visibilitychange", () => {
 });
 
 // ========================================
+// GET ARABIC OVERVIEW FOR TV SERIES
+// ========================================
+
+async function getArabicOverviewTV(id) {
+    try {
+        const res = await fetch(`${BASE_URL}/tv/${id}?api_key=${API_KEY}&language=ar`);
+        const data = await res.json();
+        return data.overview || "لا يوجد وصف";
+    } catch (e) {
+        return "لا يوجد وصف";
+    }
+}
+
+// ========================================
 // GLOBAL FUNCTIONS
 // ========================================
 
@@ -702,6 +729,7 @@ window.loadMoreGenreSeries = loadMoreGenreSeries;
 window.showWatchlist = showWatchlist;
 window.loadSeriesByGenre = loadSeriesByGenre;
 window.loadAllSeries = loadAllSeries;
+
 // اختبار البانر بعد تحميل الصفحة
 window.addEventListener('load', function() {
     console.log("📋 اختبار البانر...");

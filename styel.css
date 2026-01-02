@@ -3,10 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Cairo" ; 
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Cairo", sans-serif;
     background: #0a0a0a;
     color: #fff;
     line-height: 1.6;
@@ -286,7 +287,7 @@ body {
     font-size: 11px;
     color: #888;
     margin-bottom: 5px;
-    font-family: Arial, sans-serif;
+    font-family: "Cairo";
 }
 
 /* ===== BANNER SECTION ===== */
@@ -480,22 +481,23 @@ body {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    background: #1a1a1a;
     transition: all 0.3s ease;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    height: 320px; /* اختار القياس لي بغيتي */
 }
 
-.movie-card:hover {
+.movie-card:hover {    
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .movie-card img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    height: 100%;
+    object-fit: cover; /* مهم بزاف */
+    display: block;
 }
+
 
 .movie-card:hover img {
     transform: scale(1.05);
@@ -1525,7 +1527,7 @@ body[class*="tv-"] .genre-nav a[href="tv.html"]:not(.nav-switch)::before {
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    font-family: inherit;
+    font-family: "Cairo";
     font-size: 14px;
 }
 
@@ -1650,25 +1652,527 @@ body[class*="tv-"] .genre-nav a[href="tv.html"]:not(.nav-switch)::before {
         height: 250px;
         margin: 0 auto 20px;
     }
+}/* ===== FIXED HEADER + GENRE STRIP + SEARCH ===== */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px; /* ارتفاع الهيدر */
+    background: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 1000;
+    border-bottom: 2px solid #E50914;
 }
 
-.favorites-btn{
+/* شريط التصنيفات فوق المحتوى */
+.genre-strip {
+    position: fixed;
+    top: 60px; /* تحت الهيدر مباشرة */
+    left: 0;
+    right: 0;
+    height: 50px; /* ارتفاع الشريط */
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    overflow-x: auto;
+    background: linear-gradient(90deg, #141414 0%, #1a1a1a 100%);
+    border-bottom: 1px solid #222;
+    z-index: 1001;
+    scrollbar-width: none;
+}
+
+.genre-strip::-webkit-scrollbar {
+    display: none;
+}
+
+/* البحث تحت الهيدر + شريط التصنيفات بمسافة */
+.search-container {
+    position: relative;
+    z-index: 1002; /* فوق كلشي */
+    max-width: 800px;
+    margin: 130px auto 40px; /* ارتفاع الهيدر + شريط التصنيفات + مسافة إضافية */
+    padding: 0 20px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 15px 20px;
+    background: #1a1a1a;
+    border: 2px solid #333;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: #E50914;
+    box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.1);
+}
+
+/* المحتوى الرئيسي */
+.main-container {
+    margin-top: 180px; /* ضمان أن المحتوى تحت search-container */
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .genre-strip {
+        top: 50px;
+    }
+    .search-container {
+        margin: 110px auto 30px;
+    }
+    .main-container {
+        margin-top: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .genre-strip {
+        top: 45px;
+    }
+    .search-container {
+        margin: 100px auto 20px;
+    }
+    .main-container {
+        margin-top: 150px;
+    }
+}
+/* أضف هذا الكود في نهاية الملف */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px; /* ارتفاع الهيدر */
+    background: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 1000;
+    border-bottom: 2px solid #E50914;
+}
+
+.genre-strip {
+    position: fixed;
+    top: 60px; /* تحت الهيدر مباشرة */
+    left: 0;
+    right: 0;
+    height: 50px; /* ارتفاع الشريط */
     display: flex;
     align-items: center;
-   
-    padding: 3px;
-    background: #ff1a1a;
-    border-radius: 8px;
-    color: #0a0a0a;
-    text-decoration: none;
+    gap: 10px;
+    padding: 0 20px;
+    overflow-x: auto;
+    background: linear-gradient(90deg, #141414 0%, #1a1a1a 100%);
+    border-bottom: 1px solid #222;
+    z-index: 1001;
+    scrollbar-width: none;
+}
+
+.genre-strip::-webkit-scrollbar {
+    display: none;
+}
+
+/* تعديل الهيدر اليساري ليصبح داخل الهيدر الأساسي */
+.header-left {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: none;
+}
+
+/* البحث تحت الهيدر + شريط التصنيفات */
+.search-container {
+    position: relative;
+    z-index: 1002;
+    max-width: 800px;
+    margin: 130px auto 40px; /* 60 + 50 + 20 */
+    padding: 0 20px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 15px 20px;
+    background: #1a1a1a;
+    border: 2px solid #333;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
     transition: all 0.3s ease;
 }
-.favorites-btn:hover {
-    color: #ff1a1a;
-    background:#0a0a0a ;
-    transform: translateY(-2px);
-    border: 1px solid #ff1a1a;
-    transition: all 0.3s ease;
 
+.search-container input:focus {
+    outline: none;
+    border-color: #E50914;
+    box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.1);
+}
+
+/* تعديل القائمة المنسدلة */
+.genre-nav {
+    top: 110px; /* تحت الهيدر + شريط التصنيفات */
+}
+
+/* المحتوى الرئيسي */
+.main-container {
+    margin-top: 180px; /* إضافة مسافة إضافية */
+}
+
+/* تعديلات الجوال */
+@media (max-width: 768px) {
+    .site-header {
+        height: 50px;
+    }
     
+    .genre-strip {
+        top: 50px;
+        height: 45px;
+    }
+    
+    .search-container {
+        margin: 115px auto 30px; /* 50 + 45 + 20 */
+    }
+    
+    .genre-nav {
+        top: 95px;
+    }
+    
+    .main-container {
+        margin-top: 165px;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header {
+        height: 45px;
+    }
+    
+    .genre-strip {
+        top: 45px;
+        height: 40px;
+    }
+    
+    .search-container {
+        margin: 105px auto 20px; /* 45 + 40 + 20 */
+    }
+    
+    .genre-nav {
+        top: 85px;
+    }
+    
+    .main-container {
+        margin-top: 155px;
+    }
+}@media (max-width: 480px) {
+    .movie-card {
+        height: 240px;
+    }
+}
+/* ===== FIX MOVIE CARD ON MOBILE ===== */
+@media (max-width: 768px) {
+
+    .movie-card {
+        position: relative;
+        width: 100%;
+        height: 260px; /* مهم بزاف */
+        overflow: hidden;
+        border-radius: 12px;
+        background: #000;
+    }
+
+    .movie-card img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        display: block;
+    }
+
+}
+/* ===== MOVIE CARDS – MOBILE FIX (ALL PAGES) ===== */
+@media (max-width: 768px) {
+
+    .movie-card,
+    .film-card,
+    .movies-card {
+        position: relative;
+        width: 100%;
+        height: 260px;
+        overflow: hidden;
+        border-radius: 12px;
+        background: #000;
+    }
+
+    .movie-card img,
+    .film-card img,
+    .movies-card img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        display: block;
+    }
+
+}
+  /* ===== SERIES CARD STYLES ===== */
+.series-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #1a1a1a;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    height: 320px; /* قابل للتعديل */
+}
+
+.series-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.series-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* مهم بزاف باش الصورة تملا الكارد */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.series-card:hover img {
+    transform: scale(1.05);
+}
+
+.series-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.series-card:hover .series-overlay {
+    transform: translateY(0);
+}
+
+.series-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.series-header h3 {
+    font-size: 16px;
+    color: #fff;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.series-rating {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    color: #ffd700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.series-description {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.series-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.series-play-btn,
+.series-save-btn {
+    flex: 1;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.series-play-btn {
+    background: #E50914;
+    color: white;
+}
+
+.series-play-btn:hover {
+    background: #ff0a16;
+}
+
+.series-save-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.series-save-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.series-save-btn.saved {
+    background: #E50914;
+}
+
+/* فصل المسلسل */
+.season-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(229, 9, 20, 0.9);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .series-card {
+        height: 260px; /* تقليل ارتفاع للجوال */
+    }
+    
+    .series-card img {
+        object-position: center top; /* تحسين التركيز للجوال */
+    }
+}
+
+@media (max-width: 480px) {
+    .series-card {
+        height: 240px;
+    }
+    
+    .series-overlay {
+        padding: 15px;
+    }
+    
+    .series-header h3 {
+        font-size: 14px;
+    }
+    
+    .series-description {
+        font-size: 13px;
+        height: 55px;
+    }
+    
+    .series-play-btn,
+    .series-save-btn {
+        padding: 7px 12px;
+        font-size: 13px;
+    }
+}/* ===== BANNER RATING STYLES ===== */
+.banner-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.banner-rating i {
+    color: #ffd700;
+}
+
+/* ===== ARABIC TEXT SUPPORT ===== */
+.banner-overlay h2 {
+    font-family: inherit; /* سيستخدم Cairo تلقائيًا */
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: right;
+    direction: ltr; /* العنوان بالإنجليزية من اليسار لليمين */
+}
+
+.banner-overlay p {
+    font-family: "Cairo", sans-serif;
+    color: #ccc;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+    text-align: right;
+    direction: rtl; /* الوصف بالعربية من اليمين لليسار */
+}
+
+/* ===== BANNER BUTTONS ===== */
+.banner-play-btn,
+.banner-save-btn {
+    font-family: "Cairo", sans-serif;
+    font-weight: 600;
+}
+
+.banner-play-btn i,
+.banner-save-btn i {
+    margin-left: 8px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .banner-overlay h2 {
+        font-size: 24px;
+        text-align: right;
+    }
+    
+    .banner-overlay p {
+        font-size: 14px;
+        text-align: right;
+        direction: rtl;
+    }
+    
+    .banner-rating {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-overlay h2 {
+        font-size: 20px;
+        text-align: right;
+    }
+    
+    .banner-overlay p {
+        font-size: 13px;
+        text-align: right;
+        direction: rtl;
+    }
+    
+    .banner-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
