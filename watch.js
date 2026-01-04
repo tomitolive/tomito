@@ -9,59 +9,73 @@ const CONFIG = {
 };
 
 // ===========================================
-// قائمة الخوادم (السيرفر الرابع أولاً)
+// قائمة الخوادم
 // ===========================================
 const SERVERS = [
     {
-        id: 'server4',
-        name: '🎬 الخادم الرابع',
-        url: 'https://vidsrc.me/embed/',
-        quality: '720p',
+        id: '2embed',
+        name: '🎞️ 2Embed',
+        movieUrl: 'https://www.2embed.cc/embed/',
+        tvUrl: 'https://www.2embed.cc/embedtv/',
+        quality: 'HD',
+        icon: 'fa-play-circle',
+        color: '#27ae60',
+        type: 'both'
+    },
+
+    {
+        id: 'vidsrc_to',
+        name: '🎬 VidSrc.to',
+        movieUrl: 'https://vidsrc.to/embed/movie/',
+        tvUrl: 'https://vidsrc.to/embed/tv/',
+        quality: 'HD',
         icon: 'fa-film',
-        color: '#f39c12'
+        color: '#e74c3c',
+        type: 'both'
     },
     {
-        id: 'server1',
-        name: '📺 الخادم الأول',
-        url: 'https://vidstream.pro/embed/tmdb',
-        quality: '1080p',
-        icon: 'fa-server',
-        color: '#e74c3c'
+        id: 'vidsrc_me',
+        name: '🌟 VidSrc.me',
+        movieUrl: 'https://vidsrc.me/embed/movie/',
+        tvUrl: 'https://vidsrc.me/embed/tv/',
+        quality: 'HD',
+        icon: 'fa-star',
+        color: '#16a085',
+        type: 'both'
     },
     {
-        id: 'server2',
-        name: '⚡ الخادم الثاني',
-        url: 'https://vidcloud.pro/embed/tmdb',
-        quality: '720p',
-        icon: 'fa-bolt',
-        color: '#3498db'
+        id: 'autoembed',
+        name: '🔄 AutoEmbed',
+        movieUrl: 'https://autoembed.cc/embed/movie/',
+        tvUrl: 'https://autoembed.cc/embed/tv/',
+        quality: 'HD',
+        icon: 'fa-sync',
+        color: '#8e44ad',
+        type: 'both'
     },
     {
-        id: 'server3',
-        name: '🌐 الخادم الثالث',
-        url: 'https://streamtape.com/e/',
-        quality: '1080p',
-        icon: 'fa-globe',
-        color: '#2ecc71'
+        id: 'moviesapi',
+        name: '🎯 MoviesAPI',
+        movieUrl: 'https://moviesapi.club/movie/',
+        tvUrl: 'https://moviesapi.club/tv/',
+        quality: 'HD+',
+        icon: 'fa-database',
+        color: '#e67e22',
+        type: 'both',
+        useTMDB: true
     },
+   
     {
-        id: 'server5',
-        name: '🚀 الخادم الخامس',
-        url: 'https://multiembed.mov/direct/',
-        quality: '1080p',
-        icon: 'fa-rocket',
-        color: '#9b59b6'
-    },
-    {
-        id: 'server6',
-        name: '💎 الخادم السادس',
-        url: 'https://2embed.org/embed/',
-        quality: '4K',
-        icon: 'fa-gem',
-        color: '#1abc9c'
+        id: 'hnembed',
+        name: '🎥 HnEmbed',
+        movieUrl: 'https://hnembed.cc/embed/movie/',
+        tvUrl: 'https://hnembed.cc/embed/tv/',
+        quality: 'HD',
+        icon: 'fa-video',
+        color: '#3498db',
+        type: 'both'
     }
 ];
-
 // ===========================================
 // نظام حجب الإعلانات
 // ===========================================
@@ -237,9 +251,10 @@ class MoviePlayer {
     constructor() {
         this.movieId = null;
         this.movieData = null;
-        this.currentServer = SERVERS[0]; // السيرفر الرابع أولاً
+        this.currentServer = SERVERS[0]; // AutoEmbed افتراضياً
         this.adBlocker = new AdBlocker();
         this.savedMovies = JSON.parse(localStorage.getItem('savedMovies') || '{}');
+        this.contentType = 'movie';
         
         this.init();
     }
@@ -247,9 +262,9 @@ class MoviePlayer {
     async init() {
         this.showLoading(true);
         
-        // استخراج معرف الفيلم
         const params = new URLSearchParams(window.location.search);
         this.movieId = params.get('id');
+        this.contentType = params.get('type') || 'movie';
         
         if (!this.movieId) {
             this.showError('لم يتم العثور على معرف الفيلم');
@@ -263,15 +278,15 @@ class MoviePlayer {
     }
     
     setupEventListeners() {
-        // زر مشاهدة الآن في البانر
-        document.getElementById('play-now-btn').addEventListener('click', () => {
-            this.playVideo();
-        });
+        const playBtn = document.getElementById('play-now-btn');
+        if (playBtn) {
+            playBtn.addEventListener('click', () => this.playVideo());
+        }
         
-        // زر حفظ الفيلم
-        document.getElementById('save-movie-btn').addEventListener('click', () => {
-            this.toggleSaveMovie();
-        });
+        const saveBtn = document.getElementById('save-movie-btn');
+        if (saveBtn) {
+            saveBtn.addEventListener('click', () => this.toggleSaveMovie());
+        }
     }
     
     async loadMovieData() {
@@ -296,19 +311,13 @@ class MoviePlayer {
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         return response.json();
     }
+    
     updateUI() {
         const { movie, credits, similar } = this.movieData;
         
-        // تحديث البانر العلوي
         this.updateBanner(movie);
-        
-        // تحديث الميتاداتا في البانر
         this.updateBannerMeta(movie);
-        
-        // تحديث بقية الواجهة
         this.updateMovieDetails(movie, credits, similar);
-        
-        // تحديث حالة زر الحفظ
         this.updateSaveButton();
     }
     
@@ -317,62 +326,56 @@ class MoviePlayer {
         const durationText = document.getElementById('duration-text');
         const ratingText = document.getElementById('rating-text');
         
-        // السنة
-        yearText.textContent = movie.release_date?.split('-')[0] || '--';
-        
-        // المدة
-        durationText.textContent = movie.runtime ? `${movie.runtime} دقيقة` : 'غير معروف';
-        
-        // التقييم
-        ratingText.textContent = movie.vote_average?.toFixed(1) || '--';
+        if (yearText) yearText.textContent = movie.release_date?.split('-')[0] || '--';
+        if (durationText) durationText.textContent = movie.runtime ? `${movie.runtime} دقيقة` : 'غير معروف';
+        if (ratingText) ratingText.textContent = movie.vote_average?.toFixed(1) || '--';
     }
-   updateBanner(movie) {
-    const bannerTitle = document.getElementById('banner-title');
-    const bannerDesc = document.getElementById('banner-description');
     
-    // العنوان بالإنجليزية والوصف بالعربية
-    bannerTitle.textContent = movie.title || movie.original_title || 'بدون عنوان';
-    bannerDesc.textContent = movie.overview || 'لا يوجد وصف متوفر.';
-    
-    // تعيين خلفية البانر
-    const banner = document.querySelector('.movie-banner .banner-background');
-    if (movie.backdrop_path) {
-        banner.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('${CONFIG.BASE_IMG}/original${movie.backdrop_path}')`;
-        banner.style.backgroundSize = 'cover';
-        banner.style.backgroundPosition = 'center';
+    updateBanner(movie) {
+        const bannerTitle = document.getElementById('banner-title');
+        const bannerDesc = document.getElementById('banner-description');
+        
+        if (bannerTitle) bannerTitle.textContent = movie.title || movie.original_title || 'بدون عنوان';
+        if (bannerDesc) bannerDesc.textContent = movie.overview || 'لا يوجد وصف متوفر.';
+        
+        const banner = document.querySelector('.movie-banner .banner-background');
+        if (banner && movie.backdrop_path) {
+            banner.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('${CONFIG.BASE_IMG}/original${movie.backdrop_path}')`;
+            banner.style.backgroundSize = 'cover';
+            banner.style.backgroundPosition = 'center';
+        }
     }
-}     
-
+    
     updateMovieDetails(movie, credits, similar) {
-        // العنوان
         document.title = `${movie.title} - Tomito`;
-        document.getElementById('movie-title').textContent = movie.title;
-        document.getElementById('movie-title-full').textContent = movie.title;
         
-        // الملصق
+        const movieTitle = document.getElementById('movie-title');
+        const movieTitleFull = document.getElementById('movie-title-full');
+        
+        if (movieTitle) movieTitle.textContent = movie.title;
+        if (movieTitleFull) movieTitleFull.textContent = movie.title;
+        
         const poster = document.getElementById('movie-poster');
-        poster.src = movie.poster_path 
-            ? `${CONFIG.BASE_IMG}/w500${movie.poster_path}`
-            : 'https://via.placeholder.com/300x450/1a1a1a/fff?text=No+Image';
+        if (poster) {
+            poster.src = movie.poster_path 
+                ? `${CONFIG.BASE_IMG}/w500${movie.poster_path}`
+                : 'https://via.placeholder.com/300x450/1a1a1a/fff?text=No+Image';
+        }
         
-        // الميتاداتا
         this.updateMetaData(movie);
         
-        // القصة
-        document.getElementById('overview-text').textContent = movie.overview || 'لا يوجد وصف متوفر.';
+        const overviewText = document.getElementById('overview-text');
+        if (overviewText) overviewText.textContent = movie.overview || 'لا يوجد وصف متوفر.';
         
-        // الأنواع
         this.updateGenres(movie.genres || []);
-        
-        // الممثلين
         this.updateCast(credits.cast || []);
-        
-        // الأفلام المشابهة
         this.updateSimilar(similar.results || []);
     }
     
     updateMetaData(movie) {
         const metaGrid = document.getElementById('movie-meta');
+        if (!metaGrid) return;
+        
         const metaData = [
             { icon: 'calendar', label: 'السنة', value: movie.release_date?.split('-')[0] || '--' },
             { icon: 'clock', label: 'المدة', value: movie.runtime ? `${movie.runtime} دقيقة` : 'غير معروف' },
@@ -395,6 +398,8 @@ class MoviePlayer {
     
     updateGenres(genres) {
         const container = document.getElementById('genres-list');
+        if (!container) return;
+        
         container.innerHTML = genres.map(genre => 
             `<span class="genre-tag">${genre.name}</span>`
         ).join('');
@@ -402,6 +407,8 @@ class MoviePlayer {
     
     updateCast(cast) {
         const container = document.getElementById('cast-list');
+        if (!container) return;
+        
         const actors = cast.slice(0, 8);
         
         container.innerHTML = actors.map(actor => {
@@ -426,6 +433,8 @@ class MoviePlayer {
     
     updateSimilar(movies) {
         const container = document.getElementById('similar-list');
+        if (!container) return;
+        
         const similarMovies = movies.slice(0, 6);
         
         container.innerHTML = similarMovies.map(movie => {
@@ -452,22 +461,23 @@ class MoviePlayer {
             `;
         }).join('');
         
-        // إضافة مستمعي الأحداث للأفلام المشابهة
         container.querySelectorAll('.similar-card').forEach(card => {
             card.addEventListener('click', () => {
                 const movieId = card.getAttribute('data-id');
-                window.location.href = `watch.html?id=${movieId}`;
+                window.location.href = `watch.html?id=${movieId}&type=movie`;
             });
         });
     }
     
     createServerButtons() {
         const container = document.getElementById('server-buttons');
+        if (!container) return;
         
         container.innerHTML = SERVERS.map(server => `
             <button class="server-btn ${server.id === this.currentServer.id ? 'active' : ''}" 
                     data-server-id="${server.id}"
-                    style="border-color: ${server.color}">
+                    style="border-color: ${server.color}"
+                    title="${server.description}">
                 <i class="fas ${server.icon}" style="color: ${server.color}"></i>
                 <div class="server-info">
                     <div class="server-name">${server.name}</div>
@@ -476,7 +486,6 @@ class MoviePlayer {
             </button>
         `).join('');
         
-        // إضافة مستمعي الأحداث للأزرار
         container.querySelectorAll('.server-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 const serverId = btn.getAttribute('data-server-id');
@@ -486,22 +495,20 @@ class MoviePlayer {
     }
     
     selectServer(serverId) {
-        // إزالة النشط من جميع الأزرار
         document.querySelectorAll('.server-btn').forEach(btn => {
             btn.classList.remove('active');
         });
         
-        // إضافة النشط للزر المحدد
         const selectedBtn = document.querySelector(`[data-server-id="${serverId}"]`);
         if (selectedBtn) {
             selectedBtn.classList.add('active');
         }
         
-        // العثور على بيانات الخادم
         const server = SERVERS.find(s => s.id === serverId);
         if (!server) return;
         
         this.currentServer = server;
+        this.showNotification(`تم اختيار ${server.name}`, 'success');
     }
     
     playVideo() {
@@ -511,22 +518,39 @@ class MoviePlayer {
         }
         
         const videoPlayer = document.getElementById('video-player');
-        const videoURL = `${this.currentServer.url}${this.movieId}`;
+        if (!videoPlayer) {
+            this.showError('لم يتم العثور على مشغل الفيديو');
+            return;
+        }
         
-        // إضافة معلمات لمنع الإعلانات
-        const cleanURL = `${videoURL}?autoplay=1&mute=0&controls=1&modestbranding=1&rel=0&showinfo=0`;
+        // بناء رابط الفيديو حسب نوع المحتوى
+        let videoURL;
+        if (this.contentType === 'tv') {
+            videoURL = `${this.currentServer.tvUrl}${this.movieId}`;
+        } else {
+            videoURL = `${this.currentServer.movieUrl}${this.movieId}`;
+        }
+        
+        console.log('🎬 رابط الفيديو:', videoURL);
+        console.log('📊 السيرفر:', this.currentServer.name);
+        console.log('🎯 نوع المحتوى:', this.contentType);
         
         this.showNotification(`جاري تحميل ${this.currentServer.name}...`, 'info');
         
-        videoPlayer.src = cleaanURL;
+        // تنظيف المشغل
+        videoPlayer.src = '';
         
-        videoPlayer.onload = () => {
-            this.showNotification('✅ الفيديو جاهز للمشاهدة', 'success');
-        };
-        
-        videoPlayer.onerror = () => {
-            this.showNotification('❌ فشل تحميل الفيديو، جرب خادماً آخر', 'error');
-        };
+        setTimeout(() => {
+            videoPlayer.src = videoURL;
+            
+            videoPlayer.onload = () => {
+                this.showNotification('✅ الفيديو جاهز للمشاهدة', 'success');
+            };
+            
+            videoPlayer.onerror = () => {
+                this.showNotification('❌ فشل تحميل الفيديو، جرب خادماً آخر', 'error');
+            };
+        }, 300);
     }
     
     toggleSaveMovie() {
@@ -537,13 +561,13 @@ class MoviePlayer {
         const saveBtn = document.getElementById('save-movie-btn');
         
         if (this.savedMovies[movieId]) {
-            // إزالة من المحفوظات
             delete this.savedMovies[movieId];
-            saveBtn.classList.remove('saved');
-            saveBtn.innerHTML = '<i class="far fa-heart"></i> حفظ';
+            if (saveBtn) {
+                saveBtn.classList.remove('saved');
+                saveBtn.innerHTML = '<i class="far fa-heart"></i> حفظ';
+            }
             this.showNotification('تمت إزالة الفيلم من المحفوظات', 'info');
         } else {
-            // إضافة للمحفوظات
             this.savedMovies[movieId] = {
                 id: movie.id,
                 title: movie.title,
@@ -551,12 +575,13 @@ class MoviePlayer {
                 rating: movie.vote_average,
                 year: movie.release_date?.split('-')[0]
             };
-            saveBtn.classList.add('saved');
-            saveBtn.innerHTML = '<i class="fas fa-heart"></i> محفوظ';
+            if (saveBtn) {
+                saveBtn.classList.add('saved');
+                saveBtn.innerHTML = '<i class="fas fa-heart"></i> محفوظ';
+            }
             this.showNotification('تم حفظ الفيلم في المحفوظات', 'success');
         }
         
-        // حفظ في localStorage
         localStorage.setItem('savedMovies', JSON.stringify(this.savedMovies));
     }
     
@@ -566,45 +591,47 @@ class MoviePlayer {
         const movieId = this.movieData.movie.id.toString();
         const saveBtn = document.getElementById('save-movie-btn');
         
-        if (this.savedMovies[movieId]) {
-            saveBtn.classList.add('saved');
-            saveBtn.innerHTML = '<i class="fas fa-heart"></i> محفوظ';
-        } else {
-            saveBtn.classList.remove('saved');
-            saveBtn.innerHTML = '<i class="far fa-heart"></i> حفظ';
+        if (saveBtn) {
+            if (this.savedMovies[movieId]) {
+                saveBtn.classList.add('saved');
+                saveBtn.innerHTML = '<i class="fas fa-heart"></i> محفوظ';
+            } else {
+                saveBtn.classList.remove('saved');
+                saveBtn.innerHTML = '<i class="far fa-heart"></i> حفظ';
+            }
         }
     }
     
-    // ======== دوال المساعدة ========
     showLoading(show) {
         const loadingScreen = document.getElementById('loading-screen');
         const progressBar = document.getElementById('progress-bar');
         
         if (show) {
-            loadingScreen.style.display = 'flex';
-            progressBar.style.transform = 'scaleX(0)';
-            progressBar.style.display = 'block';
+            if (loadingScreen) loadingScreen.style.display = 'flex';
+            if (progressBar) {
+                progressBar.style.transform = 'scaleX(0)';
+                progressBar.style.display = 'block';
+            }
         } else {
-            loadingScreen.style.display = 'none';
-            progressBar.style.transform = 'scaleX(1)';
-            setTimeout(() => {
-                progressBar.style.display = 'none';
-            }, 300);
+            if (loadingScreen) loadingScreen.style.display = 'none';
+            if (progressBar) {
+                progressBar.style.transform = 'scaleX(1)';
+                setTimeout(() => {
+                    progressBar.style.display = 'none';
+                }, 300);
+            }
         }
     }
     
     showNotification(message, type = 'info') {
-        // إزالة التنبيهات القديمة
         document.querySelectorAll('.notification').forEach(n => n.remove());
         
-        // إنشاء تنبيه جديد
         const notification = document.createElement('div');
         notification.className = `notification ${type}`;
         notification.textContent = message;
         
         document.body.appendChild(notification);
         
-        // إزالة التنبيه بعد 3 ثواني
         setTimeout(() => {
             notification.style.animation = 'slideOut 0.3s ease';
             setTimeout(() => notification.remove(), 300);
@@ -613,23 +640,19 @@ class MoviePlayer {
     
     showError(message) {
         this.showNotification(message, 'error');
+        console.error('ERROR:', message);
     }
 }
 
 // ===========================================
-// بدء التشغيل عند تحميل الصفحة
+// دوال مساعدة عامة
 // ===========================================
-document.addEventListener('DOMContentLoaded', () => {
-    window.moviePlayer = new MoviePlayer();
-});
 
-// دالة مساعدة للفيلم المحدد
 function playMovie(movieId) {
-    window.location.href = `watch.html?id=${movieId}`;
+    window.location.href = `watch.html?id=${movieId}&type=movie`;
 }
 
 function toggleSaveMovie(movieId, title, poster, rating, element) {
-    // حفظ في localStorage
     let savedMovies = JSON.parse(localStorage.getItem('savedMovies') || '{}');
     
     if (savedMovies[movieId]) {
@@ -647,18 +670,9 @@ function toggleSaveMovie(movieId, title, poster, rating, element) {
     }
     
     localStorage.setItem('savedMovies', JSON.stringify(savedMovies));
-}// إعداد أزرار التحكم
+}
+
 function setupPlayerControls() {
-    // زر تغيير الجودة
-    const qualityToggle = document.getElementById('quality-toggle');
-    if (qualityToggle) {
-        qualityToggle.addEventListener('click', () => {
-            // هنا يمكنك إضافة منطق تغيير الجودة
-            moviePlayer.showNotification('ميزة تغيير الجودة قريباً', 'info');
-        });
-    }
-    
-    // زر ملء الشاشة
     const fullscreenBtn = document.getElementById('fullscreen-btn');
     if (fullscreenBtn) {
         fullscreenBtn.addEventListener('click', () => {
@@ -674,7 +688,9 @@ function setupPlayerControls() {
     }
 }
 
-// استدعاء عند تحميل الصفحة
+// ===========================================
+// بدء التشغيل
+// ===========================================
 document.addEventListener('DOMContentLoaded', () => {
     window.moviePlayer = new MoviePlayer();
     setupPlayerControls();
