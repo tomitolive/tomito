@@ -2175,4 +2175,31 @@ body[class*="tv-"] .genre-nav a[href="tv.html"]:not(.nav-switch)::before {
         flex-direction: column;
         gap: 10px;
     }
+}/* في قسم CSS الخاص بالصفحة */
+.server-btn.default {
+    border-width: 2px !important;
+    border-style: solid !important;
+}
+
+.server-btn.backup {
+    background: linear-gradient(135deg, #e67e22 0%, #f39c12 100%);
+    color: white !important;
+}
+
+.server-badge {
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    background: #3498db;
+    color: white;
+    margin-top: 4px;
+    display: inline-block;
+}
+
+.server-btn.default .server-badge {
+    background: #e74c3c;
+}
+
+.server-btn.backup .server-badge {
+    background: #d35400;
 }
