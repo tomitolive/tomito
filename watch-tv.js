@@ -488,44 +488,178 @@ playVideo() {
     const videoPlayer = document.getElementById('video-player');
     const playBtn = document.getElementById('play-now-btn');
     
-    // تعطيل الزر مؤقتاً
+    // تأكد من وجود العناصر
+    if (!videoPlayer) {
+        console.error('❌ عنصر مشغل الفيديو غير موجود');
+        return;
+    }
+    
+    // تعطيل الزر مؤقتاً مع تحسين تجربة المستخدم
     if (playBtn) {
         playBtn.disabled = true;
+        playBtn.classList.add('loading');
         playBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري التحميل...';
     }
     
-    // 1. إيقاف الفيديو الحالي
-    try {
-        videoPlayer.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
-    } catch (e) {}
+    // 1. إيقاف الفيديو الحالي بشكل أكثر أماناً
+    this.stopCurrentVideo();
     
     // 2. مسح الرابط القديم
-    videoPlayer.src = '';
-    videoPlayer.removeAttribute('src');
+    this.clearVideoSource(videoPlayer);
     
     // 3. بناء الرابط الجديد
     const videoURL = this.buildVideoURL();
-    const cleanURL = `${videoURL}?autoplay=1&mute=0&controls=1&rel=0&modestbranding=1`;
+    if (!videoURL) {
+        this.showError('عذراً، الرابط غير متاح حالياً');
+        this.resetPlayButton(playBtn);
+        return;
+    }
     
+    const cleanURL = this.formatVideoURL(videoURL);
     console.log('🎬 رابط الفيديو الجديد:', cleanURL);
     
-    // 4. تأخير ثم تعيين الرابط الجديد
+    // 4. تأخير ثم تعيين الرابط الجديد مع تحسينات
     setTimeout(() => {
-        videoPlayer.src = cleanURL;
-        
-        // 5. تحديث الواجهة
-        this.updateCurrentPlaying();
-        this.showNotification(`جاري تحميل الحلقة ${this.currentEpisode}...`, 'info');
-        
-        // 6. إعادة تمكين الزر
-        if (playBtn) {
-            setTimeout(() => {
-                playBtn.disabled = false;
-                playBtn.innerHTML = '<i class="fas fa-play-circle"></i> تشغيل الآن';
-            }, 2000);
+        try {
+            // إضافة معاملات للتحكم بشكل أفضل
+            videoPlayer.src = cleanURL;
+            videoPlayer.load(); // فرض تحميل الفيديو
+            
+            // 5. الانتقال إلى مشغل الفيديو بسلاسة
+            this.scrollToVideoPlayer(videoPlayer);
+            
+            // 6. تحديث الواجهة
+            this.updateCurrentPlaying();
+            this.showNotification(`جاري تشغيل الحلقة ${this.currentEpisode}...`, 'info');
+            
+            // 7. إضافة مستمع للأحداث لمعرفة حالة التحميل
+            this.setupVideoListeners(videoPlayer);
+            
+        } catch (error) {
+            console.error('❌ خطأ في تشغيل الفيديو:', error);
+            this.showError('حدث خطأ أثناء تشغيل الفيديو');
+            this.resetPlayButton(playBtn);
         }
         
-    }, 300); // تأخير 300ms للتأكد من مسح القديم
+        // إعادة تمكين الزر بعد تأخير مناسب
+        this.resetPlayButtonWithDelay(playBtn, 1500);
+        
+    }, 300);
+}
+
+// دالة مساعدة للتوقيت الأفضل
+scrollToVideoPlayer(playerElement) {
+    if (playerElement) {
+        // حساب الموقع مع بعض الإزاحة للأعلى لرؤية أفضل
+        const offsetTop = playerElement.offsetTop - 100;
+        
+        // التمرير بسلاسة
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+        });
+        
+        // إضافة تأثير تركيز مرئي
+        playerElement.classList.add('playing');
+        setTimeout(() => {
+            playerElement.classList.remove('playing');
+        }, 1000);
+    }
+}
+
+// دالة مساعدة لإيقاف الفيديو الحالي
+stopCurrentVideo() {
+    const videoPlayer = document.getElementById('video-player');
+    if (videoPlayer) {
+        try {
+            // محاولة إيقاف عبر postMessage للفيديوهات المضمّنة
+            videoPlayer.contentWindow?.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+            
+            // محاولة إيقاف عبر API إذا كان فيديو HTML5 عادي
+            if (videoPlayer.pause && typeof videoPlayer.pause === 'function') {
+                videoPlayer.pause();
+                videoPlayer.currentTime = 0;
+            }
+        } catch (e) {
+            console.log('⚠️ لا يمكن إيقاف الفيديو الحالي:', e);
+        }
+    }
+}
+
+// دالة مساعدة لمسح المصدر
+clearVideoSource(videoPlayer) {
+    videoPlayer.src = '';
+    videoPlayer.removeAttribute('src');
+    
+    // إضافة تأخير إضافي لضمان مسح المصدر
+    setTimeout(() => {
+        if (videoPlayer.src) {
+            videoPlayer.src = '';
+        }
+    }, 100);
+}
+
+// دالة مساعدة لتهيئة URL
+formatVideoURL(url) {
+    // إضافة المعلمات الأساسية
+    const baseParams = new URLSearchParams({
+        autoplay: 1,
+        mute: 0,
+        controls: 1,
+        rel: 0,
+        modestbranding: 1,
+        enablejsapi: 1,
+        origin: window.location.origin
+    });
+    
+    // التحقق إذا كان الرابط يحتوي على معلمات مسبقاً
+    const [baseUrl, existingParams] = url.split('?');
+    
+    if (existingParams) {
+        const params = new URLSearchParams(existingParams);
+        // دمج المعلمات
+        baseParams.forEach((value, key) => {
+            params.set(key, value);
+        });
+        return `${baseUrl}?${params.toString()}`;
+    }
+    
+    return `${url}?${baseParams.toString()}`;
+}
+
+// دالة لإعادة ضبط الزر
+resetPlayButton(button) {
+    if (button) {
+        button.disabled = false;
+        button.classList.remove('loading');
+        button.innerHTML = '<i class="fas fa-play-circle"></i> تشغيل الآن';
+    }
+}
+
+// دالة لإعادة ضبط الزر بعد تأخير
+resetPlayButtonWithDelay(button, delay = 1500) {
+    setTimeout(() => {
+        this.resetPlayButton(button);
+    }, delay);
+}
+
+// دالة لإعداد مستمعي الأحداث
+setupVideoListeners(videoPlayer) {
+    // إزالة المستمعين السابقين
+    videoPlayer.onload = null;
+    videoPlayer.onerror = null;
+    
+    // مستمع لحدث التحميل
+    videoPlayer.onload = () => {
+        console.log('✅ تم تحميل الفيديو بنجاح');
+        this.showNotification('تم تحميل الفيديو', 'success');
+    };
+    
+    // مستمع لحدث الخطأ
+    videoPlayer.onerror = (error) => {
+        console.error('❌ خطأ في تحميل الفيديو:', error);
+        this.showError('حدث خطأ أثناء تحميل الفيديو');
+    };
 }
 
 // ===========================================
