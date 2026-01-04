@@ -518,7 +518,7 @@ class MoviePlayer {
         
         this.showNotification(`جاري تحميل ${this.currentServer.name}...`, 'info');
         
-        videoPlayer.src = cleanURL;
+        videoPlayer.src = cleaanURL;
         
         videoPlayer.onload = () => {
             this.showNotification('✅ الفيديو جاهز للمشاهدة', 'success');
