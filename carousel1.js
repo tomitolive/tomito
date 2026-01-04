@@ -40,27 +40,68 @@ async function initMovieBanner() {
 async function loadMovieBannerData() {
     try {
         console.log("📥 تحميل أفلام البانر...");
-        const url = `${MOVIE_BANNER_BASE_URL}/movie/popular?api_key=${MOVIE_BANNER_API_KEY}&language=ar&page=1`;
+        
+        // جلب الأفلام الشعبية
+        const url = `${MOVIE_BANNER_BASE_URL}/movie/popular?api_key=${MOVIE_BANNER_API_KEY}&language=en&page=1`;
         const res = await fetch(url);
-        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        
+        if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        
         const data = await res.json();
         
-        const movies = data.results.filter(f => f.backdrop_path).slice(0, 5);
-        if (movies.length === 0) throw new Error("لا توجد أفلام متاحة");
+        // أخذ 10 أفلام فقط عندهم backdrop
+        const movies = data.results
+            .filter(movie => movie.backdrop_path)
+            .slice(0, 10);
         
-        bannerMovies = movies.map(f => ({
-            id: f.id,
-            title: f.title || "No Title",
-            overview: f.overview || "لا يوجد وصف متاح",
-            backdrop_path: f.backdrop_path,
-            original_language: f.original_language,
-            vote_average: f.vote_average
-        }));
-
+        if (movies.length === 0) {
+            throw new Error("لا توجد أفلام متاحة");
+        }
+        
+        // تحميل الوصف العربي لكل فيلم
+        bannerMovies = await Promise.all(
+            movies.map(async (movie) => {
+                try {
+                    // جلب التفاصيل بالعربية للوصف فقط
+                    const arUrl = `${MOVIE_BANNER_BASE_URL}/movie/${movie.id}?api_key=${MOVIE_BANNER_API_KEY}&language=ar`;
+                    const arRes = await fetch(arUrl);
+                    
+                    let arabicOverview = movie.overview; // Default to English
+                    
+                    if (arRes.ok) {
+                        const arData = await arRes.json();
+                        arabicOverview = arData.overview || movie.overview;
+                    }
+                    
+                    return {
+                        id: movie.id,
+                        title: movie.original_title || movie.title, // ENGLISH TITLE ONLY
+                        overview: arabicOverview, // ARABIC DESCRIPTION
+                        backdrop_path: movie.backdrop_path,
+                        vote_average: movie.vote_average,
+                        release_date: movie.release_date
+                    };
+                } catch (err) {
+                    console.error(`❌ خطأ في تحميل التفاصيل لـ ${movie.id}:`, err);
+                    return {
+                        id: movie.id,
+                        title: movie.title, // ENGLISH TITLE
+                        overview: movie.overview || "لا يوجد وصف متاح", // ARABIC OR ENGLISH DESCRIPTION
+                        backdrop_path: movie.backdrop_path,
+                        vote_average: movie.vote_average,
+                        release_date: movie.release_date
+                    };
+                }
+            })
+        );
+        
         console.log(`✅ تم تحميل ${bannerMovies.length} فيلم`);
+        console.log("📋 بيانات الأفلام:", bannerMovies);
     } catch (error) {
         console.error("❌ فشل تحميل بانر الأفلام:", error);
-        showMovieBannerError();
+        throw error;
     }
 }
 
@@ -72,15 +113,21 @@ function createMovieBannerSlides() {
     const container = document.getElementById("banner-container");
     const indicators = document.getElementById("banner-indicators");
     
-    if (!container || !indicators) return;
+    if (!container || !indicators) {
+        console.error("❌ عناصر البانر غير موجودة");
+        return;
+    }
+    
     container.innerHTML = "";
     indicators.innerHTML = "";
+    
     if (bannerMovies.length === 0) {
         showMovieBannerError();
         return;
     }
-
+    
     bannerMovies.forEach((movie, i) => {
+        // إنشاء البطاقة
         const card = document.createElement("div");
         card.className = `banner-card ${i === 0 ? "active" : ""}`;
         
@@ -88,30 +135,48 @@ function createMovieBannerSlides() {
             ? `${MOVIE_BANNER_IMG_URL}${movie.backdrop_path}`
             : "https://via.placeholder.com/1280x500/333/fff?text=No+Image";
         
+        const title = movie.title || "No Title";
         const desc = getMovieShortDescription(movie.overview);
+        
+        // إضافة تقييم إذا كان متوفرًا
         const rating = movie.vote_average ? 
-            `<div class="banner-rating"><i class="fas fa-star"></i> ${movie.vote_average.toFixed(1)}/10</div>` : "";
+            `<div class="banner-rating">
+                <i class="fas fa-star"></i> ${movie.vote_average.toFixed(1)}
+             </div>` : "";
+        
+        // إضافة سنة الإصدار إذا كانت متوفرة
+        const year = movie.release_date ? 
+            `<div class="banner-year">
+                <i class="far fa-calendar"></i> ${movie.release_date.substring(0,4)}
+             </div>` : "";
         
         card.innerHTML = `
-            <img src="${img}" alt="${movie.title}" loading="lazy">
+            <img src="${img}" alt="${title}" loading="lazy">
             <div class="banner-overlay">
-                ${rating}
-                <h2>${movie.title}</h2>
-                <p>${desc}</p>
+                <div class="banner-meta">
+                    ${rating}
+                    ${year}
+                </div>
+                <h2 class="banner-title">${title}</h2>
+                <p class="banner-description">${desc}</p>
                 <div class="banner-actions">
                     <button class="banner-play-btn" onclick="handleMovieBannerPlay(${movie.id})">
                         <i class="fas fa-play"></i> مشاهدة الآن
-                 
+                    </button>
+                </div>
             </div>
         `;
         
         container.appendChild(card);
-
+        
+        // إنشاء المؤشر
         const dot = document.createElement("button");
         dot.className = `indicator ${i === 0 ? "active" : ""}`;
         dot.onclick = () => goToMovieBannerSlide(i);
         indicators.appendChild(dot);
     });
+    
+    console.log(`✅ تم إنشاء ${bannerMovies.length} شريحة`);
 }
 
 // ========================================
@@ -120,9 +185,43 @@ function createMovieBannerSlides() {
 
 function getMovieShortDescription(text) {
     if (!text || text === "لا يوجد وصف متاح") return "لا يوجد وصف";
+    
+    // تنظيف النص
+    let cleanedText = text.trim();
+    
+    // الحد الأقصى للأحرف حسب حجم الشاشة
     const w = window.innerWidth;
-    let max = w <= 480 ? 80 : w <= 768 ? 120 : 200;
-    return text.length > max ? text.substring(0, max) + "..." : text;
+    let max = 200; // الافتراضي لسطح المكتب
+    
+    if (w <= 480) {
+        max = 80; // للهواتف
+    } else if (w <= 768) {
+        max = 120; // للأجهزة اللوحية
+    }
+    
+    // التحقق من اللغة العربية
+    const isArabic = /[\u0600-\u06FF]/.test(cleanedText);
+    
+    // تقصير النص مع الحفاظ على الكلمات الكاملة
+    if (cleanedText.length > max) {
+        // للعربية: البحث عن أقرب مسافة للقطع
+        if (isArabic) {
+            let lastSpace = cleanedText.lastIndexOf(' ', max);
+            if (lastSpace === -1 || lastSpace < max - 30) {
+                lastSpace = max;
+            }
+            return cleanedText.substring(0, lastSpace) + "...";
+        } else {
+            // للإنجليزية: البحث عن أقرب مسافة
+            let lastSpace = cleanedText.lastIndexOf(' ', max);
+            if (lastSpace === -1 || lastSpace < max - 30) {
+                lastSpace = max;
+            }
+            return cleanedText.substring(0, lastSpace) + "...";
+        }
+    }
+    
+    return cleanedText;
 }
 
 // ========================================
@@ -132,8 +231,20 @@ function getMovieShortDescription(text) {
 function setupMovieBannerButtons() {
     const prev = document.querySelector(".prev-btn");
     const next = document.querySelector(".next-btn");
-    if (prev) prev.onclick = e => { e.preventDefault(); goToMovieBannerSlide(currentBannerIndex - 1); };
-    if (next) next.onclick = e => { e.preventDefault(); goToMovieBannerSlide(currentBannerIndex + 1); };
+    
+    if (prev) {
+        prev.onclick = (e) => {
+            e.preventDefault();
+            goToMovieBannerSlide(currentBannerIndex - 1);
+        };
+    }
+    
+    if (next) {
+        next.onclick = (e) => {
+            e.preventDefault();
+            goToMovieBannerSlide(currentBannerIndex + 1);
+        };
+    }
 }
 
 // ========================================
@@ -143,6 +254,7 @@ function setupMovieBannerButtons() {
 function applyMovieBannerStyles() {
     setTimeout(() => {
         const cards = document.querySelectorAll('.banner-card');
+        
         cards.forEach((card, i) => {
             card.style.cssText = `
                 position: absolute;
@@ -155,10 +267,14 @@ function applyMovieBannerStyles() {
                 z-index: ${i === 0 ? '2' : '1'};
                 transition: opacity 0.8s ease;
             `;
+            
             const img = card.querySelector('img');
-            if (img) img.style.cssText = 'width:100%;height:100%;object-fit:cover;';
+            if (img) {
+                img.style.cssText = 'width:100%;height:100%;object-fit:cover;';
+            }
         });
-        console.log("✅ تم تطبيق أنماط البانر");
+        
+        console.log("✅ تم تطبيق الأنماط");
     }, 100);
 }
 
@@ -168,37 +284,47 @@ function applyMovieBannerStyles() {
 
 function goToMovieBannerSlide(index) {
     if (isChanging) return;
+    
     const cards = document.querySelectorAll('.banner-card');
     const dots = document.querySelectorAll('.indicator');
+    
     if (!cards.length) return;
-
+    
+    // تصحيح الفهرس
     if (index < 0) index = cards.length - 1;
     if (index >= cards.length) index = 0;
     if (index === currentBannerIndex) return;
-
+    
     isChanging = true;
+    
     const oldCard = cards[currentBannerIndex];
     const newCard = cards[index];
     const oldDot = dots[currentBannerIndex];
     const newDot = dots[index];
-
+    
+    // إخفاء القديم
     oldCard.style.opacity = '0';
     oldCard.style.zIndex = '1';
     oldCard.classList.remove('active');
     if (oldDot) oldDot.classList.remove('active');
-
+    
+    // إظهار الجديد
     setTimeout(() => {
         newCard.style.visibility = 'visible';
         newCard.style.opacity = '1';
         newCard.style.zIndex = '2';
         newCard.classList.add('active');
         if (newDot) newDot.classList.add('active');
-
-        setTimeout(() => { oldCard.style.visibility = 'hidden'; isChanging = false; }, 100);
+        
+        setTimeout(() => {
+            oldCard.style.visibility = 'hidden';
+            isChanging = false;
+        }, 100);
     }, 50);
-
+    
     currentBannerIndex = index;
     restartMovieBannerAutoPlay();
+    
     console.log(`🔄 شريحة ${index + 1}/${cards.length}`);
 }
 
@@ -208,16 +334,24 @@ function goToMovieBannerSlide(index) {
 
 function startMovieBannerAutoPlay() {
     stopMovieBannerAutoPlay();
+    
     const cards = document.querySelectorAll('.banner-card');
     if (cards.length <= 1) return;
+    
     bannerInterval = setInterval(() => {
-        if (!isChanging && !document.hidden) goToMovieBannerSlide(currentBannerIndex + 1);
+        if (!isChanging && !document.hidden) {
+            goToMovieBannerSlide(currentBannerIndex + 1);
+        }
     }, 6000);
+    
     console.log("▶️ بدأ التشغيل التلقائي");
 }
 
 function stopMovieBannerAutoPlay() {
-    if (bannerInterval) { clearInterval(bannerInterval); bannerInterval = null; }
+    if (bannerInterval) {
+        clearInterval(bannerInterval);
+        bannerInterval = null;
+    }
 }
 
 function restartMovieBannerAutoPlay() {
@@ -230,8 +364,11 @@ function restartMovieBannerAutoPlay() {
 // ========================================
 
 document.addEventListener("visibilitychange", () => {
-    if (document.hidden) stopMovieBannerAutoPlay();
-    else restartMovieBannerAutoPlay();
+    if (document.hidden) {
+        stopMovieBannerAutoPlay();
+    } else {
+        restartMovieBannerAutoPlay();
+    }
 });
 
 // ========================================
@@ -242,9 +379,10 @@ let resizeTimer;
 window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
+        // تحديث الوصف عند تغيير حجم الشاشة
         const cards = document.querySelectorAll('.banner-card');
         cards.forEach((card, index) => {
-            const descElement = card.querySelector('.banner-overlay p');
+            const descElement = card.querySelector('.banner-description');
             if (descElement && bannerMovies[index]) {
                 descElement.textContent = getMovieShortDescription(bannerMovies[index].overview);
             }
@@ -260,6 +398,7 @@ window.addEventListener('resize', () => {
 function showMovieBannerError() {
     const container = document.getElementById("banner-container");
     if (!container) return;
+    
     container.innerHTML = `
         <div class="banner-card active" style="position:relative;width:100%;height:100%;">
             <img src="https://via.placeholder.com/1280x500/222/fff?text=Error" 
@@ -281,32 +420,11 @@ function showMovieBannerError() {
 
 function handleMovieBannerPlay(id) {
     console.log(`▶️ فيلم: ${id}`);
-    window.location.href = `watch-movie.html?id=${id}`;
-}
-
-// ========================================
-// حفظ في قائمة المشاهدة
-// ========================================
-
-function saveToWatchlist(id, type = 'movie') {
-    try {
-        let watchlist = JSON.parse(localStorage.getItem('watchlist')) || [];
-        const exists = watchlist.some(item => item.id === id && item.type === type);
-        if (!exists) {
-            watchlist.push({ id, type, addedAt: new Date().toISOString() });
-            localStorage.setItem('watchlist', JSON.stringify(watchlist));
-            const btn = event.target.closest('.banner-save-btn');
-            if (btn) { btn.innerHTML = '<i class="fas fa-bookmark"></i> محفوظ'; btn.classList.add('saved'); }
-            console.log(`✅ تم حفظ ${type} ${id} في القائمة`);
-        } else {
-            watchlist = watchlist.filter(item => !(item.id === id && item.type === type));
-            localStorage.setItem('watchlist', JSON.stringify(watchlist));
-            const btn = event.target.closest('.banner-save-btn');
-            if (btn) { btn.innerHTML = '<i class="far fa-bookmark"></i> حفظ'; btn.classList.remove('saved'); }
-            console.log(`🗑️ تم إزالة ${type} ${id} من القائمة`);
-        }
-    } catch (error) {
-        console.error("❌ خطأ في حفظ القائمة:", error);
+    
+    if (typeof playMovie === 'function') {
+        playMovie(id);
+    } else {
+        window.location.href = `watch.html?id=${id}`;
     }
 }
 
@@ -316,4 +434,3 @@ function saveToWatchlist(id, type = 'movie') {
 
 window.handleMovieBannerPlay = handleMovieBannerPlay;
 window.goToMovieBannerSlide = goToMovieBannerSlide;
-window.saveToWatchlist = saveToWatchlist;
