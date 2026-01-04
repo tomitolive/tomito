@@ -4,73 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags الأساسية -->
-    <title>TomitoZ - شاهد أحدث الأفلام العربية والأجنبية مجاناً | موقع أفلام أونلاين</title>
-    <meta name="description" content="شاهد أحدث الأفلام العربية والأجنبية بجودة عالية على TomitoZ. أفلام أكشن، كوميديا، دراما، رعب وأكثر. مشاهدة مباشرة ومجانية لأفضل الأفلام 2024-2025">
-    <meta name="keywords" content="أفلام, أفلام عربية, أفلام أجنبية, مشاهدة أفلام, أفلام مجانية, أفلام أونلاين, افلام 2024, افلام 2025, مسلسلات, TomitoZ">
-    <meta name="author" content="TomitoZ">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    
-    <!-- Open Graph Meta Tags للسوشيال ميديا -->
-    <meta property="og:title" content="TomitoZ - شاهد أحدث الأفلام والمسلسلات مجاناً">
-    <meta property="og:description" content="منصة ترفيهية لمشاهدة أحدث الأفلام والمسلسلات بأفضل جودة ومجاناً">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.tomito.xyz">
-    <meta property="og:image" content="https://www.tomito.xyz/images/og-image.jpg">
-    <meta property="og:site_name" content="TomitoZ">
-    <meta property="og:locale" content="ar_AR">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="TomitoZ - شاهد أحدث الأفلام مجاناً">
-    <meta name="twitter:description" content="منصة ترفيهية لمشاهدة أحدث الأفلام والمسلسلات بأفضل جودة">
-    <meta name="twitter:image" content="https://www.tomito.xyz/images/twitter-image.jpg">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.tomito.xyz">
-    
-    <!-- Alternate Languages -->
-    <link rel="alternate" hreflang="ar" href="https://www.tomito.xyz">
-    <link rel="alternate" hreflang="x-default" href="https://www.tomito.xyz">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    
-    <!-- Structured Data - JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "TomitoZ",
-        "url": "https://www.tomito.xyz",
-        "description": "منصة ترفيهية لمشاهدة أحدث الأفلام والمسلسلات بأفضل جودة",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://www.tomito.xyz/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        },
-        "inLanguage": "ar"
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "TomitoZ",
-        "url": "https://www.tomito.xyz",
-        "logo": "https://www.tomito.xyz/logo.png",
-        "sameAs": [
-            "https://www.facebook.com/tomitoz",
-            "https://twitter.com/tomitoz",
-            "https://www.instagram.com/tomitoz",
-            "https://www.youtube.com/tomitoz"
-        ]
-    }
-    </script>
-    
+    <title>TomitoZ - الأفلام</title>
     <link rel="stylesheet" href="styel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,79 +14,79 @@
 
 <body>
     <!-- شريط التقدم -->
-    <div class="progress-bar" id="progress-bar" role="progressbar" aria-label="تقدم التمرير"></div>
+    <div class="progress-bar" id="progress-bar"></div>
 
     <!-- الهيدر -->
-    <header class="site-header" id="site-header" role="banner">
+    <header class="site-header" id="site-header">
         <div class="header-left">
             <div class="logo">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="#E50914" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="#E50914">
                     <path
                         d="M12 2L2 7V17L12 22L22 17V7L12 2ZM12 4.5L19.5 8.25V15.75L12 19.5L4.5 15.75V8.25L12 4.5ZM12 8.5L7 11.25V16.5L12 19.25L17 16.5V11.25L12 8.5Z" />
                 </svg>
                 <span>TOMITO</span>
             </div>
 
+
+
             <!-- زر الانتقال للمسلسلات -->
-            <a href="tv.html" class="page-switch-btn" title="انتقل إلى صفحة المسلسلات" aria-label="المسلسلات">
-                <i class="fas fa-tv" aria-hidden="true"></i>
+            <a href="tv.html" class="page-switch-btn">
+                <i class="fas fa-tv"></i>
                 <span>المسلسلات</span>
             </a>
         </div>
 
         <!-- الشريط الجديد: 3 تصنيفات + زر المزيد -->
-        <nav class="genre-strip" id="genre-strip" role="navigation" aria-label="تصنيفات الأفلام">
-            <button class="genre-btn active" data-genre="" aria-label="عرض جميع الأفلام">
-                <i class="fas fa-film" aria-hidden="true"></i> الكل
+        <div class="genre-strip" id="genre-strip">
+            <button class="genre-btn active" data-genre="">
+                <i class="fas fa-film"></i> الكل
             </button>
-            <button class="genre-btn" data-genre="28" aria-label="أفلام أكشن">
-                <i class="fas fa-fire" aria-hidden="true"></i> أكشن
+            <button class="genre-btn" data-genre="28">
+                <i class="fas fa-fire"></i> أكشن
             </button>
-            <button class="genre-btn" data-genre="35" aria-label="أفلام كوميديا">
-                <i class="fas fa-laugh" aria-hidden="true"></i> كوميديا
+            <button class="genre-btn" data-genre="35">
+                <i class="fas fa-laugh"></i> كوميديا
             </button>
-            <button class="genre-btn" data-genre="18" aria-label="أفلام دراما">
-                <i class="fas fa-theater-masks" aria-hidden="true"></i> دراما
+            <button class="genre-btn" data-genre="18">
+                <i class="fas fa-theater-masks"></i> دراما
             </button>
-            <button class="more-genres-btn" id="moreGenresBtn" aria-label="المزيد من التصنيفات">
-                <i class="fas fa-ellipsis-h" aria-hidden="true"></i> المزيد
+            <button class="more-genres-btn" id="moreGenresBtn">
+                <i class="fas fa-ellipsis-h"></i> المزيد
             </button>
-        </nav>
+        </div>
 
         <!-- قائمة التنقل -->
-        <nav class="genre-nav" id="genre-nav" role="navigation" aria-label="التنقل الرئيسي">
-            <a href="#" data-section="all" class="active" onclick="loadAllSections(); return false;" aria-label="عرض جميع الأقسام">
-                <i class="fas fa-film" aria-hidden="true"></i> الكل
+        <nav class="genre-nav" id="genre-nav">
+            <a href="#" data-section="all" class="active" onclick="loadAllSections(); return false;">
+                <i class="fas fa-film"></i> الكل
             </a>
-            <a href="#" data-section="watchlist" id="watchlist-btn" onclick="showWatchlist(); return false;" aria-label="قائمة المحفوظات">
-                <i class="fas fa-bookmark" aria-hidden="true"></i> المحفوظات
-                <span class="watchlist-count" id="watchlistCount" aria-label="عدد العناصر المحفوظة">0</span>
+            <a href="#" data-section="watchlist" id="watchlist-btn" onclick="showWatchlist(); return false;">
+                <i class="fas fa-bookmark"></i> المحفوظات
+                <span class="watchlist-count" id="watchlistCount">0</span>
             </a>
         </nav>
 
         <!-- خلفية ضبابية -->
-        <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+        <div class="nav-backdrop" id="navBackdrop"></div>
     </header>
 
     
     
-    <main class="main-container" role="main">
+    <main class="main-container">
         <!-- البانر الرئيسي -->
-        <section class="banner-section" aria-labelledby="banner-title">
-            <h1 id="banner-title" class="section-title"><i class="fas fa-crown" aria-hidden="true"></i> الأفلام الأكثر مشاهدة</h1>
-            <div class="banner-carousel" role="region" aria-label="عرض تقديمي للأفلام الأكثر مشاهدة">
-                <button class="carousel-btn prev-btn" aria-label="الفيلم السابق"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+        <section class="banner-section">
+            <h2 class="section-title"><i class="fas fa-crown"></i> الأفلام الأكثر مشاهدة</h2>
+            <div class="banner-carousel">
+                <button class="carousel-btn prev-btn" aria-label="السابق"><i class="fas fa-chevron-right"></i></button>
                 <div class="banner-container" id="banner-container"></div>
-                <button class="carousel-btn next-btn" aria-label="الفيلم التالي"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-                <div class="banner-indicators" id="banner-indicators" role="tablist" aria-label="مؤشرات الأفلام"></div>
+                <button class="carousel-btn next-btn" aria-label="التالي"><i class="fas fa-chevron-left"></i></button>
+                <div class="banner-indicators" id="banner-indicators"></div>
             </div>
         </section>
-
-        <div class="search-container" role="search">
+        <div class="search-container">
             <div class="autocomplete-container">
-                <label for="search" class="visually-hidden">البحث عن فيلم</label>
-                <input type="search" id="search" placeholder="🔍 ابحث عن فيلم..." aria-label="البحث عن فيلم">
-                <div class="autocomplete-suggestions" id="autocomplete-suggestions" role="listbox" aria-label="اقتراحات البحث"></div>
+                <input type="text" id="search" placeholder="🔍 ابحث عن فيلم...">
+                <div class="autocomplete-suggestions" id="autocomplete-suggestions"></div>
             </div>
         </div>
         
@@ -177,16 +111,16 @@
             <script src="https://www.highperformanceformat.com/5a17ef98d1b1d05521619f8d157cc0ee/invoke.js"></script>
         </div>
 
+
         <!-- قسم: شائع حالياً -->
-        <section class="movies-section" aria-labelledby="trending-title">
-            <h2 id="trending-title" class="section-title"><i class="fas fa-fire" aria-hidden="true"></i> شائع حالياً</h2>
-            <div class="movies-container" id="trending-movies" role="list" aria-label="قائمة الأفلام الشائعة"></div>
-            <button class="more-btn" onclick="loadMoreMovies('trending-movies', 'trending')" aria-label="تحميل المزيد من الأفلام الشائعة">
-                <i class="fas fa-plus-circle" aria-hidden="true"></i> المزيد من الأفلام الشائعة
+        <section class="movies-section">
+            <h2 class="section-title"><i class="fas fa-fire"></i> شائع حالياً</h2>
+            <div class="movies-container" id="trending-movies"></div>
+            <button class="more-btn" onclick="loadMoreMovies('trending-movies', 'trending')">
+                <i class="fas fa-plus-circle"></i> المزيد من الأفلام الشائعة
             </button>
         </section>
-
-        <div class="ad-container" style="text-align:center; margin:20px 0;" role="complementary" aria-label="إعلان">
+        <div class="ad-container" style="text-align:center; margin:20px 0;">
             <script>
                 atOptions = {
                     'key': '5a17ef98d1b1d05521619f8d157cc0ee',
@@ -200,15 +134,14 @@
         </div>
 
         <!-- قسم: أحدث الأفلام -->
-        <section class="movies-section" aria-labelledby="latest-title">
-            <h2 id="latest-title" class="section-title"><i class="fas fa-star" aria-hidden="true"></i> أحدث الأفلام</h2>
-            <div class="movies-container" id="latest-movies" role="list" aria-label="قائمة أحدث الأفلام"></div>
-            <button class="more-btn" onclick="loadMoreMovies('latest-movies', 'popular')" aria-label="تحميل المزيد من أحدث الأفلام">
-                <i class="fas fa-plus-circle" aria-hidden="true"></i> المزيد من أحدث الأفلام
+        <section class="movies-section">
+            <h2 class="section-title"><i class="fas fa-star"></i> أحدث الأفلام</h2>
+            <div class="movies-container" id="latest-movies"></div>
+            <button class="more-btn" onclick="loadMoreMovies('latest-movies', 'popular')">
+                <i class="fas fa-plus-circle"></i> المزيد من أحدث الأفلام
             </button>
         </section>
-
-        <div class="ad-container" style="text-align:center; margin:20px 0;" role="complementary" aria-label="إعلان">
+        <div class="ad-container" style="text-align:center; margin:20px 0;">
             <script>
                 atOptions = {
                     'key': '5a17ef98d1b1d05521619f8d157cc0ee',
@@ -222,15 +155,14 @@
         </div>
 
         <!-- قسم: قريباً -->
-        <section class="movies-section" aria-labelledby="upcoming-title">
-            <h2 id="upcoming-title" class="section-title"><i class="fas fa-calendar-alt" aria-hidden="true"></i> قريباً</h2>
-            <div class="movies-container" id="upcoming-movies" role="list" aria-label="قائمة الأفلام القادمة"></div>
-            <button class="more-btn" onclick="loadMoreMovies('upcoming-movies', 'upcoming')" aria-label="تحميل المزيد من الأفلام القادمة">
-                <i class="fas fa-plus-circle" aria-hidden="true"></i> المزيد من الأفلام القادمة
+        <section class="movies-section">
+            <h2 class="section-title"><i class="fas fa-calendar-alt"></i> قريباً</h2>
+            <div class="movies-container" id="upcoming-movies"></div>
+            <button class="more-btn" onclick="loadMoreMovies('upcoming-movies', 'upcoming')">
+                <i class="fas fa-plus-circle"></i> المزيد من الأفلام القادمة
             </button>
         </section>
-
-        <div class="ad-container" style="text-align:center; margin:20px 0;" role="complementary" aria-label="إعلان">
+        <div class="ad-container" style="text-align:center; margin:20px 0;">
             <script>
                 atOptions = {
                     'key': '5a17ef98d1b1d05521619f8d157cc0ee',
@@ -246,17 +178,17 @@
     </main>
 
     <!-- الفوتر -->
-    <footer class="site-footer" role="contentinfo">
+    <footer class="site-footer">
         <div class="footer-content">
             <div class="logo">Tomito</div>
             <p>منصة ترفيهية لمشاهدة الأفلام والمسلسلات بأفضل جودة</p>
-            <nav class="social-links" aria-label="روابط التواصل الاجتماعي">
-                <a href="#" aria-label="تابعنا على فيسبوك" rel="noopener"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                <a href="#" aria-label="تابعنا على تويتر" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                <a href="#" aria-label="تابعنا على إنستغرام" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                <a href="#" aria-label="تابعنا على يوتيوب" rel="noopener"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                <a href="#" aria-label="تابعنا على تيك توك" rel="noopener"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
-            </nav>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
 
             <p class="copyright">
                 © 2024 Tomito. جميع الحقوق محفوظة.<br> هذا الموقع يستخدم بيانات من TMDb API.
@@ -264,7 +196,8 @@
         </div>
     </footer>
 
-    <div class="ad-container" style="text-align:center; margin:20px 0;" role="complementary" aria-label="إعلان">
+
+    <div class="ad-container" style="text-align:center; margin:20px 0;">
         <script>
             atOptions = {
                 'key': '5a17ef98d1b1d05521619f8d157cc0ee',
@@ -276,7 +209,6 @@
         </script>
         <script src="https://www.highperformanceformat.com/5a17ef98d1b1d05521619f8d157cc0ee/invoke.js"></script>
     </div>
-    
     <script src="api.js"></script>
     <script src="header.js"></script>
     <script src="carousel1.js"></script>
