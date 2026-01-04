@@ -165,9 +165,7 @@ function createTVBannerSlides() {
                     <button class="banner-play-btn" onclick="handleTVBannerPlay(${show.id})">
                         <i class="fas fa-play"></i> مشاهدة الآن
                     </button>
-                    <button class="banner-save-btn" onclick="saveToWatchlist(${show.id}, 'tv')">
-                        <i class="far fa-bookmark"></i> حفظ
-                    </button>
+                   
                 </div>
             </div>
         `;
