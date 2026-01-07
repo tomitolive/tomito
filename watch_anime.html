@@ -1,0 +1,696 @@
+<think>
+    First, the user is providing an HTML code for a watch anime player page. It seems like they want me to modify or structure it based on their instructions.
+    
+    
+    ## Interpreting User Request  
+    - The user provided HTML code for a watch anime player page and likely wants modifications or structuring.  
+    - The message includes a mix of Arabic and English, with the number "9" possibly indicating a section or element to focus on.
+    </think>```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Watch Anime</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background: #0a0a0a;
+                color: #fff;
+                min-height: 100vh;
+                padding: 20px;
+            }
+    
+            .container {
+                max-width: 1600px;
+                margin: 0 auto;
+            }
+    
+            .back-btn {
+                padding: 12px 24px;
+                background: #171717;
+                border: none;
+                border-radius: 8px;
+                color: #fff;
+                cursor: pointer;
+                margin-bottom: 20px;
+                transition: background 0.3s;
+                font-size: 1rem;
+            }
+    
+            .back-btn:hover {
+                background: #222222;
+            }
+    
+            .player-container {
+                background: #171717;
+                border-radius: 15px;
+                padding: 20px;
+                margin-bottom: 30px;
+            }
+    
+            .video-wrapper {
+                position: relative;
+                width: 100%;
+                padding-top: 56.25%;
+                background: #000;
+                border-radius: 10px;
+                overflow: hidden;
+                margin-bottom: 20px;
+            }
+    
+            #videoPlayer {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+    
+            .episode-info {
+                padding: 20px;
+                background: #171717;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+    
+            .episode-title {
+                font-size: 1.8rem;
+                font-weight: bold;
+                margin-bottom: 10px;
+                background: linear-gradient(to right, #c31820, #ff3d47);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+    
+            .episode-meta {
+                display: flex;
+                gap: 20px;
+                color: #9ca3af;
+                margin-bottom: 15px;
+                font-size: 0.95rem;
+            }
+    
+            .episode-description {
+                line-height: 1.6;
+                color: #d1d5db;
+            }
+    
+            .servers-section {
+                background: #171717;
+                border-radius: 15px;
+                padding: 25px;
+                margin-bottom: 30px;
+            }
+    
+            .servers-section h3 {
+                font-size: 1.3rem;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+    
+            .quality-tabs {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 20px;
+                flex-wrap: wrap;
+            }
+    
+            .quality-btn {
+                padding: 10px 20px;
+                background: #222222;
+                border: 2px solid #222222;
+                border-radius: 8px;
+                color: #9ca3af;
+                cursor: pointer;
+                transition: all 0.3s;
+                font-size: 0.9rem;
+                font-weight: 600;
+            }
+    
+            .quality-btn:hover {
+                background: #171717;
+                color: #fff;
+            }
+    
+            .quality-btn.active {
+                background: #4b3f7c;
+                border-color: #5b4f8c;
+                color: #fff;
+            }
+    
+            .servers-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                gap: 12px;
+            }
+    
+            .server-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 12px 15px;
+                background: #222222;
+                border: 1px solid #2a2a2a;
+                border-radius: 8px;
+                transition: all 0.3s;
+                cursor: pointer;
+            }
+    
+            .server-item:hover {
+                background: #2a2a2a;
+                border-color: #c31820;
+            }
+    
+            .server-name {
+                font-size: 0.9rem;
+                color: #d1d5db;
+            }
+    
+            .server-quality {
+                font-size: 0.85rem;
+                font-weight: 600;
+                color: #9ca3af;
+            }
+    
+            .server-btn {
+                padding: 15px;
+                background: #222222;
+                border: 2px solid #222222;
+                border-radius: 10px;
+                color: #fff;
+                cursor: pointer;
+                transition: all 0.3s;
+                font-size: 0.95rem;
+                font-weight: 600;
+                text-align: center;
+            }
+    
+            .server-btn:hover {
+                background: #171717;
+                border-color: #c31820;
+                transform: translateY(-2px);
+            }
+    
+            .server-btn.active {
+                background: #c31820;
+                border-color: #c31820;
+                box-shadow: 0 0 20px rgba(195, 24, 32, 0.5);
+            }
+    
+            .server-btn:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+                background: #1a1a1a;
+            }
+    
+            .server-btn:disabled:hover {
+                transform: none;
+                border-color: #222222;
+            }
+    
+            .subtitles-section {
+                background: #171717;
+                border-radius: 15px;
+                padding: 25px;
+                margin-bottom: 30px;
+            }
+    
+            .subtitles-section h3 {
+                font-size: 1.3rem;
+                margin-bottom: 20px;
+            }
+    
+            .subtitle-btn {
+                padding: 10px 20px;
+                background: #222222;
+                border: 2px solid #222222;
+                border-radius: 8px;
+                color: #9ca3af;
+                cursor: pointer;
+                transition: all 0.3s;
+                font-size: 0.9rem;
+                font-weight: 600;
+                margin-right: 10px;
+            }
+    
+            .subtitle-btn:hover {
+                background: #171717;
+                color: #fff;
+            }
+    
+            .subtitle-btn.active {
+                background: #c31820;
+                border-color: #c31820;
+                color: #fff;
+            }
+    
+            .navigation-section {
+                background: #171717;
+                border-radius: 15px;
+                padding: 25px;
+            }
+    
+            .navigation-section h3 {
+                font-size: 1.3rem;
+                margin-bottom: 20px;
+            }
+    
+            .nav-buttons {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 15px;
+            }
+    
+            .nav-btn {
+                padding: 15px 25px;
+                border: none;
+                border-radius: 10px;
+                color: #fff;
+                cursor: pointer;
+                font-size: 1rem;
+                font-weight: 600;
+                transition: all 0.3s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+            }
+    
+            .nav-btn:hover {
+                transform: translateY(-2px);
+            }
+    
+            .btn-prev {
+                background: #222222;
+            }
+    
+            .btn-prev:hover {
+                background: #171717;
+                border: 1px solid #c31820;
+            }
+    
+            .btn-episodes {
+                background: #222222;
+            }
+    
+            .btn-episodes:hover {
+                background: #171717;
+                border: 1px solid #c31820;
+            }
+    
+            .btn-next {
+                background: #c31820;
+            }
+    
+            .btn-next:hover {
+                background: #a01418;
+            }
+    
+            .btn-prev:disabled,
+            .btn-next:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+    
+            .btn-prev:disabled:hover,
+            .btn-next:disabled:hover {
+                transform: none;
+            }
+    
+            #loading {
+                text-align: center;
+                padding: 60px;
+            }
+    
+            .spinner {
+                width: 50px;
+                height: 50px;
+                border: 4px solid rgba(195, 24, 32, 0.3);
+                border-top-color: #c31820;
+                border-radius: 50%;
+                animation: spin 1s linear infinite;
+                margin: 0 auto 20px;
+            }
+    
+            @keyframes spin {
+                to { transform: rotate(360deg); }
+            }
+    
+            @media (max-width: 768px) {
+                .episode-title {
+                    font-size: 1.3rem;
+                }
+    
+                .servers-grid {
+                    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                }
+    
+                .nav-buttons {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <button class="back-btn" id="backBtn">← Back to Episodes</button>
+    
+            <div id="loading">
+                <div class="spinner"></div>
+                <p>Loading player...</p>
+            </div>
+    
+            <div id="playerContent" style="display: none;">
+                <div class="player-container">
+                    <div class="video-wrapper">
+                        <iframe id="videoPlayer" allowfullscreen></iframe>
+                    </div>
+                </div>
+    
+                <div class="subtitles-section">
+                    <h3>💬 Subtitles</h3>
+                    <p style="color: #9ca3af; font-size: 0.9rem; margin-bottom: 15px;">
+                        Arabic subtitles are automatically enabled where available. You can switch to other languages if supported by the server.
+                    </p>
+                    <button class="subtitle-btn active" id="arabicSub">Arabic</button>
+                    <button class="subtitle-btn" id="englishSub">English</button>
+                    <button class="subtitle-btn" id="noneSub">None</button>
+                </div>
+    
+                <div class="episode-info">
+                    <div class="episode-title" id="episodeTitle"></div>
+                    <div class="episode-meta">
+                        <span>📺 <span id="episodeNumber"></span></span>
+                        <span>📅 <span id="episodeDate"></span></span>
+                        <span>⏱️ <span id="episodeRuntime"></span></span>
+                    </div>
+                    <div class="episode-description" id="episodeDescription"></div>
+                </div>
+    
+                <div class="servers-section">
+                    <h3>🌐 Streaming Servers</h3>
+                    <p style="color: #9ca3af; font-size: 0.9rem; margin-bottom: 15px;">
+                        💡 Note: Arabic subtitles may not be available on all servers. Try different servers if subtitles are missing.
+                    </p>
+                    <div class="servers-grid" id="streamingServers"></div>
+                </div>
+    
+                <div class="servers-section">
+                    <h3>📥 Download Servers</h3>
+                    <p style="color: #9ca3af; font-size: 0.9rem; margin-bottom: 15px;">
+                        ⚠️ Download links are not available yet. These servers will be activated soon.
+                    </p>
+                    <div class="quality-tabs" id="qualityTabs"></div>
+                    <div class="servers-grid" id="downloadServers"></div>
+                </div>
+    
+                <div class="navigation-section">
+                    <h3>⚡ Quick Navigation</h3>
+                    <div class="nav-buttons">
+                        <button class="nav-btn btn-prev" id="prevBtn">
+                            ← Previous Episode
+                        </button>
+                        <button class="nav-btn btn-episodes" id="episodesBtn">
+                            📋 All Episodes
+                        </button>
+                        <button class="nav-btn btn-next" id="nextBtn">
+                            Next Episode →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            const TMDB_API_KEY = '882e741f7283dc9ba1654d4692ec30f6';
+            let currentAnimeId, currentSeason, currentEpisode;
+            let seasonData = null;
+            let currentServer = 'vidsrcme';
+            let currentQuality = 'الكل';
+            let currentSubtitle = 'arabic';
+    
+            const streamingServers = [
+                {
+                    id: 'vidsrcme',
+                    name: 'VidSrc Me',
+                    url: (tmdb, season, episode) => `https://vidsrc.me/embed/tv?tmdb=${tmdb}&season=${season}&episode=${episode}`
+                },
+                {
+                    id: 'megamaxme',
+                    name: 'MegaMax Me',
+                    url: (tmdb, season, episode) => `https://megamax.me/embed/tv/${tmdb}/${season}/${episode}`
+                },
+                {
+                    id: 'mega',
+                    name: 'Mega',
+                    url: (tmdb, season, episode) => `https://mega.nz/embed/${tmdb}-${season}-${episode}` // Placeholder, adjust as needed
+                },
+                {
+                    id: 'voesx',
+                    name: 'Voe Sx',
+                    url: (tmdb, season, episode) => `https://voe.sx/e/${tmdb}-${season}-${episode}` // Placeholder
+                },
+                {
+                    id: 'vidmolyt',
+                    name: 'VidMoly To',
+                    url: (tmdb, season, episode) => `https://vidmoly.to/embed-${tmdb}-${season}-${episode}.html` // Placeholder
+                },
+                {
+                    id: 'videahu',
+                    name: 'Videa Hu',
+                    url: (tmdb, season, episode) => `https://videa.hu/player?v=${tmdb}-${season}-${episode}` // Placeholder
+                },
+                {
+                    id: 'vkvideoru',
+                    name: 'VKVideo Ru',
+                    url: (tmdb, season, episode) => `https://vkvideo.ru/video-${tmdb}-${season}-${episode}` // Placeholder
+                },
+                {
+                    id: 'mp4upload',
+                    name: 'MP4Upload',
+                    url: (tmdb, season, episode) => `https://mp4upload.com/embed-${tmdb}-${season}-${episode}.html` // Placeholder
+                }
+            ];
+    
+            const downloadServers = [
+                { name: 'MegaMax Me', quality: 'HD' },
+                { name: 'Mega', quality: 'HD' },
+                { name: 'Voe Sx', quality: 'HD' },
+                { name: 'VidMoly To', quality: 'HD' },
+                { name: 'Videa Hu', quality: 'HD' },
+                { name: 'VKVideo Ru', quality: 'HD' },
+                { name: 'MP4Upload', quality: 'HD' },
+                { name: 'Mega', quality: 'FHD' },
+                { name: 'MP4Upload', quality: 'FHD' },
+                { name: 'Mega', quality: 'SD' },
+                { name: 'MP4Upload', quality: 'SD' }
+            ];
+    
+            const qualities = ['الكل', 'FHD', 'HD', 'SD', 'LD'];
+    
+            async function initPlayer() {
+                const urlParams = new URLSearchParams(window.location.search);
+                currentAnimeId = urlParams.get('id');
+                currentSeason = parseInt(urlParams.get('season'));
+                currentEpisode = parseInt(urlParams.get('episode'));
+    
+                if (!currentAnimeId || !currentSeason || !currentEpisode) {
+                    window.location.href = 'index.html';
+                    return;
+                }
+    
+                document.getElementById('backBtn').onclick = () => {
+                    window.location.href = `anime.html?id=${currentAnimeId}`;
+                };
+    
+                document.getElementById('episodesBtn').onclick = () => {
+                    window.location.href = `anime.html?id=${currentAnimeId}`;
+                };
+    
+                // Subtitle buttons
+                document.getElementById('arabicSub').onclick = () => setSubtitle('arabic');
+                document.getElementById('englishSub').onclick = () => setSubtitle('english');
+                document.getElementById('noneSub').onclick = () => setSubtitle('none');
+    
+                await loadEpisodeData();
+                renderQualityTabs();
+                renderStreamingServers();
+                renderDownloadServers();
+                updateVideoSource();
+                updateNavigationButtons();
+                loadSubtitles();
+            }
+    
+            async function loadEpisodeData() {
+                try {
+                    const response = await fetch(
+                        `https://api.themoviedb.org/3/tv/${currentAnimeId}/season/${currentSeason}?api_key=${TMDB_API_KEY}&language=en-US`
+                    );
+                    seasonData = await response.json();
+                    displayEpisodeInfo();
+                } catch (error) {
+                    console.error('Error loading episode data:', error);
+                }
+            }
+    
+            function displayEpisodeInfo() {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('playerContent').style.display = 'block';
+    
+                const episode = seasonData.episodes.find(ep => ep.episode_number === currentEpisode);
+                
+                if (episode) {
+                    document.getElementById('episodeTitle').textContent = episode.name || `Episode ${currentEpisode}`;
+                    document.getElementById('episodeNumber').textContent = `Season ${currentSeason} • Episode ${currentEpisode}`;
+                    document.getElementById('episodeDate').textContent = episode.air_date || 'N/A';
+                    document.getElementById('episodeRuntime').textContent = episode.runtime ? `${episode.runtime}min` : 'N/A';
+                    document.getElementById('episodeDescription').textContent = episode.overview || 'No description available.';
+                }
+            }
+    
+            function renderQualityTabs() {
+                const qualityTabs = document.getElementById('qualityTabs');
+                qualityTabs.innerHTML = '';
+    
+                qualities.forEach(quality => {
+                    const btn = document.createElement('button');
+                    btn.className = 'quality-btn';
+                    btn.textContent = quality;
+                    
+                    if (quality === currentQuality) {
+                        btn.classList.add('active');
+                    }
+    
+                    btn.onclick = () => {
+                        currentQuality = quality;
+                        renderQualityTabs();
+                        renderDownloadServers();
+                    };
+    
+                    qualityTabs.appendChild(btn);
+                });
+            }
+    
+            function renderStreamingServers() {
+                const serversGrid = document.getElementById('streamingServers');
+                serversGrid.innerHTML = '';
+    
+                streamingServers.forEach(server => {
+                    const btn = document.createElement('button');
+                    btn.className = 'server-btn';
+                    btn.textContent = server.name;
+                    
+                    if (server.id === currentServer) {
+                        btn.classList.add('active');
+                        btn.classList.add('active');
+                }
+
+                btn.onclick = () => {
+                    currentServer = server.id;
+                    renderStreamingServers();
+                    updateVideoSource();
+                };
+
+                serversGrid.appendChild(btn);
+            });
+        }
+
+        function renderDownloadServers() {
+            const serversGrid = document.getElementById('downloadServers');
+            serversGrid.innerHTML = '';
+
+            const filteredServers = currentQuality === 'الكل' 
+                ? downloadServers 
+                : downloadServers.filter(s => s.quality === currentQuality);
+
+            if (filteredServers.length === 0) {
+                serversGrid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; color: #9ca3af; padding: 20px;">No servers available for this quality</div>';
+                return;
+            }
+
+            filteredServers.forEach(server => {
+                const item = document.createElement('div');
+                item.className = 'server-item';
+                item.style.cursor = 'not-allowed';
+                item.style.opacity = '0.6';
+                item.title = 'Download link not available yet';
+
+                item.innerHTML = `
+                    <span class="server-name">${server.name}</span>
+                    <span class="server-quality">${server.quality}</span>
+                `;
+
+                serversGrid.appendChild(item);
+            });
+        }
+
+        function updateVideoSource() {
+            const server = streamingServers.find(s => s.id === currentServer);
+            if (!server) return;
+            
+            let url = server.url(currentAnimeId, currentSeason, currentEpisode);
+            
+            // Add subtitles parameter if available
+            if (currentSubtitle === 'arabic' && server.id === 'vidsrcme') {
+                url += '&sub=ar';
+            } else if (currentSubtitle === 'english' && server.id === 'vidsrcme') {
+                url += '&sub=en';
+            }
+            
+            document.getElementById('videoPlayer').src = url;
+        }
+
+        function setSubtitle(subtitle) {
+            currentSubtitle = subtitle;
+            
+            // Update button states
+            document.getElementById('arabicSub').classList.toggle('active', subtitle === 'arabic');
+            document.getElementById('englishSub').classList.toggle('active', subtitle === 'english');
+            document.getElementById('noneSub').classList.toggle('active', subtitle === 'none');
+            
+            // Update video source with new subtitle
+            updateVideoSource();
+        }
+
+        function loadSubtitles() {
+            // This function would typically fetch available subtitles from an API
+            // For now, we'll just set the default to Arabic
+            setSubtitle('arabic');
+        }
+
+        function updateNavigationButtons() {
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+
+            prevBtn.disabled = currentEpisode <= 1;
+            nextBtn.disabled = seasonData && currentEpisode >= seasonData.episodes.length;
+
+            prevBtn.onclick = () => {
+                if (currentEpisode > 1) {
+                    window.location.href = `player.html?id=${currentAnimeId}&season=${currentSeason}&episode=${currentEpisode - 1}`;
+                }
+            };
+
+            nextBtn.onclick = () => {
+                if (seasonData && currentEpisode < seasonData.episodes.length) {
+                    window.location.href = `player.html?id=${currentAnimeId}&season=${currentSeason}&episode=${currentEpisode + 1}`;
+                }
+            };
+        }
+
+        // Initialize the player when the page loads
+        window.onload = initPlayer;
+    </script>
+</body>
+</html>    

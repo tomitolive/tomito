@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Episodes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .back-btn {
+            padding: 12px 24px;
+            background: #171717;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            cursor: pointer;
+            margin-bottom: 30px;
+            transition: background 0.3s;
+            font-size: 1rem;
+        }
+
+        .back-btn:hover {
+            background: #222222;
+        }
+
+        .anime-header {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+            background: #171717;
+            border-radius: 15px;
+            padding: 30px;
+        }
+
+        .anime-poster-large {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .anime-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            background: linear-gradient(to right, #c31820, #ff3d47);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .anime-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            color: #9ca3af;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .star {
+            color: #fbbf24;
+        }
+
+        .anime-overview {
+            line-height: 1.8;
+            color: #d1d5db;
+            margin-bottom: 20px;
+        }
+
+        .anime-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-box {
+            background: #171717;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #222222;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #9ca3af;
+            margin-bottom: 5px;
+        }
+
+        .stat-value {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .seasons-container {
+            margin-bottom: 30px;
+        }
+
+        .season-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .season-btn {
+            padding: 12px 24px;
+            background: #171717;
+            border: 2px solid #222222;
+            border-radius: 8px;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .season-btn:hover {
+            background: #222222;
+        }
+
+        .season-btn.active {
+            background: #c31820;
+            border-color: #c31820;
+            box-shadow: 0 0 15px rgba(195, 24, 32, 0.4);
+        }
+
+        .episodes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .episode-card {
+            background: #171717;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 2px solid #222222;
+        }
+
+        .episode-card:hover {
+            transform: translateY(-5px);
+            border-color: #c31820;
+            box-shadow: 0 10px 30px rgba(195, 24, 32, 0.3);
+        }
+
+        .episode-thumbnail {
+            position: relative;
+            aspect-ratio: 16/9;
+            background: #0a0a0a;
+            overflow: hidden;
+        }
+
+        .episode-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .episode-number {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #c31820;
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background: #c31820;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .episode-card:hover .play-icon {
+            opacity: 1;
+        }
+
+        .episode-info {
+            padding: 15px;
+        }
+
+        .episode-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .episode-overview {
+            font-size: 0.85rem;
+            color: #9ca3af;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .episode-date {
+            font-size: 0.8rem;
+            color: #6b7280;
+            margin-top: 8px;
+        }
+
+        #loading {
+            text-align: center;
+            padding: 60px;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(195, 24, 32, 0.3);
+            border-top-color: #c31820;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 1024px) {
+            .anime-header {
+                grid-template-columns: 1fr;
+            }
+
+            .anime-stats {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .anime-info h1 {
+                font-size: 1.8rem;
+            }
+
+            .episodes-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="back-btn" onclick="window.location.href='anime.html'">← Back to Search</button>
+
+        <div id="loading">
+            <div class="spinner"></div>
+            <p>Loading anime details...</p>
+        </div>
+
+        <div id="animeContent" style="display: none;">
+            <div class="anime-header">
+                <img id="animePoster" class="anime-poster-large" src="" alt="">
+                <div class="anime-info">
+                    <h1 id="animeTitle"></h1>
+                    <div class="anime-meta">
+                        <div class="meta-item">
+                            <span class="star">★</span>
+                            <span id="animeRating"></span>
+                        </div>
+                        <div class="meta-item">
+                            📅 <span id="animeYear"></span>
+                        </div>
+                        <div class="meta-item">
+                            🎬 <span id="animeStatus"></span>
+                        </div>
+                    </div>
+                    <p class="anime-overview" id="animeOverview"></p>
+                    <div class="anime-stats">
+                        <div class="stat-box">
+                            <div class="stat-label">Seasons</div>
+                            <div class="stat-value" id="totalSeasons"></div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">Episodes</div>
+                            <div class="stat-value" id="totalEpisodes"></div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">Runtime</div>
+                            <div class="stat-value" id="runtime"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seasons-container">
+                <h2 style="margin-bottom: 20px; font-size: 1.5rem;">Select Season</h2>
+                <div class="season-selector" id="seasonSelector"></div>
+            </div>
+
+            <div class="episodes-container">
+                <h2 style="margin-bottom: 20px; font-size: 1.5rem;">Episodes</h2>
+                <div class="episodes-grid" id="episodesGrid"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const TMDB_API_KEY = '882e741f7283dc9ba1654d4692ec30f6';
+        let animeData = null;
+        let currentSeason = 1;
+
+        async function loadAnimeDetails() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const tmdbId = urlParams.get('id');
+
+            if (!tmdbId) {
+                window.location.href = 'anime.html';
+                return;
+            }
+
+            try {
+                const response = await fetch(
+                    `https://api.themoviedb.org/3/tv/${tmdbId}?api_key=${TMDB_API_KEY}&language=en-US`
+                );
+                animeData = await response.json();
+                displayAnimeInfo();
+                loadSeasonEpisodes(1);
+            } catch (error) {
+                console.error('Error loading anime:', error);
+            }
+        }
+
+        function displayAnimeInfo() {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('animeContent').style.display = 'block';
+
+            const posterUrl = animeData.poster_path 
+                ? `https://image.tmdb.org/t/p/w500${animeData.poster_path}`
+                : 'https://via.placeholder.com/300x450?text=No+Image';
+
+            document.getElementById('animePoster').src = posterUrl;
+            document.getElementById('animeTitle').textContent = animeData.name;
+            document.getElementById('animeRating').textContent = animeData.vote_average?.toFixed(1) || 'N/A';
+            document.getElementById('animeYear').textContent = animeData.first_air_date?.split('-')[0] || 'N/A';
+            document.getElementById('animeStatus').textContent = animeData.status || 'N/A';
+            document.getElementById('animeOverview').textContent = animeData.overview || 'No description available.';
+            document.getElementById('totalSeasons').textContent = animeData.number_of_seasons || 'N/A';
+            document.getElementById('totalEpisodes').textContent = animeData.number_of_episodes || 'N/A';
+            document.getElementById('runtime').textContent = animeData.episode_run_time?.[0] 
+                ? `${animeData.episode_run_time[0]}min` 
+                : 'N/A';
+
+            renderSeasonButtons();
+        }
+
+        function renderSeasonButtons() {
+            const seasonSelector = document.getElementById('seasonSelector');
+            seasonSelector.innerHTML = '';
+
+            for (let i = 1; i <= animeData.number_of_seasons; i++) {
+                const btn = document.createElement('button');
+                btn.className = 'season-btn';
+                btn.textContent = `Season ${i}`;
+                
+                if (i === currentSeason) {
+                    btn.classList.add('active');
+                }
+
+                btn.onclick = () => {
+                    currentSeason = i;
+                    renderSeasonButtons();
+                    loadSeasonEpisodes(i);
+                };
+
+                seasonSelector.appendChild(btn);
+            }
+        }
+
+        async function loadSeasonEpisodes(seasonNumber) {
+            const episodesGrid = document.getElementById('episodesGrid');
+            episodesGrid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px;"><div class="spinner"></div></div>';
+
+            try {
+                const response = await fetch(
+                    `https://api.themoviedb.org/3/tv/${animeData.id}/season/${seasonNumber}?api_key=${TMDB_API_KEY}&language=en-US`
+                );
+                const seasonData = await response.json();
+                displayEpisodes(seasonData.episodes || []);
+            } catch (error) {
+                console.error('Error loading episodes:', error);
+                episodesGrid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #9ca3af;">Error loading episodes</div>';
+            }
+        }
+
+        function displayEpisodes(episodes) {
+            const episodesGrid = document.getElementById('episodesGrid');
+            episodesGrid.innerHTML = '';
+
+            if (episodes.length === 0) {
+                episodesGrid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #9ca3af;">No episodes available</div>';
+                return;
+            }
+
+            episodes.forEach(episode => {
+                const card = document.createElement('div');
+                card.className = 'episode-card';
+                card.onclick = () => goToPlayer(currentSeason, episode.episode_number);
+
+                const thumbnailUrl = episode.still_path 
+                    ? `https://image.tmdb.org/t/p/w500${episode.still_path}`
+                    : 'https://via.placeholder.com/500x281?text=No+Image';
+
+                card.innerHTML = `
+                    <div class="episode-thumbnail">
+                        <img src="${thumbnailUrl}" alt="${episode.name}">
+                        <div class="episode-number">EP ${episode.episode_number}</div>
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="episode-info">
+                        <div class="episode-title">${episode.name || `Episode ${episode.episode_number}`}</div>
+                        <div class="episode-overview">${episode.overview || 'No description available.'}</div>
+                        <div class="episode-date">${episode.air_date ? `Aired: ${episode.air_date}` : ''}</div>
+                    </div>
+                `;
+
+                episodesGrid.appendChild(card);
+            });
+        }
+
+        function goToPlayer(season, episode) {
+            window.location.href = `watch_anime.html?id=${animeData.id}&season=${season}&episode=${episode}`;
+        }
+
+        loadAnimeDetails();
+    </script>
+</body>
+</html>
