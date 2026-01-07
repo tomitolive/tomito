@@ -591,3 +591,22 @@ window.playMovie = playMovie;
 window.toggleSave = toggleSave;
 
 console.log("✅ header.js تم تحميله بنجاح!");
+
+
+
+// في ملف header.js أو script.js
+document.addEventListener('DOMContentLoaded', function() {
+    // البحث
+    const searchForm = document.querySelector('.search-container');
+    if (searchForm) {
+        searchForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const searchTerm = this.querySelector('.search-input').value;
+            if (searchTerm.trim()) {
+                window.location.href = `https://shah4u.day/search?s=${encodeURIComponent(searchTerm)}`;
+            }
+        });
+    }
+    
+    // بقية الكود يبقى كما هو...
+});

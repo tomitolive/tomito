@@ -2202,4 +2202,540 @@ body[class*="tv-"] .genre-nav a[href="tv.html"]:not(.nav-switch)::before {
 
 .server-btn.backup .server-badge {
     background: #d35400;
+}/* ===== BANNER SECTION - TV STYLE (FULL WIDTH) ===== */
+.banner-section {
+    padding: 0; /* إزالة padding باش يشد كامل العرض */
+    margin-bottom: 40px;
+}
+
+.banner-carousel {
+    position: relative;
+    max-width: 100%; /* كامل العرض */
+    width: 100%;
+    margin: 0 auto 40px;
+    height: 500px; /* نفس الطول */
+    border-radius: 0; /* بلا border-radius باش يشد الحواف */
+    overflow: hidden;
+    background: #000;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    z-index: 1;
+}
+
+.banner-card.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.banner-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* تغطية كاملة بدون تشويه */
+    object-position: center; /* التركيز على المنتصف */
+}
+
+.banner-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    border-radius: 0; /* بلا border-radius */
+}
+
+.banner-overlay h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.banner-overlay p {
+    color: #ccc;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.banner-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.banner-play-btn,
+.banner-save-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.banner-play-btn {
+    background: #E50914;
+    color: white;
+}
+
+.banner-play-btn:hover {
+    background: #ff0a16;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(229, 9, 20, 0.4);
+}
+
+.banner-save-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+.banner-save-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.banner-save-btn.saved {
+    background: #E50914;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: rgba(229, 9, 20, 0.9);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev-btn {
+    right: 20px;
+}
+
+.next-btn {
+    left: 20px;
+}
+
+.banner-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #444;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background: #E50914;
+    transform: scale(1.2);
+}
+
+/* ===== BANNER RATING ===== */
+.banner-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.banner-rating i {
+    color: #ffd700;
+}
+
+/* ===== RESPONSIVE - تحسينات للجوال ===== */
+@media (max-width: 1200px) {
+    .banner-carousel {
+        height: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-carousel {
+        height: 350px;
+        margin: 0 auto 30px;
+    }
+    
+    .banner-overlay {
+        padding: 25px;
+    }
+    
+    .banner-overlay h2 {
+        font-size: 24px;
+    }
+    
+    .banner-overlay p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .banner-play-btn,
+    .banner-save-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+    
+    .banner-rating {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-carousel {
+        height: 250px;
+        margin: 0 auto 20px;
+        border-radius: 10px;
+    }
+    
+    .banner-overlay {
+        padding: 20px;
+    }
+    
+    .banner-overlay h2 {
+        font-size: 20px;
+    }
+    
+    .banner-overlay p {
+        font-size: 13px;
+        max-width: 100%;
+    }
+    
+    .banner-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+    
+    .prev-btn {
+        right: 10px;
+    }
+    
+    .next-btn {
+        left: 10px;
+    }
+}/* ===== BANNER SECTION - TV STYLE (FULL WIDTH) ===== */
+.banner-section {
+    padding: 0; /* إزالة padding باش يشد كامل العرض */
+    margin-bottom: 40px;
+}
+
+.banner-carousel {
+    position: relative;
+    max-width: 100%; /* كامل العرض */
+    width: 100%;
+    margin: 0 auto 40px;
+    height: 500px; /* نفس الطول */
+    border-radius: 0; /* بلا border-radius باش يشد الحواف */
+    overflow: hidden;
+    background: #000;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    z-index: 1;
+}
+
+.banner-card.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.banner-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* تغطية كاملة بدون تشويه */
+    object-position: center; /* التركيز على المنتصف */
+}
+
+.banner-overlay {
+    position: absolute;
+    bottom: -20px; /* هبوط 20px */
+    left: 0;
+    right: 0;
+    padding: 40px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    border-radius: 0; /* بلا border-radius */
+}
+
+.banner-overlay h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.banner-overlay p {
+    color: #ccc;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.banner-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.banner-play-btn,
+.banner-save-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.banner-play-btn {
+    background: #E50914;
+    color: white;
+}
+
+.banner-play-btn:hover {
+    background: #ff0a16;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(229, 9, 20, 0.4);
+}
+
+.banner-save-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+.banner-save-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.banner-save-btn.saved {
+    background: #E50914;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: rgba(229, 9, 20, 0.9);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev-btn {
+    right: 20px;
+}
+
+.next-btn {
+    left: 20px;
+}
+
+.banner-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #444;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background: #E50914;
+    transform: scale(1.2);
+}
+
+/* ===== BANNER RATING ===== */
+.banner-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.banner-rating i {
+    color: #ffd700;
+}
+
+/* ===== RESPONSIVE - تحسينات للجوال ===== */
+@media (max-width: 1200px) {
+    .banner-carousel {
+        height: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-carousel {
+        height: 350px;
+        margin: 0 auto 30px;
+    }
+    
+    .banner-overlay {
+        padding: 25px;
+    }
+    
+    .banner-overlay h2 {
+        font-size: 24px;
+    }
+    
+    .banner-overlay p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .banner-play-btn,
+    .banner-save-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+    
+    .banner-rating {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-carousel {
+        height: 250px;
+        margin: 0 auto 20px;
+        border-radius: 10px;
+    }
+    
+    .banner-overlay {
+        padding: 20px;
+    }
+    
+    .banner-overlay h2 {
+        font-size: 20px;
+    }
+    
+    .banner-overlay p {
+        font-size: 13px;
+        max-width: 100%;
+    }
+    
+    .banner-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+    
+    .prev-btn {
+        right: 10px;
+    }
+    
+    .next-btn {
+        left: 10px;
+    }
 }

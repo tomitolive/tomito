@@ -177,7 +177,7 @@
 
     <main class="main-container" role="main">
         <section class="banner-section" aria-labelledby="banner-title">
-            <h2 id="banner-title" class="section-title"><i class="fas fa-crown" aria-hidden="true"></i> الأفلام الأكثر مشاهدة</h2>
+        
             <div class="banner-carousel" role="region" aria-label="عرض تقديمي للأفلام الأكثر مشاهدة">
                 <button class="carousel-btn prev-btn" aria-label="الفيلم السابق"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
                 <div class="banner-container" id="banner-container"></div>
@@ -243,6 +243,22 @@
                 هذا الموقع يستخدم بيانات من TMDb API | <a href="/privacy">سياسة الخصوصية</a> | <a href="/terms">شروط الاستخدام</a>
             </p>
         </div>
+
+        <!-- Full Screen Image Modal -->
+<div class="fullscreen-modal" id="fullscreenModal">
+    <button class="fullscreen-close" id="fullscreenClose">
+        <i class="fas fa-times"></i>
+    </button>
+    <button class="fullscreen-nav fullscreen-prev" id="fullscreenPrev">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+    <button class="fullscreen-nav fullscreen-next" id="fullscreenNext">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <div class="fullscreen-content">
+        <img id="fullscreenImage" src="" alt="Full screen image">
+    </div>
+</div>
     </footer>
 
     <script src="api.js"></script>
