@@ -572,7 +572,7 @@ function toggleSave(id, title, posterPath, rating, btn) {
     
     // تغيير حالة الزر
     if (btn.innerHTML.includes('far fa-heart')) {
-        btn.innerHTML = '<i class="fas fa-heart"></i> محفوظ';
+        btn.innerHTML = '<i class="fas fa-heart"></i> محفوظ';z
         btn.classList.add("saved");
     } else {
         btn.innerHTML = '<i class="far fa-heart"></i> حفظ';
