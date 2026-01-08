@@ -1,257 +1,2456 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html dir="rtl" lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags الأساسية -->
-    <title>تومي تو TomiTo | شاهد أحدث الأفلام والمسلسلات العربية والأجنبية مجاناً 2025</title>
-    <meta name="description" content="تومي تو TomiTo - أفضل موقع لمشاهدة الأفلام والمسلسلات العربية والأجنبية بجودة عالية HD مجاناً. أفلام 2025، مسلسلات تركية، أفلام هندية، أفلام أكشن ودراما بدون إعلانات">
-    <meta name="keywords" content="تومي تو, tomito, أفلام عربية, أفلام أجنبية, مشاهدة أفلام اون لاين, أفلام مجانية, أفلام 2025, أفلام 2024, مسلسلات عربية, مسلسلات تركية, أفلام هندية, أفلام أكشن, أفلام رومانسية, أفلام كوميدية, أفلام رعب, أفلام دراما, مشاهدة مباشرة, بث مباشر, أفلام HD, أفلام بجودة عالية, مسلسلات رمضان, أفلام مصرية, أفلام سورية, أفلام خليجية, أفلام أمريكية, أفلام هوليود, نتفلكس عربي, شاهد, موقع أفلام, تحميل أفلام, أفلام مدبلجة, أفلام مترجمة">
-    <meta name="author" content="تومي تو TomiTo">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow">
-    <meta name="language" content="Arabic">
-    <meta name="revisit-after" content="1 days">
-    <meta name="distribution" content="global">
-    <meta name="rating" content="general">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="تومي تو TomiTo | أفضل موقع لمشاهدة الأفلام والمسلسلات مجاناً">
-    <meta property="og:description" content="شاهد أحدث الأفلام والمسلسلات العربية والأجنبية بجودة HD مجاناً على تومي تو">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tomito.xyz/">
-    <meta property="og:image" content="https://tomito.xyz/images/tomito-logo.png">
-    <meta property="og:site_name" content="تومي تو TomiTo">
-    <meta property="og:locale" content="ar_AR">
-    <meta property="og:locale:alternate" content="en_US">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@tomito">
-    <meta name="twitter:title" content="تومي تو TomiTo | شاهد الأفلام مجاناً">
-    <meta name="twitter:description" content="أفضل موقع لمشاهدة الأفلام والمسلسلات بجودة عالية">
-    <meta name="twitter:image" content="https://tomito.xyz/images/tomito-logo.png">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://tomito.xyz/">
-    
-    <!-- Alternate Languages -->
-    <link rel="alternate" hreflang="ar" href="https://tomito.xyz/">
-    <link rel="alternate" hreflang="en" href="https://tomito.xyz/en/">
-    <link rel="alternate" hreflang="x-default" href="https://tomito.xyz/">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="https://tomito.xyz/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://tomito.xyz/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://tomito.xyz/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://tomito.xyz/favicon-16x16.png">
-    
-    <!-- Structured Data - JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "تومي تو TomiTo",
-        "alternateName": "TomiTo Movies",
-        "url": "https://tomito.xyz/",
-        "description": "منصة ترفيهية لمشاهدة أحدث الأفلام والمسلسلات العربية والأجنبية بأفضل جودة ومجاناً",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://tomito.xyz/search?q={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-        },
-        "inLanguage": ["ar", "en"],
-        "publisher": {
-            "@type": "Organization",
-            "name": "تومي تو",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://tomito.xyz/images/tomito-logo.png"
+    <title>Tomito - Watch Movies & TV Shows Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ========================================
+           RESET & BASE STYLES
+           ======================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* ========================================
+           ANIMATED TOMITO LOGO STYLES - UPDATED
+           ======================================== */
+        .logo--area {
+            min-width: 250px;
+            max-width: 250px;
+            position: relative;
+        }
+
+        .logo--area h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo--area a {
+            text-decoration: none;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        /* النص الإنجليزي */
+        .en-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+            font-family: 'Arial Black', 'Segoe UI', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            height: 50px;
+            position: relative;
+            margin-bottom: 5px;
+        }
+
+        .en-text span {
+            display: inline-block;
+            position: relative;
+            transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            cursor: default;
+            color: #fff;
+        }
+
+        /* حرف T في الوسط */
+        .en-text span:nth-child(2) {
+            color: #CF0A0A;
+            font-size: 3rem;
+            z-index: 2;
+        }
+
+        /* تأثير تحوم الماوس على الشعار */
+        .en-text:hover span:nth-child(1) {
+            transform: translateX(-80px) rotate(-10deg);
+            opacity: 0;
+        }
+
+        .en-text:hover span:nth-child(2) {
+            transform: translateY(-100px) rotate(45deg);
+            opacity: 0;
+        }
+
+        .en-text:hover span:nth-child(3) {
+            transform: translateX(80px) rotate(10deg);
+            opacity: 0;
+        }
+
+        /* النص العربي - مخفي في البداية */
+        .ar-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Arial', 'Segoe UI', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            height: 40px;
+            margin-top: -10px;
+            position: relative;
+        }
+
+        .ar-text span {
+            color: #EEEEEE;
+            display: inline-block;
+            position: absolute;
+            opacity: 0;
+            transform: translateX(0);
+            transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        /* عند التحويم على الشعار الإنجليزي، يظهر العربي */
+        .en-text:hover ~ .ar-text span:nth-child(1) {
+            opacity: 1;
+            transform: translateX(-40px);
+            transition-delay: 0.2s;
+            color: #DC5F00;
+        }
+
+        .en-text:hover ~ .ar-text span:nth-child(2) {
+            opacity: 1;
+            transform: translateX(0);
+            transition-delay: 0.4s;
+            color: #CF0A0A;
+        }
+
+        /* عند التحويم على النص العربي نفسه */
+        .ar-text:hover span:nth-child(1) {
+            transform: translateX(-50px);
+            color: #DC5F00;
+        }
+
+        .ar-text:hover span:nth-child(2) {
+            transform: translateX(10px);
+            color: #CF0A0A;
+        }
+
+        /* إشارة طماطم خفية */
+        .logo--area::after {
+            content: "🍅";
+            position: absolute;
+            top: 5px;
+            right: -30px;
+            font-size: 1.2rem;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .logo--area:hover::after {
+            opacity: 1;
+        }
+
+        /* ========================================
+           NAVBAR STYLES - UPDATED FOR MOBILE
+           ======================================== */
+        .navbar {
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 0.8rem 5%;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 2px solid #CF0A0A;
+            transition: all 0.4s ease;
+            transform: translateY(0);
+        }
+
+        .navbar.hidden {
+            transform: translateY(-100%);
+        }
+
+        .navbar.compact {
+            padding: 0.4rem 5%;
+            transform: scale(0.95);
+            transform-origin: top;
+            opacity: 0.9;
+        }
+
+        .navbar.compact.hidden {
+            transform: translateY(-100%) scale(0.95);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: #EEEEEE;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+            position: relative;
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-link:hover {
+            color: #DC5F00;
+        }
+
+        .nav-link.active {
+            color: #CF0A0A;
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #CF0A0A, #DC5F00);
+        }
+
+        /* ========================================
+           COLOR FILTERS SECTION
+           ======================================== */
+        .color-filters {
+            margin-top: 80px;
+            padding: 1.5rem 5%;
+            background: rgba(0, 0, 0, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: margin-top 0.3s ease;
+        }
+
+        .color-filters.shifted {
+            margin-top: 60px;
+        }
+
+        .color-filters-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .color-filters-grid {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding: 10px 0;
+            scrollbar-width: thin;
+            scrollbar-color: #CF0A0A #1a1a2e;
+        }
+
+        .color-filters-grid::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .color-filters-grid::-webkit-scrollbar-track {
+            background: #1a1a2e;
+            border-radius: 10px;
+        }
+
+        .color-filters-grid::-webkit-scrollbar-thumb {
+            background: #CF0A0A;
+            border-radius: 10px;
+        }
+
+        .color-filter-btn {
+            padding: 15px 25px;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            white-space: nowrap;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            min-width: 150px;
+            justify-content: center;
+        }
+
+        .color-filter-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .color-filter-btn.black {
+            background: #000000;
+            color: #EEEEEE;
+            border-color: #333;
+        }
+
+        .color-filter-btn.red {
+            background: #CF0A0A;
+            color: white;
+            border-color: #FF4444;
+        }
+
+        .color-filter-btn.orange {
+            background: #DC5F00;
+            color: white;
+            border-color: #FF8C42;
+        }
+
+        .color-filter-btn.gray {
+            background: #EEEEEE;
+            color: #000000;
+            border-color: #CCCCCC;
+        }
+
+        .color-filter-btn.active {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+        }
+
+        /* ========================================
+           EXTENDED FILTERS SECTION - IMPROVED
+           ======================================== */
+        .extended-filters {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem 5%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 0;
+            position: relative;
+        }
+
+        .extended-filters-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .extended-filters-grid {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding: 10px 0;
+            scrollbar-width: thin;
+            scrollbar-color: #DC5F00 #1a1a2e;
+        }
+
+        .extended-filters-grid::-webkit-scrollbar {
+            height: 4px;
+        }
+
+        .extended-filters-grid::-webkit-scrollbar-track {
+            background: #1a1a2e;
+            border-radius: 10px;
+        }
+
+        .extended-filters-grid::-webkit-scrollbar-thumb {
+            background: #DC5F00;
+            border-radius: 10px;
+        }
+
+        .extended-filter-btn {
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            color: #EEEEEE;
+            cursor: pointer;
+            transition: all 0.3s;
+            white-space: nowrap;
+            font-size: 0.9rem;
+            font-weight: 500;
+            flex-shrink: 0;
+        }
+
+        .extended-filter-btn:hover {
+            background: rgba(207, 10, 10, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .extended-filter-btn.active {
+            background: linear-gradient(45deg, #CF0A0A, #DC5F00);
+            border-color: transparent;
+            font-weight: 600;
+        }
+
+        /* زر المزيد */
+        .more-filters-btn {
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            color: #EEEEEE;
+            cursor: pointer;
+            transition: all 0.3s;
+            white-space: nowrap;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .more-filters-btn:hover {
+            background: rgba(207, 10, 10, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .more-filters-btn.active {
+            background: linear-gradient(45deg, #CF0A0A, #DC5F00);
+            border-color: transparent;
+        }
+
+        /* القائمة المنسدلة */
+        .filters-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.95);
+            border: 1px solid rgba(207, 10, 10, 0.5);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 10px;
+            z-index: 100;
+            display: none;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            max-height: 300px;
+            overflow-y: auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .filters-dropdown.show {
+            display: grid;
+            animation: fadeIn 0.3s ease;
+        }
+
+        /* ========================================
+           SEARCH BAR STYLES
+           ======================================== */
+        .search-container {
+            position: relative;
+            width: 350px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 20px;
+            padding-right: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(207, 10, 10, 0.3);
+            border-radius: 50px;
+            color: #EEEEEE;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #CF0A0A;
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 0 15px rgba(207, 10, 10, 0.2);
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #DC5F00;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .search-btn:hover {
+            color: #CF0A0A;
+        }
+
+        /* ========================================
+           SAVE BUTTON
+           ======================================== */
+        .save-btn {
+            background: none;
+            border: none;
+            color: #EEEEEE;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 10px;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .save-btn:hover {
+            color: #CF0A0A;
+            transform: scale(1.1);
+        }
+
+        .save-btn.saved i {
+            color: #CF0A0A;
+            animation: heartBeat 0.5s;
+        }
+
+        @keyframes heartBeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+            100% { transform: scale(1); }
+        }
+
+        /* ========================================
+           MAIN CONTENT
+           ======================================== */
+        .main-content {
+            margin-top: 0;
+            padding: 2rem 5%;
+        }
+
+        /* ========================================
+           FEATURED CAROUSEL SECTION
+           ======================================== */
+        .featured-section {
+            margin-bottom: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .featured-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+        
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            background: linear-gradient(45deg, #CF0A0A, #DC5F00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .section-title i {
+            font-size: 2.5rem;
+            color: #DC5F00;
+        }
+
+        .view-all-btn {
+            background: linear-gradient(45deg, #CF0A0A, #DC5F00);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+        }
+
+        .view-all-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(207, 10, 10, 0.4);
+        }
+
+        /* ========================================
+           ENHANCED CAROUSEL
+           ======================================== */
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .carousel-track {
+            display: flex;
+            gap: 1.5rem;
+            transition: transform 0.5s ease;
+            padding: 1rem 0;
+        }
+
+        .carousel-card {
+            flex: 0 0 280px;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.4s;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            height: 400px;
+            background: #000000;
+        }
+
+        .carousel-card:hover {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: 0 25px 40px rgba(207, 10, 10, 0.4);
+        }
+
+        .carousel-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .carousel-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .carousel-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.95), transparent);
+            padding: 2rem;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 0.4s;
+        }
+
+        .carousel-card:hover .carousel-overlay {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .carousel-card-title {
+            font-size: 1.4rem;
+            color: #EEEEEE;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+        }
+
+        .carousel-card-info {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.2rem;
+            flex-wrap: wrap;
+        }
+
+        .carousel-rating {
+            background: rgba(255, 215, 0, 0.2);
+            padding: 6px 12px;
+            border-radius: 15px;
+            color: #FFD700;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .carousel-year {
+            background: rgba(220, 95, 0, 0.3);
+            padding: 6px 12px;
+            border-radius: 15px;
+            color: #DC5F00;
+            font-size: 0.95rem;
+        }
+
+        .carousel-card-description {
+            font-size: 0.9rem;
+            color: #CCCCCC;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .carousel-card-btns {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+        .carousel-play-btn {
+            background: linear-gradient(45deg, #CF0A0A, #DC5F00);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .carousel-play-btn:hover {
+            background: linear-gradient(45deg, #DC5F00, #CF0A0A);
+            transform: scale(1.05);
+        }
+
+        .carousel-save-btn {
+            background: rgba(238, 238, 238, 0.2);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            width: 45px;
+            height: 45px;
+        }
+
+        .carousel-save-btn:hover {
+            background: rgba(207, 10, 10, 0.5);
+            transform: scale(1.1);
+        }
+
+        /* ========================================
+           INFINITE CAROUSEL NAVIGATION
+           ======================================== */
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.3rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            transition: all 0.3s;
+            border: 2px solid #CF0A0A;
+        }
+
+        .carousel-nav:hover {
+            background: #CF0A0A;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .carousel-prev {
+            right: 20px;
+        }
+
+        .carousel-next {
+            left: 20px;
+        }
+
+        /* ========================================
+           ALL MOVIES SECTION
+           ======================================== */
+        .all-movies-section {
+            margin-bottom: 4rem;
+        }
+
+        .movies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        /* ========================================
+           MOVIE CARD
+           ======================================== */
+        .movie-card {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.4s;
+            height: 420px;
+            background: #000000;
+            border: 1px solid rgba(207, 10, 10, 0.1);
+        }
+
+        .movie-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 35px rgba(207, 10, 10, 0.3);
+            border-color: #CF0A0A;
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .movie-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .movie-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.95), transparent);
+            padding: 1.8rem;
+            transform: translateY(100%);
+            transition: transform 0.4s;
+        }
+
+        .movie-card:hover .movie-overlay {
+            transform: translateY(0);
+        }
+
+        .movie-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .movie-header h3 {
+            font-size: 1.3rem;
+            color: #EEEEEE;
+            margin: 0;
+            flex: 1;
+            line-height: 1.4;
+            font-weight: 600;
+        }
+
+        .movie-rating {
+            background: rgba(207, 10, 10, 0.3);
+            padding: 6px 10px;
+            border-radius: 15px;
+            font-size: 0.95rem;
+            color: #FFD700;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: 600;
+        }
+
+        .movie-info {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .movie-year {
+            background: rgba(220, 95, 0, 0.3);
+            padding: 6px 12px;
+            border-radius: 15px;
+            color: #DC5F00;
+            font-size: 0.9rem;
+        }
+
+        .movie-genre {
+            background: rgba(0, 123, 255, 0.3);
+            padding: 6px 12px;
+            border-radius: 15px;
+            color: #4DA8DA;
+            font-size: 0.9rem;
+        }
+
+        .movie-description {
+            font-size: 0.9rem;
+            color: #CCCCCC;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .movie-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+        .play-btn-sm {
+            background: linear-gradient(45deg, #CF0A0A, #DC5F00);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .play-btn-sm:hover {
+            background: linear-gradient(45deg, #DC5F00, #CF0A0A);
+            transform: scale(1.05);
+        }
+
+        .save-btn-sm {
+            background: rgba(238, 238, 238, 0.2);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            width: 45px;
+            height: 45px;
+        }
+
+        .save-btn-sm:hover {
+            background: rgba(207, 10, 10, 0.5);
+            transform: scale(1.1);
+        }
+
+        /* ========================================
+           INFINITE PAGINATION
+           ======================================== */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            padding: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .page-link {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(207, 10, 10, 0.3);
+            color: #EEEEEE;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            min-width: 40px;
+            text-align: center;
+        }
+
+        .page-link:hover:not(.cursor-normal) {
+            background: rgba(207, 10, 10, 0.3);
+            transform: scale(1.05);
+        }
+
+        .page-link.active {
+            background: linear-gradient(45deg, #CF0A0A, #DC5F00);
+            border-color: transparent;
+            transform: scale(1.1);
+        }
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+
+        .cursor-normal {
+            cursor: default;
+            background: rgba(207, 10, 10, 0.5);
+        }
+
+        .pagination-nav-btn {
+            background: rgba(207, 10, 10, 0.3);
+            border: 1px solid #CF0A0A;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .pagination-nav-btn:hover:not(:disabled) {
+            background: #CF0A0A;
+            transform: scale(1.05);
+        }
+
+        .pagination-nav-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* ========================================
+           PROGRESS BAR
+           ======================================== */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, #CF0A0A, #DC5F00, #EEEEEE);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s;
+            z-index: 2000;
+            display: none;
+        }
+
+        /* ========================================
+           NO MOVIES MESSAGE
+           ======================================== */
+        .no-movies {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 4rem;
+            color: #888;
+            font-size: 1.3rem;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            border: 2px dashed #CF0A0A;
+        }
+
+        /* ========================================
+           RESPONSIVE DESIGN - IMPROVED FOR MOBILE
+           ======================================== */
+        @media (max-width: 1024px) {
+            .movies-grid {
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            }
+            
+            .carousel-card {
+                flex: 0 0 250px;
+                height: 380px;
+            }
+            
+            .search-container {
+                width: 300px;
+            }
+            
+            .en-text {
+                font-size: 2rem;
+            }
+            
+            .en-text span:nth-child(2) {
+                font-size: 2.5rem;
+            }
+            
+            .ar-text {
+                font-size: 1.5rem;
+            }
+            
+            .navbar {
+                padding: 0.7rem 5%;
+            }
+            
+            .logo--area {
+                min-width: 200px;
+                max-width: 200px;
             }
         }
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "تومي تو TomiTo",
-        "url": "https://tomito.xyz/",
-        "logo": "https://tomito.xyz/images/tomito-logo.png",
-        "description": "أفضل موقع عربي لمشاهدة الأفلام والمسلسلات مجاناً بجودة عالية",
-        "sameAs": [
-            "https://www.facebook.com/tomito",
-            "https://twitter.com/tomito",
-            "https://www.instagram.com/tomito",
-            "https://www.youtube.com/tomito",
-            "https://www.tiktok.com/@tomito"
-        ],
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "Customer Service",
-            "availableLanguage": ["Arabic", "English"]
+
+        @media (max-width: 768px) {
+            /* تحسينات الهيدر للهاتف */
+            .navbar {
+                padding: 0.5rem 5%;
+            }
+            
+            .navbar.compact {
+                padding: 0.3rem 5%;
+                transform: scale(0.9);
+            }
+            
+            .nav-container {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            
+            .nav-links {
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 0.8rem;
+            }
+            
+            .nav-link {
+                font-size: 0.95rem;
+                padding: 4px 0;
+            }
+            
+            .nav-link i {
+                font-size: 0.9rem;
+            }
+            
+            .logo--area {
+                min-width: 180px;
+                max-width: 180px;
+            }
+            
+            .en-text {
+                font-size: 1.7rem;
+                height: 35px;
+            }
+            
+            .en-text span:nth-child(2) {
+                font-size: 2rem;
+            }
+            
+            .ar-text {
+                font-size: 1.2rem;
+                height: 30px;
+                margin-top: -8px;
+            }
+            
+            .search-container {
+                width: 100%;
+                max-width: 400px;
+            }
+            
+            .search-input {
+                padding: 10px 16px;
+                padding-right: 45px;
+                font-size: 0.95rem;
+            }
+            
+            .save-btn {
+                font-size: 1.3rem;
+                padding: 8px;
+            }
+            
+            .movies-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 1.5rem;
+            }
+            
+            .movie-card {
+                height: 380px;
+            }
+            
+            .carousel-card {
+                flex: 0 0 220px;
+                height: 350px;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .color-filters {
+                margin-top: 140px;
+            }
+            
+            .carousel-nav {
+                width: 40px;
+                height: 40px;
+                font-size: 1.1rem;
+            }
+            
+            /* تحسينات زر المزيد */
+            .extended-filter-btn {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+            
+            .more-filters-btn {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+            
+            .filters-dropdown {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                max-height: 250px;
+            }
         }
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "VideoGallery",
-        "name": "مكتبة أفلام تومي تو",
-        "description": "مجموعة ضخمة من الأفلام والمسلسلات العربية والأجنبية"
-    }
-    </script>
-    
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="styel.css">
-    <link rel="stylesheet" href="logo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+        @media (max-width: 480px) {
+            /* تحسينات إضافية للهواتف الصغيرة */
+            .navbar {
+                padding: 0.4rem 5%;
+            }
+            
+            .navbar.compact {
+                padding: 0.2rem 5%;
+                transform: scale(0.85);
+            }
+            
+            .nav-links {
+                gap: 0.6rem;
+            }
+            
+            .nav-link {
+                font-size: 0.85rem;
+                gap: 5px;
+            }
+            
+            .nav-link i {
+                font-size: 0.8rem;
+            }
+            
+            .logo--area {
+                min-width: 150px;
+                max-width: 150px;
+            }
+            
+            .en-text {
+                font-size: 1.4rem;
+                height: 30px;
+            }
+            
+            .en-text span:nth-child(2) {
+                font-size: 1.7rem;
+            }
+            
+            .ar-text {
+                font-size: 1rem;
+                height: 25px;
+                margin-top: -6px;
+            }
+            
+            .movies-grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                gap: 1rem;
+            }
+            
+            .movie-card {
+                height: 320px;
+            }
+            
+            .carousel-card {
+                flex: 0 0 180px;
+                height: 300px;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .color-filter-btn {
+                min-width: 130px;
+                padding: 12px 20px;
+                font-size: 0.9rem;
+            }
+            
+            .carousel-nav {
+                display: none;
+            }
+            
+            .extended-filter-btn {
+                padding: 7px 14px;
+                font-size: 0.8rem;
+            }
+            
+            .more-filters-btn {
+                padding: 7px 14px;
+                font-size: 0.8rem;
+            }
+            
+            .filters-dropdown {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                max-height: 200px;
+                padding: 10px;
+            }
+            
+            .view-all-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* ========================================
+           ANIMATIONS
+           ======================================== */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .movie-card {
+            animation: fadeIn 0.6s ease-out forwards;
+            opacity: 0;
+        }
+
+        /* ========================================
+           SCROLLBAR STYLING
+           ======================================== */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1a1a2e;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #CF0A0A, #DC5F00);
+            border-radius: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(to bottom, #DC5F00, #CF0A0A);
+        }
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+        .footer {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 2rem 5%;
+            text-align: center;
+            margin-top: 3rem;
+            border-top: 2px solid #CF0A0A;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-size: 1.5rem;
+            background: linear-gradient(45deg, #CF0A0A, #DC5F00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: #EEEEEE;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 1rem;
+        }
+
+        .footer-link:hover {
+            color: #DC5F00;
+        }
+
+        .copyright {
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 1.5rem;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="progress-bar" id="progress-bar" role="progressbar" aria-label="تقدم التمرير"></div>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progress-bar"></div>
 
-    <header class="site-header" id="site-header" role="banner">
-        <div class="header-left">
-            <a href="tv.html" class="page-switch-btn" title="انتقل إلى صفحة المسلسلات" aria-label="المسلسلات">
-                <i class="fas fa-tv" aria-hidden="true"></i>
-                <span>المسلسلات</span>
-            </a>
-        </div>
-
-        <nav class="genre-strip" id="genre-strip" role="navigation" aria-label="تصنيفات الأفلام">
-            <button class="genre-btn active" data-genre="" aria-label="عرض جميع الأفلام">
-                <i class="fas fa-film" aria-hidden="true"></i> الكل
-            </button>
-            <button class="genre-btn" data-genre="28" aria-label="أفلام أكشن">
-                <i class="fas fa-fire" aria-hidden="true"></i> أكشن
-            </button>
-            <button class="genre-btn" data-genre="35" aria-label="أفلام كوميديا">
-                <i class="fas fa-laugh" aria-hidden="true"></i> كوميديا
-            </button>
-            <button class="genre-btn" data-genre="18" aria-label="أفلام دراما">
-                <i class="fas fa-theater-masks" aria-hidden="true"></i> دراما
-            </button>
-            <button class="more-genres-btn" id="moreGenresBtn" aria-label="المزيد من التصنيفات">
-                <i class="fas fa-ellipsis-h" aria-hidden="true"></i> المزيد
-            </button>
-        </nav>
-
-        <!-- Logo Container - تحت genre-strip -->
-        <div class="container logo py-2">
-            <div class="logo--area" style="min-width: 250px; max-width: 250px">
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- المنطقة الجديدة للوغو - كما في المثال -->
+            <div class="logo--area">
                 <h1>
-                    <a href="https://tomito.xyz/" title="تومي تو TomiTo | مشاهدة افلام و مسلسلات اون لاين">
+                    <a href="#" title="Tomito | مشاهدة افلام و مسلسلات اون لاين">
                         <div class="en-text">
-                            <span>Tomi</span><span>T</span><span>o</span>
+                            <span>mito</span>
+                            <span>o</span>
+                            <span>T</span>
                         </div>
                         <div class="ar-text">
-                            <span>تو</span><span>ميتو</span>
+                            <span>ميتو</span>
+                            <span>تو</span>
                         </div>
                     </a>
                 </h1>
             </div>
+            
+            <div class="nav-links">
+                <a href="#" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    الصفحة الرئيسية
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-fire"></i>
+                    الأكثر شهرة
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-calendar-alt"></i>
+                    القادمة
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-tv"></i>
+                    المسلسلات
+                </a>
+            </div>
+            
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    id="search" 
+                    placeholder="ابحث عن أفلام، مسلسلات..."
+                    autocomplete="off"
+                >
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            
         </div>
+    </nav>
 
-        <nav class="genre-nav" id="genre-nav" role="navigation" aria-label="التنقل الرئيسي">
-            <a href="#" data-section="all" class="active" onclick="loadAllSections(); return false;" aria-label="عرض جميع الأقسام">
-                <i class="fas fa-film" aria-hidden="true"></i> الكل
-            </a>
-            <a href="#" data-section="watchlist" id="watchlist-btn" onclick="showWatchlist(); return false;" aria-label="قائمة المحفوظات">
-                <i class="fas fa-bookmark" aria-hidden="true"></i> المحفوظات
-                <span class="watchlist-count" id="watchlistCount" aria-label="عدد العناصر المحفوظة">0</span>
-            </a>
-        </nav>
+    <!-- Color Filters Section -->
+    <section class="color-filters" id="colorFilters">
+        <div class="color-filters-container">
+           
+        </div>
+    </section>
 
-        <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
-    </header>
+    <!-- Extended Filters Section -->
+    <section class="extended-filters" id="extendedFilters">
+        <div class="extended-filters-container">
+            <div class="extended-filters-grid" id="extendedFiltersGrid">
+                <!-- سيتم ملؤها بواسطة JavaScript -->
+            </div>
+            <!-- زر المزيد - مخفي حاليا وسيظهر عند الحاجة -->
+            <div class="filters-dropdown" id="filtersDropdown"></div>
+        </div>
+    </section>
 
-    <main class="main-container" role="main">
-        <section class="banner-section" aria-labelledby="banner-title">
-            <h2 id="banner-title" class="section-title"><i class="fas fa-crown" aria-hidden="true"></i> الأفلام الأكثر مشاهدة</h2>
-            <div class="banner-carousel" role="region" aria-label="عرض تقديمي للأفلام الأكثر مشاهدة">
-                <button class="carousel-btn prev-btn" aria-label="الفيلم السابق"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
-                <div class="banner-container" id="banner-container"></div>
-                <button class="carousel-btn next-btn" aria-label="الفيلم التالي"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-                <div class="banner-indicators" id="banner-indicators" role="tablist" aria-label="مؤشرات الأفلام"></div>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Featured Carousel Section -->
+        <section class="featured-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-crown"></i>
+                    الأفلام المميزة
+                </h2>
+                <button class="view-all-btn" onclick="showAllMovies()">
+                    <i class="fas fa-eye"></i>
+                    عرض الكل
+                </button>
+            </div>
+            
+            <div class="carousel-container">
+                <button class="carousel-nav carousel-prev" onclick="scrollCarousel(-1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="carousel-track" id="carouselTrack">
+                    <!-- سيتم ملؤها بواسطة JavaScript -->
+                </div>
+                
+                <button class="carousel-nav carousel-next" onclick="scrollCarousel(1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
             </div>
         </section>
 
-        <div class="search-container" role="search">
-            <div class="autocomplete-container">
-                <label for="search" class="visually-hidden">البحث عن فيلم</label>
-                <input type="search" id="search" placeholder="🔍 ابحث عن فيلم..." aria-label="البحث عن فيلم">
-                <div class="autocomplete-suggestions" id="autocomplete-suggestions" role="listbox" aria-label="اقتراحات البحث"></div>
+        <!-- All Movies Section -->
+        <section class="all-movies-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-film"></i>
+                    جميع الأفلام
+                </h2>
             </div>
-        </div>
-        
-        <section class="movies-section" aria-labelledby="new-movies-title">
-            <h2 id="new-movies-title" class="section-title"><i class="fas fa-sparkles" aria-hidden="true"></i> أفلام جديدة</h2>
-            <div class="movies-container" id="new-movies" role="list" aria-label="قائمة الأفلام الجديدة"></div>
-            <button class="more-btn" onclick="loadMoreMovies('new-movies', 'now_playing')" aria-label="تحميل المزيد من الأفلام الجديدة">
-                <i class="fas fa-plus-circle" aria-hidden="true"></i> المزيد من الأفلام الجديدة
-            </button>
-        </section>
-
-        <section class="movies-section" aria-labelledby="trending-title">
-            <h2 id="trending-title" class="section-title"><i class="fas fa-fire" aria-hidden="true"></i> شائع حالياً</h2>
-            <div class="movies-container" id="trending-movies" role="list" aria-label="قائمة الأفلام الشائعة"></div>
-            <button class="more-btn" onclick="loadMoreMovies('trending-movies', 'trending')" aria-label="تحميل المزيد من الأفلام الشائعة">
-                <i class="fas fa-plus-circle" aria-hidden="true"></i> المزيد من الأفلام الشائعة
-            </button>
-        </section>
-
-        <section class="movies-section" aria-labelledby="latest-title">
-            <h2 id="latest-title" class="section-title"><i class="fas fa-star" aria-hidden="true"></i> أحدث الأفلام</h2>
-            <div class="movies-container" id="latest-movies" role="list" aria-label="قائمة أحدث الأفلام"></div>
-            <button class="more-btn" onclick="loadMoreMovies('latest-movies', 'popular')" aria-label="تحميل المزيد من أحدث الأفلام">
-                <i class="fas fa-plus-circle" aria-hidden="true"></i> المزيد من أحدث الأفلام
-            </button>
-        </section>
-
-        <section class="movies-section" aria-labelledby="upcoming-title">
-            <h2 id="upcoming-title" class="section-title"><i class="fas fa-calendar-alt" aria-hidden="true"></i> قريباً</h2>
-            <div class="movies-container" id="upcoming-movies" role="list" aria-label="قائمة الأفلام القادمة"></div>
-            <button class="more-btn" onclick="loadMoreMovies('upcoming-movies', 'upcoming')" aria-label="تحميل المزيد من الأفلام القادمة">
-                <i class="fas fa-plus-circle" aria-hidden="true"></i> المزيد من الأفلام القادمة
-            </button>
+            
+            <!-- Movies Grid -->
+            <div class="movies-grid" id="moviesGrid">
+                <!-- سيتم ملؤها بواسطة JavaScript -->
+            </div>
+            
+            <!-- Infinite Pagination -->
+            <nav aria-label="Page navigation" class="pagination" id="pagination">
+                <!-- سيتم ملؤها بواسطة JavaScript -->
+            </nav>
         </section>
     </main>
 
-    <footer class="site-footer" role="contentinfo">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="footer-content">
-            <div class="logo">تومي تو</div>
-            <p>منصة ترفيهية لمشاهدة الأفلام والمسلسلات بأفضل جودة ومجاناً</p>
-            <nav class="social-links" aria-label="روابط التواصل الاجتماعي">
-                <a href="https://facebook.com/tomito" aria-label="تابعنا على فيسبوك" rel="noopener noreferrer"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/tomito" aria-label="تابعنا على تويتر" rel="noopener noreferrer"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                <a href="https://instagram.com/tomito" aria-label="تابعنا على إنستغرام" rel="noopener noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://youtube.com/tomito" aria-label="تابعنا على يوتيوب" rel="noopener noreferrer"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                <a href="https://tiktok.com/@tomito" aria-label="تابعنا على تيك توك" rel="noopener noreferrer"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
-            </nav>
+            <div class="footer-logo">
+                <i class="fas fa-film"></i>
+                Tomito - عالم السينما الخاص بك
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">من نحن</a>
+                <a href="#" class="footer-link">اتصل بنا</a>
+                <a href="#" class="footer-link">سياسة الخصوصية</a>
+                <a href="#" class="footer-link">شروط الخدمة</a>
+                <a href="#" class="footer-link">الأسئلة الشائعة</a>
+            </div>
             <p class="copyright">
-                © 2025 تومي تو TomiTo. جميع الحقوق محفوظة.<br>
-                هذا الموقع يستخدم بيانات من TMDb API | <a href="/privacy">سياسة الخصوصية</a> | <a href="/terms">شروط الاستخدام</a>
+                © 2024 Tomito Movies. جميع بيانات الأفلام مقدمة من TMDB. هذا الموقع هو عرض توضيحي لأغراض تعليمية.
             </p>
         </div>
     </footer>
 
-    <script src="api.js"></script>
-    <script src="header.js"></script>
-    <script src="carousel1.js"></script>
-    <script src="sitemap-generator.js"></script>
-    <script src="logo.js"></script>
-    <script src="https://pl28403821.effectivegatecpm.com/d3/d3/09/d3d309d5b609d8a118c7e64605eac7b5.js"></script>
-    
+    <!-- JavaScript Code -->
+    <script>
+        // ========================================
+        // TMDB API CONFIGURATION
+        // ========================================
+        const API_KEY = "882e741f7283dc9ba1654d4692ec30f6";
+        const BASE_URL = "https://api.themoviedb.org/3";
+        const IMG_URL = "https://image.tmdb.org/t/p/w1280";
+        const IMG_500 = "https://image.tmdb.org/t/p/w500";
 
+        // ========================================
+        // STATE MANAGEMENT
+        // ========================================
+        let savedMovies = JSON.parse(localStorage.getItem("savedMovies")) || [];
+        let currentGenre = 'all';
+        let currentPage = 1;
+        let totalPages = 1;
+        let allMovies = [];
+        let carouselMovies = [];
+        let genres = [];
+        let currentColorFilter = 'black';
+        
+        // Scroll management
+        let lastScrollTop = 0;
+        let carouselPosition = 0;
+        const CAROUSEL_CARD_WIDTH = 280 + 24; // 280px width + 24px gap
+
+        // Extended filters management
+        let visibleFilterCount = 8; // عدد الفلاتر المرئية قبل النقر على "المزيد"
+        let isFiltersExpanded = false;
+
+        // ========================================
+        // PAGE INITIALIZATION
+        // ========================================
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("🎬 Tomito Movies - Initializing...");
+            setupColorFilters();
+            setupSearch();
+            updateTheme();
+            setupThemeToggle();
+            setupLogoAnimation();
+            setupScrollHide();
+            loadGenres();
+            loadCarouselMovies();
+            loadAllMovies();
+            
+            // إغلاق القائمة المنسدلة عند النقر خارجها
+            document.addEventListener('click', (e) => {
+                const dropdown = document.getElementById('filtersDropdown');
+                const moreBtn = document.querySelector('.more-filters-btn');
+                
+                if (dropdown && moreBtn && 
+                    !dropdown.contains(e.target) && 
+                    !moreBtn.contains(e.target) &&
+                    dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                    moreBtn.classList.remove('active');
+                    moreBtn.innerHTML = '<i class="fas fa-chevron-down"></i> المزيد';
+                    isFiltersExpanded = false;
+                }
+            });
+        });
+
+        // ========================================
+        // IMPROVED SCROLL HIDE FUNCTIONALITY FOR MOBILE
+        // ========================================
+        function setupScrollHide() {
+            let ticking = false;
+            let lastScrollY = window.scrollY;
+            
+            window.addEventListener('scroll', function() {
+                lastScrollY = window.scrollY;
+                
+                if (!ticking) {
+                    window.requestAnimationFrame(function() {
+                        handleScrollHide(lastScrollY);
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            }, false);
+        }
+
+        function handleScrollHide(scrollTop) {
+            const navbar = document.getElementById('navbar');
+            const colorFilters = document.getElementById('colorFilters');
+            const isMobile = window.innerWidth <= 768;
+            
+            // حساب المسافة من الأعلى
+            const scrollDelta = scrollTop - lastScrollTop;
+            
+            if (scrollTop > 100) {
+                if (scrollDelta > 5) {
+                    // التمرير لأسفل - إخفاء الهيدر
+                    navbar.classList.add('hidden');
+                    if (isMobile) {
+                        navbar.classList.add('compact');
+                    }
+                } else if (scrollDelta < -5) {
+                    // التمرير لأعلى - إظهار الهيدر
+                    navbar.classList.remove('hidden');
+                    if (scrollTop < 200) {
+                        navbar.classList.remove('compact');
+                    }
+                }
+                
+                // إضافة تأثير shifted لقسم الفلاتر
+                colorFilters.classList.add('shifted');
+            } else {
+                // إعادة كل شيء إلى وضعه الطبيعي
+                navbar.classList.remove('hidden');
+                navbar.classList.remove('compact');
+                colorFilters.classList.remove('shifted');
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        }
+
+        // ========================================
+        // LOGO ANIMATION SETUP
+        // ========================================
+        function setupLogoAnimation() {
+            const logoArea = document.querySelector('.logo--area');
+            const enText = document.querySelector('.en-text');
+            const arText = document.querySelector('.ar-text');
+            const middleT = document.querySelector('.en-text span:nth-child(2)');
+            
+            if (!logoArea || !middleT) return;
+            
+            // إضافة صوت طرق الباب (خفيف) عند التحويم على الشعار
+            enText.addEventListener('mouseenter', function() {
+                // إنشاء صوت تأثير
+                try {
+                    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                    const oscillator = audioContext.createOscillator();
+                    const gainNode = audioContext.createGain();
+                    
+                    oscillator.connect(gainNode);
+                    gainNode.connect(audioContext.destination);
+                    
+                    oscillator.frequency.value = 300;
+                    oscillator.type = 'sine';
+                    
+                    gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
+                    gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
+                    
+                    oscillator.start(audioContext.currentTime);
+                    oscillator.stop(audioContext.currentTime + 0.3);
+                } catch(e) {
+                    console.log("الصوت غير مدعوم في هذا المتصفح");
+                }
+            });
+            
+            // إعادة تعيين الحروف بعد اختفائها
+            enText.addEventListener('mouseleave', function() {
+                const spans = this.querySelectorAll('span');
+                if (spans) {
+                    spans.forEach(span => {
+                        span.style.transform = 'translateX(0) translateY(0) rotate(0deg)';
+                        span.style.opacity = '1';
+                    });
+                }
+            });
+            
+            console.log("✅ Logo animation setup complete");
+        }
+
+        // ========================================
+        // COLOR FILTERS FUNCTIONALITY
+        // ========================================
+        function setupColorFilters() {
+            const filterButtons = document.querySelectorAll('.color-filter-btn');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Update current filter
+                    currentColorFilter = this.getAttribute('data-color');
+                    
+                    // Apply color theme
+                    applyColorTheme(currentColorFilter);
+                    
+                    console.log(`🎨 Applied ${currentColorFilter} theme`);
+                });
+            });
+        }
+
+        function applyColorTheme(color) {
+            const root = document.documentElement;
+            
+            switch(color) {
+                case 'red':
+                    document.documentElement.style.setProperty('--primary-color', '#CF0A0A');
+                    document.documentElement.style.setProperty('--secondary-color', '#DC5F00');
+                    document.documentElement.style.setProperty('--accent-color', '#EEEEEE');
+                    break;
+                    
+                case 'orange':
+                    document.documentElement.style.setProperty('--primary-color', '#DC5F00');
+                    document.documentElement.style.setProperty('--secondary-color', '#CF0A0A');
+                    document.documentElement.style.setProperty('--accent-color', '#EEEEEE');
+                    break;
+                    
+                case 'gray':
+                    document.documentElement.style.setProperty('--primary-color', '#EEEEEE');
+                    document.documentElement.style.setProperty('--secondary-color', '#000000');
+                    document.documentElement.style.setProperty('--accent-color', '#DC5F00');
+                    break;
+                    
+                default: // black
+                    document.documentElement.style.setProperty('--primary-color', '#000000');
+                    document.documentElement.style.setProperty('--secondary-color', '#CF0A0A');
+                    document.documentElement.style.setProperty('--accent-color', '#EEEEEE');
+            }
+            
+            // Update CSS variables in real-time
+            updateTheme();
+        }
+
+        function updateTheme() {
+            // This function can be expanded to update more theme elements
+            console.log(`🎨 Theme updated to: ${currentColorFilter}`);
+        }
+
+        function setupThemeToggle() {
+            const themeToggle = document.getElementById('theme-toggle');
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function() {
+                    // Cycle through color filters
+                    const filters = ['black', 'red', 'orange', 'gray'];
+                    const currentIndex = filters.indexOf(currentColorFilter);
+                    const nextIndex = (currentIndex + 1) % filters.length;
+                    
+                    // Simulate click on the next filter button
+                    const nextFilter = filters[nextIndex];
+                    const nextButton = document.querySelector(`.color-filter-btn[data-color="${nextFilter}"]`);
+                    if (nextButton) {
+                        nextButton.click();
+                    }
+                });
+            }
+        }
+
+        // ========================================
+        // LOAD GENRES
+        // ========================================
+        async function loadGenres() {
+            try {
+                const url = `${BASE_URL}/genre/movie/list?api_key=${API_KEY}&language=ar`;
+                const res = await fetch(url);
+                const data = await res.json();
+                
+                genres = data.genres;
+                setupExtendedFilters();
+                
+                console.log(`✅ Loaded ${genres.length} genres`);
+            } catch (error) {
+                console.error("❌ Error loading genres:", error);
+                // Fallback genres
+                genres = [
+                    { id: 28, name: 'أكشن' },
+                    { id: 12, name: 'مغامرة' },
+                    { id: 16, name: 'رسوم متحركة' },
+                    { id: 35, name: 'كوميديا' },
+                    { id: 80, name: 'جريمة' },
+                    { id: 99, name: 'وثائقي' },
+                    { id: 18, name: 'دراما' },
+                    { id: 10751, name: 'عائلي' },
+                    { id: 14, name: 'فانتازيا' },
+                    { id: 36, name: 'تاريخي' },
+                    { id: 27, name: 'رعب' },
+                    { id: 10402, name: 'موسيقى' },
+                    { id: 9648, name: 'غموض' },
+                    { id: 10749, name: 'رومانسي' },
+                    { id: 878, name: 'خيال علمي' },
+                    { id: 10770, name: 'فيلم تلفزيوني' },
+                    { id: 53, name: 'إثارة' },
+                    { id: 10752, name: 'حربي' },
+                    { id: 37, name: 'غربي' }
+                ];
+                setupExtendedFilters();
+            }
+        }
+
+        // ========================================
+        // SETUP EXTENDED FILTERS WITH "MORE" BUTTON
+        // ========================================
+        function setupExtendedFilters() {
+            const filtersGrid = document.getElementById('extendedFiltersGrid');
+            const dropdown = document.getElementById('filtersDropdown');
+            
+            if (!filtersGrid || !dropdown) return;
+            
+            filtersGrid.innerHTML = '';
+            dropdown.innerHTML = '';
+            
+            // Add "All" button
+            const allButton = document.createElement('button');
+            allButton.className = 'extended-filter-btn active';
+            allButton.textContent = 'الكل';
+            allButton.setAttribute('data-genre', 'all');
+            allButton.onclick = () => filterByGenre('all');
+            filtersGrid.appendChild(allButton);
+            
+            // Add visible genre buttons (limited number)
+            const visibleGenres = genres.slice(0, visibleFilterCount - 1);
+            
+            visibleGenres.forEach(genre => {
+                const button = document.createElement('button');
+                button.className = 'extended-filter-btn';
+                button.textContent = genre.name;
+                button.setAttribute('data-genre', genre.id);
+                button.onclick = () => filterByGenre(genre.id);
+                filtersGrid.appendChild(button);
+            });
+            
+            // إذا كان هناك أكثر من عدد الفلاتر المرئية، أضف زر "المزيد"
+            if (genres.length > visibleFilterCount - 1) {
+                const moreButton = document.createElement('button');
+                moreButton.className = 'more-filters-btn';
+                moreButton.innerHTML = '<i class="fas fa-chevron-down"></i> المزيد';
+                moreButton.onclick = toggleMoreFilters;
+                filtersGrid.appendChild(moreButton);
+                
+                // إضافة الفلاتر المتبقية للقائمة المنسدلة
+                const remainingGenres = genres.slice(visibleFilterCount - 1);
+                
+                remainingGenres.forEach(genre => {
+                    const button = document.createElement('button');
+                    button.className = 'extended-filter-btn';
+                    button.textContent = genre.name;
+                    button.setAttribute('data-genre', genre.id);
+                    button.onclick = () => {
+                        filterByGenre(genre.id);
+                        // إغلاق القائمة المنسدلة بعد الاختيار
+                        dropdown.classList.remove('show');
+                        moreButton.classList.remove('active');
+                        moreButton.innerHTML = '<i class="fas fa-chevron-down"></i> المزيد';
+                        isFiltersExpanded = false;
+                    };
+                    dropdown.appendChild(button);
+                });
+            }
+        }
+
+        function toggleMoreFilters() {
+            const dropdown = document.getElementById('filtersDropdown');
+            const moreBtn = document.querySelector('.more-filters-btn');
+            
+            if (!dropdown || !moreBtn) return;
+            
+            if (isFiltersExpanded) {
+                dropdown.classList.remove('show');
+                moreBtn.classList.remove('active');
+                moreBtn.innerHTML = '<i class="fas fa-chevron-down"></i> المزيد';
+            } else {
+                dropdown.classList.add('show');
+                moreBtn.classList.add('active');
+                moreBtn.innerHTML = '<i class="fas fa-chevron-up"></i> أقل';
+            }
+            
+            isFiltersExpanded = !isFiltersExpanded;
+        }
+
+        function filterByGenre(genreId) {
+            // Update active button in visible filters
+            const buttons = document.querySelectorAll('.extended-filter-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Find and activate the clicked button
+            const activeBtn = document.querySelector(`.extended-filter-btn[data-genre="${genreId}"]`);
+            if (activeBtn) {
+                activeBtn.classList.add('active');
+            } else {
+                // If button is in dropdown, activate "All" button instead
+                document.querySelector('.extended-filter-btn[data-genre="all"]').classList.add('active');
+            }
+            
+            // Also check dropdown buttons
+            const dropdownButtons = document.querySelectorAll('#filtersDropdown .extended-filter-btn');
+            dropdownButtons.forEach(btn => btn.classList.remove('active'));
+            
+            const dropdownActiveBtn = document.querySelector(`#filtersDropdown .extended-filter-btn[data-genre="${genreId}"]`);
+            if (dropdownActiveBtn) {
+                dropdownActiveBtn.classList.add('active');
+            }
+            
+            currentGenre = genreId;
+            currentPage = 1;
+            loadAllMovies();
+        }
+
+        // ========================================
+        // LOAD CAROUSEL MOVIES
+        // ========================================
+        async function loadCarouselMovies() {
+            try {
+                showProgress();
+                console.log("🎬 Loading carousel movies...");
+                
+                // Get popular movies for carousel (20 movies)
+                const url = `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=ar&page=1`;
+                const res = await fetch(url);
+                const data = await res.json();
+                
+                carouselMovies = data.results.slice(0, 20); // Get 20 movies for carousel
+                renderCarousel();
+                
+                console.log(`✅ Loaded ${carouselMovies.length} carousel movies`);
+                
+            } catch (error) {
+                console.error("❌ Error loading carousel movies:", error);
+                // Fallback data
+                carouselMovies = [
+                    { 
+                        id: 1, 
+                        title: "نمر من ورق", 
+                        backdrop_path: "/sample1.jpg", 
+                        vote_average: 8.5, 
+                        release_date: "2024-01-01", 
+                        overview: "فيلم أكشن مثير من بطولة النجم أحمد حلمي في دور جديد ومثير." 
+                    },
+                    { 
+                        id: 2, 
+                        title: "حب في الثلاجة", 
+                        backdrop_path: "/sample2.jpg", 
+                        vote_average: 7.8, 
+                        release_date: "2024-02-01", 
+                        overview: "كوميديا رومانسية تدور أحداثها في بيئة عمل فريدة من نوعها." 
+                    },
+                    { 
+                        id: 3, 
+                        title: "الممر", 
+                        backdrop_path: "/sample3.jpg", 
+                        vote_average: 8.2, 
+                        release_date: "2024-03-01", 
+                        overview: "ملحمة حربية تاريخية تروي قصة حرب أكتوبر المجيدة." 
+                    }
+                ];
+                renderCarousel();
+            } finally {
+                hideProgress();
+            }
+        }
+
+        function renderCarousel() {
+            const carouselTrack = document.getElementById('carouselTrack');
+            if (!carouselTrack) return;
+            
+            carouselTrack.innerHTML = '';
+            carouselTrack.style.transform = `translateX(${carouselPosition}px)`;
+            
+            carouselMovies.forEach(movie => {
+                const card = createCarouselCard(movie);
+                carouselTrack.appendChild(card);
+            });
+        }
+
+        function createCarouselCard(movie) {
+            const card = document.createElement('div');
+            card.className = 'carousel-card';
+            
+            const posterUrl = movie.backdrop_path ? IMG_URL + movie.backdrop_path : 
+                             movie.poster_path ? IMG_500 + movie.poster_path : 
+                             'https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80';
+            const releaseYear = movie.release_date ? new Date(movie.release_date).getFullYear() : '2024';
+            const rating = movie.vote_average ? movie.vote_average.toFixed(1) : '7.5';
+            const description = movie.overview || 'فيلم مثير من مجموعة توميتو السينمائية.';
+            
+            card.innerHTML = `
+                <img src="${posterUrl}" alt="${movie.title}" loading="lazy">
+                <div class="carousel-overlay">
+                    <h3 class="carousel-card-title">${movie.title}</h3>
+                    <div class="carousel-card-info">
+                        <span class="carousel-rating">
+                            <i class="fas fa-star"></i> ${rating}/10
+                        </span>
+                        <span class="carousel-year">${releaseYear}</span>
+                    </div>
+                    <p class="carousel-card-description">${description.substring(0, 100) + (description.length > 100 ? '...' : '')}</p>
+                    <div class="carousel-card-btns">
+                        <button class="carousel-play-btn" onclick="playMovie(${movie.id})">
+                            <i class="fas fa-play"></i> شاهد الآن
+                        </button>
+                        <button class="carousel-save-btn" onclick="toggleSave(${movie.id}, '${movie.title.replace(/'/g, "\\'")}', '${movie.poster_path}', ${movie.vote_average}, this)">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            return card;
+        }
+
+        function scrollCarousel(direction) {
+            const carouselTrack = document.getElementById('carouselTrack');
+            if (!carouselTrack) return;
+            
+            const containerWidth = carouselTrack.parentElement.offsetWidth;
+            const trackWidth = carouselTrack.scrollWidth;
+            const maxPosition = 0;
+            const minPosition = containerWidth - trackWidth;
+            
+            carouselPosition += direction * (containerWidth * 0.8);
+            
+            // Infinite scroll effect
+            if (carouselPosition > maxPosition) {
+                carouselPosition = minPosition;
+            } else if (carouselPosition < minPosition) {
+                carouselPosition = maxPosition;
+            }
+            
+            carouselTrack.style.transform = `translateX(${carouselPosition}px)`;
+        }
+
+        // ========================================
+        // LOAD ALL MOVIES
+        // ========================================
+        async function loadAllMovies() {
+            try {
+                showProgress();
+                console.log(`🎬 Loading ${currentGenre === 'all' ? 'all' : 'genre'} movies - Page ${currentPage}...`);
+                
+                let url;
+                
+                if (currentGenre === 'all') {
+                    // Load popular movies by default
+                    url = `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=ar&page=${currentPage}`;
+                } else {
+                    // Load movies by genre
+                    url = `${BASE_URL}/discover/movie?api_key=${API_KEY}&language=ar&with_genres=${currentGenre}&page=${currentPage}`;
+                }
+                
+                const res = await fetch(url);
+                const data = await res.json();
+                
+                allMovies = data.results;
+                totalPages = data.total_pages > 500 ? 500 : data.total_pages;
+                
+                displayAllMovies();
+                updatePagination();
+                
+                console.log(`✅ Loaded ${allMovies.length} movies`);
+                
+            } catch (error) {
+                console.error("❌ Error loading movies:", error);
+                allMovies = [];
+                displayAllMovies();
+                updatePagination();
+            } finally {
+                hideProgress();
+            }
+        }
+
+        function displayAllMovies() {
+            const container = document.getElementById("moviesGrid");
+            if (!container) return;
+            
+            container.innerHTML = "";
+            
+            if (!allMovies || allMovies.length === 0) {
+                container.innerHTML = '<div class="no-movies">لم يتم العثور على أفلام</div>';
+                return;
+            }
+            
+            allMovies.forEach((movie, index) => {
+                const card = createMovieCard(movie);
+                card.style.animationDelay = `${index * 0.05}s`;
+                container.appendChild(card);
+            });
+        }
+
+        function createMovieCard(movie) {
+            const card = document.createElement("div");
+            card.className = "movie-card";
+
+            const posterUrl = movie.poster_path ? IMG_500 + movie.poster_path : 
+                             movie.backdrop_path ? IMG_URL + movie.backdrop_path :
+                             "https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80";
+            const title = movie.title || "فيلم بدون عنوان";
+            const overview = movie.overview ? movie.overview.substring(0, 100) + "..." : "شاهد هذا الفيلم المثير على توميتو.";
+            const rating = movie.vote_average ? movie.vote_average.toFixed(1) : "غير معروف";
+            const releaseYear = movie.release_date ? new Date(movie.release_date).getFullYear() : "2024";
+            const genreName = getGenreName(movie.genre_ids?.[0]);
+            
+            const isSaved = savedMovies.some(m => m.id === movie.id);
+            const saveIcon = isSaved ? 'fas fa-heart' : 'far fa-heart';
+            const saveClass = isSaved ? 'saved' : '';
+
+            card.innerHTML = `
+                <img src="${posterUrl}" alt="${title}" loading="lazy">
+                <div class="movie-overlay">
+                    <div class="movie-header">
+                        <h3>${title}</h3>
+                        <span class="movie-rating"><i class="fas fa-star"></i> ${rating}</span>
+                    </div>
+                    <div class="movie-info">
+                        <span class="movie-year">${releaseYear}</span>
+                        <span class="movie-genre">${genreName}</span>
+                    </div>
+                    <p class="movie-description">${overview}</p>
+                    <div class="movie-actions">
+                        <button class="play-btn-sm" onclick="playMovie(${movie.id})">
+                            <i class="fas fa-play"></i> شاهد
+                        </button>
+                        <button class="save-btn-sm ${saveClass}" onclick="toggleSave(${movie.id}, '${title.replace(/'/g, "\\'")}', '${movie.poster_path}', ${movie.vote_average || 7}, this)">
+                            <i class="${saveIcon}"></i>
+                        </button>
+                    </div>
+                </div>
+            `;
+            return card;
+        }
+
+        function getGenreName(genreId) {
+            const genre = genres.find(g => g.id === genreId);
+            return genre ? genre.name : 'فيلم';
+        }
+
+        // ========================================
+        // INFINITE PAGINATION
+        // ========================================
+        function updatePagination() {
+            const pagination = document.getElementById("pagination");
+            if (!pagination) return;
+            
+            pagination.innerHTML = "";
+            
+            // Previous button
+            const prevButton = document.createElement("button");
+            prevButton.className = "pagination-nav-btn";
+            prevButton.innerHTML = '<i class="fas fa-chevron-right"></i> السابق';
+            prevButton.disabled = currentPage === 1;
+            prevButton.onclick = () => goToPage(currentPage - 1);
+            pagination.appendChild(prevButton);
+            
+            // Always show first page
+            const firstPage = document.createElement("button");
+            firstPage.className = `page-link ${currentPage === 1 ? 'active cursor-normal' : 'cursor-pointer'}`;
+            firstPage.textContent = "1";
+            if (currentPage !== 1) {
+                firstPage.onclick = () => goToPage(1);
+            }
+            pagination.appendChild(firstPage);
+            
+            // Show ellipsis if needed
+            if (currentPage > 4) {
+                const ellipsis1 = document.createElement("span");
+                ellipsis1.textContent = "...";
+                ellipsis1.style.color = "#888";
+                pagination.appendChild(ellipsis1);
+            }
+            
+            // Show pages around current page
+            const startPage = Math.max(2, currentPage - 2);
+            const endPage = Math.min(totalPages - 1, currentPage + 2);
+            
+            for (let i = startPage; i <= endPage; i++) {
+                if (i === 1 || i === totalPages) continue; // Skip first and last as they're handled separately
+                
+                const pageButton = document.createElement("button");
+                pageButton.className = `page-link ${i === currentPage ? 'active cursor-normal' : 'cursor-pointer'}`;
+                pageButton.textContent = i;
+                if (i !== currentPage) {
+                    pageButton.onclick = () => goToPage(i);
+                }
+                pagination.appendChild(pageButton);
+            }
+            
+            // Show ellipsis if needed
+            if (currentPage < totalPages - 3) {
+                const ellipsis2 = document.createElement("span");
+                ellipsis2.textContent = "...";
+                ellipsis2.style.color = "#888";
+                pagination.appendChild(ellipsis2);
+            }
+            
+            // Always show last page if there is more than one page
+            if (totalPages > 1) {
+                const lastPage = document.createElement("button");
+                lastPage.className = `page-link ${currentPage === totalPages ? 'active cursor-normal' : 'cursor-pointer'}`;
+                lastPage.textContent = totalPages;
+                if (currentPage !== totalPages) {
+                    lastPage.onclick = () => goToPage(totalPages);
+                }
+                pagination.appendChild(lastPage);
+            }
+            
+            // Next button
+            const nextButton = document.createElement("button");
+            nextButton.className = "pagination-nav-btn";
+            nextButton.innerHTML = 'التالي <i class="fas fa-chevron-left"></i>';
+            nextButton.disabled = currentPage === totalPages;
+            nextButton.onclick = () => goToPage(currentPage + 1);
+            pagination.appendChild(nextButton);
+        }
+
+        function goToPage(page) {
+            if (page < 1 || page > totalPages || page === currentPage) return;
+            
+            currentPage = page;
+            loadAllMovies();
+            
+            // Scroll to movies grid
+            window.scrollTo({
+                top: document.getElementById('moviesGrid').offsetTop - 100,
+                behavior: 'smooth'
+            });
+        }
+
+        // ========================================
+        // SEARCH FUNCTIONALITY
+        // ========================================
+        function setupSearch() {
+            const searchInput = document.getElementById("search");
+            if (!searchInput) return;
+            
+            let searchTimeout;
+            
+            searchInput.addEventListener("input", (e) => {
+                clearTimeout(searchTimeout);
+                const query = e.target.value.trim();
+                
+                if (query.length < 2) {
+                    // Reset to normal view
+                    currentGenre = 'all';
+                    currentPage = 1;
+                    loadAllMovies();
+                    return;
+                }
+                
+                searchTimeout = setTimeout(() => {
+                    searchMovies(query);
+                }, 500);
+            });
+            
+            const searchBtn = document.querySelector('.search-btn');
+            if (searchBtn) {
+                searchBtn.addEventListener('click', () => {
+                    const query = searchInput.value.trim();
+                    if (query.length >= 2) {
+                        searchMovies(query);
+                    }
+                });
+            }
+            
+            searchInput.addEventListener("keypress", (e) => {
+                if (e.key === "Enter") {
+                    const query = searchInput.value.trim();
+                    if (query.length >= 2) {
+                        searchMovies(query);
+                    }
+                }
+            });
+        }
+
+        async function searchMovies(query) {
+            try {
+                showProgress();
+                const url = `${BASE_URL}/search/movie?api_key=${API_KEY}&language=ar&query=${encodeURIComponent(query)}&page=${currentPage}`;
+                const res = await fetch(url);
+                const data = await res.json();
+
+                allMovies = data.results;
+                totalPages = data.total_pages > 500 ? 500 : data.total_pages;
+                
+                displayAllMovies();
+                updatePagination();
+
+                console.log(`🔍 Found ${data.results.length} results for "${query}"`);
+
+            } catch (error) {
+                console.error("❌ Search error:", error);
+                allMovies = [];
+                displayAllMovies();
+                updatePagination();
+            } finally {
+                hideProgress();
+            }
+        }
+
+        // ========================================
+        // SAVE FUNCTIONALITY
+        // ========================================
+        function toggleSave(id, title, posterPath, rating, btn) {
+            const movie = { 
+                id, 
+                title, 
+                poster_path: posterPath, 
+                vote_average: rating,
+                saved_date: new Date().toISOString()
+            };
+            
+            const index = savedMovies.findIndex(m => m.id === id);
+            if (index === -1) {
+                savedMovies.push(movie);
+                if (btn) {
+                    btn.innerHTML = '<i class="fas fa-heart"></i>';
+                    btn.classList.add("saved");
+                    btn.classList.add("saved-animation");
+                    setTimeout(() => btn.classList.remove("saved-animation"), 500);
+                }
+                console.log(`❤️ Saved: ${title}`);
+            } else {
+                savedMovies.splice(index, 1);
+                if (btn) {
+                    btn.innerHTML = '<i class="far fa-heart"></i>';
+                    btn.classList.remove("saved");
+                }
+                console.log(`💔 Removed: ${title}`);
+            }
+            
+            localStorage.setItem("savedMovies", JSON.stringify(savedMovies));
+            
+            showNotification(index === -1 ? `تمت إضافة "${title}" إلى المفضلة` : `تمت إزالة "${title}" من المفضلة`);
+        }
+
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.innerHTML = `
+                <i class="fas ${message.includes('إضافة') ? 'fa-heart' : 'fa-times'}"></i>
+                <span>${message}</span>
+            `;
+            
+            notification.style.cssText = `
+                position: fixed;
+                top: 100px;
+                right: 20px;
+                background: linear-gradient(45deg, #CF0A0A, #DC5F00);
+                color: white;
+                padding: 15px 25px;
+                border-radius: 10px;
+                z-index: 9999;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-weight: 600;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+                animation: slideIn 0.3s ease-out;
+            `;
+            
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes slideIn {
+                    from { transform: translateX(100%); opacity: 0; }
+                    to { transform: translateX(0); opacity: 1; }
+                }
+                @keyframes slideOut {
+                    from { transform: translateX(0); opacity: 1; }
+                    to { transform: translateX(100%); opacity: 0; }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.animation = 'slideOut 0.3s ease-out forwards';
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.parentNode.removeChild(notification);
+                    }
+                }, 300);
+            }, 3000);
+        }
+
+        // ========================================
+        // PLAYER FUNCTIONALITY
+        // ========================================
+        function playMovie(id) {
+            showProgress();
+            setTimeout(() => { 
+                const movie = allMovies.find(m => m.id === id) || carouselMovies.find(m => m.id === id);
+                const movieTitle = movie?.title || "هذا الفيلم";
+                showNotification(`جاري تشغيل: ${movieTitle}`);
+            }, 300);
+        }
+
+        function showAllMovies() {
+            currentGenre = 'all';
+            currentPage = 1;
+            loadAllMovies();
+            
+            // Scroll to all movies section
+            document.getElementById('moviesGrid').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // ========================================
+        // PROGRESS BAR
+        // ========================================
+        function showProgress() {
+            const bar = document.getElementById("progress-bar");
+            if (bar) { 
+                bar.style.display = "block"; 
+                bar.style.transform = "scaleX(0)"; 
+                setTimeout(() => {
+                    bar.style.transform = "scaleX(0.7)";
+                }, 10);
+            }
+        }
+
+        function hideProgress() {
+            const bar = document.getElementById("progress-bar");
+            if (bar) { 
+                bar.style.transform = "scaleX(1)"; 
+                setTimeout(() => { 
+                    bar.style.display = "none"; 
+                }, 500);
+            }
+        }
+
+        // ========================================
+        // GLOBAL FUNCTIONS
+        // ========================================
+        window.playMovie = playMovie;
+        window.toggleSave = toggleSave;
+        window.scrollCarousel = scrollCarousel;
+        window.showAllMovies = showAllMovies;
+    </script>
 </body>
 </html>
