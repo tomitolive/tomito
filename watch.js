@@ -694,4 +694,4 @@ function setupPlayerControls() {
 document.addEventListener('DOMContentLoaded', () => {
     window.moviePlayer = new MoviePlayer();
     setupPlayerControls();
-});
+}); 

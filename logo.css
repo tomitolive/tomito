@@ -1,278 +1,209 @@
-/* ====================================
-   Logo Animation Styles - تأثيرات اللوجو
-   ==================================== */
+/* ========================================
+   ANIMATED TOMITO LOGO STYLES
+   ======================================== */
 
-/* Container للوجو - في الوسط */
-.container.logo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 0;
-    margin-bottom: 50px;
-    margin-top: 40px;
+   .logo--area {
     position: relative;
-    z-index: 1000;
-}
-
-/* عندما يصبح الوجو تابتًا في الأعلى */
-.container.logo.fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.95);
-    padding: 20px 0;
-    margin: 0;
-    z-index: 9999;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    animation: slideDown 0.3s ease-out;
-    transform-origin: top center;
-}
-
-/* تأثير ظهور الوجو الثابت */
-@keyframes slideDown {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* عندما يكون الوجو مخفيًا */
-.container.logo.hidden {
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: all 0.3s ease;
-    pointer-events: none;
-}
-
-.logo--area {
-    min-width: 220px;
-    max-width: 220px;
-    direction: ltr;
-    position: relative;
-    padding: 12px 18px;
-    transition: all 0.3s ease;
 }
 
 .logo--area h1 {
     margin: 0;
     padding: 0;
-    font-size: calc(1.375rem + 1.5vw);
-    font-weight: 500;
-    line-height: 1.2;
 }
 
 .logo--area a {
     text-decoration: none;
     display: block;
-    color: inherit;
-    position: relative;
-    height: 45px;
+    transition: all 0.3s ease;
 }
 
-.logo--area a:hover {
-    color: inherit;
-}
-
-/* ====================================
-   النص الإنجليزي - English Text
-   ==================================== */
-.logo--area .en-text {
-    text-align: center;
-    font-size: 34px;
+/* النص الإنجليزي */
+.en-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    font-family: 'Arial Black', 'Segoe UI', sans-serif;
+    font-size: 2.5rem;
     font-weight: 900;
-    font-family: 'Cairo', 'Tajawal', sans-serif;
-    color: #E50914;
-    letter-spacing: 1px;
-    line-height: 1.2;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    transition: opacity 0.3s ease;
+    height: 50px;
+    position: relative;
+    margin-bottom: 5px;
 }
 
 .en-text span {
     display: inline-block;
-    transition: all 0.4s ease;
+    position: relative;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    cursor: default;
+    color: #fff;
 }
 
-/* حرف T الرئيسي */
+/* حرف T في الوسط */
 .en-text span:nth-child(2) {
-    font-size: 38px;
-    color: #E50914;
-    font-weight: 900;
+    color: #CF0A0A;
+    font-size: 3rem;
+    z-index: 2;
+}
+
+/* تأثير تحويم الماوس على الشعار */
+.en-text:hover span:nth-child(1) {
+    transform: translateX(-80px) rotate(-10deg);
+    opacity: 0;
+}
+
+.en-text:hover span:nth-child(2) {
+    transform: translateY(-100px) rotate(45deg);
+    opacity: 0;
+}
+
+.en-text:hover span:nth-child(3) {
+    transform: translateX(80px) rotate(10deg);
+    opacity: 0;
+}
+
+/* النص العربي - مخفي في البداية */
+.ar-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Cairo', 'Arial', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    height: 40px;
+    margin-top: -10px;
     position: relative;
 }
 
-/* ====================================
-   النص العربي - Arabic Text
-   ==================================== */
-.logo--area .ar-text {
-    text-align: center;
-    font-size: 34px;
-    color: #fff;
-    direction: rtl;
-    font-weight: 700;
-    line-height: 1.2;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
 .ar-text span {
+    color: #EEEEEE;
     display: inline-block;
-    transition: 0.4s ease;
-    height: 100%;
-}
-
-/* إخفاء النص العربي في البداية - تبديل الاتجاه */
-.ar-text span:first-child {
-    transform: translateX(-50px);
+    position: absolute;
     opacity: 0;
-}
-
-.ar-text span:nth-child(2) {
-    transform: translateX(50px);
-    opacity: 0;
-}
-
-/* ====================================
-   تأثيرات Hover
-   ==================================== */
-
-/* إخفاء النص الإنجليزي بالكامل */
-.logo--area:hover .en-text {
-    opacity: 0;
-}
-
-/* عند الـ Hover - إخفاء الحروف الإنجليزية بسرعة */
-.logo--area:hover .en-text span:first-child {
-    transform: translateX(-80px);
-    opacity: 0;
-}
-
-.logo--area:hover .en-text span:nth-child(3) {
-    transform: translateX(80px);
-    opacity: 0;
-}
-
-/* حرف T يطلع بسرعة ويختفي */
-.logo--area:hover .en-text span:nth-child(2) {
-    transform: translateY(-30px) scale(1.3);
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-/* إظهار النص العربي */
-.logo--area:hover .ar-text {
-    opacity: 1;
-}
-
-.logo--area:hover .ar-text span:first-child,
-.logo--area:hover .ar-text span:nth-child(2) {
     transform: translateX(0);
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* عند التحويم على الشعار الإنجليزي، يظهر العربي */
+.en-text:hover ~ .ar-text span:nth-child(1) {
+    opacity: 1;
+    transform: translateX(-40px);
+    transition-delay: 0.2s;
+    color: #DC5F00;
+}
+
+.en-text:hover ~ .ar-text span:nth-child(2) {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.4s;
+    color: #CF0A0A;
+}
+
+/* عند التحويم على النص العربي نفسه */
+.ar-text:hover span:nth-child(1) {
+    transform: translateX(-50px);
+    color: #DC5F00;
+}
+
+.ar-text:hover span:nth-child(2) {
+    transform: translateX(10px);
+    color: #CF0A0A;
+}
+
+/* إشارة طماطم خفية */
+.logo--area::after {
+    content: "🍅";
+    position: absolute;
+    top: 5px;
+    right: -30px;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.logo--area:hover::after {
     opacity: 1;
 }
 
-/* ====================================
-   Responsive Design
-   ==================================== */
-@media (max-width: 768px) {
-    .container.logo {
-        margin-bottom: 35px;
-        margin-top: 30px;
-        padding: 20px 0;
+/* ========================================
+   RESPONSIVE DESIGN FOR LOGO
+   ======================================== */
+@media (max-width: 1024px) {
+    .en-text {
+        font-size: 2rem;
     }
     
-    .container.logo.fixed {
-        padding: 12px 0;
+    .en-text span:nth-child(2) {
+        font-size: 2.5rem;
+    }
+    
+    .ar-text {
+        font-size: 1.5rem;
     }
     
     .logo--area {
         min-width: 200px;
         max-width: 200px;
-        padding: 12px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo--area {
+        min-width: 180px;
+        max-width: 180px;
     }
     
-    .logo--area a {
-        height: 45px;
-    }
-    
-    .logo--area .en-text {
-        font-size: 32px;
+    .en-text {
+        font-size: 1.7rem;
+        height: 35px;
     }
     
     .en-text span:nth-child(2) {
-        font-size: 36px;
+        font-size: 2rem;
     }
     
-    .logo--area .ar-text {
-        font-size: 32px;
+    .ar-text {
+        font-size: 1.2rem;
+        height: 30px;
+        margin-top: -8px;
     }
 }
 
 @media (max-width: 480px) {
-    .container.logo {
-        margin-bottom: 30px;
-        margin-top: 25px;
-        padding: 15px 0;
-    }
-    
-    .container.logo.fixed {
-        padding: 20px 0;
-    }
-    
     .logo--area {
-        min-width: 180px;
-        max-width: 180px;
-        padding: 10px 12px;
+        min-width: 150px;
+        max-width: 150px;
     }
     
-    .logo--area a {
-        height: 40px;
-    }
-    
-    .logo--area .en-text {
-        font-size: 28px;
+    .en-text {
+        font-size: 1.4rem;
+        height: 30px;
     }
     
     .en-text span:nth-child(2) {
-        font-size: 32px;
+        font-size: 1.7rem;
     }
     
-    .logo--area .ar-text {
-        font-size: 28px;
+    .ar-text {
+        font-size: 1rem;
+        height: 25px;
+        margin-top: -6px;
     }
 }
 
-/* ====================================
-   تحسينات الأداء
-   ==================================== */
-.logo--area * {
-    will-change: transform, opacity;
+/* ========================================
+   LOGO ANIMATION KEYFRAMES
+   ======================================== */
+@keyframes logoFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .logo--area:hover .en-text span:nth-child(2) {
-        transform: scale(1.1);
-    }
-    
-    .logo--area:hover .en-text span:first-child,
-    .logo--area:hover .en-text span:nth-child(3) {
-        transition: none;
-    }
-}.site-header.has-fixed-logo {
-    padding-top: 75px; /* نفس ارتفاع اللوجو تقريباً */
+.logo--area:hover {
+    animation: logoFloat 2s ease-in-out infinite;
 }
