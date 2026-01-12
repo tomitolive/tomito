@@ -1,197 +1,538 @@
 // ========================================
-// CAROUSEL FUNCTIONALITY - 20 MOVIES
+// ENHANCED CAROUSEL - FULLSCREEN BACKGROUND
 // ========================================
 
-let carouselMovies = [];
-let carouselPosition = 0;
-let currentCarouselIndex = 0;
+// الحالة
+let currentSlide = 0;
+let slides = [];
+let autoPlayInterval = null;
+let isAutoPlay = true;
+let isFullscreen = false;
 
-// تحميل الأفلام المميزة للكاروسيل عند تحميل الصفحة
-document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(() => {
-        loadCarouselMovies();
-    }, 100);
-});
+// إعدادات الكاروسيل
+const carouselConfig = {
+    autoPlay: true,
+    autoPlayDelay: 8000, // 8 ثواني
+    totalSlides: 6,
+    animationSpeed: 600
+};
 
-// ========================================
-// تحميل 20 فيلم للكاروسيل
-// ========================================
-async function loadCarouselMovies() {
+// تهيئة الكاروسيل
+async function initEnhancedCarousel() {
+    console.log("🎬 جاري تحميل الكاروسيل المحسن...");
+    
     try {
-        const carouselTrack = document.getElementById('carouselTrack');
-        if (!carouselTrack) {
-            console.log('❌ عنصر carouselTrack غير موجود');
-            return;
-        }
-
-        carouselTrack.innerHTML = '<div class="loading">جاري التحميل...</div>';
-
-        // جلب صفحتين من API للحصول على 20 فيلم
-        const page1 = await fetch(`${BASE_URL}/movie/popular?api_key=${API_KEY}&language=ar&page=1`);
-        const page2 = await fetch(`${BASE_URL}/movie/popular?api_key=${API_KEY}&language=ar&page=2`);
+        // جلب الأفلام الرائجة
+        const response = await fetch(
+            `${BASE_URL}/movie/now_playing?api_key=${API_KEY}&language=ar&page=1&region=EG`
+        );
         
-        const data1 = await page1.json();
-        const data2 = await page2.json();
-
-        // دمج النتائج وأخذ أول 20 فيلم
-        carouselMovies = [...data1.results, ...data2.results].slice(0, 20);
-
-        if (carouselMovies.length === 0) {
-            carouselTrack.innerHTML = '<div class="loading">لا توجد أفلام متاحة</div>';
-            return;
-        }
-
-        // عرض الأفلام في الكاروسيل
-        displayCarouselMovies();
-        updateCarouselButtons();
+        if (!response.ok) throw new Error('فشل تحميل البيانات');
         
-        console.log(`✅ تم تحميل ${carouselMovies.length} فيلم في الكاروسيل`);
-
+        const data = await response.json();
+        
+        // استخدام أول 6 أفلام أو أقل
+        slides = data.results.slice(0, carouselConfig.totalSlides);
+        
+        // إذا كانت الأفلام أقل، نستخدم بيانات افتراضية
+        if (slides.length < 3) {
+            slides = slides.concat(getFallbackMovies().slice(0, carouselConfig.totalSlides - slides.length));
+        }
+        
+        // تحديث الواجهة
+        updateSlidesCount();
+        updateCarousel();
+        setupIndicators();
+        
+        // بدء التشغيل التلقائي
+        if (carouselConfig.autoPlay) {
+            startAutoPlay();
+        }
+        
+        // إضافة مستمعات الأحداث
+        setupEventListeners();
+        
+        console.log(`✅ تم تحميل ${slides.length} شريحة بنجاح`);
+        
     } catch (error) {
-        console.error('❌ خطأ في تحميل أفلام الكاروسيل:', error);
-        const carouselTrack = document.getElementById('carouselTrack');
-        if (carouselTrack) {
-            carouselTrack.innerHTML = '<div class="loading">حدث خطأ في تحميل الأفلام</div>';
+        console.error("❌ خطأ في تحميل الكاروسيل:", error);
+        
+        // استخدام بيانات افتراضية في حالة الخطأ
+        slides = getFallbackMovies();
+        updateSlidesCount();
+        updateCarousel();
+        setupIndicators();
+    }
+}
+
+// بيانات افتراضية للطوارئ
+function getFallbackMovies() {
+    return [
+        {
+            id: 1,
+            title: "أفضل الأفلام على توميتو",
+            backdrop_path: "/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
+            poster_path: "/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
+            overview: "استمتع بأفضل الأفلام العربية والعالمية بجودة عالية ومشاهدة مجانية. منصة توميتو تقدم لك أحدث الإصدارات.",
+            vote_average: 8.5,
+            release_date: "2024-01-01",
+            runtime: 120,
+            genres: [{ name: 'أكشن' }, { name: 'مغامرة' }, { name: 'دراما' }]
+        },
+        {
+            id: 2,
+            title: "مسلسلات حصرية",
+            backdrop_path: "/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
+            poster_path: "/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
+            overview: "أحدث المسلسلات العربية والعالمية. حلقات جديدة أسبوعياً. لا تفوت متعة المشاهدة.",
+            vote_average: 8.2,
+            release_date: "2024-01-01",
+            runtime: 45,
+            genres: [{ name: 'دراما' }, { name: 'رومانسي' }]
+        },
+        {
+            id: 3,
+            title: "أفلام أكشن",
+            backdrop_path: "/rLb2cwF3Pazuxaj0sRXQ037tGI1.jpg",
+            poster_path: "/rLb2cwF3Pazuxaj0sRXQ037tGI1.jpg",
+            overview: "أقوى أفلام الأكشن والمغامرات. مشاهد مذهلة وإثارة لا تنتهي. تشويق من البداية للنهاية.",
+            vote_average: 7.9,
+            release_date: "2024-01-01",
+            runtime: 135,
+            genres: [{ name: 'أكشن' }, { name: 'مغامرة' }]
+        },
+        {
+            id: 4,
+            title: "كوميديا ومرح",
+            backdrop_path: "/8x21O7LcVz3qzmHtgHltur2NtQr.jpg",
+            poster_path: "/8x21O7LcVz3qzmHtgHltur2NtQr.jpg",
+            overview: "أطرف الأفلام والمسلسلات الكوميدية. اضحك من قلبك مع أفضل الأعمال الفكاهية.",
+            vote_average: 7.5,
+            release_date: "2024-01-01",
+            runtime: 95,
+            genres: [{ name: 'كوميديا' }, { name: 'عائلي' }]
+        },
+        {
+            id: 5,
+            title: "رعب وإثارة",
+            backdrop_path: "/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+            poster_path: "/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+            overview: "أكثر الأفلام رعباً وإثارة. تشويق ورهبة لا مثيل لها. هل تجرؤ على المشاهدة؟",
+            vote_average: 7.8,
+            release_date: "2024-01-01",
+            runtime: 110,
+            genres: [{ name: 'رعب' }, { name: 'إثارة' }]
+        },
+        {
+            id: 6,
+            title: "خيال علمي",
+            backdrop_path: "/8YFL5QQVPy3AgrEQxNYVSgiPEbe.jpg",
+            poster_path: "/8YFL5QQVPy3AgrEQxNYVSgiPEbe.jpg",
+            overview: "عالم من الخيال والإبداع. استكشف المستقبل مع أفضل أفلام الخيال العلمي.",
+            vote_average: 8.1,
+            release_date: "2024-01-01",
+            runtime: 150,
+            genres: [{ name: 'خيال علمي' }, { name: 'مغامرة' }]
         }
+    ];
+}
+
+// تحديث الكاروسيل
+function updateCarousel() {
+    if (!slides || slides.length === 0) return;
+    
+    const slide = slides[currentSlide];
+    
+    // تحديث الخلفية
+    updateBackground(slide);
+    
+    // تحديث المعلومات
+    updateSlideInfo(slide);
+    
+    // تحديث المؤشرات
+    updateActiveIndicator();
+    
+    // تحديث العداد
+    updateSlideCounter();
+}
+
+// تحديث الخلفية
+function updateBackground(slide) {
+    const backdrop = document.getElementById('carouselBackdrop');
+    if (!backdrop) return;
+    
+    const backdropUrl = slide.backdrop_path 
+        ? `https://image.tmdb.org/t/p/original${slide.backdrop_path}`
+        : `https://image.tmdb.org/t/p/original${slide.poster_path}`;
+    
+    backdrop.style.backgroundImage = `url('${backdropUrl}')`;
+    backdrop.style.opacity = '0';
+    
+    // تأثير التلاشي
+    setTimeout(() => {
+        backdrop.style.opacity = '1';
+    }, 50);
+}
+
+// تحديث معلومات الشريحة
+function updateSlideInfo(slide) {
+    // العنوان
+    const titleElement = document.getElementById('carouselTitle');
+    if (titleElement) {
+        titleElement.textContent = slide.title || 'فيلم بدون عنوان';
+    }
+    
+    // التقييم
+    const ratingElement = document.getElementById('carouselRating');
+    if (ratingElement) {
+        ratingElement.textContent = slide.vote_average ? slide.vote_average.toFixed(1) : 'N/A';
+    }
+    
+    // السنة
+    const yearElement = document.getElementById('carouselYear');
+    if (yearElement && slide.release_date) {
+        yearElement.textContent = new Date(slide.release_date).getFullYear();
+    }
+    
+    // المدة
+    const durationElement = document.getElementById('carouselDuration');
+    if (durationElement && slide.runtime) {
+        durationElement.textContent = `${slide.runtime} دقيقة`;
+    }
+    
+    // الوصف
+    const descElement = document.getElementById('carouselDescription');
+    if (descElement) {
+        const description = slide.overview || 'وصف الفيلم غير متوفر حالياً.';
+        descElement.textContent = description.length > 200 
+            ? description.substring(0, 200) + '...' 
+            : description;
+    }
+    
+    // التصنيفات
+    const genresElement = document.getElementById('carouselGenres');
+    if (genresElement) {
+        const genres = slide.genres || [{ name: 'فيلم' }];
+        genresElement.innerHTML = genres
+            .slice(0, 3)
+            .map(genre => `<span class="genre-tag">${genre.name}</span>`)
+            .join('');
+    }
+    
+    // البوستر
+    const posterElement = document.getElementById('carouselPoster');
+    if (posterElement && slide.poster_path) {
+        posterElement.src = `https://image.tmdb.org/t/p/w500${slide.poster_path}`;
+        posterElement.alt = slide.title || 'صورة الفيلم';
     }
 }
 
-// ========================================
-// عرض الأفلام في الكاروسيل
-// ========================================
-function displayCarouselMovies() {
-    const carouselTrack = document.getElementById('carouselTrack');
-    if (!carouselTrack) return;
-
-    carouselTrack.innerHTML = carouselMovies.map(movie => createCarouselCard(movie)).join('');
+// تحديث عدد الشرائح
+function updateSlidesCount() {
+    const totalElement = document.getElementById('totalSlides');
+    if (totalElement) {
+        totalElement.textContent = slides.length;
+    }
 }
 
-// ========================================
-// إنشاء بطاقة فيلم للكاروسيل
-// ========================================
-function createCarouselCard(movie) {
-    const posterPath = movie.poster_path 
-        ? `${IMG_500}${movie.poster_path}` 
-        : movie.backdrop_path 
-        ? `${IMG_URL}${movie.backdrop_path}`
-        : 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80';
-    
-    const rating = movie.vote_average ? movie.vote_average.toFixed(1) : 'N/A';
-    const year = movie.release_date ? movie.release_date.split('-')[0] : 'غير محدد';
-    const title = movie.title || 'فيلم بدون عنوان';
-    const overview = movie.overview ? movie.overview.substring(0, 120) + '...' : 'شاهد هذا الفيلم المثير على توميتو.';
-    
-    // التحقق من وجود savedMovies
-    const isSaved = typeof savedMovies !== 'undefined' && savedMovies.some(m => m.id === movie.id);
-    const saveIcon = isSaved ? 'fas fa-heart' : 'far fa-heart';
-    const saveClass = isSaved ? 'saved' : '';
-    
-    return `
-        <div class="carousel-card">
-            <div class="carousel-card-image">
-                <img src="${posterPath}" alt="${title}" loading="lazy">
-                <div class="carousel-card-overlay">
-                    <div class="carousel-card-info">
-                        <h3 class="carousel-card-title">${title}</h3>
-                        <div class="carousel-card-meta">
-                            <span class="carousel-rating">
-                                <i class="fas fa-star"></i> ${rating}
-                            </span>
-                            <span class="carousel-year">${year}</span>
-                        </div>
-                        <p class="carousel-card-description">${overview}</p>
-                        <div class="carousel-card-actions">
-                            <button class="carousel-play-btn" onclick="playMovie(${movie.id})">
-                                <i class="fas fa-play"></i> شاهد الآن
-                            </button>
-                            <button class="carousel-save-btn ${saveClass}" onclick="toggleSave(${movie.id}, '${title.replace(/'/g, "\\'")}', '${movie.poster_path}', ${movie.vote_average || 7}, this)">
-                                <i class="${saveIcon}"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    `;
+// تحديث العداد
+function updateSlideCounter() {
+    const currentElement = document.getElementById('currentSlide');
+    if (currentElement) {
+        currentElement.textContent = currentSlide + 1;
+    }
 }
 
-// ========================================
-// التنقل في الكاروسيل - الطريقة الصحيحة
-// ========================================
-function scrollCarousel(direction) {
-    const track = document.getElementById('carouselTrack');
-    if (!track || !carouselMovies.length) return;
+// إعداد المؤشرات
+function setupIndicators() {
+    const container = document.getElementById('carouselIndicators');
+    if (!container) return;
+    
+    container.innerHTML = '';
+    
+    slides.forEach((_, index) => {
+        const indicator = document.createElement('div');
+        indicator.className = `indicator ${index === currentSlide ? 'active' : ''}`;
+        indicator.onclick = () => goToSlide(index);
+        container.appendChild(indicator);
+    });
+}
 
-    // عدد البطاقات المرئية (حسب عرض الشاشة)
-    const containerWidth = track.parentElement.offsetWidth;
-    const cardWidth = 280; // عرض البطاقة
-    const gap = 20; // المسافة بين البطاقات
-    const visibleCards = Math.floor(containerWidth / (cardWidth + gap));
+// تحديث المؤشر النشط
+function updateActiveIndicator() {
+    const indicators = document.querySelectorAll('.indicator');
+    indicators.forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === currentSlide);
+    });
+}
+
+// الانتقال لشريحة معينة
+function goToSlide(index) {
+    if (index < 0 || index >= slides.length || index === currentSlide) return;
     
-    // التحريك حسب عدد البطاقات المرئية
-    const scrollCards = Math.max(1, Math.floor(visibleCards * 0.8));
+    currentSlide = index;
+    updateCarousel();
+    resetAutoPlay();
+}
+
+// الشريحة التالية
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateCarousel();
+    resetAutoPlay();
+}
+
+// الشريحة السابقة
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    updateCarousel();
+    resetAutoPlay();
+}
+
+// التشغيل التلقائي
+function startAutoPlay() {
+    if (autoPlayInterval) clearInterval(autoPlayInterval);
     
-    // تحديث الفهرس
-    currentCarouselIndex += direction * scrollCards;
+    autoPlayInterval = setInterval(() => {
+        nextSlide();
+    }, carouselConfig.autoPlayDelay);
     
-    // الحد الأقصى
-    const maxIndex = Math.max(0, carouselMovies.length - visibleCards);
-    
-    // منع الخروج عن الحدود
-    if (currentCarouselIndex < 0) {
-        currentCarouselIndex = 0;
-    } else if (currentCarouselIndex > maxIndex) {
-        currentCarouselIndex = maxIndex;
+    isAutoPlay = true;
+    updatePauseButton();
+}
+
+// إيقاف التشغيل التلقائي
+function pauseAutoPlay() {
+    if (autoPlayInterval) {
+        clearInterval(autoPlayInterval);
+        autoPlayInterval = null;
+        isAutoPlay = false;
+    } else {
+        startAutoPlay();
+        isAutoPlay = true;
     }
     
-    // حساب المسافة
-    const moveDistance = currentCarouselIndex * (cardWidth + gap);
-    
-    // تطبيق الحركة
-    track.style.transform = `translateX(-${moveDistance}px)`;
-    
-    // تحديث الأزرار
-    updateCarouselButtons();
-    
-    console.log(`🎬 Index: ${currentCarouselIndex}, Move: ${moveDistance}px`);
+    updatePauseButton();
 }
 
-// ========================================
-// تحديث حالة الأزرار
-// ========================================
-function updateCarouselButtons() {
-    const prevBtn = document.querySelector('.carousel-prev');
-    const nextBtn = document.querySelector('.carousel-next');
-    
-    if (!prevBtn || !nextBtn) return;
-    
-    const containerWidth = document.querySelector('.carousel-container')?.offsetWidth || 1000;
-    const cardWidth = 280;
-    const gap = 20;
-    const visibleCards = Math.floor(containerWidth / (cardWidth + gap));
-    const maxIndex = Math.max(0, carouselMovies.length - visibleCards);
-    
-    // تعطيل/تفعيل الأزرار
-    prevBtn.disabled = currentCarouselIndex === 0;
-    nextBtn.disabled = currentCarouselIndex >= maxIndex;
+// إعادة التشغيل التلقائي
+function resetAutoPlay() {
+    if (isAutoPlay) {
+        pauseAutoPlay();
+        startAutoPlay();
+    }
 }
 
-// ========================================
-// إعادة ضبط عند تغيير حجم الشاشة
-// ========================================
-window.addEventListener('resize', () => {
-    if (carouselMovies.length > 0) {
-        currentCarouselIndex = 0;
-        const track = document.getElementById('carouselTrack');
-        if (track) {
-            track.style.transform = 'translateX(0)';
+// تحديث زر الإيقاف
+function updatePauseButton() {
+    const pauseBtn = document.getElementById('pauseBtn');
+    if (!pauseBtn) return;
+    
+    const icon = pauseBtn.querySelector('i');
+    if (icon) {
+        icon.className = isAutoPlay ? 'fas fa-pause' : 'fas fa-play';
+    }
+}
+
+// ملء الشاشة
+function toggleFullscreen() {
+    const carousel = document.querySelector('.carousel-container');
+    
+    if (!document.fullscreenElement) {
+        if (carousel.requestFullscreen) {
+            carousel.requestFullscreen();
+        } else if (carousel.webkitRequestFullscreen) {
+            carousel.webkitRequestFullscreen();
+        } else if (carousel.msRequestFullscreen) {
+            carousel.msRequestFullscreen();
         }
-        updateCarouselButtons();
+        isFullscreen = true;
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+        isFullscreen = false;
     }
+}
+
+// مشاهدة الفيلم الحالي
+function playCurrentMovie() {
+    const movie = slides[currentSlide];
+    if (!movie) return;
+
+    goToWatch(movie.id, movie.media_type || "movie");
+}
+
+
+// عرض التفاصيل
+function showMovieDetails() {
+    if (!slides || slides.length === 0) return;
+    
+    const movie = slides[currentSlide];
+    
+    // يمكنك فتح صفحة تفاصيل أو عرض نافذة منبثقة
+    window.location.href = `movie.html?id=${movie.id}`;
+}
+
+// إضافة/إزالة من المفضلة
+function toggleFavorite() {
+    if (!slides || slides.length === 0) return;
+    
+    const movie = slides[currentSlide];
+    const isFavorite = checkIfFavorite(movie.id);
+    
+    if (isFavorite) {
+        removeFromFavorites(movie.id);
+        showNotification(`💔 تمت إزالة "${movie.title}" من المفضلة`);
+    } else {
+        addToFavorites(movie);
+        showNotification(`❤️ تمت إضافة "${movie.title}" إلى المفضلة`);
+    }
+    
+    updateFavoriteButton();
+}
+
+// التحقق من المفضلة
+function checkIfFavorite(movieId) {
+    const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    return favorites.some(fav => fav.id === movieId);
+}
+
+// إضافة للمفضلة
+function addToFavorites(movie) {
+    const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    
+    // تجنب التكرار
+    if (!favorites.some(fav => fav.id === movie.id)) {
+        favorites.push({
+            id: movie.id,
+            title: movie.title,
+            poster_path: movie.poster_path,
+            vote_average: movie.vote_average,
+            addedAt: new Date().toISOString()
+        });
+        
+        localStorage.setItem('favorites', JSON.stringify(favorites));
+    }
+}
+
+// إزالة من المفضلة
+function removeFromFavorites(movieId) {
+    let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    favorites = favorites.filter(fav => fav.id !== movieId);
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+}
+
+// تحديث زر المفضلة
+function updateFavoriteButton() {
+    if (!slides || slides.length === 0) return;
+    
+    const movie = slides[currentSlide];
+    const isFavorite = checkIfFavorite(movie.id);
+    const button = document.querySelector('.favorite-button i');
+    
+    if (button) {
+        button.className = isFavorite ? 'fas fa-heart' : 'far fa-heart';
+    }
+}
+
+// حفظ في سجل المشاهدة
+function saveToWatchHistory(movie) {
+    let history = JSON.parse(localStorage.getItem('watchHistory')) || [];
+    
+    history.unshift({
+        id: movie.id,
+        title: movie.title,
+        poster_path: movie.poster_path,
+        watchedAt: new Date().toISOString()
+    });
+    
+    // حفظ آخر 50 مشاهدة فقط
+    if (history.length > 50) {
+        history = history.slice(0, 50);
+    }
+    
+    localStorage.setItem('watchHistory', JSON.stringify(history));
+}
+
+// إعداد مستمعات الأحداث
+function setupEventListeners() {
+    // مستمعات لوحة المفاتيح
+    document.addEventListener('keydown', (e) => {
+        if (!document.querySelector('.carousel-container')) return;
+        
+        switch(e.key) {
+            case 'ArrowRight':
+            case 'ArrowDown':
+                prevSlide();
+                break;
+            case 'ArrowLeft':
+            case 'ArrowUp':
+                nextSlide();
+                break;
+            case ' ':
+            case 'Spacebar':
+                e.preventDefault();
+                pauseAutoPlay();
+                break;
+            case 'Escape':
+                if (isFullscreen) {
+                    toggleFullscreen();
+                }
+                break;
+        }
+    });
+    
+    // مستمعات اللمس
+    const carousel = document.querySelector('.carousel-main');
+    if (carousel) {
+        let startX = 0;
+        
+        carousel.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        }, { passive: true });
+        
+        carousel.addEventListener('touchend', (e) => {
+            const endX = e.changedTouches[0].clientX;
+            const diffX = startX - endX;
+            
+            if (Math.abs(diffX) > 50) {
+                if (diffX > 0) {
+                    nextSlide(); // سحب لليسار = التالي
+                } else {
+                    prevSlide(); // سحب لليمين = السابق
+                }
+            }
+        }, { passive: true });
+    }
+    
+    // مستمع تغيير حجم الشاشة
+    window.addEventListener('resize', () => {
+        // إعادة حساب الأبعاد إذا لزم
+        updateCarousel();
+    });
+}
+
+// تهيئة عند تحميل الصفحة
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        initEnhancedCarousel();
+    }, 1000);
 });
 
-// ========================================
-// جعل الدوال عامة
-// ========================================
-window.scrollCarousel = scrollCarousel;
-window.loadCarouselMovies = loadCarouselMovies;
+// جعل الوظائف متاحة عالمياً
+window.nextSlide = nextSlide;
+window.prevSlide = prevSlide;
+window.pauseAutoPlay = pauseAutoPlay;
+window.toggleFullscreen = toggleFullscreen;
+window.playCurrentMovie = playCurrentMovie;
+window.showMovieDetails = showMovieDetails;
+window.toggleFavorite = toggleFavorite;
+window.goToSlide = goToSlide;document.getElementById("carouselPoster").onclick = () => {
+    const movie = slides[currentSlide];
+    goToWatch(movie.id, movie.media_type || "movie");
+};

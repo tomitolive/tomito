@@ -9,6 +9,8 @@
     
     <link rel="stylesheet" href="styel.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="CAROUSEL.css">
+
     <link rel="stylesheet" href="logo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,6 +88,102 @@
         </div>
     </section>
 
+    <section class="hero-carousel series-hero-carousel" id="seriesHeroCarousel">
+        <div class="carousel-container series-carousel-container">
+            <div class="carousel-wrapper">
+                <!-- الحاوية الرئيسية -->
+                <div class="carousel-main series-carousel-main">
+                    <!-- الخلفية الكاملة -->
+                    <div class="carousel-backdrop" id="seriesCarouselBackdrop"></div>
+                    
+                    <!-- التدرج اللوني -->
+                    <div class="carousel-gradient"></div>
+                    
+                    <!-- محتوى الكاروسيل -->
+                    <div class="carousel-content-wrapper">
+                        <div class="carousel-info-section">
+                            <!-- المعلومات الأساسية -->
+                            <div class="movie-main-info">
+                                <h1 class="movie-title" id="seriesCarouselTitle">جاري التحميل...</h1>
+                                <div class="movie-meta">
+                                    <span class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <span id="seriesCarouselRating">0.0</span>
+                                    </span>
+                                    <span class="year" id="seriesCarouselYear">2024</span>
+                                    <span class="duration" id="seriesCarouselDuration">45 دقيقة</span>
+                                    <span class="seasons" id="seriesCarouselSeasons">2 مواسم</span>
+                                    <span class="quality">HD</span>
+                                </div>
+                                
+                                <!-- الوصف -->
+                                <p class="movie-description" id="seriesCarouselDescription">
+                                    جاري تحميل وصف المسلسل...
+                                </p>
+                                
+                                <!-- الأزرار -->
+                                <div class="action-buttons">
+                                    <button class="play-button" onclick="playCurrentSeries()">
+                                        <i class="fas fa-play"></i>
+                                        <span>مشاهدة الآن</span>
+                                    </button>
+                                   
+                                </div>
+                                
+                                <!-- التصنيفات -->
+                                <div class="movie-genres" id="seriesCarouselGenres">
+                                    <span class="genre-tag">دراما</span>
+                                    <span class="genre-tag">رومانسي</span>
+                                </div>
+                            </div>
+                            
+                            <!-- الصورة المصغرة -->
+                            <div class="movie-poster-container">
+                                <div class="poster-wrapper">
+                                    <img src="https://image.tmdb.org/t/p/w300/wwemzKWzjKYJFfCeiB57q3r4Bcm.png" 
+                                         alt="صورة المسلسل" 
+                                         class="movie-poster"
+                                         id="seriesCarouselPoster">
+                                    <div class="poster-overlay">
+                                        <i class="fas fa-play-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- أزرار التنقل -->
+               
+                
+                <!-- المؤشرات -->
+                <div class="carousel-indicators" id="seriesCarouselIndicators">
+                    <div class="indicator active"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                </div>
+                
+                <!-- عداد المسلسلات -->
+                <div class="slide-counter">
+                    <span id="seriesCurrentSlide">1</span>
+                    <span class="divider">/</span>
+                    <span id="seriesTotalSlides">5</span>
+                </div>
+                
+                <!-- عناصر التحكم -->
+                <div class="carousel-controls">
+                    <button class="control-btn" onclick="pauseSeriesAutoPlay()" id="seriesPauseBtn">
+                        <i class="fas fa-pause"></i>
+                    </button>
+                    <button class="control-btn" onclick="toggleSeriesFullscreen()">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- المحتوى الرئيسي -->
     <main class="main-content">
         <!-- قسم البانر (مثل الأفلام) -->
@@ -100,21 +198,7 @@
                     عرض الكل
                 </button>
             </div>
-            
-            <div class="carousel-container">
-                <button class="carousel-nav carousel-prev" onclick="scrollCarousel(-1)">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-                
-                <div class="carousel-track" id="carouselTrack">
-                    <!-- سيتم ملؤها بواسطة JavaScript -->
-                </div>
-                
-                <button class="carousel-nav carousel-next" onclick="scrollCarousel(1)">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-            </div>
-        </section>
+       <!-- هذا الجزء يضاف في قسم المسلسلات -->
 
         <!-- قسم جميع المسلسلات -->
         <section class="all-movies-section">
@@ -160,7 +244,7 @@
     <script src="logo.js"></script>
     <script src="header.js"></script>
     <script src="tv.js"></script>
-    <script src="tv-carousel.js"></script>
+    <script src="tv-carousel1.js"></script>
     <script src="autosearch.js"></script>
 </body>
 </html>

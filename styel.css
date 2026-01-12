@@ -2937,4 +2937,309 @@ body {
         bottom: -3px;
         height: 1px;
     }
+}.season-info {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.season-tag, .episode-tag, .status-tag {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.status-tag i.fa-circle {
+    font-size: 0.6rem;
+}
+
+.status-tag.ongoing i.fa-circle {
+    color: #4CAF50; /* أخضر للمسلسلات المستمرة */
+}
+
+.status-tag.ended i.fa-circle {
+    color: #f44336; /* أحمر للمسلسلات المنتهية */
+}
+
+.episodes {
+    background: #4CAF50;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+}/* ========================================
+   MOVIES GRID FOR MOBILE - FOCUS
+   ======================================== */
+
+@media (max-width: 768px) {
+    .movies-grid {
+        grid-template-columns: repeat(2, 1fr); /* بطاقتين بالعرض */
+        gap: 1rem;
+        padding: 0 10px;
+    }
+    
+    .movie-card {
+        height: 320px;
+        min-height: 320px;
+        animation: fadeInMobile 0.5s ease-out forwards;
+    }
+    
+    .movie-card:nth-child(odd) {
+        animation-delay: 0.1s;
+    }
+    
+    .movie-card:nth-child(even) {
+        animation-delay: 0.2s;
+    }
+    
+    /* تحسينات للبطاقة على الموبايل */
+    .movie-overlay {
+        padding: 1rem;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 70%, transparent);
+    }
+    
+    .movie-header h3 {
+        font-size: 1rem;
+        line-height: 1.3;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
+    .movie-rating {
+        font-size: 0.85rem;
+        padding: 4px 8px;
+    }
+    
+    .movie-info {
+        gap: 0.5rem;
+    }
+    
+    .movie-year {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+    }
+    
+    .movie-description {
+        display: none; /* نخفي الوصف على الموبايل لتوفير المساحة */
+    }
+    
+    .movie-actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .play-btn-sm {
+        width: 100%;
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .save-btn-sm {
+        width: 40px;
+        height: 40px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .movies-grid {
+        grid-template-columns: repeat(2, 1fr); /* نبقى بطاقتين حتى في الشاشات الصغيرة */
+        gap: 0.8rem;
+        padding: 0 8px;
+    }
+    
+    .movie-card {
+        height: 280px;
+        min-height: 280px;
+    }
+    
+    .movie-overlay {
+        padding: 0.8rem;
+    }
+    
+    .movie-header {
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .movie-header h3 {
+        font-size: 0.95rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .movie-rating {
+        align-self: center;
+    }
+    
+    .movie-info {
+        justify-content: center;
+    }
+    
+    .movie-year {
+        font-size: 0.75rem;
+    }
+    
+    .movie-actions {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .play-btn-sm {
+        font-size: 0.85rem;
+        padding: 7px 12px;
+    }
+    
+    .save-btn-sm {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+}
+
+/* تحسينات إضافية للهواتف الصغيرة جداً */
+@media (max-width: 375px) {
+    .movies-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+        padding: 0 5px;
+    }
+    
+    .movie-card {
+        height: 250px;
+        min-height: 250px;
+    }
+    
+    .movie-overlay {
+        padding: 0.6rem;
+    }
+    
+    .movie-header h3 {
+        font-size: 0.9rem;
+        -webkit-line-clamp: 2;
+    }
+    
+    .movie-rating {
+        font-size: 0.8rem;
+        padding: 3px 6px;
+    }
+    
+    .movie-year {
+        font-size: 0.7rem;
+        padding: 3px 6px;
+    }
+    
+    .play-btn-sm {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+    
+    .save-btn-sm {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+}
+
+/* تحسينات لشاشات أفقية */
+@media (max-width: 768px) and (orientation: landscape) {
+    .movies-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 بطاقات في الوضع الأفقي */
+    }
+    
+    .movie-card {
+        height: 200px;
+    }
+    
+    .movie-overlay {
+        padding: 0.5rem;
+    }
+    
+    .movie-header h3 {
+        font-size: 0.85rem;
+        -webkit-line-clamp: 1;
+    }
+}
+
+/* رسوم متحركة خاصة للموبايل */
+@keyframes fadeInMobile {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* إضافة هامش سفلي إضافي للمحتوى على الموبايل */
+.main-content {
+    padding-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding-bottom: 3rem;
+    }
+}
+
+/* تحسينات للفلاتر على الموبايل */
+@media (max-width: 768px) {
+    .color-filters-grid {
+        gap: 0.8rem;
+        padding: 10px 5px;
+    }
+    
+    .color-filter-btn {
+        min-width: 120px;
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .extended-filters-grid {
+        padding: 8px 5px;
+    }
+    
+    .extended-filter-btn {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+}
+
+/* تحسينات للكاروسيل على الموبايل */
+@media (max-width: 768px) {
+    .carousel-card {
+        flex: 0 0 200px;
+        height: 280px;
+    }
+    
+    .carousel-overlay {
+        padding: 1rem;
+    }
+    
+    .carousel-card-title {
+        font-size: 1rem;
+    }
+    
+    .carousel-card-info {
+        gap: 0.5rem;
+    }
+    
+    .carousel-rating,
+    .carousel-year {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+    }
+    
+    .carousel-card-description {
+        display: none; /* نخفي الوصف على الموبايل */
+    }
 }

@@ -365,9 +365,7 @@ function createMovieCard(movie) {
                 <button class="play-btn-sm" onclick="playMovie(${movie.id})">
                     <i class="fas fa-play"></i> شاهد
                 </button>
-                <button class="save-btn-sm ${saveClass}" onclick="toggleSave(${movie.id}, '${title.replace(/'/g, "\\'")}', '${movie.poster_path}', ${movie.vote_average || 7}, this)">
-                    <i class="${saveIcon}"></i>
-                </button>
+               
             </div>
         </div>
     `;
@@ -630,13 +628,23 @@ function showNotification(message) {
 // ========================================
 // PLAYER FUNCTIONALITY
 // ========================================
+// PLAYER FUNCTIONALITY
+// ========================================
 function playMovie(id) {
-    showProgress();
-    setTimeout(() => { 
-        const movie = allMovies.find(m => m.id === id);
-        const movieTitle = movie?.title || "هذا الفيلم";
-        showNotification(`جاري تشغيل: ${movieTitle}`);
-    }, 300);
+    // الانتقال إلى صفحة المشاهدة مع معرف الفيلم
+    window.location.href = `watch.html?id=${id}&type=movie`;
+    
+    // يمكنك إظهار رسالة تحميل
+    showNotification(`جاري تحميل الفيلم...`);
+}
+
+// أو إذا كان لديك زر التشغيل في الكاروسيل
+function playCurrentMovie() {
+    // احصل على معرف الفيلم الحالي في الكاروسيل
+    const currentId = carouselMovies[currentCarouselIndex]?.id;
+    if (currentId) {
+        window.location.href = `watch.html?id=${currentId}&type=movie`;
+    }
 }
 
 function showAllMovies() {
@@ -679,3 +687,25 @@ window.playMovie = playMovie;
 window.toggleSave = toggleSave;
 window.showAllMovies = showAllMovies;
 window.goToPage = goToPage;
+// ========================================
+// CAROUSEL HELPER FUNCTIONS
+// ========================================
+function getGenreName(genreId) {
+    if (!genres || genres.length === 0) return 'فيلم';
+    const genre = genres.find(g => g.id === genreId);
+    return genre ? genre.name : 'فيلم';
+}
+
+function showProgress() {
+    // موجودة بالفعل في api.js
+}
+
+function hideProgress() {
+    // موجودة بالفعل في api.js
+}
+
+function showNotification(message) {
+    // موجودة بالفعل في api.js
+}function goToWatch(id, type = "movie") {
+    window.location.href = `watch.html?id=${id}&type=${type}`;
+}
