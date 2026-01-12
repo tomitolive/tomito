@@ -143,10 +143,10 @@ async function loadGenres() {
         console.error("❌ Error loading genres:", error);
         // Fallback genres
         genres = [
-            { id: 28, name: 'أكشن' },
-            { id: 12, name: 'مغامرة' },
-            { id: 16, name: 'رسوم متحركة' },
-            { id: 35, name: 'كوميديا' },
+            // { id: 28, name: 'أكشن' },
+            // { id: 12, name: 'مغامرة' },
+            // { id: 16, name: 'رسوم متحركة' },
+            // { id: 35, name: 'كوميديا' },
             { id: 80, name: 'جريمة' },
             { id: 99, name: 'وثائقي' },
             { id: 18, name: 'دراما' },
