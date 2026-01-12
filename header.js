@@ -55,6 +55,6 @@ function handleScrollHide(scrollTop) {
         navbar.classList.remove('compact');
         colorFilters.classList.remove('shifted');
     }
-    
+        
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 }
