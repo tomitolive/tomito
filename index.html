@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="logo.css">
     <link rel="stylesheet" href="styel.css">
+    <link rel="stylesheet" href="carousel.css">
     <link rel="stylesheet" href="autosearch.css">
 </head>
 <body>
@@ -81,36 +82,106 @@
         </div>
     </section>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- Featured Carousel Section -->
-        <section class="featured-section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <i class="fas fa-crown"></i>
-                    الأفلام المميزة
-                </h2>
-                <button class="view-all-btn" onclick="showAllMovies()">
-                    <i class="fas fa-eye"></i>
-                    عرض الكل
-                </button>
+    <!-- هذا الجزء يضاف في البداية بعد navbar -->
+<section class="hero-carousel" id="heroCarousel">
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+            <!-- الحاوية الرئيسية -->
+            <div class="carousel-main">
+                <!-- الخلفية الكاملة -->
+                <div class="carousel-backdrop" id="carouselBackdrop"></div>
+                
+                <!-- التدرج اللوني -->
+                <div class="carousel-gradient"></div>
+                
+                <!-- محتوى الكاروسيل -->
+                <div class="carousel-content-wrapper">
+                    <div class="carousel-info-section">
+                        <!-- المعلومات الأساسية -->
+                        <div class="movie-main-info">
+                            <h1 class="movie-title" id="carouselTitle">جاري التحميل...</h1>
+                            <div class="movie-meta">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span id="carouselRating">0.0</span>
+                                </span>
+                                <span class="year" id="carouselYear">2024</span>
+                                <span class="duration" id="carouselDuration">120 دقيقة</span>
+                                <span class="quality">HD</span>
+                            </div>
+                            
+                            <!-- الوصف -->
+                            <p class="movie-description" id="carouselDescription">
+                                جاري تحميل وصف الفيلم...
+                            </p>
+                            
+                            <!-- الأزرار -->
+                            <div class="action-buttons">
+                                <button class="play-button" onclick="playCurrentMovie()">
+                                    <i class="fas fa-play"></i>
+                                    <span>مشاهدة الآن</span>
+                                </button>
+                              
+                            </div>
+                            
+                            <!-- التصنيفات -->
+                            <div class="movie-genres" id="carouselGenres">
+                                <span class="genre-tag">أكشن</span>
+                                <span class="genre-tag">مغامرة</span>
+                                <span class="genre-tag">دراما</span>
+                            </div>
+                        </div>
+                        
+                        <!-- الصورة المصغرة -->
+                        <div class="movie-poster-container">
+                            <div class="poster-wrapper">
+                                <img src="https://image.tmdb.org/t/p/w300/wwemzKWzjKYJFfCeiB57q3r4Bcm.png" 
+                                     alt="صورة الفيلم" 
+                                     class="movie-poster"
+                                     id="carouselPoster">
+                                <div class="poster-overlay">
+                                    <i class="fas fa-play-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <div class="carousel-container">
-                <button class="carousel-nav carousel-prev" onclick="scrollCarousel(-1)">
-                    <i class="fas fa-chevron-right"></i>
+        
+            
+            <!-- المؤشرات -->
+            <div class="carousel-indicators" id="carouselIndicators">
+                <div class="indicator active"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+            </div>
+            
+            <!-- عداد الأفلام -->
+            <div class="slide-counter">
+                <span id="currentSlide">1</span>
+                <span class="divider">/</span>
+                <span id="totalSlides">5</span>
+            </div>
+            
+            <!-- عناصر التحكم -->
+            <div class="carousel-controls">
+                <button class="control-btn" onclick="pauseAutoPlay()" id="pauseBtn">
+                    <i class="fas fa-pause"></i>
                 </button>
-                
-                <div class="carousel-track" id="carouselTrack">
-                    <!-- سيتم ملؤها بواسطة JavaScript -->
-                </div>
-                
-                <button class="carousel-nav carousel-next" onclick="scrollCarousel(1)">
-                    <i class="fas fa-chevron-left"></i>
+                <button class="control-btn" onclick="toggleFullscreen()">
+                    <i class="fas fa-expand"></i>
                 </button>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
+    <!-- Main Content -->
+    <main class="main-content">
+     
         <!-- All Movies Section -->
         <section class="all-movies-section">
             <div class="section-header">

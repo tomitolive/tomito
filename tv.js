@@ -469,9 +469,7 @@ function createSeriesCard(series) {
                 <button class="play-btn-sm" onclick="playSeries(${series.id})">
                     <i class="fas fa-play"></i> شاهد
                 </button>
-                <button class="save-btn-sm ${saveClass}" onclick="toggleSave(${series.id}, '${title.replace(/'/g, "\\'")}', '${series.poster_path}', ${series.vote_average || 7}, this)">
-                    <i class="${saveIcon}"></i>
-                </button>
+               
             </div>
         </div>
     `;
@@ -675,12 +673,7 @@ function showNotification(message) {
 // PLAYER FUNCTIONALITY
 // ========================================
 function playSeries(id) {
-    showProgress();
-    setTimeout(() => { 
-        const series = allSeries.find(s => s.id === id) || carouselSeries.find(s => s.id === id);
-        const seriesTitle = series?.name || series?.title || "هذا المسلسل";
-        showNotification(`جاري تشغيل: ${seriesTitle}`);
-    }, 300);
+    goToWatchTV(id);
 }
 
 function showAllSeries() {
@@ -1104,4 +1097,6 @@ document.addEventListener("DOMContentLoaded", () => {
             hideSuggestions();
         }
     });
-});
+});function goToWatchTV(id) {
+    window.location.href = `watch-tv.html?id=${id}`;
+}
