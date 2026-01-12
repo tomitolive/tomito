@@ -71,73 +71,63 @@
         </div>
     </section>
 
-    <!-- Extended Filters Section -->
-    <section class="extended-filters" id="extendedFilters">
-        <div class="extended-filters-container">
-            <div class="extended-filters-grid" id="extendedFiltersGrid">
-                <!-- سيتم ملؤها بواسطة JavaScript -->
-            </div>
-            <!-- زر المزيد - مخفي حاليا وسيظهر عند الحاجة -->
-            <div class="filters-dropdown" id="filtersDropdown"></div>
-        </div>
-    </section>
-
+    
     <!-- هذا الجزء يضاف في البداية بعد navbar -->
-<section class="hero-carousel" id="heroCarousel">
-    <div class="carousel-container">
-        <div class="carousel-wrapper">
-            <!-- الحاوية الرئيسية -->
-            <div class="carousel-main">
-                <!-- الخلفية الكاملة -->
-                <div class="carousel-backdrop" id="carouselBackdrop"></div>
-                
-                <!-- التدرج اللوني -->
-                <div class="carousel-gradient"></div>
-                
-                <!-- محتوى الكاروسيل -->
-                <div class="carousel-content-wrapper">
-                    <div class="carousel-info-section">
-                        <!-- المعلومات الأساسية -->
-                        <div class="movie-main-info">
-                            <h1 class="movie-title" id="carouselTitle">جاري التحميل...</h1>
-                            <div class="movie-meta">
-                                <span class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <span id="carouselRating">0.0</span>
-                                </span>
-                                <span class="year" id="carouselYear">2024</span>
-                                <span class="duration" id="carouselDuration">120 دقيقة</span>
-                                <span class="quality">HD</span>
+    <section class="hero-carousel" id="heroCarousel">
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <!-- الحاوية الرئيسية -->
+                <div class="carousel-main">
+                    <!-- الخلفية الكاملة -->
+                    <div class="carousel-backdrop" id="carouselBackdrop"></div>
+                    
+                    <!-- التدرج اللوني -->
+                    <div class="carousel-gradient"></div>
+                    
+                    <!-- محتوى الكاروسيل -->
+                    <div class="carousel-content-wrapper">
+                        <div class="carousel-info-section">
+                            <!-- المعلومات الأساسية -->
+                            <div class="movie-main-info">
+                                <h1 class="movie-title" id="carouselTitle">جاري التحميل...</h1>
+                                <div class="movie-meta">
+                                    <span class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <span id="carouselRating">0.0</span>
+                                    </span>
+                                    <span class="year" id="carouselYear">2024</span>
+                                    <span class="duration" id="carouselDuration">120 دقيقة</span>
+                                    <span class="quality">HD</span>
+                                </div>
+                                
+                                <!-- الوصف -->
+                                <p class="movie-description" id="carouselDescription">
+                                    جاري تحميل وصف الفيلم...
+                                </p>
+                                
+                                <!-- الأزرار -->
+                                <div class="action-buttons">
+                                    <button class="play-button" onclick="playCurrentMovie()">
+                                        <i class="fas fa-play"></i>
+                                        <span>مشاهدة الآن</span>
+                                    </button>
+                                    
+                                </div>
+                                
+                                <!-- التصنيفات -->
+                                <div class="movie-genres" id="carouselGenres">
+                                    <span class="genre-tag">أكشن</span>
+                                    <span class="genre-tag">مغامرة</span>
+                                    <span class="genre-tag">دراما</span>
+                                </div>
                             </div>
                             
-                            <!-- الوصف -->
-                            <p class="movie-description" id="carouselDescription">
-                                جاري تحميل وصف الفيلم...
-                            </p>
-                            
-                            <!-- الأزرار -->
-                            <div class="action-buttons">
-                                <button class="play-button" onclick="playCurrentMovie()">
-                                    <i class="fas fa-play"></i>
-                                    <span>مشاهدة الآن</span>
-                                </button>
-                              
-                            </div>
-                            
-                            <!-- التصنيفات -->
-                            <div class="movie-genres" id="carouselGenres">
-                                <span class="genre-tag">أكشن</span>
-                                <span class="genre-tag">مغامرة</span>
-                                <span class="genre-tag">دراما</span>
-                            </div>
-                        </div>
-                        
-                        <!-- الصورة المصغرة -->
-                        <div class="movie-poster-container">
-                            <div class="poster-wrapper">
-                                <img src="https://image.tmdb.org/t/p/w300/wwemzKWzjKYJFfCeiB57q3r4Bcm.png" 
-                                     alt="صورة الفيلم" 
-                                     class="movie-poster"
+                            <!-- الصورة المصغرة -->
+                            <div class="movie-poster-container">
+                                <div class="poster-wrapper">
+                                    <img src="https://image.tmdb.org/t/p/w300/wwemzKWzjKYJFfCeiB57q3r4Bcm.png" 
+                                    alt="صورة الفيلم" 
+                                    class="movie-poster"
                                      id="carouselPoster">
                                 <div class="poster-overlay">
                                     <i class="fas fa-play-circle"></i>
@@ -179,9 +169,19 @@
     </div>
 </section>
 
-    <!-- Main Content -->
-    <main class="main-content">
-     
+<!-- Main Content -->
+<main class="main-content">
+    
+    <!-- Extended Filters Section -->
+    <section class="extended-filters" id="extendedFilters">
+        <div class="extended-filters-container">
+            <div class="extended-filters-grid" id="extendedFiltersGrid">
+                <!-- سيتم ملؤها بواسطة JavaScript -->
+            </div>
+            <!-- زر المزيد - مخفي حاليا وسيظهر عند الحاجة -->
+            <div class="filters-dropdown" id="filtersDropdown"></div>
+        </div>
+    </section>
         <!-- All Movies Section -->
         <section class="all-movies-section">
             <div class="section-header">

@@ -212,7 +212,7 @@ async function loadGenres() {
             { id: 10762, name: 'أطفال' },
             { id: 80, name: 'جريمة' },
             { id: 99, name: 'وثائقي' }
-        ];
+        ];extended-filters-container
         setupExtendedFilters();
     }
 }

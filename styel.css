@@ -112,7 +112,7 @@ body {
    EXTENDED FILTERS SECTION - IMPROVED
    ======================================== */
 .extended-filters {
-    background: rgba(0, 0, 0, 0.7);
+  
     padding: 1rem 5%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: 0;
@@ -1263,7 +1263,7 @@ body {
    EXTENDED FILTERS
    ======================================== */
 .extended-filters {
-    background: rgba(0, 0, 0, 0.7);
+   
     padding: 1rem 5%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: 0;
