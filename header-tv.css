@@ -1,0 +1,300 @@
+/* ========================================
+   TV HEADER STYLES
+   ======================================== */
+   .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(15px);
+    z-index: 1000;
+    padding: 1rem 5%;
+    border-bottom: 2px solid var(--primary-color);
+    transition: all 0.4s ease;
+}
+
+.site-header.hidden {
+    transform: translateY(-100%);
+}
+
+.site-header.compact {
+    padding: 0.5rem 5%;
+    transform: scale(0.95);
+    transform-origin: top;
+    opacity: 0.9;
+}
+
+.header-left {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.page-switch-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.page-switch-btn:hover {
+    background: rgba(207, 10, 10, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(207, 10, 10, 0.2);
+}
+
+/* ========================================
+   GENRE STRIP
+   ======================================== */
+.genre-strip {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+    padding: 0.5rem 0;
+    scrollbar-width: thin;
+}
+
+.genre-strip::-webkit-scrollbar {
+    height: 4px;
+}
+
+.genre-strip::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.genre-strip::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+.genre-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    font-family: 'Cairo', sans-serif;
+}
+
+.genre-btn:hover {
+    background: rgba(207, 10, 10, 0.2);
+    transform: translateY(-2px);
+}
+
+.genre-btn.active {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    border-color: transparent;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(207, 10, 10, 0.3);
+}
+
+.more-genres-btn {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    font-family: 'Cairo', sans-serif;
+}
+
+.more-genres-btn:hover {
+    background: rgba(207, 10, 10, 0.3);
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   GENRE NAVIGATION
+   ======================================== */
+.genre-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.nav-switch {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+.nav-switch:hover {
+    color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.genre-nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    position: relative;
+}
+
+.genre-nav a:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.genre-nav a.active {
+    color: var(--primary-color);
+    background: rgba(207, 10, 10, 0.1);
+}
+
+.watchlist-count {
+    background: var(--primary-color);
+    color: white;
+    font-size: 0.8rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+/* ========================================
+   NAV BACKDROP
+   ======================================== */
+.nav-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    display: none;
+    backdrop-filter: blur(5px);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 1024px) {
+    .genre-strip {
+        gap: 0.8rem;
+    }
+    
+    .genre-btn, .more-genres-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .genre-nav {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        padding: 0.8rem 5%;
+    }
+    
+    .header-left {
+        position: static;
+        transform: none;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    
+    .page-switch-btn {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    .genre-strip {
+        justify-content: flex-start;
+        padding-bottom: 1rem;
+    }
+    
+    .genre-btn, .more-genres-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .genre-nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
+    
+    .genre-nav a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header {
+        padding: 0.6rem 5%;
+    }
+    
+    .page-switch-btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .genre-btn, .more-genres-btn {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.75rem;
+        gap: 0.3rem;
+    }
+    
+    .genre-nav a {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+    
+    .watchlist-count {
+        width: 16px;
+        height: 16px;
+        font-size: 0.7rem;
+    }
+}

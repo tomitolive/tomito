@@ -9,7 +9,7 @@ const CONFIG = {
 };
 
 // ===========================================
-// قائمة الخوادم للمسلسلات
+// قائمة الخوادم للمسلسلات (جميع السيرفرات)
 // ===========================================
 const TV_SERVERS = [
     {
@@ -20,7 +20,7 @@ const TV_SERVERS = [
         icon: 'fa-film',
         color: '#e74c3c',
         supportsSeasons: true,
-        format: 'tmdb/{id}/{season}/{episode}'
+        format: '{id}/{season}/{episode}'
     },
     {
         id: 'hnembed',
@@ -51,17 +51,206 @@ const TV_SERVERS = [
         color: '#27ae60',
         supportsSeasons: true,
         format: '{id}/{season}/{episode}'
+    },
+    {
+        id: 'vidsrc_to',
+        name: '🌟 VidSrc.to',
+        baseUrl: 'https://vidsrc.to/embed/tv',
+        quality: 'HD',
+        icon: 'fa-star',
+        color: '#16a085',
+        supportsSeasons: true,
+        format: '{id}/{season}/{episode}'
+    },
+    {
+        id: 'vidsrc_me',
+        name: '🎯 VidSrc.me',
+        baseUrl: 'https://vidsrc.me/embed/tv',
+        quality: 'HD',
+        icon: 'fa-tv',
+        color: '#e67e22',
+        supportsSeasons: true,
+        format: '{id}/{season}/{episode}'
     }
 ];
 
 // ===========================================
-// مشغل المسلسلات الرئيسي
+// نظام حجب الإعلانات للمسلسلات
+// ===========================================
+class TVAdBlocker {
+    constructor() {
+        this.adDomains = new Set([
+            'doubleclick.net', 'googleads', 'googlesyndication',
+            'adsystem', 'adservice', 'adnxs', 'rubiconproject',
+            'pubmatic', 'openx.net', 'criteo.net', 'taboola',
+            'outbrain', 'revcontent', 'zemanta', 'mgid.com',
+            'vast.', 'vmap.', 'vpaid.', 'adserver', 'ads.',
+            'adv.', 'advert', 'analytics', 'tracking', 'pixel',
+            'beacon', 'tagmanager', 'facebook.com/ads',
+            'twitter.com/ads', 'tiktok.com/ads', 'snapchat.com/ads',
+            'instagram.com/ads', 'jwplayer.com/ads',
+            'video.unrulymedia.com', 'ads.vungle.com',
+            'adcolony.com', 'unityads.unity3d.com'
+        ]);
+        
+        if (CONFIG.AD_BLOCK_ENABLED) {
+            this.init();
+        }
+    }
+    
+    init() {
+        this.hijackXMLHttpRequest();
+        this.hijackFetch();
+        this.hijackCreateElement();
+        this.setupMutationObserver();
+        this.blockPopups();
+        
+        console.log('✅ نظام حجب الإعلانات للمسلسلات مفعل');
+    }
+    
+    hijackXMLHttpRequest() {
+        const originalOpen = XMLHttpRequest.prototype.open;
+        const self = this;
+        
+        XMLHttpRequest.prototype.open = function(method, url) {
+            if (self.isAdURL(url)) {
+                console.log(`🚫 حظر طلب إعلان للمسلسل: ${url}`);
+                this._blocked = true;
+                return;
+            }
+            return originalOpen.apply(this, arguments);
+        };
+        
+        const originalSend = XMLHttpRequest.prototype.send;
+        XMLHttpRequest.prototype.send = function(body) {
+            if (this._blocked) {
+                this.dispatchEvent(new Event('load'));
+                return;
+            }
+            return originalSend.call(this, body);
+        };
+    }
+    
+    hijackFetch() {
+        const originalFetch = window.fetch;
+        const self = this;
+        
+        window.fetch = function(input, init) {
+            const url = typeof input === 'string' ? input : input.url;
+            if (self.isAdURL(url)) {
+                console.log(`🚫 حظر fetch إعلان للمسلسل: ${url}`);
+                return Promise.resolve(new Response('', { 
+                    status: 200,
+                    headers: { 'Content-Type': 'text/plain' }
+                }));
+            }
+            return originalFetch.call(this, input, init);
+        };
+    }
+    
+    hijackCreateElement() {
+        const originalCreateElement = Document.prototype.createElement;
+        const self = this;
+        
+        Document.prototype.createElement = function(tagName) {
+            const element = originalCreateElement.call(this, tagName);
+            
+            if (['script', 'iframe', 'img'].includes(tagName.toLowerCase())) {
+                const descriptor = Object.getOwnPropertyDescriptor(
+                    HTMLScriptElement.prototype, 'src'
+                );
+                
+                if (descriptor && descriptor.set) {
+                    const originalSet = descriptor.set;
+                    
+                    Object.defineProperty(element, 'src', {
+                        set: function(value) {
+                            if (self.isAdURL(value)) {
+                                console.log(`🚫 حظر ${tagName} إعلان للمسلسل: ${value}`);
+                                this.style.display = 'none';
+                                return;
+                            }
+                            originalSet.call(this, value);
+                        },
+                        get: descriptor.get
+                    });
+                }
+            }
+            
+            return element;
+        };
+    }
+    
+    setupMutationObserver() {
+        const self = this;
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                mutation.addedNodes.forEach((node) => {
+                    if (node.nodeType === 1) {
+                        self.checkAndRemoveAds(node);
+                    }
+                });
+            });
+        });
+        
+        observer.observe(document.documentElement, {
+            childList: true,
+            subtree: true
+        });
+    }
+    
+    checkAndRemoveAds(element) {
+        const adIndicators = ['ad', 'ads', 'advert', 'banner', 'sponsor', 'popup'];
+        const text = (element.className + ' ' + element.id).toLowerCase();
+        
+        if (adIndicators.some(indicator => text.includes(indicator))) {
+            element.style.display = 'none';
+            element.remove();
+        }
+        
+        if (element.querySelectorAll) {
+            element.querySelectorAll('script, iframe, img, div, span').forEach(child => {
+                const childText = (child.className + ' ' + child.id).toLowerCase();
+                if (adIndicators.some(indicator => childText.includes(indicator))) {
+                    child.style.display = 'none';
+                    child.remove();
+                }
+            });
+        }
+    }
+    
+    blockPopups() {
+        const originalOpen = window.open;
+        const self = this;
+        
+        window.open = function(url, target, features) {
+            if (self.isAdURL(url)) {
+                console.log(`🚫 حظر نافذة منبثقة للمسلسل: ${url}`);
+                return null;
+            }
+            return originalOpen.call(this, url, target, features);
+        };
+    }
+    
+    isAdURL(url) {
+        if (!url) return false;
+        const urlStr = url.toString().toLowerCase();
+        for (const domain of this.adDomains) {
+            if (urlStr.includes(domain)) return true;
+        }
+        return false;
+    }
+}
+
+// ===========================================
+// مشغل المسلسلات الرئيسي المحسن
 // ===========================================
 class TVSeriesPlayer {
     constructor() {
         this.seriesId = null;
         this.seriesData = null;
-        this.currentServer = TV_SERVERS[0];
+        this.currentServer = null;
+        this.autoPlayEnabled = true;
         
         // إعدادات الموسم والحلقة
         this.currentSeason = 1;
@@ -69,6 +258,9 @@ class TVSeriesPlayer {
         this.totalSeasons = 1;
         this.totalEpisodes = 1;
         this.seasonsData = {};
+        this.savedSeries = JSON.parse(localStorage.getItem('savedSeries') || '{}');
+        
+        this.adBlocker = new TVAdBlocker();
         
         this.init();
     }
@@ -81,22 +273,43 @@ class TVSeriesPlayer {
         
         if (!this.seriesId) {
             this.showError('لم يتم العثور على معرف المسلسل');
+            this.showLoading(false);
             return;
         }
         
-        await this.loadSeriesData();
-        await this.loadSeasonData(this.currentSeason);
-        this.createServerButtons();
-        this.setupEventListeners();
-        this.populateSeasonsDropdown();
-        this.showLoading(false);
+        try {
+            await this.loadSeriesData();
+            await this.loadSeasonData(this.currentSeason);
+            this.createServerButtons();
+            this.setupEventListeners();
+            this.populateSeasonsDropdown();
+            
+            // التشغيل التلقائي للسيرفر الأول
+            setTimeout(() => {
+                if (this.autoPlayEnabled && TV_SERVERS.length > 0) {
+                    this.selectServer(TV_SERVERS[0].id, true);
+                }
+            }, 1000);
+            
+        } catch (error) {
+            console.error('خطأ التهيئة:', error);
+            this.showError('حدث خطأ في تحميل المسلسل');
+        } finally {
+            this.showLoading(false);
+        }
     }
     
     setupEventListeners() {
-        // زر التشغيل
+        // زر التشغيل الرئيسي
         const playBtn = document.getElementById('play-now-btn');
         if (playBtn) {
             playBtn.addEventListener('click', () => this.playEpisode());
+        }
+        
+        // زر الحفظ
+        const saveBtn = document.getElementById('save-series-btn');
+        if (saveBtn) {
+            saveBtn.addEventListener('click', () => this.toggleSaveSeries());
         }
         
         // أزرار التنقل بين الحلقات
@@ -126,6 +339,35 @@ class TVSeriesPlayer {
                 this.changeEpisode(parseInt(e.target.value));
             });
         }
+        
+        // تحديث شريط التقدم عند التمرير
+        window.addEventListener('scroll', () => {
+            const progressBar = document.getElementById('progress-bar');
+            if (!progressBar) return;
+            
+            const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (window.scrollY / windowHeight) * 100;
+            progressBar.style.transform = `scaleX(${scrolled / 100})`;
+        });
+        
+        // تحسين تجربة الهاتف
+        this.setupMobileEvents();
+    }
+    
+    setupMobileEvents() {
+        const buttons = document.querySelectorAll('.server-btn, .play-btn-lg, .save-btn-lg');
+        buttons.forEach(btn => {
+            btn.addEventListener('touchstart', () => {
+                btn.style.transform = 'scale(0.95)';
+                btn.style.transition = 'transform 0.1s';
+            });
+            
+            btn.addEventListener('touchend', () => {
+                setTimeout(() => {
+                    btn.style.transform = '';
+                }, 150);
+            });
+        });
     }
     
     async loadSeriesData() {
@@ -143,8 +385,8 @@ class TVSeriesPlayer {
             this.updateUI();
             
         } catch (error) {
-            console.error('خطأ:', error);
-            this.showError('فشل تحميل بيانات المسلسل');
+            console.error('خطأ في تحميل البيانات:', error);
+            throw error;
         }
     }
     
@@ -174,9 +416,24 @@ class TVSeriesPlayer {
     updateUI() {
         const { series, credits, similar } = this.seriesData;
         
+        // تحديث العنوان
+        document.title = `${series.name} - TOMITO`;
+        
+        // تحديث الهيدر
+        const headerTitle = document.getElementById('series-title-header');
+        if (headerTitle) {
+            headerTitle.textContent = series.name || 'مسلسل غير معروف';
+        }
+        
+        // تحديث البانر
         this.updateBanner(series);
         this.updateBannerMeta(series);
+        
+        // تحديث التفاصيل
         this.updateSeriesDetails(series, credits, similar);
+        
+        // تحديث زر الحفظ
+        this.updateSaveButton();
     }
     
     updateBannerMeta(series) {
@@ -194,21 +451,24 @@ class TVSeriesPlayer {
         const bannerDesc = document.getElementById('banner-description');
         const seriesTitle = document.getElementById('series-title');
         
-        if (bannerTitle) bannerTitle.textContent = series.name || series.original_name || 'بدون عنوان';
-        if (bannerDesc) bannerDesc.textContent = series.overview || 'لا يوجد وصف متوفر.';
-        if (seriesTitle) seriesTitle.textContent = series.name || 'جاري التحميل...';
+        if (bannerTitle) bannerTitle.textContent = series.name || 'بدون عنوان';
+        if (bannerDesc) bannerDesc.textContent = series.overview || 'لا يوجد وصف متوفر';
+        if (seriesTitle) seriesTitle.textContent = series.name;
         
-        const banner = document.querySelector('.series-banner .banner-background');
+        const banner = document.querySelector('.banner-background');
         if (banner && series.backdrop_path) {
-            banner.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('${CONFIG.BASE_IMG}/original${series.backdrop_path}')`;
+            banner.style.background = `
+                linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('${CONFIG.BASE_IMG}/original${series.backdrop_path}')
+            `;
             banner.style.backgroundSize = 'cover';
             banner.style.backgroundPosition = 'center';
+            banner.style.backgroundRepeat = 'no-repeat';
         }
     }
     
     updateSeriesDetails(series, credits, similar) {
-        document.title = `${series.name} - Tomito`;
-        
+        // العنوان
         const seriesTitleFull = document.getElementById('series-title-full');
         const releaseYear = document.getElementById('release-year');
         
@@ -218,7 +478,7 @@ class TVSeriesPlayer {
             releaseYear.textContent = year;
         }
         
-        // تحديث ملصق المسلسل
+        // الصورة الرئيسية
         const poster = document.getElementById('series-poster');
         if (poster) {
             poster.src = series.poster_path 
@@ -227,7 +487,7 @@ class TVSeriesPlayer {
             poster.alt = series.name || 'ملصق المسلسل';
         }
         
-        // تحديث التقييم في البادج
+        // التقييم في البانر
         const ratingBadge = document.getElementById('rating-badge');
         if (ratingBadge) {
             const ratingSpan = ratingBadge.querySelector('span');
@@ -236,23 +496,23 @@ class TVSeriesPlayer {
             }
         }
         
-        // تحديث المعلومات الوصفية
+        // الميتاداتا
         this.updateMetaData(series);
         
-        // تحديث ملخص القصة
+        // الوصف
         const overviewText = document.getElementById('overview-text');
         if (overviewText) overviewText.textContent = series.overview || 'لا يوجد وصف متوفر.';
         
-        // تحديث التصنيفات
+        // التصنيفات
         this.updateGenres(series.genres || []);
         
-        // تحديث شبكات البث
+        // شبكات البث
         this.updateNetworks(series.networks || []);
         
-        // تحديث طاقم التمثيل
+        // طاقم التمثيل
         this.updateCast(credits.cast || []);
         
-        // تحديث المسلسلات المشابهة
+        // مسلسلات مشابهة
         this.updateSimilar(similar.results || []);
     }
     
@@ -261,14 +521,46 @@ class TVSeriesPlayer {
         if (!metaGrid) return;
         
         const metaData = [
-            { icon: 'calendar', label: 'السنة الأولى', value: series.first_air_date?.split('-')[0] || '--' },
-            { icon: 'calendar-times', label: 'السنة الأخيرة', value: series.last_air_date?.split('-')[0] || 'مستمر' },
-            { icon: 'star', label: 'التقييم', value: series.vote_average?.toFixed(1) || '--' },
-            { icon: 'users', label: 'الأصوات', value: series.vote_count ? series.vote_count.toLocaleString('ar') : '--' },
-            { icon: 'layer-group', label: 'المواسم', value: series.number_of_seasons || '--' },
-            { icon: 'play-circle', label: 'الحلقات', value: series.number_of_episodes || '--' },
-            { icon: 'clock', label: 'مدة الحلقة', value: series.episode_run_time?.[0] ? `${series.episode_run_time[0]} دقيقة` : 'غير معروف' },
-            { icon: 'broadcast-tower', label: 'الحالة', value: series.status === 'Returning Series' ? 'مستمر' : 'منتهي' }
+            { 
+                icon: 'calendar', 
+                label: 'السنة الأولى', 
+                value: series.first_air_date?.split('-')[0] || '--' 
+            },
+            { 
+                icon: 'calendar-times', 
+                label: 'السنة الأخيرة', 
+                value: series.last_air_date?.split('-')[0] || 'مستمر' 
+            },
+            { 
+                icon: 'star', 
+                label: 'التقييم', 
+                value: series.vote_average?.toFixed(1) || '--' 
+            },
+            { 
+                icon: 'users', 
+                label: 'الأصوات', 
+                value: series.vote_count ? series.vote_count.toLocaleString('ar') : '--' 
+            },
+            { 
+                icon: 'layer-group', 
+                label: 'المواسم', 
+                value: series.number_of_seasons || '--' 
+            },
+            { 
+                icon: 'play-circle', 
+                label: 'الحلقات', 
+                value: series.number_of_episodes || '--' 
+            },
+            { 
+                icon: 'clock', 
+                label: 'مدة الحلقة', 
+                value: series.episode_run_time?.[0] ? `${series.episode_run_time[0]} دقيقة` : 'غير معروف' 
+            },
+            { 
+                icon: 'broadcast-tower', 
+                label: 'الحالة', 
+                value: series.status === 'Returning Series' ? 'مستمر' : 'منتهي' 
+            }
         ];
         
         metaGrid.innerHTML = metaData.map(item => `
@@ -286,12 +578,7 @@ class TVSeriesPlayer {
         const container = document.getElementById('genres-list');
         if (!container) return;
         
-        if (genres.length === 0) {
-            container.innerHTML = '<span class="no-data">لا توجد تصنيفات</span>';
-            return;
-        }
-        
-        container.innerHTML = genres.map(genre => 
+        container.innerHTML = genres.slice(0, 5).map(genre => 
             `<span class="genre-tag">${genre.name}</span>`
         ).join('');
     }
@@ -307,8 +594,8 @@ class TVSeriesPlayer {
         
         container.innerHTML = networks.map(network => {
             const logo = network.logo_path 
-                ? `<img src="${CONFIG.BASE_IMG}/w45${network.logo_path}" alt="${network.name}" class="network-logo" loading="lazy">`
-                : `<div class="network-name-only">${network.name}</div>`;
+                ? `<img src="${CONFIG.BASE_IMG}/w45${network.logo_path}" alt="${network.name}" class="network-logo" loading="lazy" onerror="this.style.display='none'">`
+                : '';
             
             return `
                 <div class="network-item">
@@ -323,76 +610,68 @@ class TVSeriesPlayer {
         const container = document.getElementById('cast-list');
         if (!container) return;
         
-        if (cast.length === 0) {
-            container.innerHTML = '<div class="no-cast">لا يوجد طاقم تمثيل</div>';
-            return;
-        }
-        
-        const actors = cast.slice(0, 8);
-        
-        container.innerHTML = actors.map(actor => {
-            const img = actor.profile_path 
+        // استخدام صور من TMDB فقط
+        const actors = cast.slice(0, 8).map(actor => {
+            const imgUrl = actor.profile_path 
                 ? `${CONFIG.BASE_IMG}/w200${actor.profile_path}`
-                : 'https://via.placeholder.com/150x200/333/fff?text=?';
+                : 'https://via.placeholder.com/150x200/333/fff?text=No+Image';
             
-            return `
-                <div class="cast-card">
-                    <img src="${img}" 
-                         class="cast-img" 
-                         alt="${actor.name}"
-                         loading="lazy"
-                         onerror="this.src='https://via.placeholder.com/150x200/333/fff?text=?'">
-                    <div class="cast-info">
-                        <div class="cast-name">${actor.name || 'غير معروف'}</div>
-                        <div class="cast-character">${actor.character || 'غير معروف'}</div>
-                    </div>
+            return {
+                name: actor.name || 'غير معروف',
+                character: actor.character || 'غير معروف',
+                img: imgUrl
+            };
+        });
+        
+        container.innerHTML = actors.map(actor => `
+            <div class="cast-card">
+                <img src="${actor.img}" 
+                     class="cast-img" 
+                     alt="${actor.name}"
+                     loading="lazy"
+                     onerror="this.src='https://via.placeholder.com/150x200/333/fff?text=No+Image'">
+                <div class="cast-info">
+                    <div class="cast-name">${actor.name}</div>
+                    <div class="cast-character">${actor.character}</div>
                 </div>
-            `;
-        }).join('');
+            </div>
+        `).join('');
     }
     
     updateSimilar(series) {
         const container = document.getElementById('similar-list');
         if (!container) return;
         
-        if (series.length === 0) {
-            container.innerHTML = '<div class="no-similar">لا توجد مسلسلات مشابهة</div>';
-            return;
-        }
-        
-        const similarSeries = series.slice(0, 6);
-        
-        container.innerHTML = similarSeries.map(item => {
-            const img = item.poster_path 
+        const similarSeries = series.slice(0, 4).map(item => {
+            const imgUrl = item.poster_path 
                 ? `${CONFIG.BASE_IMG}/w300${item.poster_path}`
                 : 'https://via.placeholder.com/200x300/1a1a1a/fff?text=No+Image';
             
-            const year = item.first_air_date?.split('-')[0] || '--';
-            
-            return `
-                <div class="similar-card" data-id="${item.id}" data-type="tv">
-                    <img src="${img}" 
-                         class="similar-img" 
-                         alt="${item.name}"
-                         loading="lazy"
-                         onerror="this.src='https://via.placeholder.com/200x300/1a1a1a/fff?text=No+Image'">
-                    <div class="similar-info">
-                        <div class="similar-title" title="${item.name}">${item.name || 'بدون عنوان'}</div>
-                        <div class="similar-meta">
-                            <span>${year}</span>
-                            <span><i class="fas fa-star"></i> ${item.vote_average?.toFixed(1) || '--'}</span>
-                        </div>
+            return {
+                id: item.id,
+                title: item.name || 'بدون عنوان',
+                year: item.first_air_date?.split('-')[0] || '--',
+                rating: item.vote_average?.toFixed(1) || '--',
+                img: imgUrl
+            };
+        });
+        
+        container.innerHTML = similarSeries.map(item => `
+            <div class="similar-card" data-id="${item.id}" onclick="playTVSeries(${item.id})">
+                <img src="${item.img}" 
+                     class="similar-img" 
+                     alt="${item.title}"
+                     loading="lazy"
+                     onerror="this.src='https://via.placeholder.com/200x300/1a1a1a/fff?text=No+Image'">
+                <div class="similar-info">
+                    <div class="similar-title">${item.title}</div>
+                    <div class="similar-meta">
+                        <span>${item.year}</span>
+                        <span><i class="fas fa-star"></i> ${item.rating}</span>
                     </div>
                 </div>
-            `;
-        }).join('');
-        
-        container.querySelectorAll('.similar-card').forEach(card => {
-            card.addEventListener('click', () => {
-                const seriesId = card.getAttribute('data-id');
-                window.location.href = `watch-tv.html?id=${seriesId}`;
-            });
-        });
+            </div>
+        `).join('');
     }
     
     createServerButtons() {
@@ -400,40 +679,61 @@ class TVSeriesPlayer {
         if (!container) return;
         
         container.innerHTML = TV_SERVERS.map(server => `
-            <button class="server-btn ${server.id === this.currentServer.id ? 'active' : ''}" 
+            <button class="server-btn" 
                     data-server-id="${server.id}"
-                    style="border-color: ${server.color}">
+                    onclick="tvSeriesPlayer.selectServer('${server.id}')"
+                    style="border-left-color: ${server.color};"
+                    title="${server.name} - ${server.quality}">
                 <i class="fas ${server.icon}" style="color: ${server.color}"></i>
-                <div class="server-info">
-                    <div class="server-name">${server.name}</div>
-                    <div class="server-quality">${server.quality}</div>
-                </div>
+                <span class="server-name">${server.name}</span>
+                <span class="server-quality">${server.quality}</span>
             </button>
         `).join('');
         
-        container.querySelectorAll('.server-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const serverId = btn.getAttribute('data-server-id');
-                this.selectServer(serverId);
-            });
-        });
+        // تحديد السيرفر الأول تلقائياً
+        if (TV_SERVERS.length > 0) {
+            const firstServerBtn = container.querySelector('.server-btn');
+            if (firstServerBtn) {
+                firstServerBtn.classList.add('active');
+            }
+        }
     }
     
-    selectServer(serverId) {
+    selectServer(serverId, autoPlay = false) {
+        // إزالة النشاط من جميع الأزرار
         document.querySelectorAll('.server-btn').forEach(btn => {
             btn.classList.remove('active');
         });
         
+        // إضافة النشاط للزر المحدد
         const selectedBtn = document.querySelector(`[data-server-id="${serverId}"]`);
         if (selectedBtn) {
             selectedBtn.classList.add('active');
         }
         
+        // تحديث السيرفر الحالي
         const server = TV_SERVERS.find(s => s.id === serverId);
-        if (!server) return;
+        if (!server) {
+            this.showError('السيرفر المحدد غير موجود');
+            return;
+        }
         
         this.currentServer = server;
-        this.showNotification(`تم اختيار ${server.name}`, 'success');
+        
+        // تحديث النص أعلى الفيديو
+        const currentServerText = document.getElementById('current-server');
+        if (currentServerText) {
+            currentServerText.textContent = `جاري التشغيل: ${server.name}`;
+        }
+        
+        // التشغيل التلقائي
+        if (autoPlay || !this.autoPlayEnabled) {
+            setTimeout(() => {
+                this.playEpisode();
+            }, 300);
+        }
+        
+        this.showNotification(`تم التبديل إلى ${server.name}`, 'info');
     }
     
     populateSeasonsDropdown() {
@@ -472,7 +772,7 @@ class TVSeriesPlayer {
             const episodeNumber = index + 1;
             const option = document.createElement('option');
             option.value = episodeNumber;
-            option.textContent = episode.name ? `الحلقة ${episodeNumber}: ${episode.name}` : `الحلقة ${episodeNumber}`;
+            option.textContent = episode.name ? `الحلقة ${episodeNumber}: ${episode.name.substring(0, 40)}${episode.name.length > 40 ? '...' : ''}` : `الحلقة ${episodeNumber}`;
             if (episodeNumber === this.currentEpisode) option.selected = true;
             episodeSelect.appendChild(option);
         });
@@ -582,36 +882,109 @@ class TVSeriesPlayer {
             videoURL = `${this.currentServer.baseUrl}/${this.seriesId}/${this.currentSeason}/${this.currentEpisode}`;
         }
         
-        // لسيرفر VidSrc Embed الخاص
-        if (this.currentServer.id === 'vidsrc_embed') {
-            videoURL = `https://vidsrc-embed.ru/embed/tv/${this.seriesId}/${this.currentSeason}/${this.currentEpisode}`;
-        }
+        console.log('🎬 تشغيل المسلسل:', {
+            server: this.currentServer.name,
+            season: this.currentSeason,
+            episode: this.currentEpisode,
+            url: videoURL
+        });
         
-        console.log('🎬 تشغيل:', this.currentServer.name);
-        console.log('🔗 الرابط:', videoURL);
-        console.log('📺 الموسم:', this.currentSeason, 'الحلقة:', this.currentEpisode);
-        
-        this.showNotification(`جاري تحميل ${this.currentServer.name}...`, 'info');
+        this.showNotification(`جاري التشغيل على ${this.currentServer.name}...`, 'info');
         
         videoPlayer.src = '';
         
         setTimeout(() => {
-            videoPlayer.src = videoURL;
-            
-            videoPlayer.onload = () => {
-                this.showNotification('✅ الحلقة جاهزة', 'success');
+            try {
+                videoPlayer.src = videoURL;
+                
+                videoPlayer.onload = () => {
+                    this.showNotification('✅ الحلقة جاهزة للمشاهدة', 'success');
+                };
+                
+                videoPlayer.onerror = (error) => {
+                    console.error('خطأ في تحميل الفيديو:', error);
+                    this.showNotification('❌ فشل تحميل الحلقة، جرب خادماً آخر', 'error');
+                    
+                    // محاولة السيرفر التالي تلقائياً
+                    this.tryNextServer();
+                };
+                
+            } catch (error) {
+                console.error('خطأ في تشغيل الفيديو:', error);
+                this.showError('حدث خطأ في تشغيل الحلقة');
+            }
+        }, 500);
+    }
+    
+    tryNextServer() {
+        if (!this.currentServer || TV_SERVERS.length < 2) return;
+        
+        const currentIndex = TV_SERVERS.findIndex(s => s.id === this.currentServer.id);
+        if (currentIndex === -1) return;
+        
+        // محاولة السيرفر التالي
+        const nextIndex = (currentIndex + 1) % TV_SERVERS.length;
+        const nextServer = TV_SERVERS[nextIndex];
+        
+        this.showNotification(`جرب ${nextServer.name}...`, 'info');
+        
+        setTimeout(() => {
+            this.selectServer(nextServer.id);
+            setTimeout(() => this.playEpisode(), 500);
+        }, 1500);
+    }
+    
+    toggleSaveSeries() {
+        if (!this.seriesData) return;
+        
+        const series = this.seriesData.series;
+        const seriesId = series.id.toString();
+        const saveBtn = document.getElementById('save-series-btn');
+        
+        if (this.savedSeries[seriesId]) {
+            // إزالة من المحفوظات
+            delete this.savedSeries[seriesId];
+            if (saveBtn) {
+                saveBtn.classList.remove('saved');
+                saveBtn.innerHTML = '<i class="far fa-heart"></i> إضافة للمفضلة';
+            }
+            this.showNotification('تمت إزالة المسلسل من المحفوظات', 'info');
+        } else {
+            // إضافة إلى المحفوظات
+            this.savedSeries[seriesId] = {
+                id: series.id,
+                title: series.name,
+                poster: series.poster_path,
+                rating: series.vote_average,
+                year: series.first_air_date?.split('-')[0],
+                seasons: series.number_of_seasons
             };
-            
-            videoPlayer.onerror = () => {
-                this.showNotification('❌ فشل التحميل، جرب خادماً آخر', 'error');
-                if (this.currentServer.id === 'autoembed') {
-                    const altURL = `${videoURL}?server=2`;
-                    setTimeout(() => {
-                        videoPlayer.src = altURL;
-                    }, 1000);
-                }
-            };
-        }, 300);
+            if (saveBtn) {
+                saveBtn.classList.add('saved');
+                saveBtn.innerHTML = '<i class="fas fa-heart"></i> محفوظ في المفضلة';
+            }
+            this.showNotification('تم حفظ المسلسل في المحفوظات', 'success');
+        }
+        
+        // حفظ في localStorage
+        localStorage.setItem('savedSeries', JSON.stringify(this.savedSeries));
+    }
+    
+    updateSaveButton() {
+        if (!this.seriesData) return;
+        
+        const seriesId = this.seriesData.series.id.toString();
+        const saveBtn = document.getElementById('save-series-btn');
+        
+        if (saveBtn) {
+            if (this.savedSeries[seriesId]) {
+                saveBtn.classList.add('saved');
+                saveBtn.innerHTML = '<i class="fas fa-heart"></i> محفوظ في المفضلة';
+            } else {
+                saveBtn.classList.remove('saved');
+                saveBtn.innerHTML = '<i class="far fa-heart"></i> إضافة للمفضلة';
+            }
+        }
     }
     
     showLoading(show) {
@@ -625,7 +998,13 @@ class TVSeriesPlayer {
                 progressBar.style.display = 'block';
             }
         } else {
-            if (loadingScreen) loadingScreen.style.display = 'none';
+            if (loadingScreen) {
+                loadingScreen.style.opacity = '0';
+                loadingScreen.style.transition = 'opacity 0.5s ease';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }
             if (progressBar) {
                 progressBar.style.transform = 'scaleX(1)';
                 setTimeout(() => {
@@ -636,85 +1015,119 @@ class TVSeriesPlayer {
     }
     
     showNotification(message, type = 'info') {
-        // إزالة الإشعارات السابقة
+        // إزالة الإشعارات القديمة
         document.querySelectorAll('.notification').forEach(n => n.remove());
         
+        // إنشاء إشعار جديد
         const notification = document.createElement('div');
         notification.className = `notification ${type}`;
-        notification.textContent = message;
+        notification.innerHTML = `
+            <i class="fas ${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle'}"></i>
+            <span>${message}</span>
+        `;
         
         document.body.appendChild(notification);
         
+        // إخفاء الإشعار بعد 3 ثواني
         setTimeout(() => {
-            notification.style.animation = 'slideOut 0.3s ease';
-            setTimeout(() => notification.remove(), 300);
+            notification.style.animation = 'slideOutRight 0.3s ease';
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.parentNode.removeChild(notification);
+                }
+            }, 300);
         }, 3000);
     }
     
     showError(message) {
         this.showNotification(message, 'error');
-        console.error('ERROR:', message);
+        console.error('❌ خطأ:', message);
     }
 }
 
 // ===========================================
-// إضافة CSS للإشعارات
+// دوال مساعدة للمسلسلات
 // ===========================================
-const notificationStyles = `
+
+// دالة للانتقال إلى مسلسل آخر
+function playTVSeries(seriesId) {
+    window.location.href = `watch-tv.html?id=${seriesId}`;
+}
+
+// دالة ملء الشاشة للمسلسلات
+function toggleFullscreenTV() {
+    const videoPlayer = document.getElementById('video-player');
+    if (!videoPlayer) return;
+    
+    if (!document.fullscreenElement) {
+        if (videoPlayer.requestFullscreen) {
+            videoPlayer.requestFullscreen();
+        } else if (videoPlayer.webkitRequestFullscreen) {
+            videoPlayer.webkitRequestFullscreen();
+        } else if (videoPlayer.msRequestFullscreen) {
+            videoPlayer.msRequestFullscreen();
+        }
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+    }
+}
+
+// ===========================================
+// CSS للإشعارات للمسلسلات
+// ===========================================
+const tvNotificationStyles = `
     .notification {
         position: fixed;
-        top: 20px;
+        top: 80px;
         right: 20px;
-        padding: 12px 20px;
+        left: 20px;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 12px 16px;
+        background: rgba(0, 0, 0, 0.95);
+        border-left: 4px solid #E50914;
         border-radius: 8px;
-        color: white;
-        font-weight: 500;
-        z-index: 10000;
-        animation: slideIn 0.3s ease;
-        max-width: 300px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        color: #fff;
+        z-index: 9999;
+        animation: slideInRight 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .notification i {
+        font-size: 18px;
     }
     
     .notification.success {
-        background: #27ae60;
-        border-left: 4px solid #219653;
+        border-left-color: #27ae60;
     }
     
     .notification.error {
-        background: #e74c3c;
-        border-left: 4px solid #c0392b;
+        border-left-color: #e74c3c;
     }
     
     .notification.info {
-        background: #3498db;
-        border-left: 4px solid #2980b9;
+        border-left-color: #3498db;
     }
     
-    .notification.warning {
-        background: #f39c12;
-        border-left: 4px solid #d35400;
+    @keyframes slideInRight {
+        from { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
     }
     
-    @keyframes slideIn {
-        from {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-    
-    @keyframes slideOut {
-        from {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        to {
-            transform: translateX(100%);
-            opacity: 0;
-        }
+    @keyframes slideOutRight {
+        from { transform: translateX(0); opacity: 1; }
+        to { transform: translateX(100%); opacity: 0; }
     }
     
     .no-data, .no-cast, .no-similar {
@@ -724,16 +1137,56 @@ const notificationStyles = `
         padding: 20px;
         width: 100%;
     }
+    
+    /* تحسينات للمسلسلات */
+    .network-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.03);
+        padding: 8px 12px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    .network-logo {
+        width: 45px;
+        height: auto;
+        border-radius: 4px;
+    }
+    
+    .network-name {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    
+    /* تعديلات للهاتف */
+    @media (max-width: 768px) {
+        .notification {
+            top: 70px;
+            right: 10px;
+            left: 10px;
+            max-width: calc(100% - 20px);
+        }
+        
+        .network-item {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
 `;
 
-// إضافة الـ CSS للصفحة
-const styleSheet = document.createElement("style");
-styleSheet.textContent = notificationStyles;
-document.head.appendChild(styleSheet);
+// إضافة الـ CSS للمسلسلات
+const tvStyleSheet = document.createElement("style");
+tvStyleSheet.textContent = tvNotificationStyles;
+document.head.appendChild(tvStyleSheet);
 
 // ===========================================
-// بدء التشغيل
+// بدء التشغيل للمسلسلات
 // ===========================================
 document.addEventListener('DOMContentLoaded', () => {
+    // تهيئة مشغل المسلسلات
     window.tvSeriesPlayer = new TVSeriesPlayer();
+    
+    console.log('📺 TOMITO TV Player جاهز للتشغيل!');
 });
