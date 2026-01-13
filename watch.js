@@ -263,7 +263,6 @@ class MoviePlayer {
         
         this.init();
     }
-    
     async init() {
         this.showLoading(true);
         
@@ -282,7 +281,13 @@ class MoviePlayer {
             this.setupEventListeners();
             this.createServerButtons();
             
-            // التشغيل التلقائي للسيرفر الأول بعد تحميل البيانات
+            // إضافة ستايلات الكروت التفاعلية
+            addCastCardStyles();
+            
+            // تفعيل النقر على الممثلين
+            setupCastClickListeners();
+            
+            // التشغيل التلقائي للسيرفر الأول
             setTimeout(() => {
                 if (this.autoPlayEnabled && SERVERS.length > 0) {
                     this.selectServer(SERVERS[0].id, true);
@@ -296,7 +301,6 @@ class MoviePlayer {
             this.showLoading(false);
         }
     }
-    
     setupEventListeners() {
         // زر التشغيل الرئيسي
         const playBtn = document.getElementById('play-now-btn');
@@ -525,31 +529,39 @@ class MoviePlayer {
             `<span class="genre-tag">${genre.name}</span>`
         ).join('');
     }
-    
     updateCast(cast) {
         const container = document.getElementById('cast-list');
         if (!container) return;
-        
-        // استخدام صور من TMDB فقط
-        const actors = cast.slice(0, 8).map(actor => {
-            const imgUrl = actor.profile_path 
-                ? `${CONFIG.BASE_IMG}/w200${actor.profile_path}`
-                : 'https://via.placeholder.com/150x200/333/fff?text=No+Image';
-            
-            return {
+    
+        // غير الممثلين اللي عندهم صورة
+        const actors = cast
+            .filter(actor => actor.profile_path)
+            .slice(0, 8)
+            .map(actor => ({
+                id: actor.id,
                 name: actor.name || 'غير معروف',
                 character: actor.character || 'غير معروف',
-                img: imgUrl
-            };
-        });
-        
+                img: `${CONFIG.BASE_IMG}/w200${actor.profile_path}`
+            }));
+    
+        // إلا ما كاين حتى ممثل عندو صورة
+        if (actors.length === 0) {
+            container.innerHTML = `
+                <div class="no-cast">
+                    لا توجد صور للممثلين
+                </div>
+            `;
+            return;
+        }
+    
         container.innerHTML = actors.map(actor => `
-            <div class="cast-card">
-                <img src="${actor.img}" 
-                     class="cast-img" 
-                     alt="${actor.name}"
-                     loading="lazy"
-                     onerror="this.src='https://via.placeholder.com/150x200/333/fff?text=No+Image'">
+            <div class="cast-card" data-actor-id="${actor.id}">
+                <img 
+                    src="${actor.img}" 
+                    class="cast-img" 
+                    alt="${actor.name}" 
+                    loading="lazy"
+                >
                 <div class="cast-info">
                     <div class="cast-name">${actor.name}</div>
                     <div class="cast-character">${actor.character}</div>
@@ -882,4 +894,81 @@ document.addEventListener('DOMContentLoaded', () => {
     window.moviePlayer = new MoviePlayer();
     
     console.log('🚀 TOMITO Player جاهز للتشغيل!');
-});
+});// ===========================================
+// دوال صفحة الممثل
+// ===========================================
+
+// دالة لفتح صفحة الممثل
+function openActorPage(actorId) {
+    console.log('🎭 فتح صفحة الممثل:', actorId);
+    window.location.href = `actor.html?id=${actorId}`;
+}
+
+// جعل جميع كروت الممثلين قابلة للنقر
+function setupCastClickListeners() {
+    document.addEventListener('click', (e) => {
+        const castCard = e.target.closest('.cast-card');
+        if (castCard) {
+            const actorId = castCard.getAttribute('data-actor-id');
+            if (actorId) {
+                openActorPage(actorId);
+            }
+        }
+    });
+}
+
+// تعديل CSS لجعل الكروت تفاعلية
+function addCastCardStyles() {
+    const style = document.createElement('style');
+    style.textContent = `
+        .cast-card {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cast-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        
+        .cast-card:hover .cast-img {
+            transform: scale(1.05);
+        }
+        
+        .cast-card:hover .cast-info {
+            background: rgba(229, 9, 20, 0.1);
+        }
+        
+        .cast-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(transparent 70%, rgba(0,0,0,0.7));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        
+        .cast-card:hover::after {
+            opacity: 1;
+        }
+        
+        .cast-card .cast-info {
+            transition: all 0.3s ease;
+        }
+        
+        .cast-card:hover .cast-name {
+            color: #e50914;
+        }
+        
+        .cast-card:active {
+            transform: translateY(-2px);
+        }
+    `;
+    document.head.appendChild(style);
+}

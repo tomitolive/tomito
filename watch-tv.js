@@ -243,6 +243,96 @@ class TVAdBlocker {
 }
 
 // ===========================================
+// دوال مساعدة للكروت القابلة للنقر
+// ===========================================
+
+// دالة لفتح صفحة الممثل
+function openActorPage(actorId) {
+    console.log('🎭 فتح صفحة الممثل:', actorId);
+    window.open(`actor.html?id=${actorId}`, '_blank');
+}
+
+// جعل كروت الممثلين قابلة للنقر
+function makeCastClickable() {
+    console.log('🔗 تفعيل خاصية النقر على الممثلين');
+    
+    // أضف نمط CSS للكروت القابلة للنقر
+    const style = document.createElement('style');
+    style.textContent = `
+        .cast-card {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        
+        .cast-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(229, 9, 20, 0.2);
+        }
+        
+        .cast-card:hover .cast-img {
+            transform: scale(1.05);
+        }
+        
+        .cast-card .cast-img {
+            transition: transform 0.3s ease;
+        }
+        
+        .cast-card:hover::after {
+            content: '👤 عرض الملف الشخصي';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(229, 9, 20, 0.9);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: bold;
+            opacity: 0;
+            animation: fadeIn 0.3s ease forwards;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 2;
+        }
+        
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        
+        .cast-card:active {
+            transform: translateY(-2px);
+        }
+    `;
+    document.head.appendChild(style);
+    
+    // إضافة مستمع النقر
+    document.addEventListener('click', function(e) {
+        // البحث عن أقرب عنصر cast-card
+        let element = e.target;
+        while (element && !element.classList.contains('cast-card')) {
+            element = element.parentElement;
+        }
+        
+        if (element && element.classList.contains('cast-card')) {
+            const actorId = element.getAttribute('data-actor-id');
+            if (actorId) {
+                console.log('🎬 النقر على الممثل ID:', actorId);
+                openActorPage(actorId);
+            } else {
+                console.log('⚠️ لم يتم العثور على معرف الممثل');
+            }
+        }
+    });
+}
+
+// ===========================================
 // مشغل المسلسلات الرئيسي المحسن
 // ===========================================
 class TVSeriesPlayer {
@@ -283,6 +373,9 @@ class TVSeriesPlayer {
             this.createServerButtons();
             this.setupEventListeners();
             this.populateSeasonsDropdown();
+            
+            // تفعيل خاصية النقر على الممثلين
+            makeCastClickable();
             
             // التشغيل التلقائي للسيرفر الأول
             setTimeout(() => {
@@ -605,31 +698,28 @@ class TVSeriesPlayer {
             `;
         }).join('');
     }
-    
     updateCast(cast) {
         const container = document.getElementById('cast-list');
         if (!container) return;
-        
-        // استخدام صور من TMDB فقط
-        const actors = cast.slice(0, 8).map(actor => {
-            const imgUrl = actor.profile_path 
-                ? `${CONFIG.BASE_IMG}/w200${actor.profile_path}`
-                : 'https://via.placeholder.com/150x200/333/fff?text=No+Image';
-            
-            return {
+    
+        const actors = cast
+            .filter(actor => actor.profile_path) // غير اللي عندهم صورة
+            .slice(0, 8)
+            .map(actor => ({
+                id: actor.id,
                 name: actor.name || 'غير معروف',
                 character: actor.character || 'غير معروف',
-                img: imgUrl
-            };
-        });
-        
+                img: `${CONFIG.BASE_IMG}/w200${actor.profile_path}`
+            }));
+    
+        if (actors.length === 0) {
+            container.innerHTML = '<div class="no-cast">لا توجد صور للممثلين</div>';
+            return;
+        }
+    
         container.innerHTML = actors.map(actor => `
-            <div class="cast-card">
-                <img src="${actor.img}" 
-                     class="cast-img" 
-                     alt="${actor.name}"
-                     loading="lazy"
-                     onerror="this.src='https://via.placeholder.com/150x200/333/fff?text=No+Image'">
+            <div class="cast-card" data-actor-id="${actor.id}">
+                <img src="${actor.img}" class="cast-img" alt="${actor.name}" loading="lazy">
                 <div class="cast-info">
                     <div class="cast-name">${actor.name}</div>
                     <div class="cast-character">${actor.character}</div>
@@ -637,6 +727,7 @@ class TVSeriesPlayer {
             </div>
         `).join('');
     }
+    
     
     updateSimilar(series) {
         const container = document.getElementById('similar-list');
@@ -1189,4 +1280,5 @@ document.addEventListener('DOMContentLoaded', () => {
     window.tvSeriesPlayer = new TVSeriesPlayer();
     
     console.log('📺 TOMITO TV Player جاهز للتشغيل!');
+    console.log('🎭 خاصية النقر على الممثلين مفعلة!');
 });
