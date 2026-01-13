@@ -1,11 +1,10 @@
 /**
  * ============================================
- * ADVANCED DEVTOOLS DETECTION SYSTEM
+ * DEVTOOLS AUTO-EXIT PROTECTION
  * ============================================
  * ⚠️ FOR EDUCATIONAL PURPOSES ONLY
  * 
- * هذا الكود لأغراض التعلم فقط لفهم تقنيات الحماية
- * ملاحظة: أي حماية client-side يمكن تجاوزها
+ * عند فتح DevTools، الصفحة تخرج تلقائياً
  * ============================================
  */
 
@@ -14,60 +13,50 @@
   
     // ==================== الإعدادات ====================
     const CONFIG = {
-      blockDuration: 10 * 60 * 1000, // 10 دقائق
-      checkInterval: 500, // فحص كل نصف ثانية
-      storageKey: 'devtools_block_time',
-      violationKey: 'devtools_violations',
-      maxViolations: 3,
-      debugMode: false // للتجربة فقط
+      checkInterval: 300, // فحص كل 300ms (أسرع)
+      redirectUrl: 'about:blank', // الصفحة اللي بغيتي تخرج ليها
+      // خيارات أخرى:
+      // redirectUrl: 'https://google.com'
+      // redirectUrl: window.location.origin + '/blocked.html'
+      
+      closeTab: true, // محاولة إغلاق التبويب (ما يخدمش دائماً)
+      showWarning: false, // false = خروج مباشر، true = تحذير أولاً
+      warningDuration: 3000, // مدة التحذير قبل الخروج
+      
+      debugMode: false // true للتجربة بدون خروج
     };
   
     // ==================== حالة النظام ====================
     const State = {
       isDevToolsOpen: false,
-      violations: 0,
-      lastCheck: Date.now(),
-      detectionMethods: {
-        windowSize: false,
-        debugger: false,
-        toString: false,
-        performance: false,
-        firebug: false
-      }
+      warningShown: false,
+      exitTriggered: false
     };
   
-    // ==================== 1. الكشف عن DevTools ====================
+    // ==================== الكشف عن DevTools ====================
     
     /**
-     * طريقة 1: فحص حجم النافذة
-     * تعتمد على أن DevTools تأخذ مساحة من الشاشة
+     * طريقة 1: فحص حجم النافذة (الأسرع)
      */
     function detectByWindowSize() {
-      const widthThreshold = 160;
-      const heightThreshold = 160;
-      
+      const threshold = 160;
       const widthDiff = window.outerWidth - window.innerWidth;
       const heightDiff = window.outerHeight - window.innerHeight;
-      
-      return widthDiff > widthThreshold || heightDiff > heightThreshold;
+      return widthDiff > threshold || heightDiff > threshold;
     }
   
     /**
-     * طريقة 2: استخدام debugger
-     * إذا كانت DevTools مفتوحة، سيتوقف التنفيذ
+     * طريقة 2: debugger timing
      */
     function detectByDebugger() {
       const start = performance.now();
-      debugger; // سيتوقف هنا إذا كانت DevTools مفتوحة
+      debugger;
       const end = performance.now();
-      
-      // إذا استغرق أكثر من 100ms، معناها توقف عند debugger
       return (end - start) > 100;
     }
   
     /**
-     * طريقة 3: toString() trap
-     * عند طباعة object في console، يتم استدعاء toString
+     * طريقة 3: toString trap
      */
     function detectByToString() {
       let detected = false;
@@ -76,512 +65,380 @@
       Object.defineProperty(element, 'id', {
         get: function() {
           detected = true;
-          return 'devtools-detector';
+          return 'detect';
         }
       });
       
-      // طباعة في console (ستحدث فقط إذا كانت مفتوحة)
       console.log('%c', element);
-      console.clear(); // مسح الأثر
-      
+      console.clear();
       return detected;
     }
   
     /**
-     * طريقة 4: فحص Firebug
-     * للمتصفحات القديمة
+     * طريقة 4: console.log timing
      */
-    function detectFirebug() {
-      return window.console && 
-             (window.console.firebug || 
-              window.console.exception);
-    }
-  
-    /**
-     * طريقة 5: فحص أدوات console
-     */
-    function detectConsoleAPI() {
-      const devtools = /./;
-      devtools.toString = function() {
-        State.isDevToolsOpen = true;
-        return 'devtools';
-      };
-      console.log('%c', devtools);
-      console.clear();
-    }
-  
-    /**
-     * دالة رئيسية للكشف - تجمع كل الطرق
-     */
-    function detectDevTools() {
-      const methods = {
-        windowSize: detectByWindowSize(),
-        debugger: detectByDebugger(),
-        firebug: detectFirebug()
-      };
-      
-      // حفظ النتائج
-      State.detectionMethods = methods;
-      
-      // إذا أي طريقة اكتشفت DevTools
-      return Object.values(methods).some(detected => detected);
-    }
-  
-    // ==================== 2. نظام العقوبات ====================
-    
-    /**
-     * تسجيل انتهاك جديد
-     */
-    function recordViolation() {
-      State.violations++;
-      
-      // حفظ في localStorage
-      const violations = getViolations();
-      violations.push({
-        timestamp: Date.now(),
-        methods: {...State.detectionMethods}
+    function detectByConsole() {
+      let detected = false;
+      const obj = {};
+      Object.defineProperty(obj, 'toString', {
+        get: function() {
+          detected = true;
+          return '';
+        }
       });
-      
-      localStorage.setItem(CONFIG.violationKey, JSON.stringify(violations));
-      
-      if (CONFIG.debugMode) {
-        console.warn(`⚠️ Violation #${State.violations} recorded`);
-      }
+      console.log(obj);
+      console.clear();
+      return detected;
     }
   
     /**
-     * الحصول على الانتهاكات المحفوظة
+     * الكشف الشامل
      */
-    function getViolations() {
-      try {
-        const stored = localStorage.getItem(CONFIG.violationKey);
-        return stored ? JSON.parse(stored) : [];
-      } catch {
-        return [];
-      }
+    function isDevToolsOpen() {
+      return detectByWindowSize() || 
+             detectByDebugger() || 
+             detectByToString() ||
+             detectByConsole();
     }
   
-    /**
-     * حظر الجلسة
-     */
-    function blockSession() {
-      localStorage.setItem(CONFIG.storageKey, Date.now().toString());
-      showBlockOverlay();
-      
-      // تجميد الصفحة
-      if (!CONFIG.debugMode) {
-        freezePage();
-      }
-    }
-  
-    /**
-     * فحص إذا كانت الجلسة محظورة
-     */
-    function isSessionBlocked() {
-      const blockTime = localStorage.getItem(CONFIG.storageKey);
-      if (!blockTime) return false;
-      
-      const elapsed = Date.now() - parseInt(blockTime);
-      return elapsed < CONFIG.blockDuration;
-    }
-  
-    /**
-     * تجميد الصفحة بالكامل
-     */
-    function freezePage() {
-      // إيقاف كل التفاعلات
-      document.body.style.pointerEvents = 'none';
-      document.body.style.userSelect = 'none';
-      
-      // حلقة لا نهائية (قوية جداً - احذر!)
-      // تم تعطيلها افتراضياً لأنها قد تعطل المتصفح
-      // while(true) { debugger; }
-    }
-  
-    // ==================== 3. واجهة الحظر ====================
+    // ==================== الخروج من الصفحة ====================
     
     /**
-     * عرض شاشة الحظر
+     * محاولة إغلاق التبويب
      */
-    function showBlockOverlay() {
-      // إزالة أي overlay قديم
-      const existing = document.getElementById('devtools-block-overlay');
-      if (existing) existing.remove();
+    function closeTab() {
+      // هذا يخدم فقط إذا الصفحة انفتحت بـ window.open()
+      window.close();
+      
+      // إذا ما قدرش يغلق، يرجع null
+      setTimeout(() => {
+        if (!window.closed) {
+          redirectPage();
+        }
+      }, 100);
+    }
   
+    /**
+     * إعادة التوجيه لصفحة أخرى
+     */
+    function redirectPage() {
+      // محاولات متعددة للخروج
+      try {
+        window.location.href = CONFIG.redirectUrl;
+      } catch(e) {
+        try {
+          window.location.replace(CONFIG.redirectUrl);
+        } catch(e) {
+          try {
+            window.location.assign(CONFIG.redirectUrl);
+          } catch(e) {
+            // آخر محاولة: صفحة فارغة
+            document.body.innerHTML = '';
+            document.write('<!DOCTYPE html><html><body></body></html>');
+          }
+        }
+      }
+    }
+  
+    /**
+     * الخروج الفوري من الصفحة
+     */
+    function exitPage() {
+      if (State.exitTriggered) return;
+      State.exitTriggered = true;
+  
+      if (CONFIG.debugMode) {
+        console.warn('🚨 DevTools detected! Would exit now...');
+        return;
+      }
+  
+      // محاولة إغلاق التبويب أولاً
+      if (CONFIG.closeTab) {
+        closeTab();
+      } else {
+        redirectPage();
+      }
+    }
+  
+    /**
+     * عرض تحذير قبل الخروج
+     */
+    function showWarningAndExit() {
+      if (State.warningShown) return;
+      State.warningShown = true;
+  
+      // إنشاء overlay التحذير
       const overlay = document.createElement('div');
-      overlay.id = 'devtools-block-overlay';
       overlay.innerHTML = `
         <style>
-          #devtools-block-overlay {
+          .devtools-warning {
             position: fixed;
             inset: 0;
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            background: #ff0000;
             z-index: 2147483647;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-family: Arial, sans-serif;
             color: white;
-            animation: fadeIn 0.3s ease-in;
+            animation: flash 0.5s infinite;
           }
           
-          @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+          @keyframes flash {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
           }
           
-          .block-content {
+          .warning-content {
             text-align: center;
-            max-width: 500px;
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            animation: slideUp 0.5s ease-out;
+            font-size: 40px;
+            font-weight: bold;
+            text-transform: uppercase;
           }
           
-          @keyframes slideUp {
-            from { transform: translateY(30px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-          }
-          
-          .icon {
+          .countdown {
             font-size: 80px;
-            margin-bottom: 20px;
-            animation: pulse 2s infinite;
-          }
-          
-          @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-          }
-          
-          h1 {
-            font-size: 28px;
-            margin: 0 0 15px 0;
-            color: #ff4444;
-          }
-          
-          p {
-            font-size: 16px;
-            line-height: 1.6;
-            color: rgba(255, 255, 255, 0.8);
-            margin: 10px 0;
-          }
-          
-          .timer {
             margin-top: 20px;
-            padding: 15px;
-            background: rgba(255, 68, 68, 0.1);
-            border-radius: 10px;
-            font-size: 14px;
-            color: #ff4444;
-          }
-          
-          .violation-count {
-            margin-top: 15px;
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.6);
           }
         </style>
         
-        <div class="block-content">
-          <div class="icon">🔒</div>
-          <h1>Developer Tools Detected</h1>
-          <p>تم اكتشاف أدوات المطورين</p>
-          <p>الرجاء إغلاق Inspect وإعادة تحميل الصفحة</p>
-          <div class="timer" id="block-timer">
-            Session blocked for: <span id="time-remaining">calculating...</span>
-          </div>
-          <div class="violation-count">
-            Violations: ${State.violations} / ${CONFIG.maxViolations}
+        <div class="devtools-warning">
+          <div class="warning-content">
+            <div>⚠️ DEVTOOLS DETECTED</div>
+            <div>تم اكتشاف أدوات المطورين</div>
+            <div class="countdown" id="countdown">3</div>
           </div>
         </div>
       `;
   
       document.body.appendChild(overlay);
-      document.body.style.overflow = 'hidden';
-      
-      // تحديث المؤقت
-      updateTimer();
-    }
   
-    /**
-     * تحديث مؤقت الحظر
-     */
-    function updateTimer() {
-      const timerElement = document.getElementById('time-remaining');
-      if (!timerElement) return;
-      
-      const blockTime = parseInt(localStorage.getItem(CONFIG.storageKey));
-      const endTime = blockTime + CONFIG.blockDuration;
+      // العد التنازلي
+      let count = 3;
+      const countdownEl = document.getElementById('countdown');
       
       const interval = setInterval(() => {
-        const remaining = endTime - Date.now();
+        count--;
+        if (countdownEl) countdownEl.textContent = count;
         
-        if (remaining <= 0) {
+        if (count <= 0) {
           clearInterval(interval);
-          location.reload();
-          return;
+          exitPage();
         }
-        
-        const minutes = Math.floor(remaining / 60000);
-        const seconds = Math.floor((remaining % 60000) / 1000);
-        timerElement.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
       }, 1000);
     }
   
-    // ==================== 4. منع الاختصارات ====================
+    /**
+     * معالج الكشف
+     */
+    function handleDetection() {
+      if (!State.isDevToolsOpen && isDevToolsOpen()) {
+        State.isDevToolsOpen = true;
+        
+        if (CONFIG.showWarning) {
+          showWarningAndExit();
+        } else {
+          exitPage();
+        }
+      }
+    }
+  
+    // ==================== منع الاختصارات ====================
     
     /**
-     * منع اختصارات لوحة المفاتيح
+     * منع فتح DevTools بالاختصارات
      */
-    function preventKeyboardShortcuts(e) {
+    function preventShortcuts(e) {
       // F12
       if (e.key === 'F12') {
         e.preventDefault();
-        recordViolation();
-        if (State.violations >= CONFIG.maxViolations) {
-          blockSession();
-        }
+        exitPage();
         return false;
       }
       
-      // Ctrl+Shift+I (DevTools)
+      // Ctrl+Shift+I
       if (e.ctrlKey && e.shiftKey && e.key === 'I') {
         e.preventDefault();
-        recordViolation();
-        if (State.violations >= CONFIG.maxViolations) {
-          blockSession();
-        }
+        exitPage();
         return false;
       }
       
-      // Ctrl+Shift+J (Console)
+      // Ctrl+Shift+J
       if (e.ctrlKey && e.shiftKey && e.key === 'J') {
         e.preventDefault();
-        recordViolation();
+        exitPage();
         return false;
       }
       
-      // Ctrl+Shift+C (Inspect)
+      // Ctrl+Shift+C
       if (e.ctrlKey && e.shiftKey && e.key === 'C') {
         e.preventDefault();
-        recordViolation();
+        exitPage();
         return false;
       }
       
       // Ctrl+U (View Source)
       if (e.ctrlKey && e.key === 'u') {
         e.preventDefault();
-        return false;
-      }
-      
-      // Ctrl+S (Save Page)
-      if (e.ctrlKey && e.key === 's') {
-        e.preventDefault();
+        exitPage();
         return false;
       }
     }
   
-    // ==================== 5. منع القائمة اليمنى ====================
+    // ==================== منع القائمة اليمنى ====================
     
-    /**
-     * منع القائمة اليمنى
-     */
     function preventContextMenu(e) {
       e.preventDefault();
-      e.stopPropagation();
+      exitPage();
       return false;
     }
   
-    // ==================== 6. حماية النسخ ====================
+    // ==================== المراقبة المستمرة ====================
     
     /**
-     * حماية النسخ
+     * بدء المراقبة
+     */
+    function startMonitoring() {
+      // فحص دوري سريع
+      setInterval(handleDetection, CONFIG.checkInterval);
+      
+      // فحص عند تغيير حجم النافذة
+      window.addEventListener('resize', handleDetection);
+      
+      // فحص عند focus
+      window.addEventListener('focus', handleDetection);
+      
+      // فحص عند blur (قد يكون فتح DevTools)
+      window.addEventListener('blur', handleDetection);
+    }
+  
+    // ==================== الحماية الإضافية ====================
+    
+    /**
+     * منع النسخ
      */
     function preventCopy(e) {
       e.preventDefault();
-      e.clipboardData.setData('text/plain', '© Protected Content - Copying is not allowed');
-      
-      // إشعار بصري اختياري
-      showCopyAlert();
-    }
-  
-    /**
-     * إشعار بصري عند محاولة النسخ
-     */
-    function showCopyAlert() {
-      const alert = document.createElement('div');
-      alert.style.cssText = `
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: #ff4444;
-        color: white;
-        padding: 15px 25px;
-        border-radius: 10px;
-        font-family: sans-serif;
-        z-index: 9999999;
-        animation: slideIn 0.3s ease-out;
-      `;
-      alert.textContent = '⚠️ Copying is not allowed';
-      document.body.appendChild(alert);
-      
-      setTimeout(() => alert.remove(), 2000);
-    }
-  
-    // ==================== 7. منع السحب ====================
-    
-    /**
-     * منع سحب العناصر
-     */
-    function preventDrag(e) {
-      e.preventDefault();
       return false;
     }
   
-    // ==================== 8. منع التحديد ====================
-    
     /**
-     * منع تحديد النص
+     * منع التحديد
      */
     function preventSelection() {
       document.body.style.userSelect = 'none';
       document.body.style.webkitUserSelect = 'none';
-      document.body.style.mozUserSelect = 'none';
-      document.body.style.msUserSelect = 'none';
     }
   
-    // ==================== 9. المراقبة المستمرة ====================
-    
     /**
-     * حلقة المراقبة الرئيسية
-     */
-    function startMonitoring() {
-      setInterval(() => {
-        if (detectDevTools()) {
-          if (!State.isDevToolsOpen) {
-            State.isDevToolsOpen = true;
-            recordViolation();
-            
-            if (State.violations >= CONFIG.maxViolations) {
-              blockSession();
-            }
-          }
-        } else {
-          State.isDevToolsOpen = false;
-        }
-      }, CONFIG.checkInterval);
-    }
-  
-    // ==================== 10. حماية Console ====================
-    
-    /**
-     * تعطيل console (اختياري)
+     * تعطيل console
      */
     function disableConsole() {
-      if (CONFIG.debugMode) return; // لا نعطله في وضع التجربة
+      if (CONFIG.debugMode) return;
       
-      const methods = ['log', 'warn', 'error', 'info', 'debug', 'trace'];
-      methods.forEach(method => {
-        console[method] = function() {};
+      const noop = () => {};
+      ['log', 'warn', 'error', 'info', 'debug', 'trace'].forEach(method => {
+        console[method] = noop;
       });
     }
   
-    // ==================== 11. الحماية من التلاعب ====================
+    // ==================== الحماية من Breakpoints ====================
     
     /**
-     * حماية الكود من التعديل
+     * حلقة debugger مستمرة (قوية جداً!)
      */
-    function protectCode() {
-      // تجميد كائنات النظام
-      Object.freeze(Object.prototype);
-      Object.freeze(Array.prototype);
-      Object.freeze(Function.prototype);
-      
-      // منع التعديل على localStorage
-      const originalSetItem = localStorage.setItem;
-      localStorage.setItem = function(key, value) {
-        if (key === CONFIG.storageKey || key === CONFIG.violationKey) {
-          return originalSetItem.call(this, key, value);
-        }
-      };
+    function antiDebugLoop() {
+      setInterval(() => {
+        debugger; // سيوقف التنفيذ إذا DevTools مفتوحة
+      }, 100);
     }
   
-    // ==================== 12. التهيئة ====================
+    // ==================== فحص أولي ====================
     
     /**
-     * تهيئة النظام
+     * فحص عند التحميل
      */
-    function initialize() {
-      // فحص إذا كانت الجلسة محظورة
-      if (isSessionBlocked()) {
-        showBlockOverlay();
-        freezePage();
-        return;
+    function initialCheck() {
+      // فحص فوري
+      if (isDevToolsOpen()) {
+        if (CONFIG.debugMode) {
+          console.warn('🚨 DevTools already open on page load!');
+        } else {
+          exitPage();
+        }
       }
-      
-      // تحميل الانتهاكات السابقة
-      State.violations = getViolations().length;
+    }
+  
+    // ==================== التهيئة ====================
+    
+    function initialize() {
+      // فحص أولي
+      initialCheck();
       
       // تفعيل المستمعين
-      document.addEventListener('keydown', preventKeyboardShortcuts);
+      document.addEventListener('keydown', preventShortcuts);
       document.addEventListener('contextmenu', preventContextMenu);
       document.addEventListener('copy', preventCopy);
-      document.addEventListener('dragstart', preventDrag);
       
       // منع التحديد
       preventSelection();
       
-      // حماية الكود
-      protectCode();
+      // تعطيل console
+      disableConsole();
       
       // بدء المراقبة
       startMonitoring();
       
-      // تعطيل console (اختياري)
-      if (!CONFIG.debugMode) {
-        disableConsole();
-      }
+      // حلقة anti-debug (اختياري - قوي جداً)
+      // antiDebugLoop(); // ⚠️ فك التعليق بحذر
       
       if (CONFIG.debugMode) {
-        console.log('🛡️ Protection System Initialized');
-        console.log('State:', State);
+        console.log('🛡️ Auto-Exit Protection Active');
+        console.log('Config:', CONFIG);
       }
     }
   
     // ==================== التشغيل ====================
     
-    // التشغيل عند تحميل الصفحة
+    // التشغيل الفوري
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', initialize);
     } else {
       initialize();
     }
   
-    // التشغيل الفوري أيضاً
-    initialize();
+    // نسخة احتياطية - تشغيل فوري
+    setTimeout(initialize, 0);
   
   })();
   
   /**
    * ============================================
-   * ملاحظات تعليمية مهمة:
+   * طريقة الاستخدام:
    * ============================================
    * 
-   * 1. كل هذه التقنيات يمكن تجاوزها من قبل مطور محترف
-   * 2. الحماية الحقيقية يجب أن تكون على الخادم (server-side)
-   * 3. هذا الكود للتعلم فقط وفهم كيفية عمل هذه الأنظمة
-   * 4. استخدام debugMode: true للتجربة بدون تجميد الصفحة
+   * 1. للتجربة (بدون خروج):
+   *    debugMode: true
    * 
-   * طرق التجاوز الشائعة:
-   * - تعطيل JavaScript
-   * - استخدام متصفح مختلف
-   * - تعديل localStorage مباشرة
-   * - استخدام proxy/middleware
-   * - فتح DevTools قبل تحميل الصفحة
+   * 2. للإنتاج (خروج فوري):
+   *    debugMode: false
+   *    showWarning: false
    * 
+   * 3. مع تحذير (عد تنازلي 3 ثواني):
+   *    showWarning: true
+   * 
+   * 4. تغيير الصفحة المستهدفة:
+   *    redirectUrl: 'https://google.com'
+   * 
+   * ============================================
+   * ملاحظات:
+   * ============================================
+   * 
+   * - closeTab يخدم فقط للصفحات المفتوحة بـ window.open()
+   * - redirectUrl يخدم في كل الحالات
+   * - about:blank = صفحة فارغة
+   * - يمكنك توجيهه لصفحة مخصصة "blocked.html"
+   * 
+   * ⚠️ تنبيه: هذا للتعلم فقط!
    * ============================================
    */
