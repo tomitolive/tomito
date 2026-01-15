@@ -400,7 +400,7 @@ async function loadAllSeries() {
         let url;
         
         if (currentGenre === 'all') {
-            url = `${BASE_URL}/tv/popular?api_key=${API_KEY}&language=ar&page=${currentPage}`;
+            url = `${BASE_URL}/tv/popular?api_key=${API_KEY}&language=en&page=${currentPage}`;
         } else {
             url = `${BASE_URL}/discover/tv?api_key=${API_KEY}&language=ar&with_genres=${currentGenre}&page=${currentPage}`;
         }

@@ -24,7 +24,7 @@ async function initSeriesCarousel() {
     try {
         // جلب المسلسلات الرائجة
         const response = await fetch(
-            `${BASE_URL}/tv/top_rated?api_key=${API_KEY}&language=ar&page=1`
+            `${BASE_URL}/tv/top_rated?api_key=${API_KEY}&language=en&page=1`
         );
         
         if (!response.ok) throw new Error('فشل تحميل بيانات المسلسلات');

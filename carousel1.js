@@ -24,7 +24,7 @@ async function initEnhancedCarousel() {
     try {
         // جلب الأفلام الرائجة
         const response = await fetch(
-            `${BASE_URL}/movie/now_playing?api_key=${API_KEY}&language=ar&page=1&region=EG`
+            `${BASE_URL}/movie/now_playing?api_key=${API_KEY}&language=en&page=1&region=EG`
         );
         
         if (!response.ok) throw new Error('فشل تحميل البيانات');

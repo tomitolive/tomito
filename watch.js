@@ -13,6 +13,17 @@ const CONFIG = {
 // ===========================================
 const SERVERS = [
     {
+        id: 'moviesapi',
+        name: '🎯 MoviesAPI',
+        movieUrl: 'https://moviesapi.club/movie/',
+        tvUrl: 'https://moviesapi.club/tv/',
+        quality: 'HD+',
+        icon: 'fa-database',
+        color: '#e67e22',
+        type: 'both',
+        description: 'قاعدة بيانات ضخمة'
+    },
+    {
         id: '2embed',
         name: '🎞️ 2Embed',
         movieUrl: 'https://www.2embed.cc/embed/',
@@ -55,17 +66,6 @@ const SERVERS = [
         color: '#8e44ad',
         type: 'both',
         description: 'تحديث تلقائي'
-    },
-    {
-        id: 'moviesapi',
-        name: '🎯 MoviesAPI',
-        movieUrl: 'https://moviesapi.club/movie/',
-        tvUrl: 'https://moviesapi.club/tv/',
-        quality: 'HD+',
-        icon: 'fa-database',
-        color: '#e67e22',
-        type: 'both',
-        description: 'قاعدة بيانات ضخمة'
     },
     {
         id: 'hnembed',

@@ -287,10 +287,10 @@ async function loadAllMovies() {
         
         if (currentGenre === 'all') {
             // Load popular movies by default
-            url = `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=ar&page=${currentPage}`;
+            url = `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=en&page=${currentPage}`;
         } else {
             // Load movies by genre
-            url = `${BASE_URL}/discover/movie?api_key=${API_KEY}&language=ar&with_genres=${currentGenre}&page=${currentPage}`;
+            url = `${BASE_URL}/discover/movie?api_key=${API_KEY}&language=en&with_genres=${currentGenre}&page=${currentPage}`;
         }
         
         const res = await fetch(url);
@@ -360,7 +360,7 @@ function createMovieCard(movie) {
                 <span class="movie-year">${releaseYear}</span>
                 <span class="movie-genre">${genreName}</span>
             </div>
-            <p class="movie-description">${overview}</p>
+            
             <div class="movie-actions">
                 <button class="play-btn-sm" onclick="playMovie(${movie.id})">
                     <i class="fas fa-play"></i> شاهد
