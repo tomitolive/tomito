@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="icon" href="/favicon.ico">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>تومي تو | شاهد أحدث المسلسلات العربية والأجنبية مجاناً</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <script src="anti-devtools.js"></script>
+
+    <meta name="description" content="تومي تو - أفضل موقع لمشاهدة المسلسلات العربية والأجنبية والتركية بجودة عالية HD مجاناً">
+    
+    <link rel="stylesheet" href="styel.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="CAROUSEL.css">
+
+    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+       
+<body>
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <!-- نفس الـ Header الموجود في صفحة الأفلام -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo--area">
+                <h1>
+                    <a href="index.html" title="تومي تو | مشاهدة افلام و مسلسلات اون لاين">
+                        <div class="en-text">
+                            <span>mito</span>
+                            <span>o</span>
+                            <span>T</span>
+                        </div>
+                        <div class="ar-text">
+                            <span>ميتو</span>
+                            <span>تو</span>
+                        </div>
+                    </a>  
+                </h1>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-film"></i>
+                    الأفلام
+                </a>
+                
+                <a href="tv.html" class="nav-link active">
+                    <i class="fas fa-tv"></i>
+                    المسلسلات
+                </a>
+                
+                
+                <a href="#" class="nav-link">
+                    <i class="fas fa-fire"></i>
+                    الأكثر مشاهدة
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-calendar-alt"></i>
+                    القادمة
+                </a>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" class="search-input" id="search" placeholder="ابحث...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم الفلاتر الملونة (مثل الأفلام) -->
+    <section class="color-filters" id="colorFilters">
+        <div class="color-filters-container">
+            
+        </div>
+    </section>
+
+    <!-- قسم الفلاتر الإضافية -->
+    
+    <section class="hero-carousel series-hero-carousel" id="seriesHeroCarousel">
+        <div class="carousel-container series-carousel-container">
+            <div class="carousel-wrapper">
+                <!-- الحاوية الرئيسية -->
+                <div class="carousel-main series-carousel-main">
+                    <!-- الخلفية الكاملة -->
+                    <div class="carousel-backdrop" id="seriesCarouselBackdrop"></div>
+                    
+                    <!-- التدرج اللوني -->
+                    <div class="carousel-gradient"></div>
+                    
+                    <!-- محتوى الكاروسيل -->
+                    <div class="carousel-content-wrapper">
+                        <div class="carousel-info-section">
+                            <!-- المعلومات الأساسية -->
+                            <div class="movie-main-info">
+                                <h1 class="movie-title" id="seriesCarouselTitle">جاري التحميل...</h1>
+                                <div class="movie-meta">
+                                    <span class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <span id="seriesCarouselRating">0.0</span>
+                                    </span>
+                                    <span class="year" id="seriesCarouselYear">2024</span>
+                                    <span class="duration" id="seriesCarouselDuration">45 دقيقة</span>
+                                    <span class="seasons" id="seriesCarouselSeasons">2 مواسم</span>
+                                    <span class="quality">HD</span>
+                                </div>
+                                
+                               
+                                
+                                <!-- الأزرار -->
+                                <div class="action-buttons">
+                                    <button class="play-button" onclick="playCurrentSeries()">
+                                        <i class="fas fa-play"></i>
+                                        <span>مشاهدة الآن</span>
+                                    </button>
+                                   
+                                </div>
+                                
+                                <!-- التصنيفات -->
+                                <div class="movie-genres" id="seriesCarouselGenres">
+                                    <span class="genre-tag">دراما</span>
+                                    <span class="genre-tag">رومانسي</span>
+                                </div>
+                            </div>
+                            
+                            <!-- الصورة المصغرة -->
+                            <div class="movie-poster-container">
+                                <div class="poster-wrapper">
+                                    <img src="https://image.tmdb.org/t/p/w300/wwemzKWzjKYJFfCeiB57q3r4Bcm.png" 
+                                         alt="صورة المسلسل" 
+                                         class="movie-poster"
+                                         id="seriesCarouselPoster">
+                                    <div class="poster-overlay">
+                                        <i class="fas fa-play-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- أزرار التنقل -->
+               
+                
+                <!-- المؤشرات -->
+                <div class="carousel-indicators" id="seriesCarouselIndicators">
+                    <div class="indicator active"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                </div>
+                
+                <!-- عداد المسلسلات -->
+                <div class="slide-counter">
+                    <span id="seriesCurrentSlide">1</span>
+                    <span class="divider">/</span>
+                    <span id="seriesTotalSlides">5</span>
+                </div>
+                
+                <!-- عناصر التحكم -->
+                <div class="carousel-controls">
+                    <button class="control-btn" onclick="pauseSeriesAutoPlay()" id="seriesPauseBtn">
+                        <i class="fas fa-pause"></i>
+                    </button>
+                    <button class="control-btn" onclick="toggleSeriesFullscreen()">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- المحتوى الرئيسي -->
+    <section class="extended-filters" id="extendedFilters">
+        <div class="extended-filters-container">
+            <div class="extended-filters-grid" id="extendedFiltersGrid">
+                <!-- سيتم ملؤها بواسطة JavaScript -->
+            </div>
+            <div class="filters-dropdown" id="filtersDropdown"></div>
+        </div>
+    </section>
+    <main class="main-content">
+        <!-- قسم البانر (مثل الأفلام) -->
+        <section class="featured-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-crown"></i>
+                    المسلسلات المميزة
+                </h2>
+                <button class="view-all-btn" onclick="showAllSeries()">
+                    <i class="fas fa-eye"></i>
+                    عرض الكل
+                </button>
+            </div>
+       <!-- هذا الجزء يضاف في قسم المسلسلات -->
+
+        <!-- قسم جميع المسلسلات -->
+        <section class="all-movies-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-tv"></i>
+                    جميع المسلسلات
+                </h2>
+            </div>
+            
+            <div class="movies-grid" id="seriesGrid">
+                <!-- سيتم ملؤها بواسطة JavaScript -->
+            </div>
+            
+            <!-- الترقيم اللانهائي -->
+            <nav aria-label="Page navigation" class="pagination" id="pagination">
+                <!-- سيتم ملؤها بواسطة JavaScript -->
+            </nav>
+        </section>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-film"></i>
+                Tomito - عالم السينما الخاص بك
+            </div>
+         
+            <p class="copyright">
+                © 2024 Tomito Movies. جميع بيانات المسلسلات مقدمة من TMDB. هذا الموقع هو عرض توضيحي لأغراض تعليمية.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ملفات JavaScript -->
+    <script src="tv.js"></script>
+    <script src="logo.js"></script>
+    <script src="header.js"></script>
+    <script src="tv-carousel1.js"></script>
+    <script src="autosearch.js"></script>
+    <script src="anti-devtools.js"></script>
+    <script src="https://pl28403821.effectivegatecpm.com/d3/d3/09/d3d309d5b609d8a118c7e64605eac7b5.js"></script>
+</body>
+</html>

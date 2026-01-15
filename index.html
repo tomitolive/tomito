@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+    <head>
+        <link rel="icon" type="image/x-icon" href="https://tomito.xyz/favicon.ico">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tomito - Watch Movies & TV Shows Online</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="header-tv.css">
+        <link rel="stylesheet" href="logo.css">
+        <link rel="stylesheet" href="styel.css">
+        <link rel="stylesheet" href="CAROUSEL.css">
+        <link rel="stylesheet" href="autosearch.css">
+        
+        
+        
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Tomito - شاهد أحدث الأفلام والمسلسلات العربية والأجنبية مترجمة بجودة عالية HD بدون إعلانات. مكتبة ضخمة تتجدد يومياً.">
+        <meta name="keywords" content="افلام, مسلسلات, مشاهدة افلام اون لاين, افلام مترجمة, مسلسلات اجنبية, Tomito">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://tomito.xyz/">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+        <!-- <script src="anti-devtools.js"></script>S -->
+
+<!-- Open Graph -->
+<meta property="og:title" content="Tomito | مشاهدة الأفلام والمسلسلات أونلاين">
+<meta property="og:description" content="مكتبة ضخمة من الأفلام والمسلسلات المترجمة بجودة عالية HD.">
+<meta property="og:image" content="https://tomito.xyz/cover.jpg">
+<meta property="og:url" content="https://tomito.xyz">
+<meta property="og:type" content="website">
+
+
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- المنطقة الجديدة للوغو - كما في المثال -->
+            <div class="logo--area">
+                <h1>
+                    <a href="#" title="Tomito | مشاهدة افلام و مسلسلات اون لاين">
+                        <div class="en-text">
+                            <span>mito</span>
+                            <span>o</span>
+                            <span>T</span>
+                        </div>
+                        <div class="ar-text">
+                            <span>ميتو</span>
+                            <span>تو</span>
+                        </div>
+                    </a>
+                </h1>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    الصفحة الرئيسية
+                </a>
+                
+              
+                <a href="#" class="nav-link">
+                    <i class="fas fa-calendar-alt"></i>
+                    القادمة
+                </a>
+                <a href="tv.html" class="nav-link">
+                    <i class="fas fa-tv"></i>
+                    المسلسلات
+                </a>
+                
+            </div>
+            
+             
+            <div class="search-container">
+                <input type="text" class="search-input" id="search" placeholder="ابحث...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+           
+        </div>
+    </nav>
+
+    <!-- Color Filters Section -->
+    <section class="color-filters" id="colorFilters">
+       
+        </div>
+    </section>
+
+    
+    <!-- هذا الجزء يضاف في البداية بعد navbar -->
+    <section class="hero-carousel" id="heroCarousel">
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <!-- الحاوية الرئيسية -->
+                <div class="carousel-main">
+                    <!-- الخلفية الكاملة -->
+                    <div class="carousel-backdrop" id="carouselBackdrop"></div>
+                    
+                    <!-- التدرج اللوني -->
+                    <div class="carousel-gradient"></div>
+                    
+                    <!-- محتوى الكاروسيل -->
+                    <div class="carousel-content-wrapper">
+                        <div class="carousel-info-section">
+                            <!-- المعلومات الأساسية -->
+                            <div class="movie-main-info">
+                                <h1 class="movie-title" id="carouselTitle">جاري التحميل...</h1>
+                                <div class="movie-meta">
+                                    <span class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <span id="carouselRating">0.0</span>
+                                    </span>
+                                    <span class="year" id="carouselYear">2024</span>
+                                    <span class="duration" id="carouselDuration">120 دقيقة</span>
+                                    <span class="quality">HD</span>
+                                </div>
+                                
+                               
+                                
+                                <!-- الأزرار -->
+                                <div class="action-buttons">
+                                    <button class="play-button" onclick="playCurrentMovie()">
+                                        <i class="fas fa-play"></i>
+                                        <span>مشاهدة الآن</span>
+                                    </button>
+                                    
+                                </div>
+                                
+                                <!-- التصنيفات -->
+                                <div class="movie-genres" id="carouselGenres">
+                                    <span class="genre-tag">أكشن</span>
+                                    <span class="genre-tag">مغامرة</span>
+                                    <span class="genre-tag">دراما</span>
+                                </div>
+                            </div>
+                            
+                            <!-- الصورة المصغرة -->
+                            <div class="movie-poster-container">
+                                <div class="poster-wrapper">
+                                    <img src="https://image.tmdb.org/t/p/w300/wwemzKWzjKYJFfCeiB57q3r4Bcm.png" 
+                                    alt="صورة الفيلم" 
+                                    class="movie-poster"
+                                     id="carouselPoster">
+                                <div class="poster-overlay">
+                                    <i class="fas fa-play-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            
+            <!-- المؤشرات -->
+            <div class="carousel-indicators" id="carouselIndicators">
+                <div class="indicator active"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+            </div>
+            
+            <!-- عداد الأفلام -->
+            <div class="slide-counter">
+                <span id="currentSlide">1</span>
+                <span class="divider">/</span>
+                <span id="totalSlides">5</span>
+            </div>
+            
+            <!-- عناصر التحكم -->
+            <div class="carousel-controls">
+                <button class="control-btn" onclick="pauseAutoPlay()" id="pauseBtn">
+                    <i class="fas fa-pause"></i>
+                </button>
+                <button class="control-btn" onclick="toggleFullscreen()">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<main class="main-content">
+    
+    <!-- Extended Filters Section -->
+    <section class="extended-filters" id="extendedFilters">
+        <div class="extended-filters-container">
+            <div class="extended-filters-grid" id="extendedFiltersGrid">
+                <!-- سيتم ملؤها بواسطة JavaScript -->
+            </div>
+            <!-- زر المزيد - مخفي حاليا وسيظهر عند الحاجة -->
+            <div class="filters-dropdown" id="filtersDropdown"></div>
+        </div>
+    </section>
+        <!-- All Movies Section -->
+        <section class="all-movies-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-film"></i>
+                    جميع الأفلام
+                </h2>
+            </div>
+            
+            <!-- Movies Grid -->
+            <div class="movies-grid" id="moviesGrid">
+                <!-- سيتم ملؤها بواسطة JavaScript -->
+            </div>
+            
+            <!-- Infinite Pagination -->
+            <nav aria-label="Page navigation" class="pagination" id="pagination">
+                <!-- سيتم ملؤها بواسطة JavaScript -->
+            </nav>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-film"></i>
+                Tomito - عالم السينما الخاص بك
+            </div>
+           
+            <p class="copyright">
+                © 2024 Tomito Movies. جميع بيانات الأفلام مقدمة من TMDB. هذا الموقع هو عرض توضيحي لأغراض تعليمية.
+            </p>
+        </div>
+
+        <!-- Full Screen Image Modal -->
+<div class="fullscreen-modal" id="fullscreenModal">
+   
+  
+</div>
+    </footer>
+
+<!-- في index.html -->
+<script src="logo.js"></script>
+<script src="header.js"></script>
+<script src="api.js"></script>          <!-- ✅ أولاً -->
+<script src="carousel1.js"></script>
+<script src="autosearch.js"></script>   <!-- ✅ أخيراً -->
+<script src="https://pl28403821.effectivegatecpm.com/d3/d3/09/d3d309d5b609d8a118c7e64605eac7b5.js"></script>
+
+
+  
+
+</body>
+</html>             

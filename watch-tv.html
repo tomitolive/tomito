@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomito - مشاهدة المسلسل</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <script src="anti-devtools.js"></script>
+
+    <link rel="stylesheet" href="watch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التقدم -->
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <!-- شاشة التحميل -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">جاري تحميل بيانات المسلسل...</div>
+    </div>
+
+    <!-- الهيدر -->
+    <header class="site-header">
+        <div class="header-content">
+            <div class="header-left">
+                <a href="tv.html" class="logo">TOMITO</a>
+                <a href="tv.html" class="back-btn">
+                    <i class="fas fa-arrow-right"></i>
+                    <span>عودة</span>
+                </a>
+            </div>
+            <div class="header-right">
+                <div class="series-title-header" id="series-title">جاري التحميل...</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- البانر العلوي -->
+    <section class="series-banner" id="series-banner">
+        <div class="banner-background"></div>
+        <div class="banner-content">
+            <h2 id="banner-title">جاري تحميل العنوان...</h2>
+            <p id="banner-description">جاري تحميل الوصف التفصيلي...</p>
+            <div class="banner-meta">
+                <span class="meta-item" id="seasons-count">
+                    <i class="fas fa-layer-group"></i> <span id="seasons-text">تحميل المواسم...</span>
+                </span>
+                <span class="meta-item" id="status">
+                    <i class="fas fa-broadcast-tower"></i> <span id="status-text">جاري التحديث...</span>
+                </span>
+                <span class="meta-item" id="rating">
+                    <i class="fas fa-star"></i> <span id="rating-text">--</span>
+                </span>
+            </div>
+            <div class="banner-actions">
+                <button class="play-btn-lg" id="play-now-btn">
+                    <i class="fas fa-play-circle"></i> تشغيل الحلقة
+                </button>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الفيديو - تم نقله للأعلى -->
+    <section class="video-section-main" id="video-section">
+        
+            
+            <div class="video-wrapper">
+                <iframe id="video-player" 
+                        frameborder="0" 
+                        allowfullscreen
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        title="مشغل فيديو المسلسل">
+                </iframe>
+              
+            </div>
+
+            <!-- أزرار السيرفر -->
+            <div class="server-section">
+                <h3 class="server-title"><i class="fas fa-server"></i> خوادم البث</h3>
+                <div class="server-buttons" id="server-buttons">
+                    <!-- سيتم تعبئتها بالجافاسكريبت -->
+                </div>
+            </div>
+
+            <!-- اختيار الموسم والحلقة -->
+            <div class="episode-selector" id="episode-selector">
+                <div class="selector-header">
+                    <h3><i class="fas fa-list"></i> اختيار الحلقة</h3>
+                </div>
+                <div class="selector-content">
+                    <div class="selector-row">
+                        <div class="selector-group">
+                            <label for="season-select">
+                                <i class="fas fa-layer-group"></i> الموسم:
+                            </label>
+                            <select id="season-select" class="season-select">
+                                <option value="">جاري التحميل...</option>
+                            </select>
+                        </div>
+                        
+                        <div class="selector-group">
+                            <label for="episode-select">
+                                <i class="fas fa-play"></i> الحلقة:
+                            </label>
+                            <select id="episode-select" class="episode-select">
+                                <option value="">اختر الموسم أولاً</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المواسم -->
+   
+
+    <!-- معلومات المسلسل -->
+    <section class="series-info-section">
+        <div class="container">
+            <div class="series-details">
+                <div class="poster-container">
+                    <img id="series-poster" class="poster" alt="ملصق المسلسل">
+                    <div class="poster-overlay">
+                        <div class="rating-badge" id="rating-badge">
+                            <i class="fas fa-star"></i> <span>--</span>
+                        </div>
+                        <div class="quality-badge">HD</div>
+                    </div>
+                </div>
+                
+                <div class="info-content">
+                    <div class="series-header">
+                        <h1 id="series-title-full">...</h1>
+                        <div class="release-year" id="release-year">--</div>
+                    </div>
+                    
+                    <div class="series-meta-grid" id="series-meta"></div>
+                    
+                    <div class="series-overview">
+                        <h3><i class="fas fa-scroll"></i> ملخص القصة</h3>
+                        <p id="overview-text">...</p>
+                    </div>
+                    
+                    <div class="series-details-grid">
+                        <div class="details-col">
+                            <div class="series-genres">
+                                <h4><i class="fas fa-tags"></i> التصنيفات</h4>
+                                <div class="genres-container" id="genres-list"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="details-col">
+                            <div class="series-networks">
+                                <h4><i class="fas fa-satellite-dish"></i> شبكات البث</h4>
+                                <div class="networks-container" id="networks-list"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- طاقم التمثيل -->
+    <section class="cast-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-user-tie"></i> طاقم التمثيل</h2>
+            <div class="cast-grid" id="cast-list"></div>
+        </div>
+    </section>
+
+    <!-- مسلسلات مشابهة -->
+    <section class="similar-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-thumbs-up"></i> مقترحات مشابهة</h2>
+            <div class="similar-grid" id="similar-list"></div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">TOMITO</div>
+                <p class="footer-description">منصة الترفيه الأولى لمشاهدة الأفلام والمسلسلات العربية والعالمية</p>
+             
+                <p class="copyright">© 2024 جميع الحقوق محفوظة - Tomito Entertainment</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ملف JavaScript الخاص بالمسلسلات -->
+    <script src="watch-tv.js"></script>
+    <script src="anti-devtools.js"></script>
+    <script src="https://pl28403821.effectivegatecpm.com/d3/d3/09/d3d309d5b609d8a118c7e64605eac7b5.js"></script>
+</body>
+</html>
