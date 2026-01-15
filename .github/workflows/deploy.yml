@@ -3,7 +3,7 @@ name: Deploy Obfuscated Site
 on:
   push:
     branches:
-      - main  # هادشي غيخدم ملي دير push لـ main
+      - main
 
 jobs:
   build-and-deploy:
@@ -20,19 +20,26 @@ jobs:
       - name: Install Obfuscator
         run: npm install javascript-obfuscator -g
 
-      - name: Obfuscate JS Files
+      - name: Prepare Dist and Obfuscate
         run: |
           mkdir dist
-          # كيشفر كاع ملفات JS وكيحطهم فـ dist
-          javascript-obfuscator ./ --output ./dist --compact true --self-defending true
-          # كينسخ ملفات HTML و CSS و الصور لـ dist
+          # 1. تشفير كاع ملفات JS وحطهم فـ dist
+          javascript-obfuscator ./ --output ./dist --compact true --self-defending true --string-array true --rotate-string-array true --shuffle-string-array true --string-array-threshold 0.75
+          
+          # 2. نسخ ملفات HTML و CSS (هادو مكيتحولوش ولكن كيتنقلو لـ dist)
           cp *.html dist/ 2>/dev/null || true
           cp *.css dist/ 2>/dev/null || true
+          
+          # 3. نسخ الملفات الأخرى المهمة (الصور، Sitemap، robots...)
           cp *.png dist/ 2>/dev/null || true
           cp *.ico dist/ 2>/dev/null || true
+          cp *.txt dist/ 2>/dev/null || true
+          cp *.xml dist/ 2>/dev/null || true
+          cp CNAME dist/ 2>/dev/null || true
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # غادي ينشر غير المجلد لي فيه الكود المشفر
+          publish_dir: ./dist
+          publish_branch: gh-pages  # الموقع غيتنشر من هاد البرانش
