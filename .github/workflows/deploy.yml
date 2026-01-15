@@ -3,7 +3,7 @@ name: Deploy Obfuscated Site
 on:
   push:
     branches:
-      - main
+      - main  # كيتنفذ ملي كدير push لـ main
 
 jobs:
   build-and-deploy:
@@ -23,15 +23,23 @@ jobs:
       - name: Prepare Dist and Obfuscate
         run: |
           mkdir dist
-          # 1. تشفير كاع ملفات JS وحطهم فـ dist
-          javascript-obfuscator ./ --output ./dist --compact true --self-defending true --string-array true --rotate-string-array true --shuffle-string-array true --string-array-threshold 0.75
+          # 1. تشفير ملفات JavaScript (تم تصحيح الأوامر للإصدار الجديد)
+          javascript-obfuscator ./ --output ./dist \
+            --compact true \
+            --self-defending true \
+            --string-array true \
+            --string-array-rotate true \
+            --string-array-shuffle true \
+            --string-array-threshold 0.75
           
-          # 2. نسخ ملفات HTML و CSS (هادو مكيتحولوش ولكن كيتنقلو لـ dist)
+          # 2. نسخ ملفات HTML و CSS لـ المجلد dist
           cp *.html dist/ 2>/dev/null || true
           cp *.css dist/ 2>/dev/null || true
           
-          # 3. نسخ الملفات الأخرى المهمة (الصور، Sitemap، robots...)
+          # 3. نسخ باقي الملفات (الصور، الإيقونات، الخرائط...)
           cp *.png dist/ 2>/dev/null || true
+          cp *.jpg dist/ 2>/dev/null || true
+          cp *.jpeg dist/ 2>/dev/null || true
           cp *.ico dist/ 2>/dev/null || true
           cp *.txt dist/ 2>/dev/null || true
           cp *.xml dist/ 2>/dev/null || true
@@ -42,4 +50,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          publish_branch: gh-pages  # الموقع غيتنشر من هاد البرانش
+          publish_branch: gh-pages  # هاد البرانش هو لي غيكون فيه الكود المشفر
