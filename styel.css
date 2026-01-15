@@ -3245,4 +3245,45 @@ body {
 }
 body{
     font-family: "cairo";
+}/* ========================================
+   MOVIES GRID - FIXED FOR DESKTOP 5 & MOBILE 2
+   ======================================== */
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 بطاقات في السطر على الكمبيوتر */
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 1024px) {
+    .movies-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 بطاقات على التابلت */
+    }
+}
+
+@media (max-width: 768px) {
+    .movies-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 بطاقات على الهاتف */
+        gap: 1rem;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .movies-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 بطاقات حتى في الشاشات الصغيرة */
+        gap: 0.8rem;
+        padding: 0 8px;
+    }
+}
+
+@media (max-width: 375px) {
+    .movies-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 بطاقات في الهواتف الصغيرة جداً */
+        gap: 0.6rem;
+        padding: 0 5px;
+    }
 }
