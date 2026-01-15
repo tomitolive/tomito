@@ -13,6 +13,17 @@ const CONFIG = {
 // ===========================================
 const SERVERS = [
     {
+        id: 'vidsrc_me',
+        name: '🌟 VidSrc.me',
+        movieUrl: 'https://vidsrc.me/embed/movie/',
+        tvUrl: 'https://vidsrc.me/embed/tv/',
+        quality: 'HD',
+        icon: 'fa-star',
+        color: '#16a085',
+        type: 'both',
+        description: 'بديل ممتاز'
+    },
+    {
         id: 'moviesapi',
         name: '🎯 MoviesAPI',
         movieUrl: 'https://moviesapi.club/movie/',
@@ -44,17 +55,6 @@ const SERVERS = [
         color: '#e74c3c',
         type: 'both',
         description: 'جودة عالية وسرعة ممتازة'
-    },
-    {
-        id: 'vidsrc_me',
-        name: '🌟 VidSrc.me',
-        movieUrl: 'https://vidsrc.me/embed/movie/',
-        tvUrl: 'https://vidsrc.me/embed/tv/',
-        quality: 'HD',
-        icon: 'fa-star',
-        color: '#16a085',
-        type: 'both',
-        description: 'بديل ممتاز'
     },
     {
         id: 'autoembed',
