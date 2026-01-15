@@ -694,3 +694,6 @@
         border: 2px solid white;
     }
 }
+body{
+    font-family: "cairo";
+}
