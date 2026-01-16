@@ -368,9 +368,7 @@ function createCarouselCard(series) {
                 <button class="carousel-play-btn" onclick="playSeries(${series.id})">
                     <i class="fas fa-play"></i> شاهد الآن
                 </button>
-                <button class="carousel-save-btn" onclick="toggleSave(${series.id}, '${series.name.replace(/'/g, "\\'")}', '${series.poster_path}', ${series.vote_average}, this)">
-                    <i class="far fa-heart"></i>
-                </button>
+               
             </div>
         </div>
     `;
@@ -769,9 +767,7 @@ function displayTVSuggestions(series, query, container) {
                             <i class="fas fa-star"></i> ${rating}
                         </span>
                         <span class="suggestion-year">${year}</span>
-                        <span class="suggestion-seasons">
-                            <i class="fas fa-layer-group"></i> ${seasons} season${seasons > 1 ? 's' : ''}
-                        </span>
+                      
                     </div>
                     <p class="suggestion-overview">${overview}</p>
                 </div>
@@ -780,10 +776,7 @@ function displayTVSuggestions(series, query, container) {
                             onclick="event.stopPropagation(); watchTVSeries(${show.id})">
                         <i class="fas fa-play"></i>
                     </button>
-                    <button class="suggestion-btn save-btn ${isSaved ? 'saved' : ''}" 
-                            onclick="event.stopPropagation(); saveTVSeries(${show.id}, '${title.replace(/'/g, "\\'")}', '${show.poster_path}', ${show.vote_average || 0}, this)">
-                        <i class="${isSaved ? 'fas' : 'far'} fa-heart"></i>
-                    </button>
+                  
                 </div>
             </div>
         `;
@@ -927,21 +920,14 @@ function createTVSeriesCard(series) {
             </div>
             <div class="movie-info">
                 <span class="movie-year">${year}</span>
-                <span class="movie-seasons">
-                    <i class="fas fa-layer-group"></i> ${seasons} season${seasons > 1 ? 's' : ''}
-                </span>
+               
             </div>
-            <div class="movie-description">
-                ${series.overview ? truncateText(series.overview, 100) : 'No description available'}
-            </div>
+            
             <div class="movie-actions">
                 <button class="play-btn-sm" onclick="watchTVSeries(${series.id})">
                     <i class="fas fa-play"></i> Watch
                 </button>
-                <button class="save-btn-sm ${isSaved ? 'saved' : ''}" 
-                        onclick="saveTVSeries(${series.id}, '${title.replace(/'/g, "\\'")}', '${series.poster_path}', ${series.vote_average || 0}, this)">
-                    <i class="${isSaved ? 'fas' : 'far'} fa-heart"></i>
-                </button>
+              
             </div>
         </div>
     `;

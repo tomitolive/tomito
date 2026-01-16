@@ -1303,10 +1303,7 @@ function displayMovieSuggestions(movies, query, container) {
                             onclick="event.stopPropagation(); goToWatch(${movie.id}, 'movie')">
                         <i class="fas fa-play"></i>
                     </button>
-                    <button class="suggestion-btn save-btn ${isSaved ? 'saved' : ''}" 
-                            onclick="event.stopPropagation(); toggleSave(${movie.id}, '${title.replace(/'/g, "\\'")}', '${movie.poster_path}', ${movie.vote_average || 0}, this)">
-                        <i class="${isSaved ? 'fas' : 'far'} fa-heart"></i>
-                    </button>
+                    
                 </div>
             </div>
         `;
@@ -1566,10 +1563,7 @@ async function searchMoviesWithSuggestions(query, container) {
                             <p class="suggestion-overview">${item.overview ? item.overview.substring(0, 80) + '...' : 'No description available'}</p>
                         </div>
                         <div class="suggestion-action">
-                            <button class="suggestion-btn save-btn ${isSaved ? 'saved' : ''}" 
-                                    onclick="event.stopPropagation(); toggleSave(${item.id}, '${title.replace(/'/g, "\\'")}', '${item.poster_path}', ${item.vote_average || 0}, this)">
-                                <i class="${isSaved ? 'fas' : 'far'} fa-heart"></i>
-                            </button>
+                        
                         </div>
                     </div>
                 `;
@@ -1728,10 +1722,7 @@ async function searchMoviesWithSuggestions(query, container) {
                             <p class="suggestion-overview">${item.overview ? item.overview.substring(0, 80) + '...' : ''}</p>
                         </div>
                         <div class="suggestion-action">
-                            <button class="suggestion-btn save-btn ${isSaved ? 'saved' : ''}" 
-                                    onclick="event.stopPropagation(); toggleSave(${item.id}, '${title.replace(/'/g, "\\'")}', '${item.poster_path}', ${item.vote_average || 0}, this)">
-                                <i class="${isSaved ? 'fas' : 'far'} fa-heart"></i>
-                            </button>
+                           
                         </div>
                     </div>
                 `;
