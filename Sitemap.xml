@@ -4,145 +4,381 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
-    <!-- الصفحة الرئيسية -->
+    <!-- ========== الصفحات الأساسية ========== -->
+    
+    <!-- الصفحة الرئيسية - أعلى أولوية -->
     <url>
-        <loc>https://www.tomito.xyz/</loc>
-        <lastmod>2025-01-04</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://tomito.xyz/</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>hourly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="ar" href="https://www.tomito.xyz/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://tomito.xyz/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tomito.xyz/en/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://tomito.xyz/fr/"/>
     </url>
 
     <!-- صفحة المسلسلات -->
     <url>
-        <loc>https://www.tomito.xyz/tv.html</loc>
-        <lastmod>2025-01-04</lastmod>
+        <loc>https://tomito.xyz/tv.html</loc>
+        <lastmod>2025-01-16</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="ar" href="https://www.tomito.xyz/tv.html"/>
+        <priority>0.95</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://tomito.xyz/tv.html"/>
     </url>
 
-    <!-- صفحات التصنيفات -->
+    <!-- صفحة جميع الأفلام -->
     <url>
-        <loc>https://www.tomito.xyz/genre/action</loc>
-        <lastmod>2025-01-04</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <loc>https://tomito.xyz/movies</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.95</priority>
     </url>
 
+    <!-- ========== الصفحات الساخنة - أولوية عالية ========== -->
+    
     <url>
-        <loc>https://www.tomito.xyz/genre/comedy</loc>
-        <lastmod>2025-01-04</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://www.tomito.xyz/genre/drama</loc>
-        <lastmod>2025-01-04</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <loc>https://tomito.xyz/trending</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.95</priority>
     </url>
 
     <url>
-        <loc>https://www.tomito.xyz/genre/horror</loc>
-        <lastmod>2025-01-04</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://www.tomito.xyz/genre/romance</loc>
-        <lastmod>2025-01-04</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://www.tomito.xyz/genre/thriller</loc>
-        <lastmod>2025-01-04</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://www.tomito.xyz/genre/animation</loc>
-        <lastmod>2025-01-04</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- صفحات خاصة -->
-    <url>
-        <loc>https://www.tomito.xyz/trending</loc>
-        <lastmod>2025-01-04</lastmod>
+        <loc>https://tomito.xyz/popular</loc>
+        <lastmod>2025-01-16</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://www.tomito.xyz/new-releases</loc>
-        <lastmod>2025-01-04</lastmod>
+        <loc>https://tomito.xyz/new-releases</loc>
+        <lastmod>2025-01-16</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://www.tomito.xyz/upcoming</loc>
-        <lastmod>2025-01-04</lastmod>
+        <loc>https://tomito.xyz/top-rated</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/upcoming</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- ========== الأنواع الرئيسية ========== -->
+    
+    <url>
+        <loc>https://tomito.xyz/genre/action</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/genre/comedy</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/genre/drama</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/genre/horror</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/genre/romance</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/genre/thriller</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/genre/animation</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/genre/sci-fi</loc>
+        <lastmod>2025-01-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://www.tomito.xyz/popular</loc>
-        <lastmod>2025-01-04</lastmod>
+        <loc>https://tomito.xyz/genre/fantasy</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/genre/adventure</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/genre/crime</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/genre/mystery</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <!-- ========== أفلام حسب المنطقة - مهم للسيو المحلي ========== -->
+    
+    <url>
+        <loc>https://tomito.xyz/arabic-movies</loc>
+        <lastmod>2025-01-16</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
 
-    <!-- صفحات إضافية -->
     <url>
-        <loc>https://www.tomito.xyz/about</loc>
-        <lastmod>2025-01-04</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <loc>https://tomito.xyz/egyptian-movies</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.85</priority>
     </url>
 
     <url>
-        <loc>https://www.tomito.xyz/contact</loc>
-        <lastmod>2025-01-04</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <loc>https://tomito.xyz/moroccan-movies</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
     </url>
 
     <url>
-        <loc>https://www.tomito.xyz/privacy-policy</loc>
-        <lastmod>2025-01-04</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
+        <loc>https://tomito.xyz/lebanese-movies</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://www.tomito.xyz/terms-of-service</loc>
-        <lastmod>2025-01-04</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
+        <loc>https://tomito.xyz/gulf-movies</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
 
-    <!-- 
-    ملاحظة: يجب إضافة صفحات الأفلام الفردية ديناميكياً
-    مثال:
     <url>
-        <loc>https://www.tomito.xyz/movie/123456</loc>
-        <lastmod>2025-01-04</lastmod>
+        <loc>https://tomito.xyz/turkish-movies</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/indian-movies</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/korean-movies</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ========== أفلام حسب السنة ========== -->
+    
+    <url>
+        <loc>https://tomito.xyz/movies/2025</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/movies/2024</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/movies/2023</loc>
+        <lastmod>2025-01-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://image.tmdb.org/t/p/original/poster.jpg</image:loc>
-            <image:title>عنوان الفيلم</image:title>
-        </image:image>
     </url>
+
+    <!-- ========== مسلسلات حسب النوع ========== -->
+    
+    <url>
+        <loc>https://tomito.xyz/tv/turkish-series</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/tv/arabic-series</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/tv/korean-drama</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/tv/anime</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- ========== صفحات البحث والاكتشاف ========== -->
+    
+    <url>
+        <loc>https://tomito.xyz/search</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/discover</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <!-- ========== صفحات المعلومات ========== -->
+    
+    <url>
+        <loc>https://tomito.xyz/about</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/contact</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/privacy-policy</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/terms-of-service</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://tomito.xyz/dmca</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <!-- ========== مثال لصفحة فيلم مع صورة ========== -->
+    <!--
+    <url>
+        <loc>https://tomito.xyz/movie/550/fight-club</loc>
+        <lastmod>2025-01-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://image.tmdb.org/t/p/original/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg</image:loc>
+            <image:title>فيلم Fight Club مترجم - Tomito</image:title>
+            <image:caption>شاهد فيلم Fight Club مترجم بجودة عالية HD على Tomito</image:caption>
+        </image:image>
+        <video:video>
+            <video:thumbnail_loc>https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg</video:thumbnail_loc>
+            <video:title>فيلم Fight Club مترجم</video:title>
+            <video:description>فيلم Fight Club من إخراج David Fincher بطولة Brad Pitt و Edward Norton</video:description>
+            <video:content_loc>https://tomito.xyz/watch/movie/550</video:content_loc>
+            <video:player_loc>https://tomito.xyz/player/movie/550</video:player_loc>
+            <video:duration>8340</video:duration>
+            <video:rating>4.8</video:rating>
+            <video:family_friendly>no</video:family_friendly>
+        </video:video>
+    </url>
+    -->
+
+    <!-- 
+    ========================================================================
+    ملاحظات مهمة للـ SEO:
+    ========================================================================
+    
+    1. التحديث التلقائي:
+       - استخدم السكريبت generate-sitemap.js لإضافة الأفلام تلقائياً
+       - حدّث lastmod عند إضافة محتوى جديد
+    
+    2. الأولويات (Priority):
+       - 1.0 = الصفحة الرئيسية فقط
+       - 0.9-0.95 = الصفحات الساخنة والمهمة
+       - 0.8-0.85 = صفحات الأنواع والتصنيفات
+       - 0.7-0.8 = صفحات الأفلام الفردية
+       - 0.3-0.5 = صفحات المعلومات
+    
+    3. تكرار التحديث (Changefreq):
+       - hourly = للصفحات الديناميكية جداً
+       - daily = للمحتوى اليومي
+       - weekly = للمحتوى الأسبوعي
+       - monthly = للمحتوى الشهري
+       - yearly = للصفحات الثابتة
+    
+    4. حجم الملف:
+       - لا تتجاوز 50,000 URL في ملف واحد
+       - لا تتجاوز 50MB
+       - إذا زاد العدد، أنشئ sitemap index
+    
+    5. الصور والفيديو:
+       - أضف image:image لكل فيلم لتحسين نتائج البحث بالصور
+       - أضف video:video لتحسين ظهور الفيديوهات في جوجل
+    
+    ========================================================================
     -->
 
 </urlset>

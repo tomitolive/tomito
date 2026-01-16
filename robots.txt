@@ -1,11 +1,7 @@
-# Robots.txt for www.tomito.xyz
-# Updated: 2025-01-04
-
-# السماح لجميع محركات البحث
 User-agent: *
 Allow: /
+Crawl-delay: 1
 
-# منع الوصول للملفات والمجلدات الحساسة
 Disallow: /admin/
 Disallow: /api/
 Disallow: /config/
@@ -15,45 +11,28 @@ Disallow: /temp/
 Disallow: /cache/
 Disallow: /logs/
 
-# منع فهرسة ملفات معينة
-Disallow: /*.json$
-Disallow: /*.xml$
-Disallow: /*.log$
+Disallow: /*.json
+Disallow: /*.log
 
-# منع البحث في معلمات URL معينة
 Disallow: /*?*session=
 Disallow: /*?*ref=
 Disallow: /*?*utm_
 
-# السماح لملفات CSS و JavaScript
-Allow: /*.css$
-Allow: /*.js$
-
-# السماح للصور
+Allow: /*.css
+Allow: /*.js
 Allow: /images/
-Allow: /*.jpg$
-Allow: /*.jpeg$
-Allow: /*.png$
-Allow: /*.gif$
-Allow: /*.webp$
-Allow: /*.svg$
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.webp
 
-# قواعد خاصة لـ Google Bot
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
+Crawl-delay: 0.5
 
-# قواعد خاصة لـ Bing Bot
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
 
-# قواعد خاصة لـ Yandex Bot
-User-agent: Yandex
-Allow: /
-Crawl-delay: 2
-
-# منع بعض الروبوتات السيئة
 User-agent: MJ12bot
 Disallow: /
 
@@ -61,12 +40,6 @@ User-agent: AhrefsBot
 Disallow: /
 
 User-agent: SemrushBot
-Crawl-delay: 5
+Disallow: /
 
-# مسار Sitemap
-Sitemap: https://www.tomito.xyz/sitemap.xml
-Sitemap: https://www.tomito.xyz/sitemap-movies.xml
-Sitemap: https://www.tomito.xyz/sitemap-tv.xml
-
-# معلومات إضافية
-# Host: www.tomito.xyz
+Sitemap: https://tomito.xyz/sitemap.xml
