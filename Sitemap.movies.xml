@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <!-- Sitemap الصفحات الرئيسية -->
+    <sitemap>
+        <loc>https://tomito.xyz/sitemap.xml</loc>
+        <lastmod>2025-01-16</lastmod>
+    </sitemap>
+    
+    <!-- Sitemap الأفلام -->
+    <sitemap>
+        <loc>https://tomito.xyz/sitemap-movies.xml</loc>
+        <lastmod>2025-01-16</lastmod>
+    </sitemap>
+    
+    <!-- Sitemap المسلسلات -->
+    <sitemap>
+        <loc>https://tomito.xyz/sitemap-tv.xml</loc>
+        <lastmod>2025-01-16</lastmod>
+    </sitemap>
+    
+    <!-- Sitemap الممثلين -->
+    <sitemap>
+        <loc>https://tomito.xyz/sitemap-actors.xml</loc>
+        <lastmod>2025-01-16</lastmod>
+    </sitemap>
+    
+    <!-- Sitemap حسب السنة -->
+    <sitemap>
+        <loc>https://tomito.xyz/sitemap-2025.xml</loc>
+        <lastmod>2025-01-16</lastmod>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://tomito.xyz/sitemap-2024.xml</loc>
+        <lastmod>2025-01-16</lastmod>
+    </sitemap>
+    
+</sitemapindex>
