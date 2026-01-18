@@ -1997,3 +1997,10 @@ function showNotification(message) {
 }function goToWatch(id, type = "movie") {
     window.location.href = `watch.html?id=${id}&type=${type}`;
 }
+
+let moreBtn = document.querySelector('.more-filters-btn');
+let dropdown = document.getElementById('filtersDropdown');
+
+moreBtn.addEventListener('click', () => {
+  dropdown.classList.toggle('show');
+});

@@ -550,3 +550,5 @@ window.playCurrentSeries = playCurrentSeries;
 window.showSeriesDetails = showSeriesDetails;
 window.toggleSeriesFavorite = toggleSeriesFavorite;
 window.goToSeriesSlide = goToSeriesSlide;
+
+
