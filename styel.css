@@ -3537,7 +3537,7 @@ body{
 ================================ */
 .extended-filters-container {
     width: 100%;
-    background: #000;
+ 
     padding: 20px 0;
   }
   
@@ -3559,7 +3559,7 @@ body{
   ================================ */
   .extended-filter-btn,
   .more-filters-btn {
-    background: #140000;          /* أحمر غامق مائل للسود */
+    background: #4b0202;          /* أحمر غامق مائل للسود */
     color: #fff;
     border: none;
     padding: 12px 24px;
