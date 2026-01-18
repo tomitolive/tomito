@@ -208,7 +208,7 @@ function setupExtendedFilters() {
     if (genres.length > visibleFilterCount - 1) {
         const moreButton = document.createElement('button');
         moreButton.className = 'more-filters-btn';
-        moreButton.innerHTML = '<i class="fas fa-chevron-down"></i> المزيد';
+        moreButton.innerHTML = '<i class="fas fa-chevron-down"></i>  أنواع الأفلام';
         moreButton.onclick = toggleMoreFilters;
         filtersGrid.appendChild(moreButton);
         
