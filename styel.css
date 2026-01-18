@@ -1262,13 +1262,7 @@ body {
 /* ========================================
    EXTENDED FILTERS
    ======================================== */
-.extended-filters {
-   
-    padding: 1rem 5%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 0;
-    position: relative;
-}
+
 
 .extended-filters-container {
     max-width: 1400px;
@@ -3538,4 +3532,108 @@ body{
     .suggestion-overview {
         display: none;
     }
-}
+}/* ===============================
+   CONTAINER
+================================ */
+.extended-filters-container {
+    width: 100%;
+    background: #000;
+    padding: 20px 0;
+  }
+  
+  /* ===============================
+     GRID CENTER
+  ================================ */
+  .extended-filters-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 0 16px;
+  }
+  
+  /* ===============================
+     BUTTONS
+  ================================ */
+  .extended-filter-btn,
+  .more-filters-btn {
+    background: #140000;          /* أحمر غامق مائل للسود */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 
+      background 0.25s ease,
+      padding 0.25s ease,
+      color 0.25s ease;
+  }
+  
+  /* HOVER */
+  .extended-filter-btn:hover,
+  .more-filters-btn:hover {
+    background: #8b0000;          /* Dark Red */
+    color: #fff;
+  }
+  
+  /* ACTIVE (كبر المسافة الداخلية) */
+  .extended-filter-btn.active {
+    background: #ff0000;
+    color: #000;
+    padding: 16px 30px;           /* هنا كتكبر */
+  }
+  
+  /* ===============================
+     DROPDOWN
+  ================================ */
+  .filters-dropdown {
+    max-width: 1200px;
+    margin: 16px auto 0;
+    padding: 0 16px;
+    display: none;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  
+  .filters-dropdown.show {
+    display: flex;
+  }
+  
+  /* ===============================
+     MOBILE
+  ================================ */
+  @media (max-width: 768px) {
+  
+    .extended-filters-grid .extended-filter-btn {
+      display: none;
+    }
+  
+    .more-filters-btn {
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+/* ===============================
+   DROPDOWN SPACING
+================================ */
+#filtersDropdown {
+    max-width: 1200px;
+    margin: 16px auto 0;
+    padding: 24px 20px;  /* زدت المسافة الداخلية كبيرة */
+    display: none;
+    justify-content: center;
+    gap: 18px;           /* المسافة بين البوطونات */
+    flex-wrap: wrap;
+    border-top: 2px solid #ff0000; /* اختياري، يبقى الخط العلوي */
+    box-sizing: border-box;
+  }
+  
+  #filtersDropdown.show {
+    display: flex;
+  }
+    
