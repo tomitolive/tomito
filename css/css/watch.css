@@ -21,7 +21,7 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    padding-top: 70px; /* هامش لحماية المحتوى من الهيدر */
+    /* padding-top: 70px; هامش لحماية المحتوى من الهيدر */
 }
 
 .container {
@@ -1233,7 +1233,7 @@ body {
 /* الأجهزة اللوحية (768px - 1023px) */
 @media (min-width: 768px) {
     body {
-        padding-top: 80px;
+        /* padding-top: 80px; */
     }
     
     .site-header {
@@ -1418,7 +1418,7 @@ body {
     body {
         padding-left: env(safe-area-inset-left);
         padding-right: env(safe-area-inset-right);
-        padding-top: calc(70px + env(safe-area-inset-top));
+        /* padding-top: calc(70px + env(safe-area-inset-top)); */
     }
     
     .site-header {
@@ -1519,7 +1519,7 @@ body {
  line-height: 1.6;
  overflow-x: hidden;
  -webkit-font-smoothing: antialiased;
- padding-top: 70px; /* مهم جداً! */
+ /* padding-top: 70px; مهم جداً! */
 }
 
 .container {
@@ -2012,7 +2012,7 @@ RESPONSIVE
 
 @media (min-width: 768px) {
  body {
-     padding-top: 80px;
+     /* padding-top: 80px; */
  }
 
  .site-header {
@@ -2085,7 +2085,7 @@ body {
     color: #fff;
     line-height: 1.6;
     overflow-x: hidden;
-    padding-top: 70px; /* هذا مهم لحماية المحتوى من الهيدر */
+    /* padding-top: 70px; هذا مهم لحماية المحتوى من الهيدر */
 }
 
 .container {
@@ -2956,7 +2956,7 @@ body {
 /* ======================================== RESPONSIVE DESIGN ======================================== */
 @media (min-width: 768px) {
     body {
-        padding-top: 80px;
+        /* padding-top: 80px; */
     }
     
     .site-header {

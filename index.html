@@ -51,11 +51,11 @@
         
         <!-- CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="header-tv.css">
-        <link rel="stylesheet" href="logo.css">
-        <link rel="stylesheet" href="styel.css">
-        <link rel="stylesheet" href="CAROUSEL.css">
-        <link rel="stylesheet" href="autosearch.css">
+        <link rel="stylesheet" href="css/css/header.css">
+        <link rel="stylesheet" href="css/css/logo.css">
+        <link rel="stylesheet" href="css/css/styel.css">
+        <link rel="stylesheet" href="css/css/CAROUSEL.css">
+      <link rel="stylesheet" href="css/css/carousel.tvvv.css">
         
         <!-- Schema.org للصفحة الرئيسية -->
         <script type="application/ld+json">
@@ -110,63 +110,128 @@
      
         
 
-</head>
+
 <body>
     <!-- Progress Bar -->
     <div class="progress-bar" id="progress-bar"></div>
+    
 
-    <!-- Navigation Bar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <!-- المنطقة الجديدة للوغو - كما في المثال -->
-            <div class="logo--area">
-                <h1>
-                    <a href="#" title="Tomito | مشاهدة افلام و مسلسلات اون لاين">
-                        <div class="en-text">
-                            <span>mito</span>
-                            <span>o</span>
-                            <span>T</span>
-                        </div>
-                        <div class="ar-text">
-                            <span>ميتو</span>
-                            <span>تو</span>
-                        </div>
+    <nav class="navbar">
+      
+        <div class="nav-menu">
+            <div class="links">
+                <!-- Dropdown أفلام -->
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        <i class="fas fa-film"></i>
+                        الأفلام
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
                     </a>
-                </h1>
-            </div>
-            
-            <div class="nav-links">
+                    <div class="dropdown-menu">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-column">
+                                <h4>التصنيفات</h4>
+                                <a href="#" class="dropdown-item" data-category="action"><i class="fas fa-fist-raised"></i> أكشن</a>
+                                <a href="#" class="dropdown-item" data-category="comedy"><i class="fas fa-laugh"></i> كوميديا</a>
+                                <a href="#" class="dropdown-item" data-category="drama"><i class="fas fa-theater-masks"></i> دراما</a>
+                                <a href="#" class="dropdown-item" data-category="horror"><i class="fas fa-ghost"></i> رعب</a>
+                                <a href="#" class="dropdown-item" data-category="romance"><i class="fas fa-heart"></i> رومانسي</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>النوع</h4>
+                                <a href="#" class="dropdown-item" data-subcategory="new"><i class="fas fa-star"></i> جديد</a>
+                                <a href="#" class="dropdown-item" data-subcategory="popular"><i class="fas fa-fire"></i> الأكثر مشاهدة</a>
+                                <a href="#" class="dropdown-item" data-subcategory="top-rated"><i class="fas fa-trophy"></i> الأعلى تقييماً</a>
+                                <a href="#" class="dropdown-item" data-subcategory="upcoming"><i class="fas fa-calendar-plus"></i> قريباً</a>
+                                <a href="#" class="dropdown-item" data-subcategory="trending"><i class="fas fa-chart-line"></i> تريند</a>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dropdown مسلسلات -->
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        <i class="fas fa-tv"></i>
+                        المسلسلات
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-column">
+                                <h4>النوع</h4>
+                                <a href="#" class="dropdown-item" data-series-type="arabic"><i class="fas fa-mosque"></i> عربية</a>
+                                <a href="#" class="dropdown-item" data-series-type="turkish"><i class="fas fa-flag"></i> تركية</a>
+                                <a href="#" class="dropdown-item" data-series-type="american"><i class="fas fa-globe-americas"></i> أمريكية</a>
+                                <a href="#" class="dropdown-item" data-series-type="korean"><i class="fas fa-flag"></i> كورية</a>
+                                <a href="#" class="dropdown-item" data-series-type="anime"><i class="fas fa-dragon"></i> أنمي</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>التصنيف</h4>
+                                <a href="#" class="dropdown-item" data-series-category="drama"><i class="fas fa-theater-masks"></i> دراما</a>
+                                <a href="#" class="dropdown-item" data-series-category="comedy"><i class="fas fa-laugh"></i> كوميديا</a>
+                                <a href="#" class="dropdown-item" data-series-category="action"><i class="fas fa-fist-raised"></i> أكشن</a>
+                                <a href="#" class="dropdown-item" data-series-category="fantasy"><i class="fas fa-hat-wizard"></i> فانتازيا</a>
+                                <a href="#" class="dropdown-item" data-series-category="romance"><i class="fas fa-heart"></i> رومانسي</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>مشاهدة</h4>
+                                <a href="#" class="dropdown-item" data-series-view="ongoing"><i class="fas fa-play-circle"></i> جارية</a>
+                                <a href="#" class="dropdown-item" data-series-view="completed"><i class="fas fa-check-circle"></i> مكتملة</a>
+                                <a href="#" class="dropdown-item" data-series-view="new"><i class="fas fa-star"></i> جديدة</a>
+                                <a href="#" class="dropdown-item" data-series-view="popular"><i class="fas fa-fire"></i> الأكثر مشاهدة</a>
+                                <a href="#" class="dropdown-item" data-series-view="top-rated"><i class="fas fa-trophy"></i> الأعلى تقييماً</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- روابط مباشرة -->
                 <a href="index.html" class="nav-link active">
                     <i class="fas fa-home"></i>
                     الصفحة الرئيسية
                 </a>
-                
-              
                 <a href="tr.index.html" class="nav-link">
-                    <i class="fas fa-calendar-alt"></i>
+                    <i class="fas fa-chart-line"></i>
                     الأكثر مشاهدة
                 </a>
-                <a href="tv.html" class="nav-link">
-                    <i class="fas fa-tv"></i>
-                    المسلسلات
-                </a>
-                
             </div>
-            
-             
+            <!-- البحث المدمج -->
             <div class="search-container">
-                <input type="text" class="search-input" id="search" placeholder="ابحث...">
+                <input type="text" class="search-input" id="search" placeholder="ابحث عن أفلام...">
                 <button class="search-btn">
-                    <i class="fas fa-search"></i>
+                   
                 </button>
+                <!-- نتائج البحث -->
+                <div class="search-results" id="searchResults"></div>
+            </div>
+
+            <div class="logo">
+                <h1>
+                    <div class="logo-text">
+                        <span>TomiTo</span>
+                       
+                    </div>
+                </h1>
             </div>
             
-           
+            
+            
         </div>
+        
+        <button class="hamburger-menu" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
     </nav>
 
-    <!-- Color Filters Section -->
-    <section class="color-filters" id="colorFilters">
+    <div class="title">
+        <h1><i class="fas fa-fire"></i> الأكثر مشاهدة</h1>
+        <p class="page">⚠️ إعلان يُفتح في تبويب آخر، أغلِقه ثم ارجع إلى الموقع. شكرًا لتفهمكم.</p>
+    </div>
+    
        
         </div>
     </section>
@@ -260,28 +325,97 @@
     </div>
 </section>
 
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Netflix Series - TOMITO</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="swiper-style.css">
+</head>
+<body>
+
+    <div class="container">
+       
+        <div class="swiper-container">
+            <div class="swiper-wrapper" id="series-container">
+                <!-- Series will be loaded here by JavaScript -->
+            </div>
+            
+            <!-- Custom Arrows -->
+            <div class="Arrow--Right">
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+            <div class="Arrow--Left">
+                <i class="fa-solid fa-arrow-left-long"></i>
+            </div>
+        </div>
+
+        <div class="ds-container">
+            <a href="category.html?type=series&seriesView=popular"  class="ds-button">
+              <div class='ds-button-content'>
+                <p>أحدث المسلسلات<br>
+                <span class='ds-button-smalltext'>
+                اكتشف أحدث المسلسلات التي يتابعها الجميع الآن. حلقات جديدة، قصص مشوّقة، وأحداث تأخذك إلى عوالم لا تُنسى.
+                </span></p>
+              </div>
+            </a>
+          
+            <a href="category.html?type=series&seriesView=top-rated"  class="ds-button">
+              <div class='ds-button-content'>
+                <p>أفلام مميزة<br>
+                <span class='ds-button-smalltext'>
+                مجموعة منتقاة من أفضل الأفلام بين الأكشن، الدراما، الكوميديا، والتشويق. استمتع بتجربة سينمائية كاملة.
+                </span></p>
+              </div>
+            </a>
+          
+            <a href="tr.index.html"  class="ds-button">
+              <div class='ds-button-content'>
+                <p>الأكثر مشاهدة<br>
+                <span class='ds-button-smalltext'>
+                الأعمال التي تصدّرت المشاهدات ونالت إعجاب الجمهور. إن كنت محتارًا ماذا تشاهد، فهذا القسم هو دليلك.
+                </span></p>
+              </div>
+            </a>
+          </div>
+    </div>
+
+
+    
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" style="display: none;">
+        <div class="spinner"></div>
+        <p>جاري تحميل المسلسلات...</p>
+    </div>
+
+    
+
 <!-- Main Content -->
 <main class="main-content">
     
     <!-- Extended Filters Section -->
     <section class="extended-filters" id="extendedFilters">
-        <div class="extended-filters-container">
-            <div class="extended-filters-grid" id="extendedFiltersGrid">
-                <!-- سيتم ملؤها بواسطة JavaScript -->
-            </div>
-            <!-- زر المزيد - مخفي حاليا وسيظهر عند الحاجة -->
-            <div class="filters-dropdown" id="filtersDropdown"></div>
-        </div>
+        
     </section>
+
     
-        <!-- All Movies Section -->
-        <section class="all-movies-section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <i class="fas fa-film"></i>
-                    جميع الأفلام
-                </h2>
-            </div>
+    
+    <!-- All Movies Section -->
+    <section class="all-movies-section">
+     
+         
             
             <!-- Movies Grid -->
             <div class="movies-grid" id="moviesGrid">
@@ -314,14 +448,17 @@
   
 </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 <!-- في index.html -->
-<script src="logo.js"></script>
-<script src="header.js"></script>
-<script src="api.js"></script>          <!-- ✅ أولاً -->
-<script src="carousel1.js"></script>
-<script src="autosearch.js"></script>   <!-- ✅ أخيراً -->
-<script src="seo.js"></script>
+<script src="js/logo.js"></script>
+<script src="js/sw.js"></script>
+<script src="js/header.js"></script>
+<script src="js/api.js"></script>          <!-- ✅ أولاً -->
+<script src="js/carousel1.js"></script>
+<script src="js/seo.js"></script>
+<script src="js/carousel.tvvv.js"></script>
+
 
 
 
