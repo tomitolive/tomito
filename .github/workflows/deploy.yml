@@ -3,11 +3,12 @@ name: Deploy Obfuscated Site
 on:
   push:
     branches:
-      - main  # كيتنفذ ملي كدير push لـ main
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -18,36 +19,31 @@ jobs:
           node-version: '18'
 
       - name: Install Obfuscator
-        run: npm install javascript-obfuscator -g
+        run: npm install -g javascript-obfuscator
 
-      - name: Prepare Dist and Obfuscate
+      # 🟢 1. نسخ المشروع كامل لـ dist مع استثناءات
+      - name: Copy project to dist
         run: |
           mkdir dist
-          # 1. تشفير ملفات JavaScript (تم تصحيح الأوامر للإصدار الجديد)
-          javascript-obfuscator ./ --output ./dist \
+          rsync -av --progress ./ dist \
+            --exclude dist \
+            --exclude .git \
+            --exclude .github
+
+      # 🟢 2. تشفير غير ملفات JS داخل dist
+      - name: Obfuscate JS files
+        run: |
+          find dist -type f -name "*.js" -exec javascript-obfuscator {} --output {} \
             --compact true \
             --self-defending true \
             --string-array true \
             --string-array-rotate true \
             --string-array-shuffle true \
-            --string-array-threshold 0.75
-          
-          # 2. نسخ ملفات HTML و CSS لـ المجلد dist
-          cp *.html dist/ 2>/dev/null || true
-          cp *.css dist/ 2>/dev/null || true
-          
-          # 3. نسخ باقي الملفات (الصور، الإيقونات، الخرائط...)
-          cp *.png dist/ 2>/dev/null || true
-          cp *.jpg dist/ 2>/dev/null || true
-          cp *.jpeg dist/ 2>/dev/null || true
-          cp *.ico dist/ 2>/dev/null || true
-          cp *.txt dist/ 2>/dev/null || true
-          cp *.xml dist/ 2>/dev/null || true
-          cp CNAME dist/ 2>/dev/null || true
+            --string-array-threshold 0.75 \;
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          publish_branch: gh-pages  # هاد البرانش هو لي غيكون فيه الكود المشفر
+          publish_branch: gh-pages
