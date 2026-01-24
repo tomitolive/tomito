@@ -4534,11 +4534,7 @@ body.netflix-dropdown-open {
    تحسينات خاصة للجوال
    ======================================== */
 @media (max-width: 768px) {
-    .color-filters {
-        margin-top: 120px; /* مساحة أكبر للجوال */
-        padding: 0.8rem 3%;
-    }
-    
+   
     .color-filter-btn {
         padding: 20px 28px;
         min-width: 180px;
@@ -5011,4 +5007,556 @@ body.netflix-dropdown-open {
 .extended-filters-dropdown::-webkit-scrollbar-thumb {
     background: #e50914;
     border-radius: 3px;
+}
+
+
+/* ==================================== */
+/* الأساسيات والتصميم العام */
+/* ==================================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    direction: rtl;
+    background-color: #16151b;
+    color: white;
+}
+
+/* ==================================== */
+/* 🚀 تصميم الـ Navbar (شاشات كبيرة) */
+/* ==================================== */
+.navbar {
+    background-color: #1a1a2e;
+    padding: 0.8rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* اللوجو */
+.logo {
+    flex-shrink: 0;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    background: linear-gradient(45deg, #f07d37, #cf0a0a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo-text span:first-child {
+    color: #f07d37;
+}
+
+.logo-text span:last-child {
+    color: #dc5f00;
+}
+
+/* القائمة الرئيسية */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+/* البحث المدمج */
+.search-container {
+    position: relative;
+    flex: 0 1 400px;
+    max-width: 500px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 3rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    color: white;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.search-input:focus {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #f07d37;
+    box-shadow: 0 0 0 3px rgba(240, 125, 55, 0.2);
+}
+
+.search-btn {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    padding: 0.25rem;
+    transition: color 0.3s ease;
+}
+
+.search-btn:hover {
+    color: #f07d37;
+}
+
+/* نتائج البحث */
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #1e1e2e;
+    border-radius: 12px;
+    margin-top: 0.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    max-height: 400px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1001;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.search-results.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.result-item {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.result-item:hover {
+    background: rgba(240, 125, 55, 0.1);
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-poster {
+    width: 60px;
+    height: 90px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.result-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.result-info {
+    flex-grow: 1;
+}
+
+.result-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: white;
+}
+
+.result-details {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.result-rating {
+    color: #ffc107;
+}
+
+.result-year {
+    color: #6c757d;
+}
+
+.result-overview {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 0.5rem;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.no-results {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.no-results i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+/* الروابط */
+.links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Dropdown أساسي */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle.active {
+    background: rgba(240, 125, 55, 0.15);
+    color: #f07d37;
+}
+
+.dropdown-icon {
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+/* Dropdown القوائم */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #1e1e2e;
+    border-radius: 12px;
+    min-width: 600px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    padding: 1.5rem;
+    display: none;
+    z-index: 1000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.dropdown-column h4 {
+    color: #f07d37;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.dropdown-item:hover {
+    background: rgba(240, 125, 55, 0.1);
+    color: #f07d37;
+    transform: translateX(-5px);
+}
+
+.dropdown-item i {
+    width: 20px;
+    text-align: center;
+    color: #f07d37;
+    opacity: 0.8;
+}
+
+/* الروابط المباشرة */
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: rgba(240, 125, 55, 0.15);
+    color: #f07d37;
+}
+
+/* 🍔 القائمة المنسدلة للجوال */
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.hamburger-menu .bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px 0;
+    background-color: white;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+/* ==================================== */
+/* 📱 تصميم الـ Responsive للجوال */
+/* ==================================== */
+@media (max-width: 1024px) {
+    .nav-menu {
+        gap: 1rem;
+    }
+    
+    .dropdown-menu {
+        min-width: 500px;
+    }
+    
+    .search-container {
+        flex: 0 1 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .hamburger-menu {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: #1a1a2e;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 2rem;
+        transition: right 0.3s ease;
+        overflow-y: auto;
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .search-container {
+        order: 1;
+        flex: none;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    
+    .links {
+        order: 2;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+    
+    .dropdown {
+        width: 100%;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        min-width: 100%;
+        box-shadow: none;
+        margin-top: 0.5rem;
+        display: none;
+        opacity: 1;
+        transform: none;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+    
+    .dropdown-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .nav-link,
+    .dropdown-toggle {
+        width: 100%;
+        justify-content: space-between;
+        border-radius: 10px;
+        margin-bottom: 0.5rem;
+        background: rgba(255, 255, 255, 0.05);
+    }
+    
+    /* تعديل نتائج البحث للجوال */
+    .search-results {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        max-height: calc(100vh - 70px);
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 1.4rem;
+    }
+    
+    .dropdown-menu {
+        padding: 1rem;
+    }
+}
+
+/* ==================================== */
+/* تأثيرات الهيدر عند التمرير */
+/* ==================================== */
+.navbar.scrolled {
+    background: rgba(26, 26, 46, 0.95);
+    backdrop-filter: blur(20px);
+    padding: 0.6rem 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ==================================== */
+/* تأثيرات إضافية */
+/* ==================================== */
+.nav-link::after,
+.dropdown-toggle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #f07d37, #cf0a0a);
+    transition: all 0.3s ease;
+    transform: translateX(50%);
+}
+
+.nav-link:hover::after,
+.dropdown-toggle:hover::after,
+.nav-link.active::after {
+    width: 80%;
+}
+
+/* ==================================== */
+/* تحسينات للـ Dropdown على الجوال */
+/* ==================================== */
+.dropdown-toggle.mobile-toggle {
+    cursor: pointer;
+}
+
+.dropdown-toggle.mobile-toggle .dropdown-icon {
+    transition: transform 0.3s ease;
+}
+
+.dropdown-toggle.mobile-toggle.active .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+
+.title{
+    background: aquamarine;
+    color: black;
+    text-align: center;
+
+}
+.page{
+  background-color: #000000;
+  color: wheat;
+
 }
