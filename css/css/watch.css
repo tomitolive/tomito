@@ -1232,9 +1232,7 @@ body {
 
 /* الأجهزة اللوحية (768px - 1023px) */
 @media (min-width: 768px) {
-    body {
-        /* padding-top: 80px; */
-    }
+    
     
     .site-header {
         height: 80px;
@@ -1934,9 +1932,7 @@ FOOTER
 RESPONSIVE 
 ======================================== */
 @media (max-width: 767px) {
- body {
-     padding-top: 60px;
- }
+
 
  .site-header {
      height: 60px;
@@ -1971,9 +1967,7 @@ RESPONSIVE
 }
 
 @media (max-width: 480px) {
- body {
-     padding-top: 55px;
- }
+
 
  .site-header {
      height: 55px;
@@ -3064,9 +3058,7 @@ body {
 }
 
 @media (max-width: 480px) {
-    body {
-        padding-top: 60px;
-    }
+   
     
     .site-header {
         height: 60px;
