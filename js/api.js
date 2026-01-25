@@ -174,9 +174,9 @@ function setupSearch() {
     // Check page type for appropriate placeholder
     const isTVPage = document.getElementById('seriesGrid');
     if (isTVPage) {
-        searchInput.placeholder = "Search TV series...";
+        searchInput.placeholder = "ابحث عن مسلسلات...";
     } else {
-        searchInput.placeholder = "Search movies...";
+        searchInput.placeholder = "ابحث عن أفلام...";
     }
     
     // Create suggestions container
