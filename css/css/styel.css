@@ -5493,7 +5493,7 @@ html, body {
 
 @media (max-width: 480px) {
     .logo-text {
-        font-size: 1.4rem;
+        font-size: 1.4rem;       
     }
     
     .dropdown-menu {
