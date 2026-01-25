@@ -1109,25 +1109,7 @@ class TVSeriesPlayer {
         // إزالة الإشعارات القديمة
         document.querySelectorAll('.notification').forEach(n => n.remove());
         
-        // إنشاء إشعار جديد
-        const notification = document.createElement('div');
-        notification.className = `notification ${type}`;
-        notification.innerHTML = `
-            <i class="fas ${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle'}"></i>
-            <span>${message}</span>
-        `;
-        
-        document.body.appendChild(notification);
-        
-        // إخفاء الإشعار بعد 3 ثواني
-        setTimeout(() => {
-            notification.style.animation = 'slideOutRight 0.3s ease';
-            setTimeout(() => {
-                if (notification.parentNode) {
-                    notification.parentNode.removeChild(notification);
-                }
-            }, 300);
-        }, 3000);
+    
     }
     
     showError(message) {

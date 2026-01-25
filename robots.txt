@@ -1,7 +1,14 @@
+# robots.txt لموقع Tomito - محسّن للسيو
+# آخر تحديث: 2025
+
+# ====================================
+# القواعد العامة لجميع الروبوتات
+# ====================================
 User-agent: *
 Allow: /
 Crawl-delay: 1
 
+# المجلدات المحظورة (آمنة)
 Disallow: /admin/
 Disallow: /api/
 Disallow: /config/
@@ -10,29 +17,137 @@ Disallow: /private/
 Disallow: /temp/
 Disallow: /cache/
 Disallow: /logs/
+Disallow: /backups/
+Disallow: /node_modules/
+Disallow: /.git/
 
-Disallow: /*.json
-Disallow: /*.log
+# الملفات المحظورة
+Disallow: /*.json$
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.bak$
+Disallow: /*.env$
 
+# معاملات URL المحظورة (تجنب المحتوى المكرر)
 Disallow: /*?*session=
+Disallow: /*?*sessionid=
 Disallow: /*?*ref=
-Disallow: /*?*utm_
+Disallow: /*?*utm_source=
+Disallow: /*?*utm_medium=
+Disallow: /*?*utm_campaign=
+Disallow: /*?*utm_term=
+Disallow: /*?*utm_content=
+Disallow: /*?*fbclid=
+Disallow: /*?*gclid=
+Disallow: /*?sort=
+Disallow: /*?filter=
+Disallow: /*print$
+Disallow: /*share$
 
-Allow: /*.css
-Allow: /*.js
+# السماح للموارد المهمة للسيو
+Allow: /*.css$
+Allow: /*.js$
+Allow: /js/
+Allow: /css/
+Allow: /images/
+Allow: /img/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /fonts/
+Allow: /*.woff$
+Allow: /*.woff2$
+Allow: /*.ttf$
+
+# السماح بالصفحات المهمة
+Allow: /index.html
+Allow: /tr.index.html
+Allow: /category.html
+Allow: /movie.html
+Allow: /series.html
+Allow: /search
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# ====================================
+# Google Bot (محرك البحث الأهم)
+# ====================================
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+# السماح لـ Google بفهرسة الصور
+User-agent: Googlebot-Image
+Allow: /
 Allow: /images/
 Allow: /*.jpg
 Allow: /*.png
 Allow: /*.webp
 
-User-agent: Googlebot
+# السماح لـ Google بفهرسة الفيديو
+User-agent: Googlebot-Video
 Allow: /
-Crawl-delay: 0.5
 
+# Google Mobile
+User-agent: Googlebot-Mobile
+Allow: /
+
+# ====================================
+# Bing Bot
+# ====================================
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
 
+User-agent: BingPreview
+Allow: /
+
+# ====================================
+# محركات البحث الأخرى المسموحة
+# ====================================
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+# ====================================
+# روبوتات السوشيال ميديا (مهمة للمشاركة)
+# ====================================
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Pinterestbot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+# ====================================
+# روبوتات SEO Tools المحظورة (توفير Bandwidth)
+# ====================================
 User-agent: MJ12bot
 Disallow: /
 
@@ -42,4 +157,100 @@ Disallow: /
 User-agent: SemrushBot
 Disallow: /
 
+User-agent: DotBot
+Disallow: /
+
+User-agent: Megalodon
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: Linespider
+Disallow: /
+
+User-agent: MegaIndex
+Disallow: /
+
+# ====================================
+# روبوتات سكرابينج محظورة
+# ====================================
+User-agent: HTTrack
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: WebZIP
+Disallow: /
+
+User-agent: WebReaper
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: WebSauger
+Disallow: /
+
+User-agent: WebWhacker
+Disallow: /
+
+User-agent: EmailCollector
+Disallow: /
+
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: EmailWolf
+Disallow: /
+
+# ====================================
+# حظر الروبوتات الضارة
+# ====================================
+User-agent: NPBot
+Disallow: /
+
+User-agent: SputnikBot
+Disallow: /
+
+User-agent: BUbiNG
+Disallow: /
+
+User-agent: Genieo
+Disallow: /
+
+User-agent: aiHitBot
+Disallow: /
+
+User-agent: spbot
+Disallow: /
+
+User-agent: SeznamBot
+Disallow: /
+
+# ====================================
+# Sitemaps (مهم جداً للسيو)
+# ====================================
 Sitemap: https://tomito.xyz/sitemap.xml
+Sitemap: https://tomito.xyz/sitemap-movies.xml
+Sitemap: https://tomito.xyz/sitemap-series.xml
+Sitemap: https://tomito.xyz/sitemap-images.xml
+
+# ====================================
+# ملاحظات إضافية
+# ====================================
+# 1. تأكد من وجود ملف sitemap.xml في الموقع
+# 2. راجع Google Search Console بانتظام
+# 3. حدّث هذا الملف عند إضافة صفحات جديدة مهمة
+# 4. تحقق من الأداء في Bing Webmaster Tools
+# 5. استخدم أداة اختبار robots.txt في Google Search Console
