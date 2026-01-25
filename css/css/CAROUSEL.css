@@ -697,18 +697,20 @@
 body{
     font-family: "cairo";
 }
-
 .ds-container {
     margin: 0;
     padding: 30px;
-    
     direction: rtl;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
   
   .ds-button {
-    position: relative;
-    float: right;
-    width: 33.3333%;
+    flex: 1 1 calc(33.333% - 10px);
+    min-width: 250px;
+    max-width: 400px;
     height: 180px;
     background-image: url(http://davidbout.com/codepen/link.svg);
     background-position: left 220px;
@@ -716,6 +718,8 @@ body{
     background-color: #141420;
     transition: all ease-out .2s;
     -webkit-transition: all ease-out .2s;
+    padding: 10px;
+    text-decoration: none;
   }
   
   .ds-button:hover {
@@ -728,23 +732,25 @@ body{
   .ds-button-content {
     height: 100%;
     width: 100%;
-    float: right;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
     padding-right: 0px;
     transition: all ease-out .2s;
     -webkit-transition: all ease-out .2s;
   }
   
   .ds-button-content p {
-    float: right;
     text-align: right;
     padding-left: 40px;
     padding-right: 0;
-    vertical-align: middle;
-    line-height: 24px;
+    margin: 0;
     color: #fff;
     font-size: 20px;
     font-family: "cairo";
     font-weight: 700;
+    line-height: 1.2;
   }
   
   .ds-button-content:hover {
@@ -757,7 +763,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 300;
-    float: right;
+    text-align: right;
     opacity: 0.3;
     filter: alpha(opacity=30);
     transition: all ease-out .2s;
@@ -769,3 +775,29 @@ body{
     filter: alpha(opacity=100);
   }
   
+  /* Media Queries for additional responsiveness */
+  @media (max-width: 768px) {
+    .ds-button {
+      flex: 1 1 calc(50% - 10px);
+      min-width: 200px;
+    }
+    
+    .ds-container {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ds-button {
+      flex: 1 1 100%;
+      min-width: 100%;
+    }
+    
+    .ds-container {
+      padding: 10px;
+    }
+    
+    .ds-button-content p {
+      font-size: 18px;
+    }
+  }
