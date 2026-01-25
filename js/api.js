@@ -245,41 +245,137 @@ function setupSearch() {
 async function performSearchWithSuggestions(query, container, isTVPage = false) {
     try {
         const encodedQuery = encodeURIComponent(query);
-        let url;
         
-        if (isTVPage) {
-            url = `${BASE_URL}/search/tv?api_key=${API_KEY}&language=${SEARCH_LANGUAGE}&query=${encodedQuery}&page=1`;
-        } else {
-            url = `${BASE_URL}/search/movie?api_key=${API_KEY}&language=${SEARCH_LANGUAGE}&query=${encodedQuery}&page=1`;
-        }
+        // البحث في الأفلام والمسلسلات معاً
+        const [moviesRes, tvRes] = await Promise.all([
+            fetch(`${BASE_URL}/search/movie?api_key=${API_KEY}&language=${SEARCH_LANGUAGE}&query=${encodedQuery}&page=1`),
+            fetch(`${BASE_URL}/search/tv?api_key=${API_KEY}&language=${SEARCH_LANGUAGE}&query=${encodedQuery}&page=1`)
+        ]);
         
-        const res = await fetch(url);
-        const data = await res.json();
-        const results = data.results || [];
+        const moviesData = await moviesRes.json();
+        const tvData = await tvRes.json();
         
-        if (results.length === 0) {
+        const movies = moviesData.results || [];
+        const series = tvData.results || [];
+        
+        // دمج النتائج
+        const allResults = [
+            ...movies.map(m => ({...m, media_type: 'movie'})),
+            ...series.map(s => ({...s, media_type: 'tv'}))
+        ];
+        
+        // ترتيب حسب التقييم
+        allResults.sort((a, b) => (b.vote_average || 0) - (a.vote_average || 0));
+        
+        if (allResults.length === 0) {
             container.innerHTML = `
                 <div class="no-suggestions">
-                    <i class="fas ${isTVPage ? 'fa-tv' : 'fa-film'}"></i>
-                    <h3>No ${isTVPage ? 'TV series' : 'movies'} found</h3>
-                    <p>Try different keywords</p>
+                    <i class="fas fa-search"></i>
+                    <h3>لم يتم العثور على نتائج</h3>
+                    <p>جرب كلمات بحث مختلفة</p>
                 </div>
             `;
             return;
         }
         
-        displaySearchSuggestions(results, query, container, isTVPage);
+        displayCombinedSearchSuggestions(allResults, query, container, movies.length, series.length);
         
     } catch (error) {
-        console.error("❌ Search suggestions error:", error);
+        console.error("❌ Search error:", error);
         container.innerHTML = `
             <div class="no-suggestions">
                 <i class="fas fa-exclamation-triangle"></i>
-                <h3>Search error</h3>
-                <p>Please try again later</p>
+                <h3>خطأ في البحث</h3>
+                <p>حاول مرة أخرى</p>
             </div>
         `;
     }
+}
+
+function displayCombinedSearchSuggestions(results, query, container, moviesCount, seriesCount) {
+    let html = `
+        <div class="suggestion-header">
+            <span>نتائج البحث: "${truncateText(query, 20)}"</span>
+            <div class="suggestion-counts">
+                <span class="count-badge movies"><i class="fas fa-film"></i> ${moviesCount}</span>
+                <span class="count-badge series"><i class="fas fa-tv"></i> ${seriesCount}</span>
+            </div>
+        </div>
+    `;
+    
+    results.slice(0, 10).forEach((item, index) => {
+        const isMovie = item.media_type === 'movie';
+        const title = isMovie ? item.title : (item.name || item.original_name);
+        const year = isMovie ? 
+            (item.release_date ? new Date(item.release_date).getFullYear() : 'TBA') :
+            (item.first_air_date ? new Date(item.first_air_date).getFullYear() : 'Ongoing');
+        const rating = item.vote_average ? item.vote_average.toFixed(1) : 'N/A';
+        const type = isMovie ? 'movie' : 'tv';
+        
+        const posterUrl = item.poster_path ? 
+            `https://image.tmdb.org/t/p/w92${item.poster_path}` : 
+            `https://via.placeholder.com/92x138/2a2a3a/ffffff?text=${isMovie ? '🎬' : '📺'}`;
+        
+        const overview = item.overview ? 
+            truncateText(item.overview, 80) : 
+            'لا يوجد وصف';
+        
+        html += `
+            <div class="suggestion-item ${index === 0 ? 'active' : ''}" 
+                 data-id="${item.id}" 
+                 data-type="${type}"
+                 onclick="selectSuggestion(${item.id}, '${title.replace(/'/g, "\\'")}', '${type}')">
+                <div class="suggestion-poster">
+                    <img src="${posterUrl}" alt="${title}" loading="lazy">
+                    <div class="suggestion-type ${type}">
+                        <i class="fas ${type === 'tv' ? 'fa-tv' : 'fa-film'}"></i>
+                    </div>
+                </div>
+                <div class="suggestion-info">
+                    <h4 class="suggestion-title">${title}</h4>
+                    <div class="suggestion-details">
+                        <span class="suggestion-rating">
+                            <i class="fas fa-star"></i> ${rating}
+                        </span>
+                        <span class="suggestion-year">${year}</span>
+                        <span class="suggestion-media-badge ${type}">
+                            ${isMovie ? 'فيلم' : 'مسلسل'}
+                        </span>
+                    </div>
+                    <p class="suggestion-overview">${overview}</p>
+                </div>
+                <div class="suggestion-action">
+                    <button class="suggestion-btn view-btn" 
+                            onclick="event.stopPropagation(); goToWatch(${item.id}, '${type}')">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+        `;
+    });
+    
+    html += `
+        <div class="suggestion-footer">
+            <button class="view-all-results movies" onclick="performFullSearch('${query.replace(/'/g, "\\'")}', false)">
+                <i class="fas fa-film"></i> كل الأفلام (${moviesCount})
+            </button>
+            <button class="view-all-results series" onclick="performFullSearch('${query.replace(/'/g, "\\'")}', true)">
+                <i class="fas fa-tv"></i> كل المسلسلات (${seriesCount})
+            </button>
+        </div>
+    `;
+    
+    container.innerHTML = html;
+    positionSuggestions(container);
+    
+    // Add hover effect
+    const items = container.querySelectorAll('.suggestion-item');
+    items.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+            items.forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+        });
+    });
 }
 
 function displaySearchSuggestions(results, query, container, isTVPage) {
