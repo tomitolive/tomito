@@ -5419,7 +5419,7 @@ html, body {
         top: 70px;
         right: -100%;
         width: 100%;
-        height: calc(100vh - 70px);
+     
         background: #1a1a2e;
         flex-direction: column;
         align-items: stretch;
@@ -5493,9 +5493,9 @@ html, body {
 
 @media (max-width: 480px) {
     .logo-text {
-        font-size: 1.4rem;
+        font-size: 1.4rem;       
     }
-    
+     
     .dropdown-menu {
         padding: 1rem;
     }
