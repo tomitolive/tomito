@@ -389,13 +389,8 @@ function createItemCard(item, type) {
                     <button class="watch-btn" onclick="goToItem(${item.id}, '${isMovie ? 'movie' : 'tv'}')">
                         <i class="fas fa-play"></i> مشاهدة
                     </button>
-                    <button class="save-btn ${saveClass}" 
-                            onclick="toggleSaveItem(${item.id}, '${title.replace(/'/g, "\\'")}', '${item.poster_path}', ${rating}, '${isMovie ? 'movie' : 'tv'}', this)">
-                        <i class="${saveIcon}"></i>
-                    </button>
-                    <button class="info-btn" onclick="showItemInfo(${item.id}, '${isMovie ? 'movie' : 'tv'}')">
-                        <i class="fas fa-info-circle"></i>
-                    </button>
+                   
+                  
                 </div>
             </div>
         </div>
