@@ -24,8 +24,12 @@ async function initEnhancedCarousel() {
     try {
         // جلب الأفلام الرائجة
         const response = await fetch(
-            `${BASE_URL}/movie/now_playing?api_key=${API_KEY}&language=en&page=1&region=EG`
-        );
+            `${BASE_URL}/discover/movie?api_key=${API_KEY}&language=en
+            &sort_by=popularity.desc
+            &vote_count.gte=5000
+            &vote_average.gte=7`
+          );
+          
         
         if (!response.ok) throw new Error('فشل تحميل البيانات');
         
@@ -536,3 +540,5 @@ window.goToSlide = goToSlide;document.getElementById("carouselPoster").onclick =
     const movie = slides[currentSlide];
     goToWatch(movie.id, movie.media_type || "movie");
 };
+
+

@@ -113,7 +113,7 @@ body {
    ======================================== */
 .extended-filters {
   
-    padding: 1rem 5%;
+  
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: 0;
     position: relative;
@@ -894,7 +894,7 @@ body {
 
 @media (max-width: 480px) {
     .movies-grid {
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(160px, 3fr));
         gap: 1rem;
     }
     
@@ -1262,13 +1262,7 @@ body {
 /* ========================================
    EXTENDED FILTERS
    ======================================== */
-.extended-filters {
-   
-    padding: 1rem 5%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 0;
-    position: relative;
-}
+
 
 .extended-filters-container {
     max-width: 1400px;
@@ -1418,7 +1412,7 @@ body {
 .carousel-container {
     position: relative;
     overflow: hidden;
-    padding: 20px 0;
+
 }
 
 .carousel-track {
@@ -2680,7 +2674,7 @@ body {
 
 @media (max-width: 480px) {
     .suggestion-item {
-        padding: 10px 12px;
+      
         gap: 10px;
     }
     
@@ -2829,7 +2823,7 @@ body {
 
 @media (max-width: 480px) {
     .navbar {
-        padding: 0.5rem 3%;
+   
     }
     
     .navbar.compact {
@@ -3538,4 +3532,2031 @@ body{
     .suggestion-overview {
         display: none;
     }
+}/* ===============================
+   CONTAINER
+================================ */
+.extended-filters-container {
+    width: 100%;
+ 
+ 
+  }
+  
+  /* ===============================   
+     GRID CENTER
+  ================================ */
+  .extended-filters-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 0 16px;
+  }
+  
+  /* ===============================
+     BUTTONS
+  ================================ */
+  .extended-filter-btn,
+  .more-filters-btn {
+    background: #4b0202;          /* أحمر غامق مائل للسود */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 
+      background 0.25s ease,
+      padding 0.25s ease,
+      color 0.25s ease;
+  }
+  
+  /* HOVER */
+  .extended-filter-btn:hover,
+  .more-filters-btn:hover {
+    background: #8b0000;          /* Dark Red */
+    color: #fff;
+  }
+  
+  /* ACTIVE (كبر المسافة الداخلية) */
+  .extended-filter-btn.active {
+    background: #ff0000;
+    color: #000;
+    padding: 16px 30px;           /* هنا كتكبر */
+  }
+  
+  /* ===============================
+     DROPDOWN
+  ================================ */
+  .filters-dropdown {
+    max-width: 1200px;
+    margin: 16px auto 0;
+    padding: 0 16px;
+    display: none;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  
+  .filters-dropdown.show {
+    display: flex;
+  }
+  
+  /* ===============================
+     MOBILE
+  ================================ */
+  @media (max-width: 768px) {
+  
+    .extended-filters-grid .extended-filter-btn {
+      display: none;
+    }
+  
+    .more-filters-btn {
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+/* ===============================
+   DROPDOWN SPACING
+================================ */
+#filtersDropdown {
+    max-width: 1200px;
+    margin: 16px auto 0;
+    padding: 24px 20px;  /* زدت المسافة الداخلية كبيرة */
+    display: none;
+    justify-content: center;
+    gap: 18px;           /* المسافة بين البوطونات */
+    flex-wrap: wrap;
+    border-top: 2px solid #ff0000; /* اختياري، يبقى الخط العلوي */
+    box-sizing: border-box;
+  }
+  
+  #filtersDropdown.show {
+    display: flex;
+  }
+    /* ========================================
+   Netflix Style Extended Filters - جوال أولاً
+   ======================================== */
+
+/* الحاوية الرئيسية - تطابق ستايل نتفلكس */
+.extended-filters-section {
+    direction: rtl;
+    margin: 0;
+    padding: 20px 4% 15px;
+    background: #141414;
+    position: relative;
+    overflow: hidden;
+}
+
+#extendedFiltersGrid {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    align-items: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+#extendedFiltersGrid::-webkit-scrollbar {
+    display: none;
+}
+
+/* أزرار الفلاتر - تطابق نتفلكس بالضبط */
+.extended-filter-btn {
+    padding: 8px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    user-select: none;
+    flex-shrink: 0;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.extended-filter-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-1px);
+}
+
+.extended-filter-btn.active {
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border: 1px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.extended-filter-btn.active:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-1px);
+}
+
+/* زر المزيد - ستايل نتفلكس */
+.more-filters-btn {
+    padding: 8px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.more-filters-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.more-filters-btn i {
+    font-size: 12px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.more-filters-btn.active {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+.more-filters-btn.active i {
+    transform: rotate(180deg);
+}
+
+/* القائمة المنسدلة - نتفلكس ستايل للجوال */
+.extended-filters-dropdown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    display: none;
+    flex-direction: column;
+    padding-top: 60px;
+    animation: netflixFadeIn 0.3s ease;
+}
+
+.extended-filters-dropdown.show {
+    display: flex;
+}
+
+@keyframes netflixFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* رأس القائمة - ستايل نتفلكس */
+.dropdown-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 10000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-header h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    font-family: 'Netflix Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.close-dropdown-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.close-dropdown-btn:hover {
+    opacity: 1;
+}
+
+/* محتوى القائمة */
+.dropdown-content {
+    padding: 20px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    flex: 1;
+}
+
+.extended-filters-dropdown .extended-filter-btn {
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    padding: 0 16px;
+    justify-content: center;
+}
+
+.extended-filters-dropdown .extended-filter-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.extended-filters-dropdown .extended-filter-btn.active {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+/* تأثيرات اللمس للجوال */
+@media (hover: none) and (pointer: coarse) {
+    .extended-filter-btn:active {
+        transform: scale(0.95);
+        transition: transform 0.1s;
+    }
+    
+    .extended-filter-btn.active:active {
+        background: rgba(255, 255, 255, 0.8);
+        transform: scale(0.95);
+    }
+    
+    .more-filters-btn:active {
+        background: rgba(255, 255, 255, 0.2);
+        transform: scale(0.95);
+    }
+    
+    .extended-filters-dropdown .extended-filter-btn:active {
+        transform: scale(0.98);
+    }
+}
+
+/* تدرج أحمر نتفلكس عند التفعيل */
+.extended-filter-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 10%;
+    right: 10%;
+    height: 3px;
+    background: linear-gradient(90deg, #e50914, #b81d24);
+    border-radius: 2px;
+    opacity: 0;
+    animation: netflixUnderline 0.3s ease forwards;
+}
+
+@keyframes netflixUnderline {
+    to {
+        opacity: 1;
+        bottom: -5px;
+    }
+}
+
+/* سكرولبار خفي */
+.extended-filters-dropdown::-webkit-scrollbar {
+    width: 4px;
+}
+
+.extended-filters-dropdown::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.extended-filters-dropdown::-webkit-scrollbar-thumb {
+    background: rgba(229, 9, 20, 0.5);
+    border-radius: 2px;
+}
+
+/* منع التمرير عند فتح القائمة */
+body.netflix-dropdown-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+/* شاشات صغيرة جداً */
+@media (max-width: 375px) {
+    .extended-filters-section {
+        padding: 15px 4% 10px;
+    }
+    
+    .extended-filter-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+        height: 34px;
+    }
+    
+    .more-filters-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+        height: 34px;
+    }
+    
+    .dropdown-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* شاشات متوسطة (تابلت) */
+@media (min-width: 768px) {
+    .extended-filters-section {
+        padding: 25px 4% 20px;
+    }
+    
+    #extendedFiltersGrid {
+        gap: 12px;
+    }
+    
+    .extended-filter-btn {
+        padding: 10px 24px;
+        font-size: 15px;
+        height: 40px;
+        border-radius: 4px;
+    }
+    
+    .more-filters-btn {
+        padding: 10px 24px;
+        font-size: 15px;
+        height: 40px;
+        gap: 10px;
+    }
+    
+    .more-filters-btn i {
+        font-size: 14px;
+    }
+    
+    .extended-filters-dropdown {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 4%;
+        right: 4%;
+        bottom: auto;
+        background: rgba(20, 20, 20, 0.98);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 20px;
+        max-height: 400px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+    
+    .dropdown-header {
+        display: none;
+    }
+    
+    .dropdown-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 0;
+    }
+    
+    .extended-filters-dropdown .extended-filter-btn {
+        height: 42px;
+        font-size: 15px;
+    }
+}
+
+/* شاشات كبيرة (ديسكتوب) */
+@media (min-width: 1200px) {
+    .extended-filters-section {
+        padding: 30px 60px 25px;
+    }
+    
+    #extendedFiltersGrid {
+        justify-content: flex-start;
+    }
+    
+    .extended-filter-btn {
+        padding: 12px 28px;
+        font-size: 16px;
+        height: 44px;
+    }
+    
+    .more-filters-btn {
+        padding: 12px 28px;
+        font-size: 16px;
+        height: 44px;
+    }
+    
+    .extended-filters-dropdown {
+        left: 60px;
+        right: 60px;
+    }
+    
+    .dropdown-content {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}/* ========================================
+   Netflix Style Extended Filters - جوال أولاً
+   ======================================== */
+
+/* 1. الحاوية الرئيسية - تطابق نتفلكس للجوال */
+.extended-filters-section {
+    direction: rtl;
+    margin: 0;
+    padding: 15px 4% 10px; /* أقل padding للجوال */
+    background: #141414;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* 2. الشبكة - خاصية التمرير الأفقي للجوال */
+#extendedFiltersGrid {
+    display: flex;
+    gap: 6px; /* فراغات أقل للجوال */
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 5px 0 10px; /* padding علوي أقل */
+    padding-right: 5px; /* لحساب اتجاه RTL */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    align-items: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* تمرير سلس للجوال */
+    touch-action: pan-x; /* لتحسين تجربة اللمس */
+}
+
+/* إخفاء السكرولبار */
+#extendedFiltersGrid::-webkit-scrollbar {
+    display: none;
+}
+
+/* 3. أزرار الفلاتر - حجم مناسب للإصبع على الجوال */
+.extended-filter-btn {
+    padding: 7px 14px; /* أصغر للجوال */
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 4px; /* زوايا مربعة نتفلكس */
+    font-size: 12px; /* خط أصغر للجوال */
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease; /* انتقال أسرع للجوال */
+    user-select: none;
+    flex-shrink: 0;
+    height: 32px; /* ارتفاع مناسب للجوال */
+    min-width: 60px; /* عرض أدنى */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-tap-highlight-color: transparent; /* إزالة اللون الأزرق عند الضغط */
+}
+
+/* تأثير اللمس على الجوال */
+.extended-filter-btn:active {
+    transform: scale(0.95);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.extended-filter-btn.active {
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+}
+
+.extended-filter-btn.active:active {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* 4. زر المزيد - مناسب للجوال */
+.more-filters-btn {
+    padding: 7px 14px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    height: 32px;
+    min-width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* فراغ أقل بين الأيقونة والنص */
+    -webkit-tap-highlight-color: transparent;
+}
+
+.more-filters-btn:active {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(0.95);
+}
+
+.more-filters-btn i {
+    font-size: 10px; /* أيقونة أصغر */
+    transition: transform 0.2s ease;
+}
+
+.more-filters-btn.active i {
+    transform: rotate(180deg);
+}
+
+/* 5. القائمة المنسدلة - ملء الشاشة على الجوال */
+.extended-filters-dropdown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #141414;
+    z-index: 9999;
+    display: none;
+    flex-direction: column;
+    animation: netflixSlideIn 0.3s ease-out;
+}
+
+.extended-filters-dropdown.show {
+    display: flex;
+}
+
+@keyframes netflixSlideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* 6. رأس القائمة - يشبه نتفلكس تماماً */
+.dropdown-header {
+    position: sticky;
+    top: 0;
+    background: #141414;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+    z-index: 1;
+    min-height: 50px;
+    box-sizing: border-box;
+}
+
+.dropdown-header h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.close-dropdown-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 8px;
+    opacity: 0.8;
+    -webkit-tap-highlight-color: transparent;
+    width: 44px; /* مساحة ضغط كبيرة */
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-dropdown-btn:active {
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+/* 7. محتوى القائمة - شبكة عمودين للجوال */
+.dropdown-content {
+    padding: 15px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* عمودين للجوال */
+    gap: 8px; /* فراغات أصغر */
+    flex: 1;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* أزرار داخل القائمة */
+.dropdown-content .extended-filter-btn {
+    width: 100%;
+    height: 36px;
+    font-size: 13px;
+    padding: 8px 12px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 8. سكرولبار خفي للجوال */
+.dropdown-content::-webkit-scrollbar {
+    width: 3px;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    background: #e50914;
+    border-radius: 2px;
+}
+
+/* 9. منع التمرير عند فتح القائمة */
+body.netflix-dropdown-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+/* 10. مؤشر التحميل أثناء الفلترة */
+.filter-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #e50914, #b81d24);
+    animation: loading 1s infinite;
+    display: none;
+}
+
+@keyframes loading {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* 11. تأثير اختيار الفلتر */
+.extended-filter-btn.selected {
+    animation: pulse 0.3s ease;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.98); }
+    100% { transform: scale(1); }
+}
+
+/* ========================================
+   تحسينات للشاشات المختلفة
+   ======================================== */
+
+/* شاشات صغيرة جداً (iPhone SE) */
+@media (max-width: 320px) {
+    .extended-filter-btn {
+        padding: 6px 10px;
+        font-size: 11px;
+        height: 30px;
+        min-width: 55px;
+    }
+    
+    .more-filters-btn {
+        padding: 6px 10px;
+        font-size: 11px;
+        height: 30px;
+        min-width: 65px;
+    }
+    
+    .dropdown-content {
+        grid-template-columns: 1fr; /* عمود واحد للشاشات الصغيرة جداً */
+        gap: 6px;
+    }
+    
+    .dropdown-header h3 {
+        font-size: 15px;
+    }
+}
+
+/* شاشات متوسطة (أفقي) */
+@media (min-width: 576px) {
+    .extended-filters-section {
+        padding: 20px 4% 15px;
+    }
+    
+    .extended-filter-btn {
+        padding: 8px 18px;
+        font-size: 13px;
+        height: 35px;
+        min-width: 70px;
+    }
+    
+    .more-filters-btn {
+        padding: 8px 18px;
+        font-size: 13px;
+        height: 35px;
+        min-width: 80px;
+    }
+    
+    #extendedFiltersGrid {
+        gap: 8px;
+    }
+    
+    .dropdown-content {
+        grid-template-columns: repeat(3, 1fr); /* 3 أعمدة للشاشات المتوسطة */
+        gap: 10px;
+    }
+}
+
+/* تابلت */
+@media (min-width: 768px) {
+    .extended-filters-dropdown {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 600px;
+        max-height: 400px;
+        bottom: auto;
+        border-radius: 8px;
+        border: 1px solid #333;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+        animation: netflixFadeIn 0.3s ease;
+    }
+    
+    @keyframes netflixFadeIn {
+        from {
+            opacity: 0;
+            transform: translateX(-50%) translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+    }
+    
+    .dropdown-header {
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .dropdown-content {
+        grid-template-columns: repeat(4, 1fr); /* 4 أعمدة للتابلت */
+        gap: 12px;
+    }
+}
+
+/* ديسكتوب */
+@media (min-width: 1200px) {
+    .extended-filters-section {
+        padding: 25px 60px 20px;
+    }
+    
+    #extendedFiltersGrid {
+        justify-content: center;
+        gap: 12px;
+    }
+    
+    .extended-filter-btn {
+        padding: 10px 24px;
+        font-size: 14px;
+        height: 40px;
+    }
+    
+    .more-filters-btn {
+        padding: 10px 24px;
+        font-size: 14px;
+        height: 40px;
+    }
+    
+    .dropdown-content {
+        grid-template-columns: repeat(5, 1fr); /* 5 أعمدة للديسكتوب */
+        gap: 15px;
+    }
+}
+
+/* ========================================
+   تحسينات خاصة لنظام iOS
+   ======================================== */
+@supports (-webkit-touch-callout: none) {
+    .extended-filter-btn,
+    .more-filters-btn {
+        cursor: default; /* إزالة شكل المؤشر على iOS */
+    }
+    
+    .dropdown-content {
+        padding-bottom: env(safe-area-inset-bottom); /* تجنب notch */
+    }
+}
+
+/* ========================================
+   تحسينات خاصة لنظام Android
+   ======================================== */
+@media (-android) {
+    .extended-filter-btn:active,
+    .more-filters-btn:active {
+        transition: none; /* إزالة الانتقال لتحسين الاستجابة */
+    }
+}/* ========================================
+   تحسين أزرار الفلاتر الملونة للجوال
+   ======================================== */
+.color-filters-grid {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 15px 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+}
+
+.color-filters-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.color-filter-btn {
+    padding: 18px 25px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+    min-width: 160px;
+    min-height: 60px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.color-filter-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.color-filter-btn:active::before {
+    opacity: 1;
+}
+
+.color-filter-btn.black {
+    background: linear-gradient(135deg, #000000 0%, #333333 100%);
+    color: #EEEEEE;
+    border: 2px solid #444444;
+}
+
+.color-filter-btn.red {
+    background: linear-gradient(135deg, #CF0A0A 0%, #FF4444 100%);
+    color: white;
+    border: 2px solid #FF6666;
+}
+
+.color-filter-btn.orange {
+    background: linear-gradient(135deg, #DC5F00 0%, #FF8C42 100%);
+    color: white;
+    border: 2px solid #FFA366;
+}
+
+.color-filter-btn.gray {
+    background: linear-gradient(135deg, #EEEEEE 0%, #FFFFFF 100%);
+    color: #000000;
+    border: 2px solid #CCCCCC;
+}
+
+.color-filter-btn:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.color-filter-btn.active {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    border-width: 3px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(207, 10, 10, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(207, 10, 10, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(207, 10, 10, 0); }
+}
+
+/* أيقونات داخل الأزرار */
+.color-filter-btn i {
+    font-size: 20px;
+}
+
+/* ========================================
+   تحسينات خاصة للجوال
+   ======================================== */
+@media (max-width: 768px) {
+   
+    .color-filter-btn {
+        padding: 20px 28px;
+        min-width: 180px;
+        min-height: 70px;
+        font-size: 18px;
+        border-radius: 15px;
+    }
+    
+    .color-filter-btn i {
+        font-size: 24px;
+    }
+    
+    .color-filters-grid {
+        gap: 12px;
+        padding: 20px 10px;
+    }
+    
+    /* إضافة مؤشر سحب للجوال */
+    .color-filters-grid::after {
+        content: '← اسحب →';
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #DC5F00;
+        font-size: 12px;
+        opacity: 0.7;
+        animation: swipeHint 2s infinite;
+    }
+}
+
+@keyframes swipeHint {
+    0%, 100% { transform: translateX(-50%); }
+    50% { transform: translateX(calc(-50% + 10px)); }
+}
+
+@media (max-width: 480px) {
+    .color-filter-btn {
+        padding: 22px 30px;
+        min-width: 200px;
+        min-height: 75px;
+        font-size: 20px;
+    }
+    
+    .color-filter-btn i {
+        font-size: 26px;
+    }
+    
+    .color-filters-grid {
+        gap: 15px;
+        padding: 25px 10px;
+    }
+}
+
+/* ========================================
+   تحسينات للوضع الأفقي
+   ======================================== */
+@media (max-width: 768px) and (orientation: landscape) {
+    .color-filters {
+        margin-top: 100px;
+    }
+    
+    .color-filter-btn {
+        min-width: 150px;
+        min-height: 60px;
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+    
+    .color-filters-grid {
+        gap: 8px;
+    }
+}
+
+/* ========================================
+   تأثيرات خاصة للأزرار النشطة
+   ======================================== */
+.color-filter-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+    animation: bounce 0.5s ease-in-out 3;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-5px); }
+}
+
+/* ========================================
+   تحسينات للشاشات الصغيرة جدا
+   ======================================== */
+@media (max-width: 375px) {
+    .color-filter-btn {
+        min-width: 170px;
+        min-height: 65px;
+        padding: 18px 25px;
+        font-size: 17px;
+    }
+    
+    .color-filter-btn i {
+        font-size: 22px;
+    }
+}
+
+/* ========================================
+   تحسينات لـ iOS
+   ======================================== */
+@supports (-webkit-touch-callout: none) {
+    .color-filter-btn {
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .color-filter-btn:active {
+        transform: scale(0.98);
+    }
+}
+
+/* ========================================
+   تحسينات لـ Android
+   ======================================== */
+@media (-android) {
+    .color-filter-btn {
+        tap-highlight-color: transparent;
+    }
+    
+    .color-filter-btn:active {
+        animation: androidPress 0.1s;
+    }
+}
+
+@keyframes androidPress {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+}/* ========================================
+   تحسين أزرار الفلاتر الإضافية للجوال
+   ======================================== */
+.extended-filters-section {
+    direction: rtl;
+    margin: 0;
+    padding: 20px 4% 15px;
+    background: #141414;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#extendedFiltersGrid {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    align-items: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+}
+
+#extendedFiltersGrid::-webkit-scrollbar {
+    display: none;
+}
+
+.extended-filter-btn {
+    padding: 18px 25px;
+    background: rgba(255, 255, 255, 0.12);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    user-select: none;
+    flex-shrink: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+    backdrop-filter: blur(10px);
+  
+}
+
+.extended-filter-btn:hover {
+    background: rgba(255, 255, 255, 0.18);
+    color: #000000;
+    border-color: rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+}
+
+.extended-filter-btn.active {
+    font-weight: 700;
+    box-shadow: 0 0 25px rgba(229, 9, 20, 0.4);
+}
+
+.extended-filter-btn:active {
+    transform: scale(0.98);
+}
+
+.more-filters-btn {
+    padding: 18px 25px;
+    background: rgba(229, 9, 20, 0.15);
+    color: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(229, 9, 20, 0.3);
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 160px;
+    backdrop-filter: blur(10px);
+}
+
+.more-filters-btn:hover {
+    background: rgba(229, 9, 20, 0.25);
+    color: #fff;
+    border-color: rgba(229, 9, 20, 0.5);
+}
+
+.more-filters-btn i {
+    font-size: 14px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.more-filters-btn.active {
+    background: rgba(229, 9, 20, 0.3);
+    border-color: #e50914;
+}
+
+.more-filters-btn.active i {
+    transform: rotate(180deg);
+}
+
+/* ========================================
+   القائمة المنسدلة للجوال
+   ======================================== */
+.extended-filters-dropdown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    display: none;
+    flex-direction: column;
+    padding-top: 70px;
+    animation: slideInUp 0.3s ease-out;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.extended-filters-dropdown.show {
+    display: flex;
+}
+
+/* رأس القائمة */
+.dropdown-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 10000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-header h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.close-dropdown-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.close-dropdown-btn:active {
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+/* محتوى القائمة */
+.dropdown-content {
+    padding: 20px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    flex: 1;
+    -webkit-overflow-scrolling: touch;
+}
+
+.dropdown-content .extended-filter-btn {
+    width: 100%;
+    height: 65px;
+    font-size: 16px;
+    padding: 0 15px;
+    margin: 0;
+    min-width: auto;
+}
+
+/* ========================================
+   تحسينات للشاشات الصغيرة
+   ======================================== */
+@media (max-width: 480px) {
+    .extended-filter-btn {
+      
+        height: 65px;
+        min-width: 160px;
+        font-size: 17px;
+        border-radius: 15px;
+    }
+    
+    .more-filters-btn {
+        padding: 20px 28px;
+        height: 65px;
+        min-width: 180px;
+        font-size: 17px;
+        border-radius: 15px;
+    }
+    
+    .more-filters-btn i {
+        font-size: 16px;
+    }
+    
+    #extendedFiltersGrid {
+        gap: 12px;
+        padding: 20px 10px;
+    }
+    
+    .dropdown-content .extended-filter-btn {
+        height: 70px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 375px) {
+    .extended-filter-btn {
+        min-width: 150px;
+        padding: 18px 25px;
+        font-size: 16px;
+    }
+    
+    .more-filters-btn {
+        min-width: 170px;
+        padding: 18px 25px;
+        font-size: 16px;
+    }
+    
+    .dropdown-content {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
+
+/* ========================================
+   تحسينات للشاشات الكبيرة
+   ======================================== */
+@media (min-width: 768px) {
+    .extended-filters-dropdown {
+        position: absolute;
+        top: calc(100% + 15px);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 800px;
+        max-height: 500px;
+        bottom: auto;
+        border-radius: 15px;
+        border: 2px solid rgba(229, 9, 20, 0.3);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+        padding-top: 20px;
+        animation: fadeInScale 0.3s ease;
+    }
+    
+    @keyframes fadeInScale {
+        from {
+            opacity: 0;
+            transform: translateX(-50%) scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(-50%) scale(1);
+        }
+    }
+    
+    .dropdown-header {
+        position: relative;
+        height: auto;
+        background: transparent;
+        padding: 20px;
+    }
+    
+    .dropdown-content {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+/* ========================================
+   تحسينات تجربة اللمس
+   ======================================== */
+@media (hover: none) and (pointer: coarse) {
+    .extended-filter-btn {
+        min-height: 65px;
+        padding: 20px;
+    }
+    
+    .extended-filter-btn:active {
+        background: rgba(255, 255, 255, 0.2);
+        transform: scale(0.96);
+    }
+    
+    .extended-filter-btn.active:active {
+        background: linear-gradient(135deg, #e50914, #b81d24);
+        transform: scale(1.02);
+    }
+}
+
+/* ========================================
+   سكرولبار مخصص
+   ======================================== */
+.extended-filters-dropdown::-webkit-scrollbar {
+    width: 6px;
+}
+
+.extended-filters-dropdown::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+}
+
+.extended-filters-dropdown::-webkit-scrollbar-thumb {
+    background: #e50914;
+    border-radius: 3px;
+}
+
+
+/* ==================================== */
+/* الأساسيات والتصميم العام */
+/* ==================================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    direction: rtl;
+    background-color: #16151b;
+    color: white;
+}
+
+/* ==================================== */
+/* 🚀 تصميم الـ Navbar (شاشات كبيرة) */
+/* ==================================== */
+.navbar {
+    background-color: #1a1a2e;
+    padding: 0.8rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* اللوجو */
+.logo {
+    flex-shrink: 0;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    background: linear-gradient(45deg, #f07d37, #cf0a0a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo-text span:first-child {
+    color: #f07d37;
+}
+
+.logo-text span:last-child {
+    color: #dc5f00;
+}
+
+/* القائمة الرئيسية */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+/* البحث المدمج */
+.search-container {
+    position: relative;
+    flex: 0 1 400px;
+    max-width: 500px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 3rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    color: white;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.search-input:focus {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #f07d37;
+    box-shadow: 0 0 0 3px rgba(240, 125, 55, 0.2);
+}
+
+.search-btn {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    padding: 0.25rem;
+    transition: color 0.3s ease;
+}
+
+.search-btn:hover {
+    color: #f07d37;
+}
+
+/* نتائج البحث */
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #1e1e2e;
+    border-radius: 12px;
+    margin-top: 0.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    max-height: 400px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1001;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.search-results.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.result-item {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.result-item:hover {
+    background: rgba(240, 125, 55, 0.1);
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-poster {
+    width: 60px;
+    height: 90px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.result-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.result-info {
+    flex-grow: 1;
+}
+
+.result-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: white;
+}
+
+.result-details {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.result-rating {
+    color: #ffc107;
+}
+
+.result-year {
+    color: #6c757d;
+}
+
+.result-overview {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 0.5rem;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.no-results {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.no-results i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+/* الروابط */
+.links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Dropdown أساسي */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle.active {
+    background: rgba(240, 125, 55, 0.15);
+    color: #f07d37;
+}
+
+.dropdown-icon {
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+/* Dropdown القوائم */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #1e1e2e;
+    border-radius: 12px;
+    min-width: 600px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    padding: 1.5rem;
+    display: none;
+    z-index: 1000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.dropdown-column h4 {
+    color: #f07d37;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.dropdown-item:hover {
+    background: rgba(240, 125, 55, 0.1);
+    color: #f07d37;
+    transform: translateX(-5px);
+}
+
+.dropdown-item i {
+    width: 20px;
+    text-align: center;
+    color: #f07d37;
+    opacity: 0.8;
+}
+
+/* الروابط المباشرة */
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: rgba(240, 125, 55, 0.15);
+    color: #f07d37;
+}
+
+/* 🍔 القائمة المنسدلة للجوال */
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.hamburger-menu .bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px 0;
+    background-color: white;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+/* ==================================== */
+/* 📱 تصميم الـ Responsive للجوال */
+/* ==================================== */
+@media (max-width: 1024px) {
+    .nav-menu {
+        gap: 1rem;
+    }
+    
+    .dropdown-menu {
+        min-width: 500px;
+    }
+    
+    .search-container {
+        flex: 0 1 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .hamburger-menu {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 100%;
+     
+        background: #1a1a2e;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 2rem;
+        transition: right 0.3s ease;
+        overflow-y: auto;
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .search-container {
+        order: 1;
+        flex: none;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    
+    .links {
+        order: 2;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+    
+    .dropdown {
+        width: 100%;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        min-width: 100%;
+        box-shadow: none;
+        margin-top: 0.5rem;
+        display: none;
+        opacity: 1;
+        transform: none;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+    
+    .dropdown-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .nav-link,
+    .dropdown-toggle {
+        width: 100%;
+        justify-content: space-between;
+        border-radius: 10px;
+        margin-bottom: 0.5rem;
+        background: rgba(255, 255, 255, 0.05);
+    }
+    
+    /* تعديل نتائج البحث للجوال */
+    .search-results {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        max-height: calc(100vh - 70px);
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 1.4rem;       
+    }
+     
+    .dropdown-menu {
+        padding: 1rem;
+    }
+}
+
+/* ==================================== */
+/* تأثيرات الهيدر عند التمرير */
+/* ==================================== */
+.navbar.scrolled {
+    background: rgba(26, 26, 46, 0.95);
+    backdrop-filter: blur(20px);
+    padding: 0.6rem 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ==================================== */
+/* تأثيرات إضافية */
+/* ==================================== */
+.nav-link::after,
+.dropdown-toggle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #f07d37, #cf0a0a);
+    transition: all 0.3s ease;
+    transform: translateX(50%);
+}
+
+.nav-link:hover::after,
+.dropdown-toggle:hover::after,
+.nav-link.active::after {
+    width: 80%;
+}
+
+/* ==================================== */
+/* تحسينات للـ Dropdown على الجوال */
+/* ==================================== */
+.dropdown-toggle.mobile-toggle {
+    cursor: pointer;
+}
+
+.dropdown-toggle.mobile-toggle .dropdown-icon {
+    transition: transform 0.3s ease;
+}
+
+.dropdown-toggle.mobile-toggle.active .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+
+.title{
+    background: aquamarine;
+    color: black;
+    text-align: center;
+
+}
+.page{
+  background-color: #000000;
+  color: wheat;
+
 }
