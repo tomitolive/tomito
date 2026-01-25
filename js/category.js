@@ -400,7 +400,7 @@ function createItemCard(item, type) {
             </div>
         </div>
     `;
-    
+       
     return card;
 }
 
