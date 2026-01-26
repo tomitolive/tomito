@@ -116,7 +116,7 @@ const SERVERS = [
         icon: 'fa-video',
         color: '#3498db',
         type: 'both',
-        description: 'سيرفر احتياطي عالي',
+        description: 'سيرفر احتياطي عالي',  
         useIdType: 'tmdb',
         subtitles: 'ar'
     },
