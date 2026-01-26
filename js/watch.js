@@ -12,8 +12,21 @@ const CONFIG = {
 // ===========================================
 const SERVERS = [
     {
+        id: 'server_3',
+        name: 'سيرفر الرئيسئ ',
+        movieUrl: 'https://vidsrc-embed.ru/embed/movie/',
+        tvUrl: 'https://vidsrc-embed.ru/embed/tv/',
+        quality: 'FHD',
+        icon: 'fa-rocket',
+        color: '#e74c3c',
+        type: 'both',
+        description: 'سيرفر احتياطي سريع',
+        useIdType: 'tmdb',
+        subtitles: 'ar'
+    },
+    {
         id: 'server_1',
-        name: 'سيرفر الرئيسي ',
+        name: 'سيرفر الاحتياطي ',
         movieUrl: 'https://multiembed.mov/directstream.php?video_id=',
         tvUrl: 'https://multiembed.mov/directstream.php?video_id=',
         quality: 'HD',
@@ -26,7 +39,7 @@ const SERVERS = [
     },
     {
         id: 'server_2',
-        name: 'سيرفر 2',
+        name: 'سيرفر 3',
         movieUrl: 'https://multiembed.mov/directstream.php?video_id=',
         tvUrl: 'https://multiembed.mov/directstream.php?video_id=',
         quality: 'HD+',
@@ -36,19 +49,6 @@ const SERVERS = [
         type: 'both',
         useIdType: 'tmdb',
         useTmdbParam: true,
-        subtitles: 'ar'
-    },
-    {
-        id: 'server_3',
-        name: 'سيرفر 3',
-        movieUrl: 'https://vidsrc-embed.ru/embed/movie/',
-        tvUrl: 'https://vidsrc-embed.ru/embed/tv/',
-        quality: 'FHD',
-        icon: 'fa-rocket',
-        color: '#e74c3c',
-        type: 'both',
-        description: 'سيرفر احتياطي سريع',
-        useIdType: 'tmdb',
         subtitles: 'ar'
     },
     {
@@ -65,7 +65,7 @@ const SERVERS = [
         subtitles: 'ar'
     },
     {
-        id: 'server_1',
+        id: 'server_5',
         name: 'سيرفر 5',
         movieUrl: 'https://vidsrc.me/embed/movie/',
         tvUrl: 'https://vidsrc.me/embed/tv/',
