@@ -14,7 +14,7 @@ const CONFIG = {
 const TV_SERVERS = [
     {
         id: 'vidsrc_embed',
-        name: '🎬 VidSrc Embed',
+        name: '🎬 سيرفر',
         baseUrl: 'https://vidsrc-embed.ru/embed/tv',
         quality: 'HD',
         icon: 'fa-film',
@@ -24,7 +24,7 @@ const TV_SERVERS = [
     },
     {
         id: 'hnembed',
-        name: '🎥 HnEmbed',
+        name: '🎥 سيرفر 2',
         baseUrl: 'https://hnembed.cc/embed/tv',
         quality: 'HD',
         icon: 'fa-video',
@@ -34,7 +34,7 @@ const TV_SERVERS = [
     },
     {
         id: 'autoembed',
-        name: '🔄 AutoEmbed',
+        name: '🔄 سيرفر 3',
         baseUrl: 'https://player.autoembed.cc/embed/tv',
         quality: 'HD',
         icon: 'fa-sync',
@@ -44,7 +44,7 @@ const TV_SERVERS = [
     },
     {
         id: '2embed',
-        name: '🎞️ 2Embed',
+        name: '🎞️ سيرفر 4',
         baseUrl: 'https://www.2embed.cc/embedtv',
         quality: 'HD',
         icon: 'fa-play-circle',
@@ -54,7 +54,7 @@ const TV_SERVERS = [
     },
     {
         id: 'vidsrc_to',
-        name: '🌟 VidSrc.to',
+        name: '🌟 سيرفر 5',
         baseUrl: 'https://vidsrc.to/embed/tv',
         quality: 'HD',
         icon: 'fa-star',
@@ -64,7 +64,7 @@ const TV_SERVERS = [
     },
     {
         id: 'vidsrc_me',
-        name: '🎯 VidSrc.me',
+        name: '🎯 سيرفر 6',
         baseUrl: 'https://vidsrc.me/embed/tv',
         quality: 'HD',
         icon: 'fa-tv',
@@ -77,7 +77,7 @@ const TV_SERVERS = [
 // ===========================================
 // نظام حجب الإعلانات للمسلسلات
 // ===========================================
-class TVAdBlocker {
+class TVAdBlocker {   
     constructor() {
         this.adDomains = new Set([
             'doubleclick.net', 'googleads', 'googlesyndication',

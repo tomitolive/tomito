@@ -26,7 +26,7 @@ const SERVERS = [
     },
     {
         id: 'server_1',
-        name: 'SuperEmbed VIP',
+        name: 'VIP',
         movieUrl: 'https://multiembed.mov/directstream.php?video_id=',
         tvUrl: 'https://multiembed.mov/directstream.php?video_id=',
         quality: 'VIP HD',
@@ -122,7 +122,7 @@ const SERVERS = [
     },
     {
         id: 'server_9',
-        name: 'Vidsrc Embed',
+        name: 'جديد',
         movieUrl: 'https://vidsrc-embed.ru/embed/movie',
         tvUrl: 'https://vidsrc-embed.ru/embed/tv',
         quality: 'FHD',
