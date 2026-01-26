@@ -14,14 +14,14 @@ const SERVERS = [
     {
         id: 'server_1',
         name: 'سيرفر 1',
-        movieUrl: 'https://multiembed.mov/directstream.php?video_id=',
-        tvUrl: 'https://multiembed.mov/directstream.php?video_id=',
+        movieUrl: 'https://vidsrc.me/embed/movie/',
+        tvUrl: 'https://vidsrc.me/embed/tv/',
         quality: 'HD',
-        icon: 'fa-play-circle',
-        color: '#9b59b6',
+        icon: 'fa-star',
+        color: '#16a085',
         type: 'both',
-        description: 'سيرفر احتياطي سريع',
-        useIdType: 'imdb',
+        description: 'سيرفر احتياطي بديل',
+        useIdType: 'tmdb',
         subtitles: 'ar'
     },
     {
@@ -67,14 +67,14 @@ const SERVERS = [
     {
         id: 'server_5',
         name: 'سيرفر 5',
-        movieUrl: 'https://vidsrc.me/embed/movie/',
-        tvUrl: 'https://vidsrc.me/embed/tv/',
+        movieUrl: 'https://multiembed.mov/directstream.php?video_id=',
+        tvUrl: 'https://multiembed.mov/directstream.php?video_id=',
         quality: 'HD',
-        icon: 'fa-star',
-        color: '#16a085',
+        icon: 'fa-play-circle',
+        color: '#9b59b6',
         type: 'both',
-        description: 'سيرفر احتياطي بديل',
-        useIdType: 'tmdb',
+        description: 'سيرفر احتياطي سريع',
+        useIdType: 'imdb',
         subtitles: 'ar'
     },
     {
