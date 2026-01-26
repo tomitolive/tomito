@@ -13,7 +13,7 @@ const CONFIG = {
 const SERVERS = [
     {
         id: 'server_3',
-        name: 'سيرفر الرئيسئ ',
+        name: 'سيرفر الرئيسي',
         movieUrl: 'https://vidsrc-embed.ru/embed/movie/',
         tvUrl: 'https://vidsrc-embed.ru/embed/tv/',
         quality: 'FHD',
@@ -26,16 +26,20 @@ const SERVERS = [
     },
     {
         id: 'server_1',
-        name: 'سيرفر الاحتياطي ',
+        name: 'SuperEmbed VIP',
         movieUrl: 'https://multiembed.mov/directstream.php?video_id=',
         tvUrl: 'https://multiembed.mov/directstream.php?video_id=',
-        quality: 'HD',
+        quality: 'VIP HD',
         icon: 'fa-play-circle',
         color: '#9b59b6',
         type: 'both',
-        description: 'سيرفر احتياطي سريع',
+        description: 'سيرفر VIP سريع مع جودة متعددة وترجمة',
         useIdType: 'imdb',
-        subtitles: 'ar'
+        subtitles: 'ar',
+        vip: true,
+        allowSubtitlesParam: true,
+        allowTmdb: true,
+        allowSeasonEpisode: true
     },
     {
         id: 'server_2',
@@ -44,7 +48,7 @@ const SERVERS = [
         tvUrl: 'https://multiembed.mov/directstream.php?video_id=',
         quality: 'HD+',
         icon: 'fa-film',
-        1: 'سيرفر احتياطي مع ترجمة',
+        description: 'سيرفر احتياطي مع ترجمة',
         color: '#1abc9c',
         type: 'both',
         useIdType: 'tmdb',
@@ -115,6 +119,24 @@ const SERVERS = [
         description: 'سيرفر احتياطي عالي',
         useIdType: 'tmdb',
         subtitles: 'ar'
+    },
+    {
+        id: 'server_9',
+        name: 'Vidsrc Embed',
+        movieUrl: 'https://vidsrc-embed.ru/embed/movie',
+        tvUrl: 'https://vidsrc-embed.ru/embed/tv',
+        quality: 'FHD',
+        icon: 'fa-globe',
+        color: '#8e44ad',
+        type: 'both',
+        description: 'سيرفر جديد يدعم معلمات متقدمة',
+        useIdType: 'tmdb',
+        subtitles: 'ar',
+        supportsParams: true, // يدعم معلمات في URL
+        supportsImdbParam: true,
+        supportsTmdbParam: true,
+        supportsSubLang: true,
+        supportsAutoPlay: true
     }
 ];
 
@@ -362,6 +384,7 @@ class MoviePlayer {
                     title="${server.description}">
                 <i class="fas ${server.icon}"></i>
                 <span>${server.name}</span>
+                <span class="server-quality">${server.quality}</span>
             </button>
         `).join('');
         
@@ -392,6 +415,12 @@ class MoviePlayer {
         
         let baseURL = this.contentType === 'tv' ? server.tvUrl : server.movieUrl;
         
+        // معالجة السيرفر الجديد (server_9)
+        if (server.id === 'server_9') {
+            return this.buildVidsrcEmbedURL(server, videoId);
+        }
+        
+        // معالجة السيرفرات الأخرى
         if (this.contentType === 'tv') {
             if (server.id.includes('server_1') || server.id.includes('server_2')) {
                 let url = `${baseURL}${videoId}`;
@@ -425,6 +454,58 @@ class MoviePlayer {
         }
     }
     
+    buildVidsrcEmbedURL(server, videoId) {
+        let url = server.movieUrl;
+        const params = [];
+        
+        // إضافة معلمة معرف الفيلم
+        if (server.useIdType === 'imdb' && this.imdbId) {
+            params.push(`imdb=${this.imdbId}`);
+        } else {
+            params.push(`tmdb=${videoId}`);
+        }
+        
+        // إضافة اللغة التلقائية للترجمة
+        if (server.subtitles && server.supportsSubLang) {
+            params.push(`ds_lang=${server.subtitles}`);
+        }
+        
+        // إضافة خاصية التشغيل التلقائي
+        if (server.supportsAutoPlay) {
+            params.push('autoplay=1');
+        }
+        
+        // لسلاسل المسلسلات
+        if (this.contentType === 'tv') {
+            url = server.tvUrl;
+            if (this.season && this.episode) {
+                // للسيرفر الجديد، نضيف الموسم والحلقة كجزء من المسار
+                url = `${server.tvUrl}/${videoId}/${this.season}/${this.episode}`;
+                
+                // إعادة بناء المعلمات
+                let newParams = [];
+                if (server.subtitles && server.supportsSubLang) {
+                    newParams.push(`ds_lang=${server.subtitles}`);
+                }
+                if (server.supportsAutoPlay) {
+                    newParams.push('autoplay=1');
+                }
+                
+                if (newParams.length > 0) {
+                    return `${url}?${newParams.join('&')}`;
+                }
+                return url;
+            }
+        }
+        
+        // بناء URL النهائي
+        if (params.length > 0) {
+            return `${url}?${params.join('&')}`;
+        }
+        
+        return `${url}/${videoId}`;
+    }
+    
     changeServer(serverId) {
         const server = SERVERS.find(s => s.id === serverId);
         if (!server) return;
@@ -454,12 +535,14 @@ class MoviePlayer {
     
         try {
             const videoURL = this.buildVideoURL(this.currentServer);
+            console.log('Video URL:', videoURL); // للتطوير
             
             // إضافة مؤشر تحميل
             videoWrapper.innerHTML = `
                 <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
                     <div class="loading-spinner" style="margin: 0 auto 15px;"></div>
                     <div>جاري تحميل ${this.currentServer.name}...</div>
+                    <small style="opacity: 0.7; margin-top: 5px;">${this.currentServer.quality}</small>
                 </div>
             `;
     
@@ -472,13 +555,22 @@ class MoviePlayer {
                             width="100%" 
                             height="100%" 
                             allowfullscreen="true" 
-                            scrolling="no">
+                            scrolling="no"
+                            allow="autoplay; encrypted-media"
+                            referrerpolicy="no-referrer">
                     </iframe>
                 `;
             }, 500);
             
         } catch (error) {
             console.error('خطأ:', error);
+            videoWrapper.innerHTML = `
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; padding: 20px;">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 48px; margin-bottom: 15px; color: #e74c3c;"></i>
+                    <div>خطأ في تحميل الفيديو</div>
+                    <small>${error.message}</small>
+                </div>
+            `;
         }
     }
     

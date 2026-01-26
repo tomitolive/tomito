@@ -781,51 +781,41 @@ class TVSeriesPlayer {
             </button>
         `).join('');
         
-        // تحديد السيرفر الأول تلقائياً
         if (TV_SERVERS.length > 0) {
-            const firstServerBtn = container.querySelector('.server-btn');
-            if (firstServerBtn) {
-                firstServerBtn.classList.add('active');
-            }
+            this.selectServer(TV_SERVERS[0].id, true);
         }
+        
     }
     
     selectServer(serverId, autoPlay = false) {
-        // إزالة النشاط من جميع الأزرار
         document.querySelectorAll('.server-btn').forEach(btn => {
             btn.classList.remove('active');
         });
-        
-        // إضافة النشاط للزر المحدد
+    
         const selectedBtn = document.querySelector(`[data-server-id="${serverId}"]`);
-        if (selectedBtn) {
-            selectedBtn.classList.add('active');
-        }
-        
-        // تحديث السيرفر الحالي
+        if (selectedBtn) selectedBtn.classList.add('active');
+    
         const server = TV_SERVERS.find(s => s.id === serverId);
         if (!server) {
             this.showError('السيرفر المحدد غير موجود');
             return;
         }
-        
+    
         this.currentServer = server;
-        
-        // تحديث النص أعلى الفيديو
+    
         const currentServerText = document.getElementById('current-server');
         if (currentServerText) {
             currentServerText.textContent = `جاري التشغيل: ${server.name}`;
         }
-        
-        // التشغيل التلقائي
-        if (autoPlay || !this.autoPlayEnabled) {
-            setTimeout(() => {
-                this.playEpisode();
-            }, 300);
+    
+        // ✅ التشغيل التلقائي الصحيح
+        if (autoPlay || this.autoPlayEnabled) {
+            this.playEpisode();
         }
-        
+    
         this.showNotification(`تم التبديل إلى ${server.name}`, 'info');
     }
+    
     
     populateSeasonsDropdown() {
         const seasonSelect = document.getElementById('season-select');
@@ -926,9 +916,11 @@ class TVSeriesPlayer {
         if (newSeason !== this.currentSeason) {
             this.changeSeason(newSeason);
             setTimeout(() => {
-                this.changeEpisode(newEpisode);
-                this.playEpisode();
-            }, 500);
+                if (this.autoPlayEnabled && TV_SERVERS.length > 0) {
+                    this.selectServer(TV_SERVERS[0].id, true);
+                }
+            }, 1000);
+            
         } else {
             this.changeEpisode(newEpisode);
             this.playEpisode();
