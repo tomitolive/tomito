@@ -122,7 +122,7 @@ const SERVERS = [
     },
     {
         id: 'server_9',
-        n',
+        name:'جديد',
         movieUrl: 'https://vidsrc-embed.ru/embed/movie',
         tvUrl: 'https://vidsrc-embed.ru/embed/tv',
         quality: 'FHD',
