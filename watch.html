@@ -22,18 +22,18 @@
 <body>
     
    
+ 
     <nav class="navbar">
-        
-        
+      
         <div class="nav-menu">
             <div class="links">
                 <!-- Dropdown أفلام -->
                 <div class="dropdown">
-                    <!-- <a href="#" class="nav-link dropdown-toggle">
+                    <a href="#" class="nav-link dropdown-toggle">
                         <i class="fas fa-film"></i>
                         الأفلام
                         <i class="fas fa-chevron-down dropdown-icon"></i>
-                    </a> -->
+                    </a>
                     <div class="dropdown-menu">
                         <div class="dropdown-grid">
                             <div class="dropdown-column">
@@ -52,25 +52,18 @@
                                 <a href="#" class="dropdown-item" data-subcategory="upcoming"><i class="fas fa-calendar-plus"></i> قريباً</a>
                                 <a href="#" class="dropdown-item" data-subcategory="trending"><i class="fas fa-chart-line"></i> تريند</a>
                             </div>
-                            <div class="dropdown-column">
-                                <h4>السنة</h4>
-                                <a href="#" class="dropdown-item" data-year="2024"><i class="fas fa-calendar"></i> 2024</a>
-                                <a href="#" class="dropdown-item" data-year="2023"><i class="fas fa-calendar"></i> 2023</a>
-                                <a href="#" class="dropdown-item" data-year="2022"><i class="fas fa-calendar"></i> 2022</a>
-                                <a href="#" class="dropdown-item" data-year="2021"><i class="fas fa-calendar"></i> 2021</a>
-                                <a href="#" class="dropdown-item" data-year="2020"><i class="fas fa-calendar"></i> 2020</a>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
                 
                 <!-- Dropdown مسلسلات -->
                 <div class="dropdown">
-                    <!-- <a href="#" class="nav-link dropdown-toggle">
+                    <a href="#" class="nav-link dropdown-toggle">
                         <i class="fas fa-tv"></i>
                         المسلسلات
                         <i class="fas fa-chevron-down dropdown-icon"></i>
-                    </a> -->
+                    </a>
                     <div class="dropdown-menu">
                         <div class="dropdown-grid">
                             <div class="dropdown-column">
@@ -89,14 +82,7 @@
                                 <a href="#" class="dropdown-item" data-series-category="fantasy"><i class="fas fa-hat-wizard"></i> فانتازيا</a>
                                 <a href="#" class="dropdown-item" data-series-category="romance"><i class="fas fa-heart"></i> رومانسي</a>
                             </div>
-                            <div class="dropdown-column">
-                                <h4>مشاهدة</h4>
-                                <a href="#" class="dropdown-item" data-series-view="ongoing"><i class="fas fa-play-circle"></i> جارية</a>
-                                <a href="#" class="dropdown-item" data-series-view="completed"><i class="fas fa-check-circle"></i> مكتملة</a>
-                                <a href="#" class="dropdown-item" data-series-view="new"><i class="fas fa-star"></i> جديدة</a>
-                                <a href="#" class="dropdown-item" data-series-view="popular"><i class="fas fa-fire"></i> الأكثر مشاهدة</a>
-                                <a href="#" class="dropdown-item" data-series-view="top-rated"><i class="fas fa-trophy"></i> الأعلى تقييماً</a>
-                            </div>
+                          
                         </div>
                     </div>
                 </div>
@@ -104,7 +90,7 @@
                 <!-- روابط مباشرة -->
                 <a href="index.html" class="nav-link active">
                     <i class="fas fa-home"></i>
-                     الرئيسية
+                    الصفحة الرئيسية
                 </a>
                 <a href="tr.index.html" class="nav-link">
                     <i class="fas fa-chart-line"></i>
@@ -115,25 +101,23 @@
             <div class="search-container">
                 <input type="text" class="search-input" id="search" placeholder="ابحث عن أفلام...">
                 <button class="search-btn">
-                  
+                   
                 </button>
                 <!-- نتائج البحث -->
                 <div class="search-results" id="searchResults"></div>
             </div>
 
-
-           
+            <div class="logo">
+                <h1>
+                    <div class="logo-text">
+                        <span>TomiTo</span>
+                       
+                    </div>
+                </h1>
+            </div>
             
-           
-        </div>
-
-        <div class="logo">
-            <h1>
-                <div class="logo-text">
-                    <span>TomiTo</span>
-                  
-                </div>
-            </h1>
+            
+            
         </div>
         
         <button class="hamburger-menu" aria-label="Toggle navigation">
@@ -142,7 +126,6 @@
             <span class="bar"></span>
         </button>
     </nav>
-    <!-- شريط التقدم -->
     <div class="progress-bar" id="progress-bar"></div>
     
     
@@ -152,42 +135,9 @@
 
     <!-- البانر الرئيسي -->
     <br>
-    <section class="movie-banner"  style="padding-top: 50 px ">
-        <div class="banner-background"></div>
-        <div class="banner-content">
-            
-            <p id="banner-description">جاري تحميل وصف الفيلم...</p>
-            
-            <div class="banner-meta">
-                <div class="meta-item">
-                    <i class="fas fa-calendar-alt"></i>
-                    <span id="year-text">----</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-clock"></i>
-                    <span id="duration-text">-- دقيقة</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-star"></i>
-                    <span id="rating-text">--</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-tag"></i>
-                    <span>+16</span>
-                </div>
-            </div>
-            
-            <div class="banner-actions">
-                <button class="play-btn-lg" id="play-now-btn">
-                    <i class="fas fa-play"></i>
-                    <span>تشغيل الفيلم</span>
-                </button>
-                
-            </div>
-        </div>
-    </section>
+   
     
-    <!-- قسم الفيديو -->
+    <!-- قسم الفيديو --> 
     <section class="video-section-main">
         <div class="container">
             <div class="section-title">
@@ -288,6 +238,7 @@
         </div>
     </footer>
     <script src="js/header.js"></script>
+    <script src="js/api.js"></script>
     <script src="js/watch.js"></script>
     <script src="js/category.js"></script>
     <script src="https://pl28403821.effectivegatecpm.com/d3/d3/09/d3d309d5b609d8a118c7e64605eac7b5.js"></script>
