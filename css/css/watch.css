@@ -3221,4 +3221,127 @@ body {
       transform: scale(1.03);
     }
   }
-    
+    /* صندوق اختيار الحلقات */
+.episode-selector {
+    margin-top: 40px;
+    padding: 20px;
+    background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* شريط المواسم */
+.season-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.season-bar label {
+    color: #bbb;
+    font-weight: bold;
+}
+
+.season-select {
+    background: #111;
+    color: white;
+    border: 1px solid #333;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+/* شبكة الحلقات */
+.episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+}
+
+/* كارت الحلقة */
+.episode-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #111;
+    transition: 0.3s;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.episode-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(229,9,20,0.3);
+}
+
+/* صورة الحلقة */
+.episode-thumb {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+}
+
+/* طبقة المعلومات */
+.episode-info {
+    padding: 8px;
+}
+
+.episode-number {
+    font-size: 12px;
+    color: #E50914;
+    font-weight: bold;
+}
+
+.episode-name {
+    font-size: 13px;
+    color: #eee;
+    margin-top: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* الحلقة الحالية */
+.episode-card.active {
+    border: 1px solid #E50914;
+    box-shadow: 0 0 10px rgba(229,9,20,0.6);
+}
+/* ===== Season Dropdown Dark ===== */
+.season-select {
+    background: linear-gradient(145deg, #0d0d0d, #1a1a1a);
+    color: #fff;
+    border: 1px solid #333;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.season-select:hover {
+    border-color: #E50914;
+    box-shadow: 0 0 10px rgba(229,9,20,0.4);
+}
+
+.season-select option {
+    background: #111;
+    color: #fff;
+}
+
+/* زر اختيار الحلقة */
+.selector-header h3 {
+    color: #fff;
+}
+
+/* انيميشن ظهور الحلقات */
+.episodes-grid {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.episodes-grid.loading {
+    opacity: 0.3;
+    pointer-events: none;
+}
