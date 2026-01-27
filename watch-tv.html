@@ -176,35 +176,24 @@
                     <!-- سيتم تعبئتها بالجافاسكريبت -->
                 </div>
             </div>
-            
-            <!-- اختيار الموسم والحلقة -->
-            <div class="episode-selector" id="episode-selector">
-                <div class="selector-header">
-                    <h3><i class="fas fa-list"></i> اختيار الحلقة</h3>
-                </div>
-                <div class="selector-content">
-                    <div class="selector-row">
-                        <div class="selector-group">
-                            <label for="season-select">
-                                <i class="fas fa-layer-group"></i> الموسم:
-                            </label>
-                            <select id="season-select" class="season-select">
-                                <option value="">جاري التحميل...</option>
-                            </select>
-                        </div>
-                        
-                        <div class="selector-group">
-                            <label for="episode-select">
-                                <i class="fas fa-play"></i> الحلقة:
-                            </label>
-                            <select id="episode-select" class="episode-select">
-                                <option value="">اختر الموسم أولاً</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- اختيار الموسم والحلقة -->
+<div class="episode-selector" id="episode-selector">
+    <div class="selector-header">
+        <h3><i class="fas fa-list"></i> اختيار الحلقة</h3>
+    </div>
+
+    <!-- اختيار الموسم -->
+    <div class="season-bar">
+        <label><i class="fas fa-layer-group"></i> الموسم</label>
+        <select id="season-select" class="season-select"></select>
+    </div>
+
+    <!-- كروت الحلقات -->
+    <div id="episodes-grid" class="episodes-grid">
+        <!-- الحلقات تتحط هنا بالـ JS -->
+    </div>
+</div>
+
     </section>
 
     <!-- قسم المواسم -->
