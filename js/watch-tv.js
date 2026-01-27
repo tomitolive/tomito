@@ -482,20 +482,27 @@ class TVSeriesPlayer {
             throw error;
         }
     }
-    
     async loadSeasonData(seasonNumber) {
         try {
+            const grid = document.getElementById('episodes-grid');
+            if (grid) grid.classList.add('loading');
+    
             const seasonData = await this.fetchData(`/tv/${this.seriesId}/season/${seasonNumber}?language=ar`);
             this.seasonsData[seasonNumber] = seasonData;
             this.totalEpisodes = seasonData.episodes?.length || 1;
-            this.currentEpisode = Math.min(this.currentEpisode, this.totalEpisodes);
-            
-            this.populateEpisodesDropdown(seasonNumber);
+            this.currentEpisode = 1;
+    
+            this.populateEpisodesGrid(seasonNumber);
             this.updateEpisodeInfo();
-            
+    
         } catch (error) {
             console.error(`خطأ في تحميل الموسم ${seasonNumber}:`, error);
             this.showError(`فشل تحميل بيانات الموسم ${seasonNumber}`);
+        } finally {
+            const grid = document.getElementById('episodes-grid');
+            if (grid) {
+                setTimeout(() => grid.classList.remove('loading'), 300);
+            }
         }
     }
     
@@ -831,33 +838,43 @@ class TVSeriesPlayer {
             seasonSelect.appendChild(option);
         }
     }
+    populateEpisodesGrid(seasonNumber) {
+        const container = document.getElementById('episodes-grid');
+        if (!container) return;
     
-    populateEpisodesDropdown(seasonNumber) {
-        const episodeSelect = document.getElementById('episode-select');
-        if (!episodeSelect) return;
-        
-        episodeSelect.innerHTML = '';
-        
         const season = this.seasonsData[seasonNumber];
         const episodes = season?.episodes || [];
-        
+    
         if (episodes.length === 0) {
-            const option = document.createElement('option');
-            option.value = "";
-            option.textContent = "لا توجد حلقات";
-            episodeSelect.appendChild(option);
+            container.innerHTML = '<div class="no-data">لا توجد حلقات</div>';
             return;
         }
-        
-        episodes.forEach((episode, index) => {
-            const episodeNumber = index + 1;
-            const option = document.createElement('option');
-            option.value = episodeNumber;
-            option.textContent = episode.name ? `الحلقة ${episodeNumber}: ${episode.name.substring(0, 40)}${episode.name.length > 40 ? '...' : ''}` : `الحلقة ${episodeNumber}`;
-            if (episodeNumber === this.currentEpisode) option.selected = true;
-            episodeSelect.appendChild(option);
-        });
+    
+        container.innerHTML = episodes.map((ep, index) => {
+            const epNum = index + 1;
+            const img = ep.still_path
+                ? `${CONFIG.BASE_IMG}/w300${ep.still_path}`
+                : 'https://via.placeholder.com/300x170/1a1a1a/fff?text=Episode';
+    
+            return `
+                <div class="episode-card ${epNum === this.currentEpisode ? 'active' : ''}" 
+                     onclick="tvSeriesPlayer.selectEpisodeCard(${epNum})">
+                    <img src="${img}" class="episode-thumb">
+                    <div class="episode-info">
+                        <div class="episode-number">الحلقة ${epNum}</div>
+                        <div class="episode-name">${ep.name || 'بدون عنوان'}</div>
+                    </div>
+                </div>
+            `;
+        }).join('');
     }
+    selectEpisodeCard(epNumber) {
+        this.currentEpisode = epNumber;
+        this.updateEpisodeInfo();
+        this.populateEpisodesGrid(this.currentSeason);
+        this.playEpisode();
+    }
+    
     
     async changeSeason(seasonNumber) {
         if (seasonNumber < 1 || seasonNumber > this.totalSeasons) return;
@@ -871,7 +888,8 @@ class TVSeriesPlayer {
             await this.loadSeasonData(seasonNumber);
         } else {
             this.totalEpisodes = this.seasonsData[seasonNumber].episodes?.length || 1;
-            this.populateEpisodesDropdown(seasonNumber);
+            this.populateEpisodesGrid(seasonNumber);
+
             this.updateEpisodeInfo();
         }
         
