@@ -362,7 +362,7 @@ body {
    ======================================== */
 .video-section-main {
     background: #0a0a0a;
-    padding: 30px 0 50px;
+ 
     position: relative;
     z-index: 10;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -1270,9 +1270,7 @@ body {
         font-size: 1.1rem;
     }
     
-    .video-section-main {
-        padding: 40px 0 60px;
-    }
+ 
     
     .selector-row {
         flex-direction: row;
@@ -1786,7 +1784,7 @@ VIDEO SECTION
 ======================================== */
 .video-section-main {
  background: #0a0a0a;
- padding: 30px 0 50px;
+
  margin-top: 0; /* مهم! */
 }
 
@@ -2394,7 +2392,7 @@ body {
 /* ======================================== VIDEO SECTION ======================================== */
 .video-section-main {
     background: #0a0a0a;
-    padding: 30px 0 50px;
+   
     position: relative;
     z-index: 10;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -3163,4 +3161,64 @@ body {
 
 .cast-card:hover::after {
     opacity: 1;
-}
+}@media (max-width: 480px) {
+
+    .play-btn-lg,
+    .save-btn-lg,
+    .trailer-btn-lg {
+      padding: 10px 14px;
+      font-size: 13px;
+      min-width: auto;
+      border-radius: 4px; /* نيتفليكس ماشي مدور بزاف */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-weight: 500;
+    }
+  
+    /* زر Play */
+    .play-btn-lg {
+      background: #fff;
+      color: #000;
+      box-shadow: none;
+    }
+  
+    /* Save & Trailer */
+    .save-btn-lg,
+    .trailer-btn-lg {
+      background: rgba(109, 109, 110, 0.7);
+      color: #fff;
+      border: none;
+    }
+  
+  }
+  @media (min-width: 769px) {
+
+    .play-btn-lg {
+      background: #fff;
+      color: #000;
+      padding: 12px 26px;
+      font-size: 16px;
+    }
+  
+    .save-btn-lg,
+    .trailer-btn-lg {
+      background: rgba(109, 109, 110, 0.6);
+      color: #fff;
+      padding: 12px 18px;
+      font-size: 15px;
+    }
+  
+    .play-btn-lg:hover {
+      background: #e6e6e6;
+      transform: scale(1.03);
+    }
+  
+    .save-btn-lg:hover,
+    .trailer-btn-lg:hover {
+      background: rgba(109, 109, 110, 0.85);
+      transform: scale(1.03);
+    }
+  }
+    
