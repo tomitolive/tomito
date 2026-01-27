@@ -163,6 +163,9 @@ function setupThemeToggle() {
 // ========================================
 // SEARCH FUNCTIONALITY
 // ========================================
+// ========================================
+// SEARCH FUNCTIONALITY
+// ========================================
 function setupSearch() {
     const searchInput = document.getElementById("search");
     const searchContainer = document.querySelector('.search-container');
@@ -209,13 +212,14 @@ function setupSearch() {
         }, 300);
     });
     
-    // Handle Enter key
-    searchInput.addEventListener("keypress", (e) => {
+    // ✅ **التصحيح هنا: إزالة e.preventDefault()**
+    searchInput.addEventListener("keydown", (e) => {
         if (e.key === "Enter") {
             const query = searchInput.value.trim();
             if (query.length > 0) {
+                e.preventDefault(); // هذا مازال مطلوب لمنع سلوك النموذج
                 suggestionsContainer.style.display = 'none';
-                performFullSearch(query, isTVPage);
+                goToSearchResults(query); // ✅ التغيير هنا
             }
         }
     });
@@ -227,7 +231,7 @@ function setupSearch() {
             const query = searchInput.value.trim();
             if (query.length > 0) {
                 suggestionsContainer.style.display = 'none';
-                performFullSearch(query, isTVPage);
+                goToSearchResults(query); // ✅ التغيير هنا أيضاً
             }
         });
     }
@@ -240,6 +244,35 @@ function setupSearch() {
     });
     
     console.log("✅ Search Initialized");
+}
+
+// ✅ **التحديث في دالة performFullSearch**
+function performFullSearch(query, isTVPage = false) {
+    const searchInput = document.getElementById("search");
+    if (searchInput) {
+        searchInput.value = query;
+    }
+    
+    const suggestionsContainer = document.querySelector('.search-suggestions');
+    if (suggestionsContainer) {
+        suggestionsContainer.style.display = 'none';
+    }
+    
+    // ✅ التغيير هنا: الانتقال لصفحة النتائج بدلاً من البحث في نفس الصفحة
+    goToSearchResults(query);
+}
+
+// ✅ **دالة goToSearchResults موجودة بالفعل (السطر 2598)**
+function goToSearchResults(query) {
+    window.location.href = `search-results.html?q=${encodeURIComponent(query)}`;
+}
+
+function goToWatch(id, type) {
+    if (type === 'movie') {
+        window.location.href = `watch.html?id=${id}`;
+    } else {
+        window.location.href = `watch-tv.html?id=${id}`;
+    }
 }
 
 async function performSearchWithSuggestions(query, container, isTVPage = false) {
@@ -355,15 +388,15 @@ function displayCombinedSearchSuggestions(results, query, container, moviesCount
     });
     
     html += `
-        <div class="suggestion-footer">
-            <button class="view-all-results movies" onclick="performFullSearch('${query.replace(/'/g, "\\'")}', false)">
-                <i class="fas fa-film"></i> كل الأفلام (${moviesCount})
-            </button>
-            <button class="view-all-results series" onclick="performFullSearch('${query.replace(/'/g, "\\'")}', true)">
-                <i class="fas fa-tv"></i> كل المسلسلات (${seriesCount})
-            </button>
-        </div>
-    `;
+    <button class="view-all-results all"
+    onclick="goToSearchResults('${query.replace(/'/g, "\\'")}')">
+    <i class="fas fa-search"></i>
+    عرض جميع النتائج (${moviesCount + seriesCount})
+  </button>
+  
+  `;
+ 
+  
     
     container.innerHTML = html;
     positionSuggestions(container);
@@ -1205,25 +1238,6 @@ function goToWatch(id, type = "movie") {
     }
 }
 
-function selectSuggestion(id, title, type) {
-    const searchInput = document.getElementById("search");
-    if (searchInput) {
-        searchInput.value = title;
-        searchInput.focus();
-    }
-    
-    const suggestionsContainer = document.querySelector('.search-suggestions');
-    if (suggestionsContainer) {
-        suggestionsContainer.style.display = 'none';
-    }
-    
-    // Show specific item
-    if (type === 'movie') {
-        showSpecificMovie(id);
-    } else {
-        showSpecificSeries(id);
-    }
-}
 
 async function showSpecificMovie(id) {
     try {
@@ -1601,3 +1615,18 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // باقي الكود...
 });
+function goToSearchResults(query) {
+    window.location.href = `search-results.html?q=${encodeURIComponent(query)}`;
+  }
+  function selectSuggestion(id, title, type) {
+    goToWatch(id, type);
+  }
+  
+  function goToWatch(id, type) {
+    if (type === 'movie') {
+      window.location.href = `watch.html?id=${id}`;
+    } else {
+      window.location.href = `watch-tv.html?id=${id}`;
+    }
+  }
+  
