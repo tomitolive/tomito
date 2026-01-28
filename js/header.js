@@ -1,5 +1,5 @@
 // ========================================
-// MOBILE MENU - FIXED VERSION
+// TOMITO NAVIGATION - DROPDOWN FIXED
 // ========================================
 document.addEventListener("DOMContentLoaded", () => {
     setupSearch();
@@ -9,154 +9,186 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ========================================
-// MOBILE MENU SETUP
-// ========================================
-function setupMobileMenu() {
-    const hamburger = document.querySelector(".hamburger-menu");
-    const navMenu = document.querySelector(".nav-menu");
-    const body = document.body;
-    
-    if (!hamburger || !navMenu) {
-        console.error("❌ Hamburger or Nav Menu not found!");
-        return;
-    }
-    
-    console.log("✅ Mobile menu initialized");
-    
-    // فتح/إغلاق المينيو
-    hamburger.addEventListener("click", (e) => {
-        e.stopPropagation();
-        toggleMobileMenu();
-    });
-    
-    function toggleMobileMenu() {
-        navMenu.classList.toggle("active");
-        hamburger.classList.toggle("active");
-        body.classList.toggle("menu-open");
-        
-        console.log("Menu toggled:", navMenu.classList.contains("active"));
-    }
-    
-    // إغلاق عند النقر خارج المينيو
-    document.addEventListener("click", (e) => {
-        if (window.innerWidth <= 768) {
-            if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
-                if (navMenu.classList.contains("active")) {
-                    navMenu.classList.remove("active");
-                    hamburger.classList.remove("active");
-                    body.classList.remove("menu-open");
-                    
-                    // إغلاق جميع الـ Dropdowns
-                    document.querySelectorAll(".dropdown").forEach(dropdown => {
-                        dropdown.classList.remove("active");
-                    });
-                    document.querySelectorAll(".dropdown-toggle").forEach(toggle => {
-                        toggle.classList.remove("active");
-                    });
-                }
-            }
-        }
-    });
-    
-    // إغلاق عند تغيير حجم الشاشة
-    window.addEventListener("resize", () => {
-        if (window.innerWidth > 768) {
-            navMenu.classList.remove("active");
-            hamburger.classList.remove("active");
-            body.classList.remove("menu-open");
-        }
-    });
-    
-    // إغلاق المينيو عند النقر على رابط مباشر (ليس dropdown)
-    const directLinks = document.querySelectorAll(".nav-link:not(.dropdown-toggle)");
-    directLinks.forEach(link => {
-        link.addEventListener("click", () => {
-            if (window.innerWidth <= 768) {
-                navMenu.classList.remove("active");
-                hamburger.classList.remove("active");
-                body.classList.remove("menu-open");
-            }
-        });
-    });
-}
-
-// ========================================
-// DROPDOWNS SETUP
+// DROPDOWNS SETUP - FIXED FOR DESKTOP
 // ========================================
 function setupDropdowns() {
-    const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+    const dropdowns = document.querySelectorAll(".dropdown");
     
-    dropdownToggles.forEach(toggle => {
-        // Desktop hover
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector(".dropdown-toggle");
+        const menu = dropdown.querySelector(".dropdown-menu");
+        
+        if (!toggle || !menu) return;
+        
+        let hideTimeout;
+        
+        // ========================================
+        // DESKTOP: Hover with delay
+        // ========================================
         if (window.innerWidth > 768) {
-            toggle.addEventListener("mouseenter", () => {
+            
+            // عند hover على الـ dropdown كامل
+            dropdown.addEventListener("mouseenter", () => {
+                clearTimeout(hideTimeout);
+                
+                // إغلاق الـ dropdowns الأخرى
+                document.querySelectorAll(".dropdown").forEach(other => {
+                    if (other !== dropdown) {
+                        const otherToggle = other.querySelector(".dropdown-toggle");
+                        const otherMenu = other.querySelector(".dropdown-menu");
+                        if (otherToggle && otherMenu) {
+                            otherToggle.classList.remove("active");
+                            otherMenu.style.display = "none";
+                            otherMenu.style.opacity = "0";
+                            otherMenu.style.visibility = "hidden";
+                        }
+                    }
+                });
+                
+                // فتح الـ dropdown الحالي
                 toggle.classList.add("active");
+                menu.style.display = "block";
+                
+                // تأخير بسيط للأنيميشن
+                setTimeout(() => {
+                    menu.style.opacity = "1";
+                    menu.style.visibility = "visible";
+                }, 10);
             });
             
-            toggle.parentElement.addEventListener("mouseleave", () => {
-                toggle.classList.remove("active");
+            // عند مغادرة الـ dropdown
+            dropdown.addEventListener("mouseleave", () => {
+                hideTimeout = setTimeout(() => {
+                    toggle.classList.remove("active");
+                    menu.style.opacity = "0";
+                    menu.style.visibility = "hidden";
+                    
+                    setTimeout(() => {
+                        if (menu.style.opacity === "0") {
+                            menu.style.display = "none";
+                        }
+                    }, 300);
+                }, 150); // تأخير 150ms قبل الإخفاء
+            });
+            
+            // منع الإخفاء عند التحرك داخل القائمة
+            menu.addEventListener("mouseenter", () => {
+                clearTimeout(hideTimeout);
+            });
+            
+            menu.addEventListener("mouseleave", () => {
+                hideTimeout = setTimeout(() => {
+                    toggle.classList.remove("active");
+                    menu.style.opacity = "0";
+                    menu.style.visibility = "hidden";
+                    
+                    setTimeout(() => {
+                        if (menu.style.opacity === "0") {
+                            menu.style.display = "none";
+                        }
+                    }, 300);
+                }, 150);
             });
         }
         
-        // Mobile/Desktop click
+        // ========================================
+        // MOBILE & DESKTOP: Click
+        // ========================================
         toggle.addEventListener("click", (e) => {
             e.preventDefault();
             e.stopPropagation();
             
+            const isActive = toggle.classList.contains("active");
+            
             // إغلاق باقي الـ Dropdowns
-            dropdownToggles.forEach(other => {
-                if (other !== toggle) {
-                    other.classList.remove("active");
-                    other.parentElement.classList.remove("active");
+            document.querySelectorAll(".dropdown").forEach(other => {
+                if (other !== dropdown) {
+                    const otherToggle = other.querySelector(".dropdown-toggle");
+                    const otherMenu = other.querySelector(".dropdown-menu");
+                    if (otherToggle && otherMenu) {
+                        otherToggle.classList.remove("active");
+                        other.classList.remove("active");
+                        otherMenu.style.display = "none";
+                        otherMenu.style.opacity = "0";
+                        otherMenu.style.visibility = "hidden";
+                    }
                 }
             });
             
             // Toggle الحالي
-            toggle.classList.toggle("active");
-            toggle.parentElement.classList.toggle("active");
-        });
-    });
-    
-    // معالجة النقر على عناصر الـ Dropdown
-    const dropdownItems = document.querySelectorAll(".dropdown-item");
-    dropdownItems.forEach(item => {
-        item.addEventListener("click", (e) => {
-            e.preventDefault();
-            
-            const category = item.dataset.category || 
-                            item.dataset.subcategory || 
-                            item.dataset.year || 
-                            item.dataset.seriesType || 
-                            item.dataset.seriesCategory;
-            
-            console.log(`Selected: ${item.textContent} (${category})`);
-            
-            // إغلاق المينيو في الموبايل
-            if (window.innerWidth <= 768) {
-                const navMenu = document.querySelector(".nav-menu");
-                const hamburger = document.querySelector(".hamburger-menu");
-                
-                navMenu.classList.remove("active");
-                hamburger.classList.remove("active");
-                document.body.classList.remove("menu-open");
-                
-                dropdownToggles.forEach(toggle => {
-                    toggle.classList.remove("active");
-                    toggle.parentElement.classList.remove("active");
-                });
-            }
-            
-            // التوجيه للصفحة
-            filterContent(category, item.textContent);
-        });
-    });
-    
-    // إغلاق الـ Dropdowns عند النقر خارجها (Desktop)
-    document.addEventListener("click", (e) => {
-        if (!e.target.closest(".dropdown") && window.innerWidth > 768) {
-            dropdownToggles.forEach(toggle => {
+            if (isActive) {
                 toggle.classList.remove("active");
-                toggle.parentElement.classList.remove("active");
+                dropdown.classList.remove("active");
+                menu.style.opacity = "0";
+                menu.style.visibility = "hidden";
+                setTimeout(() => {
+                    menu.style.display = "none";
+                }, 300);
+            } else {
+                toggle.classList.add("active");
+                dropdown.classList.add("active");
+                menu.style.display = "block";
+                setTimeout(() => {
+                    menu.style.opacity = "1";
+                    menu.style.visibility = "visible";
+                }, 10);
+            }
+        });
+        
+        // معالجة النقر على عناصر القائمة
+        const dropdownItems = dropdown.querySelectorAll(".dropdown-item");
+        dropdownItems.forEach(item => {
+            item.addEventListener("click", (e) => {
+                e.preventDefault();
+                
+                const category = item.dataset.category || 
+                                item.dataset.subcategory || 
+                                item.dataset.year || 
+                                item.dataset.seriesType || 
+                                item.dataset.seriesCategory;
+                
+                console.log(`Selected: ${item.textContent} (${category})`);
+                
+                // إغلاق القائمة
+                toggle.classList.remove("active");
+                dropdown.classList.remove("active");
+                menu.style.opacity = "0";
+                menu.style.visibility = "hidden";
+                setTimeout(() => {
+                    menu.style.display = "none";
+                }, 300);
+                
+                // إغلاق المينيو في الموبايل
+                if (window.innerWidth <= 768) {
+                    const navMenu = document.querySelector(".nav-menu");
+                    const hamburger = document.querySelector(".hamburger-menu");
+                    
+                    navMenu?.classList.remove("active");
+                    hamburger?.classList.remove("active");
+                    document.body.classList.remove("menu-open");
+                }
+                
+                // التوجيه للصفحة
+                filterContent(category, item.textContent);
+            });
+        });
+    });
+    
+    // إغلاق الـ Dropdowns عند النقر خارجها
+    document.addEventListener("click", (e) => {
+        if (!e.target.closest(".dropdown")) {
+            document.querySelectorAll(".dropdown").forEach(dropdown => {
+                const toggle = dropdown.querySelector(".dropdown-toggle");
+                const menu = dropdown.querySelector(".dropdown-menu");
+                if (toggle && menu) {
+                    toggle.classList.remove("active");
+                    dropdown.classList.remove("active");
+                    menu.style.opacity = "0";
+                    menu.style.visibility = "hidden";
+                    setTimeout(() => {
+                        menu.style.display = "none";
+                    }, 300);
+                }
             });
         }
     });
@@ -181,6 +213,76 @@ function filterContent(filter, filterName) {
 }
 
 // ========================================
+// MOBILE MENU SETUP
+// ========================================
+function setupMobileMenu() {
+    const hamburger = document.querySelector(".hamburger-menu");
+    const navMenu = document.querySelector(".nav-menu");
+    const body = document.body;
+    
+    if (!hamburger || !navMenu) {
+        console.error("❌ Hamburger or Nav Menu not found!");
+        return;
+    }
+    
+    console.log("✅ Mobile menu initialized");
+    
+    hamburger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toggleMobileMenu();
+    });
+    
+    function toggleMobileMenu() {
+        navMenu.classList.toggle("active");
+        hamburger.classList.toggle("active");
+        body.classList.toggle("menu-open");
+        
+        console.log("Menu toggled:", navMenu.classList.contains("active"));
+    }
+    
+    document.addEventListener("click", (e) => {
+        if (window.innerWidth <= 768) {
+            if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                if (navMenu.classList.contains("active")) {
+                    navMenu.classList.remove("active");
+                    hamburger.classList.remove("active");
+                    body.classList.remove("menu-open");
+                    
+                    document.querySelectorAll(".dropdown").forEach(dropdown => {
+                        const toggle = dropdown.querySelector(".dropdown-toggle");
+                        const menu = dropdown.querySelector(".dropdown-menu");
+                        if (toggle && menu) {
+                            dropdown.classList.remove("active");
+                            toggle.classList.remove("active");
+                            menu.style.display = "none";
+                        }
+                    });
+                }
+            }
+        }
+    });
+    
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            navMenu.classList.remove("active");
+            hamburger.classList.remove("active");
+            body.classList.remove("menu-open");
+        }
+    });
+    
+    const directLinks = document.querySelectorAll(".nav-link:not(.dropdown-toggle)");
+    directLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            if (window.innerWidth <= 768) {
+                navMenu.classList.remove("active");
+                hamburger.classList.remove("active");
+                body.classList.remove("menu-open");
+            }
+        });
+    });
+}
+
+// ========================================
 // SEARCH FUNCTIONALITY
 // ========================================
 function setupSearch() {
@@ -194,7 +296,6 @@ function setupSearch() {
         return;
     }
 
-    // البحث أثناء الكتابة
     searchInput.addEventListener("input", (e) => {
         clearTimeout(searchTimeout);
         const query = e.target.value.trim();
@@ -209,7 +310,6 @@ function setupSearch() {
         }, 300);
     });
 
-    // البحث عند الضغط على Enter
     searchInput.addEventListener("keypress", (e) => {
         if (e.key === "Enter") {
             const query = searchInput.value.trim();
@@ -219,7 +319,6 @@ function setupSearch() {
         }
     });
 
-    // البحث عند الضغط على زر البحث
     if (searchBtn) {
         searchBtn.addEventListener("click", () => {
             const query = searchInput.value.trim();
@@ -229,7 +328,6 @@ function setupSearch() {
         });
     }
 
-    // إغلاق نتائج البحث عند النقر خارجها
     document.addEventListener("click", (e) => {
         if (!searchResults.contains(e.target) && 
             e.target !== searchInput && 
@@ -248,7 +346,6 @@ async function performSearch(query) {
     }
 
     try {
-        // Loading state
         searchResults.innerHTML = `
             <div class="result-item">
                 <div class="result-poster">
@@ -262,7 +359,6 @@ async function performSearch(query) {
         `;
         searchResults.classList.add("active");
 
-        // TMDB API
         const API_KEY = "882e741f7283dc9ba1654d4692ec30f6";
         const BASE_URL = "https://api.themoviedb.org/3";
         const url = `${BASE_URL}/search/multi?api_key=${API_KEY}&language=ar&query=${encodeURIComponent(query)}&page=1`;
@@ -282,7 +378,6 @@ async function performSearch(query) {
             return;
         }
 
-        // عرض النتائج
         searchResults.innerHTML = results.slice(0, 5).map(item => {
             const isMovie = item.media_type === "movie";
             const title = isMovie ? item.title : item.name;
@@ -399,4 +494,4 @@ function showNotification(message) {
     }, 3000);
 }
 
-console.log("🚀 Tomito Navigation initialized!");
+console.log("🚀 Tomito Navigation - Dropdown Fixed!");
