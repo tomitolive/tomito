@@ -631,7 +631,7 @@ body {
 .quick-play-btn:hover {
     background: linear-gradient(135deg, #FF0A16 0%, #C91F26 100%);
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(229, 9, 20, 0.3);
+    box-shadow: 0 8px 16px rgba(229, 10, 20, 0.3);
 }
 
 /* ========================================
