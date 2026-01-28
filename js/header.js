@@ -1,5 +1,5 @@
 // ========================================
-// TOMITO NAVIGATION - DROPDOWN FIXED
+// TOMITO NAVIGATION - MOBILE OPTIMIZED
 // ========================================
 document.addEventListener("DOMContentLoaded", () => {
     setupSearch();
@@ -9,211 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ========================================
-// DROPDOWNS SETUP - FIXED FOR DESKTOP
-// ========================================
-function setupDropdowns() {
-    const dropdowns = document.querySelectorAll(".dropdown");
-    
-    dropdowns.forEach(dropdown => {
-        const toggle = dropdown.querySelector(".dropdown-toggle");
-        const menu = dropdown.querySelector(".dropdown-menu");
-        
-        if (!toggle || !menu) return;
-        
-        let hideTimeout;
-        
-        // ========================================
-        // DESKTOP: Hover with delay
-        // ========================================
-        if (window.innerWidth > 768) {
-            
-            // عند hover على الـ dropdown كامل
-            dropdown.addEventListener("mouseenter", () => {
-                clearTimeout(hideTimeout);
-                
-                // إغلاق الـ dropdowns الأخرى
-                document.querySelectorAll(".dropdown").forEach(other => {
-                    if (other !== dropdown) {
-                        const otherToggle = other.querySelector(".dropdown-toggle");
-                        const otherMenu = other.querySelector(".dropdown-menu");
-                        if (otherToggle && otherMenu) {
-                            otherToggle.classList.remove("active");
-                            otherMenu.style.display = "none";
-                            otherMenu.style.opacity = "0";
-                            otherMenu.style.visibility = "hidden";
-                        }
-                    }
-                });
-                
-                // فتح الـ dropdown الحالي
-                toggle.classList.add("active");
-                menu.style.display = "block";
-                
-                // تأخير بسيط للأنيميشن
-                setTimeout(() => {
-                    menu.style.opacity = "1";
-                    menu.style.visibility = "visible";
-                }, 10);
-            });
-            
-            // عند مغادرة الـ dropdown
-            dropdown.addEventListener("mouseleave", () => {
-                hideTimeout = setTimeout(() => {
-                    toggle.classList.remove("active");
-                    menu.style.opacity = "0";
-                    menu.style.visibility = "hidden";
-                    
-                    setTimeout(() => {
-                        if (menu.style.opacity === "0") {
-                            menu.style.display = "none";
-                        }
-                    }, 300);
-                }, 150); // تأخير 150ms قبل الإخفاء
-            });
-            
-            // منع الإخفاء عند التحرك داخل القائمة
-            menu.addEventListener("mouseenter", () => {
-                clearTimeout(hideTimeout);
-            });
-            
-            menu.addEventListener("mouseleave", () => {
-                hideTimeout = setTimeout(() => {
-                    toggle.classList.remove("active");
-                    menu.style.opacity = "0";
-                    menu.style.visibility = "hidden";
-                    
-                    setTimeout(() => {
-                        if (menu.style.opacity === "0") {
-                            menu.style.display = "none";
-                        }
-                    }, 300);
-                }, 150);
-            });
-        }
-        
-        // ========================================
-        // MOBILE & DESKTOP: Click
-        // ========================================
-        toggle.addEventListener("click", (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            
-            const isActive = toggle.classList.contains("active");
-            
-            // إغلاق باقي الـ Dropdowns
-            document.querySelectorAll(".dropdown").forEach(other => {
-                if (other !== dropdown) {
-                    const otherToggle = other.querySelector(".dropdown-toggle");
-                    const otherMenu = other.querySelector(".dropdown-menu");
-                    if (otherToggle && otherMenu) {
-                        otherToggle.classList.remove("active");
-                        other.classList.remove("active");
-                        otherMenu.style.display = "none";
-                        otherMenu.style.opacity = "0";
-                        otherMenu.style.visibility = "hidden";
-                    }
-                }
-            });
-            
-            // Toggle الحالي
-            if (isActive) {
-                toggle.classList.remove("active");
-                dropdown.classList.remove("active");
-                menu.style.opacity = "0";
-                menu.style.visibility = "hidden";
-                setTimeout(() => {
-                    menu.style.display = "none";
-                }, 300);
-            } else {
-                toggle.classList.add("active");
-                dropdown.classList.add("active");
-                menu.style.display = "block";
-                setTimeout(() => {
-                    menu.style.opacity = "1";
-                    menu.style.visibility = "visible";
-                }, 10);
-            }
-        });
-        
-        // معالجة النقر على عناصر القائمة
-        const dropdownItems = dropdown.querySelectorAll(".dropdown-item");
-        dropdownItems.forEach(item => {
-            item.addEventListener("click", (e) => {
-                e.preventDefault();
-                
-                const category = item.dataset.category || 
-                                item.dataset.subcategory || 
-                                item.dataset.year || 
-                                item.dataset.seriesType || 
-                                item.dataset.seriesCategory;
-                
-                console.log(`Selected: ${item.textContent} (${category})`);
-                
-                // إغلاق القائمة
-                toggle.classList.remove("active");
-                dropdown.classList.remove("active");
-                menu.style.opacity = "0";
-                menu.style.visibility = "hidden";
-                setTimeout(() => {
-                    menu.style.display = "none";
-                }, 300);
-                
-                // إغلاق المينيو في الموبايل
-                if (window.innerWidth <= 768) {
-                    const navMenu = document.querySelector(".nav-menu");
-                    const hamburger = document.querySelector(".hamburger-menu");
-                    
-                    navMenu?.classList.remove("active");
-                    hamburger?.classList.remove("active");
-                    document.body.classList.remove("menu-open");
-                }
-                
-                // التوجيه للصفحة
-                filterContent(category, item.textContent);
-            });
-        });
-    });
-    
-    // إغلاق الـ Dropdowns عند النقر خارجها
-    document.addEventListener("click", (e) => {
-        if (!e.target.closest(".dropdown")) {
-            document.querySelectorAll(".dropdown").forEach(dropdown => {
-                const toggle = dropdown.querySelector(".dropdown-toggle");
-                const menu = dropdown.querySelector(".dropdown-menu");
-                if (toggle && menu) {
-                    toggle.classList.remove("active");
-                    dropdown.classList.remove("active");
-                    menu.style.opacity = "0";
-                    menu.style.visibility = "hidden";
-                    setTimeout(() => {
-                        menu.style.display = "none";
-                    }, 300);
-                }
-            });
-        }
-    });
-}
-
-function filterContent(filter, filterName) {
-    if (!filter) return;
-
-    let type = "movie";
-
-    if (
-        filter.includes("arabic") ||
-        filter.includes("turkish") ||
-        filter.includes("american") ||
-        filter.includes("korean") ||
-        filter.includes("anime")
-    ) {
-        type = "tv";
-    }
-
-    window.location.href = `category.html?type=${type}&filter=${filter}&name=${encodeURIComponent(filterName)}`;
-}
-
-// ========================================
-// MOBILE MENU SETUP
+// MOBILE MENU SETUP - OPTIMIZED
 // ========================================
 function setupMobileMenu() {
     const hamburger = document.querySelector(".hamburger-menu");
@@ -227,6 +23,12 @@ function setupMobileMenu() {
     
     console.log("✅ Mobile menu initialized");
     
+    // تحسين الأداء: إزالة الأنيميشن على الموبايل
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+        navMenu.style.transition = "right 0.2s ease"; // أنيميشن أسرع
+    }
+    
     hamburger.addEventListener("click", (e) => {
         e.stopPropagation();
         toggleMobileMenu();
@@ -236,8 +38,6 @@ function setupMobileMenu() {
         navMenu.classList.toggle("active");
         hamburger.classList.toggle("active");
         body.classList.toggle("menu-open");
-        
-        console.log("Menu toggled:", navMenu.classList.contains("active"));
     }
     
     document.addEventListener("click", (e) => {
@@ -249,13 +49,8 @@ function setupMobileMenu() {
                     body.classList.remove("menu-open");
                     
                     document.querySelectorAll(".dropdown").forEach(dropdown => {
-                        const toggle = dropdown.querySelector(".dropdown-toggle");
-                        const menu = dropdown.querySelector(".dropdown-menu");
-                        if (toggle && menu) {
-                            dropdown.classList.remove("active");
-                            toggle.classList.remove("active");
-                            menu.style.display = "none";
-                        }
+                        dropdown.classList.remove("active");
+                        dropdown.querySelector(".dropdown-toggle")?.classList.remove("active");
                     });
                 }
             }
@@ -283,7 +78,219 @@ function setupMobileMenu() {
 }
 
 // ========================================
-// SEARCH FUNCTIONALITY
+// DROPDOWNS SETUP - OPTIMIZED
+// ========================================
+function setupDropdowns() {
+    const dropdowns = document.querySelectorAll(".dropdown");
+    const isMobile = window.innerWidth <= 768;
+    
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector(".dropdown-toggle");
+        const menu = dropdown.querySelector(".dropdown-menu");
+        
+        if (!toggle || !menu) return;
+        
+        // تحسين الأداء: تقليل الأنيميشن على الموبايل
+        if (isMobile) {
+            menu.style.transition = "all 0.2s ease";
+        }
+        
+        let hideTimeout;
+        
+        // ========================================
+        // DESKTOP: Hover
+        // ========================================
+        if (!isMobile) {
+            dropdown.addEventListener("mouseenter", () => {
+                clearTimeout(hideTimeout);
+                
+                document.querySelectorAll(".dropdown").forEach(other => {
+                    if (other !== dropdown) {
+                        const otherToggle = other.querySelector(".dropdown-toggle");
+                        const otherMenu = other.querySelector(".dropdown-menu");
+                        if (otherToggle && otherMenu) {
+                            otherToggle.classList.remove("active");
+                            otherMenu.style.display = "none";
+                            otherMenu.style.opacity = "0";
+                            otherMenu.style.visibility = "hidden";
+                        }
+                    }
+                });
+                
+                toggle.classList.add("active");
+                menu.style.display = "block";
+                
+                requestAnimationFrame(() => {
+                    menu.style.opacity = "1";
+                    menu.style.visibility = "visible";
+                });
+            });
+            
+            dropdown.addEventListener("mouseleave", () => {
+                hideTimeout = setTimeout(() => {
+                    toggle.classList.remove("active");
+                    menu.style.opacity = "0";
+                    menu.style.visibility = "hidden";
+                    
+                    setTimeout(() => {
+                        if (menu.style.opacity === "0") {
+                            menu.style.display = "none";
+                        }
+                    }, 200);
+                }, 150);
+            });
+            
+            menu.addEventListener("mouseenter", () => {
+                clearTimeout(hideTimeout);
+            });
+            
+            menu.addEventListener("mouseleave", () => {
+                hideTimeout = setTimeout(() => {
+                    toggle.classList.remove("active");
+                    menu.style.opacity = "0";
+                    menu.style.visibility = "hidden";
+                    
+                    setTimeout(() => {
+                        if (menu.style.opacity === "0") {
+                            menu.style.display = "none";
+                        }
+                    }, 200);
+                }, 150);
+            });
+        }
+        
+        // ========================================
+        // MOBILE: Click (بدون أنيميشن معقدة)
+        // ========================================
+        toggle.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const isActive = toggle.classList.contains("active");
+            
+            // إغلاق باقي الـ Dropdowns بسرعة
+            document.querySelectorAll(".dropdown").forEach(other => {
+                if (other !== dropdown) {
+                    const otherToggle = other.querySelector(".dropdown-toggle");
+                    const otherMenu = other.querySelector(".dropdown-menu");
+                    if (otherToggle && otherMenu) {
+                        otherToggle.classList.remove("active");
+                        other.classList.remove("active");
+                        
+                        if (isMobile) {
+                            // موبايل: إغلاق فوري
+                            otherMenu.style.display = "none";
+                        } else {
+                            // ديسكتوب: مع أنيميشن
+                            otherMenu.style.opacity = "0";
+                            otherMenu.style.visibility = "hidden";
+                            setTimeout(() => {
+                                otherMenu.style.display = "none";
+                            }, 200);
+                        }
+                    }
+                }
+            });
+            
+            // Toggle الحالي
+            if (isActive) {
+                toggle.classList.remove("active");
+                dropdown.classList.remove("active");
+                
+                if (isMobile) {
+                    menu.style.display = "none";
+                } else {
+                    menu.style.opacity = "0";
+                    menu.style.visibility = "hidden";
+                    setTimeout(() => {
+                        menu.style.display = "none";
+                    }, 200);
+                }
+            } else {
+                toggle.classList.add("active");
+                dropdown.classList.add("active");
+                menu.style.display = "block";
+                
+                if (!isMobile) {
+                    requestAnimationFrame(() => {
+                        menu.style.opacity = "1";
+                        menu.style.visibility = "visible";
+                    });
+                }
+            }
+        });
+        
+        // معالجة النقر على عناصر القائمة
+        const dropdownItems = dropdown.querySelectorAll(".dropdown-item");
+        dropdownItems.forEach(item => {
+            item.addEventListener("click", (e) => {
+                e.preventDefault();
+                
+                const category = item.dataset.category || 
+                                item.dataset.subcategory || 
+                                item.dataset.year || 
+                                item.dataset.seriesType || 
+                                item.dataset.seriesCategory;
+                
+                // إغلاق فوري بدون أنيميشن
+                toggle.classList.remove("active");
+                dropdown.classList.remove("active");
+                menu.style.display = "none";
+                menu.style.opacity = "0";
+                menu.style.visibility = "hidden";
+                
+                if (window.innerWidth <= 768) {
+                    const navMenu = document.querySelector(".nav-menu");
+                    const hamburger = document.querySelector(".hamburger-menu");
+                    
+                    navMenu?.classList.remove("active");
+                    hamburger?.classList.remove("active");
+                    document.body.classList.remove("menu-open");
+                }
+                
+                filterContent(category, item.textContent);
+            });
+        });
+    });
+    
+    // إغلاق الـ Dropdowns عند النقر خارجها
+    document.addEventListener("click", (e) => {
+        if (!e.target.closest(".dropdown")) {
+            document.querySelectorAll(".dropdown").forEach(dropdown => {
+                const toggle = dropdown.querySelector(".dropdown-toggle");
+                const menu = dropdown.querySelector(".dropdown-menu");
+                if (toggle && menu) {
+                    toggle.classList.remove("active");
+                    dropdown.classList.remove("active");
+                    menu.style.display = "none";
+                    menu.style.opacity = "0";
+                    menu.style.visibility = "hidden";
+                }
+            });
+        }
+    });
+}
+
+function filterContent(filter, filterName) {
+    if (!filter) return;
+
+    let type = "movie";
+
+    if (
+        filter.includes("arabic") ||
+        filter.includes("turkish") ||
+        filter.includes("american") ||
+        filter.includes("korean") ||
+        filter.includes("anime")
+    ) {
+        type = "tv";
+    }
+
+    window.location.href = `category.html?type=${type}&filter=${filter}&name=${encodeURIComponent(filterName)}`;
+}
+
+// ========================================
+// SEARCH FUNCTIONALITY - OPTIMIZED
 // ========================================
 function setupSearch() {
     const searchInput = document.getElementById("search");
@@ -296,6 +303,9 @@ function setupSearch() {
         return;
     }
 
+    // تحسين: تأخير أطول على الموبايل لتقليل الطلبات
+    const debounceTime = window.innerWidth <= 768 ? 500 : 300;
+
     searchInput.addEventListener("input", (e) => {
         clearTimeout(searchTimeout);
         const query = e.target.value.trim();
@@ -307,7 +317,7 @@ function setupSearch() {
 
         searchTimeout = setTimeout(() => {
             performSearch(query);
-        }, 300);
+        }, debounceTime);
     });
 
     searchInput.addEventListener("keypress", (e) => {
@@ -346,6 +356,7 @@ async function performSearch(query) {
     }
 
     try {
+        // Loading مبسط للموبايل
         searchResults.innerHTML = `
             <div class="result-item">
                 <div class="result-poster">
@@ -441,17 +452,25 @@ async function performSearch(query) {
 }
 
 // ========================================
-// NAVBAR SCROLL EFFECT
+// NAVBAR SCROLL EFFECT - OPTIMIZED
 // ========================================
 function setupScrollEffect() {
+    let ticking = false;
+    
     window.addEventListener("scroll", () => {
-        const navbar = document.querySelector(".navbar");
-        if (window.scrollY > 50) {
-            navbar.classList.add("scrolled");
-        } else {
-            navbar.classList.remove("scrolled");
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                const navbar = document.querySelector(".navbar");
+                if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+                ticking = false;
+            });
+            ticking = true;
         }
-    });
+    }, { passive: true });
 }
 
 // ========================================
@@ -479,19 +498,15 @@ function showNotification(message) {
         gap: 10px;
         font-weight: 600;
         box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        animation: slideIn 0.3s ease-out;
     `;
     
     document.body.appendChild(notification);
     
     setTimeout(() => {
-        notification.style.animation = "slideOut 0.3s ease-out forwards";
-        setTimeout(() => {
-            if (notification.parentNode) {
-                notification.parentNode.removeChild(notification);
-            }
-        }, 300);
+        if (notification.parentNode) {
+            notification.parentNode.removeChild(notification);
+        }
     }, 3000);
 }
 
-console.log("🚀 Tomito Navigation - Dropdown Fixed!");
+console.log("🚀 Tomito Navigation - Mobile Optimized!");
