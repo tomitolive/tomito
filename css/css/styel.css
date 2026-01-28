@@ -5559,4 +5559,84 @@ html, body {
   background-color: #000000;
   color: wheat;
 
-}
+}.page {
+    margin: 5px 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .page a {
+    display: inline-block;
+    color: black;
+    background: black;
+    padding: 8px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .page a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.7s ease;
+    z-index: -1;
+  }
+  
+  .page a:hover {
+    background: wheat;
+    transform: translateY(-2px);
+  
+    color: wheat;
+    border-color: black;
+  }
+  
+  .page a:hover::before {
+    left: 100%;
+  }
+  
+  .page a:active {
+    transform: translateY(0);
+   
+  }
+  
+  /* تأثير النص المشرق */
+  .page a {
+   
+  }
+  
+  /* تحسينات للأجهزة المختلفة */
+  @media (max-width: 768px) {
+    .page a {
+      padding: 10px 20px;
+      font-size: 11px;
+      border-radius: 10px;
+    }
+  }
+  
+  /* تأثير الوهج الخفيف */
+  .page a::after {
+    content: 'إعلان';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.05);
+    font-size: 24px;
+    font-weight: bold;
+    pointer-events: none;
+    z-index: -1;
+  }
