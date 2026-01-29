@@ -1,7 +1,7 @@
 
 (function () {
     const AD_URL = "https://www.effectivegatecpm.com/dgu0qrka?key=c4910c58837838bcdfd2133530744a67";
-    const IDLE_TIME = 15000; // 15 ثانية بالميلي ثانية
+    const IDLE_TIME = 10000; // 15 ثانية بالميلي ثانية
 
     let idleTimer = null;
     let canShowAd = false;
