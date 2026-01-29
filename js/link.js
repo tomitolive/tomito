@@ -1,43 +1,53 @@
 (function () {
-
     // ================= CONFIG =================
     const AD_URL = "https://www.effectivegatecpm.com/dgu0qrka";
     const AD_KEY = "c4910c58837838bcdfd2133530744a67";
   
-    const MAX_IDLE_TIME = 5000;     // أقصى سكون 5 ثواني
+    const MAX_IDLE_TIME = 5000;     // 5 ثواني سكون
     const COOLDOWN_TIME = 8000;     // انتظار بين الإعلانات
-    const CLICKS_FOR_AD = 20;        // 5 ضغطات = إعلان
+    const INTERACTIONS_FOR_AD = 20; // كل 20 تفاعل حقيقي = إعلان
+  
+    const MOVE_THROTTLE = 300;      // mousemove / wheel كل 300ms فقط
   
     // ================= STATE =================
     let idleTimer = null;
     let inCooldown = false;
     let adCount = 0;
-    let clickCount = 0;
+    let totalInteractions = 0;
     let firstInteractionDone = false;
   
-    const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+    let lastMoveTime = 0;
+  
+    const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
+      .test(navigator.userAgent);
   
     // ================= UTILS =================
+    function now() {
+      return performance.now(); // أدق توقيت
+    }
+  
     function generateAdLink() {
       return `${AD_URL}?key=${AD_KEY}&t=${Date.now()}&c=${adCount}`;
     }
   
     function triggerAd(reason) {
-      if (inCooldown) return;
-      if (!firstInteractionDone) return;
+      if (inCooldown || !firstInteractionDone) return;
   
-      const link = generateAdLink();
       adCount++;
       inCooldown = true;
-      clickCount = 0;
   
-      console.log("[AdSmart] Ad triggered:", reason);
+      const link = generateAdLink();
+  
+      console.log(
+        "[AdSmart]",
+        reason,
+        "| totalInteractions:",
+        totalInteractions
+      );
   
       if (isMobile) {
-        // الهاتف: بلا popup
         location.href = link;
       } else {
-        // الحاسوب
         window.open(link, "_blank");
       }
   
@@ -54,38 +64,71 @@
       }, MAX_IDLE_TIME);
     }
   
-    // ================= INTERACTION HANDLER =================
-    function handleInteraction() {
+    // ================= COUNTING =================
+    function countInteraction(type) {
+      totalInteractions++;
   
-      // أول تفاعل = تفعيل فقط
+      if (totalInteractions % INTERACTIONS_FOR_AD === 0) {
+        triggerAd(type + "_" + totalInteractions);
+      }
+  
+      resetIdleTimer();
+    }
+  
+    // ================= HANDLERS =================
+    function handleStrongInteraction(e) {
       if (!firstInteractionDone) {
         firstInteractionDone = true;
         resetIdleTimer();
         return;
       }
   
-      clickCount++;
+      countInteraction(e.type);
+    }
   
-      if (clickCount >= CLICKS_FOR_AD) {
-        triggerAd("CLICKS");
+    function handleMoveInteraction(e) {
+      const currentTime = now();
+  
+      if (currentTime - lastMoveTime < MOVE_THROTTLE) return;
+  
+      lastMoveTime = currentTime;
+  
+      if (!firstInteractionDone) {
+        firstInteractionDone = true;
+        resetIdleTimer();
+        return;
       }
   
-      resetIdleTimer();
+      countInteraction(e.type);
     }
   
     // ================= EVENTS =================
-    const EVENTS = isMobile
-      ? ["touchstart", "pointerdown"]
-      : ["click", "mousemove", "keydown", "wheel", "pointerdown"];
-  
-    EVENTS.forEach(evt => {
-      document.addEventListener(evt, handleInteraction, {
+    if (isMobile) {
+      document.addEventListener("touchstart", handleStrongInteraction, {
         passive: true,
         capture: true
       });
-    });
+  
+      document.addEventListener("pointerdown", handleStrongInteraction, {
+        passive: true,
+        capture: true
+      });
+    } else {
+      document.addEventListener("click", handleStrongInteraction, true);
+      document.addEventListener("keydown", handleStrongInteraction, true);
+      document.addEventListener("pointerdown", handleStrongInteraction, true);
+  
+      document.addEventListener("mousemove", handleMoveInteraction, {
+        passive: true,
+        capture: true
+      });
+  
+      document.addEventListener("wheel", handleMoveInteraction, {
+        passive: true,
+        capture: true
+      });
+    }
   
     resetIdleTimer();
-  
   })();
   
