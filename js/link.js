@@ -6,7 +6,7 @@
   
     const MAX_IDLE_TIME = 5000;     // أقصى سكون 5 ثواني
     const COOLDOWN_TIME = 8000;     // انتظار بين الإعلانات
-    const CLICKS_FOR_AD = 5;        // 5 ضغطات = إعلان
+    const CLICKS_FOR_AD = 20;        // 5 ضغطات = إعلان
   
     // ================= STATE =================
     let idleTimer = null;
