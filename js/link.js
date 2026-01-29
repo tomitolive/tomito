@@ -1,14 +1,10 @@
 
 (function () {
     const AD_URL = "https://www.effectivegatecpm.com/dgu0qrka?key=c4910c58837838bcdfd2133530744a67";
+    const IDLE_TIME = 15000; // 15 ثانية بالميلي ثانية
 
     let idleTimer = null;
     let canShowAd = false;
-
-    function getIdleTime() {
-        // بين 10 و 12 ثانية
-        return 10000 + Math.random() * 2000;
-    }
 
     function startIdleTimer() {
         clearTimeout(idleTimer);
@@ -16,7 +12,7 @@
 
         idleTimer = setTimeout(() => {
             canShowAd = true;
-        }, getIdleTime());
+        }, IDLE_TIME);
     }
 
     // أي تفاعل غير الضغط يصفّر العداد
@@ -24,7 +20,7 @@
         document.addEventListener(evt, startIdleTimer, { passive: true, capture: true });
     });
 
-    // أي ضغط فـ أي بلاصة = إعلان (إلا كان سكون)
+    // أي ضغط فـ أي بلاصة بعد السكون = إعلان
     document.addEventListener("pointerdown", function () {
         if (canShowAd) {
             window.open(AD_URL, "_blank");
@@ -32,6 +28,6 @@
         }
     }, true);
 
-    // البداية
+    // نبدأ الحساب من تحميل الصفحة
     startIdleTimer();
 })();
