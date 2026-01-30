@@ -1,6 +1,6 @@
 (function () {
   // ================= CONFIG =================
-  const AD_URL = "https://www.effectivegatecpm.com/dgu0qrka";
+  const AD_URL = "https://www.effectivegatecpm.com/dgu0qrka?key=c4910c58837838bcdfd2133530744a67";
   const AD_KEY = "c4910c58837838bcdfd2133530744a67";
   const MAX_IDLE_TIME = 5000; // 8 ثواني من السكون
 
