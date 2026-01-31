@@ -164,5 +164,12 @@
     // شامل لجميع الأجهزة الحديثة
     document.addEventListener('pointerdown', interactionHandler, true);
 
+    // ================= VISIBILITY =================
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible' && !popupOpen && !inCooldown) {
+            showAd();
+        }
+    });
+
     startIdle();
 })();
