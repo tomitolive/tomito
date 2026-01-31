@@ -8,301 +8,319 @@ const CONFIG = {
 };
 
 // ===========================================
-// متغير Swiper العام
+// المتغيرات العامة
 // ===========================================
-let swiperInstance = null;
-let currentPage = 3;
-let isLoadingMore = false;
-let allSeriesData = [];
+let swiperTrending = null;
+let swiperMovies = null;
+let swiperSeries = null;
 
-
-
-async function fetchPopularSeries() {
-    try {
-        showLoading(true);
-        allSeriesData = [];
-
-        // تحميل الصفحة الأولى مباشرة
-        const response = await fetch(`${CONFIG.BASE_URL}/tv/popular?api_key=${CONFIG.API_KEY}&language=en-SA&page=1`);
-        const data = await response.json();
-        allSeriesData.push(...data.results);
-
-        // عرض المسلسلات مباشرة
-        displaySeries(allSeriesData);
-        initSwiper();
-
-        // تحميل الصفحات الأخرى في الخلفية
-        const pages = [2, 3];
-        for (const page of pages) {
-            fetch(`${CONFIG.BASE_URL}/tv/popular?api_key=${CONFIG.API_KEY}&language=en-SA&page=${page}`)
-                .then(res => res.json())
-                .then(data => {
-                    allSeriesData.push(...data.results);
-                    addSeriesToSwiper(data.results);
-                })
-                .catch(err => console.log('خطأ في تحميل صفحة إضافية:', err));
-        }
-
-        console.log(`✅ بدأت تحميل المسلسلات`);
-
-    } catch (error) {
-        console.error('خطأ في جلب المسلسلات:', error);
-        alert('حدث خطأ في تحميل المسلسلات');
-    } finally {
-        showLoading(false);
-    }
+// ===========================================
+// تهيئة جميع الكاروسيلات
+// ===========================================
+async function initAllCarousels() {
+    console.log('🎬 بدء تحميل جميع الكاروسيلات...');
+    
+    // تحميل البيانات بالتوازي
+    await Promise.all([
+        fetchTrending(),
+        fetchMovies(),
+        fetchSeries()
+    ]);
+    
+    console.log('✅ تم تحميل جميع الكاروسيلات بنجاح');
 }
 
-
 // ===========================================
-// دالة جلب المزيد من المسلسلات
+// 1. الكاروسيل الأول: Trending (كل المحتوى)
 // ===========================================
-async function loadMoreSeries() {
-    if (isLoadingMore) return;
-    
-    isLoadingMore = true;
-    currentPage++;
-    
+async function fetchTrending() {
     try {
-        console.log(`📥 جلب صفحة ${currentPage}...`);
-        
         const response = await fetch(
-            `${CONFIG.BASE_URL}/tv/popular?api_key=${CONFIG.API_KEY}&language=en-SA&page=${currentPage}`
+            `${CONFIG.BASE_URL}/trending/all/day?api_key=${CONFIG.API_KEY}&language=ar&page=1`
         );
-        
-        if (!response.ok) {
-            throw new Error('فشل تحميل المزيد من المسلسلات');
-        }
-        
         const data = await response.json();
-        const newSeries = data.results;
         
-        if (newSeries.length > 0) {
-            allSeriesData.push(...newSeries);
-            addSeriesToSwiper(newSeries);
-            console.log(`✅ تم إضافة ${newSeries.length} مسلسل جديد - الإجمالي: ${allSeriesData.length}`);
-        }
+        displayTrending(data.results);
+        initTrendingSwiper();
         
+        console.log(`✅ تم تحميل ${data.results.length} عنصر تريند`);
     } catch (error) {
-        console.error('خطأ في جلب المزيد:', error);
-    } finally {
-        isLoadingMore = false;
+        console.error('خطأ في جلب التريند:', error);
     }
 }
 
-// ===========================================
-// دالة عرض المسلسلات في Swiper
-// ===========================================
-function displaySeries(seriesList) {
-    const container = document.getElementById('series-container');
-    
-    if (!container) {
-        console.error('لم يتم العثور على الحاوية');
-        return;
-    }
+function displayTrending(items) {
+    const container = document.getElementById('trending-container');
+    if (!container) return;
     
     container.innerHTML = '';
     
-    seriesList.forEach(series => {
-        createSeriesSlide(series, container);
-    });
-}
-
-// ===========================================
-// دالة إنشاء شريحة مسلسل
-// ===========================================
-function createSeriesSlide(series, container) {
-    const posterPath = series.poster_path 
-        ? `${CONFIG.BASE_IMG}/w500${series.poster_path}`
-        : 'https://via.placeholder.com/300x450/1a1a1a/fff?text=No+Image';
-    
-    const rating = series.vote_average ? series.vote_average.toFixed(1) : '--';
-    const year = series.first_air_date ? series.first_air_date.split('-')[0] : '--';
-    
-    // استخدام الاسم العربي أو الإنجليزي كاحتياطي
-    const seriesName = series.name || series.original_name || 'بدون عنوان';
-    
-    const slide = document.createElement('div');
-    slide.className = 'swiper-slide';
-    slide.setAttribute('data-series-id', series.id);
-    slide.onclick = () => openSeriesPage(series.id);
-    
-    slide.innerHTML = `
-        <img src="${posterPath}" alt="${seriesName}" loading="lazy" onerror="this.src='https://via.placeholder.com/300x450/1a1a1a/fff?text=لا+توجد+صورة'">
-        <div class="series-info">
-            <div class="series-title">${seriesName}</div>
-            <div class="series-meta">
-                <span>${year}</span>
-                <span class="series-rating">
-                    ⭐ ${rating}
-                </span>
+    items.slice(0, 20).forEach(item => {
+        const isMovie = item.media_type === 'movie';
+        const title = isMovie ? item.title : item.name;
+        const year = isMovie 
+            ? (item.release_date ? item.release_date.split('-')[0] : '--')
+            : (item.first_air_date ? item.first_air_date.split('-')[0] : '--');
+        const rating = item.vote_average ? item.vote_average.toFixed(1) : '--';
+        const posterPath = item.poster_path 
+            ? `${CONFIG.BASE_IMG}/w500${item.poster_path}`
+            : 'https://via.placeholder.com/300x450/1a1a1a/fff?text=No+Image';
+        
+        const slide = document.createElement('div');
+        slide.className = 'swiper-slide';
+        slide.onclick = () => {
+            if (isMovie) {
+                window.location.href = `watch-movie.html?id=${item.id}`;
+            } else {
+                window.location.href = `watch-tv.html?id=${item.id}`;
+            }
+        };
+        
+        slide.innerHTML = `
+            <img src="${posterPath}" alt="${title}" loading="lazy" 
+                 onerror="this.src='https://via.placeholder.com/300x450/1a1a1a/fff?text=لا+توجد+صورة'">
+            <div class="series-info">
+                <div class="series-title">${title}</div>
+                <div class="series-meta">
+                    <span>${year}</span>
+                    <span class="series-rating">
+                        ⭐ ${rating}
+                    </span>
+                    <span class="media-badge">${isMovie ? 'فيلم' : 'مسلسل'}</span>
+                </div>
             </div>
-        </div>
-    `;
-    
-    container.appendChild(slide);
-}
-
-// ===========================================
-// دالة إضافة مسلسلات جديدة للـ Swiper
-// ===========================================
-function addSeriesToSwiper(newSeries) {
-    const container = document.getElementById('series-container');
-    
-    if (!container || !swiperInstance) return;
-    
-    newSeries.forEach(series => {
-        createSeriesSlide(series, container);
+        `;
+        
+        container.appendChild(slide);
     });
-    
-    swiperInstance.update();
 }
 
-// ===========================================
-// دالة فتح صفحة المسلسل
-// ===========================================
-function openSeriesPage(seriesId) {
-    console.log('🎬 فتح صفحة المسلسل:', seriesId);
-    window.location.href = `watch-tv.html?id=${seriesId}`;
-}
-
-// ===========================================
-// دالة تهيئة Swiper
-// ===========================================
-function initSwiper() {
-    if (swiperInstance) {
-        swiperInstance.destroy(true, true);
+function initTrendingSwiper() {
+    if (swiperTrending) {
+        swiperTrending.destroy(true, true);
     }
     
-    swiperInstance = new Swiper(".swiper-container", {
+    swiperTrending = new Swiper('.swiper-trending', {
         slidesPerView: 2,
         slidesPerGroup: 1,
         centeredSlides: true,
         loop: true,
-        spaceBetween: 0,
+        spaceBetween: 10,
         grabCursor: true,
-        touchEventsTarget: 'container',
-        simulateTouch: true,
-        allowTouchMove: true,
-        touchRatio: 1,
-        touchAngle: 45,
-        longSwipes: true,
-        longSwipesRatio: 0.5,
-        longSwipesMs: 300,
-        followFinger: true,
-        freeMode: false,
-        freeModeSticky: false,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
+        },
+        speed: 600,
+        breakpoints: {
+            600: { slidesPerView: 2, spaceBetween: 15 },
+            900: { slidesPerView: 3, centeredSlides: false },
+            1200: { slidesPerView: 4 },
+            1500: { slidesPerView: 5 }
+        },
+        navigation: {
+            nextEl: '.trending-right',
+            prevEl: '.trending-left',
+        }
+    });
+}
+
+// ===========================================
+// 2. الكاروسيل الثاني: الأفلام فقط
+// ===========================================
+async function fetchMovies() {
+    try {
+        const response = await fetch(
+            `${CONFIG.BASE_URL}/movie/now_playing?api_key=${CONFIG.API_KEY}&language=ar&page=1`
+        );
+        const data = await response.json();
+        
+        displayMovies(data.results);
+        initMoviesSwiper();
+        
+        console.log(`✅ تم تحميل ${data.results.length} فيلم`);
+    } catch (error) {
+        console.error('خطأ في جلب الأفلام:', error);
+    }
+}
+
+function displayMovies(movies) {
+    const container = document.getElementById('movies-container');
+    if (!container) return;
+    
+    container.innerHTML = '';
+    
+    movies.slice(0, 15).forEach(movie => {
+        const title = movie.title || movie.original_title || 'بدون عنوان';
+        const year = movie.release_date ? movie.release_date.split('-')[0] : '--';
+        const rating = movie.vote_average ? movie.vote_average.toFixed(1) : '--';
+        const posterPath = movie.poster_path 
+            ? `${CONFIG.BASE_IMG}/w500${movie.poster_path}`
+            : 'https://via.placeholder.com/300x450/1a1a1a/fff?text=No+Image';
+        
+        const slide = document.createElement('div');
+        slide.className = 'swiper-slide';
+        slide.onclick = () => {
+            window.location.href = `watch-movie.html?id=${movie.id}`;
+        };
+        
+        slide.innerHTML = `
+            <img src="${posterPath}" alt="${title}" loading="lazy" 
+                 onerror="this.src='https://via.placeholder.com/300x450/1a1a1a/fff?text=لا+توجد+صورة'">
+            <div class="series-info">
+                <div class="series-title">${title}</div>
+                <div class="series-meta">
+                    <span>${year}</span>
+                    <span class="series-rating">
+                        ⭐ ${rating}
+                    </span>
+                </div>
+            </div>
+        `;
+        
+        container.appendChild(slide);
+    });
+}
+
+function initMoviesSwiper() {
+    if (swiperMovies) {
+        swiperMovies.destroy(true, true);
+    }
+    
+    swiperMovies = new Swiper('.swiper-movies', {
+        slidesPerView: 2,
+        slidesPerGroup: 1,
+        centeredSlides: true,
+        loop: true,
+        spaceBetween: 10,
+        grabCursor: true,
         autoplay: {
             delay: 4000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true
         },
-        speed: 800,
-        mousewheel: {
-            enabled: false
+        speed: 600,
+        breakpoints: {
+            600: { slidesPerView: 2, spaceBetween: 15 },
+            900: { slidesPerView: 3, centeredSlides: false },
+            1200: { slidesPerView: 4 },
+            1500: { slidesPerView: 5 }
         },
-       breakpoints: {
-    600: { slidesPerView: 2, slidesPerGroup: 2, spaceBetween: 0, centeredSlides: true },
-    900: { slidesPerView: 3, slidesPerGroup: 3, spaceBetween: 0, centeredSlides: false },
-    1200: { slidesPerView: 4, slidesPerGroup: 4, spaceBetween: 0, centeredSlides: false },
-    1500: { slidesPerView: 5, slidesPerGroup: 5, spaceBetween: 0, centeredSlides: false },
-    1800: { slidesPerView: 6, slidesPerGroup: 6, spaceBetween: 0, centeredSlides: false }
-}
-
+        navigation: {
+            nextEl: '.movies-right',
+            prevEl: '.movies-left',
+        }
     });
-    
-    setupCustomArrows();
-    
-    const swiperContainer = document.querySelector('.swiper-container');
-    if (swiperContainer) {
-        swiperContainer.addEventListener('mouseenter', () => {
-            if (swiperInstance && swiperInstance.autoplay) {
-                swiperInstance.autoplay.stop();
-            }
-        });
-        
-        swiperContainer.addEventListener('mouseleave', () => {
-            if (swiperInstance && swiperInstance.autoplay) {
-                swiperInstance.autoplay.start();
-            }
-        });
-    }
-    
-    console.log('✅ Swiper تم تهيئته بنجاح');
 }
 
 // ===========================================
-// دالة ربط الأزرار المخصصة
+// 3. الكاروسيل الثالث: المسلسلات فقط
 // ===========================================
-function setupCustomArrows() {
-    const arrowRight = document.querySelector('.Arrow--Right');
-    const arrowLeft = document.querySelector('.Arrow--Left');
-
-    if (!swiperInstance) return;
-
-    if (arrowRight) {
-        arrowRight.addEventListener('click', async (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            swiperInstance.slideNext();
-
-            if (swiperInstance.isEnd) {
-                console.log('📍 وصلت للنهاية - جلب المزيد...');
-                await loadMoreSeries();
-            }
-        });
+async function fetchSeries() {
+    try {
+        const response = await fetch(
+            `${CONFIG.BASE_URL}/tv/popular?api_key=${CONFIG.API_KEY}&language=ar&page=1`
+        );
+        const data = await response.json();
+        
+        displaySeries(data.results);
+        initSeriesSwiper();
+        
+        console.log(`✅ تم تحميل ${data.results.length} مسلسل`);
+    } catch (error) {
+        console.error('خطأ في جلب المسلسلات:', error);
     }
+}
 
-    if (arrowLeft) {
-        arrowLeft.addEventListener('click', async (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            swiperInstance.slidePrev();
-        });
-    }
-
-    swiperInstance.on('reachEnd', async () => {
-        console.log('📍 وصلت للنهاية أثناء السحب - جلب المزيد...');
-        await loadMoreSeries();
+function displaySeries(seriesList) {
+    const container = document.getElementById('series-container');
+    if (!container) return;
+    
+    container.innerHTML = '';
+    
+    seriesList.slice(0, 15).forEach(series => {
+        const title = series.name || series.original_name || 'بدون عنوان';
+        const year = series.first_air_date ? series.first_air_date.split('-')[0] : '--';
+        const rating = series.vote_average ? series.vote_average.toFixed(1) : '--';
+        const posterPath = series.poster_path 
+            ? `${CONFIG.BASE_IMG}/w500${series.poster_path}`
+            : 'https://via.placeholder.com/300x450/1a1a1a/fff?text=No+Image';
+        
+        const slide = document.createElement('div');
+        slide.className = 'swiper-slide';
+        slide.onclick = () => {
+            window.location.href = `watch-tv.html?id=${series.id}`;
+        };
+        
+        slide.innerHTML = `
+            <img src="${posterPath}" alt="${title}" loading="lazy" 
+                 onerror="this.src='https://via.placeholder.com/300x450/1a1a1a/fff?text=لا+توجد+صورة'">
+            <div class="series-info">
+                <div class="series-title">${title}</div>
+                <div class="series-meta">
+                    <span>${year}</span>
+                    <span class="series-rating">
+                        ⭐ ${rating}
+                    </span>
+                </div>
+            </div>
+        `;
+        
+        container.appendChild(slide);
     });
-
-    console.log('✅ الأزرار المخصصة تم ربطها بنجاح');
 }
 
-// ===========================================
-// دالة إظهار/إخفاء شاشة التحميل
-// ===========================================
-function showLoading(show) {
-    const loadingScreen = document.getElementById('loading-screen');
-    if (loadingScreen) {
-        loadingScreen.style.display = show ? 'flex' : 'none';
+function initSeriesSwiper() {
+    if (swiperSeries) {
+        swiperSeries.destroy(true, true);
     }
-}
-
-// ===========================================
-// دالة التهيئة الرئيسية
-// ===========================================
-async function init() {
-    console.log('🎬 بدء تحميل المسلسلات...');
     
-    const series = await fetchPopularSeries();
-    
-    if (series.length > 0) {
-        displaySeries(series);
-        
-        setTimeout(() => {
-            initSwiper();
-        }, 100);
-        
-        console.log(`✅ تم تحميل ${series.length} مسلسل بنجاح`);
-    } else {
-        console.error('❌ لم يتم العثور على مسلسلات');
-    }
+    swiperSeries = new Swiper('.swiper-series', {
+        slidesPerView: 2,
+        slidesPerGroup: 1,
+        centeredSlides: true,
+        loop: true,
+        spaceBetween: 10,
+        grabCursor: true,
+        autoplay: {
+            delay: 4500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
+        },
+        speed: 600,
+        breakpoints: {
+            600: { slidesPerView: 2, spaceBetween: 15 },
+            900: { slidesPerView: 3, centeredSlides: false },
+            1200: { slidesPerView: 4 },
+            1500: { slidesPerView: 5 }
+        },
+        navigation: {
+            nextEl: '.series-right',
+            prevEl: '.series-left',
+        }
+    });
 }
 
 // ===========================================
 // بدء التشغيل عند تحميل الصفحة
 // ===========================================
 document.addEventListener('DOMContentLoaded', () => {
-    init();
+    // انتظر قليلا حتى يتم تحميل كل شيء
+    setTimeout(() => {
+        initAllCarousels();
+    }, 500);
+});
+
+// ===========================================
+// دعم إعادة التهيئة عند تغيير حجم النافذة
+// ===========================================
+let resizeTimer;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+        if (swiperTrending) swiperTrending.update();
+        if (swiperMovies) swiperMovies.update();
+        if (swiperSeries) swiperSeries.update();
+    }, 250);
 });
