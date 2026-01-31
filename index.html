@@ -2,14 +2,15 @@
 <html dir="rtl" lang="ar">
     <head>
         <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QR5KZFJ6HH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QR5KZFJ6HH');
-</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QR5KZFJ6HH"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-QR5KZFJ6HH');
+        </script>
+        
+        <!-- Meta Tags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
         
@@ -58,16 +59,18 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
         
-        <!-- CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- CSS Libraries -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+        
+        <!-- Custom CSS -->
         <link rel="stylesheet" href="css/css/header.css">
         <link rel="stylesheet" href="css/css/logo.css">
         <link rel="stylesheet" href="css/css/styel.css">
         <link rel="stylesheet" href="css/css/CAROUSEL.css">
-      <link rel="stylesheet" href="css/css/carousel.tvvv.css">
+        <link rel="stylesheet" href="css/css/carousel.tvvv.css">
+        <link rel="stylesheet" href="swiper-style.css">
         
-
-      
         <!-- Schema.org للصفحة الرئيسية -->
         <script type="application/ld+json">
         {
@@ -109,434 +112,285 @@
         }
         </script>
         
+        <!-- Anti DevTools (تحذير: قد يؤثر على SEO) -->
         <script src="anti-devtools.js"></script>
-        
-       
     </head>
     
-   
-    
+    <body>
+        <!-- Progress Bar -->
+        <div class="progress-bar" id="progress-bar"></div>
         
-        <!-- SEO Meta Tags -->
-     
-        
-
-
-<body>
-
-    
-
-    
-    <!-- Progress Bar -->
-    <div class="progress-bar" id="progress-bar"></div>
-    <nav class="navbar">
-        
-        <div class="nav-menu">
-            <div class="links">
-                <!-- Dropdown أفلام -->
-                <div class="dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">
-                        <i class="fas fa-film"></i>
-                        الأفلام
-                        <i class="fas fa-chevron-down dropdown-icon"></i>
-                    </a>
-                    <div class="dropdown-menu">
-                        <div class="dropdown-grid">
-                            <div class="dropdown-column">
-                                <h4>التصنيفات</h4>
-                                <a href="#" class="dropdown-item" data-category="action"><i class="fas fa-fist-raised"></i> أكشن</a>
-                                <a href="#" class="dropdown-item" data-category="comedy"><i class="fas fa-laugh"></i> كوميديا</a>
-                                <a href="#" class="dropdown-item" data-category="drama"><i class="fas fa-theater-masks"></i> دراما</a>
-                                <a href="#" class="dropdown-item" data-category="horror"><i class="fas fa-ghost"></i> رعب</a>
-                                <a href="#" class="dropdown-item" data-category="romance"><i class="fas fa-heart"></i> رومانسي</a>
-                            </div>
-                            <div class="dropdown-column">
-                                <h4>النوع</h4>
-                                <a href="#" class="dropdown-item" data-subcategory="new"><i class="fas fa-star"></i> جديد</a>
-                                <a href="#" class="dropdown-item" data-subcategory="popular"><i class="fas fa-fire"></i> الأكثر مشاهدة</a>
-                                <a href="#" class="dropdown-item" data-subcategory="top-rated"><i class="fas fa-trophy"></i> الأعلى تقييماً</a>
-                                <a href="#" class="dropdown-item" data-subcategory="upcoming"><i class="fas fa-calendar-plus"></i> قريباً</a>
-                                <a href="#" class="dropdown-item" data-subcategory="trending"><i class="fas fa-chart-line"></i> تريند</a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Dropdown مسلسلات -->
-                <div class="dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">
-                        <i class="fas fa-tv"></i>
-                        المسلسلات
-                        <i class="fas fa-chevron-down dropdown-icon"></i>
-                    </a>
-                    <div class="dropdown-menu">
-                        <div class="dropdown-grid">
-                            <div class="dropdown-column">
-                                <h4>النوع</h4>
-                                <a href="#" class="dropdown-item" data-series-type="arabic"><i class="fas fa-mosque"></i> عربية</a>
-                                <a href="#" class="dropdown-item" data-series-type="turkish"><i class="fas fa-flag"></i> تركية</a>
-                                <a href="#" class="dropdown-item" data-series-type="american"><i class="fas fa-globe-americas"></i> أمريكية</a>
-                                <a href="#" class="dropdown-item" data-series-type="korean"><i class="fas fa-flag"></i> كورية</a>
-                                <a href="#" class="dropdown-item" data-series-type="anime"><i class="fas fa-dragon"></i> أنمي</a>
-                            </div>
-                            <div class="dropdown-column">
-                                <h4>التصنيف</h4>
-                                <a href="#" class="dropdown-item" data-series-category="drama"><i class="fas fa-theater-masks"></i> دراما</a>
-                                <a href="#" class="dropdown-item" data-series-category="comedy"><i class="fas fa-laugh"></i> كوميديا</a>
-                                <a href="#" class="dropdown-item" data-series-category="action"><i class="fas fa-fist-raised"></i> أكشن</a>
-                                <a href="#" class="dropdown-item" data-series-category="fantasy"><i class="fas fa-hat-wizard"></i> فانتازيا</a>
-                                <a href="#" class="dropdown-item" data-series-category="romance"><i class="fas fa-heart"></i> رومانسي</a>
-                            </div>
-                          
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- روابط مباشرة -->
-                <a href="index.html" class="nav-link active">
-                    <i class="fas fa-home"></i>
-                    الصفحة الرئيسية
-                </a>
-                <a href="tr.index.html" class="nav-link">
-                    <i class="fas fa-chart-line"></i>
-                    الأكثر مشاهدة
-                </a>
-            </div>
-            <!-- البحث المدمج -->
-            <div class="search-container">
-                <input type="text" class="search-input" id="search" placeholder="ابحث عن أفلام...">
-                <button class="search-btn">
-                   
-                </button>
-                <!-- نتائج البحث -->
-                <div class="search-results" id="searchResults"></div>
-            </div>
-
-            <div class="logo">
-                <h1>
-                    <div class="logo-text">
-                        <span>TomiTo</span>
-                       
-                    </div>
-                </h1>
-            </div>
-            
-            
-            
-        </div>
-        
-        <button class="hamburger-menu" aria-label="Toggle navigation">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-    </nav>
-
-    <br>
-    <br>
- 
-    <script>
-        atOptions = {
-          'key' : 'ef3740f3a25e0d9bd52bbb71b2d55056',
-          'format' : 'iframe',
-          'height' : 50,
-          'width' : 320,
-          'params' : {}
-        };
-      </script>
-      <script src="https://www.highperformanceformat.com/ef3740f3a25e0d9bd52bbb71b2d55056/invoke.js"></script>
-       
-            
-    <script>
-        atOptions = {
-          'key' : 'ef3740f3a25e0d9bd52bbb71b2d55056',
-          'format' : 'iframe',
-          'height' : 50,
-          'width' : 320,
-          'params' : {}
-        };
-      </script>
-      <script src="https://www.highperformanceformat.com/ef3740f3a25e0d9bd52bbb71b2d55056/invoke.js"></script>
-        </div>
-    </section>
-
-    
-    <!-- هذا الجزء يضاف في البداية بعد navbar -->
-    <section class="hero-carousel" id="heroCarousel">
-        <div class="carousel-container">
-            <div class="carousel-wrapper">
-                <!-- الحاوية الرئيسية -->
-                <div class="carousel-main">
-                    <!-- الخلفية الكاملة -->
-                    <div class="carousel-backdrop" id="carouselBackdrop"></div>
-                    
-                    <!-- التدرج اللوني -->
-                    <div class="carousel-gradient"></div>
-                    
-                    <!-- محتوى الكاروسيل -->
-                    <div class="carousel-content-wrapper">
-                        <div class="carousel-info-section">
-                            <!-- المعلومات الأساسية -->
-                            <div class="movie-main-info">
-                                <h1 class="movie-title" id="carouselTitle">جاري التحميل...</h1>
-                                <div class="movie-meta">
-                                    <span class="rating">
-                                        <i class="fas fa-star"></i>
-                                        <span id="carouselRating">0.0</span>
-                                    </span>
-                                    <span class="year" id="carouselYear">2024</span>
-                                    <span class="duration" id="carouselDuration">120 دقيقة</span>
-                                    <span class="quality">HD</span>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-menu">
+                <div class="links">
+                    <!-- Dropdown أفلام -->
+                    <div class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            <i class="fas fa-film"></i>
+                            الأفلام
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-grid">
+                                <div class="dropdown-column">
+                                    <h4>التصنيفات</h4>
+                                    <a href="#" class="dropdown-item" data-category="action"><i class="fas fa-fist-raised"></i> أكشن</a>
+                                    <a href="#" class="dropdown-item" data-category="comedy"><i class="fas fa-laugh"></i> كوميديا</a>
+                                    <a href="#" class="dropdown-item" data-category="drama"><i class="fas fa-theater-masks"></i> دراما</a>
+                                    <a href="#" class="dropdown-item" data-category="horror"><i class="fas fa-ghost"></i> رعب</a>
+                                    <a href="#" class="dropdown-item" data-category="romance"><i class="fas fa-heart"></i> رومانسي</a>
                                 </div>
-                                
-                               
-                                
-                                <!-- الأزرار -->
-                                <div class="action-buttons">
-                                    <button class="play-button" onclick="playCurrentMovie()">
-                                        <i class="fas fa-play"></i>
-                                        <span>مشاهدة الآن</span>
-                                    </button>
+                                <div class="dropdown-column">
+                                    <h4>النوع</h4>
+                                    <a href="#" class="dropdown-item" data-subcategory="new"><i class="fas fa-star"></i> جديد</a>
+                                    <a href="#" class="dropdown-item" data-subcategory="popular"><i class="fas fa-fire"></i> الأكثر مشاهدة</a>
+                                    <a href="#" class="dropdown-item" data-subcategory="top-rated"><i class="fas fa-trophy"></i> الأعلى تقييماً</a>
+                                    <a href="#" class="dropdown-item" data-subcategory="upcoming"><i class="fas fa-calendar-plus"></i> قريباً</a>
+                                    <a href="#" class="dropdown-item" data-subcategory="trending"><i class="fas fa-chart-line"></i> تريند</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Dropdown مسلسلات -->
+                    <div class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            <i class="fas fa-tv"></i>
+                            المسلسلات
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-grid">
+                                <div class="dropdown-column">
+                                    <h4>النوع</h4>
+                                    <a href="#" class="dropdown-item" data-series-type="arabic"><i class="fas fa-mosque"></i> عربية</a>
+                                    <a href="#" class="dropdown-item" data-series-type="turkish"><i class="fas fa-flag"></i> تركية</a>
+                                    <a href="#" class="dropdown-item" data-series-type="american"><i class="fas fa-globe-americas"></i> أمريكية</a>
+                                    <a href="#" class="dropdown-item" data-series-type="korean"><i class="fas fa-flag"></i> كورية</a>
+                                    <a href="#" class="dropdown-item" data-series-type="anime"><i class="fas fa-dragon"></i> أنمي</a>
+                                </div>
+                                <div class="dropdown-column">
+                                    <h4>التصنيف</h4>
+                                    <a href="#" class="dropdown-item" data-series-category="drama"><i class="fas fa-theater-masks"></i> دراما</a>
+                                    <a href="#" class="dropdown-item" data-series-category="comedy"><i class="fas fa-laugh"></i> كوميديا</a>
+                                    <a href="#" class="dropdown-item" data-series-category="action"><i class="fas fa-fist-raised"></i> أكشن</a>
+                                    <a href="#" class="dropdown-item" data-series-category="fantasy"><i class="fas fa-hat-wizard"></i> فانتازيا</a>
+                                    <a href="#" class="dropdown-item" data-series-category="romance"><i class="fas fa-heart"></i> رومانسي</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- روابط مباشرة -->
+                    <a href="index.html" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        الصفحة الرئيسية
+                    </a>
+                    <a href="tr.index.html" class="nav-link">
+                        <i class="fas fa-chart-line"></i>
+                        الأكثر مشاهدة
+                    </a>
+                </div>
+                
+                <!-- البحث المدمج -->
+                <div class="search-container">
+                    <input type="text" class="search-input" id="search" placeholder="ابحث عن أفلام...">
+                    <button class="search-btn"></button>
+                    <!-- نتائج البحث -->
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+
+                <div class="logo">
+                    <h1>
+                        <div class="logo-text">
+                            <span>TomiTo</span>
+                        </div>
+                    </h1>
+                </div>
+            </div>
+            
+            <button class="hamburger-menu" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+
+      
+        <!-- Hero Carousel -->
+        <section class="hero-carousel" id="heroCarousel">
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <!-- الحاوية الرئيسية -->
+                    <div class="carousel-main">
+                        <!-- الخلفية الكاملة -->
+                        <div class="carousel-backdrop" id="carouselBackdrop"></div>
+                        
+                        <!-- التدرج اللوني -->
+                        <div class="carousel-gradient"></div>
+                        
+                        <!-- محتوى الكاروسيل -->
+                        <div class="carousel-content-wrapper">
+                            <div class="carousel-info-section">
+                                <!-- المعلومات الأساسية -->
+                                <div class="movie-main-info">
+                                    <h1 class="movie-title" id="carouselTitle">جاري التحميل...</h1>
+                                    <div class="movie-meta">
+                                        <span class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <span id="carouselRating">0.0</span>
+                                        </span>
+                                        <span class="year" id="carouselYear">2024</span>
+                                        <span class="duration" id="carouselDuration">120 دقيقة</span>
+                                        <span class="quality">HD</span>
+                                    </div>
                                     
-                                </div>
-                                
-                                <!-- التصنيفات -->
-                                <div class="movie-genres" id="carouselGenres">
-                                    <span class="genre-tag">أكشن</span>
-                                    <span class="genre-tag">مغامرة</span>
-                                    <span class="genre-tag">دراما</span>
-                                </div>
-                            </div>
-                            
-                            <!-- الصورة المصغرة -->
-                            <!-- <div class="movie-poster-container">
-                                <div class="poster-wrapper">
-                                    <img src="https://image.tmdb.org/t/p/w300/wwemzKWzjKYJFfCeiB57q3r4Bcm.png" 
-                                    alt="صورة الفيلم" 
-                                    class="movie-poster"
-                                     id="carouselPoster">
-                                <div class="poster-overlay">
-                                    <i class="fas fa-play-circle"></i>
+                                    <!-- الأزرار -->
+                                    <div class="action-buttons">
+                                        <button class="play-button" onclick="playCurrentMovie()">
+                                            <i class="fas fa-play"></i>
+                                            <span>مشاهدة الآن</span>
+                                        </button>
+                                    </div>
+                                    
+                                    <!-- التصنيفات -->
+                                    <div class="movie-genres" id="carouselGenres">
+                                        <span class="genre-tag">أكشن</span>
+                                        <span class="genre-tag">مغامرة</span>
+                                        <span class="genre-tag">دراما</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
+                    </div>
+                    
+                    <!-- المؤشرات -->
+                    <div class="carousel-indicators" id="carouselIndicators">
+                        <div class="indicator active"></div>
+                        <div class="indicator"></div>
+                        <div class="indicator"></div>
+                        <div class="indicator"></div>
+                        <div class="indicator"></div>
+                    </div>
+                    
+                    <!-- عناصر التحكم -->
+                    <div class="carousel-controls">
+                        <button class="control-btn" onclick="pauseAutoPlay()" id="pauseBtn">
+                            <i class="fas fa-pause"></i>
+                        </button>
+                        <button class="control-btn" onclick="toggleFullscreen()">
+                            <i class="fas fa-expand"></i>
+                        </button>
                     </div>
                 </div>
             </div>
-            
-        
-            
-            <!-- المؤشرات -->
-            <div class="carousel-indicators" id="carouselIndicators">
-                <div class="indicator active"></div>
-                <div class="indicator"></div>
-                <div class="indicator"></div>
-                <div class="indicator"></div>
-                <div class="indicator"></div>
-            </div>
-            
-        
-            <!-- عناصر التحكم -->
-            <div class="carousel-controls">
-                <button class="control-btn" onclick="pauseAutoPlay()" id="pauseBtn">
-                    <i class="fas fa-pause"></i>
-                </button>
-                <button class="control-btn" onclick="toggleFullscreen()">
-                    <i class="fas fa-expand"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-
-<script>
-    atOptions = {
-      'key' : 'ef3740f3a25e0d9bd52bbb71b2d55056',
-      'format' : 'iframe',
-      'height' : 50,
-      'width' : 320,
-      'params' : {}
-    };
-  </script>
-  <script src="https://www.highperformanceformat.com/ef3740f3a25e0d9bd52bbb71b2d55056/invoke.js"></script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popular Netflix Series - TOMITO</title>
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="swiper-style.css">
-</head>
-<body>
-
-    <div class="container">
-       
-        <div class="swiper-container">
-            <div class="swiper-wrapper" id="series-container">
-                <!-- Series will be loaded here by JavaScript -->
-            </div>
-            
-            <!-- Custom Arrows -->
-            <div class="Arrow--Right">
-                <i class="fa-solid fa-arrow-right-long"></i>
-            </div>
-            <div class="Arrow--Left">
-                <i class="fa-solid fa-arrow-left-long"></i>
-            </div>
-        </div>
-        <script>
-            atOptions = {
-              'key' : 'ef3740f3a25e0d9bd52bbb71b2d55056',
-              'format' : 'iframe',
-              'height' : 50,
-              'width' : 320,
-              'params' : {}
-            };
-          </script>
-          <script src="https://www.highperformanceformat.com/ef3740f3a25e0d9bd52bbb71b2d55056/invoke.js"></script>
-        <div class="ds-container">
-            
-            <a href="category.html?type=series&seriesView=popular"  class="ds-button">
-              <div class='ds-button-content'>
-                <p>أحدث المسلسلات<br>
-                <span class='ds-button-smalltext'>
-                اكتشف أحدث المسلسلات التي يتابعها الجميع الآن. حلقات جديدة، قصص مشوّقة، وأحداث تأخذك إلى عوالم لا تُنسى.
-                </span></p>
-              </div>
-            </a>
-            <a href="category.html?type=series&seriesView=top-rated"  class="ds-button">
-              <div class='ds-button-content'>
-                <p>أفلام مميزة<br>
-                <span class='ds-button-smalltext'>
-                مجموعة منتقاة من أفضل الأفلام بين الأكشن، الدراما، الكوميديا، والتشويق. استمتع بتجربة سينمائية كاملة.
-                </span></p>
-              </div>
-            </a>
-          
-            <a href="tr.index.html"  class="ds-button">
-              <div class='ds-button-content'>
-                <p>الأكثر مشاهدة<br>
-                <span class='ds-button-smalltext'>
-                الأعمال التي تصدّرت المشاهدات ونالت إعجاب الجمهور. إن كنت محتارًا ماذا تشاهد، فهذا القسم هو دليلك.
-                </span></p>
-              </div>
-            </a>
-          </div>
-          
-    </div>
-
-    <script>
-        atOptions = {
-          'key' : 'ef3740f3a25e0d9bd52bbb71b2d55056',
-          'format' : 'iframe',
-          'height' : 50,
-          'width' : 320,
-          'params' : {}
-        };
-      </script>
-      <script src="https://www.highperformanceformat.com/ef3740f3a25e0d9bd52bbb71b2d55056/invoke.js"></script>
-    
-
-    <!-- Loading Screen -->
-    <div id="loading-screen" style="display: none;">
-        <div class="spinner"></div>
-        <p>جاري تحميل المسلسلات...</p>
-    </div>
-
-    
-
-<!-- Main Content -->
-<main class="main-content">
-    
-    <!-- Extended Filters Section -->
-    <section class="extended-filters" id="extendedFilters">
-        
-    </section>
-
-    
-    
-    <!-- All Movies Section -->
-    <section class="all-movies-section">
-     
-         
-            
-            <!-- Movies Grid -->
-            <div class="movies-grid" id="moviesGrid">
-                <!-- سيتم ملؤها بواسطة JavaScript -->
-            </div>
-            
-            <!-- Infinite Pagination -->
-            <nav aria-label="Page navigation" class="pagination" id="pagination">
-                <!-- سيتم ملؤها بواسطة JavaScript -->
-            </nav>
         </section>
-    </main>
-    <script>
-        atOptions = {
-          'key' : 'ef3740f3a25e0d9bd52bbb71b2d55056',
-          'format' : 'iframe',
-          'height' : 50,
-          'width' : 320,
-          'params' : {}
-        };
-      </script>
-      <script src="https://www.highperformanceformat.com/ef3740f3a25e0d9bd52bbb71b2d55056/invoke.js"></script>
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <i class="fas fa-film"></i>
-                Tomito - عالم السينما الخاص بك
+
+   
+        <!-- Popular Series Swiper -->
+        <div class="container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper" id="series-container">
+                    <!-- Series will be loaded here by JavaScript -->
+                </div>
+                
+                <!-- Custom Arrows -->
+                <div class="Arrow--Right">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+                <div class="Arrow--Left">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </div>
             </div>
-          
+            
+         
+            <!-- Featured Buttons -->
+            <div class="ds-container">
+                <a href="category.html?type=series&seriesView=popular" class="ds-button">
+                    <div class='ds-button-content'>
+                        <p>أحدث المسلسلات<br>
+                        <span class='ds-button-smalltext'>
+                        اكتشف أحدث المسلسلات التي يتابعها الجميع الآن. حلقات جديدة، قصص مشوّقة، وأحداث تأخذك إلى عوالم لا تُنسى.
+                        </span></p>
+                    </div>
+                </a>
+                <a href="category.html?type=series&seriesView=top-rated" class="ds-button">
+                    <div class='ds-button-content'>
+                        <p>أفلام مميزة<br>
+                        <span class='ds-button-smalltext'>
+                        مجموعة منتقاة من أفضل الأفلام بين الأكشن، الدراما، الكوميديا، والتشويق. استمتع بتجربة سينمائية كاملة.
+                        </span></p>
+                    </div>
+                </a>
+                <a href="tr.index.html" class="ds-button">
+                    <div class='ds-button-content'>
+                        <p>الأكثر مشاهدة<br>
+                        <span class='ds-button-smalltext'>
+                        الأعمال التي تصدّرت المشاهدات ونالت إعجاب الجمهور. إن كنت محتارًا ماذا تشاهد، فهذا القسم هو دليلك.
+                        </span></p>
+                    </div>
+                </a>
+            </div>
         </div>
+
+        <!-- Loading Screen -->
+        <div id="loading-screen" style="display: none;">
+            <div class="spinner"></div>
+            <p>جاري تحميل المسلسلات...</p>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Extended Filters Section -->
+            <section class="extended-filters" id="extendedFilters"></section>
+            
+            <!-- All Movies Section -->
+            <section class="all-movies-section">
+                <!-- Movies Grid -->
+                <div class="movies-grid" id="moviesGrid">
+                    <!-- سيتم ملؤها بواسطة JavaScript -->
+                </div>
+                
+                <!-- Infinite Pagination -->
+                <nav aria-label="Page navigation" class="pagination" id="pagination">
+                    <!-- سيتم ملؤها بواسطة JavaScript -->
+                </nav>
+            </section>
+        </main>
+
+       
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-film"></i>
+                    Tomito - عالم السينما الخاص بك
+                </div>
+            </div>
+        </footer>
 
         <!-- Full Screen Image Modal -->
-<div class="fullscreen-modal" id="fullscreenModal">
-   
-  <script>
-  atOptions = {
-    'key' : 'ef3740f3a25e0d9bd52bbb71b2d55056',
-    'format' : 'iframe',
-    'height' : 50,
-    'width' : 320,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/ef3740f3a25e0d9bd52bbb71b2d55056/invoke.js"></script>
-</div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <div class="fullscreen-modal" id="fullscreenModal"></div>
 
-<!-- في index.html -->
-
-<script src="js/link.js"></script>
-<script src="js/movie-seo.js"></script>
-<script src="js/logo.js"></script>
-<script src="js/sw.js"></script>
-<script src="js/header.js"></script>
-<script src="js/api.js"></script>          <!-- ✅ أولاً -->
-<script src="js/carousel1.js"></script>
-<script src="js/seo.js"></script>
-<script src="js/carousel.tvvv.js"></script>
-
-
-
-
-
-  
-
-</body>
-</html>             
-<!--  -->
-
+        <!-- JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        
+        <!-- Custom JavaScript -->
+        <script src="js/link.js"></script>
+        <script src="js/movie-seo.js"></script>
+        <script src="js/logo.js"></script>
+        <script src="js/sw.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/api.js"></script>
+        <script src="js/carousel1.js"></script>
+        <script src="js/seo.js"></script>
+        <script src="js/carousel.tvvv.js"></script>
+        
+        <!-- إعلان مرة واحدة في النهاية فقط -->
+        <script>
+            // يمكنك تحميل الإعلانات بشكل ديناميكي هنا
+            // بدلاً من تكرارها في HTML
+        </script>
+    </body>
+</html>
