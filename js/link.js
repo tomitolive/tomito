@@ -10,7 +10,7 @@
             'https://www.effectivegatecpm.com/jsmds4sje?key=f4a2480b6a059baee6bfa7a01f6c4cad'
         ],
         idleTime: 5000,
-        countdown: 6,
+        countdown: 10,
         cooldown: 15000
     };
 
