@@ -1,11 +1,39 @@
-/* ===========================
-   Reset & Base
-=========================== */
+/* ========================================
+   Netflix Style CSS لتوميتو - صفحة البحث
+   ======================================== */
+
+/* ===== المتغيرات ===== */
+:root {
+    /* ألوان Netflix */
+    --netflix-black: #141414;
+    --netflix-dark-black: #000000;
+    --netflix-red: #e50914;
+    --netflix-dark-red: #b20710;
+    --netflix-gray: #808080;
+    --netflix-dark-gray: #2d2d2d;
+    --netflix-light-gray: #757575;
+    --netflix-white: #ffffff;
+    --netflix-hover-red: #f40612;
+    --netflix-hover-gray: #404040;
+    
+    /* تأثيرات */
+    --netflix-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    --netflix-card-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+    --netflix-gradient: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 50%, transparent 100%);
+    
+    /* أحجام */
+    --header-height: 70px;
+    --card-width: 220px;
+    --card-height: 330px;
+    --border-radius: 4px;
+    --transition-speed: 0.4s;
+}
+
+/* ===== CSS Reset وإعدادات عامة ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cairo', sans-serif;
 }
 
 html {
@@ -13,58 +41,78 @@ html {
 }
 
 body {
-    background: linear-gradient(135deg, #0c0c0c 0%, #141414 50%, #1a1a1a 100%);
-    color: #e5e5e5;
+    font-family: 'Cairo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: var(--netflix-black);
+    color: var(--netflix-white);
     line-height: 1.6;
-    min-height: 100vh;
+    overflow-x: hidden;
+    direction: rtl;
+    text-align: right;
 }
 
-/* ===========================
-   Container
-=========================== */
+/* شريط التمرير */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--netflix-dark-gray);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--tomito-gradient);
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--netflix-hover-red);
+}
+
+/* ===== الحاوية الرئيسية ===== */
 .container {
-    width: 90%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 4%;
+    width: 100%;
 }
 
-/* ===========================
-   Header
-=========================== */
+/* ===== الهيدر Netflix Style ===== */
 .search-results-header {
-    background: rgba(20, 20, 20, 0.95);
-    padding: 18px 0;
-    border-bottom: 1px solid rgba(229, 9, 20, 0.3);
-    position: sticky;
+    position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
+    height: var(--header-height);
+    background: var(--netflix-gradient);
     z-index: 1000;
-    backdrop-filter: blur(10px);
-    animation: slideDown 0.3s ease;
+    transition: all 0.3s ease;
+    padding-top: 0;
 }
 
-@keyframes slideDown {
-    from { transform: translateY(-100%); }
-    to { transform: translateY(0); }
+.search-results-header.scrolled {
+    background: var(--netflix-black);
+    box-shadow: var(--netflix-shadow);
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    height: var(--header-height);
     gap: 20px;
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: #e50914;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--netflix-red);
     text-decoration: none;
+    transition: transform 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: -1px;
     display: flex;
     align-items: center;
-    gap: 12px;
-    transition: transform 0.3s;
+    gap: 10px;
 }
 
 .logo:hover {
@@ -73,12 +121,6 @@ body {
 
 .logo i {
     font-size: 2rem;
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
 }
 
 .search-box {
@@ -90,72 +132,73 @@ body {
 
 .search-input {
     flex: 1;
-    padding: 14px 20px;
-    border-radius: 12px 0 0 12px;
-    border: 2px solid #333;
+    padding: 12px 20px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--netflix-light-gray);
     outline: none;
-    font-size: 1.05rem;
-    background: rgba(255, 255, 255, 0.08);
-    color: #fff;
-    transition: all 0.3s;
+    font-size: 1rem;
+    background: var(--netflix-dark-gray);
+    color: var(--netflix-white);
+    transition: all 0.3s ease;
+    border-left: none;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
 }
 
 .search-input:focus {
-    border-color: #e50914;
-    background: rgba(255, 255, 255, 0.12);
+    border-color: var(--netflix-red);
+    box-shadow: 0 0 0 1px var(--netflix-red);
+}
+
+.search-input::placeholder {
+    color: var(--netflix-light-gray);
 }
 
 .search-btn {
     padding: 0 25px;
-    background: linear-gradient(135deg, #e50914, #b81d24);
+    background: var(--tomito-gradient);
     border: none;
-  
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--netflix-white);
 }
 
 .search-btn:hover {
-    background: linear-gradient(135deg, #b81d24, #e50914);
-    transform: translateX(-2px);
+    background: var(--netflix-hover-red);
 }
 
 .search-btn i {
     font-size: 1.2rem;
 }
 
-.user-menu a {
-    color: #fff;
-    font-size: 1.4rem;
-    text-decoration: none;
-    transition: all 0.3s;
-    padding: 10px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.05);
+.user-menu {
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
-.user-menu a:hover {
-    color: #e50914;
-    background: rgba(229, 9, 20, 0.1);
-    transform: rotate(15deg);
-}
-
-/* ===========================
-   Results Info
-=========================== */
+/* ===== قسم المعلومات ===== */
 .results-info {
-    margin: 40px 0 30px;
+    margin-top: calc(var(--header-height) + 40px);
+    margin-bottom: 30px;
     animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .results-info h1 {
     font-size: 2.5rem;
     margin-bottom: 25px;
-    color: #fff;
+    color: var(--netflix-white);
     position: relative;
     display: inline-block;
+    font-weight: 900;
 }
 
 .results-info h1::after {
@@ -165,7 +208,7 @@ body {
     right: 0;
     width: 100px;
     height: 4px;
-    background: linear-gradient(to left, #e50914, transparent);
+    background: linear-gradient(to left, var(--netflix-red), transparent);
     border-radius: 2px;
 }
 
@@ -180,29 +223,30 @@ body {
 }
 
 .stat-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    background: rgba(20, 20, 20, 0.9);
     padding: 20px 25px;
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     gap: 15px;
     min-width: 180px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: default;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(5px);
+    border: 1px solid #333;
+    backdrop-filter: blur(10px);
+    box-shadow: var(--netflix-shadow);
 }
 
 .stat-card:hover {
     transform: translateY(-8px) scale(1.03);
-    background: linear-gradient(135deg, rgba(229, 9, 20, 0.15), rgba(184, 29, 36, 0.1));
+    background: rgba(229, 9, 20, 0.15);
     border-color: rgba(229, 9, 20, 0.3);
     box-shadow: 0 10px 30px rgba(229, 9, 20, 0.2);
 }
 
 .stat-card i {
     font-size: 2.2rem;
-    background: linear-gradient(135deg, #e50914, #ff6b6b);
+    background: var(--tomito-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -210,18 +254,16 @@ body {
 .stat-card h3 {
     font-size: 2rem;
     font-weight: 700;
-    color: #fff;
+    color: var(--netflix-white);
 }
 
 .stat-card p {
-    color: #aaa;
+    color: var(--netflix-light-gray);
     font-size: 0.9rem;
     margin-top: 5px;
 }
 
-/* ===========================
-   Filter Tabs
-=========================== */
+/* ===== أزرار التصنيفات ===== */
 .search-filters {
     margin: 35px 0;
     display: flex;
@@ -234,129 +276,168 @@ body {
 
 .filter-tabs {
     display: flex;
-    gap: 15px;
-    background: rgba(255, 255, 255, 0.05);
+    gap: 12px;
+    background: rgba(20, 20, 20, 0.9);
     padding: 8px;
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    border: 1px solid #333;
+    box-shadow: var(--netflix-shadow);
 }
 
 .filter-tab {
     background: transparent;
     border: none;
-    padding: 12px 24px;
-    border-radius: 12px;
+    padding: 10px 22px;
+    border-radius: 25px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 10px;
-    transition: all 0.3s;
-    color: #aaa;
-    font-weight: 600;
+    gap: 8px;
+    transition: all 0.3s ease;
+    color: var(--netflix-white);
+    font-weight: 500;
     font-size: 0.95rem;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .filter-tab:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    transform: translateY(-2px);
+    background: rgba(109, 109, 110, 0.7);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .filter-tab.active {
-    background: linear-gradient(135deg, #e50914, #b81d24);
-    color: #fff;
-    box-shadow: 0 5px 15px rgba(229, 9, 20, 0.3);
+    background: var(--tomito-gradient);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(229, 9, 20, 0.4);
+    border-color: var(--netflix-red);
+}
+
+.filter-tab i {
+    font-size: 0.9rem;
 }
 
 .filter-options select {
-    padding: 12px 20px;
-    border-radius: 12px;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    background: rgba(255, 255, 255, 0.08);
-    color: #fff;
+    background: var(--netflix-dark-gray);
+    color: var(--netflix-white);
+    border: 1px solid var(--netflix-light-gray);
+    padding: 12px 40px 12px 25px;
+    border-radius: var(--border-radius);
     cursor: pointer;
-    font-size: 0.95rem;
-    transition: all 0.3s;
+    font-size: 1rem;
+    min-width: 180px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: left 15px center;
     outline: none;
 }
 
+.filter-options select:hover {
+    border-color: var(--netflix-red);
+    box-shadow: 0 0 0 1px var(--netflix-red);
+}
+
 .filter-options select:focus {
-    border-color: #e50914;
-    box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.2);
+    border-color: var(--netflix-red);
+    box-shadow: 0 0 0 2px rgba(229, 9, 20, 0.3);
 }
 
 .filter-options select option {
-    background: #1a1a1a;
-    color: #fff;
+    background: var(--netflix-dark-gray);
+    color: var(--netflix-white);
 }
 
-/* ===========================
-   Results Grid
-=========================== */
+/* ===== شبكة المحتوى ===== */
 .results-section {
     min-height: 400px;
 }
 
 .results-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(var(--card-width), 1fr));
     gap: 25px;
-    margin-bottom: 40px;
-    animation: fadeIn 1s ease;
+    margin-bottom: 60px;
+    position: relative;
 }
 
+/* ===== حالة فارغة ===== */
 .empty-state {
     grid-column: 1 / -1;
     text-align: center;
-    padding: 80px 20px;
-    color: #666;
+    padding: 80px 30px;
+    background: rgba(20, 20, 20, 0.9);
+    border-radius: 15px;
+    border: 1px solid #333;
+    box-shadow: var(--netflix-shadow);
+    backdrop-filter: blur(10px);
 }
 
 .empty-state i {
-    margin-bottom: 20px;
-    color: #333;
+    font-size: 4.5rem;
+    margin-bottom: 25px;
+    display: block;
+    color: var(--netflix-light-gray);
 }
 
 .empty-state h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #888;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: var(--netflix-white);
+    font-weight: 700;
 }
 
 .empty-state p {
+    color: var(--netflix-light-gray);
     font-size: 1.1rem;
-    color: #666;
+    margin-top: 15px;
+    font-weight: 300;
 }
 
+/* ===== حالة التحميل ===== */
 .loading-spinner {
+    grid-column: 1 / -1;
     text-align: center;
-    padding: 60px 0;
-    animation: fadeIn 0.5s ease;
+    padding: 80px 30px;
+    background: rgba(20, 20, 20, 0.9);
+    border-radius: 15px;
+    border: 1px solid #333;
+    box-shadow: var(--netflix-shadow);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.6s ease-out;
 }
 
 .loading-spinner i {
-    margin-bottom: 20px;
-    color: #e50914;
+    font-size: 3.5rem;
+    color: var(--netflix-red);
+    margin-bottom: 25px;
+    display: inline-block;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .loading-spinner p {
-    color: #aaa;
+    color: var(--netflix-light-gray);
     font-size: 1.1rem;
+    margin-top: 15px;
+    font-weight: 300;
 }
 
-/* ===========================
-   Movie Card
-=========================== */
+/* ===== بطاقة الفيلم/المسلسل (Movie Card) ===== */
 .movie-card {
-    position: relative;
-    border-radius: 18px;
+    background: var(--netflix-dark-gray);
+    border-radius: 10px;
     overflow: hidden;
-    background: linear-gradient(135deg, rgba(30, 30, 30, 0.8), rgba(20, 20, 20, 0.9));
+    transition: all var(--transition-speed) cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    height: 380px;
-    display: flex;
-    flex-direction: column;
     animation: cardAppear 0.6s ease-out forwards;
     opacity: 0;
     transform: translateY(20px);
@@ -370,12 +451,20 @@ body {
     }
 }
 
-.movie-card:nth-child(odd) {
-    animation-delay: 0.1s;
-}
+.movie-card:nth-child(1) { animation-delay: 0.1s; }
+.movie-card:nth-child(2) { animation-delay: 0.2s; }
+.movie-card:nth-child(3) { animation-delay: 0.3s; }
+.movie-card:nth-child(4) { animation-delay: 0.4s; }
+.movie-card:nth-child(5) { animation-delay: 0.5s; }
+.movie-card:nth-child(6) { animation-delay: 0.6s; }
+.movie-card:nth-child(7) { animation-delay: 0.7s; }
+.movie-card:nth-child(8) { animation-delay: 0.8s; }
 
-.movie-card:nth-child(even) {
-    animation-delay: 0.2s;
+.movie-card:hover {
+    transform: scale(1.08) translateY(-15px);
+    z-index: 100;
+    box-shadow: var(--netflix-card-shadow);
+    border-color: var(--netflix-red);
 }
 
 .movie-card::before {
@@ -384,20 +473,21 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 5px;
-    background: linear-gradient(90deg, #e50914, #ff6b6b, #e50914);
-    z-index: 2;
-    transform: scaleX(0);
-    transition: transform 0.4s ease;
+    bottom: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.9) 80%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .movie-card:hover::before {
-    transform: scaleX(1);
+    opacity: 1;
 }
 
-.movie-card .poster-container {
+/* ===== صورة البطاقة ===== */
+.poster-container {
     position: relative;
-    height: 70%;
+    height: var(--card-height);
     overflow: hidden;
 }
 
@@ -409,10 +499,11 @@ body {
 }
 
 .movie-card:hover img {
-    transform: scale(1.08);
+    transform: scale(1.12);
 }
 
-.movie-card .poster-overlay {
+/* ===== تراكب على الصورة ===== */
+.poster-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -430,7 +521,7 @@ body {
     opacity: 1;
 }
 
-.movie-card .play-btn {
+.play-btn {
     background: rgba(229, 9, 20, 0.9);
     border: none;
     width: 60px;
@@ -442,80 +533,77 @@ body {
     cursor: pointer;
     transform: scale(0.8);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
 }
 
 .movie-card:hover .play-btn {
     transform: scale(1);
 }
 
-.movie-card .play-btn i {
+.play-btn i {
     color: white;
     font-size: 1.5rem;
     margin-right: -3px;
 }
 
-.movie-card .card-content {
-    padding: 18px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+/* ===== معلومات البطاقة ===== */
+.card-content {
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    background: var(--netflix-dark-gray);
 }
 
-.movie-card .card-header {
+.card-header {
     margin-bottom: 10px;
 }
 
-.movie-card .card-title {
-    font-size: 1.05rem;
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #fff;
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: var(--netflix-white);
+    font-weight: 700;
     line-height: 1.3;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    min-height: 3.1em;
 }
 
-.movie-card .card-info {
+.card-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 12px;
 }
 
-.movie-card .media-badge {
-    background: linear-gradient(135deg, #e50914, #b81d24);
-    color: white;
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
+.media-badge {
+    background: linear-gradient(45deg, var(--netflix-red), var(--netflix-hover-red));
+    color: var(--netflix-white);
+    padding: 6px 14px;
+    border-radius: var(--border-radius);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-.movie-card .card-rating {
+.card-rating {
     display: flex;
     align-items: center;
-    gap: 5px;
-    color: #ffd700;
-    font-weight: 600;
+    gap: 6px;
+    color: #FFD700;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.rating-star {
+    color: #FFD700;
     font-size: 0.9rem;
 }
 
-.movie-card .rating-star {
-    color: #ffd700;
-    font-size: 0.8rem;
-}
-
-.movie-card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    border-color: rgba(229, 9, 20, 0.3);
-}
-
-/* ===========================
-   Load More Button
-=========================== */
+/* ===== زر تحميل المزيد ===== */
 .load-more-container {
     text-align: center;
     margin: 50px 0 70px;
@@ -523,102 +611,122 @@ body {
 }
 
 .load-more-btn {
-    background: linear-gradient(135deg, #e50914, #b81d24);
+    background: linear-gradient(45deg, var(--netflix-red), var(--netflix-hover-red));
     border: none;
-    padding: 16px 40px;
-    border-radius: 12px;
-    color: #fff;
+    padding: 14px 40px;
+    border-radius: var(--border-radius);
+    color: var(--netflix-white);
     font-size: 1.05rem;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    box-shadow: 0 5px 20px rgba(229, 9, 20, 0.3);
+    box-shadow: 0 6px 20px rgba(229, 9, 20, 0.4);
 }
 
 .load-more-btn:hover {
-    background: linear-gradient(135deg, #b81d24, #e50914);
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 8px 25px rgba(229, 9, 20, 0.4);
+    background: linear-gradient(45deg, var(--netflix-hover-red), var(--netflix-red));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(229, 9, 20, 0.5);
 }
 
-.load-more-btn:active {
-    transform: translateY(0) scale(1);
+.load-more-btn i {
+    font-size: 1rem;
 }
 
-/* ===========================
-   Footer
-=========================== */
+/* ===== الفوتر ===== */
 .search-results-footer {
-    background: linear-gradient(to top, #0c0c0c, #141414);
-    padding: 30px 0;
+    background: var(--netflix-dark-black);
+    padding: 50px 0 30px;
+    border-top: 8px solid #222;
+    position: relative;
+}
+
+.search-results-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--netflix-red), transparent);
+}
+
+.search-results-footer .container {
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    color: #666;
-    margin-top: 50px;
+    color: var(--netflix-light-gray);
+    font-size: 0.95rem;
 }
 
-.footer-links {
-    margin: 15px 0;
+.search-results-footer p {
+    margin-bottom: 15px;
+    line-height: 1.8;
 }
 
-.footer-links a {
-    color: #888;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s;
-    font-size: 0.9rem;
+/* ===== تأثيرات الخلفية المتحركة ===== */
+.bg-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
 }
 
-.footer-links a:hover {
-    color: #e50914;
+.bg-animation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(229, 9, 20, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(229, 9, 20, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(229, 9, 20, 0.08) 0%, transparent 50%);
+    animation: bgMove 20s linear infinite;
 }
 
-.tmdb-credit {
-    margin-top: 15px;
-    font-size: 0.85rem;
-    color: #555;
+@keyframes bgMove {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
-.tmdb-credit i {
-    margin-left: 5px;
-    color: #01d277;
+/* ===== التجاوب ===== */
+
+/* شاشات كبيرة */
+@media (min-width: 1400px) {
+    .results-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
 }
 
-/* ===========================
-   Responsive Design
-=========================== */
+/* أجهزة لوحية */
 @media (max-width: 1200px) {
     .results-grid {
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 }
 
 @media (max-width: 992px) {
     .header-content {
-        flex-direction: column;
-        gap: 20px;
+        flex-wrap: wrap;
     }
     
     .search-box {
-        max-width: 100%;
+        order: 3;
         width: 100%;
-    }
-    
-    .stats-grid {
-        justify-content: center;
-    }
-    
-    .stat-card {
-        min-width: 160px;
+        max-width: 100%;
     }
 }
 
 @media (max-width: 768px) {
-    .container {
-        width: 95%;
+    .results-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 20px;
     }
     
     .results-info h1 {
@@ -631,33 +739,20 @@ body {
     }
     
     .filter-tab {
-        padding: 10px 20px;
-        font-size: 0.9rem;
+        padding: 8px 15px;
+        font-size: 0.85rem;
     }
     
-    .results-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 20px;
-    }
-    
-    .movie-card {
-        height: 320px;
-    }
-    
-    .load-more-btn {
-        width: 100%;
-        justify-content: center;
+    .logo {
+        font-size: 2rem;
     }
 }
 
+/* هواتف */
 @media (max-width: 576px) {
-    .search-results-header {
-        padding: 15px 0;
-    }
-    
-    .search-input {
-        padding: 12px 15px;
-        font-size: 1rem;
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
     
     .results-info h1 {
@@ -673,56 +768,45 @@ body {
         font-size: 1.5rem;
     }
     
-    .results-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-    
-    .movie-card {
+    .poster-container {
         height: 280px;
     }
     
-    .movie-card .card-content {
+    .card-content {
         padding: 12px;
     }
     
-    .movie-card .card-title {
-        font-size: 0.95rem;
+    .card-title {
+        font-size: 1rem;
     }
     
     .load-more-btn {
-        padding: 14px 20px;
+        padding: 12px 20px;
+        width: 100%;
+    }
+    
+    .search-results-header {
+        height: 60px;
+    }
+    
+    .header-content {
+        height: 60px;
+    }
+    
+    .results-info {
+        margin-top: calc(60px + 30px);
     }
 }
 
+/* هواتف صغيرة */
 @media (max-width: 400px) {
     .results-grid {
         grid-template-columns: 1fr;
-        max-width: 280px;
-        margin: 0 auto 30px;
     }
     
-    .movie-card {
-        height: 300px;
+    .filter-tab {
+        flex: 1;
+        min-width: calc(50% - 8px);
+        justify-content: center;
     }
-}
-
-/* ===========================
-   Scrollbar Styling
-=========================== */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #1a1a1a;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #e50914, #b81d24);
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(135deg, #b81d24, #e50914);
 }
