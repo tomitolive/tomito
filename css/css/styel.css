@@ -1,7 +1,8 @@
 /* ========================================
    RESET & BASE STYLES
    ======================================== */
-   * {
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,9 +16,11 @@ body {
     overflow-x: hidden;
 }
 
+
 /* ========================================
    COLOR FILTERS SECTION
    ======================================== */
+
 .color-filters {
     margin-top: 80px;
     padding: 1.5rem 5%;
@@ -108,12 +111,12 @@ body {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
 }
 
+
 /* ========================================
    EXTENDED FILTERS SECTION - IMPROVED
    ======================================== */
+
 .extended-filters {
-  
-  
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: 0;
     position: relative;
@@ -172,7 +175,9 @@ body {
     font-weight: 600;
 }
 
+
 /* زر المزيد */
+
 .more-filters-btn {
     padding: 10px 20px;
     background: rgba(255, 255, 255, 0.15);
@@ -201,7 +206,9 @@ body {
     border-color: transparent;
 }
 
+
 /* القائمة المنسدلة */
+
 .filters-dropdown {
     position: absolute;
     top: 100%;
@@ -226,9 +233,11 @@ body {
     animation: fadeIn 0.3s ease;
 }
 
+
 /* ========================================
    SEARCH BAR STYLES
    ======================================== */
+
 .search-container {
     position: relative;
     width: 350px;
@@ -236,7 +245,6 @@ body {
 
 .search-input {
     width: 100%;
-   
     padding-right: 50px;
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(207, 10, 10, 0.3);
@@ -270,9 +278,11 @@ body {
     color: #CF0A0A;
 }
 
+
 /* ========================================
    SAVE BUTTON
    ======================================== */
+
 .save-btn {
     background: none;
     border: none;
@@ -295,22 +305,32 @@ body {
 }
 
 @keyframes heartBeat {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.3); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
+
 
 /* ========================================
    MAIN CONTENT
    ======================================== */
+
 .main-content {
     margin-top: 0;
     padding: 2rem 5%;
 }
 
+
 /* ========================================
    FEATURED CAROUSEL SECTION
    ======================================== */
+
 .featured-section {
     margin-bottom: 4rem;
     position: relative;
@@ -368,9 +388,11 @@ body {
     box-shadow: 0 10px 20px rgba(207, 10, 10, 0.4);
 }
 
+
 /* ========================================
    ENHANCED CAROUSEL
    ======================================== */
+
 .carousel-container {
     position: relative;
     overflow: hidden;
@@ -521,9 +543,11 @@ body {
     transform: scale(1.1);
 }
 
+
 /* ========================================
    INFINITE CAROUSEL NAVIGATION
    ======================================== */
+
 .carousel-nav {
     position: absolute;
     top: 50%;
@@ -557,9 +581,11 @@ body {
     left: 20px;
 }
 
+
 /* ========================================
    ALL MOVIES SECTION
    ======================================== */
+
 .all-movies-section {
     margin-bottom: 4rem;
 }
@@ -571,9 +597,11 @@ body {
     margin-bottom: 3rem;
 }
 
+
 /* ========================================
    MOVIE CARD
    ======================================== */
+
 .movie-card {
     position: relative;
     border-radius: 15px;
@@ -727,9 +755,11 @@ body {
     transform: scale(1.1);
 }
 
+
 /* ========================================
    INFINITE PAGINATION
    ======================================== */
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -797,9 +827,11 @@ body {
     cursor: not-allowed;
 }
 
+
 /* ========================================
    PROGRESS BAR
    ======================================== */
+
 .progress-bar {
     position: fixed;
     top: 0;
@@ -814,9 +846,11 @@ body {
     display: none;
 }
 
+
 /* ========================================
    NO MOVIES MESSAGE
    ======================================== */
+
 .no-movies {
     grid-column: 1 / -1;
     text-align: center;
@@ -828,19 +862,19 @@ body {
     border: 2px dashed #CF0A0A;
 }
 
+
 /* ========================================
    RESPONSIVE DESIGN - IMPROVED FOR MOBILE
    ======================================== */
+
 @media (max-width: 1024px) {
     .movies-grid {
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     }
-    
     .carousel-card {
         flex: 0 0 250px;
         height: 380px;
     }
-    
     .search-container {
         width: 300px;
     }
@@ -851,41 +885,33 @@ body {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 1.5rem;
     }
-    
     .movie-card {
         height: 380px;
     }
-    
     .carousel-card {
         flex: 0 0 220px;
         height: 350px;
     }
-    
     .section-title {
         font-size: 1.8rem;
     }
-    
     .color-filters {
         margin-top: 140px;
     }
-    
     .carousel-nav {
         width: 40px;
         height: 40px;
         font-size: 1.1rem;
     }
-    
     /* تحسينات زر المزيد */
     .extended-filter-btn {
         padding: 8px 16px;
         font-size: 0.85rem;
     }
-    
     .more-filters-btn {
         padding: 8px 16px;
         font-size: 0.85rem;
     }
-    
     .filters-dropdown {
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
         max-height: 250px;
@@ -897,55 +923,48 @@ body {
         grid-template-columns: repeat(auto-fill, minmax(160px, 3fr));
         gap: 1rem;
     }
-    
     .movie-card {
         height: 320px;
     }
-    
     .carousel-card {
         flex: 0 0 180px;
         height: 300px;
     }
-    
     .section-title {
         font-size: 1.5rem;
     }
-    
     .color-filter-btn {
         min-width: 130px;
         padding: 12px 20px;
         font-size: 0.9rem;
     }
-    
     .carousel-nav {
         display: none;
     }
-    
     .extended-filter-btn {
         padding: 7px 14px;
         font-size: 0.8rem;
     }
-    
     .more-filters-btn {
         padding: 7px 14px;
         font-size: 0.8rem;
     }
-    
     .filters-dropdown {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         max-height: 200px;
         padding: 10px;
     }
-    
     .view-all-btn {
         padding: 10px 20px;
         font-size: 0.9rem;
     }
 }
 
+
 /* ========================================
    ANIMATIONS
    ======================================== */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -962,9 +981,11 @@ body {
     opacity: 0;
 }
 
+
 /* ========================================
    SCROLLBAR STYLING
    ======================================== */
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -982,9 +1003,11 @@ body {
     background: linear-gradient(to bottom, #DC5F00, #CF0A0A);
 }
 
+
 /* ========================================
    FOOTER
    ======================================== */
+
 .footer {
     background: rgba(0, 0, 0, 0.9);
     padding: 2rem 5%;
@@ -1031,9 +1054,13 @@ body {
     color: #888;
     font-size: 0.9rem;
     margin-top: 1.5rem;
-}/* ========================================
+}
+
+
+/* ========================================
    RESET & BASE STYLES
    ======================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -1048,9 +1075,11 @@ body {
     overflow-x: hidden;
 }
 
+
 /* ========================================
    NAVBAR STYLES
    ======================================== */
+
 .navbar {
     background: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(10px);
@@ -1123,9 +1152,11 @@ body {
     background: linear-gradient(90deg, #CF0A0A, #DC5F00);
 }
 
+
 /* ========================================
    SEARCH BAR
    ======================================== */
+
 .search-container {
     position: relative;
     width: 350px;
@@ -1182,9 +1213,11 @@ body {
     transform: scale(1.1);
 }
 
+
 /* ========================================
    COLOR FILTERS
    ======================================== */
+
 .color-filters {
     margin-top: 80px;
     padding: 1.5rem 5%;
@@ -1259,10 +1292,10 @@ body {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
 }
 
+
 /* ========================================
    EXTENDED FILTERS
    ======================================== */
-
 
 .extended-filters-container {
     max-width: 1400px;
@@ -1351,17 +1384,21 @@ body {
     display: grid;
 }
 
+
 /* ========================================
    MAIN CONTENT
    ======================================== */
+
 .main-content {
     margin-top: 0;
     padding: 2rem 5%;
 }
 
+
 /* ========================================
    FEATURED CAROUSEL
    ======================================== */
+
 .featured-section {
     margin-bottom: 4rem;
 }
@@ -1412,7 +1449,6 @@ body {
 .carousel-container {
     position: relative;
     overflow: hidden;
-
 }
 
 .carousel-track {
@@ -1581,9 +1617,11 @@ body {
     left: 20px;
 }
 
+
 /* ========================================
    ALL SERIES SECTION
    ======================================== */
+
 .all-movies-section {
     margin-bottom: 4rem;
 }
@@ -1608,8 +1646,14 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .movie-card:hover {
@@ -1740,9 +1784,11 @@ body {
     color: #CF0A0A;
 }
 
+
 /* ========================================
    PAGINATION
    ======================================== */
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -1777,10 +1823,13 @@ body {
     transform: scale(1.1);
 }
 
-.cursor-pointer { cursor: pointer; }
-.cursor-normal { 
-    cursor: default; 
-    background: rgba(207, 10, 10, 0.5); 
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-normal {
+    cursor: default;
+    background: rgba(207, 10, 10, 0.5);
 }
 
 .pagination-nav-btn {
@@ -1807,9 +1856,11 @@ body {
     cursor: not-allowed;
 }
 
+
 /* ========================================
    FOOTER
    ======================================== */
+
 .footer {
     background: rgba(0, 0, 0, 0.9);
     padding: 2rem 5%;
@@ -1858,9 +1909,11 @@ body {
     margin-top: 1.5rem;
 }
 
+
 /* ========================================
    UTILITIES
    ======================================== */
+
 .no-movies {
     grid-column: 1 / -1;
     text-align: center;
@@ -1872,36 +1925,33 @@ body {
     border: 2px dashed #CF0A0A;
 }
 
+
 /* ========================================
    RESPONSIVE
    ======================================== */
+
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
         gap: 1rem;
     }
-    
     .nav-links {
         width: 100%;
         justify-content: center;
         flex-wrap: wrap;
         gap: 1rem;
     }
-    
     .search-container {
         width: 100%;
         max-width: 400px;
     }
-    
     .movies-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
-    
     .carousel-card {
         flex: 0 0 250px;
         height: 350px;
     }
-    
     .section-title {
         font-size: 1.8rem;
     }
@@ -1911,20 +1961,23 @@ body {
     .movies-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
-    
     .carousel-card {
         flex: 0 0 200px;
         height: 300px;
     }
-    
     .section-title {
         font-size: 1.5rem;
     }
-}/* ========================================
+}
+
+
+/* ========================================
    AUTO-SEARCH STYLES
    ======================================== */
 
+
 /* Search Suggestions */
+
 .search-suggestions {
     position: absolute;
     background: rgba(0, 0, 0, 0.97);
@@ -1940,8 +1993,14 @@ body {
 }
 
 @keyframes fadeInDown {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .suggestion-header {
@@ -2121,7 +2180,9 @@ body {
     background: linear-gradient(45deg, #CF0A0A, #DC5F00);
 }
 
+
 /* Loading & No Results States */
+
 .loading-suggestions,
 .no-suggestions {
     padding: 40px 20px;
@@ -2173,7 +2234,9 @@ body {
     font-size: 1.1rem;
 }
 
+
 /* Search Container Enhancement */
+
 .search-container {
     position: relative;
     width: 400px;
@@ -2182,7 +2245,6 @@ body {
 
 .search-input {
     width: 100%;
-  
     padding-right: 60px;
     background: rgba(255, 255, 255, 0.12);
     border: 2px solid rgba(207, 10, 10, 0.4);
@@ -2191,7 +2253,6 @@ body {
     font-size: 1.1rem;
     font-weight: 500;
     transition: all 0.3s;
-
 }
 
 .search-input:focus {
@@ -2229,23 +2290,43 @@ body {
     background: rgba(255, 255, 255, 0.1);
 }
 
+
 /* Animation Keyframes */
+
 @keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes slideIn {
-    from { transform: translateX(100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @keyframes slideOut {
-    from { transform: translateX(0); opacity: 1; }
-    to { transform: translateX(100%); opacity: 0; }
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
 }
 
+
 /* Scrollbar Styling */
+
 .search-suggestions::-webkit-scrollbar {
     width: 8px;
 }
@@ -2264,17 +2345,17 @@ body {
     background: linear-gradient(to bottom, #DC5F00, #CF0A0A);
 }
 
+
 /* Responsive Design */
+
 @media (max-width: 1024px) {
     .search-container {
         width: 350px;
     }
-    
     .suggestion-poster {
         width: 55px;
         height: 82px;
     }
-    
     .suggestion-title {
         font-size: 1rem;
     }
@@ -2285,41 +2366,33 @@ body {
         width: 100%;
         max-width: 400px;
     }
-    
     .search-suggestions {
         max-height: 450px;
         border-radius: 10px;
     }
-    
     .suggestion-item {
         padding: 12px 15px;
         gap: 12px;
     }
-    
     .suggestion-poster {
         width: 50px;
         height: 75px;
     }
-    
     .suggestion-title {
         font-size: 0.95rem;
     }
-    
     .suggestion-details {
         gap: 8px;
     }
-    
     .suggestion-rating,
     .suggestion-year {
         padding: 4px 10px;
         font-size: 0.8rem;
     }
-    
     .suggestion-overview {
         font-size: 0.8rem;
         -webkit-line-clamp: 1;
     }
-    
     .suggestion-btn {
         width: 32px;
         height: 32px;
@@ -2331,40 +2404,39 @@ body {
     .search-suggestions {
         max-height: 400px;
     }
-    
     .suggestion-item {
         padding: 10px 12px;
         gap: 10px;
     }
-    
     .suggestion-poster {
         width: 45px;
         height: 67px;
     }
-    
     .suggestion-title {
         font-size: 0.9rem;
     }
-    
     .suggestion-overview {
         display: none;
     }
-    
     .suggestion-action {
         flex-direction: column;
         gap: 5px;
     }
-    
     .suggestion-btn {
         width: 30px;
         height: 30px;
         font-size: 0.85rem;
     }
-}/* ========================================
+}
+
+
+/* ========================================
    AUTO-SEARCH STYLES
    ======================================== */
 
+
 /* Search Suggestions Container */
+
 .search-suggestions {
     position: absolute;
     background: rgba(0, 0, 0, 0.97);
@@ -2380,8 +2452,14 @@ body {
 }
 
 @keyframes fadeInDown {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .suggestion-header {
@@ -2465,12 +2543,12 @@ body {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
 
-.suggestion-type.movie { 
-    background: linear-gradient(45deg, #2196F3, #03A9F4); 
+.suggestion-type.movie {
+    background: linear-gradient(45deg, #2196F3, #03A9F4);
 }
 
-.suggestion-type.tv { 
-    background: linear-gradient(45deg, #4CAF50, #8BC34A); 
+.suggestion-type.tv {
+    background: linear-gradient(45deg, #4CAF50, #8BC34A);
 }
 
 .suggestion-info {
@@ -2569,7 +2647,9 @@ body {
     background: linear-gradient(45deg, #CF0A0A, #DC5F00);
 }
 
+
 /* No Results State */
+
 .no-results {
     padding: 40px 20px;
     text-align: center;
@@ -2601,7 +2681,9 @@ body {
     margin-top: 10px;
 }
 
+
 /* Toast Notifications */
+
 .toast {
     position: fixed;
     top: 100px;
@@ -2617,16 +2699,30 @@ body {
 }
 
 @keyframes slideIn {
-    from { transform: translateX(100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @keyframes slideOut {
-    from { transform: translateX(0); opacity: 1; }
-    to { transform: translateX(100%); opacity: 0; }
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
 }
 
+
 /* Scrollbar Styling */
+
 .search-suggestions::-webkit-scrollbar {
     width: 8px;
 }
@@ -2645,27 +2741,25 @@ body {
     background: linear-gradient(to bottom, #DC5F00, #CF0A0A);
 }
 
+
 /* Responsive Design */
+
 @media (max-width: 768px) {
     .search-suggestions {
         max-height: 450px;
         border-radius: 10px;
     }
-    
     .suggestion-item {
         padding: 12px 15px;
         gap: 12px;
     }
-    
     .suggestion-poster {
         width: 50px;
         height: 75px;
     }
-    
     .suggestion-title {
         font-size: 0.95rem;
     }
-    
     .suggestion-overview {
         font-size: 0.8rem;
         -webkit-line-clamp: 1;
@@ -2674,39 +2768,37 @@ body {
 
 @media (max-width: 480px) {
     .suggestion-item {
-      
         gap: 10px;
     }
-    
     .suggestion-poster {
         width: 45px;
         height: 67px;
     }
-    
     .suggestion-title {
         font-size: 0.9rem;
     }
-    
     .suggestion-overview {
         display: none;
     }
-    
     .suggestion-btn {
         width: 30px;
         height: 30px;
         font-size: 0.85rem;
     }
-    
     .toast {
         top: 80px;
         right: 10px;
         left: 10px;
         font-size: 0.9rem;
     }
-}/* ========================================
+}
+
+
+/* ========================================
    NAVBAR STYLES - UPDATED FOR MOBILE
    ======================================== */
-   .navbar {
+
+.navbar {
     background: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(10px);
     padding: 0.8rem 4%;
@@ -2781,9 +2873,11 @@ body {
     background: linear-gradient(90deg, #CF0A0A, #DC5F00);
 }
 
+
 /* ========================================
    RESPONSIVE DESIGN FOR NAVBAR
    ======================================== */
+
 @media (max-width: 1024px) {
     .navbar {
         padding: 0.7rem 4%;
@@ -2794,88 +2888,72 @@ body {
     .navbar {
         padding: 0.6rem 4%;
     }
-    
     .navbar.compact {
         padding: 0.3rem 4%;
     }
-    
     .nav-container {
         flex-direction: column;
         gap: 0.7rem;
     }
-    
     .nav-links {
         width: 100%;
         justify-content: center;
         gap: 0.8rem;
     }
-    
     .nav-link {
         font-size: 0.95rem;
         padding: 3px 0;
         gap: 5px;
     }
-    
     .nav-link i {
         font-size: 0.9rem;
     }
 }
 
 @media (max-width: 480px) {
-    .navbar {
-   
-    }
-    
+    .navbar {}
     .navbar.compact {
         padding: 0.25rem 3%;
     }
-    
     .nav-container {
         gap: 0.6rem;
     }
-    
     .nav-links {
         gap: 0.5rem;
     }
-    
     .nav-link {
         font-size: 0.85rem;
         gap: 4px;
     }
-    
     .nav-link i {
         font-size: 0.8rem;
     }
 }
 
+
 /* تحسينات للهواتف الصغيرة جداً (375px فأقل) */
+
 @media (max-width: 375px) {
     .navbar {
         padding: 0.4rem 2%;
     }
-    
     .navbar.compact {
         padding: 0.2rem 2%;
     }
-    
     .nav-container {
         gap: 0.5rem;
     }
-    
     .nav-links {
         gap: 0.4rem;
     }
-    
     .nav-link {
         font-size: 0.8rem;
         gap: 3px;
         padding: 2px 0;
     }
-    
     .nav-link i {
         font-size: 0.75rem;
     }
-    
     .nav-link span {
         /* إخفاء النص وإظهار الأيقونة فقط إذا كان المساحة ضيقة */
         display: inline-block;
@@ -2885,7 +2963,9 @@ body {
     }
 }
 
+
 /* خيار بديل: قائمة منسدلة للهواتف الصغيرة جداً */
+
 @media (max-width: 320px) {
     .nav-links {
         display: grid;
@@ -2893,19 +2973,16 @@ body {
         gap: 0.3rem;
         width: 100%;
     }
-    
     .nav-link {
         justify-content: center;
         text-align: center;
         font-size: 0.75rem;
         padding: 4px 2px;
     }
-    
     .nav-link i {
         display: block;
         margin-bottom: 2px;
     }
-    
     .nav-link span {
         display: block;
         font-size: 0.7rem;
@@ -2913,32 +2990,35 @@ body {
     }
 }
 
+
 /* تحسينات للارتفاعات الصغيرة (مثل 667px) */
+
 @media (max-height: 700px) and (max-width: 480px) {
     .navbar {
         padding: 0.3rem 2%;
     }
-    
     .navbar.compact {
         padding: 0.15rem 2%;
     }
-    
     .nav-link {
         padding: 1px 0;
     }
-    
     .nav-link.active::after {
         bottom: -3px;
         height: 1px;
     }
-}.season-info {
+}
+
+.season-info {
     margin-top: 15px;
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
 }
 
-.season-tag, .episode-tag, .status-tag {
+.season-tag,
+.episode-tag,
+.status-tag {
     background: rgba(255, 255, 255, 0.1);
     padding: 5px 10px;
     border-radius: 20px;
@@ -2953,11 +3033,13 @@ body {
 }
 
 .status-tag.ongoing i.fa-circle {
-    color: #4CAF50; /* أخضر للمسلسلات المستمرة */
+    color: #4CAF50;
+    /* أخضر للمسلسلات المستمرة */
 }
 
 .status-tag.ended i.fa-circle {
-    color: #f44336; /* أحمر للمسلسلات المنتهية */
+    color: #f44336;
+    /* أحمر للمسلسلات المنتهية */
 }
 
 .episodes {
@@ -2965,37 +3047,36 @@ body {
     padding: 2px 8px;
     border-radius: 10px;
     font-size: 0.85rem;
-}/* ========================================
+}
+
+
+/* ========================================
    MOVIES GRID FOR MOBILE - FOCUS
    ======================================== */
 
 @media (max-width: 768px) {
     .movies-grid {
-        grid-template-columns: repeat(2, 1fr); /* بطاقتين بالعرض */
+        grid-template-columns: repeat(2, 1fr);
+        /* بطاقتين بالعرض */
         gap: 1rem;
         padding: 0 10px;
     }
-    
     .movie-card {
         height: 320px;
         min-height: 320px;
         animation: fadeInMobile 0.5s ease-out forwards;
     }
-    
     .movie-card:nth-child(odd) {
         animation-delay: 0.1s;
     }
-    
     .movie-card:nth-child(even) {
         animation-delay: 0.2s;
     }
-    
     /* تحسينات للبطاقة على الموبايل */
     .movie-overlay {
         padding: 1rem;
         background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 70%, transparent);
     }
-    
     .movie-header h3 {
         font-size: 1rem;
         line-height: 1.3;
@@ -3004,36 +3085,30 @@ body {
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
-    
     .movie-rating {
         font-size: 0.85rem;
         padding: 4px 8px;
     }
-    
     .movie-info {
         gap: 0.5rem;
     }
-    
     .movie-year {
         font-size: 0.8rem;
         padding: 4px 8px;
     }
-    
     .movie-description {
-        display: none; /* نخفي الوصف على الموبايل لتوفير المساحة */
+        display: none;
+        /* نخفي الوصف على الموبايل لتوفير المساحة */
     }
-    
     .movie-actions {
         flex-direction: column;
         gap: 8px;
     }
-    
     .play-btn-sm {
         width: 100%;
         padding: 8px 15px;
         font-size: 0.9rem;
     }
-    
     .save-btn-sm {
         width: 40px;
         height: 40px;
@@ -3043,54 +3118,45 @@ body {
 
 @media (max-width: 480px) {
     .movies-grid {
-        grid-template-columns: repeat(2, 1fr); /* نبقى بطاقتين حتى في الشاشات الصغيرة */
+        grid-template-columns: repeat(2, 1fr);
+        /* نبقى بطاقتين حتى في الشاشات الصغيرة */
         gap: 0.8rem;
         padding: 0 8px;
     }
-    
     .movie-card {
         height: 280px;
         min-height: 280px;
     }
-    
     .movie-overlay {
         padding: 0.8rem;
     }
-    
     .movie-header {
         flex-direction: column;
         gap: 5px;
         margin-bottom: 10px;
     }
-    
     .movie-header h3 {
         font-size: 0.95rem;
         text-align: center;
         width: 100%;
     }
-    
     .movie-rating {
         align-self: center;
     }
-    
     .movie-info {
         justify-content: center;
     }
-    
     .movie-year {
         font-size: 0.75rem;
     }
-    
     .movie-actions {
         flex-direction: row;
         justify-content: space-between;
     }
-    
     .play-btn-sm {
         font-size: 0.85rem;
         padding: 7px 12px;
     }
-    
     .save-btn-sm {
         width: 35px;
         height: 35px;
@@ -3098,43 +3164,38 @@ body {
     }
 }
 
+
 /* تحسينات إضافية للهواتف الصغيرة جداً */
+
 @media (max-width: 375px) {
     .movies-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.6rem;
         padding: 0 5px;
     }
-    
     .movie-card {
         height: 250px;
         min-height: 250px;
     }
-    
     .movie-overlay {
         padding: 0.6rem;
     }
-    
     .movie-header h3 {
         font-size: 0.9rem;
         -webkit-line-clamp: 2;
     }
-    
     .movie-rating {
         font-size: 0.8rem;
         padding: 3px 6px;
     }
-    
     .movie-year {
         font-size: 0.7rem;
         padding: 3px 6px;
     }
-    
     .play-btn-sm {
         font-size: 0.8rem;
         padding: 6px 10px;
     }
-    
     .save-btn-sm {
         width: 30px;
         height: 30px;
@@ -3142,27 +3203,29 @@ body {
     }
 }
 
+
 /* تحسينات لشاشات أفقية */
+
 @media (max-width: 768px) and (orientation: landscape) {
     .movies-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 بطاقات في الوضع الأفقي */
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 بطاقات في الوضع الأفقي */
     }
-    
     .movie-card {
         height: 200px;
     }
-    
     .movie-overlay {
         padding: 0.5rem;
     }
-    
     .movie-header h3 {
         font-size: 0.85rem;
         -webkit-line-clamp: 1;
     }
 }
 
+
 /* رسوم متحركة خاصة للموبايل */
+
 @keyframes fadeInMobile {
     from {
         opacity: 0;
@@ -3174,7 +3237,9 @@ body {
     }
 }
 
+
 /* إضافة هامش سفلي إضافي للمحتوى على الموبايل */
+
 .main-content {
     padding-bottom: 2rem;
 }
@@ -3185,82 +3250,89 @@ body {
     }
 }
 
+
 /* تحسينات للفلاتر على الموبايل */
+
 @media (max-width: 768px) {
     .color-filters-grid {
         gap: 0.8rem;
         padding: 10px 5px;
     }
-    
     .color-filter-btn {
         min-width: 120px;
         padding: 10px 15px;
         font-size: 0.9rem;
     }
-    
     .extended-filters-grid {
         padding: 8px 5px;
     }
-    
     .extended-filter-btn {
         padding: 6px 12px;
         font-size: 0.85rem;
     }
 }
 
+
 /* تحسينات للكاروسيل على الموبايل */
+
 @media (max-width: 768px) {
     .carousel-card {
         flex: 0 0 200px;
         height: 280px;
     }
-    
     .carousel-overlay {
         padding: 1rem;
     }
-    
     .carousel-card-title {
         font-size: 1rem;
     }
-    
     .carousel-card-info {
         gap: 0.5rem;
     }
-    
     .carousel-rating,
     .carousel-year {
         font-size: 0.8rem;
         padding: 4px 8px;
     }
-    
     .carousel-card-description {
-        display: none; /* نخفي الوصف على الموبايل */
+        display: none;
+        /* نخفي الوصف على الموبايل */
     }
 }
-body{
+
+body {
     font-family: "cairo";
-}/* ========================================
+}
+
+
+/* ========================================
    MOVIES GRID - FIXED FOR DESKTOP 5 & MOBILE 2
    ======================================== */
+
 .movies-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 بطاقات في السطر على الكمبيوتر */
+    grid-template-columns: repeat(5, 1fr);
+    /* 5 بطاقات في السطر على الكمبيوتر */
     gap: 1.5rem;
     margin-bottom: 3rem;
 }
 
+
 /* ========================================
    RESPONSIVE DESIGN
    ======================================== */
+
 @media (max-width: 1024px) {
     .movies-grid {
-        grid-template-columns: repeat(4, 1fr); /* 4 بطاقات على التابلت */
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 بطاقات على التابلت */
     }
 }
 
 @media (max-width: 768px) {
     .movies-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 بطاقات على الهاتف */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 بطاقات على الهاتف */
         gap: 1rem;
         padding: 0 10px;
     }
@@ -3268,7 +3340,8 @@ body{
 
 @media (max-width: 480px) {
     .movies-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 بطاقات حتى في الشاشات الصغيرة */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 بطاقات حتى في الشاشات الصغيرة */
         gap: 0.8rem;
         padding: 0 8px;
     }
@@ -3276,21 +3349,27 @@ body{
 
 @media (max-width: 375px) {
     .movies-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 بطاقات في الهواتف الصغيرة جداً */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 بطاقات في الهواتف الصغيرة جداً */
         gap: 0.6rem;
         padding: 0 5px;
     }
 }
+
 .search-input {
     position: relative;
     z-index: 10;
-  }
-  .overlay {
+}
+
+.overlay {
     pointer-events: none;
-  }
-    /* ========================================
+}
+
+
+/* ========================================
    AUTO-SEARCH SUGGESTIONS STYLES
    ======================================== */
+
 .search-container {
     position: relative;
     width: 400px;
@@ -3458,8 +3537,12 @@ body{
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .suggestion-footer {
@@ -3488,7 +3571,9 @@ body{
     box-shadow: 0 5px 15px rgba(207, 10, 10, 0.4);
 }
 
+
 /* Scrollbar styling */
+
 .search-suggestions::-webkit-scrollbar {
     width: 8px;
 }
@@ -3502,13 +3587,14 @@ body{
     border-radius: 4px;
 }
 
+
 /* Responsive */
+
 @media (max-width: 768px) {
     .search-container {
         width: 100%;
         max-width: 400px;
     }
-    
     .search-suggestions {
         max-height: 400px;
     }
@@ -3519,32 +3605,33 @@ body{
         padding: 10px 15px;
         gap: 10px;
     }
-    
     .suggestion-poster {
         width: 50px;
         height: 75px;
     }
-    
     .suggestion-title {
         font-size: 0.9rem;
     }
-    
     .suggestion-overview {
         display: none;
     }
-}/* ===============================
+}
+
+
+/* ===============================
    CONTAINER
 ================================ */
+
 .extended-filters-container {
     width: 100%;
- 
- 
-  }
-  
-  /* ===============================   
+}
+
+
+/* ===============================   
      GRID CENTER
   ================================ */
-  .extended-filters-grid {
+
+.extended-filters-grid {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -3552,14 +3639,17 @@ body{
     flex-wrap: wrap;
     gap: 14px;
     padding: 0 16px;
-  }
-  
-  /* ===============================
+}
+
+
+/* ===============================
      BUTTONS
   ================================ */
-  .extended-filter-btn,
-  .more-filters-btn {
-    background: #4b0202;          /* أحمر غامق مائل للسود */
+
+.extended-filter-btn,
+.more-filters-btn {
+    background: #4b0202;
+    /* أحمر غامق مائل للسود */
     color: #fff;
     border: none;
     padding: 12px 24px;
@@ -3567,30 +3657,35 @@ body{
     font-size: 14px;
     font-weight: 700;
     cursor: pointer;
-    transition: 
-      background 0.25s ease,
-      padding 0.25s ease,
-      color 0.25s ease;
-  }
-  
-  /* HOVER */
-  .extended-filter-btn:hover,
-  .more-filters-btn:hover {
-    background: #8b0000;          /* Dark Red */
+    transition: background 0.25s ease, padding 0.25s ease, color 0.25s ease;
+}
+
+
+/* HOVER */
+
+.extended-filter-btn:hover,
+.more-filters-btn:hover {
+    background: #8b0000;
+    /* Dark Red */
     color: #fff;
-  }
-  
-  /* ACTIVE (كبر المسافة الداخلية) */
-  .extended-filter-btn.active {
+}
+
+
+/* ACTIVE (كبر المسافة الداخلية) */
+
+.extended-filter-btn.active {
     background: #ff0000;
     color: #000;
-    padding: 16px 30px;           /* هنا كتكبر */
-  }
-  
-  /* ===============================
+    padding: 16px 30px;
+    /* هنا كتكبر */
+}
+
+
+/* ===============================
      DROPDOWN
   ================================ */
-  .filters-dropdown {
+
+.filters-dropdown {
     max-width: 1200px;
     margin: 16px auto 0;
     padding: 0 16px;
@@ -3598,49 +3693,59 @@ body{
     justify-content: center;
     gap: 14px;
     flex-wrap: wrap;
-  }
-  
-  .filters-dropdown.show {
+}
+
+.filters-dropdown.show {
     display: flex;
-  }
-  
-  /* ===============================
+}
+
+
+/* ===============================
      MOBILE
   ================================ */
-  @media (max-width: 768px) {
-  
+
+@media (max-width: 768px) {
     .extended-filters-grid .extended-filter-btn {
-      display: none;
+        display: none;
     }
-  
     .more-filters-btn {
-      display: inline-flex;
-      align-items: center;
+        display: inline-flex;
+        align-items: center;
     }
-  }
+}
+
+
 /* ===============================
    DROPDOWN SPACING
 ================================ */
+
 #filtersDropdown {
     max-width: 1200px;
     margin: 16px auto 0;
-    padding: 24px 20px;  /* زدت المسافة الداخلية كبيرة */
+    padding: 24px 20px;
+    /* زدت المسافة الداخلية كبيرة */
     display: none;
     justify-content: center;
-    gap: 18px;           /* المسافة بين البوطونات */
+    gap: 18px;
+    /* المسافة بين البوطونات */
     flex-wrap: wrap;
-    border-top: 2px solid #ff0000; /* اختياري، يبقى الخط العلوي */
+    border-top: 2px solid #ff0000;
+    /* اختياري، يبقى الخط العلوي */
     box-sizing: border-box;
-  }
-  
-  #filtersDropdown.show {
+}
+
+#filtersDropdown.show {
     display: flex;
-  }
-    /* ========================================
+}
+
+
+/* ========================================
    Netflix Style Extended Filters - جوال أولاً
    ======================================== */
 
+
 /* الحاوية الرئيسية - تطابق ستايل نتفلكس */
+
 .extended-filters-section {
     direction: rtl;
     margin: 0;
@@ -3657,8 +3762,10 @@ body{
     overflow-y: hidden;
     padding-bottom: 15px;
     padding-right: 10px;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
     align-items: center;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
@@ -3668,7 +3775,9 @@ body{
     display: none;
 }
 
+
 /* أزرار الفلاتر - تطابق نتفلكس بالضبط */
+
 .extended-filter-btn {
     padding: 8px 20px;
     background: rgba(255, 255, 255, 0.1);
@@ -3708,7 +3817,9 @@ body{
     transform: translateY(-1px);
 }
 
+
 /* زر المزيد - ستايل نتفلكس */
+
 .more-filters-btn {
     padding: 8px 20px;
     background: rgba(255, 255, 255, 0.1);
@@ -3748,7 +3859,9 @@ body{
     transform: rotate(180deg);
 }
 
+
 /* القائمة المنسدلة - نتفلكس ستايل للجوال */
+
 .extended-filters-dropdown {
     position: fixed;
     top: 0;
@@ -3776,7 +3889,9 @@ body{
     }
 }
 
+
 /* رأس القائمة - ستايل نتفلكس */
+
 .dropdown-header {
     position: fixed;
     top: 0;
@@ -3816,7 +3931,9 @@ body{
     opacity: 1;
 }
 
+
 /* محتوى القائمة */
+
 .dropdown-content {
     padding: 20px;
     overflow-y: auto;
@@ -3850,29 +3967,30 @@ body{
     border-color: #fff;
 }
 
+
 /* تأثيرات اللمس للجوال */
+
 @media (hover: none) and (pointer: coarse) {
     .extended-filter-btn:active {
         transform: scale(0.95);
         transition: transform 0.1s;
     }
-    
     .extended-filter-btn.active:active {
         background: rgba(255, 255, 255, 0.8);
         transform: scale(0.95);
     }
-    
     .more-filters-btn:active {
         background: rgba(255, 255, 255, 0.2);
         transform: scale(0.95);
     }
-    
     .extended-filters-dropdown .extended-filter-btn:active {
         transform: scale(0.98);
     }
 }
 
+
 /* تدرج أحمر نتفلكس عند التفعيل */
+
 .extended-filter-btn.active::after {
     content: '';
     position: absolute;
@@ -3893,7 +4011,9 @@ body{
     }
 }
 
+
 /* سكرولبار خفي */
+
 .extended-filters-dropdown::-webkit-scrollbar {
     width: 4px;
 }
@@ -3907,64 +4027,62 @@ body{
     border-radius: 2px;
 }
 
+
 /* منع التمرير عند فتح القائمة */
+
 body.netflix-dropdown-open {
     overflow: hidden;
     position: fixed;
     width: 100%;
 }
 
+
 /* شاشات صغيرة جداً */
+
 @media (max-width: 375px) {
     .extended-filters-section {
         padding: 15px 4% 10px;
     }
-    
     .extended-filter-btn {
         padding: 8px 16px;
         font-size: 13px;
         height: 34px;
     }
-    
     .more-filters-btn {
         padding: 8px 16px;
         font-size: 13px;
         height: 34px;
     }
-    
     .dropdown-content {
         grid-template-columns: 1fr;
     }
 }
 
+
 /* شاشات متوسطة (تابلت) */
+
 @media (min-width: 768px) {
     .extended-filters-section {
         padding: 25px 4% 20px;
     }
-    
     #extendedFiltersGrid {
         gap: 12px;
     }
-    
     .extended-filter-btn {
         padding: 10px 24px;
         font-size: 15px;
         height: 40px;
         border-radius: 4px;
     }
-    
     .more-filters-btn {
         padding: 10px 24px;
         font-size: 15px;
         height: 40px;
         gap: 10px;
     }
-    
     .more-filters-btn i {
         font-size: 14px;
     }
-    
     .extended-filters-dropdown {
         position: absolute;
         top: calc(100% + 10px);
@@ -3979,63 +4097,63 @@ body.netflix-dropdown-open {
         backdrop-filter: blur(20px);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
-    
     .dropdown-header {
         display: none;
     }
-    
     .dropdown-content {
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
         padding: 0;
     }
-    
     .extended-filters-dropdown .extended-filter-btn {
         height: 42px;
         font-size: 15px;
     }
 }
 
+
 /* شاشات كبيرة (ديسكتوب) */
+
 @media (min-width: 1200px) {
     .extended-filters-section {
         padding: 30px 60px 25px;
     }
-    
     #extendedFiltersGrid {
         justify-content: flex-start;
     }
-    
     .extended-filter-btn {
         padding: 12px 28px;
         font-size: 16px;
         height: 44px;
     }
-    
     .more-filters-btn {
         padding: 12px 28px;
         font-size: 16px;
         height: 44px;
     }
-    
     .extended-filters-dropdown {
         left: 60px;
         right: 60px;
     }
-    
     .dropdown-content {
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
     }
-}/* ========================================
+}
+
+
+/* ========================================
    Netflix Style Extended Filters - جوال أولاً
    ======================================== */
 
+
 /* 1. الحاوية الرئيسية - تطابق نتفلكس للجوال */
+
 .extended-filters-section {
     direction: rtl;
     margin: 0;
-    padding: 15px 4% 10px; /* أقل padding للجوال */
+    padding: 15px 4% 10px;
+    /* أقل padding للجوال */
     background: #141414;
     position: relative;
     overflow: hidden;
@@ -4043,50 +4161,70 @@ body.netflix-dropdown-open {
     box-sizing: border-box;
 }
 
+
 /* 2. الشبكة - خاصية التمرير الأفقي للجوال */
+
 #extendedFiltersGrid {
     display: flex;
-    gap: 6px; /* فراغات أقل للجوال */
+    gap: 6px;
+    /* فراغات أقل للجوال */
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 5px 0 10px; /* padding علوي أقل */
-    padding-right: 5px; /* لحساب اتجاه RTL */
+    padding: 5px 0 10px;
+    /* padding علوي أقل */
+    padding-right: 5px;
+    /* لحساب اتجاه RTL */
     scrollbar-width: none;
     -ms-overflow-style: none;
     align-items: center;
     white-space: nowrap;
-    -webkit-overflow-scrolling: touch; /* تمرير سلس للجوال */
-    touch-action: pan-x; /* لتحسين تجربة اللمس */
+    -webkit-overflow-scrolling: touch;
+    /* تمرير سلس للجوال */
+    touch-action: pan-x;
+    /* لتحسين تجربة اللمس */
 }
 
+
 /* إخفاء السكرولبار */
+
 #extendedFiltersGrid::-webkit-scrollbar {
     display: none;
 }
 
+
 /* 3. أزرار الفلاتر - حجم مناسب للإصبع على الجوال */
+
 .extended-filter-btn {
-    padding: 7px 14px; /* أصغر للجوال */
+    padding: 7px 14px;
+    /* أصغر للجوال */
     background: rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.7);
     border: none;
-    border-radius: 4px; /* زوايا مربعة نتفلكس */
-    font-size: 12px; /* خط أصغر للجوال */
+    border-radius: 4px;
+    /* زوايا مربعة نتفلكس */
+    font-size: 12px;
+    /* خط أصغر للجوال */
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.2s ease; /* انتقال أسرع للجوال */
+    transition: all 0.2s ease;
+    /* انتقال أسرع للجوال */
     user-select: none;
     flex-shrink: 0;
-    height: 32px; /* ارتفاع مناسب للجوال */
-    min-width: 60px; /* عرض أدنى */
+    height: 32px;
+    /* ارتفاع مناسب للجوال */
+    min-width: 60px;
+    /* عرض أدنى */
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    -webkit-tap-highlight-color: transparent; /* إزالة اللون الأزرق عند الضغط */
+    -webkit-tap-highlight-color: transparent;
+    /* إزالة اللون الأزرق عند الضغط */
 }
 
+
 /* تأثير اللمس على الجوال */
+
 .extended-filter-btn:active {
     transform: scale(0.95);
     background: rgba(255, 255, 255, 0.15);
@@ -4102,7 +4240,9 @@ body.netflix-dropdown-open {
     background: rgba(255, 255, 255, 0.9);
 }
 
+
 /* 4. زر المزيد - مناسب للجوال */
+
 .more-filters-btn {
     padding: 7px 14px;
     background: rgba(255, 255, 255, 0.1);
@@ -4119,7 +4259,8 @@ body.netflix-dropdown-open {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px; /* فراغ أقل بين الأيقونة والنص */
+    gap: 5px;
+    /* فراغ أقل بين الأيقونة والنص */
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -4129,7 +4270,8 @@ body.netflix-dropdown-open {
 }
 
 .more-filters-btn i {
-    font-size: 10px; /* أيقونة أصغر */
+    font-size: 10px;
+    /* أيقونة أصغر */
     transition: transform 0.2s ease;
 }
 
@@ -4137,7 +4279,9 @@ body.netflix-dropdown-open {
     transform: rotate(180deg);
 }
 
+
 /* 5. القائمة المنسدلة - ملء الشاشة على الجوال */
+
 .extended-filters-dropdown {
     position: fixed;
     top: 0;
@@ -4164,7 +4308,9 @@ body.netflix-dropdown-open {
     }
 }
 
+
 /* 6. رأس القائمة - يشبه نتفلكس تماماً */
+
 .dropdown-header {
     position: sticky;
     top: 0;
@@ -4196,7 +4342,8 @@ body.netflix-dropdown-open {
     padding: 8px;
     opacity: 0.8;
     -webkit-tap-highlight-color: transparent;
-    width: 44px; /* مساحة ضغط كبيرة */
+    width: 44px;
+    /* مساحة ضغط كبيرة */
     height: 44px;
     display: flex;
     align-items: center;
@@ -4208,18 +4355,24 @@ body.netflix-dropdown-open {
     transform: scale(0.9);
 }
 
+
 /* 7. محتوى القائمة - شبكة عمودين للجوال */
+
 .dropdown-content {
     padding: 15px;
     overflow-y: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* عمودين للجوال */
-    gap: 8px; /* فراغات أصغر */
+    grid-template-columns: repeat(2, 1fr);
+    /* عمودين للجوال */
+    gap: 8px;
+    /* فراغات أصغر */
     flex: 1;
     -webkit-overflow-scrolling: touch;
 }
 
+
 /* أزرار داخل القائمة */
+
 .dropdown-content .extended-filter-btn {
     width: 100%;
     height: 36px;
@@ -4229,7 +4382,9 @@ body.netflix-dropdown-open {
     box-sizing: border-box;
 }
 
+
 /* 8. سكرولبار خفي للجوال */
+
 .dropdown-content::-webkit-scrollbar {
     width: 3px;
 }
@@ -4243,7 +4398,9 @@ body.netflix-dropdown-open {
     border-radius: 2px;
 }
 
+
 /* 9. منع التمرير عند فتح القائمة */
+
 body.netflix-dropdown-open {
     overflow: hidden;
     position: fixed;
@@ -4251,7 +4408,9 @@ body.netflix-dropdown-open {
     height: 100%;
 }
 
+
 /* 10. مؤشر التحميل أثناء الفلترة */
+
 .filter-loading {
     position: absolute;
     top: 0;
@@ -4264,26 +4423,41 @@ body.netflix-dropdown-open {
 }
 
 @keyframes loading {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
 
+
 /* 11. تأثير اختيار الفلتر */
+
 .extended-filter-btn.selected {
     animation: pulse 0.3s ease;
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(0.98); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.98);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
+
 
 /* ========================================
    تحسينات للشاشات المختلفة
    ======================================== */
 
+
 /* شاشات صغيرة جداً (iPhone SE) */
+
 @media (max-width: 320px) {
     .extended-filter-btn {
         padding: 6px 10px;
@@ -4291,55 +4465,54 @@ body.netflix-dropdown-open {
         height: 30px;
         min-width: 55px;
     }
-    
     .more-filters-btn {
         padding: 6px 10px;
         font-size: 11px;
         height: 30px;
         min-width: 65px;
     }
-    
     .dropdown-content {
-        grid-template-columns: 1fr; /* عمود واحد للشاشات الصغيرة جداً */
+        grid-template-columns: 1fr;
+        /* عمود واحد للشاشات الصغيرة جداً */
         gap: 6px;
     }
-    
     .dropdown-header h3 {
         font-size: 15px;
     }
 }
 
+
 /* شاشات متوسطة (أفقي) */
+
 @media (min-width: 576px) {
     .extended-filters-section {
         padding: 20px 4% 15px;
     }
-    
     .extended-filter-btn {
         padding: 8px 18px;
         font-size: 13px;
         height: 35px;
         min-width: 70px;
     }
-    
     .more-filters-btn {
         padding: 8px 18px;
         font-size: 13px;
         height: 35px;
         min-width: 80px;
     }
-    
     #extendedFiltersGrid {
         gap: 8px;
     }
-    
     .dropdown-content {
-        grid-template-columns: repeat(3, 1fr); /* 3 أعمدة للشاشات المتوسطة */
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 أعمدة للشاشات المتوسطة */
         gap: 10px;
     }
 }
 
+
 /* تابلت */
+
 @media (min-width: 768px) {
     .extended-filters-dropdown {
         position: absolute;
@@ -4355,7 +4528,6 @@ body.netflix-dropdown-open {
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
         animation: netflixFadeIn 0.3s ease;
     }
-    
     @keyframes netflixFadeIn {
         from {
             opacity: 0;
@@ -4366,71 +4538,79 @@ body.netflix-dropdown-open {
             transform: translateX(-50%) translateY(0);
         }
     }
-    
     .dropdown-header {
         border-radius: 8px 8px 0 0;
     }
-    
     .dropdown-content {
-        grid-template-columns: repeat(4, 1fr); /* 4 أعمدة للتابلت */
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 أعمدة للتابلت */
         gap: 12px;
     }
 }
 
+
 /* ديسكتوب */
+
 @media (min-width: 1200px) {
     .extended-filters-section {
         padding: 25px 60px 20px;
     }
-    
     #extendedFiltersGrid {
         justify-content: center;
         gap: 12px;
     }
-    
     .extended-filter-btn {
         padding: 10px 24px;
         font-size: 14px;
         height: 40px;
     }
-    
     .more-filters-btn {
         padding: 10px 24px;
         font-size: 14px;
         height: 40px;
     }
-    
     .dropdown-content {
-        grid-template-columns: repeat(5, 1fr); /* 5 أعمدة للديسكتوب */
+        grid-template-columns: repeat(5, 1fr);
+        /* 5 أعمدة للديسكتوب */
         gap: 15px;
     }
 }
 
+
 /* ========================================
    تحسينات خاصة لنظام iOS
    ======================================== */
+
 @supports (-webkit-touch-callout: none) {
     .extended-filter-btn,
     .more-filters-btn {
-        cursor: default; /* إزالة شكل المؤشر على iOS */
+        cursor: default;
+        /* إزالة شكل المؤشر على iOS */
     }
-    
     .dropdown-content {
-        padding-bottom: env(safe-area-inset-bottom); /* تجنب notch */
+        padding-bottom: env(safe-area-inset-bottom);
+        /* تجنب notch */
     }
 }
+
 
 /* ========================================
    تحسينات خاصة لنظام Android
    ======================================== */
+
 @media (-android) {
     .extended-filter-btn:active,
     .more-filters-btn:active {
-        transition: none; /* إزالة الانتقال لتحسين الاستجابة */
+        transition: none;
+        /* إزالة الانتقال لتحسين الاستجابة */
     }
-}/* ========================================
+}
+
+
+/* ========================================
    تحسين أزرار الفلاتر الملونة للجوال
    ======================================== */
+
 .color-filters-grid {
     display: flex;
     gap: 10px;
@@ -4520,21 +4700,30 @@ body.netflix-dropdown-open {
 }
 
 @keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(207, 10, 10, 0.7); }
-    70% { box-shadow: 0 0 0 10px rgba(207, 10, 10, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(207, 10, 10, 0); }
+    0% {
+        box-shadow: 0 0 0 0 rgba(207, 10, 10, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(207, 10, 10, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(207, 10, 10, 0);
+    }
 }
 
+
 /* أيقونات داخل الأزرار */
+
 .color-filter-btn i {
     font-size: 20px;
 }
 
+
 /* ========================================
    تحسينات خاصة للجوال
    ======================================== */
+
 @media (max-width: 768px) {
-   
     .color-filter-btn {
         padding: 20px 28px;
         min-width: 180px;
@@ -4542,16 +4731,13 @@ body.netflix-dropdown-open {
         font-size: 18px;
         border-radius: 15px;
     }
-    
     .color-filter-btn i {
         font-size: 24px;
     }
-    
     .color-filters-grid {
         gap: 12px;
         padding: 20px 10px;
     }
-    
     /* إضافة مؤشر سحب للجوال */
     .color-filters-grid::after {
         content: '← اسحب →';
@@ -4567,8 +4753,13 @@ body.netflix-dropdown-open {
 }
 
 @keyframes swipeHint {
-    0%, 100% { transform: translateX(-50%); }
-    50% { transform: translateX(calc(-50% + 10px)); }
+    0%,
+    100% {
+        transform: translateX(-50%);
+    }
+    50% {
+        transform: translateX(calc(-50% + 10px));
+    }
 }
 
 @media (max-width: 480px) {
@@ -4578,40 +4769,40 @@ body.netflix-dropdown-open {
         min-height: 75px;
         font-size: 20px;
     }
-    
     .color-filter-btn i {
         font-size: 26px;
     }
-    
     .color-filters-grid {
         gap: 15px;
         padding: 25px 10px;
     }
 }
 
+
 /* ========================================
    تحسينات للوضع الأفقي
    ======================================== */
+
 @media (max-width: 768px) and (orientation: landscape) {
     .color-filters {
         margin-top: 100px;
     }
-    
     .color-filter-btn {
         min-width: 150px;
         min-height: 60px;
         padding: 15px 20px;
         font-size: 16px;
     }
-    
     .color-filters-grid {
         gap: 8px;
     }
 }
 
+
 /* ========================================
    تأثيرات خاصة للأزرار النشطة
    ======================================== */
+
 .color-filter-btn.active::after {
     content: '';
     position: absolute;
@@ -4626,13 +4817,20 @@ body.netflix-dropdown-open {
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateX(-50%) translateY(0); }
-    50% { transform: translateX(-50%) translateY(-5px); }
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-5px);
+    }
 }
+
 
 /* ========================================
    تحسينات للشاشات الصغيرة جدا
    ======================================== */
+
 @media (max-width: 375px) {
     .color-filter-btn {
         min-width: 170px;
@@ -4640,45 +4838,56 @@ body.netflix-dropdown-open {
         padding: 18px 25px;
         font-size: 17px;
     }
-    
     .color-filter-btn i {
         font-size: 22px;
     }
 }
 
+
 /* ========================================
    تحسينات لـ iOS
    ======================================== */
+
 @supports (-webkit-touch-callout: none) {
     .color-filter-btn {
         -webkit-tap-highlight-color: transparent;
     }
-    
     .color-filter-btn:active {
         transform: scale(0.98);
     }
 }
 
+
 /* ========================================
    تحسينات لـ Android
    ======================================== */
+
 @media (-android) {
     .color-filter-btn {
         tap-highlight-color: transparent;
     }
-    
     .color-filter-btn:active {
         animation: androidPress 0.1s;
     }
 }
 
 @keyframes androidPress {
-    0% { transform: scale(1); }
-    50% { transform: scale(0.95); }
-    100% { transform: scale(1); }
-}/* ========================================
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* ========================================
    تحسين أزرار الفلاتر الإضافية للجوال
    ======================================== */
+
 .extended-filters-section {
     direction: rtl;
     margin: 0;
@@ -4694,7 +4903,6 @@ body.netflix-dropdown-open {
     gap: 10px;
     overflow-x: auto;
     overflow-y: hidden;
-  
     scrollbar-width: none;
     -ms-overflow-style: none;
     align-items: center;
@@ -4725,7 +4933,6 @@ body.netflix-dropdown-open {
     justify-content: center;
     min-width: 140px;
     backdrop-filter: blur(10px);
-  
 }
 
 .extended-filter-btn:hover {
@@ -4784,9 +4991,11 @@ body.netflix-dropdown-open {
     transform: rotate(180deg);
 }
 
+
 /* ========================================
    القائمة المنسدلة للجوال
    ======================================== */
+
 .extended-filters-dropdown {
     position: fixed;
     top: 0;
@@ -4814,7 +5023,9 @@ body.netflix-dropdown-open {
     display: flex;
 }
 
+
 /* رأس القائمة */
+
 .dropdown-header {
     position: fixed;
     top: 0;
@@ -4854,7 +5065,9 @@ body.netflix-dropdown-open {
     transform: scale(0.9);
 }
 
+
 /* محتوى القائمة */
+
 .dropdown-content {
     padding: 20px;
     overflow-y: auto;
@@ -4874,18 +5087,18 @@ body.netflix-dropdown-open {
     min-width: auto;
 }
 
+
 /* ========================================
    تحسينات للشاشات الصغيرة
    ======================================== */
+
 @media (max-width: 480px) {
     .extended-filter-btn {
-      
         height: 65px;
         min-width: 160px;
         font-size: 17px;
         border-radius: 15px;
     }
-    
     .more-filters-btn {
         padding: 20px 28px;
         height: 65px;
@@ -4893,16 +5106,13 @@ body.netflix-dropdown-open {
         font-size: 17px;
         border-radius: 15px;
     }
-    
     .more-filters-btn i {
         font-size: 16px;
     }
-    
     #extendedFiltersGrid {
         gap: 12px;
         padding: 20px 10px;
     }
-    
     .dropdown-content .extended-filter-btn {
         height: 70px;
         font-size: 17px;
@@ -4915,22 +5125,22 @@ body.netflix-dropdown-open {
         padding: 18px 25px;
         font-size: 16px;
     }
-    
     .more-filters-btn {
         min-width: 170px;
         padding: 18px 25px;
         font-size: 16px;
     }
-    
     .dropdown-content {
         grid-template-columns: 1fr;
         gap: 12px;
     }
 }
 
+
 /* ========================================
    تحسينات للشاشات الكبيرة
    ======================================== */
+
 @media (min-width: 768px) {
     .extended-filters-dropdown {
         position: absolute;
@@ -4947,7 +5157,6 @@ body.netflix-dropdown-open {
         padding-top: 20px;
         animation: fadeInScale 0.3s ease;
     }
-    
     @keyframes fadeInScale {
         from {
             opacity: 0;
@@ -4958,43 +5167,43 @@ body.netflix-dropdown-open {
             transform: translateX(-50%) scale(1);
         }
     }
-    
     .dropdown-header {
         position: relative;
         height: auto;
         background: transparent;
         padding: 20px;
     }
-    
     .dropdown-content {
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
     }
 }
 
+
 /* ========================================
    تحسينات تجربة اللمس
    ======================================== */
+
 @media (hover: none) and (pointer: coarse) {
     .extended-filter-btn {
         min-height: 65px;
         padding: 20px;
     }
-    
     .extended-filter-btn:active {
         background: rgba(255, 255, 255, 0.2);
         transform: scale(0.96);
     }
-    
     .extended-filter-btn.active:active {
         background: linear-gradient(135deg, #e50914, #b81d24);
         transform: scale(1.02);
     }
 }
 
+
 /* ========================================
    سكرولبار مخصص
    ======================================== */
+
 .extended-filters-dropdown::-webkit-scrollbar {
     width: 6px;
 }
@@ -5011,27 +5220,38 @@ body.netflix-dropdown-open {
 
 
 /* ==================================== */
+
+
 /* الأساسيات والتصميم العام */
+
+
 /* ==================================== */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html, body {
+html,
+body {
     font-family: 'Poppins', sans-serif;
     direction: rtl;
     background-color: #16151b;
     color: white;
 }
 
+
 /* ==================================== */
+
+
 /* 🚀 تصميم الـ Navbar (شاشات كبيرة) */
+
+
 /* ==================================== */
+
 .navbar {
     background-color: #1a1a2e;
     padding: 0.8rem 2rem;
@@ -5046,7 +5266,9 @@ html, body {
     backdrop-filter: blur(10px);
 }
 
+
 /* اللوجو */
+
 .logo {
     flex-shrink: 0;
 }
@@ -5071,7 +5293,9 @@ html, body {
     color: #dc5f00;
 }
 
+
 /* القائمة الرئيسية */
+
 .nav-menu {
     display: flex;
     align-items: center;
@@ -5080,7 +5304,9 @@ html, body {
     justify-content: space-between;
 }
 
+
 /* البحث المدمج */
+
 .search-container {
     position: relative;
     flex: 0 1 400px;
@@ -5122,7 +5348,9 @@ html, body {
     color: #f07d37;
 }
 
+
 /* نتائج البحث */
+
 .search-results {
     position: absolute;
     top: 100%;
@@ -5145,8 +5373,14 @@ html, body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .result-item {
@@ -5232,14 +5466,18 @@ html, body {
     opacity: 0.5;
 }
 
+
 /* الروابط */
+
 .links {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
+
 /* Dropdown أساسي */
+
 .dropdown {
     position: relative;
 }
@@ -5273,7 +5511,9 @@ html, body {
     transform: rotate(180deg);
 }
 
+
 /* Dropdown القوائم */
+
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -5335,8 +5575,6 @@ html, body {
     font-size: 0.9rem;
 }
 
-
-
 .dropdown-item i {
     width: 20px;
     text-align: center;
@@ -5344,7 +5582,9 @@ html, body {
     opacity: 0.8;
 }
 
+
 /* الروابط المباشرة */
+
 .nav-link {
     display: flex;
     align-items: center;
@@ -5364,7 +5604,9 @@ html, body {
     color: #f07d37;
 }
 
+
 /* 🍔 القائمة المنسدلة للجوال */
+
 .hamburger-menu {
     display: none;
     background: none;
@@ -5384,18 +5626,22 @@ html, body {
     border-radius: 2px;
 }
 
+
 /* ==================================== */
+
+
 /* 📱 تصميم الـ Responsive للجوال */
+
+
 /* ==================================== */
+
 @media (max-width: 1024px) {
     .nav-menu {
         gap: 1rem;
     }
-    
     .dropdown-menu {
         min-width: 500px;
     }
-    
     .search-container {
         flex: 0 1 300px;
     }
@@ -5405,17 +5651,14 @@ html, body {
     .navbar {
         padding: 1rem;
     }
-    
     .hamburger-menu {
         display: block;
     }
-    
     .nav-menu {
         position: fixed;
         top: 70px;
         right: -100%;
         width: 100%;
-     
         background: #1a1a2e;
         flex-direction: column;
         align-items: stretch;
@@ -5424,29 +5667,24 @@ html, body {
         overflow-y: auto;
         box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
     }
-    
     .nav-menu.active {
         right: 0;
     }
-    
     .search-container {
         order: 1;
         flex: none;
         width: 100%;
         margin-bottom: 1.5rem;
     }
-    
     .links {
         order: 2;
         flex-direction: column;
         align-items: stretch;
         width: 100%;
     }
-    
     .dropdown {
         width: 100%;
     }
-    
     .dropdown-menu {
         position: static;
         min-width: 100%;
@@ -5457,16 +5695,13 @@ html, body {
         transform: none;
         background: rgba(0, 0, 0, 0.2);
     }
-    
     .dropdown.active .dropdown-menu {
         display: block;
     }
-    
     .dropdown-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-    
     .nav-link,
     .dropdown-toggle {
         width: 100%;
@@ -5475,7 +5710,6 @@ html, body {
         margin-bottom: 0.5rem;
         background: rgba(255, 255, 255, 0.05);
     }
-    
     /* تعديل نتائج البحث للجوال */
     .search-results {
         position: fixed;
@@ -5489,17 +5723,22 @@ html, body {
 
 @media (max-width: 480px) {
     .logo-text {
-        font-size: 1.4rem;       
+        font-size: 1.4rem;
     }
-     
     .dropdown-menu {
         padding: 1rem;
     }
 }
 
+
 /* ==================================== */
+
+
 /* تأثيرات الهيدر عند التمرير */
+
+
 /* ==================================== */
+
 .navbar.scrolled {
     background: rgba(26, 26, 46, 0.95);
     backdrop-filter: blur(20px);
@@ -5507,9 +5746,15 @@ html, body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
+
 /* ==================================== */
+
+
 /* تأثيرات إضافية */
+
+
 /* ==================================== */
+
 .nav-link::after,
 .dropdown-toggle::after {
     content: '';
@@ -5529,9 +5774,15 @@ html, body {
     width: 80%;
 }
 
+
 /* ==================================== */
+
+
 /* تحسينات للـ Dropdown على الجوال */
+
+
 /* ==================================== */
+
 .dropdown-toggle.mobile-toggle {
     cursor: pointer;
 }
@@ -5544,24 +5795,24 @@ html, body {
     transform: rotate(180deg);
 }
 
-
-.title{
+.title {
     background: var(--tomito-gradient);
     color: black;
     text-align: center;
-
 }
-.page{
-  background-color: #000000;
-  color: wheat;
 
-}.page {
+.page {
+    background-color: #000000;
+    color: wheat;
+}
+
+.page {
     margin: 5px 0;
     padding: 0;
     position: relative;
-  }
-  
-  .page a {
+}
+
+.page a {
     display: inline-block;
     color: black;
     background: black;
@@ -5572,15 +5823,14 @@ html, body {
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
     overflow: hidden;
     z-index: 1;
-  }
-  
-  .page a::before {
+}
+
+.page a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -5590,41 +5840,43 @@ html, body {
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
     transition: left 0.7s ease;
     z-index: -1;
-  }
-  
-  .page a:hover {
+}
+
+.page a:hover {
     background: wheat;
     transform: translateY(-2px);
-  
     color: wheat;
     border-color: black;
-  }
-  
-  .page a:hover::before {
+}
+
+.page a:hover::before {
     left: 100%;
-  }
-  
-  .page a:active {
+}
+
+.page a:active {
     transform: translateY(0);
-   
-  }
-  
-  /* تأثير النص المشرق */
-  .page a {
-   
-  }
-  
-  /* تحسينات للأجهزة المختلفة */
-  @media (max-width: 768px) {
+}
+
+
+/* تأثير النص المشرق */
+
+.page a {}
+
+
+/* تحسينات للأجهزة المختلفة */
+
+@media (max-width: 768px) {
     .page a {
-      padding: 10px 20px;
-      font-size: 11px;
-      border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 11px;
+        border-radius: 10px;
     }
-  }
-  
-  /* تأثير الوهج الخفيف */
-  .page a::after {
+}
+
+
+/* تأثير الوهج الخفيف */
+
+.page a::after {
     content: 'إعلان';
     position: absolute;
     top: 50%;
@@ -5635,7 +5887,10 @@ html, body {
     font-weight: bold;
     pointer-events: none;
     z-index: -1;
-  }/* ========================================
+}
+
+
+/* ========================================
    TOMITO NAVBAR - NETFLIX STYLE - FIXED MOBILE
    ======================================== */
 
@@ -5665,9 +5920,11 @@ body {
     padding-top: 70px;
 }
 
+
 /* ========================================
    NAVBAR CONTAINER
    ======================================== */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -5689,13 +5946,14 @@ body {
 
 .navbar.scrolled {
     background: rgba(10, 10, 10, 0.98);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5),
-                0 0 20px var(--tomito-shadow);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 20px var(--tomito-shadow);
 }
+
 
 /* ========================================
    NAV MENU - DESKTOP
    ======================================== */
+
 .nav-menu {
     display: flex;
     align-items: center;
@@ -5704,9 +5962,11 @@ body {
     gap: 30px;
 }
 
+
 /* ========================================
    LOGO - يظهر في الـ Navbar دائماً
    ======================================== */
+
 .logo {
     flex-shrink: 0;
 }
@@ -5730,9 +5990,11 @@ body {
     filter: drop-shadow(0 0 30px var(--tomito-shadow)) brightness(1.2);
 }
 
+
 /* ========================================
    LINKS CONTAINER
    ======================================== */
+
 .links {
     display: flex;
     align-items: center;
@@ -5740,9 +6002,11 @@ body {
     flex: 1;
 }
 
+
 /* ========================================
    NAV LINKS
    ======================================== */
+
 .nav-link {
     display: flex;
     align-items: center;
@@ -5773,9 +6037,11 @@ body {
     box-shadow: 0 4px 15px var(--tomito-shadow);
 }
 
+
 /* ========================================
    DROPDOWN
    ======================================== */
+
 .dropdown {
     position: relative;
 }
@@ -5793,9 +6059,11 @@ body {
     transform: rotate(180deg);
 }
 
+
 /* ========================================
    DROPDOWN MENU - DESKTOP
    ======================================== */
+
 .dropdown-menu {
     position: absolute;
     top: calc(100% + 15px);
@@ -5809,8 +6077,7 @@ body {
     visibility: hidden;
     transform: translateY(-10px);
     transition: all 0.3s ease;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5),
-                0 0 0 1px rgba(240, 125, 55, 0.1);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(240, 125, 55, 0.1);
     z-index: 1000;
 }
 
@@ -5862,9 +6129,11 @@ body {
     transform: translateX(-5px);
 }
 
+
 /* ========================================
    SEARCH CONTAINER
    ======================================== */
+
 .search-container {
     position: relative;
     flex-shrink: 0;
@@ -5922,9 +6191,11 @@ body {
     transform: translateY(-50%) scale(1.1);
 }
 
+
 /* ========================================
    SEARCH RESULTS
    ======================================== */
+
 .search-results {
     position: absolute;
     top: calc(100% + 10px);
@@ -6033,9 +6304,11 @@ body {
     justify-content: space-between;
 }
 
+
 /* ========================================
    HAMBURGER MENU - مخفي في الديسكتوب
    ======================================== */
+
 .hamburger-menu {
     display: none;
     flex-direction: column;
@@ -6054,11 +6327,12 @@ body {
     transition: all 0.3s ease;
 }
 
+
 /* ========================================
    ====== MOBILE STYLES - CRITICAL ======
    ======================================== */
+
 @media screen and (max-width: 768px) {
-    
     /* الـ Navbar الأساسي يبقى ظاهر */
     .navbar {
         padding: 0 4%;
@@ -6068,17 +6342,14 @@ body {
         justify-content: space-between;
         background: rgba(10, 10, 10, 0.98) !important;
     }
-
     /* Logo في الـ Navbar العلوي */
     .logo {
         order: 0;
         z-index: 10000;
     }
-
     .logo h1 {
         font-size: 24px;
     }
-
     /* Hamburger Menu - ظاهر دائماً */
     .hamburger-menu {
         display: flex !important;
@@ -6086,7 +6357,6 @@ body {
         z-index: 10000;
         position: relative;
     }
-
     /* إخفاء المينيو الأساسي */
     .nav-menu {
         position: fixed;
@@ -6109,44 +6379,36 @@ body {
         box-shadow: -5px 0 30px rgba(0, 0, 0, 0.7);
         border-left: 1px solid rgba(240, 125, 55, 0.2);
     }
-
     /* المينيو عند التفعيل */
     .nav-menu.active {
         right: 0 !important;
     }
-
     /* السكرول */
     .nav-menu::-webkit-scrollbar {
         width: 6px;
     }
-
     .nav-menu::-webkit-scrollbar-track {
         background: rgba(255, 255, 255, 0.05);
     }
-
     .nav-menu::-webkit-scrollbar-thumb {
         background: var(--tomito-gradient);
         border-radius: 10px;
     }
-
     /* البحث في المينيو */
     .search-container {
         width: 100%;
         margin-bottom: 25px;
         order: 1;
     }
-
     .search-input {
         width: 100%;
         padding: 14px 50px 14px 20px;
         font-size: 15px;
     }
-
     .search-results {
         max-height: 300px;
         width: 100%;
     }
-
     /* Links Container */
     .links {
         flex-direction: column;
@@ -6154,7 +6416,6 @@ body {
         gap: 12px;
         order: 2;
     }
-
     /* Nav Links */
     .nav-link {
         width: 100%;
@@ -6165,25 +6426,20 @@ body {
         justify-content: center;
         text-align: center;
     }
-
     .nav-link i {
         font-size: 20px;
     }
-
     .nav-link:hover {
         transform: translateX(-5px);
         background: var(--tomito-hover);
     }
-
     .nav-link.active {
         background: var(--tomito-gradient);
     }
-
     /* Dropdown */
     .dropdown {
         width: 100%;
     }
-
     .dropdown-toggle {
         width: 100%;
         background: rgba(255, 255, 255, 0.03);
@@ -6192,11 +6448,9 @@ body {
         justify-content: center;
         text-align: center;
     }
-
     .dropdown-toggle.active .dropdown-icon {
         transform: rotate(180deg);
     }
-
     /* Dropdown Menu في الموبايل */
     .dropdown-menu {
         position: static;
@@ -6211,56 +6465,46 @@ body {
         transform: none;
         transition: all 0.4s ease;
     }
-
-    .dropdown-toggle.active + .dropdown-menu,
+    .dropdown-toggle.active+.dropdown-menu,
     .dropdown.active .dropdown-menu {
         max-height: 600px;
         opacity: 1;
         visibility: visible;
         margin-bottom: 12px;
     }
-
     .dropdown-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-
     .dropdown-column h4 {
         font-size: 14px;
         margin-bottom: 12px;
     }
-
     .dropdown-item {
         padding: 14px 16px;
         font-size: 15px;
         justify-content: center;
         text-align: center;
     }
-
     /* Result Items */
     .result-item {
         flex-direction: row;
         align-items: center;
     }
-
     .result-poster img {
         width: 60px;
         height: 90px;
     }
-
     /* Hamburger Animation */
     .hamburger-menu.active .bar:nth-child(1) {
         transform: rotate(45deg) translate(8px, 8px);
     }
-
     .hamburger-menu.active .bar:nth-child(2) {
         opacity: 0;
     }
-
     .hamburger-menu.active .bar:nth-child(3) {
         transform: rotate(-45deg) translate(8px, -8px);
     }
-
     /* Overlay عند فتح المينيو */
     body::before {
         content: '';
@@ -6275,60 +6519,59 @@ body {
         transition: all 0.3s ease;
         z-index: 9998;
     }
-
     body.menu-open::before {
         opacity: 1;
         visibility: visible;
     }
 }
 
+
 /* ========================================
    VERY SMALL MOBILE (< 400px)
    ======================================== */
+
 @media screen and (max-width: 400px) {
     .navbar {
         padding: 0 3%;
     }
-
     .logo h1 {
         font-size: 22px;
     }
-
     .nav-menu {
         width: 90%;
         padding: 20px 15px;
     }
-
     .nav-link {
         padding: 14px 16px;
         font-size: 15px;
     }
-
     .bar {
         width: 25px;
     }
 }
 
+
 /* ========================================
    LARGE SCREENS
    ======================================== */
+
 @media screen and (min-width: 1400px) {
     .navbar {
         padding: 0 8%;
     }
-
     .nav-menu {
         gap: 40px;
     }
-
     .search-input {
         width: 350px;
     }
 }
 
+
 /* ========================================
    ANIMATIONS
    ======================================== */
+
 @keyframes slideInRight {
     from {
         right: -100%;
@@ -6347,9 +6590,11 @@ body {
     }
 }
 
+
 /* ========================================
    ACCESSIBILITY
    ======================================== */
+
 button:focus,
 a:focus,
 input:focus {
@@ -6362,7 +6607,18 @@ input:focus {
         animation: none !important;
         transition: none !important;
     }
-}/* تطبيق خط Cairo على الموقع كامل */
+}
+
+
+/* تطبيق خط Cairo على الموقع كامل */
+
 * {
     font-family: 'Cairo', sans-serif !important;
+}
+
+.hidden {
+    opacity: 0.3;
+    font-size: 10px;
+    background-color: black;
+    color: black;
 }
