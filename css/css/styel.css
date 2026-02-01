@@ -5335,11 +5335,7 @@ html, body {
     font-size: 0.9rem;
 }
 
-.dropdown-item:hover {
-    background: rgba(240, 125, 55, 0.1);
-    color: #f07d37;
-    transform: translateX(-5px);
-}
+
 
 .dropdown-item i {
     width: 20px;
