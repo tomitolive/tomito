@@ -113,7 +113,7 @@ function displayTrending(items, isFirstLoad = false) {
         slide.className = 'swiper-slide';
         slide.onclick = () => {
             if (isMovie) {
-                window.location.href = `watch-movie.html?id=${item.id}`;
+                window.location.href = `watch.html?id=${item.id}`;
             } else {
                 window.location.href = `watch-tv.html?id=${item.id}`;
             }
