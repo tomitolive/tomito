@@ -14,22 +14,22 @@ let swiperTrending = null;
 let swiperMovies = null;
 let swiperSeries = null;
 
-// بيانات التحميل التلقائي
-const carouselData = {
+// بيانات Infinite Scroll
+const infiniteData = {
     trending: {
-        currentPage: 1,
+        page: 1,
         totalPages: 1,
         isLoading: false,
         hasMore: true
     },
     movies: {
-        currentPage: 1,
+        page: 1,
         totalPages: 1,
         isLoading: false,
         hasMore: true
     },
     series: {
-        currentPage: 1,
+        page: 1,
         totalPages: 1,
         isLoading: false,
         hasMore: true
@@ -42,11 +42,11 @@ const carouselData = {
 async function initAllCarousels() {
     console.log('🎬 بدء تحميل جميع الكاروسيلات...');
     
-    // تحميل البيانات الأولية
+    // تحميل البيانات بالتوازي
     await Promise.all([
-        fetchTrending(true),
-        fetchMovies(true),
-        fetchSeries(true)
+        fetchTrending(),
+        fetchMovies(),
+        fetchSeries()
     ]);
     
     console.log('✅ تم تحميل جميع الكاروسيلات بنجاح');
@@ -55,44 +55,46 @@ async function initAllCarousels() {
 // ===========================================
 // 1. الكاروسيل الأول: Trending (كل المحتوى) مع Infinite Scroll
 // ===========================================
-async function fetchTrending(isInitial = false) {
-    if (carouselData.trending.isLoading || !carouselData.trending.hasMore) return;
-    
-    carouselData.trending.isLoading = true;
-    
+async function fetchTrending() {
     try {
+        const data = infiniteData.trending;
+        if (data.isLoading) return;
+        
+        data.isLoading = true;
+        
         const response = await fetch(
-            `${CONFIG.BASE_URL}/trending/all/day?api_key=${CONFIG.API_KEY}&language=ar&page=${carouselData.trending.currentPage}`
+            `${CONFIG.BASE_URL}/trending/all/day?api_key=${CONFIG.API_KEY}&language=ar&page=${data.page}`
         );
-        const data = await response.json();
+        const result = await response.json();
         
-        carouselData.trending.totalPages = data.total_pages;
-        carouselData.trending.hasMore = carouselData.trending.currentPage < data.total_pages;
+        // حفظ العدد الإجمالي للصفحات
+        data.totalPages = result.total_pages;
+        data.hasMore = data.page < result.total_pages;
         
-        displayTrending(data.results, isInitial);
+        displayTrending(result.results, data.page === 1);
         
-        if (isInitial) {
+        if (data.page === 1) {
             initTrendingSwiper();
         }
         
-        console.log(`✅ تم تحميل صفحة ${carouselData.trending.currentPage} من التريند`);
+        console.log(`✅ تم تحميل صفحة ${data.page} من التريند (${result.results.length} عنصر)`);
         
         // زيادة رقم الصفحة للتحميل التالي
-        carouselData.trending.currentPage++;
+        data.page++;
+        data.isLoading = false;
         
     } catch (error) {
         console.error('خطأ في جلب التريند:', error);
-    } finally {
-        carouselData.trending.isLoading = false;
+        infiniteData.trending.isLoading = false;
     }
 }
 
-function displayTrending(items, isInitial = false) {
+function displayTrending(items, isFirstLoad = false) {
     const container = document.getElementById('trending-container');
     if (!container) return;
     
-    // إذا كان تحميل أولي، امسح المحتوى القديم
-    if (isInitial) {
+    // إذا كان التحميل الأول، امسح المحتوى
+    if (isFirstLoad) {
         container.innerHTML = '';
     }
     
@@ -135,9 +137,12 @@ function displayTrending(items, isInitial = false) {
         container.appendChild(slide);
     });
     
-    // إذا لم يكن تحميل أولي، قم بتحديث السوايبر
-    if (!isInitial && swiperTrending) {
-        swiperTrending.update();
+    // تحديث السوايبر بعد إضافة عناصر جديدة
+    if (swiperTrending && !isFirstLoad) {
+        setTimeout(() => {
+            swiperTrending.update();
+            updateNavigationButtons('trending');
+        }, 100);
     }
 }
 
@@ -162,10 +167,12 @@ function initTrendingSwiper() {
         breakpoints: {
             600: { 
                 slidesPerView: 2, 
-                spaceBetween: 15
+                spaceBetween: 15,
+                centeredSlides: false 
             },
             900: { 
-                slidesPerView: 3
+                slidesPerView: 3, 
+                centeredSlides: false 
             },
             1200: { 
                 slidesPerView: 4 
@@ -180,49 +187,50 @@ function initTrendingSwiper() {
         }
     });
     
-    // إضافة حدث للتحميل التلقائي عند الوصول للنهاية
+    // إضافة Infinite Scroll
     setupInfiniteScroll(swiperTrending, 'trending');
 }
 
 // ===========================================
 // 2. الكاروسيل الثاني: الأفلام فقط مع Infinite Scroll
 // ===========================================
-async function fetchMovies(isInitial = false) {
-    if (carouselData.movies.isLoading || !carouselData.movies.hasMore) return;
-    
-    carouselData.movies.isLoading = true;
-    
+async function fetchMovies() {
     try {
+        const data = infiniteData.movies;
+        if (data.isLoading) return;
+        
+        data.isLoading = true;
+        
         const response = await fetch(
-            `${CONFIG.BASE_URL}/movie/now_playing?api_key=${CONFIG.API_KEY}&language=ar&page=${carouselData.movies.currentPage}`
+            `${CONFIG.BASE_URL}/movie/now_playing?api_key=${CONFIG.API_KEY}&language=ar&page=${data.page}`
         );
-        const data = await response.json();
+        const result = await response.json();
         
-        carouselData.movies.totalPages = data.total_pages;
-        carouselData.movies.hasMore = carouselData.movies.currentPage < data.total_pages;
+        data.totalPages = result.total_pages;
+        data.hasMore = data.page < result.total_pages;
         
-        displayMovies(data.results, isInitial);
+        displayMovies(result.results, data.page === 1);
         
-        if (isInitial) {
+        if (data.page === 1) {
             initMoviesSwiper();
         }
         
-        console.log(`✅ تم تحميل صفحة ${carouselData.movies.currentPage} من الأفلام`);
+        console.log(`✅ تم تحميل صفحة ${data.page} من الأفلام (${result.results.length} عنصر)`);
         
-        carouselData.movies.currentPage++;
+        data.page++;
+        data.isLoading = false;
         
     } catch (error) {
         console.error('خطأ في جلب الأفلام:', error);
-    } finally {
-        carouselData.movies.isLoading = false;
+        infiniteData.movies.isLoading = false;
     }
 }
 
-function displayMovies(movies, isInitial = false) {
+function displayMovies(movies, isFirstLoad = false) {
     const container = document.getElementById('movies-container');
     if (!container) return;
     
-    if (isInitial) {
+    if (isFirstLoad) {
         container.innerHTML = '';
     }
     
@@ -257,8 +265,11 @@ function displayMovies(movies, isInitial = false) {
         container.appendChild(slide);
     });
     
-    if (!isInitial && swiperMovies) {
-        swiperMovies.update();
+    if (swiperMovies && !isFirstLoad) {
+        setTimeout(() => {
+            swiperMovies.update();
+            updateNavigationButtons('movies');
+        }, 100);
     }
 }
 
@@ -283,10 +294,12 @@ function initMoviesSwiper() {
         breakpoints: {
             600: { 
                 slidesPerView: 2, 
-                spaceBetween: 15
+                spaceBetween: 15,
+                centeredSlides: false 
             },
             900: { 
-                slidesPerView: 3
+                slidesPerView: 3, 
+                centeredSlides: false 
             },
             1200: { 
                 slidesPerView: 4 
@@ -301,49 +314,49 @@ function initMoviesSwiper() {
         }
     });
     
-    // إضافة حدث للتحميل التلقائي
     setupInfiniteScroll(swiperMovies, 'movies');
 }
 
 // ===========================================
 // 3. الكاروسيل الثالث: المسلسلات فقط مع Infinite Scroll
 // ===========================================
-async function fetchSeries(isInitial = false) {
-    if (carouselData.series.isLoading || !carouselData.series.hasMore) return;
-    
-    carouselData.series.isLoading = true;
-    
+async function fetchSeries() {
     try {
+        const data = infiniteData.series;
+        if (data.isLoading) return;
+        
+        data.isLoading = true;
+        
         const response = await fetch(
-            `${CONFIG.BASE_URL}/tv/popular?api_key=${CONFIG.API_KEY}&language=ar&page=${carouselData.series.currentPage}`
+            `${CONFIG.BASE_URL}/tv/popular?api_key=${CONFIG.API_KEY}&language=ar&page=${data.page}`
         );
-        const data = await response.json();
+        const result = await response.json();
         
-        carouselData.series.totalPages = data.total_pages;
-        carouselData.series.hasMore = carouselData.series.currentPage < data.total_pages;
+        data.totalPages = result.total_pages;
+        data.hasMore = data.page < result.total_pages;
         
-        displaySeries(data.results, isInitial);
+        displaySeries(result.results, data.page === 1);
         
-        if (isInitial) {
+        if (data.page === 1) {
             initSeriesSwiper();
         }
         
-        console.log(`✅ تم تحميل صفحة ${carouselData.series.currentPage} من المسلسلات`);
+        console.log(`✅ تم تحميل صفحة ${data.page} من المسلسلات (${result.results.length} عنصر)`);
         
-        carouselData.series.currentPage++;
+        data.page++;
+        data.isLoading = false;
         
     } catch (error) {
         console.error('خطأ في جلب المسلسلات:', error);
-    } finally {
-        carouselData.series.isLoading = false;
+        infiniteData.series.isLoading = false;
     }
 }
 
-function displaySeries(seriesList, isInitial = false) {
+function displaySeries(seriesList, isFirstLoad = false) {
     const container = document.getElementById('series-container');
     if (!container) return;
     
-    if (isInitial) {
+    if (isFirstLoad) {
         container.innerHTML = '';
     }
     
@@ -378,8 +391,11 @@ function displaySeries(seriesList, isInitial = false) {
         container.appendChild(slide);
     });
     
-    if (!isInitial && swiperSeries) {
-        swiperSeries.update();
+    if (swiperSeries && !isFirstLoad) {
+        setTimeout(() => {
+            swiperSeries.update();
+            updateNavigationButtons('series');
+        }, 100);
     }
 }
 
@@ -404,10 +420,12 @@ function initSeriesSwiper() {
         breakpoints: {
             600: { 
                 slidesPerView: 2, 
-                spaceBetween: 15
+                spaceBetween: 15,
+                centeredSlides: false 
             },
             900: { 
-                slidesPerView: 3
+                slidesPerView: 3, 
+                centeredSlides: false 
             },
             1200: { 
                 slidesPerView: 4 
@@ -422,90 +440,87 @@ function initSeriesSwiper() {
         }
     });
     
-    // إضافة حدث للتحميل التلقائي
     setupInfiniteScroll(swiperSeries, 'series');
 }
 
 // ===========================================
-// دالة لإعداد Infinite Scroll للكاروسيل
+// إعداد Infinite Scroll
 // ===========================================
-function setupInfiniteScroll(swiper, carouselType) {
-    // إضافة علامة تحميل في نهاية الكاروسيل
-    const container = swiper.el.querySelector('.swiper-wrapper');
-    const loadingIndicator = document.createElement('div');
-    loadingIndicator.className = 'loading-indicator';
-    loadingIndicator.style.cssText = `
-        display: none;
-        width: 100%;
-        text-align: center;
-        padding: 20px;
-        color: #fff;
-        font-size: 14px;
-    `;
-    loadingIndicator.innerHTML = 'جاري تحميل المزيد...';
-    container.parentNode.appendChild(loadingIndicator);
-    
-    // إضافة حدث عند الوصول لآخر شريحة
+function setupInfiniteScroll(swiper, type) {
+    // إضافة حدث عند الوصول للنهاية
     swiper.on('reachEnd', async function() {
-        // تحقق إذا كان هناك المزيد للتحميل
-        const data = carouselData[carouselType];
+        const data = infiniteData[type];
         
-        if (data.isLoading || !data.hasMore) return;
-        
-        // إظهار مؤشر التحميل
-        loadingIndicator.style.display = 'block';
-        
-        // تحميل المزيد من البيانات
-        switch(carouselType) {
-            case 'trending':
-                await fetchTrending(false);
-                break;
-            case 'movies':
-                await fetchMovies(false);
-                break;
-            case 'series':
-                await fetchSeries(false);
-                break;
+        // إذا كان هناك المزيد ولم يكن جاري التحميل
+        if (data.hasMore && !data.isLoading) {
+            console.log(`🔄 الوصول لنهاية ${type}، جاري تحميل المزيد...`);
+            
+            // إضافة مؤشر تحميل
+            addLoadingIndicator(type);
+            
+            // تحميل المزيد من البيانات
+            switch(type) {
+                case 'trending':
+                    await fetchTrending();
+                    break;
+                case 'movies':
+                    await fetchMovies();
+                    break;
+                case 'series':
+                    await fetchSeries();
+                    break;
+            }
+            
+            // إزالة مؤشر التحميل
+            removeLoadingIndicator(type);
         }
-        
-        // إخفاء مؤشر التحميل
-        loadingIndicator.style.display = 'none';
-        
-        // تحديث حالة الأزرار
-        updateNavigationButtons(swiper, carouselType);
     });
     
-    // تحديث حالة أزرار التنقل
-    updateNavigationButtons(swiper, carouselType);
+    // تحديث أزرار التنقل
+    updateNavigationButtons(type);
     
-    // تحديث حالة الأزرار عند التمرير
+    // تحديث عند التمرير
     swiper.on('slideChange', function() {
-        updateNavigationButtons(swiper, carouselType);
+        updateNavigationButtons(type);
     });
 }
 
 // ===========================================
-// دالة لتحديث حالة أزرار التنقل
+// دوال مساعدة
 // ===========================================
-function updateNavigationButtons(swiper, carouselType) {
-    const data = carouselData[carouselType];
+function addLoadingIndicator(type) {
+    const container = document.getElementById(`${type}-container`);
+    if (!container) return;
     
-    let nextBtn, prevBtn;
+    const loader = document.createElement('div');
+    loader.className = 'loading-indicator';
+    loader.id = `${type}-loader`;
+    loader.innerHTML = '<div class="loader"></div>';
+    loader.style.cssText = `
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        color: white;
+    `;
     
-    switch(carouselType) {
-        case 'trending':
-            nextBtn = document.querySelector('.trending-right');
-            prevBtn = document.querySelector('.trending-left');
-            break;
-        case 'movies':
-            nextBtn = document.querySelector('.movies-right');
-            prevBtn = document.querySelector('.movies-left');
-            break;
-        case 'series':
-            nextBtn = document.querySelector('.series-right');
-            prevBtn = document.querySelector('.series-left');
-            break;
+    container.appendChild(loader);
+}
+
+function removeLoadingIndicator(type) {
+    const loader = document.getElementById(`${type}-loader`);
+    if (loader) {
+        loader.remove();
     }
+}
+
+function updateNavigationButtons(type) {
+    const swiper = getSwiper(type);
+    const data = infiniteData[type];
+    
+    if (!swiper) return;
+    
+    const nextBtn = document.querySelector(`.${type}-right`);
+    const prevBtn = document.querySelector(`.${type}-left`);
     
     if (!nextBtn || !prevBtn) return;
     
@@ -532,22 +547,36 @@ function updateNavigationButtons(swiper, carouselType) {
     }
 }
 
-// ===========================================
-// دالة لتحميل المزيد يدوياً (زر تحميل المزيد)
-// ===========================================
-function loadMore(carouselType) {
-    switch(carouselType) {
-        case 'trending':
-            fetchTrending(false);
-            break;
-        case 'movies':
-            fetchMovies(false);
-            break;
-        case 'series':
-            fetchSeries(false);
-            break;
+function getSwiper(type) {
+    switch(type) {
+        case 'trending': return swiperTrending;
+        case 'movies': return swiperMovies;
+        case 'series': return swiperSeries;
+        default: return null;
     }
 }
+
+// ===========================================
+// دعم إعادة التهيئة عند تغيير حجم النافذة
+// ===========================================
+let resizeTimer;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+        if (swiperTrending) {
+            swiperTrending.update();
+            updateNavigationButtons('trending');
+        }
+        if (swiperMovies) {
+            swiperMovies.update();
+            updateNavigationButtons('movies');
+        }
+        if (swiperSeries) {
+            swiperSeries.update();
+            updateNavigationButtons('series');
+        }
+    }, 250);
+});
 
 // ===========================================
 // بدء التشغيل عند تحميل الصفحة
@@ -560,23 +589,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ===========================================
-// دعم إعادة التهيئة عند تغيير حجم النافذة
+// تحميل عند التمرير (Backup)
 // ===========================================
-let resizeTimer;
-window.addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-        if (swiperTrending) {
-            swiperTrending.update();
-            updateNavigationButtons(swiperTrending, 'trending');
-        }
-        if (swiperMovies) {
-            swiperMovies.update();
-            updateNavigationButtons(swiperMovies, 'movies');
-        }
-        if (swiperSeries) {
-            swiperSeries.update();
-            updateNavigationButtons(swiperSeries, 'series');
-        }
-    }, 250);
+window.addEventListener('scroll', () => {
+    // يمكن إضافة منطق إضافي هنا إذا لزم الأمر
 });
