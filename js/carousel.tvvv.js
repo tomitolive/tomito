@@ -245,7 +245,7 @@ function displayMovies(movies, isFirstLoad = false) {
         const slide = document.createElement('div');
         slide.className = 'swiper-slide';
         slide.onclick = () => {
-            window.location.href = `watch-movie.html?id=${movie.id}`;
+            window.location.href = `watch.html?id=${movie.id}`;
         };
         
         slide.innerHTML = `
@@ -328,7 +328,8 @@ async function fetchSeries() {
         data.isLoading = true;
         
         const response = await fetch(
-            `${CONFIG.BASE_URL}/tv/populen?api_key=${CONFIG.API_KEY}&language=en&page=${data.page}`
+            `${CONFIG.BASE_URL}/tv/popular?api_key=${CONFIG.API_KEY}&language=en&page=${data.page}`
+
         );
         const result = await response.json();
         
