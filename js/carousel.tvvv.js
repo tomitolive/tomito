@@ -63,7 +63,7 @@ async function fetchTrending() {
         data.isLoading = true;
         
         const response = await fetch(
-            `${CONFIG.BASE_URL}/trending/all/day?api_key=${CONFIG.API_KEY}&language=ar&page=${data.page}`
+            `${CONFIG.BASE_URL}/trending/all/day?api_key=${CONFIG.API_KEY}&language=en&page=${data.page}`
         );
         const result = await response.json();
         
@@ -202,7 +202,7 @@ async function fetchMovies() {
         data.isLoading = true;
         
         const response = await fetch(
-            `${CONFIG.BASE_URL}/movie/now_playing?api_key=${CONFIG.API_KEY}&language=ar&page=${data.page}`
+            `${CONFIG.BASE_URL}/movie/now_playing?api_key=${CONFIG.API_KEY}&language=en&page=${data.page}`
         );
         const result = await response.json();
         
@@ -328,7 +328,7 @@ async function fetchSeries() {
         data.isLoading = true;
         
         const response = await fetch(
-            `${CONFIG.BASE_URL}/tv/popular?api_key=${CONFIG.API_KEY}&language=ar&page=${data.page}`
+            `${CONFIG.BASE_URL}/tv/populen?api_key=${CONFIG.API_KEY}&language=en&page=${data.page}`
         );
         const result = await response.json();
         
