@@ -6362,4 +6362,7 @@ input:focus {
         animation: none !important;
         transition: none !important;
     }
+}/* تطبيق خط Cairo على الموقع كامل */
+* {
+    font-family: 'Cairo', sans-serif !important;
 }
