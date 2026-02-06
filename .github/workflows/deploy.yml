@@ -18,22 +18,16 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install Obfuscator
-        run: npm install -g javascript-obfuscator
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
 
-      # 🟢 1. نسخ المشروع كامل لـ dist مع استثناءات
-      - name: Copy project to dist
-        run: |
-          mkdir dist
-          rsync -av --progress ./ dist \
-            --exclude dist \
-            --exclude .git \
-            --exclude .github
+      - name: Build project
+        run: npm run build
 
-      # 🟢 2. تشفير غير ملفات JS داخل dist
+      # 🟢 2. تشفير ملفات JS داخل dist/assets
       - name: Obfuscate JS files
         run: |
-          find dist -type f -name "*.js" -exec javascript-obfuscator {} --output {} \
+          find dist/assets -type f -name "*.js" -exec javascript-obfuscator {} --output {} \
             --compact true \
             --self-defending true \
             --string-array true \
