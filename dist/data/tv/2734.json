@@ -1,0 +1,990 @@
+{
+  "adult": false,
+  "backdrop_path": "/obtdxPgmfykYwVnvuYXC5f2xKlQ.jpg",
+  "created_by": [
+    {
+      "id": 117443,
+      "credit_id": "525743f5760ee36aaa0e0ff8",
+      "name": "دك ولف",
+      "original_name": "Dick Wolf",
+      "gender": 2,
+      "profile_path": "/tRMEuYNVFjXYJ7gh1sGJSxq9Vwq.jpg"
+    }
+  ],
+  "episode_run_time": [],
+  "first_air_date": "1999-09-20",
+  "genres": [
+    {
+      "id": 80,
+      "name": "جريمة"
+    },
+    {
+      "id": 18,
+      "name": "دراما"
+    },
+    {
+      "id": 9648,
+      "name": "غموض"
+    }
+  ],
+  "homepage": "http://www.nbc.com/law-and-order-special-victims-unit",
+  "id": 2734,
+  "in_production": true,
+  "languages": [
+    "en"
+  ],
+  "last_air_date": "2026-01-15",
+  "last_episode_to_air": {
+    "id": 6842973,
+    "name": "الحلقة 12",
+    "overview": "",
+    "vote_average": 10,
+    "vote_count": 1,
+    "air_date": "2026-01-29",
+    "episode_number": 12,
+    "episode_type": "mid_season",
+    "production_code": "",
+    "runtime": 43,
+    "season_number": 27,
+    "show_id": 2734,
+    "still_path": "/scaDmCgt5Mn8h72ew7LuKwI3ttk.jpg"
+  },
+  "name": "القانون والنظام: وحدة الضحايا الخاصة",
+  "next_episode_to_air": {
+    "id": 6912922,
+    "name": "الحلقة 13",
+    "overview": "",
+    "vote_average": 0,
+    "vote_count": 0,
+    "air_date": "2026-02-26",
+    "episode_number": 13,
+    "episode_type": "standard",
+    "production_code": "",
+    "runtime": null,
+    "season_number": 27,
+    "show_id": 2734,
+    "still_path": null
+  },
+  "networks": [
+    {
+      "id": 6,
+      "logo_path": "/cm111bsDVlYaC1foL0itvEI4yLG.png",
+      "name": "NBC",
+      "origin_country": "US"
+    }
+  ],
+  "number_of_episodes": 585,
+  "number_of_seasons": 27,
+  "origin_country": [
+    "US"
+  ],
+  "original_language": "en",
+  "original_name": "Law & Order: Special Victims Unit",
+  "overview": "في نظام العدالة الجنائية، تعتبر الجرائم الجنسية شنيعة بشكل خاص. في مدينة نيويورك، المحققون المتخصصون الذين يحققون في هذه الجنايات الشريرة هم أعضاء فريق من النخبة يعرف باسم وحدة الضحايا الخاصة. هذه قصصهم.",
+  "popularity": 242.8383,
+  "poster_path": "/uzfP3ILGEXhSbhfCOsgCDZW7ojk.jpg",
+  "production_companies": [
+    {
+      "id": 25545,
+      "logo_path": "/8Lqf0okunSPAwBBL08Ua1IRe1xi.png",
+      "name": "Wolf Entertainment",
+      "origin_country": "US"
+    },
+    {
+      "id": 26727,
+      "logo_path": "/jeTxdjXhzgKZyLr3l9MllkTn3fy.png",
+      "name": "Universal Television",
+      "origin_country": "US"
+    },
+    {
+      "id": 56401,
+      "logo_path": null,
+      "name": "Studios USA",
+      "origin_country": "US"
+    },
+    {
+      "id": 8301,
+      "logo_path": "/zrcVDabl14MNfPwxL8DC2IyR12t.png",
+      "name": "Universal Media Studios",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "seasons": [
+    {
+      "air_date": null,
+      "episode_count": 6,
+      "id": 8888,
+      "name": "العروض الخاصة",
+      "overview": "",
+      "poster_path": "/3pLGDNuFGdpgMd7IjfTznLDAl0.jpg",
+      "season_number": 0,
+      "vote_average": 0
+    },
+    {
+      "air_date": "1999-09-20",
+      "episode_count": 22,
+      "id": 8878,
+      "name": "الموسم 1",
+      "overview": "",
+      "poster_path": "/fMcB4Kznfz3sR4Jkg1lOtf5blCp.jpg",
+      "season_number": 1,
+      "vote_average": 7.5
+    },
+    {
+      "air_date": "2000-10-20",
+      "episode_count": 21,
+      "id": 8877,
+      "name": "الموسم 2",
+      "overview": "",
+      "poster_path": "/9yyzbzZuPUPlnvhuyi4VmDac1SL.jpg",
+      "season_number": 2,
+      "vote_average": 8
+    },
+    {
+      "air_date": "2001-09-28",
+      "episode_count": 23,
+      "id": 8876,
+      "name": "الموسم 3",
+      "overview": "",
+      "poster_path": "/9S59DS9XpzrBRcDhrEsurHxaTwD.jpg",
+      "season_number": 3,
+      "vote_average": 8
+    },
+    {
+      "air_date": "2002-09-26",
+      "episode_count": 25,
+      "id": 8885,
+      "name": "الموسم 4",
+      "overview": "",
+      "poster_path": "/iIlD5l14GbVPDGcVqFXB7XObGlp.jpg",
+      "season_number": 4,
+      "vote_average": 7.5
+    },
+    {
+      "air_date": "2003-09-22",
+      "episode_count": 25,
+      "id": 8881,
+      "name": "الموسم 5",
+      "overview": "",
+      "poster_path": "/vowmLggLYRC75DpEttts7ej2FBM.jpg",
+      "season_number": 5,
+      "vote_average": 7.8
+    },
+    {
+      "air_date": "2004-09-20",
+      "episode_count": 23,
+      "id": 8880,
+      "name": "الموسم 6",
+      "overview": "",
+      "poster_path": "/p3iU1fLz9h8O1d6g4KrOzKbU2vq.jpg",
+      "season_number": 6,
+      "vote_average": 7.6
+    },
+    {
+      "air_date": "2005-09-19",
+      "episode_count": 22,
+      "id": 8884,
+      "name": "الموسم 7",
+      "overview": "",
+      "poster_path": "/i66p9aJpaPPd2Y83cRE256R4kiv.jpg",
+      "season_number": 7,
+      "vote_average": 7.6
+    },
+    {
+      "air_date": "2006-09-19",
+      "episode_count": 22,
+      "id": 8879,
+      "name": "الموسم 8",
+      "overview": "",
+      "poster_path": "/mvNHgkbvREA6ty5lJpW4Dj0ks7L.jpg",
+      "season_number": 8,
+      "vote_average": 7.7
+    },
+    {
+      "air_date": "2007-09-25",
+      "episode_count": 19,
+      "id": 8882,
+      "name": "الموسم 9",
+      "overview": "",
+      "poster_path": "/hSJbnNHL2Hlm6HO2JzrT0s4vNVZ.jpg",
+      "season_number": 9,
+      "vote_average": 7.7
+    },
+    {
+      "air_date": "2008-09-22",
+      "episode_count": 22,
+      "id": 8883,
+      "name": "الموسم 10",
+      "overview": "",
+      "poster_path": "/j2qRsT11WL8sX1ULWWxS7opu8Dj.jpg",
+      "season_number": 10,
+      "vote_average": 7.8
+    },
+    {
+      "air_date": "2009-09-23",
+      "episode_count": 24,
+      "id": 8886,
+      "name": "الموسم 11",
+      "overview": "",
+      "poster_path": "/uVNfsziEtWZpnAbKevNjArafEGa.jpg",
+      "season_number": 11,
+      "vote_average": 7.4
+    },
+    {
+      "air_date": "2010-09-22",
+      "episode_count": 24,
+      "id": 8887,
+      "name": "الموسم 12",
+      "overview": "",
+      "poster_path": "/oEOX17rWyWOx9gNmb9cJAiKqQBa.jpg",
+      "season_number": 12,
+      "vote_average": 7.5
+    },
+    {
+      "air_date": "2011-09-21",
+      "episode_count": 23,
+      "id": 8889,
+      "name": "الموسم 13",
+      "overview": "",
+      "poster_path": "/tITqx6k7Pansb4gEPeZ0AG3lkDf.jpg",
+      "season_number": 13,
+      "vote_average": 7.3
+    },
+    {
+      "air_date": "2012-09-26",
+      "episode_count": 24,
+      "id": 8890,
+      "name": "الموسم 14",
+      "overview": "",
+      "poster_path": "/vSJ7X9IY4Sa1MyuhCKX4qylDqLM.jpg",
+      "season_number": 14,
+      "vote_average": 7.9
+    },
+    {
+      "air_date": "2013-09-25",
+      "episode_count": 24,
+      "id": 8891,
+      "name": "الموسم 15",
+      "overview": "",
+      "poster_path": "/rpkLpzLncTl2Sowna0SDKinyZPG.jpg",
+      "season_number": 15,
+      "vote_average": 8.1
+    },
+    {
+      "air_date": "2014-09-24",
+      "episode_count": 23,
+      "id": 62900,
+      "name": "الموسم 16",
+      "overview": "",
+      "poster_path": "/vbxnHjk1kbAYtSg2YG1NkH7N3kf.jpg",
+      "season_number": 16,
+      "vote_average": 8
+    },
+    {
+      "air_date": "2015-09-23",
+      "episode_count": 23,
+      "id": 68816,
+      "name": "الموسم 17",
+      "overview": "",
+      "poster_path": "/3S1WWliIdFSXglNutCSppRnk4jE.jpg",
+      "season_number": 17,
+      "vote_average": 8.4
+    },
+    {
+      "air_date": "2016-09-21",
+      "episode_count": 21,
+      "id": 79484,
+      "name": "الموسم 18",
+      "overview": "",
+      "poster_path": "/3i28LB4U06W3zo7xJ3iD2ftIxPT.jpg",
+      "season_number": 18,
+      "vote_average": 7.9
+    },
+    {
+      "air_date": "2017-09-27",
+      "episode_count": 24,
+      "id": 91257,
+      "name": "الموسم 19",
+      "overview": "",
+      "poster_path": "/6LZk57ODCi1A6HCDqpssn43OjFN.jpg",
+      "season_number": 19,
+      "vote_average": 8
+    },
+    {
+      "air_date": "2018-09-27",
+      "episode_count": 24,
+      "id": 105509,
+      "name": "الموسم 20",
+      "overview": "",
+      "poster_path": "/qnZEj6rA5UFW839dOKRhIFI4moe.jpg",
+      "season_number": 20,
+      "vote_average": 7.4
+    },
+    {
+      "air_date": "2019-09-26",
+      "episode_count": 20,
+      "id": 129334,
+      "name": "الموسم 21",
+      "overview": "",
+      "poster_path": "/1sSCkqrjq8DgS5WpdLoim4JetYH.jpg",
+      "season_number": 21,
+      "vote_average": 7.7
+    },
+    {
+      "air_date": "2020-11-12",
+      "episode_count": 16,
+      "id": 160634,
+      "name": "الموسم 22",
+      "overview": "",
+      "poster_path": "/4fClCRCTK5pRDP80tVUmABQtuSe.jpg",
+      "season_number": 22,
+      "vote_average": 8.2
+    },
+    {
+      "air_date": "2021-09-22",
+      "episode_count": 22,
+      "id": 202465,
+      "name": "الموسم 23",
+      "overview": "",
+      "poster_path": "/a2EhFAU2Ymgx2LFZdrh0QwXoncY.jpg",
+      "season_number": 23,
+      "vote_average": 8.2
+    },
+    {
+      "air_date": "2022-09-22",
+      "episode_count": 22,
+      "id": 299109,
+      "name": "الموسم 24",
+      "overview": "",
+      "poster_path": "/e8cx3BVz6jJDLEgW02UQhEBtsZw.jpg",
+      "season_number": 24,
+      "vote_average": 8.4
+    },
+    {
+      "air_date": "2024-01-18",
+      "episode_count": 13,
+      "id": 366618,
+      "name": "الموسم 25",
+      "overview": "",
+      "poster_path": "/cK6Pn91ZwwO2osSjRNkDPK9qWa2.jpg",
+      "season_number": 25,
+      "vote_average": 8.1
+    },
+    {
+      "air_date": "2024-10-03",
+      "episode_count": 22,
+      "id": 401572,
+      "name": "الموسم 26",
+      "overview": "",
+      "poster_path": "/34O6znqnLHAa19mZrQB0sxTDGzH.jpg",
+      "season_number": 26,
+      "vote_average": 8.7
+    },
+    {
+      "air_date": "2025-09-25",
+      "episode_count": 14,
+      "id": 467360,
+      "name": "الموسم 27",
+      "overview": "",
+      "poster_path": "/iofokHZoUB4Qhik4PflvJl8TT6a.jpg",
+      "season_number": 27,
+      "vote_average": 8.8
+    }
+  ],
+  "spoken_languages": [
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Returning Series",
+  "tagline": "",
+  "type": "Scripted",
+  "vote_average": 7.938,
+  "vote_count": 4113,
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 6240,
+        "known_for_department": "Acting",
+        "name": "Mariska Hargitay",
+        "original_name": "Mariska Hargitay",
+        "popularity": 2.6801,
+        "profile_path": "/7tULgPSy5hksTi7mBF9uOnrrzHX.jpg",
+        "character": "Olivia Benson",
+        "credit_id": "5431f1ec0e0a2646490047cf",
+        "order": 0
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 21411,
+        "known_for_department": "Acting",
+        "name": "Ice-T",
+        "original_name": "Ice-T",
+        "popularity": 4.422,
+        "profile_path": "/96TdPckI16ggfHcPrSFf6bHYLLe.jpg",
+        "character": "Odafin 'Fin' Tutuola",
+        "credit_id": "525743f3760ee36aaa0e0814",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 206637,
+        "known_for_department": "Acting",
+        "name": "Kelli Giddish",
+        "original_name": "Kelli Giddish",
+        "popularity": 1.7358,
+        "profile_path": "/3zcqEyAguRhYofePyJehWm19uUX.jpg",
+        "character": "Amanda Rollins",
+        "credit_id": "5431f231c3a36831ac00468e",
+        "order": 4
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1217599,
+        "known_for_department": "Acting",
+        "name": "بيتر سكانافينو",
+        "original_name": "Peter Scanavino",
+        "popularity": 1.2434,
+        "profile_path": "/kQzX89Ar4rEC1wwHcuDMr0YxUve.jpg",
+        "character": "Dominick 'Sonny' Carisi Jr.",
+        "credit_id": "5431f2a30e0a2656e200307b",
+        "order": 6
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 2005718,
+        "known_for_department": "Acting",
+        "name": "Aimé Donna Kelly",
+        "original_name": "Aimé Donna Kelly",
+        "popularity": 0.4018,
+        "profile_path": "/jVf2XzJeFbzEopz5LGS3yIRPUoP.jpg",
+        "character": "Renee Curry",
+        "credit_id": "617356501d01910091acf132",
+        "order": 7
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1413757,
+        "known_for_department": "Acting",
+        "name": "Kevin Kane",
+        "original_name": "Kevin Kane",
+        "popularity": 3.2218,
+        "profile_path": "/e0yDVCropmYrjJxHaVX0gxCiYiL.jpg",
+        "character": "Terry Bruno",
+        "credit_id": "63c1e134a5743d00dd54f34f",
+        "order": 8
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1380500,
+        "known_for_department": "Acting",
+        "name": "Corey Cott",
+        "original_name": "Corey Cott",
+        "popularity": 2.3474,
+        "profile_path": "/308ot27uQ7tSCJCPYgZR0L5XApe.jpg",
+        "character": "Det. Jake Griffin",
+        "credit_id": "696717684dc477f0038660f8",
+        "order": 25
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1228160,
+        "known_for_department": "Writing",
+        "name": "Michele Fazekas",
+        "original_name": "Michele Fazekas",
+        "popularity": 0.517,
+        "profile_path": "/d5WHruek1IV0VlwPurrnBrAzrcf.jpg",
+        "credit_id": "688eedfafd76b2d399b22b2f",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 935631,
+        "known_for_department": "Sound",
+        "name": "Mike Post",
+        "original_name": "Mike Post",
+        "popularity": 0.3993,
+        "profile_path": null,
+        "credit_id": "556d7006c3a3680e86000407",
+        "department": "Sound",
+        "job": "Original Music Composer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 117443,
+        "known_for_department": "Creator",
+        "name": "دك ولف",
+        "original_name": "Dick Wolf",
+        "popularity": 1.8673,
+        "profile_path": "/tRMEuYNVFjXYJ7gh1sGJSxq9Vwq.jpg",
+        "credit_id": "556d6e5c925141422400039b",
+        "department": "Production",
+        "job": "Executive Producer"
+      }
+    ]
+  },
+  "similar": {
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/xcvzQvQv6wsMPRyctek4jhDS8Yi.jpg",
+        "genre_ids": [
+          80,
+          18,
+          9648
+        ],
+        "id": 3476,
+        "origin_country": [
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "Inspector Morse",
+        "overview": "",
+        "popularity": 14.0677,
+        "poster_path": "/cvGqqBcCwahSQgLsCLdUKZG1Skq.jpg",
+        "first_air_date": "1987-01-06",
+        "name": "Inspector Morse",
+        "vote_average": 7.8,
+        "vote_count": 135
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/jf7K081EEjuypr2uQLB0X0Z1kvw.jpg",
+        "genre_ids": [
+          10759,
+          18,
+          10765
+        ],
+        "id": 68003,
+        "origin_country": [
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "SS-GB",
+        "overview": "",
+        "popularity": 1.7295,
+        "poster_path": "/sqybrp68wbUD6tyUz5IJhii00DL.jpg",
+        "first_air_date": "2017-02-19",
+        "name": "SS-GB",
+        "vote_average": 6.3,
+        "vote_count": 64
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/2eqOfONFLHa6GQ3azSuPTDsmqA6.jpg",
+        "genre_ids": [
+          18,
+          80
+        ],
+        "id": 68093,
+        "origin_country": [
+          "AU"
+        ],
+        "original_language": "en",
+        "original_name": "Hyde & Seek",
+        "overview": "",
+        "popularity": 0.4046,
+        "poster_path": "/tXHyaRNbZP6ghYTxUwsTWEqLEUH.jpg",
+        "first_air_date": "2016-10-03",
+        "name": "Hyde & Seek",
+        "vote_average": 7,
+        "vote_count": 4
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/px61Ocl1lxfB54HpPyNmyIhJmqI.jpg",
+        "genre_ids": [
+          16,
+          18,
+          35
+        ],
+        "id": 34741,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "西洋骨董洋菓子店 ～アンティーク～",
+        "overview": "",
+        "popularity": 3.1232,
+        "poster_path": "/oFCER27jhGmryhRbDZhnSYWhNk4.jpg",
+        "first_air_date": "2008-07-04",
+        "name": "西洋骨董洋菓子店 ～アンティーク～",
+        "vote_average": 5.6,
+        "vote_count": 10
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/5EhDY6z8R2ZJENDcnwvwGmFOZ56.jpg",
+        "genre_ids": [
+          16,
+          18,
+          9648
+        ],
+        "id": 34809,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "ゴーストハント",
+        "overview": "",
+        "popularity": 5.1799,
+        "poster_path": "/brTGHRujy83fMOkcKcWrtAfa4wy.jpg",
+        "first_air_date": "2006-10-03",
+        "name": "ゴーストハント",
+        "vote_average": 8,
+        "vote_count": 42
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/8oO0293ARaKEmc3ZvqWhrQB9w61.jpg",
+        "genre_ids": [
+          80,
+          9648
+        ],
+        "id": 288092,
+        "origin_country": [
+          "CN"
+        ],
+        "original_language": "zh",
+        "original_name": "神探亨特詹",
+        "overview": "",
+        "popularity": 1.3304,
+        "poster_path": "/g7Wog7gpRdcSExuZvK5pRIKfP1q.jpg",
+        "first_air_date": "2025-04-07",
+        "name": "神探亨特詹",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/wfivwtnzkWQCwOtpT7tiVATIVkR.jpg",
+        "genre_ids": [
+          99,
+          80
+        ],
+        "id": 103023,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "I'll Be Gone in the Dark",
+        "overview": "",
+        "popularity": 1.7398,
+        "poster_path": "/wP8ypum7Jpy1UBfR6HLxdvMkqX6.jpg",
+        "first_air_date": "2020-06-28",
+        "name": "I'll Be Gone in the Dark",
+        "vote_average": 7,
+        "vote_count": 130
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          18
+        ],
+        "id": 103030,
+        "origin_country": [
+          "LB"
+        ],
+        "original_language": "en",
+        "original_name": "بردانة أنا",
+        "overview": "",
+        "popularity": 2.2142,
+        "poster_path": null,
+        "first_air_date": "2019-09-23",
+        "name": "بردانة أنا",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/lgbMRcbGAbLr6LxF4wi514TpFpj.jpg",
+        "genre_ids": [
+          80,
+          18
+        ],
+        "id": 103051,
+        "origin_country": [
+          "IN"
+        ],
+        "original_language": "hi",
+        "original_name": "पाताल लोक",
+        "overview": "",
+        "popularity": 5.5166,
+        "poster_path": "/duaaazbB49iKK4TMvekR3fQIVhU.jpg",
+        "first_air_date": "2020-05-15",
+        "name": "पाताल लोक",
+        "vote_average": 7.395,
+        "vote_count": 105
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/bvMfrM7FsG7r93JnBhSFv2bSXDv.jpg",
+        "genre_ids": [
+          9648,
+          18
+        ],
+        "id": 103094,
+        "origin_country": [
+          "RU"
+        ],
+        "original_language": "ru",
+        "original_name": "Ничья земля",
+        "overview": "",
+        "popularity": 0.4956,
+        "poster_path": "/9NejRbCi3gvctmqQD20ghkdRDCv.jpg",
+        "first_air_date": "2020-03-02",
+        "name": "Ничья земля",
+        "vote_average": 7,
+        "vote_count": 2
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/smUqQZKlY6fJTLzHVyrRi96wRGD.jpg",
+        "genre_ids": [
+          10759,
+          10765,
+          18,
+          10762
+        ],
+        "id": 6297,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "ジャッカー電撃隊",
+        "overview": "",
+        "popularity": 4.5,
+        "poster_path": "/w95PnTeDGrnFcMotYxQ02P3koLL.jpg",
+        "first_air_date": "1977-04-02",
+        "name": "ジャッカー電撃隊",
+        "vote_average": 8.2,
+        "vote_count": 6
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/oiMRPWApEMxiR6T3SwhvTIwBQx0.jpg",
+        "genre_ids": [
+          18,
+          9648
+        ],
+        "id": 137021,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "私の正しいお兄ちゃん",
+        "overview": "",
+        "popularity": 0.4863,
+        "poster_path": "/kV0FdN1sWTOnjJXY6e9XhFng8Qb.jpg",
+        "first_air_date": "2021-10-15",
+        "name": "私の正しいお兄ちゃん",
+        "vote_average": 5.5,
+        "vote_count": 4
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/qVNACrSwu8RCgf9loLKfTv0mDeq.jpg",
+        "genre_ids": [
+          18,
+          10759,
+          10765
+        ],
+        "id": 137040,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "택배기사",
+        "overview": "تدور أحداث الدراما في عام 2071 ، حيث تلوث الهواء السام دمر العالم. نجا حوالي 1% فقط من السكان وتوجد الآن طبقة اجتماعية صارمة. نادرًا ما يغادر الناس منازلهم ، وعندما يفعلون ذلك ، يرتدون أقنعة واقية من الغازات بسبب تلوث الهواء. يعتمد المواطنون بشكل كبير على خدمة توصيل الطرود لتلبية احتياجاتهم. يقوم سائقو التوصيل ، المعروفون باسم الفرسان ، بتوصيل الطرود وحمايتهم أيضًا من اللصوص. سيلعب الممثل “كيم وو بين” دور فارس التسليم الأسطوري 5-8.",
+        "popularity": 2.9984,
+        "poster_path": "/wIKiHmR5vYDhzyuX9LIlsisCJBz.jpg",
+        "first_air_date": "2023-05-12",
+        "name": "الفارس الأسود",
+        "vote_average": 7.347,
+        "vote_count": 285
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/fNA0mMdHlRwVrQSRlYONmSAO8Su.jpg",
+        "genre_ids": [
+          18,
+          9648
+        ],
+        "id": 219971,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "The Agency: Central Intelligence",
+        "overview": "",
+        "popularity": 10.3437,
+        "poster_path": "/fDZgOeTiplrl0skvK6IIyejHLQF.jpg",
+        "first_air_date": "2024-12-01",
+        "name": "The Agency: Central Intelligence",
+        "vote_average": 7.133,
+        "vote_count": 195
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/nOGPxfYqd0f3oeFGGinpDOP68MQ.jpg",
+        "genre_ids": [
+          18,
+          80,
+          9648,
+          10759
+        ],
+        "id": 220074,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "재벌X형사",
+        "overview": "يتحد شرطي من عائلة ثرية مع محقق جريء للقضاء على المجرمين بلمسة من الثروة والكثير من الذكاء.",
+        "popularity": 3.3786,
+        "poster_path": "/wBsBzdnVwsVOryoXkWb2p2i57rl.jpg",
+        "first_air_date": "2024-01-26",
+        "name": "الشرطي المتباهي",
+        "vote_average": 7.784,
+        "vote_count": 37
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/hnIyLrGlmi2FKME4nizPgjpZNGm.jpg",
+        "genre_ids": [
+          18,
+          9648,
+          80
+        ],
+        "id": 220089,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "좋거나 나쁜 동재",
+        "overview": "",
+        "popularity": 2.1856,
+        "poster_path": "/zURLAmFZ0y8qs0VfbpK0xtLjMt3.jpg",
+        "first_air_date": "2024-10-10",
+        "name": "좋거나 나쁜 동재",
+        "vote_average": 8,
+        "vote_count": 7
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/coaDC10hvXSvj3eZ8RKp27nemUU.jpg",
+        "genre_ids": [
+          9648,
+          16,
+          18,
+          80
+        ],
+        "id": 34674,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "マスターキートン",
+        "overview": "",
+        "popularity": 10.8689,
+        "poster_path": "/5oMdGZa54VbeLVMed4CioWTVjQJ.jpg",
+        "first_air_date": "1998-10-06",
+        "name": "マスターキートン",
+        "vote_average": 7.1,
+        "vote_count": 19
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/ey9RcQXlp8hm0o7fFQfFza3JB5F.jpg",
+        "genre_ids": [
+          35,
+          10765,
+          80
+        ],
+        "id": 67773,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Dirk Gently's Holistic Detective Agency",
+        "overview": "",
+        "popularity": 5.9349,
+        "poster_path": "/q8oMpXPEAUJJ0KztsRs5K51T2lo.jpg",
+        "first_air_date": "2016-10-22",
+        "name": "Dirk Gently's Holistic Detective Agency",
+        "vote_average": 7.7,
+        "vote_count": 871
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/hWHFXzgKs6E2JzHdN1fIJETNIo.jpg",
+        "genre_ids": [
+          80,
+          18
+        ],
+        "id": 67640,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "ON 異常犯罪捜査官・藤堂比奈子",
+        "overview": "",
+        "popularity": 0.848,
+        "poster_path": "/lgUmLnrUE8ccXnJUYhqR7EAq8e3.jpg",
+        "first_air_date": "2016-07-12",
+        "name": "ON 異常犯罪捜査官・藤堂比奈子",
+        "vote_average": 7,
+        "vote_count": 3
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/Ae2LKt7lEPNw2IN1xHIzzDwhy.jpg",
+        "genre_ids": [
+          18,
+          80
+        ],
+        "id": 67716,
+        "origin_country": [
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "National Treasure",
+        "overview": "",
+        "popularity": 1.4116,
+        "poster_path": "/hIlXvv5sn7TFOGRQOnPWJ2HxMZS.jpg",
+        "first_air_date": "2016-09-20",
+        "name": "National Treasure",
+        "vote_average": 6.449,
+        "vote_count": 39
+      }
+    ],
+    "total_pages": 2730,
+    "total_results": 54585
+  },
+  "videos": {
+    "results": []
+  }
+}
