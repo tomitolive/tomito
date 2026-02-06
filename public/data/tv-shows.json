@@ -1,0 +1,433 @@
+[
+  {
+    "adult": false,
+    "backdrop_path": "/8zbAoryWbtH0DKdev8abFAjdufy.jpg",
+    "genre_ids": [
+      10765,
+      9648,
+      10759
+    ],
+    "id": 66732,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Stranger Things",
+    "overview": "عقب اختفاء صبي من بلدة صغيرة، يكشف أهل البلدة عن لغز ينطوي على تجارب سريّة وقوًى مرعبة خارقة للطبيعة وفتاة صغيرة غريبة الأطوار.",
+    "popularity": 304.4312,
+    "poster_path": "/uOOtwVbSr4QDjAGIifLDwpb2Pdl.jpg",
+    "first_air_date": "2016-07-15",
+    "name": "Stranger Things",
+    "vote_average": 8.581,
+    "vote_count": 20539
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/ro0tlgnsco4SwbdAgmscLkSlMSL.jpg",
+    "genre_ids": [
+      18,
+      9648,
+      10765
+    ],
+    "id": 1622,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Supernatural",
+    "overview": "منذ الصغر، خسر سام ودين وينشستر أمهما لقوة خارقة غامضة وشيطانية. وفي وقت لاحق، رباهم والدهم ليكونوا جنودا. علمهم عن الشر الخارق الذي يعيش في الزوايا المظلمة وعلى الطرق الخلفية في أمريكا ... وعلمهم كيف يقتلونها. الآن ، يخترق الأخوة وينتشيستر البلاد في  تشيفي إمبالا موديل 67، ويقاتلون كل نوع من التهديدات الخارقة التي يواجهونها على طول الطريق.",
+    "popularity": 269.3925,
+    "poster_path": "/u40gJarLPlIkwouKlzGdobQOV9k.jpg",
+    "first_air_date": "2005-09-13",
+    "name": "خارق للطبيعة",
+    "vote_average": 8.305,
+    "vote_count": 8206
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/obtdxPgmfykYwVnvuYXC5f2xKlQ.jpg",
+    "genre_ids": [
+      80,
+      18,
+      9648
+    ],
+    "id": 2734,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Law & Order: Special Victims Unit",
+    "overview": "في نظام العدالة الجنائية، تعتبر الجرائم الجنسية شنيعة بشكل خاص. في مدينة نيويورك، المحققون المتخصصون الذين يحققون في هذه الجنايات الشريرة هم أعضاء فريق من النخبة يعرف باسم وحدة الضحايا الخاصة. هذه قصصهم.",
+    "popularity": 242.8383,
+    "poster_path": "/uzfP3ILGEXhSbhfCOsgCDZW7ojk.jpg",
+    "first_air_date": "1999-09-20",
+    "name": "القانون والنظام: وحدة الضحايا الخاصة",
+    "vote_average": 7.938,
+    "vote_count": 4113
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/6iNWfGVCEfASDdlNb05TP5nG0ll.jpg",
+    "genre_ids": [
+      80,
+      18,
+      35
+    ],
+    "id": 79744,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "The Rookie",
+    "overview": "يحاول (جون نولان) السير في بداية جديدة في حياته بعد تعرضه لحادثة كبيرة، حيث يسعى للانضمام إلى شرطة لوس أنجلوس لتحقيق أحلامه، ولكنه يعاني من التجاهل من الجميع ظنًا منهم أنه يعاني من أزمة منتصف العمر.",
+    "popularity": 219.4456,
+    "poster_path": "/t3vSMQWjQkEXCE9f912esWAW5vF.jpg",
+    "first_air_date": "2018-10-16",
+    "name": "المبتدئ",
+    "vote_average": 8.529,
+    "vote_count": 2935
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/6umsRLI7t0ydFwCl0JNEIO0q2LH.jpg",
+    "genre_ids": [
+      18
+    ],
+    "id": 91239,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Bridgerton",
+    "overview": "يبحث ثمانية أشقّاء مترابطين من عائلة \"بريدجرتون\" عن الحبّ والسعادة في مجتمع \"لندن\" الراقي.",
+    "popularity": 218.134,
+    "poster_path": "/uXTg565ahu9RwonCX1V2Hex1NU6.jpg",
+    "first_air_date": "2020-12-25",
+    "name": "بريدجرتون",
+    "vote_average": 8.066,
+    "vote_count": 3129
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/jIArNHIekrCSVgdMbKPAXpPY03Y.jpg",
+    "genre_ids": [
+      10751,
+      16,
+      35
+    ],
+    "id": 456,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "The Simpsons",
+    "overview": "مغامرات ساخرة لعائلة متوسطة الدخل في مدينة سبرينقفيلدز الأمريكية  (للكبار فقط).",
+    "popularity": 209.9149,
+    "poster_path": "/voLbSUAVu1RfZWx0qeTFqVAixIO.jpg",
+    "first_air_date": "1989-12-17",
+    "name": "آل سيمبسون",
+    "vote_average": 8.013,
+    "vote_count": 10565
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/7mkUu1F2hVUNgz24xO8HPx0D6mK.jpg",
+    "genre_ids": [
+      18,
+      10765,
+      10759
+    ],
+    "id": 224372,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "A Knight of the Seven Kingdoms",
+    "overview": "تدور الأحداث في زمن لا يزال فيه سلالة تارجارين تسيطر على العرش الحديدي، وذكرى آخر تنين لم تغب بعد عن الذاكرة الحية. تنتظر الأقدار العظيمة، والأعداء الأقوياء، والمغامرات الخطيرة هؤلاء الأصدقاء الذين لا مثيل لهم والذين لا يمكن توقعهم.",
+    "popularity": 206.1322,
+    "poster_path": "/lMDqItxQA6e34ntk02E23RtHWyL.jpg",
+    "first_air_date": "2026-01-18",
+    "name": "فارس من الممالك السبع",
+    "vote_average": 8.1,
+    "vote_count": 180
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/tc7canPSAn2X14hYi6Rl3gZm1o4.jpg",
+    "genre_ids": [
+      80,
+      18
+    ],
+    "id": 549,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Law & Order",
+    "overview": "في حالات مستمدة من الأحداث الراهنة، يقوم رجال الشرطة بالتحقيق في جرائم خطيرة وغالباً ما تكون قاتلة، حيث يقومون بتحليل الأدلة واستجواب المشتبه بهم حتى يتم اعتقال شخص ما. ثم يقوم مكتب الادعاء ببناء قضية لإدانة الجاني من خلال إثبات إدانته بما يفوق الشك العادل. يعمل هذان الفريقان المتخصصان معًا على التنقل في جميع جوانب النظام القضائي الجنائي المعقد لجعل نيويورك مكانًا أكثر أمانًا.",
+    "popularity": 198.9144,
+    "poster_path": "/haJ9eHytVO3H3JooMJG1DiWwDNm.jpg",
+    "first_air_date": "1990-09-13",
+    "name": "القانون ونظام",
+    "vote_average": 7.345,
+    "vote_count": 663
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/jP0Rhj9OTPDAwQlHQwOLFDdeE8t.jpg",
+    "genre_ids": [
+      18
+    ],
+    "id": 1416,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Grey's Anatomy",
+    "overview": "الحياة الشخصية والمهنية لمجموعة من الأطباء في مستشفى - قراي سلون - في سياتل، الولايات المتحدة.",
+    "popularity": 194.4017,
+    "poster_path": "/hjJkrLXhWvGHpLeLBDFznpBTY1S.jpg",
+    "first_air_date": "2005-03-27",
+    "name": "تشريح غراي",
+    "vote_average": 8.21,
+    "vote_count": 10763
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/cIgHBLTMbcIkS0yvIrUUVVKLdOz.jpg",
+    "genre_ids": [
+      10759,
+      10765
+    ],
+    "id": 106379,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Fallout",
+    "overview": "سلسلة Fallout مقتبسة عن واحدة من أعظمِ ألعاب الفيديو على الإطلاق تتناول موضوع ما يقتنيه الفرد أو لا يقتنيه، في عالم لم يتبقّ فيه شيئ. بعد مئتي عام على نهاية العالم، أجبرت قاطنة مسالمة في أحد الملاجئ على العودة إلى السطح، وكم كانت صدمتها كبيرة حين رأت الأرض القاحلة التي في انتظارها.",
+    "popularity": 188.2399,
+    "poster_path": "/ayfqD7hXWhKS1AFVy7Bkp1AnrEJ.jpg",
+    "first_air_date": "2024-04-10",
+    "name": "Fallout",
+    "vote_average": 8.144,
+    "vote_count": 2501
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/jbTqU6BJMufoMnPSlO4ThrcXs3Y.jpg",
+    "genre_ids": [
+      16,
+      35
+    ],
+    "id": 1434,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Family Guy",
+    "overview": "عائلة قريفن المُختلة. تتكون من الاب بيتر المستهتر وزوجته لويس التي تعاني مع اطفالها الثلاث. الطفل ستيوي - عبقري و سادي عازم على قتل أمه والسيطرة على العالم، الابنه ميق - أكثر الفتيات غير شعبية في المدينة، الابن كريس - ليس ذكيا ابدا لكن لديه شغف بالأفلام. و العضو الأخير في العائلة هو برايان - كلب يتحدث وأكثر من مجرد حيوان أليف.",
+    "popularity": 179.0993,
+    "poster_path": "/9UMBs5ijkwlcnEdZijDvpFV59ti.jpg",
+    "first_air_date": "1999-01-31",
+    "name": "رجل العائلة",
+    "vote_average": 7.39,
+    "vote_count": 4784
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/gmECX1DvFgdUPjtio2zaL8BPYPu.jpg",
+    "genre_ids": [
+      16,
+      10759,
+      10765
+    ],
+    "id": 95479,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "呪術廻戦",
+    "overview": "إيتادوري يوجي فتى يملك قوة جسدية هائلة، لكنّه يعيش حياة مدرسية عادية تمامًا. في أحد الأيّام، ومن أجل إنقاذ صديق هاجمته لعنة، يأكل إصبع طيفٍ ذو وجهين ويمتص اللعنة. وهنا تبدأ قصة فتى يصبح لعنة كي يطرد لعنة تحت إشراف أقوى مستعمل جوجيتسو، غوجو ساتورو.",
+    "popularity": 177.8257,
+    "poster_path": "/feS8k6Wy8b0mLGzJLwmEyVkZ9xx.jpg",
+    "first_air_date": "2020-10-03",
+    "name": "JUJUTSU KAISEN",
+    "vote_average": 8.6,
+    "vote_count": 4165
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/luUTaPpTBM8BjP4wgCLxNIPkx6k.jpg",
+    "genre_ids": [
+      10759,
+      18
+    ],
+    "id": 19530,
+    "origin_country": [
+      "TW",
+      "CN"
+    ],
+    "original_language": "zh",
+    "original_name": "霹靂布袋戲",
+    "overview": "",
+    "popularity": 168.9939,
+    "poster_path": "/sBVfyRYPmKSARRTodsTbwHqgcRA.jpg",
+    "first_air_date": "1988-06-01",
+    "name": "霹靂布袋戲",
+    "vote_average": 6.9,
+    "vote_count": 7
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/4AXxajuAz9tHAOe6h5zDg8z1X2s.jpg",
+    "genre_ids": [
+      80,
+      18
+    ],
+    "id": 1911,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Bones",
+    "overview": "تدور أحداثه حول مجموعة من الجرائم، حيث يقوم مجموعة من المحققين الفيدراليين بالتحقيق في كل جرائم القتل، ودراسة تفاصيلها الدقيقة، ويكتشفوا سبب القتل عن طريق عظام الضحايا.",
+    "popularity": 148.79,
+    "poster_path": "/eyTu5c8LniVciRZIOSHTvvkkgJa.jpg",
+    "first_air_date": "2005-09-13",
+    "name": "عظام",
+    "vote_average": 8.198,
+    "vote_count": 3390
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/zZqpAXxVSBtxV9qPBcscfXBcL2w.jpg",
+    "genre_ids": [
+      10765,
+      18,
+      10759
+    ],
+    "id": 1399,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Game of Thrones",
+    "overview": "تتقاتل سبع عائلات نبيلة من أجل السيطرة على أرض - ويستيروس - الأسطورية. الاحتكاك بين العوائل يؤدي إلى حرب واسعة النطاق.  في حين يستيقظ الشر القديم في أقصى الشمال. وفي خضم الحرب، نظام عسكري مهمَل - حرس الليل - هم كل ما يقف بين عالم الإنسان والأهوال الجليدية.",
+    "popularity": 142.338,
+    "poster_path": "/ymlP99B7EQCJbJcdsQFtnh9ADlF.jpg",
+    "first_air_date": "2011-04-17",
+    "name": "لعبة العروش",
+    "vote_average": 8.5,
+    "vote_count": 26208
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/nn3SuLTO4hum8yAxaY4ql8h6kRk.jpg",
+    "genre_ids": [
+      80,
+      18,
+      10759
+    ],
+    "id": 4614,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "NCIS",
+    "overview": "تتناول حلقات المسلسل قصة العديد من المخاطر التي يتعرض لها العملاء السريين التابعين لمكتب العمليات الخاصة، والذي يتوجب عليهم التخفي الدائم في عملهم عن طريق استخدام هويات مزيفة للإيقاع بالخارجين عن القانون والذين يمثلون خطرا وتهديدا كبيرا على الأمن القومي.",
+    "popularity": 142.2632,
+    "poster_path": "/mBcu8d6x6zB1el3MPNl7cZQEQ31.jpg",
+    "first_air_date": "2003-09-23",
+    "name": "إن سي آي أس",
+    "vote_average": 7.622,
+    "vote_count": 2449
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/lDmFwAaHL1kXnAfZeUTieAdUTko.jpg",
+    "genre_ids": [
+      10765,
+      10759,
+      10751,
+      18
+    ],
+    "id": 235685,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "The Pendragon Cycle: Rise of the Merlin",
+    "overview": "",
+    "popularity": 138.0783,
+    "poster_path": "/gUooqhhzLVwDuyUZpZlscT9IzXY.jpg",
+    "first_air_date": "2026-01-22",
+    "name": "The Pendragon Cycle: Rise of the Merlin",
+    "vote_average": 8.429,
+    "vote_count": 21
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/r0Q6eeN9L1ORL9QsV0Sg8ZV3vnv.jpg",
+    "genre_ids": [
+      18
+    ],
+    "id": 1408,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "House",
+    "overview": "(جريجوري هاوس) طبيبٌ عبقريٌ غريبُ الأطوار، يتعامل مع الحالات ويفكر في احتمالاتها بطريقةٍ مشابهةٍ لشخصية شيرلوك هولمز. يترأس هاوس فريقًا من الأطباء بمستشفى (برينستون بلينزبورو) بولاية نيوجيرسي، حيث توضح كل حلقة الأحداث التي تقود إلى ظهور أعراض المرض على المريض الرئيسي بالحلقة. وترصد الحلقات محاولات الفريق الذي يترأسه الدكتور هاوس في الوصول إلي تشخيصٍ للحالة، حيث من المعروف عن هذا الفريق أنه يتسلم الحالات التي أخفقت جميع المستشفيات الأخري معها.",
+    "popularity": 131.6467,
+    "poster_path": "/w2ixtWu3QU3hUtDzmaeR1ebd3xF.jpg",
+    "first_air_date": "2004-11-16",
+    "name": "هاوس",
+    "vote_average": 8.578,
+    "vote_count": 7317
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/qVmgq1KXBp6BF2EqYPPaUG9iUGy.jpg",
+    "genre_ids": [
+      80,
+      18,
+      9648
+    ],
+    "id": 764,
+    "origin_country": [
+      "GB"
+    ],
+    "original_language": "en",
+    "original_name": "Midsomer Murders",
+    "overview": "",
+    "popularity": 129.5836,
+    "poster_path": "/pz7tsWxe0TTdfJnWPjZAEnrSl5M.jpg",
+    "first_air_date": "1997-03-23",
+    "name": "Midsomer Murders",
+    "vote_average": 7.503,
+    "vote_count": 339
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/hBSSm06lrxjhbCKhCUiRN8AGBQG.jpg",
+    "genre_ids": [
+      10765,
+      10759,
+      18
+    ],
+    "id": 4604,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Smallville",
+    "overview": "يرصد المسلسل القدرات العبقرية والعديدة لدي كلارك كينت (طوم ويلنج) حيث يقوم بعمليات إنقاذ واسعة تثير الشكوك حوله في بلدة سمولفيل. كلارك كينت سريع للغاية ويقال أنه يعرف طريقه للمشاكل جيدًا. كلارك كينت وُجد من قبل مارثا كينت (أنيت أوتول) وجوناثان كينت (جون شنايدر) في يوم لا يُنسى وتم تبنيه من قبل مارثا وجوناثان. ولكن هناك من ينبش وراء أصل كلارك كينت ويسعى بكل ما أوتي من قوة من أجل كشف سره.",
+    "popularity": 121.5291,
+    "poster_path": "/azU5zRPEaiACTY6kAlEddIe8ypk.jpg",
+    "first_air_date": "2001-10-16",
+    "name": "سمولفيل",
+    "vote_average": 8.184,
+    "vote_count": 4341
+  }
+]
