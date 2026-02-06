@@ -1,0 +1,956 @@
+{
+  "adult": false,
+  "backdrop_path": "/6iNWfGVCEfASDdlNb05TP5nG0ll.jpg",
+  "created_by": [
+    {
+      "id": 67855,
+      "credit_id": "5b12fbf10e0a263dbb0089e5",
+      "name": "Alexi Hawley",
+      "original_name": "Alexi Hawley",
+      "gender": 2,
+      "profile_path": "/eIyGbyHTfsIxEOPlD5lByW9A80y.jpg"
+    }
+  ],
+  "episode_run_time": [],
+  "first_air_date": "2018-10-16",
+  "genres": [
+    {
+      "id": 80,
+      "name": "جريمة"
+    },
+    {
+      "id": 18,
+      "name": "دراما"
+    },
+    {
+      "id": 35,
+      "name": "كوميديا"
+    }
+  ],
+  "homepage": "https://abc.com/show/ada4e644-ce0b-4590-9dac-b04ce0a446e8",
+  "id": 79744,
+  "in_production": true,
+  "languages": [
+    "en"
+  ],
+  "last_air_date": "2026-02-02",
+  "last_episode_to_air": {
+    "id": 6834358,
+    "name": "الحلقة 5",
+    "overview": "",
+    "vote_average": 9,
+    "vote_count": 9,
+    "air_date": "2026-02-02",
+    "episode_number": 5,
+    "episode_type": "standard",
+    "production_code": "",
+    "runtime": 43,
+    "season_number": 8,
+    "show_id": 79744,
+    "still_path": "/sQdg4IKl1XEQ8uMK6HBBXLgs6Hz.jpg"
+  },
+  "name": "المبتدئ",
+  "next_episode_to_air": {
+    "id": 6834368,
+    "name": "الحلقة 6",
+    "overview": "",
+    "vote_average": 0,
+    "vote_count": 0,
+    "air_date": "2026-02-09",
+    "episode_number": 6,
+    "episode_type": "standard",
+    "production_code": "",
+    "runtime": null,
+    "season_number": 8,
+    "show_id": 79744,
+    "still_path": null
+  },
+  "networks": [
+    {
+      "id": 2,
+      "logo_path": "/2uy2ZWcplrSObIyt4x0Y9rkG6qO.png",
+      "name": "ABC",
+      "origin_country": "US"
+    }
+  ],
+  "number_of_episodes": 144,
+  "number_of_seasons": 8,
+  "origin_country": [
+    "US"
+  ],
+  "original_language": "en",
+  "original_name": "The Rookie",
+  "overview": "يحاول (جون نولان) السير في بداية جديدة في حياته بعد تعرضه لحادثة كبيرة، حيث يسعى للانضمام إلى شرطة لوس أنجلوس لتحقيق أحلامه، ولكنه يعاني من التجاهل من الجميع ظنًا منهم أنه يعاني من أزمة منتصف العمر.",
+  "popularity": 219.4456,
+  "poster_path": "/t3vSMQWjQkEXCE9f912esWAW5vF.jpg",
+  "production_companies": [
+    {
+      "id": 19366,
+      "logo_path": "/vOH8dyQhLK01pg5fYkgiS31jlFm.png",
+      "name": "ABC Studios",
+      "origin_country": "US"
+    },
+    {
+      "id": 8147,
+      "logo_path": "/q6HOAdSNgCbeOqwoMVRc6REgbXF.png",
+      "name": "Entertainment One",
+      "origin_country": "CA"
+    },
+    {
+      "id": 28523,
+      "logo_path": "/zzULw9w7d50BHR8fE30PZT3zJ1D.png",
+      "name": "Lionsgate Television",
+      "origin_country": "US"
+    },
+    {
+      "id": 236613,
+      "logo_path": "/9DTggoZARHzATCRewGRs9XSNOWP.png",
+      "name": "ABC Signature",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "CA",
+      "name": "Canada"
+    },
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "seasons": [
+    {
+      "air_date": "2018-10-16",
+      "episode_count": 20,
+      "id": 104126,
+      "name": "الموسم 1",
+      "overview": "رجل في الخامسة والأربعين من عمره تدفعه حادثة مصيرية إلى تحقيق حلمه لأن يصبح شرطيًّا، لكن يتعين عليه أن يثبت نفسه لرؤسائه في شرطة \"لوس أنجلوس\" ويصل لمستوى توقعاتهم.",
+      "poster_path": "/c5tWybs91GuwEFOucnj7yZu2YLu.jpg",
+      "season_number": 1,
+      "vote_average": 8.1
+    },
+    {
+      "air_date": "2019-09-29",
+      "episode_count": 20,
+      "id": 127101,
+      "name": "الموسم 2",
+      "overview": "تزداد المخاطر أكثر من أي وقت مضى بالنسبة إلى \"نولان\" وزملائه المبتدئين في شرطة \"لوس أنجلوس\" وهم يحاربون الجريمة، ويخوضون العلاقات، ويواصلون تدريبهم أثناء العمل.",
+      "poster_path": "/arPUIveaNTdlZeSrOPrgof6UvhQ.jpg",
+      "season_number": 2,
+      "vote_average": 8.2
+    },
+    {
+      "air_date": "2021-01-03",
+      "episode_count": 14,
+      "id": 173119,
+      "name": "الموسم 3",
+      "overview": "مع انتهاء فترة تدريبهم، يتعين على \"نولان\" وزملائه المبتدئين في فرقة العمليات مواجهة التحديات المعقدة في حياتهم المهنية والشخصية.",
+      "poster_path": "/6hChiX0vIjWY4y2kz1WndHVMsDu.jpg",
+      "season_number": 3,
+      "vote_average": 7.5
+    },
+    {
+      "air_date": "2021-09-26",
+      "episode_count": 22,
+      "id": 202438,
+      "name": "الموسم 4",
+      "overview": "يتعين على الشرطي \"نولان\" وفرقته في شرطة \"لوس أنجلوس\" مواجهة أكبر تحدياتهم حتى الآن بينما يحاولون حلّ جرائم معقدة تتضمن فريقهم الخاص.",
+      "poster_path": "/gSGj4zhuFllpZEkHGdsBMV2BGsq.jpg",
+      "season_number": 4,
+      "vote_average": 7.9
+    },
+    {
+      "air_date": "2022-09-25",
+      "episode_count": 22,
+      "id": 297660,
+      "name": "الموسم 5",
+      "overview": "",
+      "poster_path": "/cofQdlJ0voWzWlpisBqfuRChTbf.jpg",
+      "season_number": 5,
+      "vote_average": 8
+    },
+    {
+      "air_date": "2024-02-20",
+      "episode_count": 10,
+      "id": 366041,
+      "name": "الموسم 6",
+      "overview": "",
+      "poster_path": "/wbeqBUFydztHDQ4h7dZqnknh5HE.jpg",
+      "season_number": 6,
+      "vote_average": 8.9
+    },
+    {
+      "air_date": "2025-01-07",
+      "episode_count": 18,
+      "id": 427613,
+      "name": "الموسم 7",
+      "overview": "",
+      "poster_path": "/mVIHgmRmzc5yowuw2JDDbRaOzly.jpg",
+      "season_number": 7,
+      "vote_average": 8.7
+    },
+    {
+      "air_date": "2026-01-06",
+      "episode_count": 18,
+      "id": 455290,
+      "name": "الموسم 8",
+      "overview": "",
+      "poster_path": "/70kTz0OmjjZe7zHvIDrq2iKW7PJ.jpg",
+      "season_number": 8,
+      "vote_average": 9.1
+    }
+  ],
+  "spoken_languages": [
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Returning Series",
+  "tagline": "",
+  "type": "Scripted",
+  "vote_average": 8.529,
+  "vote_count": 2935,
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 51797,
+        "known_for_department": "Acting",
+        "name": "ناثان فيليون",
+        "original_name": "Nathan Fillion",
+        "popularity": 5.679,
+        "profile_path": "/q31mXXgnN5PsuIjEqaaAPvBDvHc.jpg",
+        "character": "John Nolan",
+        "credit_id": "5b12f9100e0a263dd9007baf",
+        "order": 0
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1234713,
+        "known_for_department": "Acting",
+        "name": "Melissa O'Neil",
+        "original_name": "Melissa O'Neil",
+        "popularity": 4.5099,
+        "profile_path": "/9KqgbNttW79hAP9xQ5Ffd2fjGk.jpg",
+        "character": "Lucy Chen",
+        "credit_id": "5b12fcab0e0a263dbb008a88",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 74409,
+        "known_for_department": "Acting",
+        "name": "Eric Winter",
+        "original_name": "Eric Winter",
+        "popularity": 3.9897,
+        "profile_path": "/tDQSZv5rHm4s2hwwVWpp5EMQ0w9.jpg",
+        "character": "Tim Bradford",
+        "credit_id": "5b12fc8792514167070073f2",
+        "order": 2
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 134180,
+        "known_for_department": "Acting",
+        "name": "Alyssa Diaz",
+        "original_name": "Alyssa Diaz",
+        "popularity": 3.1061,
+        "profile_path": "/ihLNjM4E1Fjx5h4l8EL6r3iDRTa.jpg",
+        "character": "Angela Lopez",
+        "credit_id": "5b12fd3892514167120070ed",
+        "order": 4
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 202952,
+        "known_for_department": "Acting",
+        "name": "Mekia Cox",
+        "original_name": "Mekia Cox",
+        "popularity": 3.0872,
+        "profile_path": "/5ts6dZstTpGexCvHrLhfTIqbZuV.jpg",
+        "character": "Nyla Harper",
+        "credit_id": "5e568345a6d93100165b0278",
+        "order": 5
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 55755,
+        "known_for_department": "Acting",
+        "name": "Richard T. Jones",
+        "original_name": "Richard T. Jones",
+        "popularity": 3.2974,
+        "profile_path": "/hdko2C45Wr5G03Z8JwGjWMynP84.jpg",
+        "character": "Wade Grey",
+        "credit_id": "5b12fcfa92514166e900758c",
+        "order": 7
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 11023,
+        "known_for_department": "Acting",
+        "name": "شون أشمور",
+        "original_name": "Shawn Ashmore",
+        "popularity": 4.2986,
+        "profile_path": "/tXA1gFtsp9HWnzlQsaZSoZC8L4r.jpg",
+        "character": "Wesley Evers",
+        "credit_id": "5ca560970e0a261b8fb4fd8d",
+        "order": 10
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 20381,
+        "known_for_department": "Acting",
+        "name": "Jenna Dewan",
+        "original_name": "Jenna Dewan",
+        "popularity": 3.1432,
+        "profile_path": "/8zZkN1ewGxN8MHiqB8lRmBle8yf.jpg",
+        "character": "Bailey Nune",
+        "credit_id": "615dc8c9eb14fa002a7b4813",
+        "order": 11
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1600095,
+        "known_for_department": "Acting",
+        "name": "Lisseth Chavez",
+        "original_name": "Lisseth Chavez",
+        "popularity": 2.545,
+        "profile_path": "/fFnGQVFGAtTZcmLAr7XuUhvtjEW.jpg",
+        "character": "Celina Juarez",
+        "credit_id": "633937400b5fd60090179a3d",
+        "order": 12
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1411745,
+        "known_for_department": "Acting",
+        "name": "Deric Augustine",
+        "original_name": "Deric Augustine",
+        "popularity": 4.312,
+        "profile_path": "/lJNKxDavwDrGhingpGpzlKfd6I9.jpg",
+        "character": "Miles Penn",
+        "credit_id": "677e487a044b6ca6764e5b87",
+        "order": 13
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 51797,
+        "known_for_department": "Acting",
+        "name": "ناثان فيليون",
+        "original_name": "Nathan Fillion",
+        "popularity": 5.679,
+        "profile_path": "/q31mXXgnN5PsuIjEqaaAPvBDvHc.jpg",
+        "credit_id": "5b12fe170e0a263dd1007c10",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 67855,
+        "known_for_department": "Writing",
+        "name": "Alexi Hawley",
+        "original_name": "Alexi Hawley",
+        "popularity": 0.9898,
+        "profile_path": "/eIyGbyHTfsIxEOPlD5lByW9A80y.jpg",
+        "credit_id": "5d79eb9c0d5d850012dd48be",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 2409164,
+        "known_for_department": "Production",
+        "name": "Michelle Chapman",
+        "original_name": "Michelle Chapman",
+        "popularity": 0.0985,
+        "profile_path": null,
+        "credit_id": "5d79ebc4af43243b21968b71",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 6048,
+        "known_for_department": "Production",
+        "name": "مارك غوردون",
+        "original_name": "Mark Gordon",
+        "popularity": 0.9298,
+        "profile_path": "/lATsud5NyaXaKE5p8H1kEkUsbWN.jpg",
+        "credit_id": "5d79ebb9069f0e62d7316a50",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2409166,
+        "known_for_department": "Production",
+        "name": "Bill Norcross",
+        "original_name": "Bill Norcross",
+        "popularity": 0.1118,
+        "profile_path": null,
+        "credit_id": "5d79ebd7069f0e14703187ad",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2409170,
+        "known_for_department": "Production",
+        "name": "Jon Steinberg",
+        "original_name": "Jon Steinberg",
+        "popularity": 0.0898,
+        "profile_path": null,
+        "credit_id": "5d79ec480d5d850013dd47a0",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 77202,
+        "known_for_department": "Production",
+        "name": "Robert J. Ulrich",
+        "original_name": "Robert J. Ulrich",
+        "popularity": 0.5495,
+        "profile_path": null,
+        "credit_id": "634d01fdef9d72007abb4950",
+        "department": "Production",
+        "job": "Casting"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1545977,
+        "known_for_department": "Sound",
+        "name": "Grant Conway",
+        "original_name": "Grant Conway",
+        "popularity": 0.0916,
+        "profile_path": null,
+        "credit_id": "634d06019e4586007ea4a2a3",
+        "department": "Sound",
+        "job": "Music Editor"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1648082,
+        "known_for_department": "Crew",
+        "name": "Jon Tardino",
+        "original_name": "Jon Tardino",
+        "popularity": 0.1253,
+        "profile_path": null,
+        "credit_id": "634d04f5e263bb009c4ffba9",
+        "department": "Crew",
+        "job": "Transportation Coordinator"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1197284,
+        "known_for_department": "Production",
+        "name": "Carol Kritzer",
+        "original_name": "Carol Kritzer",
+        "popularity": 0.3608,
+        "profile_path": null,
+        "credit_id": "634d0220c175b2007f81794c",
+        "department": "Production",
+        "job": "Casting"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 77200,
+        "known_for_department": "Production",
+        "name": "Eric Dawson",
+        "original_name": "Eric Dawson",
+        "popularity": 0.4046,
+        "profile_path": null,
+        "credit_id": "634d02109e4586007ea4a0f1",
+        "department": "Production",
+        "job": "Casting"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1971806,
+        "known_for_department": "Sound",
+        "name": "Jordan Gagne",
+        "original_name": "Jordan Gagne",
+        "popularity": 0.1846,
+        "profile_path": null,
+        "credit_id": "641690cc357c00007b954500",
+        "department": "Sound",
+        "job": "Original Music Composer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 67855,
+        "known_for_department": "Writing",
+        "name": "Alexi Hawley",
+        "original_name": "Alexi Hawley",
+        "popularity": 0.9898,
+        "profile_path": "/eIyGbyHTfsIxEOPlD5lByW9A80y.jpg",
+        "credit_id": "65a6b5d59bcd0f012eba97c6",
+        "department": "Crew",
+        "job": "Creator"
+      }
+    ]
+  },
+  "similar": {
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/4YGnoxiNhK3biZciyohokAzYX63.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 1596,
+        "origin_country": [
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "Bergerac",
+        "overview": "",
+        "popularity": 10.8394,
+        "poster_path": "/1ZarXE2TfNYPl1ojXWov8wuqJTY.jpg",
+        "first_air_date": "1981-10-18",
+        "name": "Bergerac",
+        "vote_average": 6.7,
+        "vote_count": 21
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/yAUMNGNqhDt017HvSg7ZzgjwbpV.jpg",
+        "genre_ids": [
+          18,
+          35,
+          10759
+        ],
+        "id": 1626,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Tequila and Bonetti",
+        "overview": "",
+        "popularity": 1.4026,
+        "poster_path": "/u1ekQHc1RByAA2CyNxz8a7Qslmb.jpg",
+        "first_air_date": "1992-01-17",
+        "name": "Tequila and Bonetti",
+        "vote_average": 6.455,
+        "vote_count": 12
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/cpdXg5n9ysVf6C5S1AbTvnObKQk.jpg",
+        "genre_ids": [
+          18,
+          80,
+          10759
+        ],
+        "id": 1654,
+        "origin_country": [
+          "CA",
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "The Sentinel",
+        "overview": "",
+        "popularity": 7.3511,
+        "poster_path": "/cj1moyLJKpmvR0fR9AqsZuXYxAm.jpg",
+        "first_air_date": "1996-03-20",
+        "name": "The Sentinel",
+        "vote_average": 7.098,
+        "vote_count": 66
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          18,
+          10766
+        ],
+        "id": 1661,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Sex, Love & Secrets",
+        "overview": "",
+        "popularity": 1.3262,
+        "poster_path": "/jfqmwlWV0BhCXAQon1YdeFTsaUj.jpg",
+        "first_air_date": "2005-09-26",
+        "name": "Sex, Love & Secrets",
+        "vote_average": 7,
+        "vote_count": 7
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/8gn8kABdGu32PXf9xWT3f0PCS60.jpg",
+        "genre_ids": [
+          35
+        ],
+        "id": 1693,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "The Bernie Mac Show",
+        "overview": "",
+        "popularity": 11.1066,
+        "poster_path": "/auTnAsA5USO1901qti1mxbUIVoE.jpg",
+        "first_air_date": "2001-11-14",
+        "name": "The Bernie Mac Show",
+        "vote_average": 6.5,
+        "vote_count": 63
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/kdBDcLmlFfaEqyWw2BJxyjZDMMh.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 1694,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "L.A. Doctors",
+        "overview": "",
+        "popularity": 4.5847,
+        "poster_path": "/mjBfHS7YSi91EzVd0r2hgFlCF6K.jpg",
+        "first_air_date": "1998-09-21",
+        "name": "L.A. Doctors",
+        "vote_average": 7,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/q1dyExNv3AaWrJ9g9sIZGIL0uXX.jpg",
+        "genre_ids": [
+          18,
+          80
+        ],
+        "id": 30948,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "The Protector",
+        "overview": "",
+        "popularity": 1.4985,
+        "poster_path": "/v3cYsLksGX1baCYtn2AQa2R5HDR.jpg",
+        "first_air_date": "2011-06-12",
+        "name": "The Protector",
+        "vote_average": 8,
+        "vote_count": 11
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/6T19aRp9zLMghZo1dTEwoNyreNZ.jpg",
+        "genre_ids": [
+          16,
+          18,
+          80,
+          9648
+        ],
+        "id": 30981,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "MONSTER",
+        "overview": "تتكلم القصة عن جرائم وشخص يقف وراها وطبيب يقع ضحيه اتهام الشرطه له بأرتكاب الجرائم الطبيب اخطأ بالماضي ولكنه لم يترك خطأه وحاول اصلاحه بعد مرور عدة سنين وافنى نفسه لكي يصلح ما اخطأ به ينجرف جرّاح أعصاب ياباني لامع في عالم الظلام حين يحاول حلّ ألغاز سلسلة من جرائم القتل تتضمّن مريضًا قد عالجه ذات يوم وأنقذ حياته.",
+        "popularity": 26.9741,
+        "poster_path": "/o38ptRl2CvMVb6HZnstFLPcveDK.jpg",
+        "first_air_date": "2004-04-07",
+        "name": "الوحش",
+        "vote_average": 8.5,
+        "vote_count": 721
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/dHMJFx5QAgNQ7BA349sk94KmFuh.jpg",
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 1721,
+        "origin_country": [
+          "US",
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "Keen Eddie",
+        "overview": "",
+        "popularity": 1.3977,
+        "poster_path": "/fpvxhAkMkK7Fb59myLDb9KoqA0z.jpg",
+        "first_air_date": "2003-06-03",
+        "name": "Keen Eddie",
+        "vote_average": 8,
+        "vote_count": 18
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/jIXDWBeCUEu0ttzjHBJC4sA8LzR.jpg",
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 1750,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Doogie Howser, M.D.",
+        "overview": "",
+        "popularity": 7.0551,
+        "poster_path": "/uNGrGq7tJ1GiKUsfnchC07l0Q2M.jpg",
+        "first_air_date": "1989-09-19",
+        "name": "Doogie Howser, M.D.",
+        "vote_average": 6.469,
+        "vote_count": 113
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/52ZwPISbTjXJznyrLmRf8lV2yoT.jpg",
+        "genre_ids": [
+          18,
+          80
+        ],
+        "id": 62864,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Touching Evil",
+        "overview": "",
+        "popularity": 1.0542,
+        "poster_path": "/3dmBxixICLqLPeXqWTR0Js3kcM1.jpg",
+        "first_air_date": "2004-03-12",
+        "name": "Touching Evil",
+        "vote_average": 6.8,
+        "vote_count": 13
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/dBh58h71ZMi7WJE4ZQr2xT9iW4i.jpg",
+        "genre_ids": [
+          18,
+          80
+        ],
+        "id": 62927,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Wicked City",
+        "overview": "",
+        "popularity": 1.8516,
+        "poster_path": "/myEcHo82olJ5HM5IC9hTCehSpIV.jpg",
+        "first_air_date": "2015-10-27",
+        "name": "Wicked City",
+        "vote_average": 5.9,
+        "vote_count": 46
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/5Bi8Ih20ukh6GJUhzvgxwZjqtdZ.jpg",
+        "genre_ids": [
+          80,
+          18,
+          9648
+        ],
+        "id": 62984,
+        "origin_country": [
+          "ES"
+        ],
+        "original_language": "es",
+        "original_name": "Los misterios de Laura",
+        "overview": "",
+        "popularity": 4.3716,
+        "poster_path": "/oiroIIo8vqepymHAYKIIlksiaPm.jpg",
+        "first_air_date": "2009-07-27",
+        "name": "Los misterios de Laura",
+        "vote_average": 7.5,
+        "vote_count": 33
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/layPSOJGckJv3PXZDIVluMq69mn.jpg",
+        "genre_ids": [
+          80,
+          18
+        ],
+        "id": 1438,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "The Wire",
+        "overview": "يستعرض المسلسل في قالب من اﻹثارة والتشويق عالم المخدرات المتشابك والمعقد والمركب في مدينة بالتيمور كما يروى من قبل تجارها ورجال الشرطة، ومشاكل كلا الطرفين.",
+        "popularity": 40.8282,
+        "poster_path": "/aA0RQBbTzxby13UeCdpdkGUtqxy.jpg",
+        "first_air_date": "2002-06-02",
+        "name": "السلك",
+        "vote_average": 8.614,
+        "vote_count": 2558
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          35
+        ],
+        "id": 1439,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Here's Lucy",
+        "overview": "",
+        "popularity": 20.2807,
+        "poster_path": "/bv5p2CZnVg3A2YaC4O2AcBcYBd8.jpg",
+        "first_air_date": "1968-09-23",
+        "name": "Here's Lucy",
+        "vote_average": 6.7,
+        "vote_count": 29
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/oenEPUQI0ZgeaBWB5dYGrzrA9gN.jpg",
+        "genre_ids": [
+          80,
+          18,
+          9648
+        ],
+        "id": 1450,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "The Closer",
+        "overview": "",
+        "popularity": 50.6934,
+        "poster_path": "/q6FhABXGf3TaYKoKNwzGAEzW7bt.jpg",
+        "first_air_date": "2005-06-13",
+        "name": "The Closer",
+        "vote_average": 7.9,
+        "vote_count": 325
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/vF2hoPhXa6OaQYDZE6C7HET2wLE.jpg",
+        "genre_ids": [
+          35
+        ],
+        "id": 1466,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Joey",
+        "overview": "",
+        "popularity": 6.2064,
+        "poster_path": "/bU5yBQsmt0CnIpi9z8zB3iL7ZHP.jpg",
+        "first_air_date": "2004-09-09",
+        "name": "جُوٍي",
+        "vote_average": 6.252,
+        "vote_count": 345
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/gTN0SAdXsDUE6SFFRo8QsJgXDIg.jpg",
+        "genre_ids": [
+          80,
+          9648,
+          18
+        ],
+        "id": 1486,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "21 Jump Street",
+        "overview": "",
+        "popularity": 12.9949,
+        "poster_path": "/9w2y0146P5EjLw63FHGWRRpqQ6v.jpg",
+        "first_air_date": "1987-04-12",
+        "name": "21 Jump Street",
+        "vote_average": 7.227,
+        "vote_count": 185
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/cfpEjMTT3BZxa7ohtK4fY7ETL81.jpg",
+        "genre_ids": [
+          18,
+          80,
+          35
+        ],
+        "id": 1527,
+        "origin_country": [
+          "CA"
+        ],
+        "original_language": "en",
+        "original_name": "Due South",
+        "overview": "",
+        "popularity": 7.4963,
+        "poster_path": "/ngXE24ItMkb258lgcjTpxs5LDtN.jpg",
+        "first_air_date": "1994-09-22",
+        "name": "Due South",
+        "vote_average": 7.6,
+        "vote_count": 77
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/w1wRvtWdT32vkrIfrWHA9FAkLQe.jpg",
+        "genre_ids": [
+          80,
+          18
+        ],
+        "id": 62753,
+        "origin_country": [
+          "NO"
+        ],
+        "original_language": "no",
+        "original_name": "Frikjent",
+        "overview": "",
+        "popularity": 1.3984,
+        "poster_path": "/ymDDBdf5j7yIe8PUwCyHKrOatuC.jpg",
+        "first_air_date": "2015-03-02",
+        "name": "Frikjent",
+        "vote_average": 7.038,
+        "vote_count": 52
+      }
+    ],
+    "total_pages": 3698,
+    "total_results": 73949
+  },
+  "videos": {
+    "results": []
+  }
+}

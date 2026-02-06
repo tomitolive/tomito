@@ -1,0 +1,764 @@
+{
+  "adult": false,
+  "backdrop_path": "/gLXibzLQ4qegvjdqDC0f8yTij2P.jpg",
+  "belongs_to_collection": {
+    "id": 1584888,
+    "name": "The Miranda Green Mysteries Collection",
+    "poster_path": "/x7pK9meJLr7l3zVQcIXDt7WdCRG.jpg",
+    "backdrop_path": "/jJay3WBCHdj4xyNQBXQhrzIlmwn.jpg"
+  },
+  "budget": 0,
+  "genres": [
+    {
+      "id": 9648,
+      "name": "غموض"
+    },
+    {
+      "id": 53,
+      "name": "إثارة"
+    },
+    {
+      "id": 28,
+      "name": "حركة"
+    }
+  ],
+  "homepage": "",
+  "id": 1310568,
+  "imdb_id": "tt22772712",
+  "origin_country": [
+    "GB"
+  ],
+  "original_language": "en",
+  "original_title": "Murder at the Embassy",
+  "overview": "",
+  "popularity": 208.9002,
+  "poster_path": "/3DBmBItPdy0A2ol59jgHhS54Lua.jpg",
+  "production_companies": [
+    {
+      "id": 10449,
+      "logo_path": "/kmtr2h5JDev9tcjhxbDVkAXFHdz.png",
+      "name": "Mini Productions",
+      "origin_country": "GB"
+    },
+    {
+      "id": 185565,
+      "logo_path": null,
+      "name": "ARI Studios",
+      "origin_country": ""
+    },
+    {
+      "id": 157172,
+      "logo_path": "/fNnKmC4ZP28Im4NaFsDwsblyVLF.png",
+      "name": "Ace Entertainment Films",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "GB",
+      "name": "United Kingdom"
+    },
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "release_date": "2025-11-14",
+  "revenue": 0,
+  "runtime": 90,
+  "spoken_languages": [
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Released",
+  "tagline": "",
+  "title": "Murder at the Embassy",
+  "video": false,
+  "vote_average": 5.5,
+  "vote_count": 30,
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 11617,
+        "known_for_department": "Acting",
+        "name": "Mischa Barton",
+        "original_name": "Mischa Barton",
+        "popularity": 2.8431,
+        "profile_path": "/j3eZsKKIz4uWdVwAvokv8GHU21w.jpg",
+        "cast_id": 1,
+        "character": "Miranda Green",
+        "credit_id": "668052aeefaa25f0a8a84bf4",
+        "order": 0
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 176227,
+        "known_for_department": "Acting",
+        "name": "Richard Dillane",
+        "original_name": "Richard Dillane",
+        "popularity": 1.0521,
+        "profile_path": "/4DVdlTFkhPlERFyFoeH6UoXb2un.jpg",
+        "cast_id": 12,
+        "character": "Robert",
+        "credit_id": "684c0f4c044ca5564e1be8ea",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 107561,
+        "known_for_department": "Acting",
+        "name": "Mido Hamada",
+        "original_name": "Mido Hamada",
+        "popularity": 1.5461,
+        "profile_path": "/iSQsrTcaMu4agVwRWfMpUTrwBzL.jpg",
+        "cast_id": 13,
+        "character": "Mamoud",
+        "credit_id": "684c0f5d1c071dcb0d3df0e7",
+        "order": 2
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 66444,
+        "known_for_department": "Acting",
+        "name": "Antonia Bernath",
+        "original_name": "Antonia Bernath",
+        "popularity": 0.9789,
+        "profile_path": "/9YuypPli7jyt8r9c65aUTRcWM8X.jpg",
+        "cast_id": 14,
+        "character": "Betty",
+        "credit_id": "684c0f69d669235de0bb4725",
+        "order": 3
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3933515,
+        "known_for_department": "Acting",
+        "name": "Kojo Attah",
+        "original_name": "Kojo Attah",
+        "popularity": 3.2445,
+        "profile_path": "/xtE8Nd5sVskymf3haYUWixFwv4g.jpg",
+        "cast_id": 15,
+        "character": "Walter",
+        "credit_id": "684c0f793f83a7a421bb4558",
+        "order": 4
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 3465587,
+        "known_for_department": "Acting",
+        "name": "Raha Rahbari",
+        "original_name": "Raha Rahbari",
+        "popularity": 0.2031,
+        "profile_path": "/l1kGnTfLMl58DXoT8x9U47fSMfb.jpg",
+        "cast_id": 16,
+        "character": "Leila",
+        "credit_id": "684c0f8493360e5c985c740d",
+        "order": 5
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 3753234,
+        "known_for_department": "Acting",
+        "name": "Kathryn McGarr",
+        "original_name": "Kathryn McGarr",
+        "popularity": 0.1491,
+        "profile_path": "/rPRfRDkNi2K9q4r7LwOgjo3KtaW.jpg",
+        "cast_id": 17,
+        "character": "Maggie Hand",
+        "credit_id": "684c0f93a5f6b5c9ab294217",
+        "order": 6
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4060106,
+        "known_for_department": "Acting",
+        "name": "Nick Harris",
+        "original_name": "Nick Harris",
+        "popularity": 2.886,
+        "profile_path": "/4fttZDK6vyksUXoGTHFqh44uFzJ.jpg",
+        "cast_id": 18,
+        "character": "Insp. Morton",
+        "credit_id": "684c0fb0d7ae5f29071ebb06",
+        "order": 7
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2334691,
+        "known_for_department": "Acting",
+        "name": "Yassine Mkhichen",
+        "original_name": "Yassine Mkhichen",
+        "popularity": 0.1666,
+        "profile_path": "/8jAnZeKgE46ADg2l3GKonps6Qa7.jpg",
+        "cast_id": 19,
+        "character": "Samir",
+        "credit_id": "684c0fbd5152def6a22942af",
+        "order": 8
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1170997,
+        "known_for_department": "Acting",
+        "name": "Josh Burdett",
+        "original_name": "Josh Burdett",
+        "popularity": 0.158,
+        "profile_path": "/pPAcPJ54OORTLhsEQ5GtPuTftEA.jpg",
+        "cast_id": 20,
+        "character": "Cristal",
+        "credit_id": "684c0fcd5cbe141884bb44d1",
+        "order": 9
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 107794,
+        "known_for_department": "Directing",
+        "name": "Stephen Shimek",
+        "original_name": "Stephen Shimek",
+        "popularity": 0.4222,
+        "profile_path": "/5Rb8SkIl0Lg2Ue63KFenzqTGI4K.jpg",
+        "credit_id": "684c0e6620c64cda6eb0d8f7",
+        "department": "Directing",
+        "job": "Director"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1522313,
+        "known_for_department": "Production",
+        "name": "Zeus Zamani",
+        "original_name": "Zeus Zamani",
+        "popularity": 1.8627,
+        "profile_path": null,
+        "credit_id": "684c0e7fb518dfdcb23df0ff",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2012759,
+        "known_for_department": "Camera",
+        "name": "Brian Vilim",
+        "original_name": "Brian Vilim",
+        "popularity": 0.1027,
+        "profile_path": null,
+        "credit_id": "684c0e8ec4906be91f294647",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2618684,
+        "known_for_department": "Writing",
+        "name": "Sebastien Semon",
+        "original_name": "Sebastien Semon",
+        "popularity": 0.2103,
+        "profile_path": "/m5o8JkVpnmm68KDYzgKePurKegc.jpg",
+        "credit_id": "684c0eaf7a1db9c21a2942b0",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2618683,
+        "known_for_department": "Writing",
+        "name": "Jerome Reygner-Kalfon",
+        "original_name": "Jerome Reygner-Kalfon",
+        "popularity": 0.1324,
+        "profile_path": null,
+        "credit_id": "684c0eb75aa37572d42945ec",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4746884,
+        "known_for_department": "Production",
+        "name": "April Kelley",
+        "original_name": "April Kelley",
+        "popularity": 0.0538,
+        "profile_path": null,
+        "credit_id": "684c0eca9ea5102d9f1ebeac",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 5502424,
+        "known_for_department": "Writing",
+        "name": "Alexandra Davison",
+        "original_name": "Alexandra Davison",
+        "popularity": 0.1095,
+        "profile_path": null,
+        "credit_id": "684c0ef2789ef510931ebdb1",
+        "department": "Production",
+        "job": "Co-Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 5502424,
+        "known_for_department": "Writing",
+        "name": "Alexandra Davison",
+        "original_name": "Alexandra Davison",
+        "popularity": 0.1095,
+        "profile_path": null,
+        "credit_id": "684c0f010ee7e0b662343c59",
+        "department": "Writing",
+        "job": "Story"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 2757166,
+        "known_for_department": "Production",
+        "name": "Sara Huxley",
+        "original_name": "Sara Huxley",
+        "popularity": 0.1241,
+        "profile_path": null,
+        "credit_id": "697110823056cd9dcf54666e",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1801279,
+        "known_for_department": "Directing",
+        "name": "Mark Brennan",
+        "original_name": "Mark Brennan",
+        "popularity": 0.1565,
+        "profile_path": null,
+        "credit_id": "6983ade7f02259fe219129c0",
+        "department": "Writing",
+        "job": "Screenplay"
+      }
+    ]
+  },
+  "similar": {
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/eJ6kPtua2rEvjxHdCtnIobXJZSf.jpg",
+        "genre_ids": [
+          80,
+          18,
+          9648,
+          53
+        ],
+        "id": 829,
+        "original_language": "en",
+        "original_title": "Chinatown",
+        "overview": "تعيش العين الخاصة جيك جيتس من المناخ الأخلاقي الغامض في جنوب كاليفورنيا قبل الحرب العالمية الثانية. استأجرت \" غيتس \" شخصًا اجتماعيًا جميلًا للتحقيق في علاقة زوجها خارج إطار الزواج ، وهي غارقة في دوامة من المعاملات المزدوجة والخداع المميتة ، لتكشف عن شبكة من الفضائح الشخصية والسياسية التي تتصادم معًا.",
+        "popularity": 4.3081,
+        "poster_path": "/kZRSP3FmOcq0xnBulqpUQngJUXY.jpg",
+        "release_date": "1974-06-20",
+        "title": "Chinatown",
+        "video": false,
+        "vote_average": 7.914,
+        "vote_count": 4151
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/n4R5Ad6rwf87lmllFNuYR3io30V.jpg",
+        "genre_ids": [
+          9648,
+          53
+        ],
+        "id": 1249213,
+        "original_language": "en",
+        "original_title": "Drop",
+        "overview": "فيوليت، وهي أم أرملة في أول موعد غرامي لها منذ سنوات، تصل إلى مطعم راقٍ حيث تشعر بالارتياح لأن موعدها، هنري، أكثر سحرًا ووسامة مما توقعت. لكن تناغمهما بدأ يتلاشى عندما بدأت فيوليت تشعر بالانزعاج ثم الرعب من سلسلة من الرسائل المجهولة على هاتفها.",
+        "popularity": 5.1819,
+        "poster_path": "/hSQPSW8aLjsMBfwqGjgJ6HozTkp.jpg",
+        "release_date": "2025-04-10",
+        "title": "Drop",
+        "video": false,
+        "vote_average": 6.3,
+        "vote_count": 749
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/640XC826YZjf2NrqRjD1Kz9LnX6.jpg",
+        "genre_ids": [
+          9648,
+          53
+        ],
+        "id": 2993,
+        "original_language": "it",
+        "original_title": "Una sull'altra",
+        "overview": "",
+        "popularity": 0.8267,
+        "poster_path": "/m3AgUFdosbid0VcymGHt2ziiMfk.jpg",
+        "release_date": "1969-08-15",
+        "title": "Una sull'altra",
+        "video": false,
+        "vote_average": 6.449,
+        "vote_count": 88
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/7MwDOMrbjrKP3XQ5vw4cgB2DPaF.jpg",
+        "genre_ids": [
+          9648,
+          53
+        ],
+        "id": 2832,
+        "original_language": "en",
+        "original_title": "Identity",
+        "overview": "الغرباء الذين تقطعت بهم السبل في فندق صحراوي بعيد خلال عاصفة شديدة ، سرعان ما وجدوا أنفسهم هدفًا لقاتل مختل العقل. مع تضاؤل أعدادهم ، يبدأ المسافرون في الانقلاب على بعضهم البعض ، حيث يحاول كل منهم معرفة من هو القاتل.",
+        "popularity": 7.0691,
+        "poster_path": "/sYgimsiBywqVwJI8H4sETke8m7v.jpg",
+        "release_date": "2003-04-25",
+        "title": "Identity",
+        "video": false,
+        "vote_average": 7.171,
+        "vote_count": 4220
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/7Wev9JMo6R5XAfz2KDvXb7oPMmy.jpg",
+        "genre_ids": [
+          9648,
+          53
+        ],
+        "id": 77,
+        "original_language": "en",
+        "original_title": "Memento",
+        "overview": "يقوم ليونارد شيلبي بتعقب الرجل الذي اغتصب زوجته وقتلها. ومع ذلك ، فإن صعوبة تحديد مكان قاتل زوجته تتفاقم بسبب حقيقة أنه يعاني من شكل نادر وغير قابل للعلاج من فقدان الذاكرة قصير المدى. على الرغم من أنه يستطيع تذكر تفاصيل الحياة قبل وقوع الحادث ، إلا أن ليونارد لا يتذكر ما حدث قبل خمسة عشر دقيقة ، إلى أين يذهب ، أو لماذا.",
+        "popularity": 8.5085,
+        "poster_path": "/dUOPHJdQTMq80dCQLglFkjFGnd0.jpg",
+        "release_date": "2000-10-11",
+        "title": "تِذكار",
+        "video": false,
+        "vote_average": 8.177,
+        "vote_count": 15866
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/oM17BzW6Kz5mhdAUmfJUyRn4U9s.jpg",
+        "genre_ids": [
+          53,
+          27,
+          18
+        ],
+        "id": 270362,
+        "original_language": "it",
+        "original_title": "Il sesso del diavolo",
+        "overview": "",
+        "popularity": 0.248,
+        "poster_path": "/nT1t8T1dqy81qD7q8ayXmH5j6cb.jpg",
+        "release_date": "1971-01-26",
+        "title": "Il sesso del diavolo",
+        "video": false,
+        "vote_average": 4.3,
+        "vote_count": 3
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/4ycpMe25LYpzGW42U9amyW9gM53.jpg",
+        "genre_ids": [
+          53,
+          80,
+          18,
+          9648
+        ],
+        "id": 322,
+        "original_language": "en",
+        "original_title": "Mystic River",
+        "overview": "تحطمت حياة ثلاثة رجال كانوا أصدقاء طفولتهم عندما تعرض أحدهم لمأساة عائلية.",
+        "popularity": 6.3157,
+        "poster_path": "/hCHVDbo6XJGj3r2i4hVjKhE0GKF.jpg",
+        "release_date": "2003-10-08",
+        "title": "Mystic River",
+        "video": false,
+        "vote_average": 7.742,
+        "vote_count": 7254
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/v4d6PPfqHeUNSdcyBVQ2Xb8yBk0.jpg",
+        "genre_ids": [
+          18,
+          53,
+          9648
+        ],
+        "id": 192,
+        "original_language": "en",
+        "original_title": "The Name of the Rose",
+        "overview": "يصل الراهب الفرنسيسكاني ويليام باسكرفيل من القرن الرابع عشر وصغيره المبتدئ إلى مؤتمر ليجدوا أن العديد من الرهبان قد قُتلوا في ظروف غامضة. لحل الجرائم ، يجب على ويليام أن ينتفض ضد سلطة الكنيسة ويحارب المؤامرة الغامضة لرهبان الأديرة باستخدام ذكائه فقط - وهو أمر كبير.",
+        "popularity": 3.5997,
+        "poster_path": "/d6dlbTBb3N7nXDz7tQslDJs2jgv.jpg",
+        "release_date": "1986-09-24",
+        "title": "The Name of the Rose",
+        "video": false,
+        "vote_average": 7.49,
+        "vote_count": 3242
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/lRbDyjI7HEaXxflFQbYpqHRGFBJ.jpg",
+        "genre_ids": [
+          9648,
+          80,
+          53
+        ],
+        "id": 505026,
+        "original_language": "en",
+        "original_title": "Death on the Nile",
+        "overview": "كان القتل مجرد بداية.\r يستقل المحقق البلجيكي هرقل بوارو سفينة بخارية نهرية ساحرة مع ما يكفي من الشمبانيا لملء النيل. لكن إجازته المصرية تتحول إلى بحث مثير عن قاتل عندما يتم قطع شهر العسل المثالي لزوجين مثاليين بشكل مأساوي.",
+        "popularity": 5.6005,
+        "poster_path": "/o9F4gNCCur18nlEBbuRWPo6Oh3J.jpg",
+        "release_date": "2022-02-09",
+        "title": "وفاة على ضفاف النيل",
+        "video": false,
+        "vote_average": 6.417,
+        "vote_count": 4065
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/yBDvgpyynDsbMyK21FoQu1c2wYR.jpg",
+        "genre_ids": [
+          9648,
+          80,
+          53
+        ],
+        "id": 870028,
+        "original_language": "en",
+        "original_title": "The Accountant²",
+        "overview": "يتمتع كريستيان وولف بموهبة حل المشكلات المعقدة، وعندما يُقتل أحد معارفه القدامى تاركاً خلفه رسالة غامضة مطلوب فيها أن \"يجدوا المحاسب\"، يُضطر وولف إلى الاستعانة بشقيقه براكس شديد الخطورة البعيد عنه لمساعدته في حل القضية. وبالتعاون مع ميدينا نائب وزير الخزانة الأمريكي، يكشفون مؤامرة مميتة ويصبحون هدفاً لشبكة قتلة لا ترحم.",
+        "popularity": 8.6421,
+        "poster_path": "/nbhXizT4iJNS7db0gOu1dAULKg9.jpg",
+        "release_date": "2025-04-23",
+        "title": "المحاسب 2",
+        "video": false,
+        "vote_average": 7.1,
+        "vote_count": 1599
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/rsclb1vtH6IkxmVBuCC37biEBT.jpg",
+        "genre_ids": [
+          35,
+          53,
+          80,
+          9648
+        ],
+        "id": 15196,
+        "original_language": "en",
+        "original_title": "Clue",
+        "overview": "",
+        "popularity": 4.0047,
+        "poster_path": "/aRxbYOYHS8T73nzR8hsLousoplR.jpg",
+        "release_date": "1985-12-13",
+        "title": "Clue",
+        "video": false,
+        "vote_average": 7.213,
+        "vote_count": 1899
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/1QltdhbH4wx75Nf5bwiZeiqrEc9.jpg",
+        "genre_ids": [
+          53,
+          18,
+          80
+        ],
+        "id": 872161,
+        "original_language": "en",
+        "original_title": "Twice Bitten",
+        "overview": "",
+        "popularity": 0.2825,
+        "poster_path": "/mNg3PsTzJInQ4YmSQ3FbUi2qOoZ.jpg",
+        "release_date": "2021-09-07",
+        "title": "Twice Bitten",
+        "video": false,
+        "vote_average": 6.6,
+        "vote_count": 5
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/v9VAfwNM93lHbxgaVrVlvtCYfaU.jpg",
+        "genre_ids": [
+          9648,
+          35
+        ],
+        "id": 480483,
+        "original_language": "it",
+        "original_title": "Finchè c'è prosecco c'è speranza",
+        "overview": "",
+        "popularity": 0.5347,
+        "poster_path": "/A4TLhq9FTzKnErJDV3U1oh3tRQy.jpg",
+        "release_date": "2017-10-31",
+        "title": "Finchè c'è prosecco c'è speranza",
+        "video": false,
+        "vote_average": 5.792,
+        "vote_count": 118
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/uj4vPPQBsD4HXoltTgPysfhm4Qn.jpg",
+        "genre_ids": [
+          27,
+          9648,
+          53
+        ],
+        "id": 20345,
+        "original_language": "it",
+        "original_title": "L'uccello dalle piume di cristallo",
+        "overview": "",
+        "popularity": 0.7556,
+        "poster_path": "/msuebjNNzdfp56a3EzPiZGWBBLw.jpg",
+        "release_date": "1970-02-27",
+        "title": "L'uccello dalle piume di cristallo",
+        "video": false,
+        "vote_average": 7.14,
+        "vote_count": 820
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          53,
+          80
+        ],
+        "id": 1469066,
+        "original_language": "el",
+        "original_title": "Γεύση Από Ηδονή",
+        "overview": "",
+        "popularity": 0.3191,
+        "poster_path": null,
+        "release_date": "1975-09-11",
+        "title": "Γεύση Από Ηδονή",
+        "video": false,
+        "vote_average": 1,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/yxYUN3fBPJdTNdXC1l8L24XFPhX.jpg",
+        "genre_ids": [
+          35,
+          80,
+          28
+        ],
+        "id": 290250,
+        "original_language": "en",
+        "original_title": "The Nice Guys",
+        "overview": "في لوس أنجلوس خلال فترة السبعينيات، عندما يضطر محقق خاص سيء الحظ، ورجل يجيد استخدام القانون في الحصول على مبتغاه، إلى التعاون سويًا من أجل حل قضية اختفاء فتاة، ومقتل نجمة أفلام إباحية، حيث يبدو من الخارج عدم وجود علاقة بين القضيتين. أثناء التحقيق، يكتشف الاثنان مؤامرة صادمة تتعلق بأكبر دوائر القوى.",
+        "popularity": 4.8723,
+        "poster_path": "/810vFhMyCh30sT6RcP9HOJRtj7E.jpg",
+        "release_date": "2016-05-15",
+        "title": "اﻷشخاص اللطفاء",
+        "video": false,
+        "vote_average": 7.127,
+        "vote_count": 8433
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/jh1TMz3AUe40HbCigQ7weCDEW0d.jpg",
+        "genre_ids": [
+          27,
+          53,
+          9648
+        ],
+        "id": 20115,
+        "original_language": "it",
+        "original_title": "Opera",
+        "overview": "",
+        "popularity": 5.7042,
+        "poster_path": "/nvEtYkLbmAJHTllFDJY2ohoojgJ.jpg",
+        "release_date": "1987-12-19",
+        "title": "Opera",
+        "video": false,
+        "vote_average": 6.8,
+        "vote_count": 517
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/nIl67C3sKQ68y1kVxuDTLXBJqYX.jpg",
+        "genre_ids": [
+          27,
+          9648,
+          53
+        ],
+        "id": 20126,
+        "original_language": "it",
+        "original_title": "Profondo rosso",
+        "overview": "",
+        "popularity": 1.7958,
+        "poster_path": "/wP6geQutTBbQcDY43ytGOTUVV9e.jpg",
+        "release_date": "1975-03-07",
+        "title": "Profondo rosso",
+        "video": false,
+        "vote_average": 7.727,
+        "vote_count": 1563
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          18,
+          9648,
+          878
+        ],
+        "id": 1077257,
+        "original_language": "en",
+        "original_title": "Todd Tarantula",
+        "overview": "",
+        "popularity": 0.1476,
+        "poster_path": "/g1qeXQdKptP6TU3RVnL16hQL64D.jpg",
+        "release_date": "2023-03-01",
+        "title": "Todd Tarantula",
+        "video": false,
+        "vote_average": 3.3,
+        "vote_count": 3
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/kPGTvNVVhl2KuGYTc5GF44OaNhI.jpg",
+        "genre_ids": [
+          9648,
+          18
+        ],
+        "id": 483135,
+        "original_language": "en",
+        "original_title": "Morocco",
+        "overview": "",
+        "popularity": 0.7262,
+        "poster_path": "/qKAc0Ca9ivxDyO0SNig2PXkOHwQ.jpg",
+        "release_date": "1997-01-24",
+        "title": "Morocco",
+        "video": false,
+        "vote_average": 2,
+        "vote_count": 2
+      }
+    ],
+    "total_pages": 5833,
+    "total_results": 116649
+  },
+  "videos": {
+    "results": []
+  }
+}
