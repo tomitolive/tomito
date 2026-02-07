@@ -8,6 +8,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import WatchMovie from "./pages/WatchMovie";
 import WatchTV from "./pages/WatchTV";
+import ActorPage from "./pages/ActorPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/tv/:id" element={<WatchTV />} />
             <Route path="/category/:type/:genreId" element={<Category />} />
             <Route path="/search" element={<Search />} />
+            <Route path="/actor/:id" element={<ActorPage />} />
           </Routes>
         </Router>
       </TooltipProvider>
