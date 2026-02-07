@@ -10,5 +10,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/tomito/', // Smmit l-repo dyalk f GitHub hna
+  base: '/', // Custom domain tomito.xyz
 })
