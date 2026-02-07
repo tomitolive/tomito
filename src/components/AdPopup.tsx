@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useLocation } from "react-router-dom";
 
 const AD_URLS = [
@@ -16,13 +16,32 @@ const AdPopup: React.FC = () => {
     const [dimensions, setDimensions] = useState({ width: "450px", height: "350px" });
     const [isHovered, setIsHovered] = useState(false);
 
-    // Reset ad on route change
-    useEffect(() => {
+    // Common reset function for all triggers
+    const resetAd = useCallback(() => {
         setIsVisible(true);
         setCountdown(7);
         const randomUrl = AD_URLS[Math.floor(Math.random() * AD_URLS.length)];
         setAdUrl(randomUrl);
-    }, [location.pathname]);
+    }, []);
+
+    // Trigger: Route change
+    useEffect(() => {
+        resetAd();
+    }, [location.pathname, resetAd]);
+
+    // Trigger: Visibility change (returning to tab)
+    useEffect(() => {
+        const handleVisibilityChange = () => {
+            if (!document.hidden) {
+                resetAd();
+            }
+        };
+
+        document.addEventListener("visibilitychange", handleVisibilityChange);
+        return () => {
+            document.removeEventListener("visibilitychange", handleVisibilityChange);
+        };
+    }, [resetAd]);
 
     useEffect(() => {
         if (!isVisible) return;
@@ -62,7 +81,7 @@ const AdPopup: React.FC = () => {
             clearInterval(timer);
             window.removeEventListener("resize", handleResize);
         };
-    }, [isVisible, location.pathname]);
+    }, [isVisible, adUrl]); // Restart timer if adUrl changes (reset occurs)
 
     const handleClose = () => {
         setIsVisible(false);
