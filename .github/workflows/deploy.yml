@@ -10,9 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Add .nojekyll
-        run: touch dist/.nojekyll
-
+    
       - name: Checkout code
         uses: actions/checkout@v3
 
