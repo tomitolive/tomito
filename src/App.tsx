@@ -11,6 +11,7 @@ import WatchMovie from "./pages/WatchMovie";
 import WatchTV from "./pages/WatchTV";
 import ActorPage from "./pages/ActorPage";
 import GoogleAnalytics from "./components/GoogleAnalytics";
+import AdPopup from "./components/AdPopup";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <TooltipProvider>
           <Router>
             <GoogleAnalytics />
+            <AdPopup />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/movie/:id" element={<WatchMovie />} />
