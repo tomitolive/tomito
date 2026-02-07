@@ -254,6 +254,52 @@
   .dropdown-enter-active {
     @apply opacity-100 translate-y-0 transition-all duration-200;
   }
+
+  /* Shimmer Animation for Skeletons */
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+
+  .skeleton-shimmer {
+    background: linear-gradient(
+      90deg,
+      hsl(0 0% 18%) 0%,
+      hsl(0 0% 25%) 20%,
+      hsl(0 0% 30%) 40%,
+      hsl(0 0% 25%) 60%,
+      hsl(0 0% 18%) 100%
+    );
+    background-size: 1000px 100%;
+    animation: shimmer 2s infinite linear;
+  }
+
+  /* TV Navigation Focus Styles */
+  .focused {
+    outline: 4px solid white;
+    outline-offset: 2px;
+    transform: scale(1.05);
+    transition: all 0.2s ease-out;
+    z-index: 50;
+  }
+
+  /* Focus-visible for keyboard/D-Pad navigation only */
+  *:focus-visible {
+    outline: 4px solid white;
+    outline-offset: 2px;
+    transform: scale(1.05);
+    transition: all 0.2s ease-out;
+  }
+
+  /* Prevent focus styles on mouse click */
+  *:focus:not(:focus-visible) {
+    outline: none;
+    transform: none;
+  }
 }
 
 @layer utilities {

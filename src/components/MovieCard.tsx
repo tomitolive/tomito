@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Star } from "lucide-react";
 import { getImageUrl, Movie, TVShow } from "@/lib/tmdb";
 import { cn, createSlug } from "@/lib/utils";
+import { useFocusable } from "@/hooks/useFocusable";
 
 type MediaType = "movie" | "tv";
 
@@ -16,6 +17,7 @@ export function MovieCard({
   type,
   className,
 }: MovieCardProps): JSX.Element {
+  const navigate = useNavigate();
   const title = "title" in item ? item.title : item.name;
   const releaseDate =
     "release_date" in item ? item.release_date : item.first_air_date;
@@ -32,11 +34,20 @@ export function MovieCard({
       ? `/movie/${item.id}`
       : `/tv/${item.id}`;
 
+  // Spatial navigation support
+  const { ref, focused } = useFocusable({
+    onEnterPress: () => {
+      navigate(link);
+    },
+  });
+
   return (
     <Link
       to={link}
+      ref={ref as any}
       className={cn(
         "group block cursor-pointer transition-transform duration-300 lg:hover:-translate-y-2",
+        focused && "focused",
         className
       )}
     >
@@ -74,14 +85,20 @@ export function MovieCard({
   );
 }
 
-/* Skeleton */
+/* Enhanced Skeleton with Shimmer */
 export function MovieCardSkeleton(): JSX.Element {
   return (
     <div className="animate-pulse">
-      <div className="aspect-[2/3] rounded-lg bg-muted" />
+      <div className="aspect-[2/3] rounded-lg bg-muted relative overflow-hidden">
+        <div className="skeleton-shimmer absolute inset-0" />
+      </div>
       <div className="mt-2 space-y-1">
-        <div className="h-4 w-3/4 rounded bg-muted" />
-        <div className="h-3 w-1/2 rounded bg-muted" />
+        <div className="h-4 w-3/4 rounded bg-muted relative overflow-hidden">
+          <div className="skeleton-shimmer absolute inset-0" />
+        </div>
+        <div className="h-3 w-1/2 rounded bg-muted relative overflow-hidden">
+          <div className="skeleton-shimmer absolute inset-0" />
+        </div>
       </div>
     </div>
   );
