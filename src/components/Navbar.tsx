@@ -1,30 +1,34 @@
-
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { Search, Film, Tv, Menu, X, ChevronDown, Home } from "lucide-react";
+import {
+  Search, Film, Tv, Menu, X, ChevronDown, Home,
+  Zap, Laugh, Drama, Ghost, Heart, Rocket,
+  Swords, Sparkles, Users
+} from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Logo from "./Logo";
 import { t } from "@/lib/tmdb";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { ThemeToggle } from "./ThemeToggle";
 
 const movieCategories = (translate: typeof t) => [
-  { id: 28, name: translate("moviesAction" as any) || "أكشن", icon: "💥" },
-  { id: 35, name: translate("moviesComedy" as any) || "كوميديا", icon: "😂" },
-  { id: 18, name: translate("moviesDrama" as any) || "دراما", icon: "🎭" },
-  { id: 27, name: translate("moviesHorror" as any) || "رعب", icon: "👻" },
-  { id: 10749, name: translate("moviesRomance" as any) || "رومانسي", icon: "❤️" },
-  { id: 878, name: translate("moviesSciFi" as any) || "خيال علمي", icon: "🚀" },
+  { id: 28, name: translate("moviesAction" as any) || "أكشن", icon: Zap },
+  { id: 35, name: translate("moviesComedy" as any) || "كوميديا", icon: Laugh },
+  { id: 18, name: translate("moviesDrama" as any) || "دراما", icon: Drama },
+  { id: 27, name: translate("moviesHorror" as any) || "رعب", icon: Ghost },
+  { id: 10749, name: translate("moviesRomance" as any) || "رومانسي", icon: Heart },
+  { id: 878, name: translate("moviesSciFi" as any) || "خيال علمي", icon: Rocket },
 ];
 
 const tvCategories = (translate: typeof t) => [
-  { id: 10759, name: translate("tvAction" as any) || "أكشن ومغامرات", icon: "⚔️" },
-  { id: 35, name: translate("tvComedy" as any) || "كوميديا", icon: "😂" },
-  { id: 18, name: translate("tvDrama" as any) || "دراما", icon: "🎭" },
-  { id: 10765, name: translate("tvSciFi" as any) || "خيال علمي", icon: "🛸" },
-  { id: 80, name: translate("tvCrime" as any) || "جريمة", icon: "🔍" },
-  { id: 10751, name: translate("tvFamily" as any) || "عائلي", icon: "👨‍👩‍👧‍👦" },
+  { id: 10759, name: translate("tvAction" as any) || "أكشن", icon: Swords },
+  { id: 35, name: translate("tvComedy" as any) || "كوميديا", icon: Laugh },
+  { id: 18, name: translate("tvDrama" as any) || "دراما", icon: Drama },
+  { id: 10765, name: translate("tvSciFi" as any) || "خيال علمي", icon: Sparkles },
+  { id: 80, name: translate("tvCrime" as any) || "جريمة", icon: Search },
+  { id: 10751, name: translate("tvFamily" as any) || "عائلي", icon: Users },
 ];
 
 export function Navbar() {
@@ -94,15 +98,15 @@ export function Navbar() {
                 <ChevronDown className={cn("w-4 h-4 transition-transform", activeDropdown === "movies" && "rotate-180")} />
               </button>
               {activeDropdown === "movies" && (
-                <div className="absolute top-full right-0 mt-2 w-64 bg-card border border-border rounded-lg shadow-xl animate-fade-in p-4">
-                  <div className="grid grid-cols-2 gap-2">
+                <div className="absolute top-full right-0 mt-2 w-64 bg-card border border-border rounded-lg shadow-xl animate-fade-in p-2">
+                  <div className="grid grid-cols-2 gap-1">
                     {movieCategories(t).map((cat) => (
                       <Link
                         key={cat.id}
                         to={`/category/movie/${cat.id}`}
                         className="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-accent transition-colors text-sm"
                       >
-                        <span>{cat.icon}</span>
+                        {cat.icon && <cat.icon className="w-4 h-4" />}
                         {cat.name}
                       </Link>
                     ))}
@@ -131,7 +135,7 @@ export function Navbar() {
                 <ChevronDown className={cn("w-4 h-4 transition-transform", activeDropdown === "tv" && "rotate-180")} />
               </button>
               {activeDropdown === "tv" && (
-                <div className="absolute top-full right-0 mt-2 w-64 bg-card border border-border rounded-lg shadow-xl animate-fade-in p-4">
+                <div className="absolute top-full right-0 mt-2 w-64 bg-card border border-border rounded-lg shadow-xl animate-fade-in p-2">
                   <div className="grid grid-cols-2 gap-2">
                     {tvCategories(t).map((cat) => (
                       <Link
@@ -139,7 +143,7 @@ export function Navbar() {
                         to={`/category/tv/${cat.id}`}
                         className="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-accent transition-colors text-sm"
                       >
-                        <span>{cat.icon}</span>
+                        {cat.icon && <cat.icon className="w-4 h-4" />}
                         {cat.name}
                       </Link>
                     ))}
@@ -157,8 +161,11 @@ export function Navbar() {
             </div>
           </div>
 
-          {/* Search, Language & Mobile Menu */}
+          {/* Search, Theme, Language & Mobile Menu */}
           <div className="flex items-center gap-3">
+            {/* Theme Toggle */}
+            <ThemeToggle />
+
             {/* Language Switcher */}
             <div className="hidden sm:block">
               <LanguageSwitcher />
@@ -254,7 +261,7 @@ export function Navbar() {
                         to={`/category/movie/${cat.id}`}
                         className="flex items-center gap-2 py-2 text-sm text-muted-foreground hover:text-foreground"
                       >
-                        <span>{cat.icon}</span>
+                        {cat.icon && <cat.icon className="w-4 h-4" />}
                         {cat.name}
                       </Link>
                     ))}
@@ -284,7 +291,7 @@ export function Navbar() {
                         to={`/category/tv/${cat.id}`}
                         className="flex items-center gap-2 py-2 text-sm text-muted-foreground hover:text-foreground"
                       >
-                        <span>{cat.icon}</span>
+                        {cat.icon && <cat.icon className="w-4 h-4" />}
                         {cat.name}
                       </Link>
                     ))}
@@ -292,8 +299,12 @@ export function Navbar() {
                 )}
               </div>
 
-              {/* Mobile Language Switcher */}
-              <div className="px-4 py-2 border-t border-border">
+              {/* Mobile Theme & Language */}
+              <div className="px-4 py-2 border-t border-border space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm font-medium">{t("theme" as any) || "Theme"}</span>
+                  <ThemeToggle />
+                </div>
                 <LanguageSwitcher />
               </div>
             </div>
