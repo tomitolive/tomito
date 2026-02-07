@@ -7,10 +7,14 @@ import { Star, Calendar, Play, LayoutGrid } from "lucide-react";
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { cn } from "@/lib/utils";
 import { fetchTVDetails, fetchSeasonDetails, t } from "@/lib/tmdb";
+import { MovieSEO } from "@/components/SEO/MovieSEO";
+import { getMovieById, Movie as LocalMovie } from "@/services/localData";
+
 
 export default function TVDetail() {
     const { id } = useParams();
     const [tv, setTv] = useState<any>(null);
+    const [localTV, setLocalTV] = useState<LocalMovie | null>(null);
     const [seasonData, setSeasonData] = useState<any>(null);
     const [currentSeason, setCurrentSeason] = useState(1);
     const [currentEpisode, setCurrentEpisode] = useState(1);
@@ -19,8 +23,13 @@ export default function TVDetail() {
     useEffect(() => {
         const loadTV = async () => {
             try {
+                // Fetch TMDB data
                 const data = await fetchTVDetails(parseInt(id || "0"));
                 setTv(data);
+
+                // Fetch local SEO data
+                const localData = await getMovieById(id || "0");
+                if (localData) setLocalTV(localData);
 
                 // Load first season data
                 const sData = await fetchSeasonDetails(parseInt(id || "0"), 1);
@@ -33,6 +42,7 @@ export default function TVDetail() {
         };
         loadTV();
     }, [id]);
+
 
     const handleSeasonChange = async (sNum: number) => {
         setCurrentSeason(sNum);
@@ -50,7 +60,9 @@ export default function TVDetail() {
 
     return (
         <div className="min-h-screen bg-background text-foreground">
+            <MovieSEO movie={localTV} lang="ar" />
             <Navbar />
+
             <div className="relative h-[40vh] w-full">
                 <img
                     src={`https://image.tmdb.org/t/p/original${tv.backdrop_path}`}
