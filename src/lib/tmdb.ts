@@ -177,22 +177,26 @@ export interface TVShowDetails extends TVShow {
 // Helper functions for multilingual content
 export function getMovieTitle(movie: Movie): string {
   // Always return English/Original title as requested
-  return movie.en_title || movie.title;
+  return movie.en_title || movie.title || movie.original_title;
 }
 
 export function getMovieOverview(movie: Movie): string {
-  // Always return Arabic overview as requested
-  return movie.ar_overview || movie.overview;
+  // Use the available localized overview or default to the main overview
+  const lang = getCurrentLanguage();
+  if (lang === 'ar' && movie.ar_overview) return movie.ar_overview;
+  return movie.overview;
 }
 
 export function getTVShowName(tvShow: TVShow): string {
   // Always return English/Original name as requested
-  return tvShow.en_name || tvShow.name;
+  return tvShow.en_name || tvShow.name || tvShow.original_name;
 }
 
 export function getTVShowOverview(tvShow: TVShow): string {
-  // Always return Arabic overview as requested
-  return tvShow.ar_overview || tvShow.overview;
+  // Use the available localized overview or default to the main overview
+  const lang = getCurrentLanguage();
+  if (lang === 'ar' && tvShow.ar_overview) return tvShow.ar_overview;
+  return tvShow.overview;
 }
 
 export function getGenreName(genre: Genre): string {
@@ -202,80 +206,64 @@ export function getGenreName(genre: Genre): string {
   return genre.name;
 }
 
-// API Functions with language support
-// API Functions with language support
-export async function fetchTrending(mediaType: "movie" | "tv" = "movie", timeWindow: "day" | "week" = "week") {
-  const [arResponse, enResponse] = await Promise.all([
-    fetch(`${TMDB_CONFIG.BASE_URL}/trending/${mediaType}/${timeWindow}?api_key=${TMDB_CONFIG.API_KEY}&language=ar`),
-    fetch(`${TMDB_CONFIG.BASE_URL}/trending/${mediaType}/${timeWindow}?api_key=${TMDB_CONFIG.API_KEY}&language=en`)
+// Internal helper to merge English titles with Localized content
+async function fetchAndMergeLocale(url: string, page?: number) {
+  const lang = getCurrentLanguage();
+  const baseUrl = url.includes('?') ? url : `${url}?api_key=${TMDB_CONFIG.API_KEY}`;
+  const pageParam = page ? `&page=${page}` : '';
+
+  if (lang === 'en') {
+    const response = await fetch(`${baseUrl}&language=en${pageParam}`);
+    const data = await response.json();
+    if (data.results) {
+      data.results = data.results.map((item: any) => ({
+        ...item,
+        en_title: item.title || item.name,
+        en_name: item.title || item.name,
+      }));
+    }
+    return data;
+  }
+
+  const [localeResponse, enResponse] = await Promise.all([
+    fetch(`${baseUrl}&language=${lang}${pageParam}`),
+    fetch(`${baseUrl}&language=en${pageParam}`)
   ]);
 
-  const [arData, enData] = await Promise.all([arResponse.json(), enResponse.json()]);
+  const [localeData, enData] = await Promise.all([localeResponse.json(), enResponse.json()]);
 
-  // Merge: English Base (Title, Images) + Arabic Overview
+  if (!enData.results) return enData;
+
   const mergedResults = enData.results.map((item: any, index: number) => {
-    const arItem = arData.results[index];
+    const localeItem = localeData.results?.find((l: any) => l.id === item.id) || localeData.results?.[index];
     return {
       ...item,
-      overview: arItem?.overview || item.overview,
-      ar_overview: arItem?.overview,
+      overview: localeItem?.overview || item.overview,
+      ...(lang === 'ar' ? { ar_overview: localeItem?.overview } : {}),
       en_title: item.title || item.name,
       en_name: item.title || item.name,
-      // Ensure title/name is English
       title: item.title || item.name,
       name: item.title || item.name
     };
   });
 
-  return mergedResults as (Movie | TVShow)[];
+  return { ...enData, results: mergedResults };
+}
+
+export async function fetchTrending(mediaType: "movie" | "tv" = "movie", timeWindow: "day" | "week" = "week") {
+  const url = `${TMDB_CONFIG.BASE_URL}/trending/${mediaType}/${timeWindow}?api_key=${TMDB_CONFIG.API_KEY}`;
+  const data = await fetchAndMergeLocale(url);
+  return data.results as (Movie | TVShow)[];
 }
 
 export async function fetchPopular(mediaType: "movie" | "tv" = "movie", page = 1) {
-  const [arResponse, enResponse] = await Promise.all([
-    fetch(`${TMDB_CONFIG.BASE_URL}/${mediaType}/popular?api_key=${TMDB_CONFIG.API_KEY}&language=ar&page=${page}`),
-    fetch(`${TMDB_CONFIG.BASE_URL}/${mediaType}/popular?api_key=${TMDB_CONFIG.API_KEY}&language=en&page=${page}`)
-  ]);
-
-  const [arData, enData] = await Promise.all([arResponse.json(), enResponse.json()]);
-
-  const mergedResults = enData.results.map((item: any, index: number) => {
-    const arItem = arData.results[index];
-    return {
-      ...item,
-      overview: arItem?.overview || item.overview,
-      ar_overview: arItem?.overview,
-      en_title: item.title || item.name,
-      en_name: item.title || item.name,
-      title: item.title || item.name,
-      name: item.title || item.name
-    };
-  });
-
-  return { results: mergedResults as (Movie | TVShow)[], total_pages: enData.total_pages, page: enData.page };
+  const url = `${TMDB_CONFIG.BASE_URL}/${mediaType}/popular?api_key=${TMDB_CONFIG.API_KEY}`;
+  return fetchAndMergeLocale(url, page);
 }
 
 export async function fetchTopRated(mediaType: "movie" | "tv" = "movie", page = 1) {
-  const [arResponse, enResponse] = await Promise.all([
-    fetch(`${TMDB_CONFIG.BASE_URL}/${mediaType}/top_rated?api_key=${TMDB_CONFIG.API_KEY}&language=ar&page=${page}`),
-    fetch(`${TMDB_CONFIG.BASE_URL}/${mediaType}/top_rated?api_key=${TMDB_CONFIG.API_KEY}&language=en&page=${page}`)
-  ]);
-
-  const [arData, enData] = await Promise.all([arResponse.json(), enResponse.json()]);
-
-  const mergedResults = enData.results.map((item: any, index: number) => {
-    const arItem = arData.results[index];
-    return {
-      ...item,
-      overview: arItem?.overview || item.overview,
-      ar_overview: arItem?.overview,
-      en_title: item.title || item.name,
-      en_name: item.title || item.name,
-      title: item.title || item.name,
-      name: item.title || item.name
-    };
-  });
-
-  return { results: mergedResults as (Movie | TVShow)[], total_pages: enData.total_pages };
+  const url = `${TMDB_CONFIG.BASE_URL}/${mediaType}/top_rated?api_key=${TMDB_CONFIG.API_KEY}`;
+  return fetchAndMergeLocale(url, page);
 }
 
 export async function fetchByGenre(mediaType: "movie" | "tv", genreId: number, page = 1) {
@@ -314,74 +302,74 @@ export async function fetchGenres(mediaType: "movie" | "tv" = "movie") {
 export async function fetchMovieDetails(id: number): Promise<MovieDetails> {
   const lang = getCurrentLanguage();
 
-  // For Arabic, we use mixed fetching to ensure high quality titles/images (EN) + Arabic descriptions
-  if (lang === 'ar') {
-    const [arabicData, englishData] = await Promise.all([
-      fetch(`${TMDB_CONFIG.BASE_URL}/movie/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=ar`),
-      fetch(`${TMDB_CONFIG.BASE_URL}/movie/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=en`)
-    ]);
-
-    const [arabicResult, englishResult] = await Promise.all([
-      arabicData.json(),
-      englishData.json()
-    ]);
-
-    return {
-      ...englishResult,
-      overview: arabicResult.overview || englishResult.overview,
-      title: englishResult.title, // Force English title
-      ar_title: arabicResult.title,
-      ar_overview: arabicResult.overview,
-      ar_tagline: arabicResult.tagline,
-      en_title: englishResult.title,
-      en_overview: englishResult.overview,
-      en_tagline: englishResult.tagline,
-    } as MovieDetails;
+  if (lang === 'en') {
+    const response = await fetch(`${TMDB_CONFIG.BASE_URL}/movie/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=en`);
+    const data = await response.json();
+    return { ...data, en_title: data.title, en_overview: data.overview } as MovieDetails;
   }
 
-  // For other languages, use standard fetching
-  const response = await fetch(
-    `${TMDB_CONFIG.BASE_URL}/movie/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=${lang}`
-  );
-  return response.json() as Promise<MovieDetails>;
+  const [localeData, englishData] = await Promise.all([
+    fetch(`${TMDB_CONFIG.BASE_URL}/movie/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=${lang}`),
+    fetch(`${TMDB_CONFIG.BASE_URL}/movie/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=en`)
+  ]);
+
+  const [localeResult, englishResult] = await Promise.all([
+    localeData.json(),
+    englishData.json()
+  ]);
+
+  return {
+    ...englishResult,
+    overview: localeResult.overview || englishResult.overview,
+    title: englishResult.title, // Force English title
+    ...(lang === 'ar' ? {
+      ar_title: localeResult.title,
+      ar_overview: localeResult.overview,
+      ar_tagline: localeResult.tagline,
+    } : {}),
+    en_title: englishResult.title,
+    en_overview: englishResult.overview,
+    en_tagline: englishResult.tagline,
+  } as MovieDetails;
 }
 
 export async function fetchTVDetails(id: number): Promise<TVShowDetails> {
   const lang = getCurrentLanguage();
 
-  if (lang === 'ar') {
-    const [arabicData, englishData] = await Promise.all([
-      fetch(`${TMDB_CONFIG.BASE_URL}/tv/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=ar`),
-      fetch(`${TMDB_CONFIG.BASE_URL}/tv/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=en`)
-    ]);
-
-    const [arabicResult, englishResult] = await Promise.all([
-      arabicData.json(),
-      englishData.json()
-    ]);
-
-    return {
-      ...englishResult,
-      overview: arabicResult.overview || englishResult.overview,
-      name: englishResult.name, // Force English name
-      ar_name: arabicResult.name,
-      ar_overview: arabicResult.overview,
-      en_name: englishResult.name,
-      en_overview: englishResult.overview,
-      seasons: englishResult.seasons?.map((season: Season) => {
-        const arSeason = arabicResult.seasons?.find((s: Season) => s.season_number === season.season_number);
-        return {
-          ...season,
-          overview: arSeason?.overview || season.overview,
-        };
-      }) || [],
-    } as TVShowDetails;
+  if (lang === 'en') {
+    const response = await fetch(`${TMDB_CONFIG.BASE_URL}/tv/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=en`);
+    const data = await response.json();
+    return { ...data, en_name: data.name, en_overview: data.overview } as TVShowDetails;
   }
 
-  const response = await fetch(
-    `${TMDB_CONFIG.BASE_URL}/tv/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=${lang}`
-  );
-  return response.json() as Promise<TVShowDetails>;
+  const [localeData, englishData] = await Promise.all([
+    fetch(`${TMDB_CONFIG.BASE_URL}/tv/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=${lang}`),
+    fetch(`${TMDB_CONFIG.BASE_URL}/tv/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=en`)
+  ]);
+
+  const [localeResult, englishResult] = await Promise.all([
+    localeData.json(),
+    englishData.json()
+  ]);
+
+  return {
+    ...englishResult,
+    overview: localeResult.overview || englishResult.overview,
+    name: englishResult.name, // Force English name
+    ...(lang === 'ar' ? {
+      ar_name: localeResult.name,
+      ar_overview: localeResult.overview,
+    } : {}),
+    en_name: englishResult.name,
+    en_overview: englishResult.overview,
+    seasons: englishResult.seasons?.map((season: Season) => {
+      const localeSeason = localeResult.seasons?.find((s: Season) => s.season_number === season.season_number);
+      return {
+        ...season,
+        overview: localeSeason?.overview || season.overview,
+      };
+    }) || [],
+  } as TVShowDetails;
 }
 
 export async function fetchCredits(mediaType: "movie" | "tv", id: number) {
@@ -423,31 +411,16 @@ export async function fetchSeasonDetails(tvId: number, seasonNumber: number) {
 }
 
 export async function searchMulti(query: string, page = 1) {
-  const [arResponse, enResponse] = await Promise.all([
-    fetch(`${TMDB_CONFIG.BASE_URL}/search/multi?api_key=${TMDB_CONFIG.API_KEY}&language=ar&query=${encodeURIComponent(query)}&page=${page}`),
-    fetch(`${TMDB_CONFIG.BASE_URL}/search/multi?api_key=${TMDB_CONFIG.API_KEY}&language=en&query=${encodeURIComponent(query)}&page=${page}`)
-  ]);
+  const url = `${TMDB_CONFIG.BASE_URL}/search/multi?api_key=${TMDB_CONFIG.API_KEY}&query=${encodeURIComponent(query)}`;
+  return fetchAndMergeLocale(url, page);
+}
 
-  const [arData, enData] = await Promise.all([arResponse.json(), enResponse.json()]);
-
-  const mergedResults = enData.results.map((item: any, index: number) => {
-    // Attempt to match by ID if possible, though index should usually match for search unless results differ substantially.
-    // However, TMDB search results by query *might* differ in order or availability per language slightly.
-    // For safety, rely on ID if available, else index.
-    const arItem = arData.results.find((a: any) => a.id === item.id) || arData.results[index];
-
-    return {
-      ...item,
-      overview: arItem?.overview || item.overview,
-      ar_overview: arItem?.overview,
-      en_title: item.title || item.name,
-      en_name: item.title || item.name,
-      title: item.title || item.name,
-      name: item.title || item.name
-    };
-  });
-
-  return { results: mergedResults, total_pages: enData.total_pages, total_results: enData.total_results };
+export async function fetchVideos(id: number, type: "movie" | "tv") {
+  const response = await fetch(
+    `${TMDB_CONFIG.BASE_URL}/${type}/${id}/videos?api_key=${TMDB_CONFIG.API_KEY}`
+  );
+  const data = await response.json();
+  return data.results || [];
 }
 
 export async function fetchPersonDetails(id: number) {
@@ -468,27 +441,34 @@ export async function fetchPersonCredits(id: number) {
 }
 
 export async function fetchSimilar(mediaType: "movie" | "tv", id: number) {
-  const [arResponse, enResponse] = await Promise.all([
-    fetch(`${TMDB_CONFIG.BASE_URL}/${mediaType}/${id}/similar?api_key=${TMDB_CONFIG.API_KEY}&language=ar`),
-    fetch(`${TMDB_CONFIG.BASE_URL}/${mediaType}/${id}/similar?api_key=${TMDB_CONFIG.API_KEY}&language=en`)
-  ]);
+  const url = `${TMDB_CONFIG.BASE_URL}/${mediaType}/${id}/similar?api_key=${TMDB_CONFIG.API_KEY}`;
+  const data = await fetchAndMergeLocale(url);
+  return data.results as (Movie | TVShow)[];
+}
 
-  const [arData, enData] = await Promise.all([arResponse.json(), enResponse.json()]);
+export async function fetchNowPlaying(page = 1) {
+  const url = `${TMDB_CONFIG.BASE_URL}/movie/now_playing?api_key=${TMDB_CONFIG.API_KEY}`;
+  return fetchAndMergeLocale(url, page);
+}
 
-  const mergedResults = enData.results.map((item: any, index: number) => {
-    const arItem = arData.results[index];
-    return {
-      ...item,
-      overview: arItem?.overview || item.overview,
-      ar_overview: arItem?.overview,
-      en_title: item.title || item.name,
-      en_name: item.title || item.name,
-      title: item.title || item.name,
-      name: item.title || item.name
-    };
-  });
+export async function fetchAiringToday(page = 1) {
+  const url = `${TMDB_CONFIG.BASE_URL}/tv/airing_today?api_key=${TMDB_CONFIG.API_KEY}`;
+  return fetchAndMergeLocale(url, page);
+}
 
-  return mergedResults as (Movie | TVShow)[];
+export async function fetchUpcoming(page = 1) {
+  const url = `${TMDB_CONFIG.BASE_URL}/movie/upcoming?api_key=${TMDB_CONFIG.API_KEY}`;
+  return fetchAndMergeLocale(url, page);
+}
+
+export async function fetchOnTheAir(page = 1) {
+  const url = `${TMDB_CONFIG.BASE_URL}/tv/on_the_air?api_key=${TMDB_CONFIG.API_KEY}`;
+  return fetchAndMergeLocale(url, page);
+}
+
+export async function fetchRecommendations(mediaType: "movie" | "tv", id: number, page = 1) {
+  const url = `${TMDB_CONFIG.BASE_URL}/${mediaType}/${id}/recommendations?api_key=${TMDB_CONFIG.API_KEY}`;
+  return fetchAndMergeLocale(url, page);
 }
 
 // Video servers configuration
@@ -1009,6 +989,11 @@ export const UI_TRANSLATIONS = {
     showingTopWorks: "يتم عرض أفضل {count} عمل من أصل {total}",
     pageNotFound: "الصفحة غير موجودة",
     notFoundText: "ربما تم نقل الصفحة التي تبحث عنها أو أنها لم تعد موجودة.",
+    latestMovies: "أحدث الأفلام",
+    latestSeries: "أحدث المسلسلات",
+    opinion: "آراء",
+    criticsChoice: "اختيارات النقاد",
+    recommended: "مقترح لك",
   },
   en: {
     home: "Home",
@@ -1110,6 +1095,11 @@ export const UI_TRANSLATIONS = {
     showingTopWorks: "Showing top {count} works out of {total}",
     pageNotFound: "Page Not Found",
     notFoundText: "The page you are looking for might have been moved or doesn't exist anymore.",
+    latestMovies: "Latest Movies",
+    latestSeries: "Latest TV Shows",
+    opinion: "Opinions",
+    criticsChoice: "Critics' Choice",
+    recommended: "Recommended for You",
   },
   fr: {
     home: "Accueil",
@@ -1202,6 +1192,11 @@ export const UI_TRANSLATIONS = {
     viewAll: "Voir tout",
     movieGenres: "Genres de films",
     tvGenres: "Genres de séries",
+    latestMovies: "Derniers Films",
+    latestSeries: "Dernières Séries",
+    opinion: "Opinions",
+    criticsChoice: "Choix des Critiques",
+    recommended: "Recommandé pour vous",
   },
   es: {
     home: "Inicio",
