@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import {
   Search, Film, Tv, Menu, X, ChevronDown, Home,
@@ -62,6 +62,23 @@ export function Navbar() {
     }
   };
 
+  /* State for delayed dropdown close */
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleMouseEnter = (menu: string) => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+    setActiveDropdown(menu);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setActiveDropdown(null);
+    }, 300);
+  };
+
   return (
     <nav
       className={cn(
@@ -89,8 +106,8 @@ export function Navbar() {
             {/* Movies Dropdown */}
             <div
               className="relative"
-              onMouseEnter={() => setActiveDropdown("movies")}
-              onMouseLeave={() => setActiveDropdown(null)}
+              onMouseEnter={() => handleMouseEnter("movies")}
+              onMouseLeave={handleMouseLeave}
             >
               <button className="flex items-center gap-2 text-sm font-medium transition-colors hover:text-primary">
                 <Film className="w-4 h-4" />
@@ -98,7 +115,11 @@ export function Navbar() {
                 <ChevronDown className={cn("w-4 h-4 transition-transform", activeDropdown === "movies" && "rotate-180")} />
               </button>
               {activeDropdown === "movies" && (
-                <div className="absolute top-full right-0 mt-2 w-64 bg-card border border-border rounded-lg shadow-xl animate-fade-in p-2">
+                <div
+                  className="absolute top-full right-0 mt-2 w-64 bg-card border border-border rounded-lg shadow-xl animate-fade-in p-2"
+                  onMouseEnter={() => handleMouseEnter("movies")}
+                  onMouseLeave={handleMouseLeave}
+                >
                   <div className="grid grid-cols-2 gap-1">
                     {movieCategories(t).map((cat) => (
                       <Link
@@ -126,8 +147,8 @@ export function Navbar() {
             {/* TV Shows Dropdown */}
             <div
               className="relative"
-              onMouseEnter={() => setActiveDropdown("tv")}
-              onMouseLeave={() => setActiveDropdown(null)}
+              onMouseEnter={() => handleMouseEnter("tv")}
+              onMouseLeave={handleMouseLeave}
             >
               <button className="flex items-center gap-2 text-sm font-medium transition-colors hover:text-primary">
                 <Tv className="w-4 h-4" />
@@ -135,7 +156,11 @@ export function Navbar() {
                 <ChevronDown className={cn("w-4 h-4 transition-transform", activeDropdown === "tv" && "rotate-180")} />
               </button>
               {activeDropdown === "tv" && (
-                <div className="absolute top-full right-0 mt-2 w-64 bg-card border border-border rounded-lg shadow-xl animate-fade-in p-2">
+                <div
+                  className="absolute top-full right-0 mt-2 w-64 bg-card border border-border rounded-lg shadow-xl animate-fade-in p-2"
+                  onMouseEnter={() => handleMouseEnter("tv")}
+                  onMouseLeave={handleMouseLeave}
+                >
                   <div className="grid grid-cols-2 gap-2">
                     {tvCategories(t).map((cat) => (
                       <Link
