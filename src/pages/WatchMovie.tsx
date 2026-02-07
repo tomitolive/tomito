@@ -1,4 +1,4 @@
- qnimport { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Play, Star, Clock, Calendar, ArrowRight, Users } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
@@ -21,6 +21,7 @@ import {
   t
 } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
+
 
 export default function WatchMovie() {
   const { id } = useParams<{ id: string }>();
