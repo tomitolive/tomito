@@ -1,21 +1,8 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
-import path from "path";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/", // استخدام "/" لـ Domain مخصص أو User Page، أو اسم الـ Repo إذا كان Project Page
-  server: {
-    port: 8080,
-    host: true,
-  },
   plugins: [react()],
-  define: {
-    'process.env': {},
-  },
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
-});
+  base: '/tomito/', // Smmit l-repo dyalk f GitHub hna
+})
