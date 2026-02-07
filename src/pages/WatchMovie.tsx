@@ -21,6 +21,7 @@ import {
   t
 } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
+import { event as trackEvent } from "@/lib/analytics";
 
 
 export default function WatchMovie() {
@@ -49,6 +50,13 @@ export default function WatchMovie() {
         // Fetch IMDB ID for servers that need it
         const imdb = await getImdbIdFromTmdb(parseInt(id), "movie");
         setImdbId(imdb);
+
+        trackEvent({
+          action: "view_item",
+          category: "Content",
+          label: movieData.title,
+          value: movieData.id,
+        });
       } catch (error) {
         console.error("Error loading movie:", error);
       } finally {

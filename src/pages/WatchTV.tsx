@@ -23,6 +23,7 @@ import {
   t
 } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
+import { event as trackEvent } from "@/lib/analytics";
 
 export default function WatchTV() {
   const { id } = useParams<{ id: string }>();
@@ -56,6 +57,13 @@ export default function WatchTV() {
         // Fetch IMDB ID
         const imdb = await getImdbIdFromTmdb(parseInt(id), "tv");
         setImdbId(imdb);
+
+        trackEvent({
+          action: "view_item",
+          category: "Content",
+          label: showData.name,
+          value: showData.id,
+        });
 
         // Set initial season from URL or default to 1
         const urlSeason = parseInt(searchParams.get("season") || "1");

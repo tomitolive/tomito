@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { MovieCard } from "@/components/MovieCard";
 import { searchMulti } from "@/lib/tmdb";
+import { event as trackEvent } from "@/lib/analytics";
 
 export default function Search() {
     const [searchParams] = useSearchParams();
@@ -18,6 +19,12 @@ export default function Search() {
             try {
                 const data = await searchMulti(query);
                 setResults(data.results);
+                trackEvent({
+                    action: "search",
+                    category: "User Interaction",
+                    label: query,
+                    value: data.results.length,
+                });
             } catch (err) {
                 console.error("Search failed:", err);
             } finally {

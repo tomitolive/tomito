@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { pageview } from "../lib/analytics";
 
 declare global {
     interface Window {
@@ -15,11 +16,7 @@ const GoogleAnalytics = () => {
     const location = useLocation();
 
     useEffect(() => {
-        if (typeof window.gtag === "function") {
-            window.gtag("config", "G-QR5KZFJ6HH", {
-                page_path: location.pathname + location.search,
-            });
-        }
+        pageview(location.pathname + location.search);
     }, [location]);
 
     return null;
