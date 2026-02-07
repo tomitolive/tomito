@@ -948,7 +948,7 @@ export const UI_TRANSLATIONS = {
     moviesHorror: "رعب",
     moviesRomance: "رومانسي",
     moviesSciFi: "خيال علمي",
-    tvAction: "أكشن ومغامرات",
+    tvAction: "أكشن",
     tvComedy: "كوميديا",
     tvDrama: "دراما",
     tvSciFi: "خيال علمي",
