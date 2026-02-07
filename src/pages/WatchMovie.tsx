@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+ qnimport { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Play, Star, Clock, Calendar, ArrowRight, Users } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
+import { GenreFilters } from "@/components/GenreFilters";
 import { Button } from "@/components/ui/button";
 import {
   fetchMovieDetails,
@@ -252,7 +253,10 @@ export default function WatchMovie() {
 
         {/* Similar Movies */}
         {similar.length > 0 && (
-          <ContentRow title={t("similarMovies")} items={similar} type="movie" />
+          <div className="mt-12">
+            <GenreFilters type="movie" />
+            <ContentRow title={t("similarMovies")} items={similar} type="movie" />
+          </div>
         )}
       </div>
 

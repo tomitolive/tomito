@@ -998,6 +998,8 @@ export const UI_TRANSLATIONS = {
     episodesCount: "{count} حلقة",
     episodesInSeason: "حلقات الموسم {season}",
     viewAll: "عرض الكل",
+    movieGenres: "أنواع الأفلام",
+    tvGenres: "أنواع المسلسلات",
     yearsShort: "سنة",
     popularity: "الشعبية",
     biography: "السيرة الذاتية",
@@ -1097,6 +1099,8 @@ export const UI_TRANSLATIONS = {
     episodesCount: "{count} Episodes",
     episodesInSeason: "Episodes in Season {season}",
     viewAll: "View All",
+    movieGenres: "Movie Genres",
+    tvGenres: "TV Genres",
     yearsShort: "y",
     popularity: "Popularity",
     biography: "Biography",
@@ -1196,6 +1200,8 @@ export const UI_TRANSLATIONS = {
     episodesCount: "{count} Épisodes",
     episodesInSeason: "Épisodes de la saison {season}",
     viewAll: "Voir tout",
+    movieGenres: "Genres de films",
+    tvGenres: "Genres de séries",
   },
   es: {
     home: "Inicio",
@@ -1286,6 +1292,8 @@ export const UI_TRANSLATIONS = {
     episodesCount: "{count} Episodios",
     episodesInSeason: "Episodios en la temporada {season}",
     viewAll: "Ver todo",
+    movieGenres: "Géneros de películas",
+    tvGenres: "Géneros de series",
   },
 };
 
