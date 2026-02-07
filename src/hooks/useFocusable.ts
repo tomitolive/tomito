@@ -43,6 +43,7 @@ export const useFocusable = (options: UseFocusableOptions = {}) => {
 
     return {
         ref: combinedRef,
+        
         focused,
         focusSelf,
     };
