@@ -4,6 +4,7 @@ import { Play, Star, Clock, Calendar, ArrowRight, Users, ChevronDown } from "luc
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
+import { GenreFilters } from "@/components/GenreFilters";
 import { Button } from "@/components/ui/button";
 import {
   fetchTVDetails,
@@ -362,7 +363,10 @@ export default function WatchTV() {
 
         {/* Similar Shows */}
         {similar.length > 0 && (
-          <ContentRow title={t("similarTV")} items={similar} type="tv" />
+          <div className="mt-12">
+            <GenreFilters type="tv" />
+            <ContentRow title={t("similarTV")} items={similar} type="tv" />
+          </div>
         )}
       </div>
 
