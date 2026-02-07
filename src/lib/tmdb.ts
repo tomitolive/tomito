@@ -267,9 +267,12 @@ export async function fetchTopRated(mediaType: "movie" | "tv" = "movie", page = 
 }
 
 export async function fetchByGenre(mediaType: "movie" | "tv", genreId: number, page = 1) {
+  const isAll = isNaN(genreId);
+  const genreParam = isAll ? "" : `&with_genres=${genreId}`;
+
   const [arResponse, enResponse] = await Promise.all([
-    fetch(`${TMDB_CONFIG.BASE_URL}/discover/${mediaType}?api_key=${TMDB_CONFIG.API_KEY}&language=ar&with_genres=${genreId}&page=${page}`),
-    fetch(`${TMDB_CONFIG.BASE_URL}/discover/${mediaType}?api_key=${TMDB_CONFIG.API_KEY}&language=en&with_genres=${genreId}&page=${page}`)
+    fetch(`${TMDB_CONFIG.BASE_URL}/discover/${mediaType}?api_key=${TMDB_CONFIG.API_KEY}&language=ar${genreParam}&page=${page}`),
+    fetch(`${TMDB_CONFIG.BASE_URL}/discover/${mediaType}?api_key=${TMDB_CONFIG.API_KEY}&language=en${genreParam}&page=${page}`)
   ]);
 
   const [arData, enData] = await Promise.all([arResponse.json(), enResponse.json()]);
@@ -287,7 +290,11 @@ export async function fetchByGenre(mediaType: "movie" | "tv", genreId: number, p
     };
   });
 
-  return { results: mergedResults as (Movie | TVShow)[], total_pages: enData.total_pages };
+  return {
+    results: mergedResults as (Movie | TVShow)[],
+    total_pages: enData.total_pages,
+    page: enData.page
+  };
 }
 
 export async function fetchGenres(mediaType: "movie" | "tv" = "movie") {
