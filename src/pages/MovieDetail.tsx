@@ -6,17 +6,26 @@ import { ContentRow } from "@/components/ContentRow";
 import { Star, Clock, Calendar } from "lucide-react";
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { fetchMovieDetails, t } from "@/lib/tmdb";
+import { MovieSEO } from "@/components/SEO/MovieSEO";
+import { getMovieById, Movie as LocalMovie } from "@/services/localData";
+
 
 export default function MovieDetail() {
     const { id } = useParams();
     const [movie, setMovie] = useState<any>(null);
+    const [localMovie, setLocalMovie] = useState<LocalMovie | null>(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const loadMovie = async () => {
             try {
+                // Fetch TMDB data
                 const data = await fetchMovieDetails(parseInt(id || "0"));
                 setMovie(data);
+
+                // Fetch local SEO data
+                const localData = await getMovieById(id || "0");
+                if (localData) setLocalMovie(localData);
             } catch (err) {
                 console.error("Failed to fetch movie details:", err);
             } finally {
@@ -31,7 +40,9 @@ export default function MovieDetail() {
 
     return (
         <div className="min-h-screen bg-background text-white">
+            <MovieSEO movie={localMovie} lang="ar" />
             <Navbar />
+
 
             {/* Backdrop Hero */}
             <div className="relative h-[60vh] w-full">

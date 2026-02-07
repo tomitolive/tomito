@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+import { Helmet } from 'react-helmet-async';
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
 import { HeroCarousel } from "@/components/HeroCarousel";
 import { fetchPopular, t } from "@/lib/tmdb";
+
 
 export default function Home() {
     const [movies, setMovies] = useState<any[]>([]);
@@ -32,7 +34,28 @@ export default function Home() {
 
     return (
         <div className="min-h-screen bg-background">
+            <Helmet>
+                <title>Tomito - أفلام ومسلسلات عربية وأجنبية</title>
+                <meta name="description" content="شاهد أحدث الأفلام والمسلسلات العربية والأجنبية على Tomito. أكثر من 20,000 فيلم ومسلسل بجودة عالية." />
+                <meta name="keywords" content="أفلام, مسلسلات, مشاهدة, أونلاين, توميتو, Tomito, أفلام عربية, أفلام أجنبية" />
+
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "WebSite",
+                        "name": "Tomito",
+                        "url": "https://tomito.xyz",
+                        "description": "موقع لمشاهدة الأفلام والمسلسلات",
+                        "potentialAction": {
+                            "@type": "SearchAction",
+                            "target": "https://tomito.xyz/search?q={search_term_string}",
+                            "query-input": "required name=search_term_string"
+                        }
+                    })}
+                </script>
+            </Helmet>
             <Navbar />
+
             <HeroCarousel items={movies.slice(0, 10)} type="movie" />
             <div className="container mx-auto px-4 py-8 space-y-12">
                 <ContentRow title={t("popularMovies")} items={movies} type="movie" />
