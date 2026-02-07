@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
 import { Star, Clock, Calendar } from "lucide-react";
 import { VideoPlayer } from "@/components/VideoPlayer";
-import { fetchMovieDetails } from "@/lib/tmdb";
+import { fetchMovieDetails, t } from "@/lib/tmdb";
 
 export default function MovieDetail() {
     const { id } = useParams();
@@ -78,7 +78,7 @@ export default function MovieDetail() {
                 </div>
 
                 <div className="mt-12">
-                    <ContentRow title="أفلام مشابهة" items={movie.similar?.results || []} type="movie" />
+                    <ContentRow title={t("similarMovies")} items={movie.similar?.results || []} type="movie" />
                 </div>
             </div>
             <Footer />

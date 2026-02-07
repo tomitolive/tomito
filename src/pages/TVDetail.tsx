@@ -6,7 +6,7 @@ import { ContentRow } from "@/components/ContentRow";
 import { Star, Calendar, Play, LayoutGrid } from "lucide-react";
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { cn } from "@/lib/utils";
-import { fetchTVDetails, fetchSeasonDetails } from "@/lib/tmdb";
+import { fetchTVDetails, fetchSeasonDetails, t } from "@/lib/tmdb";
 
 export default function TVDetail() {
     const { id } = useParams();
@@ -64,7 +64,7 @@ export default function TVDetail() {
                     <div className="flex gap-6 text-sm opacity-90 font-medium text-white">
                         <span className="flex items-center gap-2 text-primary"><Star size={18} fill="currentColor" /> {tv.vote_average?.toFixed(1)}</span>
                         <span className="flex items-center gap-2"><Calendar size={18} /> {tv.first_air_date?.split('-')[0]}</span>
-                        <span className="bg-primary/20 text-primary px-3 py-0.5 rounded-full">{tv.number_of_seasons} مواسم</span>
+                        <span className="bg-primary/20 text-primary px-3 py-0.5 rounded-full">{tv.number_of_seasons} {t("seasons")}</span>
                     </div>
                 </div>
             </div>
@@ -182,7 +182,7 @@ export default function TVDetail() {
                 </div>
 
                 <div className="mt-20">
-                    <ContentRow title="مسلسلات مشابهة" items={tv.similar?.results || []} type="tv" />
+                    <ContentRow title={t("similarTV")} items={tv.similar?.results || []} type="tv" />
                 </div>
             </div>
             <Footer />
