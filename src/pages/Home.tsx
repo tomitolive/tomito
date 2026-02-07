@@ -3,7 +3,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
 import { HeroCarousel } from "@/components/HeroCarousel";
-import { fetchPopular } from "@/lib/tmdb";
+import { fetchPopular, t } from "@/lib/tmdb";
 
 export default function Home() {
     const [movies, setMovies] = useState<any[]>([]);
@@ -35,8 +35,8 @@ export default function Home() {
             <Navbar />
             <HeroCarousel items={movies.slice(0, 10)} type="movie" />
             <div className="container mx-auto px-4 py-8 space-y-12">
-                <ContentRow title="أفلام شائعة" items={movies} type="movie" />
-                <ContentRow title="مسلسلات شائعة" items={tvShows} type="tv" />
+                <ContentRow title={t("popularMovies")} items={movies} type="movie" />
+                <ContentRow title={t("popularTV")} items={tvShows} type="tv" />
             </div>
             <Footer />
         </div>
