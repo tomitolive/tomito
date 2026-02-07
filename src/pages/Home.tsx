@@ -3,22 +3,42 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
 import { HeroCarousel } from "@/components/HeroCarousel";
-import { fetchPopular, t } from "@/lib/tmdb";
+import { fetchPopular, fetchTrending, fetchNowPlaying, fetchOnTheAir, fetchTopRated, t } from "@/lib/tmdb";
 
 export default function Home() {
-    const [movies, setMovies] = useState<any[]>([]);
-    const [tvShows, setTvShows] = useState<any[]>([]);
+    const [popularMovies, setPopularMovies] = useState<any[]>([]);
+    const [popularTV, setPopularTV] = useState<any[]>([]);
+    const [trendingMovies, setTrendingMovies] = useState<any[]>([]);
+    const [latestMovies, setLatestMovies] = useState<any[]>([]);
+    const [latestSeries, setLatestSeries] = useState<any[]>([]);
+    const [topRated, setTopRated] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const loadData = async () => {
             try {
-                const [moviesData, tvData] = await Promise.all([
+                const [
+                    popularMoviesData,
+                    popularTVData,
+                    trendingData,
+                    nowPlayingData,
+                    onTheAirData,
+                    topRatedData
+                ] = await Promise.all([
                     fetchPopular("movie"),
-                    fetchPopular("tv")
+                    fetchPopular("tv"),
+                    fetchTrending("movie"),
+                    fetchNowPlaying(),
+                    fetchOnTheAir(),
+                    fetchTopRated("movie")
                 ]);
-                setMovies(moviesData.results);
-                setTvShows(tvData.results);
+
+                setPopularMovies(popularMoviesData.results);
+                setPopularTV(popularTVData.results);
+                setTrendingMovies(trendingData);
+                setLatestMovies(nowPlayingData.results);
+                setLatestSeries(onTheAirData.results);
+                setTopRated(topRatedData.results);
             } catch (err) {
                 console.error("Failed to fetch dynamic data:", err);
             } finally {
@@ -33,10 +53,21 @@ export default function Home() {
     return (
         <div className="min-h-screen bg-background">
             <Navbar />
-            <HeroCarousel items={movies.slice(0, 10)} type="movie" />
+            <HeroCarousel items={popularMovies.slice(0, 10)} type="movie" />
             <div className="container mx-auto px-4 py-8 space-y-12">
-                <ContentRow title={t("popularMovies")} items={movies} type="movie" />
-                <ContentRow title={t("popularTV")} items={tvShows} type="tv" />
+                {/* Trending Section */}
+                <ContentRow title={t("trendingMovies")} items={trendingMovies} type="movie" />
+
+                {/* Latest Content Sections */}
+                <ContentRow title={t("latestMovies")} items={latestMovies} type="movie" />
+                <ContentRow title={t("latestSeries")} items={latestSeries} type="tv" />
+
+                {/* Popular Sections */}
+                <ContentRow title={t("popularMovies")} items={popularMovies} type="movie" />
+                <ContentRow title={t("popularTV")} items={popularTV} type="tv" />
+
+                {/* Opinion / Critics' Choice Section */}
+                <ContentRow title={t("criticsChoice")} items={topRated} type="movie" />
             </div>
             <Footer />
         </div>
