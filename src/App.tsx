@@ -9,12 +9,14 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import WatchMovie from "./pages/WatchMovie";
 import WatchTV from "./pages/WatchTV";
 import ActorPage from "./pages/ActorPage";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 function App() {
   return (
     <ThemeProvider>
       <TooltipProvider>
         <Router>
+          <GoogleAnalytics />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/movie/:id" element={<WatchMovie />} />
