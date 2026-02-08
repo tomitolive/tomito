@@ -109,20 +109,20 @@ export function HeroCarousel({ items, type }: HeroCarouselProps) {
         <Button
           variant="ghost"
           size="icon"
-          className="w-12 h-12 rounded-full bg-black/30 hover:bg-black/50 text-white"
+          className="w-12 h-12 rounded-full bg-black/30 hover:bg-primary hover:text-primary-foreground text-white"
           onClick={goPrev}
         >
-          <ChevronRight className="w-6 h-6" />
+          <ChevronLeft className="w-6 h-6" />
         </Button>
       </div>
       <div className="absolute right-4 top-1/2 -translate-y-1/2 hidden md:block">
         <Button
           variant="ghost"
           size="icon"
-          className="w-12 h-12 rounded-full bg-black/30 hover:bg-black/50 text-white"
+          className="w-12 h-12 rounded-full bg-black/30 hover:bg-primary hover:text-primary-foreground text-white"
           onClick={goNext}
         >
-          <ChevronLeft className="w-6 h-6" />
+          <ChevronRight className="w-6 h-6" />
         </Button>
       </div>
 
