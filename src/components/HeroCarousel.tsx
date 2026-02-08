@@ -105,7 +105,7 @@ export function HeroCarousel({ items, type }: HeroCarouselProps) {
       </div>
 
       {/* Navigation Arrows */}
-      <div className="absolute left-4 top-1/2 -translate-y-1/2 hidden md:block">
+      <div className="absolute left-4 top-1/2 -translate-y-1/2 z-20">
         <Button
           variant="ghost"
           size="icon"
@@ -115,7 +115,7 @@ export function HeroCarousel({ items, type }: HeroCarouselProps) {
           <ChevronLeft className="w-6 h-6" />
         </Button>
       </div>
-      <div className="absolute right-4 top-1/2 -translate-y-1/2 hidden md:block">
+      <div className="absolute right-4 top-1/2 -translate-y-1/2 z-20">
         <Button
           variant="ghost"
           size="icon"

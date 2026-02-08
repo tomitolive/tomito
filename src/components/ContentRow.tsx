@@ -36,7 +36,7 @@ export function ContentRow({ title, items, type, isLoading, showAll }: ContentRo
           <h2 className="text-xl md:text-2xl font-bold">{title}</h2>
 
           <div className="flex items-center gap-2">
-            <div className="hidden md:flex items-center gap-1">
+            <div className="flex items-center gap-1">
               <Button
                 variant="ghost"
                 size="icon"
