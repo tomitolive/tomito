@@ -37,24 +37,7 @@ export function ContentRow({ title, items, type, isLoading, showAll }: ContentRo
 
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-1">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="h-8 w-8 rounded-full hover:bg-primary hover:text-primary-foreground"
-                onClick={() => scroll("left")}
-                disabled={!scrollContainerRef.current}
-              >
-                <ChevronLeft className="w-5 h-5 rtl:rotate-180" />
-              </Button>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="h-8 w-8 rounded-full hover:bg-primary hover:text-primary-foreground"
-                onClick={() => scroll("right")}
-                disabled={!scrollContainerRef.current}
-              >
-                <ChevronRight className="w-5 h-5 rtl:rotate-180" />
-              </Button>
+              
             </div>
 
             {showAll && (
