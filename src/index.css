@@ -45,11 +45,13 @@
     /* Dark Mode Theme - Darker Colors */
     /* Base: Much darker than #11224E - almost black with blue tint */
     /* Accent: #F87B1B (hsl: 24, 94%, 54%) */
-    
-    --background: 222 64% 6%;       /* Very dark blue, almost black */
+
+    --background: 222 64% 6%;
+    /* Very dark blue, almost black */
     --foreground: 0 0% 98%;
 
-    --card: 222 64% 8%;             /* Slightly lighter for cards */
+    --card: 222 64% 8%;
+    /* Slightly lighter for cards */
     --card-foreground: 0 0% 98%;
 
     --popover: 222 64% 8%;
@@ -59,20 +61,25 @@
     --primary: 24 94% 54%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 222 64% 10%;       /* Darker secondary */
+    --secondary: 222 64% 10%;
+    /* Darker secondary */
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 222 64% 9%;            /* Darker muted */
+    --muted: 222 64% 9%;
+    /* Darker muted */
     --muted-foreground: 0 0% 65%;
 
-    --accent: 222 64% 12%;          /* Darker accent */
+    --accent: 222 64% 12%;
+    /* Darker accent */
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 222 64% 15%;          /* Darker borders */
-    --input: 222 64% 10%;           /* Darker inputs */
+    --border: 222 64% 15%;
+    /* Darker borders */
+    --input: 222 64% 10%;
+    /* Darker inputs */
     --ring: 24 94% 54%;
 
     /* Custom Gradients for Dark Mode */
@@ -161,6 +168,7 @@
 }
 
 @layer components {
+
   /* Netflix Card Hover Effect */
   .movie-card {
     @apply relative overflow-hidden rounded-md transition-all duration-300 ease-out cursor-pointer;
@@ -231,14 +239,12 @@
 
   /* Genre Tag */
   .genre-tag {
-    @apply px-3 py-1 rounded-full text-sm font-medium bg-secondary text-secondary-foreground 
-           hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer;
+    @apply px-3 py-1 rounded-full text-sm font-medium bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer;
   }
 
   /* Episode Card */
   .episode-card {
-    @apply relative overflow-hidden rounded-lg bg-card border border-border 
-           hover:border-primary/50 transition-all duration-300 cursor-pointer;
+    @apply relative overflow-hidden rounded-lg bg-card border border-border hover:border-primary/50 transition-all duration-300 cursor-pointer;
   }
 
   .episode-card:hover {
@@ -247,9 +253,7 @@
 
   /* Server Button */
   .server-btn {
-    @apply flex items-center gap-2 px-4 py-3 rounded-lg bg-secondary text-secondary-foreground
-           hover:bg-primary hover:text-primary-foreground transition-all duration-200
-           border border-transparent hover:border-primary;
+    @apply flex items-center gap-2 px-4 py-3 rounded-lg bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-200 border border-transparent hover:border-primary;
   }
 
   .server-btn.active {
@@ -263,8 +267,7 @@
   }
 
   .search-input-wrapper input {
-    @apply bg-secondary/50 border-border focus:border-primary focus:ring-1 focus:ring-primary
-           transition-all duration-300;
+    @apply bg-secondary/50 border-border focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-300;
   }
 
   .search-input-wrapper.expanded input {
@@ -273,8 +276,7 @@
 
   /* Category Card */
   .category-card {
-    @apply relative overflow-hidden rounded-xl aspect-video cursor-pointer
-           group transition-transform duration-300 hover:scale-105;
+    @apply relative overflow-hidden rounded-xl aspect-video cursor-pointer group transition-transform duration-300 hover:scale-105;
   }
 
   .category-card::before {
@@ -284,8 +286,7 @@
 
   /* Actor Card */
   .actor-card {
-    @apply flex flex-col items-center gap-2 p-4 rounded-xl bg-card
-           hover:bg-accent transition-colors duration-200 cursor-pointer;
+    @apply flex flex-col items-center gap-2 p-4 rounded-xl bg-card hover:bg-accent transition-colors duration-200 cursor-pointer;
   }
 
   /* Loading Skeleton */
@@ -307,20 +308,19 @@
     0% {
       background-position: -1000px 0;
     }
+
     100% {
       background-position: 1000px 0;
     }
   }
 
   .skeleton-shimmer {
-    background: linear-gradient(
-      90deg,
-      hsl(0 0% 18%) 0%,
-      hsl(0 0% 25%) 20%,
-      hsl(0 0% 30%) 40%,
-      hsl(0 0% 25%) 60%,
-      hsl(0 0% 18%) 100%
-    );
+    background: linear-gradient(90deg,
+        hsl(0 0% 18%) 0%,
+        hsl(0 0% 25%) 20%,
+        hsl(0 0% 30%) 40%,
+        hsl(0 0% 25%) 60%,
+        hsl(0 0% 18%) 100%);
     background-size: 1000px 100%;
     animation: shimmer 2s infinite linear;
   }
@@ -350,6 +350,7 @@
 }
 
 @layer utilities {
+
   /* Text Gradient */
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-red-400;

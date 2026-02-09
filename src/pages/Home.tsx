@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
 import { HeroCarousel } from "@/components/HeroCarousel";
+import { ProductionCompaniesBar } from "@/components/ProductionCompaniesBar";
 import { fetchPopular, fetchTrending, fetchNowPlaying, fetchOnTheAir, fetchTopRated, t } from "@/lib/tmdb";
 
 
@@ -79,6 +80,9 @@ export default function Home() {
             <div className="container mx-auto px-4 py-8 space-y-12">
                 {/* Trending Section */}
                 <ContentRow title={t("trendingMovies")} items={trendingMovies} type="movie" />
+
+                {/* Production Companies Bar */}
+                <ProductionCompaniesBar />
 
                 {/* Latest Content Sections */}
                 <ContentRow title={t("latestMovies")} items={latestMovies} type="movie" />

@@ -1334,3 +1334,7 @@ export function generateVideoIframe(
     ></iframe>
   `;
 }
+export async function fetchByCompany(mediaType: "movie" | "tv", companyId: string, page = 1) {
+  const url = `${TMDB_CONFIG.BASE_URL}/discover/${mediaType}?api_key=${TMDB_CONFIG.API_KEY}&with_companies=${companyId}`;
+  return fetchAndMergeLocale(url, page);
+}

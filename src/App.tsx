@@ -14,6 +14,7 @@ import TVTrailer from "./pages/TVTrailer";
 import ActorPage from "./pages/ActorPage";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import AdPopup from "./components/AdPopup";
+import CompanyContent from "./pages/CompanyContent";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
               <Route path="/category/:type/:genreId" element={<Category />} />
               <Route path="/search" element={<Search />} />
               <Route path="/actor/:id" element={<ActorPage />} />
+              <Route path="/company/:companyId" element={<CompanyContent />} />
             </Routes>
           </Router>
         </TooltipProvider>

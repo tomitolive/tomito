@@ -3,13 +3,14 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import {
   Search, Film, Tv, Menu, X, ChevronDown, Home,
   Zap, Laugh, Drama, Ghost, Heart, Rocket,
-  Swords, Sparkles, Users
+  Swords, Sparkles, Users, Clapperboard
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Logo from "./Logo";
 import { t } from "@/lib/tmdb";
+import { PRODUCTION_COMPANIES } from "@/config/productionCompanies";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { ThemeToggle } from "./ThemeToggle";
 
@@ -184,6 +185,43 @@ export function Navbar() {
                 </div>
               )}
             </div>
+
+            {/* Production Companies Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => handleMouseEnter("companies")}
+              onMouseLeave={handleMouseLeave}
+            >
+              <button className="flex items-center gap-2 px-3 py-1.5 text-sm font-semibold transition-all duration-300 rounded-full border border-primary/20 bg-primary/5 hover:bg-primary hover:text-primary-foreground shadow-sm hover:shadow-primary/25 group">
+                {"شركات الإنتاج"}
+                <ChevronDown className={cn("w-4 h-4 transition-transform", activeDropdown === "companies" && "rotate-180")} />
+              </button>
+              {activeDropdown === "companies" && (
+                <div
+                  className="absolute top-full right-0 mt-3 w-72 bg-card/95 backdrop-blur-md border border-border rounded-xl shadow-2xl animate-fade-in p-2 z-50 overflow-hidden"
+                  onMouseEnter={() => handleMouseEnter("companies")}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <div className="grid grid-cols-1 gap-1">
+                    {PRODUCTION_COMPANIES.map((company) => (
+                      <Link
+                        key={company.id}
+                        to={`/company/${company.id}`}
+                        className="flex items-center justify-between gap-3 px-4 py-3 rounded-lg hover:bg-primary/10 transition-all duration-200 group/item"
+                      >
+                        <div className="flex items-center gap-3">
+                          <div className="w-10 h-6 flex items-center justify-center bg-white/5 rounded p-1 group-hover/item:bg-white/10 transition-colors">
+                            <img src={company.logo} alt={company.name} className="max-w-full max-h-full object-contain" />
+                          </div>
+                          <span className="font-medium group-hover/item:text-primary transition-colors">{company.nameAr}</span>
+                        </div>
+                        <ChevronDown className="w-4 h-4 -rotate-90 opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-1 transition-all" />
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Search, Theme, Language & Mobile Menu */}
@@ -318,6 +356,36 @@ export function Navbar() {
                       >
                         {cat.icon && <cat.icon className="w-4 h-4" />}
                         {cat.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Mobile Companies */}
+              <div className="px-4">
+                <button
+                  className="flex items-center justify-between w-full py-2 font-medium"
+                  onClick={() => setActiveDropdown(activeDropdown === "companies-mobile" ? null : "companies-mobile")}
+                >
+                  <span className="flex items-center gap-3">
+                    <Sparkles className="w-5 h-5" />
+                    {"شركات الإنتاج"}
+                  </span>
+                  <ChevronDown
+                    className={cn("w-4 h-4 transition-transform", activeDropdown === "companies-mobile" && "rotate-180")}
+                  />
+                </button>
+                {activeDropdown === "companies-mobile" && (
+                  <div className="mt-2 mr-8 space-y-1">
+                    {PRODUCTION_COMPANIES.map((company) => (
+                      <Link
+                        key={company.id}
+                        to={`/company/${company.id}`}
+                        className="flex items-center gap-3 py-2 text-sm text-muted-foreground hover:text-foreground"
+                      >
+                        <img src={company.logo} alt={company.name} className="w-8 h-4 object-contain brightness-90" />
+                        <span>{company.nameAr}</span>
                       </Link>
                     ))}
                   </div>
