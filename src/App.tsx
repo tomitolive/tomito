@@ -9,6 +9,8 @@ import { SpatialNavigationProvider } from "./context/SpatialNavigationContext";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import WatchMovie from "./pages/WatchMovie";
 import WatchTV from "./pages/WatchTV";
+import MovieTrailer from "./pages/MovieTrailer";
+import TVTrailer from "./pages/TVTrailer";
 import ActorPage from "./pages/ActorPage";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import AdPopup from "./components/AdPopup";
@@ -23,8 +25,12 @@ function App() {
             <AdPopup />
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/movie/:id" element={<WatchMovie />} />
-              <Route path="/tv/:id" element={<WatchTV />} />
+              {/* Trailer pages - shown first when clicking on content */}
+              <Route path="/movie/:id" element={<MovieTrailer />} />
+              <Route path="/tv/:id" element={<TVTrailer />} />
+              {/* Watch pages - shown after clicking "Watch Now" */}
+              <Route path="/movie/:id/watch" element={<WatchMovie />} />
+              <Route path="/tv/:id/watch" element={<WatchTV />} />
               <Route path="/category/:type/:genreId" element={<Category />} />
               <Route path="/search" element={<Search />} />
               <Route path="/actor/:id" element={<ActorPage />} />
