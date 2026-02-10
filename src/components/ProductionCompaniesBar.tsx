@@ -3,37 +3,55 @@ import { PRODUCTION_COMPANIES } from "@/config/productionCompanies";
 
 export const ProductionCompaniesBar = () => {
     return (
-        <div className="w-full max-w-5xl mx-auto overflow-hidden my-6 animate-fade-in relative z-10 transition-all duration-500">
-            <div className="flex flex-wrap justify-center gap-3 sm:gap-4 p-4 sm:p-5 bg-card/25 backdrop-blur-lg rounded-2xl border border-primary/10 shadow-xl">
-                {PRODUCTION_COMPANIES.map((company, index) => (
-                    <div
-                        key={company.id}
-                        className="animate-slide-up"
-                        style={{ animationDelay: `${index * 80}ms` }}
-                    >
-                        <Link
-                            to={`/company/${company.id}`}
-                            className="group block"
+        <div className="w-full max-w-7xl mx-auto my-12 animate-fade-in relative z-10">
+            {/* Header / Title */}
+            <div className="flex items-center gap-3 px-4 mb-6">
+                <div className="h-6 w-1 bg-primary rounded-full" />
+                <h2 className="text-xl font-bold tracking-tight text-foreground/90">شركات الإنتاج العالمية</h2>
+            </div>
+
+            {/* Content Container with Horizontal Scroll on Mobile */}
+            <div className="relative group/bar px-4">
+                {/* Fade Masks for horizontal scroll */}
+                <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-background to-transparent z-20 pointer-events-none opacity-0 sm:hidden group-hover:opacity-100 transition-opacity" />
+                <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-background to-transparent z-20 pointer-events-none opacity-0 sm:hidden group-hover:opacity-100 transition-opacity" />
+
+                <div className="flex items-center gap-4 py-6 overflow-x-auto hide-scrollbar sm:flex-wrap sm:justify-center px-2 flex-nowrap">
+                    {PRODUCTION_COMPANIES.map((company, index) => (
+                        <div
+                            key={company.id}
+                            className="flex-shrink-0 animate-slide-up"
+                            style={{ animationDelay: `${index * 50}ms` }}
                         >
-                            <div className="relative w-24 h-12 sm:w-28 sm:h-14 md:w-32 md:h-16 flex items-center justify-center p-2 rounded-lg bg-white/5 border border-white/5 hover:border-primary/40 transition-all duration-300 shadow-sm hover:shadow-primary/20 hover:scale-105 active:scale-95">
-                                <img
-                                    src={company.logo}
-                                    alt={company.name}
-                                    className="max-w-full max-h-full object-contain filter brightness-100 group-hover:brightness-110 transition-all duration-300"
-                                    loading="lazy"
-                                />
+                            <Link
+                                to={`/company/${company.id}`}
+                                className="group relative block"
+                            >
+                                <div className="relative w-32 h-16 sm:w-36 sm:h-20 flex items-center justify-center p-3 sm:p-4 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-primary/50 transition-all duration-500 shadow-sm hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-1 active:scale-95 group overflow-hidden">
+                                    {/* Glass reflection effect */}
+                                    <div className="absolute inset-x-0 -top-full h-full bg-gradient-to-b from-white/10 to-transparent rotate-12 transition-all duration-700 group-hover:top-full" />
 
-                                {/* Glow effect on hover */}
-                                <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-primary/0 via-primary/5 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                            </div>
+                                    <div className="w-full h-full flex items-center justify-center bg-white/95 rounded-lg p-2 shadow-inner">
+                                        <img
+                                            src={company.logo}
+                                            alt={company.name}
+                                            className="max-w-full max-h-full object-contain transition-all duration-500 group-hover:scale-110"
+                                            loading="lazy"
+                                        />
+                                    </div>
 
-                            {/* Company name label - subtle always visible */}
-                            <div className="text-center mt-1.5 text-[10px] sm:text-xs font-medium text-muted-foreground/60 group-hover:text-primary transition-colors">
-                                {company.nameAr}
-                            </div>
-                        </Link>
-                    </div>
-                ))}
+                                    {/* Hover glow */}
+                                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-primary/5 transition-opacity duration-500" />
+                                </div>
+
+                                {/* Label */}
+                                <div className="text-center mt-3 text-[10px] sm:text-xs font-bold text-muted-foreground/40 group-hover:text-primary transition-colors tracking-wide uppercase">
+                                    {company.nameAr}
+                                </div>
+                            </Link>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );

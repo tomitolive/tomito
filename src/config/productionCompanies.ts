@@ -3,8 +3,6 @@ export interface ProductionCompany {
     name: string;
     nameAr: string;
     logo: string;
-    description: string;
-    descriptionAr: string;
 }
 
 export const PRODUCTION_COMPANIES: ProductionCompany[] = [
@@ -12,49 +10,78 @@ export const PRODUCTION_COMPANIES: ProductionCompany[] = [
         id: 420,
         name: "Marvel Studios",
         nameAr: "مارفل ستوديوز",
-        logo: "https://image.tmdb.org/t/p/original/hUzeosd33nzE5MCNsZxCGEKTXaQ.png",
-        description: "Marvel Studios, LLC is an American film and television studio that is a subsidiary of Walt Disney Studios.",
-        descriptionAr: "استوديو مارفل للإنتاج السينمائي والتلفزيوني، وهو تابع لشركة والت ديزني."
+        logo: "https://image.tmdb.org/t/p/original/hUzeosd33nzE5MCNsZxCGEKTXaQ.png"
+    },
+    {
+        id: 3,
+        name: "Pixar",
+        nameAr: "بيكسار",
+        logo: "https://image.tmdb.org/t/p/original/1TjvGVDMYsj6JBxOAkUHpPEwLf7.png"
     },
     {
         id: 33,
         name: "Universal Pictures",
         nameAr: "يونيفرسال بيكتشرز",
-        logo: "https://image.tmdb.org/t/p/original/8lvHyhZg3uPdu0rJ7B7pS0SSTmg.png",
-        description: "Universal Pictures is an American film production and distribution company owned by Comcast.",
-        descriptionAr: "شركة يونيفرسال بيكتشرز للإنتاج السينمائي والتوزيع، وهي تابعة لشركة كومكاست."
+        logo: "https://image.tmdb.org/t/p/original/8lvHyhjr8oUKOOy2dKXoALWKdp0.png"
     },
     {
         id: 174,
         name: "Warner Bros. Pictures",
-        nameAr: "وارنر براذرز",
-        logo: "https://image.tmdb.org/t/p/original/v997hZp7Y7e99P99kS8v9R7H8V.png",
-        description: "Warner Bros. Entertainment Inc. is an American film and entertainment studio.",
-        descriptionAr: "شركة وارنر براذرز للترفيه والإنتاج السينمائي الأمريكي."
+        nameAr: "وارنر برذرز",
+        logo: "https://image.tmdb.org/t/p/original/IuAlhI9eVC9Z8UQWOIDdWRKSEJ.png"
+    },
+    {
+        id: 21,
+        name: "Lucasfilm",
+        nameAr: "لوكاس فيلم",
+        logo: "https://image.tmdb.org/t/p/original/o86DbpburjxrqAzEDhXZcyE8pDb.png"
+    },
+    {
+        id: 4,
+        name: "Paramount Pictures",
+        nameAr: "باراماونت بيكتشرز",
+        logo: "https://image.tmdb.org/t/p/original/gz66EfNoYPqHTYI4q9UEN4CbHRc.png"
     },
     {
         id: 2,
         name: "Walt Disney Pictures",
         nameAr: "والت ديزني",
-        logo: "https://image.tmdb.org/t/p/original/78UJOisTz8B7u386kl7oVq6O1yW.png",
-        description: "The Walt Disney Company, commonly known as Disney, is an American multinational mass media and entertainment conglomerate.",
-        descriptionAr: "شركة والت ديزني للترفيه والإنتاج السينمائي العالمي."
+        logo: "https://image.tmdb.org/t/p/original/wdrCwmRnLFJhEoH8GSfymY85KHT.png"
     },
     {
-        id: 4,
-        name: "Paramount Pictures",
-        nameAr: "باراماونت",
-        logo: "https://image.tmdb.org/t/p/original/fycUfeWvB89v7OR67MW1ID9z6XZ.png",
-        description: "Paramount Pictures Corporation is an American film and television production and distribution studio.",
-        descriptionAr: "شركة باراماونت بيكتشرز للإنتاج السينمائي والتلفزيوني."
+        id: 1632,
+        name: "Lionsgate",
+        nameAr: "ليونزغيت",
+        logo: "https://image.tmdb.org/t/p/original/cisLn1YAUuptXVBa0xjq7ST9cH0.png"
     },
     {
-        id: 25,
-        name: "20th Century Studios",
-        nameAr: "تونتيث سنتشوري",
-        logo: "https://image.tmdb.org/t/p/original/vVpGz4Yvprg5D1R6Iu6B4f4xLh.png",
-        description: "20th Century Studios is an American film studio that is a subsidiary of Walt Disney Studios.",
-        descriptionAr: "استوديوهات تونتيث سنتشوري للإنتاج السينمائي."
+        id: 7,
+        name: "DreamWorks Pictures",
+        nameAr: "دريم ووركس",
+        logo: "https://image.tmdb.org/t/p/original/vru2SssLX3FPhnKZGtYw00pVIS9.png"
+    },
+    {
+        id: 34,
+        name: "Sony Pictures",
+        nameAr: "سوني بيكتشرز",
+        logo: "https://image.tmdb.org/t/p/original/GagSvqWlyPdkFHMfQ3pNq6ix9P.png"
+    },
+    {
+        id: 429,
+        name: "DC Entertainment",
+        nameAr: "دي سي",
+        logo: "https://image.tmdb.org/t/p/original/2Tc1P3Ac8M479naPp1kYT3izLS5.png"
+    },
+    {
+        id: 521,
+        name: "Netflix",
+        nameAr: "نتفليكس",
+        logo: "https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.png"
+    },
+    {
+        id: 1,
+        name: "Legendary Pictures",
+        nameAr: "ليجندري",
+        logo: "https://image.tmdb.org/t/p/original/8M99Dkt23MjQMTTWukq4m5XsEuo.png"
     }
 ];
-

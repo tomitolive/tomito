@@ -66,7 +66,6 @@ export function VideoPlayer({ id, type, title, season, episode, onNavigate }: Vi
                     key={key}
                     src={videoUrl}
                     className="w-full h-full"
-                    allowFullScreen
                     allow="autoplay; encrypted-media"
                     title={`${title} - ${currentServer.name}`}
                     sandbox="allow-same-origin allow-scripts allow-forms allow-popups"

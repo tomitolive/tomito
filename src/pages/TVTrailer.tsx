@@ -169,7 +169,6 @@ export default function TVTrailer() {
                                 <iframe
                                     src={`https://www.youtube.com/embed/${trailerKey}?autoplay=0&rel=0`}
                                     className="absolute inset-0 w-full h-full"
-                                    allowFullScreen
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     title={`${tvShow.name} Trailer`}
                                 />
@@ -304,3 +303,4 @@ export default function TVTrailer() {
         </div>
     );
 }
+

@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { Play, Star, Clock, Calendar, ArrowRight, Users } from "lucide-react";
+import { Play, Star, Clock, Calendar, ArrowRight, Users, Maximize } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
@@ -32,6 +32,18 @@ export default function WatchMovie() {
   const [selectedServer, setSelectedServer] = useState(MOVIE_SERVERS[0]);
   const [imdbId, setImdbId] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const playerRef = React.useRef<HTMLDivElement>(null);
+
+  const toggleFullscreen = () => {
+    if (!playerRef.current) return;
+    if (!document.fullscreenElement) {
+      playerRef.current.requestFullscreen().catch((err) => {
+        console.error(`Error attempting to enable fullscreen: ${err.message}`);
+      });
+    } else {
+      document.exitFullscreen();
+    }
+  };
 
   useEffect(() => {
     const loadMovie = async () => {
@@ -225,14 +237,25 @@ export default function WatchMovie() {
           </div>
 
           {/* Video Player */}
-          <div className="relative aspect-video bg-black rounded-xl overflow-hidden shadow-2xl">
-            <iframe
-              src={videoUrl}
-              className="absolute inset-0 w-full h-full"
-              allowFullScreen
-              allow="autoplay; fullscreen; picture-in-picture"
-              title={movie.title}
-            />
+          <div className="relative group">
+            <div ref={playerRef} className="relative aspect-video bg-black rounded-xl overflow-hidden shadow-2xl">
+              <iframe
+                src={videoUrl}
+                className="absolute inset-0 w-full h-full"
+                allowFullScreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                title={movie.title}
+              />
+              {/* Custom Fullscreen Button for Real Fullscreen */}
+              <button
+                onClick={toggleFullscreen}
+                className="absolute bottom-16 right-4 p-2 bg-black/60 backdrop-blur-md rounded-lg text-white opacity-100 lg:opacity-0 lg:group-hover:opacity-100 hover:bg-primary/80 transition-all flex items-center gap-2 text-xs font-bold border border-white/20"
+                title="True Fullscreen"
+              >
+                <Maximize className="w-4 h-4" />
+                ملء الشاشة
+              </button>
+            </div>
           </div>
         </div>
 
