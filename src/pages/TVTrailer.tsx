@@ -19,7 +19,8 @@ import {
 } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
-import { Helmet } from "react-helmet-async";
+import { SEO } from "@/components/SEO";
+
 
 export default function TVTrailer() {
     const { id } = useParams<{ id: string }>();
@@ -106,37 +107,15 @@ export default function TVTrailer() {
     return (
         <div className="min-h-screen bg-background">
             {/* SEO Meta Tags */}
-            <Helmet>
-                <title>مشاهدة تريلر {tvShow.name} كامل HD - Tomito</title>
-                <meta name="description" content={`شاهد تريلر ${tvShow.name} الرسمي. ${tvShow.overview?.substring(0, 150)}...`} />
-                <meta name="keywords" content={`${tvShow.name}, تريلر, مسلسل, مشاهدة, ${tvShow.genres?.map(g => g.name).join(', ')}`} />
+            <SEO
+                title={`مشاهدة تريلر ${tvShow.name} كامل HD`}
+                description={`شاهد تريلر ${tvShow.name} الرسمي. ${tvShow.overview?.substring(0, 150)}...`}
+                keywords={`${tvShow.name}, تريلر, مسلسل, مشاهدة, ${tvShow.genres?.map(g => g.name).join(', ')}, مسلسلات 2025, تحميل مسلسلات`}
+                ogTitle={`تريلر ${tvShow.name}`}
+                ogDescription={tvShow.overview || ''}
+                ogType="video.other"
+            />
 
-                {/* Open Graph */}
-                <meta property="og:type" content="video.other" />
-                <meta property="og:title" content={`تريلر ${tvShow.name}`} />
-                <meta property="og:description" content={tvShow.overview || ''} />
-                <meta property="og:image" content={getBackdropUrl(tvShow.backdrop_path) || ''} />
-                {trailerKey && <meta property="og:video" content={`https://www.youtube.com/watch?v=${trailerKey}`} />}
-
-                {/* Twitter Cards */}
-                <meta name="twitter:card" content="player" />
-                <meta name="twitter:title" content={`تريلر ${tvShow.name}`} />
-                {trailerKey && <meta name="twitter:player" content={`https://www.youtube.com/embed/${trailerKey}`} />}
-
-                {/* Structured Data */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "VideoObject",
-                        "name": `تريلر ${tvShow.name}`,
-                        "description": tvShow.overview,
-                        "thumbnailUrl": getImageUrl(tvShow.poster_path, "w500"),
-                        "uploadDate": tvShow.first_air_date,
-                        "contentUrl": trailerKey ? `https://www.youtube.com/watch?v=${trailerKey}` : undefined,
-                        "embedUrl": trailerKey ? `https://www.youtube.com/embed/${trailerKey}` : undefined,
-                    })}
-                </script>
-            </Helmet>
 
             <Navbar />
 
@@ -284,12 +263,12 @@ export default function TVTrailer() {
                     </div>
                 </div>
 
-                {/* Similar TV Shows */}
                 {similar.length > 0 && (
                     <div className="mt-12">
-                        <ContentRow title={t("similarShows")} items={similar} type="tv" />
+                        <ContentRow title={t("recommended")} items={similar} type="tv" />
                     </div>
                 )}
+
 
                 {/* Bottom Ad Space */}
                 <div className="mt-8">

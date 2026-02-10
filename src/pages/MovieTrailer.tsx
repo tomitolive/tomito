@@ -19,7 +19,8 @@ import {
 } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
-import { Helmet } from "react-helmet-async";
+import { SEO } from "@/components/SEO";
+
 
 export default function MovieTrailer() {
     const { id } = useParams<{ id: string }>();
@@ -106,37 +107,15 @@ export default function MovieTrailer() {
     return (
         <div className="min-h-screen bg-background">
             {/* SEO Meta Tags */}
-            <Helmet>
-                <title>مشاهدة تريلر {movie.title} كامل HD - Tomito</title>
-                <meta name="description" content={`شاهد تريلر ${movie.title} الرسمي. ${movie.overview?.substring(0, 150)}...`} />
-                <meta name="keywords" content={`${movie.title}, تريلر, مشاهدة, ${movie.genres?.map(g => g.name).join(', ')}`} />
+            <SEO
+                title={`مشاهدة تريلر ${movie.title} كامل HD`}
+                description={`شاهد تريلر ${movie.title} الرسمي. ${movie.overview?.substring(0, 150)}...`}
+                keywords={`${movie.title}, تريلر, مشاهدة, ${movie.genres?.map(g => g.name).join(', ')}, افلام جديدة, بكس اوفيس`}
+                ogTitle={`تريلر ${movie.title}`}
+                ogDescription={movie.overview || ''}
+                ogType="video.other"
+            />
 
-                {/* Open Graph */}
-                <meta property="og:type" content="video.other" />
-                <meta property="og:title" content={`تريلر ${movie.title}`} />
-                <meta property="og:description" content={movie.overview || ''} />
-                <meta property="og:image" content={getBackdropUrl(movie.backdrop_path) || ''} />
-                {trailerKey && <meta property="og:video" content={`https://www.youtube.com/watch?v=${trailerKey}`} />}
-
-                {/* Twitter Cards */}
-                <meta name="twitter:card" content="player" />
-                <meta name="twitter:title" content={`تريلر ${movie.title}`} />
-                {trailerKey && <meta name="twitter:player" content={`https://www.youtube.com/embed/${trailerKey}`} />}
-
-                {/* Structured Data */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "VideoObject",
-                        "name": `تريلر ${movie.title}`,
-                        "description": movie.overview,
-                        "thumbnailUrl": getImageUrl(movie.poster_path, "w500"),
-                        "uploadDate": movie.release_date,
-                        "contentUrl": trailerKey ? `https://www.youtube.com/watch?v=${trailerKey}` : undefined,
-                        "embedUrl": trailerKey ? `https://www.youtube.com/embed/${trailerKey}` : undefined,
-                    })}
-                </script>
-            </Helmet>
 
             <Navbar />
 

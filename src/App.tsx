@@ -15,33 +15,47 @@ import ActorPage from "./pages/ActorPage";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import AdPopup from "./components/AdPopup";
 import CompanyContent from "./pages/CompanyContent";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Privacy from "./pages/Privacy";
+
+
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
-    <ThemeProvider>
-      <SpatialNavigationProvider>
-        <TooltipProvider>
-          <Router>
-            <GoogleAnalytics />
-            <AdPopup />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              {/* Trailer pages - shown first when clicking on content */}
-              <Route path="/movie/:id" element={<MovieTrailer />} />
-              <Route path="/tv/:id" element={<TVTrailer />} />
-              {/* Watch pages - shown after clicking "Watch Now" */}
-              <Route path="/movie/:id/watch" element={<WatchMovie />} />
-              <Route path="/tv/:id/watch" element={<WatchTV />} />
-              <Route path="/category/:type/:genreId" element={<Category />} />
-              <Route path="/search" element={<Search />} />
-              <Route path="/actor/:id" element={<ActorPage />} />
-              <Route path="/company/:companyId" element={<CompanyContent />} />
-            </Routes>
-          </Router>
-        </TooltipProvider>
-      </SpatialNavigationProvider>
-    </ThemeProvider>
+    <HelmetProvider>
+      <ThemeProvider>
+        <SpatialNavigationProvider>
+          <TooltipProvider>
+
+            <Router>
+              <GoogleAnalytics />
+              <AdPopup />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                {/* Trailer pages - shown first when clicking on content */}
+                <Route path="/movie/:id" element={<MovieTrailer />} />
+                <Route path="/tv/:id" element={<TVTrailer />} />
+                {/* Watch pages - shown after clicking "Watch Now" */}
+                <Route path="/movie/:id/watch" element={<WatchMovie />} />
+                <Route path="/tv/:id/watch" element={<WatchTV />} />
+                <Route path="/category/:type/:genreId" element={<Category />} />
+                <Route path="/search" element={<Search />} />
+                <Route path="/actor/:id" element={<ActorPage />} />
+                <Route path="/company/:companyId" element={<CompanyContent />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/privacy" element={<Privacy />} />
+
+              </Routes>
+            </Router>
+          </TooltipProvider>
+        </SpatialNavigationProvider>
+      </ThemeProvider>
+    </HelmetProvider>
   );
 }
 
 export default App;
+

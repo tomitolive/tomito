@@ -1,13 +1,16 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
+import { cn } from "@/lib/utils";
 
-const Logo: FC = () => {
+
+const Logo: FC<{ className?: string }> = ({ className }) => {
   return (
     <Link
       to="/"
-      className="flex items-center gap-3 group select-none"
+      className={cn("flex items-center gap-3 group select-none", className)}
     >
-     
+
+
 
       {/* Text */}
       <div className="flex flex-col leading-none">
@@ -21,7 +24,7 @@ const Logo: FC = () => {
           TOMITO
         </span>
 
-       
+
       </div>
     </Link>
   );
