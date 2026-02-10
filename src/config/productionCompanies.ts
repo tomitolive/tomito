@@ -2,6 +2,8 @@ export interface ProductionCompany {
     id: number;
     name: string;
     nameAr: string;
+    nameFr?: string;
+    nameEs?: string;
     logo: string;
 }
 

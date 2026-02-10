@@ -1001,6 +1001,7 @@ export const UI_TRANSLATIONS = {
     opinion: "آراء",
     criticsChoice: "اختيارات النقاد",
     recommended: "مقترح لك",
+    productionCompanies: "شركات الإنتاج العالمية",
   },
   en: {
     home: "Home",
@@ -1107,6 +1108,7 @@ export const UI_TRANSLATIONS = {
     opinion: "Opinions",
     criticsChoice: "Critics' Choice",
     recommended: "Recommended for You",
+    productionCompanies: "Production Companies",
   },
   fr: {
     home: "Accueil",
@@ -1204,6 +1206,7 @@ export const UI_TRANSLATIONS = {
     opinion: "Opinions",
     criticsChoice: "Choix des Critiques",
     recommended: "Recommandé pour vous",
+    productionCompanies: "Sociétés de Production",
   },
   es: {
     home: "Inicio",
@@ -1296,6 +1299,7 @@ export const UI_TRANSLATIONS = {
     viewAll: "Ver todo",
     movieGenres: "Géneros de películas",
     tvGenres: "Géneros de series",
+    productionCompanies: "Productoras",
   },
 };
 
