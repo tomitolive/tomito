@@ -1,13 +1,23 @@
 import { Link } from "react-router-dom";
 import { PRODUCTION_COMPANIES } from "@/config/productionCompanies";
+import { t, getCurrentLanguage } from "@/lib/tmdb";
 
 export const ProductionCompaniesBar = () => {
+    const lang = getCurrentLanguage();
+
+    const getCompanyName = (company: typeof PRODUCTION_COMPANIES[0]) => {
+        if (lang === 'ar') return company.nameAr;
+        if (lang === 'fr') return company.nameFr || company.name;
+        if (lang === 'es') return company.nameEs || company.name;
+        return company.name;
+    };
+
     return (
         <div className="w-full max-w-7xl mx-auto my-12 animate-fade-in relative z-10">
             {/* Header / Title */}
             <div className="flex items-center gap-3 px-4 mb-6">
                 <div className="h-6 w-1 bg-primary rounded-full" />
-                <h2 className="text-xl font-bold tracking-tight text-foreground/90">شركات الإنتاج العالمية</h2>
+                <h2 className="text-xl font-bold tracking-tight text-foreground/90">{t("productionCompanies")}</h2>
             </div>
 
             {/* Content Container with Horizontal Scroll on Mobile */}
@@ -46,7 +56,7 @@ export const ProductionCompaniesBar = () => {
 
                                 {/* Label */}
                                 <div className="text-center mt-3 text-[10px] sm:text-xs font-bold text-muted-foreground/40 group-hover:text-primary transition-colors tracking-wide uppercase">
-                                    {company.nameAr}
+                                    {getCompanyName(company)}
                                 </div>
                             </Link>
                         </div>
