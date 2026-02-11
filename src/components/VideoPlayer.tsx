@@ -1,5 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { Play, Server, Info, ChevronRight, ChevronLeft } from "lucide-react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
+import {
+    Play, Pause, Server, Info, ChevronRight, ChevronLeft,
+    Maximize, Minimize, Settings2, MonitorPlay as Pip,
+    Volume2, VolumeX, Languages, Scan, RotateCw, Subtitles
+} from "lucide-react";
+
+
 import {
     VideoServer,
     MOVIE_SERVERS,
@@ -10,6 +16,9 @@ import {
 } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { Slider } from "@/components/ui/slider";
+import { Switch } from "@/components/ui/switch";
+
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -24,13 +33,33 @@ interface VideoPlayerProps {
     season?: number;
     episode?: number;
     onNavigate?: (season: number, episode: number) => void;
+    currentServer?: VideoServer;
 }
 
-export function VideoPlayer({ id, type, title, season, episode, onNavigate }: VideoPlayerProps) {
+export function VideoPlayer({ id, type, title, season, episode, onNavigate, currentServer: externalServer }: VideoPlayerProps) {
     const servers = type === "movie" ? MOVIE_SERVERS : TV_SERVERS;
-    const [currentServer, setCurrentServer] = useState<VideoServer>(servers[0]);
+    const [internalServer, setInternalServer] = useState<VideoServer>(servers[0]);
+    const currentServer = externalServer || internalServer;
+
     const [imdbId, setImdbId] = useState<string | undefined>(undefined);
-    const [key, setKey] = useState(0); // To force iframe reload
+    const [key, setKey] = useState(0);
+    const [showControls, setShowControls] = useState(true); // Default to true
+    const [isFullscreen, setIsFullscreen] = useState(false);
+
+
+    // New Enhanced States
+    const [isPlaying, setIsPlaying] = useState(true);
+    const [volume, setVolume] = useState([80]);
+    const [isMuted, setIsMuted] = useState(false);
+    const [zoomMode, setZoomMode] = useState<'contain' | 'cover' | 'fill'>('contain');
+    const [subtitleEnabled, setSubtitleEnabled] = useState(true);
+    const [brightness, setBrightness] = useState([100]);
+
+
+    const containerRef = useRef<HTMLDivElement>(null);
+    const iframeRef = useRef<HTMLIFrameElement>(null);
+    const controlsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
 
     // Fetch IMDB ID if needed
     useEffect(() => {
@@ -50,110 +79,193 @@ export function VideoPlayer({ id, type, title, season, episode, onNavigate }: Vi
         season,
         episode,
         imdbId,
-        { autoplay: true }
+        {
+            autoplay: true,
+            subtitleLang: subtitleEnabled ? 'ar' : undefined
+        }
     );
 
+
     const handleServerChange = (server: VideoServer) => {
-        setCurrentServer(server);
+        setInternalServer(server);
         setKey(prev => prev + 1);
     };
 
+    const [isIdle, setIsIdle] = useState(false);
+
+    const handleInteraction = useCallback(() => {
+        setIsIdle(false);
+        if (controlsTimeoutRef.current) clearTimeout(controlsTimeoutRef.current);
+        controlsTimeoutRef.current = setTimeout(() => {
+            setIsIdle(true);
+        }, 3000);
+    }, []);
+
+    useEffect(() => {
+        const handleFullscreenChange = () => {
+            setIsFullscreen(!!document.fullscreenElement);
+        };
+        document.addEventListener('fullscreenchange', handleFullscreenChange);
+        window.addEventListener('mousemove', handleInteraction);
+        window.addEventListener('mousedown', handleInteraction);
+        window.addEventListener('touchstart', handleInteraction);
+
+        handleInteraction();
+
+        return () => {
+            document.removeEventListener('fullscreenchange', handleFullscreenChange);
+            window.removeEventListener('mousemove', handleInteraction);
+            window.removeEventListener('mousedown', handleInteraction);
+            window.removeEventListener('touchstart', handleInteraction);
+            if (controlsTimeoutRef.current) clearTimeout(controlsTimeoutRef.current);
+        };
+    }, [handleInteraction]);
+
+
     return (
-        <div className="w-full space-y-6">
-            {/* Player Wrapper */}
-            <div className="relative aspect-video w-full bg-black rounded-xl overflow-hidden shadow-2xl group border border-border/50">
-                <iframe
-                    key={key}
-                    src={videoUrl}
-                    className="w-full h-full"
-                    allow="autoplay; encrypted-media"
-                    title={`${title} - ${currentServer.name}`}
-                    sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
-                />
 
-                {/* Quality/Server Overlay */}
-                <div className="absolute top-4 left-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                    <span className="bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-primary border border-primary/20 text-white">
-                        {currentServer.quality}
-                    </span>
-                    <span className="bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-white/80 border border-white/10 text-white">
-                        {currentServer.name}
-                    </span>
-                </div>
-            </div>
+        <div
+            ref={containerRef}
+            className={cn(
+                "relative w-full bg-black rounded-xl overflow-hidden shadow-2xl group border border-border/50 select-none",
+                isFullscreen ? "fixed inset-0 z-[9999] rounded-none border-none" : "aspect-video"
+            )}
+        >
+            {/* Brightness Overlay */}
+            <div
+                className="absolute inset-0 pointer-events-none z-10 transition-opacity duration-300"
+                style={{
+                    backgroundColor: 'black',
+                    opacity: (100 - brightness[0]) / 100
+                }}
+            />
 
-            {/* Controls Area */}
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4 p-4 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50">
-                <div className="flex items-center gap-4">
-                    <div className="flex items-center gap-2">
-                        <Server className="w-5 h-5 text-primary" />
-                        <span className="text-sm font-medium text-muted-foreground">{t("chooseServer") || "اختيار السيرفر"}</span>
-                    </div>
+            <iframe
+                key={key}
+                ref={iframeRef}
+                src={videoUrl}
+                className={cn(
+                    "w-full h-full transition-all duration-500 ease-out",
+                    zoomMode === 'cover' ? "scale-110 object-cover" :
+                        zoomMode === 'fill' ? "scale-[1.2] object-fill" : "object-contain"
+                )}
+                allow="autoplay; encrypted-media; fullscreen"
+                title={`${title} - ${currentServer.name}`}
+                sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
+            />
 
-                    <DropdownMenu>
-                        <DropdownMenuTrigger asChild>
-                            <Button variant="outline" size="sm" className="gap-2 min-w-[140px] justify-between">
-                                <span className="flex items-center gap-2">
-                                    <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                                    {currentServer.name}
-                                </span>
-                                <span className="text-[10px] opacity-60 bg-muted px-1 rounded">{currentServer.quality}</span>
+            {/* Refined Control Bar - Top, Sharp Corners, Less Transparent */}
+            <div className={cn(
+                "absolute top-4 left-1/2 -translate-x-1/2 z-20 flex justify-center transition-all duration-500 pointer-events-none",
+                isIdle ? "opacity-40 scale-95" : "opacity-100 scale-100"
+            )}>
+                <div className="flex items-center gap-2 px-3 h-9 rounded-lg pointer-events-auto">
+                    {/* Left: Navigation */}
+                    {type === "tv" && onNavigate && (
+                        <div className="flex items-center gap-0.5">
+                            <Button
+                                variant="ghost"
+                                size="icon"
+                                onClick={() => onNavigate(season!, Math.max(1, (episode || 1) - 1))}
+                                disabled={episode === 1}
+                                className="w-8 h-8 hover:bg-white/10 text-white transition-colors disabled:opacity-30"
+                            >
+                                <ChevronLeft className="w-5 h-5" />
                             </Button>
-                        </DropdownMenuTrigger>
-                        <DropdownMenuContent align="start" className="w-56 bg-card border-border">
-                            {servers.map((server) => (
-                                <DropdownMenuItem
-                                    key={server.id}
-                                    onClick={() => handleServerChange(server)}
-                                    className={cn(
-                                        "flex items-center justify-between cursor-pointer py-2.5",
-                                        currentServer.id === server.id ? "bg-primary/10 text-primary" : ""
-                                    )}
-                                >
-                                    <div className="flex items-center gap-2">
-                                        <Play className={cn("w-3.5 h-3.5", currentServer.id === server.id ? "fill-primary" : "opacity-40")} />
-                                        <span className="font-medium text-sm">{server.name}</span>
-                                    </div>
-                                    <span className="text-[10px] font-bold opacity-60 uppercase">{server.quality}</span>
-                                </DropdownMenuItem>
-                            ))}
-                        </DropdownMenuContent>
-                    </DropdownMenu>
-                </div>
+                            <Button
+                                variant="ghost"
+                                size="icon"
+                                onClick={() => onNavigate(season!, (episode || 1) + 1)}
+                                className="w-8 h-8 hover:bg-white/10 text-white transition-colors"
+                            >
+                                <ChevronRight className="w-5 h-5" />
+                            </Button>
+                        </div>
+                    )}
 
-                {/* TV specific controls */}
-                {type === "tv" && onNavigate && (
-                    <div className="flex items-center gap-2">
-                        <Button
-                            variant="ghost"
-                            size="icon"
-                            onClick={() => episode && episode > 1 && onNavigate(season || 1, episode - 1)}
-                            disabled={episode === 1}
-                            className="hover:bg-primary/10"
-                        >
-                            <ChevronLeft className="w-5 h-5" />
-                        </Button>
 
-                        <div className="px-4 py-1.5 bg-secondary/50 rounded-lg text-sm font-bold min-w-[120px] text-center">
-                            {t("seasonLabel") || "الموسم"} {season} / {t("episodeLabel") || "الحلقة"} {episode}
+
+
+
+                    {/* Center: Controls */}
+                    <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-2 group/volume px-3 h-8 rounded-lg">
+                            <button
+                                onClick={() => setIsMuted(!isMuted)}
+                                className="text-white/60 hover:text-white transition-colors"
+                            >
+                                {isMuted || volume[0] === 0 ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5" />}
+                            </button>
+                            <Slider
+                                value={isMuted ? [0] : volume}
+                                max={100}
+                                step={1}
+                                onValueChange={(val) => {
+                                    setVolume(val);
+                                    setIsMuted(false);
+                                }}
+                                className="w-20 cursor-pointer [&_.bg-primary]:bg-white [&_.border-primary]:border-white"
+                            />
                         </div>
 
-                        <Button
-                            variant="ghost"
-                            size="icon"
-                            onClick={() => onNavigate(season || 1, (episode || 1) + 1)}
-                            className="hover:bg-primary/10"
-                        >
-                            <ChevronRight className="w-5 h-5" />
-                        </Button>
+                        <div className="flex items-center gap-2 group/brightness px-3 h-8 rounded-lg">
+                            <span className="text-white/60 text-[10px]">☀️</span>
+                            <Slider
+                                value={brightness}
+                                max={100}
+                                min={20}
+                                step={5}
+                                onValueChange={setBrightness}
+                                className="w-20 cursor-pointer [&_.bg-primary]:bg-white [&_.border-primary]:border-white"
+                            />
+                        </div>
                     </div>
-                )}
 
-                <div className="flex items-center gap-2 text-xs text-muted-foreground bg-muted/30 px-3 py-1.5 rounded-full">
-                    <Info className="w-3.5 h-3.5" />
-                    {t("disclaimer") || "هذا الموقع لا يستضيف أي محتوى على خوادمه"}
+                    <div className="h-4 w-[1px] bg-white/10" />
+
+                    {/* Right: Screen & Zoom */}
+                    <div className="flex items-center gap-0.5">
+                        <button
+                            onClick={() => {
+                                const modes: ('contain' | 'cover' | 'fill')[] = ['contain', 'cover', 'fill'];
+                                const nextIndex = (modes.indexOf(zoomMode) + 1) % modes.length;
+                                setZoomMode(modes[nextIndex]);
+                            }}
+                            className={cn(
+                                "w-8 h-8 flex items-center justify-center hover:bg-white/10 text-white/50 hover:text-white rounded-lg transition-all",
+                                zoomMode !== 'contain' && "text-primary hover:text-primary opacity-100"
+                            )}
+                            title="Format"
+                        >
+                            <Scan className="w-4 h-4" />
+                        </button>
+
+                        <button
+                            onClick={() => {
+                                if (!document.fullscreenElement) {
+                                    containerRef.current?.requestFullscreen();
+                                    setIsFullscreen(true);
+                                } else {
+                                    document.exitFullscreen();
+                                    setIsFullscreen(false);
+                                }
+                            }}
+                            className="w-8 h-8 flex items-center justify-center hover:bg-white/10 text-white/50 hover:text-white rounded-lg transition-all"
+                            title="Full Screen"
+                        >
+                            {isFullscreen ? <Minimize className="w-4 h-4" /> : <Maximize className="w-4 h-4" />}
+                        </button>
+                    </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+
         </div>
     );
 }

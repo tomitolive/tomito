@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useSearchParams, Link } from "react-router-dom";
-import { Play, Star, Clock, Calendar, ArrowRight, Users, ChevronDown, Maximize } from "lucide-react";
+import { Play, Star, Clock, Calendar, ArrowRight, Users, ChevronDown, Maximize, Settings2, Server } from "lucide-react";
+import { VideoPlayer } from "@/components/VideoPlayer";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
@@ -13,14 +14,14 @@ import {
   fetchSimilar,
   getBackdropUrl,
   getImageUrl,
-  TV_SERVERS,
-  getVideoUrl,
   getImdbIdFromTmdb,
   TVShowDetails,
   Episode,
   Cast,
   TVShow,
-  t
+  t,
+  TV_SERVERS,
+  VideoServer
 } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
@@ -34,22 +35,15 @@ export default function WatchTV() {
   const [episodes, setEpisodes] = useState<Episode[]>([]);
   const [selectedSeason, setSelectedSeason] = useState(1);
   const [selectedEpisode, setSelectedEpisode] = useState(1);
-  const [selectedServer, setSelectedServer] = useState(TV_SERVERS[0]);
   const [imdbId, setImdbId] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isSeasonDropdownOpen, setIsSeasonDropdownOpen] = useState(false);
-  const playerRef = React.useRef<HTMLDivElement>(null);
+  const [currentServer, setCurrentServer] = useState<VideoServer>(TV_SERVERS[0]);
 
-  const toggleFullscreen = () => {
-    if (!playerRef.current) return;
-    if (!document.fullscreenElement) {
-      playerRef.current.requestFullscreen().catch((err) => {
-        console.error(`Error attempting to enable fullscreen: ${err.message}`);
-      });
-    } else {
-      document.exitFullscreen();
-    }
+  const handleNavigate = (s: number, e: number) => {
+    setSearchParams({ season: s.toString(), episode: e.toString() });
   };
+
 
   // Load initial data
   useEffect(() => {
@@ -146,7 +140,6 @@ export default function WatchTV() {
   }
 
   const validSeasons = show.seasons?.filter((s) => s.season_number > 0) || [];
-  const videoUrl = getVideoUrl(selectedServer, show.id, "tv", selectedSeason, selectedEpisode, imdbId || undefined);
   const currentEpisode = episodes.find((e) => e.episode_number === selectedEpisode);
 
   return (
@@ -283,22 +276,6 @@ export default function WatchTV() {
             )}
           </div>
 
-          {/* Server Selection */}
-          <div className="flex flex-wrap gap-2">
-            {TV_SERVERS.map((server) => (
-              <button
-                key={server.id}
-                onClick={() => setSelectedServer(server)}
-                className={cn(
-                  "server-btn text-sm",
-                  selectedServer.id === server.id && "active"
-                )}
-              >
-                {server.name}
-                <span className="text-xs px-1.5 py-0.5 rounded bg-black/20">{server.quality}</span>
-              </button>
-            ))}
-          </div>
         </div>
 
         {/* Video Player */}
@@ -313,24 +290,40 @@ export default function WatchTV() {
             )}
           </div>
 
-          <div className="relative group">
-            <div ref={playerRef} className="relative aspect-video bg-black rounded-xl overflow-hidden shadow-2xl">
-              <iframe
-                src={videoUrl}
-                className="absolute inset-0 w-full h-full"
-                allowFullScreen
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-                title={`${show.name} S${selectedSeason}E${selectedEpisode}`}
-              />
-              {/* Custom Fullscreen Button for Real Fullscreen */}
+          {/* Server Selection UI - Moved from inside VideoPlayer */}
+          <div className="flex flex-wrap items-center gap-2 mb-4 justify-center">
+            {TV_SERVERS.map((server) => (
               <button
-                onClick={toggleFullscreen}
-                className="absolute bottom-16 right-4 p-2 bg-black/60 backdrop-blur-md rounded-lg text-white opacity-100 lg:opacity-0 lg:group-hover:opacity-100 hover:bg-primary/80 transition-all flex items-center gap-2 text-xs font-bold border border-white/20"
-                title="True Fullscreen"
+                key={server.id}
+                onClick={() => setCurrentServer(server)}
+                className={cn(
+                  "h-9 px-4 rounded-lg transition-all backdrop-blur-md shadow-sm border flex items-center gap-2",
+                  currentServer.id === server.id
+                    ? "bg-primary text-primary-foreground border-primary shadow-md"
+                    : "bg-secondary/50 text-muted-foreground hover:text-foreground border-border hover:bg-secondary"
+                )}
               >
-                <Maximize className="w-4 h-4" />
-                ملء الشاشة
+                <Server className="w-4 h-4" />
+                <span className="text-xs font-bold uppercase tracking-wide">{server.name}</span>
               </button>
+            ))}
+          </div>
+
+          {/* Video Player Container */}
+          <div className="relative group max-w-3xl mx-auto">
+            <div className="relative aspect-video">
+
+              {show && (
+                <VideoPlayer
+                  id={show.id}
+                  type="tv"
+                  title={show.name}
+                  season={selectedSeason}
+                  episode={selectedEpisode}
+                  onNavigate={handleNavigate}
+                  currentServer={currentServer}
+                />
+              )}
             </div>
           </div>
         </div>

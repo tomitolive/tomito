@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { Play, Star, Clock, Calendar, ArrowRight, Users, Maximize } from "lucide-react";
+import { Play, Star, Clock, Calendar, ArrowRight, Users, Maximize, Settings2, Server } from "lucide-react";
+import { VideoPlayer } from "@/components/VideoPlayer";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
@@ -12,13 +13,13 @@ import {
   fetchSimilar,
   getBackdropUrl,
   getImageUrl,
-  MOVIE_SERVERS,
-  getVideoUrl,
   getImdbIdFromTmdb,
   MovieDetails,
   Cast,
   Movie,
-  t
+  t,
+  MOVIE_SERVERS,
+  VideoServer
 } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
@@ -29,21 +30,10 @@ export default function WatchMovie() {
   const [movie, setMovie] = useState<MovieDetails | null>(null);
   const [cast, setCast] = useState<Cast[]>([]);
   const [similar, setSimilar] = useState<Movie[]>([]);
-  const [selectedServer, setSelectedServer] = useState(MOVIE_SERVERS[0]);
   const [imdbId, setImdbId] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const playerRef = React.useRef<HTMLDivElement>(null);
+  const [currentServer, setCurrentServer] = useState<VideoServer>(MOVIE_SERVERS[0]);
 
-  const toggleFullscreen = () => {
-    if (!playerRef.current) return;
-    if (!document.fullscreenElement) {
-      playerRef.current.requestFullscreen().catch((err) => {
-        console.error(`Error attempting to enable fullscreen: ${err.message}`);
-      });
-    } else {
-      document.exitFullscreen();
-    }
-  };
 
   useEffect(() => {
     const loadMovie = async () => {
@@ -110,7 +100,6 @@ export default function WatchMovie() {
     );
   }
 
-  const videoUrl = getVideoUrl(selectedServer, movie.id, "movie", undefined, undefined, imdbId || undefined);
 
   return (
     <div className="min-h-screen bg-background">
@@ -219,42 +208,38 @@ export default function WatchMovie() {
             {t("watchMovie")}
           </h2>
 
-          {/* Server Selection */}
-          <div className="flex flex-wrap gap-3 mb-4">
+
+          {/* Server Selection UI - Moved from inside VideoPlayer */}
+          <div className="flex flex-wrap items-center gap-2 mb-4 justify-center">
             {MOVIE_SERVERS.map((server) => (
               <button
                 key={server.id}
-                onClick={() => setSelectedServer(server)}
+                onClick={() => setCurrentServer(server)}
                 className={cn(
-                  "server-btn",
-                  selectedServer.id === server.id && "active"
+                  "h-9 px-4 rounded-lg transition-all backdrop-blur-md shadow-sm border flex items-center gap-2",
+                  currentServer.id === server.id
+                    ? "bg-primary text-primary-foreground border-primary shadow-md"
+                    : "bg-secondary/50 text-muted-foreground hover:text-foreground border-border hover:bg-secondary"
                 )}
               >
-                <span>{server.name}</span>
-                <span className="text-xs px-2 py-0.5 rounded bg-black/20">{server.quality}</span>
+                <Server className="w-4 h-4" />
+                <span className="text-xs font-bold uppercase tracking-wide">{server.name}</span>
               </button>
             ))}
           </div>
 
-          {/* Video Player */}
-          <div className="relative group">
-            <div ref={playerRef} className="relative aspect-video bg-black rounded-xl overflow-hidden shadow-2xl">
-              <iframe
-                src={videoUrl}
-                className="absolute inset-0 w-full h-full"
-                allowFullScreen
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-                title={movie.title}
-              />
-              {/* Custom Fullscreen Button for Real Fullscreen */}
-              <button
-                onClick={toggleFullscreen}
-                className="absolute bottom-16 right-4 p-2 bg-black/60 backdrop-blur-md rounded-lg text-white opacity-100 lg:opacity-0 lg:group-hover:opacity-100 hover:bg-primary/80 transition-all flex items-center gap-2 text-xs font-bold border border-white/20"
-                title="True Fullscreen"
-              >
-                <Maximize className="w-4 h-4" />
-                ملء الشاشة
-              </button>
+          {/* Video Player Container */}
+          <div className="relative group max-w-3xl mx-auto">
+            <div className="relative aspect-video">
+
+              {movie && (
+                <VideoPlayer
+                  id={movie.id}
+                  type="movie"
+                  title={movie.title}
+                  currentServer={currentServer}
+                />
+              )}
             </div>
           </div>
         </div>
