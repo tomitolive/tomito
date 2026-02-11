@@ -6,6 +6,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function createSlug(text: string): string {
+  if (!text) return "";
   return text
     .toString()
     .toLowerCase()
@@ -15,4 +16,13 @@ export function createSlug(text: string): string {
     .replace(/--+/g, '-')     // Double - to single -
     .replace(/^-+/, '')       // Trim from start
     .replace(/-+$/, '');      // Trim from end
+}
+
+export function createSlugWithId(id: number | string, title: string): string {
+  return `${id}-${createSlug(title)}`;
+}
+
+export function getIdFromSlug(slug: string): number | null {
+  const match = slug.match(/^(\d+)/);
+  return match ? parseInt(match[1]) : null;
 }

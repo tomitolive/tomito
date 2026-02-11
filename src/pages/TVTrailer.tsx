@@ -17,13 +17,13 @@ import {
     TVShow,
     t
 } from "@/lib/tmdb";
-import { cn } from "@/lib/utils";
+import { cn, getIdFromSlug } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
 import { SEO } from "@/components/SEO";
 
 
 export default function TVTrailer() {
-    const { id } = useParams<{ id: string }>();
+    const { slug } = useParams<{ slug: string }>();
     const navigate = useNavigate();
     const [tvShow, setTVShow] = useState<TVShowDetails | null>(null);
     const [cast, setCast] = useState<Cast[]>([]);
@@ -33,14 +33,15 @@ export default function TVTrailer() {
 
     useEffect(() => {
         const loadTVShow = async () => {
-            if (!id) return;
+            const actualId = getIdFromSlug(slug || "");
+            if (!actualId) return;
             setIsLoading(true);
             try {
                 const [tvData, castData, similarData, videosData] = await Promise.all([
-                    fetchTVDetails(parseInt(id)),
-                    fetchCredits("tv", parseInt(id)),
-                    fetchSimilar("tv", parseInt(id)),
-                    fetchVideos(parseInt(id), "tv"),
+                    fetchTVDetails(actualId),
+                    fetchCredits("tv", actualId),
+                    fetchSimilar("tv", actualId),
+                    fetchVideos(actualId, "tv"),
                 ]);
                 setTVShow(tvData);
                 setCast(castData.slice(0, 5));
@@ -72,7 +73,7 @@ export default function TVTrailer() {
 
         loadTVShow();
         window.scrollTo(0, 0);
-    }, [id]);
+    }, [slug]);
 
     if (isLoading) {
         return (
@@ -155,9 +156,13 @@ export default function TVTrailer() {
                                 <div className="absolute inset-0 flex items-center justify-center">
                                     <div className="text-center">
                                         <p className="text-muted-foreground mb-4">التريلر غير متوفر حالياً</p>
-                                        <Button onClick={() => navigate(`/tv/${id}/watch`)}>
-                                            <Play className="w-4 h-4 mr-2" />
-                                            مشاهدة المسلسل
+                                        <Button
+                                            size="lg"
+                                            className="bg-primary hover:bg-primary/90 text-white shadow-[0_0_20px_rgba(var(--primary),0.4)] transition-all hover:scale-105 active:scale-95 px-8 py-6 text-lg font-bold"
+                                            onClick={() => navigate(`/tv/${tvShow.id}/watch`)}
+                                        >
+                                            <Play className="w-6 h-6 mr-2 fill-current" />
+                                            {t("watchTV")}
                                         </Button>
                                     </div>
                                 </div>
@@ -234,14 +239,17 @@ export default function TVTrailer() {
                                 </div>
                             )}
 
-                            {/* Watch Now Button */}
+                            {/* Watch Now Button - Enhanced UX */}
                             <Button
                                 size="lg"
-                                className="w-full lg:w-auto"
-                                onClick={() => navigate(`/tv/${id}/watch`)}
+                                className="w-full lg:w-auto bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white shadow-[0_10px_30px_rgba(var(--primary),0.3)] transition-all hover:scale-105 active:scale-95 px-12 py-8 text-xl font-bold group/btn"
+                                onClick={() => navigate(`/tv/${tvShow.id}/watch`)}
                             >
-                                <Play className="w-5 h-5 mr-2" />
-                                مشاهدة الآن
+                                <Play className="w-7 h-7 mr-3 fill-current group-hover/btn:animate-pulse" />
+                                <span className="relative">
+                                    {t("watchNow")}
+                                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover/btn:w-full" />
+                                </span>
                             </Button>
                         </div>
                     </div>

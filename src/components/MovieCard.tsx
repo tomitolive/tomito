@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { Star } from "lucide-react";
 import { getImageUrl, Movie, TVShow, fetchVideos } from "@/lib/tmdb";
-import { cn } from "@/lib/utils";
+import { cn, createSlugWithId } from "@/lib/utils";
 import { useFocusable } from "@/hooks/useFocusable";
 
 type MediaType = "movie" | "tv";
@@ -39,8 +39,8 @@ export function MovieCard({
 
   const link =
     type === "movie"
-      ? `/movie/${item.id}`
-      : `/tv/${item.id}`;
+      ? `/movie/${createSlugWithId(item.id, title)}`
+      : `/tv/${createSlugWithId(item.id, title)}`;
 
   // Spatial navigation support
   const { ref, focused } = useFocusable({

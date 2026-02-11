@@ -35,8 +35,8 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 {/* Trailer pages - shown first when clicking on content */}
-                <Route path="/movie/:id" element={<MovieTrailer />} />
-                <Route path="/tv/:id" element={<TVTrailer />} />
+                <Route path="/movie/:slug" element={<MovieTrailer />} />
+                <Route path="/tv/:slug" element={<TVTrailer />} />
                 {/* Watch pages - shown after clicking "Watch Now" */}
                 <Route path="/movie/:id/watch" element={<WatchMovie />} />
                 <Route path="/tv/:id/watch" element={<WatchTV />} />
