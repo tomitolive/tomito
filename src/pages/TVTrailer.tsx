@@ -263,12 +263,7 @@ export default function TVTrailer() {
                             className="w-full max-w-[280px] lg:max-w-[240px] rounded-xl shadow-2xl mx-auto"
                         />
 
-                        {/* Ad Space Placeholder */}
-                        <div className="hidden lg:block">
-                            <div className="bg-muted/20 border border-muted rounded-xl p-4 text-center min-h-[300px] flex items-center justify-center">
-                                <p className="text-sm text-muted-foreground">مساحة إعلانية</p>
-                            </div>
-                        </div>
+                      
                     </div>
                 </div>
 
@@ -279,7 +274,7 @@ export default function TVTrailer() {
                 )}
 
 
-            
+        
             </div>
 
             <Footer />
