@@ -229,18 +229,15 @@ export default function WatchMovie() {
           </div>
 
           {/* Video Player Container */}
-          <div className="relative group max-w-3xl mx-auto">
-            <div className="relative aspect-video">
-
-              {movie && (
-                <VideoPlayer
-                  id={movie.id}
-                  type="movie"
-                  title={movie.title}
-                  currentServer={currentServer}
-                />
-              )}
-            </div>
+          <div className="relative group max-w-4xl mx-auto overflow-hidden rounded-xl shadow-2xl border border-border/50">
+            {movie && (
+              <VideoPlayer
+                id={movie.id}
+                type="movie"
+                title={movie.title}
+                currentServer={currentServer}
+              />
+            )}
           </div>
         </div>
 

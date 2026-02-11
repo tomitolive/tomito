@@ -149,17 +149,17 @@ export function VideoPlayer({ id, type, title, season, episode, onNavigate, curr
                     zoomMode === 'cover' ? "scale-110 object-cover" :
                         zoomMode === 'fill' ? "scale-[1.2] object-fill" : "object-contain"
                 )}
-                allow="autoplay; encrypted-media; fullscreen"
+                allow="autoplay; encrypted-media; fullscreen; picture-in-picture; clipboard-write"
                 title={`${title} - ${currentServer.name}`}
-                sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
+                sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-presentation allow-storage-access-by-user-activation"
             />
 
             {/* Refined Control Bar - Top, Sharp Corners, Less Transparent */}
             <div className={cn(
-                "absolute top-4 left-1/2 -translate-x-1/2 z-20 flex justify-center transition-all duration-500 pointer-events-none",
-                isIdle ? "opacity-40 scale-95" : "opacity-100 scale-100"
+                "absolute top-4 left-1/2 -translate-x-1/2 z-20 flex justify-center transition-all duration-500",
+                isIdle ? "opacity-0 scale-95 pointer-events-none" : "opacity-100 scale-100 pointer-events-auto"
             )}>
-                <div className="flex items-center gap-2 px-3 h-9 rounded-lg pointer-events-auto">
+                <div className="flex items-center gap-2 px-3 h-9 rounded-lg bg-black/60 backdrop-blur-md border border-white/10 shadow-lg">
                     {/* Left: Navigation */}
                     {type === "tv" && onNavigate && (
                         <div className="flex items-center gap-0.5">
@@ -183,13 +183,9 @@ export function VideoPlayer({ id, type, title, season, episode, onNavigate, curr
                         </div>
                     )}
 
-
-
-
-
                     {/* Center: Controls */}
-                    <div className="flex items-center gap-3">
-                        <div className="flex items-center gap-2 group/volume px-3 h-8 rounded-lg">
+                    <div className="flex items-center gap-1 sm:gap-3">
+                        <div className="flex items-center gap-2 group/volume px-2 sm:px-3 h-8 rounded-lg">
                             <button
                                 onClick={() => setIsMuted(!isMuted)}
                                 className="text-white/60 hover:text-white transition-colors"
@@ -204,11 +200,11 @@ export function VideoPlayer({ id, type, title, season, episode, onNavigate, curr
                                     setVolume(val);
                                     setIsMuted(false);
                                 }}
-                                className="w-20 cursor-pointer [&_.bg-primary]:bg-white [&_.border-primary]:border-white"
+                                className="w-16 sm:w-20 cursor-pointer [&_.bg-primary]:bg-white [&_.border-primary]:border-white"
                             />
                         </div>
 
-                        <div className="flex items-center gap-2 group/brightness px-3 h-8 rounded-lg">
+                        <div className="hidden sm:flex items-center gap-2 group/brightness px-3 h-8 rounded-lg">
                             <span className="text-white/60 text-[10px]">☀️</span>
                             <Slider
                                 value={brightness}

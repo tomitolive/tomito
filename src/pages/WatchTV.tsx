@@ -310,21 +310,18 @@ export default function WatchTV() {
           </div>
 
           {/* Video Player Container */}
-          <div className="relative group max-w-3xl mx-auto">
-            <div className="relative aspect-video">
-
-              {show && (
-                <VideoPlayer
-                  id={show.id}
-                  type="tv"
-                  title={show.name}
-                  season={selectedSeason}
-                  episode={selectedEpisode}
-                  onNavigate={handleNavigate}
-                  currentServer={currentServer}
-                />
-              )}
-            </div>
+          <div className="relative group max-w-4xl mx-auto overflow-hidden rounded-xl shadow-2xl border border-border/50">
+            {show && (
+              <VideoPlayer
+                id={show.id}
+                type="tv"
+                title={show.name}
+                season={selectedSeason}
+                episode={selectedEpisode}
+                onNavigate={handleNavigate}
+                currentServer={currentServer}
+              />
+            )}
           </div>
         </div>
 
