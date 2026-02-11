@@ -273,12 +273,7 @@ export default function MovieTrailer() {
                     </div>
                 )}
 
-                {/* Bottom Ad Space */}
-                <div className="mt-8">
-                    <div className="bg-muted/20 border border-muted rounded-xl p-4 text-center min-h-[90px] flex items-center justify-center">
-                        <p className="text-sm text-muted-foreground">مساحة إعلانية (Banner 728x90)</p>
-                    </div>
-                </div>
+            
             </div>
 
             <Footer />
