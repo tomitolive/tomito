@@ -13,7 +13,7 @@ const AdPopup: React.FC = () => {
     const [isVisible, setIsVisible] = useState(true);
     const [countdown, setCountdown] = useState(7);
     const [adUrl, setAdUrl] = useState("");
-    const [dimensions, setDimensions] = useState({ width: "450px", height: "350px" });
+    const [dimensions, setDimensions] = useState({ width: "450px", height: "250px" });
     const [isHovered, setIsHovered] = useState(false);
 
     // Common reset function for all triggers
@@ -65,12 +65,12 @@ const AdPopup: React.FC = () => {
             if (width < 768) {
                 setDimensions({
                     width: `${width * 0.9}px`,
-                    height: `${height * 0.4}px`,
+                    height: `${height * 0.25}px`,
                 });
             } else if (width >= 768 && width <= 1024) {
-                setDimensions({ width: "400px", height: "300px" });
+                setDimensions({ width: "400px", height: "180px" });
             } else {
-                setDimensions({ width: "450px", height: "350px" });
+                setDimensions({ width: "450px", height: "250px" });
             }
         };
 

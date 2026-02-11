@@ -743,7 +743,8 @@ export function getVideoUrl(
 
     // Handle specific server types and templates
     if (server.id === 'server_1' || server.id === 'server_2') {
-      return `${baseUrl}${finalId}`;
+      const url = `${baseUrl}${finalId}`;
+      return `${url}${url.includes('?') ? '&' : '?'}autoplay=1`;
     }
 
     if (server.id === 'server_9') {
@@ -751,32 +752,37 @@ export function getVideoUrl(
       params.append('tmdb', id.toString());
       if (imdbId) params.append('imdb', imdbId);
       if (options?.subtitleLang) params.append('ds_lang', options.subtitleLang);
-      if (options?.autoplay) params.append('autoplay', '1');
+      params.append('autoplay', '1');
       return `${baseUrl}?${params.toString()}`;
     }
 
     // Default: append ID to URL
+    let url = "";
     if (baseUrl.endsWith('/') || baseUrl.endsWith('=')) {
-      return `${baseUrl}${finalId}`;
+      url = `${baseUrl}${finalId}`;
     } else {
-      return `${baseUrl}/${finalId}`;
+      url = `${baseUrl}/${finalId}`;
     }
+
+    return `${url}${url.includes('?') ? '&' : '?'}autoplay=1`;
   } else {
     // TV Show
     if (server.baseUrl && server.format) {
       // Use the format template for TV shows (mostly for TV_SERVERS list)
-      let url = server.format
+      let urlTemplate = server.format
         .replace('{id}', finalId.toString())
         .replace('{season}', (season || 1).toString())
         .replace('{episode}', (episode || 1).toString());
 
-      return `${server.baseUrl}/${url}`;
+      const finalUrl = `${server.baseUrl}/${urlTemplate}`;
+      return `${finalUrl}${finalUrl.includes('?') ? '&' : '?'}autoplay=1`;
     }
 
     // Traditional style (for movie servers that also support TV)
     baseUrl = server.tvUrl || "";
     if (server.id === 'server_1' || server.id === 'server_2') {
-      return `${baseUrl}${finalId}`;
+      const url = `${baseUrl}${finalId}`;
+      return `${url}${url.includes('?') ? '&' : '?'}autoplay=1`;
     }
 
     // Standard TMDB parameter style
@@ -784,6 +790,7 @@ export function getVideoUrl(
     params.append('tmdb', id.toString());
     if (season !== undefined) params.append('season', season.toString());
     if (episode !== undefined) params.append('episode', episode.toString());
+    params.append('autoplay', '1');
 
     const hasQuery = baseUrl.includes('?');
     return `${baseUrl}${hasQuery ? '&' : '?'}${params.toString()}`;

@@ -169,6 +169,19 @@ export default function TVTrailer() {
                             )}
                         </div>
 
+                        {/* Watch Now Button - Positioned directly under trailer */}
+                        <Button
+                            size="lg"
+                            className="w-full bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white shadow-[0_10px_30px_rgba(var(--primary),0.3)] transition-all hover:scale-105 active:scale-95 px-6 py-8 text-xl font-bold group/btn"
+                            onClick={() => navigate(`/tv/${tvShow.id}/watch`)}
+                        >
+                            <Play className="w-6 h-6 mr-3 fill-current group-hover/btn:animate-pulse" />
+                            <span className="relative">
+                                {t("watchNow")}
+                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover/btn:w-full" />
+                            </span>
+                        </Button>
+
                         {/* TV Show Info */}
                         <div>
                             <h1 className="text-3xl lg:text-4xl font-bold mb-2">{tvShow.name}</h1>
@@ -249,19 +262,6 @@ export default function TVTrailer() {
                             alt={tvShow.name}
                             className="w-full max-w-[280px] lg:max-w-[240px] rounded-xl shadow-2xl mx-auto"
                         />
-
-                        {/* Watch Now Button - Enhanced UX moved to sidebar */}
-                        <Button
-                            size="lg"
-                            className="w-full max-w-[280px] lg:max-w-full bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white shadow-[0_10px_30px_rgba(var(--primary),0.3)] transition-all hover:scale-105 active:scale-95 px-6 py-7 text-lg font-bold group/btn"
-                            onClick={() => navigate(`/tv/${tvShow.id}/watch`)}
-                        >
-                            <Play className="w-6 h-6 mr-3 fill-current group-hover/btn:animate-pulse" />
-                            <span className="relative">
-                                {t("watchNow")}
-                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover/btn:w-full" />
-                            </span>
-                        </Button>
 
                         {/* Ad Space Placeholder */}
                         <div className="hidden lg:block">
