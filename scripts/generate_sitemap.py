@@ -5,7 +5,9 @@ from datetime import datetime
 
 # Configuration
 BASE_URL = "https://tomito.xyz"
-BASE_PATH = "/home/tomito/Desktop/tomito"
+# Use relative paths based on the script location
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_PATH = os.path.dirname(SCRIPT_DIR)
 DATA_DIR = os.path.join(BASE_PATH, "public/data")
 SITEMAP_PATH = os.path.join(BASE_PATH, "public/sitemap.xml")
 
@@ -84,6 +86,9 @@ def generate_sitemap():
         xml_content.append('  </url>')
     
     xml_content.append('</urlset>')
+
+    # Ensure output directory exists
+    os.makedirs(os.path.dirname(SITEMAP_PATH), exist_ok=True)
 
     with open(SITEMAP_PATH, 'w', encoding='utf-8') as f:
         f.write("\n".join(xml_content))
