@@ -5,20 +5,25 @@ import os
 
 # --- CONFIGURATION ---
 API_KEY = "882e741f7283dc9ba1654d4692ec30f6" 
-OUTPUT_FILE = "../public/movies_data.json"
+# Use absolute paths relative to the script's directory for reliability
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(SCRIPT_DIR, "../public/data")
 
-# Beddel hadu ila bghiti kter (Kol page fiha 20)
-# Maslan 100 page ghadi t-3tik 2000 Movie + 2000 TV = 4000 items.
-PAGES_TO_SCRAPE = 1000 
+MOVIES_FILE = os.path.join(DATA_DIR, "movies.json")
+TV_SHOWS_FILE = os.path.join(DATA_DIR, "tv-shows.json")
+
+# Number of pages to scrape (20 items per page)
+PAGES_TO_SCRAPE = 100 
 
 def get_big_data():
-    all_data = []
+    all_movies = []
+    all_tv = []
     media_types = ['movie', 'tv']
 
-    print(f"🚀 Bdina l-khidma dyal Big Data...")
+    print(f"🚀 Starting Scraper...")
     
     for m_type in media_types:
-        print(f"🎬 Khddamin 3la l-{m_type}s (Target: {PAGES_TO_SCRAPE * 20} items)")
+        print(f"🎬 Processing {m_type}s (Target: {PAGES_TO_SCRAPE * 20} items)")
         
         for page in range(1, PAGES_TO_SCRAPE + 1):
             params_en = {'api_key': API_KEY, 'language': 'en-US', 'page': page}
@@ -28,8 +33,8 @@ def get_big_data():
                 # English fetch
                 res_en = requests.get(f"https://api.themoviedb.org/3/{m_type}/popular", params=params_en)
                 if res_en.status_code != 200:
-                    print(f"🛑 Hbsna f page {page} hitach: {res_en.status_code}")
-                    break # Ila tqada l-7ed d l-pages
+                    print(f"🛑 Stopped at page {page} due to: {res_en.status_code}")
+                    break
                 
                 data_en = res_en.json().get('results', [])
                 
@@ -47,36 +52,43 @@ def get_big_data():
                     entry = {
                         "id": item_en['id'],
                         "type": m_type,
-                        "title_en": name_en,
+                        "title": name_en, # Simplified key names to match generator
                         "title_ar": name_ar,
-                        "overview_en": item_en.get('overview', ''),
+                        "overview": item_en.get('overview', ''),
                         "overview_ar": item_ar.get('overview', '') if item_ar and item_ar.get('overview') else item_en.get('overview', ''),
-                        "poster": f"https://image.tmdb.org/t/p/w500{item_en.get('poster_path')}",
-                        "rating": item_en.get('vote_average'),
-                        "date": item_en.get('release_date') or item_en.get('first_air_date'),
+                        "poster_path": item_en.get('poster_path'),
+                        "vote_average": item_en.get('vote_average'),
+                        "release_date": item_en.get('release_date') or item_en.get('first_air_date'),
                         "popularity": item_en.get('popularity')
                     }
-                    all_data.append(entry)
+                    if m_type == 'movie':
+                        all_movies.append(entry)
+                    else:
+                        all_tv.append(entry)
                 
                 if page % 10 == 0:
-                    print(f"💠 Safi jm3na {len(all_data)} items tal db...")
+                    print(f"💠 Scraped {page} pages so far...")
                 
-                # Bach TMDB API mat-banich 3lina (Rate limiting)
                 time.sleep(0.1) 
 
             except Exception as e:
                 print(f"⚠️ Error: {str(e)}")
                 continue
 
-    # Create folder ila makanch
-    os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
+    # Create folder if it doesn't exist
+    os.makedirs(DATA_DIR, exist_ok=True)
 
-    # Save to JSON
-    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-        json.dump(all_data, f, ensure_ascii=False, indent=4)
+    # Save Movies
+    with open(MOVIES_FILE, 'w', encoding='utf-8') as f:
+        json.dump(all_movies, f, ensure_ascii=False, indent=4)
     
-    print(f"\n✨ T-salat l-mouhimma!")
-    print(f"📂 L-file fih {len(all_data)} items.")
+    # Save TV Shows
+    with open(TV_SHOWS_FILE, 'w', encoding='utf-8') as f:
+        json.dump(all_tv, f, ensure_ascii=False, indent=4)
+    
+    print(f"\n✨ Mission Completed!")
+    print(f"📂 Movies: {len(all_movies)} items.")
+    print(f"📂 TV Shows: {len(all_tv)} items.")
 
 if __name__ == "__main__":
     get_big_data()
