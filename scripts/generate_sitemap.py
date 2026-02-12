@@ -5,11 +5,9 @@ from datetime import datetime
 
 # Configuration
 BASE_URL = "https://tomito.xyz"
-# Use relative paths based on the script location
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-BASE_PATH = os.path.dirname(SCRIPT_DIR)
-DATA_DIR = os.path.join(BASE_PATH, "public/data")
-SITEMAP_PATH = os.path.join(BASE_PATH, "public/sitemap.xml")
+# Use relative paths assuming the script is run from the project root
+DATA_DIR = "public/data"
+SITEMAP_PATH = "public/sitemap.xml"
 
 def create_slug(text):
     if not text:
