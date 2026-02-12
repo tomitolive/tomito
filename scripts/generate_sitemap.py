@@ -5,9 +5,16 @@ from datetime import datetime
 
 # Configuration
 BASE_URL = "https://tomito.xyz"
-# Use relative paths assuming the script is run from the project root
-DATA_DIR = "public/data"
-SITEMAP_PATH = "public/sitemap.xml"
+# Use paths relative to the project root
+# We'll also print these for debugging in GitHub Actions
+cwd = os.getcwd()
+print(f"Current working directory: {cwd}")
+
+DATA_DIR = os.path.join(cwd, "public/data")
+SITEMAP_PATH = os.path.join(cwd, "public/sitemap.xml")
+
+print(f"Using DATA_DIR: {DATA_DIR}")
+print(f"Using SITEMAP_PATH: {SITEMAP_PATH}")
 
 def create_slug(text):
     if not text:
