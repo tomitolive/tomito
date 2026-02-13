@@ -3369,7 +3369,7 @@
         "poster_path": "/e3ojpANrFnmJCyeBNTinYwyBCIN.jpg",
         "vote_average": 8.585,
         "release_date": "2023-10-22",
-        "popularity": 57.5155
+        "popularity": 58.3815
     },
     {
         "id": 49009,
@@ -3381,7 +3381,7 @@
         "poster_path": "/3aQipkhSCHUmaHjImqEqT80k6GP.jpg",
         "vote_average": 7.472,
         "release_date": "2013-09-24",
-        "popularity": 57.4474
+        "popularity": 58.8877
     },
     {
         "id": 62710,
@@ -3393,7 +3393,7 @@
         "poster_path": "/4AeYzamQmd9Fa6hawDmYKbdvBSe.jpg",
         "vote_average": 7.377,
         "release_date": "2015-09-21",
-        "popularity": 57.3803
+        "popularity": 59.6887
     },
     {
         "id": 10029,
@@ -3405,19 +3405,7 @@
         "poster_path": "/1RD6s6KEbX36Cb99pAoWmU8gkwh.jpg",
         "vote_average": 5.8,
         "release_date": "1971-01-28",
-        "popularity": 57.2648
-    },
-    {
-        "id": 198178,
-        "type": "tv",
-        "title": "Wonder Man",
-        "title_ar": "وندر مان",
-        "overview": "Simon and Trevor, two actors at opposite ends of their careers, chase life-changing roles.",
-        "overview_ar": "يسعى \"سايمون\" و\"تريفور\" اللذان يعيشان مراحل مختلفة في مسيرتهما المهنية وراء أدور قد تغيّر حياتهما.",
-        "poster_path": "/6yy9nQlFt2l6UVWzrfhszFCaZ5C.jpg",
-        "vote_average": 7.1,
-        "release_date": "2026-01-27",
-        "popularity": 57.215
+        "popularity": 61.749
     },
     {
         "id": 57706,
@@ -3429,7 +3417,7 @@
         "poster_path": "/qb1R5iLZcjIgdDIfXFQXmJadQPI.jpg",
         "vote_average": 8.61,
         "release_date": "1989-04-15",
-        "popularity": 57.0718
+        "popularity": 64.3379
     },
     {
         "id": 224,
@@ -3441,7 +3429,19 @@
         "poster_path": "/paRFRd11WlFOxVbGnzjjCBym7FW.jpg",
         "vote_average": 7.592,
         "release_date": "1964-08-22",
-        "popularity": 56.8215
+        "popularity": 53.0367
+    },
+    {
+        "id": 45790,
+        "type": "tv",
+        "title": "JoJo's Bizarre Adventure",
+        "title_ar": "مغامرات جوجو العجيبة",
+        "overview": "Follow the intergenerational feud between the Joestar Family and various forces of evil, the most prominent of which is Dio Brando and his followers.",
+        "overview_ar": "تواجه أجيال عديدة من عائلة \"جوستار\"، يحمل جميع أفرادها اللقب نفسه، أشرارًا قواهم خارقة للطبيعة على فترات من الزمن.",
+        "poster_path": "/ogAWwbh3frWtiTyyXrZaVFtqCgp.jpg",
+        "vote_average": 8.551,
+        "release_date": "2012-10-06",
+        "popularity": 56.7672
     },
     {
         "id": 77169,
@@ -3453,7 +3453,19 @@
         "poster_path": "/6POBWybSBDBKjSs1VAQcnQC1qyt.jpg",
         "vote_average": 8.2,
         "release_date": "2018-05-02",
-        "popularity": 56.6868
+        "popularity": 58.0096
+    },
+    {
+        "id": 66025,
+        "type": "tv",
+        "title": "Animal Kingdom",
+        "title_ar": "مملكة الحيوان",
+        "overview": "17-year-old Joshua \"J\" Cody moves in with his freewheeling relatives in their Southern California beach town after his mother dies of a heroin overdose. Headed by boot-tough matriarch Janine \"Smurf\" Cody and her right-hand Baz, who runs the business and calls the shots, the clan also consists of Pope, the oldest and most dangerous of the Cody boys; Craig, the tough and fearless middle son; and Deran, the troubled, suspicious \"baby\" of the family.",
+        "overview_ar": "(جوشوا كودي) مراهق في السابعة عشرة من عمره، ينتقل مع أقاربه إلى مدينتهم الملطة على الشاطيء في (كاليفورنيا الجنوبية) بعد وفاة والدته إثر جرعة هيروين زائدة.",
+        "poster_path": "/rzvdKrnSRKPFI0pgqMQknDPpRC9.jpg",
+        "vote_average": 7.7,
+        "release_date": "2016-06-14",
+        "popularity": 56.5414
     },
     {
         "id": 2458,
@@ -3465,7 +3477,7 @@
         "poster_path": "/4TGV4Bb3OPay4cHkQRlfwghv3vC.jpg",
         "vote_average": 7.3,
         "release_date": "2004-09-22",
-        "popularity": 56.3627
+        "popularity": 60.1117
     },
     {
         "id": 157741,
@@ -3477,7 +3489,7 @@
         "poster_path": "/hYthRgS1nvQkGILn9YmqsF8kSk6.jpg",
         "vote_average": 8.038,
         "release_date": "2024-11-17",
-        "popularity": 56.3345
+        "popularity": 57.4101
     },
     {
         "id": 31911,
@@ -3489,7 +3501,7 @@
         "poster_path": "/5ZFUEOULaVml7pQuXxhpR2SmVUw.jpg",
         "vote_average": 8.708,
         "release_date": "2009-04-05",
-        "popularity": 56.2749
+        "popularity": 62.8896
     },
     {
         "id": 15844,
@@ -3501,7 +3513,7 @@
         "poster_path": "/fpOAhBePSowxPsRUUT0ov9tMXwc.jpg",
         "vote_average": 0.0,
         "release_date": "1995-05-15",
-        "popularity": 56.1258
+        "popularity": 67.4849
     },
     {
         "id": 119051,
@@ -3513,7 +3525,7 @@
         "poster_path": "/36xXlhEpQqVVPuiZhfoQuaY4OlA.jpg",
         "vote_average": 8.4,
         "release_date": "2022-11-23",
-        "popularity": 55.9888
+        "popularity": 57.8654
     },
     {
         "id": 4573,
@@ -3525,7 +3537,7 @@
         "poster_path": "/gJZ1rhLLFpatuAeylJoUI82DKC7.jpg",
         "vote_average": 7.199,
         "release_date": "1993-09-13",
-        "popularity": 55.836
+        "popularity": 58.4912
     },
     {
         "id": 61056,
@@ -3537,19 +3549,7 @@
         "poster_path": "/bJs8Y6T88NcgksxA8UaVl4YX8p8.jpg",
         "vote_average": 7.835,
         "release_date": "2014-09-25",
-        "popularity": 55.794
-    },
-    {
-        "id": 66025,
-        "type": "tv",
-        "title": "Animal Kingdom",
-        "title_ar": "مملكة الحيوان",
-        "overview": "17-year-old Joshua \"J\" Cody moves in with his freewheeling relatives in their Southern California beach town after his mother dies of a heroin overdose. Headed by boot-tough matriarch Janine \"Smurf\" Cody and her right-hand Baz, who runs the business and calls the shots, the clan also consists of Pope, the oldest and most dangerous of the Cody boys; Craig, the tough and fearless middle son; and Deran, the troubled, suspicious \"baby\" of the family.",
-        "overview_ar": "(جوشوا كودي) مراهق في السابعة عشرة من عمره، ينتقل مع أقاربه إلى مدينتهم الملطة على الشاطيء في (كاليفورنيا الجنوبية) بعد وفاة والدته إثر جرعة هيروين زائدة.",
-        "poster_path": "/rzvdKrnSRKPFI0pgqMQknDPpRC9.jpg",
-        "vote_average": 7.712,
-        "release_date": "2016-06-14",
-        "popularity": 55.7145
+        "popularity": 59.5139
     },
     {
         "id": 42912,
@@ -3561,7 +3561,7 @@
         "poster_path": "/9kQWvBMPWz1gykKLXuX6JBjC9uQ.jpg",
         "vote_average": 8.0,
         "release_date": "2008-10-05",
-        "popularity": 55.6483
+        "popularity": 53.306
     },
     {
         "id": 2004,
@@ -3573,7 +3573,7 @@
         "poster_path": "/uftxEWbn3OSykTy4DX4BrdVeiuv.jpg",
         "vote_average": 8.461,
         "release_date": "2000-01-09",
-        "popularity": 55.6318
+        "popularity": 53.1007
     },
     {
         "id": 498,
@@ -3585,7 +3585,7 @@
         "poster_path": "/fTBC5EpsgKmli9VQcJMtqQ08Qj4.jpg",
         "vote_average": 6.4,
         "release_date": "1993-08-30",
-        "popularity": 55.4407
+        "popularity": 60.7395
     },
     {
         "id": 46195,
@@ -3597,7 +3597,7 @@
         "poster_path": "/zCEjjb1NH3LLsWeZx47wOeqkezf.jpg",
         "vote_average": 8.1,
         "release_date": "2009-07-03",
-        "popularity": 55.0672
+        "popularity": 52.1159
     },
     {
         "id": 46195,
@@ -5760,6 +5760,18 @@
         "popularity": 47.5536
     },
     {
+        "id": 61889,
+        "type": "tv",
+        "title": "Marvel's Daredevil",
+        "title_ar": "مارفيل: ديرديفل",
+        "overview": "Lawyer-by-day Matt Murdock uses his heightened senses from being blinded as a young boy to fight crime at night on the streets of Hell’s Kitchen as Daredevil.",
+        "overview_ar": "يستخدم المحامي مات موردوك حواسه المتزايدة لمكافحة الجرائم في شوارع - هيلز كتشن - بعد تعرضه للعمى وهو صبي صغير، تحت اسم ديرديفل.",
+        "poster_path": "/u6tICVagGwukuFPr0qBUwOqCKSn.jpg",
+        "vote_average": 8.158,
+        "release_date": "2015-04-10",
+        "popularity": 47.5536
+    },
+    {
         "id": 78648,
         "type": "tv",
         "title": "Amazing Saturday",
@@ -5791,7 +5803,7 @@
         "overview": "With the aid of unexpected friends, a gifted but introverted student confronts bullies and violent foes — unaware of how dangerous his world will become.",
         "overview_ar": "طالب نموذجي ، يحتل المرتبة الأولى في مدرسته الثانوية.  جسديًا ، يبدو  كصبي ضعيف ، ولكن باستخدام ذكائه وأدواته وعلم النفس ، يحارب العنف الذي يحدث داخل مدرسته وخارجها.",
         "poster_path": "/hS9VVF5ffTVWNoC9B48QNsZFGy9.jpg",
-        "vote_average": 8.6,
+        "vote_average": 8.611,
         "release_date": "2022-11-18",
         "popularity": 43.7193
     },
@@ -5911,7 +5923,7 @@
         "overview": "Sherri Shepherd, actress, comic, and Emmy Award-winning longtime co-host of \"The View\", appears before a live audience with a daily dose of pop culture, comedy, conversations, and daytime talk staples, including celebrity and human interest interviews.",
         "overview_ar": "Sherri Shepherd, actress, comic, and Emmy Award-winning longtime co-host of \"The View\", appears before a live audience with a daily dose of pop culture, comedy, conversations, and daytime talk staples, including celebrity and human interest interviews.",
         "poster_path": "/w6K4LsGYTBbuYpDG9qR20g6p1NT.jpg",
-        "vote_average": 2.9,
+        "vote_average": 2.731,
         "release_date": "2022-09-12",
         "popularity": 38.1311
     },
@@ -5986,18 +5998,6 @@
         "vote_average": 5.572,
         "release_date": "1982-10-26",
         "popularity": 60.7624
-    },
-    {
-        "id": 20695,
-        "type": "tv",
-        "title": "Yu-Gi-Oh! 5D's",
-        "title_ar": "Yu-Gi-Oh! 5D's",
-        "overview": "The future of dueling is revving up! And with it begins a new legend! Yu-Gi-Oh! 5D's!\n\nWelcome to New Domino City! Once the playground to legendary duelist Yugi Muto, this sprawling metropolis has since been transformed into a futuristic society where dueling has kicked into overdrive. With recent technological advancements made by KaibaCorp, dueling has undergone a metamorphosis that has revolutionized the makeup and pace of the game! It’s now a heart-pounding, adrenaline-filled and fuel injected competition where duelists ride supercharged hyper cycles called Duel Runners and battle it out in hi-octane contests called “Turbo Duels.” The winners and losers aren’t just separated by skill and strength… but by SPEED!\n\nHowever, for five special duelists, it's not just about winning or losing anymore - it's about survival, for they are the chosen \"Signers\" who have been marked by destiny to uncover the secrets of the five dragons!",
-        "overview_ar": "The future of dueling is revving up! And with it begins a new legend! Yu-Gi-Oh! 5D's!\n\nWelcome to New Domino City! Once the playground to legendary duelist Yugi Muto, this sprawling metropolis has since been transformed into a futuristic society where dueling has kicked into overdrive. With recent technological advancements made by KaibaCorp, dueling has undergone a metamorphosis that has revolutionized the makeup and pace of the game! It’s now a heart-pounding, adrenaline-filled and fuel injected competition where duelists ride supercharged hyper cycles called Duel Runners and battle it out in hi-octane contests called “Turbo Duels.” The winners and losers aren’t just separated by skill and strength… but by SPEED!\n\nHowever, for five special duelists, it's not just about winning or losing anymore - it's about survival, for they are the chosen \"Signers\" who have been marked by destiny to uncover the secrets of the five dragons!",
-        "poster_path": "/1fareX2gQVmpcxoPFHLAHu3ljld.jpg",
-        "vote_average": 8.061,
-        "release_date": "2008-04-02",
-        "popularity": 55.734
     },
     {
         "id": 20695,
@@ -10059,7 +10059,7 @@
         "id": 36046,
         "type": "tv",
         "title": "City Hunter",
-        "title_ar": "シティーハンター",
+        "title_ar": "City Hunter",
         "overview": "Ryo Saeba works the streets of Tokyo as the City Hunter. He's a \"sweeper\" and with his sidekick Kaori Makimura, he keeps the city clean. People hire the City Hunter to solve their dangerous problems, which he does with a Colt Python. When Ryo's not working on a case, he's working on getting the ladies, and Kaori must keep him in check with her trusty 10 kg hammer.",
         "overview_ar": "Ryo Saeba works the streets of Tokyo as the City Hunter. He's a \"sweeper\" and with his sidekick Kaori Makimura, he keeps the city clean. People hire the City Hunter to solve their dangerous problems, which he does with a Colt Python. When Ryo's not working on a case, he's working on getting the ladies, and Kaori must keep him in check with her trusty 10 kg hammer.",
         "poster_path": "/4BA0FDKiJD0N4ljYhlwOVjQKszR.jpg",
@@ -12960,6 +12960,18 @@
         "popularity": 25.9216
     },
     {
+        "id": 130464,
+        "type": "tv",
+        "title": "Tell Me Lies",
+        "title_ar": "Tell Me Lies",
+        "overview": "When Lucy Albright and Stephen DeMarco meet at college, they are at that formative age when seemingly mundane choices lead the way to irrevocable consequences. They quickly fall into an addictive entanglement that will permanently alter not only their lives, but the lives of everyone around them.",
+        "overview_ar": "When Lucy Albright and Stephen DeMarco meet at college, they are at that formative age when seemingly mundane choices lead the way to irrevocable consequences. They quickly fall into an addictive entanglement that will permanently alter not only their lives, but the lives of everyone around them.",
+        "poster_path": "/hhWpEUZINrago2YgKDyv5Hb8yrU.jpg",
+        "vote_average": 7.5,
+        "release_date": "2022-09-07",
+        "popularity": 25.9216
+    },
+    {
         "id": 121876,
         "type": "tv",
         "title": "Divas Hit the Road",
@@ -13152,6 +13164,18 @@
         "popularity": 26.9422
     },
     {
+        "id": 254002,
+        "type": "tv",
+        "title": "Critical Role",
+        "title_ar": "Critical Role",
+        "overview": "Critical Role is a weekly actual play series that uses tabletop role-playing game mechanics as a means to explore and develop stories from the vast fantasy worlds of Exandria, Aramán, and beyond, with sweeping narratives intricately woven through collaboration between Game Masters and players.",
+        "overview_ar": "Critical Role is a weekly actual play series that uses tabletop role-playing game mechanics as a means to explore and develop stories from the vast fantasy worlds of Exandria, Aramán, and beyond, with sweeping narratives intricately woven through collaboration between Game Masters and players.",
+        "poster_path": "/keSNwdzmSgQzluKmqTI6kwDOFa7.jpg",
+        "vote_average": 7.947,
+        "release_date": "2015-03-12",
+        "popularity": 27.632
+    },
+    {
         "id": 9937,
         "type": "tv",
         "title": "Intimate Portrait",
@@ -13174,30 +13198,6 @@
         "vote_average": 0.0,
         "release_date": "2019-03-20",
         "popularity": 50.1647
-    },
-    {
-        "id": 59186,
-        "type": "tv",
-        "title": "Impractical Jokers",
-        "title_ar": "Impractical Jokers",
-        "overview": "This hidden-camera series follows four lifelong friends -- Brian \"Q\"' Quinn, James \"Murr\"' Murray, Joe Gatto and Sal Vulcano -- who take dares to an outrageous level. To find out who is best under pressure, the guys compete in awkward and outrageous hidden-camera hijinks with the loser performing what is deemed to be the most-mortifying challenge yet.",
-        "overview_ar": "This hidden-camera series follows four lifelong friends -- Brian \"Q\"' Quinn, James \"Murr\"' Murray, Joe Gatto and Sal Vulcano -- who take dares to an outrageous level. To find out who is best under pressure, the guys compete in awkward and outrageous hidden-camera hijinks with the loser performing what is deemed to be the most-mortifying challenge yet.",
-        "poster_path": "/tRLj19YXH9GPiaqlU7GwWyd6G5K.jpg",
-        "vote_average": 7.928,
-        "release_date": "2011-12-15",
-        "popularity": 27.6429
-    },
-    {
-        "id": 82684,
-        "type": "tv",
-        "title": "That Time I Got Reincarnated as a Slime",
-        "title_ar": "That Time I Got Reincarnated as a Slime",
-        "overview": "Mikami's boring life ends abruptly when he's reincarnated in another world as a slime monster. He then forms a party of monsters, changing everything.",
-        "overview_ar": "Mikami's boring life ends abruptly when he's reincarnated in another world as a slime monster. He then forms a party of monsters, changing everything.",
-        "poster_path": "/pzujcdPAoH361NObVrtbA7zACE7.jpg",
-        "vote_average": 8.405,
-        "release_date": "2018-10-02",
-        "popularity": 29.2807
     },
     {
         "id": 82684,
@@ -13920,6 +13920,30 @@
         "popularity": 29.8834
     },
     {
+        "id": 62992,
+        "type": "tv",
+        "title": "DAS!",
+        "title_ar": "DAS!",
+        "overview": "Every evening at 6:45 p.m. sharp, a prominent guest takes a seat on the red sofa—and DAS! provides daily updates on what's hot in the north.",
+        "overview_ar": "Every evening at 6:45 p.m. sharp, a prominent guest takes a seat on the red sofa—and DAS! provides daily updates on what's hot in the north.",
+        "poster_path": "/yMg0l6hxCnR94Fcl1F1IEkmG26V.jpg",
+        "vote_average": 4.2,
+        "release_date": "1991-01-02",
+        "popularity": 24.4318
+    },
+    {
+        "id": 90937,
+        "type": "tv",
+        "title": "BEASTARS",
+        "title_ar": "براءة ذئب",
+        "overview": "In a world where beasts of all kinds coexist, a gentle wolf awakens to his own predatory urges as his school deals with a murder within its midst.",
+        "overview_ar": "يستكشف ذئب لطيف رغباته المفترسة في عالم تتعايش فيه وحوش من كل الأنواع، فيما يتعيّن على أعضاء مدرسته التعامل مع جريمة قتل حدثت في حرمها.",
+        "poster_path": "/sh9iNWkleOjEHRHj8WPHhmMi8HL.jpg",
+        "vote_average": 8.424,
+        "release_date": "2019-10-10",
+        "popularity": 29.525
+    },
+    {
         "id": 46271,
         "type": "tv",
         "title": "Secret Story",
@@ -14100,18 +14124,6 @@
         "popularity": 30.1015
     },
     {
-        "id": 208397,
-        "type": "tv",
-        "title": "School Spirits",
-        "title_ar": "School Spirits",
-        "overview": "Maddie, a teen stuck in the afterlife investigating her own mysterious disappearance, goes on a crime-solving journey as she adjusts to high school purgatory, but the closer she gets to discovering the truth, the more secrets and lies she uncovers.",
-        "overview_ar": "Maddie, a teen stuck in the afterlife investigating her own mysterious disappearance, goes on a crime-solving journey as she adjusts to high school purgatory, but the closer she gets to discovering the truth, the more secrets and lies she uncovers.",
-        "poster_path": "/eb7ZJYZjed1bBQ8a4aMDwp5nvjF.jpg",
-        "vote_average": 7.761,
-        "release_date": "2023-03-09",
-        "popularity": 25.173
-    },
-    {
         "id": 63398,
         "type": "tv",
         "title": "Life in Pieces",
@@ -14146,18 +14158,6 @@
         "vote_average": 1.0,
         "release_date": "2020-12-25",
         "popularity": 27.5618
-    },
-    {
-        "id": 396,
-        "type": "tv",
-        "title": "The District",
-        "title_ar": "The District",
-        "overview": "The District is a television police drama which aired on CBS from October 7, 2000 to May 1, 2004. The show followed the work and personal life of the chief of Washington, D.C.'s Police Department.",
-        "overview_ar": "The District is a television police drama which aired on CBS from October 7, 2000 to May 1, 2004. The show followed the work and personal life of the chief of Washington, D.C.'s Police Department.",
-        "poster_path": "/hnd8bGqWZhtEdCwDf5YXdIDaJei.jpg",
-        "vote_average": 6.8,
-        "release_date": "2000-10-07",
-        "popularity": 23.3476
     },
     {
         "id": 22073,
@@ -14640,6 +14640,42 @@
         "popularity": 26.0243
     },
     {
+        "id": 231503,
+        "type": "tv",
+        "title": "Wild Heart",
+        "title_ar": "المتوحش",
+        "overview": "It tells the story of a child who was kidnapped from a deep-rooted family and fell into the streets, and his struggle to reinvent himself after years later returning to his home.",
+        "overview_ar": "بعد مرور سنوات على اختطافه عندما كان طفلا من عائلته الثرية والعيش في الزقاق والشوارع، يجد يمان نفسه مجبرا على إعادة تعريف حياته عندما يعود إلى منزله.",
+        "poster_path": "/lQ5k6i7Bv3ssV4uotxZpTdKCgC9.jpg",
+        "vote_average": 8.7,
+        "release_date": "2023-09-12",
+        "popularity": 26.0243
+    },
+    {
+        "id": 249907,
+        "type": "tv",
+        "title": "Sentenced to Be a Hero",
+        "title_ar": "محكوم عليه أن يكون بطلاً",
+        "overview": "In a world where heroism is a punishment, Xylo Forbartz, a condemned goddess killer, battles endless hordes of monstrous abominations as part of Penal Hero Unit 9004. Death is no escape, only a cycle of resurrection and relentless combat. But when Xylo encounters a mysterious new goddess, their unlikely alliance sparks a rebellion that could shatter the chains of eternal punishment.",
+        "overview_ar": "في عالمٍ تكون فيه البطولة عقابًا، يقاتل زيلو فوربارتز، قاتل الحكماء المُدان، جحافل لا تنتهي من المسوخ المشوّهة ضمن وحدة الأبطال العقابية رقم 9004. الموت ليس مهربًا، بل مجرد حلقة في دورة من البعث المتكرر والقتال الذي لا يرحم.\n\nلكن حين يلتقي زيلو حاكمة جديدة غامضة، يشعل تحالفهما غير المتوقع شرارة تمرد قد يحطم قيود العقاب الأبدي.",
+        "poster_path": "/kzyNxTZFcWjkYJU9T9aJ8vXTAFN.jpg",
+        "vote_average": 8.9,
+        "release_date": "2026-01-03",
+        "popularity": 28.553
+    },
+    {
+        "id": 124003,
+        "type": "tv",
+        "title": "Perfect World",
+        "title_ar": "عالم مثالي [وانمي شيجي]",
+        "overview": "Born into a unique world where villages fight to gain power and control, the main character, Shi Hao, is a genius blessed by the heavens born under the poorest of conditions. His clan, however, has a mysterious past. To rise up and become the genius he is meant to be, the clan goes through every effort to aid his cultivation as they battle through fanatical monsters and engage in power struggles with other clans. His journey will bring him through unknown lands until he is able to become a person that can truly shake the world.",
+        "overview_ar": "ولد في عالم فريد من نوعه حيث ، الشخصية الرئيسية ، شي هاو ، هو عبقري المباركة من السماء. ستجلبه رحلته عبر أراض مجهولة حتى يتمكن من أن يصبح شخصا يمكنه أن يهز العالم حقا.\n\nشي هاو هو بطل الرواية الرئيسي الذي تركه والديه في الأراضي البرية للسماح له بالنمو بأمان في قرية ستون حيث يمكن لإله القرية أن يعتني به. في القرية يعيش الناس القرية القديمة عن طريق قتل الوحوش ومحمية من قبل روح الوصي أو إلههم. شي هاو هو أساسا الأمير ولكن بسبب الجشع البشري يخضع لحادث يهدد الحياة ولكن يتم حفظها من قبل إله قرية الحجر ويترك في القرية لحمايته من الناس الذين يريدون قتله. كما يكبر, يسأل عن والديه من روح الله ولكن الله يقول له أن يصبح أقوى ورفع ألف كيلو كيلو الفرن التي قدمها الله وعندما سيكون قادرا على القيام بذلك, وقال انه سوف تحصل على معرفة والديه مكان. هو أساسا قصة مثيرة جدا للاهتمام ومدهشة وكما تقدم القصة يصبح أكثر إثارة للاهتمام لمشاهدة. يتم تنفيذه بشكل مثير للدهشة من قبل الرسوم المتحركة. لم أجد أي شيء ينقصنا في هذه التحفة الفنية. فمن المستحسن للغاية لمشاهدة ولقد استمتعت كثيرا.",
+        "poster_path": "/qy60bm9admmgpkmcPeW4BvRjjVm.jpg",
+        "vote_average": 8.409,
+        "release_date": "2021-04-23",
+        "popularity": 30.9252
+    },
+    {
         "id": 6040,
         "type": "tv",
         "title": "Ben 10: Alien Force",
@@ -14844,42 +14880,6 @@
         "popularity": 24.8663
     },
     {
-        "id": 13881,
-        "type": "tv",
-        "title": "The Invaders",
-        "title_ar": "The Invaders",
-        "overview": "The Invaders, alien beings from a dying planet. Their destination: the Earth. Their purpose: to make it their world. David Vincent has seen them, for him it began one lost night on a lonely country road, looking for a shortcut that he never found. It began with a closed deserted diner, and a man too long without sleep to continue his journey. It began with the landing of a craft from another galaxy. Now, David Vincent knows that the Invaders are here, that they have taken human form. Somehow he must convince a disbelieving world that the nightmare has already begun.",
-        "overview_ar": "The Invaders, alien beings from a dying planet. Their destination: the Earth. Their purpose: to make it their world. David Vincent has seen them, for him it began one lost night on a lonely country road, looking for a shortcut that he never found. It began with a closed deserted diner, and a man too long without sleep to continue his journey. It began with the landing of a craft from another galaxy. Now, David Vincent knows that the Invaders are here, that they have taken human form. Somehow he must convince a disbelieving world that the nightmare has already begun.",
-        "poster_path": "/a6hE0lx1ploE0bLw8R9nv3IrI5T.jpg",
-        "vote_average": 6.8,
-        "release_date": "1967-01-10",
-        "popularity": 22.7416
-    },
-    {
-        "id": 4576,
-        "type": "tv",
-        "title": "Just Shoot Me!",
-        "title_ar": "Just Shoot Me!",
-        "overview": "See the inner workings of a high-style magazine owned by Jack Gallo, who has hired his quick-tempered but talented daughter, Maya, to write for the publication. Challenging her at every turn is Nina, a vain and superficial former model. Then there's photographer Elliot, a man who is very popular with his portrait subjects as well as other women. completing the core staff is her father's assistant, Dennis, a glorified secretary who is generally disrespectful to one and all.",
-        "overview_ar": "See the inner workings of a high-style magazine owned by Jack Gallo, who has hired his quick-tempered but talented daughter, Maya, to write for the publication. Challenging her at every turn is Nina, a vain and superficial former model. Then there's photographer Elliot, a man who is very popular with his portrait subjects as well as other women. completing the core staff is her father's assistant, Dennis, a glorified secretary who is generally disrespectful to one and all.",
-        "poster_path": "/xP2JuabiJvvmVvGsHjDj4IL8gcO.jpg",
-        "vote_average": 6.627,
-        "release_date": "1997-03-04",
-        "popularity": 23.3192
-    },
-    {
-        "id": 61663,
-        "type": "tv",
-        "title": "Your Lie in April",
-        "title_ar": "Your Lie in April",
-        "overview": "Kousei Arima was a genius pianist until his mother's sudden death took away his ability to play. Each day was dull for Kousei. But, then he meets a violinist named Kaori Miyazono who has an eccentric playing style. Can the heartfelt sounds of the girl's violin lead the boy to play the piano again?",
-        "overview_ar": "Kousei Arima was a genius pianist until his mother's sudden death took away his ability to play. Each day was dull for Kousei. But, then he meets a violinist named Kaori Miyazono who has an eccentric playing style. Can the heartfelt sounds of the girl's violin lead the boy to play the piano again?",
-        "poster_path": "/rRjfH3ckTYz8z8aSkJshFL4VyK9.jpg",
-        "vote_average": 8.6,
-        "release_date": "2014-10-10",
-        "popularity": 25.379
-    },
-    {
         "id": 5660,
         "type": "tv",
         "title": "Mobile Suit Gundam ZZ",
@@ -15063,9 +15063,9 @@
         "id": 297424,
         "type": "tv",
         "title": "Our Universe",
-        "title_ar": "عالمنا",
+        "title_ar": "Our Universe",
         "overview": "Two in-laws forced to raise their orphaned nephew together slowly overcome their misunderstandings, finding personal growth and an unexpected romance through co-parenting under one roof.",
-        "overview_ar": "يضطر زوجان لتربية ابن أخيهما اليتيم معًا، ويتغلبان ببطء على سوء الفهم بينهما، ويجدان نموًا شخصيًا ورومانسية غير متوقعة من خلال الأبوة والأمومة المشتركة تحت سقف واحد.",
+        "overview_ar": "Two in-laws forced to raise their orphaned nephew together slowly overcome their misunderstandings, finding personal growth and an unexpected romance through co-parenting under one roof.",
         "poster_path": "/pWyRkjNI9FUMpqJOIK3kSAbbRfQ.jpg",
         "vote_average": 9.5,
         "release_date": "2026-02-04",
@@ -15099,9 +15099,9 @@
         "id": 229891,
         "type": "tv",
         "title": "Can This Love Be Translated?",
-        "title_ar": "هل يمكن ترجمة هذا الحب؟",
+        "title_ar": "Can This Love Be Translated?",
         "overview": "The emotions of a celebrity and her interpreter get lost in translation as they travel the world filming a TV show. Will love find its own language?",
-        "overview_ar": "بينما يجوبان العالم لتصوير برنامج تلفزيوني، تضيع حروف المشاعر المتقدة بين نجمة شهيرة ومترجمها الخاص. فهل يمكن لحبّهما أن يعثر على لغة مشتركة أخيرًا؟",
+        "overview_ar": "The emotions of a celebrity and her interpreter get lost in translation as they travel the world filming a TV show. Will love find its own language?",
         "poster_path": "/zgUh4cgalSzBjbsT5P0qmU7Rjzk.jpg",
         "vote_average": 8.5,
         "release_date": "2026-01-16",
@@ -16800,6 +16800,30 @@
         "popularity": 25.1888
     },
     {
+        "id": 24835,
+        "type": "tv",
+        "title": "Clannad",
+        "title_ar": "Clannad",
+        "overview": "Tomoya Okazaki is a third year high school student resentful of his life. His mother passed away from a car accident when he was younger, causing his father to resort to alcohol and cigarettes. This results in fights between the two until Tomoya's shoulder is injured in a fight. Since then, Tomoya has had distant relationships with his father, causing him to become a delinquent over time. While on a walk to school, he meets a strange girl named Nagisa Furukawa who is a year older, but is repeating due to illness. Due to this, she is often alone as most of her friends have moved on. The two begin hanging out and slowly, as time goes by, Tomoya finds his life shifting in a new direction.",
+        "overview_ar": "Tomoya Okazaki is a third year high school student resentful of his life. His mother passed away from a car accident when he was younger, causing his father to resort to alcohol and cigarettes. This results in fights between the two until Tomoya's shoulder is injured in a fight. Since then, Tomoya has had distant relationships with his father, causing him to become a delinquent over time. While on a walk to school, he meets a strange girl named Nagisa Furukawa who is a year older, but is repeating due to illness. Due to this, she is often alone as most of her friends have moved on. The two begin hanging out and slowly, as time goes by, Tomoya finds his life shifting in a new direction.",
+        "poster_path": "/jPBMYp4ddXkGJDSxxmaKBjzv2r3.jpg",
+        "vote_average": 8.3,
+        "release_date": "2007-10-05",
+        "popularity": 25.1888
+    },
+    {
+        "id": 42253,
+        "type": "tv",
+        "title": "K-ON!",
+        "title_ar": "けいおん!",
+        "overview": "Yui Hirasawa has no clue which club to join, but she’s determined to do something this year. As luck would have it, she discovers a flyer for the Light Music Club and decides this is the club for her. But there's one problem: She first must learn guitar!",
+        "overview_ar": "Yui Hirasawa has no clue which club to join, but she’s determined to do something this year. As luck would have it, she discovers a flyer for the Light Music Club and decides this is the club for her. But there's one problem: She first must learn guitar!",
+        "poster_path": "/70hf2538UAf7mzzNgvqTlWq6PDf.jpg",
+        "vote_average": 8.0,
+        "release_date": "2009-04-03",
+        "popularity": 20.7145
+    },
+    {
         "id": 34967,
         "type": "tv",
         "title": "Falling Skies",
@@ -17014,30 +17038,6 @@
         "vote_average": 6.9,
         "release_date": "2016-07-09",
         "popularity": 21.7926
-    },
-    {
-        "id": 80054,
-        "type": "tv",
-        "title": "Truth Be Told",
-        "title_ar": "Truth Be Told",
-        "overview": "Descend into the world of true-crime podcasts with Poppy Parnell, who risks everything—including her life—to pursue truth and justice.",
-        "overview_ar": "ادخل عالم المدوّنات الصوتية للجرائم الحقيقية. هذا المسلسل الدرامي الفائز بجائزة \"إن إيه إيه سي بي إيمدج\" ومن بطولة \"أوكتافيا سبنسر\" في دور المدوّنة",
-        "poster_path": "/3T2TJ61ems7ArVGwb6kiVuKcdUk.jpg",
-        "vote_average": 7.07,
-        "release_date": "2019-12-06",
-        "popularity": 23.8788
-    },
-    {
-        "id": 117581,
-        "type": "tv",
-        "title": "Ginny & Georgia",
-        "title_ar": "Ginny & Georgia",
-        "overview": "Free-spirited Georgia and her two kids, Ginny and Austin, move north in search of a fresh start but find that the road to new beginnings can be bumpy.",
-        "overview_ar": "Free-spirited Georgia and her two kids, Ginny and Austin, move north in search of a fresh start but find that the road to new beginnings can be bumpy.",
-        "poster_path": "/vOwunzW4dx3n0J5mH40n9jTRSwY.jpg",
-        "vote_average": 8.044,
-        "release_date": "2021-02-24",
-        "popularity": 24.7883
     },
     {
         "id": 117581,
@@ -21840,6 +21840,42 @@
         "popularity": 19.4074
     },
     {
+        "id": 82108,
+        "type": "tv",
+        "title": "Celebrity Family Feud",
+        "title_ar": "Celebrity Family Feud",
+        "overview": "Celebrity Family Feud pits celebrities and their families against each other in a contest to name the most popular responses to survey-type questions posed to 100 people.",
+        "overview_ar": "Celebrity Family Feud pits celebrities and their families against each other in a contest to name the most popular responses to survey-type questions posed to 100 people.",
+        "poster_path": "/s9rThMHuQGN0iTNO3Ya6DcV98ku.jpg",
+        "vote_average": 7.8,
+        "release_date": "2015-06-21",
+        "popularity": 19.8328
+    },
+    {
+        "id": 67265,
+        "type": "tv",
+        "title": "Chesapeake Shores",
+        "title_ar": "Chesapeake Shores",
+        "overview": "A divorced mom deals with an old romance and complicated family issues when she returns to her hometown with her twin daughters.",
+        "overview_ar": "A divorced mom deals with an old romance and complicated family issues when she returns to her hometown with her twin daughters.",
+        "poster_path": "/wAWnKnDwrhfUZZ3hKlwr23yBOwM.jpg",
+        "vote_average": 7.8,
+        "release_date": "2016-08-14",
+        "popularity": 21.5679
+    },
+    {
+        "id": 37585,
+        "type": "tv",
+        "title": "Kenichi: The Mightiest Disciple",
+        "title_ar": "史上最強の弟子ケンイチ",
+        "overview": "Yeah, Kenichi’s a total wimp. He’s always getting picked on and doesn’t have a lot of friends to stick up for him. The guy needs motivation if he hopes to graduate in one piece. Well, Miu’s the perfect motivation. She’s hot, she accepts him, and she just so happens to live at a dojo with six martial arts masters. You could say fate has led Kenichi to their door, or you could say he was just following the hottie. Either way, he’s about to get whipped into serious shape. If he can survive some hard-core training, he might survive another day at school. He might even score with Miu. Yeah, you could call Kenichi a wimp. But let’s go with underdog instead.",
+        "overview_ar": "Yeah, Kenichi’s a total wimp. He’s always getting picked on and doesn’t have a lot of friends to stick up for him. The guy needs motivation if he hopes to graduate in one piece. Well, Miu’s the perfect motivation. She’s hot, she accepts him, and she just so happens to live at a dojo with six martial arts masters. You could say fate has led Kenichi to their door, or you could say he was just following the hottie. Either way, he’s about to get whipped into serious shape. If he can survive some hard-core training, he might survive another day at school. He might even score with Miu. Yeah, you could call Kenichi a wimp. But let’s go with underdog instead.",
+        "poster_path": "/pLzfW5xWN9sOId6C6vgcv8otnN7.jpg",
+        "vote_average": 8.419,
+        "release_date": "2006-10-07",
+        "popularity": 20.0284
+    },
+    {
         "id": 585,
         "type": "tv",
         "title": "WWF Wrestling Challenge",
@@ -21876,18 +21912,6 @@
         "popularity": 17.747
     },
     {
-        "id": 309280,
-        "type": "tv",
-        "title": "Baddies USA",
-        "title_ar": "Baddies USA",
-        "overview": "Baddies USA is the eighth season of the popular Zeus Network reality franchise, serving as an all-star, cross-country edition featuring veteran cast members from previous Baddies seasons and Bad Girls Club, focusing on promotional events, touring U.S. cities, and inevitable drama, fights, and unexpected alliances among personalities like Natalie Nunn, Rollie, Tommie Lee, Chrisean Rock, and Tanisha Thomas, all centered around hosting parties and confronting personal beefs.",
-        "overview_ar": "Baddies USA is the eighth season of the popular Zeus Network reality franchise, serving as an all-star, cross-country edition featuring veteran cast members from previous Baddies seasons and Bad Girls Club, focusing on promotional events, touring U.S. cities, and inevitable drama, fights, and unexpected alliances among personalities like Natalie Nunn, Rollie, Tommie Lee, Chrisean Rock, and Tanisha Thomas, all centered around hosting parties and confronting personal beefs.",
-        "poster_path": "/27IYhrFLxogxRNKIVWivDnNfwF9.jpg",
-        "vote_average": 9.375,
-        "release_date": "2025-11-23",
-        "popularity": 19.3289
-    },
-    {
         "id": 155780,
         "type": "tv",
         "title": "Batwheels",
@@ -21919,7 +21943,7 @@
         "overview": "Young Tatsumi travels to the capital of the Empire in order to earn money for his starving people and encounters a world of unimaginable depravity, dominated by the ruthless Prime Minister who controls the child Emperor. Tatsumi is recruited by Night Raid, a group of assassins dedicated to eliminating corruption by mercilessly killing officials and privileged nobles.",
         "overview_ar": "تتحَدث القِصة عن المُقـاتل [ تاتسومي ] الذي سـافر للعـاصمة لـأجل جمع المال من أجل مساعدة قريتِه الفقيرة . عند وصوله للعاصمة يتعرض للسرقة ويخسر كل ماله ، عندهـا تساعده فتاة من عائِلة نبيلة وتسمح له بالبقاء في منزلها . يتعرض منزل الفتاة للهجوم من قِبل قتلة يسمون أنفسهم [ الغارة الليلية ] ومن هنـا تبدأ أحدآث القِصـة .",
         "poster_path": "/rMpvMbSlPbm5QYfFem9fx2Jnttq.jpg",
-        "vote_average": 8.264,
+        "vote_average": 8.265,
         "release_date": "2014-07-07",
         "popularity": 20.4308
     },
@@ -22054,30 +22078,6 @@
         "vote_average": 7.0,
         "release_date": "2017-07-22",
         "popularity": 23.7604
-    },
-    {
-        "id": 250253,
-        "type": "tv",
-        "title": "Euphrosyne",
-        "title_ar": "Euphrosyne",
-        "overview": "",
-        "overview_ar": "",
-        "poster_path": "/o2vRl7sqxtlGga3eKTmbtFMmRTj.jpg",
-        "vote_average": 0.0,
-        "release_date": "2010-02-15",
-        "popularity": 17.5804
-    },
-    {
-        "id": 71096,
-        "type": "tv",
-        "title": "Söz",
-        "title_ar": "Söz",
-        "overview": "Yavuz Karasu, a well-trained Turkish soldier, is in Istanbul with his fiance where a terrorist operation takes place. Dr. Bahar, who is not a surgeon, tries to save his fiance. After this incident, Yavuz goes back to Karabayir and Bahar follows him all the way to give him something that belongs to him. Another incident happens and he is chosen to be the commander of a team whose mission is to catch a terrorist and protect Karabiyir and their country Turkey. The whole team is solid, consistent, and willing to sacrifice their lives for the sake of their country.",
-        "overview_ar": "Yavuz Karasu, a well-trained Turkish soldier, is in Istanbul with his fiance where a terrorist operation takes place. Dr. Bahar, who is not a surgeon, tries to save his fiance. After this incident, Yavuz goes back to Karabayir and Bahar follows him all the way to give him something that belongs to him. Another incident happens and he is chosen to be the commander of a team whose mission is to catch a terrorist and protect Karabiyir and their country Turkey. The whole team is solid, consistent, and willing to sacrifice their lives for the sake of their country.",
-        "poster_path": "/orUokYSO7obeN8T1AhgbMNHb4FB.jpg",
-        "vote_average": 6.643,
-        "release_date": "2017-04-03",
-        "popularity": 19.1227
     },
     {
         "id": 91914,
