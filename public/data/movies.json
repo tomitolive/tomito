@@ -247,7 +247,7 @@
         "overview": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
         "overview_ar": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
         "poster_path": "/ywRO5dyE8RyyXJd6cvd69jLZeic.jpg",
-        "vote_average": 7.582,
+        "vote_average": 7.5,
         "release_date": "2026-02-11",
         "popularity": 84.9541
     },
@@ -259,7 +259,7 @@
         "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
         "overview_ar": "بينما كان أعضاء فيلق قاتلي الشياطين و\"الهشيرا\" يخضعون لبرنامج تدريب جماعي يُعرف بتدريب الهشيرا استعدادًا للمعركة الحاسمة ضد الشياطين، يظهر موزان كيبوتسوجي في قصر عائلة أوبوياشيكي. ومع تعرّض قائد الفيلق للخطر، يندفع تانجيرو والهشيرا إلى المقر الرئيسي، لكنهم يجدون أنفسهم يسقطون في أعماق مكان غامض بفعل يدي موزان. الوجهة التي سقط فيها تانجيرو ورفاقه ليست سوى معقل الشياطين – قلعة اللانهاية. وهكذا، تبدأ ساحة المعركة النهائية بين فيلق قاتلي الشياطين وقوى الشر في الاشتعال.",
         "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
-        "vote_average": 7.687,
+        "vote_average": 7.69,
         "release_date": "2025-07-18",
         "popularity": 77.0764
     },
@@ -283,21 +283,9 @@
         "overview": "After a catastrophic military disaster, the dead don't just rise—they hunt. The military insists they are harmless and slow-moving, offering hope to grieving families. But when Ava enters a quarantine zone searching for her missing husband, she uncovers the horrifying truth: the undead are growing more violent, more relentless, and more dangerous with every passing hour.",
         "overview_ar": "After a catastrophic military disaster, the dead don't just rise—they hunt. The military insists they are harmless and slow-moving, offering hope to grieving families. But when Ava enters a quarantine zone searching for her missing husband, she uncovers the horrifying truth: the undead are growing more violent, more relentless, and more dangerous with every passing hour.",
         "poster_path": "/xZqo0yPARmyF8TACVNyaOACkYWG.jpg",
-        "vote_average": 6.119,
+        "vote_average": 6.165,
         "release_date": "2026-01-01",
         "popularity": 74.1438
-    },
-    {
-        "id": 1198994,
-        "type": "movie",
-        "title": "Send Help",
-        "title_ar": "Send Help",
-        "overview": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
-        "overview_ar": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
-        "poster_path": "/mlV70IuchLZXcXKowjwSpSfdfUB.jpg",
-        "vote_average": 7.021,
-        "release_date": "2026-01-22",
-        "popularity": 69.123
     },
     {
         "id": 1528660,
@@ -310,6 +298,18 @@
         "vote_average": 6.286,
         "release_date": "2025-08-11",
         "popularity": 71.7109
+    },
+    {
+        "id": 1198994,
+        "type": "movie",
+        "title": "Send Help",
+        "title_ar": "Send Help",
+        "overview": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
+        "overview_ar": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
+        "poster_path": "/mlV70IuchLZXcXKowjwSpSfdfUB.jpg",
+        "vote_average": 7.021,
+        "release_date": "2026-01-22",
+        "popularity": 69.123
     },
     {
         "id": 991494,
@@ -354,7 +354,7 @@
         "title_ar": "Vari",
         "overview": "Juhan Liiv, a struggling poet and an unlikely detective, solves gruesome murder cases in Estonia, the Wild West of the crumbling Russian Empire in the 1890s. Investigations take him to miserable dwellings of the local Estonian peasants, luxurious castles of German nobility that have sworn allegiance to the Czar, and to the depths of ancient forests where witchcraft is still practiced. Juhan is fighting crime and his own inner demons. He is considered mad and pronounced crazy. But by standing for justice and truth, at the end of the day, he is the sanest of them all.",
         "overview_ar": "Juhan Liiv, a struggling poet and an unlikely detective, solves gruesome murder cases in Estonia, the Wild West of the crumbling Russian Empire in the 1890s. Investigations take him to miserable dwellings of the local Estonian peasants, luxurious castles of German nobility that have sworn allegiance to the Czar, and to the depths of ancient forests where witchcraft is still practiced. Juhan is fighting crime and his own inner demons. He is considered mad and pronounced crazy. But by standing for justice and truth, at the end of the day, he is the sanest of them all.",
-        "poster_path": "/t6hPGT2hGxn4E5VMWjEiLjkGNzt.jpg",
+        "poster_path": "/3MAPtbKtRdndw2HhnoR7fxBhSFN.jpg",
         "vote_average": 0.0,
         "release_date": "2024-10-18",
         "popularity": 62.3728
@@ -415,7 +415,7 @@
         "overview": "A high school girl wakes up each day with no memory of yesterday. When she agrees to date a shy classmate, can their love grow with every new beginning?",
         "overview_ar": "تستيقظ فتاة في المدرسة الثانوية كل يوم من دون أن تتذكر ما جرى في الأمس، لكن حين توافق على مواعدة زميلها الخجول، هل يمكن أن يكبر حبهما مع كل بداية جديدة؟",
         "poster_path": "/5eNN8KLDPUXDqIkTdCbmn1gx5P7.jpg",
-        "vote_average": 8.138,
+        "vote_average": 8.06,
         "release_date": "2025-12-24",
         "popularity": 44.9311
     },
@@ -427,7 +427,7 @@
         "overview": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'!",
         "overview_ar": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'!",
         "poster_path": "/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
-        "vote_average": 7.2,
+        "vote_average": 7.15,
         "release_date": "2026-02-11",
         "popularity": 53.2101
     },
@@ -439,7 +439,7 @@
         "overview": "A German Tiger tank crew is sent on a dangerous mission to rescue the missing officer Paul von Hardenburg from a top-secret bunker behind enemy lines. As they make their way through the lethal no-man's land, they must confront not only the enemy, but also their own fears and inner demons. Fueled by the Wehrmacht's methamphetamine, their mission increasingly becomes a journey into the heart of darkness.",
         "overview_ar": "الجبهة الشرقية عام 1943: يُرسل طاقم دبابة ألمانية طراز تايغر في مهمة خطرة وراء خطوط النزاع التي تشهد حرباً شرسة. مع تقدمهم عبر الأراضي المحفوفة بالمخاطر المميتة، عليهم مواجهة العدو وهواجسهم الداخلية أيضاً.",
         "poster_path": "/65Jr1JAgWlu9em8zHhAfrNJJQBt.jpg",
-        "vote_average": 7.057,
+        "vote_average": 7.066,
         "release_date": "2025-09-18",
         "popularity": 50.7049
     },
@@ -451,7 +451,7 @@
         "overview": "Xander Cage is your standard adrenaline junkie with no fear and a lousy attitude. When the US Government \"recruits\" him to go on a mission, he's not exactly thrilled. His mission: to gather information on an organization that may just be planning the destruction of the world, led by the nihilistic Yorgi.",
         "overview_ar": "بعد أن فشلت عملية أخرى للقضاء على تلك المجموعة المسماة أناركي 99 والتي تضم مجموعة من الجنود الروس السابقين، يقوم عميل الأمن الوطني أوجستس جيبونز (صامويل ل. جاكسون) بالبحث عن عميلٍ غير تقليدي لينفذ أهدافه. يجد جيبونز ضالته في زاندركيج (فان ديزل) وهو رياضي سابق معروف بسلوكه المتهور واستهتاره بالقانون، ويكلفه جيبونز بمهمة شديدة الخطورة تتعلق بتلك المنظمة التي تهدف لتدمير العالم. تتصاعد الأحداث وتتعقد الأمور وسط أجواءٍ من الإثارة والخطورة المميتة.",
         "poster_path": "/xeEw3eLeSFmJgXZzmF2Efww0q3s.jpg",
-        "vote_average": 5.978,
+        "vote_average": 5.979,
         "release_date": "2002-08-09",
         "popularity": 48.1022
     },
@@ -463,7 +463,7 @@
         "overview": "Music, comedy, and a whole lot of chaos is bound to ensue when The Muppets once again take the stage of the original Muppet Theatre with their very special guest, Sabrina Carpenter!",
         "overview_ar": "يعود \"عرض المابيتس\" إلى مسرحه الأصلي مع ضيفة خاصة \"سابرينا كاربنتر\"!",
         "poster_path": "/tcwar1rL0neoLvnklL7DzYw7sN8.jpg",
-        "vote_average": 7.035,
+        "vote_average": 7.0,
         "release_date": "2026-02-03",
         "popularity": 40.2737
     },
@@ -475,7 +475,7 @@
         "overview": "A man trapped in an endless sterile subway passageway sets out to find Exit 8. The rules of his quest are simple: do not overlook anything out of the ordinary. If you discover an anomaly, turn back immediately. If you don’t, carry on. Then leave from Exit 8. But even a single oversight will send him back to the beginning. Will he ever reach his goal and escape this infinite corridor?",
         "overview_ar": "A man trapped in an endless sterile subway passageway sets out to find Exit 8. The rules of his quest are simple: do not overlook anything out of the ordinary. If you discover an anomaly, turn back immediately. If you don’t, carry on. Then leave from Exit 8. But even a single oversight will send him back to the beginning. Will he ever reach his goal and escape this infinite corridor?",
         "poster_path": "/cWHmaDXnRPAC9HBbjUBfJW7MxO0.jpg",
-        "vote_average": 6.3,
+        "vote_average": 6.315,
         "release_date": "2025-08-28",
         "popularity": 49.1235
     },
@@ -787,7 +787,7 @@
         "overview": "When a raging flood traps a researcher and her young son, a call to a crucial mission puts their escape — and the future of humanity — on the line.",
         "overview_ar": "في ما قد يكون اليوم الأخير على الأرض، سرعان ما يتحول صراع ما بين الحياة أو الموت في شقة غارقة إلى بصيص الأمل الوحيد لنجاة البشرية وبقائها.",
         "poster_path": "/1tUOZQDgZaGqZtrB21MieiXARL2.jpg",
-        "vote_average": 6.007,
+        "vote_average": 6.003,
         "release_date": "2025-09-18",
         "popularity": 34.9967
     },
@@ -799,7 +799,7 @@
         "overview": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
         "overview_ar": "يمتد من عام 1945 إلى عام 1955 ، وهو سرد تاريخي لعائلة جريمة كورليوني الإيطالية الأمريكية الخيالية. عندما ينجو مؤسس عائلة الجريمة المنظمة ، فيتو كورليوني ، بالكاد من محاولة اغتيال ، يتدخل ابنه الأصغر مايكل لرعاية القتلة المحتملين ، ويطلق حملة انتقامية دموية",
         "poster_path": "/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
-        "vote_average": 8.7,
+        "vote_average": 8.687,
         "release_date": "1972-03-14",
         "popularity": 39.4251
     },
@@ -847,7 +847,7 @@
         "overview": "One year since the supernatural nightmare at Freddy Fazbear's Pizza, the stories about what transpired there have been twisted into a campy local legend, inspiring the town's first ever Fazfest. With the truth kept from her, Abby sneaks out to reconnect with Freddy, Bonnie, Chica, and Foxy, setting into motion a terrifying series of events that will reveal dark secrets about the real origin of Freddy's, and unleash a decades-hidden horror.",
         "overview_ar": "بعد مرور عام على الكابوس الخارق في مطعم فريدي فازبير، تحولت قصص ما جرى إلى أسطورة محلية ساخرة، مما ألهم تنظيم أول «فازفست» في البلدة. دون أن يُكشف لها الحقيقة، تنطلق آبي سرّاً لإعادة التواصل مع فريدي، بوني، تشيكا وفوكسي، لتبدأ سلسلة مرعبة من الأحداث التي ستكشف أسراراً مظلمة عن الأصل الحقيقي لمطعم فريدي، وتطلق رعباً منسيّاً كان مخفيّاً لعقود.",
         "poster_path": "/udAxQEORq2I5wxI97N2TEqdhzBE.jpg",
-        "vote_average": 6.7,
+        "vote_average": 6.699,
         "release_date": "2025-12-03",
         "popularity": 34.3845
     },
@@ -912,18 +912,6 @@
         "popularity": 31.4027
     },
     {
-        "id": 278,
-        "type": "movie",
-        "title": "The Shawshank Redemption",
-        "title_ar": "إصلاحية شاوشانك",
-        "overview": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
-        "overview_ar": "الفيلم يحكي قصة \" آندي دوفرين \" مصرفي ذكي و ناجح تم اتهـامه بقتل زوجته و عشيقها .. و مع إنكـاره للجريمة و إصراره على أنه بريء من التهمة إلا أن المحكمة كـان لها رأي ثاني و حكمت عليه بـ السجن المؤبد",
-        "poster_path": "/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
-        "vote_average": 8.715,
-        "release_date": "1994-09-23",
-        "popularity": 32.8874
-    },
-    {
         "id": 1433842,
         "type": "movie",
         "title": "Relationship Goals",
@@ -931,7 +919,7 @@
         "overview": "When TV producer Leah Caldwell aims to become the first woman running New York's top morning show, her ex competes for the same role. Leah stays focused on her career, until chemistry with her ex challenges her priorities.",
         "overview_ar": "عندما تسعى ليا كالدويل، المنتجة التليفزيونية، إلى أن تصبح أول امرأة تُدير برنامجاً صباحياً رائداً في نيويورك، ينافسها حبيبها السابق جاريت روي على الدور نفسه. ويدّعي أن كتاب \"أهداف العلاقة\" قد غيّره، وهو ما يصبح محوراً رئيسياً بينما يستكشف أصدقاؤها حكمة الكتاب. وتُركز ليا على مسيرتها المهنية، إلى أن يُشكّل انسجامها مع حبيبها السابق تحدياً لأولوياتها.",
         "poster_path": "/o7dVxvZIKnAB7k1eeeWp2k14Es7.jpg",
-        "vote_average": 5.667,
+        "vote_average": 5.676,
         "release_date": "2026-02-04",
         "popularity": 26.7473
     },
@@ -948,16 +936,28 @@
         "popularity": 33.7036
     },
     {
-        "id": 1397364,
+        "id": 524047,
         "type": "movie",
-        "title": "La Grazia",
-        "title_ar": "La grazia",
-        "overview": "As his tenure as President of Italy nears its end, Mariano De Santis faces wrenching decisions-both political and deeply personal. Amid these moral quandaries, he must confront his own conscience and seek guidance from those closest to him, including his confidante and daughter, Dorotea.",
-        "overview_ar": "As his tenure as President of Italy nears its end, Mariano De Santis faces wrenching decisions-both political and deeply personal. Amid these moral quandaries, he must confront his own conscience and seek guidance from those closest to him, including his confidante and daughter, Dorotea.",
-        "poster_path": "/u5RgunQiA4hvDfTeWO9pS0lm4K4.jpg",
-        "vote_average": 7.504,
-        "release_date": "2025-12-05",
-        "popularity": 32.3013
+        "title": "Greenland",
+        "title_ar": "Greenland",
+        "overview": "John Garrity, his estranged wife and their young son embark on a perilous journey to find sanctuary as a planet-killing comet hurtles toward Earth. Amid terrifying accounts of cities getting levelled, the Garritys experience the best and worst in humanity. As the countdown to the global apocalypse approaches zero, their incredible trek culminates in a desperate and last-minute flight to a possible safe haven.",
+        "overview_ar": "John Garrity, his estranged wife and their young son embark on a perilous journey to find sanctuary as a planet-killing comet hurtles toward Earth. Amid terrifying accounts of cities getting levelled, the Garritys experience the best and worst in humanity. As the countdown to the global apocalypse approaches zero, their incredible trek culminates in a desperate and last-minute flight to a possible safe haven.",
+        "poster_path": "/bNo2mcvSwIvnx8K6y1euAc1TLVq.jpg",
+        "vote_average": 7.129,
+        "release_date": "2020-07-29",
+        "popularity": 31.7783
+    },
+    {
+        "id": 27205,
+        "type": "movie",
+        "title": "Inception",
+        "title_ar": "Inception",
+        "overview": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
+        "overview_ar": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
+        "poster_path": "/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg",
+        "vote_average": 8.37,
+        "release_date": "2010-07-15",
+        "popularity": 32.9158
     },
     {
         "id": 27205,
@@ -2160,16 +2160,16 @@
         "popularity": 20.1148
     },
     {
-        "id": 68718,
+        "id": 1241982,
         "type": "movie",
-        "title": "Django Unchained",
-        "title_ar": "Django Unchained",
-        "overview": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
-        "overview_ar": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
-        "poster_path": "/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg",
-        "vote_average": 8.186,
-        "release_date": "2012-12-25",
-        "popularity": 20.1148
+        "title": "Moana 2",
+        "title_ar": "موانا ٢",
+        "overview": "After receiving an unexpected call from her wayfinding ancestors, Moana journeys alongside Maui and a new crew to the far seas of Oceania and into dangerous, long-lost waters for an adventure unlike anything she's ever faced.",
+        "overview_ar": "بعد تلقيها نداء من أسلافها، تسافر \"موانا\" و\"ماوي\" إلى بحار \"أوقيانوسيا\" البعيدة.",
+        "poster_path": "/aLVkiINlIeCkcZIzb7XHzPYgO6L.jpg",
+        "vote_average": 7.0,
+        "release_date": "2024-11-21",
+        "popularity": 21.9503
     },
     {
         "id": 1422096,
@@ -2203,7 +2203,7 @@
         "overview": "Sonic, Knuckles, and Tails reunite against a powerful new adversary, Shadow, a mysterious villain with powers unlike anything they have faced before. With their abilities outmatched in every way, Team Sonic must seek out an unlikely alliance in hopes of stopping Shadow and protecting the planet.",
         "overview_ar": "تعود احداث الفيلم من جديد في هذا الجزء يظهر شبيه القنفذ الأزرق (سونيك)، وهو قنفذ آخر ملقب بـ(شادو)، ويبدأ في استخدام أساليب ماكرة، معتمدًا على ذكاءه الشديد، مما يدفع (سونيك) و(ناكلز) و(تايلز) للاتحاد في سبيل التصدي له.",
         "poster_path": "/d8Ryb8AunYAuycVKDp5HpdWPKgC.jpg",
-        "vote_average": 7.629,
+        "vote_average": 7.628,
         "release_date": "2024-12-19",
         "popularity": 20.5171
     },
@@ -2268,18 +2268,6 @@
         "popularity": 20.0028
     },
     {
-        "id": 1199869,
-        "type": "movie",
-        "title": "Eye for an Eye",
-        "title_ar": "Eye for an Eye",
-        "overview": "Anna, grieving the sudden death of her parents, relocates from New York to a small Florida town to live with the grandmother she has never met. Isolated, vulnerable, and in need of friends, she finds brief solace in the company of two local teens. But when she becomes complicit to their unforgivable act of violence, she finds herself ensnared by Mr. Sandman – the twisted soul of a tormented child who haunts bullies’ dreams before feasting on their eyeballs when they finally wake - Anna must right her wrong before becoming a victim of this gruesome curse.",
-        "overview_ar": "Anna, grieving the sudden death of her parents, relocates from New York to a small Florida town to live with the grandmother she has never met. Isolated, vulnerable, and in need of friends, she finds brief solace in the company of two local teens. But when she becomes complicit to their unforgivable act of violence, she finds herself ensnared by Mr. Sandman – the twisted soul of a tormented child who haunts bullies’ dreams before feasting on their eyeballs when they finally wake - Anna must right her wrong before becoming a victim of this gruesome curse.",
-        "poster_path": "/lpepbfVziHJLhVoxTEKs8ok00iu.jpg",
-        "vote_average": 5.523,
-        "release_date": "2025-07-03",
-        "popularity": 15.6491
-    },
-    {
         "id": 822119,
         "type": "movie",
         "title": "Captain America: Brave New World",
@@ -2287,7 +2275,7 @@
         "overview": "After meeting with newly elected U.S. President Thaddeus Ross, Sam finds himself in the middle of an international incident. He must discover the reason behind a nefarious global plot before the true mastermind has the entire world seeing red.",
         "overview_ar": "بعد لقائه مع الرئيس الأمريكي المنتخب حديثًا ثاديوس روس، يجد سام نفسه وسط حادثة دولية. يجب عليه اكتشاف السبب وراء مؤامرة عالمية شنيعة قبل أن يتمكن العقل المدبر الحقيقي من جعل العالم بأكمله يرى اللون الأحمر.",
         "poster_path": "/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
-        "vote_average": 5.986,
+        "vote_average": 6.0,
         "release_date": "2025-02-12",
         "popularity": 21.2373
     },
@@ -2398,6 +2386,18 @@
         "vote_average": 6.4,
         "release_date": "1988-01-29",
         "popularity": 20.7809
+    },
+    {
+        "id": 447365,
+        "type": "movie",
+        "title": "Guardians of the Galaxy Vol. 3",
+        "title_ar": "Guardians of the Galaxy Vol. 3",
+        "overview": "Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.",
+        "overview_ar": "Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.",
+        "poster_path": "/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
+        "vote_average": 7.9,
+        "release_date": "2023-05-03",
+        "popularity": 20.8861
     },
     {
         "id": 447365,
@@ -4383,9 +4383,9 @@
         "id": 49013,
         "type": "movie",
         "title": "Cars 2",
-        "title_ar": "سيارات 2",
+        "title_ar": "Cars 2",
         "overview": "Star race car Lightning McQueen and his pal Mater head overseas to compete in the World Grand Prix race. But the road to the championship becomes rocky as Mater gets caught up in an intriguing adventure of his own: international espionage.",
-        "overview_ar": "تدور أحداث الفيلم حول نجم سباق السيارات الامع ماكوين وصديقه ماطر في الخارج للتنافس في سباق الجائزة الكبرى العالمية.",
+        "overview_ar": "Star race car Lightning McQueen and his pal Mater head overseas to compete in the World Grand Prix race. But the road to the championship becomes rocky as Mater gets caught up in an intriguing adventure of his own: international espionage.",
         "poster_path": "/okIz1HyxeVOMzYwwHUjH2pHi74I.jpg",
         "vote_average": 6.171,
         "release_date": "2011-06-11",
@@ -4515,9 +4515,9 @@
         "id": 281338,
         "type": "movie",
         "title": "War for the Planet of the Apes",
-        "title_ar": "حرب لأجل كوكب القردة",
+        "title_ar": "War for the Planet of the Apes",
         "overview": "Caesar and his apes are forced into a deadly conflict with an army of humans led by a ruthless Colonel. After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind. As the journey finally brings them face to face, Caesar and the Colonel are pitted against each other in an epic battle that will determine the fate of both their species and the future of the planet.",
-        "overview_ar": "من أجل الحرية. للعائلة. من أجل الكوكب.  يضطر قيصر وقروده إلى صراع مميت مع جيش من البشر بقيادة عقيد لا يرحم. بعد أن تعاني القردة من خسائر لا يمكن تصورها ، يتصارع قيصر مع غرائزه المظلمة ويبدأ سعيه الأسطوري للانتقام من نوعه. بينما تضعهم الرحلة أخيرا وجها لوجه ، يتنافس قيصر والعقيد ضد بعضهما البعض في معركة ملحمية ستحدد مصير كل من نوعهما ومستقبل الكوكب.",
+        "overview_ar": "Caesar and his apes are forced into a deadly conflict with an army of humans led by a ruthless Colonel. After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind. As the journey finally brings them face to face, Caesar and the Colonel are pitted against each other in an epic battle that will determine the fate of both their species and the future of the planet.",
         "poster_path": "/mMA1qhBFgZX8O36qPPTC016kQl1.jpg",
         "vote_average": 7.215,
         "release_date": "2017-07-11",
@@ -6240,30 +6240,6 @@
         "popularity": 12.5388
     },
     {
-        "id": 1242011,
-        "type": "movie",
-        "title": "Together",
-        "title_ar": "معًا",
-        "overview": "Years into their relationship, Tim and Millie find themselves at a crossroads as they move to the country, abandoning all that is familiar in their lives except each other. With tensions already flaring, a nightmarish encounter with a mysterious, unnatural force threatens to corrupt their lives, their love, and their flesh.",
-        "overview_ar": "بينما يختبر الانتقال إلى الريف حدود علاقة زوجين، تؤدي مواجهة خارقة للطبيعة إلى تحول جذري في حبهما وحياتهما وأجسادهما.",
-        "poster_path": "/80slKYVM5teFH3kz6ouWrZXveqj.jpg",
-        "vote_average": 7.027,
-        "release_date": "2025-07-28",
-        "popularity": 12.2522
-    },
-    {
-        "id": 62177,
-        "type": "movie",
-        "title": "Brave",
-        "title_ar": "أسطورة مريدا",
-        "overview": "In the mystical Scottish Highlands, Merida is the princess of a kingdom ruled by King Fergus and Queen Elinor. An unruly daughter and an accomplished archer, Merida one day defies a sacred custom of the land and inadvertently brings turmoil to the kingdom. In an attempt to set things right, Merida seeks out an eccentric old Wise Woman and is granted an ill-fated wish. Also figuring into Merida's quest — and serving as comic relief — are the kingdom's three lords: the enormous Lord MacGuffin, the surly Lord Macintosh, and the disagreeable Lord Dingwall.",
-        "overview_ar": "غير مصيرك.\r تدور أحداث شجاع في المرتفعات الاسكتلندية الغامضة ، حيث ميريدا هي أميرة مملكة يحكمها الملك فيرغوس والملكة إلينور. ابنة جامحة ورامية بارعة ، تتحدى ميريدا ذات يوم عادة مقدسة للأرض وتجلب الاضطرابات عن غير قصد إلى المملكة. في محاولة لوضع الأمور في نصابها الصحيح ، تبحث ميريدا عن امرأة حكيمة عجوز غريبة الأطوار وتمنح أمنية مشؤومة. كما أن البحث عن مسعى ميريدا - والعمل كإغاثة كوميدية - هو أمراء المملكة الثلاثة: اللورد ماكجوفين الهائل ، واللورد ماكنتوش العابس ، واللورد دينجوال البغيض.",
-        "poster_path": "/1XAuDtMWpL0sYSFK0R6EZate2Ux.jpg",
-        "vote_average": 7.021,
-        "release_date": "2012-06-21",
-        "popularity": 13.1093
-    },
-    {
         "id": 601,
         "type": "movie",
         "title": "E.T. the Extra-Terrestrial",
@@ -6300,16 +6276,16 @@
         "popularity": 13.8133
     },
     {
-        "id": 464052,
+        "id": 1151272,
         "type": "movie",
-        "title": "Wonder Woman 1984",
-        "title_ar": "المرأة الأعجوبة 1984",
-        "overview": "A botched store robbery places Wonder Woman in a global battle against a powerful and mysterious ancient force that puts her powers in jeopardy.",
-        "overview_ar": "يعود الفيلم بشخصية المرأة الأعجوبة إلى الثمانينيات و بالضبط عام 1984 في ذروة الحرب الباردة لتواجه إثنين من الأعداء الجدد وهما لورد ماكس وصديقتها القديمة مينيرفا / الفهد، المدعومين بواسطة الاتحاد السوفيتي.",
-        "poster_path": "/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg",
-        "vote_average": 6.375,
-        "release_date": "2020-12-16",
-        "popularity": 12.771
+        "title": "Sirāt",
+        "title_ar": "Sirāt",
+        "overview": "A man and his son arrive at a rave lost in the mountains of Morocco. They are looking for Marina, their daughter and sister, who disappeared months ago at another rave. Driven by fate, they decide to follow a group of ravers in search of one last party, in hopes Marina will be there.",
+        "overview_ar": "A man and his son arrive at a rave lost in the mountains of Morocco. They are looking for Marina, their daughter and sister, who disappeared months ago at another rave. Driven by fate, they decide to follow a group of ravers in search of one last party, in hopes Marina will be there.",
+        "poster_path": "/bzBtsLi17rK4G6kDvOXfUZfAhca.jpg",
+        "vote_average": 6.8,
+        "release_date": "2025-06-06",
+        "popularity": 13.1885
     },
     {
         "id": 82633,
@@ -6319,7 +6295,7 @@
         "overview": "In 1931, the Bondurant brothers of Franklin County, Virginia, run a multipurpose backwoods establishment that hides their true business — bootlegging. Middle brother Forrest is the brain of the operation; older Howard is the brawn, and younger Jack, the lookout. Though the local police have taken bribes and left the brothers alone, a violent war erupts when a sadistic lawman from Chicago arrives and tries to shut down the Bondurants operation.",
         "overview_ar": "خلال فترة الكساد الكبير في الولايات المتحدة اﻷمريكية، يروي الفيلم قصة الإخوة (بوندوانت) الثلاثة المعروفين بسمعتهم السيئة وجرائمهم الشهيرة في ولاية فيرجينا وعمليات التهريب التي قاموا بها، إلى أن يأتي نائب شرطة جديد طامع في نسبة من أرباحهم، وينوي تحويل حياتهم إلى جحيم.",
         "poster_path": "/Ahtzwts22ayviD3LEVslfL4nRWB.jpg",
-        "vote_average": 7.1,
+        "vote_average": 7.064,
         "release_date": "2012-08-29",
         "popularity": 12.5729
     },
@@ -6408,6 +6384,18 @@
         "popularity": 12.4919
     },
     {
+        "id": 1323625,
+        "type": "movie",
+        "title": "Night Patrol",
+        "title_ar": "Night Patrol",
+        "overview": "An L.A. cop discovers a local task force is hiding a secret that puts the residents of his childhood neighborhood in danger.",
+        "overview_ar": "An L.A. cop discovers a local task force is hiding a secret that puts the residents of his childhood neighborhood in danger.",
+        "poster_path": "/rNqLzACU9ez2ehDalTFDPjZiC4G.jpg",
+        "vote_average": 4.0,
+        "release_date": "2026-01-16",
+        "popularity": 13.0586
+    },
+    {
         "id": 337339,
         "type": "movie",
         "title": "The Fate of the Furious",
@@ -6427,7 +6415,7 @@
         "overview": "A remote village in Roman-era Egypt explodes into spiritual warfare when a carpenter, his wife and their child are targeted by supernatural forces.",
         "overview_ar": "A remote village in Roman-era Egypt explodes into spiritual warfare when a carpenter, his wife and their child are targeted by supernatural forces.",
         "poster_path": "/tXEtdZjoaHqjDjSxZJWwDVjIfx9.jpg",
-        "vote_average": 5.4,
+        "vote_average": 5.346,
         "release_date": "2025-11-13",
         "popularity": 13.463
     },
@@ -6483,9 +6471,9 @@
         "id": 1495,
         "type": "movie",
         "title": "Kingdom of Heaven",
-        "title_ar": "مملكة الجَنَّة",
+        "title_ar": "Kingdom of Heaven",
         "overview": "After his wife dies, a blacksmith named Balian is thrust into royalty, political intrigue and bloody holy wars during the Crusades.",
-        "overview_ar": "بعد وفاة زوجته ، انغمس حداد يُدعى باليان في الملوك والمؤامرات السياسية والحروب المقدسة الدموية خلال الحروب الصليبية.",
+        "overview_ar": "After his wife dies, a blacksmith named Balian is thrust into royalty, political intrigue and bloody holy wars during the Crusades.",
         "poster_path": "/rNaBe4TwbMef71sgscqabpGKsxh.jpg",
         "vote_average": 7.0,
         "release_date": "2005-05-03",
@@ -6547,7 +6535,7 @@
         "overview": "As U.S. troops storm the beaches of Normandy, three brothers lie dead on the battlefield, with a fourth trapped behind enemy lines. Ranger captain John Miller and seven men are tasked with penetrating German-held territory and bringing the boy home.",
         "overview_ar": "عندما اقتحمت القوات الأمريكية شواطئ نورماندي ، مات ثلاثة أشقاء في ساحة المعركة ، بينما حوصر رابع خلف خطوط العدو. تم تكليف قائد الحارس جون ميلر وسبعة رجال باختراق الأراضي التي تسيطر عليها ألمانيا وإحضار الصبي إلى المنزل.",
         "poster_path": "/uqx37cS8cpHg8U35f9U5IBlrCV3.jpg",
-        "vote_average": 8.22,
+        "vote_average": 8.221,
         "release_date": "1998-07-24",
         "popularity": 11.1152
     },
@@ -6718,6 +6706,18 @@
         "vote_average": 7.393,
         "release_date": "2018-04-03",
         "popularity": 12.1647
+    },
+    {
+        "id": 34851,
+        "type": "movie",
+        "title": "Predators",
+        "title_ar": "Predators",
+        "overview": "A group of cold-blooded killers find themselves trapped on an alien planet to be hunted by extraterrestrial Predators.",
+        "overview_ar": "A group of cold-blooded killers find themselves trapped on an alien planet to be hunted by extraterrestrial Predators.",
+        "poster_path": "/wdniP8NDaJIydi1hMxhpbJMUfr6.jpg",
+        "vote_average": 6.294,
+        "release_date": "2010-07-07",
+        "popularity": 12.7367
     },
     {
         "id": 34851,
@@ -7200,18 +7200,6 @@
         "popularity": 12.087
     },
     {
-        "id": 744,
-        "type": "movie",
-        "title": "Top Gun",
-        "title_ar": "Top Gun",
-        "overview": "For Lieutenant Pete 'Maverick' Mitchell and his friend and co-pilot Nick 'Goose' Bradshaw, being accepted into an elite training school for fighter pilots is a dream come true. But a tragedy, as well as personal demons, will threaten Pete's dreams of becoming an ace pilot.",
-        "overview_ar": "For Lieutenant Pete 'Maverick' Mitchell and his friend and co-pilot Nick 'Goose' Bradshaw, being accepted into an elite training school for fighter pilots is a dream come true. But a tragedy, as well as personal demons, will threaten Pete's dreams of becoming an ace pilot.",
-        "poster_path": "/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg",
-        "vote_average": 7.059,
-        "release_date": "1986-05-16",
-        "popularity": 12.087
-    },
-    {
         "id": 424694,
         "type": "movie",
         "title": "Bohemian Rhapsody",
@@ -7219,7 +7207,7 @@
         "overview": "Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon take the music world by storm when they form the rock 'n' roll band Queen in 1970. Hit songs become instant classics. When Mercury's increasingly wild lifestyle starts to spiral out of control, Queen soon faces its greatest challenge yet – finding a way to keep the band together amid the success and excess.",
         "overview_ar": "حياة بلا خوف إلى الأبد  المغني فريدي ميركوري وعازف الجيتار بريان ماي وعازف الدرامز روجر تايلور وعازف الجيتار الجهير جون ديكون يأخذون عالم الموسيقى عن طريق العاصفة عندما شكلوا فرقة الروك أند رول كوين في عام 1970. الأغاني الناجحة تصبح كلاسيكية فورية. عندما يبدأ أسلوب حياة ميركوري الجامح بشكل متزايد في الخروج عن نطاق السيطرة ، سرعان ما تواجه كوين أكبر تحد لها حتى الآن - إيجاد طريقة للحفاظ على الفرقة معا وسط النجاح والفائض.",
         "poster_path": "/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg",
-        "vote_average": 7.961,
+        "vote_average": 8.0,
         "release_date": "2018-10-24",
         "popularity": 11.7193
     },
@@ -7243,7 +7231,7 @@
         "overview": "A small suburban town receives a visit from a castaway unfinished science experiment named Edward.",
         "overview_ar": "A small suburban town receives a visit from a castaway unfinished science experiment named Edward.",
         "poster_path": "/e0FqKFvGPdQNWG8tF9cZBtev9Em.jpg",
-        "vote_average": 7.719,
+        "vote_average": 7.7,
         "release_date": "1990-12-07",
         "popularity": 10.5654
     },
@@ -7375,7 +7363,7 @@
         "overview": "Following the death of the Leigh family matriarch, Annie and her children uncover disturbing secrets about their heritage. Their daily lives are not only impacted, but they also become entangled in a chilling fate from which they cannot escape, driving them to the brink of madness.",
         "overview_ar": "تشرع عائلة (جراهام) في كشف ألغاز موت جدتهم المنعزلة، والتي - حتى بعد رحيلها - تُلقي ظلالًا مُظلمة على الأسرة، خاصًة حفيدتها المراهقة صاحبة الجاذبية الاستثنائية (تشارلي).. يتلاشى السلام من محيط الأسرة بعد سيطرة الرعب القاتم عليهم؛ مما يدفع الأم إلى الغوص في عالم أكثر إظلامًا للهروب من مصيرهم الحالك الذي توارثوه.",
         "poster_path": "/hjlZSXM86wJrfCv5VKfR5DI2VeU.jpg",
-        "vote_average": 7.292,
+        "vote_average": 7.3,
         "release_date": "2018-06-07",
         "popularity": 13.1202
     },
@@ -7435,9 +7423,21 @@
         "overview": "The X-Men face their most formidable and powerful foe when one of their own, Jean Grey, starts to spiral out of control. During a rescue mission in outer space, Jean is nearly killed when she's hit by a mysterious cosmic force. Once she returns home, this force not only makes her infinitely more powerful, but far more unstable. The X-Men must now band together to save her soul and battle aliens that want to use Grey's new abilities to rule the galaxy.",
         "overview_ar": "سوف يرتفع طائر الفينيق.\r يواجه X-Men عدوهم الأكثر شراسة وقوة عندما يبدأ أحدهم ، جان جراي ، في الخروج عن السيطرة. خلال مهمة إنقاذ في الفضاء الخارجي ، كادت جين أن تقتل عندما اصطدمت بقوة كونية غامضة. بمجرد عودتها إلى المنزل ، فإن هذه القوة لا تجعلها أكثر قوة بلا حدود فحسب ، بل تجعلها أكثر استقرارا. يجب على X-Men الآن أن تتحد معا لإنقاذ روحها ومحاربة الأجانب الذين يريدون استخدام قدرات Grey الجديدة لحكم المجرة.",
         "poster_path": "/cCTJPelKGLhALq3r51A9uMonxKj.jpg",
-        "vote_average": 5.961,
+        "vote_average": 6.0,
         "release_date": "2019-06-05",
         "popularity": 10.917
+    },
+    {
+        "id": 62211,
+        "type": "movie",
+        "title": "Monsters University",
+        "title_ar": "جامعة المرعبين",
+        "overview": "A look at the relationship between Mike and Sulley during their days at Monsters University — when they weren't necessarily the best of friends.",
+        "overview_ar": "قصة الفيلم: يعود بنا الفيلم إلى أيام الجامعة عندما كان مايك وازوسكي (صوت بيللي كريستال) وحشاً صغيراً يحلم بأنيصبح مخيفاً، خاصة وهو يعتقد أنه أفضل مخيف في جامعة الوحوش، ولكن خلال الفصل الدراسي الأول له في الجامعة،تتغير خطط مايك بعد أن التقى بالبارع جيمس بي سوليفان (صوت جون جودمان) الذي وُلد مخيفاً بشكل طبيعي،التنافس بين الاثنين يخرج عن السيطرة ويكون السبب في طردهما من جامعة النخبة المرعبة، وتصبح الأمورأسوأ عندما يُضطران إلى العمل معاً، جنباً إلى جنب مع مجموعة غريبة من الوحوش الماهرة.",
+        "poster_path": "/y7thwJ7z5Bplv6vwl6RI0yteaDD.jpg",
+        "vote_average": 7.044,
+        "release_date": "2013-06-19",
+        "popularity": 11.8098
     },
     {
         "id": 650524,
@@ -8391,9 +8391,9 @@
         "id": 917496,
         "type": "movie",
         "title": "Beetlejuice Beetlejuice",
-        "title_ar": "Beetlejuice Beetlejuice",
+        "title_ar": "بيتلجوس  بيتلجوس",
         "overview": "After a family tragedy, three generations of the Deetz family return home to Winter River. Still haunted by Betelgeuse, Lydia's life is turned upside down when her teenage daughter, Astrid, accidentally opens the portal to the Afterlife.",
-        "overview_ar": "After a family tragedy, three generations of the Deetz family return home to Winter River. Still haunted by Betelgeuse, Lydia's life is turned upside down when her teenage daughter, Astrid, accidentally opens the portal to the Afterlife.",
+        "overview_ar": "يقع حادث عائلي مأساوي، يتسبب في اجتماع ثلاثة أجيال من عائلة (ديتز) للمنزل العائلي في وينتر ريفر والذي يحرسه الشبح (بيتلجوس)، وسرعان ما يقع حادث يتسبب في فتح بوابة العالم الآخر وتنقلب الأمور.",
         "poster_path": "/kKgQzkUCnQmeTPkyIwHly2t6ZFI.jpg",
         "vote_average": 6.947,
         "release_date": "2024-09-04",
@@ -10791,9 +10791,9 @@
         "id": 22803,
         "type": "movie",
         "title": "Law Abiding Citizen",
-        "title_ar": "Law Abiding Citizen",
+        "title_ar": "منفذ العدالة",
         "overview": "A frustrated man decides to take justice into his own hands after a plea bargain sets one of his family's killers free. He targets not only the killer but also the district attorney and others involved in the deal.",
-        "overview_ar": "A frustrated man decides to take justice into his own hands after a plea bargain sets one of his family's killers free. He targets not only the killer but also the district attorney and others involved in the deal.",
+        "overview_ar": "تدور احداث فيلم حول يقرر رجل محبط تحقيق العدالة بين يديه بعد صفقة قضائية تُطلق سراح قتلة عائلته. إنه لا يستهدف القاتل فحسب ، بل أيضًا المدعي العام وغيره من المشاركين في الصفقة.",
         "poster_path": "/fcEXcip7v0O1ndV4VUdFqJSqbOg.jpg",
         "vote_average": 7.388,
         "release_date": "2009-10-15",
@@ -11040,18 +11040,6 @@
         "popularity": 9.9478
     },
     {
-        "id": 969681,
-        "type": "movie",
-        "title": "Spider-Man: Brand New Day",
-        "title_ar": "Spider-Man: Brand New Day",
-        "overview": "The fourth installment in the Spider-Man franchise and part of Phase Six of the Marvel Cinematic Universe (MCU). Plot TBA.",
-        "overview_ar": "The fourth installment in the Spider-Man franchise and part of Phase Six of the Marvel Cinematic Universe (MCU). Plot TBA.",
-        "poster_path": "/9JCQtDCSpPR2ld55yNlEg1VwcQo.jpg",
-        "vote_average": 0.0,
-        "release_date": "2026-07-29",
-        "popularity": 9.9888
-    },
-    {
         "id": 197,
         "type": "movie",
         "title": "Braveheart",
@@ -11071,7 +11059,7 @@
         "overview": "In the future, America is a dystopian wasteland. The latest scourge is Ma-Ma, a prostitute-turned-drug pusher with a dangerous new drug and aims to take over the city. The only possibility of stopping her is an elite group of urban police called Judges, who combine the duties of judge, jury and executioner to deliver a brutal brand of swift justice. But even the top-ranking Judge, Dredd, discovers that taking down Ma-Ma isn’t as easy as it seems in this explosive adaptation of the hugely popular comic series.",
         "overview_ar": "تدور أحداث الفيلم في إطار خيال علمي في المستقبل البعيد، حول مدينة يسيطر عليها جهاز الشرطة الذي أصبح في ذات الوقت قاضي وجلاد وهيئة محلفين، محتكرًا كل السلطات في يده، فيتولى أحد الضباط برفقة زميلته القضاء على العنف والفساد بالمدينة، وضبط عصابة تتاجر في مخدر خطير محرف للواقع.",
         "poster_path": "/wLx65gtGVnUFCxceHWGszcruCZj.jpg",
-        "vote_average": 6.856,
+        "vote_average": 6.857,
         "release_date": "2012-09-07",
         "popularity": 8.5399
     },
@@ -11395,7 +11383,7 @@
         "overview": "A post-apocalyptic tale, in which a lone man fights his way across America in order to protect a sacred book that holds the secrets to saving humankind.",
         "overview_ar": "قصة تحكي عن رجل وحيد يحارب في طريقه عبر أمريكا من أجل حماية كتاب مقدس يحمل أسرار لإنقاذ الجنس البشري",
         "poster_path": "/1H1y9ZiqNFaLgQiRDDZLA55PviW.jpg",
-        "vote_average": 6.794,
+        "vote_average": 6.793,
         "release_date": "2010-01-14",
         "popularity": 8.5713
     },
@@ -11419,7 +11407,7 @@
         "overview": "Desperate to find refuge for her children, Chloe Marvino runs away from her Mafia tied husband, and finds shelter in a cabin with a recluse drifter named Jake. But as her husband's henchmen draw closer to her, it turns out that Jake is the biggest enemy of them all.",
         "overview_ar": "Desperate to find refuge for her children, Chloe Marvino runs away from her Mafia tied husband, and finds shelter in a cabin with a recluse drifter named Jake. But as her husband's henchmen draw closer to her, it turns out that Jake is the biggest enemy of them all.",
         "poster_path": "/cgZjpqRQt9sk6XMCwZ3B1NPAaoy.jpg",
-        "vote_average": 6.618,
+        "vote_average": 6.662,
         "release_date": "2025-05-16",
         "popularity": 9.3959
     },
@@ -11518,6 +11506,18 @@
         "vote_average": 7.192,
         "release_date": "2007-03-07",
         "popularity": 9.0119
+    },
+    {
+        "id": 1313003,
+        "type": "movie",
+        "title": "Close To Me",
+        "title_ar": "Muori di lei",
+        "overview": "Luca is a forty-year-old teacher experiencing a relationship crisis with his wife, Sara, who is much wealthier than him. During the lockdown, Luca finds himself a bystander in the life of his new neighbor, Amanda, and decides to bridge the distance between them, with disastrous consequences.",
+        "overview_ar": "Luca is a forty-year-old teacher experiencing a relationship crisis with his wife, Sara, who is much wealthier than him. During the lockdown, Luca finds himself a bystander in the life of his new neighbor, Amanda, and decides to bridge the distance between them, with disastrous consequences.",
+        "poster_path": "/zRsQgmJRCCHXAm1Ls5Q72ziVYBh.jpg",
+        "vote_average": 5.784,
+        "release_date": "2025-03-20",
+        "popularity": 8.7139
     },
     {
         "id": 1313003,
@@ -12951,9 +12951,9 @@
         "id": 1072699,
         "type": "movie",
         "title": "Inside Furioza",
-        "title_ar": "فيريوزا مجددًا",
+        "title_ar": "Inside Furioza",
         "overview": "In the wake of murder, new Furioza leader Golden claims the reins of his violent and formidable hooligan gang and takes on a new focus across borders.",
-        "overview_ar": "في أعقاب جريمة قتل، يفرض \"غولدن\"، زعيم \"فيريوزا\" الجديد، سيطرته على عصابته الهمجية العنيفة التي لا يُستهان بها، ويوجّه اهتمامه نحو التوسع عبر الحدود.",
+        "overview_ar": "In the wake of murder, new Furioza leader Golden claims the reins of his violent and formidable hooligan gang and takes on a new focus across borders.",
         "poster_path": "/dbe1zKVKNBIczdmRcm7jxEphYLz.jpg",
         "vote_average": 6.517,
         "release_date": "2025-10-14",
@@ -18725,7 +18725,7 @@
         "title": "Gold",
         "title_ar": "Gold",
         "overview": "In the not-too-distant future, two drifters traveling through the desert stumble across the biggest gold nugget ever found and the dream of immense wealth and greed takes hold. They hatch a plan to excavate their bounty, with one man leaving to secure the necessary tools while the other remains with the gold. The man who remains must endure harsh desert elements, ravenous wild dogs, and mysterious intruders, while battling the sinking suspicion that he has been abandoned to his fate.",
-        "overview_ar": "في المستقبل غير البعيد ، يتعثر اثنان من الانجرافات التي تسافر عبر الصحراء عبر أكبر كتلة ذهبية تم العثور عليها على الإطلاق ويترسخ حلم الثروة الهائلة والجشع. إنهم يضعون خطة للتنقيب عن مكافأتهم ، حيث يغادر رجل واحد لتأمين الأدوات اللازمة بينما يبقى الآخر مع الذهب. يجب على الرجل الذي يبقى أن يتحمل العناصر الصحراوية القاسية ، والكلاب البرية الشرسة ، والمتسللين الغامضين ، بينما يحارب الشك الغارق في أنه قد تم التخلي عنه لمصيره.",
+        "overview_ar": "In the not-too-distant future, two drifters traveling through the desert stumble across the biggest gold nugget ever found and the dream of immense wealth and greed takes hold. They hatch a plan to excavate their bounty, with one man leaving to secure the necessary tools while the other remains with the gold. The man who remains must endure harsh desert elements, ravenous wild dogs, and mysterious intruders, while battling the sinking suspicion that he has been abandoned to his fate.",
         "poster_path": "/c0r75XaNHA4QMlDcitEscQW2Fn6.jpg",
         "vote_average": 6.195,
         "release_date": "2022-01-13",
@@ -18737,7 +18737,7 @@
         "title": "Pitch Perfect",
         "title_ar": "Pitch Perfect",
         "overview": "College student Beca knows she does not want to be part of a clique, but that's exactly where she finds herself after arriving at her new school. Thrust in among mean gals, nice gals and just plain weird gals, Beca finds that the only thing they have in common is how well they sing together. She takes the women of the group out of their comfort zone of traditional arrangements and into a world of amazing harmonic combinations in a fight to the top of college music competitions.",
-        "overview_ar": "تعرف طالبة جامعية بيكا أنها لا تريد أن تكون جزءًا من زمرة ، ولكن هذا هو بالضبط المكان الذي تجد فيه نفسها بعد وصولها إلى مدرستها الجديدة. اقتحم بيكا بين الفتيات اللئيمات والبنات اللطيفات والبنات الغريبة فقط ، تجد بيكا أن الشيء الوحيد المشترك بينهما هو مدى جودة الغناء معًا. إنها تأخذ نساء المجموعة من منطقة الراحة الخاصة بالترتيبات التقليدية إلى عالم من التوليفات التوافقية المذهلة في معركة للوصول إلى قمة مسابقات الموسيقى الجامعية.",
+        "overview_ar": "College student Beca knows she does not want to be part of a clique, but that's exactly where she finds herself after arriving at her new school. Thrust in among mean gals, nice gals and just plain weird gals, Beca finds that the only thing they have in common is how well they sing together. She takes the women of the group out of their comfort zone of traditional arrangements and into a world of amazing harmonic combinations in a fight to the top of college music competitions.",
         "poster_path": "/gsFoJk9g8W3zgaipRrrURk7LbiF.jpg",
         "vote_average": 7.274,
         "release_date": "2012-09-28",
@@ -18951,9 +18951,9 @@
         "id": 51739,
         "type": "movie",
         "title": "The Secret World of Arrietty",
-        "title_ar": "The Secret World of Arrietty",
+        "title_ar": "آريتي المقترضة",
         "overview": "14-year-old Arrietty and the rest of the Clock family live in peaceful anonymity as they make their own home from items \"borrowed\" from the house's human inhabitants. However, life changes for the Clocks when a human boy discovers Arrietty.",
-        "overview_ar": "14-year-old Arrietty and the rest of the Clock family live in peaceful anonymity as they make their own home from items \"borrowed\" from the house's human inhabitants. However, life changes for the Clocks when a human boy discovers Arrietty.",
+        "overview_ar": "تدور أحداث القصة حول عائلة مكونة من أم (هوميلي) وأب (بود) وابنتهما (آريتي) الذين يسكنون خلسة تحت أحد البيوت في الريف ودائمًا ما يقترضون أشياء من البيت وأصحاب البيت أو بالأصح الخادمة فهي المتواجدة بالبيت فقط لاحظت اختفاء بعض الأغراض ولكنها لا تدري من أخذها، وفي أحد الأيام انتقل ابن صاحبة المنزل (شو) إلى هذا البيت ليرتاح فيه قبل أن يخضع لعملية جراحية في قلبه ,لاحظ شو آريتي تتخفى بين الأعشاب ثم ذهبت بسرعة وفي الليل كانت أول رحلة اقتراض لآريتي، وعندما ذهبت مع أبيها كان البيت هادئا والكل نائم فأخذا مكعب سكر ثم ذهبا إلى غرفة شو ليأخذا منديلاً وحينما كانا يحاولان إخراج المنديل من العلبة لاحظت آريتي أن شو ينظر إليها وهو هادئ لا يتكلم فبدأ جسمها بالارتجاف والخوف ثم سقط مكعب السكر على الأرض فهربا بسرعة ولكن الفتى قال لها \"لا تخافي لن أفعل شيئا\" ومع ذلك هربت، وفي الصباح الباكر خرجت آريتي لتشم بعض الهواء وفجأة آتى شو ووضع مكعب السكر عند فتحة تصريف المياه ووضع رسالة مكتوب عليها \"لقد نسيتي شيئا\" ,فهل ستتعرف آريتي على شو وهل سيُكشف أمر هذه العائلة الصغيرة ,ترى ماذا سيحدث في النهاية...",
         "poster_path": "/3lSRaSjDp2nkXMQkzzjpRi3035O.jpg",
         "vote_average": 7.665,
         "release_date": "2010-07-16",
@@ -20400,42 +20400,6 @@
         "popularity": 7.0022
     },
     {
-        "id": 8338,
-        "type": "movie",
-        "title": "Blindness",
-        "title_ar": "Blindness",
-        "overview": "When a sudden plague of blindness devastates a city, a small group of the afflicted band together to triumphantly overcome the horrific conditions of their imposed quarantine.",
-        "overview_ar": "When a sudden plague of blindness devastates a city, a small group of the afflicted band together to triumphantly overcome the horrific conditions of their imposed quarantine.",
-        "poster_path": "/deBsx5IxyqCC217j3VY24TkkE0Z.jpg",
-        "vote_average": 6.514,
-        "release_date": "2008-05-14",
-        "popularity": 8.1308
-    },
-    {
-        "id": 501929,
-        "type": "movie",
-        "title": "The Mitchells vs. the Machines",
-        "title_ar": "عائلة ميتشل في مواجهة الآلات",
-        "overview": "A quirky, dysfunctional family's road trip is upended when they find themselves in the middle of the robot apocalypse and suddenly become humanity's unlikeliest last hope.",
-        "overview_ar": "يفسد غزو الروبوتات للأرض رحلة آل \"ميتشل\" البرّية عبر البلاد… والآن يقع على عاتق أغرب عائلة في العالم مهمّة إنقاذ الجنس البشري.",
-        "poster_path": "/mI2Di7HmskQQ34kz0iau6J1vr70.jpg",
-        "vote_average": 7.856,
-        "release_date": "2021-04-22",
-        "popularity": 7.0022
-    },
-    {
-        "id": 1079091,
-        "type": "movie",
-        "title": "It Ends with Us",
-        "title_ar": "It Ends with Us",
-        "overview": "When a woman's first love suddenly reenters her life, her relationship with a charming, but abusive neurosurgeon is upended, and she realizes she must learn to rely on her own strength to make an impossible choice for her future.",
-        "overview_ar": "تعتقد ليلي أنها وجدت الحب الحقيقي مع رايل، إلا أن حادث صعب يؤدي إلى الرجوع لصدمة سابقة تجعلها تفكر ما إذا كان الحب وحده كافي لاستمرار زواجها، لكن الأمور تزداد صعوبة عندما يعود حبها الأول لحياتها مرة أخرى.",
-        "poster_path": "/AjV6jFJ2YFIluYo4GQf13AA1tqu.jpg",
-        "vote_average": 6.954,
-        "release_date": "2024-08-07",
-        "popularity": 7.0905
-    },
-    {
         "id": 10494,
         "type": "movie",
         "title": "Perfect Blue",
@@ -20611,7 +20575,7 @@
         "overview": "Growing up in post-World War II era Arizona, young Sammy Fabelman aspires to become a filmmaker as he reaches adolescence, but soon discovers a shattering family secret and explores how the power of films can help him see the truth.",
         "overview_ar": "تستند الأحداث إلى طفولة ونشأة (ستيفن سبيلبرج) بعد الحرب العالمية الثانية في ولاية أريزونا، من سن السابعة إلى الثامنة عشر. حيث يكتشف شاب يدعى (سامي فابلمان) سر محطمًا عن عائلته، ويستكشف كيف تتمكن الأفلام من إدراك حقيقة الآخر وحقيقة أنفسنا.",
         "poster_path": "/h7llKkqkkJtJrTOaDLuVeUYDQ7I.jpg",
-        "vote_average": 7.577,
+        "vote_average": 7.6,
         "release_date": "2022-11-11",
         "popularity": 7.7129
     },
@@ -20667,9 +20631,9 @@
         "id": 1700,
         "type": "movie",
         "title": "Misery",
-        "title_ar": "بؤس",
+        "title_ar": "Misery",
         "overview": "After an accident, acclaimed novelist Paul Sheldon is rescued by a nurse who claims to be his biggest fan.  Her obsession takes a dark turn when she holds him captive in her remote Colorado home and forces him to write back to life the popular literary character he killed off.",
-        "overview_ar": "بعد تعرضه لحادث سيارة، يُنقَذ الكاتب الشهير بول شيلدون على يد ممرضة تدّعي أنها من أكبر معجبيه. سرعان ما يتحول إعجابها إلى هوس مظلم، إذ تحتجزه في منزلها النائي في كولورادو وتُجبره على إعادة إحياء الشخصية الأدبية المحبوبة التي قتلها في روايته الأخيرة.",
+        "overview_ar": "After an accident, acclaimed novelist Paul Sheldon is rescued by a nurse who claims to be his biggest fan.  Her obsession takes a dark turn when she holds him captive in her remote Colorado home and forces him to write back to life the popular literary character he killed off.",
         "poster_path": "/klPO5oh1LOxiPpdDXZo1ADgpKcw.jpg",
         "vote_average": 7.746,
         "release_date": "1990-11-30",
@@ -20878,6 +20842,42 @@
         "vote_average": 6.6,
         "release_date": "2013-04-05",
         "popularity": 6.9115
+    },
+    {
+        "id": 376004,
+        "type": "movie",
+        "title": "Adulterers",
+        "title_ar": "الزناة",
+        "overview": "A man who returns home to find his wife cheating on him on their anniversary. He holds her and her naked and humiliated lover captive at gunpoint while he decides whether or not he's going to kill them. The story, inspired by true events, takes place over one day and is set in New Orleans during a stifling heat wave.",
+        "overview_ar": "تدور احداث فيلم حول رجل يعود الى بيته ليجد زوجتة نائمة مع عاشقها فى الذكرى السنوية, حيث تكون عارية والاسير العاشق تحت تهديد السلاح بينما يقرر الزوج ما اذا كان سيكون قتلهم هذه القصة مستوحاة من احدث حقيقية.",
+        "poster_path": "/pJLmZBruOmn2c9mYWe3h1xcXaA0.jpg",
+        "vote_average": 6.0,
+        "release_date": "2016-01-05",
+        "popularity": 6.9087
+    },
+    {
+        "id": 10890,
+        "type": "movie",
+        "title": "Stripes",
+        "title_ar": "Stripes",
+        "overview": "Hard-luck cabbie John Winger, directionless after being fired from his job and dumped by his girlfriend, enlists in the U.S. Army with his close pal, Russell Ziskey. After his barely satisfactory performance in basic training, the irreverent Winger emerges as the figurehead for a ragtag band of misfits. However, his hijinks threaten to cause an international scandal when he inadvertently commandeers a military assault vehicle behind enemy lines.",
+        "overview_ar": "Hard-luck cabbie John Winger, directionless after being fired from his job and dumped by his girlfriend, enlists in the U.S. Army with his close pal, Russell Ziskey. After his barely satisfactory performance in basic training, the irreverent Winger emerges as the figurehead for a ragtag band of misfits. However, his hijinks threaten to cause an international scandal when he inadvertently commandeers a military assault vehicle behind enemy lines.",
+        "poster_path": "/vP8tPOgmJSNOh4bpOv1bFjid3rZ.jpg",
+        "vote_average": 6.559,
+        "release_date": "1981-06-26",
+        "popularity": 7.1189
+    },
+    {
+        "id": 1844,
+        "type": "movie",
+        "title": "Entrapment",
+        "title_ar": "Entrapment",
+        "overview": "Two thieves, who travel in elegant circles, try to outsmart each other and, in the process, end up falling in love.",
+        "overview_ar": "Two thieves, who travel in elegant circles, try to outsmart each other and, in the process, end up falling in love.",
+        "poster_path": "/psrm7DToacaxQvgViBAcrYiLKzH.jpg",
+        "vote_average": 6.23,
+        "release_date": "1999-04-29",
+        "popularity": 8.246
     },
     {
         "id": 376004,
@@ -22553,7 +22553,7 @@
         "title": "From Russia with Love",
         "title_ar": "From Russia with Love",
         "overview": "Agent 007 is back in the second installment of the James Bond series, this time battling a secret crime organization known as SPECTRE. Russians Rosa Klebb and Kronsteen are out to snatch a decoding device known as the Lektor, using the ravishing Tatiana to lure Bond into helping them. Bond willingly travels to meet Tatiana in Istanbul, where he must rely on his wits to escape with his life in a series of deadly encounters with the enemy.",
-        "overview_ar": "يعود العميل 007 في الجزء الثاني من سلسلة جيمس بوند ، وهذه المرة تقاتل منظمة إجرامية سرية تُعرف باسم سبكتر. الروسي روزا كليب و كرونستين في طريقهما لانتزاع جهاز فك تشفير يعرف باسم ليكتور، باستخدام تاتيانا الساحرة لإغراء بوند لمساعدتهم. يسافر بوند عن طيب خاطر للقاء تاتيانا في اسطنبول ، حيث يجب عليه الاعتماد على ذكائه للهروب بحياته في سلسلة من المواجهات المميتة مع العدو",
+        "overview_ar": "Agent 007 is back in the second installment of the James Bond series, this time battling a secret crime organization known as SPECTRE. Russians Rosa Klebb and Kronsteen are out to snatch a decoding device known as the Lektor, using the ravishing Tatiana to lure Bond into helping them. Bond willingly travels to meet Tatiana in Istanbul, where he must rely on his wits to escape with his life in a series of deadly encounters with the enemy.",
         "poster_path": "/zx4V17FP8oclNvOpTgs2iCCtiYk.jpg",
         "vote_average": 7.065,
         "release_date": "1963-10-10",
@@ -23523,9 +23523,9 @@
         "id": 36593,
         "type": "movie",
         "title": "Naked Gun 33⅓: The Final Insult",
-        "title_ar": "Naked Gun 33⅓: The Final Insult",
+        "title_ar": "السلاح العاري 33⅓: الإهانة الأخيرة",
         "overview": "Frank Drebin is persuaded out of retirement to go undercover in a state prison. There he has to find out what top terrorist, Rocco, has planned for when he escapes. Adding to his problems, Frank's wife, Jane, is desperate for a baby.",
-        "overview_ar": "Frank Drebin is persuaded out of retirement to go undercover in a state prison. There he has to find out what top terrorist, Rocco, has planned for when he escapes. Adding to his problems, Frank's wife, Jane, is desperate for a baby.",
+        "overview_ar": "تدور أحداث الفيلم بعد تقاعد العميل (فرانك دريبين) واختياره للحياة الهادئة، لكنه يقرر أن يعود ليتعاون مع الشرطة من أجل الوصول لعصابةٍ تخطط لتفجير قنبلة أثناء حفل توزيع جوائز الأوسكار.",
         "poster_path": "/p0AYsdgkudR9P5fNV5AjzbwQt8W.jpg",
         "vote_average": 6.493,
         "release_date": "1994-03-18",
@@ -23535,7 +23535,7 @@
         "id": 1185528,
         "type": "movie",
         "title": "Legends of the Condor Heroes: The Gallants",
-        "title_ar": "Legends of the Condor Heroes: The Gallants",
+        "title_ar": "射雕英雄传：侠之大者",
         "overview": "Under Genghis Khan, the Mongolian army pushes west to destroy the Jin Dynasty, setting its sights on the Song Dynasty next. Amid internal conflicts among martial arts schools, Guo Jing unites the Central Plains' warriors to defend Xiangyang, embodying courage and loyalty in the fight for the nation.",
         "overview_ar": "Under Genghis Khan, the Mongolian army pushes west to destroy the Jin Dynasty, setting its sights on the Song Dynasty next. Amid internal conflicts among martial arts schools, Guo Jing unites the Central Plains' warriors to defend Xiangyang, embodying courage and loyalty in the fight for the nation.",
         "poster_path": "/fUCFEGFlMIFet9ja72JDAeG1he8.jpg",
