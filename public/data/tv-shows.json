@@ -5520,6 +5520,30 @@
         "popularity": 57.6184
     },
     {
+        "id": 1021,
+        "type": "tv",
+        "title": "Casualty",
+        "title_ar": "Casualty",
+        "overview": "Drama series about the staff and patients at Holby City Hospital's emergency department, charting the ups and downs in their personal and professional lives.",
+        "overview_ar": "Drama series about the staff and patients at Holby City Hospital's emergency department, charting the ups and downs in their personal and professional lives.",
+        "poster_path": "/9hjOtCY0X4BsovRK3nCphRvyo4b.jpg",
+        "vote_average": 6.185,
+        "release_date": "1986-09-06",
+        "popularity": 43.1699
+    },
+    {
+        "id": 71026,
+        "type": "tv",
+        "title": "Super Wings",
+        "title_ar": "출동! 슈퍼윙스",
+        "overview": "An action-packed preschool series about an adorable jet plane named Jett who travels the world delivering packages to children. On every delivery, Jett encounters a new problem that the he and his friends the Super Wings must work together to solve!",
+        "overview_ar": "An action-packed preschool series about an adorable jet plane named Jett who travels the world delivering packages to children. On every delivery, Jett encounters a new problem that the he and his friends the Super Wings must work together to solve!",
+        "poster_path": "/lu2DNsIQgn1Jb6djHvrqJSUQXXl.jpg",
+        "vote_average": 6.421,
+        "release_date": "2014-09-01",
+        "popularity": 57.6184
+    },
+    {
         "id": 194,
         "type": "tv",
         "title": "NYPD Blue",
@@ -5700,18 +5724,6 @@
         "popularity": 46.2314
     },
     {
-        "id": 30981,
-        "type": "tv",
-        "title": "Monster",
-        "title_ar": "الوحش",
-        "overview": "Kenzou Tenma, a Japanese brain surgeon in Germany, finds his life in utter turmoil after getting involved with a psychopath that was once a former patient.",
-        "overview_ar": "تتكلم القصة عن جرائم وشخص يقف وراها وطبيب يقع ضحيه اتهام الشرطه له بأرتكاب الجرائم الطبيب اخطأ بالماضي ولكنه لم يترك خطأه وحاول اصلاحه بعد مرور عدة سنين وافنى نفسه لكي يصلح ما اخطأ به ينجرف جرّاح أعصاب ياباني لامع في عالم الظلام حين يحاول حلّ ألغاز سلسلة من جرائم القتل تتضمّن مريضًا قد عالجه ذات يوم وأنقذ حياته.",
-        "poster_path": "/n5XNKXnoXpoXyfiCtXHOf8q8PFM.jpg",
-        "vote_average": 8.497,
-        "release_date": "2004-04-07",
-        "popularity": 46.2282
-    },
-    {
         "id": 291,
         "type": "tv",
         "title": "Coronation Street",
@@ -5746,18 +5758,6 @@
         "vote_average": 7.147,
         "release_date": "1968-09-20",
         "popularity": 40.3145
-    },
-    {
-        "id": 61889,
-        "type": "tv",
-        "title": "Marvel's Daredevil",
-        "title_ar": "مارفيل: ديرديفل",
-        "overview": "Lawyer-by-day Matt Murdock uses his heightened senses from being blinded as a young boy to fight crime at night on the streets of Hell’s Kitchen as Daredevil.",
-        "overview_ar": "يستخدم المحامي مات موردوك حواسه المتزايدة لمكافحة الجرائم في شوارع - هيلز كتشن - بعد تعرضه للعمى وهو صبي صغير، تحت اسم ديرديفل.",
-        "poster_path": "/u6tICVagGwukuFPr0qBUwOqCKSn.jpg",
-        "vote_average": 8.158,
-        "release_date": "2015-04-10",
-        "popularity": 47.5536
     },
     {
         "id": 61889,
@@ -7899,9 +7899,9 @@
         "id": 1274,
         "type": "tv",
         "title": "Six Feet Under",
-        "title_ar": "على عمق ستة أقدام",
+        "title_ar": "Six Feet Under",
         "overview": "When death is your business, what is your life? For the Fisher family, the world outside of their family-owned funeral home continues to be at least as challenging as—and far less predictable than—the one inside.",
-        "overview_ar": "\"حين يكون الموت هو مهنتك... فماذا تكون حياتك؟\"\n\nبالنسبة لعائلة فيشر، فإن العالم خارج صالة الجنازات العائلية لا يقل تعقيدًا عن عالمهم الداخلي—بل إنه غالبًا أكثر تقلبًا وأقل قابلية للتوقع.",
+        "overview_ar": "When death is your business, what is your life? For the Fisher family, the world outside of their family-owned funeral home continues to be at least as challenging as—and far less predictable than—the one inside.",
         "poster_path": "/sCgzLaVlFy8KxtxRPvt1V5MNTDb.jpg",
         "vote_average": 8.091,
         "release_date": "2001-06-03",
@@ -8643,9 +8643,9 @@
         "id": 31724,
         "type": "tv",
         "title": "Code Geass: Lelouch of the Rebellion",
-        "title_ar": "Code Geass: Lelouch of the Rebellion",
+        "title_ar": "كود غياس",
         "overview": "Japan has been invaded and conquered by the Britannian Empire. Japan is now known as Area 11 and its citizens known as Elevens. The Britannian Empire takes away Japan's autonomous power and imposes its rule through the use of Knightmares. The Empire's rule has never faltered, but cracks have begun to show...",
-        "overview_ar": "Japan has been invaded and conquered by the Britannian Empire. Japan is now known as Area 11 and its citizens known as Elevens. The Britannian Empire takes away Japan's autonomous power and imposes its rule through the use of Knightmares. The Empire's rule has never faltered, but cracks have begun to show...",
+        "overview_ar": "تدور قصة الأنمي حول لولوش لامبروج وهو أمير بريطاني وأخته نانالي (التي أُقعدت وفقدت بصرها بعد أن قُتلت أمها أمام عينيها) المنفيان إلى اليابان في وقت سيطرت فيه \"مملكة بريطانيا المقدسة\" على الكثير من مناطق العالم, وبعد ذلك بفترة قامت بريطانيا باحتلال اليابان وتغيير اسمها إلى المنطقة 11. ومع كثرة التصادمات المسلحة بين متمردين يابانيين والقوات البريطانية أراد لولوش أن يقضي على بريطانيا وأن يصنع عالماً تعيش فيه أخته نانالي بسلام. وفي إحدى الأيام تصادف أن يلتقي بالفتاة الغامضة سي تو C.C. التي عقدت معه صفقة منحته فيها قدرة خاصة تسمى الغياس تمكنه من التحكم بالآخرين, وبمقابل هذه القوة يجب عليه أن يحقق لها طلباً ما\n\n.يستخدم لولوش قوة الغياس التي تعرف أيضا بقوة الملوك للبدء في مخططه بتدمير بريطانيا وصناعة عالمٍ جديد, فيقود حركة تمرد جديدة تعرف بفرسان السواد, وينتحل شخصية الرجل المقنع زيرو. وبفضل شخصيته الكارزمية وعبقريته الفذة في تخطيط وإدارة المعارك, يستقطب العديد من قادة التمرد اليابانيين إلى جانبه ويبدأ بالاقتراب من حلمه.",
         "poster_path": "/x316WCogkeIwNY4JR8zTCHbI2nQ.jpg",
         "vote_average": 8.343,
         "release_date": "2006-10-05",
@@ -8871,9 +8871,9 @@
         "id": 103516,
         "type": "tv",
         "title": "Star Trek: Strange New Worlds",
-        "title_ar": "ستار تريك: عوالم جديدة غريبة",
+        "title_ar": "Star Trek: Strange New Worlds",
         "overview": "Follow Captain Christopher Pike, Science Officer Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy.",
-        "overview_ar": "تابع قصة Christopher Pike و Spock و Number One قبل سنوات من وصول الكابتن Kirk إلى U.S.S. Enterprise ، وهم يستكشفون عوالم جديدة حول المجرة.  تقع أحداث القصة قبل مسلسل Star Trek: The Original Series و Star Trek: Discovery.",
+        "overview_ar": "Follow Captain Christopher Pike, Science Officer Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy.",
         "poster_path": "/w6KapI2JvrCkOPmQhkwYPJNjqeo.jpg",
         "vote_average": 7.974,
         "release_date": "2022-05-05",
@@ -9603,9 +9603,9 @@
         "id": 126308,
         "type": "tv",
         "title": "Shōgun",
-        "title_ar": "Shōgun",
+        "title_ar": "شوغُن",
         "overview": "In Japan in the year 1600, at the dawn of a century-defining civil war, Lord Yoshii Toranaga is fighting for his life as his enemies on the Council of Regents unite against him, when a mysterious European ship is found marooned in a nearby fishing village.",
-        "overview_ar": "In Japan in the year 1600, at the dawn of a century-defining civil war, Lord Yoshii Toranaga is fighting for his life as his enemies on the Council of Regents unite against him, when a mysterious European ship is found marooned in a nearby fishing village.",
+        "overview_ar": "في اليابان عام 1600، في فجر حرب أهلية حددت قرنًا من الزمان، يقاتل اللورد يوشي توراناجا من أجل حياته بينما يتحد أعداؤه في مجلس الحكام ضده، عندما يتم العثور على سفينة أوروبية غامضة تقطعت بها السبل في منطقة صيد قريبة. قرية.",
         "poster_path": "/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
         "vote_average": 8.438,
         "release_date": "2024-02-27",
@@ -9807,7 +9807,7 @@
         "id": 45857,
         "type": "tv",
         "title": "REBORN!",
-        "title_ar": "家庭教師ヒットマン REBORN!",
+        "title_ar": "REBORN!",
         "overview": "Tsuna, a timid junior high student, is a failure at school, sports, and social life. But everything around Tsuna has been completely changed when a baby called Reborn, who claims to be an Italian hit man from Vongola family shows up! Reborn was sent to groom Tsuna for his future life as a mafia boss of the family!",
         "overview_ar": "Tsuna, a timid junior high student, is a failure at school, sports, and social life. But everything around Tsuna has been completely changed when a baby called Reborn, who claims to be an Italian hit man from Vongola family shows up! Reborn was sent to groom Tsuna for his future life as a mafia boss of the family!",
         "poster_path": "/6x7mx9f3ufHCC3pNgMoMnzVo3jw.jpg",
@@ -11280,6 +11280,18 @@
         "popularity": 29.5841
     },
     {
+        "id": 105971,
+        "type": "tv",
+        "title": "Star Wars: The Bad Batch",
+        "title_ar": "Star Wars: The Bad Batch",
+        "overview": "The 'Bad Batch' of elite and experimental clones make their way through an ever-changing galaxy in the immediate aftermath of the Clone Wars.",
+        "overview_ar": "The 'Bad Batch' of elite and experimental clones make their way through an ever-changing galaxy in the immediate aftermath of the Clone Wars.",
+        "poster_path": "/5mHus672nuinyaE0FtqvD0AddcY.jpg",
+        "vote_average": 8.2,
+        "release_date": "2021-05-04",
+        "popularity": 32.9658
+    },
+    {
         "id": 96677,
         "type": "tv",
         "title": "Lupin",
@@ -11479,7 +11491,7 @@
         "overview": "A young woman born in a mafia-controlled town seeks revenge on those who wrongfully harmed and imprisoned her family.",
         "overview_ar": "تسعى شابّة غاضبة وُلِدت في بلد صغير تُسيطر عليه عصابات المافيا إلى الانتقام ممّن دمّروا عائلتها وزجّوا بها في السجن ظُلمًا.",
         "poster_path": "/7lBJ6lOS0uQqsH13U9iMTikawQS.jpg",
-        "vote_average": 7.552,
+        "vote_average": 7.553,
         "release_date": "2016-07-19",
         "popularity": 28.7295
     },
@@ -11503,21 +11515,9 @@
         "overview": "When the mysterious deep space research vessel USCSS Maginot crash-lands on Earth, Wendy and a ragtag group of tactical soldiers make a fateful discovery that puts them face-to-face with the planet's greatest threat.",
         "overview_ar": "يُكتشف أعظم تهديد للكوكب بعد تحطم مركبة فضائية غامضة على \"الأرض\".",
         "poster_path": "/yueXS3q8BtoWekcHOATFHicLl3e.jpg",
-        "vote_average": 7.349,
+        "vote_average": 7.3,
         "release_date": "2025-08-12",
         "popularity": 30.1791
-    },
-    {
-        "id": 71488,
-        "type": "tv",
-        "title": "Tales of the Bizarre",
-        "title_ar": "世にも奇妙な物語",
-        "overview": "Inspired by American TV movies like \"Hitchcock Theater\" and \"The Twilight Zone,\" the show features multiple works with Tamori as the storyteller and actors as the main characters. While horror and supernatural themes are predominant, a variety of genres like comedy and drama are also produced. Most episodes, however, have a bad ending.",
-        "overview_ar": "Inspired by American TV movies like \"Hitchcock Theater\" and \"The Twilight Zone,\" the show features multiple works with Tamori as the storyteller and actors as the main characters. While horror and supernatural themes are predominant, a variety of genres like comedy and drama are also produced. Most episodes, however, have a bad ending.",
-        "poster_path": "/7XVTRl17sNGh8tRzSczEZXaiwPG.jpg",
-        "vote_average": 7.8,
-        "release_date": "1990-04-19",
-        "popularity": 38.4129
     },
     {
         "id": 157239,
@@ -15845,7 +15845,7 @@
         "title": "Good Girls",
         "title_ar": "Good Girls",
         "overview": "Three \"good girl\" suburban wives and mothers suddenly find themselves in desperate circumstances and decide to stop playing it safe and risk everything to take their power back.",
-        "overview_ar": "Three \"good girl\" suburban wives and mothers suddenly find themselves in desperate circumstances and decide to stop playing it safe and risk everything to take their power back.",
+        "overview_ar": "تُنظِّم ثلاث أمّهات في الضواحي عمليّة سطو على متجر بقالة محليّ للهرب من المصاعب الماديّة وتحقيق استقلالهنّ... بالاشتراك معًا.",
         "poster_path": "/wpgg6G3UHXepH2Zgpt4W60d6gxR.jpg",
         "vote_average": 7.8,
         "release_date": "2018-02-26",
@@ -16083,9 +16083,9 @@
         "id": 243875,
         "type": "tv",
         "title": "Georgie & Mandy's First Marriage",
-        "title_ar": "Georgie & Mandy's First Marriage",
+        "title_ar": "جورجي وماندي: الزواج الأول",
         "overview": "Georgie and Mandy raise their young family in Texas while navigating the challenges of adulthood, parenting, and marriage.",
-        "overview_ar": "Georgie and Mandy raise their young family in Texas while navigating the challenges of adulthood, parenting, and marriage.",
+        "overview_ar": "يروي المسلسل الكوميدي قصة جورجي وماندي، شابين يواجهان تحديات الزواج المبكر وتربية طفلهما الأول. وسط مواقف طريفة ومؤثرة، يستكشف العمل موضوعات الأسرة، الحب، والنمو الشخصي بأسلوب مرح ودافئ.",
         "poster_path": "/3z2mYFxUkzanb2eeIcVyfJq0G3q.jpg",
         "vote_average": 7.8,
         "release_date": "2024-10-17",
@@ -16311,7 +16311,7 @@
         "id": 26318,
         "type": "tv",
         "title": "Slayers",
-        "title_ar": "スレイヤーズ",
+        "title_ar": "Slayers",
         "overview": "Follows the exploits of the young sorceress Lina Inverse, whose life revolves around food, treasure, and fighting. After stealing treasure from a group of bandits, Lina is accosted by stragglers during her journey to the next town. She's not in any real danger, but a dim-witted but good-natured swordsman named Gourry Gabriev springs to her rescue anyways. The two team up, and head to Atlas City, fighting foes they encounter on the way. Unbeknownst to them, two mysterious figures are hot on their tail, and they are especially interested in the “treasure” Lina and Gourry have stolen.",
         "overview_ar": "Follows the exploits of the young sorceress Lina Inverse, whose life revolves around food, treasure, and fighting. After stealing treasure from a group of bandits, Lina is accosted by stragglers during her journey to the next town. She's not in any real danger, but a dim-witted but good-natured swordsman named Gourry Gabriev springs to her rescue anyways. The two team up, and head to Atlas City, fighting foes they encounter on the way. Unbeknownst to them, two mysterious figures are hot on their tail, and they are especially interested in the “treasure” Lina and Gourry have stolen.",
         "poster_path": "/qoKUaJVQBYtEXYJebksIA8dwGdD.jpg",
@@ -16803,9 +16803,9 @@
         "id": 24835,
         "type": "tv",
         "title": "Clannad",
-        "title_ar": "Clannad",
+        "title_ar": "كلاناد",
         "overview": "Tomoya Okazaki is a third year high school student resentful of his life. His mother passed away from a car accident when he was younger, causing his father to resort to alcohol and cigarettes. This results in fights between the two until Tomoya's shoulder is injured in a fight. Since then, Tomoya has had distant relationships with his father, causing him to become a delinquent over time. While on a walk to school, he meets a strange girl named Nagisa Furukawa who is a year older, but is repeating due to illness. Due to this, she is often alone as most of her friends have moved on. The two begin hanging out and slowly, as time goes by, Tomoya finds his life shifting in a new direction.",
-        "overview_ar": "Tomoya Okazaki is a third year high school student resentful of his life. His mother passed away from a car accident when he was younger, causing his father to resort to alcohol and cigarettes. This results in fights between the two until Tomoya's shoulder is injured in a fight. Since then, Tomoya has had distant relationships with his father, causing him to become a delinquent over time. While on a walk to school, he meets a strange girl named Nagisa Furukawa who is a year older, but is repeating due to illness. Due to this, she is often alone as most of her friends have moved on. The two begin hanging out and slowly, as time goes by, Tomoya finds his life shifting in a new direction.",
+        "overview_ar": "أوكازاكي تومويا طالب في السنة الثالثة الذي كره حياته بشدة لكنها أوشكت أن تتغير بعد أن قابل في طريقه إلى المدرسة فتاة تدعى ناغيسا .",
         "poster_path": "/jPBMYp4ddXkGJDSxxmaKBjzv2r3.jpg",
         "vote_average": 8.3,
         "release_date": "2007-10-05",
@@ -17280,6 +17280,18 @@
         "popularity": 22.6459
     },
     {
+        "id": 87739,
+        "type": "tv",
+        "title": "The Queen's Gambit",
+        "title_ar": "The Queen's Gambit",
+        "overview": "In a 1950s orphanage, a young girl reveals an astonishing talent for chess and begins an unlikely journey to stardom while grappling with addiction.",
+        "overview_ar": "In a 1950s orphanage, a young girl reveals an astonishing talent for chess and begins an unlikely journey to stardom while grappling with addiction.",
+        "poster_path": "/zU0htwkhNvBQdVSIKB9s6hgVeFK.jpg",
+        "vote_average": 8.447,
+        "release_date": "2020-10-23",
+        "popularity": 22.6459
+    },
+    {
         "id": 265167,
         "type": "tv",
         "title": "ZIBB",
@@ -17374,18 +17386,6 @@
         "vote_average": 8.089,
         "release_date": "2010-11-26",
         "popularity": 20.7756
-    },
-    {
-        "id": 279446,
-        "type": "tv",
-        "title": "Swords Into Plowshares",
-        "title_ar": "太平年",
-        "overview": "During the tumultuous period of the Five Dynasties and Ten Kingdoms, three determined youths—Qian Hongshu, Zhao Kuangyin, and Guo Rong—navigate the chaos of political upheaval and war as they strive to overcome the suffering caused by endless conflict.",
-        "overview_ar": "During the tumultuous period of the Five Dynasties and Ten Kingdoms, three determined youths—Qian Hongshu, Zhao Kuangyin, and Guo Rong—navigate the chaos of political upheaval and war as they strive to overcome the suffering caused by endless conflict.",
-        "poster_path": "/76gwCVQG1MoItK25o48opYP7TmG.jpg",
-        "vote_average": 8.9,
-        "release_date": "2026-01-23",
-        "popularity": 25.859
     },
     {
         "id": 62084,
@@ -17532,18 +17532,6 @@
         "popularity": 23.8988
     },
     {
-        "id": 66599,
-        "type": "tv",
-        "title": "Private Eyes",
-        "title_ar": "Private Eyes",
-        "overview": "Ex-pro hockey player Matt Shade irrevocably changes his life when he teams up with fierce P.I. Angie Everett to form an unlikely investigative powerhouse.",
-        "overview_ar": "Ex-pro hockey player Matt Shade irrevocably changes his life when he teams up with fierce P.I. Angie Everett to form an unlikely investigative powerhouse.",
-        "poster_path": "/yPt9IuY2D8g6Lpwh8O8wCDixzt9.jpg",
-        "vote_average": 7.3,
-        "release_date": "2016-05-26",
-        "popularity": 22.3524
-    },
-    {
         "id": 202102,
         "type": "tv",
         "title": "Quantum Leap",
@@ -17674,6 +17662,18 @@
         "vote_average": 6.263,
         "release_date": "2026-01-13",
         "popularity": 21.0773
+    },
+    {
+        "id": 66292,
+        "type": "tv",
+        "title": "Big Little Lies",
+        "title_ar": "Big Little Lies",
+        "overview": "The tale of three mothers of first graders whose apparently perfect lives unravel to the point of murder.",
+        "overview_ar": "(مادلين) و(سيليست) تعيشان في بلدة صغيرة، ولم تكن أيًا منهما تتوقع وصول (جين) وطفلها الغريب، وأن مجيئهما سوف يؤثر عليهم جميعًا، فتبدأ كذبات صغيرة في الظهور، على الأزواج السابقين، وفضيحة المدارس، والأكاذيب الصغيرة هذه نقول لأنفسنا أنها تجعلنا على قيد الحياة، فهل هذا صحيح؟.",
+        "poster_path": "/b4HNJOc2N6SGyEhf2RagdpAKBK6.jpg",
+        "vote_average": 7.9,
+        "release_date": "2017-02-19",
+        "popularity": 22.74
     },
     {
         "id": 21641,
@@ -19200,6 +19200,18 @@
         "popularity": 21.1775
     },
     {
+        "id": 90296,
+        "type": "tv",
+        "title": "Tokyo Vice",
+        "title_ar": "رذيلة طوكيو",
+        "overview": "A first-hand account of the Tokyo Metropolitan Police beat following Jake Adelstein, an American journalist who embeds himself into the Tokyo Vice police squad to reveal corruption. Based on Jake Adelstein’s non-fiction book of the same name.",
+        "overview_ar": "صحفي شاب يعمل في طوكيو، يتسبب سبق صحفي له في وضعه على قائمة المطلوبين\n\nمن قبل أخطر العصابات في اليابان.",
+        "poster_path": "/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg",
+        "vote_average": 7.8,
+        "release_date": "2022-04-07",
+        "popularity": 20.0475
+    },
+    {
         "id": 105248,
         "type": "tv",
         "title": "Cyberpunk: Edgerunners",
@@ -19426,18 +19438,6 @@
         "vote_average": 6.403,
         "release_date": "1988-11-14",
         "popularity": 19.3496
-    },
-    {
-        "id": 112738,
-        "type": "tv",
-        "title": "HIP - High Intellectual Potential",
-        "title_ar": "HIP - High Intellectual Potential",
-        "overview": "Morgane is 38-years old, has three children, two exes and an IQ of 160; her destiny as a cleaner is turned upside-down when her extraordinary abilities are spotted by the police who offer her a job as a consultant.",
-        "overview_ar": "Morgane is 38-years old, has three children, two exes and an IQ of 160; her destiny as a cleaner is turned upside-down when her extraordinary abilities are spotted by the police who offer her a job as a consultant.",
-        "poster_path": "/93PXzpXC0i5RVBEAGFR76NC1ylT.jpg",
-        "vote_average": 7.591,
-        "release_date": "2021-04-29",
-        "popularity": 20.69
     },
     {
         "id": 112738,
@@ -20883,9 +20883,9 @@
         "id": 81046,
         "type": "tv",
         "title": "The Dragon Prince",
-        "title_ar": "The Dragon Prince",
+        "title_ar": "الأمير التنين",
         "overview": "An extraordinary discovery inspires two human princes and an elven assassin to team up on an epic quest to bring peace to their warring lands.",
-        "overview_ar": "An extraordinary discovery inspires two human princes and an elven assassin to team up on an epic quest to bring peace to their warring lands.",
+        "overview_ar": "بينما تستعد مملكة كاتوليس البشرية لهجوم من جانب Moonshadow elves ، يخطط الملك Harrow لإرسال الأبناء Callum و Ezran بعيدًا إلى مكان آمن.",
         "poster_path": "/d7PIRa6ez7ZEl9D4JUrnSsmcnVD.jpg",
         "vote_average": 8.213,
         "release_date": "2018-09-14",
@@ -21111,7 +21111,7 @@
         "id": 110070,
         "type": "tv",
         "title": "Horimiya",
-        "title_ar": "ホリミヤ",
+        "title_ar": "Horimiya",
         "overview": "A secret life is the one thing they have in common. At school, Hori is a prim and perfect social butterfly, but the truth is she's a brash homebody. Meanwhile, under a gloomy facade, Miyamura hides a gentle heart, along with piercings and tattoos. In a chance meeting, they both reveal a side they've never shown. Could this blossom into something new?",
         "overview_ar": "A secret life is the one thing they have in common. At school, Hori is a prim and perfect social butterfly, but the truth is she's a brash homebody. Meanwhile, under a gloomy facade, Miyamura hides a gentle heart, along with piercings and tattoos. In a chance meeting, they both reveal a side they've never shown. Could this blossom into something new?",
         "poster_path": "/iSOKGl5KIeOCAtigUDCfFZe2cOi.jpg",
@@ -22083,7 +22083,7 @@
         "id": 91914,
         "type": "tv",
         "title": "The Chinese Restaurant",
-        "title_ar": "The Chinese Restaurant",
+        "title_ar": "中餐厅",
         "overview": "Chinese Restaurant is a Chinese celebrity reality show broadcast by Hunan Television.It's Vicky Zhao's first reality/variety show as a regular guest.",
         "overview_ar": "Chinese Restaurant is a Chinese celebrity reality show broadcast by Hunan Television.It's Vicky Zhao's first reality/variety show as a regular guest.",
         "poster_path": "/z8JPfzKViBG51MRvTpo9U9vwyh0.jpg",
@@ -22320,18 +22320,6 @@
         "popularity": 21.1144
     },
     {
-        "id": 75,
-        "type": "tv",
-        "title": "Two Guys and a Girl",
-        "title_ar": "Two Guys and a Girl",
-        "overview": "Welcome to Beacon Street Pizza, the perfect workplace and hangout for aimless wise-guy Berg, neurotic Pete and campus beauty Sharon. Pete and Berg are roommates and students at a local Boston university, while Sharon struggles with her work and relationships. Together, these three best friends try to navigate life and love in Boston!",
-        "overview_ar": "Welcome to Beacon Street Pizza, the perfect workplace and hangout for aimless wise-guy Berg, neurotic Pete and campus beauty Sharon. Pete and Berg are roommates and students at a local Boston university, while Sharon struggles with her work and relationships. Together, these three best friends try to navigate life and love in Boston!",
-        "poster_path": "/ulm7wLxyxDNO8kEe12oTM5efWfb.jpg",
-        "vote_average": 7.1,
-        "release_date": "1998-03-10",
-        "popularity": 19.2917
-    },
-    {
         "id": 16964,
         "type": "tv",
         "title": "The File Of Justice",
@@ -22440,18 +22428,6 @@
         "popularity": 19.6416
     },
     {
-        "id": 66558,
-        "type": "tv",
-        "title": "Voltron: Legendary Defender",
-        "title_ar": "فولترون - المُدافع الأسطوري",
-        "overview": "Five unlikely teenage heroes and their flying robot lions unite to form the megapowerful Voltron and defend the universe from evil.",
-        "overview_ar": "في مسلسل جديد كليًّا، يتّحد خمسة أبطال غير متوقّعين وأسودهم الآليّة الطائرة ليكوّنوا \"فولترون\" فائق القوة، ويدافعوا عن الكون ضدّ الشرّ.",
-        "poster_path": "/yWAGNuPuUWJT9gIQmGdZiTGJWzh.jpg",
-        "vote_average": 7.2,
-        "release_date": "2016-06-10",
-        "popularity": 18.3552
-    },
-    {
         "id": 111177,
         "type": "tv",
         "title": "Godzilla Singular Point",
@@ -22498,6 +22474,18 @@
         "vote_average": 8.565,
         "release_date": "2022-04-22",
         "popularity": 20.5368
+    },
+    {
+        "id": 309280,
+        "type": "tv",
+        "title": "Baddies USA",
+        "title_ar": "Baddies USA",
+        "overview": "Baddies USA is the eighth season of the popular Zeus Network reality franchise, serving as an all-star, cross-country edition featuring veteran cast members from previous Baddies seasons and Bad Girls Club, focusing on promotional events, touring U.S. cities, and inevitable drama, fights, and unexpected alliances among personalities like Natalie Nunn, Rollie, Tommie Lee, Chrisean Rock, and Tanisha Thomas, all centered around hosting parties and confronting personal beefs.",
+        "overview_ar": "Baddies USA is the eighth season of the popular Zeus Network reality franchise, serving as an all-star, cross-country edition featuring veteran cast members from previous Baddies seasons and Bad Girls Club, focusing on promotional events, touring U.S. cities, and inevitable drama, fights, and unexpected alliances among personalities like Natalie Nunn, Rollie, Tommie Lee, Chrisean Rock, and Tanisha Thomas, all centered around hosting parties and confronting personal beefs.",
+        "poster_path": "/27IYhrFLxogxRNKIVWivDnNfwF9.jpg",
+        "vote_average": 9.375,
+        "release_date": "2025-11-23",
+        "popularity": 19.3289
     },
     {
         "id": 34186,
@@ -22558,6 +22546,18 @@
         "vote_average": 7.0,
         "release_date": "1971-01-05",
         "popularity": 16.9074
+    },
+    {
+        "id": 72637,
+        "type": "tv",
+        "title": "Once",
+        "title_ar": "Once",
+        "overview": "The series revolves around Gabo, a soccer-loving teenager who, upon receiving a scholarship from the prestigious Sports Academic Institute (IAD) of Buenos Aires, will see his dream of playing at Los Halcones Dorados, the renowned amateur team of the school, and also his longing to become a professional footballer.",
+        "overview_ar": "The series revolves around Gabo, a soccer-loving teenager who, upon receiving a scholarship from the prestigious Sports Academic Institute (IAD) of Buenos Aires, will see his dream of playing at Los Halcones Dorados, the renowned amateur team of the school, and also his longing to become a professional footballer.",
+        "poster_path": "/d4vPg3QsTJJh6C5MHARTb5CyqOu.jpg",
+        "vote_average": 8.6,
+        "release_date": "2017-06-19",
+        "popularity": 20.1593
     },
     {
         "id": 3275,
@@ -23760,18 +23760,6 @@
         "popularity": 18.9445
     },
     {
-        "id": 81329,
-        "type": "tv",
-        "title": "Chronicles of the Sun",
-        "title_ar": "Un si grand soleil",
-        "overview": "Claire is surprised when she gets arrested for the murder of her childhood friend after she returns to Montpellier.",
-        "overview_ar": "كلير متفاجئة عندما تُعتقل بتهمة قتل صديق طفولتها بعد عودتها إلى مونبلييه.",
-        "poster_path": "/t6jVlbPMtZOJoAOfeoR4yQmnjXM.jpg",
-        "vote_average": 6.6,
-        "release_date": "2018-08-27",
-        "popularity": 17.6095
-    },
-    {
         "id": 282057,
         "type": "tv",
         "title": "哆啦A梦",
@@ -23806,18 +23794,6 @@
         "vote_average": 6.665,
         "release_date": "2014-10-12",
         "popularity": 18.6399
-    },
-    {
-        "id": 1830,
-        "type": "tv",
-        "title": "Tiny Toon Adventures",
-        "title_ar": "مغامرات تايني تون",
-        "overview": "Follow the adventures of a group of young cartoon characters who attend the Acme Looniversity to become the next generation of characters from the Looney Tunes series.",
-        "overview_ar": "Follow the adventures of a group of young cartoon characters who attend the Acme Looniversity to become the next generation of characters from the Looney Tunes series.",
-        "poster_path": "/j9B9RmerM2b39s7xzW6g4vN5B1m.jpg",
-        "vote_average": 7.802,
-        "release_date": "1990-09-14",
-        "popularity": 21.157
     },
     {
         "id": 62425,
@@ -23998,5 +23974,29 @@
         "vote_average": 8.34,
         "release_date": "1999-10-25",
         "popularity": 17.1715
+    },
+    {
+        "id": 2474,
+        "type": "tv",
+        "title": "A Touch of Frost",
+        "title_ar": "A Touch of Frost",
+        "overview": "Jack Frost is a gritty, dogged and unconventional detective with sympathy for the underdog and an instinct for moral justice who attracts trouble like a magnet. Despite some animosity with his superintendent, Norman “Horn-rimmed Harry” Mullett, Frost and his ever-changing roster of assistants manage to solve cases via his clever mind, good heart, and cool touch.",
+        "overview_ar": "Jack Frost is a gritty, dogged and unconventional detective with sympathy for the underdog and an instinct for moral justice who attracts trouble like a magnet. Despite some animosity with his superintendent, Norman “Horn-rimmed Harry” Mullett, Frost and his ever-changing roster of assistants manage to solve cases via his clever mind, good heart, and cool touch.",
+        "poster_path": "/dgpUNSkIWdU1i9vjc7MQPfGBFLo.jpg",
+        "vote_average": 7.5,
+        "release_date": "1992-12-06",
+        "popularity": 17.3924
+    },
+    {
+        "id": 10846,
+        "type": "tv",
+        "title": "Felony Squad",
+        "title_ar": "Felony Squad",
+        "overview": "Twenty-year veteran Detective Sergeant Sam Stone is paired with rookie Briggs in a large Western metropolis.",
+        "overview_ar": "Twenty-year veteran Detective Sergeant Sam Stone is paired with rookie Briggs in a large Western metropolis.",
+        "poster_path": "/7a0ZBQ4sUZiLVh04FdkqxrU4lNy.jpg",
+        "vote_average": 6.4,
+        "release_date": "1966-09-12",
+        "popularity": 16.4297
     }
 ]
