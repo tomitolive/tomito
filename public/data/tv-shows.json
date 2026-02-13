@@ -619,7 +619,7 @@
         "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
         "overview_ar": "تتمحور قصة المسلسل حول مغامرات عائلة سميث المكونة من ريك سانشيز، عالم عبقري مجنون ومدمن كحول، مورتي سميث حفيد ريك المراهق ذو الأربعة عشر عام، سمر سميث؛ شقيقة مورتي ذو السابعة عشر، بيث سميث؛ ابنة ريك والدة مورتي وسمر، طبيبة حيوانات جراحية؛ جيري سميث، زوج بيث، رجل بسيط مهزوز الثقة غالباً ما يختلف مع ريك.",
         "poster_path": "/WGRQ8FpjkDTzivQJ43t94bOuY0.jpg",
-        "vote_average": 8.681,
+        "vote_average": 8.682,
         "release_date": "2013-12-02",
         "popularity": 125.6919
     },
@@ -643,7 +643,7 @@
         "overview": "The story of Stargate SG-1 begins about a year after the events of the feature film, when the United States government learns that an ancient alien device called the Stargate can access a network of such devices on a multitude of planets. SG-1 is an elite Air Force special operations team, one of more than two dozen teams from Earth who explore the galaxy and defend against alien threats such as the Goa'uld, Replicators, and the Ori.",
         "overview_ar": "تبدأ قصة Stargate SG-1 بعد حوالي عام من أحداث الفيلم الروائي ، عندما علمت حكومة الولايات المتحدة أن جهازًا فضائيًا قديمًا يسمى Stargate يمكنه الوصول إلى شبكة من هذه الأجهزة على العديد من الكواكب. SG-1 هو فريق عمليات خاص من نخبة القوات الجوية ، وهو واحد من أكثر من عشرين فريقًا من الأرض يستكشفون المجرة ويدافعون ضد التهديدات الفضائية مثل Goa'uld و Replicators و Ori.",
         "poster_path": "/dQjmI7XxI47v8IM2MUysHG0LuU2.jpg",
-        "vote_average": 8.276,
+        "vote_average": 8.277,
         "release_date": "1997-07-27",
         "popularity": 137.1887
     },
@@ -679,7 +679,7 @@
         "overview": "When the past catches up with two former spies, their biggest challenge isn't car chases, shootouts or fistfights — it's telling each other the truth.",
         "overview_ar": "عندما يداهم الماضي جاسوسين سابقين ويلاحقهما، يكمن التحدي الأكبر الذي يواجههما في مصارحة بعضهما بالحقيقة، وليس في مطاردات السيارات أو تبادل إطلاق النار أو الاشتباك بالأيدي.",
         "poster_path": "/OvNMzIOJIzDlouhZVqCHRE6HlL.jpg",
-        "vote_average": 7.667,
+        "vote_average": 7.725,
         "release_date": "2026-02-05",
         "popularity": 109.3339
     },
@@ -1200,18 +1200,6 @@
         "popularity": 128.0584
     },
     {
-        "id": 1413,
-        "type": "tv",
-        "title": "American Horror Story",
-        "title_ar": "American Horror Story",
-        "overview": "An anthology horror drama series centering on different characters and locations, including a house with a murderous past, an asylum, a witch coven, a freak show, a hotel, a farmhouse in Roanoke, a cult, the apocalypse and a summer camp.",
-        "overview_ar": "An anthology horror drama series centering on different characters and locations, including a house with a murderous past, an asylum, a witch coven, a freak show, a hotel, a farmhouse in Roanoke, a cult, the apocalypse and a summer camp.",
-        "poster_path": "/5LLG9bjq0i7V5N4UfRhnab8zHK4.jpg",
-        "vote_average": 8.1,
-        "release_date": "2011-10-05",
-        "popularity": 96.5616
-    },
-    {
         "id": 75219,
         "type": "tv",
         "title": "9-1-1",
@@ -1351,7 +1339,7 @@
         "overview": "A father recounts to his children - through a series of flashbacks - the journey he and his four best friends took leading up to him meeting their mother.",
         "overview_ar": "يعيل \"تيد\" على استرجاع ذكريات الماضي ليروي بحثه الملحمي عن نصفه الآخر، وكشخص بالغ يروي \"تيد\" لأطفاله كيف التقى بأمهما.",
         "poster_path": "/b34jPzmB0wZy7EjUZoleXOl2RRI.jpg",
-        "vote_average": 8.137,
+        "vote_average": 8.1,
         "release_date": "2005-09-19",
         "popularity": 101.0286
     },
@@ -1387,7 +1375,7 @@
         "overview": "Torn from his homeland and the woman he loves, Spartacus is condemned to the brutal world of the arena where blood and death are primetime entertainment.",
         "overview_ar": "يتناول المسلسل قصة أعظم مبارز ومجالد في التاريخ ألا وهو سبارتاكوس، والذي يقرر أن يحرر العبيد ويخلصهم من ماسأتهم بعد مذبحة شنيعة، فيقرر أن يكون جيشه الخاص.",
         "poster_path": "/c2GKN4VHCj1dnjFMANRpGkCVBae.jpg",
-        "vote_average": 8.03,
+        "vote_average": 8.029,
         "release_date": "2010-01-22",
         "popularity": 92.5698
     },
@@ -1402,6 +1390,18 @@
         "vote_average": 8.703,
         "release_date": "2015-02-08",
         "popularity": 95.9599
+    },
+    {
+        "id": 209867,
+        "type": "tv",
+        "title": "Frieren: Beyond Journey's End",
+        "title_ar": "فريرن: ما وراء نهاية الرحلة",
+        "overview": "Decades after her party defeated the Demon King, an old friend's funeral launches the elf wizard Frieren on a journey of self-discovery.",
+        "overview_ar": "هُزم الملك الشيطان، وعاد فريق الأبطال المنتصر إلى المنزل قبل أن يتفكك. الأربعة: الساحرة “فريرين“، والبطل “هيميل“، والكاهن “هايتر“، والمحارب “آيزن“. يتذكرون رحلتهم التي استمرت عقدًا من الزمان مع حلول لحظة وداع بعضهم البعض. لكن مرور الوقت يختلف بالنسبة للجان، وبالتالي تشهد “فريرين” رفاقها يموتون ببطء واحدًا تلو الآخر.",
+        "poster_path": "/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
+        "vote_average": 8.775,
+        "release_date": "2023-09-29",
+        "popularity": 89.5124
     },
     {
         "id": 95,
@@ -1848,6 +1848,18 @@
         "popularity": 70.8519
     },
     {
+        "id": 1418,
+        "type": "tv",
+        "title": "The Big Bang Theory",
+        "title_ar": "The Big Bang Theory",
+        "overview": "Physicists Leonard and Sheldon find their nerd-centric social circle with pals Howard and Raj expanding when aspiring actress Penny moves in next door.",
+        "overview_ar": "Physicists Leonard and Sheldon find their nerd-centric social circle with pals Howard and Raj expanding when aspiring actress Penny moves in next door.",
+        "poster_path": "/euKFiO5M125rpngFRBbSW83beeI.jpg",
+        "vote_average": 7.9,
+        "release_date": "2007-09-24",
+        "popularity": 76.4913
+    },
+    {
         "id": 1606,
         "type": "tv",
         "title": "Ghost Whisperer",
@@ -1906,18 +1918,6 @@
         "vote_average": 8.416,
         "release_date": "2008-09-03",
         "popularity": 75.3013
-    },
-    {
-        "id": 31132,
-        "type": "tv",
-        "title": "Regular Show",
-        "title_ar": "العرض العاديّ",
-        "overview": "The surreal misadventures of two best friends - a blue jay and a raccoon - as they seek to liven up their mundane jobs as groundskeepers at the local park.",
-        "overview_ar": "يحاول الجميع مساعدة ريجبي على تجاوز مخاوفه، بينما تضرب المشاكل الأصدقاء بسبب ظن كل منهم أن الآخر لا يقدره بشكل كاف.",
-        "poster_path": "/mS5SLxMYcKfUxA0utBSR5MOAWWr.jpg",
-        "vote_average": 8.629,
-        "release_date": "2010-09-06",
-        "popularity": 96.9362
     },
     {
         "id": 45140,
@@ -2400,6 +2400,18 @@
         "popularity": 67.1182
     },
     {
+        "id": 4239,
+        "type": "tv",
+        "title": "Married... with Children",
+        "title_ar": "Married... with Children",
+        "overview": "Al Bundy is an unsuccessful middle aged shoe salesman with a miserable life and an equally dysfunctional family. He hates his job, his wife is lazy, his son is dysfunctional (especially with women), and his daughter is dim-witted and promiscuous.",
+        "overview_ar": "Al Bundy is an unsuccessful middle aged shoe salesman with a miserable life and an equally dysfunctional family. He hates his job, his wife is lazy, his son is dysfunctional (especially with women), and his daughter is dim-witted and promiscuous.",
+        "poster_path": "/qxdOgESOkBMmfcWUizL01mbdqzl.jpg",
+        "vote_average": 7.716,
+        "release_date": "1987-04-05",
+        "popularity": 67.1182
+    },
+    {
         "id": 36,
         "type": "tv",
         "title": "Medium",
@@ -2470,18 +2482,6 @@
         "vote_average": 8.6,
         "release_date": "2002-06-02",
         "popularity": 67.2307
-    },
-    {
-        "id": 14658,
-        "type": "tv",
-        "title": "Survivor",
-        "title_ar": "Survivor",
-        "overview": "A reality show contest where sixteen or more castaways split between two or more “Tribes” are taken to a remote isolated location and are forced to live off the land with meager supplies for roughly 39 days. Frequent physical challenges are used to pit the tribes against each other for rewards, such as food or luxuries, or for “Immunity”, forcing the other tribe to attend “Tribal Council”, where they must vote off one of their players.",
-        "overview_ar": "A reality show contest where sixteen or more castaways split between two or more “Tribes” are taken to a remote isolated location and are forced to live off the land with meager supplies for roughly 39 days. Frequent physical challenges are used to pit the tribes against each other for rewards, such as food or luxuries, or for “Immunity”, forcing the other tribe to attend “Tribal Council”, where they must vote off one of their players.",
-        "poster_path": "/1usR1nanbDvnc0LJlWd5TOylT9M.jpg",
-        "vote_average": 7.327,
-        "release_date": "2000-05-31",
-        "popularity": 68.8066
     },
     {
         "id": 8514,
@@ -4560,6 +4560,18 @@
         "popularity": 46.147
     },
     {
+        "id": 578,
+        "type": "tv",
+        "title": "Numb3rs",
+        "title_ar": "Numb3rs",
+        "overview": "Inspired by actual cases and experiences, Numb3rs depicts the confluence of police work and mathematics in solving crime as an FBI agent recruits his mathematical genius brother to help solve a wide range of challenging crimes in Los Angeles from a very different perspective.",
+        "overview_ar": "Inspired by actual cases and experiences, Numb3rs depicts the confluence of police work and mathematics in solving crime as an FBI agent recruits his mathematical genius brother to help solve a wide range of challenging crimes in Los Angeles from a very different perspective.",
+        "poster_path": "/wOzbxJmpccPA5MYvBSGbor3WKh3.jpg",
+        "vote_average": 7.015,
+        "release_date": "2005-01-23",
+        "popularity": 46.147
+    },
+    {
         "id": 200875,
         "type": "tv",
         "title": "IT: Welcome to Derry",
@@ -4567,7 +4579,7 @@
         "overview": "In 1962, amid a spate of unexplained disappearances of local children, a group of misfit friends begin to suspect a long-buried ancient evil lurking. As the kids set out to determine what's really going on, a rising unease prompts several townspeople to work together to restore peace – all while a U.S. military operation seeks to exploit Derry for its own objectives.",
         "overview_ar": "In 1962, amid a spate of unexplained disappearances of local children, a group of misfit friends begin to suspect a long-buried ancient evil lurking. As the kids set out to determine what's really going on, a rising unease prompts several townspeople to work together to restore peace – all while a U.S. military operation seeks to exploit Derry for its own objectives.",
         "poster_path": "/nyy3BITeIjviv6PFIXtqvc8i6xi.jpg",
-        "vote_average": 8.235,
+        "vote_average": 8.234,
         "release_date": "2025-10-26",
         "popularity": 47.5896
     },
@@ -4654,18 +4666,6 @@
         "vote_average": 8.267,
         "release_date": "2007-10-14",
         "popularity": 51.2606
-    },
-    {
-        "id": 49036,
-        "type": "tv",
-        "title": "Love Stories in the Countryside",
-        "title_ar": "乡村爱情",
-        "overview": "",
-        "overview_ar": "",
-        "poster_path": "/2XlU2bzsESbc6x9lBKe0gyk90oO.jpg",
-        "vote_average": 6.1,
-        "release_date": "2006-09-30",
-        "popularity": 52.4782
     },
     {
         "id": 94372,
@@ -4764,6 +4764,18 @@
         "popularity": 52.3252
     },
     {
+        "id": 301507,
+        "type": "tv",
+        "title": "Heated Rivalry",
+        "title_ar": "Heated Rivalry",
+        "overview": "Two of the biggest stars in Major League Hockey are bound by ambition, rivalry, and a magnetic pull neither of them fully understands. What begins as a secret fling between two fresh faced rookies evolves into a years-long journey of love, denial, and self-discovery. Over the next eight years, as they chase glory on the ice, they struggle to navigate their feelings for each other. Torn between the sport they live for and the love they can’t ignore, they must decide if there’s room in their fiercely competitive world for something as fragile – and powerful – as real love.",
+        "overview_ar": "Two of the biggest stars in Major League Hockey are bound by ambition, rivalry, and a magnetic pull neither of them fully understands. What begins as a secret fling between two fresh faced rookies evolves into a years-long journey of love, denial, and self-discovery. Over the next eight years, as they chase glory on the ice, they struggle to navigate their feelings for each other. Torn between the sport they live for and the love they can’t ignore, they must decide if there’s room in their fiercely competitive world for something as fragile – and powerful – as real love.",
+        "poster_path": "/epgr7n61vVIniyAghz2GYj22DkC.jpg",
+        "vote_average": 8.759,
+        "release_date": "2025-11-28",
+        "popularity": 49.1741
+    },
+    {
         "id": 3570,
         "type": "tv",
         "title": "Sailor Moon",
@@ -4786,18 +4798,6 @@
         "vote_average": 8.2,
         "release_date": "2010-10-10",
         "popularity": 50.9065
-    },
-    {
-        "id": 73375,
-        "type": "tv",
-        "title": "Tom Clancy's Jack Ryan",
-        "title_ar": "Tom Clancy's Jack Ryan",
-        "overview": "When CIA analyst Jack Ryan stumbles upon a suspicious series of bank transfers his search for answers pulls him from the safety of his desk job and catapults him into a deadly game of cat and mouse throughout Europe and the Middle East, with a rising terrorist figurehead preparing for a massive attack against the US and her allies.",
-        "overview_ar": "عندما يتعثر محلل وكالة المخابرات المركزية جاك ريان في سلسلة مشبوهة من التحويلات المصرفية، فإن بحثه عن إجابات يسحبه من أمان وظيفته المكتبية ويقذفه إلى لعبة القط والفأر القاتلة في جميع أنحاء أوروبا والشرق الأوسط، مع شخصية إرهابية صاعدة تستعد لهجوم واسع النطاق ضد الولايات المتحدة وحلفائها.",
-        "poster_path": "/cO4py3L3q5GNPrA0qr1wVDrosK1.jpg",
-        "vote_average": 7.68,
-        "release_date": "2018-08-30",
-        "popularity": 49.6026
     },
     {
         "id": 221606,
@@ -8880,6 +8880,42 @@
         "popularity": 35.7175
     },
     {
+        "id": 4515,
+        "type": "tv",
+        "title": "Lois & Clark: The New Adventures of Superman",
+        "title_ar": "Lois & Clark: The New Adventures of Superman",
+        "overview": "A much more lavish version of the popular Superman television series which had first aired forty years earlier, Lois & Clark focused more on the Man of Steel's early adult years in Metropolis. With the unknowing help of Lois Lane, Clark Kent created Superman there in Metropolis after finding work at the world-famous Daily Planet newspaper, where he meets fellow reporter Lois Lane.",
+        "overview_ar": "A much more lavish version of the popular Superman television series which had first aired forty years earlier, Lois & Clark focused more on the Man of Steel's early adult years in Metropolis. With the unknowing help of Lois Lane, Clark Kent created Superman there in Metropolis after finding work at the world-famous Daily Planet newspaper, where he meets fellow reporter Lois Lane.",
+        "poster_path": "/1LbPs6i1h4BKjVUwK5S9GjPCydi.jpg",
+        "vote_average": 6.938,
+        "release_date": "1993-09-12",
+        "popularity": 31.862
+    },
+    {
+        "id": 103516,
+        "type": "tv",
+        "title": "Star Trek: Strange New Worlds",
+        "title_ar": "Star Trek: Strange New Worlds",
+        "overview": "Follow Captain Christopher Pike, Science Officer Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy.",
+        "overview_ar": "Follow Captain Christopher Pike, Science Officer Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy.",
+        "poster_path": "/w6KapI2JvrCkOPmQhkwYPJNjqeo.jpg",
+        "vote_average": 7.974,
+        "release_date": "2022-05-05",
+        "popularity": 35.7175
+    },
+    {
+        "id": 62017,
+        "type": "tv",
+        "title": "The Man in the High Castle",
+        "title_ar": "The Man in the High Castle",
+        "overview": "Explore what it would be like if the Allied Powers had lost WWII, and Japan and Germany ruled the United States. Based on Philip K. Dick's award-winning novel.",
+        "overview_ar": "Explore what it would be like if the Allied Powers had lost WWII, and Japan and Germany ruled the United States. Based on Philip K. Dick's award-winning novel.",
+        "poster_path": "/xhoDZbMNeyCA0BGPZQsdIiO43Dp.jpg",
+        "vote_average": 7.525,
+        "release_date": "2015-01-15",
+        "popularity": 36.7985
+    },
+    {
         "id": 46080,
         "type": "tv",
         "title": "Masha and the Bear",
@@ -9019,7 +9055,7 @@
         "overview": "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
         "overview_ar": "يتّخذ ثمانية لصوص بعض الرهائن ويحبسون أنفسهم في \"دار السكّ الملكيّة\" في إسبانيا، فيما يتلاعب أحد العقول الإجرامية بالشرطة لتنفيذ مُخططه.",
         "poster_path": "/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
-        "vote_average": 8.231,
+        "vote_average": 8.2,
         "release_date": "2017-05-02",
         "popularity": 34.1623
     },
@@ -9043,7 +9079,7 @@
         "overview": "Two estranged spouses — one a detective, the other a news reporter — vie to solve a murder in which each believes the other is a prime suspect.",
         "overview_ar": "يسعى زوجان منفصلان، أحدهما محقق والأخرى مراسلة أخبار، لفك خيوط جريمة قتل يظن كل منهما أن الآخر هو المشتبه به الرئيسي فيها.",
         "poster_path": "/vRXw6fUD9B4RhMoTvhcJcnHYIMP.jpg",
-        "vote_average": 7.153,
+        "vote_average": 7.149,
         "release_date": "2026-01-08",
         "popularity": 31.1751
     },
@@ -9082,42 +9118,6 @@
         "vote_average": 7.9,
         "release_date": "2009-10-12",
         "popularity": 40.9553
-    },
-    {
-        "id": 84910,
-        "type": "tv",
-        "title": "The Masked Singer",
-        "title_ar": "The Masked Singer",
-        "overview": "Celebrities compete in a singing competition with one major twist: each singer is shrouded from head to toe in an elaborate costume, complete with full face mask to conceal his or her identity. One singer will be eliminated each week, ultimately revealing his or her true identity.",
-        "overview_ar": "Celebrities compete in a singing competition with one major twist: each singer is shrouded from head to toe in an elaborate costume, complete with full face mask to conceal his or her identity. One singer will be eliminated each week, ultimately revealing his or her true identity.",
-        "poster_path": "/sT0TpxenCsghbRZ7NiEJg2ubzZx.jpg",
-        "vote_average": 7.592,
-        "release_date": "2019-01-02",
-        "popularity": 36.6854
-    },
-    {
-        "id": 21762,
-        "type": "tv",
-        "title": "Parenthood",
-        "title_ar": "Parenthood",
-        "overview": "The trials and tribulations of the very large, colorful and imperfect Braverman family.",
-        "overview_ar": "The trials and tribulations of the very large, colorful and imperfect Braverman family.",
-        "poster_path": "/9KjKLJrrUI1sU9bNsQaQ5H8kTyY.jpg",
-        "vote_average": 7.464,
-        "release_date": "2010-03-02",
-        "popularity": 42.7066
-    },
-    {
-        "id": 202555,
-        "type": "tv",
-        "title": "Daredevil: Born Again",
-        "title_ar": "ديرديفل: يولد من جديد",
-        "overview": "Matt Murdock, a blind lawyer with heightened abilities, is fighting for justice through his bustling law firm, while former mob boss Wilson Fisk pursues his own political endeavors in New York. When their past identities begin to emerge, both men find themselves on an inevitable collision course.",
-        "overview_ar": "يتجه المحامي الأعمى \"مات ميردوك\" وزعيم المافيا الأسبق \"ويلسون فيسك\" نحو صدام حتمي.",
-        "poster_path": "/9lLuhV703HGCbnz6FxnqCwIwzAZ.jpg",
-        "vote_average": 8.0,
-        "release_date": "2025-03-04",
-        "popularity": 34.9963
     },
     {
         "id": 21762,
@@ -10095,7 +10095,7 @@
         "id": 36046,
         "type": "tv",
         "title": "City Hunter",
-        "title_ar": "City Hunter",
+        "title_ar": "シティーハンター",
         "overview": "Ryo Saeba works the streets of Tokyo as the City Hunter. He's a \"sweeper\" and with his sidekick Kaori Makimura, he keeps the city clean. People hire the City Hunter to solve their dangerous problems, which he does with a Colt Python. When Ryo's not working on a case, he's working on getting the ladies, and Kaori must keep him in check with her trusty 10 kg hammer.",
         "overview_ar": "Ryo Saeba works the streets of Tokyo as the City Hunter. He's a \"sweeper\" and with his sidekick Kaori Makimura, he keeps the city clean. People hire the City Hunter to solve their dangerous problems, which he does with a Colt Python. When Ryo's not working on a case, he's working on getting the ladies, and Kaori must keep him in check with her trusty 10 kg hammer.",
         "poster_path": "/4BA0FDKiJD0N4ljYhlwOVjQKszR.jpg",
@@ -10311,7 +10311,7 @@
         "id": 74277,
         "type": "tv",
         "title": "Document 72 Hours",
-        "title_ar": "Document 72 Hours",
+        "title_ar": "ドキュメント72時間",
         "overview": "An unusual documentary series that delves into human dramas through chance encounters with ordinary people at selected spots. Filmed over 72 hours in a single location, the show captures glimpses into people's lives as they open up and share their stories.\n\nJapanese Broadcast Version",
         "overview_ar": "An unusual documentary series that delves into human dramas through chance encounters with ordinary people at selected spots. Filmed over 72 hours in a single location, the show captures glimpses into people's lives as they open up and share their stories.\n\nJapanese Broadcast Version",
         "poster_path": "/jpnSY1g34DivfZPOuggM0LVBNtQ.jpg",
@@ -10539,9 +10539,9 @@
         "id": 70128,
         "type": "tv",
         "title": "Genius",
-        "title_ar": "العبقري",
+        "title_ar": "Genius",
         "overview": "The life stories of history's greatest minds. From their days as young adults to their final years we see their discoveries, loves, relationships, causes, flaws and genius.",
-        "overview_ar": "العبقري هي سلسلة حلقات سيرة ذاتية ودراما من إنتاج قناة ناشيونال جيوغرافيك عن حياة أشهر العلماء والشخصيات المؤثرة عالميا.",
+        "overview_ar": "The life stories of history's greatest minds. From their days as young adults to their final years we see their discoveries, loves, relationships, causes, flaws and genius.",
         "poster_path": "/waCykVbku2Amh0revf535SOnlmm.jpg",
         "vote_average": 7.465,
         "release_date": "2017-04-25",
@@ -10551,7 +10551,7 @@
         "id": 75230,
         "type": "tv",
         "title": "Vighnaharta Ganesh",
-        "title_ar": "विघ्नहर्ता गणेश",
+        "title_ar": "Vighnaharta Ganesh",
         "overview": "Vighnaharta Ganesh showcases the journey of the deity Ganesha and presents a magical visual extravaganza with impeccable production design, celestial costumes and ingenious audio-visual experience through Motion Capture technology. This technology will make the emotional journey of how Ganesha transformed from being an ostracized child to \"Prathamesh\" amongst Gods, a more endearing and realistic experience. Motion Capture technology and animatronics which will be used for the first time on Indian Television, after being extensively used in Hollywood. This technology will replace the age old depiction of Lord Ganesha with an inert mask and bring alive the detailed life-like movements and facial expressions to the fore giving the viewers a delightful visual treat. This magnum opus is supported by a stellar star-cast that includes Uzair Basar playing Ganesha, Akanksha Puri as Parvati, Malkhan Singh as Shiv, Basant Bhatt as Kartikeya and Anand Garodia as Narada Muni.",
         "overview_ar": "Vighnaharta Ganesh showcases the journey of the deity Ganesha and presents a magical visual extravaganza with impeccable production design, celestial costumes and ingenious audio-visual experience through Motion Capture technology. This technology will make the emotional journey of how Ganesha transformed from being an ostracized child to \"Prathamesh\" amongst Gods, a more endearing and realistic experience. Motion Capture technology and animatronics which will be used for the first time on Indian Television, after being extensively used in Hollywood. This technology will replace the age old depiction of Lord Ganesha with an inert mask and bring alive the detailed life-like movements and facial expressions to the fore giving the viewers a delightful visual treat. This magnum opus is supported by a stellar star-cast that includes Uzair Basar playing Ganesha, Akanksha Puri as Parvati, Malkhan Singh as Shiv, Basant Bhatt as Kartikeya and Anand Garodia as Narada Muni.",
         "poster_path": "/hjtGudCLbL8CGmmwHSjOd0lgWFY.jpg",
@@ -11283,9 +11283,9 @@
         "id": 105971,
         "type": "tv",
         "title": "Star Wars: The Bad Batch",
-        "title_ar": "Star Wars: The Bad Batch",
+        "title_ar": "حرب النجوم: الدفعة السيئة",
         "overview": "The 'Bad Batch' of elite and experimental clones make their way through an ever-changing galaxy in the immediate aftermath of the Clone Wars.",
-        "overview_ar": "The 'Bad Batch' of elite and experimental clones make their way through an ever-changing galaxy in the immediate aftermath of the Clone Wars.",
+        "overview_ar": "تشق الدفعة السيئة، المكونة من نسخ نخبوية وتجريبية، طريقها عبر مجرة دائمة التغير في أعقاب حروب الاستنساخ.",
         "poster_path": "/5mHus672nuinyaE0FtqvD0AddcY.jpg",
         "vote_average": 8.2,
         "release_date": "2021-05-04",
@@ -12000,6 +12000,30 @@
         "popularity": 30.0726
     },
     {
+        "id": 117488,
+        "type": "tv",
+        "title": "Yellowjackets",
+        "title_ar": "Yellowjackets",
+        "overview": "This equal parts survival epic, psychological horror story and coming-of-age drama tells the saga of a team of wildly talented high school girls soccer players who become the (un)lucky survivors of a plane crash deep in the remote northern wilderness. The series chronicles their descent from a complicated but thriving team to savage clans, while also tracking the lives they’ve attempted to piece back together nearly 25 years later.",
+        "overview_ar": "تتحطم طائرة على متنها فريق كرة قدم يتكون من مجموعة من اللاعبات الموهوبات، وسرعان ما تُصبح حياتهن في خطرًا كبير في قلب الحياة البرية بأونتاريو.",
+        "poster_path": "/xRnGrn7Z7SC0KIBodocoU1QgDZF.jpg",
+        "vote_average": 7.461,
+        "release_date": "2021-11-14",
+        "popularity": 30.0726
+    },
+    {
+        "id": 243881,
+        "type": "tv",
+        "title": "House of David",
+        "title_ar": "منزل داود",
+        "overview": "Tells the story of the ascent of the biblical figure, David, who becomes the most celebrated king of Israel. The series follows the once-mighty King Saul as he falls victim to his own pride. At the direction of God, the prophet Samuel anoints an unlikely, outcast teenager as the new king.",
+        "overview_ar": "منزل داود يحكي قصة ارتقاء شخصية \\\"داود\\\" التوراتية الذي أصبح في النهاية أشهر وأعظم ملوك \\\"إسرائيل\\\". يسرد المسلسل سقوط الملك \\\"شاول\\\" العظيم سابقاً، الذي يودي به كبرياؤه إلى هلاكه. وبأمر من الرب، يمسح النبي \\\"سامويل\\\" مراهقاً منبوذاً وغير متوقع ليكون الملك الجديد. بينما يسقط قائد، فعلى شخص آخر أن يرتقي.",
+        "poster_path": "/9pxRMetW8ZwnepLnIf37YWuNvgk.jpg",
+        "vote_average": 7.987,
+        "release_date": "2025-02-27",
+        "popularity": 27.6811
+    },
+    {
         "id": 90812,
         "type": "tv",
         "title": "Industry",
@@ -12082,6 +12106,18 @@
         "vote_average": 8.429,
         "release_date": "2020-07-04",
         "popularity": 30.0149
+    },
+    {
+        "id": 91759,
+        "type": "tv",
+        "title": "Come Home Love: Lo and Behold",
+        "title_ar": "Come Home Love: Lo and Behold",
+        "overview": "Hung Sue Gan starting from the bottom, established his own logistics company, which is now running smoothly. His only concern now are his three daughters. His eldest daughter has immigrated overseas. His second daughter Hung Yeuk Shui has reached the marriageable age, but has no hopes for marriage anytime soon. She is constantly bickering with her younger sister Hung Sum Yue, who is an honour student, over trivial matters, causing their father to not know whether to laugh or cry. Hung Sue Yan, Hung Sue Gan's brother, moves in with the family, temporarily ending his life as a nomadic photographer. He joins Hung Yeuk Shui's company and encounters Ko Pak Fei, the director of an online shop. The two appear to be former lovers, making for lots of laughter. Since Hung Sue Yan moved in, a series of strange events have occurred in the family. Upon investigation, the source is traced to Lung Ging Fung, a promising young man who is the son of department store mogul Lung Gam Wai.",
+        "overview_ar": "Hung Sue Gan starting from the bottom, established his own logistics company, which is now running smoothly. His only concern now are his three daughters. His eldest daughter has immigrated overseas. His second daughter Hung Yeuk Shui has reached the marriageable age, but has no hopes for marriage anytime soon. She is constantly bickering with her younger sister Hung Sum Yue, who is an honour student, over trivial matters, causing their father to not know whether to laugh or cry. Hung Sue Yan, Hung Sue Gan's brother, moves in with the family, temporarily ending his life as a nomadic photographer. He joins Hung Yeuk Shui's company and encounters Ko Pak Fei, the director of an online shop. The two appear to be former lovers, making for lots of laughter. Since Hung Sue Yan moved in, a series of strange events have occurred in the family. Upon investigation, the source is traced to Lung Ging Fung, a promising young man who is the son of department store mogul Lung Gam Wai.",
+        "poster_path": "/lgD4j9gUGmMckZpWWRJjorWqGVT.jpg",
+        "vote_average": 5.4,
+        "release_date": "2017-02-06",
+        "popularity": 29.2474
     },
     {
         "id": 32868,
@@ -12202,42 +12238,6 @@
         "vote_average": 7.486,
         "release_date": "2011-06-06",
         "popularity": 26.8816
-    },
-    {
-        "id": 5687,
-        "type": "tv",
-        "title": "The Smurfs",
-        "title_ar": "The Smurfs",
-        "overview": "Classic Saturday-morning cartoon series featuring magical blue elf-like creatures called Smurfs. The Smurfs, named for their personalities, inhabit a village of mushroom houses in an enchanted forest. These loveable creatures are led by Papa Smurf and live carefree... except for one major threat to their existance: Gargamel, an evil but inept wizard who lives in a stone-built house in the forest; and his feline companion, the equally nasty Azrael. ",
-        "overview_ar": "Classic Saturday-morning cartoon series featuring magical blue elf-like creatures called Smurfs. The Smurfs, named for their personalities, inhabit a village of mushroom houses in an enchanted forest. These loveable creatures are led by Papa Smurf and live carefree... except for one major threat to their existance: Gargamel, an evil but inept wizard who lives in a stone-built house in the forest; and his feline companion, the equally nasty Azrael. ",
-        "poster_path": "/cezQyM5cO454vUdLiLOkv78K64D.jpg",
-        "vote_average": 6.974,
-        "release_date": "1981-09-12",
-        "popularity": 27.4502
-    },
-    {
-        "id": 212989,
-        "type": "tv",
-        "title": "LEGO Ninjago: Dragons Rising",
-        "title_ar": "LEGO Ninjago: Dragons Rising",
-        "overview": "After Crystallized, the 16 realms have abruptly fused into a cosmic unstable dystopia. A Spinjitzu Ninja Master trains a new generation of heroes to find Elemental Dragons before the forces of evil exploit that energy to destroy the world.",
-        "overview_ar": "After Crystallized, the 16 realms have abruptly fused into a cosmic unstable dystopia. A Spinjitzu Ninja Master trains a new generation of heroes to find Elemental Dragons before the forces of evil exploit that energy to destroy the world.",
-        "poster_path": "/4F4Ig81UpZ5mzeyZwVR2zc5t5D7.jpg",
-        "vote_average": 8.2,
-        "release_date": "2023-06-01",
-        "popularity": 31.8318
-    },
-    {
-        "id": 45783,
-        "type": "tv",
-        "title": "Kuroko's Basketball",
-        "title_ar": "Kuroko's Basketball",
-        "overview": "In the story, Kagami Taiga has just enrolled into Seirin High School when he meets Kuroko Tetsuya of the school's basketball team. Kuroko happens to be the shadowy sixth member of the legendary Generation of Miracles basketball team. Together, Kagami and Kuroko aim to take their team to the inter-high school championship - against Kuroko's former teammates.",
-        "overview_ar": "In the story, Kagami Taiga has just enrolled into Seirin High School when he meets Kuroko Tetsuya of the school's basketball team. Kuroko happens to be the shadowy sixth member of the legendary Generation of Miracles basketball team. Together, Kagami and Kuroko aim to take their team to the inter-high school championship - against Kuroko's former teammates.",
-        "poster_path": "/qi8dlAgQEeahpEn1AOb5BJEOcVB.jpg",
-        "vote_average": 8.4,
-        "release_date": "2012-04-08",
-        "popularity": 28.1957
     },
     {
         "id": 5687,
@@ -14160,6 +14160,18 @@
         "popularity": 27.5618
     },
     {
+        "id": 65988,
+        "type": "tv",
+        "title": "Wynonna Earp",
+        "title_ar": "Wynonna Earp",
+        "overview": "Wyatt Earp's great granddaughter Wynonna battles demons and other creatures with her unique abilities and a posse of dysfunctional allies - the only thing that can bring the paranormal to justice.",
+        "overview_ar": "Wyatt Earp's great granddaughter Wynonna battles demons and other creatures with her unique abilities and a posse of dysfunctional allies - the only thing that can bring the paranormal to justice.",
+        "poster_path": "/qnIaDelA81dmFaXrhpz6M6dpGSD.jpg",
+        "vote_average": 7.9,
+        "release_date": "2016-04-01",
+        "popularity": 26.3331
+    },
+    {
         "id": 22073,
         "type": "tv",
         "title": "Good Day Live",
@@ -14386,18 +14398,6 @@
         "vote_average": 5.5,
         "release_date": "2024-11-13",
         "popularity": 28.3349
-    },
-    {
-        "id": 3902,
-        "type": "tv",
-        "title": "Shaun the Sheep",
-        "title_ar": "Shaun the Sheep",
-        "overview": "Shaun the Sheep thinks and acts like a person in a barnyard, which usually gets him into trouble. The farmer's sheepdog, Bitzer, tries to keep Shaun and his friends out of trouble. The farmer is oblivious to the humanlike features of his flock, who are like one big, happy family.",
-        "overview_ar": "Shaun the Sheep thinks and acts like a person in a barnyard, which usually gets him into trouble. The farmer's sheepdog, Bitzer, tries to keep Shaun and his friends out of trouble. The farmer is oblivious to the humanlike features of his flock, who are like one big, happy family.",
-        "poster_path": "/z2gPfTQd3I0JLWOAEdKYMQRLoun.jpg",
-        "vote_average": 7.646,
-        "release_date": "2007-03-05",
-        "popularity": 27.0321
     },
     {
         "id": 271548,
@@ -18473,7 +18473,7 @@
         "title": "A Series of Unfortunate Events",
         "title_ar": "A Series of Unfortunate Events",
         "overview": "The orphaned Baudelaire children face trials, tribulations and the evil Count Olaf, all in their quest to uncover the secret of their parents' death.",
-        "overview_ar": "يواجه أطفال \"بودلير\" اليتامى المصاعب والمحن بالإضافة إلى الكونت \"أولاف\" الشرير، في مسعاهم المصيري لكشف أسرارهم العائلية الدفينة.",
+        "overview_ar": "The orphaned Baudelaire children face trials, tribulations and the evil Count Olaf, all in their quest to uncover the secret of their parents' death.",
         "poster_path": "/qg7WXAatXyQq6zO3SnWnRJEayeZ.jpg",
         "vote_average": 7.4,
         "release_date": "2017-01-13",
@@ -20640,6 +20640,30 @@
         "popularity": 20.2446
     },
     {
+        "id": 1260,
+        "type": "tv",
+        "title": "Duckman",
+        "title_ar": "Duckman",
+        "overview": "Together with Cornfed, his portly, porcine partner in crime solving, this defective detective amazingly manages to solve crimes and be a single parent to his hilariously dysfunctional sons at the same time.",
+        "overview_ar": "Together with Cornfed, his portly, porcine partner in crime solving, this defective detective amazingly manages to solve crimes and be a single parent to his hilariously dysfunctional sons at the same time.",
+        "poster_path": "/tUSieKYAFqgb8x4UZjqOtjkh16y.jpg",
+        "vote_average": 7.1,
+        "release_date": "1994-03-05",
+        "popularity": 18.18
+    },
+    {
+        "id": 32803,
+        "type": "tv",
+        "title": "Celebrity Ghost Stories",
+        "title_ar": "Celebrity Ghost Stories",
+        "overview": "Compelling, surprising and downright spooky — celebrities share their real-life personal encounters with the paranormal in each one-hour special. From encounters with ghosts and angry spirits to haunted homes, unexplainable spells and magic, these descriptive, first person narratives from our favorite stars delivers a brand new way of experiencing the thrills and chills of the addictive world of the paranormal.",
+        "overview_ar": "Compelling, surprising and downright spooky — celebrities share their real-life personal encounters with the paranormal in each one-hour special. From encounters with ghosts and angry spirits to haunted homes, unexplainable spells and magic, these descriptive, first person narratives from our favorite stars delivers a brand new way of experiencing the thrills and chills of the addictive world of the paranormal.",
+        "poster_path": "/2nQByTYVW27g3XyZNQeStzm1mD4.jpg",
+        "vote_average": 7.3,
+        "release_date": "2009-10-03",
+        "popularity": 20.2446
+    },
+    {
         "id": 61664,
         "type": "tv",
         "title": "Sense8",
@@ -20854,30 +20878,6 @@
         "vote_average": 8.016,
         "release_date": "2000-09-23",
         "popularity": 19.8959
-    },
-    {
-        "id": 74415,
-        "type": "tv",
-        "title": "Grizzy & the Lemmings",
-        "title_ar": "غريزي والليمنغز",
-        "overview": "The forest ranger's house is the only area of human civilization in the middle of untamed wilderness in a vast natural reserve in Canada. When the ranger is away, a bear named Grizzy feels that the ranger's house is his territory, given that bears sit at the top of the food chain. After making his way inside the home, Grizzy takes advantage of all the modern conveniences there, including a comfortable sofa, air conditioning and fully equipped kitchen. He's not alone, though, because a group of small creatures called lemmings also populate the ranger's house when he is away. Because Grizzy and the lemmings are not civilized enough to live together in peace, it becomes an atmosphere of madness when the two sides try to outdo each other with tricks.",
-        "overview_ar": "منزل حارس الغابة هو المكان الوحيد للحضارة الإنسانية وسط براري جامحة في محمية طبيعية شاسعة بكندا. عندما يكون الحارس بعيدًا، يشعر دب يُدعى غريزي بأن منزل الحارس ملكٌ له، نظرًا لأن الدببة تتربع على قمة السلسلة الغذائية. بعد دخوله المنزل، يستغل غريزي جميع وسائل الراحة الحديثة فيه، بما في ذلك أريكة مريحة وتكييف هواء ومطبخ مجهز بالكامل. ومع ذلك، فهو ليس وحيدًا، إذ تسكن مجموعة من المخلوقات الصغيرة تُسمى الليمينغ منزل الحارس أيضًا عندما يكون بعيدًا. ولأن غريزي والليمينغ ليسوا متحضرين بما يكفي للعيش معًا بسلام، يسود جو من الجنون عندما يحاول الجانبان التفوق على بعضهما البعض بالحيل.",
-        "poster_path": "/vpzSerTbEIspXUndYM7MGhhX7dm.jpg",
-        "vote_average": 7.3,
-        "release_date": "2016-12-31",
-        "popularity": 20.8376
-    },
-    {
-        "id": 247723,
-        "type": "tv",
-        "title": "The Hunting Party",
-        "title_ar": "The Hunting Party",
-        "overview": "A small team of investigators are assembled to track down and capture the most dangerous killers our country has ever seen, all of whom have just escaped from a top-secret prison that's not supposed to exist.",
-        "overview_ar": "A small team of investigators are assembled to track down and capture the most dangerous killers our country has ever seen, all of whom have just escaped from a top-secret prison that's not supposed to exist.",
-        "poster_path": "/mjJMOLr966Q78YUPu0pVA0ydBIP.jpg",
-        "vote_average": 6.9,
-        "release_date": "2025-01-19",
-        "popularity": 20.6153
     },
     {
         "id": 81046,
