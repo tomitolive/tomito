@@ -4620,18 +4620,6 @@
         "popularity": 14.4776
     },
     {
-        "id": 1124566,
-        "type": "movie",
-        "title": "Sentimental Value",
-        "title_ar": "Sentimental Value",
-        "overview": "Sisters Nora and Agnes reunite with their estranged father, the charismatic Gustav, a once-renowned director who offers stage actress Nora a role in what he hopes will be his comeback film. When Nora turns it down, she soon discovers he has given her part to an eager young Hollywood star.",
-        "overview_ar": "Sisters Nora and Agnes reunite with their estranged father, the charismatic Gustav, a once-renowned director who offers stage actress Nora a role in what he hopes will be his comeback film. When Nora turns it down, she soon discovers he has given her part to an eager young Hollywood star.",
-        "poster_path": "/pz9NCWxxOk3o0W3v1Zkhawrwb4i.jpg",
-        "vote_average": 7.61,
-        "release_date": "2025-08-20",
-        "popularity": 14.1948
-    },
-    {
         "id": 1336189,
         "type": "movie",
         "title": "Delivery Run",
@@ -4740,18 +4728,6 @@
         "popularity": 14.0997
     },
     {
-        "id": 1323625,
-        "type": "movie",
-        "title": "Night Patrol",
-        "title_ar": "Night Patrol",
-        "overview": "An L.A. cop discovers a local task force is hiding a secret that puts the residents of his childhood neighborhood in danger.",
-        "overview_ar": "An L.A. cop discovers a local task force is hiding a secret that puts the residents of his childhood neighborhood in danger.",
-        "poster_path": "/rNqLzACU9ez2ehDalTFDPjZiC4G.jpg",
-        "vote_average": 4.0,
-        "release_date": "2026-01-16",
-        "popularity": 13.0586
-    },
-    {
         "id": 87101,
         "type": "movie",
         "title": "Terminator Genisys",
@@ -4798,6 +4774,30 @@
         "vote_average": 6.904,
         "release_date": "2019-03-27",
         "popularity": 14.3268
+    },
+    {
+        "id": 82690,
+        "type": "movie",
+        "title": "Wreck-It Ralph",
+        "title_ar": "رالف المدمر",
+        "overview": "Wreck-It Ralph is the 9-foot-tall, 643-pound villain of an arcade video game named Fix-It Felix Jr., in which the game's titular hero fixes buildings that Ralph destroys. Wanting to prove he can be a good guy and not just a villain, Ralph escapes his game and lands in Hero's Duty, a first-person shooter where he helps the game's hero battle against alien invaders. He later enters Sugar Rush, a kart racing game set on tracks made of candies, cookies and other sweets. There, Ralph meets Vanellope von Schweetz who has learned that her game is faced with a dire threat that could affect the entire arcade, and one that Ralph may have inadvertently started.",
+        "overview_ar": "رالف المدمر هو الشرير البالغ طوله متران ونصف  و يزن 300 كيلوقرام، من لعبة فيديو ممرات يدعى فيلكس البنّاء. حيث يقوم بطل اللعبة بإصلاح المباني التي يدمرها رالف. يريد رالف أن يبرهن أنه يمكن أن يكون شخصًا جيدًا وليس مجرد شرير، يهرب من لعبته الى لعبة اخرى، حيث يساعد في معركة البطل ضد الغزاة.",
+        "poster_path": "/zWoIgZ7mgmPkaZjG0102BSKFIqQ.jpg",
+        "vote_average": 7.354,
+        "release_date": "2012-11-01",
+        "popularity": 15.7073
+    },
+    {
+        "id": 772,
+        "type": "movie",
+        "title": "Home Alone 2: Lost in New York",
+        "title_ar": "وحيد في المنزل 2: ضائع في نيويورك",
+        "overview": "Instead of flying to Florida with his folks, Kevin ends up alone in New York, where he gets a hotel room with his dad's credit card—despite problems from a clerk and meddling bellboy. But when Kevin runs into his old nemeses, the Wet Bandits, he's determined to foil their plans to rob a toy store on Christmas Eve.",
+        "overview_ar": "نعود بعد عام كامل لـ (كيفين) الذي وجد عائلته قررت قضاء فترة الكريسماس في فلوريدا ونتيجة لتأخرهم في الاستيقاظ يسارعون للحاق بالطائرة يفقدهم كيفين ويركب عن طريق الخطأ الطائرة إلى نيويورك ليكتشف أنه سيقضي العطلة مرة أخرى وحيدًا يستطيع الاحتيال على مسئولي فندق بلازا، ويقيم هناك لكن لسوء حظه الشديد يتصادف هروب هاري ومارف من السجن ووجودهم في نيويورك لتدور بينهم مرة أخرى مغامرة من أمتع ما يكون.",
+        "poster_path": "/9CAkQ9nfrDaIAyncWndwg0tfC8g.jpg",
+        "vote_average": 6.778,
+        "release_date": "1992-11-15",
+        "popularity": 15.9964
     },
     {
         "id": 82690,
@@ -5283,9 +5283,9 @@
         "id": 47971,
         "type": "movie",
         "title": "xXx: Return of Xander Cage",
-        "title_ar": "ثلاثية ايكس : عودة إسكندر كيدج",
+        "title_ar": "xXx: Return of Xander Cage",
         "overview": "Xander Cage is left for dead after an incident, though he secretly returns to action for a new, tough assignment with his handler Augustus Gibbons.",
-        "overview_ar": "بعد اختفائه لفترة طويلة، يعود البطل الرياضي الذي بات عميلًا ﻹحدى الجهات الحكومية، والمدعو إكساندر كيدج من منفاه الاختياري، وعليه اﻵن أن يواجه زيانج وفريقه الذين يملكون سلاحًا فائق الخطورة يدعى (صندوق بندورا)، و يكون عند مفترق طرق في مؤامرة كبرى تشترك فيها عدة حكومات.",
+        "overview_ar": "Xander Cage is left for dead after an incident, though he secretly returns to action for a new, tough assignment with his handler Augustus Gibbons.",
         "poster_path": "/hba8zREJpP1AYhaXgb2oJLQeO0K.jpg",
         "vote_average": 6.134,
         "release_date": "2017-01-13",
@@ -5295,9 +5295,9 @@
         "id": 370172,
         "type": "movie",
         "title": "No Time to Die",
-        "title_ar": "لا وَقتَ لِلمَوت",
+        "title_ar": "No Time to Die",
         "overview": "Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
-        "overview_ar": "ترك بوند الخدمة النشطة ويتمتع بحياة هادئة في جامايكا. لم يدم سلامه طويلاً عندما ظهر صديقه القديم فيليكس ليتر من وكالة المخابرات المركزية يطلب المساعدة. اتضح أن مهمة إنقاذ عالم مخطوف أكثر غدرًا مما كان متوقعًا ، مما دفع بوند إلى مسار الشرير الغامض المسلح بتكنولوجيا جديدة خطيرة.",
+        "overview_ar": "Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
         "poster_path": "/iUgygt3fscRoKWCV1d0C7FbM9TP.jpg",
         "vote_average": 7.347,
         "release_date": "2021-09-29",
@@ -8019,9 +8019,9 @@
         "id": 648878,
         "type": "movie",
         "title": "Eddington",
-        "title_ar": "Eddington",
+        "title_ar": "إدينغتون",
         "overview": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
-        "overview_ar": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
+        "overview_ar": "في مايو 2020، اندلعت مواجهة بين عمدة بلدة صغيرة ورئيس البلدية مما أدى إلى صراعات، حيث يتنافس الجار ضد جاره في إدينغتون، نيومكسيكو.",
         "poster_path": "/4GIqZUgPZ146BhibsPHMHef2nXX.jpg",
         "vote_average": 6.4,
         "release_date": "2025-07-16",
@@ -8151,9 +8151,9 @@
         "id": 1294203,
         "type": "movie",
         "title": "My Fault: London",
-        "title_ar": "My Fault: London",
+        "title_ar": "ذنبي: لندن",
         "overview": "18-year-old Noah moves from America to London, with her mother who's recently fallen in love with William, a wealthy British businessman. Noah meets William’s son, bad-boy Nick, and soon discovers there is an attraction between them neither can avoid. As Noah spends the summer adjusting to her new life, her devastating past will catch up with her while falling in love for the first time.",
-        "overview_ar": "18-year-old Noah moves from America to London, with her mother who's recently fallen in love with William, a wealthy British businessman. Noah meets William’s son, bad-boy Nick, and soon discovers there is an attraction between them neither can avoid. As Noah spends the summer adjusting to her new life, her devastating past will catch up with her while falling in love for the first time.",
+        "overview_ar": "تنتقل \"نواه\" صاحبة الـ18 عامًا من \"أمريكا\" إلى \"لندن\" مع والدتها التي وقعت مؤخرًا في غرام \"ويليام\"، رجل أعمال بريطاني ثري. تلتقي \"نواه\" ابن \"ويليام\" الشقي \"نيك\"، وسرعان ما تشعر بانجذاب بينهما لا يمكن لأي منهما تجنبه. بينما تقضي \"نواه\" الصيف محاولةً التأقلم مع حياتها الجديدة، سيلاحقها ماضيها المحطم في حين تقع في الغرام لأول مرة.",
         "poster_path": "/ttN5D6GKOwKWHmCzDGctAvaNMAi.jpg",
         "vote_average": 7.4,
         "release_date": "2025-02-12",
@@ -10560,18 +10560,6 @@
         "popularity": 9.1603
     },
     {
-        "id": 228967,
-        "type": "movie",
-        "title": "The Interview",
-        "title_ar": "The Interview",
-        "overview": "Dave Skylark and his producer Aaron Rapaport run the celebrity tabloid show \"Skylark Tonight\". When they land an interview with a surprise fan, North Korean dictator Kim Jong-un, they are recruited by the CIA to turn their trip to Pyongyang into an assassination mission.",
-        "overview_ar": "حاول قراصنة الفيلم الحصول على حظر\r يدير ديف سكايلارك ومنتجه آرون رابابورت برنامج التابلويد الشهير \"قبرة السماء الليلة\". عندما يجرون مقابلة مع أحد المعجبين المفاجئين ، الديكتاتور الكوري الشمالي كيم جونغ أون ، يتم تجنيدهم من قبل وكالة المخابرات المركزية لتحويل رحلتهم إلى بيونغ يانغ إلى مهمة اغتيال.",
-        "poster_path": "/tIDC4xT65l7a8qbgg8GvwD5g8c5.jpg",
-        "vote_average": 6.191,
-        "release_date": "2014-12-25",
-        "popularity": 9.7784
-    },
-    {
         "id": 579974,
         "type": "movie",
         "title": "RRR",
@@ -10783,7 +10771,7 @@
         "overview": "When Papa Smurf is mysteriously taken by evil wizards, Razamel and Gargamel, Smurfette leads the Smurfs on a mission into the real world to save him. With the help of new friends, the Smurfs must discover what defines their destiny to save the universe.",
         "overview_ar": "فيلم رسوم متحركة موسيقي يركز على إبداعات بيو الشهيرة.",
         "poster_path": "/8o6lkhL32xQJeB52IIG1us5BVey.jpg",
-        "vote_average": 5.9,
+        "vote_average": 5.893,
         "release_date": "2025-07-05",
         "popularity": 12.7672
     },
@@ -10798,6 +10786,18 @@
         "vote_average": 7.108,
         "release_date": "2011-12-07",
         "popularity": 9.7676
+    },
+    {
+        "id": 22803,
+        "type": "movie",
+        "title": "Law Abiding Citizen",
+        "title_ar": "Law Abiding Citizen",
+        "overview": "A frustrated man decides to take justice into his own hands after a plea bargain sets one of his family's killers free. He targets not only the killer but also the district attorney and others involved in the deal.",
+        "overview_ar": "A frustrated man decides to take justice into his own hands after a plea bargain sets one of his family's killers free. He targets not only the killer but also the district attorney and others involved in the deal.",
+        "poster_path": "/fcEXcip7v0O1ndV4VUdFqJSqbOg.jpg",
+        "vote_average": 7.388,
+        "release_date": "2009-10-15",
+        "popularity": 9.4667
     },
     {
         "id": 22803,
@@ -14880,6 +14880,18 @@
         "popularity": 7.7936
     },
     {
+        "id": 15121,
+        "type": "movie",
+        "title": "The Sound of Music",
+        "title_ar": "لحن الحياة",
+        "overview": "In the years before World War II, a tomboyish postulant at an Austrian abbey is hired as a governess in the home of a widowed naval captain with seven children and brings a new love of life and music into the home.",
+        "overview_ar": "يطلِبَ من ماريا القاطنة بدير في سالزبورغ اﻻعتناء بـ7 أطفال أبوهم ضابط بحري، وأمهم متوفاة، تقبل على مضض وعندما تصل لمنزل عائلة تراب تكتشف أن جورج صارم مع أولاده، فتشعر بألفة تجاههم وتصير أمَّـا بديلة لهم، وتعلمهم الغناء والموسيقى، يذهب جورج لملاقاة صديقة في حفل عشاء وتعود معه للمنزل إذ من المقرر أن يتزوجا وتصبح أمّا بديلة للأولاد، حينما يعود يستاء جدا من تصرفات ماريا تجاه أطفاله.",
+        "poster_path": "/c6CrUZypAsBCaRWX0M3RVRDbhNS.jpg",
+        "vote_average": 7.73,
+        "release_date": "1965-03-29",
+        "popularity": 8.1627
+    },
+    {
         "id": 27,
         "type": "movie",
         "title": "9 Songs",
@@ -14947,7 +14959,7 @@
         "overview": "On his first day on the job as a narcotics officer, a rookie cop works with a rogue detective who isn't what he appears.",
         "overview_ar": "الشيء الوحيد الأكثر خطورة من الخط الذي يتم عبوره ، هو الشرطي الذي سيعبره.  في يومه الأول في العمل كضابط مخدرات ، يعمل شرطي مبتدئ مع محقق مارق ليس كما يبدو.",
         "poster_path": "/bUeiwBQdupBLQthMCHKV7zv56uv.jpg",
-        "vote_average": 7.508,
+        "vote_average": 7.509,
         "release_date": "2001-10-05",
         "popularity": 8.662
     },
@@ -14983,7 +14995,7 @@
         "overview": "Eccentric consulting detective Sherlock Holmes and Doctor John Watson battle to bring down a new nemesis and unravel a deadly plot that could destroy England.",
         "overview_ar": "السفاح الساحر (بلاك وود) يعود للحياة مرة اخرى، ويقوم بسلسلة من عمليات القتل العشوائي، فيعود أيضًا المخبر الأسطوري شارلوك هولمز لمواجهته بصحبة واتسون شريكه الدائم وضابط غبي من اسكوتلانديارد.",
         "poster_path": "/momkKuWburNTqKBF6ez7rvhYVhE.jpg",
-        "vote_average": 7.2,
+        "vote_average": 7.217,
         "release_date": "2009-12-23",
         "popularity": 9.3982
     },
@@ -15348,24 +15360,12 @@
         "popularity": 7.778
     },
     {
-        "id": 335,
-        "type": "movie",
-        "title": "Once Upon a Time in the West",
-        "title_ar": "حدث ذات مرة في الغرب",
-        "overview": "As the railroad builders advance unstoppably through the Arizona desert on their way to the sea, Jill arrives in the small town of Flagstone with the intention of starting a new life.",
-        "overview_ar": "أرملة تتعرض أرضها وحياتها للخطر مع اقتراب خط السكة الحديد من الاستيلاء عليها. ينضم عازف هارمونيكا الغامض إلى قوى يائسة لحماية المرأة وأرضها.",
-        "poster_path": "/qbYgqOczabWNn2XKwgMtVrntD6P.jpg",
-        "vote_average": 8.3,
-        "release_date": "1968-12-21",
-        "popularity": 8.6188
-    },
-    {
         "id": 4248,
         "type": "movie",
         "title": "Scary Movie 2",
         "title_ar": "Scary Movie 2",
         "overview": "While the original parodied slasher flicks like Scream, Keenen Ivory Wayans's sequel to Scary Movie takes comedic aim at haunted house movies. A group of students visit a mansion called \"Hell House,\" and murderous high jinks ensue.",
-        "overview_ar": "While the original parodied slasher flicks like Scream, Keenen Ivory Wayans's sequel to Scary Movie takes comedic aim at haunted house movies. A group of students visit a mansion called \"Hell House,\" and murderous high jinks ensue.",
+        "overview_ar": "في إطار رعب ممزوج بالإثارة والتشويق تدور الأحداث عن أربعة من الطلاب المدعوين من قبل أستاذهم إلى القصر المسكون بالأشباح ، من أجل دراسة تأثير الحرمان من النوم لمدة أسبوع عليهم ، وعمل بعض الدراسات بشأن النوم ، ويعتبر الفيلم به بعض مشاهد المحاكاة الساخرة لفيلم طارد الأرواح الشريرة الأول ، وكذلك بعض أفلام الرعب الشهيرة للغاية .",
         "poster_path": "/7Eb1JWK0Cb0rbfsYjwfc9g0PbQH.jpg",
         "vote_average": 5.812,
         "release_date": "2001-07-04",
@@ -16085,7 +16085,7 @@
         "title": "The Bourne Legacy",
         "title_ar": "The Bourne Legacy",
         "overview": "New CIA operative Aaron Cross experiences life-or-death stakes that have been triggered by the previous actions of Jason Bourne.",
-        "overview_ar": "New CIA operative Aaron Cross experiences life-or-death stakes that have been triggered by the previous actions of Jason Bourne.",
+        "overview_ar": "يواجه العميل الجديد في وكالة المخابرات المركزية \" آرون كروس \" مخاطر الحياة أو الموت التي أثارتها الإجراءات السابقة لجيسون بورن.",
         "poster_path": "/1aExL5DTGHj25ZfIC3dDwS84RWi.jpg",
         "vote_average": 6.238,
         "release_date": "2012-08-08",
@@ -17520,18 +17520,6 @@
         "popularity": 11.9772
     },
     {
-        "id": 1584,
-        "type": "movie",
-        "title": "School of Rock",
-        "title_ar": "School of Rock",
-        "overview": "Fired from his band and hard up for cash, guitarist and vocalist Dewey Finn finagles his way into a job as a fifth-grade substitute teacher at a private school, where he secretly begins teaching his students the finer points of rock 'n' roll. The school's hard-nosed principal is rightly suspicious of Finn's activities. But Finn's roommate remains in the dark about what he's doing.",
-        "overview_ar": "Fired from his band and hard up for cash, guitarist and vocalist Dewey Finn finagles his way into a job as a fifth-grade substitute teacher at a private school, where he secretly begins teaching his students the finer points of rock 'n' roll. The school's hard-nosed principal is rightly suspicious of Finn's activities. But Finn's roommate remains in the dark about what he's doing.",
-        "poster_path": "/zXLXaepIBvFVLU25DH3wv4IPSbe.jpg",
-        "vote_average": 7.083,
-        "release_date": "2003-10-03",
-        "popularity": 7.0642
-    },
-    {
         "id": 60898,
         "type": "movie",
         "title": "Erotic Ghost Story",
@@ -17758,6 +17746,18 @@
         "vote_average": 7.055,
         "release_date": "2018-08-15",
         "popularity": 8.5871
+    },
+    {
+        "id": 4234,
+        "type": "movie",
+        "title": "Scream 3",
+        "title_ar": "الصرخة ٣",
+        "overview": "As bodies begin dropping around the Hollywood set of STAB 3, the third film based on the gruesome Woodsboro killings, Sidney and other survivors are once again terrorized by another Ghostface killer.",
+        "overview_ar": "تدور أحداث هذا الفيلم حول فتاة في سن المراهقة، تصبح هدفا لقاتل متوحش بعد قيامه بتعقب إحدى صديقاتها في المدرسة وقتلها، بينما هي تزور جماعة من أصدقائها في هوليود، يقوم القاتل بمتابعتها، وأرهابها من جديد والبحث عن ضحية.",
+        "poster_path": "/qpH8ToZVlFD1bakL04LkEKodyDI.jpg",
+        "vote_average": 6.006,
+        "release_date": "2000-02-04",
+        "popularity": 7.1213
     },
     {
         "id": 138103,
@@ -20391,9 +20391,9 @@
         "id": 501929,
         "type": "movie",
         "title": "The Mitchells vs. the Machines",
-        "title_ar": "The Mitchells vs. the Machines",
+        "title_ar": "عائلة ميتشل في مواجهة الآلات",
         "overview": "A quirky, dysfunctional family's road trip is upended when they find themselves in the middle of the robot apocalypse and suddenly become humanity's unlikeliest last hope.",
-        "overview_ar": "A quirky, dysfunctional family's road trip is upended when they find themselves in the middle of the robot apocalypse and suddenly become humanity's unlikeliest last hope.",
+        "overview_ar": "يفسد غزو الروبوتات للأرض رحلة آل \"ميتشل\" البرّية عبر البلاد… والآن يقع على عاتق أغرب عائلة في العالم مهمّة إنقاذ الجنس البشري.",
         "poster_path": "/mI2Di7HmskQQ34kz0iau6J1vr70.jpg",
         "vote_average": 7.856,
         "release_date": "2021-04-22",
@@ -21840,6 +21840,18 @@
         "popularity": 6.7798
     },
     {
+        "id": 901362,
+        "type": "movie",
+        "title": "Trolls Band Together",
+        "title_ar": "ترولز 3∶ يتحدون معًا",
+        "overview": "When Branch's brother, Floyd, is kidnapped for his musical talents by a pair of nefarious pop-star villains, Branch and Poppy embark on a harrowing and emotional journey to reunite the other brothers and rescue Floyd from a fate even worse than pop-culture obscurity.",
+        "overview_ar": "يتعرض فلويد للاختطاف، فيقرر برانش وبوبي الاتحاد وجمع باقي الإخوة من أجل إنقاذ فلويد مهما تكلف الأمر.",
+        "poster_path": "/bkpPTZUdq31UGDovmszsg2CchiI.jpg",
+        "vote_average": 7.244,
+        "release_date": "2023-10-12",
+        "popularity": 6.7798
+    },
+    {
         "id": 559969,
         "type": "movie",
         "title": "El Camino: A Breaking Bad Movie",
@@ -22044,6 +22056,18 @@
         "popularity": 5.5981
     },
     {
+        "id": 9476,
+        "type": "movie",
+        "title": "A Knight's Tale",
+        "title_ar": "حكاية فارس",
+        "overview": "William Thatcher, a knight's peasant apprentice, gets a chance at glory when the knight dies suddenly mid-tournament. Posing as a knight himself, William won't stop until he's crowned tournament champion—assuming matters of the heart don't get in the way.",
+        "overview_ar": "يحصل ويليام تاتشر، وهو فلاح متدرب لدى أحد الفرسان، على فرصة لتحقيق المجد عندما يموت الفارس فجأة في منتصف البطولة. يتظاهر ويليام بأنه فارس، ولن يتوقف ويليام حتى يتوج بطلاً للبطولة - على افتراض أن أمور القلب لا تقف عائقاً في طريقه.",
+        "poster_path": "/srb1XnrlDZHcdpjBKqUu4qAzxKU.jpg",
+        "vote_average": 6.9,
+        "release_date": "2001-05-11",
+        "popularity": 7.2903
+    },
+    {
         "id": 26428,
         "type": "movie",
         "title": "Agora",
@@ -22054,30 +22078,6 @@
         "vote_average": 6.983,
         "release_date": "2009-05-17",
         "popularity": 6.3853
-    },
-    {
-        "id": 567189,
-        "type": "movie",
-        "title": "Tom Clancy's Without Remorse",
-        "title_ar": "Tom Clancy's Without Remorse",
-        "overview": "An elite Navy SEAL uncovers an international conspiracy while seeking justice for the murder of his pregnant wife.",
-        "overview_ar": "تكشف نخبة البحرية الأمريكية عن مؤامرة دولية أثناء سعيها لتحقيق العدالة في مقتل زوجته الحامل.",
-        "poster_path": "/6GCOpT8QcNzup09TAMmvvk22LTR.jpg",
-        "vote_average": 6.937,
-        "release_date": "2021-04-29",
-        "popularity": 6.6693
-    },
-    {
-        "id": 2832,
-        "type": "movie",
-        "title": "Identity",
-        "title_ar": "Identity",
-        "overview": "Complete strangers stranded at a remote desert motel during a raging storm soon find themselves the target of a deranged murderer. As their numbers thin out, the travelers begin to turn on each other, as each tries to figure out who the killer is.",
-        "overview_ar": "الغرباء الذين تقطعت بهم السبل في فندق صحراوي بعيد خلال عاصفة شديدة ، سرعان ما وجدوا أنفسهم هدفًا لقاتل مختل العقل. مع تضاؤل أعدادهم ، يبدأ المسافرون في الانقلاب على بعضهم البعض ، حيث يحاول كل منهم معرفة من هو القاتل.",
-        "poster_path": "/sYgimsiBywqVwJI8H4sETke8m7v.jpg",
-        "vote_average": 7.171,
-        "release_date": "2003-04-25",
-        "popularity": 7.4992
     },
     {
         "id": 2832,
