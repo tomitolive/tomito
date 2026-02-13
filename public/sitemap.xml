@@ -517,6 +517,30 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://tomito.xyz/#/movie/1171145-crime101</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/1171145/watch</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/680493-returntosilenthill</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/680493/watch</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://tomito.xyz/#/movie/1590097-afterlight</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -548,18 +572,6 @@
   </url>
   <url>
     <loc>https://tomito.xyz/#/movie/157336/watch</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tomito.xyz/#/movie/1297842-goat</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tomito.xyz/#/movie/1297842/watch</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -692,18 +704,6 @@
   </url>
   <url>
     <loc>https://tomito.xyz/#/movie/269149/watch</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tomito.xyz/#/movie/1171145-crime101</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tomito.xyz/#/movie/1171145/watch</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1477,18 +1477,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tomito.xyz/#/movie/639988-nootherchoice</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tomito.xyz/#/movie/639988/watch</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://tomito.xyz/#/movie/315635-spider-manhomecoming</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -1616,6 +1604,18 @@
   </url>
   <url>
     <loc>https://tomito.xyz/#/movie/533535/watch</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/1010755-thestrangerschapter3</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/1010755/watch</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -15937,18 +15937,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tomito.xyz/#/movie/473033-uncutgems</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tomito.xyz/#/movie/473033/watch</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://tomito.xyz/#/movie/856-whoframedrogerrabbit</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -16112,6 +16100,18 @@
   </url>
   <url>
     <loc>https://tomito.xyz/#/movie/414/watch</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/86834-noah</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/86834/watch</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -17317,18 +17317,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tomito.xyz/#/movie/532639-pinocchio</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tomito.xyz/#/movie/532639/watch</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://tomito.xyz/#/movie/1238188-thecaptive</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -17552,6 +17540,18 @@
   </url>
   <url>
     <loc>https://tomito.xyz/#/movie/617/watch</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/1584-schoolofrock</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/1584/watch</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -20437,18 +20437,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tomito.xyz/#/movie/646389-plane</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tomito.xyz/#/movie/646389/watch</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://tomito.xyz/#/movie/8338-blindness</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -20773,18 +20761,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tomito.xyz/#/movie/463843-sweetheart</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tomito.xyz/#/movie/463843/watch</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://tomito.xyz/#/movie/44912-greenlantern</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -20912,6 +20888,30 @@
   </url>
   <url>
     <loc>https://tomito.xyz/#/movie/568/watch</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/1167351-longing</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/1167351/watch</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/109428-evildead</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/109428/watch</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -21877,30 +21877,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tomito.xyz/#/movie/39108-dragonballzwrathofthedragon</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tomito.xyz/#/movie/39108/watch</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tomito.xyz/#/movie/901362-trollsbandtogether</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tomito.xyz/#/movie/901362/watch</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://tomito.xyz/#/movie/559969-elcaminoabreakingbadmovie</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -22112,6 +22088,30 @@
   </url>
   <url>
     <loc>https://tomito.xyz/#/movie/26428/watch</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/567189-tomclancyswithoutremorse</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/567189/watch</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/2832-identity</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/2832/watch</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -23557,18 +23557,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tomito.xyz/#/movie/1185528-legendsofthecondorheroesthegallants</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tomito.xyz/#/movie/1185528/watch</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://tomito.xyz/#/movie/642208-supernova</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -23792,6 +23780,18 @@
   </url>
   <url>
     <loc>https://tomito.xyz/#/movie/556574/watch</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/1145221-itfeeds</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomito.xyz/#/movie/1145221/watch</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
