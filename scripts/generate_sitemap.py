@@ -37,11 +37,11 @@ def generate_sitemap():
     # 1. Add static pages
     static_pages = [
         "",
-        "/#/about",
-        "/#/contact",
-        "/#/privacy",
-        "/#/category/movie/all",
-        "/#/category/tv/all"
+        "/about",
+        "/contact",
+        "/privacy",
+        "/category/movie/all",
+        "/category/tv/all"
     ]
     
     for page in static_pages:
@@ -58,9 +58,9 @@ def generate_sitemap():
                 if movie_id and title:
                     slug = create_slug_with_id(movie_id, title)
                     # Trailer page
-                    urls.append(f"{BASE_URL}/#/movie/{slug}")
+                    urls.append(f"{BASE_URL}/movie/{slug}")
                     # Watch page
-                    urls.append(f"{BASE_URL}/#/movie/{movie_id}/watch")
+                    urls.append(f"{BASE_URL}/movie/{movie_id}/watch")
 
     # 3. Add TV Shows
     tv_shows_file = os.path.join(DATA_DIR, "tv-shows.json")
@@ -73,9 +73,9 @@ def generate_sitemap():
                 if show_id and name:
                     slug = create_slug_with_id(show_id, name)
                     # Trailer page
-                    urls.append(f"{BASE_URL}/#/tv/{slug}")
+                    urls.append(f"{BASE_URL}/tv/{slug}")
                     # Watch page
-                    urls.append(f"{BASE_URL}/#/tv/{show_id}/watch")
+                    urls.append(f"{BASE_URL}/tv/{show_id}/watch")
 
     # Generate XML
     now = datetime.now().strftime("%Y-%m-%d")
