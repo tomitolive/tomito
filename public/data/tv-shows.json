@@ -5280,30 +5280,6 @@
         "popularity": 42.9692
     },
     {
-        "id": 67116,
-        "type": "tv",
-        "title": "Lethal Weapon",
-        "title_ar": "Lethal Weapon",
-        "overview": "A slightly unhinged former Navy SEAL lands a job as a police officer in Los Angeles where he's partnered with a veteran detective trying to keep maintain a low stress level in his life.",
-        "overview_ar": "A slightly unhinged former Navy SEAL lands a job as a police officer in Los Angeles where he's partnered with a veteran detective trying to keep maintain a low stress level in his life.",
-        "poster_path": "/grGOtTZ0OfNQoWnNtdJOiY1LB8e.jpg",
-        "vote_average": 7.308,
-        "release_date": "2016-09-21",
-        "popularity": 43.3963
-    },
-    {
-        "id": 2673,
-        "type": "tv",
-        "title": "The O.C.",
-        "title_ar": "The O.C.",
-        "overview": "Ryan Atwood, a teen from the wrong side of the tracks, moves in with a wealthy family willing to give him a chance. But Ryan's arrival disturbs the status quo of the affluent, privileged community of Newport Beach, California.",
-        "overview_ar": "يتورط شاب مضطرب في حياة مجموعة متماسكة من الناس في حي من الطبقة العليا في نيوبورت بيتش بمقاطعة أورانج، ليخوض معهم العديد من التحديات.",
-        "poster_path": "/xDc6BMGDaeyalpSZ9KKk7RCBCz5.jpg",
-        "vote_average": 7.748,
-        "release_date": "2003-08-05",
-        "popularity": 42.4245
-    },
-    {
         "id": 89456,
         "type": "tv",
         "title": "Primal",
@@ -5518,6 +5494,30 @@
         "vote_average": 8.545,
         "release_date": "2021-01-11",
         "popularity": 41.731
+    },
+    {
+        "id": 31991,
+        "type": "tv",
+        "title": "WWE NXT",
+        "title_ar": "WWE NXT",
+        "overview": "Wrestlers will portray heroes or villains as they follow a series of events that build tension and culminate in a wrestling match or series of matches.",
+        "overview_ar": "Wrestlers will portray heroes or villains as they follow a series of events that build tension and culminate in a wrestling match or series of matches.",
+        "poster_path": "/9nLBX5Bf7PW4FAaWJLXpFFdeTlV.jpg",
+        "vote_average": 6.8,
+        "release_date": "2010-02-23",
+        "popularity": 43.3873
+    },
+    {
+        "id": 37606,
+        "type": "tv",
+        "title": "The Amazing World of Gumball",
+        "title_ar": "The Amazing World of Gumball",
+        "overview": "The life of Gumball Watterson, a 12-year old cat who attends middle school in Elmore. Accompanied by his pet, adoptive brother, and best friend Darwin Watterson, he frequently finds himself involved in various shenanigans around the city, during which he interacts with various family members: Anais, Richard, and Nicole Watterson, and other various citizens.",
+        "overview_ar": "The life of Gumball Watterson, a 12-year old cat who attends middle school in Elmore. Accompanied by his pet, adoptive brother, and best friend Darwin Watterson, he frequently finds himself involved in various shenanigans around the city, during which he interacts with various family members: Anais, Richard, and Nicole Watterson, and other various citizens.",
+        "poster_path": "/VYnnyA2hyxi3VUPgCA71mMtt69.jpg",
+        "vote_average": 8.5,
+        "release_date": "2011-05-03",
+        "popularity": 46.9312
     },
     {
         "id": 37606,
@@ -6720,18 +6720,6 @@
         "popularity": 35.6737
     },
     {
-        "id": 291,
-        "type": "tv",
-        "title": "Coronation Street",
-        "title_ar": "Coronation Street",
-        "overview": "The residents of Coronation Street are ordinary, working-class people, and the show follows them through regular social and family interactions at home, in the workplace, and in their local pub, the Rovers Return Inn. Britain's longest-running soap.",
-        "overview_ar": "The residents of Coronation Street are ordinary, working-class people, and the show follows them through regular social and family interactions at home, in the workplace, and in their local pub, the Rovers Return Inn. Britain's longest-running soap.",
-        "poster_path": "/5x1HXqYqPyYw7oc7Isu1lvVmwRP.jpg",
-        "vote_average": 5.3,
-        "release_date": "1960-12-09",
-        "popularity": 41.3884
-    },
-    {
         "id": 1948,
         "type": "tv",
         "title": "Degrassi",
@@ -6741,7 +6729,7 @@
         "poster_path": "/AfqQ4lZAi9LWyhnHm3VCpm2hLpB.jpg",
         "vote_average": 7.5,
         "release_date": "2001-10-14",
-        "popularity": 41.369
+        "popularity": 37.2138
     },
     {
         "id": 43901,
@@ -6753,7 +6741,7 @@
         "poster_path": "/yrdt5lscyJ5j5GSbhl99x3SRN66.jpg",
         "vote_average": 7.68,
         "release_date": "2012-06-03",
-        "popularity": 41.3336
+        "popularity": 38.2581
     },
     {
         "id": 91755,
@@ -6765,7 +6753,7 @@
         "poster_path": "/Sw4nK25cYJs6DQYPKqC54FWTik.jpg",
         "vote_average": 0.0,
         "release_date": "1995-12-20",
-        "popularity": 41.3294
+        "popularity": 26.2222
     },
     {
         "id": 2406,
@@ -6777,7 +6765,7 @@
         "poster_path": "/bywFoHoLZvW2vxDc7n4ToAKkR0y.jpg",
         "vote_average": 7.179,
         "release_date": "2001-09-24",
-        "popularity": 41.3106
+        "popularity": 34.4938
     },
     {
         "id": 1558,
@@ -6789,7 +6777,7 @@
         "poster_path": "/sa3J2ZXeg7TiziuXGyfz99HdYDS.jpg",
         "vote_average": 7.399,
         "release_date": "1991-09-17",
-        "popularity": 41.2427
+        "popularity": 38.4907
     },
     {
         "id": 79242,
@@ -6801,7 +6789,7 @@
         "poster_path": "/yxMpoHO0CXP5o9gB7IfsciilQS4.jpg",
         "vote_average": 8.177,
         "release_date": "2018-10-26",
-        "popularity": 41.2066
+        "popularity": 35.6844
     },
     {
         "id": 1996,
@@ -6813,7 +6801,7 @@
         "poster_path": "/30P6ifagQ3fguTsI33KMmDLTAx6.jpg",
         "vote_average": 7.4,
         "release_date": "1960-09-30",
-        "popularity": 41.1346
+        "popularity": 34.5238
     },
     {
         "id": 36046,
@@ -6825,7 +6813,7 @@
         "poster_path": "/4BA0FDKiJD0N4ljYhlwOVjQKszR.jpg",
         "vote_average": 7.9,
         "release_date": "1987-04-06",
-        "popularity": 41.1177
+        "popularity": 29.481
     },
     {
         "id": 125988,
@@ -6837,7 +6825,7 @@
         "poster_path": "/c2OijvbFEXBW1onbzuvENr4CGQB.jpg",
         "vote_average": 8.123,
         "release_date": "2023-05-04",
-        "popularity": 41.0188
+        "popularity": 36.2277
     },
     {
         "id": 3382,
@@ -6849,7 +6837,7 @@
         "poster_path": "/jxyI5V4LZ5rHDrXv7NpPh4EBCAo.jpg",
         "vote_average": 6.7,
         "release_date": "1976-09-22",
-        "popularity": 40.975
+        "popularity": 34.6166
     },
     {
         "id": 1663,
@@ -6861,7 +6849,7 @@
         "poster_path": "/8AgBpRXvrjnLpZ6RpkmpUvjPXPi.jpg",
         "vote_average": 7.3,
         "release_date": "1974-01-18",
-        "popularity": 40.9718
+        "popularity": 50.4549
     },
     {
         "id": 46261,
@@ -6873,7 +6861,7 @@
         "poster_path": "/h50lj7xO65qafNYZCrfQ7ztkMBD.jpg",
         "vote_average": 7.913,
         "release_date": "2009-10-12",
-        "popularity": 40.9553
+        "popularity": 28.7089
     },
     {
         "id": 3322,
@@ -6885,7 +6873,7 @@
         "poster_path": "/oTQ9PUnCgf9CimYeWuDGp8iaT07.jpg",
         "vote_average": 8.041,
         "release_date": "1997-07-12",
-        "popularity": 40.955
+        "popularity": 38.5624
     },
     {
         "id": 85948,
@@ -6897,7 +6885,7 @@
         "poster_path": "/i7Em3r7KCyNfkOwMkyqN8UMvK8S.jpg",
         "vote_average": 7.619,
         "release_date": "2020-08-06",
-        "popularity": 40.8668
+        "popularity": 39.0693
     },
     {
         "id": 496,
@@ -6909,7 +6897,7 @@
         "poster_path": "/vxERANdozlMKgl7VqGxbAvZ6u1O.jpg",
         "vote_average": 7.228,
         "release_date": "1982-09-22",
-        "popularity": 40.8351
+        "popularity": 45.5887
     },
     {
         "id": 225171,
@@ -6921,7 +6909,7 @@
         "poster_path": "/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
         "vote_average": 7.9,
         "release_date": "2025-11-06",
-        "popularity": 40.798
+        "popularity": 34.7547
     },
     {
         "id": 43865,
@@ -6933,7 +6921,7 @@
         "poster_path": "/uWnP6qTcc4imPJ9ZHaXlPQlcYnB.jpg",
         "vote_average": 7.7,
         "release_date": "2012-10-12",
-        "popularity": 40.797
+        "popularity": 29.9504
     },
     {
         "id": 6809,
@@ -6945,7 +6933,7 @@
         "poster_path": "/tT4hXTYXtZVadi6AZ0rhdVgNo2T.jpg",
         "vote_average": 4.8,
         "release_date": "2006-09-24",
-        "popularity": 40.7914
+        "popularity": 31.5386
     },
     {
         "id": 72350,
@@ -6957,7 +6945,19 @@
         "poster_path": "/3klapeIKLp9IBy4uHo7szTeMTdQ.jpg",
         "vote_average": 7.8,
         "release_date": "2017-08-12",
-        "popularity": 40.5786
+        "popularity": 36.1926
+    },
+    {
+        "id": 2243,
+        "type": "tv",
+        "title": "Touched by an Angel",
+        "title_ar": "Touched by an Angel",
+        "overview": "Monica, an angel, is tasked with bringing guidance and messages from God to various people who are at a crossroads in their lives.",
+        "overview_ar": "Monica, an angel, is tasked with bringing guidance and messages from God to various people who are at a crossroads in their lives.",
+        "poster_path": "/jiSv0xNx6MGhAFfv05Ov7DgDELJ.jpg",
+        "vote_average": 7.189,
+        "release_date": "1994-09-21",
+        "popularity": 34.5686
     },
     {
         "id": 2243,
@@ -9351,9 +9351,9 @@
         "id": 28136,
         "type": "tv",
         "title": "Rurouni Kenshin",
-        "title_ar": "Rurouni Kenshin",
+        "title_ar": "روروني كنشين",
         "overview": "The Meiji Era was one of great renewal for Japan, where swords and killing were outlawed. However, many survivors from the time of Revolution still live, lurking in the shadows and waiting for a chance to use their killing blades again. Only Kenshin Himura, formerly one of the most brutal of killers, hopes to keep his swordsman's honor and still live in the new era.",
-        "overview_ar": "The Meiji Era was one of great renewal for Japan, where swords and killing were outlawed. However, many survivors from the time of Revolution still live, lurking in the shadows and waiting for a chance to use their killing blades again. Only Kenshin Himura, formerly one of the most brutal of killers, hopes to keep his swordsman's honor and still live in the new era.",
+        "overview_ar": "كان عصر ميجي أحد التجديدات العظيمة لليابان ، حيث تم حظر استخدام السيوف والقتل. ومع ذلك ، لا يزال العديد من الناجين من زمن الثورة يعيشون ، يتربصون في الظل وينتظرون فرصة لاستخدام شفرات القتل مرة أخرى. فقط كينشن هيمورا ، الذي كان سابقًا أحد أكثر القتلة وحشية ، يأمل في الحفاظ على شرف المبارز ولا يزال يعيش في العصر الجديد.",
         "poster_path": "/iP6i2AJGkxSugByBRrxNd2Goey8.jpg",
         "vote_average": 8.525,
         "release_date": "1996-01-10",
@@ -9600,18 +9600,6 @@
         "popularity": 45.2832
     },
     {
-        "id": 97,
-        "type": "tv",
-        "title": "The Drew Carey Show",
-        "title_ar": "The Drew Carey Show",
-        "overview": "Drew is an assistant director of personnel in a Cleveland department store and he has been stuck there for ten years. Other than fighting with co-worker Mimi, his hobbies include drinking beer and not being able to get dates. To make a few extra bucks he has a micro-brewery going in his garage with his buddies.",
-        "overview_ar": "Drew is an assistant director of personnel in a Cleveland department store and he has been stuck there for ten years. Other than fighting with co-worker Mimi, his hobbies include drinking beer and not being able to get dates. To make a few extra bucks he has a micro-brewery going in his garage with his buddies.",
-        "poster_path": "/cWboJ8Cfi5NgHoENAB0gYtgZHkR.jpg",
-        "vote_average": 6.512,
-        "release_date": "1995-09-13",
-        "popularity": 45.2832
-    },
-    {
         "id": 76757,
         "type": "tv",
         "title": "Golden Kamuy",
@@ -9768,18 +9756,6 @@
         "popularity": 30.2193
     },
     {
-        "id": 68507,
-        "type": "tv",
-        "title": "His Dark Materials",
-        "title_ar": "His Dark Materials",
-        "overview": "Lyra is an orphan who lives in a parallel universe in which science, theology and magic are entwined. Her search for a kidnapped friend uncovers a sinister plot involving stolen children and turns into a quest to understand a mysterious phenomenon called Dust. She is later joined on her journey by Will, a boy who possesses a knife that can cut windows between worlds. As she learns the truth about her parents and her prophesied destiny, the two young people are caught up in a war against celestial powers that ranges across many worlds.",
-        "overview_ar": "Lyra is an orphan who lives in a parallel universe in which science, theology and magic are entwined. Her search for a kidnapped friend uncovers a sinister plot involving stolen children and turns into a quest to understand a mysterious phenomenon called Dust. She is later joined on her journey by Will, a boy who possesses a knife that can cut windows between worlds. As she learns the truth about her parents and her prophesied destiny, the two young people are caught up in a war against celestial powers that ranges across many worlds.",
-        "poster_path": "/g6tIKGc3f1H5QMz1dcgCwADKpZ7.jpg",
-        "vote_average": 7.9,
-        "release_date": "2019-11-03",
-        "popularity": 29.1419
-    },
-    {
         "id": 125935,
         "type": "tv",
         "title": "Abbott Elementary",
@@ -9838,6 +9814,30 @@
         "vote_average": 7.652,
         "release_date": "2022-03-30",
         "popularity": 32.987
+    },
+    {
+        "id": 78501,
+        "type": "tv",
+        "title": "Sweet Punishment: I'm the Guard's Personal Pet",
+        "title_ar": "甘い懲罰～私は看守専用ペット",
+        "overview": "The story is set in a prison in the near future. It revolves around Hina Saotome, imprisoned despite her innocence, and the elegant yet sadistic guard Aki Myoujin. Hina's heart and body are at the mercy of Myoujin's \"heartless yet sweet domination\" from physical examinations to lovers' prison visits.",
+        "overview_ar": "The story is set in a prison in the near future. It revolves around Hina Saotome, imprisoned despite her innocence, and the elegant yet sadistic guard Aki Myoujin. Hina's heart and body are at the mercy of Myoujin's \"heartless yet sweet domination\" from physical examinations to lovers' prison visits.",
+        "poster_path": "/rbETzzJLGIB2Bg6NwNekWTKfM6d.jpg",
+        "vote_average": 7.2,
+        "release_date": "2018-04-02",
+        "popularity": 31.9583
+    },
+    {
+        "id": 96804,
+        "type": "tv",
+        "title": "LOONA TV",
+        "title_ar": "이달의소녀탐구",
+        "overview": "LOONA TV (이달의 소녀 탐구, Girl of the Month Inquiry) are short videos featuring the members of LOOΠΔ during their travels, behind the scenes of jacket shootings and the sets of music video filming, and even their off-time interactions as they have fun.",
+        "overview_ar": "LOONA TV (이달의 소녀 탐구, Girl of the Month Inquiry) are short videos featuring the members of LOOΠΔ during their travels, behind the scenes of jacket shootings and the sets of music video filming, and even their off-time interactions as they have fun.",
+        "poster_path": "/i4afg3YM6wfdDsNjK95pIO2MAUR.jpg",
+        "vote_average": 7.0,
+        "release_date": "2016-10-12",
+        "popularity": 34.6935
     },
     {
         "id": 78501,
@@ -11439,7 +11439,7 @@
         "id": 206494,
         "type": "tv",
         "title": "Million-Follower Detective",
-        "title_ar": "Million-Follower Detective",
+        "title_ar": "百萬人推理",
         "overview": "In this crime thriller, Detective Chen Chia-jen races to unmask Baba the Witch, the viral tarot reader who accurately predicts the deaths of influencers.",
         "overview_ar": "In this crime thriller, Detective Chen Chia-jen races to unmask Baba the Witch, the viral tarot reader who accurately predicts the deaths of influencers.",
         "poster_path": "/4y4GeGlsbV1643PQLAmQoCeIOBK.jpg",
@@ -12000,30 +12000,6 @@
         "popularity": 26.6437
     },
     {
-        "id": 64196,
-        "type": "tv",
-        "title": "Overlord",
-        "title_ar": "Overlord",
-        "overview": "In the year 2138, virtual reality gaming is booming. Yggdrasil, a popular online game is quietly shut down one day. However, one player named Momonga decides to not log out. Momonga is then transformed into the image of a skeleton as \"the most powerful wizard.\" The world continues to change, with non-player characters (NPCs) beginning to feel emotion. Having no parents, friends, or place in society, this ordinary young man Momonga then strives to take over the new world the game has become.",
-        "overview_ar": "In the year 2138, virtual reality gaming is booming. Yggdrasil, a popular online game is quietly shut down one day. However, one player named Momonga decides to not log out. Momonga is then transformed into the image of a skeleton as \"the most powerful wizard.\" The world continues to change, with non-player characters (NPCs) beginning to feel emotion. Having no parents, friends, or place in society, this ordinary young man Momonga then strives to take over the new world the game has become.",
-        "poster_path": "/K8ZUjxaj9F0t3AwJDz8ypzBynM.jpg",
-        "vote_average": 8.465,
-        "release_date": "2015-07-07",
-        "popularity": 26.2241
-    },
-    {
-        "id": 70796,
-        "type": "tv",
-        "title": "The Marvelous Mrs. Maisel",
-        "title_ar": "The Marvelous Mrs. Maisel",
-        "overview": "It’s 1958 Manhattan and Miriam “Midge” Maisel has everything she’s ever wanted - the perfect husband, kids, and Upper West Side apartment. But when her life suddenly takes a turn and Midge must start over, she discovers a previously unknown talent - one that will take her all the way from the comedy clubs of Greenwich Village to a spot on Johnny Carson’s couch.",
-        "overview_ar": "It’s 1958 Manhattan and Miriam “Midge” Maisel has everything she’s ever wanted - the perfect husband, kids, and Upper West Side apartment. But when her life suddenly takes a turn and Midge must start over, she discovers a previously unknown talent - one that will take her all the way from the comedy clubs of Greenwich Village to a spot on Johnny Carson’s couch.",
-        "poster_path": "/zS7fQiOZiKCVH2vlYSiIsFWW8hh.jpg",
-        "vote_average": 8.049,
-        "release_date": "2017-03-16",
-        "popularity": 26.6437
-    },
-    {
         "id": 32294,
         "type": "tv",
         "title": "Hot in Cleveland",
@@ -12238,6 +12214,30 @@
         "vote_average": 8.308,
         "release_date": "2012-09-28",
         "popularity": 28.5569
+    },
+    {
+        "id": 1486,
+        "type": "tv",
+        "title": "21 Jump Street",
+        "title_ar": "21 Jump Street",
+        "overview": "21 Jump Street revolves around a group of young cops who would use their youthful appearance to go undercover and solve crimes involving teenagers and young adults.",
+        "overview_ar": "21 Jump Street revolves around a group of young cops who would use their youthful appearance to go undercover and solve crimes involving teenagers and young adults.",
+        "poster_path": "/9w2y0146P5EjLw63FHGWRRpqQ6v.jpg",
+        "vote_average": 7.227,
+        "release_date": "1987-04-12",
+        "popularity": 26.6176
+    },
+    {
+        "id": 111115,
+        "type": "tv",
+        "title": "Sacrée Soirée",
+        "title_ar": "Sacrée Soirée",
+        "overview": "",
+        "overview_ar": "",
+        "poster_path": "/h2GaYY9A66LNbVlUb33rBnByEFU.jpg",
+        "vote_average": 5.1,
+        "release_date": "1987-09-02",
+        "popularity": 20.1123
     },
     {
         "id": 111115,
@@ -17763,7 +17763,7 @@
         "id": 68398,
         "type": "tv",
         "title": "Dr. Romantic",
-        "title_ar": "낭만닥터 김사부",
+        "title_ar": "Dr. Romantic",
         "overview": "An eccentric, triple board-certified virtuoso surgeon leaves a top job in Seoul and ends up at a provincial hospital, where he mentors young doctors.",
         "overview_ar": "An eccentric, triple board-certified virtuoso surgeon leaves a top job in Seoul and ends up at a provincial hospital, where he mentors young doctors.",
         "poster_path": "/9fbRJgZ2zDTnSUId1bOwsllHNr7.jpg",
@@ -17991,9 +17991,9 @@
         "id": 97890,
         "type": "tv",
         "title": "Power Book II: Ghost",
-        "title_ar": "Power Book II: Ghost",
+        "title_ar": "كتاب القوة 2: الشبح",
         "overview": "Picking up just days after the “Power” finale, this sequel series follows Tariq navigating his new life, in which his desire to shed his father’s legacy comes up against the mounting pressure to save his family.",
-        "overview_ar": "Picking up just days after the “Power” finale, this sequel series follows Tariq navigating his new life, in which his desire to shed his father’s legacy comes up against the mounting pressure to save his family.",
+        "overview_ar": "تبدأ أحداث مسلسل باور بووك 2: غوست من المكان الذي توقفت فيه أحداث باور! يحاول طارق جاهداً العثور على التوازن في حياته بعد موت والده ومحاكمة والدته في جريمة لم ترتكبها.",
         "poster_path": "/8rbxvwGpPd9MWjdhAoSBj016cns.jpg",
         "vote_average": 8.238,
         "release_date": "2020-09-06",
@@ -19443,9 +19443,9 @@
         "id": 92830,
         "type": "tv",
         "title": "Obi-Wan Kenobi",
-        "title_ar": "أوبي وان كينوبي",
+        "title_ar": "Obi-Wan Kenobi",
         "overview": "During the reign of the Galactic Empire, former Jedi Master, Obi-Wan Kenobi, embarks on a crucial mission to confront allies turned enemies and face the wrath of the Empire.",
-        "overview_ar": "تدور أحداث المسلسل بعد عشر سنوات من فيلم \"حرب النجوم الجزء الثالث: انتقام السيث\" وبعد عملية مسح الجيداي من كل المجرة.",
+        "overview_ar": "During the reign of the Galactic Empire, former Jedi Master, Obi-Wan Kenobi, embarks on a crucial mission to confront allies turned enemies and face the wrath of the Empire.",
         "poster_path": "/4Lok3HBSfbQxibQZBygoVCwKKrZ.jpg",
         "vote_average": 7.0,
         "release_date": "2022-05-26",
@@ -20640,30 +20640,6 @@
         "popularity": 24.507
     },
     {
-        "id": 198004,
-        "type": "tv",
-        "title": "King the Land",
-        "title_ar": "أراضي الملك - صالة اللحظات السعيدة",
-        "overview": "Amid a tense inheritance fight, a charming heir clashes with his hardworking employee who's known for her irresistible smile — which he cannot stand.",
-        "overview_ar": "كان يا مكان في حديث الزمان وحاضر العصر والاوان، في “أراضي الملك“ الفندقية، وريث وسيم يخوض حرب ضارية على الميراث كملك على فرسه البيضاء، وموظفة من الدهماء، ببهاء وسحر الأميرات وبابتسامة مشرقة تذيب القلوب جمعاء... فيما عداه، فكيف ستحطم حصن قلبه المنيع، ليسردا قصة حب بعذوبة قصص الخيال بين الحسناء والملك؟",
-        "poster_path": "/tW8BMRCYSe6nySvZ749pzc31x2m.jpg",
-        "vote_average": 8.187,
-        "release_date": "2023-06-17",
-        "popularity": 18.0569
-    },
-    {
-        "id": 67482,
-        "type": "tv",
-        "title": "RuPaul's Drag Race All Stars",
-        "title_ar": "RuPaul's Drag Race All Stars",
-        "overview": "The most celebrated competitors from RuPaul's Drag Race vie for a second chance to enter Drag Race herstory. This drag queen showdown is filled with plenty of heated competition, lip-syncing for the legacy, and, of course, the All-Stars Snatch Game.",
-        "overview_ar": "The most celebrated competitors from RuPaul's Drag Race vie for a second chance to enter Drag Race herstory. This drag queen showdown is filled with plenty of heated competition, lip-syncing for the legacy, and, of course, the All-Stars Snatch Game.",
-        "poster_path": "/ArIu3xEo28LiKtiVWHNZdPFNZrM.jpg",
-        "vote_average": 7.2,
-        "release_date": "2012-10-22",
-        "popularity": 19.8098
-    },
-    {
         "id": 211564,
         "type": "tv",
         "title": "Sullivan's Crossing",
@@ -20878,6 +20854,30 @@
         "vote_average": 7.111,
         "release_date": "2024-09-22",
         "popularity": 17.5792
+    },
+    {
+        "id": 69291,
+        "type": "tv",
+        "title": "Miss Kobayashi's Dragon Maid",
+        "title_ar": "Miss Kobayashi's Dragon Maid",
+        "overview": "Kobayashi lives alone in an apartment, until one day, Tohru appeared and they ended up living together. Tooru looks down on humans as inferior and foolish, but having been saved by Kobayashi-san, she does everything she can to repay the debt and help her with various things, although not everything goes according to plan.\n\nA mythical everyday life comedy about a hard working office lady living with a dragon girl.",
+        "overview_ar": "Kobayashi lives alone in an apartment, until one day, Tohru appeared and they ended up living together. Tooru looks down on humans as inferior and foolish, but having been saved by Kobayashi-san, she does everything she can to repay the debt and help her with various things, although not everything goes according to plan.\n\nA mythical everyday life comedy about a hard working office lady living with a dragon girl.",
+        "poster_path": "/aDJC9SBNqUFoGQ6uuxs0EfBsqct.jpg",
+        "vote_average": 8.319,
+        "release_date": "2017-01-12",
+        "popularity": 20.6987
+    },
+    {
+        "id": 105248,
+        "type": "tv",
+        "title": "Cyberpunk: Edgerunners",
+        "title_ar": "Cyberpunk: Edgerunners",
+        "overview": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
+        "overview_ar": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
+        "poster_path": "/7jSWOc6jWSw5hZ78HB8Hw3pJxuk.jpg",
+        "vote_average": 8.485,
+        "release_date": "2022-09-13",
+        "popularity": 16.4052
     },
     {
         "id": 105248,
@@ -21600,18 +21600,6 @@
         "popularity": 17.3607
     },
     {
-        "id": 3346,
-        "type": "tv",
-        "title": "Petticoat Junction",
-        "title_ar": "Petticoat Junction",
-        "overview": "The Bradley family are proud owners of the Shady Rest Hotel. Kate and her three young daughters do the job of running the hotel.",
-        "overview_ar": "The Bradley family are proud owners of the Shady Rest Hotel. Kate and her three young daughters do the job of running the hotel.",
-        "poster_path": "/2kTGzz870hmdmQ074CYTdKFRqSm.jpg",
-        "vote_average": 5.7,
-        "release_date": "1963-09-24",
-        "popularity": 16.4898
-    },
-    {
         "id": 13335,
         "type": "tv",
         "title": "New Tricks",
@@ -21838,6 +21826,18 @@
         "vote_average": 6.806,
         "release_date": "2014-12-19",
         "popularity": 16.725
+    },
+    {
+        "id": 4250,
+        "type": "tv",
+        "title": "Last of the Summer Wine",
+        "title_ar": "Last of the Summer Wine",
+        "overview": "Unencumbered by wives, jobs or any other responsibilities, three senior citizens who've never really grown up explore their world in the Yorkshire Dales. They spend their days speculating about their fellow townsfolk and thinking up adventures not usually favored by the elderly.  Last of the Summer Wine premiered as an episode of Comedy Playhouse in 1973. The show ran for 295 episodes until 2010. It is the longest running comedy Britain has produced and the longest running sitcom in the world.",
+        "overview_ar": "Unencumbered by wives, jobs or any other responsibilities, three senior citizens who've never really grown up explore their world in the Yorkshire Dales. They spend their days speculating about their fellow townsfolk and thinking up adventures not usually favored by the elderly.  Last of the Summer Wine premiered as an episode of Comedy Playhouse in 1973. The show ran for 295 episodes until 2010. It is the longest running comedy Britain has produced and the longest running sitcom in the world.",
+        "poster_path": "/vjI4WdHda9ckCo5YIYVhc8rl6SR.jpg",
+        "vote_average": 7.1,
+        "release_date": "1973-01-04",
+        "popularity": 18.0122
     },
     {
         "id": 50137,
