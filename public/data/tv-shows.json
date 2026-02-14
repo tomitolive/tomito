@@ -1200,18 +1200,6 @@
         "popularity": 77.2246
     },
     {
-        "id": 873,
-        "type": "tv",
-        "title": "Columbo",
-        "title_ar": "Columbo",
-        "overview": "Columbo is a friendly, verbose, disheveled-looking police detective who is consistently underestimated by his suspects. Despite his unprepossessing appearance and apparent absentmindedness, he shrewdly solves all of his cases and secures all evidence needed for indictment. His formidable eye for detail and meticulously dedicated approach often become clear to the killer only late in the storyline.",
-        "overview_ar": "Columbo is a friendly, verbose, disheveled-looking police detective who is consistently underestimated by his suspects. Despite his unprepossessing appearance and apparent absentmindedness, he shrewdly solves all of his cases and secures all evidence needed for indictment. His formidable eye for detail and meticulously dedicated approach often become clear to the killer only late in the storyline.",
-        "poster_path": "/2JCD8vab3fircOU8cM2HJCxfv4I.jpg",
-        "vote_average": 8.084,
-        "release_date": "1971-09-15",
-        "popularity": 97.4015
-    },
-    {
         "id": 4546,
         "type": "tv",
         "title": "Curb Your Enthusiasm",
@@ -1221,7 +1209,7 @@
         "poster_path": "/mZqWmSq1M61Jlre3furVDSXvdrN.jpg",
         "vote_average": 8.033,
         "release_date": "2000-10-15",
-        "popularity": 97.1817
+        "popularity": 88.0139
     },
     {
         "id": 33238,
@@ -1233,7 +1221,7 @@
         "poster_path": "/2Wmmu1MkqxJ48J7aySET9EKEjXz.jpg",
         "vote_average": 8.3,
         "release_date": "2010-07-11",
-        "popularity": 97.1745
+        "popularity": 80.0962
     },
     {
         "id": 12225,
@@ -1243,9 +1231,9 @@
         "overview": "Peppa Pig is an energetic piggy who lives with Mummy, Daddy, and little brother George. She loves to jump in mud puddles and make loud snorting noises.",
         "overview_ar": "Peppa Pig is an energetic piggy who lives with Mummy, Daddy, and little brother George. She loves to jump in mud puddles and make loud snorting noises.",
         "poster_path": "/iwKVo3HlsyVNXCzFEkd0xHz3kGi.jpg",
-        "vote_average": 6.6,
+        "vote_average": 6.573,
         "release_date": "2004-05-31",
-        "popularity": 97.0345
+        "popularity": 73.1667
     },
     {
         "id": 80240,
@@ -1257,7 +1245,7 @@
         "poster_path": "/fuVuDYrs8sxvEolnYr0wCSvtyTi.jpg",
         "vote_average": 8.0,
         "release_date": "2018-06-12",
-        "popularity": 96.9879
+        "popularity": 98.6929
     },
     {
         "id": 31132,
@@ -1269,7 +1257,7 @@
         "poster_path": "/mS5SLxMYcKfUxA0utBSR5MOAWWr.jpg",
         "vote_average": 8.628,
         "release_date": "2010-09-06",
-        "popularity": 96.9362
+        "popularity": 85.6003
     },
     {
         "id": 1908,
@@ -1281,7 +1269,7 @@
         "poster_path": "/b5kLqC6eDiA17nq3jr1Vi340Kns.jpg",
         "vote_average": 7.451,
         "release_date": "1984-09-16",
-        "popularity": 96.8622
+        "popularity": 72.1227
     },
     {
         "id": 1413,
@@ -1293,7 +1281,7 @@
         "poster_path": "/5LLG9bjq0i7V5N4UfRhnab8zHK4.jpg",
         "vote_average": 8.1,
         "release_date": "2011-10-05",
-        "popularity": 96.5616
+        "popularity": 87.7375
     },
     {
         "id": 60059,
@@ -1305,7 +1293,7 @@
         "poster_path": "/fC2HDm5t0kHl7mTm7jxMR31b7by.jpg",
         "vote_average": 8.703,
         "release_date": "2015-02-08",
-        "popularity": 95.9599
+        "popularity": 91.4856
     },
     {
         "id": 1973,
@@ -1317,7 +1305,19 @@
         "poster_path": "/iq6yrZ5LEDXf1ArCOYLq8PIUBpV.jpg",
         "vote_average": 7.789,
         "release_date": "2001-11-06",
-        "popularity": 95.7448
+        "popularity": 116.496
+    },
+    {
+        "id": 693,
+        "type": "tv",
+        "title": "Desperate Housewives",
+        "title_ar": "Desperate Housewives",
+        "overview": "Looking down on her friends and family isn't a way of life for Mary Alice Young... it's a way of death. One day, in her perfect house, in the loveliest of suburbs, Mary Alice ended it all. Now she's taking us into the lives of her family, friends and neighbors, commenting from her elevated P.O.V.",
+        "overview_ar": "Looking down on her friends and family isn't a way of life for Mary Alice Young... it's a way of death. One day, in her perfect house, in the loveliest of suburbs, Mary Alice ended it all. Now she's taking us into the lives of her family, friends and neighbors, commenting from her elevated P.O.V.",
+        "poster_path": "/4qeI51jDzH81PpUUNaJCBrfm7f6.jpg",
+        "vote_average": 7.9,
+        "release_date": "2004-10-03",
+        "popularity": 95.4575
     },
     {
         "id": 73586,
@@ -1329,7 +1329,7 @@
         "poster_path": "/s4QRRYc1V2e68Qy9Wel9MI8fhRP.jpg",
         "vote_average": 8.3,
         "release_date": "2018-06-20",
-        "popularity": 95.429
+        "popularity": 90.0214
     },
     {
         "id": 1667,
@@ -1341,7 +1341,7 @@
         "poster_path": "/s1cZBqbMwAF3w8S3Yo0j5nr2Yuo.jpg",
         "vote_average": 6.953,
         "release_date": "1975-10-11",
-        "popularity": 95.3359
+        "popularity": 87.964
     },
     {
         "id": 502,
@@ -1353,7 +1353,7 @@
         "poster_path": "/14k9BfZ2p4rQBMeJ5crKTfUZVwD.jpg",
         "vote_average": 7.087,
         "release_date": "1969-11-10",
-        "popularity": 94.8345
+        "popularity": 85.2641
     },
     {
         "id": 235685,
@@ -1365,7 +1365,7 @@
         "poster_path": "/jJfk8NXauN4UgFQ1qn9lFzEk7ib.jpg",
         "vote_average": 8.4,
         "release_date": "2026-01-22",
-        "popularity": 94.1813
+        "popularity": 92.6249
     },
     {
         "id": 32726,
@@ -1377,7 +1377,7 @@
         "poster_path": "/iIHsQe3Qjs3NH62HdamyQEPeqTR.jpg",
         "vote_average": 7.835,
         "release_date": "2011-01-09",
-        "popularity": 93.6026
+        "popularity": 85.8007
     },
     {
         "id": 1950,
@@ -1389,7 +1389,7 @@
         "poster_path": "/4zmuA2Ql1QdUtw9OM6MdmtXnZEF.jpg",
         "vote_average": 7.564,
         "release_date": "2002-09-16",
-        "popularity": 93.5549
+        "popularity": 87.5439
     },
     {
         "id": 615,
@@ -1399,9 +1399,9 @@
         "overview": "The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an interplanetary delivery company in the retro-futuristic 31st century.",
         "overview_ar": "يحكي المسلسل مغامرات صبي توصيل البيتزا (فيليب جي فراي) في مدينة نيويورك في أواخر القرن العشرين الذي تم تجميده عن غير قصد لألف عام، بعدها وجد عملاً في القرن الحادي والثلاثين المستقبلي في شركة التوصيل بين الكواكب Planet Express.",
         "poster_path": "/6ZS8SOno6kTmWz4eQ8lX8EBXOMv.jpg",
-        "vote_average": 8.369,
+        "vote_average": 8.4,
         "release_date": "1999-03-28",
-        "popularity": 93.4157
+        "popularity": 83.6033
     },
     {
         "id": 1920,
@@ -1411,9 +1411,9 @@
         "overview": "The body of Laura Palmer is washed up on a beach near the small Washington state town of Twin Peaks. FBI Special Agent Dale Cooper is called in to investigate her strange demise only to uncover a web of mystery that ultimately leads him deep into the heart of the surrounding woodland and his very own soul.",
         "overview_ar": "The body of Laura Palmer is washed up on a beach near the small Washington state town of Twin Peaks. FBI Special Agent Dale Cooper is called in to investigate her strange demise only to uncover a web of mystery that ultimately leads him deep into the heart of the surrounding woodland and his very own soul.",
         "poster_path": "/lA9CNSdo50iQPZ8A2fyVpMvJZAf.jpg",
-        "vote_average": 8.343,
+        "vote_average": 8.3,
         "release_date": "1990-04-08",
-        "popularity": 93.0998
+        "popularity": 84.1062
     },
     {
         "id": 42009,
@@ -1425,7 +1425,7 @@
         "poster_path": "/seN6rRfN0I6n8iDXjlSMk1QjNcq.jpg",
         "vote_average": 8.3,
         "release_date": "2011-12-04",
-        "popularity": 93.0628
+        "popularity": 85.9297
     },
     {
         "id": 46296,
@@ -1437,7 +1437,7 @@
         "poster_path": "/c2GKN4VHCj1dnjFMANRpGkCVBae.jpg",
         "vote_average": 8.03,
         "release_date": "2010-01-22",
-        "popularity": 92.5698
+        "popularity": 88.5365
     },
     {
         "id": 1411,
@@ -2880,30 +2880,6 @@
         "popularity": 59.8388
     },
     {
-        "id": 62286,
-        "type": "tv",
-        "title": "Fear the Walking Dead",
-        "title_ar": "اخشوا الموتى السائرون",
-        "overview": "What did the world look like as it was transforming into the horrifying apocalypse depicted in \"The Walking Dead\"? This spin-off set in Los Angeles, following new characters as they face the beginning of the end of the world, will answer that question.",
-        "overview_ar": "يصور المسلسل تحول العالم قبل بداية أحداث مسلسل \"الموتى السائرون\" أي قبل انتشار الفيروسو لكن بعيون شخصيات جديدة بمدينة \"لوس انجلوس \" حيث اتجه الجميع للهروب من هذا المصير المفزع و المؤلم",
-        "poster_path": "/l7N9aS6VyYvjelKoCB2eZge0Qky.jpg",
-        "vote_average": 7.629,
-        "release_date": "2015-08-23",
-        "popularity": 63.9394
-    },
-    {
-        "id": 1432,
-        "type": "tv",
-        "title": "Veronica Mars",
-        "title_ar": "Veronica Mars",
-        "overview": "In the fictional town of Neptune, California, student Veronica Mars progresses from high school to college while moonlighting as a private investigator under the tutelage of her detective father.",
-        "overview_ar": "In the fictional town of Neptune, California, student Veronica Mars progresses from high school to college while moonlighting as a private investigator under the tutelage of her detective father.",
-        "poster_path": "/vOdJETEueGgUqJR4UvwTdUoJhvO.jpg",
-        "vote_average": 7.812,
-        "release_date": "2004-09-22",
-        "popularity": 63.7179
-    },
-    {
         "id": 1018,
         "type": "tv",
         "title": "Bonanza",
@@ -2913,7 +2889,7 @@
         "poster_path": "/wQ1iVrG871anxkEUwWTRdPRi0j1.jpg",
         "vote_average": 7.5,
         "release_date": "1959-09-12",
-        "popularity": 63.5104
+        "popularity": 66.7165
     },
     {
         "id": 71789,
@@ -2925,7 +2901,7 @@
         "poster_path": "/6iSnec83UEMgLOXAtGYwaVNHLjR.jpg",
         "vote_average": 8.029,
         "release_date": "2017-09-27",
-        "popularity": 63.3447
+        "popularity": 59.1619
     },
     {
         "id": 60554,
@@ -2937,7 +2913,7 @@
         "poster_path": "/eLrScs6Bs26JMcS8hiZhf7YRROr.jpg",
         "vote_average": 7.7,
         "release_date": "2014-10-13",
-        "popularity": 63.3415
+        "popularity": 57.6962
     },
     {
         "id": 2875,
@@ -2949,7 +2925,7 @@
         "poster_path": "/zhgJNHbFxGkqdsKdkZLBrDWagOv.jpg",
         "vote_average": 7.7,
         "release_date": "1985-09-29",
-        "popularity": 63.2971
+        "popularity": 59.0731
     },
     {
         "id": 40521,
@@ -2961,7 +2937,7 @@
         "poster_path": "/knQh5E3YazUwkupxvfSyy11VqW0.jpg",
         "vote_average": 7.1,
         "release_date": "2005-02-12",
-        "popularity": 63.0434
+        "popularity": 43.3681
     },
     {
         "id": 60694,
@@ -2973,7 +2949,7 @@
         "poster_path": "/b12eM3FXNjN7yM7XYTIdmeQRud9.jpg",
         "vote_average": 7.8,
         "release_date": "2014-04-27",
-        "popularity": 63.0138
+        "popularity": 59.6795
     },
     {
         "id": 605,
@@ -2983,9 +2959,9 @@
         "overview": "On her sixteenth birthday, Sabrina Spellman discovers she has magical powers. She lives with her 600-year-old aunts Hilda and Zelda as well as talking cat Salem in the fictional town of Westbridge, Massachusetts.",
         "overview_ar": "On her sixteenth birthday, Sabrina Spellman discovers she has magical powers. She lives with her 600-year-old aunts Hilda and Zelda as well as talking cat Salem in the fictional town of Westbridge, Massachusetts.",
         "poster_path": "/nNhj3coHNVVJPVM7fm5PEYVTCMO.jpg",
-        "vote_average": 7.796,
+        "vote_average": 7.8,
         "release_date": "1996-09-27",
-        "popularity": 63.0022
+        "popularity": 46.1687
     },
     {
         "id": 31911,
@@ -2997,7 +2973,7 @@
         "poster_path": "/5ZFUEOULaVml7pQuXxhpR2SmVUw.jpg",
         "vote_average": 8.709,
         "release_date": "2009-04-05",
-        "popularity": 62.8896
+        "popularity": 49.4623
     },
     {
         "id": 141,
@@ -3009,7 +2985,7 @@
         "poster_path": "/nD1ZQBKbgKSmKcrAkWTofohsScj.jpg",
         "vote_average": 7.547,
         "release_date": "1982-09-30",
-        "popularity": 62.7526
+        "popularity": 56.1519
     },
     {
         "id": 36,
@@ -3021,7 +2997,7 @@
         "poster_path": "/6tOxspW2MbbAQ0s3jtfs8QATcx.jpg",
         "vote_average": 7.453,
         "release_date": "2005-01-03",
-        "popularity": 62.5969
+        "popularity": 59.5742
     },
     {
         "id": 4589,
@@ -3033,7 +3009,7 @@
         "poster_path": "/p4r4RD7RsNcJVoz0H6z3dBoTBtW.jpg",
         "vote_average": 7.934,
         "release_date": "2003-11-02",
-        "popularity": 62.4881
+        "popularity": 60.2502
     },
     {
         "id": 14610,
@@ -3045,7 +3021,7 @@
         "poster_path": "/ugYAGyxwajuplDUUYT8Bzbj8eNR.jpg",
         "vote_average": 4.1,
         "release_date": "1999-01-25",
-        "popularity": 62.4673
+        "popularity": 72.2558
     },
     {
         "id": 918,
@@ -3057,7 +3033,7 @@
         "poster_path": "/6rhuM3oMoEWKxAdrm7IyM8oq8cC.jpg",
         "vote_average": 7.916,
         "release_date": "1972-09-17",
-        "popularity": 62.4463
+        "popularity": 59.8119
     },
     {
         "id": 85009,
@@ -3069,7 +3045,7 @@
         "poster_path": "/zvS0sib3PgjlyPol1iHbalujTCp.jpg",
         "vote_average": 8.2,
         "release_date": "1998-04-01",
-        "popularity": 62.2719
+        "popularity": 38.5623
     },
     {
         "id": 4482,
@@ -3081,7 +3057,7 @@
         "poster_path": "/7UZVO1SclbgVWM2ELrwWGaS7i94.jpg",
         "vote_average": 7.864,
         "release_date": "1964-09-17",
-        "popularity": 62.2606
+        "popularity": 48.4695
     },
     {
         "id": 314,
@@ -3093,7 +3069,7 @@
         "poster_path": "/tsbBTABtNgu0ycsFpnIhiQ5woOM.jpg",
         "vote_average": 7.542,
         "release_date": "2001-09-26",
-        "popularity": 62.1372
+        "popularity": 57.0632
     },
     {
         "id": 71932,
@@ -3105,7 +3081,7 @@
         "poster_path": "/7f6wnV0tkxn5sif7LqjyzN6eLk6.jpg",
         "vote_average": 5.5,
         "release_date": "",
-        "popularity": 61.9647
+        "popularity": 53.9845
     },
     {
         "id": 74016,
@@ -3117,15 +3093,15 @@
         "poster_path": "/2IkYQJlT26yXef2iot7dhRtavSC.jpg",
         "vote_average": 8.394,
         "release_date": "2018-01-21",
-        "popularity": 61.9475
+        "popularity": 54.1441
     },
     {
         "id": 153312,
         "type": "tv",
         "title": "Tulsa King",
-        "title_ar": "Tulsa King",
+        "title_ar": "ملك تولسا",
         "overview": "New York mafia capo Dwight \"The General\" Manfredi is released from prison after 25 years and exiled by his boss to set up shop in Tulsa, Oklahoma. Realizing that his mob family may not have his best interests in mind, Dwight slowly builds a crew.",
-        "overview_ar": "New York mafia capo Dwight \"The General\" Manfredi is released from prison after 25 years and exiled by his boss to set up shop in Tulsa, Oklahoma. Realizing that his mob family may not have his best interests in mind, Dwight slowly builds a crew.",
+        "overview_ar": "في إطار من الجريمة والدراما، يتناول العمل قصة زعيم عصابات إيطالي يحاول إعادة تأسيس المافيا الإيطالية من جديد، ذلك في مدينة كانساس سيتي بولاية ميسوري.",
         "poster_path": "/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
         "vote_average": 8.3,
         "release_date": "2022-11-13",
@@ -3331,7 +3307,7 @@
         "overview": "",
         "overview_ar": "",
         "poster_path": "/5xFzmTTC4ITaFkiwzohTK1UUNX3.jpg",
-        "vote_average": 8.267,
+        "vote_average": 8.273,
         "release_date": "2025-10-07",
         "popularity": 63.0621
     },
@@ -3360,6 +3336,30 @@
         "popularity": 49.8401
     },
     {
+        "id": 46831,
+        "type": "tv",
+        "title": "Državni posao",
+        "title_ar": "Државни посао",
+        "overview": "The backbone of the \"Državni Posao (Government Job)\" are satirical talks between the three actors, the comments are reminiscent of the \"stand-up\" form. These are short, witty comments and observations on daily life, circumstances, sociopolitical situation, sports, entertainment world, their personal opinions on various topics. The main idea is to present day in a non-existent government company and three employees of thinking about daily events in it, but also about life and society in general. Topics drawn from the daily and weekly press, for various blogs, websites, talk about movies, series, shows - radio and television. The idea is that actors humorously comment on current events, to laugh viewers and encourage them to think about them.",
+        "overview_ar": "The backbone of the \"Državni Posao (Government Job)\" are satirical talks between the three actors, the comments are reminiscent of the \"stand-up\" form. These are short, witty comments and observations on daily life, circumstances, sociopolitical situation, sports, entertainment world, their personal opinions on various topics. The main idea is to present day in a non-existent government company and three employees of thinking about daily events in it, but also about life and society in general. Topics drawn from the daily and weekly press, for various blogs, websites, talk about movies, series, shows - radio and television. The idea is that actors humorously comment on current events, to laugh viewers and encourage them to think about them.",
+        "poster_path": "/sceVlRK5RvnU1qjNipyWDHQXB7x.jpg",
+        "vote_average": 7.909,
+        "release_date": "2012-09-24",
+        "popularity": 69.8773
+    },
+    {
+        "id": 62710,
+        "type": "tv",
+        "title": "Blindspot",
+        "title_ar": "Blindspot",
+        "overview": "A vast international plot explodes when a beautiful Jane Doe is discovered naked in Times Square, completely covered in mysterious, intricate tattoos with no memory of who she is or how she got there. But there's one tattoo that is impossible to miss: the name of FBI agent Kurt Weller, emblazoned across her back. \"Jane,\" Agent Weller and the rest of the FBI quickly realize that each mark on her body is a crime to solve, leading them closer to the truth about her identity and the mysteries to be revealed.",
+        "overview_ar": "A vast international plot explodes when a beautiful Jane Doe is discovered naked in Times Square, completely covered in mysterious, intricate tattoos with no memory of who she is or how she got there. But there's one tattoo that is impossible to miss: the name of FBI agent Kurt Weller, emblazoned across her back. \"Jane,\" Agent Weller and the rest of the FBI quickly realize that each mark on her body is a crime to solve, leading them closer to the truth about her identity and the mysteries to be revealed.",
+        "poster_path": "/4AeYzamQmd9Fa6hawDmYKbdvBSe.jpg",
+        "vote_average": 7.377,
+        "release_date": "2015-09-21",
+        "popularity": 54.5869
+    },
+    {
         "id": 83867,
         "type": "tv",
         "title": "Andor",
@@ -3377,7 +3377,7 @@
         "title": "One Tree Hill",
         "title_ar": "One Tree Hill",
         "overview": "In Tree Hill, North Carolina two half brothers share a last name and nothing else. Brooding, blue-collar Lucas is a talented street-side basketball player, but his skills are appreciated only by his friends at the river court. Popular, affluent Nathan basks in the hero-worship of the town, as the star of his high school team. And both boys are the son of former college ball player Dan Scott whose long ago choice to abandon Lucas and his mother Karen, will haunt him long into his life with wife Deb and their son Nathan.",
-        "overview_ar": "In Tree Hill, North Carolina two half brothers share a last name and nothing else. Brooding, blue-collar Lucas is a talented street-side basketball player, but his skills are appreciated only by his friends at the river court. Popular, affluent Nathan basks in the hero-worship of the town, as the star of his high school team. And both boys are the son of former college ball player Dan Scott whose long ago choice to abandon Lucas and his mother Karen, will haunt him long into his life with wife Deb and their son Nathan.",
+        "overview_ar": "في تري هيل، كارولينا الشمالية، يشترك شقيقان غير شقيقين في اسم عائلة ولا شيء آخر. لوكاس هو لاعب كرة سلة موهوب على جانب الشارع، ولكن مهاراته لا يقدرها سوى أصدقائه في ملعب النهر. يتشفق ناثان الشهير والثري في عبادة البطل في المدينة، كنجم لفريق مدرسته الثانوية. وكلا الصبيين هما ابن لاعب الكرة الجامعي السابق دان سكوت الذي سيطارده منذ فترة طويلة اختياره للتخلي عن لوكاس وأمه كارين، لفترة طويلة في حياته مع زوجته ديب وابنهما ناثان.",
         "poster_path": "/sOrelBaAhp7DZbPTivDwKEyPslC.jpg",
         "vote_average": 7.8,
         "release_date": "2003-09-23",
@@ -3609,7 +3609,7 @@
         "poster_path": "/vhnrkTGYPqcB63ALcSJm0WoaKHT.jpg",
         "vote_average": 7.955,
         "release_date": "2009-09-17",
-        "popularity": 58.3663
+        "popularity": 52.2316
     },
     {
         "id": 33907,
@@ -3621,7 +3621,7 @@
         "poster_path": "/7HgDYRYjym4BwbhKaqTQq771SKb.jpg",
         "vote_average": 8.1,
         "release_date": "2010-09-26",
-        "popularity": 58.1913
+        "popularity": 56.7699
     },
     {
         "id": 4238,
@@ -3633,7 +3633,7 @@
         "poster_path": "/vXs300Yvjy4Kr0iHgBtajHkYbAt.jpg",
         "vote_average": 7.121,
         "release_date": "1998-09-21",
-        "popularity": 58.1507
+        "popularity": 54.2348
     },
     {
         "id": 46533,
@@ -3645,7 +3645,7 @@
         "poster_path": "/w1UBlxEXhbKe8sp0fxFZh7MqTce.jpg",
         "vote_average": 7.9,
         "release_date": "2013-01-30",
-        "popularity": 58.0929
+        "popularity": 48.609
     },
     {
         "id": 4598,
@@ -3657,7 +3657,7 @@
         "poster_path": "/b0bXUCfpcsgQ6EVVmucU2G76ixT.jpg",
         "vote_average": 7.905,
         "release_date": "2004-10-03",
-        "popularity": 58.0869
+        "popularity": 52.0593
     },
     {
         "id": 12786,
@@ -3669,7 +3669,7 @@
         "poster_path": "/1S8gnT06MDkAmHmzDLSVughE0t0.jpg",
         "vote_average": 7.7,
         "release_date": "2008-01-24",
-        "popularity": 58.0394
+        "popularity": 63.1063
     },
     {
         "id": 77169,
@@ -3681,7 +3681,7 @@
         "poster_path": "/6POBWybSBDBKjSs1VAQcnQC1qyt.jpg",
         "vote_average": 8.205,
         "release_date": "2018-05-02",
-        "popularity": 58.0096
+        "popularity": 56.8133
     },
     {
         "id": 119051,
@@ -3691,9 +3691,9 @@
         "overview": "Smart, sarcastic and a little dead inside, Wednesday Addams investigates twisted mysteries while making new friends — and foes — at Nevermore Academy.",
         "overview_ar": "تحقّق \"وينزداي آدامز\"، الفتاة الذكية والساخرة ومتبلّدة المشاعر، في ألغاز غامضة في الوقت الذي تكسب فيه الأصدقاء والأعداء الجُدد في أكاديمية \"نيفرمور\".",
         "poster_path": "/36xXlhEpQqVVPuiZhfoQuaY4OlA.jpg",
-        "vote_average": 8.4,
+        "vote_average": 8.358,
         "release_date": "2022-11-23",
-        "popularity": 57.8654
+        "popularity": 53.6009
     },
     {
         "id": 71026,
@@ -3705,7 +3705,7 @@
         "poster_path": "/lu2DNsIQgn1Jb6djHvrqJSUQXXl.jpg",
         "vote_average": 6.421,
         "release_date": "2014-09-01",
-        "popularity": 57.6184
+        "popularity": 37.0499
     },
     {
         "id": 46896,
@@ -3717,7 +3717,7 @@
         "poster_path": "/keJOhJXGiLL54EW6QocbyvQGquA.jpg",
         "vote_average": 8.589,
         "release_date": "2013-10-03",
-        "popularity": 57.6175
+        "popularity": 51.2546
     },
     {
         "id": 83631,
@@ -3729,7 +3729,7 @@
         "poster_path": "/wa3ZQE9kLnqwN3vQ0NNjg1NPsCa.jpg",
         "vote_average": 7.994,
         "release_date": "2019-03-27",
-        "popularity": 57.581
+        "popularity": 45.1052
     },
     {
         "id": 125561,
@@ -3741,7 +3741,7 @@
         "poster_path": "/3jjVBzeGjkHA0qhRXNQGN2nooqS.jpg",
         "vote_average": 10.0,
         "release_date": "2008-10-20",
-        "popularity": 57.4261
+        "popularity": 29.7413
     },
     {
         "id": 106449,
@@ -3753,7 +3753,7 @@
         "poster_path": "/i6SYuRHPtODpZ8VX9ql21nj0tDq.jpg",
         "vote_average": 8.5,
         "release_date": "2020-07-25",
-        "popularity": 57.4231
+        "popularity": 42.6804
     },
     {
         "id": 157741,
@@ -3765,7 +3765,7 @@
         "poster_path": "/hYthRgS1nvQkGILn9YmqsF8kSk6.jpg",
         "vote_average": 8.031,
         "release_date": "2024-11-17",
-        "popularity": 57.4101
+        "popularity": 51.865
     },
     {
         "id": 69478,
@@ -3777,7 +3777,7 @@
         "poster_path": "/eGUT7j3n3rn5yGihlCgwUnD70HV.jpg",
         "vote_average": 8.149,
         "release_date": "2017-04-26",
-        "popularity": 57.3483
+        "popularity": 57.5929
     },
     {
         "id": 259856,
@@ -3787,9 +3787,9 @@
         "overview": "During a violent confrontation arranged between radical fans of two football clubs, Salvador Aguirre, an ambulance driver, rescues his injured daughter Milena, a member of the ultra group, which defends racist, violent and homophobic values, totally opposed to those he instilled in her.",
         "overview_ar": "During a violent confrontation arranged between radical fans of two football clubs, Salvador Aguirre, an ambulance driver, rescues his injured daughter Milena, a member of the ultra group, which defends racist, violent and homophobic values, totally opposed to those he instilled in her.",
         "poster_path": "/j9xM69rH3O8ooYeUKwqh4aKYkGE.jpg",
-        "vote_average": 6.647,
+        "vote_average": 6.667,
         "release_date": "2026-02-06",
-        "popularity": 57.2909
+        "popularity": 55.4675
     },
     {
         "id": 95603,
@@ -3799,9 +3799,9 @@
         "overview": "The life of Osman Bey, the son of Ertuğrul and the founder of the Ottoman Empire, as he established and controlled it, facing internal and external struggles against Byzantium and the Mongol Ilkhanate.",
         "overview_ar": "ملحمة تاريخية من أضخم إنتاجات الدراما التركية، تعرض سيرة المؤسس عثمان بن أرطغرل، ومعاركه ضد مغول الشرق وبيزنطيي الغرب وضعف الدولة وخيانات الأقربين، وجهاده ومحاربوه لزرع الشجرة التي ظللت فروعها الدنيا.",
         "poster_path": "/tu4BWsGFHcYDWulZwHxylA91vo0.jpg",
-        "vote_average": 7.9,
+        "vote_average": 7.873,
         "release_date": "2019-11-20",
-        "popularity": 57.2832
+        "popularity": 56.7039
     },
     {
         "id": 10083,
@@ -3813,7 +3813,7 @@
         "poster_path": "/cSvrnCMFX8OWqHSkUwERfKU7mnP.jpg",
         "vote_average": 7.2,
         "release_date": "1963-09-17",
-        "popularity": 57.1787
+        "popularity": 46.3952
     },
     {
         "id": 2290,
@@ -3825,7 +3825,7 @@
         "poster_path": "/l0JYr2iqwId6VOmCV8dHzlIM6Wd.jpg",
         "vote_average": 8.027,
         "release_date": "2004-07-15",
-        "popularity": 56.7811
+        "popularity": 48.5988
     },
     {
         "id": 45790,
@@ -3837,7 +3837,7 @@
         "poster_path": "/ogAWwbh3frWtiTyyXrZaVFtqCgp.jpg",
         "vote_average": 8.551,
         "release_date": "2012-10-06",
-        "popularity": 56.7672
+        "popularity": 47.8447
     },
     {
         "id": 62223,
@@ -4560,18 +4560,6 @@
         "popularity": 46.8312
     },
     {
-        "id": 500,
-        "type": "tv",
-        "title": "Mad About You",
-        "title_ar": "Mad About You",
-        "overview": "Young, urban newlyweds Paul and Jamie Buchman try to sustain their marital bliss while sidestepping the hurdles of love in the '90s.",
-        "overview_ar": "Young, urban newlyweds Paul and Jamie Buchman try to sustain their marital bliss while sidestepping the hurdles of love in the '90s.",
-        "poster_path": "/vvnslQjc1LnERuroGVh8bPdBi2r.jpg",
-        "vote_average": 6.705,
-        "release_date": "1992-09-23",
-        "popularity": 51.8349
-    },
-    {
         "id": 1215,
         "type": "tv",
         "title": "Californication",
@@ -4581,7 +4569,7 @@
         "poster_path": "/jPqOY8cq9KXQN4bD7zJGHCNvcb4.jpg",
         "vote_average": 7.638,
         "release_date": "2007-08-13",
-        "popularity": 51.6866
+        "popularity": 45.2485
     },
     {
         "id": 21510,
@@ -4593,7 +4581,7 @@
         "poster_path": "/417XNiGvdzCsG9kDnnQJYaBsIrx.jpg",
         "vote_average": 8.243,
         "release_date": "2009-10-23",
-        "popularity": 51.6546
+        "popularity": 45.9147
     },
     {
         "id": 1685,
@@ -4605,7 +4593,7 @@
         "poster_path": "/3JKvoVulQXwibxdGQYqBQyZBlBj.jpg",
         "vote_average": 6.2,
         "release_date": "2004-12-01",
-        "popularity": 51.6541
+        "popularity": 49.7164
     },
     {
         "id": 45247,
@@ -4617,7 +4605,7 @@
         "poster_path": "/x1yYnCaK8gLnLgQSnd9IGoapHbx.jpg",
         "vote_average": 7.6,
         "release_date": "2011-10-05",
-        "popularity": 51.5537
+        "popularity": 41.4778
     },
     {
         "id": 4357,
@@ -4629,7 +4617,7 @@
         "poster_path": "/1PnUBKbDR1F2w5qicblLg1QGTif.jpg",
         "vote_average": 7.555,
         "release_date": "1966-09-17",
-        "popularity": 51.4293
+        "popularity": 46.5226
     },
     {
         "id": 3562,
@@ -4641,7 +4629,7 @@
         "poster_path": "/giUBXYnDAaJgNqA6iE3BMVE2EHp.jpg",
         "vote_average": 6.993,
         "release_date": "1974-03-03",
-        "popularity": 51.3202
+        "popularity": 47.5055
     },
     {
         "id": 14929,
@@ -4653,7 +4641,7 @@
         "poster_path": "/uc2gtWczT58BiAUJWFz9P5aZmNF.jpg",
         "vote_average": 8.267,
         "release_date": "2007-10-14",
-        "popularity": 51.2606
+        "popularity": 44.2291
     },
     {
         "id": 84773,
@@ -4665,7 +4653,7 @@
         "poster_path": "/kf5Hz70tjNAHg4swGDzOr9BfoZ1.jpg",
         "vote_average": 7.252,
         "release_date": "2022-09-01",
-        "popularity": 51.1601
+        "popularity": 49.0059
     },
     {
         "id": 121,
@@ -4677,7 +4665,7 @@
         "poster_path": "/xinqAmYrZ1TEwowcQhgTkZVtVE0.jpg",
         "vote_average": 7.881,
         "release_date": "1963-11-23",
-        "popularity": 51.0323
+        "popularity": 48.5882
     },
     {
         "id": 3845,
@@ -4689,7 +4677,7 @@
         "poster_path": "/sepIwNPCEhkKvFOQSjXK6tekkjR.jpg",
         "vote_average": 7.634,
         "release_date": "1974-01-15",
-        "popularity": 50.9901
+        "popularity": 49.1568
     },
     {
         "id": 4616,
@@ -4701,7 +4689,7 @@
         "poster_path": "/qjUn6GVZVDifLHB7bvVrgZsOfzE.jpg",
         "vote_average": 7.529,
         "release_date": "1995-09-04",
-        "popularity": 50.927
+        "popularity": 43.2368
     },
     {
         "id": 33765,
@@ -4713,19 +4701,7 @@
         "poster_path": "/fwW7WgJIjhBsnzk87Gyh6g9187m.jpg",
         "vote_average": 8.2,
         "release_date": "2010-10-10",
-        "popularity": 50.9065
-    },
-    {
-        "id": 37606,
-        "type": "tv",
-        "title": "The Amazing World of Gumball",
-        "title_ar": "عالم غامبول المدهش",
-        "overview": "The life of Gumball Watterson, a 12-year old cat who attends middle school in Elmore. Accompanied by his pet, adoptive brother, and best friend Darwin Watterson, he frequently finds himself involved in various shenanigans around the city, during which he interacts with various family members: Anais, Richard, and Nicole Watterson, and other various citizens.",
-        "overview_ar": "حياة غامبول واترسون ، قطة تبلغ من العمر 12 عاما تلتحق بالمدرسة المتوسطة في إلمور. برفقة حيوانه الأليف وشقيقه بالتبني وصديقه المفضل داروين واترسون ، يجد نفسه في كثير من الأحيان متورطا في العديد من الخدع في جميع أنحاء المدينة ، حيث يتفاعل مع مختلف أفراد الأسرة: أنايس وريتشارد ونيكول واترسون وغيرهم من المواطنين المختلفين.",
-        "poster_path": "/VYnnyA2hyxi3VUPgCA71mMtt69.jpg",
-        "vote_average": 8.549,
-        "release_date": "2011-05-03",
-        "popularity": 50.7642
+        "popularity": 43.1558
     },
     {
         "id": 3050,
@@ -4737,7 +4713,7 @@
         "poster_path": "/7OKZSUIWhjFP0F2s478zTrAYwDB.jpg",
         "vote_average": 7.6,
         "release_date": "1997-03-04",
-        "popularity": 50.6736
+        "popularity": 44.3403
     },
     {
         "id": 37854,
@@ -4749,7 +4725,7 @@
         "poster_path": "/cMD9Ygz11zjJzAovURpO75Qg7rT.jpg",
         "vote_average": 8.723,
         "release_date": "1999-10-20",
-        "popularity": 50.6723
+        "popularity": 46.8707
     },
     {
         "id": 19885,
@@ -4761,7 +4737,7 @@
         "poster_path": "/7WTsnHkbA0FaG6R9twfFde0I9hl.jpg",
         "vote_average": 8.514,
         "release_date": "2010-07-25",
-        "popularity": 50.6684
+        "popularity": 44.6456
     },
     {
         "id": 31572,
@@ -4773,7 +4749,7 @@
         "poster_path": "/aywOqgw5opNykCW4R8os1liPVnq.jpg",
         "vote_average": 7.976,
         "release_date": "1971-10-24",
-        "popularity": 50.6593
+        "popularity": 43.7687
     },
     {
         "id": 61511,
@@ -4785,7 +4761,7 @@
         "poster_path": "/u8LUC3O1hiEDKP2SFZK68iYqMzl.jpg",
         "vote_average": 7.6,
         "release_date": "2013-01-14",
-        "popularity": 50.6383
+        "popularity": 47.6334
     },
     {
         "id": 94605,
@@ -4797,7 +4773,7 @@
         "poster_path": "/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg",
         "vote_average": 8.753,
         "release_date": "2021-11-06",
-        "popularity": 50.4824
+        "popularity": 45.7729
     },
     {
         "id": 5371,
@@ -4809,7 +4785,7 @@
         "poster_path": "/zswxst53aM8g2LysdVbtQNJAiKM.jpg",
         "vote_average": 7.965,
         "release_date": "2007-09-08",
-        "popularity": 50.4788
+        "popularity": 47.334
     },
     {
         "id": 32608,
@@ -4821,7 +4797,7 @@
         "poster_path": "/6X2hftdC8y78SKMSgfzeUItqaVq.jpg",
         "vote_average": 7.0,
         "release_date": "2010-04-20",
-        "popularity": 50.4202
+        "popularity": 48.6037
     },
     {
         "id": 45094,
@@ -4833,7 +4809,7 @@
         "poster_path": "/xkyQduQCbHFkXCThIQEnqsgl2CP.jpg",
         "vote_average": 6.9,
         "release_date": "2013-01-21",
-        "popularity": 50.3416
+        "popularity": 46.514
     },
     {
         "id": 229856,
@@ -4845,7 +4821,7 @@
         "poster_path": "/9KtpBtz5dk4o1ztS3FSqCRpOT4g.jpg",
         "vote_average": 0.0,
         "release_date": "2019-03-20",
-        "popularity": 50.1647
+        "popularity": 23.4109
     },
     {
         "id": 10980,
@@ -4857,7 +4833,7 @@
         "poster_path": "/6aJRq7FGs2axLOdZNJ2G4IOQtMx.jpg",
         "vote_average": 7.274,
         "release_date": "1957-09-14",
-        "popularity": 50.1048
+        "popularity": 42.2416
     },
     {
         "id": 1422,
@@ -4869,7 +4845,7 @@
         "poster_path": "/juK49EV9pFGVITn04A58rrqvLXq.jpg",
         "vote_average": 7.6,
         "release_date": "2009-09-30",
-        "popularity": 50.0424
+        "popularity": 47.9279
     },
     {
         "id": 70523,
@@ -4881,7 +4857,7 @@
         "poster_path": "/7CFCzWIZZcnxHke3yAQiGPWXHwF.jpg",
         "vote_average": 8.424,
         "release_date": "2017-12-01",
-        "popularity": 50.0363
+        "popularity": 48.4659
     },
     {
         "id": 62560,
@@ -4893,7 +4869,7 @@
         "poster_path": "/kv1nRqgebSsREnd7vdC2pSGjpLo.jpg",
         "vote_average": 8.264,
         "release_date": "2015-06-24",
-        "popularity": 50.0163
+        "popularity": 44.6819
     },
     {
         "id": 20111,
@@ -4905,7 +4881,7 @@
         "poster_path": "/rWgdDIq4JeaI36KdmLPkYcQjBQ3.jpg",
         "vote_average": 7.6,
         "release_date": "2002-10-05",
-        "popularity": 49.9312
+        "popularity": 38.272
     },
     {
         "id": 203599,
@@ -4917,7 +4893,7 @@
         "poster_path": "/qo6y0XvSBlKM3XCbYVdcR3a6qyQ.jpg",
         "vote_average": 7.2,
         "release_date": "2005-06-06",
-        "popularity": 49.9238
+        "popularity": 38.57
     },
     {
         "id": 512,
@@ -4929,7 +4905,7 @@
         "poster_path": "/rWQmgNLdyZGIL6Xuo9ImL0Kh6wt.jpg",
         "vote_average": 7.92,
         "release_date": "1999-09-23",
-        "popularity": 49.7864
+        "popularity": 43.1279
     },
     {
         "id": 73375,
@@ -4941,7 +4917,7 @@
         "poster_path": "/cO4py3L3q5GNPrA0qr1wVDrosK1.jpg",
         "vote_average": 7.68,
         "release_date": "2018-08-30",
-        "popularity": 49.6026
+        "popularity": 45.4806
     },
     {
         "id": 65270,
@@ -4953,7 +4929,7 @@
         "poster_path": "/uRUZDsvUfIP3JUEgOC8ReBlQQUU.jpg",
         "vote_average": 5.8,
         "release_date": "2007-05-30",
-        "popularity": 49.4035
+        "popularity": 51.758
     },
     {
         "id": 2384,
@@ -4965,7 +4941,7 @@
         "poster_path": "/t57NXzTrwp5rnPXiaX4BThrDxt1.jpg",
         "vote_average": 7.523,
         "release_date": "1982-09-26",
-        "popularity": 49.3358
+        "popularity": 42.0237
     },
     {
         "id": 2750,
@@ -4977,7 +4953,7 @@
         "poster_path": "/yRwf0yAZvYMfFLMonPusv6F256s.jpg",
         "vote_average": 7.5,
         "release_date": "1996-02-21",
-        "popularity": 49.3288
+        "popularity": 44.5147
     },
     {
         "id": 106,
@@ -4989,7 +4965,7 @@
         "poster_path": "/3KvTKLH40z5zDMilg2lXqmOUrRy.jpg",
         "vote_average": 7.611,
         "release_date": "1960-10-03",
-        "popularity": 49.3116
+        "popularity": 42.9892
     },
     {
         "id": 307423,
@@ -4999,9 +4975,9 @@
         "overview": "A respected and renowned businesswoman and philanthropist, considered one of the most sought-after brides in the country, who is left at the altar on her wedding day. Humiliated, betrayed, and turned into a target of public scrutiny, Doménica decides to flee and take refuge in one of her parents’ old estates. There, marked by pain, she faces new challenges and meets Luis Fernando, the owner of the neighboring estate, who also carries a painful past. Between them, an explosive relationship develops, marked by pride, misunderstandings, and growing attraction, where land disputes intertwine with their shared desire to rebuild, heal, and give new meaning to their lives.",
         "overview_ar": "A respected and renowned businesswoman and philanthropist, considered one of the most sought-after brides in the country, who is left at the altar on her wedding day. Humiliated, betrayed, and turned into a target of public scrutiny, Doménica decides to flee and take refuge in one of her parents’ old estates. There, marked by pain, she faces new challenges and meets Luis Fernando, the owner of the neighboring estate, who also carries a painful past. Between them, an explosive relationship develops, marked by pride, misunderstandings, and growing attraction, where land disputes intertwine with their shared desire to rebuild, heal, and give new meaning to their lives.",
         "poster_path": "/A02M5F5DcQ3glHrvBUSGnzTlvW1.jpg",
-        "vote_average": 8.258,
+        "vote_average": 8.243,
         "release_date": "2025-12-08",
-        "popularity": 49.2969
+        "popularity": 53.2621
     },
     {
         "id": 208569,
@@ -5013,19 +4989,7 @@
         "poster_path": "/qG5O46gUxxYGImld03tl2zLhvrg.jpg",
         "vote_average": 7.4,
         "release_date": "2023-01-03",
-        "popularity": 49.2469
-    },
-    {
-        "id": 301507,
-        "type": "tv",
-        "title": "Heated Rivalry",
-        "title_ar": "Heated Rivalry",
-        "overview": "Two of the biggest stars in Major League Hockey are bound by ambition, rivalry, and a magnetic pull neither of them fully understands. What begins as a secret fling between two fresh faced rookies evolves into a years-long journey of love, denial, and self-discovery. Over the next eight years, as they chase glory on the ice, they struggle to navigate their feelings for each other. Torn between the sport they live for and the love they can’t ignore, they must decide if there’s room in their fiercely competitive world for something as fragile – and powerful – as real love.",
-        "overview_ar": "Two of the biggest stars in Major League Hockey are bound by ambition, rivalry, and a magnetic pull neither of them fully understands. What begins as a secret fling between two fresh faced rookies evolves into a years-long journey of love, denial, and self-discovery. Over the next eight years, as they chase glory on the ice, they struggle to navigate their feelings for each other. Torn between the sport they live for and the love they can’t ignore, they must decide if there’s room in their fiercely competitive world for something as fragile – and powerful – as real love.",
-        "poster_path": "/epgr7n61vVIniyAghz2GYj22DkC.jpg",
-        "vote_average": 8.771,
-        "release_date": "2025-11-28",
-        "popularity": 49.1741
+        "popularity": 41.8807
     },
     {
         "id": 69740,
@@ -5037,7 +5001,43 @@
         "poster_path": "/pCGyPVrI9Fzw6rE1Pvi4BIXF6ET.jpg",
         "vote_average": 8.21,
         "release_date": "2017-07-21",
-        "popularity": 49.1706
+        "popularity": 45.1781
+    },
+    {
+        "id": 2883,
+        "type": "tv",
+        "title": "Dark Shadows",
+        "title_ar": "Dark Shadows",
+        "overview": "Dark Shadows is an American gothic soap opera that originally aired weekdays on the ABC television network, from June 27, 1966, to April 2, 1971. The show was created by Dan Curtis. The story bible, which was written by Art Wallace, does not mention any supernatural elements. It was unprecedented in daytime television when ghosts were introduced about six months after it began.\n\nThe series became hugely popular when vampire Barnabas Collins appeared a year into its run. Dark Shadows also featured werewolves, zombies, man-made monsters, witches, warlocks, time travel, and a parallel universe. A small company of actors each played many roles; indeed, as actors came and went, some characters were played by more than one actor. Major writers besides Art Wallace included Malcolm Marmorstein, Sam Hall, Gordon Russell, and Violet Welles.",
+        "overview_ar": "Dark Shadows is an American gothic soap opera that originally aired weekdays on the ABC television network, from June 27, 1966, to April 2, 1971. The show was created by Dan Curtis. The story bible, which was written by Art Wallace, does not mention any supernatural elements. It was unprecedented in daytime television when ghosts were introduced about six months after it began.\n\nThe series became hugely popular when vampire Barnabas Collins appeared a year into its run. Dark Shadows also featured werewolves, zombies, man-made monsters, witches, warlocks, time travel, and a parallel universe. A small company of actors each played many roles; indeed, as actors came and went, some characters were played by more than one actor. Major writers besides Art Wallace included Malcolm Marmorstein, Sam Hall, Gordon Russell, and Violet Welles.",
+        "poster_path": "/eRtnI7qTJIiPUmlY3J8TTM3jlT7.jpg",
+        "vote_average": 7.261,
+        "release_date": "1966-06-27",
+        "popularity": 43.7444
+    },
+    {
+        "id": 41727,
+        "type": "tv",
+        "title": "Banshee",
+        "title_ar": "Banshee",
+        "overview": "Banshee is an American drama television series set in a small town in Pennsylvania Amish country and features an enigmatic ex-con posing as a murdered sheriff who imposes his own brand of justice while also cooking up plans that serve his own interests.",
+        "overview_ar": "Banshee is an American drama television series set in a small town in Pennsylvania Amish country and features an enigmatic ex-con posing as a murdered sheriff who imposes his own brand of justice while also cooking up plans that serve his own interests.",
+        "poster_path": "/5nXFiz8Rn8eezVjSTZBd7HmnF1G.jpg",
+        "vote_average": 8.0,
+        "release_date": "2013-01-11",
+        "popularity": 45.0434
+    },
+    {
+        "id": 213306,
+        "type": "tv",
+        "title": "Cross",
+        "title_ar": "Cross",
+        "overview": "Alex Cross is a brilliant but flawed homicide detective and full of contradictions. A doting father and family man, Cross is single-minded to the point of obsession when he hunts killers. He is desperate for love, but his wife’s murder has left him too damaged to receive it.",
+        "overview_ar": "Alex Cross is a brilliant but flawed homicide detective and full of contradictions. A doting father and family man, Cross is single-minded to the point of obsession when he hunts killers. He is desperate for love, but his wife’s murder has left him too damaged to receive it.",
+        "poster_path": "/6hhKdavCEZi8d584ZtIrQIrBvZI.jpg",
+        "vote_average": 6.973,
+        "release_date": "2024-11-14",
+        "popularity": 48.8751
     },
     {
         "id": 41727,
@@ -8160,18 +8160,6 @@
         "popularity": 33.6993
     },
     {
-        "id": 900,
-        "type": "tv",
-        "title": "Skins",
-        "title_ar": "Skins",
-        "overview": "Irreverent comedy drama which follows the messy lives, loves, delirious highs and inevitable lows of a group of raucous teenage friends in Bristol.",
-        "overview_ar": "Irreverent comedy drama which follows the messy lives, loves, delirious highs and inevitable lows of a group of raucous teenage friends in Bristol.",
-        "poster_path": "/1fC7UYY12Cy0TzNEjzV2K7gxPgi.jpg",
-        "vote_average": 8.141,
-        "release_date": "2007-01-25",
-        "popularity": 33.6993
-    },
-    {
         "id": 14210,
         "type": "tv",
         "title": "Polizeiruf 110",
@@ -8254,6 +8242,18 @@
         "vote_average": 7.252,
         "release_date": "2014-09-12",
         "popularity": 29.9769
+    },
+    {
+        "id": 50825,
+        "type": "tv",
+        "title": "Sleepy Hollow",
+        "title_ar": "Sleepy Hollow",
+        "overview": "Ichabod Crane is resurrected and pulled two and a half centuries through time to unravel a mystery that dates all the way back to the founding fathers.",
+        "overview_ar": "Ichabod Crane is resurrected and pulled two and a half centuries through time to unravel a mystery that dates all the way back to the founding fathers.",
+        "poster_path": "/2RHj62XneYMCRPAyQrEIrKVij12.jpg",
+        "vote_average": 7.4,
+        "release_date": "2013-09-16",
+        "popularity": 36.8368
     },
     {
         "id": 32580,
@@ -8395,7 +8395,7 @@
         "overview": "100 years ago, the last remnants of humanity were forced to retreat behind the towering walls of a fortified city to escape the massive, man-eating Titans that roamed the land outside their fortress. Only the members of the Scouting Legion dared to stray beyond the safety of the walls – but even those brave warriors seldom returned alive. Those within the city clung to the illusion of a peaceful existence until the day that dream was shattered, and their slim chance at survival was reduced to one horrifying choice: kill – or be devoured!",
         "overview_ar": "تدور القصة حول حياة إيرين ييغر، وأخته المتبناة ميكاسا أكّرمان، وصديقهما أرمين أرليرت، الذين يعيشون في عالم حيث يسكن بقية الجنس البشري داخل مدن محاطة بأسوار ضخمة بسبب الظهور المفاجئ للعمالقة، مخلوقات ضخمة تقوم بالتهام البشر بلا سبب على ما يبدو. تتغير حياتهم للأبد بعد ظهور عملاق جبار وجلبه للدمار إلى موطنهم وموت والدة إيرين. سعيًا وراء الانتقام واستعادة العالم من يد العمالقة، قرر إيرين وميكاسا وأرمين الانضمام إلى فيلق الاستطلاع، مجموعة من نخبة الجنود يقاتلون العمالقة خارج الأسوار.",
         "poster_path": "/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg",
-        "vote_average": 8.672,
+        "vote_average": 8.7,
         "release_date": "2013-04-07",
         "popularity": 32.4787
     },
@@ -11019,7 +11019,7 @@
         "id": 8872,
         "type": "tv",
         "title": "Aquarion",
-        "title_ar": "Aquarion",
+        "title_ar": "アクエリオン",
         "overview": "Set in the future, a giant fighting machine called the Aquarion is humanity's only effective weapon in the fight against the technologically advanced species called the Shadow Angels.",
         "overview_ar": "Set in the future, a giant fighting machine called the Aquarion is humanity's only effective weapon in the fight against the technologically advanced species called the Shadow Angels.",
         "poster_path": "/b7nYCiRLElXOcSICrZ8jdBqQP1m.jpg",
@@ -12003,9 +12003,9 @@
         "id": 64196,
         "type": "tv",
         "title": "Overlord",
-        "title_ar": "السيد الأعلى",
+        "title_ar": "Overlord",
         "overview": "In the year 2138, virtual reality gaming is booming. Yggdrasil, a popular online game is quietly shut down one day. However, one player named Momonga decides to not log out. Momonga is then transformed into the image of a skeleton as \"the most powerful wizard.\" The world continues to change, with non-player characters (NPCs) beginning to feel emotion. Having no parents, friends, or place in society, this ordinary young man Momonga then strives to take over the new world the game has become.",
-        "overview_ar": "تجري احداث القصة في عام 2138 عندما يقرر إغلاق إحدى أكثر ألعاب تقمص الأدوار شهرة على الإنترنت والتي تدعى يغدراسيل. رغم ذلك الشاب “موموناغا” أحد اللاعبين المخضرمين يرفض تسجيل الخروج ، منتظرا بمفرده نهاية اللعبة ، لكن بعد مرور وقت طويل على الوقت المحدد للإغلاق ، لم يتم فصله منها. ليتضح له لاحقا أن شخصيات اللعبة تبدأ بإدراك وعيها تدريجيًا ، ليقرر استخدام مهاراته ليكون سيدا جديدا للعبة.",
+        "overview_ar": "In the year 2138, virtual reality gaming is booming. Yggdrasil, a popular online game is quietly shut down one day. However, one player named Momonga decides to not log out. Momonga is then transformed into the image of a skeleton as \"the most powerful wizard.\" The world continues to change, with non-player characters (NPCs) beginning to feel emotion. Having no parents, friends, or place in society, this ordinary young man Momonga then strives to take over the new world the game has become.",
         "poster_path": "/K8ZUjxaj9F0t3AwJDz8ypzBynM.jpg",
         "vote_average": 8.465,
         "release_date": "2015-07-07",
@@ -12017,7 +12017,7 @@
         "title": "The Marvelous Mrs. Maisel",
         "title_ar": "The Marvelous Mrs. Maisel",
         "overview": "It’s 1958 Manhattan and Miriam “Midge” Maisel has everything she’s ever wanted - the perfect husband, kids, and Upper West Side apartment. But when her life suddenly takes a turn and Midge must start over, she discovers a previously unknown talent - one that will take her all the way from the comedy clubs of Greenwich Village to a spot on Johnny Carson’s couch.",
-        "overview_ar": "إنه عام 1958 مانهاتن وميريام \"ميدج\" مايزل لديها كل ما تريده على الإطلاق - الزوج المثالي والأطفال وشقة الجانب الغربي العلوي . ولكن عندما تأخذ حياتها فجأة منعطفا ويجب أن تبدأ ميدج من جديد ، تكتشف موهبة لم تكن معروفة من قبل - موهبة ستأخذها على طول الطريق من نوادي الكوميديا في قرية غرينتش إلى مكان على أريكة جوني كارسون.",
+        "overview_ar": "It’s 1958 Manhattan and Miriam “Midge” Maisel has everything she’s ever wanted - the perfect husband, kids, and Upper West Side apartment. But when her life suddenly takes a turn and Midge must start over, she discovers a previously unknown talent - one that will take her all the way from the comedy clubs of Greenwich Village to a spot on Johnny Carson’s couch.",
         "poster_path": "/zS7fQiOZiKCVH2vlYSiIsFWW8hh.jpg",
         "vote_average": 8.049,
         "release_date": "2017-03-16",
@@ -13449,7 +13449,7 @@
         "poster_path": "/buFnsyWEg4pPR7dco5Vbsm6HCIY.jpg",
         "vote_average": 7.4,
         "release_date": "2000-09-11",
-        "popularity": 27.6922
+        "popularity": 26.3601
     },
     {
         "id": 243881,
@@ -13461,7 +13461,7 @@
         "poster_path": "/9pxRMetW8ZwnepLnIf37YWuNvgk.jpg",
         "vote_average": 7.987,
         "release_date": "2025-02-27",
-        "popularity": 27.6811
+        "popularity": 26.38
     },
     {
         "id": 72071,
@@ -13473,7 +13473,7 @@
         "poster_path": "/niD8X5pEXpmRUDhSPdDOgI3Gw5Q.jpg",
         "vote_average": 7.9,
         "release_date": "2018-01-07",
-        "popularity": 27.6624
+        "popularity": 26.0924
     },
     {
         "id": 46271,
@@ -13485,7 +13485,7 @@
         "poster_path": "/jDFFyXE04vv9pvHzJESgbJnNRc2.jpg",
         "vote_average": 1.8,
         "release_date": "2007-06-23",
-        "popularity": 27.6489
+        "popularity": 28.6858
     },
     {
         "id": 59186,
@@ -13497,7 +13497,7 @@
         "poster_path": "/tRLj19YXH9GPiaqlU7GwWyd6G5K.jpg",
         "vote_average": 7.928,
         "release_date": "2011-12-15",
-        "popularity": 27.6429
+        "popularity": 26.6087
     },
     {
         "id": 254002,
@@ -13509,7 +13509,7 @@
         "poster_path": "/keSNwdzmSgQzluKmqTI6kwDOFa7.jpg",
         "vote_average": 7.947,
         "release_date": "2015-03-12",
-        "popularity": 27.632
+        "popularity": 24.6134
     },
     {
         "id": 72517,
@@ -13521,7 +13521,7 @@
         "poster_path": "/yuHanbUUIv2UWRxxQFt9n8jtmOJ.jpg",
         "vote_average": 8.438,
         "release_date": "2017-07-12",
-        "popularity": 27.624
+        "popularity": 23.3639
     },
     {
         "id": 1847,
@@ -13533,7 +13533,7 @@
         "poster_path": "/ez0fX5nA68BJWL8jfP6dYr5WrcL.jpg",
         "vote_average": 7.0,
         "release_date": "1996-11-12",
-        "popularity": 27.6005
+        "popularity": 21.7621
     },
     {
         "id": 80968,
@@ -13545,7 +13545,7 @@
         "poster_path": "/aXwMx8OvRFMfI1RmkbJm6Bq1jVg.jpg",
         "vote_average": 7.922,
         "release_date": "2018-11-16",
-        "popularity": 27.5975
+        "popularity": 24.1522
     },
     {
         "id": 125364,
@@ -13557,7 +13557,7 @@
         "poster_path": "/3jAeJu40uKy0ondWdzQxu0A97MT.jpg",
         "vote_average": 1.0,
         "release_date": "2020-12-25",
-        "popularity": 27.5618
+        "popularity": 26.8186
     },
     {
         "id": 1892,
@@ -13569,7 +13569,7 @@
         "poster_path": "/fJXzwxCVr2TEkhhKRKcih9o5DYK.jpg",
         "vote_average": 7.916,
         "release_date": "1990-09-10",
-        "popularity": 27.5017
+        "popularity": 24.2903
     },
     {
         "id": 1706,
@@ -13581,7 +13581,7 @@
         "poster_path": "/76q5tPOPQkQYIuZu2SG6viZcp2b.jpg",
         "vote_average": 7.3,
         "release_date": "1996-09-19",
-        "popularity": 27.4835
+        "popularity": 23.7488
     },
     {
         "id": 89364,
@@ -13593,7 +13593,7 @@
         "poster_path": "/9fDLczJzCijwo9M73XkZPzsAull.jpg",
         "vote_average": 9.0,
         "release_date": "2018-03-21",
-        "popularity": 27.4791
+        "popularity": 30.4635
     },
     {
         "id": 4643,
@@ -13605,7 +13605,7 @@
         "poster_path": "/sLsaxED5dHQ4FSzIqN8xJgSAuF9.jpg",
         "vote_average": 10.0,
         "release_date": "2006-04-10",
-        "popularity": 27.4772
+        "popularity": 19.3798
     },
     {
         "id": 1307,
@@ -13617,7 +13617,7 @@
         "poster_path": "/v8Hdqnx4uvtZVnSHIQYiiTYnd16.jpg",
         "vote_average": 3.1,
         "release_date": "2001-10-29",
-        "popularity": 27.4646
+        "popularity": 31.7759
     },
     {
         "id": 823,
@@ -13629,7 +13629,7 @@
         "poster_path": "/gEpkEXGlWQFVX5r0EXGpgyqkYhr.jpg",
         "vote_average": 8.0,
         "release_date": "1986-09-06",
-        "popularity": 27.4573
+        "popularity": 24.5608
     },
     {
         "id": 5687,
@@ -13639,9 +13639,9 @@
         "overview": "Classic Saturday-morning cartoon series featuring magical blue elf-like creatures called Smurfs. The Smurfs, named for their personalities, inhabit a village of mushroom houses in an enchanted forest. These loveable creatures are led by Papa Smurf and live carefree... except for one major threat to their existance: Gargamel, an evil but inept wizard who lives in a stone-built house in the forest; and his feline companion, the equally nasty Azrael. ",
         "overview_ar": "السَّنافِر هي مّخلوقات زرقاء صغيرة تعيش في غابة هادئة وتَتَّخِذُ من الفِطرِبُيُوتاً . يحاولون مرارًا التَّفَوَُق على شَرشَبيل المُشَعوِذُ البَغيض وَقِطِّهِ الأَجرَب هَرهور.",
         "poster_path": "/cezQyM5cO454vUdLiLOkv78K64D.jpg",
-        "vote_average": 6.974,
+        "vote_average": 7.0,
         "release_date": "1981-09-12",
-        "popularity": 27.4502
+        "popularity": 25.1109
     },
     {
         "id": 104877,
@@ -13651,9 +13651,9 @@
         "overview": "Eda, who ties all her hopes to her education, confronts Serkan Bolat, who cuts off her international education scholarship and leaves her with high school diploma. Serkan Bolat offers Eda to give her scholarship back if she pretends to be his fiance for two months. Although Eda rejects the offer of this man as she hates him, she has to accept it when the conditions change. While pretending to be engaged, Serkan and Eda begin to experience a passionate, challenging relationship that will make them forget all they know right. Because love is difficult. And that's why it's amazing.",
         "overview_ar": "تلتقي عايدة الطموحة بالشاب الغني والمحب للسيطرة راكان ويكرهان بعضهما منذ اللحظة الأولى، لكن عليهما البقاء قريبين لمدة حتى يحصل كل منهما على ما يريد.",
         "poster_path": "/bE71f9A3eztjcd5JT3MmHB8MbzA.jpg",
-        "vote_average": 8.219,
+        "vote_average": 8.218,
         "release_date": "2020-07-08",
-        "popularity": 27.4056
+        "popularity": 27.0612
     },
     {
         "id": 1059,
@@ -13665,7 +13665,7 @@
         "poster_path": "/zcHUwD20mqMD4g8LKdpKD12QRhE.jpg",
         "vote_average": 6.489,
         "release_date": "1982-03-13",
-        "popularity": 27.3964
+        "popularity": 23.6302
     },
     {
         "id": 62715,
@@ -13677,7 +13677,7 @@
         "poster_path": "/qEUrbXJ2qt4Rg84Btlx4STOhgte.jpg",
         "vote_average": 8.179,
         "release_date": "2015-07-05",
-        "popularity": 27.3771
+        "popularity": 28.8287
     },
     {
         "id": 61969,
@@ -15761,7 +15761,7 @@
         "title": "The OA",
         "title_ar": "The OA",
         "overview": "Seven years after vanishing from her home, a young woman returns with mysterious new abilities and recruits five strangers for a secret mission.",
-        "overview_ar": "بعد مُضيّ سبع سنوات على اختفائها من موطنها، تعود امرأة شابة وقد اكتسبت قدرات جديدة غامضة، وتجنّد خمسة أشخاص غرباء للقيام بمهمة سرية.",
+        "overview_ar": "Seven years after vanishing from her home, a young woman returns with mysterious new abilities and recruits five strangers for a secret mission.",
         "poster_path": "/rueY4slMeKtTGitm0raFUJvgaa5.jpg",
         "vote_average": 7.502,
         "release_date": "2016-12-16",
@@ -16080,18 +16080,6 @@
         "popularity": 17.5152
     },
     {
-        "id": 46188,
-        "type": "tv",
-        "title": "Vivement dimanche",
-        "title_ar": "Vivement dimanche",
-        "overview": "",
-        "overview_ar": "",
-        "poster_path": "/nRrrsDkH1kYgjvTpirkwMqZFjc5.jpg",
-        "vote_average": 3.0,
-        "release_date": "1998-09-20",
-        "popularity": 24.4851
-    },
-    {
         "id": 32708,
         "type": "tv",
         "title": "Body of Proof",
@@ -16101,7 +16089,7 @@
         "poster_path": "/8LyLUgvwawgnNKOzIFX5lSgTNeq.jpg",
         "vote_average": 7.03,
         "release_date": "2011-03-29",
-        "popularity": 24.4632
+        "popularity": 28.1231
     },
     {
         "id": 10219,
@@ -16113,7 +16101,7 @@
         "poster_path": "/7CCeh3UHSLedhi0wqz3dQmByaA6.jpg",
         "vote_average": 6.4,
         "release_date": "2006-09-16",
-        "popularity": 24.4622
+        "popularity": 19.6273
     },
     {
         "id": 89247,
@@ -16125,7 +16113,7 @@
         "poster_path": "/pBpxKiitMuYXvtsXNSzya8DKKzV.jpg",
         "vote_average": 6.87,
         "release_date": "2019-10-06",
-        "popularity": 24.4583
+        "popularity": 21.6187
     },
     {
         "id": 13126,
@@ -16137,7 +16125,7 @@
         "poster_path": "/sL6FFh0JultfM2K7PJq4iDVu8AL.jpg",
         "vote_average": 5.0,
         "release_date": "1955-10-31",
-        "popularity": 24.4494
+        "popularity": 18.2233
     },
     {
         "id": 118924,
@@ -16149,7 +16137,7 @@
         "poster_path": "/v2BHRwtQVkt5fssLdo5MpFgHJPY.jpg",
         "vote_average": 7.2,
         "release_date": "2021-03-12",
-        "popularity": 24.4482
+        "popularity": 21.9308
     },
     {
         "id": 2720,
@@ -16161,7 +16149,7 @@
         "poster_path": "/gObO6CMSRbQNehvJyF4CwOHC5VI.jpg",
         "vote_average": 7.436,
         "release_date": "1990-09-09",
-        "popularity": 24.4447
+        "popularity": 23.2906
     },
     {
         "id": 62992,
@@ -16173,7 +16161,7 @@
         "poster_path": "/yMg0l6hxCnR94Fcl1F1IEkmG26V.jpg",
         "vote_average": 4.2,
         "release_date": "1991-01-02",
-        "popularity": 24.4318
+        "popularity": 20.7317
     },
     {
         "id": 62481,
@@ -16185,7 +16173,7 @@
         "poster_path": "/vY8Bep9K9oFSz0C9gnTVipfBciU.jpg",
         "vote_average": 6.1,
         "release_date": "2013-08-24",
-        "popularity": 24.4094
+        "popularity": 23.5945
     },
     {
         "id": 77240,
@@ -16197,7 +16185,7 @@
         "poster_path": "/zHgc9nTXiP77qoy14BO7WUFTwkp.jpg",
         "vote_average": 8.179,
         "release_date": "2018-04-03",
-        "popularity": 24.3928
+        "popularity": 22.8152
     },
     {
         "id": 34587,
@@ -16209,7 +16197,7 @@
         "poster_path": "/aGi8EuXsf5bbM4O59Uu0pucLcT.jpg",
         "vote_average": 7.2,
         "release_date": "2003-01-15",
-        "popularity": 24.3902
+        "popularity": 22.8005
     },
     {
         "id": 105556,
@@ -16221,7 +16209,7 @@
         "poster_path": "/ogXmggjfiDHBOBwA3JyuEzCr814.jpg",
         "vote_average": 8.233,
         "release_date": "2021-04-11",
-        "popularity": 24.3777
+        "popularity": 19.3452
     },
     {
         "id": 32697,
@@ -16233,7 +16221,7 @@
         "poster_path": "/agFM2SKoUYgAFz2YiRhfva8hdDU.jpg",
         "vote_average": 7.3,
         "release_date": "2011-01-17",
-        "popularity": 24.3719
+        "popularity": 15.3298
     },
     {
         "id": 72974,
@@ -16245,19 +16233,7 @@
         "poster_path": "/59IPwylg1xLeYigjH9bDauN7MCq.jpg",
         "vote_average": 0.0,
         "release_date": "1989-10-03",
-        "popularity": 24.3638
-    },
-    {
-        "id": 300015,
-        "type": "tv",
-        "title": "Ichigo Aika: Strawberry Elegy",
-        "title_ar": "Ichigo Aika: Strawberry Elegy",
-        "overview": "The story centers on a pair of stepsiblings. When Kōta's father gets remarried, Kōta's first impression of his new stepsister Aika is that she is beautiful, but that image is shattered pretty quickly. His new stepsister is a super sassy and foul-mouthed gyaru who behaves uncontrollably while their parents are away, making Kōta's life a living hell. However, their relationship begins to change when Aika gradually warms up to Kōta's caring older-brother nature.",
-        "overview_ar": "The story centers on a pair of stepsiblings. When Kōta's father gets remarried, Kōta's first impression of his new stepsister Aika is that she is beautiful, but that image is shattered pretty quickly. His new stepsister is a super sassy and foul-mouthed gyaru who behaves uncontrollably while their parents are away, making Kōta's life a living hell. However, their relationship begins to change when Aika gradually warms up to Kōta's caring older-brother nature.",
-        "poster_path": "/fjKOO6PBLwLG3ViyvrIL9oZUmbU.jpg",
-        "vote_average": 9.0,
-        "release_date": "2026-01-05",
-        "popularity": 24.3552
+        "popularity": 22.5024
     },
     {
         "id": 18352,
@@ -16269,19 +16245,7 @@
         "poster_path": "/jBAXfUHvVTBCsCwP1xNG6B3bZ0d.jpg",
         "vote_average": 6.4,
         "release_date": "2009-11-02",
-        "popularity": 24.3467
-    },
-    {
-        "id": 243875,
-        "type": "tv",
-        "title": "Georgie & Mandy's First Marriage",
-        "title_ar": "Georgie & Mandy's First Marriage",
-        "overview": "Georgie and Mandy raise their young family in Texas while navigating the challenges of adulthood, parenting, and marriage.",
-        "overview_ar": "Georgie and Mandy raise their young family in Texas while navigating the challenges of adulthood, parenting, and marriage.",
-        "poster_path": "/3z2mYFxUkzanb2eeIcVyfJq0G3q.jpg",
-        "vote_average": 7.8,
-        "release_date": "2024-10-17",
-        "popularity": 24.3382
+        "popularity": 19.449
     },
     {
         "id": 48865,
@@ -16293,7 +16257,7 @@
         "poster_path": "/epNfFs0gPyrpekecpzyX0XTkZgI.jpg",
         "vote_average": 8.0,
         "release_date": "2013-10-17",
-        "popularity": 24.3218
+        "popularity": 21.6198
     },
     {
         "id": 31585,
@@ -16305,7 +16269,7 @@
         "poster_path": "/e3hfrKjLHKjj3p82xvvGvfIu628.jpg",
         "vote_average": 7.66,
         "release_date": "2010-06-24",
-        "popularity": 24.3211
+        "popularity": 29.0297
     },
     {
         "id": 4344,
@@ -16317,7 +16281,43 @@
         "poster_path": "/gnOwOb82chSJkQEZ9pd6jf2ZrEX.jpg",
         "vote_average": 7.6,
         "release_date": "2004-07-21",
-        "popularity": 24.3176
+        "popularity": 19.7344
+    },
+    {
+        "id": 424,
+        "type": "tv",
+        "title": "Torchwood",
+        "title_ar": "Torchwood",
+        "overview": "The exploits of a team of people whose job is to investigate the unusual, the strange and the extraterrestrial.",
+        "overview_ar": "The exploits of a team of people whose job is to investigate the unusual, the strange and the extraterrestrial.",
+        "poster_path": "/bv7C5r7QyXGsaMxvU40FVY7SvrD.jpg",
+        "vote_average": 7.31,
+        "release_date": "2006-10-22",
+        "popularity": 18.9763
+    },
+    {
+        "id": 43982,
+        "type": "tv",
+        "title": "Line of Duty",
+        "title_ar": "خط الواجب",
+        "overview": "A drama about the investigations of AC-12, a controversial police anticorruption unit.",
+        "overview_ar": "يُنقل الرقيب \"ستيف آرنو\" إلى وحدة شرطة مكافحة الفساد بعدما يرفض أن يكون شريكًا في التستّر على حادثة إطلاق نار عن طريق الخطأ.",
+        "poster_path": "/ysGUKnnR1pGYIndjXWcjupGbWpS.jpg",
+        "vote_average": 8.236,
+        "release_date": "2012-06-26",
+        "popularity": 22.9762
+    },
+    {
+        "id": 118357,
+        "type": "tv",
+        "title": "1883",
+        "title_ar": "1883",
+        "overview": "Follow the Dutton family as they embark on a journey west through the Great Plains toward the last bastion of untamed America. A stark retelling of Western expansion, and an intense study of one family fleeing poverty to seek a better future in America’s promised land — Montana.",
+        "overview_ar": "تدور قصة المسلسل حول عائلة داتون حيث يبدأ جيمس ومارجريت داتون رحلتهم غربًا عبر السهول الكبرى نحو آخر معقل لأمريكا الجامحة حيث يفرون من الفقر بحثًا عن مستقبل أفضل في أرض أمريكا الموعودة وهي مونتانا.",
+        "poster_path": "/waLbm384SQDwLTCn6ttPqQS5kfV.jpg",
+        "vote_average": 8.268,
+        "release_date": "2021-12-19",
+        "popularity": 20.7521
     },
     {
         "id": 78220,
@@ -17520,42 +17520,6 @@
         "popularity": 19.9249
     },
     {
-        "id": 63322,
-        "type": "tv",
-        "title": "Superb Song of the Valkyries: Symphogear",
-        "title_ar": "Superb Song of the Valkyries: Symphogear",
-        "overview": "During a concert by idol group Zwei Wing, an alien force known as the Noise attack the stage. Group members Tsubasa Kazanari and Kanade Amou suppress the attack using their Symphogear armor, but despite their best efforts, innocent bystander Hibiki Tachibana is fatally injured. Distraught and much to Tsubasa's dismay, Kanade sacrifices herself in the process to save Hibiki.\n\nTwo years later, Hibiki lives on. Tsubasa now fights alone. With the threat of the Noise increasing, Hibiki finds herself encountering the Noise once again but this time she is granted a chance to become attuned with the same Symphogear that Kanade wielded.",
-        "overview_ar": "During a concert by idol group Zwei Wing, an alien force known as the Noise attack the stage. Group members Tsubasa Kazanari and Kanade Amou suppress the attack using their Symphogear armor, but despite their best efforts, innocent bystander Hibiki Tachibana is fatally injured. Distraught and much to Tsubasa's dismay, Kanade sacrifices herself in the process to save Hibiki.\n\nTwo years later, Hibiki lives on. Tsubasa now fights alone. With the threat of the Noise increasing, Hibiki finds herself encountering the Noise once again but this time she is granted a chance to become attuned with the same Symphogear that Kanade wielded.",
-        "poster_path": "/g0jsgViN4aBybkgTmr4XgZHluxX.jpg",
-        "vote_average": 6.891,
-        "release_date": "2012-01-06",
-        "popularity": 23.4283
-    },
-    {
-        "id": 21641,
-        "type": "tv",
-        "title": "Good Luck Charlie",
-        "title_ar": "Good Luck Charlie",
-        "overview": "Teens PJ and Teddy and tween brother Gabe are typical kids -- that is, until their mother has another baby. The arrival of their new sister completely upends the entire household. When their mother heads back to work after Charlie's birth, it's up to the kids and their dad to keep the home fires burning -- and to keep Charlie out of trouble as she learns to sit up, crawl, walk and run. Teddy, as the older sister, makes a personalized video diary for Charlie, in each episode adding a nugget of wisdom for her baby sibling.",
-        "overview_ar": "Teens PJ and Teddy and tween brother Gabe are typical kids -- that is, until their mother has another baby. The arrival of their new sister completely upends the entire household. When their mother heads back to work after Charlie's birth, it's up to the kids and their dad to keep the home fires burning -- and to keep Charlie out of trouble as she learns to sit up, crawl, walk and run. Teddy, as the older sister, makes a personalized video diary for Charlie, in each episode adding a nugget of wisdom for her baby sibling.",
-        "poster_path": "/cyYwkXW1vd3YpiFVlb7y0hgIzuu.jpg",
-        "vote_average": 7.9,
-        "release_date": "2010-04-04",
-        "popularity": 23.425
-    },
-    {
-        "id": 1095,
-        "type": "tv",
-        "title": "Ghost in the Shell: Stand Alone Complex",
-        "title_ar": "Ghost in the Shell: Stand Alone Complex",
-        "overview": "In the future when technological enhancements and robotics are a way of life, Major Motoko Kusanagi and Section 9 take care of the jobs that are too difficult for the police. Section 9 employs hackers, sharpshooters, detectives and cyborgs all in an effort to thwart cyber criminals and their plans to attack the innocent.",
-        "overview_ar": "In the future when technological enhancements and robotics are a way of life, Major Motoko Kusanagi and Section 9 take care of the jobs that are too difficult for the police. Section 9 employs hackers, sharpshooters, detectives and cyborgs all in an effort to thwart cyber criminals and their plans to attack the innocent.",
-        "poster_path": "/6UH2vJryPpQp38noqvchu3uEeqX.jpg",
-        "vote_average": 8.2,
-        "release_date": "2002-10-01",
-        "popularity": 23.4227
-    },
-    {
         "id": 10370,
         "type": "tv",
         "title": "The Hitchhiker",
@@ -17565,7 +17529,7 @@
         "poster_path": "/AmOBNQXTMPsi3NvcadHxfM4xEVZ.jpg",
         "vote_average": 6.1,
         "release_date": "1983-11-23",
-        "popularity": 23.4069
+        "popularity": 18.6476
     },
     {
         "id": 61550,
@@ -17577,7 +17541,7 @@
         "poster_path": "/fe79VYyLp5ZBstpJ4oukpuUT3B.jpg",
         "vote_average": 7.5,
         "release_date": "2015-01-06",
-        "popularity": 23.3929
+        "popularity": 20.7274
     },
     {
         "id": 237529,
@@ -17589,7 +17553,7 @@
         "poster_path": "/hK5eKFaj99mZwpmILnvKehWe9t1.jpg",
         "vote_average": 8.4,
         "release_date": "2025-01-05",
-        "popularity": 23.3926
+        "popularity": 18.6305
     },
     {
         "id": 81978,
@@ -17601,7 +17565,7 @@
         "poster_path": "/4zAQgKWGP2bJk11OKvwY1GCJjQR.jpg",
         "vote_average": 8.3,
         "release_date": "2018-08-29",
-        "popularity": 23.3723
+        "popularity": 18.558
     },
     {
         "id": 2102,
@@ -17613,7 +17577,7 @@
         "poster_path": "/h1wId4z79SQOOhEnc3oEqf3qpro.jpg",
         "vote_average": 6.7,
         "release_date": "1981-11-24",
-        "popularity": 23.3716
+        "popularity": 20.51
     },
     {
         "id": 62084,
@@ -17625,19 +17589,7 @@
         "poster_path": "/fTJZHMzlIGSJVPSe7Xz4p5SRwYP.jpg",
         "vote_average": 7.76,
         "release_date": "2015-03-08",
-        "popularity": 23.3661
-    },
-    {
-        "id": 13887,
-        "type": "tv",
-        "title": "Lawman",
-        "title_ar": "Lawman",
-        "overview": "Lawman is an American western television series originally telecast on ABC from 1958 to 1962 starring John Russell as Marshal Dan Troop and featuring Peter Brown as Deputy Marshal Johnny McKay. The series was set in Laramie, Wyoming during 1879 and the 1880s. Warner Bros. already had several western series on the air at the time, having launched Cheyenne with Clint Walker as early as 1955. The studio continued the trend in 1957 with the additions of Maverick with James Garner and Jack Kelly, Colt .45 with Wayde Preston, and Sugarfoot with Will Hutchins. One year later, Warner Bros. added Lawman and Bronco with Ty Hardin.\n\nPrior to the beginning of production, Russell and Brown and producer Jules Schermer made a pact to maintain the quality of the series so that it would not be seen as \"just another western.\" At the start of season two, Russell and Brown were joined by Peggie Castle as Lily Merrill, the owner of the Birdcage Saloon, and a love interest for Dan.",
-        "overview_ar": "Lawman is an American western television series originally telecast on ABC from 1958 to 1962 starring John Russell as Marshal Dan Troop and featuring Peter Brown as Deputy Marshal Johnny McKay. The series was set in Laramie, Wyoming during 1879 and the 1880s. Warner Bros. already had several western series on the air at the time, having launched Cheyenne with Clint Walker as early as 1955. The studio continued the trend in 1957 with the additions of Maverick with James Garner and Jack Kelly, Colt .45 with Wayde Preston, and Sugarfoot with Will Hutchins. One year later, Warner Bros. added Lawman and Bronco with Ty Hardin.\n\nPrior to the beginning of production, Russell and Brown and producer Jules Schermer made a pact to maintain the quality of the series so that it would not be seen as \"just another western.\" At the start of season two, Russell and Brown were joined by Peggie Castle as Lily Merrill, the owner of the Birdcage Saloon, and a love interest for Dan.",
-        "poster_path": "/18XzHfhbRKw9Cl8cKH7WkV9yjYr.jpg",
-        "vote_average": 5.6,
-        "release_date": "1958-10-05",
-        "popularity": 23.3493
+        "popularity": 20.9837
     },
     {
         "id": 115,
@@ -17649,7 +17601,7 @@
         "poster_path": "/v7fuifcJjcqQxAsOjPviupcmFIZ.jpg",
         "vote_average": 7.0,
         "release_date": "1987-09-24",
-        "popularity": 23.3478
+        "popularity": 21.6479
     },
     {
         "id": 396,
@@ -17661,7 +17613,7 @@
         "poster_path": "/hnd8bGqWZhtEdCwDf5YXdIDaJei.jpg",
         "vote_average": 6.8,
         "release_date": "2000-10-07",
-        "popularity": 23.3476
+        "popularity": 19.7559
     },
     {
         "id": 10305,
@@ -17673,7 +17625,7 @@
         "poster_path": "/hE0Un65f1k11GUQTCqk7s0hzokY.jpg",
         "vote_average": 6.455,
         "release_date": "1958-09-22",
-        "popularity": 23.3296
+        "popularity": 17.2454
     },
     {
         "id": 4576,
@@ -17685,7 +17637,7 @@
         "poster_path": "/xP2JuabiJvvmVvGsHjDj4IL8gcO.jpg",
         "vote_average": 6.627,
         "release_date": "1997-03-04",
-        "popularity": 23.3192
+        "popularity": 20.898
     },
     {
         "id": 4957,
@@ -17697,7 +17649,7 @@
         "poster_path": "/bwxryiak9cc4hrZypUF4kw81muF.jpg",
         "vote_average": 8.0,
         "release_date": "1998-07-06",
-        "popularity": 23.3108
+        "popularity": 18.6377
     },
     {
         "id": 59659,
@@ -17709,7 +17661,19 @@
         "poster_path": "/AtKo2gANo2QBgZN9ebTAa8hXnvv.jpg",
         "vote_average": 7.924,
         "release_date": "2014-06-01",
-        "popularity": 23.2907
+        "popularity": 19.6995
+    },
+    {
+        "id": 278882,
+        "type": "tv",
+        "title": "No Pain No Gain",
+        "title_ar": "الفائز المسكين",
+        "overview": "Pei Qian accidentally gets an invitation from a mysterious big brother to start a company that must aim to lose money, and eventually becomes a conscientious boss in the hearts of his employees and an industry-recognized business whiz!",
+        "overview_ar": "بي تشيان يحصل بالصدفة على دعوة من أخ كبير غامض لبدء شركة يجب أن تهدف إلى خسارة المال، وفي النهاية يصبح رئيسًا واعيًا في قلوب موظفيه وعبقريًا في الأعمال معترفًا به في الصناعة!",
+        "poster_path": "/3lEcHeNmmKocEcw5Ogr6fA0bOsy.jpg",
+        "vote_average": 8.5,
+        "release_date": "2026-01-31",
+        "popularity": 23.2519
     },
     {
         "id": 15069,
@@ -17721,7 +17685,7 @@
         "poster_path": "/ycjyG5emOtzXycIQl4oZwy4nt1f.jpg",
         "vote_average": 7.5,
         "release_date": "1986-06-23",
-        "popularity": 23.2515
+        "popularity": 18.8524
     },
     {
         "id": 46331,
@@ -17733,7 +17697,7 @@
         "poster_path": "/fwH0ePhd7m3swtCuFeubtR49ZTd.jpg",
         "vote_average": 7.151,
         "release_date": "2013-06-24",
-        "popularity": 23.2475
+        "popularity": 20.9849
     },
     {
         "id": 127635,
@@ -17745,7 +17709,7 @@
         "poster_path": "/etO5jDS5WgR4Y1lTyXhQcilJ6u2.jpg",
         "vote_average": 7.071,
         "release_date": "2021-08-06",
-        "popularity": 23.2304
+        "popularity": 20.798
     },
     {
         "id": 41451,
@@ -17757,7 +17721,43 @@
         "poster_path": "/g62hMetCAiz0hDjTmrcSI43InDR.jpg",
         "vote_average": 3.833,
         "release_date": "2001-11-15",
-        "popularity": 23.214
+        "popularity": 21.9644
+    },
+    {
+        "id": 34141,
+        "type": "tv",
+        "title": "D.Gray-man",
+        "title_ar": "D.Gray-man",
+        "overview": "Darkness is moving in, and young exorcist Allen Walker is humanity's greatest hope against the wicked forces conspiring to bring civilization to its knees. Akuma – cruel spirits born of tragedy and lost souls – lurk in every shadow, willing and eager to do the bidding of their leader, the dread Millennium Earl. With an eye cursed to see evil in its truest form and blessed with an arm to slay soul-devouring demons, Allen stands ready to confront the gathering evil. Should he fail, Innocence will be lost forever. The war to decide the fate of mankind has begun – and the carnage will be endless.",
+        "overview_ar": "Darkness is moving in, and young exorcist Allen Walker is humanity's greatest hope against the wicked forces conspiring to bring civilization to its knees. Akuma – cruel spirits born of tragedy and lost souls – lurk in every shadow, willing and eager to do the bidding of their leader, the dread Millennium Earl. With an eye cursed to see evil in its truest form and blessed with an arm to slay soul-devouring demons, Allen stands ready to confront the gathering evil. Should he fail, Innocence will be lost forever. The war to decide the fate of mankind has begun – and the carnage will be endless.",
+        "poster_path": "/txCtE7ToSLuG8sy8tAIh9q5JAYS.jpg",
+        "vote_average": 8.0,
+        "release_date": "2006-10-03",
+        "popularity": 22.613
+    },
+    {
+        "id": 68398,
+        "type": "tv",
+        "title": "Dr. Romantic",
+        "title_ar": "낭만닥터 김사부",
+        "overview": "An eccentric, triple board-certified virtuoso surgeon leaves a top job in Seoul and ends up at a provincial hospital, where he mentors young doctors.",
+        "overview_ar": "An eccentric, triple board-certified virtuoso surgeon leaves a top job in Seoul and ends up at a provincial hospital, where he mentors young doctors.",
+        "poster_path": "/9fbRJgZ2zDTnSUId1bOwsllHNr7.jpg",
+        "vote_average": 8.2,
+        "release_date": "2016-11-07",
+        "popularity": 20.2329
+    },
+    {
+        "id": 5917,
+        "type": "tv",
+        "title": "90210",
+        "title_ar": "90210",
+        "overview": "90210 revolves around several students at the fictional West Beverly Hills High School, including new Beverly Hills residents Annie Wilson and Dixon Wilson. Their father, Harry Wilson, has returned from Kansas to his Beverly Hills childhood home with his family to care for his mother, former television and theater actress Tabitha Wilson, who has a drinking problem and clashes with his wife Debbie Wilson. Annie and Dixon struggle to adjust to their new lives while making friends and yet adhering to their parents' wishes.",
+        "overview_ar": "90210 revolves around several students at the fictional West Beverly Hills High School, including new Beverly Hills residents Annie Wilson and Dixon Wilson. Their father, Harry Wilson, has returned from Kansas to his Beverly Hills childhood home with his family to care for his mother, former television and theater actress Tabitha Wilson, who has a drinking problem and clashes with his wife Debbie Wilson. Annie and Dixon struggle to adjust to their new lives while making friends and yet adhering to their parents' wishes.",
+        "poster_path": "/6uy8Le8X8qqvc5X7pSFn3BJA69M.jpg",
+        "vote_average": 5.761,
+        "release_date": "2008-09-02",
+        "popularity": 20.1753
     },
     {
         "id": 68398,
@@ -18960,42 +18960,6 @@
         "popularity": 16.9974
     },
     {
-        "id": 126485,
-        "type": "tv",
-        "title": "Moving",
-        "title_ar": "Moving",
-        "overview": "Children who live in hiding with superpowers, along with their parents who live with painful secrets of the past, face enormous dangers together.",
-        "overview_ar": "Children who live in hiding with superpowers, along with their parents who live with painful secrets of the past, face enormous dangers together.",
-        "poster_path": "/vf9SNXNAFqzKBGksFwrXhkg9cb7.jpg",
-        "vote_average": 8.5,
-        "release_date": "2023-08-09",
-        "popularity": 22.1068
-    },
-    {
-        "id": 31497,
-        "type": "tv",
-        "title": "The League",
-        "title_ar": "The League",
-        "overview": "The League is an American sitcom and semi-improvised comedy about a about a fantasy football league and its members and their everyday lives.",
-        "overview_ar": "The League is an American sitcom and semi-improvised comedy about a about a fantasy football league and its members and their everyday lives.",
-        "poster_path": "/w6IAasjDdANmalOWkjKcENhirQR.jpg",
-        "vote_average": 7.337,
-        "release_date": "2009-10-29",
-        "popularity": 22.0838
-    },
-    {
-        "id": 31736,
-        "type": "tv",
-        "title": "Eyeshield 21",
-        "title_ar": "アイシールド21",
-        "overview": "In Tokyo, a weak, unassertive boy named Sena Kobayakawa enters the high school of his choice, Deimon Private Senior High School. Sena's only remarkable physical abilities are his running speed and agility, which are noted by the school's American football team captain Yoichi Hiruma. Hiruma forces Sena to join the Deimon Devil Bats football team as its running back. To protect his identity from other teams who want to recruit him, Sena is forced to publicly assume the role of the team secretary and enter the field under the pseudonym of \"Eyeshield 21\" wearing a helmet with an eyeshield to hide his features.",
-        "overview_ar": "In Tokyo, a weak, unassertive boy named Sena Kobayakawa enters the high school of his choice, Deimon Private Senior High School. Sena's only remarkable physical abilities are his running speed and agility, which are noted by the school's American football team captain Yoichi Hiruma. Hiruma forces Sena to join the Deimon Devil Bats football team as its running back. To protect his identity from other teams who want to recruit him, Sena is forced to publicly assume the role of the team secretary and enter the field under the pseudonym of \"Eyeshield 21\" wearing a helmet with an eyeshield to hide his features.",
-        "poster_path": "/yp29cySITMuZF3Exw8gnRomupz8.jpg",
-        "vote_average": 8.399,
-        "release_date": "2005-04-06",
-        "popularity": 22.0795
-    },
-    {
         "id": 84503,
         "type": "tv",
         "title": "Close Enough",
@@ -19005,7 +18969,7 @@
         "poster_path": "/8aNYMcMyhv1m0MKibgCVmJrAeLs.jpg",
         "vote_average": 7.942,
         "release_date": "2020-07-09",
-        "popularity": 22.076
+        "popularity": 17.8444
     },
     {
         "id": 44371,
@@ -19017,7 +18981,7 @@
         "poster_path": "/pGlKqwpaqdig9208sgJQCi65YnB.jpg",
         "vote_average": 6.3,
         "release_date": "1986-01-10",
-        "popularity": 22.0722
+        "popularity": 17.5814
     },
     {
         "id": 1082,
@@ -19029,7 +18993,7 @@
         "poster_path": "/ko7HHjQSMSz0lcYtRSFOX2EWdSj.jpg",
         "vote_average": 5.8,
         "release_date": "1992-06-27",
-        "popularity": 22.0688
+        "popularity": 17.9951
     },
     {
         "id": 5133,
@@ -19041,7 +19005,7 @@
         "poster_path": "/1Tl9FH0gFmaFDyW4J3eAowMwt8O.jpg",
         "vote_average": 6.9,
         "release_date": "1957-10-04",
-        "popularity": 22.0559
+        "popularity": 19.5682
     },
     {
         "id": 25722,
@@ -19053,7 +19017,7 @@
         "poster_path": "/73UnEMJUxbG9zSIftY6HVJC6udS.jpg",
         "vote_average": 6.9,
         "release_date": "1996-04-05",
-        "popularity": 22.0533
+        "popularity": 14.3654
     },
     {
         "id": 108184,
@@ -19065,7 +19029,7 @@
         "poster_path": "/3XzeK6Y3ESvn2JO5zLbWnUcRSMj.jpg",
         "vote_average": 9.0,
         "release_date": "2012-08-23",
-        "popularity": 22.0387
+        "popularity": 14.3099
     },
     {
         "id": 37567,
@@ -19077,7 +19041,7 @@
         "poster_path": "/q19uWJMNLcyQ0I14DaH4XVwW8TQ.jpg",
         "vote_average": 8.0,
         "release_date": "1981-04-08",
-        "popularity": 22.0322
+        "popularity": 20.0248
     },
     {
         "id": 113036,
@@ -19089,7 +19053,7 @@
         "poster_path": "/8b9FGJ9WhpkeGFOHYgKjPT5AXS6.jpg",
         "vote_average": 7.782,
         "release_date": "2021-07-15",
-        "popularity": 22.0273
+        "popularity": 18.5619
     },
     {
         "id": 85853,
@@ -19101,7 +19065,7 @@
         "poster_path": "/5QcaEyfSbJEmiaxf7ch8nBl0GO4.jpg",
         "vote_average": 7.225,
         "release_date": "2020-06-21",
-        "popularity": 22.026
+        "popularity": 18.728
     },
     {
         "id": 216390,
@@ -19113,7 +19077,7 @@
         "poster_path": "/5ERr09UrnVm0hdXBeefNVtQMxI.jpg",
         "vote_average": 6.9,
         "release_date": "2023-03-14",
-        "popularity": 22.0202
+        "popularity": 11.8956
     },
     {
         "id": 92782,
@@ -19125,7 +19089,7 @@
         "poster_path": "/3HWWh92kZbD7odwJX7nKmXNZsYo.jpg",
         "vote_average": 6.297,
         "release_date": "2022-06-08",
-        "popularity": 22.0192
+        "popularity": 24.4793
     },
     {
         "id": 10906,
@@ -19137,7 +19101,7 @@
         "poster_path": "/q4fvwf2hJVz3fPB4wIjEchuvXuD.jpg",
         "vote_average": 6.0,
         "release_date": "1995-03-12",
-        "popularity": 22.0012
+        "popularity": 16.7087
     },
     {
         "id": 11978,
@@ -19149,7 +19113,7 @@
         "poster_path": "/tc5VyBM94h8GJ3Z5MvyemSFiESO.jpg",
         "vote_average": 6.8,
         "release_date": "1968-09-20",
-        "popularity": 21.9638
+        "popularity": 19.1417
     },
     {
         "id": 73048,
@@ -19161,7 +19125,7 @@
         "poster_path": "/1feD9WnGOU19juCw79fACNmG7n4.jpg",
         "vote_average": 8.2,
         "release_date": "2011-12-03",
-        "popularity": 21.9634
+        "popularity": 17.9284
     },
     {
         "id": 477,
@@ -19173,7 +19137,7 @@
         "poster_path": "/vG1ORAaghrGgf9LC45bNTeUYMu8.jpg",
         "vote_average": 8.442,
         "release_date": "1985-05-11",
-        "popularity": 21.9612
+        "popularity": 20.9146
     },
     {
         "id": 1039,
@@ -19185,7 +19149,7 @@
         "poster_path": "/rUqIscf4OwAs061JVDh3wdNRye9.jpg",
         "vote_average": 6.5,
         "release_date": "1979-09-23",
-        "popularity": 21.8636
+        "popularity": 19.6153
     },
     {
         "id": 585,
@@ -19197,7 +19161,7 @@
         "poster_path": "/d8rY9foYLCVvV1lOAnBY4RUVTnP.jpg",
         "vote_average": 6.8,
         "release_date": "1986-09-06",
-        "popularity": 21.8575
+        "popularity": 17.2205
     },
     {
         "id": 4626,
@@ -19209,7 +19173,7 @@
         "poster_path": "/prGylxnFpIWMcvHh9sUC46hmiIC.jpg",
         "vote_average": 6.401,
         "release_date": "2006-09-28",
-        "popularity": 21.8551
+        "popularity": 18.0693
     },
     {
         "id": 16870,
@@ -19221,7 +19185,19 @@
         "poster_path": "/tPIbd7JZVxSWNjcJQYEvPu3qo5z.jpg",
         "vote_average": 6.5,
         "release_date": "2005-04-23",
-        "popularity": 21.8497
+        "popularity": 24.2436
+    },
+    {
+        "id": 69061,
+        "type": "tv",
+        "title": "The OA",
+        "title_ar": "The OA",
+        "overview": "Seven years after vanishing from her home, a young woman returns with mysterious new abilities and recruits five strangers for a secret mission.",
+        "overview_ar": "Seven years after vanishing from her home, a young woman returns with mysterious new abilities and recruits five strangers for a secret mission.",
+        "poster_path": "/rueY4slMeKtTGitm0raFUJvgaa5.jpg",
+        "vote_average": 7.502,
+        "release_date": "2016-12-16",
+        "popularity": 21.845
     },
     {
         "id": 39957,
@@ -19233,7 +19209,7 @@
         "poster_path": "/5L6MsJVdMDbdGZ4P1lGBunOp0VZ.jpg",
         "vote_average": 7.157,
         "release_date": "2012-07-09",
-        "popularity": 21.8285
+        "popularity": 18.5008
     },
     {
         "id": 85922,
@@ -19245,7 +19221,7 @@
         "poster_path": "/zgu3p4NvisS8CI68cUfBKbvAvu8.jpg",
         "vote_average": 6.532,
         "release_date": "2020-05-29",
-        "popularity": 21.8243
+        "popularity": 17.1779
     },
     {
         "id": 100883,
@@ -19257,7 +19233,7 @@
         "poster_path": "/hd5fnBixab6IzfUwjC5wfdbX3eM.jpg",
         "vote_average": 8.064,
         "release_date": "2020-04-27",
-        "popularity": 21.8206
+        "popularity": 20.8636
     },
     {
         "id": 62313,
@@ -19269,7 +19245,7 @@
         "poster_path": "/AYmEExaBgjiEIwrLPb7AoH4nqy.jpg",
         "vote_average": 6.39,
         "release_date": "2015-04-02",
-        "popularity": 21.8167
+        "popularity": 17.3732
     },
     {
         "id": 1749,
@@ -19281,7 +19257,7 @@
         "poster_path": "/jO3DKZyiEWQsEE6ji7IXwobDnl8.jpg",
         "vote_average": 7.6,
         "release_date": "2001-01-06",
-        "popularity": 21.8069
+        "popularity": 18.7755
     },
     {
         "id": 67063,
@@ -19293,7 +19269,7 @@
         "poster_path": "/i3Vg5SKaWWNjMvK3CsuK5itIrzG.jpg",
         "vote_average": 6.9,
         "release_date": "2016-07-09",
-        "popularity": 21.7926
+        "popularity": 21.4471
     },
     {
         "id": 101253,
@@ -19305,7 +19281,7 @@
         "poster_path": null,
         "vote_average": 0.0,
         "release_date": "1998-01-07",
-        "popularity": 21.792
+        "popularity": 19.3675
     },
     {
         "id": 62264,
@@ -19317,7 +19293,7 @@
         "poster_path": "/9tNtSk46s3f1ePr59p0JG6uacc8.jpg",
         "vote_average": 7.73,
         "release_date": "2015-10-31",
-        "popularity": 21.7796
+        "popularity": 19.1051
     },
     {
         "id": 219937,
@@ -19329,7 +19305,7 @@
         "poster_path": "/j5bP7spdfS0NpDLKDlqJYyJPi1j.jpg",
         "vote_average": 8.2,
         "release_date": "2024-12-15",
-        "popularity": 21.7795
+        "popularity": 19.7279
     },
     {
         "id": 100010,
@@ -19341,7 +19317,7 @@
         "poster_path": "/4CUK42x0TvcWvuRXfjAFQlCeRdf.jpg",
         "vote_average": 7.246,
         "release_date": "2020-11-17",
-        "popularity": 21.7753
+        "popularity": 19.8979
     },
     {
         "id": 18202,
@@ -19353,7 +19329,7 @@
         "poster_path": "/AvxlfUW8OVQ630v7Se1mesDYbfW.jpg",
         "vote_average": 6.486,
         "release_date": "2009-09-23",
-        "popularity": 21.7728
+        "popularity": 19.6061
     },
     {
         "id": 5273,
@@ -19365,7 +19341,7 @@
         "poster_path": "/lmbBSG3jRVjxdovpdhOf2LF1voZ.jpg",
         "vote_average": 7.8,
         "release_date": "1955-10-02",
-        "popularity": 21.7717
+        "popularity": 17.4904
     },
     {
         "id": 62822,
@@ -19377,7 +19353,7 @@
         "poster_path": "/iBjjSGgnjAQBSQGO9pYIh7Gp2PO.jpg",
         "vote_average": 7.463,
         "release_date": "2015-06-14",
-        "popularity": 21.7687
+        "popularity": 20.093
     },
     {
         "id": 46153,
@@ -19389,7 +19365,7 @@
         "poster_path": "/5Wnj5n0qPg5lVxTBYAnWuuxoiwf.jpg",
         "vote_average": 8.1,
         "release_date": "2010-04-04",
-        "popularity": 21.7579
+        "popularity": 17.206
     },
     {
         "id": 154494,
@@ -19401,7 +19377,7 @@
         "poster_path": "/hcPLwLGEU4alv9sOWvzSY4IorxV.jpg",
         "vote_average": 8.132,
         "release_date": "2022-07-02",
-        "popularity": 21.7338
+        "popularity": 17.2458
     },
     {
         "id": 4060,
@@ -19413,7 +19389,7 @@
         "poster_path": "/gRGYVJYF2g12tx61CLIGeh041G.jpg",
         "vote_average": 6.1,
         "release_date": "1969-09-24",
-        "popularity": 21.7322
+        "popularity": 18.6659
     },
     {
         "id": 76121,
@@ -19425,7 +19401,7 @@
         "poster_path": "/m6R8gI3brohD6izeVCXFmuGeV2m.jpg",
         "vote_average": 8.536,
         "release_date": "2018-01-13",
-        "popularity": 21.73
+        "popularity": 18.8244
     },
     {
         "id": 40290,
@@ -19437,7 +19413,31 @@
         "poster_path": "/42gO1qCC6GPtHKNXvOdhunhzyS3.jpg",
         "vote_average": 7.09,
         "release_date": "2010-07-27",
-        "popularity": 21.7243
+        "popularity": 20.5456
+    },
+    {
+        "id": 92830,
+        "type": "tv",
+        "title": "Obi-Wan Kenobi",
+        "title_ar": "أوبي وان كينوبي",
+        "overview": "During the reign of the Galactic Empire, former Jedi Master, Obi-Wan Kenobi, embarks on a crucial mission to confront allies turned enemies and face the wrath of the Empire.",
+        "overview_ar": "تدور أحداث المسلسل بعد عشر سنوات من فيلم \"حرب النجوم الجزء الثالث: انتقام السيث\" وبعد عملية مسح الجيداي من كل المجرة.",
+        "poster_path": "/4Lok3HBSfbQxibQZBygoVCwKKrZ.jpg",
+        "vote_average": 7.0,
+        "release_date": "2022-05-26",
+        "popularity": 20.767
+    },
+    {
+        "id": 387,
+        "type": "tv",
+        "title": "SpongeBob SquarePants",
+        "title_ar": "SpongeBob SquarePants",
+        "overview": "Deep down in the Pacific Ocean in the subterranean city of Bikini Bottom lives a square yellow sponge named SpongeBob SquarePants. SpongeBob lives in a pineapple with his pet snail, Gary, loves his job as a fry cook at the Krusty Krab, and has a knack for getting into all kinds of trouble without really trying. When he's not getting on the nerves of his cranky next door neighbor Squidward, SpongeBob can usually be found smack in the middle of all sorts of strange situations with his best buddy, the simple yet lovable starfish, Patrick, or his thrill-seeking surfer-girl squirrel pal, Sandy Cheeks.",
+        "overview_ar": "Deep down in the Pacific Ocean in the subterranean city of Bikini Bottom lives a square yellow sponge named SpongeBob SquarePants. SpongeBob lives in a pineapple with his pet snail, Gary, loves his job as a fry cook at the Krusty Krab, and has a knack for getting into all kinds of trouble without really trying. When he's not getting on the nerves of his cranky next door neighbor Squidward, SpongeBob can usually be found smack in the middle of all sorts of strange situations with his best buddy, the simple yet lovable starfish, Patrick, or his thrill-seeking surfer-girl squirrel pal, Sandy Cheeks.",
+        "poster_path": "/5h0EU2lqBb03dp5vtRuUHJwqzem.jpg",
+        "vote_average": 7.696,
+        "release_date": "1999-05-01",
+        "popularity": 17.7373
     },
     {
         "id": 92830,
@@ -23760,28 +23760,16 @@
         "popularity": 14.3699
     },
     {
-        "id": 96102,
-        "type": "tv",
-        "title": "Hospital Playlist",
-        "title_ar": "قائمة التسجيل للمستشفى",
-        "overview": "Every day is extraordinary for five doctors and their patients inside a hospital, where birth, death and everything in between coexist.",
-        "overview_ar": "كل يوم هو أمر غير عادي بالنسبة لخمسة أطباء ومرضاهم داخل المستشفى ، حيث تتعايش الولادة والموت وكل شيء بينهما.",
-        "poster_path": "/8MSjQkH2FrG0t4l84L5HmiSFrS7.jpg",
-        "vote_average": 8.512,
-        "release_date": "2020-03-12",
-        "popularity": 18.989
-    },
-    {
         "id": 926,
         "type": "tv",
         "title": "Scooby-Doo, Where Are You!",
-        "title_ar": "سكوبي دو أين انت!",
+        "title_ar": "Scooby-Doo, Where Are You!",
         "overview": "Fred, Daphne, Velma, Shaggy, and the talking dog, Scooby-Doo, travel on the Mystery Machine van, in search of weird mysteries to solve.",
-        "overview_ar": "سكوبي دو أين أنت! هو مسلسل تلفزيوني كوميدي أمريكي للرسوم المتحركة من تأليف جو روبي وكين سبيرز وإنتاج هانا باربيرا لشبكة سي بي إس. تم عرض المسلسل لأول مرة كجزء من جدول الرسوم المتحركة الصباحية يوم السبت للشبكة في 13 سبتمبر 1969 ، وتم بثه لمدة موسمين حتى 31 أكتوبر 1970.",
+        "overview_ar": "Fred, Daphne, Velma, Shaggy, and the talking dog, Scooby-Doo, travel on the Mystery Machine van, in search of weird mysteries to solve.",
         "poster_path": "/lTzUSCtXR77CmGmEHcaxpxu2b4h.jpg",
-        "vote_average": 7.828,
+        "vote_average": 7.8,
         "release_date": "1969-09-13",
-        "popularity": 18.9882
+        "popularity": 16.6314
     },
     {
         "id": 171,
@@ -23793,7 +23781,7 @@
         "poster_path": "/inQQEpHiaSy8BEd9XEFF2W39vO0.jpg",
         "vote_average": 7.626,
         "release_date": "1992-08-27",
-        "popularity": 18.9826
+        "popularity": 17.7711
     },
     {
         "id": 32152,
@@ -23805,7 +23793,7 @@
         "poster_path": "/6I0eu1qFArRchIt7ds1VW1dCJXZ.jpg",
         "vote_average": 7.2,
         "release_date": "1983-10-31",
-        "popularity": 18.965
+        "popularity": 12.5422
     },
     {
         "id": 232230,
@@ -23817,7 +23805,7 @@
         "poster_path": "/c8fHePq3yTn3WvZd4hupkHwsjm5.jpg",
         "vote_average": 8.684,
         "release_date": "2025-06-28",
-        "popularity": 18.9498
+        "popularity": 15.2579
     },
     {
         "id": 14866,
@@ -23829,7 +23817,7 @@
         "poster_path": "/nVNlkqbJ43GGT7Hqd25PVauTpIm.jpg",
         "vote_average": 6.2,
         "release_date": "1960-09-19",
-        "popularity": 18.9494
+        "popularity": 16.2597
     },
     {
         "id": 70513,
@@ -23841,7 +23829,7 @@
         "poster_path": "/hXCd9FUT7ZjoB390cGioVhEiXOB.jpg",
         "vote_average": 6.565,
         "release_date": "2017-07-12",
-        "popularity": 18.9445
+        "popularity": 15.7925
     },
     {
         "id": 56219,
@@ -23853,7 +23841,7 @@
         "poster_path": "/6zTclFjUEm6aTodjYciYtwzh5tY.jpg",
         "vote_average": 6.861,
         "release_date": "2013-07-09",
-        "popularity": 18.9355
+        "popularity": 16.7016
     },
     {
         "id": 3400,
@@ -23865,7 +23853,7 @@
         "poster_path": "/pr3WcVn1i7mKwae84MCOW0vpLYc.jpg",
         "vote_average": 5.1,
         "release_date": "2002-09-29",
-        "popularity": 18.9347
+        "popularity": 15.3056
     },
     {
         "id": 79141,
@@ -23877,7 +23865,7 @@
         "poster_path": "/mSLSrOndwNoompAARPHBaxF2E6E.jpg",
         "vote_average": 8.592,
         "release_date": "2018-04-25",
-        "popularity": 18.9336
+        "popularity": 16.2578
     },
     {
         "id": 4107,
@@ -23889,7 +23877,7 @@
         "poster_path": "/iGUWv21kgKc79bpYxImk2nTIPin.jpg",
         "vote_average": 6.9,
         "release_date": "1996-08-25",
-        "popularity": 18.9301
+        "popularity": 15.021
     },
     {
         "id": 42729,
@@ -23901,7 +23889,7 @@
         "poster_path": "/AgFh9KTH7HR6eWypxXD2G7rmDLW.jpg",
         "vote_average": 7.719,
         "release_date": "2002-04-09",
-        "popularity": 18.9221
+        "popularity": 14.8181
     },
     {
         "id": 61986,
@@ -23913,7 +23901,7 @@
         "poster_path": "/uEaqgEjAShqrziUia4XBzvXXGXP.jpg",
         "vote_average": 7.107,
         "release_date": "2015-03-20",
-        "popularity": 18.9212
+        "popularity": 16.9123
     },
     {
         "id": 56998,
@@ -23925,7 +23913,7 @@
         "poster_path": "/oPiNGGZyBzst3hKGFU1mteT0zhe.jpg",
         "vote_average": 8.157,
         "release_date": "2010-07-05",
-        "popularity": 18.9113
+        "popularity": 14.9457
     },
     {
         "id": 44242,
@@ -23937,7 +23925,7 @@
         "poster_path": "/gn61HHk9KRa9RKeFCz476EqLR61.jpg",
         "vote_average": 7.096,
         "release_date": "2013-06-23",
-        "popularity": 18.9057
+        "popularity": 16.5289
     },
     {
         "id": 31295,
@@ -23949,7 +23937,7 @@
         "poster_path": "/1yjmRIp8A92FlAw5JpouQ50ATUA.jpg",
         "vote_average": 7.616,
         "release_date": "2009-11-12",
-        "popularity": 18.9026
+        "popularity": 15.2892
     },
     {
         "id": 95269,
@@ -23961,7 +23949,7 @@
         "poster_path": "/h1X1G8Q9Ba9Vy1YIgXHduenP8nv.jpg",
         "vote_average": 8.6,
         "release_date": "2020-01-10",
-        "popularity": 18.9013
+        "popularity": 15.3445
     },
     {
         "id": 83708,
@@ -23973,7 +23961,7 @@
         "poster_path": "/i5l3cYbXYOlHWabtyexmVafxuL8.jpg",
         "vote_average": 7.6,
         "release_date": "2018-10-05",
-        "popularity": 18.8992
+        "popularity": 13.1587
     },
     {
         "id": 4020,
@@ -23985,7 +23973,7 @@
         "poster_path": "/1v9PXvumKXZT9AKzNjqdAADNPKS.jpg",
         "vote_average": 7.1,
         "release_date": "2005-06-03",
-        "popularity": 18.8889
+        "popularity": 16.3342
     },
     {
         "id": 87428,
@@ -23997,6 +23985,18 @@
         "poster_path": "/fI3E1G5N8oimMeyYn5UzWRT2cST.jpg",
         "vote_average": 7.876,
         "release_date": "2019-08-15",
-        "popularity": 18.8872
+        "popularity": 16.7983
+    },
+    {
+        "id": 5822,
+        "type": "tv",
+        "title": "SMAP×SMAP",
+        "title_ar": "SMAP×SMAP",
+        "overview": "SMAP×SMAP was an ongoing weekly Japanese variety show on Kansai TV and Fuji TV starring the members of SMAP. The show began on April 15, 1996 and it aired from 22:00 to 22:54 every Monday. The show's usual ratings were higher than 20%, which is considered high since most variety shows range from 10-20%.\n\nEach episode begins a variety of skits, comedic performances, and/or games.  These are followed by Bistro SMAP, in which the SMAP members compete against each other to impress celebrity judges with their gourmet cooking.  Last is a musical performance by SMAP which may include celebrity guests, as well.",
+        "overview_ar": "SMAP×SMAP was an ongoing weekly Japanese variety show on Kansai TV and Fuji TV starring the members of SMAP. The show began on April 15, 1996 and it aired from 22:00 to 22:54 every Monday. The show's usual ratings were higher than 20%, which is considered high since most variety shows range from 10-20%.\n\nEach episode begins a variety of skits, comedic performances, and/or games.  These are followed by Bistro SMAP, in which the SMAP members compete against each other to impress celebrity judges with their gourmet cooking.  Last is a musical performance by SMAP which may include celebrity guests, as well.",
+        "poster_path": "/oXogyT6WvyLYVrxjJfiXKuBN1Ov.jpg",
+        "vote_average": 8.5,
+        "release_date": "1996-04-15",
+        "popularity": 16.13
     }
 ]
