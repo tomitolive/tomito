@@ -1908,16 +1908,16 @@
         "popularity": 55.2606
     },
     {
-        "id": 1981,
+        "id": 69050,
         "type": "tv",
-        "title": "Charmed",
-        "title_ar": "Charmed",
-        "overview": "Three sisters (Prue, Piper and Phoebe) reunite and unlock their powers to become the Charmed Ones, the most powerful good witches of all time, whose prophesied destiny is to protect innocent lives from evil beings such as demons and warlocks. Each sister possesses unique magical powers that grow and evolve, while they attempt to maintain normal lives in modern day San Francisco. ",
-        "overview_ar": "Three sisters (Prue, Piper and Phoebe) reunite and unlock their powers to become the Charmed Ones, the most powerful good witches of all time, whose prophesied destiny is to protect innocent lives from evil beings such as demons and warlocks. Each sister possesses unique magical powers that grow and evolve, while they attempt to maintain normal lives in modern day San Francisco. ",
-        "poster_path": "/z4bPJ1BWU2EtV69NII2GVvsugQ2.jpg",
-        "vote_average": 8.171,
-        "release_date": "1998-10-07",
-        "popularity": 78.171
+        "title": "Riverdale",
+        "title_ar": "Riverdale",
+        "overview": "Set in the present, the series offers a bold, subversive take on Archie, Betty, Veronica and their friends, exploring the surreality of small-town life, the darkness and weirdness bubbling beneath Riverdale’s wholesome facade.",
+        "overview_ar": "Set in the present, the series offers a bold, subversive take on Archie, Betty, Veronica and their friends, exploring the surreality of small-town life, the darkness and weirdness bubbling beneath Riverdale’s wholesome facade.",
+        "poster_path": "/d8mmn9thQ5dBk2qbv6BCqGUXWK3.jpg",
+        "vote_average": 8.415,
+        "release_date": "2017-01-26",
+        "popularity": 79.6599
     },
     {
         "id": 82873,
@@ -2191,7 +2191,7 @@
         "overview": "A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
         "overview_ar": "يتّخذ شابّ وسيم واقع في مستنقع الهوس تدابيرَ جنونيةً ليفرض بها نفسه على حياة من فُتِن بهم... فحذارِ أن يحبّك هذا الرجل!",
         "poster_path": "/oANi0vEE92nuijiZQgPZ88FSxqQ.jpg",
-        "vote_average": 8.0,
+        "vote_average": 8.016,
         "release_date": "2018-09-09",
         "popularity": 69.5046
     },
@@ -2275,7 +2275,7 @@
         "overview": "The son of a world famous mystery writer, Jimmy Kudo, has achieved his own notoriety by assisting the local police as a student detective. He has always been able to solve the most difficult of criminal cases using his wits and power of reason.",
         "overview_ar": "كودو شينتشي هو متحرٍ في المدرسة الثانوية ذاع صيته لحله العديد من القضايا الصعبة، وهو ابن مؤلف الروايات الغموض العالمي، كودو يوساكو. يتورط شينتشي في حادثة مع رجال منظمة غامضة ذوي رداء أسود، ويجبرونه على تجرع عقار غريب بقلص جسده، فيصبح إيدوغاوا كونان. على شينتشي الآن الانتقال لمنزل صديقة طفولته، موري ران، حيث يعمل والدها متحرياً لإيجاد معلومات عن أولئك الرجال.",
         "poster_path": "/rRIEFvHRy01OYzmXQBbGeW0Qilc.jpg",
-        "vote_average": 7.999,
+        "vote_average": 8.0,
         "release_date": "1996-01-08",
         "popularity": 61.0971
     },
@@ -2409,7 +2409,7 @@
         "poster_path": "/bs0Q5TMYVUTNXCPbuPBNylzqrxk.jpg",
         "vote_average": 7.274,
         "release_date": "1981-10-14",
-        "popularity": 69.8159
+        "popularity": 44.1343
     },
     {
         "id": 60797,
@@ -2421,19 +2421,7 @@
         "poster_path": "/hzeirSF6bRjssDh5JFrm5WRwFLd.jpg",
         "vote_average": 8.203,
         "release_date": "2014-09-22",
-        "popularity": 69.015
-    },
-    {
-        "id": 8514,
-        "type": "tv",
-        "title": "RuPaul's Drag Race",
-        "title_ar": "RuPaul's Drag Race",
-        "overview": "Join RuPaul, the world's most famous drag queen, as the host, mentor and judge for the ultimate in drag queen competitions. The top drag queens in the U.S. will vie for drag stardom as RuPaul, in full glamazon drag, will reign supreme in all judging and eliminations while helping guide the contestants as they prepare for each challenge.",
-        "overview_ar": "Join RuPaul, the world's most famous drag queen, as the host, mentor and judge for the ultimate in drag queen competitions. The top drag queens in the U.S. will vie for drag stardom as RuPaul, in full glamazon drag, will reign supreme in all judging and eliminations while helping guide the contestants as they prepare for each challenge.",
-        "poster_path": "/ySs9xkTfPgQCUNB2ctOzcMWP14n.jpg",
-        "vote_average": 7.5,
-        "release_date": "2009-02-02",
-        "popularity": 68.8092
+        "popularity": 63.6212
     },
     {
         "id": 14658,
@@ -2445,7 +2433,7 @@
         "poster_path": "/1usR1nanbDvnc0LJlWd5TOylT9M.jpg",
         "vote_average": 7.327,
         "release_date": "2000-05-31",
-        "popularity": 68.8066
+        "popularity": 61.6956
     },
     {
         "id": 67384,
@@ -2457,7 +2445,7 @@
         "poster_path": "/b7ygC3GRaq4xc0nkWdGnydtMfvD.jpg",
         "vote_average": 7.6,
         "release_date": "2016-10-13",
-        "popularity": 68.7866
+        "popularity": 63.0598
     },
     {
         "id": 1639,
@@ -2469,7 +2457,7 @@
         "poster_path": "/lf0TcOkheYUZKpeh7c8lqJHNk5O.jpg",
         "vote_average": 7.454,
         "release_date": "2006-09-25",
-        "popularity": 68.3014
+        "popularity": 54.1943
     },
     {
         "id": 5811,
@@ -2481,7 +2469,7 @@
         "poster_path": "/vCRRb67Dv1G5sYGaIUnoVkTjNlw.jpg",
         "vote_average": 8.5,
         "release_date": "1999-10-09",
-        "popularity": 68.1919
+        "popularity": 51.7956
     },
     {
         "id": 1877,
@@ -2493,7 +2481,7 @@
         "poster_path": "/g6TidT7be954rrzPPBTIXkSmfXj.jpg",
         "vote_average": 7.89,
         "release_date": "2007-08-17",
-        "popularity": 67.9988
+        "popularity": 61.7976
     },
     {
         "id": 45,
@@ -2505,7 +2493,7 @@
         "poster_path": "/aqM6QnuhSXzjHlKbXyKUqxaGiWu.jpg",
         "vote_average": 7.544,
         "release_date": "2002-10-20",
-        "popularity": 67.9738
+        "popularity": 62.3545
     },
     {
         "id": 101172,
@@ -2517,7 +2505,7 @@
         "poster_path": "/3iPt9bIPNYmhqQ3BVU4plRkkDbf.jpg",
         "vote_average": 8.6,
         "release_date": "2020-11-29",
-        "popularity": 67.8945
+        "popularity": 46.6807
     },
     {
         "id": 1417,
@@ -2529,7 +2517,7 @@
         "poster_path": "/62T2vsZYTje3KhdCsiLR1K1RFJW.jpg",
         "vote_average": 6.783,
         "release_date": "2009-05-19",
-        "popularity": 67.8853
+        "popularity": 61.8576
     },
     {
         "id": 42444,
@@ -2541,7 +2529,7 @@
         "poster_path": "/dhtiYYbob8saEUFWle3aWgVY28M.jpg",
         "vote_average": 8.469,
         "release_date": "1986-10-11",
-        "popularity": 67.74
+        "popularity": 45.7973
     },
     {
         "id": 86831,
@@ -2553,7 +2541,7 @@
         "poster_path": "/vL5BQvXH96cJzmNK5n7QliQxy90.jpg",
         "vote_average": 8.215,
         "release_date": "2019-03-15",
-        "popularity": 67.622
+        "popularity": 50.9997
     },
     {
         "id": 15844,
@@ -2565,7 +2553,7 @@
         "poster_path": "/fpOAhBePSowxPsRUUT0ov9tMXwc.jpg",
         "vote_average": 0.0,
         "release_date": "1995-05-15",
-        "popularity": 67.4849
+        "popularity": 56.0231
     },
     {
         "id": 1438,
@@ -2577,7 +2565,7 @@
         "poster_path": "/4lbclFySvugI51fwsyxBTOm4DqK.jpg",
         "vote_average": 8.614,
         "release_date": "2002-06-02",
-        "popularity": 67.2307
+        "popularity": 59.8214
     },
     {
         "id": 4239,
@@ -2589,7 +2577,7 @@
         "poster_path": "/qxdOgESOkBMmfcWUizL01mbdqzl.jpg",
         "vote_average": 7.716,
         "release_date": "1987-04-05",
-        "popularity": 67.1182
+        "popularity": 83.7672
     },
     {
         "id": 31917,
@@ -2601,7 +2589,7 @@
         "poster_path": "/aUPbHiLS3hCHKjtLsncFa9g0viV.jpg",
         "vote_average": 8.0,
         "release_date": "2010-06-08",
-        "popularity": 66.7407
+        "popularity": 63.4925
     },
     {
         "id": 1508,
@@ -2613,7 +2601,7 @@
         "poster_path": "/5ropLAggzraCNoT6QPltb9lxeP3.jpg",
         "vote_average": 6.142,
         "release_date": "2005-06-01",
-        "popularity": 66.7226
+        "popularity": 56.7693
     },
     {
         "id": 1606,
@@ -2625,7 +2613,7 @@
         "poster_path": "/9ZtGupUFaHhws7mOcwhNTtRpRHC.jpg",
         "vote_average": 8.1,
         "release_date": "2005-09-23",
-        "popularity": 66.6017
+        "popularity": 59.1973
     },
     {
         "id": 39340,
@@ -2637,7 +2625,19 @@
         "poster_path": "/wW1SDEoZ6pDfnSkVQuXwOo8ICep.jpg",
         "vote_average": 7.215,
         "release_date": "2011-09-19",
-        "popularity": 66.5716
+        "popularity": 57.1131
+    },
+    {
+        "id": 474,
+        "type": "tv",
+        "title": "Nash Bridges",
+        "title_ar": "Nash Bridges",
+        "overview": "Fun-loving San Francisco Police Department investigator Nash Bridges is part of the elite Special Investigations Unit. He tackles crime using his keen sense of humor and charm. Joe Dominguez comes out of retirement to become Bridges' wisecracking yet more rule-abiding partner.",
+        "overview_ar": "Fun-loving San Francisco Police Department investigator Nash Bridges is part of the elite Special Investigations Unit. He tackles crime using his keen sense of humor and charm. Joe Dominguez comes out of retirement to become Bridges' wisecracking yet more rule-abiding partner.",
+        "poster_path": "/hJeHSCFoxWN2Pt2lg56CKOi9g87.jpg",
+        "vote_average": 6.7,
+        "release_date": "1996-03-29",
+        "popularity": 43.7174
     },
     {
         "id": 474,
@@ -5751,9 +5751,9 @@
         "id": 5021,
         "type": "tv",
         "title": "The Waltons",
-        "title_ar": "The Waltons",
+        "title_ar": "عائلة والتون",
         "overview": "The Waltons live their life in a rural Virginia community during the Great Depression and World War II.",
-        "overview_ar": "The Waltons live their life in a rural Virginia community during the Great Depression and World War II.",
+        "overview_ar": "عاشت عائلة والتون حياتها في مجتمع ريفي في فرجينيا أثناء فترة الكساد الأعظم والحرب العالمية الثانية.",
         "poster_path": "/51HX9eNn5ZPjRIngDvnk4KzFb1a.jpg",
         "vote_average": 7.2,
         "release_date": "1972-09-14",
@@ -15600,6 +15600,18 @@
         "popularity": 22.5919
     },
     {
+        "id": 39852,
+        "type": "tv",
+        "title": "The Sinner",
+        "title_ar": "The Sinner",
+        "overview": "In a small New York town, a haunted detective hunts for answers about perplexing crimes while wrestling with his own demons.",
+        "overview_ar": "In a small New York town, a haunted detective hunts for answers about perplexing crimes while wrestling with his own demons.",
+        "poster_path": "/rmibFGdqOe0kKKhPls0jVOdZCWw.jpg",
+        "vote_average": 7.476,
+        "release_date": "2017-08-02",
+        "popularity": 24.1955
+    },
+    {
         "id": 154420,
         "type": "tv",
         "title": "Love Actually",
@@ -15754,18 +15766,6 @@
         "vote_average": 8.044,
         "release_date": "2021-02-24",
         "popularity": 20.7757
-    },
-    {
-        "id": 69061,
-        "type": "tv",
-        "title": "The OA",
-        "title_ar": "The OA",
-        "overview": "Seven years after vanishing from her home, a young woman returns with mysterious new abilities and recruits five strangers for a secret mission.",
-        "overview_ar": "Seven years after vanishing from her home, a young woman returns with mysterious new abilities and recruits five strangers for a secret mission.",
-        "poster_path": "/rueY4slMeKtTGitm0raFUJvgaa5.jpg",
-        "vote_average": 7.502,
-        "release_date": "2016-12-16",
-        "popularity": 21.845
     },
     {
         "id": 117992,
@@ -16560,30 +16560,6 @@
         "popularity": 21.8435
     },
     {
-        "id": 107467,
-        "type": "tv",
-        "title": "Singer",
-        "title_ar": "我是歌手",
-        "overview": "",
-        "overview_ar": "",
-        "poster_path": "/ndDXmRQLOEYE795Qp0FrsvtGPCF.jpg",
-        "vote_average": 6.0,
-        "release_date": "2013-01-18",
-        "popularity": 17.5708
-    },
-    {
-        "id": 76075,
-        "type": "tv",
-        "title": "Laid-Back Camp",
-        "title_ar": "مخيم الاسترخاء",
-        "overview": "Nadeshiko, a high school student who had moved from Shizuoka to Yamanashi, decides to see the famous, 1000 yen-bill-featured Mount Fuji. Even though she manages to bike all the way to Motosu, she's forced to turn back because of worsening weather. Unable to set her eyes on her goal, she faints partway to her destination. When she wakes up, it's night, in a place she's never been before, with no way of knowing how to get home. Nadeshiko is saved when she encounters Rin, a girl who is out camping by herself. This outdoorsy girls story begins with this first encounter between Nadeshiko and Rin.",
-        "overview_ar": "ناديشيكو، تلميذة في المدرسة الثانويّة كانت قد انتقلت من شيزوكا إلى ياماناشي، تقرّر أن ترى جبل فوجي الشّهير والمرسوم على العملة الورقيّة من فئة 1000 ين. ورغم أنّها تتمكّن من قطع كلّ المسافة إلى موتوسو بدرّاجة هوائيّة، إلّا أنّها تضطرّ للتراجع بسببِ سوء حالة الطقس. في عجزها عن تحقيقِ هدفها، تغيب عن الوعي في منتصفِ الطرق إلى وجهتها. عندما تستيقظ، تجد نفسها ليلاً في مكانٍ لم تكن فيه من قبل، ولا تعرف ضالّتها إلى المنزلِ إطلاقاً. تنجو ناديشيكو عندما تلتقي برين، وهي فتاةٌ خرجَتْ بمفردها للتخييم. قصّة الفتيات في الهواءِ الطلق هذه تبدأ بهذا اللّقاء الأوّل بين ناديشيكو ورين.",
-        "poster_path": "/1c5xBDBQQwa1bvX5fibAeymReGg.jpg",
-        "vote_average": 8.165,
-        "release_date": "2018-01-04",
-        "popularity": 20.698
-    },
-    {
         "id": 71715,
         "type": "tv",
         "title": "Good Girls",
@@ -16798,6 +16774,30 @@
         "vote_average": 7.115,
         "release_date": "2011-06-19",
         "popularity": 20.1732
+    },
+    {
+        "id": 79611,
+        "type": "tv",
+        "title": "Charmed",
+        "title_ar": "Charmed",
+        "overview": "Set in the fictional college town of Hilltowne, Charmed follows the lives of three sisters, Macy, Mel and Maggie Vera who, after the tragic death of their mother, discover they are three of the most powerful witches of all time.",
+        "overview_ar": "Set in the fictional college town of Hilltowne, Charmed follows the lives of three sisters, Macy, Mel and Maggie Vera who, after the tragic death of their mother, discover they are three of the most powerful witches of all time.",
+        "poster_path": "/doXHjfOtEmX8kEq1tsMnNqq9YLZ.jpg",
+        "vote_average": 7.2,
+        "release_date": "2018-10-14",
+        "popularity": 20.0753
+    },
+    {
+        "id": 71769,
+        "type": "tv",
+        "title": "The Alienist",
+        "title_ar": "The Alienist",
+        "overview": "New York, 1896. Police commissioner Theodore Roosevelt brings together criminal psychologist Dr. Laszlo Kreizler, newspaper illustrator John Moore and secretary Sara Howard to investigate several murders of male prostitutes.",
+        "overview_ar": "في مدينة نيويورك عام 1896، يُجنّد مفوض الشرطة \"ثيودور روزفلت\" الأخصائي النفسي \"لازلو كرايسلر\" للقبض على قاتل يستهدف الصبية المشردين.",
+        "poster_path": "/zUd4RPbfHuB1zIG2iNI5bdZcQo3.jpg",
+        "vote_average": 7.513,
+        "release_date": "2018-01-22",
+        "popularity": 20.3063
     },
     {
         "id": 79611,
@@ -18375,9 +18375,9 @@
         "id": 278882,
         "type": "tv",
         "title": "No Pain No Gain",
-        "title_ar": "الفائز المسكين",
+        "title_ar": "No Pain No Gain",
         "overview": "Pei Qian accidentally gets an invitation from a mysterious big brother to start a company that must aim to lose money, and eventually becomes a conscientious boss in the hearts of his employees and an industry-recognized business whiz!",
-        "overview_ar": "بي تشيان يحصل بالصدفة على دعوة من أخ كبير غامض لبدء شركة يجب أن تهدف إلى خسارة المال، وفي النهاية يصبح رئيسًا واعيًا في قلوب موظفيه وعبقريًا في الأعمال معترفًا به في الصناعة!",
+        "overview_ar": "Pei Qian accidentally gets an invitation from a mysterious big brother to start a company that must aim to lose money, and eventually becomes a conscientious boss in the hearts of his employees and an industry-recognized business whiz!",
         "poster_path": "/3lEcHeNmmKocEcw5Ogr6fA0bOsy.jpg",
         "vote_average": 8.5,
         "release_date": "2026-01-31",
@@ -18459,7 +18459,7 @@
         "id": 83463,
         "type": "tv",
         "title": "Drawing Jianghu: The Rangers",
-        "title_ar": "Drawing Jianghu: The Rangers",
+        "title_ar": "画江湖之不良人",
         "overview": "Two martial artists are brutally killed by a team of assassins, leaving their wards, a young boy and girl, defenseless. A martial arts master dispatches of the assassins, sparing their lives, and decides to take them in. He raises them and teaches them martial arts.",
         "overview_ar": "Two martial artists are brutally killed by a team of assassins, leaving their wards, a young boy and girl, defenseless. A martial arts master dispatches of the assassins, sparing their lives, and decides to take them in. He raises them and teaches them martial arts.",
         "poster_path": "/9NaAIq970v66BSUvJyGUuxeZx5f.jpg",
@@ -20400,18 +20400,6 @@
         "popularity": 17.0219
     },
     {
-        "id": 126929,
-        "type": "tv",
-        "title": "Welcome to Wrexham",
-        "title_ar": "Welcome to Wrexham",
-        "overview": "Documentary series tracking the dreams and worries of Wrexham, a working-class town in North Wales, UK, as two Hollywood stars (Rob McElhenney and Ryan Reynolds) take ownership of the town’s historic yet struggling football club.",
-        "overview_ar": "Documentary series tracking the dreams and worries of Wrexham, a working-class town in North Wales, UK, as two Hollywood stars (Rob McElhenney and Ryan Reynolds) take ownership of the town’s historic yet struggling football club.",
-        "poster_path": "/53CNogAzbbwepLxQS5jIfGG35MQ.jpg",
-        "vote_average": 7.778,
-        "release_date": "2022-08-24",
-        "popularity": 17.1513
-    },
-    {
         "id": 241138,
         "type": "tv",
         "title": "Rising Impact",
@@ -20515,21 +20503,9 @@
         "overview": "An anthology of sweeping true love stories that captured the world’s attention.",
         "overview_ar": "An anthology of sweeping true love stories that captured the world’s attention.",
         "poster_path": "/7WU3cXD0rip5ONc7owI2dBWAVjW.jpg",
-        "vote_average": 9.3,
+        "vote_average": 8.833,
         "release_date": "2026-02-12",
         "popularity": 20.9553
-    },
-    {
-        "id": 69470,
-        "type": "tv",
-        "title": "Santa Clarita Diet",
-        "title_ar": "Santa Clarita Diet",
-        "overview": "They're ordinary husband and wife realtors until she undergoes a dramatic change that sends them down a road of death and destruction. In a good way.",
-        "overview_ar": "إنهما زوجان تقليديان ويعملان كسماسرة عقارات، إلى أن تتعرض الزوجة لتغيير درامي يلقي بهما على درب الموت والدمار... لكن بشكلٍ حسن.",
-        "poster_path": "/5rBjNm2sRubaXKBnU904NInFi7P.jpg",
-        "vote_average": 7.447,
-        "release_date": "2017-02-03",
-        "popularity": 19.8594
     },
     {
         "id": 815,
@@ -20635,9 +20611,33 @@
         "overview": "Three lifelong pals embark on a chaotic quest to solve the mystery of their old friend's suspicious death and keep their own dark secret under wraps.",
         "overview_ar": "تنطلق ثلاث سيدات تجمعهن صداقة طويلة الأمد في مهمة مليئة بالفوضى لكشف لغز الوفاة المريبة لصديقة عمرهن، بينما يحاولن إبقاء سرّهن المظلم طيّ الكتمان.",
         "poster_path": "/8vwM2mrOWgREjM28YblxuuVIrlF.jpg",
-        "vote_average": 7.9,
+        "vote_average": 8.091,
         "release_date": "2026-02-12",
         "popularity": 24.507
+    },
+    {
+        "id": 198004,
+        "type": "tv",
+        "title": "King the Land",
+        "title_ar": "King the Land",
+        "overview": "Amid a tense inheritance fight, a charming heir clashes with his hardworking employee who's known for her irresistible smile — which he cannot stand.",
+        "overview_ar": "Amid a tense inheritance fight, a charming heir clashes with his hardworking employee who's known for her irresistible smile — which he cannot stand.",
+        "poster_path": "/tW8BMRCYSe6nySvZ749pzc31x2m.jpg",
+        "vote_average": 8.187,
+        "release_date": "2023-06-17",
+        "popularity": 18.0569
+    },
+    {
+        "id": 67482,
+        "type": "tv",
+        "title": "RuPaul's Drag Race All Stars",
+        "title_ar": "RuPaul's Drag Race All Stars",
+        "overview": "The most celebrated competitors from RuPaul's Drag Race vie for a second chance to enter Drag Race herstory. This drag queen showdown is filled with plenty of heated competition, lip-syncing for the legacy, and, of course, the All-Stars Snatch Game.",
+        "overview_ar": "The most celebrated competitors from RuPaul's Drag Race vie for a second chance to enter Drag Race herstory. This drag queen showdown is filled with plenty of heated competition, lip-syncing for the legacy, and, of course, the All-Stars Snatch Game.",
+        "poster_path": "/ArIu3xEo28LiKtiVWHNZdPFNZrM.jpg",
+        "vote_average": 7.2,
+        "release_date": "2012-10-22",
+        "popularity": 19.8098
     },
     {
         "id": 211564,
@@ -21360,18 +21360,6 @@
         "popularity": 18.8552
     },
     {
-        "id": 32829,
-        "type": "tv",
-        "title": "Happy Endings",
-        "title_ar": "Happy Endings",
-        "overview": "A fresh and funny take on modern friendship and what one urban family will do to stay friends after the perfect couple who brought them all together break up on their wedding day. The failed wedding forces them all to question their life choices. Then there are Alex and Dave themselves, who strike a truce and must learn to live with the changes their breakup has brought.",
-        "overview_ar": "A fresh and funny take on modern friendship and what one urban family will do to stay friends after the perfect couple who brought them all together break up on their wedding day. The failed wedding forces them all to question their life choices. Then there are Alex and Dave themselves, who strike a truce and must learn to live with the changes their breakup has brought.",
-        "poster_path": "/lY44BjOnwCqtUO4VoKOz7IcG9RC.jpg",
-        "vote_average": 6.9,
-        "release_date": "2011-04-13",
-        "popularity": 18.8552
-    },
-    {
         "id": 60603,
         "type": "tv",
         "title": "The Curse of Oak Island",
@@ -21598,6 +21586,18 @@
         "vote_average": 7.5,
         "release_date": "2018-04-13",
         "popularity": 17.3607
+    },
+    {
+        "id": 3346,
+        "type": "tv",
+        "title": "Petticoat Junction",
+        "title_ar": "Petticoat Junction",
+        "overview": "The Bradley family are proud owners of the Shady Rest Hotel. Kate and her three young daughters do the job of running the hotel.",
+        "overview_ar": "The Bradley family are proud owners of the Shady Rest Hotel. Kate and her three young daughters do the job of running the hotel.",
+        "poster_path": "/2kTGzz870hmdmQ074CYTdKFRqSm.jpg",
+        "vote_average": 5.7,
+        "release_date": "1963-09-24",
+        "popularity": 16.4898
     },
     {
         "id": 13335,
@@ -22080,30 +22080,6 @@
         "popularity": 19.2328
     },
     {
-        "id": 124920,
-        "type": "tv",
-        "title": "Rugrats",
-        "title_ar": "Rugrats",
-        "overview": "A reinvention of the beloved 90s cartoon, Rugrats follows a group of adventurous babies as they discover the big world around them. Lead by Tommy Pickles, this toddler crew explores the world from their pint-sized and wildly imaginative perspective.",
-        "overview_ar": "A reinvention of the beloved 90s cartoon, Rugrats follows a group of adventurous babies as they discover the big world around them. Lead by Tommy Pickles, this toddler crew explores the world from their pint-sized and wildly imaginative perspective.",
-        "poster_path": "/bk5bqkQVYC32lozZO6Z0ZLw32jv.jpg",
-        "vote_average": 6.9,
-        "release_date": "2021-05-27",
-        "popularity": 13.7884
-    },
-    {
-        "id": 92621,
-        "type": "tv",
-        "title": "Brassic",
-        "title_ar": "Brassic",
-        "overview": "A group of working-class friends finding unconventional ways to win at life in suburban northern England. These lads have dealt, scammed, bribed and conned their way through adolescence, but now, their dealing and stealing is catching up with them and a whole load of trouble is heading their way.",
-        "overview_ar": "A group of working-class friends finding unconventional ways to win at life in suburban northern England. These lads have dealt, scammed, bribed and conned their way through adolescence, but now, their dealing and stealing is catching up with them and a whole load of trouble is heading their way.",
-        "poster_path": "/tnIq3yiLMZJpaJyRs8FNV7WJs6V.jpg",
-        "vote_average": 8.4,
-        "release_date": "2019-08-22",
-        "popularity": 19.2328
-    },
-    {
         "id": 35094,
         "type": "tv",
         "title": "Wild Kratts",
@@ -22171,7 +22147,7 @@
         "overview": "Five female prisoners forge a unique bond after a deadly accident... until corruption and turf wars within a ruthless prison threaten to destroy them.",
         "overview_ar": "تتوطد العلاقة بين خمس سجينات بشكل استثنائي بعد حادثة نَجوْنَ منها من رحم الموت... إلى أن يبدأ الفساد والصراع على النفوذ داخل سجنٍ وحشي بتهديد ما يجمعهن وتمزيقه.",
         "poster_path": "/9JWQYB7FkGtg47wFO7GOrUDgYrx.jpg",
-        "vote_average": 7.39,
+        "vote_average": 7.367,
         "release_date": "2025-08-14",
         "popularity": 51.0342
     },
@@ -22296,6 +22272,18 @@
         "popularity": 17.1338
     },
     {
+        "id": 69470,
+        "type": "tv",
+        "title": "Santa Clarita Diet",
+        "title_ar": "Santa Clarita Diet",
+        "overview": "They're ordinary husband and wife realtors until she undergoes a dramatic change that sends them down a road of death and destruction. In a good way.",
+        "overview_ar": "They're ordinary husband and wife realtors until she undergoes a dramatic change that sends them down a road of death and destruction. In a good way.",
+        "poster_path": "/5rBjNm2sRubaXKBnU904NInFi7P.jpg",
+        "vote_average": 7.4,
+        "release_date": "2017-02-03",
+        "popularity": 19.8594
+    },
+    {
         "id": 215803,
         "type": "tv",
         "title": "Batang Quiapo",
@@ -22318,6 +22306,18 @@
         "vote_average": 7.1,
         "release_date": "1998-04-04",
         "popularity": 18.3197
+    },
+    {
+        "id": 62,
+        "type": "tv",
+        "title": "The Challenge",
+        "title_ar": "The Challenge",
+        "overview": "Each Challenge pits numerous cast members from past seasons of reality shows against each other, dividing them into two separate teams according to different criteria, such as gender, which show they first appeared on, whether or not they're veterans or rookies on the show, etc. The two teams compete in numerous missions in order to win prizes and advance in the overall game.",
+        "overview_ar": "Each Challenge pits numerous cast members from past seasons of reality shows against each other, dividing them into two separate teams according to different criteria, such as gender, which show they first appeared on, whether or not they're veterans or rookies on the show, etc. The two teams compete in numerous missions in order to win prizes and advance in the overall game.",
+        "poster_path": "/aLwN4WTtkIQL1Waa86MDY41a1Xh.jpg",
+        "vote_average": 7.197,
+        "release_date": "1998-04-20",
+        "popularity": 19.9381
     },
     {
         "id": 82108,
