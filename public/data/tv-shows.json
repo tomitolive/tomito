@@ -984,18 +984,6 @@
         "popularity": 103.479
     },
     {
-        "id": 693,
-        "type": "tv",
-        "title": "Desperate Housewives",
-        "title_ar": "Desperate Housewives",
-        "overview": "Looking down on her friends and family isn't a way of life for Mary Alice Young... it's a way of death. One day, in her perfect house, in the loveliest of suburbs, Mary Alice ended it all. Now she's taking us into the lives of her family, friends and neighbors, commenting from her elevated P.O.V.",
-        "overview_ar": "Looking down on her friends and family isn't a way of life for Mary Alice Young... it's a way of death. One day, in her perfect house, in the loveliest of suburbs, Mary Alice ended it all. Now she's taking us into the lives of her family, friends and neighbors, commenting from her elevated P.O.V.",
-        "poster_path": "/4qeI51jDzH81PpUUNaJCBrfm7f6.jpg",
-        "vote_average": 7.902,
-        "release_date": "2004-10-03",
-        "popularity": 95.4575
-    },
-    {
         "id": 57911,
         "type": "tv",
         "title": "Doraemon",
@@ -1147,7 +1135,7 @@
         "overview": "A late night television talk show hosted by  Conan O'Brien.",
         "overview_ar": "A late night television talk show hosted by  Conan O'Brien.",
         "poster_path": "/oQxrvUhP3ycwnlxIrIMQ9Z3kleq.jpg",
-        "vote_average": 7.118,
+        "vote_average": 7.1,
         "release_date": "2010-11-08",
         "popularity": 73.6757
     },
@@ -1198,6 +1186,18 @@
         "vote_average": 7.7,
         "release_date": "2004-01-05",
         "popularity": 77.2246
+    },
+    {
+        "id": 873,
+        "type": "tv",
+        "title": "Columbo",
+        "title_ar": "Columbo",
+        "overview": "Columbo is a friendly, verbose, disheveled-looking police detective who is consistently underestimated by his suspects. Despite his unprepossessing appearance and apparent absentmindedness, he shrewdly solves all of his cases and secures all evidence needed for indictment. His formidable eye for detail and meticulously dedicated approach often become clear to the killer only late in the storyline.",
+        "overview_ar": "Columbo is a friendly, verbose, disheveled-looking police detective who is consistently underestimated by his suspects. Despite his unprepossessing appearance and apparent absentmindedness, he shrewdly solves all of his cases and secures all evidence needed for indictment. His formidable eye for detail and meticulously dedicated approach often become clear to the killer only late in the storyline.",
+        "poster_path": "/2JCD8vab3fircOU8cM2HJCxfv4I.jpg",
+        "vote_average": 8.084,
+        "release_date": "1971-09-15",
+        "popularity": 94.1091
     },
     {
         "id": 4546,
@@ -3123,7 +3123,7 @@
         "id": 154770,
         "type": "tv",
         "title": "Hello Saturday",
-        "title_ar": "你好，星期六",
+        "title_ar": "Hello Saturday",
         "overview": "\"Hello, Saturday\" is the rebranding of the popular Chinese show \"Happy Camp\", hosted by He Jiong and with a fixed group of regular celebrity members.\n\nThe program showcases the talent of various stars as well as social topics through creative and diverse content and games. It aims to spread positive energy while keeping up with the current trends and leading youth culture.",
         "overview_ar": "\"Hello, Saturday\" is the rebranding of the popular Chinese show \"Happy Camp\", hosted by He Jiong and with a fixed group of regular celebrity members.\n\nThe program showcases the talent of various stars as well as social topics through creative and diverse content and games. It aims to spread positive energy while keeping up with the current trends and leading youth culture.",
         "poster_path": "/wsTjWy6NE2s3h0neChr0D92ddwI.jpg",
@@ -3135,9 +3135,9 @@
         "id": 33217,
         "type": "tv",
         "title": "Young Justice",
-        "title_ar": "شباب العدالة",
+        "title_ar": "Young Justice",
         "overview": "Teenage superheroes strive to prove themselves as members of the Justice League.",
-        "overview_ar": "يسعى الأبطال الخارقون المراهقون جاهدين لإثبات أنفسهم كأعضاء في رابطة العدالة.",
+        "overview_ar": "Teenage superheroes strive to prove themselves as members of the Justice League.",
         "poster_path": "/zMJw34G4OJhcd9NjKSRjJdDqjbR.jpg",
         "vote_average": 8.387,
         "release_date": "2010-11-26",
@@ -3353,7 +3353,7 @@
         "title": "Blindspot",
         "title_ar": "Blindspot",
         "overview": "A vast international plot explodes when a beautiful Jane Doe is discovered naked in Times Square, completely covered in mysterious, intricate tattoos with no memory of who she is or how she got there. But there's one tattoo that is impossible to miss: the name of FBI agent Kurt Weller, emblazoned across her back. \"Jane,\" Agent Weller and the rest of the FBI quickly realize that each mark on her body is a crime to solve, leading them closer to the truth about her identity and the mysteries to be revealed.",
-        "overview_ar": "A vast international plot explodes when a beautiful Jane Doe is discovered naked in Times Square, completely covered in mysterious, intricate tattoos with no memory of who she is or how she got there. But there's one tattoo that is impossible to miss: the name of FBI agent Kurt Weller, emblazoned across her back. \"Jane,\" Agent Weller and the rest of the FBI quickly realize that each mark on her body is a crime to solve, leading them closer to the truth about her identity and the mysteries to be revealed.",
+        "overview_ar": "يُعثر على فتاة عارية في حقيبة بساحة \"التايمز\" لا تتذكر من هي ولا من أين أو كيف أتت!، وجسمها كله مغطى بوشوم غامضة ولكن هناك وشم لا يمكن تجاهله يحمل اسم عميل المباحث الفيدرالية \"كورت ويلر\".",
         "poster_path": "/4AeYzamQmd9Fa6hawDmYKbdvBSe.jpg",
         "vote_average": 7.377,
         "release_date": "2015-09-21",
@@ -12480,30 +12480,6 @@
         "popularity": 27.3906
     },
     {
-        "id": 91759,
-        "type": "tv",
-        "title": "Come Home Love: Lo and Behold",
-        "title_ar": "Come Home Love: Lo and Behold",
-        "overview": "Hung Sue Gan starting from the bottom, established his own logistics company, which is now running smoothly. His only concern now are his three daughters. His eldest daughter has immigrated overseas. His second daughter Hung Yeuk Shui has reached the marriageable age, but has no hopes for marriage anytime soon. She is constantly bickering with her younger sister Hung Sum Yue, who is an honour student, over trivial matters, causing their father to not know whether to laugh or cry. Hung Sue Yan, Hung Sue Gan's brother, moves in with the family, temporarily ending his life as a nomadic photographer. He joins Hung Yeuk Shui's company and encounters Ko Pak Fei, the director of an online shop. The two appear to be former lovers, making for lots of laughter. Since Hung Sue Yan moved in, a series of strange events have occurred in the family. Upon investigation, the source is traced to Lung Ging Fung, a promising young man who is the son of department store mogul Lung Gam Wai.",
-        "overview_ar": "Hung Sue Gan starting from the bottom, established his own logistics company, which is now running smoothly. His only concern now are his three daughters. His eldest daughter has immigrated overseas. His second daughter Hung Yeuk Shui has reached the marriageable age, but has no hopes for marriage anytime soon. She is constantly bickering with her younger sister Hung Sum Yue, who is an honour student, over trivial matters, causing their father to not know whether to laugh or cry. Hung Sue Yan, Hung Sue Gan's brother, moves in with the family, temporarily ending his life as a nomadic photographer. He joins Hung Yeuk Shui's company and encounters Ko Pak Fei, the director of an online shop. The two appear to be former lovers, making for lots of laughter. Since Hung Sue Yan moved in, a series of strange events have occurred in the family. Upon investigation, the source is traced to Lung Ging Fung, a promising young man who is the son of department store mogul Lung Gam Wai.",
-        "poster_path": "/lgD4j9gUGmMckZpWWRJjorWqGVT.jpg",
-        "vote_average": 5.4,
-        "release_date": "2017-02-06",
-        "popularity": 29.8166
-    },
-    {
-        "id": 4269,
-        "type": "tv",
-        "title": "The Transformers",
-        "title_ar": "المنتصرون",
-        "overview": "The Transformers is the first animated television series in the Transformers franchise. The series depicts a war among giant robots that can transform into vehicles and other objects.",
-        "overview_ar": "يخوض فصيلان متنافسان من الروبوتات الفضائية المتحولة معركةً مصير الأرض معلقٌ فيها.",
-        "poster_path": "/h4DvodvcLWh7xdpj872Bq0V2DKS.jpg",
-        "vote_average": 7.8,
-        "release_date": "1984-10-06",
-        "popularity": 25.396
-    },
-    {
         "id": 281009,
         "type": "tv",
         "title": "The Jewel of Section E",
@@ -12718,6 +12694,30 @@
         "vote_average": 6.4,
         "release_date": "1972-10-04",
         "popularity": 18.9545
+    },
+    {
+        "id": 70558,
+        "type": "tv",
+        "title": "NPR Tiny Desk Concerts",
+        "title_ar": "NPR Tiny Desk Concerts",
+        "overview": "Intimate musical performances, recorded live at the desk of All Songs Considered host Bob Boilen.",
+        "overview_ar": "Intimate musical performances, recorded live at the desk of All Songs Considered host Bob Boilen.",
+        "poster_path": "/sJ6HdzajIVkC5G2kRROhNu8at43.jpg",
+        "vote_average": 7.0,
+        "release_date": "2008-04-22",
+        "popularity": 21.5794
+    },
+    {
+        "id": 127,
+        "type": "tv",
+        "title": "Boston Public",
+        "title_ar": "Boston Public",
+        "overview": "Principal Steven Harper runs Winslow High School as best as he can while dealing with the demands of the faculty, the students and their parents.",
+        "overview_ar": "Principal Steven Harper runs Winslow High School as best as he can while dealing with the demands of the faculty, the students and their parents.",
+        "poster_path": "/yUEMfetlqwab7mOzrZIoAOGwfKi.jpg",
+        "vote_average": 7.594,
+        "release_date": "2000-10-23",
+        "popularity": 25.6653
     },
     {
         "id": 127,
@@ -15459,9 +15459,9 @@
         "id": 249522,
         "type": "tv",
         "title": "Beast Games",
-        "title_ar": "ألعاب الوحوش",
+        "title_ar": "Beast Games",
         "overview": "I gathered 1,000 people to fight for $5,000,000, the LARGEST cash prize in TV history! We're also giving away a private island, Lamborghinis, and millions more in cash throughout the competition! Go watch to see the greatest show ever made!",
-        "overview_ar": "جمعتُ 1000 شخص للتنافس على جائزة نقدية بقيمة 5,000,000 دولار، وهي أكبر جائزة نقدية في تاريخ التلفزيون! كما سنقدم جزيرة خاصة، سيارات لامبورغيني، وملايين أخرى كجوائز نقدية خلال المنافسة! شاهدوا لتكتشفوا أعظم عرض تم إنتاجه على الإطلاق!",
+        "overview_ar": "I gathered 1,000 people to fight for $5,000,000, the LARGEST cash prize in TV history! We're also giving away a private island, Lamborghinis, and millions more in cash throughout the competition! Go watch to see the greatest show ever made!",
         "poster_path": "/6Zww0KyC518xni9m12dA3qB392D.jpg",
         "vote_average": 7.513,
         "release_date": "2024-12-19",
@@ -16800,42 +16800,6 @@
         "popularity": 20.3063
     },
     {
-        "id": 79611,
-        "type": "tv",
-        "title": "Charmed",
-        "title_ar": "Charmed",
-        "overview": "Set in the fictional college town of Hilltowne, Charmed follows the lives of three sisters, Macy, Mel and Maggie Vera who, after the tragic death of their mother, discover they are three of the most powerful witches of all time.",
-        "overview_ar": "Set in the fictional college town of Hilltowne, Charmed follows the lives of three sisters, Macy, Mel and Maggie Vera who, after the tragic death of their mother, discover they are three of the most powerful witches of all time.",
-        "poster_path": "/doXHjfOtEmX8kEq1tsMnNqq9YLZ.jpg",
-        "vote_average": 7.2,
-        "release_date": "2018-10-14",
-        "popularity": 20.0753
-    },
-    {
-        "id": 71769,
-        "type": "tv",
-        "title": "The Alienist",
-        "title_ar": "The Alienist",
-        "overview": "New York, 1896. Police commissioner Theodore Roosevelt brings together criminal psychologist Dr. Laszlo Kreizler, newspaper illustrator John Moore and secretary Sara Howard to investigate several murders of male prostitutes.",
-        "overview_ar": "New York, 1896. Police commissioner Theodore Roosevelt brings together criminal psychologist Dr. Laszlo Kreizler, newspaper illustrator John Moore and secretary Sara Howard to investigate several murders of male prostitutes.",
-        "poster_path": "/zUd4RPbfHuB1zIG2iNI5bdZcQo3.jpg",
-        "vote_average": 7.513,
-        "release_date": "2018-01-22",
-        "popularity": 20.3063
-    },
-    {
-        "id": 90872,
-        "type": "tv",
-        "title": "All Rise",
-        "title_ar": "All Rise",
-        "overview": "A look at the personal and professional lives of the judges, lawyers, clerks, bailiffs and cops who work at an L.A. County courthouse.",
-        "overview_ar": "A look at the personal and professional lives of the judges, lawyers, clerks, bailiffs and cops who work at an L.A. County courthouse.",
-        "poster_path": "/lgDVAetqJvCoBrZin2MpsYUdnwT.jpg",
-        "vote_average": 7.443,
-        "release_date": "2019-09-23",
-        "popularity": 21.4032
-    },
-    {
         "id": 4550,
         "type": "tv",
         "title": "7th Heaven",
@@ -17278,6 +17242,42 @@
         "vote_average": 7.87,
         "release_date": "1990-07-12",
         "popularity": 21.2113
+    },
+    {
+        "id": 310024,
+        "type": "tv",
+        "title": "Bloody Flower",
+        "title_ar": "الزهرة الدامية",
+        "overview": "A serial killer who murdered 17 people. Is he a monstrous killer, or a savior holding the cure for humanity?",
+        "overview_ar": "تتكشف معركة قانونية عالية المخاطر حيث يتعين على المحامي إنقاذ قاتل متسلسل عبقري لحماية ابنته، بينما يكافح المدعي العام من أجل الحكم عليه بالإعدام.",
+        "poster_path": "/bDoAdJLEAiCRj8B0QRAz2wt2xfv.jpg",
+        "vote_average": 8.0,
+        "release_date": "2026-02-04",
+        "popularity": 22.7866
+    },
+    {
+        "id": 1596,
+        "type": "tv",
+        "title": "Bergerac",
+        "title_ar": "Bergerac",
+        "overview": "Jim Bergerac is a detective sergeant in The Foreigners Office who likes to do things his own way.\n\nWhile dealing with his own personal demons Bergerac has a knack of finding trouble, and sometimes causing it.",
+        "overview_ar": "Jim Bergerac is a detective sergeant in The Foreigners Office who likes to do things his own way.\n\nWhile dealing with his own personal demons Bergerac has a knack of finding trouble, and sometimes causing it.",
+        "poster_path": "/1ZarXE2TfNYPl1ojXWov8wuqJTY.jpg",
+        "vote_average": 6.7,
+        "release_date": "1981-10-18",
+        "popularity": 18.2163
+    },
+    {
+        "id": 86248,
+        "type": "tv",
+        "title": "Upload",
+        "title_ar": "Upload",
+        "overview": "In 2033, people who are near death can be “uploaded” into virtual reality hotels run by 6 tech firms. Cash-strapped Nora lives in Brooklyn and works customer service for the luxurious “Lakeview” digital afterlife. When L.A. party-boy/coder Nathan’s self-driving car crashes, his high-maintenance girlfriend uploads him permanently into Nora’s VR world.",
+        "overview_ar": "في المستقبل القريب، يمكن \"تحميل\" الأشخاص الذين يقتربون من الموت إلى بيئات الواقع الافتراضي.",
+        "poster_path": "/6TPGDrU9MyWbn2TpggJphVAVXiq.jpg",
+        "vote_average": 7.797,
+        "release_date": "2020-04-30",
+        "popularity": 19.1133
     },
     {
         "id": 86248,
@@ -18699,7 +18699,7 @@
         "id": 117933,
         "type": "tv",
         "title": "Summer Time Rendering",
-        "title_ar": "Summer Time Rendering",
+        "title_ar": "サマータイムレンダ",
         "overview": "Shinpei Ajiro travels home to attend the funeral of a childhood friend, and finds the remote island plagued by a sinister, supernatural force.",
         "overview_ar": "Shinpei Ajiro travels home to attend the funeral of a childhood friend, and finds the remote island plagued by a sinister, supernatural force.",
         "poster_path": "/m9e7chRW8Q8Go1Dv00RCUHbMoNe.jpg",
@@ -18711,7 +18711,7 @@
         "id": 76791,
         "type": "tv",
         "title": "Naagin",
-        "title_ar": "Naagin",
+        "title_ar": "الأفعى",
         "overview": "A miraculous shape-shifting snake has the power to become a human. She can be anybody she wants: a wife, a seductress, a mistress, a damsel in distress: all in the name of revenge.",
         "overview_ar": "A miraculous shape-shifting snake has the power to become a human. She can be anybody she wants: a wife, a seductress, a mistress, a damsel in distress: all in the name of revenge.",
         "poster_path": "/mtenbhCeBXZQMFSpldLT3pO8n67.jpg",
@@ -20619,9 +20619,9 @@
         "id": 198004,
         "type": "tv",
         "title": "King the Land",
-        "title_ar": "King the Land",
+        "title_ar": "أراضي الملك - صالة اللحظات السعيدة",
         "overview": "Amid a tense inheritance fight, a charming heir clashes with his hardworking employee who's known for her irresistible smile — which he cannot stand.",
-        "overview_ar": "Amid a tense inheritance fight, a charming heir clashes with his hardworking employee who's known for her irresistible smile — which he cannot stand.",
+        "overview_ar": "كان يا مكان في حديث الزمان وحاضر العصر والاوان، في “أراضي الملك“ الفندقية، وريث وسيم يخوض حرب ضارية على الميراث كملك على فرسه البيضاء، وموظفة من الدهماء، ببهاء وسحر الأميرات وبابتسامة مشرقة تذيب القلوب جمعاء... فيما عداه، فكيف ستحطم حصن قلبه المنيع، ليسردا قصة حب بعذوبة قصص الخيال بين الحسناء والملك؟",
         "poster_path": "/tW8BMRCYSe6nySvZ749pzc31x2m.jpg",
         "vote_average": 8.187,
         "release_date": "2023-06-17",
@@ -22800,54 +22800,6 @@
         "popularity": 16.1602
     },
     {
-        "id": 120911,
-        "type": "tv",
-        "title": "The Terminal List",
-        "title_ar": "The Terminal List",
-        "overview": "Navy SEAL Commander James Reece turns to vengeance as he investigates the mysterious forces behind the murder of his entire platoon. Free from the military’s command structure, Reece applies the lessons he’s learned from nearly two decades of warfare to hunt down the people responsible.",
-        "overview_ar": "Navy SEAL Commander James Reece turns to vengeance as he investigates the mysterious forces behind the murder of his entire platoon. Free from the military’s command structure, Reece applies the lessons he’s learned from nearly two decades of warfare to hunt down the people responsible.",
-        "poster_path": "/jbyaKYNexl1poKZnEmB6Qobn60s.jpg",
-        "vote_average": 7.969,
-        "release_date": "2022-06-30",
-        "popularity": 16.1602
-    },
-    {
-        "id": 2312,
-        "type": "tv",
-        "title": "The Jamie Foxx Show",
-        "title_ar": "The Jamie Foxx Show",
-        "overview": "Texas native Jamie King is an aspiring actor who heads to Hollywood in hopes to find fame and fortune in the entertainment industry. To support himself, he works at his Aunt Helen and Uncle Junior's Los Angeles hotel, the King's Towers.",
-        "overview_ar": "Texas native Jamie King is an aspiring actor who heads to Hollywood in hopes to find fame and fortune in the entertainment industry. To support himself, he works at his Aunt Helen and Uncle Junior's Los Angeles hotel, the King's Towers.",
-        "poster_path": "/75rRmOm7jfGdxhYeg36mgnetYJS.jpg",
-        "vote_average": 6.9,
-        "release_date": "1996-08-28",
-        "popularity": 18.4695
-    },
-    {
-        "id": 120589,
-        "type": "tv",
-        "title": "Le Grand Échiquier",
-        "title_ar": "Le Grand Échiquier",
-        "overview": "",
-        "overview_ar": "",
-        "poster_path": "/hWsFrkYyPwCz4rt2lpiKmqkgxRp.jpg",
-        "vote_average": 8.0,
-        "release_date": "1972-01-12",
-        "popularity": 16.7719
-    },
-    {
-        "id": 126544,
-        "type": "tv",
-        "title": "The Detectives' Adventures",
-        "title_ar": "The Detectives' Adventures",
-        "overview": "The first reality show on detective stories adapted from classic IP. Every episode is based on a classic IP drama. MCs are able to adapt and act out the classic stories in the real scenes. The detective group includes seven MCs, who are encouraged to obtain clues from the unreasonable scripts and amusing games.",
-        "overview_ar": "The first reality show on detective stories adapted from classic IP. Every episode is based on a classic IP drama. MCs are able to adapt and act out the classic stories in the real scenes. The detective group includes seven MCs, who are encouraged to obtain clues from the unreasonable scripts and amusing games.",
-        "poster_path": "/epoCnqVnMqohtKnf8QiT1eGaV9A.jpg",
-        "vote_average": 5.0,
-        "release_date": "2021-05-28",
-        "popularity": 13.7042
-    },
-    {
         "id": 124271,
         "type": "tv",
         "title": "NCIS: Hawaiʻi",
@@ -23016,6 +22968,18 @@
         "popularity": 18.3009
     },
     {
+        "id": 38409,
+        "type": "tv",
+        "title": "RuPaul's Drag Race: Untucked",
+        "title_ar": "RuPaul's Drag Race: Untucked",
+        "overview": "The access-all-areas pass to the drama that you didn't see on the runway—the backstage bitchiness, the catfights, the struggles, the tears and the secrets. See what happens behind the scenes of RuPaul's Drag Race when the queens let their tucks breathe... and let their emotions flow.",
+        "overview_ar": "The access-all-areas pass to the drama that you didn't see on the runway—the backstage bitchiness, the catfights, the struggles, the tears and the secrets. See what happens behind the scenes of RuPaul's Drag Race when the queens let their tucks breathe... and let their emotions flow.",
+        "poster_path": "/2KU7A0jvylEZfYyR5O2ZbnMt9TK.jpg",
+        "vote_average": 6.1,
+        "release_date": "2010-02-01",
+        "popularity": 19.4501
+    },
+    {
         "id": 119267,
         "type": "tv",
         "title": "My Siblings",
@@ -23038,6 +23002,42 @@
         "vote_average": 5.2,
         "release_date": "2012-07-13",
         "popularity": 14.675
+    },
+    {
+        "id": 67199,
+        "type": "tv",
+        "title": "Saint Seiya: The Hades Chapter",
+        "title_ar": "聖闘士星矢 冥王ハーデス",
+        "overview": "Hades is planning to take over the world, to achieve that goal, he sends out deceased Gold Saints to take Athena's head. Seiya and the other Bronze Saints come to help but their help isn't appreciated by the remaining Gold Saints that are still alive.",
+        "overview_ar": "Hades is planning to take over the world, to achieve that goal, he sends out deceased Gold Saints to take Athena's head. Seiya and the other Bronze Saints come to help but their help isn't appreciated by the remaining Gold Saints that are still alive.",
+        "poster_path": "/tJ3DwxuZXttTFLWuAIjI5ugsbtU.jpg",
+        "vote_average": 8.0,
+        "release_date": "2002-11-09",
+        "popularity": 15.9494
+    },
+    {
+        "id": 5148,
+        "type": "tv",
+        "title": "Stargate Universe",
+        "title_ar": "Stargate Universe",
+        "overview": "The adventures of a present-day, multinational exploration team traveling on the Ancient spaceship Destiny many billions of light years distant from the Milky Way Galaxy. They evacuated there and are now trying to figure out a way to return to Earth, while simultaneously trying to explore and to survive in their unknown area of the universe.",
+        "overview_ar": "The adventures of a present-day, multinational exploration team traveling on the Ancient spaceship Destiny many billions of light years distant from the Milky Way Galaxy. They evacuated there and are now trying to figure out a way to return to Earth, while simultaneously trying to explore and to survive in their unknown area of the universe.",
+        "poster_path": "/dHOaOZGUhnoRXeK9mhYeSRPh59H.jpg",
+        "vote_average": 7.416,
+        "release_date": "2009-10-02",
+        "popularity": 16.9401
+    },
+    {
+        "id": 66980,
+        "type": "tv",
+        "title": "Babylon Berlin",
+        "title_ar": "Babylon Berlin",
+        "overview": "Beneath the decadence of 1929 Berlin, lies an underworld city of sin. Police investigator Gereon Rath has been transferred from Cologne to the epicenter of political and social changes in the Golden Twenties.",
+        "overview_ar": "Beneath the decadence of 1929 Berlin, lies an underworld city of sin. Police investigator Gereon Rath has been transferred from Cologne to the epicenter of political and social changes in the Golden Twenties.",
+        "poster_path": "/om7Ri353ddUsg0gDJsOZIQJBRwL.jpg",
+        "vote_average": 7.7,
+        "release_date": "2017-10-13",
+        "popularity": 18.9564
     },
     {
         "id": 67199,
