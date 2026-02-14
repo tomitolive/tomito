@@ -13680,18 +13680,6 @@
         "popularity": 28.8287
     },
     {
-        "id": 61969,
-        "type": "tv",
-        "title": "Angie Tribeca",
-        "title_ar": "Angie Tribeca",
-        "overview": "Lone-wolf detective Angie Tribeca and a squad of committed LAPD detectives investigate the most serious cases, from the murder of a ventriloquist to a rash of baker suicides.",
-        "overview_ar": "Lone-wolf detective Angie Tribeca and a squad of committed LAPD detectives investigate the most serious cases, from the murder of a ventriloquist to a rash of baker suicides.",
-        "poster_path": "/xi6gGST5L7FiUiYDPifHGtzl3zG.jpg",
-        "vote_average": 6.386,
-        "release_date": "2016-01-17",
-        "popularity": 23.2162
-    },
-    {
         "id": 91875,
         "type": "tv",
         "title": "Prodigal Son",
@@ -13714,6 +13702,18 @@
         "vote_average": 7.728,
         "release_date": "2010-09-12",
         "popularity": 23.0667
+    },
+    {
+        "id": 70128,
+        "type": "tv",
+        "title": "Genius",
+        "title_ar": "Genius",
+        "overview": "The life stories of history's greatest minds. From their days as young adults to their final years we see their discoveries, loves, relationships, causes, flaws and genius.",
+        "overview_ar": "The life stories of history's greatest minds. From their days as young adults to their final years we see their discoveries, loves, relationships, causes, flaws and genius.",
+        "poster_path": "/waCykVbku2Amh0revf535SOnlmm.jpg",
+        "vote_average": 7.5,
+        "release_date": "2017-04-25",
+        "popularity": 27.3305
     },
     {
         "id": 7482,
@@ -13932,18 +13932,6 @@
         "popularity": 21.4699
     },
     {
-        "id": 58981,
-        "type": "tv",
-        "title": "The Thundermans",
-        "title_ar": "The Thundermans",
-        "overview": "Meet The Thundermans, a typical suburban family that happens to have astounding superpowers. At the center of the action are the 14-year-old Thunderman twins, who share the same bathroom, the same school, and the same annoying little siblings. Their only difference? The sister is a super student with a super sunny disposition who super looks forward to being a superhero someday, and her twin brother is a super villain.",
-        "overview_ar": "Meet The Thundermans, a typical suburban family that happens to have astounding superpowers. At the center of the action are the 14-year-old Thunderman twins, who share the same bathroom, the same school, and the same annoying little siblings. Their only difference? The sister is a super student with a super sunny disposition who super looks forward to being a superhero someday, and her twin brother is a super villain.",
-        "poster_path": "/1tIYEyjK1LLcX0jYK3ZouT7601o.jpg",
-        "vote_average": 8.0,
-        "release_date": "2013-10-14",
-        "popularity": 25.1126
-    },
-    {
         "id": 59427,
         "type": "tv",
         "title": "Marvel's Avengers",
@@ -14002,6 +13990,18 @@
         "vote_average": 8.0,
         "release_date": "2026-01-09",
         "popularity": 24.9111
+    },
+    {
+        "id": 69629,
+        "type": "tv",
+        "title": "The Gifted",
+        "title_ar": "The Gifted",
+        "overview": "A suburban couple's ordinary lives are rocked by the sudden discovery that their children possess mutant powers. Forced to go on the run from a hostile government, the family joins up with an underground network of mutants and must fight to survive.",
+        "overview_ar": "A suburban couple's ordinary lives are rocked by the sudden discovery that their children possess mutant powers. Forced to go on the run from a hostile government, the family joins up with an underground network of mutants and must fight to survive.",
+        "poster_path": "/nshCqszjTNuqhrB53vrSqWO18sE.jpg",
+        "vote_average": 7.6,
+        "release_date": "2017-10-02",
+        "popularity": 27.0102
     },
     {
         "id": 102321,
@@ -15456,18 +15456,6 @@
         "popularity": 19.6734
     },
     {
-        "id": 249522,
-        "type": "tv",
-        "title": "Beast Games",
-        "title_ar": "Beast Games",
-        "overview": "I gathered 1,000 people to fight for $5,000,000, the LARGEST cash prize in TV history! We're also giving away a private island, Lamborghinis, and millions more in cash throughout the competition! Go watch to see the greatest show ever made!",
-        "overview_ar": "I gathered 1,000 people to fight for $5,000,000, the LARGEST cash prize in TV history! We're also giving away a private island, Lamborghinis, and millions more in cash throughout the competition! Go watch to see the greatest show ever made!",
-        "poster_path": "/6Zww0KyC518xni9m12dA3qB392D.jpg",
-        "vote_average": 7.513,
-        "release_date": "2024-12-19",
-        "popularity": 22.9275
-    },
-    {
         "id": 93653,
         "type": "tv",
         "title": "In/Spectre",
@@ -15538,6 +15526,18 @@
         "vote_average": 7.3,
         "release_date": "2010-07-02",
         "popularity": 17.8237
+    },
+    {
+        "id": 58981,
+        "type": "tv",
+        "title": "The Thundermans",
+        "title_ar": "The Thundermans",
+        "overview": "Meet The Thundermans, a typical suburban family that happens to have astounding superpowers. At the center of the action are the 14-year-old Thunderman twins, who share the same bathroom, the same school, and the same annoying little siblings. Their only difference? The sister is a super student with a super sunny disposition who super looks forward to being a superhero someday, and her twin brother is a super villain.",
+        "overview_ar": "Meet The Thundermans, a typical suburban family that happens to have astounding superpowers. At the center of the action are the 14-year-old Thunderman twins, who share the same bathroom, the same school, and the same annoying little siblings. Their only difference? The sister is a super student with a super sunny disposition who super looks forward to being a superhero someday, and her twin brother is a super villain.",
+        "poster_path": "/1tIYEyjK1LLcX0jYK3ZouT7601o.jpg",
+        "vote_average": 8.0,
+        "release_date": "2013-10-14",
+        "popularity": 25.1126
     },
     {
         "id": 106410,
@@ -15840,18 +15840,6 @@
         "popularity": 22.1051
     },
     {
-        "id": 138502,
-        "type": "tv",
-        "title": "X-Men '97",
-        "title_ar": "X-Men '97",
-        "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
-        "overview_ar": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
-        "poster_path": "/9Ycz7yYRf9V4jk3YXwcZhFtbNcF.jpg",
-        "vote_average": 8.521,
-        "release_date": "2024-03-20",
-        "popularity": 22.1051
-    },
-    {
         "id": 2962,
         "type": "tv",
         "title": "The Mary Tyler Moore Show",
@@ -16078,6 +16066,18 @@
         "vote_average": 10.0,
         "release_date": "1992-04-19",
         "popularity": 17.5152
+    },
+    {
+        "id": 72027,
+        "type": "tv",
+        "title": "Raven's Home",
+        "title_ar": "Raven's Home",
+        "overview": "Best friends Raven and Chelsea, now both divorced mothers, are raising their children in a house together. Their house is turned upside down when they realize one of Raven's children inherited the same psychic abilities as their mother.",
+        "overview_ar": "Best friends Raven and Chelsea, now both divorced mothers, are raising their children in a house together. Their house is turned upside down when they realize one of Raven's children inherited the same psychic abilities as their mother.",
+        "poster_path": "/bEyovwWgUNML5ycWec1WhTU67yr.jpg",
+        "vote_average": 7.714,
+        "release_date": "2017-07-21",
+        "popularity": 20.9722
     },
     {
         "id": 32708,
@@ -18115,7 +18115,7 @@
         "overview": "The tale of three mothers of first graders whose apparently perfect lives unravel to the point of murder.",
         "overview_ar": "(مادلين) و(سيليست) تعيشان في بلدة صغيرة، ولم تكن أيًا منهما تتوقع وصول (جين) وطفلها الغريب، وأن مجيئهما سوف يؤثر عليهم جميعًا، فتبدأ كذبات صغيرة في الظهور، على الأزواج السابقين، وفضيحة المدارس، والأكاذيب الصغيرة هذه نقول لأنفسنا أنها تجعلنا على قيد الحياة، فهل هذا صحيح؟.",
         "poster_path": "/b4HNJOc2N6SGyEhf2RagdpAKBK6.jpg",
-        "vote_average": 7.9,
+        "vote_average": 7.886,
         "release_date": "2017-02-19",
         "popularity": 20.7702
     },
@@ -22563,7 +22563,7 @@
         "id": 33951,
         "type": "tv",
         "title": "AI Football GGO",
-        "title_ar": "超智能足球",
+        "title_ar": "AI Football GGO",
         "overview": "Artificial Intelligent Football GGO is made by Puzzle Animation studio Ltd. It's an animation series about football and future technology.",
         "overview_ar": "Artificial Intelligent Football GGO is made by Puzzle Animation studio Ltd. It's an animation series about football and future technology.",
         "poster_path": "/x1TmnV1JruItCrmhTFEpnDzRF1M.jpg",
@@ -23040,54 +23040,6 @@
         "popularity": 18.9564
     },
     {
-        "id": 67199,
-        "type": "tv",
-        "title": "Saint Seiya: The Hades Chapter",
-        "title_ar": "聖闘士星矢 冥王ハーデス",
-        "overview": "Hades is planning to take over the world, to achieve that goal, he sends out deceased Gold Saints to take Athena's head. Seiya and the other Bronze Saints come to help but their help isn't appreciated by the remaining Gold Saints that are still alive.",
-        "overview_ar": "Hades is planning to take over the world, to achieve that goal, he sends out deceased Gold Saints to take Athena's head. Seiya and the other Bronze Saints come to help but their help isn't appreciated by the remaining Gold Saints that are still alive.",
-        "poster_path": "/tJ3DwxuZXttTFLWuAIjI5ugsbtU.jpg",
-        "vote_average": 8.0,
-        "release_date": "2002-11-09",
-        "popularity": 15.9494
-    },
-    {
-        "id": 5148,
-        "type": "tv",
-        "title": "Stargate Universe",
-        "title_ar": "Stargate Universe",
-        "overview": "The adventures of a present-day, multinational exploration team traveling on the Ancient spaceship Destiny many billions of light years distant from the Milky Way Galaxy. They evacuated there and are now trying to figure out a way to return to Earth, while simultaneously trying to explore and to survive in their unknown area of the universe.",
-        "overview_ar": "The adventures of a present-day, multinational exploration team traveling on the Ancient spaceship Destiny many billions of light years distant from the Milky Way Galaxy. They evacuated there and are now trying to figure out a way to return to Earth, while simultaneously trying to explore and to survive in their unknown area of the universe.",
-        "poster_path": "/dHOaOZGUhnoRXeK9mhYeSRPh59H.jpg",
-        "vote_average": 7.416,
-        "release_date": "2009-10-02",
-        "popularity": 16.9401
-    },
-    {
-        "id": 66980,
-        "type": "tv",
-        "title": "Babylon Berlin",
-        "title_ar": "Babylon Berlin",
-        "overview": "Beneath the decadence of 1929 Berlin, lies an underworld city of sin. Police investigator Gereon Rath has been transferred from Cologne to the epicenter of political and social changes in the Golden Twenties.",
-        "overview_ar": "Beneath the decadence of 1929 Berlin, lies an underworld city of sin. Police investigator Gereon Rath has been transferred from Cologne to the epicenter of political and social changes in the Golden Twenties.",
-        "poster_path": "/om7Ri353ddUsg0gDJsOZIQJBRwL.jpg",
-        "vote_average": 7.7,
-        "release_date": "2017-10-13",
-        "popularity": 18.9564
-    },
-    {
-        "id": 58111,
-        "type": "tv",
-        "title": "Extant",
-        "title_ar": "Extant",
-        "overview": "An astronaut returns home from a year long solo mission in space. She tries to reconnect with her husband and son in their everyday life. Her experiences in space and home lead to events that ultimately will change the course of human history.",
-        "overview_ar": "An astronaut returns home from a year long solo mission in space. She tries to reconnect with her husband and son in their everyday life. Her experiences in space and home lead to events that ultimately will change the course of human history.",
-        "poster_path": "/nFwqHXoP1FxFbd8G8dY13y9bfAX.jpg",
-        "vote_average": 6.312,
-        "release_date": "2014-07-09",
-        "popularity": 15.9073
-    },
-    {
         "id": 112791,
         "type": "tv",
         "title": "Midi Première",
@@ -23122,18 +23074,6 @@
         "vote_average": 8.251,
         "release_date": "2017-07-07",
         "popularity": 17.067
-    },
-    {
-        "id": 270572,
-        "type": "tv",
-        "title": "Lord of the Flies",
-        "title_ar": "Lord of the Flies",
-        "overview": "After a plane crash, a group of schoolboys find themselves stranded on a tropical island without adults. Ralph is elected leader and, with the help of the intelligent Piggy, strives to maintain order and civilization. Jack, responsible for the signal fire, becomes increasingly focused on hunting and power struggles. This leads to tensions within the group, gradually pushing the boys from hope and structure into chaos and tragedy.",
-        "overview_ar": "After a plane crash, a group of schoolboys find themselves stranded on a tropical island without adults. Ralph is elected leader and, with the help of the intelligent Piggy, strives to maintain order and civilization. Jack, responsible for the signal fire, becomes increasingly focused on hunting and power struggles. This leads to tensions within the group, gradually pushing the boys from hope and structure into chaos and tragedy.",
-        "poster_path": "/2NKvKYtRgBN1zLrAfInkVoRNc94.jpg",
-        "vote_average": 8.231,
-        "release_date": "2026-02-08",
-        "popularity": 18.3379
     },
     {
         "id": 61888,
@@ -23278,6 +23218,66 @@
         "vote_average": 6.9,
         "release_date": "2022-04-14",
         "popularity": 15.4305
+    },
+    {
+        "id": 2902,
+        "type": "tv",
+        "title": "Queer As Folk",
+        "title_ar": "Queer As Folk",
+        "overview": "Brash humor and genuine emotion make up this original series revolving around the lives, loves, ambitions, careers and friendships of a group of gay men and women living on Liberty Avenue in contemporary Pittsburgh, PA. The show offers an unapologetic look at modern, urban gay and lesbian lives while addressing the most critical health and political issues affecting the community. Sometimes racy, sometimes sensitive and always straight to the heart.",
+        "overview_ar": "Brash humor and genuine emotion make up this original series revolving around the lives, loves, ambitions, careers and friendships of a group of gay men and women living on Liberty Avenue in contemporary Pittsburgh, PA. The show offers an unapologetic look at modern, urban gay and lesbian lives while addressing the most critical health and political issues affecting the community. Sometimes racy, sometimes sensitive and always straight to the heart.",
+        "poster_path": "/mmhL30PonbrrpEOQH5OdyUguyMg.jpg",
+        "vote_average": 8.2,
+        "release_date": "2000-12-03",
+        "popularity": 16.6599
+    },
+    {
+        "id": 400,
+        "type": "tv",
+        "title": "Shark",
+        "title_ar": "Shark",
+        "overview": "Notorious Los Angeles defense attorney Sebastian Stark becomes disillusioned with his career after his successful defense of a wife-abuser results in the wife's death. After more than a month trying to come to grips with his situation, he is invited by the Los Angeles district attorney to become a public prosecutor so he can apply his unorthodox-but-effective talents to putting guilty people away instead of putting them back on the street.",
+        "overview_ar": "Notorious Los Angeles defense attorney Sebastian Stark becomes disillusioned with his career after his successful defense of a wife-abuser results in the wife's death. After more than a month trying to come to grips with his situation, he is invited by the Los Angeles district attorney to become a public prosecutor so he can apply his unorthodox-but-effective talents to putting guilty people away instead of putting them back on the street.",
+        "poster_path": "/Ahxpbk4Uu6zs1DgAbgfU80eHerx.jpg",
+        "vote_average": 6.704,
+        "release_date": "2006-09-21",
+        "popularity": 15.6941
+    },
+    {
+        "id": 43221,
+        "type": "tv",
+        "title": "Finding Your Roots",
+        "title_ar": "Finding Your Roots",
+        "overview": "Noted Harvard scholar Henry Louis Gates, Jr.  has been helping people discover long-lost relatives hidden for generations within the branches of their family trees.  Professor Gates utilizes a team of genealogists to reconstruct the paper trail left behind by our ancestors and the world’s leading geneticists to decode our DNA and help us travel thousands of years into the past to discover the origins of our earliest forebears.",
+        "overview_ar": "Noted Harvard scholar Henry Louis Gates, Jr.  has been helping people discover long-lost relatives hidden for generations within the branches of their family trees.  Professor Gates utilizes a team of genealogists to reconstruct the paper trail left behind by our ancestors and the world’s leading geneticists to decode our DNA and help us travel thousands of years into the past to discover the origins of our earliest forebears.",
+        "poster_path": "/h9JX8nX12nl2AfUdO3aqg2IwmGu.jpg",
+        "vote_average": 6.235,
+        "release_date": "2012-03-24",
+        "popularity": 15.8767
+    },
+    {
+        "id": 36250,
+        "type": "tv",
+        "title": "xxxHOLiC",
+        "title_ar": "xxxHOLiC",
+        "overview": "Kimihiro Watanuki is a high school student plagued by ayakashi spirits, both of which are invisible to everyone else but him. The series begins when Watanuki stumbles, seemingly by chance, into a shop that grants wishes. The shop is owned by Yūko Ichihara, a mysterious witch of many names and esoteric renown. For a price, she offers to grant Watanuki's wish to be rid of the spirits. The price, according to Yūko, must be of equal value; so, as payment, he must become Yūko's temporary, part-time cook and housekeeper.",
+        "overview_ar": "Kimihiro Watanuki is a high school student plagued by ayakashi spirits, both of which are invisible to everyone else but him. The series begins when Watanuki stumbles, seemingly by chance, into a shop that grants wishes. The shop is owned by Yūko Ichihara, a mysterious witch of many names and esoteric renown. For a price, she offers to grant Watanuki's wish to be rid of the spirits. The price, according to Yūko, must be of equal value; so, as payment, he must become Yūko's temporary, part-time cook and housekeeper.",
+        "poster_path": "/5yY74hwLcG5rQSe6cEUW3HjO3J9.jpg",
+        "vote_average": 7.232,
+        "release_date": "2006-04-06",
+        "popularity": 14.453
+    },
+    {
+        "id": 259909,
+        "type": "tv",
+        "title": "Dexter: Resurrection",
+        "title_ar": "Dexter: Resurrection",
+        "overview": "Dexter Morgan awakens from a coma to find Harrison gone without a trace. Realizing the weight of what he put his son through, Dexter sets out for New York City, determined to find him and make things right. But closure won't come easy. When Miami Metro's Angel Batista arrives with questions, Dexter realizes his past is catching up to him fast. As father and son navigate their own darkness in the city that never sleeps, they soon find themselves deeper than they ever imagined - and that the only way out is together.",
+        "overview_ar": "Dexter Morgan awakens from a coma to find Harrison gone without a trace. Realizing the weight of what he put his son through, Dexter sets out for New York City, determined to find him and make things right. But closure won't come easy. When Miami Metro's Angel Batista arrives with questions, Dexter realizes his past is catching up to him fast. As father and son navigate their own darkness in the city that never sleeps, they soon find themselves deeper than they ever imagined - and that the only way out is together.",
+        "poster_path": "/hIawSocuwqgNeRf3JuKuxgMHmSC.jpg",
+        "vote_average": 8.506,
+        "release_date": "2025-07-13",
+        "popularity": 17.5567
     },
     {
         "id": 43221,
