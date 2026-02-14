@@ -247,7 +247,7 @@
         "overview": "Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pressures of life.",
         "overview_ar": "مغامرات مجموعة من الأصدقاء وهم يبحرون في مطبات العمل والحياة والحب في مانهاتن.",
         "poster_path": "/2koX1xLkpTQM4IZebYvKysFW1Nh.jpg",
-        "vote_average": 8.416,
+        "vote_average": 8.4,
         "release_date": "1994-09-22",
         "popularity": 159.3579
     },
@@ -439,7 +439,7 @@
         "overview": "The peacefulness of the Midsomer community is shattered by violent crimes, suspects are placed under suspicion, and it is up to a veteran DCI and his young sergeant to calmly and diligently eliminate the innocent and ruthlessly pursue the guilty. ",
         "overview_ar": "The peacefulness of the Midsomer community is shattered by violent crimes, suspects are placed under suspicion, and it is up to a veteran DCI and his young sergeant to calmly and diligently eliminate the innocent and ruthlessly pursue the guilty. ",
         "poster_path": "/pz7tsWxe0TTdfJnWPjZAEnrSl5M.jpg",
-        "vote_average": 7.5,
+        "vote_average": 7.51,
         "release_date": "1997-03-23",
         "popularity": 137.968
     },
@@ -1911,13 +1911,25 @@
         "id": 69050,
         "type": "tv",
         "title": "Riverdale",
-        "title_ar": "Riverdale",
+        "title_ar": "ريفرديل",
         "overview": "Set in the present, the series offers a bold, subversive take on Archie, Betty, Veronica and their friends, exploring the surreality of small-town life, the darkness and weirdness bubbling beneath Riverdale’s wholesome facade.",
-        "overview_ar": "Set in the present, the series offers a bold, subversive take on Archie, Betty, Veronica and their friends, exploring the surreality of small-town life, the darkness and weirdness bubbling beneath Riverdale’s wholesome facade.",
+        "overview_ar": "أرشي، بيتي، فيرونيكا وأصدقائهم، يستكشفون حياة بلدة صغيرة، الظلام والغرابة تنشب تحت المظهر الزائف لبلدة ريفرديل.",
         "poster_path": "/d8mmn9thQ5dBk2qbv6BCqGUXWK3.jpg",
         "vote_average": 8.415,
         "release_date": "2017-01-26",
         "popularity": 79.6599
+    },
+    {
+        "id": 1981,
+        "type": "tv",
+        "title": "Charmed",
+        "title_ar": "Charmed",
+        "overview": "Three sisters (Prue, Piper and Phoebe) reunite and unlock their powers to become the Charmed Ones, the most powerful good witches of all time, whose prophesied destiny is to protect innocent lives from evil beings such as demons and warlocks. Each sister possesses unique magical powers that grow and evolve, while they attempt to maintain normal lives in modern day San Francisco. ",
+        "overview_ar": "Three sisters (Prue, Piper and Phoebe) reunite and unlock their powers to become the Charmed Ones, the most powerful good witches of all time, whose prophesied destiny is to protect innocent lives from evil beings such as demons and warlocks. Each sister possesses unique magical powers that grow and evolve, while they attempt to maintain normal lives in modern day San Francisco. ",
+        "poster_path": "/z4bPJ1BWU2EtV69NII2GVvsugQ2.jpg",
+        "vote_average": 8.171,
+        "release_date": "1998-10-07",
+        "popularity": 78.171
     },
     {
         "id": 82873,
@@ -1978,18 +1990,6 @@
         "vote_average": 4.3,
         "release_date": "1997-08-11",
         "popularity": 56.1302
-    },
-    {
-        "id": 250307,
-        "type": "tv",
-        "title": "The Pitt",
-        "title_ar": "The Pitt",
-        "overview": "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
-        "overview_ar": "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
-        "poster_path": "/kvFSpESyBZMjaeOJDx7RS3P1jey.jpg",
-        "vote_average": 8.7,
-        "release_date": "2025-01-09",
-        "popularity": 88.5423
     },
     {
         "id": 1420,
@@ -9840,42 +9840,6 @@
         "popularity": 34.6935
     },
     {
-        "id": 78501,
-        "type": "tv",
-        "title": "Sweet Punishment: I'm the Guard's Personal Pet",
-        "title_ar": "Sweet Punishment: I'm the Guard's Personal Pet",
-        "overview": "The story is set in a prison in the near future. It revolves around Hina Saotome, imprisoned despite her innocence, and the elegant yet sadistic guard Aki Myoujin. Hina's heart and body are at the mercy of Myoujin's \"heartless yet sweet domination\" from physical examinations to lovers' prison visits.",
-        "overview_ar": "The story is set in a prison in the near future. It revolves around Hina Saotome, imprisoned despite her innocence, and the elegant yet sadistic guard Aki Myoujin. Hina's heart and body are at the mercy of Myoujin's \"heartless yet sweet domination\" from physical examinations to lovers' prison visits.",
-        "poster_path": "/rbETzzJLGIB2Bg6NwNekWTKfM6d.jpg",
-        "vote_average": 7.2,
-        "release_date": "2018-04-02",
-        "popularity": 31.9583
-    },
-    {
-        "id": 96804,
-        "type": "tv",
-        "title": "LOONA TV",
-        "title_ar": "LOONA TV",
-        "overview": "LOONA TV (이달의 소녀 탐구, Girl of the Month Inquiry) are short videos featuring the members of LOOΠΔ during their travels, behind the scenes of jacket shootings and the sets of music video filming, and even their off-time interactions as they have fun.",
-        "overview_ar": "LOONA TV (이달의 소녀 탐구, Girl of the Month Inquiry) are short videos featuring the members of LOOΠΔ during their travels, behind the scenes of jacket shootings and the sets of music video filming, and even their off-time interactions as they have fun.",
-        "poster_path": "/i4afg3YM6wfdDsNjK95pIO2MAUR.jpg",
-        "vote_average": 7.0,
-        "release_date": "2016-10-12",
-        "popularity": 34.6935
-    },
-    {
-        "id": 280632,
-        "type": "tv",
-        "title": "How Dare You!?",
-        "title_ar": "成何体统",
-        "overview": "Rookie office worker Wang Cuihua is suddenly pulled into the world of a novel, where she meets Xiahou Dan, a powerful king hiding his true identity. Both outsiders to this world, they join forces to survive a twisted fate, facing political intrigue, ancient prophecies, and life-or-death choices. As they fight to change their destiny, a powerful bond forms, one that could reshape the future of the kingdom.",
-        "overview_ar": "Rookie office worker Wang Cuihua is suddenly pulled into the world of a novel, where she meets Xiahou Dan, a powerful king hiding his true identity. Both outsiders to this world, they join forces to survive a twisted fate, facing political intrigue, ancient prophecies, and life-or-death choices. As they fight to change their destiny, a powerful bond forms, one that could reshape the future of the kingdom.",
-        "poster_path": "/dLRQI1TikEQ92BKlfPLJOoOceXC.jpg",
-        "vote_average": 8.0,
-        "release_date": "2026-02-06",
-        "popularity": 32.2099
-    },
-    {
         "id": 5660,
         "type": "tv",
         "title": "Mobile Suit Gundam ZZ",
@@ -9967,7 +9931,7 @@
         "overview": "This is a story about you. A tale about the inside of your body... According to a new study, the human body consists of approximately 37 trillion cells. These cells are hard at work every day within a world that is your body. From the oxygen-carrying red blood cells to the bacteria-fighting white blood cells, get to know the unsung heroes and the drama that unfolds inside of you! It's the oddly relatable and interesting story that is the life of cells!",
         "overview_ar": "تدور أحداث القصة داخل جسدك … وفقاً لدراسة جديدة، يتكون جسم الإنسان من حوالي 37 تريليون خلية. هذه الخلايا تعاني من مصاعب في العمل كل يوم داخل العالم الذي هو جسمك. من خلايا الدم الحمراء التي تعمل على نقل الأكسجين إلى خلايا الدم البيضاء التي تعمل على حماية جسمك من الفيروسات وغيرها، تعرف على الأبطال المجهولين اللذين يعملون بلا نوم للحفاظ على صحة جسدك.",
         "poster_path": "/sgwwEGvNy7vCJN8IVnl44tuVlMZ.jpg",
-        "vote_average": 8.077,
+        "vote_average": 8.1,
         "release_date": "2018-07-08",
         "popularity": 25.4196
     },
@@ -10078,6 +10042,42 @@
         "vote_average": 7.318,
         "release_date": "1975-01-23",
         "popularity": 30.1631
+    },
+    {
+        "id": 20532,
+        "type": "tv",
+        "title": "BBC Play of the Month",
+        "title_ar": "BBC Play of the Month",
+        "overview": "A BBC television anthology series featuring productions of classic and contemporary stage plays usually broadcast on BBC1. Each production featured a different work, often using prominent British stage actors in the leading roles. The series was transmitted from October 1965 to September 1983.",
+        "overview_ar": "A BBC television anthology series featuring productions of classic and contemporary stage plays usually broadcast on BBC1. Each production featured a different work, often using prominent British stage actors in the leading roles. The series was transmitted from October 1965 to September 1983.",
+        "poster_path": "/2JdkYwK9k87M4ZhOhynoTeK3mtQ.jpg",
+        "vote_average": 5.0,
+        "release_date": "1965-10-19",
+        "popularity": 28.4991
+    },
+    {
+        "id": 309328,
+        "type": "tv",
+        "title": "Shadows of Love",
+        "title_ar": "تحت الارض",
+        "overview": "Haydar Ali after avenging his family’s murder, ends up in prison. There, he finds himself in the middle of one of Türkiye’s most dangerous underground cartels. However, the truly deadly confrontation begins three years later, when he regains his freedom and learns that the woman whom he has never been able to forget, is now the wife of the man closest to him.",
+        "overview_ar": "بعد أن ثأر حيدر علي لمقتل عائلته بقتله، وجد نفسه متورطًا في واحدة من أخطر عصابات المخدرات في تركيا عندما انتهى به المطاف في السجن. لكن المواجهة الحقيقية المميتة بدأت بعد ثلاث سنوات عندما أُطلق سراحه: المرأة التي لا يزال حيدر علي عاجزًا عن نسيانها أصبحت الآن زوجة أقرب الناس إليه.",
+        "poster_path": "/bu8ks983hBPEzyAH8gSATW5aPJ7.jpg",
+        "vote_average": 9.0,
+        "release_date": "2026-01-28",
+        "popularity": 27.6345
+    },
+    {
+        "id": 105197,
+        "type": "tv",
+        "title": "Variety Studio: Actors on Actors",
+        "title_ar": "Variety Studio: Actors on Actors",
+        "overview": "PBS SoCal and Variety take you inside the biggest movies and TV shows of the past year through candid conversations with today's hottest actors. Hosted by Variety Film Awards Editor Clayton Davis and Variety Chief Correspondent Elizabeth Wagmeister, each episode brings together pairs of actors engaging in intimate one-on-one discussions about their craft and work.",
+        "overview_ar": "PBS SoCal and Variety take you inside the biggest movies and TV shows of the past year through candid conversations with today's hottest actors. Hosted by Variety Film Awards Editor Clayton Davis and Variety Chief Correspondent Elizabeth Wagmeister, each episode brings together pairs of actors engaging in intimate one-on-one discussions about their craft and work.",
+        "poster_path": "/pgWZXYG0gTKkwRH9pTxoscFmq4H.jpg",
+        "vote_average": 4.5,
+        "release_date": "2014-12-21",
+        "popularity": 27.5381
     },
     {
         "id": 105197,
@@ -10335,7 +10335,7 @@
         "id": 82,
         "type": "tv",
         "title": "Animaniacs",
-        "title_ar": "الضاحكون",
+        "title_ar": "Animaniacs",
         "overview": "The two Warner Brothers Yakko and Wakko and their Warner sister Dot had been (supposedly) created in the 1930's, but their cartoons were too screwy for the general public to handle. The three Warners were locked up in the studio water tower until they escaped in the 90's. There, they run wild, causing chaos everywhere!",
         "overview_ar": "The two Warner Brothers Yakko and Wakko and their Warner sister Dot had been (supposedly) created in the 1930's, but their cartoons were too screwy for the general public to handle. The three Warners were locked up in the studio water tower until they escaped in the 90's. There, they run wild, causing chaos everywhere!",
         "poster_path": "/bqUIqC7zMKYkdZpK6I7ZfJE3I3g.jpg",
@@ -10551,7 +10551,7 @@
         "id": 9160,
         "type": "tv",
         "title": "Candy Candy",
-        "title_ar": "Candy Candy",
+        "title_ar": "キャンディ・キャンディ",
         "overview": "This story is about a girl, Candy, who is a orphan. She is a nice and optimistic girl and she has a warm heart. When she was a child, she lived in an orphanage called Pony's Home. She had a good friend called Ann. And she met the \"handsome boy on the hill\" who is a important person in her life, on the hill behind the orphanage.\n\nShe was adopted by the Loka's family. What's awaiting her are the bad-hearted Leo and his sister, Eliza. One day, in the rose garden, she met a boy, who is identical to the \"handsome boy on the hill\" who she had met in her childhood. The boy is called Antony. Thereafter, a fantastic story that she has never expected begins.",
         "overview_ar": "This story is about a girl, Candy, who is a orphan. She is a nice and optimistic girl and she has a warm heart. When she was a child, she lived in an orphanage called Pony's Home. She had a good friend called Ann. And she met the \"handsome boy on the hill\" who is a important person in her life, on the hill behind the orphanage.\n\nShe was adopted by the Loka's family. What's awaiting her are the bad-hearted Leo and his sister, Eliza. One day, in the rose garden, she met a boy, who is identical to the \"handsome boy on the hill\" who she had met in her childhood. The boy is called Antony. Thereafter, a fantastic story that she has never expected begins.",
         "poster_path": "/uO9V1FkqLTJdAodHn9Sdg3Nwy1.jpg",
@@ -16817,7 +16817,7 @@
         "title": "The Alienist",
         "title_ar": "The Alienist",
         "overview": "New York, 1896. Police commissioner Theodore Roosevelt brings together criminal psychologist Dr. Laszlo Kreizler, newspaper illustrator John Moore and secretary Sara Howard to investigate several murders of male prostitutes.",
-        "overview_ar": "في مدينة نيويورك عام 1896، يُجنّد مفوض الشرطة \"ثيودور روزفلت\" الأخصائي النفسي \"لازلو كرايسلر\" للقبض على قاتل يستهدف الصبية المشردين.",
+        "overview_ar": "New York, 1896. Police commissioner Theodore Roosevelt brings together criminal psychologist Dr. Laszlo Kreizler, newspaper illustrator John Moore and secretary Sara Howard to investigate several murders of male prostitutes.",
         "poster_path": "/zUd4RPbfHuB1zIG2iNI5bdZcQo3.jpg",
         "vote_average": 7.513,
         "release_date": "2018-01-22",
@@ -18480,54 +18480,6 @@
         "popularity": 20.6603
     },
     {
-        "id": 1850,
-        "type": "tv",
-        "title": "Caroline in the City",
-        "title_ar": "Caroline in the City",
-        "overview": "Caroline in the City is an American situation comedy that ran on the NBC television network. It stars Lea Thompson as cartoonist Caroline Duffy, who lives in Manhattan in New York City. The series premiered on September 21, 1995 in the \"Must See TV\" Thursday night block after Seinfeld. The show ran for 97 episodes over four seasons, before it was cancelled; its final episode was broadcast on April 26, 1999.",
-        "overview_ar": "Caroline in the City is an American situation comedy that ran on the NBC television network. It stars Lea Thompson as cartoonist Caroline Duffy, who lives in Manhattan in New York City. The series premiered on September 21, 1995 in the \"Must See TV\" Thursday night block after Seinfeld. The show ran for 97 episodes over four seasons, before it was cancelled; its final episode was broadcast on April 26, 1999.",
-        "poster_path": "/eI7GP4fL77x6zsn2d505GzzCTnK.jpg",
-        "vote_average": 6.4,
-        "release_date": "1995-09-21",
-        "popularity": 18.4101
-    },
-    {
-        "id": 83463,
-        "type": "tv",
-        "title": "Drawing Jianghu: The Rangers",
-        "title_ar": "Drawing Jianghu: The Rangers",
-        "overview": "Two martial artists are brutally killed by a team of assassins, leaving their wards, a young boy and girl, defenseless. A martial arts master dispatches of the assassins, sparing their lives, and decides to take them in. He raises them and teaches them martial arts.",
-        "overview_ar": "Two martial artists are brutally killed by a team of assassins, leaving their wards, a young boy and girl, defenseless. A martial arts master dispatches of the assassins, sparing their lives, and decides to take them in. He raises them and teaches them martial arts.",
-        "poster_path": "/9NaAIq970v66BSUvJyGUuxeZx5f.jpg",
-        "vote_average": 8.526,
-        "release_date": "2014-07-31",
-        "popularity": 15.307
-    },
-    {
-        "id": 71116,
-        "type": "tv",
-        "title": "Castle Rock",
-        "title_ar": "Castle Rock",
-        "overview": "Based on the stories of Stephen King, the series intertwines characters and themes from the fictional town of Castle Rock.",
-        "overview_ar": "Based on the stories of Stephen King, the series intertwines characters and themes from the fictional town of Castle Rock.",
-        "poster_path": "/6dnUpv9ghx84pgxlMOb4uuJrWDs.jpg",
-        "vote_average": 7.23,
-        "release_date": "2018-07-25",
-        "popularity": 20.6603
-    },
-    {
-        "id": 3690,
-        "type": "tv",
-        "title": "Tyler Perry's House of Payne",
-        "title_ar": "Tyler Perry's House of Payne",
-        "overview": "The show revolved around a multi-generational family living under one roof in Atlanta led by patriarch Curtis Payne and his wife Ella.",
-        "overview_ar": "The show revolved around a multi-generational family living under one roof in Atlanta led by patriarch Curtis Payne and his wife Ella.",
-        "poster_path": "/2NdUdJnZnwI6skvm6OXWrK2D42U.jpg",
-        "vote_average": 7.516,
-        "release_date": "2007-06-06",
-        "popularity": 20.206
-    },
-    {
         "id": 2328,
         "type": "tv",
         "title": "Power Rangers",
@@ -18550,6 +18502,18 @@
         "vote_average": 7.5,
         "release_date": "1977-12-30",
         "popularity": 17.3943
+    },
+    {
+        "id": 243875,
+        "type": "tv",
+        "title": "Georgie & Mandy's First Marriage",
+        "title_ar": "جورجي وماندي: الزواج الأول",
+        "overview": "Georgie and Mandy raise their young family in Texas while navigating the challenges of adulthood, parenting, and marriage.",
+        "overview_ar": "يروي المسلسل الكوميدي قصة جورجي وماندي، شابين يواجهان تحديات الزواج المبكر وتربية طفلهما الأول. وسط مواقف طريفة ومؤثرة، يستكشف العمل موضوعات الأسرة، الحب، والنمو الشخصي بأسلوب مرح ودافئ.",
+        "poster_path": "/3z2mYFxUkzanb2eeIcVyfJq0G3q.jpg",
+        "vote_average": 7.8,
+        "release_date": "2024-10-17",
+        "popularity": 22.3628
     },
     {
         "id": 66599,
@@ -18718,6 +18682,42 @@
         "vote_average": 8.44,
         "release_date": "2011-04-06",
         "popularity": 19.0275
+    },
+    {
+        "id": 20353,
+        "type": "tv",
+        "title": "Magical DoReMi",
+        "title_ar": "دروبي مع دو ري مي",
+        "overview": "Ojamajo Doremi, known as Magical DoReMi internationally, is a magical girl anime television series created by Toei Animation in 1999. It focuses on elementary school students who become witch apprentices. Led by Doremi Harukaze, the girls must maintain their double lives in secret.\n\nOjamajo Doremi has been followed up by three direct sequels, lasting until its end in 2003. During the television series' runtime, two companion films were released in theaters. The English dub, produced by 4Kids Entertainment, released a preview episode in the US airing on August 13, 2005, and the first episode on September 10, 2005.",
+        "overview_ar": "رأت رفيف محل السحر فدخلته فرأت الانسة هناء وعرفت انها ساحرة فتحولت  إلى ضفدع أخضر اسمه طب طب ولكي تعود إلى هيأتها الطبيعية يجب أن يتجاوز  الشخص الذي عرفها وهي رفيف 10 اختبارات في عالم السحر أو بالدبلجة العربية \"  كوكب سيما \" فجعلها تمثل كوكب الأرض وبعدها أصبحت صديقاتها مثلها وهما  ليلى وصفاء وقد اعطوهن عصا الطلبات لكي تلبى أي طلب لهم ولكن تحتاج عصا  الطلبات إلى كرات لكي تعمل\n\nو هذه الكرات لابد ان يشترهن بالمال لذلك قاموا بعمل محل لبيع الأشياء وبعدها يحصلون على المال.",
+        "poster_path": "/iCINo8JNXswWelsEycO1frahHS1.jpg",
+        "vote_average": 8.4,
+        "release_date": "1999-02-07",
+        "popularity": 20.3127
+    },
+    {
+        "id": 117933,
+        "type": "tv",
+        "title": "Summer Time Rendering",
+        "title_ar": "Summer Time Rendering",
+        "overview": "Shinpei Ajiro travels home to attend the funeral of a childhood friend, and finds the remote island plagued by a sinister, supernatural force.",
+        "overview_ar": "Shinpei Ajiro travels home to attend the funeral of a childhood friend, and finds the remote island plagued by a sinister, supernatural force.",
+        "poster_path": "/m9e7chRW8Q8Go1Dv00RCUHbMoNe.jpg",
+        "vote_average": 8.099,
+        "release_date": "2022-04-15",
+        "popularity": 16.4072
+    },
+    {
+        "id": 76791,
+        "type": "tv",
+        "title": "Naagin",
+        "title_ar": "Naagin",
+        "overview": "A miraculous shape-shifting snake has the power to become a human. She can be anybody she wants: a wife, a seductress, a mistress, a damsel in distress: all in the name of revenge.",
+        "overview_ar": "A miraculous shape-shifting snake has the power to become a human. She can be anybody she wants: a wife, a seductress, a mistress, a damsel in distress: all in the name of revenge.",
+        "poster_path": "/mtenbhCeBXZQMFSpldLT3pO8n67.jpg",
+        "vote_average": 3.143,
+        "release_date": "2015-10-25",
+        "popularity": 23.142
     },
     {
         "id": 117933,
@@ -19440,30 +19440,6 @@
         "popularity": 17.7373
     },
     {
-        "id": 92830,
-        "type": "tv",
-        "title": "Obi-Wan Kenobi",
-        "title_ar": "Obi-Wan Kenobi",
-        "overview": "During the reign of the Galactic Empire, former Jedi Master, Obi-Wan Kenobi, embarks on a crucial mission to confront allies turned enemies and face the wrath of the Empire.",
-        "overview_ar": "During the reign of the Galactic Empire, former Jedi Master, Obi-Wan Kenobi, embarks on a crucial mission to confront allies turned enemies and face the wrath of the Empire.",
-        "poster_path": "/4Lok3HBSfbQxibQZBygoVCwKKrZ.jpg",
-        "vote_average": 7.0,
-        "release_date": "2022-05-26",
-        "popularity": 20.767
-    },
-    {
-        "id": 387,
-        "type": "tv",
-        "title": "SpongeBob SquarePants",
-        "title_ar": "سبونج بوب سكوير بانتس",
-        "overview": "Deep down in the Pacific Ocean in the subterranean city of Bikini Bottom lives a square yellow sponge named SpongeBob SquarePants. SpongeBob lives in a pineapple with his pet snail, Gary, loves his job as a fry cook at the Krusty Krab, and has a knack for getting into all kinds of trouble without really trying. When he's not getting on the nerves of his cranky next door neighbor Squidward, SpongeBob can usually be found smack in the middle of all sorts of strange situations with his best buddy, the simple yet lovable starfish, Patrick, or his thrill-seeking surfer-girl squirrel pal, Sandy Cheeks.",
-        "overview_ar": "في أعماق المحيط الهادئ في مدينة قاع الهامور يعيش اسفنجة مربعة صفراء اسمها سبونج بوب سكوير بانتس. سبونج بوب يعيش في أناناس مع حلزون حيوانه الأليف ، غاري ، يحب وظيفته كطاهي قلي في مقرمشات سلطع ، ولديه موهبة في الوقوع في جميع أنواع المشاكل دون أن يحاول حقًا. عندما لا يثير أعصاب جاره شفيع الغريب في الجوار ، يمكن أن تجد سبونج بوب عادة في وسط كل أنواع المواقف الغريبة مع صديقه المفضل ، نجم البحر بسيط ، أو راكبة الامواج تبحث عن الإثارة- الفتاة السنجاب بال ، ساندي تشيكس.",
-        "poster_path": "/5h0EU2lqBb03dp5vtRuUHJwqzem.jpg",
-        "vote_average": 7.696,
-        "release_date": "1999-05-01",
-        "popularity": 17.7373
-    },
-    {
         "id": 1952,
         "type": "tv",
         "title": "Mystery Science Theater 3000",
@@ -19656,6 +19632,18 @@
         "popularity": 20.7976
     },
     {
+        "id": 131927,
+        "type": "tv",
+        "title": "Dexter: New Blood",
+        "title_ar": "Dexter: New Blood",
+        "overview": "10 years after Dexter went missing in the eye of Hurricane Laura, we find him living under an assumed name in the small town of Iron Lake, New York.  Dexter may be embracing his new life, but in the wake of unexpected events in this close-knit community, his Dark Passenger beckons.",
+        "overview_ar": "10 years after Dexter went missing in the eye of Hurricane Laura, we find him living under an assumed name in the small town of Iron Lake, New York.  Dexter may be embracing his new life, but in the wake of unexpected events in this close-knit community, his Dark Passenger beckons.",
+        "poster_path": "/9EBKgrFIsCFSV1RZKWhYUdbtGiv.jpg",
+        "vote_average": 7.9,
+        "release_date": "2021-11-07",
+        "popularity": 21.5432
+    },
+    {
         "id": 125282,
         "type": "tv",
         "title": "The Cleaning Lady",
@@ -19678,6 +19666,18 @@
         "vote_average": 0.0,
         "release_date": "2019-07-31",
         "popularity": 10.1814
+    },
+    {
+        "id": 1365,
+        "type": "tv",
+        "title": "Eli Stone",
+        "title_ar": "Eli Stone",
+        "overview": "Many lawyers consider themselves prophets, but Eli Stone may be the real deal. Eli has built a successful career at a top law firm in San Francisco representing only the biggest and richest corporations that make a habit of screwing over the little guy. But after experiencing a series of odd hallucinations, Eli seeks to find a deeper meaning to life while trying not to lose his job and destroy his relationship with the bosses' daughter. When Eli discovers an aneurysm in his brain, he wonders if his condition is truly medical or if perhaps he now has a higher calling.",
+        "overview_ar": "Many lawyers consider themselves prophets, but Eli Stone may be the real deal. Eli has built a successful career at a top law firm in San Francisco representing only the biggest and richest corporations that make a habit of screwing over the little guy. But after experiencing a series of odd hallucinations, Eli seeks to find a deeper meaning to life while trying not to lose his job and destroy his relationship with the bosses' daughter. When Eli discovers an aneurysm in his brain, he wonders if his condition is truly medical or if perhaps he now has a higher calling.",
+        "poster_path": "/hWVuLjx3QPhpfTCePbB9nunIJt0.jpg",
+        "vote_average": 6.8,
+        "release_date": "2008-01-31",
+        "popularity": 15.0825
     },
     {
         "id": 99466,
@@ -20859,7 +20859,7 @@
         "id": 69291,
         "type": "tv",
         "title": "Miss Kobayashi's Dragon Maid",
-        "title_ar": "Miss Kobayashi's Dragon Maid",
+        "title_ar": "小林さんちのメイドラゴン",
         "overview": "Kobayashi lives alone in an apartment, until one day, Tohru appeared and they ended up living together. Tooru looks down on humans as inferior and foolish, but having been saved by Kobayashi-san, she does everything she can to repay the debt and help her with various things, although not everything goes according to plan.\n\nA mythical everyday life comedy about a hard working office lady living with a dragon girl.",
         "overview_ar": "Kobayashi lives alone in an apartment, until one day, Tohru appeared and they ended up living together. Tooru looks down on humans as inferior and foolish, but having been saved by Kobayashi-san, she does everything she can to repay the debt and help her with various things, although not everything goes according to plan.\n\nA mythical everyday life comedy about a hard working office lady living with a dragon girl.",
         "poster_path": "/aDJC9SBNqUFoGQ6uuxs0EfBsqct.jpg",
@@ -20873,35 +20873,11 @@
         "title": "Cyberpunk: Edgerunners",
         "title_ar": "Cyberpunk: Edgerunners",
         "overview": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
-        "overview_ar": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
-        "poster_path": "/7jSWOc6jWSw5hZ78HB8Hw3pJxuk.jpg",
-        "vote_average": 8.485,
-        "release_date": "2022-09-13",
-        "popularity": 16.4052
-    },
-    {
-        "id": 105248,
-        "type": "tv",
-        "title": "Cyberpunk: Edgerunners",
-        "title_ar": "Cyberpunk: Edgerunners",
-        "overview": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
         "overview_ar": "في واقع مستقبلي بائس يغزوه الفساد والأعضاء الإلكترونية، يسعى فتًى مشرّد موهوب، لكنّه مندفع، ليصبح مرتزقًا خارجًا على القانون... أي مُجازفًا.",
         "poster_path": "/7jSWOc6jWSw5hZ78HB8Hw3pJxuk.jpg",
         "vote_average": 8.485,
         "release_date": "2022-09-13",
         "popularity": 16.4052
-    },
-    {
-        "id": 112738,
-        "type": "tv",
-        "title": "HIP - High Intellectual Potential",
-        "title_ar": "HPI : Haut Potentiel Intellectuel",
-        "overview": "Morgane is 38-years old, has three children, two exes and an IQ of 160; her destiny as a cleaner is turned upside-down when her extraordinary abilities are spotted by the police who offer her a job as a consultant.",
-        "overview_ar": "Morgane is 38-years old, has three children, two exes and an IQ of 160; her destiny as a cleaner is turned upside-down when her extraordinary abilities are spotted by the police who offer her a job as a consultant.",
-        "poster_path": "/93PXzpXC0i5RVBEAGFR76NC1ylT.jpg",
-        "vote_average": 7.591,
-        "release_date": "2021-04-29",
-        "popularity": 19.7015
     },
     {
         "id": 64375,
@@ -21118,6 +21094,30 @@
         "vote_average": 8.8,
         "release_date": "2021-03-12",
         "popularity": 19.7511
+    },
+    {
+        "id": 3287,
+        "type": "tv",
+        "title": "Himitsu Sentai Gorenger",
+        "title_ar": "秘密戦隊ゴレンジャー",
+        "overview": "A powerful terrorist organization known as the Black Cross Army threatens to destroy the Earth, with only the defense organization EAGLE (EArth Guard LEague) able to oppose them. In retaliation, Black Cross Army destroys multiple EAGLE headquarters across Japan, killing all but five people. Now, these five remaining EAGLE members are called to form a secret, powerful team known as Gorenger, the only force left that has a chance to stop the Black Cross Army and their evil leader, Black Cross Führer.",
+        "overview_ar": "A powerful terrorist organization known as the Black Cross Army threatens to destroy the Earth, with only the defense organization EAGLE (EArth Guard LEague) able to oppose them. In retaliation, Black Cross Army destroys multiple EAGLE headquarters across Japan, killing all but five people. Now, these five remaining EAGLE members are called to form a secret, powerful team known as Gorenger, the only force left that has a chance to stop the Black Cross Army and their evil leader, Black Cross Führer.",
+        "poster_path": "/nYV9Ov2FeFg6WtYK1121rRgKI5b.jpg",
+        "vote_average": 8.1,
+        "release_date": "1975-04-05",
+        "popularity": 15.2886
+    },
+    {
+        "id": 195736,
+        "type": "tv",
+        "title": "口水三国",
+        "title_ar": "口水三国",
+        "overview": "",
+        "overview_ar": "",
+        "poster_path": "/lK44MQwgr4IUYJwe9hTaw0E1CeR.jpg",
+        "vote_average": 0.0,
+        "release_date": "2014-09-30",
+        "popularity": 9.5764
     },
     {
         "id": 195736,
@@ -22527,7 +22527,7 @@
         "id": 70798,
         "type": "tv",
         "title": "Istanbullu Gelin",
-        "title_ar": "Istanbullu Gelin",
+        "title_ar": "İstanbullu Gelin",
         "overview": "Faruk is the owner of a bus company and the leader of a powerful family in Bursa which is a metropol in Turkey. Faruk meets a violonist girl and falls in love with her. But the dominant mother of Faruk isn't happy with her son's relationship.",
         "overview_ar": "Faruk is the owner of a bus company and the leader of a powerful family in Bursa which is a metropol in Turkey. Faruk meets a violonist girl and falls in love with her. But the dominant mother of Faruk isn't happy with her son's relationship.",
         "poster_path": "/alVrRNxDGOlULYdXgnOpPrVP7KL.jpg",
@@ -22539,7 +22539,7 @@
         "id": 33951,
         "type": "tv",
         "title": "AI Football GGO",
-        "title_ar": "AI Football GGO",
+        "title_ar": "超智能足球",
         "overview": "Artificial Intelligent Football GGO is made by Puzzle Animation studio Ltd. It's an animation series about football and future technology.",
         "overview_ar": "Artificial Intelligent Football GGO is made by Puzzle Animation studio Ltd. It's an animation series about football and future technology.",
         "poster_path": "/x1TmnV1JruItCrmhTFEpnDzRF1M.jpg",
