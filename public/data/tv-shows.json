@@ -1615,7 +1615,7 @@
         "overview": "Decades after her party defeated the Demon King, an old friend's funeral launches the elf wizard Frieren on a journey of self-discovery.",
         "overview_ar": "هُزم الملك الشيطان، وعاد فريق الأبطال المنتصر إلى المنزل قبل أن يتفكك. الأربعة: الساحرة “فريرين“، والبطل “هيميل“، والكاهن “هايتر“، والمحارب “آيزن“. يتذكرون رحلتهم التي استمرت عقدًا من الزمان مع حلول لحظة وداع بعضهم البعض. لكن مرور الوقت يختلف بالنسبة للجان، وبالتالي تشهد “فريرين” رفاقها يموتون ببطء واحدًا تلو الآخر.",
         "poster_path": "/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-        "vote_average": 8.769,
+        "vote_average": 8.768,
         "release_date": "2023-09-29",
         "popularity": 92.2916
     },
@@ -1644,18 +1644,6 @@
         "popularity": 78.1646
     },
     {
-        "id": 69050,
-        "type": "tv",
-        "title": "Riverdale",
-        "title_ar": "Riverdale",
-        "overview": "Set in the present, the series offers a bold, subversive take on Archie, Betty, Veronica and their friends, exploring the surreality of small-town life, the darkness and weirdness bubbling beneath Riverdale’s wholesome facade.",
-        "overview_ar": "Set in the present, the series offers a bold, subversive take on Archie, Betty, Veronica and their friends, exploring the surreality of small-town life, the darkness and weirdness bubbling beneath Riverdale’s wholesome facade.",
-        "poster_path": "/d8mmn9thQ5dBk2qbv6BCqGUXWK3.jpg",
-        "vote_average": 8.415,
-        "release_date": "2017-01-26",
-        "popularity": 79.6599
-    },
-    {
         "id": 40663,
         "type": "tv",
         "title": "AIBOU: Tokyo Detective Duo",
@@ -1666,6 +1654,18 @@
         "vote_average": 7.6,
         "release_date": "2002-10-09",
         "popularity": 63.3362
+    },
+    {
+        "id": 250307,
+        "type": "tv",
+        "title": "The Pitt",
+        "title_ar": "مستشفى بيتسبرغ",
+        "overview": "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
+        "overview_ar": "الحياة اليومية لمقدمي الرعاية الصحية في مستشفى بيتسبرغ في بنسلفانيا صراع، فهم يحاولون التوفيق بين الأزمات الشخصية وسياسات مكان العمل وتكلفة علاج المرضى المصابين بأمراض خطيرة، مما يكشف عن المرونة المطلوبة في دعوتهم النبيلة.",
+        "poster_path": "/kvFSpESyBZMjaeOJDx7RS3P1jey.jpg",
+        "vote_average": 8.7,
+        "release_date": "2025-01-09",
+        "popularity": 88.5423
     },
     {
         "id": 60574,
@@ -8808,18 +8808,6 @@
         "popularity": 31.9743
     },
     {
-        "id": 68854,
-        "type": "tv",
-        "title": "From Me to You: Kimi ni Todoke",
-        "title_ar": "From Me to You: Kimi ni Todoke",
-        "overview": "Nicknamed \"Sadako\" for her spooky appearance, high schooler Sawako begins to break out of her shell when she befriends popular boy Kazehaya.",
-        "overview_ar": "Nicknamed \"Sadako\" for her spooky appearance, high schooler Sawako begins to break out of her shell when she befriends popular boy Kazehaya.",
-        "poster_path": "/lLUAZzJc6vfyE2TeY56AGGb3E5K.jpg",
-        "vote_average": 8.4,
-        "release_date": "2009-10-07",
-        "popularity": 28.7254
-    },
-    {
         "id": 89861,
         "type": "tv",
         "title": "Great Escape",
@@ -8878,6 +8866,18 @@
         "vote_average": 5.6,
         "release_date": "2008-03-16",
         "popularity": 27.2063
+    },
+    {
+        "id": 285166,
+        "type": "tv",
+        "title": "Jack-of-All-Trades, Party of None",
+        "title_ar": "متعدد المهارات بلا فريق",
+        "overview": "Betrayed by his childhood friend and cast out of the Hero Party, Orhun Dura—once their loyal Enchanter—is branded by his former comrades as “a jack-of-all-trades but a master of none.” Alone, he sets out to forge a new path as a solo adventurer. His journey sparks explosive battles, deadly rivals, and unexpected allies—and he’ll rise to shatter every expectation. The ultimate solo comeback begins!",
+        "overview_ar": "Betrayed by his childhood friend and cast out of the Hero Party, Orhun Dura—once their loyal Enchanter—is branded by his former comrades as “a jack-of-all-trades but a master of none.” Alone, he sets out to forge a new path as a solo adventurer. His journey sparks explosive battles, deadly rivals, and unexpected allies—and he’ll rise to shatter every expectation. The ultimate solo comeback begins!",
+        "poster_path": "/qRvICaz6LJXz96DaYcpTjQf6QN8.jpg",
+        "vote_average": 8.4,
+        "release_date": "2026-01-04",
+        "popularity": 33.5735
     },
     {
         "id": 1554,
@@ -10320,30 +10320,6 @@
         "popularity": 29.4596
     },
     {
-        "id": 5375,
-        "type": "tv",
-        "title": "Emergency!",
-        "title_ar": "Emergency!",
-        "overview": "The crew of Los Angeles County Fire Department Station 51, particularly the paramedic team, and Rampart Hospital respond to emergencies in their operating area.",
-        "overview_ar": "The crew of Los Angeles County Fire Department Station 51, particularly the paramedic team, and Rampart Hospital respond to emergencies in their operating area.",
-        "poster_path": "/or94yBr8bwDPYYY3n8OIu0Q32S3.jpg",
-        "vote_average": 7.862,
-        "release_date": "1972-01-22",
-        "popularity": 29.4596
-    },
-    {
-        "id": 82,
-        "type": "tv",
-        "title": "Animaniacs",
-        "title_ar": "Animaniacs",
-        "overview": "The two Warner Brothers Yakko and Wakko and their Warner sister Dot had been (supposedly) created in the 1930's, but their cartoons were too screwy for the general public to handle. The three Warners were locked up in the studio water tower until they escaped in the 90's. There, they run wild, causing chaos everywhere!",
-        "overview_ar": "The two Warner Brothers Yakko and Wakko and their Warner sister Dot had been (supposedly) created in the 1930's, but their cartoons were too screwy for the general public to handle. The three Warners were locked up in the studio water tower until they escaped in the 90's. There, they run wild, causing chaos everywhere!",
-        "poster_path": "/bqUIqC7zMKYkdZpK6I7ZfJE3I3g.jpg",
-        "vote_average": 7.999,
-        "release_date": "1993-09-13",
-        "popularity": 29.1204
-    },
-    {
         "id": 64492,
         "type": "tv",
         "title": "SHIROBAKO",
@@ -10536,6 +10512,18 @@
         "popularity": 27.1402
     },
     {
+        "id": 280632,
+        "type": "tv",
+        "title": "How Dare You!?",
+        "title_ar": "成何体统",
+        "overview": "Rookie office worker Wang Cuihua is suddenly pulled into the world of a novel, where she meets Xiahou Dan, a powerful king hiding his true identity. Both outsiders to this world, they join forces to survive a twisted fate, facing political intrigue, ancient prophecies, and life-or-death choices. As they fight to change their destiny, a powerful bond forms, one that could reshape the future of the kingdom.",
+        "overview_ar": "Rookie office worker Wang Cuihua is suddenly pulled into the world of a novel, where she meets Xiahou Dan, a powerful king hiding his true identity. Both outsiders to this world, they join forces to survive a twisted fate, facing political intrigue, ancient prophecies, and life-or-death choices. As they fight to change their destiny, a powerful bond forms, one that could reshape the future of the kingdom.",
+        "poster_path": "/dLRQI1TikEQ92BKlfPLJOoOceXC.jpg",
+        "vote_average": 8.0,
+        "release_date": "2026-02-06",
+        "popularity": 32.2099
+    },
+    {
         "id": 81723,
         "type": "tv",
         "title": "The Gilded Age",
@@ -10558,6 +10546,18 @@
         "vote_average": 8.512,
         "release_date": "1976-10-01",
         "popularity": 29.8359
+    },
+    {
+        "id": 3772,
+        "type": "tv",
+        "title": "Walker, Texas Ranger",
+        "title_ar": "Walker, Texas Ranger",
+        "overview": "Modern-day Texas Ranger, Cordell Walker's independent crime-solving methods have their roots in the rugged traditions of the Old West. Walker's closest friend is former Ranger, C.D. Parker, who retired after a knee injury, and now owns \"C.D.'s,\" a Country/Western saloon/restaurant. Rookie Ranger, James \"Jimmy\" Trivette is an ex-football player who bases his crime-solving methods on reason and uses computers and cellular phones. Alex Cahill is the Assistant DA who shares a mutual attraction with Walker, but often disagrees with his unorthodox approach to law enforcement.",
+        "overview_ar": "Modern-day Texas Ranger, Cordell Walker's independent crime-solving methods have their roots in the rugged traditions of the Old West. Walker's closest friend is former Ranger, C.D. Parker, who retired after a knee injury, and now owns \"C.D.'s,\" a Country/Western saloon/restaurant. Rookie Ranger, James \"Jimmy\" Trivette is an ex-football player who bases his crime-solving methods on reason and uses computers and cellular phones. Alex Cahill is the Assistant DA who shares a mutual attraction with Walker, but often disagrees with his unorthodox approach to law enforcement.",
+        "poster_path": "/egelSg8Fdt0jIaOcsihqlwe2m5F.jpg",
+        "vote_average": 6.9,
+        "release_date": "1993-04-21",
+        "popularity": 28.427
     },
     {
         "id": 62704,
@@ -11040,18 +11040,6 @@
         "popularity": 34.5742
     },
     {
-        "id": 104396,
-        "type": "tv",
-        "title": "Rock Story",
-        "title_ar": "Rock Story",
-        "overview": "Gui is a former rock star who struggles to reinvent himself in his professional and personal lives after another artist steals his fame and his wife. Imperfect, careless, but with a giant heart, he will be tested by fate while having the opportunity to change his life by finding out about a teenage son and facing a new and unexpected love affair. But in order to change his own story, he will have to make the right choices he did not make in the past.",
-        "overview_ar": "Gui is a former rock star who struggles to reinvent himself in his professional and personal lives after another artist steals his fame and his wife. Imperfect, careless, but with a giant heart, he will be tested by fate while having the opportunity to change his life by finding out about a teenage son and facing a new and unexpected love affair. But in order to change his own story, he will have to make the right choices he did not make in the past.",
-        "poster_path": "/5vDYYbuKGe7g84nEcuCqvCMSc8A.jpg",
-        "vote_average": 6.8,
-        "release_date": "2016-11-09",
-        "popularity": 34.5742
-    },
-    {
         "id": 84200,
         "type": "tv",
         "title": "Justice League Unlimited",
@@ -11278,6 +11266,18 @@
         "vote_average": 7.12,
         "release_date": "1990-09-28",
         "popularity": 30.135
+    },
+    {
+        "id": 225599,
+        "type": "tv",
+        "title": "Everybody's Somebody's Favourite",
+        "title_ar": "都市方程式",
+        "overview": "Set in a time of explosive change, new things and fashion are endless. \"Everybody's Somebody's Favourite\" portrays the stories of three families, reflecting the \"grassroots\", \"middle-class\", and \"wealthy\" classes. The head of the \"grassroots\" family, Yang Wenzheng, is conservative and timid, while his wife Yin Yuping is a new-era housewife. The series depicts different aspects of society and its unique phenomena through a light and humorous touch.",
+        "overview_ar": "Set in a time of explosive change, new things and fashion are endless. \"Everybody's Somebody's Favourite\" portrays the stories of three families, reflecting the \"grassroots\", \"middle-class\", and \"wealthy\" classes. The head of the \"grassroots\" family, Yang Wenzheng, is conservative and timid, while his wife Yin Yuping is a new-era housewife. The series depicts different aspects of society and its unique phenomena through a light and humorous touch.",
+        "poster_path": "/sEqPE0eg5LzeivUUTGJQhz2zfJk.jpg",
+        "vote_average": 0.0,
+        "release_date": "1988-04-11",
+        "popularity": 21.3805
     },
     {
         "id": 1533,
@@ -11763,9 +11763,9 @@
         "id": 73544,
         "type": "tv",
         "title": "Warrior",
-        "title_ar": "المحارب",
+        "title_ar": "Warrior",
         "overview": "A gritty, action-packed crime drama set during the brutal Tong Wars of San Francisco’s Chinatown in the second half of the 19th century. The series follows Ah Sahm, a martial arts prodigy who immigrates from China to San Francisco under mysterious circumstances, and becomes a hatchet man for one of Chinatown’s most powerful tongs.",
-        "overview_ar": "مستوحاة من كتابات الراحل بروس لي ، تتابع هذه الدراما الإجرامية المليئة بالإثارة معجزة فنون القتال آه ساهم ، الذي هاجر من الصين إلى سان فرانسيسكو في ظروف غامضة وأصبح يعمل لصالح أسوأ شخص في الحي الصيني.",
+        "overview_ar": "A gritty, action-packed crime drama set during the brutal Tong Wars of San Francisco’s Chinatown in the second half of the 19th century. The series follows Ah Sahm, a martial arts prodigy who immigrates from China to San Francisco under mysterious circumstances, and becomes a hatchet man for one of Chinatown’s most powerful tongs.",
         "poster_path": "/hR9qPFMI6BoR63XK6BBX5Ueghan.jpg",
         "vote_average": 8.0,
         "release_date": "2019-04-05",
@@ -11993,7 +11993,7 @@
         "title": "The Marvelous Mrs. Maisel",
         "title_ar": "The Marvelous Mrs. Maisel",
         "overview": "It’s 1958 Manhattan and Miriam “Midge” Maisel has everything she’s ever wanted - the perfect husband, kids, and Upper West Side apartment. But when her life suddenly takes a turn and Midge must start over, she discovers a previously unknown talent - one that will take her all the way from the comedy clubs of Greenwich Village to a spot on Johnny Carson’s couch.",
-        "overview_ar": "It’s 1958 Manhattan and Miriam “Midge” Maisel has everything she’s ever wanted - the perfect husband, kids, and Upper West Side apartment. But when her life suddenly takes a turn and Midge must start over, she discovers a previously unknown talent - one that will take her all the way from the comedy clubs of Greenwich Village to a spot on Johnny Carson’s couch.",
+        "overview_ar": "إنه عام 1958 مانهاتن وميريام \"ميدج\" مايزل لديها كل ما تريده على الإطلاق - الزوج المثالي والأطفال وشقة الجانب الغربي العلوي . ولكن عندما تأخذ حياتها فجأة منعطفا ويجب أن تبدأ ميدج من جديد ، تكتشف موهبة لم تكن معروفة من قبل - موهبة ستأخذها على طول الطريق من نوادي الكوميديا في قرية غرينتش إلى مكان على أريكة جوني كارسون.",
         "poster_path": "/zS7fQiOZiKCVH2vlYSiIsFWW8hh.jpg",
         "vote_average": 8.049,
         "release_date": "2017-03-16",
@@ -14556,6 +14556,18 @@
         "popularity": 23.8311
     },
     {
+        "id": 220102,
+        "type": "tv",
+        "title": "Spider-Noir",
+        "title_ar": "Spider-Noir",
+        "overview": "Ben Reilly, an aging and down on his luck private investigator in 1930s New York, is forced to grapple with his past life as the city's one and only superhero.",
+        "overview_ar": "Ben Reilly, an aging and down on his luck private investigator in 1930s New York, is forced to grapple with his past life as the city's one and only superhero.",
+        "poster_path": "/cRAzL6mmdM6Q6UuQgc335UMgcfd.jpg",
+        "vote_average": 0.0,
+        "release_date": "2026-05-25",
+        "popularity": 26.1662
+    },
+    {
         "id": 15886,
         "type": "tv",
         "title": "Minuscule: The Private Life of Insects",
@@ -14587,7 +14599,7 @@
         "overview": "High school mathlete Lindsay Weir rebels and begins hanging out with a crowd of burnouts (the \"freaks\"), while her brother Sam Weir navigates a different part of the social universe with his nerdy friends (the \"geeks\").",
         "overview_ar": "High school mathlete Lindsay Weir rebels and begins hanging out with a crowd of burnouts (the \"freaks\"), while her brother Sam Weir navigates a different part of the social universe with his nerdy friends (the \"geeks\").",
         "poster_path": "/tPqV63zcW6ZV0Hd48DMGb5UzQIG.jpg",
-        "vote_average": 8.174,
+        "vote_average": 8.2,
         "release_date": "1999-09-25",
         "popularity": 24.2978
     },
@@ -14626,18 +14638,6 @@
         "vote_average": 6.9,
         "release_date": "1998-08-31",
         "popularity": 21.5002
-    },
-    {
-        "id": 231503,
-        "type": "tv",
-        "title": "Wild Heart",
-        "title_ar": "المتوحش",
-        "overview": "It tells the story of a child who was kidnapped from a deep-rooted family and fell into the streets, and his struggle to reinvent himself after years later returning to his home.",
-        "overview_ar": "بعد مرور سنوات على اختطافه عندما كان طفلا من عائلته الثرية والعيش في الزقاق والشوارع، يجد يمان نفسه مجبرا على إعادة تعريف حياته عندما يعود إلى منزله.",
-        "poster_path": "/lQ5k6i7Bv3ssV4uotxZpTdKCgC9.jpg",
-        "vote_average": 8.7,
-        "release_date": "2023-09-12",
-        "popularity": 24.6646
     },
     {
         "id": 63706,
@@ -16527,7 +16527,7 @@
         "id": 107467,
         "type": "tv",
         "title": "Singer",
-        "title_ar": "Singer",
+        "title_ar": "我是歌手",
         "overview": "",
         "overview_ar": "",
         "poster_path": "/ndDXmRQLOEYE795Qp0FrsvtGPCF.jpg",
@@ -16539,9 +16539,9 @@
         "id": 76075,
         "type": "tv",
         "title": "Laid-Back Camp",
-        "title_ar": "Laid-Back Camp",
+        "title_ar": "مخيم الاسترخاء",
         "overview": "Nadeshiko, a high school student who had moved from Shizuoka to Yamanashi, decides to see the famous, 1000 yen-bill-featured Mount Fuji. Even though she manages to bike all the way to Motosu, she's forced to turn back because of worsening weather. Unable to set her eyes on her goal, she faints partway to her destination. When she wakes up, it's night, in a place she's never been before, with no way of knowing how to get home. Nadeshiko is saved when she encounters Rin, a girl who is out camping by herself. This outdoorsy girls story begins with this first encounter between Nadeshiko and Rin.",
-        "overview_ar": "Nadeshiko, a high school student who had moved from Shizuoka to Yamanashi, decides to see the famous, 1000 yen-bill-featured Mount Fuji. Even though she manages to bike all the way to Motosu, she's forced to turn back because of worsening weather. Unable to set her eyes on her goal, she faints partway to her destination. When she wakes up, it's night, in a place she's never been before, with no way of knowing how to get home. Nadeshiko is saved when she encounters Rin, a girl who is out camping by herself. This outdoorsy girls story begins with this first encounter between Nadeshiko and Rin.",
+        "overview_ar": "ناديشيكو، تلميذة في المدرسة الثانويّة كانت قد انتقلت من شيزوكا إلى ياماناشي، تقرّر أن ترى جبل فوجي الشّهير والمرسوم على العملة الورقيّة من فئة 1000 ين. ورغم أنّها تتمكّن من قطع كلّ المسافة إلى موتوسو بدرّاجة هوائيّة، إلّا أنّها تضطرّ للتراجع بسببِ سوء حالة الطقس. في عجزها عن تحقيقِ هدفها، تغيب عن الوعي في منتصفِ الطرق إلى وجهتها. عندما تستيقظ، تجد نفسها ليلاً في مكانٍ لم تكن فيه من قبل، ولا تعرف ضالّتها إلى المنزلِ إطلاقاً. تنجو ناديشيكو عندما تلتقي برين، وهي فتاةٌ خرجَتْ بمفردها للتخييم. قصّة الفتيات في الهواءِ الطلق هذه تبدأ بهذا اللّقاء الأوّل بين ناديشيكو ورين.",
         "poster_path": "/1c5xBDBQQwa1bvX5fibAeymReGg.jpg",
         "vote_average": 8.165,
         "release_date": "2018-01-04",
@@ -16553,7 +16553,7 @@
         "title": "Good Girls",
         "title_ar": "Good Girls",
         "overview": "Three \"good girl\" suburban wives and mothers suddenly find themselves in desperate circumstances and decide to stop playing it safe and risk everything to take their power back.",
-        "overview_ar": "Three \"good girl\" suburban wives and mothers suddenly find themselves in desperate circumstances and decide to stop playing it safe and risk everything to take their power back.",
+        "overview_ar": "تُنظِّم ثلاث أمّهات في الضواحي عمليّة سطو على متجر بقالة محليّ للهرب من المصاعب الماديّة وتحقيق استقلالهنّ... بالاشتراك معًا.",
         "poster_path": "/wpgg6G3UHXepH2Zgpt4W60d6gxR.jpg",
         "vote_average": 7.8,
         "release_date": "2018-02-26",
@@ -22803,9 +22803,9 @@
         "id": 120911,
         "type": "tv",
         "title": "The Terminal List",
-        "title_ar": "قائمة الموتى",
+        "title_ar": "The Terminal List",
         "overview": "Navy SEAL Commander James Reece turns to vengeance as he investigates the mysterious forces behind the murder of his entire platoon. Free from the military’s command structure, Reece applies the lessons he’s learned from nearly two decades of warfare to hunt down the people responsible.",
-        "overview_ar": "يتحول رائد البحرية \"جيمس ريس\" إلى الانتقام بينما يحقق في القوى الغامضة وراء مقتل فصيلته بأكملها. بعيدًا عن هيكل القيادة العسكرية، يطبق\"ريس\" الدروس التي تعلمها من ما يقرب من عقدين من الحرب لتعقب الأشخاص المسؤولين.",
+        "overview_ar": "Navy SEAL Commander James Reece turns to vengeance as he investigates the mysterious forces behind the murder of his entire platoon. Free from the military’s command structure, Reece applies the lessons he’s learned from nearly two decades of warfare to hunt down the people responsible.",
         "poster_path": "/jbyaKYNexl1poKZnEmB6Qobn60s.jpg",
         "vote_average": 7.969,
         "release_date": "2022-06-30",
@@ -22839,7 +22839,7 @@
         "id": 126544,
         "type": "tv",
         "title": "The Detectives' Adventures",
-        "title_ar": "萌探探探案",
+        "title_ar": "The Detectives' Adventures",
         "overview": "The first reality show on detective stories adapted from classic IP. Every episode is based on a classic IP drama. MCs are able to adapt and act out the classic stories in the real scenes. The detective group includes seven MCs, who are encouraged to obtain clues from the unreasonable scripts and amusing games.",
         "overview_ar": "The first reality show on detective stories adapted from classic IP. Every episode is based on a classic IP drama. MCs are able to adapt and act out the classic stories in the real scenes. The detective group includes seven MCs, who are encouraged to obtain clues from the unreasonable scripts and amusing games.",
         "poster_path": "/epoCnqVnMqohtKnf8QiT1eGaV9A.jpg",
