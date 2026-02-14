@@ -4047,9 +4047,9 @@
         "id": 330457,
         "type": "movie",
         "title": "Frozen II",
-        "title_ar": "ملكة الثلج 2",
+        "title_ar": "Frozen II",
         "overview": "Elsa, Anna, Kristoff and Olaf head far into the forest to learn the truth about an ancient mystery of their kingdom.",
-        "overview_ar": "الماضي ليس كما يبدو.\r تتوجه إلسا وآنا وكريستوف وأولاف بعيدا إلى الغابة لمعرفة الحقيقة حول لغز قديم لمملكتهم.",
+        "overview_ar": "Elsa, Anna, Kristoff and Olaf head far into the forest to learn the truth about an ancient mystery of their kingdom.",
         "poster_path": "/mINJaa34MtknCYl5AjtNJzWj8cD.jpg",
         "vote_average": 7.236,
         "release_date": "2019-11-20",
@@ -4061,7 +4061,43 @@
         "title": "Kingsman: The Secret Service",
         "title_ar": "Kingsman: The Secret Service",
         "overview": "The story of a super-secret spy organization that recruits an unrefined but promising street kid into the agency's ultra-competitive training program just as a global threat emerges from a twisted tech genius.",
-        "overview_ar": "الأخلاق تصنع الإنسان.\r قصة منظمة تجسس فائقة السرية تقوم بتجنيد طفل شارع غير مكرر ولكنه واعد في برنامج التدريب شديد التنافسية للوكالة تماما كما يظهر تهديد عالمي من عبقري تقني ملتوي.",
+        "overview_ar": "The story of a super-secret spy organization that recruits an unrefined but promising street kid into the agency's ultra-competitive training program just as a global threat emerges from a twisted tech genius.",
+        "poster_path": "/r6q9wZK5a2K51KFj4LWVID6Ja1r.jpg",
+        "vote_average": 7.62,
+        "release_date": "2015-01-24",
+        "popularity": 15.801
+    },
+    {
+        "id": 573435,
+        "type": "movie",
+        "title": "Bad Boys: Ride or Die",
+        "title_ar": "Bad Boys: Ride or Die",
+        "overview": "After their late former Captain is framed, Lowrey and Burnett try to clear his name, only to end up on the run themselves.",
+        "overview_ar": "After their late former Captain is framed, Lowrey and Burnett try to clear his name, only to end up on the run themselves.",
+        "poster_path": "/oGythE98MYleE6mZlGs5oBGkux1.jpg",
+        "vote_average": 7.337,
+        "release_date": "2024-06-05",
+        "popularity": 17.4216
+    },
+    {
+        "id": 330457,
+        "type": "movie",
+        "title": "Frozen II",
+        "title_ar": "Frozen II",
+        "overview": "Elsa, Anna, Kristoff and Olaf head far into the forest to learn the truth about an ancient mystery of their kingdom.",
+        "overview_ar": "Elsa, Anna, Kristoff and Olaf head far into the forest to learn the truth about an ancient mystery of their kingdom.",
+        "poster_path": "/mINJaa34MtknCYl5AjtNJzWj8cD.jpg",
+        "vote_average": 7.236,
+        "release_date": "2019-11-20",
+        "popularity": 14.532
+    },
+    {
+        "id": 207703,
+        "type": "movie",
+        "title": "Kingsman: The Secret Service",
+        "title_ar": "Kingsman: The Secret Service",
+        "overview": "The story of a super-secret spy organization that recruits an unrefined but promising street kid into the agency's ultra-competitive training program just as a global threat emerges from a twisted tech genius.",
+        "overview_ar": "The story of a super-secret spy organization that recruits an unrefined but promising street kid into the agency's ultra-competitive training program just as a global threat emerges from a twisted tech genius.",
         "poster_path": "/r6q9wZK5a2K51KFj4LWVID6Ja1r.jpg",
         "vote_average": 7.62,
         "release_date": "2015-01-24",
@@ -4123,7 +4159,7 @@
         "overview": "Nemo, an adventurous young clownfish, is unexpectedly taken from his Great Barrier Reef home to a dentist's office aquarium. It's up to his worrisome father Marlin and a friendly but forgetful fish Dory to bring Nemo home -- meeting vegetarian sharks, surfer dude turtles, hypnotic jellyfish, hungry seagulls, and more along the way.",
         "overview_ar": "القصة عن سمكتين (من نوع كلون أو المهرج) تعيشان في المحيط الهادئ وبعد وضع الأنثى للبيوض تهاجم من قبل سمكة البينارا فتموت ويرعى الأب \"مرهف\" البيضة الوحيدة المتبقية ويسميها \"نيمو\" بناء لرغبة الأم \"مرجانة\". يحاول \"مرهف\" حماية ابنه من الخطر بهوس زائد عن الحد فيتمرد نيمو ويذهب ناحية قارب لقوم بتبين شجاعتة لأبوه ويقع في يد غواص ياخذه إلى أستراليا في سيدنى فيبدأ مرهف رحلة عبر المحيط لإيجاده مع سمكة تعاني من فقدان ذاكرة مؤقت! اسمها \"دوري\" في حين يحاول الابن الخروج من حوض الأسماك الذي وضعه فيه دكتور أسنان وبمساعدة بعض الأصدقاء لنيمو في الخروج من الحوض وبالفعل ينجحو ويعود الابن لأبوه.",
         "poster_path": "/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg",
-        "vote_average": 7.8,
+        "vote_average": 7.817,
         "release_date": "2003-05-30",
         "popularity": 14.5573
     },
@@ -4147,7 +4183,7 @@
         "overview": "When his attempt to save his family inadvertently alters the future, Barry Allen becomes trapped in a reality in which General Zod has returned and there are no Super Heroes to turn to. In order to save the world that he is in and return to the future that he knows, Barry's only hope is to race for his life. But will making the ultimate sacrifice be enough to reset the universe?",
         "overview_ar": "يسافر الفلاش عبر الزمن لمنع مقتل والدته ، وهو عمل يعطل الوقت بشكل كبير.",
         "poster_path": "/rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg",
-        "vote_average": 6.617,
+        "vote_average": 6.618,
         "release_date": "2023-06-13",
         "popularity": 13.936
     },
@@ -4159,7 +4195,7 @@
         "overview": "A man claiming to be from the future takes the patrons of an iconic Los Angeles diner hostage in search of unlikely recruits in a quest to save the world.",
         "overview_ar": "A man claiming to be from the future takes the patrons of an iconic Los Angeles diner hostage in search of unlikely recruits in a quest to save the world.",
         "poster_path": "/rWcfOdY7TU6lTdazWj0ebDZnAfO.jpg",
-        "vote_average": 8.5,
+        "vote_average": 8.2,
         "release_date": "2026-02-13",
         "popularity": 15.7457
     },
@@ -4183,7 +4219,7 @@
         "overview": "Rose, a desperate mother, takes her adopted daughter, Sharon, to the town of Silent Hill in an attempt to cure her of her ailment. After a violent car crash, Sharon disappears, and Rose embarks on a horrific journey to get her back and begins to uncover the truth behind the apocalyptic disaster that burned the town 30 years earlier.",
         "overview_ar": "ستنادًا إلى واحدة من أشهر ألعاب الفيديو على اﻹطلاق، تذهب امرأة للبحث عن ابنتها ضمن حدود غريبة، مدينة مهجورة تسمى \"سايلنت هيل\"، وهناك تقابل سلسلة من اﻷهوال.",
         "poster_path": "/dVW2L5eu6Hv0nfEEp0nY2lYmcbc.jpg",
-        "vote_average": 6.6,
+        "vote_average": 6.616,
         "release_date": "2006-04-21",
         "popularity": 15.5974
     },
@@ -4282,42 +4318,6 @@
         "vote_average": 5.9,
         "release_date": "2014-08-07",
         "popularity": 13.6882
-    },
-    {
-        "id": 85,
-        "type": "movie",
-        "title": "Raiders of the Lost Ark",
-        "title_ar": "Raiders of the Lost Ark",
-        "overview": "When Dr. Indiana Jones – the tweed-suited professor who just happens to be a celebrated archaeologist – is hired by the government to locate the legendary Ark of the Covenant, he finds himself up against the entire Nazi regime.",
-        "overview_ar": "عندما استأجرت الحكومة الدكتور إنديانا جونز - الأستاذ الملائم للتويد والذي صادف أنه عالم آثار مشهور - لتحديد موقع تابوت العهد الأسطوري ، وجد نفسه في مواجهة النظام النازي بأكمله.",
-        "poster_path": "/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
-        "vote_average": 7.9,
-        "release_date": "1981-06-12",
-        "popularity": 17.1028
-    },
-    {
-        "id": 49521,
-        "type": "movie",
-        "title": "Man of Steel",
-        "title_ar": "رجلٌ مِن الصُّلب",
-        "overview": "A young boy learns that he has extraordinary powers and is not of this earth. As a young man, he journeys to discover where he came from and what he was sent here to do. But the hero in him must emerge if he is to save the world from annihilation and become the symbol of hope for all mankind.",
-        "overview_ar": "تدور قصة الفيلم حول سوبرمان أو كلارك كينت (هنري كافيل) وهو شاب في العشرين من عمره يعمل صحافي، يشعر بالغربة نتيجة قوة خارقة تميزه عن غيره. ويتضح أنه نُقل من كوكب \"كريبتون\" منذ سنوات إلى الأرض، وتبناه كلا من مارثا (داني لين) وجوناثان كينت (كيفين كوستنر) منذ الصغر، وعندما بلغ أشده، بدأ يساعد العالم عقب أي مأساة أو كارثة.",
-        "poster_path": "/8GFtkImmK0K1VaUChR0n9O61CFU.jpg",
-        "vote_average": 6.639,
-        "release_date": "2013-06-12",
-        "popularity": 13.4132
-    },
-    {
-        "id": 1034716,
-        "type": "movie",
-        "title": "People We Meet on Vacation",
-        "title_ar": "People We Meet on Vacation",
-        "overview": "Poppy's a free spirit. Alex loves a plan. After years of summer vacations, these polar-opposite pals wonder if they could be a perfect romantic match.",
-        "overview_ar": "Poppy's a free spirit. Alex loves a plan. After years of summer vacations, these polar-opposite pals wonder if they could be a perfect romantic match.",
-        "poster_path": "/kOrJqRyt1pklNgDwJMjzN1GuNXS.jpg",
-        "vote_average": 7.01,
-        "release_date": "2026-01-06",
-        "popularity": 15.177
     },
     {
         "id": 8966,
@@ -7200,6 +7200,54 @@
         "popularity": 13.0555
     },
     {
+        "id": 537915,
+        "type": "movie",
+        "title": "After",
+        "title_ar": "After",
+        "overview": "Tessa Young is a dedicated student, dutiful daughter and loyal girlfriend to her high school sweetheart. Entering her first semester of college, Tessa's guarded world opens up when she meets Hardin Scott, a mysterious and brooding rebel who makes her question all she thought she knew about herself -- and what she wants out of life.",
+        "overview_ar": "Tessa Young is a dedicated student, dutiful daughter and loyal girlfriend to her high school sweetheart. Entering her first semester of college, Tessa's guarded world opens up when she meets Hardin Scott, a mysterious and brooding rebel who makes her question all she thought she knew about herself -- and what she wants out of life.",
+        "poster_path": "/u3B2YKUjWABcxXZ6Nm9h10hLUbh.jpg",
+        "vote_average": 7.112,
+        "release_date": "2019-04-11",
+        "popularity": 11.5553
+    },
+    {
+        "id": 392044,
+        "type": "movie",
+        "title": "Murder on the Orient Express",
+        "title_ar": "Murder on the Orient Express",
+        "overview": "Genius Belgian detective Hercule Poirot investigates the murder of an American tycoon aboard the Orient Express train.",
+        "overview_ar": "Genius Belgian detective Hercule Poirot investigates the murder of an American tycoon aboard the Orient Express train.",
+        "poster_path": "/7GtdJU6iAg6fjQu3E3zta3bIAQh.jpg",
+        "vote_average": 6.706,
+        "release_date": "2017-11-03",
+        "popularity": 11.0114
+    },
+    {
+        "id": 260514,
+        "type": "movie",
+        "title": "Cars 3",
+        "title_ar": "Cars 3",
+        "overview": "Blindsided by a new generation of blazing-fast racers, the legendary Lightning McQueen is suddenly pushed out of the sport he loves. To get back in the game, he will need the help of an eager young race technician with her own plan to win, inspiration from the late Fabulous Hudson Hornet, and a few unexpected turns.",
+        "overview_ar": "Blindsided by a new generation of blazing-fast racers, the legendary Lightning McQueen is suddenly pushed out of the sport he loves. To get back in the game, he will need the help of an eager young race technician with her own plan to win, inspiration from the late Fabulous Hudson Hornet, and a few unexpected turns.",
+        "poster_path": "/zg5RDxvIIAKsucjuU2EZJIHEIvz.jpg",
+        "vote_average": 6.853,
+        "release_date": "2017-06-15",
+        "popularity": 13.0555
+    },
+    {
+        "id": 311,
+        "type": "movie",
+        "title": "Once Upon a Time in America",
+        "title_ar": "Once Upon a Time in America",
+        "overview": "A former Prohibition-era Jewish gangster returns to the Lower East Side of Manhattan over thirty years later, where he once again must confront the ghosts and regrets of his old life.",
+        "overview_ar": "يعود رجل عصابات يهودي سابق في عصر الحظر إلى الجانب الشرقي الأدنى من مانهاتن بعد أكثر من ثلاثين عامًا ، حيث يتعين عليه مرة أخرى مواجهة الأشباح والندم على حياته القديمة.",
+        "poster_path": "/i0enkzsL5dPeneWnjl1fCWm6L7k.jpg",
+        "vote_average": 8.4,
+        "release_date": "1984-05-23",
+        "popularity": 12.7002
+    },
+    {
         "id": 270946,
         "type": "movie",
         "title": "Penguins of Madagascar",
@@ -7231,7 +7279,7 @@
         "overview": "Based on a true story, two down-on-their-luck musicians form a joyous Neil Diamond tribute band, proving it's never too late to find love and follow your dreams.",
         "overview_ar": "Based on a true story, two down-on-their-luck musicians form a joyous Neil Diamond tribute band, proving it's never too late to find love and follow your dreams.",
         "poster_path": "/kQzDdxI0F5z16qo2vzDoqdVMl4O.jpg",
-        "vote_average": 7.5,
+        "vote_average": 7.53,
         "release_date": "2025-12-25",
         "popularity": 13.1164
     },
@@ -7243,7 +7291,7 @@
         "overview": "Captured by smugglers when he was just a hatchling, a macaw named Blu never learned to fly and lives a happily domesticated life in Minnesota with his human friend, Linda. Blu is thought to be the last of his kind, but when word comes that Jewel, a lone female, lives in Rio de Janeiro, Blu and Linda go to meet her. Animal smugglers kidnap Blu and Jewel, but the pair soon escape and begin a perilous adventure back to freedom -- and Linda.",
         "overview_ar": "أُسر ببغاء يُدعى بلو على يد المهربين وهو صغير، ولم يتعلم الطيران قط، ويعيش حياةً مُدجنةً سعيدةً في مينيسوتا مع صديقته البشرية ليندا. يُعتقد أن بلو هو آخر فصيلته، ولكن عندما وردت أنباءٌ عن أن جويل، أنثى وحيدة، تعيش في ريو دي جانيرو، يذهب بلو وليندا لمقابلتها. يختطف مهربو الحيوانات بلو وجويل، لكنهما سرعان ما يهربان ويبدآن مغامرةً محفوفةً بالمخاطر للعودة إلى الحرية - وإلى ليندا.",
         "poster_path": "/4nJxhUknKV8Gqdhov8pU1YWDYfb.jpg",
-        "vote_average": 6.8,
+        "vote_average": 6.757,
         "release_date": "2011-04-03",
         "popularity": 11.8963
     },
@@ -7327,7 +7375,7 @@
         "overview": "Years into their relationship, Tim and Millie find themselves at a crossroads as they move to the country, abandoning all that is familiar in their lives except each other. With tensions already flaring, a nightmarish encounter with a mysterious, unnatural force threatens to corrupt their lives, their love, and their flesh.",
         "overview_ar": "بينما يختبر الانتقال إلى الريف حدود علاقة زوجين، تؤدي مواجهة خارقة للطبيعة إلى تحول جذري في حبهما وحياتهما وأجسادهما.",
         "poster_path": "/80slKYVM5teFH3kz6ouWrZXveqj.jpg",
-        "vote_average": 7.025,
+        "vote_average": 7.027,
         "release_date": "2025-07-28",
         "popularity": 13.7916
     },
@@ -7375,7 +7423,7 @@
         "overview": "Following the death of their father, a brother and sister are sent to live with a foster mother, only to learn that she is hiding a terrifying secret.",
         "overview_ar": "في إطار من الرعب، ينتقل أخ وأخت للعيش رفقة أم بالتبني، ولكن تتحول أحلامهما بالأمان والهدوء لكابوس مروع حينما يكتشفوا الطقوس الغريبة التي تدور داخل المنزل.",
         "poster_path": "/1Q3GlCXGYWELifxANYZ5OVMRVZl.jpg",
-        "vote_average": 7.377,
+        "vote_average": 7.373,
         "release_date": "2025-05-28",
         "popularity": 11.4836
     },
@@ -7390,54 +7438,6 @@
         "vote_average": 8.222,
         "release_date": "2018-11-16",
         "popularity": 12.7213
-    },
-    {
-        "id": 508943,
-        "type": "movie",
-        "title": "Luca",
-        "title_ar": "لوكا",
-        "overview": "Luca and his best friend Alberto experience an unforgettable summer on the Italian Riviera. But all the fun is threatened by a deeply-held secret: they are sea monsters from another world just below the water’s surface.",
-        "overview_ar": "في إطار من المغامرة والخيال، يلتقي فتى إيطالي مع وحش بحري يتنكر في هيئة إنسان، فتنشأ بينهما علاقة صداقة قوية تتحدى كل الظروف على الشواطئ الإيطالية الساحره في لوكا",
-        "poster_path": "/9x4i9uKGXt8IiiIF5Ey0DIoY738.jpg",
-        "vote_average": 7.788,
-        "release_date": "2021-06-17",
-        "popularity": 11.888
-    },
-    {
-        "id": 51876,
-        "type": "movie",
-        "title": "Limitless",
-        "title_ar": "بلا حدود",
-        "overview": "The life of an unsuccessful writer is transformed by a top-secret 'smart drug' that allows him to use 100% of his brain and become a perfect version of himself. His enhanced abilities soon attract shadowy forces that threaten his new life.",
-        "overview_ar": "فيلم إثارة يغذيها جنون العظمة ويدور حول كاتب فاشل تتحول حياته من خلال \"عقار ذكي\" سري للغاية يسمح له باستخدام 100٪ من دماغه ويصبح نسخة مثالية عن نفسه. سرعان ما تجذب قدراته المحسّنة قوى غامضة تهدد حياته الجديدة في هذا الفيلم الكوميدي والاستفزازي القاتم.",
-        "poster_path": "/kCokPP4WCQRrrAuZ7FcpIyHr8b2.jpg",
-        "vote_average": 7.194,
-        "release_date": "2011-03-17",
-        "popularity": 10.0824
-    },
-    {
-        "id": 447332,
-        "type": "movie",
-        "title": "A Quiet Place",
-        "title_ar": "مكان هادئ",
-        "overview": "A family is forced to live in silence while hiding from creatures that hunt by sound.",
-        "overview_ar": "تُجبر عائلة على العيش في صمت مختبئة من مخلوقات تصطاد بالصوت.",
-        "poster_path": "/nAU74GmpUk7t5iklEp3bufwDq4n.jpg",
-        "vote_average": 7.393,
-        "release_date": "2018-04-03",
-        "popularity": 13.6875
-    },
-    {
-        "id": 404368,
-        "type": "movie",
-        "title": "Ralph Breaks the Internet",
-        "title_ar": "Ralph Breaks the Internet",
-        "overview": "Video game bad guy Ralph and fellow misfit Vanellope von Schweetz must risk it all by traveling to the World Wide Web in search of a replacement part to save Vanellope's video game, Sugar Rush. In way over their heads, Ralph and Vanellope rely on the citizens of the internet — the netizens — to help navigate their way, including an entrepreneur named Yesss, who is the head algorithm and the heart and soul of trend-making site BuzzzTube.",
-        "overview_ar": "Video game bad guy Ralph and fellow misfit Vanellope von Schweetz must risk it all by traveling to the World Wide Web in search of a replacement part to save Vanellope's video game, Sugar Rush. In way over their heads, Ralph and Vanellope rely on the citizens of the internet — the netizens — to help navigate their way, including an entrepreneur named Yesss, who is the head algorithm and the heart and soul of trend-making site BuzzzTube.",
-        "poster_path": "/iVCrhBcpDaHGvv7CLYbK6PuXZo1.jpg",
-        "vote_average": 7.163,
-        "release_date": "2018-11-20",
-        "popularity": 12.0368
     },
     {
         "id": 404368,
@@ -8160,6 +8160,30 @@
         "popularity": 11.9803
     },
     {
+        "id": 840326,
+        "type": "movie",
+        "title": "Sisu",
+        "title_ar": "Sisu",
+        "overview": "When an ex-soldier who discovers gold in the Lapland wilderness tries to take the loot into the city, German soldiers led by a brutal SS officer battle him.",
+        "overview_ar": "When an ex-soldier who discovers gold in the Lapland wilderness tries to take the loot into the city, German soldiers led by a brutal SS officer battle him.",
+        "poster_path": "/ygO9lowFMXWymATCrhoQXd6gCEh.jpg",
+        "vote_average": 7.411,
+        "release_date": "2022-09-09",
+        "popularity": 13.6386
+    },
+    {
+        "id": 348350,
+        "type": "movie",
+        "title": "Solo: A Star Wars Story",
+        "title_ar": "Solo: A Star Wars Story",
+        "overview": "Through a series of daring escapades deep within a dark and dangerous criminal underworld, Han Solo meets his mighty future copilot Chewbacca and encounters the notorious gambler Lando Calrissian.",
+        "overview_ar": "Through a series of daring escapades deep within a dark and dangerous criminal underworld, Han Solo meets his mighty future copilot Chewbacca and encounters the notorious gambler Lando Calrissian.",
+        "poster_path": "/4oD6VEccFkorEBTEDXtpLAaz0Rl.jpg",
+        "vote_average": 6.557,
+        "release_date": "2018-05-15",
+        "popularity": 11.9803
+    },
+    {
         "id": 363088,
         "type": "movie",
         "title": "Ant-Man and the Wasp",
@@ -8381,9 +8405,9 @@
         "title": "Mean Girls",
         "title_ar": "Mean Girls",
         "overview": "Cady Heron is a hit with The Plastics, the A-list girl clique at her new school, until she makes the mistake of falling for Aaron Samuels, the ex-boyfriend of alpha Plastic Regina George.",
-        "overview_ar": "عاشت كادي هيرون (ليندسي لوهان) طفولتها في الأحراش الإفريقية بصحبة والديها عالمي الحيوان. وبالرغم من أنها اعتادت على الدراسة في المنزل، تتغير حياتها فجأةً بعدما عادت الأسرة إلى الولايات المتحدة وتجد الفتاة المراهقة نفسها مضطرةً للذهاب إلى مدرسةٍ لأول مرةٍ في حياتها.\r تتصادق مع زملاءٍ جدد هما جانيس (ليزي كابلان) وداميان (دانيال فرانزيس)، ويحذرها الاثنان من التعرض لمجموعة الفتيات البلاستيكية بقيادة الملكة ريجينا جورج (راتشيل ماك آدمز).",
+        "overview_ar": "Cady Heron is a hit with The Plastics, the A-list girl clique at her new school, until she makes the mistake of falling for Aaron Samuels, the ex-boyfriend of alpha Plastic Regina George.",
         "poster_path": "/2ZkuQXvVhh45uSvkBej4S7Ix1NJ.jpg",
-        "vote_average": 7.2,
+        "vote_average": 7.222,
         "release_date": "2004-04-30",
         "popularity": 10.6953
     },
@@ -8391,13 +8415,25 @@
         "id": 427641,
         "type": "movie",
         "title": "Rampage",
-        "title_ar": "اهتياج",
+        "title_ar": "Rampage",
         "overview": "Primatologist Davis Okoye shares an unshakable bond with George, the extraordinarily intelligent, silverback gorilla who has been in his care since birth.  But a rogue genetic experiment gone awry mutates this gentle ape into a raging creature of enormous size.  To make matters worse, it’s soon discovered there are other similarly altered animals.  As these newly created alpha predators tear across North America, destroying everything in their path, Okoye teams with a discredited genetic engineer to secure an antidote, fighting his way through an ever-changing battlefield, not only to halt a global catastrophe but to save the fearsome creature that was once his friend.",
-        "overview_ar": "الكبير يلتقي الأكبر\r يشترك عالم الرئيسيات ديفيس أوكوي في رابطة لا تتزعزع مع جورج ، الغوريلا الذكية للغاية ذات الظهر الفضي التي كانت في رعايته منذ ولادته. لكن تجربة جينية مارقة انحرفت عن مسارها تحور هذا القرد اللطيف إلى مخلوق هائج بحجم هائل. ومما زاد الطين بلة ، سرعان ما تم اكتشاف أن هناك أخرى تم تغييرها بشكل مماثل. بينما تمزق هذه الحيوانات المفترسة ألفا التي تم إنشاؤها حديثا عبر أمريكا الشمالية ، وتدمر كل شيء في طريقها ، يتعاون أوكوي مع مهندس وراثي فاقد للمصداقية لتأمين ترياق ، ويشق طريقه عبر ساحة معركة دائمة التغير ، ليس فقط لوقف كارثة عالمية ولكن لإنقاذ المخلوق المخيف الذي كان صديقه ذات يوم.",
+        "overview_ar": "Primatologist Davis Okoye shares an unshakable bond with George, the extraordinarily intelligent, silverback gorilla who has been in his care since birth.  But a rogue genetic experiment gone awry mutates this gentle ape into a raging creature of enormous size.  To make matters worse, it’s soon discovered there are other similarly altered animals.  As these newly created alpha predators tear across North America, destroying everything in their path, Okoye teams with a discredited genetic engineer to secure an antidote, fighting his way through an ever-changing battlefield, not only to halt a global catastrophe but to save the fearsome creature that was once his friend.",
         "poster_path": "/MGADip4thVSErP34FAAfzFBTZ5.jpg",
         "vote_average": 6.451,
         "release_date": "2018-04-11",
         "popularity": 11.5496
+    },
+    {
+        "id": 307081,
+        "type": "movie",
+        "title": "Southpaw",
+        "title_ar": "Southpaw",
+        "overview": "Billy \"The Great\" Hope, the reigning junior middleweight boxing champion, has an impressive career, a loving wife and daughter, and a lavish lifestyle. However, when tragedy strikes, Billy hits rock bottom, losing his family, his house and his manager. He soon finds an unlikely savior in Tick Willis, a former fighter who trains the city's toughest amateur boxers. With his future on the line, Hope fights to reclaim the trust of those he loves the most.",
+        "overview_ar": "بيلي \"The Great\" Hope ، بطل الملاكمة للوزن المتوسط ، لديه مسيرة رائعة ، زوجة وابنة محبة ، وأسلوب حياة مترف. ومع ذلك ، عندما تقع المأساة ، وصل بيلي إلى الحضيض ، وفقد عائلته ومنزله ومديره. سرعان ما يجد منقذًا غير متوقع في تيك ويليس ، وهو مقاتل سابق يدرب أقوى الملاكمين الهواة في المدينة. مع مستقبله على المحك ، يكافح Hope لاستعادة ثقة من يحبهم أكثر.",
+        "poster_path": "/kSQ49Fi3NVTqGGXILmxV2T2pdkG.jpg",
+        "vote_average": 7.362,
+        "release_date": "2015-03-24",
+        "popularity": 10.9319
     },
     {
         "id": 605722,
@@ -8515,7 +8551,7 @@
         "overview": "A man-cub named Mowgli fostered by wolves. After a threat from the tiger Shere Khan, Mowgli is forced to flee the jungle, by which he embarks on a journey of self discovery with the help of the panther, Bagheera and the free-spirited bear, Baloo.",
         "overview_ar": "الأسطورة لن تكون هي نفسها أبدا.\r رجل شبل يدعى ماوكلي ترعاه الذئاب. بعد تهديد من النمر شيري خان ، يضطر ماوكلي إلى الفرار من الغابة ، حيث يشرع في رحلة لاكتشاف الذات بمساعدة النمر ، باغيرا والدب الحر ، بالو.",
         "poster_path": "/2Epx7F9X7DrFptn4seqn4mzBVks.jpg",
-        "vote_average": 6.867,
+        "vote_average": 6.9,
         "release_date": "2016-04-07",
         "popularity": 11.8008
     },
@@ -8568,18 +8604,6 @@
         "popularity": 12.2553
     },
     {
-        "id": 170,
-        "type": "movie",
-        "title": "28 Days Later",
-        "title_ar": "28 Days Later",
-        "overview": "Twenty-eight days after a killer virus was accidentally unleashed from a British research facility, a small group of London survivors are caught in a desperate struggle to protect themselves from the infected. Carried by animals and humans, the virus turns those it infects into homicidal maniacs -- and it's absolutely impossible to contain.",
-        "overview_ar": "Twenty-eight days after a killer virus was accidentally unleashed from a British research facility, a small group of London survivors are caught in a desperate struggle to protect themselves from the infected. Carried by animals and humans, the virus turns those it infects into homicidal maniacs -- and it's absolutely impossible to contain.",
-        "poster_path": "/sQckQRt17VaWbo39GIu0TMOiszq.jpg",
-        "vote_average": 7.2,
-        "release_date": "2002-10-31",
-        "popularity": 13.0106
-    },
-    {
         "id": 522938,
         "type": "movie",
         "title": "Rambo: Last Blood",
@@ -8614,30 +8638,6 @@
         "vote_average": 6.666,
         "release_date": "2022-09-23",
         "popularity": 9.159
-    },
-    {
-        "id": 335977,
-        "type": "movie",
-        "title": "Indiana Jones and the Dial of Destiny",
-        "title_ar": "إنديانا جونز ونداء القدر",
-        "overview": "Finding himself in a new era, and approaching retirement, Indy wrestles with fitting into a world that seems to have outgrown him. But as the tentacles of an all-too-familiar evil return in the form of an old rival, Indy must don his hat and pick up his whip once more to make sure an ancient and powerful artifact doesn't fall into the wrong hands.",
-        "overview_ar": "تدور احداث الفيلم حول إندي يجد نفسه في عصر جديد ، يقترب من التقاعد ، ويصارع من أجل الاندماج في عالم يبدو أنه تجاوزه. ولكن مع عودة مخالب شر مألوف للغاية في شكل منافس قديم ، يجب على اندي ارتداء قبعته والتقاط سوطه مرة أخرى للتأكد من عدم وقوع قطعة أثرية قديمة وقوية في الأيدي الخطأ.",
-        "poster_path": "/Af4bXE63pVsb2FtbW8uYIyPBadD.jpg",
-        "vote_average": 6.517,
-        "release_date": "2023-06-25",
-        "popularity": 12.1972
-    },
-    {
-        "id": 1401542,
-        "type": "movie",
-        "title": "Project Y",
-        "title_ar": "프로젝트 Y",
-        "overview": "Mi-sun and Do-kyung might be used to struggling in the most dangerous part of Seoul's Gangnam district, but that doesn't mean they've settled into it. With no one but each other to rely on, the two friends grind away to save the money needed to leave their dangerous lifestyles behind. But just as \"retirement\" comes within reach, the world betrays them, shattering their hopes. On the edge of a dead end, they discover a hidden fortune of dirty cash and gold in Gangnam – and place all their bets on one final high-stakes gamble of a lifetime.",
-        "overview_ar": "Mi-sun and Do-kyung might be used to struggling in the most dangerous part of Seoul's Gangnam district, but that doesn't mean they've settled into it. With no one but each other to rely on, the two friends grind away to save the money needed to leave their dangerous lifestyles behind. But just as \"retirement\" comes within reach, the world betrays them, shattering their hopes. On the edge of a dead end, they discover a hidden fortune of dirty cash and gold in Gangnam – and place all their bets on one final high-stakes gamble of a lifetime.",
-        "poster_path": "/1KMG1inDAnKaGZ1W8Ac3wn6bdXu.jpg",
-        "vote_average": 6.25,
-        "release_date": "2026-01-21",
-        "popularity": 10.0401
     },
     {
         "id": 645710,
@@ -19647,9 +19647,9 @@
         "id": 1160956,
         "type": "movie",
         "title": "Panda Plan",
-        "title_ar": "Panda Plan",
+        "title_ar": "خطة الباندا",
         "overview": "International action star Jackie Chan is invited to the adoption ceremony of a rare baby panda, but after an international crime syndicate attempts to kidnap the bear, Jackie has to save the bear using his stunt work skills.",
-        "overview_ar": "International action star Jackie Chan is invited to the adoption ceremony of a rare baby panda, but after an international crime syndicate attempts to kidnap the bear, Jackie has to save the bear using his stunt work skills.",
+        "overview_ar": "تدور احداث الفيلم حين يتم دعوة نجم الكونغ فو الشهير (جاكي شان) لتبني باندا تدعى (هوهو) من حديقة الحيوانات، ولكن عصابة إجرامية تضع مكافأة كبيرة لمن يخطف (هوهو)، مما يجعل (جاكي) يتعاون مع وكيله وحارس الباندا لحمايتها ومواجهة العصابة في مغامرة شاقة.",
         "poster_path": "/8iMPQl13q89jQhaA5nXb6UiT0t0.jpg",
         "vote_average": 6.768,
         "release_date": "2024-10-01",
@@ -20885,7 +20885,7 @@
         "title": "Shanghai Noon",
         "title_ar": "Shanghai Noon",
         "overview": "Chon Wang, a clumsy imperial guard, trails Princess Pei Pei when she's kidnapped from the Forbidden City and transported to America. Wang follows her captors to Nevada, where he teams up with an unlikely partner, outcast outlaw Roy O'Bannon, and tries to spring the princess from her imprisonment.",
-        "overview_ar": "(تشون وانج) حارس أخرق ضمن الحرس الإمبراطوري لإمبراطور الصين، حينما يتم اختطاف الأميرة (بي بي) من المدينة المُحرمّة، يشعر بالمسئولية تجاه خطفها وأن من واجبه المشاركة في استرجاعها، فيتطوع للسفر مع المجموعة التي تتأهب لاسترجاعها من أمريكا حيث نقلها الخاطفون، يفقد أثر زملائه في صحراء (نيفادا)، ثم يلتقي مع سارق القطارات (روي أبانون) المُصاب بجنون العظمة ليشكلا ثنائيًا في البحث عن الأميرة.",
+        "overview_ar": "Chon Wang, a clumsy imperial guard, trails Princess Pei Pei when she's kidnapped from the Forbidden City and transported to America. Wang follows her captors to Nevada, where he teams up with an unlikely partner, outcast outlaw Roy O'Bannon, and tries to spring the princess from her imprisonment.",
         "poster_path": "/b0WwWRcDiDahkah5vZ0KjB4N9ZZ.jpg",
         "vote_average": 6.415,
         "release_date": "2000-05-26",
@@ -21120,18 +21120,6 @@
         "popularity": 6.5493
     },
     {
-        "id": 846422,
-        "type": "movie",
-        "title": "The Old Guard 2",
-        "title_ar": "The Old Guard 2",
-        "overview": "Andy and her team of immortal warriors fight with renewed purpose as they face a powerful new foe threatening their mission to protect humanity.",
-        "overview_ar": "Andy and her team of immortal warriors fight with renewed purpose as they face a powerful new foe threatening their mission to protect humanity.",
-        "poster_path": "/wqfu3bPLJaEWJVk3QOm0rKhxf1A.jpg",
-        "vote_average": 5.9,
-        "release_date": "2025-07-01",
-        "popularity": 8.254
-    },
-    {
         "id": 708,
         "type": "movie",
         "title": "The Living Daylights",
@@ -21199,7 +21187,7 @@
         "overview": "A father and daughter accidentally hit and kill a unicorn while en route to a weekend retreat, where his billionaire boss seeks to exploit the creature’s miraculous curative properties.",
         "overview_ar": "يصطدم أب وابنته عن طريق الخطأ بوحيد القرن ويقتلانه أثناء توجههما إلى عطلة نهاية الأسبوع، حيث يسعى رئيسه الملياردير إلى استغلال الخصائص العلاجية المعجزة لهذا المخلوق.",
         "poster_path": "/xWlF2i51zUq7BUq4iJte1g9NyIM.jpg",
-        "vote_average": 6.419,
+        "vote_average": 6.4,
         "release_date": "2025-03-27",
         "popularity": 7.237
     },
@@ -21358,6 +21346,18 @@
         "vote_average": 9.0,
         "release_date": "2025-12-11",
         "popularity": 6.5235
+    },
+    {
+        "id": 73935,
+        "type": "movie",
+        "title": "Vamps",
+        "title_ar": "Vamps",
+        "overview": "The modern-day story focuses on two beautiful young vampires who are living the good nightlife in New York until love enters the picture and each has to make a choice that will jeopardize their immortality.",
+        "overview_ar": "The modern-day story focuses on two beautiful young vampires who are living the good nightlife in New York until love enters the picture and each has to make a choice that will jeopardize their immortality.",
+        "poster_path": "/sW4MFTfW88Ii8TyZVD7oprzzhOU.jpg",
+        "vote_average": 5.3,
+        "release_date": "2012-08-25",
+        "popularity": 6.9972
     },
     {
         "id": 9907,

@@ -2513,7 +2513,7 @@
         "title": "Glee",
         "title_ar": "Glee",
         "overview": "In this musical comedy, optimistic high school teacher Will Schuester tries to refuel his own passion while reinventing the high school's glee club and challenging a group of outcasts to realize their star potential as they strive to outshine their singing competition while navigating the cruel halls of McKinley High.",
-        "overview_ar": "ما بين آلام العلاقات والهجمات الشخصية من مدربة تشجيع لئيمة، يقاتل معلم ليصنع أبطالًا من أعضاء نادي غناء متواضع.",
+        "overview_ar": "In this musical comedy, optimistic high school teacher Will Schuester tries to refuel his own passion while reinventing the high school's glee club and challenging a group of outcasts to realize their star potential as they strive to outshine their singing competition while navigating the cruel halls of McKinley High.",
         "poster_path": "/62T2vsZYTje3KhdCsiLR1K1RFJW.jpg",
         "vote_average": 6.783,
         "release_date": "2009-05-19",
@@ -6235,7 +6235,7 @@
         "overview": "Ryotsu Kankichi, or Ryo-san for short, is an unconventional cop working at the local police station who loves money. Together with famous celebrities like Nakagawa and Reiko, his strict boss Police Chief Ohara, and other wildly unique characters, he gets everyone caught up in all sorts of hijinks!",
         "overview_ar": "Ryotsu Kankichi, or Ryo-san for short, is an unconventional cop working at the local police station who loves money. Together with famous celebrities like Nakagawa and Reiko, his strict boss Police Chief Ohara, and other wildly unique characters, he gets everyone caught up in all sorts of hijinks!",
         "poster_path": "/ujltFuzCZ9FLe07kTRLZ2gpIJVY.jpg",
-        "vote_average": 7.75,
+        "vote_average": 7.8,
         "release_date": "1996-06-16",
         "popularity": 38.1359
     },
@@ -14640,6 +14640,18 @@
         "popularity": 21.5002
     },
     {
+        "id": 231503,
+        "type": "tv",
+        "title": "Wild Heart",
+        "title_ar": "المتوحش",
+        "overview": "It tells the story of a child who was kidnapped from a deep-rooted family and fell into the streets, and his struggle to reinvent himself after years later returning to his home.",
+        "overview_ar": "بعد مرور سنوات على اختطافه عندما كان طفلا من عائلته الثرية والعيش في الزقاق والشوارع، يجد يمان نفسه مجبرا على إعادة تعريف حياته عندما يعود إلى منزله.",
+        "poster_path": "/lQ5k6i7Bv3ssV4uotxZpTdKCgC9.jpg",
+        "vote_average": 8.7,
+        "release_date": "2023-09-12",
+        "popularity": 24.6646
+    },
+    {
         "id": 63706,
         "type": "tv",
         "title": "The Last Leg",
@@ -14748,18 +14760,6 @@
         "popularity": 23.4565
     },
     {
-        "id": 69291,
-        "type": "tv",
-        "title": "Miss Kobayashi's Dragon Maid",
-        "title_ar": "Miss Kobayashi's Dragon Maid",
-        "overview": "Kobayashi lives alone in an apartment, until one day, Tohru appeared and they ended up living together. Tooru looks down on humans as inferior and foolish, but having been saved by Kobayashi-san, she does everything she can to repay the debt and help her with various things, although not everything goes according to plan.\n\nA mythical everyday life comedy about a hard working office lady living with a dragon girl.",
-        "overview_ar": "Kobayashi lives alone in an apartment, until one day, Tohru appeared and they ended up living together. Tooru looks down on humans as inferior and foolish, but having been saved by Kobayashi-san, she does everything she can to repay the debt and help her with various things, although not everything goes according to plan.\n\nA mythical everyday life comedy about a hard working office lady living with a dragon girl.",
-        "poster_path": "/aDJC9SBNqUFoGQ6uuxs0EfBsqct.jpg",
-        "vote_average": 8.319,
-        "release_date": "2017-01-12",
-        "popularity": 20.6987
-    },
-    {
         "id": 130464,
         "type": "tv",
         "title": "Tell Me Lies",
@@ -14820,6 +14820,18 @@
         "popularity": 26.9207
     },
     {
+        "id": 4775,
+        "type": "tv",
+        "title": "Would I Lie to You?",
+        "title_ar": "Would I Lie to You?",
+        "overview": "A comedic panel show featuring team captains Lee Mack and David Mitchell plus two guests per side, hosted by Rob Brydon (formerly Angus Deayton). Each person must reveal embarrassing facts and outrageous lies during a series of different rounds including \"Home Truths\", \"This Is My...\" and \"Quickfire Lies\". It is up to the opposing team to tell tall tales from fantastic facts.",
+        "overview_ar": "A comedic panel show featuring team captains Lee Mack and David Mitchell plus two guests per side, hosted by Rob Brydon (formerly Angus Deayton). Each person must reveal embarrassing facts and outrageous lies during a series of different rounds including \"Home Truths\", \"This Is My...\" and \"Quickfire Lies\". It is up to the opposing team to tell tall tales from fantastic facts.",
+        "poster_path": "/tFfT9SOQqOjZfRY1ZgQVHkjJT1d.jpg",
+        "vote_average": 7.8,
+        "release_date": "2007-06-16",
+        "popularity": 25.8338
+    },
+    {
         "id": 4493,
         "type": "tv",
         "title": "Absolutely Fabulous",
@@ -14866,18 +14878,6 @@
         "vote_average": 7.65,
         "release_date": "2018-02-02",
         "popularity": 22.1008
-    },
-    {
-        "id": 42421,
-        "type": "tv",
-        "title": "Panty & Stocking with Garterbelt",
-        "title_ar": "Panty & Stocking with Garterbelt",
-        "overview": "Panty and Stocking are nasty angels who were banished from the pearly gates for being foul-mouthed bad girls! Now they spend their days hunting ghosts in the lecherous abyss between Heaven and Earth. Panty likes sex, Stocking likes sweets, and their afro-sporting main man Garterbelt has a fetish we can't mention.",
-        "overview_ar": "Panty and Stocking are nasty angels who were banished from the pearly gates for being foul-mouthed bad girls! Now they spend their days hunting ghosts in the lecherous abyss between Heaven and Earth. Panty likes sex, Stocking likes sweets, and their afro-sporting main man Garterbelt has a fetish we can't mention.",
-        "poster_path": "/RPiVM7JIoAsOZEX0rW8tKQFvCR.jpg",
-        "vote_average": 7.793,
-        "release_date": "2010-10-02",
-        "popularity": 19.6782
     },
     {
         "id": 46928,
@@ -19179,7 +19179,7 @@
         "id": 16870,
         "type": "tv",
         "title": "Comedy Club",
-        "title_ar": "Comedy Club",
+        "title_ar": "Камеди Клаб",
         "overview": "Comedy Club is a Russian stand-up comedy TV show broadcast by the Russian TNT channel since April 23, 2005. Long-time residents of the club are Garik Martirosyan, Timur Batrutdinov, Garik Kharlamov, Pavel Volya, Alexandr Revva, Alexander Nezlobin and others. The show host is Garik Martirosyan. Comedy Club headquarters are located in Moscow.",
         "overview_ar": "Comedy Club is a Russian stand-up comedy TV show broadcast by the Russian TNT channel since April 23, 2005. Long-time residents of the club are Garik Martirosyan, Timur Batrutdinov, Garik Kharlamov, Pavel Volya, Alexandr Revva, Alexander Nezlobin and others. The show host is Garik Martirosyan. Comedy Club headquarters are located in Moscow.",
         "poster_path": "/tPIbd7JZVxSWNjcJQYEvPu3qo5z.jpg",
@@ -19920,6 +19920,18 @@
         "popularity": 17.6204
     },
     {
+        "id": 33922,
+        "type": "tv",
+        "title": "Portlandia",
+        "title_ar": "Portlandia",
+        "overview": "Satirical sketch comedy set and filmed in Portland, Oregon that explores the eccentric misfits who embody the foibles of modern culture.",
+        "overview_ar": "Satirical sketch comedy set and filmed in Portland, Oregon that explores the eccentric misfits who embody the foibles of modern culture.",
+        "poster_path": "/pfaxCP6YqlFHCL3QytnTanwRTL5.jpg",
+        "vote_average": 7.0,
+        "release_date": "2011-01-21",
+        "popularity": 17.6204
+    },
+    {
         "id": 20598,
         "type": "tv",
         "title": "White Lies",
@@ -20146,18 +20158,6 @@
         "vote_average": 10.0,
         "release_date": "2003-01-01",
         "popularity": 14.2681
-    },
-    {
-        "id": 11982,
-        "type": "tv",
-        "title": "Max & Ruby",
-        "title_ar": "Max & Ruby",
-        "overview": "Meet two funny bunny siblings, the energetic and mischievous Max, and the patient, smart and goal-oriented Ruby. The show models empowering messages by showing Max and Ruby playing together and resolving their differences respectfully and supportively.",
-        "overview_ar": "Meet two funny bunny siblings, the energetic and mischievous Max, and the patient, smart and goal-oriented Ruby. The show models empowering messages by showing Max and Ruby playing together and resolving their differences respectfully and supportively.",
-        "poster_path": "/bIiWnjewlhINR1bv1sRfBiIEn9a.jpg",
-        "vote_average": 6.5,
-        "release_date": "2002-09-15",
-        "popularity": 15.5561
     },
     {
         "id": 19092,
@@ -22560,42 +22560,6 @@
         "popularity": 14.5186
     },
     {
-        "id": 33951,
-        "type": "tv",
-        "title": "AI Football GGO",
-        "title_ar": "AI Football GGO",
-        "overview": "Artificial Intelligent Football GGO is made by Puzzle Animation studio Ltd. It's an animation series about football and future technology.",
-        "overview_ar": "Artificial Intelligent Football GGO is made by Puzzle Animation studio Ltd. It's an animation series about football and future technology.",
-        "poster_path": "/x1TmnV1JruItCrmhTFEpnDzRF1M.jpg",
-        "vote_average": 8.9,
-        "release_date": "2010-06-02",
-        "popularity": 14.5978
-    },
-    {
-        "id": 32962,
-        "type": "tv",
-        "title": "Louie",
-        "title_ar": "Louie",
-        "overview": "Louis C.K. stars as a fictionalized version of himself; a comedian and newly divorced father raising his two daughters in New York City.",
-        "overview_ar": "Louis C.K. stars as a fictionalized version of himself; a comedian and newly divorced father raising his two daughters in New York City.",
-        "poster_path": "/ubWj0BLRV1UDP8ELnTr2is2Wl0Y.jpg",
-        "vote_average": 7.784,
-        "release_date": "2010-06-29",
-        "popularity": 14.5186
-    },
-    {
-        "id": 262928,
-        "type": "tv",
-        "title": "Love in the Clouds",
-        "title_ar": "入青云",
-        "overview": "At the annual Qingyun Conference in the Hexu Six Realms, Ji Bozai, a warrior from the Jixing Abyss with a past as a convict, defeated Ming Yi, the cold warrior goddess who had reigned supreme for seven consecutive years. Overnight, Ji Bozai became the hottest new star in Jixing Abyss. Meanwhile, Ming Yi, hiding her true identity, disguised herself as a dancer to get close to Ji Bozai. Under their carefully crafted personas, the two engaged in a thrilling dance of deception and attraction, fighting for justice and fairness, and ultimately found a deep and moving love.",
-        "overview_ar": "At the annual Qingyun Conference in the Hexu Six Realms, Ji Bozai, a warrior from the Jixing Abyss with a past as a convict, defeated Ming Yi, the cold warrior goddess who had reigned supreme for seven consecutive years. Overnight, Ji Bozai became the hottest new star in Jixing Abyss. Meanwhile, Ming Yi, hiding her true identity, disguised herself as a dancer to get close to Ji Bozai. Under their carefully crafted personas, the two engaged in a thrilling dance of deception and attraction, fighting for justice and fairness, and ultimately found a deep and moving love.",
-        "poster_path": "/alXAb26apN2tbRM91QjeZ0KzHlj.jpg",
-        "vote_average": 8.3,
-        "release_date": "2025-10-08",
-        "popularity": 16.5692
-    },
-    {
         "id": 219290,
         "type": "tv",
         "title": "Blood Flowers",
@@ -22678,18 +22642,6 @@
         "vote_average": 6.7,
         "release_date": "2000-04-19",
         "popularity": 15.0092
-    },
-    {
-        "id": 70391,
-        "type": "tv",
-        "title": "Philip K. Dick's Electric Dreams",
-        "title_ar": "Philip K. Dick's Electric Dreams",
-        "overview": "A diverse anthology of ambitious, moving tales inspired by Philip K Dick's short stories.",
-        "overview_ar": "A diverse anthology of ambitious, moving tales inspired by Philip K Dick's short stories.",
-        "poster_path": "/tyaNrGepu4HbkjLFkK6vgua1vgn.jpg",
-        "vote_average": 7.048,
-        "release_date": "2017-09-17",
-        "popularity": 18.8029
     },
     {
         "id": 64190,
@@ -22798,6 +22750,54 @@
         "vote_average": 7.969,
         "release_date": "2022-06-30",
         "popularity": 16.1602
+    },
+    {
+        "id": 2312,
+        "type": "tv",
+        "title": "The Jamie Foxx Show",
+        "title_ar": "The Jamie Foxx Show",
+        "overview": "Texas native Jamie King is an aspiring actor who heads to Hollywood in hopes to find fame and fortune in the entertainment industry. To support himself, he works at his Aunt Helen and Uncle Junior's Los Angeles hotel, the King's Towers.",
+        "overview_ar": "Texas native Jamie King is an aspiring actor who heads to Hollywood in hopes to find fame and fortune in the entertainment industry. To support himself, he works at his Aunt Helen and Uncle Junior's Los Angeles hotel, the King's Towers.",
+        "poster_path": "/75rRmOm7jfGdxhYeg36mgnetYJS.jpg",
+        "vote_average": 6.9,
+        "release_date": "1996-08-28",
+        "popularity": 18.4695
+    },
+    {
+        "id": 120589,
+        "type": "tv",
+        "title": "Le Grand Échiquier",
+        "title_ar": "Le Grand Échiquier",
+        "overview": "",
+        "overview_ar": "",
+        "poster_path": "/hWsFrkYyPwCz4rt2lpiKmqkgxRp.jpg",
+        "vote_average": 8.0,
+        "release_date": "1972-01-12",
+        "popularity": 16.7719
+    },
+    {
+        "id": 126544,
+        "type": "tv",
+        "title": "The Detectives' Adventures",
+        "title_ar": "萌探探探案",
+        "overview": "The first reality show on detective stories adapted from classic IP. Every episode is based on a classic IP drama. MCs are able to adapt and act out the classic stories in the real scenes. The detective group includes seven MCs, who are encouraged to obtain clues from the unreasonable scripts and amusing games.",
+        "overview_ar": "The first reality show on detective stories adapted from classic IP. Every episode is based on a classic IP drama. MCs are able to adapt and act out the classic stories in the real scenes. The detective group includes seven MCs, who are encouraged to obtain clues from the unreasonable scripts and amusing games.",
+        "poster_path": "/epoCnqVnMqohtKnf8QiT1eGaV9A.jpg",
+        "vote_average": 5.0,
+        "release_date": "2021-05-28",
+        "popularity": 13.7042
+    },
+    {
+        "id": 124271,
+        "type": "tv",
+        "title": "NCIS: Hawaiʻi",
+        "title_ar": "NCIS: Hawaiʻi",
+        "overview": "Jane Tennant, the first female Special Agent in Charge of NCIS Pearl Harbor, and her unwavering team of specialists balance duty to family and country while investigating high-stakes crimes involving military personnel, national security and the mysteries of the sun-drenched island paradise itself.",
+        "overview_ar": "Jane Tennant, the first female Special Agent in Charge of NCIS Pearl Harbor, and her unwavering team of specialists balance duty to family and country while investigating high-stakes crimes involving military personnel, national security and the mysteries of the sun-drenched island paradise itself.",
+        "poster_path": "/4R8xtDx2ge0GjEOnEwoR8V8X82q.jpg",
+        "vote_average": 7.7,
+        "release_date": "2021-09-20",
+        "popularity": 16.7951
     },
     {
         "id": 124271,
@@ -23259,7 +23259,7 @@
         "id": 36250,
         "type": "tv",
         "title": "xxxHOLiC",
-        "title_ar": "xxxHOLiC",
+        "title_ar": "XXX ホリック",
         "overview": "Kimihiro Watanuki is a high school student plagued by ayakashi spirits, both of which are invisible to everyone else but him. The series begins when Watanuki stumbles, seemingly by chance, into a shop that grants wishes. The shop is owned by Yūko Ichihara, a mysterious witch of many names and esoteric renown. For a price, she offers to grant Watanuki's wish to be rid of the spirits. The price, according to Yūko, must be of equal value; so, as payment, he must become Yūko's temporary, part-time cook and housekeeper.",
         "overview_ar": "Kimihiro Watanuki is a high school student plagued by ayakashi spirits, both of which are invisible to everyone else but him. The series begins when Watanuki stumbles, seemingly by chance, into a shop that grants wishes. The shop is owned by Yūko Ichihara, a mysterious witch of many names and esoteric renown. For a price, she offers to grant Watanuki's wish to be rid of the spirits. The price, according to Yūko, must be of equal value; so, as payment, he must become Yūko's temporary, part-time cook and housekeeper.",
         "poster_path": "/5yY74hwLcG5rQSe6cEUW3HjO3J9.jpg",
