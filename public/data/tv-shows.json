@@ -67,21 +67,9 @@
         "overview": "Sick, twisted, politically incorrect and Freakin' Sweet animated series featuring the adventures of the dysfunctional Griffin family. Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant but sadistic baby bent on killing his mother and taking over the world), Meg (the oldest, and is the most unpopular girl in town) and Chris (the middle kid, he's not very bright but has a passion for movies). The final member of the family is Brian - a talking dog and much more than a pet, he keeps Stewie in check whilst sipping Martinis and sorting through his own life issues.",
         "overview_ar": "عائلة قريفن المُختلة. تتكون من الاب بيتر المستهتر وزوجته لويس التي تعاني مع اطفالها الثلاث. الطفل ستيوي - عبقري و سادي عازم على قتل أمه والسيطرة على العالم، الابنه ميق - أكثر الفتيات غير شعبية في المدينة، الابن كريس - ليس ذكيا ابدا لكن لديه شغف بالأفلام. و العضو الأخير في العائلة هو برايان - كلب يتحدث وأكثر من مجرد حيوان أليف.",
         "poster_path": "/3PFsEuAiyLkWsP4GG6dIV37Q6gu.jpg",
-        "vote_average": 7.389,
+        "vote_average": 7.4,
         "release_date": "1999-01-31",
         "popularity": 243.4651
-    },
-    {
-        "id": 19530,
-        "type": "tv",
-        "title": "Pili",
-        "title_ar": "霹靂布袋戲",
-        "overview": "Pili is a puppet show from Taiwan. It is made by Pili International Multimedia. The TV series started in 1985, and it still continues today. It is one of the most popular TV shows in Taiwan. Pili puppet show is performed by many kinds of puppets, some of them are cool, some are intelligent, and some are funny. Unlike traditional puppet shows, Pili puppet show uses state-of-the-art animation to help present its fighting art. The delicate design of the appearance and characteristics of each puppet has made Pili puppet show a well-known entertainment in Taiwan.",
-        "overview_ar": "Pili is a puppet show from Taiwan. It is made by Pili International Multimedia. The TV series started in 1985, and it still continues today. It is one of the most popular TV shows in Taiwan. Pili puppet show is performed by many kinds of puppets, some of them are cool, some are intelligent, and some are funny. Unlike traditional puppet shows, Pili puppet show uses state-of-the-art animation to help present its fighting art. The delicate design of the appearance and characteristics of each puppet has made Pili puppet show a well-known entertainment in Taiwan.",
-        "poster_path": "/sBVfyRYPmKSARRTodsTbwHqgcRA.jpg",
-        "vote_average": 6.9,
-        "release_date": "1988-06-01",
-        "popularity": 192.0481
     },
     {
         "id": 66732,
@@ -94,18 +82,6 @@
         "vote_average": 8.58,
         "release_date": "2016-07-15",
         "popularity": 271.5126
-    },
-    {
-        "id": 4614,
-        "type": "tv",
-        "title": "NCIS",
-        "title_ar": "إن سي آي أس",
-        "overview": "From murder and espionage to terrorism and stolen submarines, a team of special agents investigates any crime that has any connection to Navy and Marine Corps personnel, regardless of rank or position.",
-        "overview_ar": "تتناول حلقات المسلسل قصة العديد من المخاطر التي يتعرض لها العملاء السريين التابعين لمكتب العمليات الخاصة، والذي يتوجب عليهم التخفي الدائم في عملهم عن طريق استخدام هويات مزيفة للإيقاع بالخارجين عن القانون والذين يمثلون خطرا وتهديدا كبيرا على الأمن القومي.",
-        "poster_path": "/mBcu8d6x6zB1el3MPNl7cZQEQ31.jpg",
-        "vote_average": 7.622,
-        "release_date": "2003-09-23",
-        "popularity": 221.4172
     },
     {
         "id": 549,
@@ -127,7 +103,7 @@
         "overview": "A century before the events of Game of Thrones, two unlikely heroes wandered Westeros: a young, naive but courageous knight, Ser Duncan the Tall, and his diminutive squire, Egg. Set in an age when the Targaryen line still holds the Iron Throne and the last dragon has not yet passed from living memory, great destinies, powerful foes, and dangerous exploits await these improbable and incomparable friends.",
         "overview_ar": "تدور الأحداث في زمن لا يزال فيه سلالة تارجارين تسيطر على العرش الحديدي، وذكرى آخر تنين لم تغب بعد عن الذاكرة الحية. تنتظر الأقدار العظيمة، والأعداء الأقوياء، والمغامرات الخطيرة هؤلاء الأصدقاء الذين لا مثيل لهم والذين لا يمكن توقعهم.",
         "poster_path": "/abrZg2iodq4XeBngpNESOgfPvBM.jpg",
-        "vote_average": 8.233,
+        "vote_average": 8.2,
         "release_date": "2026-01-18",
         "popularity": 220.3656
     },
@@ -142,6 +118,18 @@
         "vote_average": 5.0,
         "release_date": "2009-07-16",
         "popularity": 155.4115
+    },
+    {
+        "id": 4614,
+        "type": "tv",
+        "title": "NCIS",
+        "title_ar": "إن سي آي أس",
+        "overview": "From murder and espionage to terrorism and stolen submarines, a team of special agents investigates any crime that has any connection to Navy and Marine Corps personnel, regardless of rank or position.",
+        "overview_ar": "تتناول حلقات المسلسل قصة العديد من المخاطر التي يتعرض لها العملاء السريين التابعين لمكتب العمليات الخاصة، والذي يتوجب عليهم التخفي الدائم في عملهم عن طريق استخدام هويات مزيفة للإيقاع بالخارجين عن القانون والذين يمثلون خطرا وتهديدا كبيرا على الأمن القومي.",
+        "poster_path": "/mBcu8d6x6zB1el3MPNl7cZQEQ31.jpg",
+        "vote_average": 7.622,
+        "release_date": "2003-09-23",
+        "popularity": 221.4172
     },
     {
         "id": 4604,
@@ -175,7 +163,7 @@
         "overview": "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
         "overview_ar": "تتقاتل سبع عائلات نبيلة من أجل السيطرة على أرض - ويستيروس - الأسطورية. الاحتكاك بين العوائل يؤدي إلى حرب واسعة النطاق.  في حين يستيقظ الشر القديم في أقصى الشمال. وفي خضم الحرب، نظام عسكري مهمَل - حرس الليل - هم كل ما يقف بين عالم الإنسان والأهوال الجليدية.",
         "poster_path": "/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
-        "vote_average": 8.5,
+        "vote_average": 8.46,
         "release_date": "2011-04-17",
         "popularity": 192.9065
     },
@@ -223,9 +211,21 @@
         "overview": "The Doctor is a Time Lord: a 900 year old alien with 2 hearts, part of a gifted civilization who mastered time travel. The Doctor saves planets for a living—more of a hobby actually, and the Doctor's very, very good at it.",
         "overview_ar": "الدكتور هو سيد الوقت: فضائي عمره 900 عام ولديه قلبان، قدم من حضارة أتقنت السفر عبر الزمن. الدكتور ينقذ الكواكب من أجل لقمة العيش - أكثر من هواية في الواقع - وهو جيد جدا في ذلك.",
         "poster_path": "/w8enSKCf6Zm0topeQ2XPccDqsqp.jpg",
-        "vote_average": 7.588,
+        "vote_average": 7.6,
         "release_date": "2005-03-26",
         "popularity": 150.3671
+    },
+    {
+        "id": 19530,
+        "type": "tv",
+        "title": "Pili",
+        "title_ar": "霹靂布袋戲",
+        "overview": "Pili is a puppet show from Taiwan. It is made by Pili International Multimedia. The TV series started in 1985, and it still continues today. It is one of the most popular TV shows in Taiwan. Pili puppet show is performed by many kinds of puppets, some of them are cool, some are intelligent, and some are funny. Unlike traditional puppet shows, Pili puppet show uses state-of-the-art animation to help present its fighting art. The delicate design of the appearance and characteristics of each puppet has made Pili puppet show a well-known entertainment in Taiwan.",
+        "overview_ar": "Pili is a puppet show from Taiwan. It is made by Pili International Multimedia. The TV series started in 1985, and it still continues today. It is one of the most popular TV shows in Taiwan. Pili puppet show is performed by many kinds of puppets, some of them are cool, some are intelligent, and some are funny. Unlike traditional puppet shows, Pili puppet show uses state-of-the-art animation to help present its fighting art. The delicate design of the appearance and characteristics of each puppet has made Pili puppet show a well-known entertainment in Taiwan.",
+        "poster_path": "/sBVfyRYPmKSARRTodsTbwHqgcRA.jpg",
+        "vote_average": 6.9,
+        "release_date": "1988-06-01",
+        "popularity": 192.0481
     },
     {
         "id": 2661,
@@ -2640,30 +2640,6 @@
         "popularity": 43.7174
     },
     {
-        "id": 474,
-        "type": "tv",
-        "title": "Nash Bridges",
-        "title_ar": "Nash Bridges",
-        "overview": "Fun-loving San Francisco Police Department investigator Nash Bridges is part of the elite Special Investigations Unit. He tackles crime using his keen sense of humor and charm. Joe Dominguez comes out of retirement to become Bridges' wisecracking yet more rule-abiding partner.",
-        "overview_ar": "Fun-loving San Francisco Police Department investigator Nash Bridges is part of the elite Special Investigations Unit. He tackles crime using his keen sense of humor and charm. Joe Dominguez comes out of retirement to become Bridges' wisecracking yet more rule-abiding partner.",
-        "poster_path": "/hJeHSCFoxWN2Pt2lg56CKOi9g87.jpg",
-        "vote_average": 6.7,
-        "release_date": "1996-03-29",
-        "popularity": 43.7174
-    },
-    {
-        "id": 108978,
-        "type": "tv",
-        "title": "Reacher",
-        "title_ar": "جاك ريتشر",
-        "overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
-        "overview_ar": "حين يُعتقل \"جاك ريتشر\" ضابط الشرطة العسكرية على جريمة قتل لم يرتكبها، يجد نفسه في وسط مؤامرة مميتة مليئة برجال الشرطة غير الشرفاء ورجال الأعمال المريبين والسياسيين الماكرين. عليه أن يستخدم ذكاءه ليكتشف ما يحدث في \"مارغريف\"، \"جورجيا\".",
-        "poster_path": "/31GlRQMiDunO8cl3NxTz34U64rf.jpg",
-        "vote_average": 8.084,
-        "release_date": "2022-02-03",
-        "popularity": 65.0336
-    },
-    {
         "id": 93405,
         "type": "tv",
         "title": "Squid Game",
@@ -2674,18 +2650,6 @@
         "vote_average": 7.858,
         "release_date": "2021-09-17",
         "popularity": 60.4028
-    },
-    {
-        "id": 1972,
-        "type": "tv",
-        "title": "Battlestar Galactica",
-        "title_ar": "Battlestar Galactica",
-        "overview": "When an old enemy, the Cylons, resurface and obliterate the 12 colonies, the crew of the aged Galactica protect a small civilian fleet - the last of humanity - as they journey toward the fabled 13th colony, Earth.",
-        "overview_ar": "عندما يظهر العدو القديم سيلونس، ويقوم بتدمير 12 مستعمرة، يقوم فريق جالاكتيكا بحماية أسطول صغير من المدنيين، كآخر نوع من البشر، في الرحلة المتوجهة إلى المستعمرة الثالثة عشر، وهي الأرض.",
-        "poster_path": "/99PJSbcO2LeM10uOGWeFihNp77j.jpg",
-        "vote_average": 8.214,
-        "release_date": "2004-10-18",
-        "popularity": 58.476
     },
     {
         "id": 34860,
@@ -2731,7 +2695,7 @@
         "overview": "Mark Grayson is a normal teenager except for the fact that his father is the most powerful superhero on the planet. Shortly after his seventeenth birthday, Mark begins to develop powers of his own and enters into his father’s tutelage.",
         "overview_ar": "عندما يرث \"مارك غرايسون\" قوى خارقة في السابعة عشر من عمره، ينضم إلى والده كواحد من أعظم أبطال الأرض. هذا يحقق جميع أحلامه - إلى أن يغير حدث مروع كل شيء",
         "poster_path": "/jBn4LWlgdsf6xIUYhYBwpctBVsj.jpg",
-        "vote_average": 8.6,
+        "vote_average": 8.616,
         "release_date": "2021-03-25",
         "popularity": 57.6786
     },
@@ -2878,6 +2842,42 @@
         "vote_average": 7.629,
         "release_date": "2015-08-23",
         "popularity": 59.8388
+    },
+    {
+        "id": 1432,
+        "type": "tv",
+        "title": "Veronica Mars",
+        "title_ar": "Veronica Mars",
+        "overview": "In the fictional town of Neptune, California, student Veronica Mars progresses from high school to college while moonlighting as a private investigator under the tutelage of her detective father.",
+        "overview_ar": "In the fictional town of Neptune, California, student Veronica Mars progresses from high school to college while moonlighting as a private investigator under the tutelage of her detective father.",
+        "poster_path": "/vOdJETEueGgUqJR4UvwTdUoJhvO.jpg",
+        "vote_average": 7.812,
+        "release_date": "2004-09-22",
+        "popularity": 73.0306
+    },
+    {
+        "id": 1018,
+        "type": "tv",
+        "title": "Bonanza",
+        "title_ar": "Bonanza",
+        "overview": "The High-Sierra adventures of Ben Cartwright and his sons as they run and defend their ranch while helping the surrounding community.",
+        "overview_ar": "The High-Sierra adventures of Ben Cartwright and his sons as they run and defend their ranch while helping the surrounding community.",
+        "poster_path": "/wQ1iVrG871anxkEUwWTRdPRi0j1.jpg",
+        "vote_average": 7.5,
+        "release_date": "1959-09-12",
+        "popularity": 66.7165
+    },
+    {
+        "id": 71789,
+        "type": "tv",
+        "title": "SEAL Team",
+        "title_ar": "SEAL Team",
+        "overview": "Military drama following the professional and personal lives of the most elite unit of Navy SEALs as they train, plan and execute the most dangerous, high stakes missions our country can ask of them.",
+        "overview_ar": "Military drama following the professional and personal lives of the most elite unit of Navy SEALs as they train, plan and execute the most dangerous, high stakes missions our country can ask of them.",
+        "poster_path": "/6iSnec83UEMgLOXAtGYwaVNHLjR.jpg",
+        "vote_average": 8.029,
+        "release_date": "2017-09-27",
+        "popularity": 59.1619
     },
     {
         "id": 1018,
@@ -3943,7 +3943,7 @@
         "overview": "Set in present-day suburbia, a young couple returns to the husband's childhood home. Their world is upended when new neighbors move in next door, bringing old secrets of the cul-de-sac to light, and new deadly threats shatter the illusion of their quiet little neighborhood.",
         "overview_ar": "Set in present-day suburbia, a young couple returns to the husband's childhood home. Their world is upended when new neighbors move in next door, bringing old secrets of the cul-de-sac to light, and new deadly threats shatter the illusion of their quiet little neighborhood.",
         "poster_path": "/iM6XlGbM3S5NkiwugjAo10v78hl.jpg",
-        "vote_average": 4.806,
+        "vote_average": 4.688,
         "release_date": "2026-02-08",
         "popularity": 54.3424
     },
@@ -4089,7 +4089,7 @@
         "poster_path": "/lMZv3mJC9QRolgzflM3ajtB3o2U.jpg",
         "vote_average": 7.664,
         "release_date": "2005-02-20",
-        "popularity": 54.0131
+        "popularity": 49.85
     },
     {
         "id": 86848,
@@ -4101,7 +4101,7 @@
         "poster_path": "/auRAAVxlyT6YACql96UdtnpFHy3.jpg",
         "vote_average": 7.755,
         "release_date": "2019-09-26",
-        "popularity": 53.9757
+        "popularity": 51.1005
     },
     {
         "id": 2426,
@@ -4113,19 +4113,7 @@
         "poster_path": "/kEMZk8uVksoWScKA77x68qJEUfI.jpg",
         "vote_average": 7.9,
         "release_date": "1999-10-05",
-        "popularity": 53.9738
-    },
-    {
-        "id": 69500,
-        "type": "tv",
-        "title": "Natsume's Book of Friends",
-        "title_ar": "夏目友人帳",
-        "overview": "Natsume Takashi has the ability to see spirits, which he has long kept secret. However, once he inherits a strange book that belonged to his deceased grandmother, Reiko, he discovers the reason why spirits surround him.",
-        "overview_ar": "Natsume Takashi has the ability to see spirits, which he has long kept secret. However, once he inherits a strange book that belonged to his deceased grandmother, Reiko, he discovers the reason why spirits surround him.",
-        "poster_path": "/4IAX5fgsyj9SnV2sqEh5JfuOvUo.jpg",
-        "vote_average": 8.112,
-        "release_date": "2008-07-08",
-        "popularity": 53.7821
+        "popularity": 50.3141
     },
     {
         "id": 1514,
@@ -4137,7 +4125,7 @@
         "poster_path": "/7QpzCej3Lwrsnx5A8FePYsUCIzf.jpg",
         "vote_average": 4.4,
         "release_date": "2006-08-14",
-        "popularity": 53.6961
+        "popularity": 36.4458
     },
     {
         "id": 98123,
@@ -4149,7 +4137,7 @@
         "poster_path": "/7By0jV3kf9MVvv3X3K8u4mhRUwp.jpg",
         "vote_average": 8.347,
         "release_date": "2020-01-18",
-        "popularity": 53.6694
+        "popularity": 52.5897
     },
     {
         "id": 62852,
@@ -4161,7 +4149,7 @@
         "poster_path": "/edwYPQdZE998d748AdwWLsfy0rl.jpg",
         "vote_average": 7.749,
         "release_date": "2016-01-17",
-        "popularity": 53.5455
+        "popularity": 50.3083
     },
     {
         "id": 10534,
@@ -4173,7 +4161,7 @@
         "poster_path": "/6e54gnblIDcwDGOGhzPyV0fB6Rw.jpg",
         "vote_average": 7.412,
         "release_date": "1951-09-30",
-        "popularity": 53.5196
+        "popularity": 36.1097
     },
     {
         "id": 211288,
@@ -4185,7 +4173,7 @@
         "poster_path": "/otula4h1ITZ0eV84eg7Lb8u614C.jpg",
         "vote_average": 7.53,
         "release_date": "2024-02-11",
-        "popularity": 53.5049
+        "popularity": 45.6733
     },
     {
         "id": 112191,
@@ -4197,7 +4185,7 @@
         "poster_path": "/mBl9cq3SNSXqeegRve3RsqmeqFz.jpg",
         "vote_average": 7.0,
         "release_date": "2013-01-01",
-        "popularity": 53.446
+        "popularity": 35.6101
     },
     {
         "id": 270444,
@@ -4209,7 +4197,7 @@
         "poster_path": "/8Er3yj5yRnHGALKPbtuiyMlIh6R.jpg",
         "vote_average": 9.0,
         "release_date": "2026-02-11",
-        "popularity": 53.3338
+        "popularity": 45.4178
     },
     {
         "id": 42912,
@@ -4221,7 +4209,7 @@
         "poster_path": "/9kQWvBMPWz1gykKLXuX6JBjC9uQ.jpg",
         "vote_average": 8.0,
         "release_date": "2008-10-05",
-        "popularity": 53.306
+        "popularity": 51.2431
     },
     {
         "id": 4018,
@@ -4233,7 +4221,7 @@
         "poster_path": "/ujIGP3e3V6kDQHRhjNYtUE3fHJi.jpg",
         "vote_average": 8.02,
         "release_date": "1989-03-26",
-        "popularity": 53.243
+        "popularity": 46.7789
     },
     {
         "id": 69158,
@@ -4245,7 +4233,7 @@
         "poster_path": "/8qoOHOfbUbrCcHZnDVxGcwOWinV.jpg",
         "vote_average": 7.529,
         "release_date": "2017-02-19",
-        "popularity": 53.164
+        "popularity": 49.5893
     },
     {
         "id": 2004,
@@ -4257,7 +4245,7 @@
         "poster_path": "/uftxEWbn3OSykTy4DX4BrdVeiuv.jpg",
         "vote_average": 8.5,
         "release_date": "2000-01-09",
-        "popularity": 53.1007
+        "popularity": 63.6298
     },
     {
         "id": 224,
@@ -4269,7 +4257,7 @@
         "poster_path": "/paRFRd11WlFOxVbGnzjjCBym7FW.jpg",
         "vote_average": 7.592,
         "release_date": "1964-08-22",
-        "popularity": 53.0367
+        "popularity": 44.7901
     },
     {
         "id": 3137,
@@ -4281,7 +4269,7 @@
         "poster_path": "/td8O6KJQpN9ZRiuyFUILziXFMrk.jpg",
         "vote_average": 8.024,
         "release_date": "1994-01-26",
-        "popularity": 53.0163
+        "popularity": 48.2209
     },
     {
         "id": 4454,
@@ -4293,7 +4281,7 @@
         "poster_path": "/kTkWxh0e4Lzmn19KWQxzMdKE4NC.jpg",
         "vote_average": 6.838,
         "release_date": "1998-09-21",
-        "popularity": 52.9838
+        "popularity": 47.4115
     },
     {
         "id": 65931,
@@ -4305,7 +4293,7 @@
         "poster_path": "/6AQmGhkYwAqW2OevjXbsh7tZnNO.jpg",
         "vote_average": 8.328,
         "release_date": "2016-04-07",
-        "popularity": 52.9691
+        "popularity": 39.5132
     },
     {
         "id": 223911,
@@ -4317,13 +4305,13 @@
         "poster_path": "/6AVM12M6UunFmX0bSmP2o4N5Bnt.jpg",
         "vote_average": 8.833,
         "release_date": "2023-09-25",
-        "popularity": 52.9589
+        "popularity": 42.8975
     },
     {
         "id": 3570,
         "type": "tv",
         "title": "Sailor Moon",
-        "title_ar": "美少女戦士セーラームーン",
+        "title_ar": "Sailor Moon",
         "overview": "One day, Usagi Tsukino, clumsy 2nd-year middle school student, stumbles upon a talking cat named Luna. Luna tells her that she is destined to be Sailor Moon, \"champion of love and justice\", and she must search for the fabled Moon Princess. Usagi finds friends that turn out to be destined senshi as well, and together they fight to save the world from the certain doom brought upon by the Dark Kingdom.",
         "overview_ar": "One day, Usagi Tsukino, clumsy 2nd-year middle school student, stumbles upon a talking cat named Luna. Luna tells her that she is destined to be Sailor Moon, \"champion of love and justice\", and she must search for the fabled Moon Princess. Usagi finds friends that turn out to be destined senshi as well, and together they fight to save the world from the certain doom brought upon by the Dark Kingdom.",
         "poster_path": "/wz45BNOMLRZdxXm94P8NGevKubm.jpg",
@@ -4512,18 +4500,6 @@
         "popularity": 45.6135
     },
     {
-        "id": 213306,
-        "type": "tv",
-        "title": "Cross",
-        "title_ar": "Cross",
-        "overview": "Alex Cross is a brilliant but flawed homicide detective and full of contradictions. A doting father and family man, Cross is single-minded to the point of obsession when he hunts killers. He is desperate for love, but his wife’s murder has left him too damaged to receive it.",
-        "overview_ar": "دراما بوليسية تدور أحداثها في العاصمة \"واشنطن\" وترصد حياة \"أليكس كروس\" المحقق الجنائي اللامع، الذي تهدد صراعاته الشخصية بهدم حياته المهنية والأسرية. مسلسل مستوحى من سلسلة الروايات الأكثر مبيعاً من تأليف \"جيمس باترسون\".",
-        "poster_path": "/6hhKdavCEZi8d584ZtIrQIrBvZI.jpg",
-        "vote_average": 6.973,
-        "release_date": "2024-11-14",
-        "popularity": 48.8751
-    },
-    {
         "id": 198178,
         "type": "tv",
         "title": "Wonder Man",
@@ -4558,6 +4534,30 @@
         "vote_average": 7.7,
         "release_date": "2021-09-21",
         "popularity": 46.8312
+    },
+    {
+        "id": 500,
+        "type": "tv",
+        "title": "Mad About You",
+        "title_ar": "Mad About You",
+        "overview": "Young, urban newlyweds Paul and Jamie Buchman try to sustain their marital bliss while sidestepping the hurdles of love in the '90s.",
+        "overview_ar": "Young, urban newlyweds Paul and Jamie Buchman try to sustain their marital bliss while sidestepping the hurdles of love in the '90s.",
+        "poster_path": "/vvnslQjc1LnERuroGVh8bPdBi2r.jpg",
+        "vote_average": 6.705,
+        "release_date": "1992-09-23",
+        "popularity": 61.8385
+    },
+    {
+        "id": 1215,
+        "type": "tv",
+        "title": "Californication",
+        "title_ar": "Californication",
+        "overview": "A self-loathing, alcoholic writer attempts to repair his damaged relationships with his daughter and her mother while combating sex addiction, a budding drug problem, and the seeming inability to avoid making bad decisions.",
+        "overview_ar": "A self-loathing, alcoholic writer attempts to repair his damaged relationships with his daughter and her mother while combating sex addiction, a budding drug problem, and the seeming inability to avoid making bad decisions.",
+        "poster_path": "/jPqOY8cq9KXQN4bD7zJGHCNvcb4.jpg",
+        "vote_average": 7.638,
+        "release_date": "2007-08-13",
+        "popularity": 45.2485
     },
     {
         "id": 1215,
@@ -6480,18 +6480,6 @@
         "popularity": 37.0984
     },
     {
-        "id": 65763,
-        "type": "tv",
-        "title": "New Looney Tunes",
-        "title_ar": "لوني تونز الجديد",
-        "overview": "Wabbit is an animated series starring Bugs Bunny. The series features many other Looney Tunes characters including Wile E. Coyote, Yosemite Sam, and the Tasmanian Devil.",
-        "overview_ar": "يتحدث المسلسل عن شخصية الأرنب باغز باني الكلاسيكية في إطار حديث حيث يواجه باغز باني خصوم جدد هما؛ ايل الشتاء والأرنب المتجهم كما أنه يحصل على مساعدة من بعض الشخصيات الجديدة مثل سكويس وبيغ فوت.",
-        "poster_path": "/AdROLFTm3nSnqcmkhPabqdRuETZ.jpg",
-        "vote_average": 7.0,
-        "release_date": "2015-09-21",
-        "popularity": 36.6826
-    },
-    {
         "id": 39276,
         "type": "tv",
         "title": "Unforgettable",
@@ -6538,18 +6526,6 @@
         "vote_average": 8.1,
         "release_date": "2014-04-06",
         "popularity": 36.5002
-    },
-    {
-        "id": 50825,
-        "type": "tv",
-        "title": "Sleepy Hollow",
-        "title_ar": "Sleepy Hollow",
-        "overview": "Ichabod Crane is resurrected and pulled two and a half centuries through time to unravel a mystery that dates all the way back to the founding fathers.",
-        "overview_ar": "Ichabod Crane is resurrected and pulled two and a half centuries through time to unravel a mystery that dates all the way back to the founding fathers.",
-        "poster_path": "/2RHj62XneYMCRPAyQrEIrKVij12.jpg",
-        "vote_average": 7.4,
-        "release_date": "2013-09-16",
-        "popularity": 36.8368
     },
     {
         "id": 4297,
@@ -6718,6 +6694,30 @@
         "vote_average": 7.6,
         "release_date": "2018-04-07",
         "popularity": 35.6737
+    },
+    {
+        "id": 291,
+        "type": "tv",
+        "title": "Coronation Street",
+        "title_ar": "Coronation Street",
+        "overview": "The residents of Coronation Street are ordinary, working-class people, and the show follows them through regular social and family interactions at home, in the workplace, and in their local pub, the Rovers Return Inn. Britain's longest-running soap.",
+        "overview_ar": "The residents of Coronation Street are ordinary, working-class people, and the show follows them through regular social and family interactions at home, in the workplace, and in their local pub, the Rovers Return Inn. Britain's longest-running soap.",
+        "poster_path": "/5x1HXqYqPyYw7oc7Isu1lvVmwRP.jpg",
+        "vote_average": 5.3,
+        "release_date": "1960-12-09",
+        "popularity": 35.2981
+    },
+    {
+        "id": 1948,
+        "type": "tv",
+        "title": "Degrassi",
+        "title_ar": "Degrassi",
+        "overview": "The life of a group of adolescents going through the trials and tribulations of teendom at Degrassi Community School.",
+        "overview_ar": "The life of a group of adolescents going through the trials and tribulations of teendom at Degrassi Community School.",
+        "poster_path": "/AfqQ4lZAi9LWyhnHm3VCpm2hLpB.jpg",
+        "vote_average": 7.5,
+        "release_date": "2001-10-14",
+        "popularity": 37.2138
     },
     {
         "id": 1948,
@@ -12483,9 +12483,9 @@
         "id": 91759,
         "type": "tv",
         "title": "Come Home Love: Lo and Behold",
-        "title_ar": "愛·回家之開心速遞",
+        "title_ar": "Come Home Love: Lo and Behold",
         "overview": "Hung Sue Gan starting from the bottom, established his own logistics company, which is now running smoothly. His only concern now are his three daughters. His eldest daughter has immigrated overseas. His second daughter Hung Yeuk Shui has reached the marriageable age, but has no hopes for marriage anytime soon. She is constantly bickering with her younger sister Hung Sum Yue, who is an honour student, over trivial matters, causing their father to not know whether to laugh or cry. Hung Sue Yan, Hung Sue Gan's brother, moves in with the family, temporarily ending his life as a nomadic photographer. He joins Hung Yeuk Shui's company and encounters Ko Pak Fei, the director of an online shop. The two appear to be former lovers, making for lots of laughter. Since Hung Sue Yan moved in, a series of strange events have occurred in the family. Upon investigation, the source is traced to Lung Ging Fung, a promising young man who is the son of department store mogul Lung Gam Wai.",
-        "overview_ar": "أنشأ هونغ سو غان ، بدءا من القاع ، شركته اللوجستية الخاصة ، والتي تعمل الآن بسلاسة. همه الوحيد الآن هو بناته الثلاث. وقد هاجرت ابنته الكبرى إلى الخارج. وقد وصلت ابنته الثانية هونغ يوك شوي إلى سن الزواج، ولكن ليس لديها أي أمل في الزواج في أي وقت قريب. وهي تتشاجر باستمرار مع شقيقتها الصغرى هونغ سوم يو، وهي طالبة شرف، حول أمور تافهة، مما يجعل والدهما لا يعرف ما إذا كان يضحك أو يبكي. ينتقل هونغ سو يان ، شقيق هونغ سو غان ، مع العائلة ، وينهي حياته مؤقتا كمصور بدوي. ينضم إلى شركة هونغ يوك شوي ويلتقي بكو باك فاي ، مدير متجر عبر الإنترنت. يبدو أن الاثنين عاشقان سابقان ، مما يجعل الكثير من الضحك. منذ انتقال هونغ سو يان ، وقعت سلسلة من الأحداث الغريبة في الأسرة. عند التحقيق ، يتم تتبع المصدر إلى Lung Ging Fung ، وهو شاب واعد وهو ابن قطب المتاجر Lung Gam Wai.",
+        "overview_ar": "Hung Sue Gan starting from the bottom, established his own logistics company, which is now running smoothly. His only concern now are his three daughters. His eldest daughter has immigrated overseas. His second daughter Hung Yeuk Shui has reached the marriageable age, but has no hopes for marriage anytime soon. She is constantly bickering with her younger sister Hung Sum Yue, who is an honour student, over trivial matters, causing their father to not know whether to laugh or cry. Hung Sue Yan, Hung Sue Gan's brother, moves in with the family, temporarily ending his life as a nomadic photographer. He joins Hung Yeuk Shui's company and encounters Ko Pak Fei, the director of an online shop. The two appear to be former lovers, making for lots of laughter. Since Hung Sue Yan moved in, a series of strange events have occurred in the family. Upon investigation, the source is traced to Lung Ging Fung, a promising young man who is the son of department store mogul Lung Gam Wai.",
         "poster_path": "/lgD4j9gUGmMckZpWWRJjorWqGVT.jpg",
         "vote_average": 5.4,
         "release_date": "2017-02-06",
@@ -12603,9 +12603,9 @@
         "id": 68507,
         "type": "tv",
         "title": "His Dark Materials",
-        "title_ar": "His Dark Materials",
+        "title_ar": "مواده المظلمة",
         "overview": "Lyra is an orphan who lives in a parallel universe in which science, theology and magic are entwined. Her search for a kidnapped friend uncovers a sinister plot involving stolen children and turns into a quest to understand a mysterious phenomenon called Dust. She is later joined on her journey by Will, a boy who possesses a knife that can cut windows between worlds. As she learns the truth about her parents and her prophesied destiny, the two young people are caught up in a war against celestial powers that ranges across many worlds.",
-        "overview_ar": "Lyra is an orphan who lives in a parallel universe in which science, theology and magic are entwined. Her search for a kidnapped friend uncovers a sinister plot involving stolen children and turns into a quest to understand a mysterious phenomenon called Dust. She is later joined on her journey by Will, a boy who possesses a knife that can cut windows between worlds. As she learns the truth about her parents and her prophesied destiny, the two young people are caught up in a war against celestial powers that ranges across many worlds.",
+        "overview_ar": "ليرة هي يتيمة تعيش في عالم موازٍ تتشابك فيه العلوم واللاهوت والسحر. يكشف بحثها  لصديق مختطف عن مؤامرة شريرة تضم أطفالًا مسروقين، وتتحول إلى سعي لفهم ظاهرة غامضة تسمى الغبار.",
         "poster_path": "/g6tIKGc3f1H5QMz1dcgCwADKpZ7.jpg",
         "vote_average": 7.9,
         "release_date": "2019-11-03",
@@ -17451,7 +17451,7 @@
         "id": 300015,
         "type": "tv",
         "title": "Ichigo Aika: Strawberry Elegy",
-        "title_ar": "Ichigo Aika: Strawberry Elegy",
+        "title_ar": "イチゴ哀歌～雑で生イキな妹と割り切れない兄～",
         "overview": "The story centers on a pair of stepsiblings. When Kōta's father gets remarried, Kōta's first impression of his new stepsister Aika is that she is beautiful, but that image is shattered pretty quickly. His new stepsister is a super sassy and foul-mouthed gyaru who behaves uncontrollably while their parents are away, making Kōta's life a living hell. However, their relationship begins to change when Aika gradually warms up to Kōta's caring older-brother nature.",
         "overview_ar": "The story centers on a pair of stepsiblings. When Kōta's father gets remarried, Kōta's first impression of his new stepsister Aika is that she is beautiful, but that image is shattered pretty quickly. His new stepsister is a super sassy and foul-mouthed gyaru who behaves uncontrollably while their parents are away, making Kōta's life a living hell. However, their relationship begins to change when Aika gradually warms up to Kōta's caring older-brother nature.",
         "poster_path": "/fjKOO6PBLwLG3ViyvrIL9oZUmbU.jpg",
@@ -17499,7 +17499,7 @@
         "id": 63322,
         "type": "tv",
         "title": "Superb Song of the Valkyries: Symphogear",
-        "title_ar": "Superb Song of the Valkyries: Symphogear",
+        "title_ar": "戦姫絶唱シンフォギア",
         "overview": "During a concert by idol group Zwei Wing, an alien force known as the Noise attack the stage. Group members Tsubasa Kazanari and Kanade Amou suppress the attack using their Symphogear armor, but despite their best efforts, innocent bystander Hibiki Tachibana is fatally injured. Distraught and much to Tsubasa's dismay, Kanade sacrifices herself in the process to save Hibiki.\n\nTwo years later, Hibiki lives on. Tsubasa now fights alone. With the threat of the Noise increasing, Hibiki finds herself encountering the Noise once again but this time she is granted a chance to become attuned with the same Symphogear that Kanade wielded.",
         "overview_ar": "During a concert by idol group Zwei Wing, an alien force known as the Noise attack the stage. Group members Tsubasa Kazanari and Kanade Amou suppress the attack using their Symphogear armor, but despite their best efforts, innocent bystander Hibiki Tachibana is fatally injured. Distraught and much to Tsubasa's dismay, Kanade sacrifices herself in the process to save Hibiki.\n\nTwo years later, Hibiki lives on. Tsubasa now fights alone. With the threat of the Noise increasing, Hibiki finds herself encountering the Noise once again but this time she is granted a chance to become attuned with the same Symphogear that Kanade wielded.",
         "poster_path": "/g0jsgViN4aBybkgTmr4XgZHluxX.jpg",
@@ -19680,18 +19680,6 @@
         "popularity": 10.1814
     },
     {
-        "id": 1365,
-        "type": "tv",
-        "title": "Eli Stone",
-        "title_ar": "Eli Stone",
-        "overview": "Many lawyers consider themselves prophets, but Eli Stone may be the real deal. Eli has built a successful career at a top law firm in San Francisco representing only the biggest and richest corporations that make a habit of screwing over the little guy. But after experiencing a series of odd hallucinations, Eli seeks to find a deeper meaning to life while trying not to lose his job and destroy his relationship with the bosses' daughter. When Eli discovers an aneurysm in his brain, he wonders if his condition is truly medical or if perhaps he now has a higher calling.",
-        "overview_ar": "Many lawyers consider themselves prophets, but Eli Stone may be the real deal. Eli has built a successful career at a top law firm in San Francisco representing only the biggest and richest corporations that make a habit of screwing over the little guy. But after experiencing a series of odd hallucinations, Eli seeks to find a deeper meaning to life while trying not to lose his job and destroy his relationship with the bosses' daughter. When Eli discovers an aneurysm in his brain, he wonders if his condition is truly medical or if perhaps he now has a higher calling.",
-        "poster_path": "/hWVuLjx3QPhpfTCePbB9nunIJt0.jpg",
-        "vote_average": 6.8,
-        "release_date": "2008-01-31",
-        "popularity": 15.0825
-    },
-    {
         "id": 99466,
         "type": "tv",
         "title": "Yarichin Bitch Club",
@@ -19918,6 +19906,18 @@
         "vote_average": 7.3,
         "release_date": "2017-11-21",
         "popularity": 18.2858
+    },
+    {
+        "id": 33922,
+        "type": "tv",
+        "title": "Portlandia",
+        "title_ar": "Portlandia",
+        "overview": "Satirical sketch comedy set and filmed in Portland, Oregon that explores the eccentric misfits who embody the foibles of modern culture.",
+        "overview_ar": "Satirical sketch comedy set and filmed in Portland, Oregon that explores the eccentric misfits who embody the foibles of modern culture.",
+        "poster_path": "/pfaxCP6YqlFHCL3QytnTanwRTL5.jpg",
+        "vote_average": 7.0,
+        "release_date": "2011-01-21",
+        "popularity": 17.6204
     },
     {
         "id": 20598,
@@ -20160,18 +20160,6 @@
         "popularity": 15.5561
     },
     {
-        "id": 11982,
-        "type": "tv",
-        "title": "Max & Ruby",
-        "title_ar": "Max & Ruby",
-        "overview": "Meet two funny bunny siblings, the energetic and mischievous Max, and the patient, smart and goal-oriented Ruby. The show models empowering messages by showing Max and Ruby playing together and resolving their differences respectfully and supportively.",
-        "overview_ar": "Meet two funny bunny siblings, the energetic and mischievous Max, and the patient, smart and goal-oriented Ruby. The show models empowering messages by showing Max and Ruby playing together and resolving their differences respectfully and supportively.",
-        "poster_path": "/bIiWnjewlhINR1bv1sRfBiIEn9a.jpg",
-        "vote_average": 6.5,
-        "release_date": "2002-09-15",
-        "popularity": 15.5561
-    },
-    {
         "id": 19092,
         "type": "tv",
         "title": "FlashForward",
@@ -20398,6 +20386,18 @@
         "vote_average": 6.2,
         "release_date": "2012-06-08",
         "popularity": 17.0219
+    },
+    {
+        "id": 126929,
+        "type": "tv",
+        "title": "Welcome to Wrexham",
+        "title_ar": "Welcome to Wrexham",
+        "overview": "Documentary series tracking the dreams and worries of Wrexham, a working-class town in North Wales, UK, as two Hollywood stars (Rob McElhenney and Ryan Reynolds) take ownership of the town’s historic yet struggling football club.",
+        "overview_ar": "Documentary series tracking the dreams and worries of Wrexham, a working-class town in North Wales, UK, as two Hollywood stars (Rob McElhenney and Ryan Reynolds) take ownership of the town’s historic yet struggling football club.",
+        "poster_path": "/53CNogAzbbwepLxQS5jIfGG35MQ.jpg",
+        "vote_average": 7.778,
+        "release_date": "2022-08-24",
+        "popularity": 17.1513
     },
     {
         "id": 241138,
@@ -23280,30 +23280,6 @@
         "popularity": 15.4305
     },
     {
-        "id": 2902,
-        "type": "tv",
-        "title": "Queer As Folk",
-        "title_ar": "Queer As Folk",
-        "overview": "Brash humor and genuine emotion make up this original series revolving around the lives, loves, ambitions, careers and friendships of a group of gay men and women living on Liberty Avenue in contemporary Pittsburgh, PA. The show offers an unapologetic look at modern, urban gay and lesbian lives while addressing the most critical health and political issues affecting the community. Sometimes racy, sometimes sensitive and always straight to the heart.",
-        "overview_ar": "Brash humor and genuine emotion make up this original series revolving around the lives, loves, ambitions, careers and friendships of a group of gay men and women living on Liberty Avenue in contemporary Pittsburgh, PA. The show offers an unapologetic look at modern, urban gay and lesbian lives while addressing the most critical health and political issues affecting the community. Sometimes racy, sometimes sensitive and always straight to the heart.",
-        "poster_path": "/mmhL30PonbrrpEOQH5OdyUguyMg.jpg",
-        "vote_average": 8.2,
-        "release_date": "2000-12-03",
-        "popularity": 16.6599
-    },
-    {
-        "id": 400,
-        "type": "tv",
-        "title": "Shark",
-        "title_ar": "Shark",
-        "overview": "Notorious Los Angeles defense attorney Sebastian Stark becomes disillusioned with his career after his successful defense of a wife-abuser results in the wife's death. After more than a month trying to come to grips with his situation, he is invited by the Los Angeles district attorney to become a public prosecutor so he can apply his unorthodox-but-effective talents to putting guilty people away instead of putting them back on the street.",
-        "overview_ar": "Notorious Los Angeles defense attorney Sebastian Stark becomes disillusioned with his career after his successful defense of a wife-abuser results in the wife's death. After more than a month trying to come to grips with his situation, he is invited by the Los Angeles district attorney to become a public prosecutor so he can apply his unorthodox-but-effective talents to putting guilty people away instead of putting them back on the street.",
-        "poster_path": "/Ahxpbk4Uu6zs1DgAbgfU80eHerx.jpg",
-        "vote_average": 6.704,
-        "release_date": "2006-09-21",
-        "popularity": 15.6941
-    },
-    {
         "id": 43221,
         "type": "tv",
         "title": "Finding Your Roots",
@@ -23335,7 +23311,7 @@
         "overview": "Dexter Morgan awakens from a coma to find Harrison gone without a trace. Realizing the weight of what he put his son through, Dexter sets out for New York City, determined to find him and make things right. But closure won't come easy. When Miami Metro's Angel Batista arrives with questions, Dexter realizes his past is catching up to him fast. As father and son navigate their own darkness in the city that never sleeps, they soon find themselves deeper than they ever imagined - and that the only way out is together.",
         "overview_ar": "يستيقظ دكستر مورغان من غيبوبته ليجد هاريسون قد اختفى دون أثر. يدرك دكستر وطأة ما حمّله ابنه، فينطلق إلى مدينة نيويورك، عازمًا على العثور عليه وتصحيح الأمور. لكن طي صفحة الماضي لن يكون سهلًا. عندما يصل أنجيل باتيستا من ميامي مترو بأسئلة، يدرك دكستر أن ماضيه يلاحقه بسرعة. وبينما يشق الأب والابن طريقهما في ظلام المدينة التي لا تنام، يجدان نفسيهما في وضع أعمق مما كانا يتخيلان - وأن المخرج الوحيد هو التعاون.",
         "poster_path": "/hIawSocuwqgNeRf3JuKuxgMHmSC.jpg",
-        "vote_average": 8.5,
+        "vote_average": 8.506,
         "release_date": "2025-07-13",
         "popularity": 17.5567
     },
@@ -23350,18 +23326,6 @@
         "vote_average": 7.1,
         "release_date": "2020-11-26",
         "popularity": 16.2997
-    },
-    {
-        "id": 156571,
-        "type": "tv",
-        "title": "Immortality",
-        "title_ar": "Immortality",
-        "overview": "IMMORTALITY Fang Han, a humble family slave, always held the belief that \"I would rather be a beggar than a slave\", traversing the world only by himself. With an unyielding stubbornness, he cracked the mystery of supernatural powers and forged his body into an immortal body. He worked hard to step into the fairyland, and eventually became the peak king.",
-        "overview_ar": "IMMORTALITY Fang Han, a humble family slave, always held the belief that \"I would rather be a beggar than a slave\", traversing the world only by himself. With an unyielding stubbornness, he cracked the mystery of supernatural powers and forged his body into an immortal body. He worked hard to step into the fairyland, and eventually became the peak king.",
-        "poster_path": "/lMxWgt0r92s30MajKj6mmA1UwLQ.jpg",
-        "vote_average": 7.2,
-        "release_date": "2022-01-29",
-        "popularity": 16.4515
     },
     {
         "id": 120850,
@@ -23547,7 +23511,7 @@
         "id": 278704,
         "type": "tv",
         "title": "Mobile Suit Gundam GQuuuuuuX",
-        "title_ar": "機動戦士Gundam GQuuuuuuX（ジークアクス）",
+        "title_ar": "Mobile Suit Gundam GQuuuuuuX",
         "overview": "High-school student Amate Yuzuriha lives peacefully in a space colony floating in outer space. But when she meets a war refugee named Nyaan, Amate is drawn into the illegal mobile suit dueling sport known as Clan Battle.",
         "overview_ar": "High-school student Amate Yuzuriha lives peacefully in a space colony floating in outer space. But when she meets a war refugee named Nyaan, Amate is drawn into the illegal mobile suit dueling sport known as Clan Battle.",
         "poster_path": "/jb5d4vqHmKSQh9rB2T394e3z5To.jpg",
@@ -23590,6 +23554,18 @@
         "vote_average": 7.485,
         "release_date": "2020-07-09",
         "popularity": 17.308
+    },
+    {
+        "id": 13887,
+        "type": "tv",
+        "title": "Lawman",
+        "title_ar": "Lawman",
+        "overview": "Lawman is an American western television series originally telecast on ABC from 1958 to 1962 starring John Russell as Marshal Dan Troop and featuring Peter Brown as Deputy Marshal Johnny McKay. The series was set in Laramie, Wyoming during 1879 and the 1880s. Warner Bros. already had several western series on the air at the time, having launched Cheyenne with Clint Walker as early as 1955. The studio continued the trend in 1957 with the additions of Maverick with James Garner and Jack Kelly, Colt .45 with Wayde Preston, and Sugarfoot with Will Hutchins. One year later, Warner Bros. added Lawman and Bronco with Ty Hardin.\n\nPrior to the beginning of production, Russell and Brown and producer Jules Schermer made a pact to maintain the quality of the series so that it would not be seen as \"just another western.\" At the start of season two, Russell and Brown were joined by Peggie Castle as Lily Merrill, the owner of the Birdcage Saloon, and a love interest for Dan.",
+        "overview_ar": "Lawman is an American western television series originally telecast on ABC from 1958 to 1962 starring John Russell as Marshal Dan Troop and featuring Peter Brown as Deputy Marshal Johnny McKay. The series was set in Laramie, Wyoming during 1879 and the 1880s. Warner Bros. already had several western series on the air at the time, having launched Cheyenne with Clint Walker as early as 1955. The studio continued the trend in 1957 with the additions of Maverick with James Garner and Jack Kelly, Colt .45 with Wayde Preston, and Sugarfoot with Will Hutchins. One year later, Warner Bros. added Lawman and Bronco with Ty Hardin.\n\nPrior to the beginning of production, Russell and Brown and producer Jules Schermer made a pact to maintain the quality of the series so that it would not be seen as \"just another western.\" At the start of season two, Russell and Brown were joined by Peggie Castle as Lily Merrill, the owner of the Birdcage Saloon, and a love interest for Dan.",
+        "poster_path": "/18XzHfhbRKw9Cl8cKH7WkV9yjYr.jpg",
+        "vote_average": 5.6,
+        "release_date": "1958-10-05",
+        "popularity": 19.0624
     },
     {
         "id": 2286,
@@ -23758,6 +23734,30 @@
         "vote_average": 8.175,
         "release_date": "2024-07-14",
         "popularity": 14.3699
+    },
+    {
+        "id": 210899,
+        "type": "tv",
+        "title": "UniteUp!",
+        "title_ar": "UniteUp!",
+        "overview": "Akira Kiyose, a high schooler who loves to sing, gets recruited by a talent agency called sMiLea Production. Akira learns that the legendary idols “Anela”, who shocked the world with their sudden retirement, are behind the agency developing talent. Together with Banri Naoe and Chihiro Isuzugawa, also recruited by the agency, they form an idol group as they chase their dream towards super stardom alongside other idol groups “LEGIT” and “JAXX/JAXX”.",
+        "overview_ar": "Akira Kiyose, a high schooler who loves to sing, gets recruited by a talent agency called sMiLea Production. Akira learns that the legendary idols “Anela”, who shocked the world with their sudden retirement, are behind the agency developing talent. Together with Banri Naoe and Chihiro Isuzugawa, also recruited by the agency, they form an idol group as they chase their dream towards super stardom alongside other idol groups “LEGIT” and “JAXX/JAXX”.",
+        "poster_path": "/7jWi4SppOmtQMfxmviNlEUAY3Tz.jpg",
+        "vote_average": 6.0,
+        "release_date": "2023-01-07",
+        "popularity": 14.586
+    },
+    {
+        "id": 96102,
+        "type": "tv",
+        "title": "Hospital Playlist",
+        "title_ar": "Hospital Playlist",
+        "overview": "Every day is extraordinary for five doctors and their patients inside a hospital, where birth, death and everything in between coexist.",
+        "overview_ar": "Every day is extraordinary for five doctors and their patients inside a hospital, where birth, death and everything in between coexist.",
+        "poster_path": "/8MSjQkH2FrG0t4l84L5HmiSFrS7.jpg",
+        "vote_average": 8.512,
+        "release_date": "2020-03-12",
+        "popularity": 15.0767
     },
     {
         "id": 926,
