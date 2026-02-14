@@ -3360,30 +3360,6 @@
         "popularity": 54.5869
     },
     {
-        "id": 83867,
-        "type": "tv",
-        "title": "Andor",
-        "title_ar": "حرب النجوم: أندور",
-        "overview": "In an era filled with danger, deception and intrigue, Cassian Andor will discover the difference he can make in the struggle against the tyrannical Galactic Empire. He embarks on a path that is destined to turn him into a rebel hero.",
-        "overview_ar": "في عالم النجوم، يستكشف العمل رحلة كاسيان أندور وسط التمرد المتزايد ضد الإمبراطورية، وانتشار الخطر والخداع والمكائد في المجرة بأكملها.",
-        "poster_path": "/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
-        "vote_average": 8.274,
-        "release_date": "2022-09-21",
-        "popularity": 52.8997
-    },
-    {
-        "id": 269,
-        "type": "tv",
-        "title": "One Tree Hill",
-        "title_ar": "One Tree Hill",
-        "overview": "In Tree Hill, North Carolina two half brothers share a last name and nothing else. Brooding, blue-collar Lucas is a talented street-side basketball player, but his skills are appreciated only by his friends at the river court. Popular, affluent Nathan basks in the hero-worship of the town, as the star of his high school team. And both boys are the son of former college ball player Dan Scott whose long ago choice to abandon Lucas and his mother Karen, will haunt him long into his life with wife Deb and their son Nathan.",
-        "overview_ar": "في تري هيل، كارولينا الشمالية، يشترك شقيقان غير شقيقين في اسم عائلة ولا شيء آخر. لوكاس هو لاعب كرة سلة موهوب على جانب الشارع، ولكن مهاراته لا يقدرها سوى أصدقائه في ملعب النهر. يتشفق ناثان الشهير والثري في عبادة البطل في المدينة، كنجم لفريق مدرسته الثانوية. وكلا الصبيين هما ابن لاعب الكرة الجامعي السابق دان سكوت الذي سيطارده منذ فترة طويلة اختياره للتخلي عن لوكاس وأمه كارين، لفترة طويلة في حياته مع زوجته ديب وابنهما ناثان.",
-        "poster_path": "/sOrelBaAhp7DZbPTivDwKEyPslC.jpg",
-        "vote_average": 7.8,
-        "release_date": "2003-09-23",
-        "popularity": 59.6375
-    },
-    {
         "id": 61056,
         "type": "tv",
         "title": "How to Get Away with Murder",
@@ -3480,18 +3456,6 @@
         "popularity": 54.6207
     },
     {
-        "id": 4556,
-        "type": "tv",
-        "title": "Scrubs",
-        "title_ar": "Scrubs",
-        "overview": "In the unreal world of Sacred Heart Hospital, John \"J.D.\" Dorian learns the ways of medicine, friendship and life.",
-        "overview_ar": "في مستشفى القلب المقدس في كاليفورنيا، يشق جون دوريان طريقه في عالم الطب، حيث يتلقى العون من أصدقائه وزملائه المبتدئين، بجانب طبيب متعجرف يعتبره مثله الأعلى.",
-        "poster_path": "/u1z05trCA7AuSuDhi365grwdos1.jpg",
-        "vote_average": 8.006,
-        "release_date": "2001-10-02",
-        "popularity": 53.9915
-    },
-    {
         "id": 204746,
         "type": "tv",
         "title": "The Jennifer Hudson Show",
@@ -3576,6 +3540,18 @@
         "popularity": 41.079
     },
     {
+        "id": 1972,
+        "type": "tv",
+        "title": "Battlestar Galactica",
+        "title_ar": "Battlestar Galactica",
+        "overview": "When an old enemy, the Cylons, resurface and obliterate the 12 colonies, the crew of the aged Galactica protect a small civilian fleet - the last of humanity - as they journey toward the fabled 13th colony, Earth.",
+        "overview_ar": "When an old enemy, the Cylons, resurface and obliterate the 12 colonies, the crew of the aged Galactica protect a small civilian fleet - the last of humanity - as they journey toward the fabled 13th colony, Earth.",
+        "poster_path": "/99PJSbcO2LeM10uOGWeFihNp77j.jpg",
+        "vote_average": 8.2,
+        "release_date": "2004-10-18",
+        "popularity": 58.476
+    },
+    {
         "id": 8514,
         "type": "tv",
         "title": "RuPaul's Drag Race",
@@ -3598,6 +3574,30 @@
         "vote_average": 8.58,
         "release_date": "2023-10-22",
         "popularity": 50.3016
+    },
+    {
+        "id": 10283,
+        "type": "tv",
+        "title": "Archer",
+        "title_ar": "Archer",
+        "overview": "Sterling Archer is the world's most daunting spy. He works for ISIS, a spy agency run by his mother. In between dealing with his boss and his co-workers - one of whom is his ex-girlfriend - Archer manages to annoy or seduce everyone that crosses his path. His antics are only excusable because at the end of the day, he still somehow always manages to thwart whatever crises was threatening mankind.",
+        "overview_ar": "Sterling Archer is the world's most daunting spy. He works for ISIS, a spy agency run by his mother. In between dealing with his boss and his co-workers - one of whom is his ex-girlfriend - Archer manages to annoy or seduce everyone that crosses his path. His antics are only excusable because at the end of the day, he still somehow always manages to thwart whatever crises was threatening mankind.",
+        "poster_path": "/vhnrkTGYPqcB63ALcSJm0WoaKHT.jpg",
+        "vote_average": 7.955,
+        "release_date": "2009-09-17",
+        "popularity": 52.2316
+    },
+    {
+        "id": 33907,
+        "type": "tv",
+        "title": "Downton Abbey",
+        "title_ar": "Downton Abbey",
+        "overview": "A chronicle of the lives of the aristocratic Crawley family and their servants in the post-Edwardian era—with great events in history having an effect on their lives and on the British social hierarchy.\n\n",
+        "overview_ar": "A chronicle of the lives of the aristocratic Crawley family and their servants in the post-Edwardian era—with great events in history having an effect on their lives and on the British social hierarchy.\n\n",
+        "poster_path": "/7HgDYRYjym4BwbhKaqTQq771SKb.jpg",
+        "vote_average": 8.1,
+        "release_date": "2010-09-26",
+        "popularity": 56.7699
     },
     {
         "id": 10283,
@@ -6355,7 +6355,7 @@
         "overview": "After moving to a quiet rural town to heal from past heartbreak, a withdrawn teacher slowly rediscovers warmth and joy through her unexpected connection with a rough-around-the-edges but kindhearted local man.",
         "overview_ar": "تصل ظاهرة تُعرف باسم \"نشوة الربيع\"، وهي حالة من الإرهاق النفسي والعاطفي التي تصيب الناس في هذا الفصل، إلى حياة بوم يون، وهو معلم معروف ببروده العاطفي. ينتقل بوم يون إلى مدرسة ريفية صغيرة، وهناك يبدأ تدريجيًا باستعادة بهجة الحياة بفضل دفء وبساطة جاي غيو سان، لتبدأ رحلة رومانسية هادئة مليئة بالمواقف الإنسانية.",
         "poster_path": "/50e9qtv8rKmcayAQSgB9P9XELpQ.jpg",
-        "vote_average": 8.3,
+        "vote_average": 8.174,
         "release_date": "2026-01-05",
         "popularity": 42.6472
     },
@@ -12720,18 +12720,6 @@
         "popularity": 25.6653
     },
     {
-        "id": 127,
-        "type": "tv",
-        "title": "Boston Public",
-        "title_ar": "Boston Public",
-        "overview": "Principal Steven Harper runs Winslow High School as best as he can while dealing with the demands of the faculty, the students and their parents.",
-        "overview_ar": "Principal Steven Harper runs Winslow High School as best as he can while dealing with the demands of the faculty, the students and their parents.",
-        "poster_path": "/yUEMfetlqwab7mOzrZIoAOGwfKi.jpg",
-        "vote_average": 7.594,
-        "release_date": "2000-10-23",
-        "popularity": 25.6653
-    },
-    {
         "id": 67557,
         "type": "tv",
         "title": "The Grand Tour",
@@ -12886,6 +12874,18 @@
         "vote_average": 8.4,
         "release_date": "2003-07-19",
         "popularity": 25.6993
+    },
+    {
+        "id": 3572,
+        "type": "tv",
+        "title": "Kojak",
+        "title_ar": "Kojak",
+        "overview": "A bald, lollipop sucking police detective with a fiery righteous attitude battles crime in New York City.",
+        "overview_ar": "A bald, lollipop sucking police detective with a fiery righteous attitude battles crime in New York City.",
+        "poster_path": "/7F1eH97Bpi8zQbc172drbJCsOsG.jpg",
+        "vote_average": 7.1,
+        "release_date": "1973-10-24",
+        "popularity": 28.6576
     },
     {
         "id": 3162,
@@ -16320,6 +16320,18 @@
         "popularity": 20.7521
     },
     {
+        "id": 118357,
+        "type": "tv",
+        "title": "1883",
+        "title_ar": "1883",
+        "overview": "Follow the Dutton family as they embark on a journey west through the Great Plains toward the last bastion of untamed America. A stark retelling of Western expansion, and an intense study of one family fleeing poverty to seek a better future in America’s promised land — Montana.",
+        "overview_ar": "تدور قصة المسلسل حول عائلة داتون حيث يبدأ جيمس ومارجريت داتون رحلتهم غربًا عبر السهول الكبرى نحو آخر معقل لأمريكا الجامحة حيث يفرون من الفقر بحثًا عن مستقبل أفضل في أرض أمريكا الموعودة وهي مونتانا.",
+        "poster_path": "/waLbm384SQDwLTCn6ttPqQS5kfV.jpg",
+        "vote_average": 8.268,
+        "release_date": "2021-12-19",
+        "popularity": 20.7521
+    },
+    {
         "id": 78220,
         "type": "tv",
         "title": "My Own Swordsman Animated Series",
@@ -16366,18 +16378,6 @@
         "vote_average": 9.0,
         "release_date": "2009-08-08",
         "popularity": 13.5037
-    },
-    {
-        "id": 69851,
-        "type": "tv",
-        "title": "FEUD",
-        "title_ar": "FEUD",
-        "overview": "Anthology series of famous feuds with the first season based on the legendary rivalry between Bette Davis and Joan Crawford which began early on their careers, climaxed on the set of \"Whatever Happened to Baby Jane?\" and evolved into an Oscar vendetta.",
-        "overview_ar": "Anthology series of famous feuds with the first season based on the legendary rivalry between Bette Davis and Joan Crawford which began early on their careers, climaxed on the set of \"Whatever Happened to Baby Jane?\" and evolved into an Oscar vendetta.",
-        "poster_path": "/c5wn2eLRN3naOB1JxEbDIApRN2T.jpg",
-        "vote_average": 7.618,
-        "release_date": "2017-03-05",
-        "popularity": 22.359
     },
     {
         "id": 14009,

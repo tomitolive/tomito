@@ -4320,6 +4320,42 @@
         "popularity": 13.6882
     },
     {
+        "id": 85,
+        "type": "movie",
+        "title": "Raiders of the Lost Ark",
+        "title_ar": "Raiders of the Lost Ark",
+        "overview": "When Dr. Indiana Jones – the tweed-suited professor who just happens to be a celebrated archaeologist – is hired by the government to locate the legendary Ark of the Covenant, he finds himself up against the entire Nazi regime.",
+        "overview_ar": "When Dr. Indiana Jones – the tweed-suited professor who just happens to be a celebrated archaeologist – is hired by the government to locate the legendary Ark of the Covenant, he finds himself up against the entire Nazi regime.",
+        "poster_path": "/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
+        "vote_average": 7.923,
+        "release_date": "1981-06-12",
+        "popularity": 17.1028
+    },
+    {
+        "id": 49521,
+        "type": "movie",
+        "title": "Man of Steel",
+        "title_ar": "Man of Steel",
+        "overview": "A young boy learns that he has extraordinary powers and is not of this earth. As a young man, he journeys to discover where he came from and what he was sent here to do. But the hero in him must emerge if he is to save the world from annihilation and become the symbol of hope for all mankind.",
+        "overview_ar": "A young boy learns that he has extraordinary powers and is not of this earth. As a young man, he journeys to discover where he came from and what he was sent here to do. But the hero in him must emerge if he is to save the world from annihilation and become the symbol of hope for all mankind.",
+        "poster_path": "/8GFtkImmK0K1VaUChR0n9O61CFU.jpg",
+        "vote_average": 6.639,
+        "release_date": "2013-06-12",
+        "popularity": 13.4132
+    },
+    {
+        "id": 1034716,
+        "type": "movie",
+        "title": "People We Meet on Vacation",
+        "title_ar": "على دروب الوصال",
+        "overview": "Poppy's a free spirit. Alex loves a plan. After years of summer vacations, these polar-opposite pals wonder if they could be a perfect romantic match.",
+        "overview_ar": "تعيش \"بوبي\" حياتها بانطلاق وحرّية، بينما يفضّل \"أليكس\" التنظيم والتخطيط. وبعد سنوات من الرحلات الصيفية، يتساءل الصديقان المتناقضان إن كانا مؤهلين لعلاقة حب مثالية.",
+        "poster_path": "/kOrJqRyt1pklNgDwJMjzN1GuNXS.jpg",
+        "vote_average": 7.01,
+        "release_date": "2026-01-06",
+        "popularity": 15.177
+    },
+    {
         "id": 8966,
         "type": "movie",
         "title": "Twilight",
@@ -4423,7 +4459,7 @@
         "overview": "The seemingly invincible Spider-Man goes up against an all-new crop of villains—including the shape-shifting Sandman. While Spider-Man’s superpowers are altered by an alien organism, his alter ego, Peter Parker, deals with nemesis Eddie Brock and also gets caught up in a love triangle.",
         "overview_ar": "يحصل (الرجل العنكبوت) على مفتاح المدينة نتيجة لجهوده في إنقاذ حياة ابنة العمدة، والمدينة ككل، ونتيجة لذلك يصيبه الغرور، وتتوتر العلاقة بينه وبين حبيبته (مارى جين)، ويواجه بعد ذلك مخلوقًا طفيليًا قادمًا من الفضاء الخارجى لديه القدرة على إضفاء روح عدوانية شريرة.",
         "poster_path": "/qFmwhVUoUSXjkKRmca5yGDEXBIj.jpg",
-        "vote_average": 6.45,
+        "vote_average": 6.5,
         "release_date": "2007-05-01",
         "popularity": 14.3838
     },
@@ -4522,42 +4558,6 @@
         "vote_average": 7.899,
         "release_date": "2016-12-01",
         "popularity": 14.9786
-    },
-    {
-        "id": 150689,
-        "type": "movie",
-        "title": "Cinderella",
-        "title_ar": "سندريلا",
-        "overview": "When her father unexpectedly passes away, young Ella finds herself at the mercy of her cruel stepmother and her daughters. Never one to give up hope, Ella's fortunes begin to change after meeting a dashing stranger in the woods.",
-        "overview_ar": "إيلا (سندريلا) فتاة صغيرة، تزوج والدها امرأة أخرى بعد وفاة والدتها، وعاشت معها وابنتيها في منزل العائلة، ولكن بعد وفاة والدها، وجدت نفسها تحت رحمة أشخاص قساة، حيث يثقلون عليها بأعمال المنزل بلا رحمة، وذات مرة تقابل في الغابة الأمير شارمنج وتشعر أنها قد قابلت شخصًا طيبًا من الممكن أن يغير حياتها، خاصة أنه قدم لعائلتها دعوة لإحدى الحفلات، ولكن زوجة أبيها رفضت ذهابها، إلى أن تظهر الساحرة الطيبة التي تساعدها على حضور الحفل.",
-        "poster_path": "/j91LJmcWo16CArFOoapsz84bwxb.jpg",
-        "vote_average": 6.8,
-        "release_date": "2015-03-06",
-        "popularity": 13.0997
-    },
-    {
-        "id": 102651,
-        "type": "movie",
-        "title": "Maleficent",
-        "title_ar": "ماليفسنت",
-        "overview": "A beautiful, pure-hearted young woman, Maleficent has an idyllic life growing up in a peaceable forest kingdom, until one day when an invading army threatens the harmony of the land. She rises to be the land's fiercest protector, but she ultimately suffers a ruthless betrayal – an act that begins to turn her heart into stone. Bent on revenge, Maleficent faces an epic battle with the invading King's successor and, as a result, places a curse upon his newborn infant Aurora. As the child grows, Maleficent realizes that Aurora holds the key to peace in the kingdom – and to Maleficent's true happiness as well.",
-        "overview_ar": "تتمتع ماليفسنت، وهي امرأة شابة جميلة وذات قلب نقي، بحياة مثالية نشأت في مملكة غابات مسالمة، حتى يومًا ما يهدد فيه جيش غازي وئام المملكة.",
-        "poster_path": "/bDG3yei6AJlEAK3A5wN7RwFXQ7V.jpg",
-        "vote_average": 7.087,
-        "release_date": "2014-05-28",
-        "popularity": 14.9842
-    },
-    {
-        "id": 497698,
-        "type": "movie",
-        "title": "Black Widow",
-        "title_ar": "Black Widow",
-        "overview": "Natasha Romanoff, also known as Black Widow, confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
-        "overview_ar": "Natasha Romanoff, also known as Black Widow, confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
-        "poster_path": "/7JPpIjhD2V0sKyFvhB9khUMa30d.jpg",
-        "vote_average": 7.177,
-        "release_date": "2021-07-07",
-        "popularity": 16.4319
     },
     {
         "id": 497698,
@@ -18459,9 +18459,9 @@
         "id": 9023,
         "type": "movie",
         "title": "Spirit: Stallion of the Cimarron",
-        "title_ar": "Spirit: Stallion of the Cimarron",
+        "title_ar": "سبيريت∶ قائد قبيلة السيمارون",
         "overview": "A captured mustang remains determined to return to his herd no matter what.",
-        "overview_ar": "A captured mustang remains determined to return to his herd no matter what.",
+        "overview_ar": "يظل الحصان البري الأسير مصممًا على العودة إلى قطيعه مهما حدث.",
         "poster_path": "/cUgYrz4twiJ3QgVGpRfey984NIB.jpg",
         "vote_average": 7.687,
         "release_date": "2002-05-24",
@@ -18732,18 +18732,6 @@
         "popularity": 7.8866
     },
     {
-        "id": 77877,
-        "type": "movie",
-        "title": "The Lucky One",
-        "title_ar": "The Lucky One",
-        "overview": "A Marine travels to Louisiana after serving three tours in Iraq and searches for the unknown woman he believes was his good luck charm during the war.",
-        "overview_ar": "A Marine travels to Louisiana after serving three tours in Iraq and searches for the unknown woman he believes was his good luck charm during the war.",
-        "poster_path": "/vF1ZuIkF9Z71VzVvG265xJUawb0.jpg",
-        "vote_average": 7.166,
-        "release_date": "2012-04-19",
-        "popularity": 6.4289
-    },
-    {
         "id": 715123,
         "type": "movie",
         "title": "Books of Blood",
@@ -18816,18 +18804,6 @@
         "popularity": 7.9787
     },
     {
-        "id": 88,
-        "type": "movie",
-        "title": "Dirty Dancing",
-        "title_ar": "Dirty Dancing",
-        "overview": "Expecting the usual tedium that accompanies a summer in the Catskills with her family, 17-year-old Frances 'Baby' Houseman is surprised to find herself stepping into the shoes of a professional hoofer—and unexpectedly falling in love.",
-        "overview_ar": "Expecting the usual tedium that accompanies a summer in the Catskills with her family, 17-year-old Frances 'Baby' Houseman is surprised to find herself stepping into the shoes of a professional hoofer—and unexpectedly falling in love.",
-        "poster_path": "/9Jw6jys7q9gjzVX5zm1z0gC8gY9.jpg",
-        "vote_average": 7.3,
-        "release_date": "1987-08-21",
-        "popularity": 8.1099
-    },
-    {
         "id": 1735,
         "type": "movie",
         "title": "The Mummy: Tomb of the Dragon Emperor",
@@ -18847,7 +18823,7 @@
         "overview": "Chris crashes into a carload of other young people, and the group of stranded motorists is soon lost in the woods of West Virginia, where they're hunted by three cannibalistic mountain men who are grossly disfigured by generations of inbreeding.",
         "overview_ar": "ستة أصدقاء يقومون بجولة داخل غابة بولايو فيرجينيا الغربية، لكنهم يجدوا أنفسهم محاصرون من قبل رجال مشوهين آكلي لحوم البشر، ليبدأ الأصدقاء نضالهم من أجل البقاءأ منهم من يستطيع ومنهم من يكون وجبة طازجة لهولاء المسوخ.",
         "poster_path": "/7lyxwOg7SdGff79yKCQmJ3AKWSf.jpg",
-        "vote_average": 6.38,
+        "vote_average": 6.381,
         "release_date": "2003-05-30",
         "popularity": 7.4463
     },
@@ -18919,7 +18895,7 @@
         "overview": "Five high school students from different walks of life endure a Saturday detention under a power-hungry principal. The disparate group includes rebel John, princess Claire, outcast Allison, brainy Brian and Andrew, the jock. Each has a chance to tell his or her story, making the others see them a little differently -- and when the day ends, they question whether school will ever be the same.",
         "overview_ar": "يتم معاقبة واحتجاز الطلاب الخمسة؛ (كلير وأندرو وجون وبريان وأليسون) يوم السبت في مكتبة المدرسة الثانوية. يتقابل الجميع في السابعة صباحًا، ولاختلاف شخصياتهم فإن الساعات الأولى تمر عليهم من دون أي تواصل أو حديث مشترك.\r إلا أنه بمرور الوقت يقومون بالتعرف على بعضهم البعض، ويكتشفون جوانب كثيرة عن شخصية كل واحد منهم، وتبدأ أواصر الصداقة في الربط بينهم.\r يجدون أنه على الرغم من اختلافهم الظاهري، إلا أنهم يشتركون في مشاعر ومشاكل مشتركة كثيرة.",
         "poster_path": "/gp4zlj7wgbiofLMNsTPndMuO3PN.jpg",
-        "vote_average": 7.724,
+        "vote_average": 7.725,
         "release_date": "1985-02-15",
         "popularity": 6.5281
     },
@@ -18958,6 +18934,30 @@
         "vote_average": 6.481,
         "release_date": "2025-03-07",
         "popularity": 8.1259
+    },
+    {
+        "id": 365177,
+        "type": "movie",
+        "title": "Borderlands",
+        "title_ar": "بوردرلاندز",
+        "overview": "Returning to her home planet, an infamous bounty hunter forms an unexpected alliance with a team of unlikely heroes. Together, they battle monsters and dangerous bandits to protect a young girl who holds the key to unimaginable power.",
+        "overview_ar": "تدور احداث الفيلم حين تعود (ليليث) المرأة الخارجة عن القانون ذات الماضي المجهول إلى كوكبها الأصلي (باندورا)، وتبدأ في تكوين فريق من مجموعة من الأشخاص ذوي القدرات المختلفة في سبيل البحث عن ابنة (أطلس) الرجل الأقوى في المجرة.",
+        "poster_path": "/4JGoZu1ZKFpMJTWAP35PCfkMgu8.jpg",
+        "vote_average": 5.594,
+        "release_date": "2024-08-07",
+        "popularity": 8.3275
+    },
+    {
+        "id": 1208808,
+        "type": "movie",
+        "title": "Night Shift",
+        "title_ar": "Turno nocturno",
+        "overview": "A young nurse with a domestic abuse past starts working the night shift at a small hospital, where, during the night, the ghost of a nurse materializes.",
+        "overview_ar": "A young nurse with a domestic abuse past starts working the night shift at a small hospital, where, during the night, the ghost of a nurse materializes.",
+        "poster_path": "/jnX2JQIbYwCLhHenhQFBFw6fozR.jpg",
+        "vote_average": 6.381,
+        "release_date": "2024-12-05",
+        "popularity": 7.2587
     },
     {
         "id": 941,
@@ -20880,18 +20880,6 @@
         "popularity": 6.4245
     },
     {
-        "id": 8584,
-        "type": "movie",
-        "title": "Shanghai Noon",
-        "title_ar": "Shanghai Noon",
-        "overview": "Chon Wang, a clumsy imperial guard, trails Princess Pei Pei when she's kidnapped from the Forbidden City and transported to America. Wang follows her captors to Nevada, where he teams up with an unlikely partner, outcast outlaw Roy O'Bannon, and tries to spring the princess from her imprisonment.",
-        "overview_ar": "Chon Wang, a clumsy imperial guard, trails Princess Pei Pei when she's kidnapped from the Forbidden City and transported to America. Wang follows her captors to Nevada, where he teams up with an unlikely partner, outcast outlaw Roy O'Bannon, and tries to spring the princess from her imprisonment.",
-        "poster_path": "/b0WwWRcDiDahkah5vZ0KjB4N9ZZ.jpg",
-        "vote_average": 6.415,
-        "release_date": "2000-05-26",
-        "popularity": 6.4245
-    },
-    {
         "id": 501170,
         "type": "movie",
         "title": "Doctor Sleep",
@@ -21055,7 +21043,7 @@
         "overview": "For the past 60 years, a space-traveling smart-ass named Paul has been locked up in a top-secret military base, advising world leaders about his kind. But when he worries he’s outlived his usefulness and the dissection table is drawing uncomfortably close, Paul escapes on the first RV that passes by his compound in Area 51. Fortunately, it contains the two earthlings who are most likely to rescue and harbor an alien on the run.",
         "overview_ar": "يتقاطع درب شخصين غريبي الأطوار في رحلة لاكتشاف ما تُخفيه \"المنطقة 51\" سيئة السمعة الواقعة في قلب ولاية \"نيفادا\" مع درب فضائي هارب.",
         "poster_path": "/mZxGhp9ZNkQDFy2f4RnQj5z8QYG.jpg",
-        "vote_average": 6.734,
+        "vote_average": 6.7,
         "release_date": "2011-02-14",
         "popularity": 7.3545
     },
@@ -21118,6 +21106,18 @@
         "vote_average": 5.879,
         "release_date": "2014-10-10",
         "popularity": 6.5493
+    },
+    {
+        "id": 846422,
+        "type": "movie",
+        "title": "The Old Guard 2",
+        "title_ar": "الحرّاس الخالدون 2",
+        "overview": "Andy and her team of immortal warriors fight with renewed purpose as they face a powerful new foe threatening their mission to protect humanity.",
+        "overview_ar": "تقاتل \"آندي\" وفريقها من المحاربين الخالدين بحماسة متجددة أثناء مواجهتهم عدوًا قويًا يهدد مهمتهم في حماية الإنسانية.",
+        "poster_path": "/wqfu3bPLJaEWJVk3QOm0rKhxf1A.jpg",
+        "vote_average": 5.925,
+        "release_date": "2025-07-01",
+        "popularity": 8.254
     },
     {
         "id": 708,
@@ -23760,6 +23760,18 @@
         "popularity": 7.3186
     },
     {
+        "id": 501929,
+        "type": "movie",
+        "title": "The Mitchells vs. the Machines",
+        "title_ar": "The Mitchells vs. the Machines",
+        "overview": "A quirky, dysfunctional family's road trip is upended when they find themselves in the middle of the robot apocalypse and suddenly become humanity's unlikeliest last hope.",
+        "overview_ar": "A quirky, dysfunctional family's road trip is upended when they find themselves in the middle of the robot apocalypse and suddenly become humanity's unlikeliest last hope.",
+        "poster_path": "/mI2Di7HmskQQ34kz0iau6J1vr70.jpg",
+        "vote_average": 7.856,
+        "release_date": "2021-04-22",
+        "popularity": 7.3186
+    },
+    {
         "id": 39043,
         "type": "movie",
         "title": "Countess Dracula",
@@ -23986,17 +23998,5 @@
         "vote_average": 5.636,
         "release_date": "2009-10-29",
         "popularity": 6.7722
-    },
-    {
-        "id": 50723,
-        "type": "movie",
-        "title": "Naruto Shippuden the Movie: The Lost Tower",
-        "title_ar": "ناروتو شيبودن  الفيلم: البرج المفقود",
-        "overview": "Assigned on a mission to capture Mukade, a missing-nin, Naruto Uzumaki sets out for the once glorious historic ruins of \"Ouran\", where he pursues and corners the rouge ninja. Mukade's goal is revealed to be a dormant leyline within the ruins; he unleashes the power of the leyline, causing a light to envelop Naruto, sending him into the past, 20 years before the series began. When Naruto awakens, he comes into contact with the Fourth Hokage, Minato Namikaze.",
-        "overview_ar": "تم تعيين Naruto Uzumaki في مهمة للقبض على Mukade ، وهو نين مفقود ، ويبحث عن الآثار التاريخية المجيدة لـ \"Ouran\" ، حيث يلاحق النينجا الشفتين ويحركها.  تم الكشف عن هدف موكادي على أنه خط نائم داخل الأنقاض ؛  يطلق العنان لقوة leyline ، مسبباً ضوءاً يغلف ناروتو ، ويرسله إلى الماضي ، قبل 20 سنة من بدء المسلسل.  عندما يستيقظ ناروتو ، يتعامل مع الهوكاجي الرابع ، ميناتو ناميكازي.",
-        "poster_path": "/6e2YvN1tQK4xQHlmy7GJTuXOt2u.jpg",
-        "vote_average": 7.2,
-        "release_date": "2010-07-31",
-        "popularity": 6.8154
     }
 ]
