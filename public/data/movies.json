@@ -240,16 +240,16 @@
         "popularity": 86.467
     },
     {
-        "id": 1316092,
+        "id": 1043197,
         "type": "movie",
-        "title": "“Wuthering Heights”",
-        "title_ar": "“Wuthering Heights”",
-        "overview": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
-        "overview_ar": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
-        "poster_path": "/ywRO5dyE8RyyXJd6cvd69jLZeic.jpg",
-        "vote_average": 7.441,
-        "release_date": "2026-02-11",
-        "popularity": 84.9541
+        "title": "Dust Bunny",
+        "title_ar": "أرنب الغبار",
+        "overview": "Ten-year-old Aurora asks her hitman neighbor to kill the monster under her bed that she claims ate her family. To protect her, he must battle an onslaught of assassins while accepting that some monsters are real.",
+        "overview_ar": "تدور الأحداث في إطار من التشويق حول فتاة تبلغ من العمر ثمان سنوات تعتقد أن هناك وحش تحت سريرها تسبب في موت عائلتها، لذا تطلب المساعدة من جارتهم الماكرة.",
+        "poster_path": "/vobigFZFvbYPf6ElYJu07P9rH8C.jpg",
+        "vote_average": 6.673,
+        "release_date": "2025-12-11",
+        "popularity": 84.3189
     },
     {
         "id": 1373198,
@@ -261,7 +261,7 @@
         "poster_path": "/rF6txsM6cgF9vg6Ra5sNbkvUwrw.jpg",
         "vote_average": 4.5,
         "release_date": "2026-02-06",
-        "popularity": 81.251
+        "popularity": 73.572
     },
     {
         "id": 1311031,
@@ -271,9 +271,9 @@
         "overview": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
         "overview_ar": "بينما كان أعضاء فيلق قاتلي الشياطين و\"الهشيرا\" يخضعون لبرنامج تدريب جماعي يُعرف بتدريب الهشيرا استعدادًا للمعركة الحاسمة ضد الشياطين، يظهر موزان كيبوتسوجي في قصر عائلة أوبوياشيكي. ومع تعرّض قائد الفيلق للخطر، يندفع تانجيرو والهشيرا إلى المقر الرئيسي، لكنهم يجدون أنفسهم يسقطون في أعماق مكان غامض بفعل يدي موزان. الوجهة التي سقط فيها تانجيرو ورفاقه ليست سوى معقل الشياطين – قلعة اللانهاية. وهكذا، تبدأ ساحة المعركة النهائية بين فيلق قاتلي الشياطين وقوى الشر في الاشتعال.",
         "poster_path": "/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
-        "vote_average": 7.69,
+        "vote_average": 7.686,
         "release_date": "2025-07-18",
-        "popularity": 77.0764
+        "popularity": 77.4485
     },
     {
         "id": 1198984,
@@ -283,9 +283,9 @@
         "overview": "After a catastrophic military disaster, the dead don't just rise—they hunt. The military insists they are harmless and slow-moving, offering hope to grieving families. But when Ava enters a quarantine zone searching for her missing husband, she uncovers the horrifying truth: the undead are growing more violent, more relentless, and more dangerous with every passing hour.",
         "overview_ar": "After a catastrophic military disaster, the dead don't just rise—they hunt. The military insists they are harmless and slow-moving, offering hope to grieving families. But when Ava enters a quarantine zone searching for her missing husband, she uncovers the horrifying truth: the undead are growing more violent, more relentless, and more dangerous with every passing hour.",
         "poster_path": "/xZqo0yPARmyF8TACVNyaOACkYWG.jpg",
-        "vote_average": 6.14,
+        "vote_average": 6.132,
         "release_date": "2026-01-01",
-        "popularity": 74.1438
+        "popularity": 70.5912
     },
     {
         "id": 1290821,
@@ -295,9 +295,9 @@
         "overview": "A man living in self-imposed exile on a remote island rescues a young girl from a violent storm, setting off a chain of events that forces him out of seclusion to protect her from enemies tied to his past.",
         "overview_ar": "A man living in self-imposed exile on a remote island rescues a young girl from a violent storm, setting off a chain of events that forces him out of seclusion to protect her from enemies tied to his past.",
         "poster_path": "/903mfuYcAEC20o52mxOMAkCCS3M.jpg",
-        "vote_average": 7.6,
+        "vote_average": 7.659,
         "release_date": "2026-01-28",
-        "popularity": 73.1695
+        "popularity": 68.6745
     },
     {
         "id": 1528660,
@@ -309,7 +309,19 @@
         "poster_path": "/z1lwn6GWAjJ7CSn80ZcURb0Cj4G.jpg",
         "vote_average": 6.286,
         "release_date": "2025-08-11",
-        "popularity": 71.7109
+        "popularity": 71.0045
+    },
+    {
+        "id": 1297842,
+        "type": "movie",
+        "title": "GOAT",
+        "title_ar": "GOAT",
+        "overview": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'!",
+        "overview_ar": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'!",
+        "poster_path": "/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
+        "vote_average": 6.5,
+        "release_date": "2026-02-11",
+        "popularity": 71.0079
     },
     {
         "id": 1198994,
@@ -319,9 +331,9 @@
         "overview": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
         "overview_ar": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
         "poster_path": "/mlV70IuchLZXcXKowjwSpSfdfUB.jpg",
-        "vote_average": 7.025,
+        "vote_average": 7.0,
         "release_date": "2026-01-22",
-        "popularity": 69.123
+        "popularity": 68.1416
     },
     {
         "id": 1242501,
@@ -333,7 +345,7 @@
         "poster_path": "/5Byv6nznAb2Izd0gHpODOXnuSbo.jpg",
         "vote_average": 6.418,
         "release_date": "2025-10-16",
-        "popularity": 66.7087
+        "popularity": 67.2605
     },
     {
         "id": 991494,
@@ -343,9 +355,9 @@
         "overview": "Desperate to be a big guy, SpongeBob sets out to prove his bravery to Mr. Krabs by following The Flying Dutchman – a mysterious swashbuckling ghost pirate – on a seafaring adventure that takes him to the deepest depths of the deep sea, where no Sponge has gone before.",
         "overview_ar": "تتبع القصة سبونجبوب ، وهو يسافر إلى أعماق المحيط ويواجه شبح الهولندي الطائر.",
         "poster_path": "/pDWYW9v8fmJdA7N0I1MOdQA3ETq.jpg",
-        "vote_average": 6.7,
+        "vote_average": 6.719,
         "release_date": "2025-12-16",
-        "popularity": 65.5817
+        "popularity": 63.0515
     },
     {
         "id": 1194388,
@@ -357,7 +369,7 @@
         "poster_path": "/3MAPtbKtRdndw2HhnoR7fxBhSFN.jpg",
         "vote_average": 0.0,
         "release_date": "2024-10-18",
-        "popularity": 62.3728
+        "popularity": 60.982
     },
     {
         "id": 425274,
@@ -367,9 +379,9 @@
         "overview": "The original Four Horsemen reunite with a new generation of illusionists to take on powerful diamond heiress Veronika Vanderberg, who leads a criminal empire built on money laundering and trafficking. The new and old magicians must overcome their differences to work together on their most ambitious heist yet.",
         "overview_ar": "يعود الفرسان الأربعة من جديد مع جيل جديد من السحرة الذين يؤدون عروضاً مذهلة ومفاجآت وسحراً لا مثيل له على الإطلاق.",
         "poster_path": "/oD3Eey4e4Z259XLm3eD3WGcoJAh.jpg",
-        "vote_average": 6.547,
+        "vote_average": 6.548,
         "release_date": "2025-11-12",
-        "popularity": 59.429
+        "popularity": 60.9433
     },
     {
         "id": 24428,
@@ -379,9 +391,9 @@
         "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
         "overview_ar": "عندما يبرز عدو غير متوقع ويهدد سلامة وأمن العالم، نيك فوري، مدير وكالة حفظ السلام الدولية المعروفة باسم .S.H.I.E.L.D ، يجد نفسه في حاجة إلى فريق يسحب العالم من حافة الكارثة. من مختلف أنحاء العالم، يبدأ جهد التوظيف!",
         "poster_path": "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
-        "vote_average": 7.939,
+        "vote_average": 7.94,
         "release_date": "2012-04-25",
-        "popularity": 57.726
+        "popularity": 59.2807
     },
     {
         "id": 1212742,
@@ -393,19 +405,7 @@
         "poster_path": "/5vqK1wbrgmUvqHn6yPt9b6qT9iL.jpg",
         "vote_average": 6.0,
         "release_date": "2025-03-07",
-        "popularity": 53.6597
-    },
-    {
-        "id": 1297842,
-        "type": "movie",
-        "title": "GOAT",
-        "title_ar": "GOAT",
-        "overview": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'!",
-        "overview_ar": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'!",
-        "poster_path": "/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
-        "vote_average": 7.15,
-        "release_date": "2026-02-11",
-        "popularity": 53.2101
+        "popularity": 45.8113
     },
     {
         "id": 1252037,
@@ -417,7 +417,7 @@
         "poster_path": "/65Jr1JAgWlu9em8zHhAfrNJJQBt.jpg",
         "vote_average": 7.066,
         "release_date": "2025-09-18",
-        "popularity": 50.7049
+        "popularity": 50.1786
     },
     {
         "id": 1171145,
@@ -427,9 +427,9 @@
         "overview": "An elusive thief, eyeing his final score, encounters a disillusioned insurance broker at her own crossroads. As their paths intertwine, a relentless detective trails them hoping to thwart the multi-million dollar heist they are planning.",
         "overview_ar": "An elusive thief, eyeing his final score, encounters a disillusioned insurance broker at her own crossroads. As their paths intertwine, a relentless detective trails them hoping to thwart the multi-million dollar heist they are planning.",
         "poster_path": "/2HoR2x23bqKpopluoBD1FH3tBi7.jpg",
-        "vote_average": 8.8,
+        "vote_average": 8.294,
         "release_date": "2026-02-11",
-        "popularity": 50.3315
+        "popularity": 72.351
     },
     {
         "id": 1408208,
@@ -439,9 +439,9 @@
         "overview": "A man trapped in an endless sterile subway passageway sets out to find Exit 8. The rules of his quest are simple: do not overlook anything out of the ordinary. If you discover an anomaly, turn back immediately. If you don’t, carry on. Then leave from Exit 8. But even a single oversight will send him back to the beginning. Will he ever reach his goal and escape this infinite corridor?",
         "overview_ar": "A man trapped in an endless sterile subway passageway sets out to find Exit 8. The rules of his quest are simple: do not overlook anything out of the ordinary. If you discover an anomaly, turn back immediately. If you don’t, carry on. Then leave from Exit 8. But even a single oversight will send him back to the beginning. Will he ever reach his goal and escape this infinite corridor?",
         "poster_path": "/cWHmaDXnRPAC9HBbjUBfJW7MxO0.jpg",
-        "vote_average": 6.3,
+        "vote_average": 6.329,
         "release_date": "2025-08-28",
-        "popularity": 49.1235
+        "popularity": 48.5431
     },
     {
         "id": 7451,
@@ -451,9 +451,9 @@
         "overview": "Xander Cage is your standard adrenaline junkie with no fear and a lousy attitude. When the US Government \"recruits\" him to go on a mission, he's not exactly thrilled. His mission: to gather information on an organization that may just be planning the destruction of the world, led by the nihilistic Yorgi.",
         "overview_ar": "بعد أن فشلت عملية أخرى للقضاء على تلك المجموعة المسماة أناركي 99 والتي تضم مجموعة من الجنود الروس السابقين، يقوم عميل الأمن الوطني أوجستس جيبونز (صامويل ل. جاكسون) بالبحث عن عميلٍ غير تقليدي لينفذ أهدافه. يجد جيبونز ضالته في زاندركيج (فان ديزل) وهو رياضي سابق معروف بسلوكه المتهور واستهتاره بالقانون، ويكلفه جيبونز بمهمة شديدة الخطورة تتعلق بتلك المنظمة التي تهدف لتدمير العالم. تتصاعد الأحداث وتتعقد الأمور وسط أجواءٍ من الإثارة والخطورة المميتة.",
         "poster_path": "/xeEw3eLeSFmJgXZzmF2Efww0q3s.jpg",
-        "vote_average": 5.979,
+        "vote_average": 5.978,
         "release_date": "2002-08-09",
-        "popularity": 48.1022
+        "popularity": 45.3176
     },
     {
         "id": 1454741,
@@ -465,7 +465,7 @@
         "poster_path": "/7tmMQwSVVbijKV4lquYpBld3P9K.jpg",
         "vote_average": 5.524,
         "release_date": "2026-01-08",
-        "popularity": 48.0597
+        "popularity": 43.3121
     },
     {
         "id": 1246049,
@@ -477,7 +477,7 @@
         "poster_path": "/ykyRfv7JDofLxXLAwtLXaSuaFfM.jpg",
         "vote_average": 7.154,
         "release_date": "2025-07-30",
-        "popularity": 47.8139
+        "popularity": 46.153
     },
     {
         "id": 157336,
@@ -489,7 +489,7 @@
         "poster_path": "/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
         "vote_average": 8.467,
         "release_date": "2014-11-05",
-        "popularity": 46.5417
+        "popularity": 44.5641
     },
     {
         "id": 680493,
@@ -499,9 +499,9 @@
         "overview": "When James receives a mysterious letter from his lost love Mary, he is drawn to Silent Hill—a once-familiar town now consumed by darkness. As he searches for her, James faces monstrous creatures and unravels a terrifying truth that will push him to the edge of his sanity.",
         "overview_ar": "When James receives a mysterious letter from his lost love Mary, he is drawn to Silent Hill—a once-familiar town now consumed by darkness. As he searches for her, James faces monstrous creatures and unravels a terrifying truth that will push him to the edge of his sanity.",
         "poster_path": "/fqAGFN2K2kDL0EHxvJaXzaMUkkt.jpg",
-        "vote_average": 5.2,
+        "vote_average": 5.138,
         "release_date": "2026-01-21",
-        "popularity": 45.091
+        "popularity": 46.7126
     },
     {
         "id": 1466115,
@@ -511,9 +511,9 @@
         "overview": "A high school girl wakes up each day with no memory of yesterday. When she agrees to date a shy classmate, can their love grow with every new beginning?",
         "overview_ar": "تستيقظ فتاة في المدرسة الثانوية كل يوم من دون أن تتذكر ما جرى في الأمس، لكن حين توافق على مواعدة زميلها الخجول، هل يمكن أن يكبر حبهما مع كل بداية جديدة؟",
         "poster_path": "/5eNN8KLDPUXDqIkTdCbmn1gx5P7.jpg",
-        "vote_average": 8.06,
+        "vote_average": 8.105,
         "release_date": "2025-12-24",
-        "popularity": 44.9311
+        "popularity": 37.1022
     },
     {
         "id": 803796,
@@ -523,9 +523,9 @@
         "overview": "When K-pop superstars Rumi, Mira and Zoey aren't selling out stadiums, they're using their secret powers to protect their fans from supernatural threats.",
         "overview_ar": "حينما يهدأ هدير الجماهير في الملاعب، يوظّف نجوم البوب الكوري، \"رومي\" و\"ميرا\" و\"زوي\"، قواهم الخارقة السرية لحماية معجبيهم من مخاطر دائمة خارقة للطبيعة.",
         "poster_path": "/zT7Lhw3BhJbMkRqm9Zlx2YGMsY0.jpg",
-        "vote_average": 8.1,
+        "vote_average": 8.099,
         "release_date": "2025-06-20",
-        "popularity": 44.7938
+        "popularity": 43.4035
     },
     {
         "id": 628847,
@@ -537,7 +537,7 @@
         "poster_path": "/6tpAPeuuqbVnYWWPoOLEDLSBU7a.jpg",
         "vote_average": 6.593,
         "release_date": "2025-11-14",
-        "popularity": 44.7674
+        "popularity": 42.8738
     },
     {
         "id": 1054867,
@@ -547,9 +547,9 @@
         "overview": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
         "overview_ar": "يعيش الثائر السابق \"بوب\" في حالة من الهواجس والبارانويا تحت تأثير المخدرات، معتمدًا على حياة معزولة بعيدًا عن الشبكة برفقة ابنته \"ويلا\" المفعمة بالحيوية والاعتماد على الذات. لكن حين يظهر عدوه اللدود من جديد بعد ستة عشر عامًا وتختفي ابنته، يضطر ذلك الثائر المعتزل إلى الانطلاق في رحلة بحث عنها، ليواجه كلاهما عواقب ماضيه.",
         "poster_path": "/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
-        "vote_average": 7.421,
+        "vote_average": 7.422,
         "release_date": "2025-09-23",
-        "popularity": 43.0925
+        "popularity": 41.8808
     },
     {
         "id": 575265,
@@ -561,7 +561,7 @@
         "poster_path": "/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg",
         "vote_average": 7.189,
         "release_date": "2025-05-17",
-        "popularity": 42.9983
+        "popularity": 43.5025
     },
     {
         "id": 1266990,
@@ -573,7 +573,7 @@
         "poster_path": "/AnzrE2WHg3DtZrtmB9AnEbAh17m.jpg",
         "vote_average": 6.75,
         "release_date": "2024-05-24",
-        "popularity": 42.6828
+        "popularity": 44.7353
     },
     {
         "id": 1254754,
@@ -583,9 +583,9 @@
         "overview": "David is a dopey hopeless romantic with a hippy mother and a best friend who also works for him. After fifteen years of living together, on an impulse, he decides to ask his partner to marry him in Las Vegas. His anticipation for the dream wedding and trip is crushed when his partner answers ‘No’. David decides to power through with his plans and now he has ten days to find the knight in shining armor that will marry him in Las Vegas.",
         "overview_ar": "David is a dopey hopeless romantic with a hippy mother and a best friend who also works for him. After fifteen years of living together, on an impulse, he decides to ask his partner to marry him in Las Vegas. His anticipation for the dream wedding and trip is crushed when his partner answers ‘No’. David decides to power through with his plans and now he has ten days to find the knight in shining armor that will marry him in Las Vegas.",
         "poster_path": "/8kyqyI6mQmIVdLPRvIaFskVIcQW.jpg",
-        "vote_average": 5.5,
+        "vote_average": 6.4,
         "release_date": "2025-06-26",
-        "popularity": 42.069
+        "popularity": 44.0168
     },
     {
         "id": 1326878,
@@ -597,7 +597,7 @@
         "poster_path": "/v6hYeC1asK2ZRU7Ygukn4tV1zlS.jpg",
         "vote_average": 5.783,
         "release_date": "2024-08-16",
-        "popularity": 41.4634
+        "popularity": 40.6986
     },
     {
         "id": 19995,
@@ -609,7 +609,7 @@
         "poster_path": "/gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg",
         "vote_average": 7.599,
         "release_date": "2009-12-16",
-        "popularity": 41.2489
+        "popularity": 64.6544
     },
     {
         "id": 1590097,
@@ -621,7 +621,7 @@
         "poster_path": "/7bzMCW1E1sOWEbjVuQ8iRGrdpcw.jpg",
         "vote_average": 5.292,
         "release_date": "2025-11-27",
-        "popularity": 40.7541
+        "popularity": 31.6374
     },
     {
         "id": 1548113,
@@ -631,9 +631,9 @@
         "overview": "Music, comedy, and a whole lot of chaos is bound to ensue when The Muppets once again take the stage of the original Muppet Theatre with their very special guest, Sabrina Carpenter!",
         "overview_ar": "يعود \"عرض المابيتس\" إلى مسرحه الأصلي مع ضيفة خاصة \"سابرينا كاربنتر\"!",
         "poster_path": "/tcwar1rL0neoLvnklL7DzYw7sN8.jpg",
-        "vote_average": 7.017,
+        "vote_average": 7.068,
         "release_date": "2026-02-03",
-        "popularity": 40.2737
+        "popularity": 31.8253
     },
     {
         "id": 238,
@@ -645,7 +645,7 @@
         "poster_path": "/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
         "vote_average": 8.687,
         "release_date": "1972-03-14",
-        "popularity": 39.4251
+        "popularity": 36.8427
     },
     {
         "id": 1364904,
@@ -657,7 +657,7 @@
         "poster_path": "/2PteNeb8LYFtZP7eowANUXs9feC.jpg",
         "vote_average": 6.9,
         "release_date": "2025-08-27",
-        "popularity": 38.7006
+        "popularity": 40.0227
     },
     {
         "id": 1061474,
@@ -667,9 +667,9 @@
         "overview": "Superman, a journalist in Metropolis, embarks on a journey to reconcile his Kryptonian heritage with his human upbringing as Clark Kent.",
         "overview_ar": "سوبرمان، مراسل مبتدئ في مدينة ميتروبوليس، ينطلق في رحلة للتوفيق بين إرثه الكريبتوني وتربيته البشرية ككلارك كينت.",
         "poster_path": "/wPLysNDLffQLOVebZQCbXJEv6E6.jpg",
-        "vote_average": 7.369,
+        "vote_average": 7.368,
         "release_date": "2025-07-09",
-        "popularity": 38.6782
+        "popularity": 36.9194
     },
     {
         "id": 269149,
@@ -679,9 +679,9 @@
         "overview": "Determined to prove herself, Officer Judy Hopps, the first bunny on Zootopia's police force, jumps at the chance to crack her first case - even if it means partnering with scam-artist fox Nick Wilde to solve the mystery.",
         "overview_ar": "لقد تغير عالم الحيوان: لم يعد منقسما إلى قسمين بين الفرائس الوديعة والحيوانات المفترسة الشرسة، بل أصبح يتعايش بينهما بانسجام. جودي هي أرنبة صغيرة ذات طموحات كبيرة وتحلم بأن تصبح ضابطة شرطة، حيث تم تعليمها أن كل شيء ممكن في هذا العالم الجديد. نيك هو ثعلب يعيش بذكائه في العاصمة زوتروبوليس، حيث تعمل جودي، بعد تدريب شاق في الأكاديمية، كحارسة مرور. وسيكون على عاتقهم، وهم متحدون بشكل غير متوقع، حل لغز الحيوانات الأربعة عشر المفقودة التي تبحث عنها المدينة بأكملها وإحباط خطط أولئك الذين يريدون الاستيلاء على السلطة المحلية، وفقًا لمبدأ فرق تسد القديم.",
         "poster_path": "/hlK0e0wAQ3VLuJcsfIYPvb4JVud.jpg",
-        "vote_average": 7.8,
+        "vote_average": 7.759,
         "release_date": "2016-02-11",
-        "popularity": 38.5754
+        "popularity": 36.5871
     },
     {
         "id": 1370814,
@@ -691,9 +691,9 @@
         "overview": "A socially awkward tween endures the ruthless hierarchy at a water polo camp, his anxiety spiraling into psychological turmoil over the summer.",
         "overview_ar": "A socially awkward tween endures the ruthless hierarchy at a water polo camp, his anxiety spiraling into psychological turmoil over the summer.",
         "poster_path": "/b0RWuqzgvyfiIYU4QfgJHhmxZF4.jpg",
-        "vote_average": 6.974,
+        "vote_average": 6.9,
         "release_date": "2025-12-24",
-        "popularity": 38.4422
+        "popularity": 30.4902
     },
     {
         "id": 1511417,
@@ -705,7 +705,7 @@
         "poster_path": "/z9YIo2qscyaXYgRqIdRJtND3bw8.jpg",
         "vote_average": 6.0,
         "release_date": "2025-10-29",
-        "popularity": 37.8935
+        "popularity": 38.4578
     },
     {
         "id": 1062722,
@@ -717,7 +717,7 @@
         "poster_path": "/g4JtvGlQO7DByTI6frUobqvSL3R.jpg",
         "vote_average": 7.677,
         "release_date": "2025-10-17",
-        "popularity": 37.1235
+        "popularity": 39.4427
     },
     {
         "id": 1116201,
@@ -727,9 +727,9 @@
         "overview": "The stars are gone. The planets have disappeared. Only individuals aboard space stations or starships were left to give the end a name -- The Quiet Rapture. After decades of decay and crumbling infrastructure, the Consolidation of Iron has made a discovery on a barren moon designated AT-5. An ocean of blood. Hoping to discover desperately needed resources they immediately launch an expedition. A submarine is crafted and a convict is welded inside. Due to the pressure and depth of the ocean the forward viewport has been encased in metal. If successful, they will earn their freedom. If not, another will follow. This will be the 13th expedition.",
         "overview_ar": "The stars are gone. The planets have disappeared. Only individuals aboard space stations or starships were left to give the end a name -- The Quiet Rapture. After decades of decay and crumbling infrastructure, the Consolidation of Iron has made a discovery on a barren moon designated AT-5. An ocean of blood. Hoping to discover desperately needed resources they immediately launch an expedition. A submarine is crafted and a convict is welded inside. Due to the pressure and depth of the ocean the forward viewport has been encased in metal. If successful, they will earn their freedom. If not, another will follow. This will be the 13th expedition.",
         "poster_path": "/sIwakdbMGS1krtgendTWpxTY9Hw.jpg",
-        "vote_average": 7.4,
+        "vote_average": 7.411,
         "release_date": "2026-01-30",
-        "popularity": 36.8479
+        "popularity": 36.0618
     },
     {
         "id": 1233413,
@@ -739,9 +739,9 @@
         "overview": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
         "overview_ar": "بعد سنوات من الهروب، يعود شقيقان توأمان إلى بلدتهما الهادئة على أمل فتح صفحة جديدة. لكن ماضيهما لم ينسَهما، وشرّ أعظم ينتظرهما هناك… شرّ لا يمكن الهروب منه هذه المرة.",
         "poster_path": "/qTvFWCGeGXgBRaINLY1zqgTPSpn.jpg",
-        "vote_average": 7.5,
+        "vote_average": 7.491,
         "release_date": "2025-04-16",
-        "popularity": 36.6662
+        "popularity": 33.9591
     },
     {
         "id": 299536,
@@ -753,7 +753,7 @@
         "poster_path": "/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
         "vote_average": 8.235,
         "release_date": "2018-04-25",
-        "popularity": 36.4601
+        "popularity": 35.4315
     },
     {
         "id": 1196067,
@@ -765,7 +765,7 @@
         "poster_path": "/7K8w6mdrJp0oaSoKWGyjSZ4Zv2z.jpg",
         "vote_average": 6.139,
         "release_date": "2025-10-30",
-        "popularity": 36.0929
+        "popularity": 34.4741
     },
     {
         "id": 1618945,
@@ -777,7 +777,7 @@
         "poster_path": "/9wBzRaeWfELNOPmcvOVTmB3kDEl.jpg",
         "vote_average": 6.208,
         "release_date": "2026-02-06",
-        "popularity": 35.9333
+        "popularity": 31.0288
     },
     {
         "id": 76600,
@@ -789,7 +789,7 @@
         "poster_path": "/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
         "vote_average": 7.599,
         "release_date": "2022-12-14",
-        "popularity": 35.8934
+        "popularity": 33.9041
     },
     {
         "id": 1159559,
@@ -801,7 +801,7 @@
         "poster_path": "/jjyuk0edLiW8vOSnlfwWCCLpbh5.jpg",
         "vote_average": 0.0,
         "release_date": "2026-02-25",
-        "popularity": 35.6372
+        "popularity": 33.9454
     },
     {
         "id": 1010581,
@@ -813,7 +813,7 @@
         "poster_path": "/w46Vw536HwNnEzOa7J24YH9DPRS.jpg",
         "vote_average": 7.761,
         "release_date": "2023-06-08",
-        "popularity": 35.2269
+        "popularity": 34.1416
     },
     {
         "id": 1412598,
@@ -825,7 +825,7 @@
         "poster_path": "/xC6zdIoIHjhOIFmjNyGgtzhuhiF.jpg",
         "vote_average": 5.88,
         "release_date": "2026-01-16",
-        "popularity": 35.0206
+        "popularity": 35.0031
     },
     {
         "id": 982843,
@@ -837,7 +837,7 @@
         "poster_path": "/1tUOZQDgZaGqZtrB21MieiXARL2.jpg",
         "vote_average": 6.0,
         "release_date": "2025-09-18",
-        "popularity": 34.9967
+        "popularity": 34.7509
     },
     {
         "id": 1272837,
@@ -849,7 +849,7 @@
         "poster_path": "/kK1BGkG3KAvWB0WMV1DfOx9yTMZ.jpg",
         "vote_average": 7.3,
         "release_date": "2026-01-14",
-        "popularity": 34.807
+        "popularity": 33.6228
     },
     {
         "id": 1228246,
@@ -861,7 +861,7 @@
         "poster_path": "/udAxQEORq2I5wxI97N2TEqdhzBE.jpg",
         "vote_average": 6.701,
         "release_date": "2025-12-03",
-        "popularity": 34.3845
+        "popularity": 33.8096
     },
     {
         "id": 666433,
@@ -873,7 +873,7 @@
         "poster_path": "/dqUQ0xyMaJn5g7RYqCMykbXXW4C.jpg",
         "vote_average": 3.8,
         "release_date": "2023-10-20",
-        "popularity": 34.0008
+        "popularity": 37.7136
     },
     {
         "id": 1291608,
@@ -885,7 +885,7 @@
         "poster_path": "/8FHOtUpNIk5ZPEay2N2EY5lrxkv.jpg",
         "vote_average": 6.9,
         "release_date": "2025-12-05",
-        "popularity": 33.7786
+        "popularity": 31.0726
     },
     {
         "id": 1131759,
@@ -897,7 +897,7 @@
         "poster_path": "/3R3dXO2nm8JyR5NG7SEfii7RzlV.jpg",
         "vote_average": 6.534,
         "release_date": "2025-07-23",
-        "popularity": 33.7036
+        "popularity": 33.7939
     },
     {
         "id": 1234821,
@@ -909,7 +909,7 @@
         "poster_path": "/1RICxzeoNCAO5NpcRMIgg1XT6fm.jpg",
         "vote_average": 6.311,
         "release_date": "2025-07-01",
-        "popularity": 33.68
+        "popularity": 32.9125
     },
     {
         "id": 27205,
@@ -921,7 +921,7 @@
         "poster_path": "/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg",
         "vote_average": 8.37,
         "release_date": "2010-07-15",
-        "popularity": 32.9158
+        "popularity": 31.473
     },
     {
         "id": 278,
@@ -933,7 +933,7 @@
         "poster_path": "/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
         "vote_average": 8.7,
         "release_date": "1994-09-23",
-        "popularity": 32.8874
+        "popularity": 26.096
     },
     {
         "id": 1218925,
@@ -943,9 +943,9 @@
         "overview": "In a brutal war between devils, hunters, and secret enemies, a mysterious girl named Reze has stepped into Denji's world, and he faces his deadliest battle yet, fueled by love in a world where survival knows no rules.",
         "overview_ar": "في حرب وحشية بين الشياطين والصيادين والأعداء السريين، دخلت فتاة غامضة تدعى ريزي عالم دينجي، الذي يواجه أخطر معركة له حتى الآن، مدفوعًا بالحب في عالم لا تعرف فيه البقاء على قيد الحياة أي قواعد.",
         "poster_path": "/pHyxb2RV5wLlboAwm9ZJ9qTVEDw.jpg",
-        "vote_average": 8.342,
+        "vote_average": 8.346,
         "release_date": "2025-09-19",
-        "popularity": 32.4698
+        "popularity": 32.7054
     },
     {
         "id": 634649,
@@ -957,7 +957,7 @@
         "poster_path": "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
         "vote_average": 7.933,
         "release_date": "2021-12-15",
-        "popularity": 32.4046
+        "popularity": 31.2664
     },
     {
         "id": 1397364,
@@ -4089,7 +4089,7 @@
         "poster_path": "/hXWBc0ioZP3cN4zCu6SN3YHXZVO.jpg",
         "vote_average": 7.337,
         "release_date": "2017-02-08",
-        "popularity": 15.8111
+        "popularity": 16.9647
     },
     {
         "id": 1930,
@@ -4101,7 +4101,7 @@
         "poster_path": "/jexoNYnPd6vVrmygwF6QZmWPFdu.jpg",
         "vote_average": 6.726,
         "release_date": "2012-06-23",
-        "popularity": 15.8064
+        "popularity": 14.761
     },
     {
         "id": 1084199,
@@ -4113,7 +4113,7 @@
         "poster_path": "/oCoTgC3UyWGfyQ9thE10ulWR7bn.jpg",
         "vote_average": 7.0,
         "release_date": "2025-01-22",
-        "popularity": 15.8012
+        "popularity": 16.694
     },
     {
         "id": 12,
@@ -4123,9 +4123,9 @@
         "overview": "Nemo, an adventurous young clownfish, is unexpectedly taken from his Great Barrier Reef home to a dentist's office aquarium. It's up to his worrisome father Marlin and a friendly but forgetful fish Dory to bring Nemo home -- meeting vegetarian sharks, surfer dude turtles, hypnotic jellyfish, hungry seagulls, and more along the way.",
         "overview_ar": "القصة عن سمكتين (من نوع كلون أو المهرج) تعيشان في المحيط الهادئ وبعد وضع الأنثى للبيوض تهاجم من قبل سمكة البينارا فتموت ويرعى الأب \"مرهف\" البيضة الوحيدة المتبقية ويسميها \"نيمو\" بناء لرغبة الأم \"مرجانة\". يحاول \"مرهف\" حماية ابنه من الخطر بهوس زائد عن الحد فيتمرد نيمو ويذهب ناحية قارب لقوم بتبين شجاعتة لأبوه ويقع في يد غواص ياخذه إلى أستراليا في سيدنى فيبدأ مرهف رحلة عبر المحيط لإيجاده مع سمكة تعاني من فقدان ذاكرة مؤقت! اسمها \"دوري\" في حين يحاول الابن الخروج من حوض الأسماك الذي وضعه فيه دكتور أسنان وبمساعدة بعض الأصدقاء لنيمو في الخروج من الحوض وبالفعل ينجحو ويعود الابن لأبوه.",
         "poster_path": "/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg",
-        "vote_average": 7.817,
+        "vote_average": 7.8,
         "release_date": "2003-05-30",
-        "popularity": 15.7935
+        "popularity": 14.5573
     },
     {
         "id": 823219,
@@ -4137,7 +4137,7 @@
         "poster_path": "/zME0Ul0w48MKkYBnFRn40M5qgLh.jpg",
         "vote_average": 8.098,
         "release_date": "2024-08-29",
-        "popularity": 15.7778
+        "popularity": 15.7794
     },
     {
         "id": 298618,
@@ -4149,7 +4149,19 @@
         "poster_path": "/rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg",
         "vote_average": 6.617,
         "release_date": "2023-06-13",
-        "popularity": 15.7483
+        "popularity": 13.936
+    },
+    {
+        "id": 1119449,
+        "type": "movie",
+        "title": "Good Luck, Have Fun, Don't Die",
+        "title_ar": "Good Luck, Have Fun, Don't Die",
+        "overview": "A man claiming to be from the future takes the patrons of an iconic Los Angeles diner hostage in search of unlikely recruits in a quest to save the world.",
+        "overview_ar": "A man claiming to be from the future takes the patrons of an iconic Los Angeles diner hostage in search of unlikely recruits in a quest to save the world.",
+        "poster_path": "/rWcfOdY7TU6lTdazWj0ebDZnAfO.jpg",
+        "vote_average": 8.5,
+        "release_date": "2026-02-13",
+        "popularity": 15.7457
     },
     {
         "id": 550988,
@@ -4161,7 +4173,7 @@
         "poster_path": "/dxraF0qPr1OEgJk17ltQTO84kQF.jpg",
         "vote_average": 7.457,
         "release_date": "2021-08-11",
-        "popularity": 15.7224
+        "popularity": 15.6401
     },
     {
         "id": 588,
@@ -4171,9 +4183,9 @@
         "overview": "Rose, a desperate mother, takes her adopted daughter, Sharon, to the town of Silent Hill in an attempt to cure her of her ailment. After a violent car crash, Sharon disappears, and Rose embarks on a horrific journey to get her back and begins to uncover the truth behind the apocalyptic disaster that burned the town 30 years earlier.",
         "overview_ar": "ستنادًا إلى واحدة من أشهر ألعاب الفيديو على اﻹطلاق، تذهب امرأة للبحث عن ابنتها ضمن حدود غريبة، مدينة مهجورة تسمى \"سايلنت هيل\"، وهناك تقابل سلسلة من اﻷهوال.",
         "poster_path": "/dVW2L5eu6Hv0nfEEp0nY2lYmcbc.jpg",
-        "vote_average": 6.616,
+        "vote_average": 6.6,
         "release_date": "2006-04-21",
-        "popularity": 15.7217
+        "popularity": 15.5974
     },
     {
         "id": 82690,
@@ -4185,7 +4197,7 @@
         "poster_path": "/zWoIgZ7mgmPkaZjG0102BSKFIqQ.jpg",
         "vote_average": 7.354,
         "release_date": "2012-11-01",
-        "popularity": 15.7073
+        "popularity": 15.5156
     },
     {
         "id": 324786,
@@ -4197,7 +4209,7 @@
         "poster_path": "/wuz8TjCIWR2EVVMuEfBnQ1vuGS3.jpg",
         "vote_average": 8.191,
         "release_date": "2016-10-07",
-        "popularity": 15.6965
+        "popularity": 15.8835
     },
     {
         "id": 12444,
@@ -4209,7 +4221,7 @@
         "poster_path": "/iGoXIpQb7Pot00EEdwpwPajheZ5.jpg",
         "vote_average": 7.736,
         "release_date": "2010-11-17",
-        "popularity": 15.6529
+        "popularity": 17.1179
     },
     {
         "id": 1199869,
@@ -4221,7 +4233,7 @@
         "poster_path": "/lpepbfVziHJLhVoxTEKs8ok00iu.jpg",
         "vote_average": 5.5,
         "release_date": "2025-07-03",
-        "popularity": 15.6491
+        "popularity": 12.1529
     },
     {
         "id": 941109,
@@ -4233,7 +4245,7 @@
         "poster_path": "/ovZ0zq0NwRghtWI1oLaM0lWuoEw.jpg",
         "vote_average": 6.605,
         "release_date": "2025-09-30",
-        "popularity": 15.6059
+        "popularity": 15.8331
     },
     {
         "id": 767,
@@ -4245,7 +4257,7 @@
         "poster_path": "/z7uo9zmQdQwU5ZJHFpv2Upl30i1.jpg",
         "vote_average": 7.682,
         "release_date": "2009-07-15",
-        "popularity": 15.5644
+        "popularity": 16.3524
     },
     {
         "id": 293660,
@@ -4257,7 +4269,7 @@
         "poster_path": "/3E53WEZJqP6aM84D8CckXx4pIHw.jpg",
         "vote_average": 7.622,
         "release_date": "2016-02-09",
-        "popularity": 15.549
+        "popularity": 15.762
     },
     {
         "id": 98566,
@@ -4269,7 +4281,7 @@
         "poster_path": "/azL2ThbJMIkts3ZMt3j1YgBUeDB.jpg",
         "vote_average": 5.9,
         "release_date": "2014-08-07",
-        "popularity": 15.535
+        "popularity": 13.6882
     },
     {
         "id": 85,
@@ -4279,9 +4291,9 @@
         "overview": "When Dr. Indiana Jones – the tweed-suited professor who just happens to be a celebrated archaeologist – is hired by the government to locate the legendary Ark of the Covenant, he finds himself up against the entire Nazi regime.",
         "overview_ar": "عندما استأجرت الحكومة الدكتور إنديانا جونز - الأستاذ الملائم للتويد والذي صادف أنه عالم آثار مشهور - لتحديد موقع تابوت العهد الأسطوري ، وجد نفسه في مواجهة النظام النازي بأكمله.",
         "poster_path": "/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
-        "vote_average": 7.923,
+        "vote_average": 7.9,
         "release_date": "1981-06-12",
-        "popularity": 15.5309
+        "popularity": 17.1028
     },
     {
         "id": 49521,
@@ -4293,7 +4305,7 @@
         "poster_path": "/8GFtkImmK0K1VaUChR0n9O61CFU.jpg",
         "vote_average": 6.639,
         "release_date": "2013-06-12",
-        "popularity": 15.521
+        "popularity": 13.4132
     },
     {
         "id": 1034716,
@@ -4303,21 +4315,9 @@
         "overview": "Poppy's a free spirit. Alex loves a plan. After years of summer vacations, these polar-opposite pals wonder if they could be a perfect romantic match.",
         "overview_ar": "تعيش \"بوبي\" حياتها بانطلاق وحرّية، بينما يفضّل \"أليكس\" التنظيم والتخطيط. وبعد سنوات من الرحلات الصيفية، يتساءل الصديقان المتناقضان إن كانا مؤهلين لعلاقة حب مثالية.",
         "poster_path": "/kOrJqRyt1pklNgDwJMjzN1GuNXS.jpg",
-        "vote_average": 7.013,
+        "vote_average": 7.01,
         "release_date": "2026-01-06",
-        "popularity": 15.514
-    },
-    {
-        "id": 8966,
-        "type": "movie",
-        "title": "Twilight",
-        "title_ar": "Twilight",
-        "overview": "When Bella Swan moves to a small town in the Pacific Northwest, she falls in love with Edward Cullen, a mysterious classmate who reveals himself to be a 108-year-old vampire. Despite Edward's repeated cautions, Bella can't stay away from him, a fatal move that endangers her own life.",
-        "overview_ar": "When Bella Swan moves to a small town in the Pacific Northwest, she falls in love with Edward Cullen, a mysterious classmate who reveals himself to be a 108-year-old vampire. Despite Edward's repeated cautions, Bella can't stay away from him, a fatal move that endangers her own life.",
-        "poster_path": "/3Gkb6jm6962ADUPaCBqzz9CTbn9.jpg",
-        "vote_average": 6.282,
-        "release_date": "2008-11-20",
-        "popularity": 15.5126
+        "popularity": 15.177
     },
     {
         "id": 1865,
@@ -4800,6 +4800,18 @@
         "popularity": 16.2185
     },
     {
+        "id": 845781,
+        "type": "movie",
+        "title": "Red One",
+        "title_ar": "Red One",
+        "overview": "After Santa Claus (codename: Red One) is kidnapped, the North Pole's Head of Security must team up with the world's most infamous tracker in a globe-trotting, action-packed mission to save Christmas.",
+        "overview_ar": "بعد اختطاف (سانتا كلوز)، يتعاون قائد الأمن بالقطب الشمالي مع صائد جوائز شهير في مغامرة ملحمية، حيث يتعين عليهما تنفيذ مهمة خطيرة لإنقاذ عيد الميلاد.",
+        "poster_path": "/cdqLnri3NEGcmfnqwk2TSIYtddg.jpg",
+        "vote_average": 7.002,
+        "release_date": "2024-10-31",
+        "popularity": 16.2185
+    },
+    {
         "id": 281338,
         "type": "movie",
         "title": "War for the Planet of the Apes",
@@ -4809,7 +4821,7 @@
         "poster_path": "/mMA1qhBFgZX8O36qPPTC016kQl1.jpg",
         "vote_average": 7.215,
         "release_date": "2017-07-11",
-        "popularity": 14.6006
+        "popularity": 14.505
     },
     {
         "id": 1336189,
@@ -4821,7 +4833,7 @@
         "poster_path": "/eCA5maHDlZtXNTtiLXenwnEw7tc.jpg",
         "vote_average": 5.847,
         "release_date": "2025-09-10",
-        "popularity": 14.5881
+        "popularity": 14.8332
     },
     {
         "id": 766507,
@@ -4833,7 +4845,7 @@
         "poster_path": "/2FKjLRt7oK1bRRIrxgWmthbBdFh.jpg",
         "vote_average": 7.668,
         "release_date": "2022-08-02",
-        "popularity": 14.5862
+        "popularity": 15.4176
     },
     {
         "id": 679,
@@ -4845,7 +4857,7 @@
         "poster_path": "/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
         "vote_average": 8.0,
         "release_date": "1986-07-18",
-        "popularity": 14.5563
+        "popularity": 15.9737
     },
     {
         "id": 338969,
@@ -4857,7 +4869,7 @@
         "poster_path": "/cCWojb6N9UcTzNVtS4bOM3vQ30x.jpg",
         "vote_average": 6.022,
         "release_date": "2025-08-28",
-        "popularity": 14.5289
+        "popularity": 15.2841
     },
     {
         "id": 508947,
@@ -4867,9 +4879,9 @@
         "overview": "Thirteen-year-old Mei is experiencing the awkwardness of being a teenager with a twist – when she gets too excited, she transforms into a giant red panda.",
         "overview_ar": "تعاني مي البالغة من العمر ثلاثة عشر عامًا من الإحراج لكونها مراهقة مع تطور - عندما تكون متحمسة للغاية ، تتحول إلى باندا حمراء عملاقة.",
         "poster_path": "/qsdjk9oAKSQMWs0Vt5Pyfh6O4GZ.jpg",
-        "vote_average": 7.3,
+        "vote_average": 7.323,
         "release_date": "2022-03-10",
-        "popularity": 14.5057
+        "popularity": 13.5326
     },
     {
         "id": 374720,
@@ -4881,43 +4893,7 @@
         "poster_path": "/b4Oe15CGLL61Ped0RAS9JpqdmCt.jpg",
         "vote_average": 7.448,
         "release_date": "2017-07-19",
-        "popularity": 14.501
-    },
-    {
-        "id": 14836,
-        "type": "movie",
-        "title": "Coraline",
-        "title_ar": "كورالين",
-        "overview": "Wandering her rambling old house in her boring new town, 11-year-old Coraline discovers a hidden door to a strangely idealized version of her life. In order to stay in the fantasy, she must make a frighteningly real sacrifice.",
-        "overview_ar": "طفلة تنتقل إلى منزل جديد، تعاني فيه من انشغال والديها بالعمل على تأليف بعض الكتب، تحصل على دمية كهدية من طفل الجيران، ثم تتمكن من الانتقال لعالم موازي من العرائس يحققون ويلبون كل طلباتها، فقط مقابل أن تبقى معهم عليها أن تتخلى عن عينيها وتضع مكانيهما زرين، فماذا يحدث؟",
-        "poster_path": "/4jeFXQYytChdZYE9JYO7Un87IlW.jpg",
-        "vote_average": 7.9,
-        "release_date": "2009-02-05",
-        "popularity": 14.4776
-    },
-    {
-        "id": 572802,
-        "type": "movie",
-        "title": "Aquaman and the Lost Kingdom",
-        "title_ar": "أكوامان والمملكة المفقودة",
-        "overview": "Black Manta seeks revenge on Aquaman for his father's death. Wielding the Black Trident's power, he becomes a formidable foe. To defend Atlantis, Arthur (Aquaman) forges an alliance with his imprisoned brother. They must protect the kingdom.",
-        "overview_ar": "عندما يتم إطلاق العنان لقوة قديمة ، يجب على أكوامان إقامة تحالف غير مستقر مع حليف غير متوقع لحماية أتلانتس والعالم من الدمار الذي لا رجعة فيه.",
-        "poster_path": "/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
-        "vote_average": 6.548,
-        "release_date": "2023-12-20",
-        "popularity": 14.4706
-    },
-    {
-        "id": 1011477,
-        "type": "movie",
-        "title": "Karate Kid: Legends",
-        "title_ar": "Karate Kid: Legends",
-        "overview": "After a family tragedy, kung fu prodigy Li Fong is uprooted from his home in Beijing and forced to move to New York City with his mother. When a new friend needs his help, Li enters a karate competition – but his skills alone aren't enough. Li's kung fu teacher Mr. Han enlists original Karate Kid Daniel LaRusso for help, and Li learns a new way to fight, merging their two styles into one for the ultimate martial arts showdown.",
-        "overview_ar": "بعد مأساة عائلية، يُجبر لي فونغ، عبقري الكونغ فو، على مغادرة منزله في بكين والانتقال إلى مدينة نيويورك مع والدته. عندما يحتاج صديق جديد لمساعدته، يشارك لي في مسابقة كاراتيه، لكن مهاراته وحدها لا تكفي. يستعين السيد هان، معلم الكونغ فو الخاص به، بفتى الكاراتيه الأصلي دانيال لاروسو للمساعدة، ويتعلم لي أسلوبًا جديدًا في القتال، جامعًا بين أسلوبيهما في أسلوب واحد للمواجهة القتالية الأبرز.",
-        "poster_path": "/c90Lt7OQGsOmhv6x4JoFdoHzw5l.jpg",
-        "vote_average": 7.042,
-        "release_date": "2025-05-08",
-        "popularity": 14.4197
+        "popularity": 13.0427
     },
     {
         "id": 1315772,
@@ -4929,7 +4905,43 @@
         "poster_path": "/prDTGLRRxp1T1f3910mRjBxWdeS.jpg",
         "vote_average": 0.0,
         "release_date": "2026-06-30",
-        "popularity": 14.4043
+        "popularity": 14.4801
+    },
+    {
+        "id": 14836,
+        "type": "movie",
+        "title": "Coraline",
+        "title_ar": "كورالين",
+        "overview": "Wandering her rambling old house in her boring new town, 11-year-old Coraline discovers a hidden door to a strangely idealized version of her life. In order to stay in the fantasy, she must make a frighteningly real sacrifice.",
+        "overview_ar": "طفلة تنتقل إلى منزل جديد، تعاني فيه من انشغال والديها بالعمل على تأليف بعض الكتب، تحصل على دمية كهدية من طفل الجيران، ثم تتمكن من الانتقال لعالم موازي من العرائس يحققون ويلبون كل طلباتها، فقط مقابل أن تبقى معهم عليها أن تتخلى عن عينيها وتضع مكانيهما زرين، فماذا يحدث؟",
+        "poster_path": "/4jeFXQYytChdZYE9JYO7Un87IlW.jpg",
+        "vote_average": 7.9,
+        "release_date": "2009-02-05",
+        "popularity": 14.5371
+    },
+    {
+        "id": 572802,
+        "type": "movie",
+        "title": "Aquaman and the Lost Kingdom",
+        "title_ar": "أكوامان والمملكة المفقودة",
+        "overview": "Black Manta seeks revenge on Aquaman for his father's death. Wielding the Black Trident's power, he becomes a formidable foe. To defend Atlantis, Arthur (Aquaman) forges an alliance with his imprisoned brother. They must protect the kingdom.",
+        "overview_ar": "عندما يتم إطلاق العنان لقوة قديمة ، يجب على أكوامان إقامة تحالف غير مستقر مع حليف غير متوقع لحماية أتلانتس والعالم من الدمار الذي لا رجعة فيه.",
+        "poster_path": "/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
+        "vote_average": 6.548,
+        "release_date": "2023-12-20",
+        "popularity": 15.6797
+    },
+    {
+        "id": 1011477,
+        "type": "movie",
+        "title": "Karate Kid: Legends",
+        "title_ar": "Karate Kid: Legends",
+        "overview": "After a family tragedy, kung fu prodigy Li Fong is uprooted from his home in Beijing and forced to move to New York City with his mother. When a new friend needs his help, Li enters a karate competition – but his skills alone aren't enough. Li's kung fu teacher Mr. Han enlists original Karate Kid Daniel LaRusso for help, and Li learns a new way to fight, merging their two styles into one for the ultimate martial arts showdown.",
+        "overview_ar": "بعد مأساة عائلية، يُجبر لي فونغ، عبقري الكونغ فو، على مغادرة منزله في بكين والانتقال إلى مدينة نيويورك مع والدته. عندما يحتاج صديق جديد لمساعدته، يشارك لي في مسابقة كاراتيه، لكن مهاراته وحدها لا تكفي. يستعين السيد هان، معلم الكونغ فو الخاص به، بفتى الكاراتيه الأصلي دانيال لاروسو للمساعدة، ويتعلم لي أسلوبًا جديدًا في القتال، جامعًا بين أسلوبيهما في أسلوب واحد للمواجهة القتالية الأبرز.",
+        "poster_path": "/c90Lt7OQGsOmhv6x4JoFdoHzw5l.jpg",
+        "vote_average": 7.042,
+        "release_date": "2025-05-08",
+        "popularity": 15.8579
     },
     {
         "id": 127585,
@@ -4941,7 +4953,7 @@
         "poster_path": "/tYfijzolzgoMOtegh1Y7j2Enorg.jpg",
         "vote_average": 7.529,
         "release_date": "2014-05-15",
-        "popularity": 14.3984
+        "popularity": 15.3214
     },
     {
         "id": 114,
@@ -4953,7 +4965,7 @@
         "poster_path": "/hVHUfT801LQATGd26VPzhorIYza.jpg",
         "vote_average": 7.456,
         "release_date": "1990-03-23",
-        "popularity": 14.394
+        "popularity": 13.4567
     },
     {
         "id": 812,
@@ -4965,7 +4977,7 @@
         "poster_path": "/eLFfl7vS8dkeG1hKp5mwbm37V83.jpg",
         "vote_average": 7.655,
         "release_date": "1992-11-25",
-        "popularity": 14.3883
+        "popularity": 13.7081
     },
     {
         "id": 120467,
@@ -4975,9 +4987,9 @@
         "overview": "The Grand Budapest Hotel tells of a legendary concierge at a famous European hotel between the wars and his friendship with a young employee who becomes his trusted protégé. The story involves the theft and recovery of a priceless Renaissance painting, the battle for an enormous family fortune and the slow and then sudden upheavals that transformed Europe during the first half of the 20th century.",
         "overview_ar": "يحكي فندق Grand Budapest Hotel عن كونسيرج أسطوري في فندق أوروبي شهير بين الحربين وصداقته مع موظف شاب أصبح ربيبه الموثوق به. تتضمن القصة سرقة واستعادة لوحة لا تقدر بثمن من عصر النهضة ، والمعركة من أجل ثروة عائلية هائلة والاضطرابات البطيئة ثم المفاجئة التي غيرت أوروبا خلال النصف الأول من القرن العشرين.",
         "poster_path": "/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
-        "vote_average": 8.033,
+        "vote_average": 8.032,
         "release_date": "2014-02-26",
-        "popularity": 14.3875
+        "popularity": 15.0592
     },
     {
         "id": 646385,
@@ -4989,7 +5001,7 @@
         "poster_path": "/1m3W6cpgwuIyjtg5nSnPx7yFkXW.jpg",
         "vote_average": 6.7,
         "release_date": "2022-01-12",
-        "popularity": 14.3859
+        "popularity": 12.1623
     },
     {
         "id": 281957,
@@ -5001,7 +5013,7 @@
         "poster_path": "/ji3ecJphATlVgWNY0B0RVXZizdf.jpg",
         "vote_average": 7.538,
         "release_date": "2015-12-25",
-        "popularity": 14.3784
+        "popularity": 13.9226
     },
     {
         "id": 1511789,
@@ -5013,7 +5025,7 @@
         "poster_path": "/oKE2xPJs87V9DbDmoo8igAsDeH1.jpg",
         "vote_average": 5.0,
         "release_date": "2025-07-11",
-        "popularity": 14.3723
+        "popularity": 15.5965
     },
     {
         "id": 519465,
@@ -5025,19 +5037,19 @@
         "poster_path": "/dfFVDIgovEfQZn53VRKLV2JQnRJ.jpg",
         "vote_average": 6.904,
         "release_date": "2019-03-27",
-        "popularity": 14.3268
+        "popularity": 13.6367
     },
     {
         "id": 58,
         "type": "movie",
         "title": "Pirates of the Caribbean: Dead Man's Chest",
-        "title_ar": "Pirates of the Caribbean: Dead Man's Chest",
+        "title_ar": "قراصنة الكاريبي - صندوق الرجل الميت",
         "overview": "Jack's got a blood debt to pay: he owes his soul to the legendary Davy Jones, ghastly Ruler of the Ocean Depths.  But ever-crafty Jack isn't about to go down without a fight.",
-        "overview_ar": "Jack's got a blood debt to pay: he owes his soul to the legendary Davy Jones, ghastly Ruler of the Ocean Depths.  But ever-crafty Jack isn't about to go down without a fight.",
+        "overview_ar": "يشق الكابتن جاك سبارو طريقه للخروج من دين الدم مع الشبحي ديفي جونز لتجنب اللعن الأبدي.",
         "poster_path": "/uXEqmloGyP7UXAiphJUu2v2pcuE.jpg",
         "vote_average": 7.374,
         "release_date": "2006-07-06",
-        "popularity": 14.3202
+        "popularity": 14.588
     },
     {
         "id": 82507,
@@ -5049,7 +5061,7 @@
         "poster_path": "/nzx10sca3arCeYBAomHan4Q6wa1.jpg",
         "vote_average": 6.871,
         "release_date": "2012-03-29",
-        "popularity": 14.3083
+        "popularity": 12.0006
     },
     {
         "id": 10020,
@@ -5061,7 +5073,7 @@
         "poster_path": "/hUJ0UvQ5tgE2Z9WpfuduVSdiCiU.jpg",
         "vote_average": 7.726,
         "release_date": "1991-10-22",
-        "popularity": 14.2924
+        "popularity": 13.74
     },
     {
         "id": 9502,
@@ -5071,9 +5083,9 @@
         "overview": "Chosen by prophecy but doubted by all, Po is an unlikely Dragon Warrior—a clumsy panda thrust into the world of kung fu as a deadly enemy threatens the Valley of Peace. Guided by Master Shifu and the Furious Five, Po must embrace who he is to unlock the power that no scroll can teach.",
         "overview_ar": "في وادي السلام، يجد (بو) الباندا نفسه قد اختير كمحارب التنين على الرغم من حقيقة أنه يعاني من السمنة والخمول، وكونه مبتدئ في فنون الدفاع عن النفس، ويحاول أن يثبت جدارته بهذا الاختيار أمام المعلم (شيفو) والغاضبين الخمسة.",
         "poster_path": "/wWt4JYXTg5Wr3xBW2phBrMKgp3x.jpg",
-        "vote_average": 7.3,
+        "vote_average": 7.314,
         "release_date": "2008-06-04",
-        "popularity": 14.2884
+        "popularity": 14.2421
     },
     {
         "id": 1589891,
@@ -5085,7 +5097,7 @@
         "poster_path": "/qKKG22O5pFxqglG0oMjWTjQWCNl.jpg",
         "vote_average": 7.494,
         "release_date": "2025-12-18",
-        "popularity": 14.2683
+        "popularity": 14.1769
     },
     {
         "id": 1072790,
@@ -5097,7 +5109,7 @@
         "poster_path": "/5qHoazZiaLe7oFBok7XlUhg96f2.jpg",
         "vote_average": 6.811,
         "release_date": "2023-12-21",
-        "popularity": 14.2079
+        "popularity": 13.9142
     },
     {
         "id": 562,
@@ -5109,7 +5121,7 @@
         "poster_path": "/7Bjd8kfmDSOzpmhySpEhkUyK2oH.jpg",
         "vote_average": 7.805,
         "release_date": "1988-07-15",
-        "popularity": 14.2059
+        "popularity": 14.9789
     },
     {
         "id": 1124566,
@@ -5121,7 +5133,7 @@
         "poster_path": "/pz9NCWxxOk3o0W3v1Zkhawrwb4i.jpg",
         "vote_average": 7.608,
         "release_date": "2025-08-20",
-        "popularity": 14.1948
+        "popularity": 14.0379
     },
     {
         "id": 582417,
@@ -5133,7 +5145,7 @@
         "poster_path": "/3Ctp6CNJGzYsF3bubhl07ptAoay.jpg",
         "vote_average": 0.0,
         "release_date": "2007-04-21",
-        "popularity": 14.1515
+        "popularity": 13.2666
     },
     {
         "id": 118,
@@ -5145,7 +5157,7 @@
         "poster_path": "/iKP6wg3c6COUe8gYutoGG7qcPnO.jpg",
         "vote_average": 7.038,
         "release_date": "2005-07-13",
-        "popularity": 14.142
+        "popularity": 14.8936
     },
     {
         "id": 87101,
@@ -5157,7 +5169,7 @@
         "poster_path": "/oZRVDpNtmHk8M1VYy1aeOWUXgbC.jpg",
         "vote_average": 5.948,
         "release_date": "2015-06-23",
-        "popularity": 14.1357
+        "popularity": 15.1341
     },
     {
         "id": 370172,
@@ -5169,7 +5181,7 @@
         "poster_path": "/iUgygt3fscRoKWCV1d0C7FbM9TP.jpg",
         "vote_average": 7.347,
         "release_date": "2021-09-29",
-        "popularity": 14.1082
+        "popularity": 15.0916
     },
     {
         "id": 578,
@@ -5181,7 +5193,7 @@
         "poster_path": "/tjbLSFwi0I3phZwh8zoHWNfbsEp.jpg",
         "vote_average": 7.68,
         "release_date": "1975-06-20",
-        "popularity": 14.0997
+        "popularity": 14.1594
     },
     {
         "id": 46738,
@@ -5191,9 +5203,9 @@
         "overview": "A mother's last wishes send twins Jeanne and Simon on a journey to Middle East in search of their tangled roots. Adapted from Wajdi Mouawad's acclaimed play, Incendies tells the powerful and moving tale of two young adults' voyage to the core of deep-rooted hatred, never-ending wars and enduring love.",
         "overview_ar": "أمنيات الأم الأخيرة ترسل التوأم جين وسيمون في رحلة إلى الشرق الأوسط بحثًا عن جذورهما المتشابكة. مقتبس من مسرحية وجدي معوض الشهيرة ، يروي إنكينديز قصة قوية ومؤثرة لرحلة شابين بالغين إلى جوهر الكراهية العميقة الجذور والحروب التي لا تنتهي والحب الدائم.",
         "poster_path": "/yH6DAQVgbyj72S66gN4WWVoTjuf.jpg",
-        "vote_average": 8.1,
+        "vote_average": 8.103,
         "release_date": "2010-09-17",
-        "popularity": 14.098
+        "popularity": 13.9425
     },
     {
         "id": 429,
@@ -5205,7 +5217,7 @@
         "poster_path": "/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg",
         "vote_average": 8.5,
         "release_date": "1966-12-22",
-        "popularity": 14.0948
+        "popularity": 11.9447
     },
     {
         "id": 10191,
@@ -5217,7 +5229,7 @@
         "poster_path": "/ygGmAO60t8GyqUo9xYeYxSZAR3b.jpg",
         "vote_average": 7.855,
         "release_date": "2010-03-18",
-        "popularity": 14.0576
+        "popularity": 15.0556
     },
     {
         "id": 37799,
@@ -5229,7 +5241,7 @@
         "poster_path": "/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg",
         "vote_average": 7.371,
         "release_date": "2010-10-01",
-        "popularity": 14.0371
+        "popularity": 13.5887
     },
     {
         "id": 1013446,
@@ -5241,7 +5253,7 @@
         "poster_path": "/5CdRxBu7jRDHjthkAL8vE0GdKUD.jpg",
         "vote_average": 6.2,
         "release_date": "2025-06-25",
-        "popularity": 14.031
+        "popularity": 14.9029
     },
     {
         "id": 1091,
@@ -5253,7 +5265,7 @@
         "poster_path": "/tzGY49kseSE9QAKk47uuDGwnSCu.jpg",
         "vote_average": 8.066,
         "release_date": "1982-06-25",
-        "popularity": 14.0162
+        "popularity": 14.7055
     },
     {
         "id": 138843,
@@ -5265,19 +5277,7 @@
         "poster_path": "/wVYREutTvI2tmxr6ujrHT704wGF.jpg",
         "vote_average": 7.539,
         "release_date": "2013-07-18",
-        "popularity": 13.9857
-    },
-    {
-        "id": 524434,
-        "type": "movie",
-        "title": "Eternals",
-        "title_ar": "Eternals",
-        "overview": "The Eternals are a team of ancient aliens who have been living on Earth in secret for thousands of years. When an unexpected tragedy forces them out of the shadows, they are forced to reunite against mankind’s most ancient enemy, the Deviants.",
-        "overview_ar": "The Eternals are a team of ancient aliens who have been living on Earth in secret for thousands of years. When an unexpected tragedy forces them out of the shadows, they are forced to reunite against mankind’s most ancient enemy, the Deviants.",
-        "poster_path": "/lFByFSLV5WDJEv3KabbdAF959F2.jpg",
-        "vote_average": 6.78,
-        "release_date": "2021-11-03",
-        "popularity": 13.9466
+        "popularity": 12.9855
     },
     {
         "id": 1255674,
@@ -6000,6 +6000,18 @@
         "popularity": 11.3124
     },
     {
+        "id": 346910,
+        "type": "movie",
+        "title": "The Predator",
+        "title_ar": "The Predator",
+        "overview": "When a young boy accidentally triggers the universe's most lethal hunters' return to Earth, only a ragtag crew of ex-soldiers and a disgruntled scientist can prevent the end of the human race.",
+        "overview_ar": "When a young boy accidentally triggers the universe's most lethal hunters' return to Earth, only a ragtag crew of ex-soldiers and a disgruntled scientist can prevent the end of the human race.",
+        "poster_path": "/a3eWGF6YPF7No5Rbtjc8QpDvz7l.jpg",
+        "vote_average": 5.629,
+        "release_date": "2018-09-05",
+        "popularity": 13.923
+    },
+    {
         "id": 495764,
         "type": "movie",
         "title": "Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)",
@@ -6009,7 +6021,7 @@
         "poster_path": "/h4VB6m0RwcicVEZvzftYZyKXs6K.jpg",
         "vote_average": 6.885,
         "release_date": "2020-02-05",
-        "popularity": 13.3174
+        "popularity": 12.4608
     },
     {
         "id": 454626,
@@ -6021,7 +6033,7 @@
         "poster_path": "/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg",
         "vote_average": 7.29,
         "release_date": "2020-02-12",
-        "popularity": 13.3172
+        "popularity": 14.5356
     },
     {
         "id": 787699,
@@ -6033,7 +6045,7 @@
         "poster_path": "/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
         "vote_average": 7.042,
         "release_date": "2023-12-06",
-        "popularity": 13.3158
+        "popularity": 11.9145
     },
     {
         "id": 539,
@@ -6045,7 +6057,7 @@
         "poster_path": "/yz4QVqPx3h1hD1DfqqQkCq3rmxW.jpg",
         "vote_average": 8.418,
         "release_date": "1960-06-22",
-        "popularity": 13.3096
+        "popularity": 11.9945
     },
     {
         "id": 110415,
@@ -6057,7 +6069,7 @@
         "poster_path": "/kw6YQudA0TMcNmGUGy5XIw7zbnV.jpg",
         "vote_average": 6.908,
         "release_date": "2013-08-01",
-        "popularity": 13.2661
+        "popularity": 14.3319
     },
     {
         "id": 102382,
@@ -6069,7 +6081,7 @@
         "poster_path": "/dGjoPttcbKR5VWg1jQuNFB247KL.jpg",
         "vote_average": 6.525,
         "release_date": "2014-04-16",
-        "popularity": 13.2557
+        "popularity": 14.88
     },
     {
         "id": 652,
@@ -6081,7 +6093,7 @@
         "poster_path": "/51auXjXepW1zblzhaN7CAhwvf5i.jpg",
         "vote_average": 7.166,
         "release_date": "2004-05-13",
-        "popularity": 13.2481
+        "popularity": 13.0822
     },
     {
         "id": 8681,
@@ -6093,7 +6105,7 @@
         "poster_path": "/ognkaUSNgJe1a2pjB4UNdzEo5jT.jpg",
         "vote_average": 7.4,
         "release_date": "2008-02-18",
-        "popularity": 13.2189
+        "popularity": 14.5911
     },
     {
         "id": 1196995,
@@ -6105,7 +6117,7 @@
         "poster_path": "/fMDt3o7CVXDc84WIbOskya8XkSN.jpg",
         "vote_average": 4.3,
         "release_date": "2025-12-18",
-        "popularity": 13.2147
+        "popularity": 11.3477
     },
     {
         "id": 273481,
@@ -6117,7 +6129,7 @@
         "poster_path": "/lz8vNyXeidqqOdJW9ZjnDAMb5Vr.jpg",
         "vote_average": 7.416,
         "release_date": "2015-09-17",
-        "popularity": 13.1996
+        "popularity": 13.8347
     },
     {
         "id": 293167,
@@ -6129,7 +6141,7 @@
         "poster_path": "/r2517Vz9EhDhj88qwbDVj8DCRZN.jpg",
         "vote_average": 6.551,
         "release_date": "2017-03-08",
-        "popularity": 13.1993
+        "popularity": 14.8649
     },
     {
         "id": 537971,
@@ -6141,7 +6153,7 @@
         "poster_path": "/nEmw1fZOQp2qFGdrak3ipCbe31G.jpg",
         "vote_average": 6.1,
         "release_date": "2017-12-17",
-        "popularity": 13.1973
+        "popularity": 11.9439
     },
     {
         "id": 1151272,
@@ -6153,7 +6165,7 @@
         "poster_path": "/bzBtsLi17rK4G6kDvOXfUZfAhca.jpg",
         "vote_average": 6.786,
         "release_date": "2025-06-06",
-        "popularity": 13.1885
+        "popularity": 12.0191
     },
     {
         "id": 206647,
@@ -6163,9 +6175,9 @@
         "overview": "A cryptic message from Bond’s past sends him on a trail to uncover a sinister organization. While M battles political forces to keep the secret service alive, Bond peels back the layers of deceit to reveal the terrible truth behind SPECTRE.",
         "overview_ar": "في إطار مشوق ومثير، يستقبل (جيمس بوند) رسالة غامضة ومشفرة لها علاقة بماضيه، والتي يذهب على إثرها ليحاول اكتشاف أسرار منظمة شريرة تتوارى عن الأنظار، بينما يحارب رئيسه (إم) القوى السياسية ليُبقِي على وجود (مكتب الخدمة السرية)، خلال مهمته يواجه (بوند) كل الطبقات الخادعة الواحدة تلو الأخرى ليكشف الحقيقة المروعة عن (الشبح).",
         "poster_path": "/zj8ongFhtWNsVlfjOGo8pSr7PQg.jpg",
-        "vote_average": 6.566,
+        "vote_average": 6.6,
         "release_date": "2015-10-26",
-        "popularity": 13.1839
+        "popularity": 13.6912
     },
     {
         "id": 1087891,
@@ -6177,7 +6189,7 @@
         "poster_path": "/SNEoUInCa5fAgwuEBMIMBGvkkh.jpg",
         "vote_average": 6.966,
         "release_date": "2025-04-09",
-        "popularity": 13.166
+        "popularity": 12.7302
     },
     {
         "id": 425909,
@@ -6189,7 +6201,7 @@
         "poster_path": "/sg4xJaufDiQl7caFEskBtQXfD4x.jpg",
         "vote_average": 7.327,
         "release_date": "2021-11-18",
-        "popularity": 13.1592
+        "popularity": 13.2294
     },
     {
         "id": 6977,
@@ -6201,7 +6213,7 @@
         "poster_path": "/6d5XOczc226jECq0LIX0siKtgHR.jpg",
         "vote_average": 7.946,
         "release_date": "2007-11-09",
-        "popularity": 13.1549
+        "popularity": 11.9856
     },
     {
         "id": 1357633,
@@ -6213,7 +6225,7 @@
         "poster_path": "/dblIFen0bNZAq8icJXHwrjfymDW.jpg",
         "vote_average": 7.076,
         "release_date": "2024-11-26",
-        "popularity": 13.1536
+        "popularity": 13.6002
     },
     {
         "id": 493922,
@@ -6225,7 +6237,7 @@
         "poster_path": "/hjlZSXM86wJrfCv5VKfR5DI2VeU.jpg",
         "vote_average": 7.3,
         "release_date": "2018-06-07",
-        "popularity": 13.1202
+        "popularity": 11.6238
     },
     {
         "id": 18785,
@@ -6234,18 +6246,6 @@
         "title_ar": "The Hangover",
         "overview": "When three friends finally come to after a raucous night of bachelor-party revelry, they find a baby in the closet and a tiger in the bathroom. But they can't seem to locate their best friend, Doug – who's supposed to be tying the knot. Launching a frantic search for Doug, the trio perseveres through a nasty hangover to try to make it to the church on time.",
         "overview_ar": "عندما يأتي ثلاثة أصدقاء أخيرًا بعد ليلة صاخبة من صخب حفلة توديع العزوبية ، يجدون طفلًا في الخزانة ونمرًا في الحمام. لكن يبدو أنهم لا يستطيعون تحديد مكان أفضل صديق لهم ، دوغ - الذي من المفترض أن يكون هو الذي يربط العقدة. يبدأ الثلاثي بحثًا محمومًا عن دوج ، ويثابر على مخلفاتهم السيئة لمحاولة الوصول إلى الكنيسة في الوقت المحدد.",
-        "poster_path": "/A0uS9rHR56FeBtpjVki16M5xxSW.jpg",
-        "vote_average": 7.329,
-        "release_date": "2009-06-02",
-        "popularity": 13.1147
-    },
-    {
-        "id": 18785,
-        "type": "movie",
-        "title": "The Hangover",
-        "title_ar": "The Hangover",
-        "overview": "When three friends finally come to after a raucous night of bachelor-party revelry, they find a baby in the closet and a tiger in the bathroom. But they can't seem to locate their best friend, Doug – who's supposed to be tying the knot. Launching a frantic search for Doug, the trio perseveres through a nasty hangover to try to make it to the church on time.",
-        "overview_ar": "When three friends finally come to after a raucous night of bachelor-party revelry, they find a baby in the closet and a tiger in the bathroom. But they can't seem to locate their best friend, Doug – who's supposed to be tying the knot. Launching a frantic search for Doug, the trio perseveres through a nasty hangover to try to make it to the church on time.",
         "poster_path": "/A0uS9rHR56FeBtpjVki16M5xxSW.jpg",
         "vote_average": 7.329,
         "release_date": "2009-06-02",
@@ -6471,13 +6471,25 @@
         "id": 448441,
         "type": "movie",
         "title": "Sekaiichi Hatsukoi Movie",
-        "title_ar": "劇場版 世界一初恋 -横澤隆史の場合-",
+        "title_ar": "Sekaiichi Hatsukoi Movie",
         "overview": "Yokozawa meets a man (Kirishima) and his life is turned around. Kirishima starts to blackmail and tease Yokozawa, but Kirishima might actually be trying to help him recover from an emotional period of his life in the process.",
         "overview_ar": "Yokozawa meets a man (Kirishima) and his life is turned around. Kirishima starts to blackmail and tease Yokozawa, but Kirishima might actually be trying to help him recover from an emotional period of his life in the process.",
         "poster_path": "/dWQC14a1XjgYqT4GI5nvF522naT.jpg",
         "vote_average": 6.7,
         "release_date": "2014-03-15",
         "popularity": 11.9489
+    },
+    {
+        "id": 417859,
+        "type": "movie",
+        "title": "Puss in Boots",
+        "title_ar": "Puss in Boots",
+        "overview": "Long before he even met Shrek, the notorious fighter, lover and outlaw Puss in Boots becomes a hero when he sets off on an adventure with the tough and street smart Kitty Softpaws and the mastermind Humpty Dumpty to save his town. This is the true story of The Cat, The Myth, The Legend... The Boots.",
+        "overview_ar": "Long before he even met Shrek, the notorious fighter, lover and outlaw Puss in Boots becomes a hero when he sets off on an adventure with the tough and street smart Kitty Softpaws and the mastermind Humpty Dumpty to save his town. This is the true story of The Cat, The Myth, The Legend... The Boots.",
+        "poster_path": "/eufJ36oQCauDc427ewaEvQrhZ6i.jpg",
+        "vote_average": 6.591,
+        "release_date": "2011-10-27",
+        "popularity": 12.6409
     },
     {
         "id": 273477,
@@ -6489,7 +6501,7 @@
         "poster_path": "/lUKvvSnjFlazrdh6wyHxHrdMknD.jpg",
         "vote_average": 6.565,
         "release_date": "2015-10-23",
-        "popularity": 12.8896
+        "popularity": 11.4277
     },
     {
         "id": 527774,
@@ -6499,9 +6511,9 @@
         "overview": "Long ago, in the fantasy world of Kumandra, humans and dragons lived together in harmony. But when an evil force threatened the land, the dragons sacrificed themselves to save humanity. Now, 500 years later, that same evil has returned and it’s up to a lone warrior, Raya, to track down the legendary last dragon to restore the fractured land and its divided people.",
         "overview_ar": "السعي لإنقاذ عالمها.\r منذ فترة طويلة ، في عالم كوماندرا الخيالي ، عاش البشر والتنانين معا في وئام. ولكن عندما هددت قوة شريرة الأرض ، ضحت التنانين بنفسها لإنقاذ البشرية. الآن ، بعد 500 عام ، عاد هذا الشر نفسه والأمر متروك لمحارب وحيد ، رايا ، لتعقب التنين الأخير الأسطوري لاستعادة الأرض الممزقة وشعبها المنقسم.",
         "poster_path": "/5nVhgCzxKbK47OLIKxCR1syulOn.jpg",
-        "vote_average": 7.804,
+        "vote_average": 7.805,
         "release_date": "2021-03-03",
-        "popularity": 12.8683
+        "popularity": 12.345
     },
     {
         "id": 122906,
@@ -6513,7 +6525,7 @@
         "poster_path": "/iR1bVfURbN7r1C46WHFbwCkVve.jpg",
         "vote_average": 7.906,
         "release_date": "2013-09-04",
-        "popularity": 12.8647
+        "popularity": 12.2795
     },
     {
         "id": 530385,
@@ -6523,9 +6535,9 @@
         "overview": "Several friends travel to Sweden to study as anthropologists a summer festival that is held every ninety years in the remote hometown of one of them. What begins as a dream vacation in a place where the sun never sets, gradually turns into a dark nightmare as the mysterious inhabitants invite them to participate in their disturbing festive activities.",
         "overview_ar": "يسافر عدد من الأصدقاء إلى السويد لدراسة مهرجان صيفي يُقام كل تسعين عامًا في مسقط رأس أحدهم النائي. وما يبدأ كعطلة حالمة في مكان لا تغيب فيه الشمس، سرعان ما يتحوّل إلى كابوس مظلم، إذ يدعوهم السكان الغامضون للمشاركة في طقوسهم الاحتفالية المقلقة.",
         "poster_path": "/7LEI8ulZzO5gy9Ww2NVCrKmHeDZ.jpg",
-        "vote_average": 7.153,
+        "vote_average": 7.152,
         "release_date": "2019-07-03",
-        "popularity": 12.8563
+        "popularity": 12.0871
     },
     {
         "id": 1422,
@@ -6537,7 +6549,7 @@
         "poster_path": "/nT97ifVT2J1yMQmeq20Qblg61T.jpg",
         "vote_average": 8.159,
         "release_date": "2006-10-04",
-        "popularity": 12.8552
+        "popularity": 14.4975
     },
     {
         "id": 1265609,
@@ -6549,7 +6561,7 @@
         "poster_path": "/rFhKkXhk7ClU03jQ5rHIApJDwev.jpg",
         "vote_average": 0.0,
         "release_date": "2026-02-12",
-        "popularity": 12.8521
+        "popularity": 11.0224
     },
     {
         "id": 868759,
@@ -6561,7 +6573,7 @@
         "poster_path": "/liLN69YgoovHVgmlHJ876PKi5Yi.jpg",
         "vote_average": 6.897,
         "release_date": "2023-04-18",
-        "popularity": 12.8497
+        "popularity": 12.5729
     },
     {
         "id": 870028,
@@ -6573,7 +6585,7 @@
         "poster_path": "/lUvfTcOZiK0sdcX0WNLPbMyKjGm.jpg",
         "vote_average": 7.089,
         "release_date": "2025-04-23",
-        "popularity": 12.8381
+        "popularity": 13.3702
     },
     {
         "id": 1376434,
@@ -6585,7 +6597,7 @@
         "poster_path": "/2XDQa6EmFHSA37j1t0w88vpWqj9.jpg",
         "vote_average": 7.831,
         "release_date": "2025-06-05",
-        "popularity": 12.8232
+        "popularity": 14.2242
     },
     {
         "id": 291805,
@@ -6597,7 +6609,7 @@
         "poster_path": "/A81kDB6a1K86YLlcOtZB27jriJh.jpg",
         "vote_average": 6.829,
         "release_date": "2016-06-02",
-        "popularity": 12.8212
+        "popularity": 12.8156
     },
     {
         "id": 1124,
@@ -6609,7 +6621,7 @@
         "poster_path": "/Ag2B2KHKQPukjH7WutmgnnSNurZ.jpg",
         "vote_average": 8.206,
         "release_date": "2006-10-17",
-        "popularity": 12.7995
+        "popularity": 12.7433
     },
     {
         "id": 349006,
@@ -6621,7 +6633,7 @@
         "poster_path": "/iymGOzYJWgYqGb3sB2GjmpO077q.jpg",
         "vote_average": 6.0,
         "release_date": "2015-07-17",
-        "popularity": 12.7747
+        "popularity": 6.4163
     },
     {
         "id": 464052,
@@ -6633,7 +6645,7 @@
         "poster_path": "/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg",
         "vote_average": 6.4,
         "release_date": "2020-12-16",
-        "popularity": 12.771
+        "popularity": 14.0593
     },
     {
         "id": 1159831,
@@ -6645,7 +6657,7 @@
         "poster_path": "/vu1cbpWza1F0OSUTqVMlJYcNgC2.jpg",
         "vote_average": 0.0,
         "release_date": "2026-03-04",
-        "popularity": 12.7675
+        "popularity": 12.7196
     },
     {
         "id": 936108,
@@ -6657,7 +6669,7 @@
         "poster_path": "/8o6lkhL32xQJeB52IIG1us5BVey.jpg",
         "vote_average": 5.9,
         "release_date": "2025-07-05",
-        "popularity": 12.7672
+        "popularity": 11.294
     },
     {
         "id": 264660,
@@ -6669,7 +6681,7 @@
         "poster_path": "/dmJW8IAKHKxFNiUnoDR7JfsK7Rp.jpg",
         "vote_average": 7.573,
         "release_date": "2015-01-21",
-        "popularity": 12.762
+        "popularity": 12.2746
     },
     {
         "id": 240832,
@@ -6681,7 +6693,7 @@
         "poster_path": "/kRbpUTRNm6QbLQFPFWUcNC4czEm.jpg",
         "vote_average": 6.5,
         "release_date": "2014-07-25",
-        "popularity": 12.7391
+        "popularity": 12.7454
     },
     {
         "id": 34851,
@@ -6693,7 +6705,7 @@
         "poster_path": "/wdniP8NDaJIydi1hMxhpbJMUfr6.jpg",
         "vote_average": 6.294,
         "release_date": "2010-07-07",
-        "popularity": 12.7367
+        "popularity": 13.1974
     },
     {
         "id": 1327881,
@@ -6705,19 +6717,7 @@
         "poster_path": "/hffZQgrulC6jgneLuTANQrYgiui.jpg",
         "vote_average": 4.786,
         "release_date": "2024-09-17",
-        "popularity": 12.69
-    },
-    {
-        "id": 57158,
-        "type": "movie",
-        "title": "The Hobbit: The Desolation of Smaug",
-        "title_ar": "الهوبيت : خراب التنين سموج",
-        "overview": "The Dwarves, Bilbo and Gandalf have successfully escaped the Misty Mountains, and Bilbo has gained the One Ring. They all continue their journey to get their gold back from the Dragon, Smaug.",
-        "overview_ar": "يستكمل بيلبو باجينز رحلته الملحمية إلى الجبل مصحوبًا بـ 13 قزمًا يقودهم ثورين أوكينشيلد وجاندالف الرمادي، لاستعادة مملكة الأقزام المفقودة إيريبور. بعد نجاتهم. في بداية رحلتهم غير المتوقعة يواصل شركاء الرحلة التقدم إلى الشرق، ويواجهون على طول الطريق الكثير من الأعداء في غابة ميركوود الغادرة. وبعد الهروب من قبضة جن الغابة الخطيرين، يبدأ الأقزام رحلتهم إلى ليك تاون، وأخيرًا إلى جبل الوحيد نفسه، حيث يواجهون التنين الأخير في الأرض الوسطى سموج، المخلوق الأكثر إرعابًا من أي شيءٍ آخر، والذي لن يختبر فقط مدى شجاعتهم، ولكن عمق الصداقة بينهم أيضًا.",
-        "poster_path": "/xQYiXsheRCDBA39DOrmaw1aSpbk.jpg",
-        "vote_average": 7.6,
-        "release_date": "2013-12-11",
-        "popularity": 12.6721
+        "popularity": 11.2372
     },
     {
         "id": 70981,
@@ -7200,6 +7200,30 @@
         "popularity": 12.3201
     },
     {
+        "id": 270946,
+        "type": "movie",
+        "title": "Penguins of Madagascar",
+        "title_ar": "Penguins of Madagascar",
+        "overview": "Skipper, Kowalski, Rico and Private join forces with undercover organization The North Wind to stop the villainous Dr. Octavius Brine from destroying the world as we know it.",
+        "overview_ar": "Skipper, Kowalski, Rico and Private join forces with undercover organization The North Wind to stop the villainous Dr. Octavius Brine from destroying the world as we know it.",
+        "poster_path": "/dXbpNrPDZDMEbujFoOxmMNQVMHa.jpg",
+        "vote_average": 6.531,
+        "release_date": "2014-11-22",
+        "popularity": 12.7957
+    },
+    {
+        "id": 406997,
+        "type": "movie",
+        "title": "Wonder",
+        "title_ar": "Wonder",
+        "overview": "The story of August Pullman – a boy with facial differences – who enters fifth grade, attending a mainstream elementary school for the first time.",
+        "overview_ar": "The story of August Pullman – a boy with facial differences – who enters fifth grade, attending a mainstream elementary school for the first time.",
+        "poster_path": "/sONh3LYGFcVDTy8pm1tbSOB13Li.jpg",
+        "vote_average": 8.109,
+        "release_date": "2017-11-13",
+        "popularity": 10.3461
+    },
+    {
         "id": 1371185,
         "type": "movie",
         "title": "Song Sung Blue",
@@ -7207,9 +7231,9 @@
         "overview": "Based on a true story, two down-on-their-luck musicians form a joyous Neil Diamond tribute band, proving it's never too late to find love and follow your dreams.",
         "overview_ar": "Based on a true story, two down-on-their-luck musicians form a joyous Neil Diamond tribute band, proving it's never too late to find love and follow your dreams.",
         "poster_path": "/kQzDdxI0F5z16qo2vzDoqdVMl4O.jpg",
-        "vote_average": 7.538,
+        "vote_average": 7.5,
         "release_date": "2025-12-25",
-        "popularity": 12.3156
+        "popularity": 13.1164
     },
     {
         "id": 46195,
@@ -7221,7 +7245,7 @@
         "poster_path": "/4nJxhUknKV8Gqdhov8pU1YWDYfb.jpg",
         "vote_average": 6.8,
         "release_date": "2011-04-03",
-        "popularity": 12.3015
+        "popularity": 11.8963
     },
     {
         "id": 38055,
@@ -7233,7 +7257,7 @@
         "poster_path": "/uZ9ytt3sPTx62XTfN56ILSuYWRe.jpg",
         "vote_average": 7.017,
         "release_date": "2010-10-28",
-        "popularity": 12.2834
+        "popularity": 12.1826
     },
     {
         "id": 423502,
@@ -7245,7 +7269,7 @@
         "poster_path": "/19ly5EebC8LlejpbWWSBEMqtJz1.jpg",
         "vote_average": 4.5,
         "release_date": "2016-10-12",
-        "popularity": 12.2815
+        "popularity": 12.8373
     },
     {
         "id": 141052,
@@ -7257,19 +7281,7 @@
         "poster_path": "/eifGNCSDuxJeS1loAXil5bIGgvC.jpg",
         "vote_average": 6.071,
         "release_date": "2017-11-15",
-        "popularity": 12.2808
-    },
-    {
-        "id": 580489,
-        "type": "movie",
-        "title": "Venom: Let There Be Carnage",
-        "title_ar": "فينوم: لتكن مذبحة",
-        "overview": "After finding a host body in investigative reporter Eddie Brock, the alien symbiote must face a new enemy, Carnage, the alter ego of serial killer Cletus Kasady.",
-        "overview_ar": "في الوقت الذي يجتهد فيه \"إيدي بروك\" و\"فينوم\" لخوض غمار علاقتهما الشائكة، يظهر تهديد جديد من القاتل المتسلسل \"كليتوس كاسادي\" وكائن فضائي جديد مُعايش.",
-        "poster_path": "/pzKsRuKLFmYrW5Q0q8E8G78Tcgo.jpg",
-        "vote_average": 6.8,
-        "release_date": "2021-09-30",
-        "popularity": 12.2729
+        "popularity": 13.6214
     },
     {
         "id": 37135,
@@ -7281,7 +7293,7 @@
         "poster_path": "/bTvHlcqiOjGa3lFtbrTLTM3zasY.jpg",
         "vote_average": 7.397,
         "release_date": "1999-06-17",
-        "popularity": 12.2609
+        "popularity": 12.5242
     },
     {
         "id": 489,
@@ -7293,7 +7305,7 @@
         "poster_path": "/z2FnLKpFi1HPO7BEJxdkv6hpJSU.jpg",
         "vote_average": 8.2,
         "release_date": "1997-12-05",
-        "popularity": 12.2601
+        "popularity": 13.8133
     },
     {
         "id": 85877,
@@ -7305,7 +7317,7 @@
         "poster_path": "/bBC1fBHyFBmc6fn4UDedtkOVSaD.jpg",
         "vote_average": 5.6,
         "release_date": "2011-10-06",
-        "popularity": 12.2536
+        "popularity": 12.0671
     },
     {
         "id": 1242011,
@@ -7317,7 +7329,7 @@
         "poster_path": "/80slKYVM5teFH3kz6ouWrZXveqj.jpg",
         "vote_average": 7.025,
         "release_date": "2025-07-28",
-        "popularity": 12.2522
+        "popularity": 13.7916
     },
     {
         "id": 745,
@@ -7329,7 +7341,7 @@
         "poster_path": "/vOyfUXNFSnaTk7Vk5AjpsKTUWsu.jpg",
         "vote_average": 7.948,
         "release_date": "1999-08-06",
-        "popularity": 12.2502
+        "popularity": 9.8102
     },
     {
         "id": 4951,
@@ -7341,7 +7353,7 @@
         "poster_path": "/ujERk3aKABXU3NDXOAxEQYTHe9A.jpg",
         "vote_average": 7.589,
         "release_date": "1999-03-30",
-        "popularity": 12.2451
+        "popularity": 11.7265
     },
     {
         "id": 9487,
@@ -7353,7 +7365,7 @@
         "poster_path": "/Ah3J9OJVc2CNCuH2zMydXy9fmIC.jpg",
         "vote_average": 6.973,
         "release_date": "1998-11-25",
-        "popularity": 12.2353
+        "popularity": 12.6099
     },
     {
         "id": 1151031,
@@ -7363,9 +7375,9 @@
         "overview": "Following the death of their father, a brother and sister are sent to live with a foster mother, only to learn that she is hiding a terrifying secret.",
         "overview_ar": "في إطار من الرعب، ينتقل أخ وأخت للعيش رفقة أم بالتبني، ولكن تتحول أحلامهما بالأمان والهدوء لكابوس مروع حينما يكتشفوا الطقوس الغريبة التي تدور داخل المنزل.",
         "poster_path": "/1Q3GlCXGYWELifxANYZ5OVMRVZl.jpg",
-        "vote_average": 7.378,
+        "vote_average": 7.377,
         "release_date": "2025-05-28",
-        "popularity": 12.2279
+        "popularity": 11.4836
     },
     {
         "id": 490132,
@@ -7377,7 +7389,7 @@
         "poster_path": "/7BsvSuDQuoqhWmU2fL7W2GOcZHU.jpg",
         "vote_average": 8.222,
         "release_date": "2018-11-16",
-        "popularity": 12.2254
+        "popularity": 12.7213
     },
     {
         "id": 508943,
@@ -7389,7 +7401,7 @@
         "poster_path": "/9x4i9uKGXt8IiiIF5Ey0DIoY738.jpg",
         "vote_average": 7.788,
         "release_date": "2021-06-17",
-        "popularity": 12.1749
+        "popularity": 11.888
     },
     {
         "id": 51876,
@@ -7401,7 +7413,7 @@
         "poster_path": "/kCokPP4WCQRrrAuZ7FcpIyHr8b2.jpg",
         "vote_average": 7.194,
         "release_date": "2011-03-17",
-        "popularity": 12.1666
+        "popularity": 10.0824
     },
     {
         "id": 447332,
@@ -7413,7 +7425,7 @@
         "poster_path": "/nAU74GmpUk7t5iklEp3bufwDq4n.jpg",
         "vote_average": 7.393,
         "release_date": "2018-04-03",
-        "popularity": 12.1647
+        "popularity": 13.6875
     },
     {
         "id": 404368,
@@ -7425,19 +7437,7 @@
         "poster_path": "/iVCrhBcpDaHGvv7CLYbK6PuXZo1.jpg",
         "vote_average": 7.163,
         "release_date": "2018-11-20",
-        "popularity": 12.1375
-    },
-    {
-        "id": 396535,
-        "type": "movie",
-        "title": "Train to Busan",
-        "title_ar": "قطار إلى بوسان",
-        "overview": "When a zombie virus pushes Korea into a state of emergency, those trapped on an express train to Busan must fight for their own survival.",
-        "overview_ar": "قصة (سوك وو) وابنته (سوو آن) اللذان يصعدان إلى القطار الكوري السريع الذي سيقلهم من (سول) إلى (بوسان)، لكن في لحظة مغادرتهم، تمتلئ محطة القطار بالموتى الأحياء.",
-        "poster_path": "/vNVFt6dtcqnI7hqa6LFBUibuFiw.jpg",
-        "vote_average": 7.7,
-        "release_date": "2016-07-20",
-        "popularity": 12.1362
+        "popularity": 12.0368
     },
     {
         "id": 1125899,
@@ -7680,6 +7680,18 @@
         "popularity": 11.9772
     },
     {
+        "id": 60898,
+        "type": "movie",
+        "title": "Erotic Ghost Story",
+        "title_ar": "Erotic Ghost Story",
+        "overview": "After one thousand years, three vixens transform into humans. They seduce a poor young scholar who soon finds himself in a horrifying situation.",
+        "overview_ar": "After one thousand years, three vixens transform into humans. They seduce a poor young scholar who soon finds himself in a horrifying situation.",
+        "poster_path": "/fTUCwsxVoLFuodAtlL6aITP1B45.jpg",
+        "vote_average": 6.12,
+        "release_date": "1990-05-19",
+        "popularity": 11.5946
+    },
+    {
         "id": 383498,
         "type": "movie",
         "title": "Deadpool 2",
@@ -7689,7 +7701,7 @@
         "poster_path": "/to0spRl1CMDvyUbOnbb4fTk3VAd.jpg",
         "vote_average": 7.489,
         "release_date": "2018-05-15",
-        "popularity": 11.9554
+        "popularity": 15.0849
     },
     {
         "id": 1438973,
@@ -7701,7 +7713,7 @@
         "poster_path": "/4vWDKzP6aA962Pkyb8puS106gVN.jpg",
         "vote_average": 5.0,
         "release_date": "2025-02-23",
-        "popularity": 11.9452
+        "popularity": 12.5299
     },
     {
         "id": 62835,
@@ -7711,9 +7723,9 @@
         "overview": "After witnessing her parents’ murder as a child in Bogota, Cataleya Restrepo grows up to be a stone-cold assassin. She works for her uncle as a hitman by day, but her personal time is spent engaging in vigilante murders that she hopes will lead her to her ultimate target: the mobster responsible for her parents' death.",
         "overview_ar": "بعد أن شهدت مقتل والديها عندما كانت طفلة في بوغوتا ، كبرت كاتاليا ريستريبو لتصبح قاتلة باردة. تعمل مع عمها كقاتل محترف في النهار ، لكن وقتها الشخصي يقضي في الانخراط في جرائم القتل الأهلية التي تأمل أن تقودها إلى هدفها النهائي: العصابة المسؤولة عن وفاة والديها.",
         "poster_path": "/rEdGDgRB3gducezNSIyx2lbKQy4.jpg",
-        "vote_average": 6.639,
+        "vote_average": 6.64,
         "release_date": "2011-07-27",
-        "popularity": 11.9422
+        "popularity": 11.1257
     },
     {
         "id": 648878,
@@ -7725,7 +7737,7 @@
         "poster_path": "/4GIqZUgPZ146BhibsPHMHef2nXX.jpg",
         "vote_average": 6.4,
         "release_date": "2025-07-16",
-        "popularity": 11.9352
+        "popularity": 11.5962
     },
     {
         "id": 640146,
@@ -7737,7 +7749,7 @@
         "poster_path": "/qnqGbB22YJ7dSs4o6M7exTpNxPz.jpg",
         "vote_average": 6.24,
         "release_date": "2023-02-15",
-        "popularity": 11.9319
+        "popularity": 12.9276
     },
     {
         "id": 10192,
@@ -7749,7 +7761,7 @@
         "poster_path": "/6HrfPZtKcGmX2tUWW3cnciZTaSD.jpg",
         "vote_average": 6.4,
         "release_date": "2010-05-20",
-        "popularity": 11.9235
+        "popularity": 11.194
     },
     {
         "id": 48138,
@@ -7761,7 +7773,7 @@
         "poster_path": "/aXBQD515okXQZmYA89ntXMvSJSd.jpg",
         "vote_average": 6.687,
         "release_date": "2011-02-16",
-        "popularity": 11.9189
+        "popularity": 12.6517
     },
     {
         "id": 615777,
@@ -7773,7 +7785,7 @@
         "poster_path": "/wjOHjWCUE0YzDiEzKv8AfqHj3ir.jpg",
         "vote_average": 7.368,
         "release_date": "2022-12-22",
-        "popularity": 11.918
+        "popularity": 11.302
     },
     {
         "id": 640,
@@ -7785,7 +7797,7 @@
         "poster_path": "/ctjEj2xM32OvBXCq8zAdK3ZrsAj.jpg",
         "vote_average": 7.977,
         "release_date": "2002-12-16",
-        "popularity": 11.9113
+        "popularity": 14.6937
     },
     {
         "id": 185,
@@ -7795,9 +7807,9 @@
         "overview": "In a near-future Britain, young Alexander DeLarge and his pals get their kicks beating and raping anyone they please. When not destroying the lives of others, Alex swoons to the music of Beethoven. The state, eager to crack down on juvenile crime, gives an incarcerated Alex the option to undergo an invasive procedure that'll rob him of all personal agency. In a time when conscience is a commodity, can Alex change his tune?",
         "overview_ar": "في بريطانيا في المستقبل القريب ، يقوم الشاب ألكسندر ديلارج ورفاقه بضرب واغتصاب أي شخص يحلو لهم. عندما لا يدمر حياة الآخرين ، يغمى أليكس على موسيقى بيتهوفن. الدولة حريصة على اتخاذ إجراءات صارمة ضد جرائم الأحداث ، وتمنح \"أليكس\" المسجون خيار الخضوع لإجراء جائر من شأنه أن يسلبه من كل وكالة شخصية. في وقت أصبح فيه الضمير سلعة ، هل يستطيع أليكس تغيير لحنه؟",
         "poster_path": "/uBB2SoceeHndk1lgBgTxXpMocFg.jpg",
-        "vote_average": 8.18,
+        "vote_average": 8.2,
         "release_date": "1971-10-28",
-        "popularity": 11.9107
+        "popularity": 11.0417
     },
     {
         "id": 176,
@@ -7807,9 +7819,9 @@
         "overview": "Two men wake up to find themselves shackled in a grimy, abandoned bathroom. As they struggle to comprehend their predicament, they discover a disturbing tape left behind by the sadistic mastermind known as Jigsaw. With a chilling voice and cryptic instructions, Jigsaw informs them that they must partake in a gruesome game in order to secure their freedom.",
         "overview_ar": "(آدم) و(جوردون) رجلان غريبان عن بعضهما البعض، يستيقظان في غرفة غريبة بمكان غير معلوم ومعهم جثة رجل لا يعرفونه داخل الغرفة، فضلًا عن أدوات عشوائية وألغاز متباينة متناثرة حولهم؛ فيبدآن التساؤل عن مُدبر كل هذه الأمور واستنباط ما يمكنهما التوصل إليه مما هو متاح لهما بالمكان.",
         "poster_path": "/rLNSOudrayDBo1uqXjrhxcjODIC.jpg",
-        "vote_average": 7.4,
+        "vote_average": 7.418,
         "release_date": "2004-10-01",
-        "popularity": 11.8934
+        "popularity": 11.1466
     },
     {
         "id": 13183,
@@ -7821,7 +7833,7 @@
         "poster_path": "/aVURelN3pM56lFM7Dgfs5TixcIf.jpg",
         "vote_average": 7.348,
         "release_date": "2009-03-04",
-        "popularity": 11.893
+        "popularity": 12.5028
     },
     {
         "id": 8009,
@@ -7831,9 +7843,9 @@
         "overview": "He fought his first battle on the Scottish Highlands in 1536. He will fight his greatest battle on the streets of New York City in 1986. His name is Connor MacLeod. He is immortal.",
         "overview_ar": "He fought his first battle on the Scottish Highlands in 1536. He will fight his greatest battle on the streets of New York City in 1986. His name is Connor MacLeod. He is immortal.",
         "poster_path": "/8Z8dptJEypuLoOQro1WugD855YE.jpg",
-        "vote_average": 6.865,
+        "vote_average": 6.862,
         "release_date": "1986-03-07",
-        "popularity": 11.8878
+        "popularity": 9.8602
     },
     {
         "id": 1468417,
@@ -7845,7 +7857,7 @@
         "poster_path": "/hcjYvv4k9qs0lDG1Q3GIglT30IW.jpg",
         "vote_average": 4.362,
         "release_date": "2025-05-06",
-        "popularity": 11.8661
+        "popularity": 11.4172
     },
     {
         "id": 1241436,
@@ -7857,7 +7869,7 @@
         "poster_path": "/srj9rYrjefyWqkLc6l2xjTGeBGO.jpg",
         "vote_average": 7.087,
         "release_date": "2025-04-09",
-        "popularity": 11.8573
+        "popularity": 12.717
     },
     {
         "id": 986097,
@@ -7869,7 +7881,7 @@
         "poster_path": "/qPJzcYR2f1O1uynYBCVPPJuOiAH.jpg",
         "vote_average": 5.778,
         "release_date": "2025-09-18",
-        "popularity": 11.8227
+        "popularity": 10.4955
     },
     {
         "id": 62211,
@@ -7881,7 +7893,7 @@
         "poster_path": "/y7thwJ7z5Bplv6vwl6RI0yteaDD.jpg",
         "vote_average": 7.044,
         "release_date": "2013-06-19",
-        "popularity": 11.8098
+        "popularity": 10.0619
     },
     {
         "id": 290098,
@@ -7893,7 +7905,7 @@
         "poster_path": "/dLlH4aNHdnmf62umnInL8xPlPzw.jpg",
         "vote_average": 8.2,
         "release_date": "2016-06-01",
-        "popularity": 11.8089
+        "popularity": 11.4902
     },
     {
         "id": 93456,
@@ -7905,19 +7917,7 @@
         "poster_path": "/5Fh4NdoEnCjCK9wLjdJ9DJNFl2b.jpg",
         "vote_average": 6.9,
         "release_date": "2013-06-26",
-        "popularity": 11.8051
-    },
-    {
-        "id": 12403,
-        "type": "movie",
-        "title": "A Perfect Getaway",
-        "title_ar": "A Perfect Getaway",
-        "overview": "For their honeymoon, newlyweds Cliff and Cydney head to the tropical islands of Hawaii. While journeying through the paradisaical countryside the couple encounters Kale and Cleo, two disgruntled hitchhikers and Nick and Gina, two wild but well-meaning spirits who help guide them through the lush jungles. The picturesque waterfalls and scenic mountainsides quickly give way to terror when Cliff and Cydney learn of a grisly murder that occurred nearby and realize that they're being followed by chance acquaintances that suspiciously fit the description of the killers.",
-        "overview_ar": "For their honeymoon, newlyweds Cliff and Cydney head to the tropical islands of Hawaii. While journeying through the paradisaical countryside the couple encounters Kale and Cleo, two disgruntled hitchhikers and Nick and Gina, two wild but well-meaning spirits who help guide them through the lush jungles. The picturesque waterfalls and scenic mountainsides quickly give way to terror when Cliff and Cydney learn of a grisly murder that occurred nearby and realize that they're being followed by chance acquaintances that suspiciously fit the description of the killers.",
-        "poster_path": "/ncuGG0hIlA03dQBJmdoT2LWgodG.jpg",
-        "vote_average": 6.35,
-        "release_date": "2009-06-08",
-        "popularity": 11.7974
+        "popularity": 10.2262
     },
     {
         "id": 251,
@@ -8393,11 +8393,23 @@
         "title": "Long Distance",
         "title_ar": "Long Distance",
         "overview": "After crash-landing on an alien planet, an asteroid miner must contend with the challenges of his new surroundings, while making his way across the harsh terrain to the only other survivor – a woman who is trapped in her escape pod.",
-        "overview_ar": "بعد الهبوط الاضطراري على كوكب غريب ، يجب على عامل منجم كويكب مواجهة تحديات محيطه الجديد ، بينما يشق طريقه عبر التضاريس القاسية إلى الناجي الآخر الوحيد - امرأة محاصرة في جراب الهروب الخاص بها.",
+        "overview_ar": "After crash-landing on an alien planet, an asteroid miner must contend with the challenges of his new surroundings, while making his way across the harsh terrain to the only other survivor – a woman who is trapped in her escape pod.",
         "poster_path": "/m5NKltgQqqyoWJNuK18IqEGRG7J.jpg",
         "vote_average": 6.45,
         "release_date": "2024-07-12",
         "popularity": 11.5653
+    },
+    {
+        "id": 605722,
+        "type": "movie",
+        "title": "Long Distance",
+        "title_ar": "Long Distance",
+        "overview": "After crash-landing on an alien planet, an asteroid miner must contend with the challenges of his new surroundings, while making his way across the harsh terrain to the only other survivor – a woman who is trapped in her escape pod.",
+        "overview_ar": "بعد الهبوط الاضطراري على كوكب غريب ، يجب على عامل منجم كويكب مواجهة تحديات محيطه الجديد ، بينما يشق طريقه عبر التضاريس القاسية إلى الناجي الآخر الوحيد - امرأة محاصرة في جراب الهروب الخاص بها.",
+        "poster_path": "/m5NKltgQqqyoWJNuK18IqEGRG7J.jpg",
+        "vote_average": 6.45,
+        "release_date": "2024-07-12",
+        "popularity": 11.7359
     },
     {
         "id": 10144,
@@ -8409,7 +8421,7 @@
         "poster_path": "/plcZXvI310FkbwIptvd6rqk63LP.jpg",
         "vote_average": 7.352,
         "release_date": "1989-11-17",
-        "popularity": 11.5634
+        "popularity": 9.8442
     },
     {
         "id": 23483,
@@ -8421,7 +8433,7 @@
         "poster_path": "/iHMbrTHJwocsNvo5murCBw0CwTo.jpg",
         "vote_average": 7.122,
         "release_date": "2010-03-26",
-        "popularity": 11.5604
+        "popularity": 11.5009
     },
     {
         "id": 889737,
@@ -8433,7 +8445,7 @@
         "poster_path": "/if8QiqCI7WAGImKcJCfzp6VTyKA.jpg",
         "vote_average": 5.399,
         "release_date": "2024-10-01",
-        "popularity": 11.5561
+        "popularity": 12.938
     },
     {
         "id": 753342,
@@ -8445,7 +8457,7 @@
         "poster_path": "/ytFOXyghxLzAM4KZyazDdEkM66q.jpg",
         "vote_average": 6.309,
         "release_date": "2023-11-22",
-        "popularity": 11.5443
+        "popularity": 10.5686
     },
     {
         "id": 249397,
@@ -8457,7 +8469,7 @@
         "poster_path": "/iLUNqgNKuWn667kXCKztSxYbT3k.jpg",
         "vote_average": 6.7,
         "release_date": "2013-12-25",
-        "popularity": 11.542
+        "popularity": 10.0141
     },
     {
         "id": 1097549,
@@ -8469,7 +8481,7 @@
         "poster_path": "/ilwO6elz3mLV9CToT7C8pjVeKX0.jpg",
         "vote_average": 5.71,
         "release_date": "2024-12-25",
-        "popularity": 11.5274
+        "popularity": 11.7246
     },
     {
         "id": 300668,
@@ -8481,7 +8493,7 @@
         "poster_path": "/4YRplSk6BhH6PRuE9gfyw9byUJ6.jpg",
         "vote_average": 6.438,
         "release_date": "2018-02-22",
-        "popularity": 11.5241
+        "popularity": 12.2331
     },
     {
         "id": 345887,
@@ -8493,7 +8505,7 @@
         "poster_path": "/cQvc9N6JiMVKqol3wcYrGshsIdZ.jpg",
         "vote_average": 6.783,
         "release_date": "2018-07-19",
-        "popularity": 11.5185
+        "popularity": 13.6986
     },
     {
         "id": 278927,
@@ -8505,7 +8517,7 @@
         "poster_path": "/2Epx7F9X7DrFptn4seqn4mzBVks.jpg",
         "vote_average": 6.867,
         "release_date": "2016-04-07",
-        "popularity": 11.5164
+        "popularity": 11.8008
     },
     {
         "id": 8355,
@@ -8517,7 +8529,7 @@
         "poster_path": "/cXOLaxcNjNAYmEx1trZxOTKhK3Q.jpg",
         "vote_average": 6.762,
         "release_date": "2009-06-26",
-        "popularity": 11.504
+        "popularity": 12.2008
     },
     {
         "id": 1205515,
@@ -8529,7 +8541,7 @@
         "poster_path": "/n8wZEQen5hDNRGzm4fY4sxWe5xe.jpg",
         "vote_average": 6.9,
         "release_date": "2025-06-27",
-        "popularity": 11.4921
+        "popularity": 10.1224
     },
     {
         "id": 360920,
@@ -8541,7 +8553,7 @@
         "poster_path": "/smxA8yvZ0LzDPer9BIRd4pyOpx1.jpg",
         "vote_average": 6.877,
         "release_date": "2018-11-08",
-        "popularity": 11.4875
+        "popularity": 9.4171
     },
     {
         "id": 696506,
@@ -8553,7 +8565,7 @@
         "poster_path": "/edKpE9B5qN3e559OuMCLZdW1iBZ.jpg",
         "vote_average": 6.83,
         "release_date": "2025-02-28",
-        "popularity": 11.4803
+        "popularity": 12.2553
     },
     {
         "id": 170,
@@ -8563,9 +8575,9 @@
         "overview": "Twenty-eight days after a killer virus was accidentally unleashed from a British research facility, a small group of London survivors are caught in a desperate struggle to protect themselves from the infected. Carried by animals and humans, the virus turns those it infects into homicidal maniacs -- and it's absolutely impossible to contain.",
         "overview_ar": "يتحدث الفيلم عن رجل يستيقظ من غيبوبة دخلها منذ فترة طويلة, فبعد استيقاظه يرى نفسه في مستشفى ولا يجد أحداً آخر غيره ليضطر الخروج فيرى بأن المدينة كلها مهجورة وقدحلت بها فوضى عارمة في كل شيء بسبب انتشار وباء جيني قد حوّل البشر إلى “زومبي” وكيف ينجو فئة منهم ممن تحول من الباقين.  الفيلم من إخراج المخرج البريطاني المميز داني بويل, على الرغم من أن الفيلم يتكلم عن انتشار الزومبي وهو مايراه البعض مكرره ومبتذل واستهلك في كثير من الأفلام السابقة, إلا أن فيلم “بعد 8 يوم” يعد واحد من أبرز أفلام الرعب والزومبي تحديداً في الفترة الماضية على وجه الخصوص , فبالنظر لما قدمه داني بويل في عمله هذا فإنه استطاع صنع فيلم رعب وإثارة مميز جداً في خلق الأجواء الممتعة والجذابة وحتى الابتكار في بعض القواعد التي وضعت لمثل أفلام الزومبي هذه",
         "poster_path": "/sQckQRt17VaWbo39GIu0TMOiszq.jpg",
-        "vote_average": 7.238,
+        "vote_average": 7.2,
         "release_date": "2002-10-31",
-        "popularity": 11.4714
+        "popularity": 13.0106
     },
     {
         "id": 522938,
@@ -8577,7 +8589,7 @@
         "poster_path": "/kTQ3J8oTTKofAVLYnds2cHUz9KO.jpg",
         "vote_average": 6.53,
         "release_date": "2019-09-18",
-        "popularity": 11.4671
+        "popularity": 13.5118
     },
     {
         "id": 265208,
@@ -8589,7 +8601,7 @@
         "poster_path": "/zN80Tlly8oMpKbVJv2TfRIj8dHG.jpg",
         "vote_average": 5.693,
         "release_date": "2015-01-14",
-        "popularity": 11.4663
+        "popularity": 12.1605
     },
     {
         "id": 882598,
@@ -8601,7 +8613,7 @@
         "poster_path": "/aPqcQwu4VGEewPhagWNncDbJ9Xp.jpg",
         "vote_average": 6.666,
         "release_date": "2022-09-23",
-        "popularity": 11.4433
+        "popularity": 9.159
     },
     {
         "id": 335977,
@@ -8613,7 +8625,7 @@
         "poster_path": "/Af4bXE63pVsb2FtbW8uYIyPBadD.jpg",
         "vote_average": 6.517,
         "release_date": "2023-06-25",
-        "popularity": 11.4318
+        "popularity": 12.1972
     },
     {
         "id": 1401542,
@@ -8625,7 +8637,7 @@
         "poster_path": "/1KMG1inDAnKaGZ1W8Ac3wn6bdXu.jpg",
         "vote_average": 6.25,
         "release_date": "2026-01-21",
-        "popularity": 11.4243
+        "popularity": 10.0401
     },
     {
         "id": 645710,
@@ -8637,7 +8649,7 @@
         "poster_path": "/8Y4XOIWhpOvSOEn8XrxbkH9yAXO.jpg",
         "vote_average": 6.519,
         "release_date": "2021-08-25",
-        "popularity": 11.4226
+        "popularity": 10.5886
     },
     {
         "id": 609681,
@@ -8649,7 +8661,7 @@
         "poster_path": "/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg",
         "vote_average": 5.9,
         "release_date": "2023-11-08",
-        "popularity": 11.4171
+        "popularity": 8.9633
     },
     {
         "id": 985939,
@@ -8661,7 +8673,7 @@
         "poster_path": "/spCAxD99U1A6jsiePFoqdEcY0dG.jpg",
         "vote_average": 7.111,
         "release_date": "2022-08-11",
-        "popularity": 11.4086
+        "popularity": 10.9978
     },
     {
         "id": 22970,
@@ -8673,7 +8685,7 @@
         "poster_path": "/zZZe5wn0udlhMtdlDjN4NB72R6e.jpg",
         "vote_average": 6.644,
         "release_date": "2012-04-12",
-        "popularity": 11.4068
+        "popularity": 9.1609
     },
     {
         "id": 331482,
@@ -8685,7 +8697,7 @@
         "poster_path": "/yn5ihODtZ7ofn8pDYfxCmxh8AXI.jpg",
         "vote_average": 7.9,
         "release_date": "2019-12-25",
-        "popularity": 11.4059
+        "popularity": 9.862
     },
     {
         "id": 1103437,
@@ -8695,9 +8707,9 @@
         "overview": "After a viral outbreak ravaged the country’s adult population, a group of orphans heads south in search of a new life, only to find themselves at the mercy of a deranged woman harboring a dangerous secret.",
         "overview_ar": "After a viral outbreak ravaged the country’s adult population, a group of orphans heads south in search of a new life, only to find themselves at the mercy of a deranged woman harboring a dangerous secret.",
         "poster_path": "/GoIIdrjmXo587L2s2mqgMFvBIs.jpg",
-        "vote_average": 6.174,
+        "vote_average": 6.2,
         "release_date": "2025-07-03",
-        "popularity": 11.4016
+        "popularity": 10.9423
     },
     {
         "id": 818647,
@@ -8709,7 +8721,7 @@
         "poster_path": "/jmkpZvMVIRrMFevxzOubSBfG0s0.jpg",
         "vote_average": 7.349,
         "release_date": "2022-02-04",
-        "popularity": 11.3995
+        "popularity": 10.5977
     },
     {
         "id": 1413097,
@@ -8721,7 +8733,7 @@
         "poster_path": "/ba6Silct0Y4pyvrSv0Tj0Urmx9f.jpg",
         "vote_average": 3.042,
         "release_date": "2026-01-30",
-        "popularity": 11.3992
+        "popularity": 9.5416
     },
     {
         "id": 80321,
@@ -8733,7 +8745,7 @@
         "poster_path": "/ekraj4ksvIKeuvQVEevEJkuybZd.jpg",
         "vote_average": 6.627,
         "release_date": "2012-06-06",
-        "popularity": 11.3936
+        "popularity": 11.6791
     },
     {
         "id": 381284,
@@ -8745,7 +8757,7 @@
         "poster_path": "/9lfz2W2uGjyow3am00rsPJ8iOyq.jpg",
         "vote_average": 8.047,
         "release_date": "2016-12-10",
-        "popularity": 11.391
+        "popularity": 11.4914
     },
     {
         "id": 343668,
@@ -8757,7 +8769,7 @@
         "poster_path": "/34xBL6BXNYFqtHO9zhcgoakS4aP.jpg",
         "vote_average": 7.0,
         "release_date": "2017-09-20",
-        "popularity": 11.3758
+        "popularity": 12.0307
     },
     {
         "id": 359724,
@@ -8769,7 +8781,7 @@
         "poster_path": "/dR1Ju50iudrOh3YgfwkAU1g2HZe.jpg",
         "vote_average": 8.005,
         "release_date": "2019-11-13",
-        "popularity": 11.3726
+        "popularity": 10.2305
     },
     {
         "id": 604,
@@ -8781,7 +8793,7 @@
         "poster_path": "/aA5qHS0FbSXO8PxcxUIHbDrJyuh.jpg",
         "vote_average": 7.1,
         "release_date": "2003-05-15",
-        "popularity": 11.3665
+        "popularity": 11.9355
     },
     {
         "id": 1182387,
@@ -8793,7 +8805,7 @@
         "poster_path": "/pnXLFioDeftqjlCVlRmXvIdMsdP.jpg",
         "vote_average": 5.54,
         "release_date": "2024-10-30",
-        "popularity": 11.349
+        "popularity": 11.1013
     },
     {
         "id": 140300,
@@ -8803,9 +8815,9 @@
         "overview": "While Po and his father are visiting a secret panda village, an evil spirit threatens all of China, forcing Po to form a ragtag army to fight back.",
         "overview_ar": "بينما يزور \"بو\" ووالده قرية سرّية للباندا، تهدد روح شريرة بلاد \"الصين\" بكاملها وتدفع \"بو\" إلى تشكيل جيش غير منظم للمقاومة والقتال.",
         "poster_path": "/oajNi4Su39WAByHI6EONu8G8HYn.jpg",
-        "vote_average": 6.9,
+        "vote_average": 6.922,
         "release_date": "2016-01-23",
-        "popularity": 11.3398
+        "popularity": 10.6095
     },
     {
         "id": 377,
@@ -8817,7 +8829,7 @@
         "poster_path": "/wGTpGGRMZmyFCcrY2YoxVTIBlli.jpg",
         "vote_average": 7.341,
         "release_date": "1984-11-09",
-        "popularity": 11.3398
+        "popularity": 10.3154
     },
     {
         "id": 650524,
@@ -8829,7 +8841,7 @@
         "poster_path": "/h3OUaPfCaFmzwB2eMHik50RsXlP.jpg",
         "vote_average": 6.6,
         "release_date": "2025-12-31",
-        "popularity": 11.33
+        "popularity": 10.9494
     },
     {
         "id": 424783,
@@ -8841,7 +8853,7 @@
         "poster_path": "/fw02ONlDhrYjTSZV8XO6hhU3ds3.jpg",
         "vote_average": 6.72,
         "release_date": "2018-11-22",
-        "popularity": 11.325
+        "popularity": 12.2194
     },
     {
         "id": 6479,
@@ -8853,7 +8865,7 @@
         "poster_path": "/iPDkaSdKk2jRLTM65UOEoKtsIZ8.jpg",
         "vote_average": 7.21,
         "release_date": "2007-12-12",
-        "popularity": 11.3203
+        "popularity": 12.3441
     },
     {
         "id": 1029575,
@@ -8865,7 +8877,7 @@
         "poster_path": "/jLLtx3nTRSLGPAKl4RoIv1FbEBr.jpg",
         "vote_average": 7.234,
         "release_date": "2023-12-14",
-        "popularity": 11.3078
+        "popularity": 11.624
     },
     {
         "id": 529203,
@@ -8875,9 +8887,9 @@
         "overview": "Searching for a safer habitat, the prehistoric Crood family discovers an idyllic, walled-in paradise that meets all of its needs. Unfortunately, they must also learn to live with the Bettermans -- a family that's a couple of steps above the Croods on the evolutionary ladder. As tensions between the new neighbors start to rise, a new threat soon propels both clans on an epic adventure that forces them to embrace their differences, draw strength from one another, and survive together.",
         "overview_ar": "في بحثها عن موطن أكثر أمانًا، تكتشف عائلة كرود من عصور ما قبل التاريخ جنةً مثاليةً محاطةً بالأسوار تُلبي جميع احتياجاتها. ولكن، للأسف، عليهم أيضًا أن يتعلموا العيش مع عائلة بيترمان - وهي عائلةٌ تتفوق عليهم ببضع خطوات في سلم التطور. ومع تصاعد التوترات بين الجيران الجدد، سرعان ما يدفع تهديدٌ جديدٌ كلا العشيرتين إلى مغامرةٍ ملحميةٍ تُجبرهما على تقبّل اختلافاتهما، واستمداد القوة من بعضهما البعض، والبقاء معًا.",
         "poster_path": "/tbVZ3Sq88dZaCANlUcewQuHQOaE.jpg",
-        "vote_average": 7.452,
+        "vote_average": 7.451,
         "release_date": "2020-11-25",
-        "popularity": 11.3068
+        "popularity": 10.117
     },
     {
         "id": 242,
@@ -8889,7 +8901,7 @@
         "poster_path": "/lm3pQ2QoQ16pextRsmnUbG2onES.jpg",
         "vote_average": 7.42,
         "release_date": "1990-12-25",
-        "popularity": 11.302
+        "popularity": 12.3902
     },
     {
         "id": 259316,
@@ -8901,7 +8913,7 @@
         "poster_path": "/fLsaFKExQt05yqjoAvKsmOMYvJR.jpg",
         "vote_average": 7.3,
         "release_date": "2016-11-16",
-        "popularity": 11.2994
+        "popularity": 12.2288
     },
     {
         "id": 1287322,
@@ -8913,7 +8925,7 @@
         "poster_path": "/ssy1uHGZkuXLkIWJWrtsBczPvVC.jpg",
         "vote_average": 7.38,
         "release_date": "2025-11-06",
-        "popularity": 11.2905
+        "popularity": 9.2899
     },
     {
         "id": 1294203,
@@ -8925,7 +8937,7 @@
         "poster_path": "/ttN5D6GKOwKWHmCzDGctAvaNMAi.jpg",
         "vote_average": 7.4,
         "release_date": "2025-02-12",
-        "popularity": 11.2896
+        "popularity": 10.9319
     },
     {
         "id": 1100782,
@@ -8937,7 +8949,7 @@
         "poster_path": "/ht8Uv9QPv9y7K0RvUyJIaXOZTfd.jpg",
         "vote_average": 6.589,
         "release_date": "2024-10-16",
-        "popularity": 11.2728
+        "popularity": 9.5169
     },
     {
         "id": 940721,
@@ -8947,9 +8959,9 @@
         "overview": "In postwar Japan, Godzilla brings new devastation to an already scorched landscape. With no military intervention or government help in sight, the survivors must join together in the face of despair and fight back against an unrelenting horror.",
         "overview_ar": "في \"اليابان\" بعد الحرب، ينضم طيار حربي سابق يعاني من الصدمة إلى جهود المدنيين في مواجهة وحش عملاق مطور نوويًّا يهاجم شواطئهم.",
         "poster_path": "/2E2WTX0TJEflAged6kzErwqX1kt.jpg",
-        "vote_average": 7.6,
+        "vote_average": 7.583,
         "release_date": "2023-11-03",
-        "popularity": 11.2582
+        "popularity": 12.3074
     },
     {
         "id": 520763,
@@ -8961,7 +8973,7 @@
         "poster_path": "/4q2hz2m8hubgvijz8Ez0T2Os2Yv.jpg",
         "vote_average": 7.443,
         "release_date": "2021-05-21",
-        "popularity": 11.2566
+        "popularity": 11.8435
     },
     {
         "id": 593643,
@@ -8973,7 +8985,7 @@
         "poster_path": "/fPtUgMcLIboqlTlPrq0bQpKK8eq.jpg",
         "vote_average": 7.169,
         "release_date": "2022-11-17",
-        "popularity": 11.249
+        "popularity": 9.4435
     },
     {
         "id": 61012,
@@ -8985,7 +8997,7 @@
         "poster_path": "/2JOujdpYUeGg3886gigTAQq0na6.jpg",
         "vote_average": 5.5,
         "release_date": "2012-10-10",
-        "popularity": 11.2333
+        "popularity": 11.0513
     },
     {
         "id": 505026,
@@ -8997,7 +9009,7 @@
         "poster_path": "/kVr5zIAFSPRQ57Y1zE7KzmhzdMQ.jpg",
         "vote_average": 6.415,
         "release_date": "2022-02-09",
-        "popularity": 11.2211
+        "popularity": 11.0262
     },
     {
         "id": 50620,
@@ -9009,7 +9021,7 @@
         "poster_path": "/7IGdPaKujv0BjI0Zd0m0a4CzEjJ.jpg",
         "vote_average": 6.46,
         "release_date": "2012-11-13",
-        "popularity": 11.2195
+        "popularity": 10.7047
     },
     {
         "id": 620,
@@ -9021,7 +9033,7 @@
         "poster_path": "/7E8nLijS9AwwUEPu2oFYOVKhdFA.jpg",
         "vote_average": 7.495,
         "release_date": "1984-06-08",
-        "popularity": 11.2008
+        "popularity": 10.6643
     },
     {
         "id": 1064028,
@@ -9033,7 +9045,7 @@
         "poster_path": "/gBenxR01Uy0Ev9RTIw6dVBPoyQU.jpg",
         "vote_average": 6.626,
         "release_date": "2024-08-15",
-        "popularity": 11.1926
+        "popularity": 11.5516
     },
     {
         "id": 10882,
@@ -9043,9 +9055,9 @@
         "overview": "Cursed to die by the evil fairy Maleficent when she was a baby, Princess Aurora is sent into hiding under protection from three good fairies. As she grows up far away, Maleficent becomes increasingly determined to seal the princess's fate.",
         "overview_ar": "تبدأ القصة بداية طبيعية، تلقي الساحرة الشريرة باللعنة، ويتم تخفيفها من قبل الجنية الثالثة. يقرر بعدها الملك والملكة التخلص من كل المغازل في المملكة وتنصحهما الجنيات بأن يخفيان الأميرة حتى عيد ميلادها السادس عشر في الغابة، دون أن يعرف عنها أحد حتى والداها أو هي نفسها. و بالفعل يتم تخبأة الأميرة شفق في الغابة، بحيث تصبح الفتاة الفقيرة ورد التي تربيها ثلاث عجائز في كوخ بسيط في الغابة. هذه العجائز هن الجنيات بعد أن تعهدن بعدم استخدام السحر أبدا كي لا يكشفوا التنكر.",
         "poster_path": "/n3pxoMDDxp10c1smgbDzW4bwlzq.jpg",
-        "vote_average": 6.944,
+        "vote_average": 6.943,
         "release_date": "1959-02-17",
-        "popularity": 11.1739
+        "popularity": 9.5774
     },
     {
         "id": 128,
@@ -9057,7 +9069,7 @@
         "poster_path": "/cMYCDADoLKLbB83g4WnJegaZimC.jpg",
         "vote_average": 8.322,
         "release_date": "1997-07-12",
-        "popularity": 11.1548
+        "popularity": 11.2667
     },
     {
         "id": 363676,
@@ -9069,7 +9081,7 @@
         "poster_path": "/4vs83YcJ8TsabADDtaeCJ6ZTjYY.jpg",
         "vote_average": 7.198,
         "release_date": "2016-09-07",
-        "popularity": 11.138
+        "popularity": 10.1771
     },
     {
         "id": 339964,
@@ -9081,7 +9093,7 @@
         "poster_path": "/vlc95gl3PtrjxSEuM8RhTtSm2xU.jpg",
         "vote_average": 6.63,
         "release_date": "2017-07-19",
-        "popularity": 11.1329
+        "popularity": 12.3172
     },
     {
         "id": 857,
@@ -9093,7 +9105,7 @@
         "poster_path": "/uqx37cS8cpHg8U35f9U5IBlrCV3.jpg",
         "vote_average": 8.221,
         "release_date": "1998-07-24",
-        "popularity": 11.1152
+        "popularity": 11.1657
     },
     {
         "id": 1593,
@@ -9105,7 +9117,7 @@
         "poster_path": "/pDsAAYf6Zn0yiAGJ6lYGs6hoZ4E.jpg",
         "vote_average": 6.595,
         "release_date": "2006-12-20",
-        "popularity": 11.1107
+        "popularity": 11.2674
     },
     {
         "id": 335988,
@@ -9114,18 +9126,6 @@
         "title_ar": "المتحولون: الفارس الأخير",
         "overview": "Humans and Transformers are at war. Optimus Prime is gone. The key to saving our future lies buried in the secrets of the past, in the hidden history of Transformers on Earth. Saving our world falls upon the shoulders of an unlikely alliance: Cade Yeager; Bumblebee; an English Lord; and an Oxford Professor.",
         "overview_ar": "يجد رئيس أوبتيموس كوكبه (سايبرترون) - الكوكب الميت بتلك الآونة - ويحاول جاهدًا في العثور على المسئول عن قتله؛ فيجد طريقة لإعادة الكوكب إلى الحياة مرة أخرى، وفي سبيل تحقيق هذا ينبغي له العثور على قطعة أثرية، وتوجد هذه القطعة الأثرية على كوكب الأرض.",
-        "poster_path": "/s5HQf2Gb3lIO2cRcFwNL9sn1o1o.jpg",
-        "vote_average": 6.1,
-        "release_date": "2017-06-16",
-        "popularity": 11.1104
-    },
-    {
-        "id": 335988,
-        "type": "movie",
-        "title": "Transformers: The Last Knight",
-        "title_ar": "Transformers: The Last Knight",
-        "overview": "Humans and Transformers are at war. Optimus Prime is gone. The key to saving our future lies buried in the secrets of the past, in the hidden history of Transformers on Earth. Saving our world falls upon the shoulders of an unlikely alliance: Cade Yeager; Bumblebee; an English Lord; and an Oxford Professor.",
-        "overview_ar": "Humans and Transformers are at war. Optimus Prime is gone. The key to saving our future lies buried in the secrets of the past, in the hidden history of Transformers on Earth. Saving our world falls upon the shoulders of an unlikely alliance: Cade Yeager; Bumblebee; an English Lord; and an Oxford Professor.",
         "poster_path": "/s5HQf2Gb3lIO2cRcFwNL9sn1o1o.jpg",
         "vote_average": 6.1,
         "release_date": "2017-06-16",
@@ -11529,7 +11529,7 @@
         "poster_path": "/pjnD08FlMAIXsfOLKQbvmO0f0MD.jpg",
         "vote_average": 6.786,
         "release_date": "2024-07-10",
-        "popularity": 9.7814
+        "popularity": 10.8727
     },
     {
         "id": 228967,
@@ -11541,7 +11541,7 @@
         "poster_path": "/tIDC4xT65l7a8qbgg8GvwD5g8c5.jpg",
         "vote_average": 6.191,
         "release_date": "2014-12-25",
-        "popularity": 9.7784
+        "popularity": 9.9667
     },
     {
         "id": 530254,
@@ -11553,7 +11553,7 @@
         "poster_path": "/4i2wo2ja5g2PmUxWa1a2eYIboZf.jpg",
         "vote_average": 7.89,
         "release_date": "2018-06-27",
-        "popularity": 9.7749
+        "popularity": 9.4262
     },
     {
         "id": 841,
@@ -11565,7 +11565,7 @@
         "poster_path": "/4kJmUCE7mkVJjXa7A0g2rY4IGTm.jpg",
         "vote_average": 6.179,
         "release_date": "1984-12-14",
-        "popularity": 9.7734
+        "popularity": 10.7499
     },
     {
         "id": 56292,
@@ -11577,7 +11577,7 @@
         "poster_path": "/eRZTGx7GsiKqPch96k27LK005ZL.jpg",
         "vote_average": 7.108,
         "release_date": "2011-12-07",
-        "popularity": 9.7676
+        "popularity": 10.5265
     },
     {
         "id": 318846,
@@ -11587,9 +11587,9 @@
         "overview": "The men who made millions from a global economic meltdown.",
         "overview_ar": "تدور أحداث الفيلم حول أربعة متخصصين في عالم الاقتصاد، والذين ينجحوا برؤيتهم الثاقبة في التنبؤ بانهيار سوق المقاولات والائتمان، في منتصف العقد الأول من الألفية الثالثة، ويقرروا أن يستغلوا ما يحدث وبالذات مع البنوك الكبرى في عالم الاقتصاد بسبب الطمع ونقص التنبؤ بمثل تلك الاحتمالات الخطيرة على أسواق المال والأعمال.",
         "poster_path": "/scVEaJEwP8zUix8vgmMoJJ9Nq0w.jpg",
-        "vote_average": 7.4,
+        "vote_average": 7.359,
         "release_date": "2015-12-11",
-        "popularity": 9.7623
+        "popularity": 8.2507
     },
     {
         "id": 283366,
@@ -11601,7 +11601,7 @@
         "poster_path": "/CIlbMFOfYDj0MP23hsIYhFGrL6.jpg",
         "vote_average": 6.838,
         "release_date": "2016-09-28",
-        "popularity": 9.7616
+        "popularity": 9.6841
     },
     {
         "id": 214756,
@@ -11613,7 +11613,7 @@
         "poster_path": "/38C91I7Xft0gyY7BITm8i4yvuRb.jpg",
         "vote_average": 6.315,
         "release_date": "2015-06-25",
-        "popularity": 9.7523
+        "popularity": 9.7089
     },
     {
         "id": 333371,
@@ -11623,9 +11623,9 @@
         "overview": "After a catastrophic car crash, a young woman wakes up in a survivalist's underground bunker, where he claims to have saved her from an apocalyptic attack that has left the outside world uninhabitable.",
         "overview_ar": "الوحوش تأتي في أشكال عديدة.  بعد تعرضها لحادث سيارة، تحتجز امرأة في ملجأ مع رجلين، يزعمان أن العالم الخارجي تأثر بهجوم كيميائي واسع النطاق.",
         "poster_path": "/q8A39vcBDruhvoDTJd6L8a4lnTi.jpg",
-        "vote_average": 7.0,
+        "vote_average": 6.998,
         "release_date": "2016-03-10",
-        "popularity": 9.7518
+        "popularity": 10.7264
     },
     {
         "id": 1382406,
@@ -11637,7 +11637,7 @@
         "poster_path": "/nML8rOI4GOiiEsXgknuhZeUF8M7.jpg",
         "vote_average": 7.43,
         "release_date": "2024-12-05",
-        "popularity": 9.7429
+        "popularity": 10.7483
     },
     {
         "id": 348893,
@@ -11649,7 +11649,7 @@
         "poster_path": "/7QGdIJWWTkPhVjpQ0zA6z69khod.jpg",
         "vote_average": 7.183,
         "release_date": "2016-08-01",
-        "popularity": 9.7372
+        "popularity": 10.5983
     },
     {
         "id": 303857,
@@ -11661,7 +11661,7 @@
         "poster_path": "/soq3AxjALdBfdPAm8H7yuMmNL5Y.jpg",
         "vote_average": 6.9,
         "release_date": "2015-04-18",
-        "popularity": 9.7165
+        "popularity": 8.9549
     },
     {
         "id": 507244,
@@ -11673,7 +11673,7 @@
         "poster_path": "/hrze9JXp2QJpc2WjLfSUtRxyYSb.jpg",
         "vote_average": 6.484,
         "release_date": "2025-08-20",
-        "popularity": 9.7162
+        "popularity": 9.9242
     },
     {
         "id": 169,
@@ -11685,7 +11685,7 @@
         "poster_path": "/83X4VwY9sdSJykskmsplIVG0a4h.jpg",
         "vote_average": 6.292,
         "release_date": "1990-11-21",
-        "popularity": 9.7162
+        "popularity": 10.9747
     },
     {
         "id": 605,
@@ -11697,7 +11697,7 @@
         "poster_path": "/bkkS61w94ZVMNVd8KEyyJl2tnY5.jpg",
         "vote_average": 6.7,
         "release_date": "2003-11-05",
-        "popularity": 9.7101
+        "popularity": 10.4127
     },
     {
         "id": 395992,
@@ -11709,7 +11709,7 @@
         "poster_path": "/wztfli5NgYDgurVgShNflvnyA3Z.jpg",
         "vote_average": 6.448,
         "release_date": "2017-03-22",
-        "popularity": 9.7084
+        "popularity": 10.1153
     },
     {
         "id": 1202863,
@@ -11721,7 +11721,7 @@
         "poster_path": "/d49XZvGv6PucJNnbUjJegKkX1TM.jpg",
         "vote_average": 6.079,
         "release_date": "2024-03-22",
-        "popularity": 9.7083
+        "popularity": 10.0078
     },
     {
         "id": 36669,
@@ -11733,7 +11733,7 @@
         "poster_path": "/bZmGqOhMhaLn8AoFMvFDct4tbrL.jpg",
         "vote_average": 5.998,
         "release_date": "2002-11-17",
-        "popularity": 9.6931
+        "popularity": 11.1326
     },
     {
         "id": 81188,
@@ -11745,7 +11745,7 @@
         "poster_path": "/sW4qOa9yF0Ikg7lppncQ0n5UhKX.jpg",
         "vote_average": 7.373,
         "release_date": "2012-11-21",
-        "popularity": 9.6924
+        "popularity": 9.9587
     },
     {
         "id": 324852,
@@ -11757,7 +11757,7 @@
         "poster_path": "/6t3YWl7hrr88lCEFlGVqW5yV99R.jpg",
         "vote_average": 6.464,
         "release_date": "2017-06-15",
-        "popularity": 9.6914
+        "popularity": 9.6712
     },
     {
         "id": 2251,
@@ -13683,9 +13683,9 @@
         "id": 1299655,
         "type": "movie",
         "title": "Blue Moon",
-        "title_ar": "Blue Moon",
+        "title_ar": "القمر الأزرق",
         "overview": "On the evening of March 31, 1943, legendary lyricist Lorenz Hart confronts his shattered self-confidence in Sardi’s bar as his former collaborator, Richard Rodgers, celebrates the opening night of his ground-breaking hit musical, “Oklahoma!”",
-        "overview_ar": "On the evening of March 31, 1943, legendary lyricist Lorenz Hart confronts his shattered self-confidence in Sardi’s bar as his former collaborator, Richard Rodgers, celebrates the opening night of his ground-breaking hit musical, “Oklahoma!”",
+        "overview_ar": "في مساء يوم ٣١ مارس ١٩٤٣، يواجه الشاعر الغنائي الأسطوري لورنز هارت ثقته بنفسه المتهالكة في حانة سارديز، بينما يحتفل شريكه السابق ريتشارد رودجرز بليلة افتتاح مسرحيته الموسيقية الرائجة \"أوكلاهوما!\".",
         "poster_path": "/nij3i5ziQdqfiK29gb4rX1bkmVy.jpg",
         "vote_average": 6.67,
         "release_date": "2025-10-17",
@@ -14640,6 +14640,18 @@
         "popularity": 7.9972
     },
     {
+        "id": 205587,
+        "type": "movie",
+        "title": "The Judge",
+        "title_ar": "The Judge",
+        "overview": "A successful lawyer returns to his hometown for his mother's funeral only to discover that his estranged father, the town's judge, is suspected of murder.",
+        "overview_ar": "A successful lawyer returns to his hometown for his mother's funeral only to discover that his estranged father, the town's judge, is suspected of murder.",
+        "poster_path": "/3K93GWotLXe4FqpErri0xkpLaD5.jpg",
+        "vote_average": 7.3,
+        "release_date": "2014-10-08",
+        "popularity": 6.7298
+    },
+    {
         "id": 332562,
         "type": "movie",
         "title": "A Star Is Born",
@@ -14649,7 +14661,7 @@
         "poster_path": "/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg",
         "vote_average": 7.495,
         "release_date": "2018-10-03",
-        "popularity": 8.7463
+        "popularity": 8.2424
     },
     {
         "id": 64688,
@@ -14661,7 +14673,7 @@
         "poster_path": "/8v3Sqv9UcIUC4ebmpKWROqPBINZ.jpg",
         "vote_average": 6.9,
         "release_date": "2012-03-14",
-        "popularity": 8.746
+        "popularity": 9.0445
     },
     {
         "id": 254320,
@@ -14673,7 +14685,7 @@
         "poster_path": "/7Y9ILV1unpW9mLpGcqyGQU72LUy.jpg",
         "vote_average": 7.027,
         "release_date": "2015-10-15",
-        "popularity": 8.7447
+        "popularity": 7.2198
     },
     {
         "id": 138832,
@@ -14685,7 +14697,7 @@
         "poster_path": "/qF2LJ0jwWrtXSuT4AFD5OS2IqaT.jpg",
         "vote_average": 6.839,
         "release_date": "2013-08-07",
-        "popularity": 8.7346
+        "popularity": 8.9577
     },
     {
         "id": 1263256,
@@ -14697,7 +14709,7 @@
         "poster_path": "/nRwDPfYUzzzUQarfMxvPlasxzpL.jpg",
         "vote_average": 6.563,
         "release_date": "2025-07-25",
-        "popularity": 8.7333
+        "popularity": 7.5312
     },
     {
         "id": 300671,
@@ -14709,7 +14721,7 @@
         "poster_path": "/fZlAxZMo6BId1SiqyjLmkd7oUB7.jpg",
         "vote_average": 7.274,
         "release_date": "2016-01-14",
-        "popularity": 8.7318
+        "popularity": 8.9313
     },
     {
         "id": 412117,
@@ -14721,7 +14733,7 @@
         "poster_path": "/s9xg4V5EDKiphgIksVJ9gewBM11.jpg",
         "vote_average": 6.951,
         "release_date": "2019-05-24",
-        "popularity": 8.7305
+        "popularity": 8.9556
     },
     {
         "id": 381283,
@@ -14733,7 +14745,7 @@
         "poster_path": "/fjny9chXPx69ln1LMJxbwi5yHMt.jpg",
         "vote_average": 6.962,
         "release_date": "2017-09-13",
-        "popularity": 8.7232
+        "popularity": 9.2014
     },
     {
         "id": 165,
@@ -14745,7 +14757,7 @@
         "poster_path": "/YBawEsTkUZBDajKbd5LiHkmMGf.jpg",
         "vote_average": 7.774,
         "release_date": "1989-11-22",
-        "popularity": 8.7224
+        "popularity": 10.1487
     },
     {
         "id": 1771,
@@ -14757,7 +14769,7 @@
         "poster_path": "/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg",
         "vote_average": 7.004,
         "release_date": "2011-07-22",
-        "popularity": 8.722
+        "popularity": 9.3006
     },
     {
         "id": 59860,
@@ -14769,7 +14781,7 @@
         "poster_path": "/dcbqyycrWA56HXq5lm41HYuED8Y.jpg",
         "vote_average": 6.787,
         "release_date": "2011-07-01",
-        "popularity": 8.719
+        "popularity": 7.9463
     },
     {
         "id": 1245993,
@@ -14781,7 +14793,7 @@
         "poster_path": "/cvda8s5J8YaHjTyEyXQpvD6f3iV.jpg",
         "vote_average": 6.907,
         "release_date": "2025-08-26",
-        "popularity": 8.7188
+        "popularity": 10.1449
     },
     {
         "id": 877703,
@@ -14793,7 +14805,7 @@
         "poster_path": "/wAkpPm3wcHRqZl8XjUI3Y2chYq2.jpg",
         "vote_average": 7.486,
         "release_date": "2023-01-18",
-        "popularity": 8.7158
+        "popularity": 8.0854
     },
     {
         "id": 9739,
@@ -14805,7 +14817,7 @@
         "poster_path": "/dq6AmlVFo92PRuoLCcIyFdoRuxf.jpg",
         "vote_average": 6.8,
         "release_date": "1993-10-08",
-        "popularity": 8.7154
+        "popularity": 8.5538
     },
     {
         "id": 1313003,
@@ -14817,7 +14829,7 @@
         "poster_path": "/zRsQgmJRCCHXAm1Ls5Q72ziVYBh.jpg",
         "vote_average": 5.784,
         "release_date": "2025-03-20",
-        "popularity": 8.7139
+        "popularity": 8.9636
     },
     {
         "id": 5876,
@@ -14829,7 +14841,7 @@
         "poster_path": "/1CvJ6diBACKPVGOpcWuY4XPQdqX.jpg",
         "vote_average": 6.937,
         "release_date": "2007-11-21",
-        "popularity": 8.7139
+        "popularity": 9.4272
     },
     {
         "id": 1371789,
@@ -14841,7 +14853,7 @@
         "poster_path": "/hpPG14pFqGMS2FLvAWDtzGL7sUr.jpg",
         "vote_average": 5.9,
         "release_date": "2024-12-19",
-        "popularity": 8.7137
+        "popularity": 8.1262
     },
     {
         "id": 44833,
@@ -14853,7 +14865,7 @@
         "poster_path": "/9b0Im7SfedHiajTwzSL9zGyBI7M.jpg",
         "vote_average": 5.881,
         "release_date": "2012-04-11",
-        "popularity": 8.7106
+        "popularity": 9.3417
     },
     {
         "id": 416148,
@@ -14865,27 +14877,15 @@
         "poster_path": "/wGVnyKJm37uXqL1wAeLfnGuYw0m.jpg",
         "vote_average": 5.5,
         "release_date": "2016-11-30",
-        "popularity": 8.7075
+        "popularity": 8.2717
     },
     {
         "id": 13053,
         "type": "movie",
         "title": "Bolt",
-        "title_ar": "Bolt",
+        "title_ar": "بولت",
         "overview": "Bolt is the star of the biggest show in Hollywood. The only problem is, he thinks it's real. After he's accidentally shipped to New York City and separated from Penny, his beloved co-star and owner, Bolt must harness all his \"super powers\" to find a way home.",
-        "overview_ar": "Bolt is the star of the biggest show in Hollywood. The only problem is, he thinks it's real. After he's accidentally shipped to New York City and separated from Penny, his beloved co-star and owner, Bolt must harness all his \"super powers\" to find a way home.",
-        "poster_path": "/v5aC4nrzXFGJDWY4JO1eengXzqk.jpg",
-        "vote_average": 6.535,
-        "release_date": "2008-11-21",
-        "popularity": 8.7065
-    },
-    {
-        "id": 13053,
-        "type": "movie",
-        "title": "Bolt",
-        "title_ar": "Bolt",
-        "overview": "Bolt is the star of the biggest show in Hollywood. The only problem is, he thinks it's real. After he's accidentally shipped to New York City and separated from Penny, his beloved co-star and owner, Bolt must harness all his \"super powers\" to find a way home.",
-        "overview_ar": "Bolt is the star of the biggest show in Hollywood. The only problem is, he thinks it's real. After he's accidentally shipped to New York City and separated from Penny, his beloved co-star and owner, Bolt must harness all his \"super powers\" to find a way home.",
+        "overview_ar": "رائع تماما. مثير للسخرية. دعها تبدأ.\r بولت هو نجم أكبر عرض في هوليوود. المشكلة الوحيدة هي أنه يعتقد أنها حقيقية. بعد أن تم شحنه عن طريق الخطأ إلى مدينة نيويورك وفصله عن بيني ، شريكه المحبوب ومالكه ، يجب على بولت تسخير كل \"قواه الخارقة\" لإيجاد طريق إلى المنزل.",
         "poster_path": "/v5aC4nrzXFGJDWY4JO1eengXzqk.jpg",
         "vote_average": 6.535,
         "release_date": "2008-11-21",
@@ -15360,6 +15360,18 @@
         "popularity": 7.6186
     },
     {
+        "id": 855,
+        "type": "movie",
+        "title": "Black Hawk Down",
+        "title_ar": "سقوط الصقر الأسود",
+        "overview": "When U.S. Rangers and an elite Delta Force team attempt to kidnap two underlings of a Somali warlord, their Black Hawk helicopters are shot down, and the Americans suffer heavy casualties, facing intense fighting from the militia on the ground.",
+        "overview_ar": "عندما حاول رينجرز الأمريكي وفريق دلتا فورس من النخبة اختطاف اثنين من أتباع أحد أمراء الحرب الصوماليين ، تم إسقاط مروحياتهم من طراز بلاك هوك ، ويعاني الأمريكيون من خسائر فادحة ، ويواجهون قتالًا عنيفًا من الميليشيات على الأرض.",
+        "poster_path": "/7fU5dSqKRL4XHeEUz62rCKBfYok.jpg",
+        "vote_average": 7.39,
+        "release_date": "2001-12-28",
+        "popularity": 7.6186
+    },
+    {
         "id": 228326,
         "type": "movie",
         "title": "The Book of Life",
@@ -15369,7 +15381,7 @@
         "poster_path": "/aotTZos5KswgCryEzx2rlOjFsm1.jpg",
         "vote_average": 7.5,
         "release_date": "2014-10-01",
-        "popularity": 8.5838
+        "popularity": 7.4972
     },
     {
         "id": 51739,
@@ -15381,7 +15393,7 @@
         "poster_path": "/3lSRaSjDp2nkXMQkzzjpRi3035O.jpg",
         "vote_average": 7.7,
         "release_date": "2010-07-16",
-        "popularity": 8.5804
+        "popularity": 6.3849
     },
     {
         "id": 467244,
@@ -15391,9 +15403,9 @@
         "overview": "The commandant of Auschwitz, Rudolf Höss, and his wife Hedwig, strive to build a dream life for their family in a house and garden next to the camp.",
         "overview_ar": "يسعى قائد معسكر أوشفيتس في بولندا رادولف هوس وزوجته هيدوج لبناء حياة مثالية متمثلة في منزل وحديقة بالقرب من منطقة المعسكر.",
         "poster_path": "/hUu9zyZmDd8VZegKi1iK1Vk0RYS.jpg",
-        "vote_average": 7.011,
+        "vote_average": 7.0,
         "release_date": "2023-12-15",
-        "popularity": 8.5775
+        "popularity": 7.8931
     },
     {
         "id": 20504,
@@ -15405,7 +15417,7 @@
         "poster_path": "/1H1y9ZiqNFaLgQiRDDZLA55PviW.jpg",
         "vote_average": 6.793,
         "release_date": "2010-01-14",
-        "popularity": 8.5713
+        "popularity": 9.6577
     },
     {
         "id": 263472,
@@ -15417,7 +15429,7 @@
         "poster_path": "/cUC4rUb1Cs2KMaZ6RD4uYUEEwls.jpg",
         "vote_average": 5.389,
         "release_date": "2015-06-26",
-        "popularity": 8.5708
+        "popularity": 7.7914
     },
     {
         "id": 73,
@@ -15429,7 +15441,7 @@
         "poster_path": "/x2drgoXYZ8484lqyDj7L1CEVR4T.jpg",
         "vote_average": 8.328,
         "release_date": "1998-07-01",
-        "popularity": 8.5679
+        "popularity": 8.6552
     },
     {
         "id": 1328803,
@@ -15441,7 +15453,7 @@
         "poster_path": "/4T4yRG6iskDcfMeoLuUZEJYCrjL.jpg",
         "vote_average": 7.2,
         "release_date": "2025-09-19",
-        "popularity": 8.5672
+        "popularity": 8.9486
     },
     {
         "id": 888195,
@@ -15453,7 +15465,7 @@
         "poster_path": "/6zoA2yEfKs8hNFlk4AV28VpoT3I.jpg",
         "vote_average": 5.1,
         "release_date": "2022-07-01",
-        "popularity": 8.5565
+        "popularity": 7.3069
     },
     {
         "id": 4011,
@@ -15465,7 +15477,7 @@
         "poster_path": "/nnl6OWkyPpuMm595hmAxNW3rZFn.jpg",
         "vote_average": 7.367,
         "release_date": "1988-03-30",
-        "popularity": 8.5556
+        "popularity": 8.971
     },
     {
         "id": 576845,
@@ -15477,7 +15489,7 @@
         "poster_path": "/n1ZRmjlk1BJTY7aASqACfPAaLn2.jpg",
         "vote_average": 7.282,
         "release_date": "2021-10-21",
-        "popularity": 8.5506
+        "popularity": 6.8772
     },
     {
         "id": 646,
@@ -15489,7 +15501,7 @@
         "poster_path": "/f9HsemSsBEHN5eoMble1bj6fDxs.jpg",
         "vote_average": 6.99,
         "release_date": "1962-10-07",
-        "popularity": 8.5505
+        "popularity": 9.1213
     },
     {
         "id": 927,
@@ -15501,7 +15513,7 @@
         "poster_path": "/6m0F7fsXjQvUbCZrPWcJNrjvIui.jpg",
         "vote_average": 7.139,
         "release_date": "1984-06-08",
-        "popularity": 8.5458
+        "popularity": 7.9264
     },
     {
         "id": 49040,
@@ -15513,7 +15525,7 @@
         "poster_path": "/1aExL5DTGHj25ZfIC3dDwS84RWi.jpg",
         "vote_average": 6.238,
         "release_date": "2012-08-08",
-        "popularity": 8.5438
+        "popularity": 8.4865
     },
     {
         "id": 49049,
@@ -15525,7 +15537,7 @@
         "poster_path": "/wLx65gtGVnUFCxceHWGszcruCZj.jpg",
         "vote_average": 6.9,
         "release_date": "2012-09-07",
-        "popularity": 8.5399
+        "popularity": 9.3441
     },
     {
         "id": 1369,
@@ -15537,7 +15549,7 @@
         "poster_path": "/lIyUiHted0eWUceCx2ZHLnQGmgy.jpg",
         "vote_average": 6.656,
         "release_date": "1985-05-21",
-        "popularity": 8.5389
+        "popularity": 10.1109
     },
     {
         "id": 324668,
@@ -15549,7 +15561,7 @@
         "poster_path": "/xA7N41glw17MBQtcWSm2eBlBRuG.jpg",
         "vote_average": 6.37,
         "release_date": "2016-07-27",
-        "popularity": 8.5384
+        "popularity": 9.0428
     },
     {
         "id": 471506,
@@ -15561,7 +15573,7 @@
         "poster_path": "/9hBpFyJ3pGdupXbaC2L7nGvLMBn.jpg",
         "vote_average": 6.6,
         "release_date": "2019-02-28",
-        "popularity": 8.5248
+        "popularity": 7.3296
     },
     {
         "id": 369894,
@@ -15573,7 +15585,7 @@
         "poster_path": "/1SOw7s1g429ZnbJyKxGIXalSywR.jpg",
         "vote_average": 6.1,
         "release_date": "2017-05-19",
-        "popularity": 8.5239
+        "popularity": 7.0416
     },
     {
         "id": 157350,
@@ -15585,19 +15597,7 @@
         "poster_path": "/aNh4Q3iuPKDMPi2SL7GgOpiLukX.jpg",
         "vote_average": 6.9,
         "release_date": "2014-03-14",
-        "popularity": 8.5238
-    },
-    {
-        "id": 77805,
-        "type": "movie",
-        "title": "Lovelace",
-        "title_ar": "Lovelace",
-        "overview": "Story of Linda Lovelace, who is used and abused by the porn industry at the behest of her coercive husband, before taking control of her life.",
-        "overview_ar": "Story of Linda Lovelace, who is used and abused by the porn industry at the behest of her coercive husband, before taking control of her life.",
-        "poster_path": "/ibt7chnBsaDbE6ZVwyneuZwYfsC.jpg",
-        "vote_average": 6.022,
-        "release_date": "2013-08-08",
-        "popularity": 8.5238
+        "popularity": 9.3958
     },
     {
         "id": 77805,
@@ -16791,9 +16791,9 @@
         "id": 697843,
         "type": "movie",
         "title": "Extraction 2",
-        "title_ar": "إكستراكشن 2",
+        "title_ar": "Extraction 2",
         "overview": "Back from the brink of death, highly skilled commando Tyler Rake takes on another dangerous mission: saving the imprisoned family of a ruthless gangster.",
-        "overview_ar": "يعود المقدام البارع \"تايلر ريك\" بعد نجاته من فم الموت، ويقع على عاتقه الآن تنفيذ مهمة أخرى محفوفة بالمخاطر... وهي إنقاذ عائلة رجل عصابات قاسٍ من السجن.",
+        "overview_ar": "Back from the brink of death, highly skilled commando Tyler Rake takes on another dangerous mission: saving the imprisoned family of a ruthless gangster.",
         "poster_path": "/7gKI9hpEMcZUQpNgKrkDzJpbnNS.jpg",
         "vote_average": 7.394,
         "release_date": "2023-06-09",
@@ -17045,7 +17045,7 @@
         "title": "RoboCop",
         "title_ar": "RoboCop",
         "overview": "In RoboCop, the year is 2028 and multinational conglomerate OmniCorp is at the center of robot technology.  Overseas, their drones have been used by the military for years, but have been forbidden for law enforcement in America.  Now OmniCorp wants to bring their controversial technology to the home front, and they see a golden opportunity to do it.  When Alex Murphy – a loving husband, father and good cop doing his best to stem the tide of crime and corruption in Detroit – is critically injured, OmniCorp sees their chance to build a part-man, part-robot police officer.  OmniCorp envisions a RoboCop in every city and even more billions for their shareholders, but they never counted on one thing: there is still a man inside the machine.",
-        "overview_ar": "In RoboCop, the year is 2028 and multinational conglomerate OmniCorp is at the center of robot technology.  Overseas, their drones have been used by the military for years, but have been forbidden for law enforcement in America.  Now OmniCorp wants to bring their controversial technology to the home front, and they see a golden opportunity to do it.  When Alex Murphy – a loving husband, father and good cop doing his best to stem the tide of crime and corruption in Detroit – is critically injured, OmniCorp sees their chance to build a part-man, part-robot police officer.  OmniCorp envisions a RoboCop in every city and even more billions for their shareholders, but they never counted on one thing: there is still a man inside the machine.",
+        "overview_ar": "يرصد الفيلم في جو الحركة الممزوج بالخيال العلمي ،قصة أليكس ميرفي (جويل كينامان)، يعيش أليكس بديترويت في عام 2028 ، زوجٌ مخلصٌ وأبٌ عطوفٌ وضابط شرطةٍ شغوفٌ بعمله. ولكن عندما يُصاب أثناء القيام بواجبه كشرطي يرى (تكتل السلك الشرطي متعدد الجنسيات) فرصتهم سانحةً للحصول على رجل شرطة نصفه إنسانٌ ونصفه إنسانٌ آليّ ، يساعدهم في كل الأعمال الشاقة، ومن هنا تبدأ حياة أليكس في التغير وتنقلب رأسًا على عقب.",
         "poster_path": "/gM5ql3BKYmHG3WtZ0buKXN7xY8O.jpg",
         "vote_average": 5.886,
         "release_date": "2014-01-30",
@@ -17520,6 +17520,18 @@
         "popularity": 8.1036
     },
     {
+        "id": 2502,
+        "type": "movie",
+        "title": "The Bourne Supremacy",
+        "title_ar": "The Bourne Supremacy",
+        "overview": "A CIA operation to purchase classified Russian documents is blown by a rival agent, who then shows up in the sleepy seaside village where Bourne and Marie have been living. The pair run for their lives and Bourne, who promised retaliation should anyone from his former life attempt contact, is forced to once again take up his life as a trained assassin to survive.",
+        "overview_ar": "A CIA operation to purchase classified Russian documents is blown by a rival agent, who then shows up in the sleepy seaside village where Bourne and Marie have been living. The pair run for their lives and Bourne, who promised retaliation should anyone from his former life attempt contact, is forced to once again take up his life as a trained assassin to survive.",
+        "poster_path": "/7IYGiDrquvX3q7e9PV6Pejs6b2g.jpg",
+        "vote_average": 7.324,
+        "release_date": "2004-07-23",
+        "popularity": 8.4095
+    },
+    {
         "id": 7191,
         "type": "movie",
         "title": "Cloverfield",
@@ -17527,9 +17539,9 @@
         "overview": "Five young New Yorkers throw their friend a going-away party the night that a monster the size of a skyscraper descends upon the city. Told from the point of view of their video camera, the film is a document of their attempt to survive the most surreal, horrifying event of their lives.",
         "overview_ar": "يقيم بعض الأصدقاء حفل وداع لصديقهم (روب) قبل سفره لليابان للعمل هناك، وفجأة تشعر المجموعة باهتزازات أرضية عنيفة, ويقررون ترك المنزل للبحث عن سببها، ويتضح أن هناك مسخ مجهول الأصل يجول المدينة وقد دمر أحد المباني وانتزع رأس تمثال الحرية، ومن هنا نتابع أحداث الفيلم من خلال عدسة كاميرا (هاد) المحمولة.",
         "poster_path": "/qIegUGJqyMMCRjkKV1s7A9MqdJ8.jpg",
-        "vote_average": 6.7,
+        "vote_average": 6.704,
         "release_date": "2008-01-15",
-        "popularity": 8.103
+        "popularity": 8.1103
     },
     {
         "id": 1071215,
@@ -17541,7 +17553,7 @@
         "poster_path": "/f5f3TEVst1nHHyqgn7Z3tlwnBIH.jpg",
         "vote_average": 6.5,
         "release_date": "2023-11-16",
-        "popularity": 8.1009
+        "popularity": 6.4623
     },
     {
         "id": 1314481,
@@ -17553,7 +17565,7 @@
         "poster_path": "/4z7xA341upljSwxC2q0MO3GncQj.jpg",
         "vote_average": 0.0,
         "release_date": "2026-04-29",
-        "popularity": 8.0977
+        "popularity": 7.7124
     },
     {
         "id": 763788,
@@ -17565,7 +17577,7 @@
         "poster_path": "/8RqdjlPjyN59FnMkw5nnpaRXJde.jpg",
         "vote_average": 5.991,
         "release_date": "2021-11-05",
-        "popularity": 8.0947
+        "popularity": 7.6222
     },
     {
         "id": 774752,
@@ -17577,7 +17589,7 @@
         "poster_path": "/8dqXyslZ2hv49Oiob9UjlGSHSTR.jpg",
         "vote_average": 7.1,
         "release_date": "2022-11-24",
-        "popularity": 8.0914
+        "popularity": 8.4345
     },
     {
         "id": 1262815,
@@ -17589,7 +17601,7 @@
         "poster_path": "/yQtms7CSM0CE0W6dYbLLAATb5rL.jpg",
         "vote_average": 6.1,
         "release_date": "2025-11-07",
-        "popularity": 8.0892
+        "popularity": 7.5461
     },
     {
         "id": 522627,
@@ -17601,7 +17613,7 @@
         "poster_path": "/jtrhTYB7xSrJxR1vusu99nvnZ1g.jpg",
         "vote_average": 7.668,
         "release_date": "2020-01-01",
-        "popularity": 8.0888
+        "popularity": 8.8837
     },
     {
         "id": 1125,
@@ -17613,7 +17625,7 @@
         "poster_path": "/sG5JyOj8Spe13QkNJMH8b5kzQUh.jpg",
         "vote_average": 6.714,
         "release_date": "2006-12-25",
-        "popularity": 8.0834
+        "popularity": 6.8208
     },
     {
         "id": 884605,
@@ -17625,7 +17637,7 @@
         "poster_path": "/gD72DhJ7NbfxvtxGiAzLaa0xaoj.jpg",
         "vote_average": 6.686,
         "release_date": "2023-06-15",
-        "popularity": 8.0798
+        "popularity": 7.3706
     },
     {
         "id": 976893,
@@ -17637,7 +17649,7 @@
         "poster_path": "/tvUHVSTJV9ITON3oyHaWp7oaAc8.jpg",
         "vote_average": 7.777,
         "release_date": "2023-11-10",
-        "popularity": 8.0777
+        "popularity": 7.6086
     },
     {
         "id": 8909,
@@ -17649,7 +17661,7 @@
         "poster_path": "/cbDMsV4VJAL2xJ2JXdWWjmUXZkT.jpg",
         "vote_average": 6.525,
         "release_date": "2008-06-19",
-        "popularity": 8.0776
+        "popularity": 8.6092
     },
     {
         "id": 1233575,
@@ -17661,7 +17673,7 @@
         "poster_path": "/hHPovtU4b96LHcoeEwRkGHI5btw.jpg",
         "vote_average": 6.34,
         "release_date": "2025-03-12",
-        "popularity": 8.0771
+        "popularity": 6.4663
     },
     {
         "id": 396371,
@@ -17673,7 +17685,7 @@
         "poster_path": "/zrGQwKNmAz5awZI2V1k5M4eTTTN.jpg",
         "vote_average": 7.2,
         "release_date": "2017-12-07",
-        "popularity": 8.0733
+        "popularity": 8.3272
     },
     {
         "id": 68734,
@@ -17685,7 +17697,7 @@
         "poster_path": "/m5gPWFZFIp4UJFABgWyLkbXv8GX.jpg",
         "vote_average": 7.281,
         "release_date": "2012-10-11",
-        "popularity": 8.0701
+        "popularity": 7.8267
     },
     {
         "id": 11631,
@@ -17697,7 +17709,7 @@
         "poster_path": "/zdUA4FNHbXPadzVOJiU0Rgn6cHR.jpg",
         "vote_average": 6.975,
         "release_date": "2008-07-03",
-        "popularity": 8.0696
+        "popularity": 7.0689
     },
     {
         "id": 1162858,
@@ -17709,7 +17721,7 @@
         "poster_path": "/kE6FV8Lc9Aqir6OlgaNgnbFcy9E.jpg",
         "vote_average": 5.692,
         "release_date": "2025-04-26",
-        "popularity": 8.0688
+        "popularity": 7.8869
     },
     {
         "id": 1635,
@@ -17721,7 +17733,7 @@
         "poster_path": "/9MaZYEyFmQwNeDTxZGQEN8E0e4p.jpg",
         "vote_average": 6.688,
         "release_date": "2005-07-21",
-        "popularity": 8.0654
+        "popularity": 8.7207
     },
     {
         "id": 39514,
@@ -17733,7 +17745,7 @@
         "poster_path": "/8eeK3OB5PeSRQD7BpZcGZKkehG.jpg",
         "vote_average": 6.705,
         "release_date": "2010-10-13",
-        "popularity": 8.0627
+        "popularity": 7.9349
     },
     {
         "id": 1041613,
@@ -17745,19 +17757,7 @@
         "poster_path": "/zyopv7D5j7cfswG0NYiA14qAdPC.jpg",
         "vote_average": 6.211,
         "release_date": "2024-03-20",
-        "popularity": 8.0592
-    },
-    {
-        "id": 433,
-        "type": "movie",
-        "title": "Mary Poppins",
-        "title_ar": "ماري بوبينز",
-        "overview": "In turn of the century London, a magical nanny employs music and adventure to help two neglected children become closer to their father.",
-        "overview_ar": "تدور الأحداث حول (ماري بوبينز) المربية الخارقة التي تنتقل دوماً بواسطة شمسيتها، يطلب منها السيد (بانكس) أن تحضر إلى منزله كمربية أطفال في أسرة يغلفها الملل والبرود، فتستخدم قواها السحرية، وقدراتها الخفية في إضفاء المرح على الأسرة وعلى المساعدة في أداء مهمتها.",
-        "poster_path": "/pHyWpWn2pRIfhS3Arcn4SKtKKW4.jpg",
-        "vote_average": 7.6,
-        "release_date": "1964-12-17",
-        "popularity": 8.0567
+        "popularity": 6.5507
     },
     {
         "id": 433,
@@ -18000,6 +18000,18 @@
         "popularity": 8.2566
     },
     {
+        "id": 7443,
+        "type": "movie",
+        "title": "Chicken Run",
+        "title_ar": "Chicken Run",
+        "overview": "The creators of Wallace & Gromit bring you an exciting and original story about a group of chickens determined to fly the coop–even if they can’t fly! It’s hardly poultry in motion when Rocky attempts to teach Ginger and her feathered friends to fly…but, with teamwork, determination and a little bit o’ cluck, the fearless flock plots one last attempt in a spectacular bid for freedom.",
+        "overview_ar": "The creators of Wallace & Gromit bring you an exciting and original story about a group of chickens determined to fly the coop–even if they can’t fly! It’s hardly poultry in motion when Rocky attempts to teach Ginger and her feathered friends to fly…but, with teamwork, determination and a little bit o’ cluck, the fearless flock plots one last attempt in a spectacular bid for freedom.",
+        "poster_path": "/oYbVT9e0k2ZSrRhDSCw2Yqshe1n.jpg",
+        "vote_average": 6.832,
+        "release_date": "2000-06-23",
+        "popularity": 6.6999
+    },
+    {
         "id": 936075,
         "type": "movie",
         "title": "Michael",
@@ -18009,7 +18021,7 @@
         "poster_path": "/j57QWe3OoaXL9Idi9gLtsAybWLP.jpg",
         "vote_average": 0.0,
         "release_date": "2026-04-22",
-        "popularity": 7.9995
+        "popularity": 7.1095
     },
     {
         "id": 38035,
@@ -18021,7 +18033,7 @@
         "poster_path": "/unKGH53cXsYlQYSQQzZG5akJDdO.jpg",
         "vote_average": 4.368,
         "release_date": "1972-06-09",
-        "popularity": 7.9945
+        "popularity": 7.6491
     },
     {
         "id": 62213,
@@ -18033,7 +18045,7 @@
         "poster_path": "/fd9Ck4cxVlmtXsbeGtQW7WFuUFI.jpg",
         "vote_average": 6.097,
         "release_date": "2012-05-09",
-        "popularity": 7.9932
+        "popularity": 7.1236
     },
     {
         "id": 1562,
@@ -18045,7 +18057,7 @@
         "poster_path": "/oix0aNv1lvW3nUGspUyvSIBlpbs.jpg",
         "vote_average": 6.608,
         "release_date": "2007-04-26",
-        "popularity": 7.9921
+        "popularity": 8.9648
     },
     {
         "id": 598331,
@@ -18057,7 +18069,7 @@
         "poster_path": "/3eZRgjfFWTpejRvRKyKe1EKgt9s.jpg",
         "vote_average": 6.799,
         "release_date": "2021-02-12",
-        "popularity": 7.9891
+        "popularity": 6.5746
     },
     {
         "id": 507076,
@@ -18069,7 +18081,7 @@
         "poster_path": "/47IXH2iEWwX0F7vIyGXaKQ0psBG.jpg",
         "vote_average": 7.0,
         "release_date": "2018-09-19",
-        "popularity": 7.9868
+        "popularity": 7.566
     },
     {
         "id": 481848,
@@ -18081,7 +18093,7 @@
         "poster_path": "/33VdppGbeNxICrFUtW2WpGHvfYc.jpg",
         "vote_average": 7.524,
         "release_date": "2020-02-19",
-        "popularity": 7.9859
+        "popularity": 7.9837
     },
     {
         "id": 1304434,
@@ -18093,7 +18105,7 @@
         "poster_path": "/oqS3wJX3wNj4DciCyTznnMZ3Fuu.jpg",
         "vote_average": 7.759,
         "release_date": "2025-08-02",
-        "popularity": 7.9847
+        "popularity": 7.2755
     },
     {
         "id": 85889,
@@ -18105,7 +18117,7 @@
         "poster_path": "/AeIodobH6Z8jvtHhqRSrqYrxGSo.jpg",
         "vote_average": 6.84,
         "release_date": "2013-09-23",
-        "popularity": 7.9827
+        "popularity": 8.3837
     },
     {
         "id": 27,
@@ -18117,7 +18129,7 @@
         "poster_path": "/91O7z0vo7MiNWd5xD2BoivwbQsb.jpg",
         "vote_average": 5.538,
         "release_date": "2004-07-16",
-        "popularity": 7.9811
+        "popularity": 7.2749
     },
     {
         "id": 70435,
@@ -18129,7 +18141,7 @@
         "poster_path": "/c9fJ0dYC30NnE9k2p61c0dqlZqW.jpg",
         "vote_average": 5.7,
         "release_date": "2011-11-01",
-        "popularity": 7.9808
+        "popularity": 8.0504
     },
     {
         "id": 8078,
@@ -18141,7 +18153,7 @@
         "poster_path": "/9aRDMlU5Zwpysilm0WCWzU2PCFv.jpg",
         "vote_average": 6.162,
         "release_date": "1997-11-12",
-        "popularity": 7.9798
+        "popularity": 8.6408
     },
     {
         "id": 1923,
@@ -18153,7 +18165,7 @@
         "poster_path": "/mxsGXqetGnirf99qapYd5MMY1VL.jpg",
         "vote_average": 7.406,
         "release_date": "1992-06-03",
-        "popularity": 7.9778
+        "popularity": 7.0256
     },
     {
         "id": 68735,
@@ -18165,7 +18177,7 @@
         "poster_path": "/nZIIOs06YigBnvmlJ2hxZeA8eTO.jpg",
         "vote_average": 6.396,
         "release_date": "2016-05-25",
-        "popularity": 7.9737
+        "popularity": 8.0615
     },
     {
         "id": 10999,
@@ -18175,9 +18187,9 @@
         "overview": "John Matrix, the former leader of a special commando strike force that always got the toughest jobs done, is forced back into action when his young daughter is kidnapped. To find her, Matrix has to fight his way through an array of punks, killers, one of his former commandos, and a fully equipped private army. With the help of a feisty stewardess and an old friend, Matrix has only a few hours to overcome his greatest challenge: finding his daughter before she's killed.",
         "overview_ar": "جون ماتريكس، القائد السابق لوحدة قوات خاصة، يُجبر على العودة إلى العمل عندما تُختطف ابنته الصغيرة. للعثور عليها، يجب على ماتريكس مواجهة مجموعة من المجرمين والقتلة، وأحد زملائه السابقين، وجيش خاص مجهز بالكامل. بمساعدة مضيفة طيران شجاعة وصديق قديم، أمام ماتريكس بضع ساعات فقط لتجاوز أكبر تحدٍ في حياته: العثور على ابنته قبل أن تُقتل.",
         "poster_path": "/ollPAAAgZ7euU8VisfqU3cuXhZ6.jpg",
-        "vote_average": 6.69,
+        "vote_average": 6.7,
         "release_date": "1985-10-03",
-        "popularity": 7.9552
+        "popularity": 8.2318
     },
     {
         "id": 967847,
@@ -18189,7 +18201,7 @@
         "poster_path": "/e1J2oNzSBdou01sUvriVuoYp0pJ.jpg",
         "vote_average": 6.461,
         "release_date": "2024-03-20",
-        "popularity": 7.9528
+        "popularity": 8.8879
     },
     {
         "id": 4922,
@@ -18201,7 +18213,7 @@
         "poster_path": "/26wEWZYt6yJkwRVkjcbwJEFh9IS.jpg",
         "vote_average": 7.6,
         "release_date": "2008-12-25",
-        "popularity": 7.9511
+        "popularity": 7.8257
     },
     {
         "id": 1145899,
@@ -18213,7 +18225,7 @@
         "poster_path": "/rJNHFa07Id2ylQgw0ttzGwpeczE.jpg",
         "vote_average": 6.9,
         "release_date": "2026-02-04",
-        "popularity": 7.9509
+        "popularity": 7.6776
     },
     {
         "id": 866463,
@@ -18225,7 +18237,7 @@
         "poster_path": "/bk4WUvoXSqPQGrhOAtt3AR0sUZf.jpg",
         "vote_average": 6.7,
         "release_date": "2023-09-29",
-        "popularity": 7.9465
+        "popularity": 7.2228
     },
     {
         "id": 420808,
@@ -18237,7 +18249,7 @@
         "poster_path": "/9NXAlFEE7WDssbXSMgdacsUD58Y.jpg",
         "vote_average": 5.437,
         "release_date": "2023-04-20",
-        "popularity": 7.9441
+        "popularity": 7.7061
     },
     {
         "id": 826749,
@@ -18247,9 +18259,9 @@
         "overview": "The story revolves around a top-secret resort for retired U.S. intelligence officers. A group of criminals led by Balzary breach the compound, hellbent on revenge on Robert, forcing the retired officer and his son to save the day.",
         "overview_ar": "روبرت هو عميل متقاعد، يعيش في منتجع سري في الغابة. في أحد الأيام، توجه ابنه إلى زيارته، ولكن يتم تتبعه من قبل بالزاري وهو عدو روبرت القديم. مما جعلهم يتراجعا إلى ملجأ عالي التقنية. ولكن هل جدرانه الفولاذية وأسلحته قوية بما يكفي لمنع بالزاري المتعطش للدماء",
         "poster_path": "/sR6OQUvOnQ0OrRLo7hhonaQhuaE.jpg",
-        "vote_average": 5.655,
+        "vote_average": 5.659,
         "release_date": "2021-12-17",
-        "popularity": 7.9385
+        "popularity": 7.9337
     },
     {
         "id": 1238188,
@@ -18259,9 +18271,9 @@
         "overview": "In 1575, the young soldier Miguel de Cervantes is captured on the high seas by Barbary pirates and taken to Algiers as a hostage. Aware that a cruel death awaits him if his family does not pay his ransom soon, he finds refuge in his passion for storytelling.",
         "overview_ar": "In 1575, the young soldier Miguel de Cervantes is captured on the high seas by Barbary pirates and taken to Algiers as a hostage. Aware that a cruel death awaits him if his family does not pay his ransom soon, he finds refuge in his passion for storytelling.",
         "poster_path": "/aI9XOKEXN6J3uwZ84wwBaKzqcMw.jpg",
-        "vote_average": 6.67,
+        "vote_average": 6.637,
         "release_date": "2025-09-12",
-        "popularity": 7.9356
+        "popularity": 7.9268
     },
     {
         "id": 76163,
@@ -18273,7 +18285,7 @@
         "poster_path": "/74rTIGyGoIu5KSxDVMdr8H3MtMo.jpg",
         "vote_average": 6.347,
         "release_date": "2012-08-08",
-        "popularity": 7.9351
+        "popularity": 8.8436
     },
     {
         "id": 435,
@@ -18285,7 +18297,7 @@
         "poster_path": "/Wr4HeYQRvwVCxzOV5TmGE7UkXq.jpg",
         "vote_average": 6.548,
         "release_date": "2004-05-26",
-        "popularity": 7.9343
+        "popularity": 8.1272
     },
     {
         "id": 511987,
@@ -18297,7 +18309,7 @@
         "poster_path": "/4WH6AZd473lRZ3hUp8TYiv2LfZW.jpg",
         "vote_average": 6.324,
         "release_date": "2019-07-10",
-        "popularity": 7.9342
+        "popularity": 6.4868
     },
     {
         "id": 894169,
@@ -18309,7 +18321,7 @@
         "poster_path": "/bvhmqU6GUkigo6SSYL3ttkBhNER.jpg",
         "vote_average": 5.995,
         "release_date": "2022-05-17",
-        "popularity": 7.9313
+        "popularity": 8.1095
     },
     {
         "id": 320,
@@ -18321,7 +18333,7 @@
         "poster_path": "/riVXh3EimGO0y5dgQxEWPRy5Itg.jpg",
         "vote_average": 6.954,
         "release_date": "2002-05-24",
-        "popularity": 7.9279
+        "popularity": 8.3632
     },
     {
         "id": 170687,
@@ -18333,7 +18345,7 @@
         "poster_path": "/npBf0yc5Gt7aAyyVOcYtFyT2IPa.jpg",
         "vote_average": 6.701,
         "release_date": "2014-09-10",
-        "popularity": 7.9233
+        "popularity": 5.6091
     },
     {
         "id": 974573,
@@ -18345,7 +18357,7 @@
         "poster_path": "/zboCGZ4aIqPMd7VFI4HWnmc7KYJ.jpg",
         "vote_average": 5.8,
         "release_date": "2025-03-07",
-        "popularity": 7.9223
+        "popularity": 5.908
     },
     {
         "id": 346648,
@@ -18357,7 +18369,7 @@
         "poster_path": "/1OJ9vkD5xPt3skC6KguyXAgagRZ.jpg",
         "vote_average": 7.472,
         "release_date": "2017-11-09",
-        "popularity": 7.9207
+        "popularity": 7.3371
     },
     {
         "id": 36586,
@@ -18369,7 +18381,7 @@
         "poster_path": "/yDHwo3eWcMiy5LnnEnlGV9iLu9k.jpg",
         "vote_average": 6.556,
         "release_date": "2002-03-22",
-        "popularity": 7.9196
+        "popularity": 8.9983
     },
     {
         "id": 4248,
@@ -18379,9 +18391,9 @@
         "overview": "While the original parodied slasher flicks like Scream, Keenen Ivory Wayans's sequel to Scary Movie takes comedic aim at haunted house movies. A group of students visit a mansion called \"Hell House,\" and murderous high jinks ensue.",
         "overview_ar": "في إطار رعب ممزوج بالإثارة والتشويق تدور الأحداث عن أربعة من الطلاب المدعوين من قبل أستاذهم إلى القصر المسكون بالأشباح ، من أجل دراسة تأثير الحرمان من النوم لمدة أسبوع عليهم ، وعمل بعض الدراسات بشأن النوم ، ويعتبر الفيلم به بعض مشاهد المحاكاة الساخرة لفيلم طارد الأرواح الشريرة الأول ، وكذلك بعض أفلام الرعب الشهيرة للغاية .",
         "poster_path": "/7Eb1JWK0Cb0rbfsYjwfc9g0PbQH.jpg",
-        "vote_average": 5.812,
+        "vote_average": 5.8,
         "release_date": "2001-07-04",
-        "popularity": 7.919
+        "popularity": 7.2182
     },
     {
         "id": 31867,
@@ -18393,7 +18405,7 @@
         "poster_path": "/briDKf5nrLzox2zcI6pquKeqWz8.jpg",
         "vote_average": 6.3,
         "release_date": "2010-03-18",
-        "popularity": 7.9171
+        "popularity": 7.9167
     },
     {
         "id": 10315,
@@ -18403,9 +18415,9 @@
         "overview": "The Fantastic Mr. Fox, bored with his current life, plans a heist against the three local farmers. The farmers, tired of sharing their chickens with the sly fox, seek revenge against him and his family.",
         "overview_ar": "مستر (فوكس) ثعلب وعد زوجته بأن يقلع عن عادة سرقة الدجاج ولكنه يعود لعادته القديمة وتحدث لهم مشاكل بسببها....",
         "poster_path": "/euZyZb6iGreujYKrGyZHRddhUYh.jpg",
-        "vote_average": 7.813,
+        "vote_average": 7.8,
         "release_date": "2009-10-14",
-        "popularity": 7.9158
+        "popularity": 8.8004
     },
     {
         "id": 1571470,
@@ -18417,7 +18429,7 @@
         "poster_path": "/1T0kO1cgR430AC9I6jurMOezKwg.jpg",
         "vote_average": 5.39,
         "release_date": "2025-10-29",
-        "popularity": 7.9083
+        "popularity": 7.9944
     },
     {
         "id": 1637,
@@ -18429,7 +18441,7 @@
         "poster_path": "/82PkCE4R95KhHICUDF7G4Ly2z3l.jpg",
         "vote_average": 7.146,
         "release_date": "1994-06-09",
-        "popularity": 7.8984
+        "popularity": 9.1686
     },
     {
         "id": 1195506,
@@ -18439,9 +18451,9 @@
         "overview": "When the girl of his dreams is kidnapped, everyman Nate turns his inability to feel pain into an unexpected strength in his fight to get her back.",
         "overview_ar": "عندما تُختَطف فتاة أحلامه، يحوّل رجلٌ عاجز عن الشعور بالألم الجسدي حالته النادرة إلى ميزة غير متوقعة في صراعه لإنقاذها.",
         "poster_path": "/xmMHGz9dVRaMY6rRAlEX4W0Wdhm.jpg",
-        "vote_average": 6.8,
+        "vote_average": 6.812,
         "release_date": "2025-03-12",
-        "popularity": 7.8973
+        "popularity": 9.7719
     },
     {
         "id": 1084244,
@@ -18453,7 +18465,7 @@
         "poster_path": "/kaLLZeFfRj42xE9rRg9nCMVtwHO.jpg",
         "vote_average": 0.0,
         "release_date": "2026-06-17",
-        "popularity": 7.8961
+        "popularity": 9.8015
     },
     {
         "id": 96721,
@@ -18465,19 +18477,7 @@
         "poster_path": "/95BDrWmcfJDEa2WCfjmLgi67jhi.jpg",
         "vote_average": 7.731,
         "release_date": "2013-09-02",
-        "popularity": 7.8958
-    },
-    {
-        "id": 9023,
-        "type": "movie",
-        "title": "Spirit: Stallion of the Cimarron",
-        "title_ar": "سبيريت∶ قائد قبيلة السيمارون",
-        "overview": "A captured mustang remains determined to return to his herd no matter what.",
-        "overview_ar": "يظل الحصان البري الأسير مصممًا على العودة إلى قطيعه مهما حدث.",
-        "poster_path": "/cUgYrz4twiJ3QgVGpRfey984NIB.jpg",
-        "vote_average": 7.687,
-        "release_date": "2002-05-24",
-        "popularity": 7.8951
+        "popularity": 8.3984
     },
     {
         "id": 406990,
@@ -18720,6 +18720,18 @@
         "popularity": 7.8504
     },
     {
+        "id": 114150,
+        "type": "movie",
+        "title": "Pitch Perfect",
+        "title_ar": "Pitch Perfect",
+        "overview": "College student Beca knows she does not want to be part of a clique, but that's exactly where she finds herself after arriving at her new school. Thrust in among mean gals, nice gals and just plain weird gals, Beca finds that the only thing they have in common is how well they sing together. She takes the women of the group out of their comfort zone of traditional arrangements and into a world of amazing harmonic combinations in a fight to the top of college music competitions.",
+        "overview_ar": "تعرف طالبة جامعية بيكا أنها لا تريد أن تكون جزءًا من زمرة ، ولكن هذا هو بالضبط المكان الذي تجد فيه نفسها بعد وصولها إلى مدرستها الجديدة. اقتحم بيكا بين الفتيات اللئيمات والبنات اللطيفات والبنات الغريبة فقط ، تجد بيكا أن الشيء الوحيد المشترك بينهما هو مدى جودة الغناء معًا. إنها تأخذ نساء المجموعة من منطقة الراحة الخاصة بالترتيبات التقليدية إلى عالم من التوليفات التوافقية المذهلة في معركة للوصول إلى قمة مسابقات الموسيقى الجامعية.",
+        "poster_path": "/gsFoJk9g8W3zgaipRrrURk7LbiF.jpg",
+        "vote_average": 7.3,
+        "release_date": "2012-09-28",
+        "popularity": 7.8866
+    },
+    {
         "id": 77877,
         "type": "movie",
         "title": "The Lucky One",
@@ -18729,7 +18741,7 @@
         "poster_path": "/vF1ZuIkF9Z71VzVvG265xJUawb0.jpg",
         "vote_average": 7.166,
         "release_date": "2012-04-19",
-        "popularity": 7.8478
+        "popularity": 6.4289
     },
     {
         "id": 715123,
@@ -18741,7 +18753,7 @@
         "poster_path": "/bXLVZGgLgd7OwbfP6fC5GCfrxuD.jpg",
         "vote_average": 6.296,
         "release_date": "2020-10-07",
-        "popularity": 7.8467
+        "popularity": 7.6224
     },
     {
         "id": 9426,
@@ -18753,7 +18765,7 @@
         "poster_path": "/8gZWMhJHRvaXdXsNhERtqNHYpH3.jpg",
         "vote_average": 7.427,
         "release_date": "1986-08-15",
-        "popularity": 7.8377
+        "popularity": 8.9095
     },
     {
         "id": 49529,
@@ -18765,7 +18777,7 @@
         "poster_path": "/lCxz1Yus07QCQQCb6I0Dr3Lmqpx.jpg",
         "vote_average": 6.355,
         "release_date": "2012-03-07",
-        "popularity": 7.8343
+        "popularity": 8.3425
     },
     {
         "id": 72559,
@@ -18777,7 +18789,7 @@
         "poster_path": "/3rWIZMzTKcCtV0eHJ70Z4Ru659f.jpg",
         "vote_average": 5.651,
         "release_date": "2013-03-27",
-        "popularity": 7.8336
+        "popularity": 8.475
     },
     {
         "id": 571055,
@@ -18789,7 +18801,7 @@
         "poster_path": "/tWD5FXfXTRcYzXZLq0bg8hxmQrs.jpg",
         "vote_average": 6.8,
         "release_date": "2019-02-01",
-        "popularity": 7.8272
+        "popularity": 7.3012
     },
     {
         "id": 262504,
@@ -18799,9 +18811,9 @@
         "overview": "Beatrice Prior and Tobias Eaton venture into the world outside of the fence and are taken into protective custody by a mysterious agency known as the Bureau of Genetic Welfare.",
         "overview_ar": "تدور احداث فيلم حول تهرب (تريس) مع (فور) خلف الحائط القريب من مدينة (شيكاجو)، تاركين مدينتهما وعائلاتهما بهدف البحث عن حل للمدينة المتورطة، وعليهما اتخاذ قرارهما بالوثوق في بعضهما البعض وإنقاذ مدينتهما والعالم من وراءهما، بتخليصهم من السلطة الغاشمة التي عملت على تقسيمهم لسنوات من خلال تلك المواجهة.",
         "poster_path": "/sbJwoKJ6pzWwdzRioUV0euIMv62.jpg",
-        "vote_average": 6.1,
+        "vote_average": 6.103,
         "release_date": "2016-03-09",
-        "popularity": 7.8249
+        "popularity": 7.9787
     },
     {
         "id": 88,
@@ -18813,7 +18825,7 @@
         "poster_path": "/9Jw6jys7q9gjzVX5zm1z0gC8gY9.jpg",
         "vote_average": 7.3,
         "release_date": "1987-08-21",
-        "popularity": 7.823
+        "popularity": 8.1099
     },
     {
         "id": 1735,
@@ -18823,9 +18835,9 @@
         "overview": "Archaeologist Rick O'Connell travels to China, pitting him against an emperor from the 2,000-year-old Han dynasty who's returned from the dead to pursue a quest for world domination. This time, O'Connell enlists the help of his wife and son to quash the so-called 'Dragon Emperor' and his abuse of supernatural power.",
         "overview_ar": "تدور قصة الفيلم حول (ألكس) الذي يكتشف مقبرة أول إمبراطور في تاريخ الصين، ويخبر والديه اللذان يسافرا إلى الصين على الفور بعد استخدام أحد الجنرالات للسحر من أجل إحياء مومياء الإمبراطور والتي لها القدرة على تغيير شكلها. وبالفعل تبدأ المومياء في تجميع جيشها الضخم من أجل غزو العالم، فيحاول ألكس التصدي لهم.",
         "poster_path": "/A3acM1lX5PNWQa6r5qeMAJOxbnT.jpg",
-        "vote_average": 5.513,
+        "vote_average": 5.5,
         "release_date": "2008-07-01",
-        "popularity": 7.8194
+        "popularity": 8.2852
     },
     {
         "id": 9902,
@@ -18837,7 +18849,7 @@
         "poster_path": "/7lyxwOg7SdGff79yKCQmJ3AKWSf.jpg",
         "vote_average": 6.38,
         "release_date": "2003-05-30",
-        "popularity": 7.8188
+        "popularity": 7.4463
     },
     {
         "id": 239,
@@ -18849,7 +18861,7 @@
         "poster_path": "/hVIKyTK13AvOGv7ICmJjK44DTzp.jpg",
         "vote_average": 8.087,
         "release_date": "1959-03-19",
-        "popularity": 7.8172
+        "popularity": 7.1143
     },
     {
         "id": 565,
@@ -18861,7 +18873,7 @@
         "poster_path": "/AeRpUynJKDpJveklBJipOYrVxCS.jpg",
         "vote_average": 6.695,
         "release_date": "2002-10-18",
-        "popularity": 7.8162
+        "popularity": 6.8169
     },
     {
         "id": 4488,
@@ -18871,9 +18883,9 @@
         "overview": "Camp counselors are stalked and murdered by an unknown assailant while trying to reopen a summer camp that was the site of a child's drowning.",
         "overview_ar": "Camp counselors are stalked and murdered by an unknown assailant while trying to reopen a summer camp that was the site of a child's drowning.",
         "poster_path": "/uGGpnWHOmWTARVN9wbC1nPxNgps.jpg",
-        "vote_average": 6.4,
+        "vote_average": 6.401,
         "release_date": "1980-05-09",
-        "popularity": 7.8055
+        "popularity": 12.244
     },
     {
         "id": 168672,
@@ -18885,7 +18897,7 @@
         "poster_path": "/z6O1KDhfWDTm5ZBr6Ovr0eg8LqO.jpg",
         "vote_average": 6.9,
         "release_date": "2013-12-03",
-        "popularity": 7.8053
+        "popularity": 7.4537
     },
     {
         "id": 1254808,
@@ -18897,7 +18909,7 @@
         "poster_path": "/AfE7DZ0DPgme6I58dlYp1Bo9xeN.jpg",
         "vote_average": 7.324,
         "release_date": "2025-10-08",
-        "popularity": 7.7978
+        "popularity": 6.8731
     },
     {
         "id": 2108,
@@ -18909,7 +18921,7 @@
         "poster_path": "/gp4zlj7wgbiofLMNsTPndMuO3PN.jpg",
         "vote_average": 7.724,
         "release_date": "1985-02-15",
-        "popularity": 7.7968
+        "popularity": 6.5281
     },
     {
         "id": 454983,
@@ -18921,7 +18933,7 @@
         "poster_path": "/vcQNnnXgKLacoYF4LNWgkNiDXPd.jpg",
         "vote_average": 7.168,
         "release_date": "2018-05-11",
-        "popularity": 7.7962
+        "popularity": 7.8484
     },
     {
         "id": 664469,
@@ -18933,7 +18945,7 @@
         "poster_path": "/6sJcVzGCwrDCBMV0DU6eRzA2UxM.jpg",
         "vote_average": 6.065,
         "release_date": "2022-09-27",
-        "popularity": 7.7952
+        "popularity": 5.8309
     },
     {
         "id": 777443,
@@ -18945,19 +18957,7 @@
         "poster_path": "/tn6gDIrQMwHSivF01igLfbggmYD.jpg",
         "vote_average": 6.481,
         "release_date": "2025-03-07",
-        "popularity": 7.7936
-    },
-    {
-        "id": 365177,
-        "type": "movie",
-        "title": "Borderlands",
-        "title_ar": "بوردرلاندز",
-        "overview": "Returning to her home planet, an infamous bounty hunter forms an unexpected alliance with a team of unlikely heroes. Together, they battle monsters and dangerous bandits to protect a young girl who holds the key to unimaginable power.",
-        "overview_ar": "تدور احداث الفيلم حين تعود (ليليث) المرأة الخارجة عن القانون ذات الماضي المجهول إلى كوكبها الأصلي (باندورا)، وتبدأ في تكوين فريق من مجموعة من الأشخاص ذوي القدرات المختلفة في سبيل البحث عن ابنة (أطلس) الرجل الأقوى في المجرة.",
-        "poster_path": "/4JGoZu1ZKFpMJTWAP35PCfkMgu8.jpg",
-        "vote_average": 5.594,
-        "release_date": "2024-08-07",
-        "popularity": 7.7826
+        "popularity": 8.1259
     },
     {
         "id": 1208808,
@@ -19431,13 +19431,25 @@
         "id": 60935,
         "type": "movie",
         "title": "The Thing",
+        "title_ar": "The Thing",
+        "overview": "When paleontologist Kate Lloyd travels to an isolated outpost in Antarctica for the expedition of a lifetime, she joins an international team that unearths a remarkable discovery. Their elation quickly turns to fear as they realize that their experiment has freed a mysterious being from its frozen prison. Paranoia spreads like an epidemic as a creature that can mimic anything it touches will pit human against human as it tries to survive and flourish in this spine-tingling thriller.",
+        "overview_ar": "When paleontologist Kate Lloyd travels to an isolated outpost in Antarctica for the expedition of a lifetime, she joins an international team that unearths a remarkable discovery. Their elation quickly turns to fear as they realize that their experiment has freed a mysterious being from its frozen prison. Paranoia spreads like an epidemic as a creature that can mimic anything it touches will pit human against human as it tries to survive and flourish in this spine-tingling thriller.",
+        "poster_path": "/dmn2nVo8h7LMnk694JxCRIwK06p.jpg",
+        "vote_average": 6.23,
+        "release_date": "2011-10-12",
+        "popularity": 7.6946
+    },
+    {
+        "id": 60935,
+        "type": "movie",
+        "title": "The Thing",
         "title_ar": "الشيء",
         "overview": "When paleontologist Kate Lloyd travels to an isolated outpost in Antarctica for the expedition of a lifetime, she joins an international team that unearths a remarkable discovery. Their elation quickly turns to fear as they realize that their experiment has freed a mysterious being from its frozen prison. Paranoia spreads like an epidemic as a creature that can mimic anything it touches will pit human against human as it tries to survive and flourish in this spine-tingling thriller.",
         "overview_ar": "عندما تسافر عالمة الحفريات كيت لويد إلى محطة نائية في القارة القطبية الجنوبية للمشاركة في بعثة العمر، تنضم إلى فريق دولي ينقب عن اكتشاف مذهل",
         "poster_path": "/dmn2nVo8h7LMnk694JxCRIwK06p.jpg",
         "vote_average": 6.23,
         "release_date": "2011-10-12",
-        "popularity": 7.6946
+        "popularity": 6.1782
     },
     {
         "id": 587,
@@ -19447,9 +19459,9 @@
         "overview": "Throughout his life Edward Bloom has always been a man of big appetites, enormous passions and tall tales. In his later years, he remains a huge mystery to his son, William. Now, to get to know the real man, Will begins piecing together a true picture of his father from flashbacks of his amazing adventures.",
         "overview_ar": "طوال حياته، كان إدوارد بلوم رجلاً ذو شغف جارف وشهية جامحة وحكايا مبالغ فيها. في سنواته الأخيرة، لا يزال لغزاً كبيراً بالنسبة لابنه ويليام. الآن، كي يتعرّف على الرجل الحقيقي، يبدأ ويليام بجمع صورة حقيقية عن والده من استرجاعات مغامراته المذهلة.",
         "poster_path": "/tjK063yCgaBAluVU72rZ6PKPH2l.jpg",
-        "vote_average": 7.759,
+        "vote_average": 7.8,
         "release_date": "2003-12-10",
-        "popularity": 7.6918
+        "popularity": 7.6185
     },
     {
         "id": 262500,
@@ -19461,7 +19473,7 @@
         "poster_path": "/dP5Fb6YRfzmCQtRbHOr2kO7tJW9.jpg",
         "vote_average": 6.362,
         "release_date": "2015-03-18",
-        "popularity": 7.6915
+        "popularity": 8.9312
     },
     {
         "id": 1050035,
@@ -19473,7 +19485,7 @@
         "poster_path": "/cecXXWJ5YINoUFPU8tMMUqz0yqG.jpg",
         "vote_average": 7.923,
         "release_date": "2023-06-02",
-        "popularity": 7.6901
+        "popularity": 6.424
     },
     {
         "id": 39103,
@@ -19485,7 +19497,7 @@
         "poster_path": "/k23L4i0JjwU8D5flnR5damgXFcS.jpg",
         "vote_average": 6.451,
         "release_date": "1992-03-07",
-        "popularity": 7.6874
+        "popularity": 7.5405
     },
     {
         "id": 956,
@@ -19497,7 +19509,7 @@
         "poster_path": "/vKGYCpmQyV9uHybWDzXuII8Los5.jpg",
         "vote_average": 6.759,
         "release_date": "2006-04-25",
-        "popularity": 7.6846
+        "popularity": 7.9881
     },
     {
         "id": 1581,
@@ -19509,7 +19521,7 @@
         "poster_path": "/n26GUumac5MrzpJiv0DPI7MMIUJ.jpg",
         "vote_average": 7.099,
         "release_date": "2006-12-05",
-        "popularity": 7.6832
+        "popularity": 7.0074
     },
     {
         "id": 329996,
@@ -19521,7 +19533,7 @@
         "poster_path": "/kTF2omZq1izOeplnnSACxhs4NLF.jpg",
         "vote_average": 6.6,
         "release_date": "2019-03-27",
-        "popularity": 7.6767
+        "popularity": 7.1291
     },
     {
         "id": 1278101,
@@ -19533,7 +19545,7 @@
         "poster_path": "/rLj287mA1tp4hZmd69umb1rOZu8.jpg",
         "vote_average": 7.859,
         "release_date": "2024-12-27",
-        "popularity": 7.6741
+        "popularity": 7.1051
     },
     {
         "id": 1309129,
@@ -19545,7 +19557,7 @@
         "poster_path": "/AbXG2f6AGXeIsc127cBKTYrxFyN.jpg",
         "vote_average": 7.0,
         "release_date": "2025-09-29",
-        "popularity": 7.6716
+        "popularity": 7.2205
     },
     {
         "id": 1078023,
@@ -19557,7 +19569,7 @@
         "poster_path": "/r5C85R0Bc6RL51PnPv2HIvpSMJ7.jpg",
         "vote_average": 5.6,
         "release_date": "2023-01-24",
-        "popularity": 7.6706
+        "popularity": 8.0841
     },
     {
         "id": 299687,
@@ -19569,7 +19581,7 @@
         "poster_path": "/ja34BV577dtjWl2S5G1tB93IjYb.jpg",
         "vote_average": 5.937,
         "release_date": "2016-01-14",
-        "popularity": 7.6687
+        "popularity": 7.8352
     },
     {
         "id": 68724,
@@ -19581,7 +19593,7 @@
         "poster_path": "/uiiXHBd9oUrtUa4YqZiAoy05cRz.jpg",
         "vote_average": 6.514,
         "release_date": "2013-08-07",
-        "popularity": 7.6673
+        "popularity": 8.679
     },
     {
         "id": 508,
@@ -19593,7 +19605,7 @@
         "poster_path": "/7QPeVsr9rcFU9Gl90yg0gTOTpVv.jpg",
         "vote_average": 7.095,
         "release_date": "2003-09-07",
-        "popularity": 7.6664
+        "popularity": 7.8259
     },
     {
         "id": 1064312,
@@ -19605,7 +19617,7 @@
         "poster_path": "/tLkviJkau1cRMCoAa06R1gkH2Hn.jpg",
         "vote_average": 6.0,
         "release_date": "2023-02-09",
-        "popularity": 7.6643
+        "popularity": 7.4436
     },
     {
         "id": 969492,
@@ -19617,7 +19629,7 @@
         "poster_path": "/h3jYanWMEJq6JJsCopy1h7cT2Hs.jpg",
         "vote_average": 7.264,
         "release_date": "2024-02-09",
-        "popularity": 7.6625
+        "popularity": 8.6421
     },
     {
         "id": 1198899,
@@ -19629,7 +19641,7 @@
         "poster_path": "/fxxPAowtYuGj4WHrNqbPTfLHRLF.jpg",
         "vote_average": 4.3,
         "release_date": "2025-01-17",
-        "popularity": 7.6621
+        "popularity": 8.162
     },
     {
         "id": 11423,
@@ -19641,7 +19653,7 @@
         "poster_path": "/rxndHKwUeFgTHx0PuuhZS4dMtrB.jpg",
         "vote_average": 8.055,
         "release_date": "2003-04-25",
-        "popularity": 7.6576
+        "popularity": 8.5925
     },
     {
         "id": 1001835,
@@ -19653,7 +19665,7 @@
         "poster_path": "/tea2gDZPxw0wfKC2S2VRWHagtt4.jpg",
         "vote_average": 6.657,
         "release_date": "2022-08-12",
-        "popularity": 7.6524
+        "popularity": 6.8611
     },
     {
         "id": 526896,
@@ -19665,19 +19677,7 @@
         "poster_path": "/Av8Z2jZhEm1FLkFzMThzz9hndJF.jpg",
         "vote_average": 5.9,
         "release_date": "2022-03-30",
-        "popularity": 7.6481
-    },
-    {
-        "id": 856,
-        "type": "movie",
-        "title": "Who Framed Roger Rabbit",
-        "title_ar": "Who Framed Roger Rabbit",
-        "overview": "'Toon star Roger is worried that his wife Jessica is playing pattycake with someone else, so the studio hires detective Eddie Valiant to snoop on her. But the stakes are quickly raised when Marvin Acme is found dead and Roger is the prime suspect.",
-        "overview_ar": "'Toon star Roger is worried that his wife Jessica is playing pattycake with someone else, so the studio hires detective Eddie Valiant to snoop on her. But the stakes are quickly raised when Marvin Acme is found dead and Roger is the prime suspect.",
-        "poster_path": "/lYfRc57Kx9VgLZ48iulu0HKnM15.jpg",
-        "vote_average": 7.533,
-        "release_date": "1988-06-22",
-        "popularity": 7.6445
+        "popularity": 7.9201
     },
     {
         "id": 1160956,
@@ -19913,7 +19913,7 @@
         "title": "A Few Good Men",
         "title_ar": "A Few Good Men",
         "overview": "When cocky military lawyer Lt. Daniel Kaffee and his co-counsel, Lt. Cmdr. JoAnne Galloway, are assigned to a murder case, they uncover a hazing ritual that could implicate high-ranking officials such as shady Col. Nathan Jessep.",
-        "overview_ar": "عندما كان المحامي العسكري مغرور الملازم دانيال كافي ومستشاره الملازم القائد. تم تكليف JoAnne Galloway بقضية قتل ، ويكشفون عن طقوس مزعجة يمكن أن تورط مسؤولين رفيعي المستوى مثل الكولونيل الغامض ناثان جيسيب.",
+        "overview_ar": "When cocky military lawyer Lt. Daniel Kaffee and his co-counsel, Lt. Cmdr. JoAnne Galloway, are assigned to a murder case, they uncover a hazing ritual that could implicate high-ranking officials such as shady Col. Nathan Jessep.",
         "poster_path": "/rLOk4z9zL1tTukIYV56P94aZXKk.jpg",
         "vote_average": 7.543,
         "release_date": "1992-12-11",
@@ -20175,9 +20175,9 @@
         "id": 254,
         "type": "movie",
         "title": "King Kong",
-        "title_ar": "كينج كونج",
+        "title_ar": "King Kong",
         "overview": "In 1933 New York, an overly ambitious movie producer coerces his cast and hired ship crew to travel to mysterious Skull Island, where they encounter Kong, a giant ape who is immediately smitten with the leading lady.",
-        "overview_ar": "في عام ١٩٣٣ في نيويورك ، يجبر منتج سينمائي طموح للغاية فريق عمله وطاقم السفينة المستأجر على السفر إلى جزيرة الجمجمة الغامضة ، حيث يواجهون كونغ ، وهو قرد عملاق مغرم على الفور بالسيدة الرائدة.",
+        "overview_ar": "In 1933 New York, an overly ambitious movie producer coerces his cast and hired ship crew to travel to mysterious Skull Island, where they encounter Kong, a giant ape who is immediately smitten with the leading lady.",
         "poster_path": "/6a2HY6UmD7XiDD3NokgaBAXEsD2.jpg",
         "vote_average": 6.887,
         "release_date": "2005-12-12",
@@ -20889,7 +20889,7 @@
         "poster_path": "/b0WwWRcDiDahkah5vZ0KjB4N9ZZ.jpg",
         "vote_average": 6.415,
         "release_date": "2000-05-26",
-        "popularity": 7.4075
+        "popularity": 6.4245
     },
     {
         "id": 501170,
@@ -20901,7 +20901,7 @@
         "poster_path": "/p69QzIBbN06aTYqRRiCOY1emNBh.jpg",
         "vote_average": 7.148,
         "release_date": "2019-10-30",
-        "popularity": 7.4023
+        "popularity": 7.0843
     },
     {
         "id": 13186,
@@ -20913,7 +20913,7 @@
         "poster_path": "/ow3IMhTVLryZuCEoQznVTTmFYuu.jpg",
         "vote_average": 6.144,
         "release_date": "2007-08-25",
-        "popularity": 7.3985
+        "popularity": 7.7486
     },
     {
         "id": 13027,
@@ -20925,7 +20925,7 @@
         "poster_path": "/9KCOv0hL37IN3tWG3j86eZg3xDH.jpg",
         "vote_average": 6.482,
         "release_date": "2008-09-25",
-        "popularity": 7.3975
+        "popularity": 8.7052
     },
     {
         "id": 72545,
@@ -20937,7 +20937,7 @@
         "poster_path": "/uFm2vnp9LhHx5MNo1Ego6O3vUhl.jpg",
         "vote_average": 6.1,
         "release_date": "2012-01-19",
-        "popularity": 7.395
+        "popularity": 6.6195
     },
     {
         "id": 1302001,
@@ -20949,7 +20949,7 @@
         "poster_path": "/aD3ObNzCfNH5WHXzmJXkXA7MRPP.jpg",
         "vote_average": 5.375,
         "release_date": "2024-07-02",
-        "popularity": 7.394
+        "popularity": 6.2801
     },
     {
         "id": 20662,
@@ -20961,7 +20961,7 @@
         "poster_path": "/9NS5QGOfck24yL3bZqWeW06PgPC.jpg",
         "vote_average": 6.393,
         "release_date": "2010-05-12",
-        "popularity": 7.392
+        "popularity": 7.185
     },
     {
         "id": 9532,
@@ -20973,7 +20973,7 @@
         "poster_path": "/1mXhlQMnlfvJ2frxTjZSQNnA9Vp.jpg",
         "vote_average": 6.628,
         "release_date": "2000-03-17",
-        "popularity": 7.3918
+        "popularity": 7.7116
     },
     {
         "id": 8689,
@@ -20983,9 +20983,9 @@
         "overview": "A New York University professor returns from a rescue mission to the Amazon rainforest with the footage shot by a lost team of documentarians who were making a film about the area's local cannibal tribes.",
         "overview_ar": "A New York University professor returns from a rescue mission to the Amazon rainforest with the footage shot by a lost team of documentarians who were making a film about the area's local cannibal tribes.",
         "poster_path": "/otxZzMh53TsN7yYFqSZ3rwH1yMd.jpg",
-        "vote_average": 6.274,
+        "vote_average": 6.3,
         "release_date": "1980-02-07",
-        "popularity": 7.3909
+        "popularity": 7.4418
     },
     {
         "id": 206563,
@@ -20997,7 +20997,7 @@
         "poster_path": "/31iTD5hlbcRpPonuxSp77GxRGQf.jpg",
         "vote_average": 7.1,
         "release_date": "2014-10-09",
-        "popularity": 7.3888
+        "popularity": 6.9199
     },
     {
         "id": 196,
@@ -21009,7 +21009,7 @@
         "poster_path": "/crzoVQnMzIrRfHtQw0tLBirNfVg.jpg",
         "vote_average": 7.489,
         "release_date": "1990-05-25",
-        "popularity": 7.3883
+        "popularity": 9.1807
     },
     {
         "id": 560057,
@@ -21021,7 +21021,7 @@
         "poster_path": "/9Zfv4Ap1e8eKOYnZPtYaWhLkk0d.jpg",
         "vote_average": 7.326,
         "release_date": "2022-06-24",
-        "popularity": 7.3865
+        "popularity": 6.9233
     },
     {
         "id": 9665,
@@ -21033,7 +21033,7 @@
         "poster_path": "/pGDzBjZvzmSCIEduQBfESLMiwtp.jpg",
         "vote_average": 7.477,
         "release_date": "1989-12-15",
-        "popularity": 7.3853
+        "popularity": 7.4026
     },
     {
         "id": 10543,
@@ -21045,7 +21045,7 @@
         "poster_path": "/ut8snuINzOibbKnvpTnsGWQr4Nl.jpg",
         "vote_average": 6.547,
         "release_date": "1996-04-12",
-        "popularity": 7.3835
+        "popularity": 7.4024
     },
     {
         "id": 39513,
@@ -21057,7 +21057,7 @@
         "poster_path": "/mZxGhp9ZNkQDFy2f4RnQj5z8QYG.jpg",
         "vote_average": 6.734,
         "release_date": "2011-02-14",
-        "popularity": 7.3827
+        "popularity": 7.3545
     },
     {
         "id": 55504,
@@ -21069,7 +21069,7 @@
         "poster_path": "/3ngHrgIt33g0IEjl7rvzGLQ8wpj.jpg",
         "vote_average": 6.014,
         "release_date": "2005-06-10",
-        "popularity": 7.3815
+        "popularity": 6.0542
     },
     {
         "id": 522681,
@@ -21081,7 +21081,7 @@
         "poster_path": "/8Ls1tZ6qjGzfGHjBB7ihOnf7f0b.jpg",
         "vote_average": 6.542,
         "release_date": "2019-01-03",
-        "popularity": 7.3813
+        "popularity": 5.4991
     },
     {
         "id": 1040148,
@@ -21093,7 +21093,7 @@
         "poster_path": "/8ChIb3WzYAcza1vrXR56v510MWk.jpg",
         "vote_average": 7.2,
         "release_date": "2023-06-28",
-        "popularity": 7.38
+        "popularity": 6.0975
     },
     {
         "id": 885110,
@@ -21105,7 +21105,7 @@
         "poster_path": "/hMIQiwLpBfTfe3ZbRlNx4225Mgg.jpg",
         "vote_average": 6.393,
         "release_date": "2021-11-04",
-        "popularity": 7.3785
+        "popularity": 7.1671
     },
     {
         "id": 235271,
@@ -21117,7 +21117,7 @@
         "poster_path": "/fAERrD6vvmznDoL99wlgjhSfPcH.jpg",
         "vote_average": 5.879,
         "release_date": "2014-10-10",
-        "popularity": 7.3726
+        "popularity": 6.5493
     },
     {
         "id": 846422,
@@ -21609,7 +21609,7 @@
         "poster_path": "/sdxT2VjVSx9DRicwnuECUdBHeE7.jpg",
         "vote_average": 6.97,
         "release_date": "1993-11-19",
-        "popularity": 7.3097
+        "popularity": 5.5176
     },
     {
         "id": 10948,
@@ -21619,9 +21619,9 @@
         "overview": "When a feisty little fox named Tod is adopted into a farm family, he quickly becomes friends with a fun and adorable hound puppy named Copper. Life is full of hilarious adventures until Copper is expected to take on his role as a hunting dog -- and the object of his search is his best friend!",
         "overview_ar": "عندما يتبنّى ثعلب صغير شجاع يُدعى تود في عائلة ريفية، سرعان ما يُصبح صديقًا لجرو كلب صيد مرح ولطيف يُدعى كوبر. تمتلئ الحياة بالمغامرات المضحكة حتى يُتوقع من كوبر أن يتولى دور كلب الصيد - وهدف بحثه هو صديقه المُقرّب!",
         "poster_path": "/aC3k6XBaYnulGSkK8263ABjU3Md.jpg",
-        "vote_average": 7.135,
+        "vote_average": 7.1,
         "release_date": "1981-07-10",
-        "popularity": 7.3075
+        "popularity": 6.6529
     },
     {
         "id": 723347,
@@ -21633,7 +21633,7 @@
         "poster_path": "/5BAqLXrPD4ra3zA07lVsozK6sEj.jpg",
         "vote_average": 5.6,
         "release_date": "2023-04-26",
-        "popularity": 7.3049
+        "popularity": 6.4595
     },
     {
         "id": 10982,
@@ -21645,7 +21645,7 @@
         "poster_path": "/tjuMvHg7NJmE9hqKD3p86kW2Jvk.jpg",
         "vote_average": 6.268,
         "release_date": "2005-12-16",
-        "popularity": 7.302
+        "popularity": 7.4313
     },
     {
         "id": 132232,
@@ -21657,7 +21657,7 @@
         "poster_path": "/eo8BhR8Q5STmWE9sMLsEPagxmy6.jpg",
         "vote_average": 6.288,
         "release_date": "2013-01-17",
-        "popularity": 7.3014
+        "popularity": 6.8966
     },
     {
         "id": 131634,
@@ -21669,7 +21669,7 @@
         "poster_path": "/lImKHDfExAulp16grYm8zD5eONE.jpg",
         "vote_average": 6.901,
         "release_date": "2015-11-18",
-        "popularity": 7.3013
+        "popularity": 8.2838
     },
     {
         "id": 395990,
@@ -21681,7 +21681,7 @@
         "poster_path": "/g0eEEZAqMf98ULQnoiORuazjOpn.jpg",
         "vote_average": 6.223,
         "release_date": "2018-03-01",
-        "popularity": 7.3009
+        "popularity": 8.6472
     },
     {
         "id": 13597,
@@ -21693,7 +21693,7 @@
         "poster_path": "/hbSdA1DmNA9IlfVoqJkIWYF2oYm.jpg",
         "vote_average": 7.278,
         "release_date": "1986-06-27",
-        "popularity": 7.3007
+        "popularity": 7.5864
     },
     {
         "id": 1098006,
@@ -21705,7 +21705,7 @@
         "poster_path": "/4iWjGghUj2uyHo2Hyw8NFBvsNGm.jpg",
         "vote_average": 6.268,
         "release_date": "2025-05-19",
-        "popularity": 7.3004
+        "popularity": 7.3062
     },
     {
         "id": 188161,
@@ -21717,7 +21717,7 @@
         "poster_path": "/n9SicwnoNGWBwE75le27sUhCLMm.jpg",
         "vote_average": 6.052,
         "release_date": "2014-05-22",
-        "popularity": 7.2982
+        "popularity": 7.8821
     },
     {
         "id": 3049,
@@ -21729,7 +21729,7 @@
         "poster_path": "/pqiRuETmuSybfnVZ7qyeoXhQyN1.jpg",
         "vote_average": 6.572,
         "release_date": "1994-02-04",
-        "popularity": 7.2968
+        "popularity": 7.7392
     },
     {
         "id": 487558,
@@ -21741,7 +21741,7 @@
         "poster_path": "/8jxqAvSDoneSKRczaK8v9X5gqBp.jpg",
         "vote_average": 7.491,
         "release_date": "2018-08-09",
-        "popularity": 7.296
+        "popularity": 8.4803
     },
     {
         "id": 23759,
@@ -21753,7 +21753,7 @@
         "poster_path": "/9ZdfrcP2QCqoRSk7JF06tDWtrhP.jpg",
         "vote_average": 6.2,
         "release_date": "2010-02-15",
-        "popularity": 7.2922
+        "popularity": 7.3482
     },
     {
         "id": 2164,
@@ -21765,7 +21765,7 @@
         "poster_path": "/4T6Po0XnZlevmhfPh3ZfEs5butR.jpg",
         "vote_average": 7.0,
         "release_date": "1994-10-28",
-        "popularity": 7.2909
+        "popularity": 7.8582
     },
     {
         "id": 9476,
@@ -21777,7 +21777,7 @@
         "poster_path": "/srb1XnrlDZHcdpjBKqUu4qAzxKU.jpg",
         "vote_average": 6.9,
         "release_date": "2001-05-11",
-        "popularity": 7.2903
+        "popularity": 7.9818
     },
     {
         "id": 965150,
@@ -21789,7 +21789,7 @@
         "poster_path": "/evKz85EKouVbIr51zy5fOtpNRPg.jpg",
         "vote_average": 7.667,
         "release_date": "2022-10-21",
-        "popularity": 7.2865
+        "popularity": 6.9535
     },
     {
         "id": 380,
@@ -21799,9 +21799,9 @@
         "overview": "When car dealer Charlie Babbitt learns that his estranged father has died, he returns home to Cincinnati, where he discovers that he has a savant older brother named Raymond and that his father's $3 million fortune is being left to the mental institution in which Raymond lives. Motivated by his father's money, Charlie checks Raymond out of the facility in order to return with him to Los Angeles. The brothers' cross-country trip ends up changing both their lives.",
         "overview_ar": "ترك والد الميول الأناني تشارلي بابيت ثروة لأخيه المخلص ريموند ومبلغ زهيد لتشارلي ؛ يسافرون عبر البلاد.",
         "poster_path": "/iTNHwO896WKkaoPtpMMS74d8VNi.jpg",
-        "vote_average": 7.749,
+        "vote_average": 7.748,
         "release_date": "1988-12-12",
-        "popularity": 7.286
+        "popularity": 6.8895
     },
     {
         "id": 440,
@@ -21813,7 +21813,7 @@
         "poster_path": "/5iTwPDNtvK6ZZF607BHBbU3HO0B.jpg",
         "vote_average": 5.178,
         "release_date": "2007-12-25",
-        "popularity": 7.2849
+        "popularity": 7.7536
     },
     {
         "id": 658,
@@ -21825,7 +21825,7 @@
         "poster_path": "/aKNFzaqQgPzsGXnsMc4kJH5hFIV.jpg",
         "vote_average": 7.357,
         "release_date": "1964-09-20",
-        "popularity": 7.2831
+        "popularity": 7.4717
     },
     {
         "id": 752623,
@@ -21837,7 +21837,7 @@
         "poster_path": "/rnheO8cFvCYcmZsDrBoabJbKLFE.jpg",
         "vote_average": 6.468,
         "release_date": "2022-03-23",
-        "popularity": 7.2827
+        "popularity": 8.2015
     },
     {
         "id": 433808,
