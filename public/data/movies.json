@@ -399,9 +399,9 @@
         "id": 1212742,
         "type": "movie",
         "title": "The Rule of Jenny Pen",
-        "title_ar": "حُكم جيني بين",
+        "title_ar": "The Rule of Jenny Pen",
         "overview": "Confined to a secluded rest home and trapped within his stroke-ridden body, a former Judge must stop an elderly psychopath who employs a child's puppet to abuse the home's residents with deadly consequences.",
-        "overview_ar": "يعيش قاضي سابق محتجزًا في دار استراحة منعزلة ومحاصرًا داخل جسده المصاب بالسكتة الدماغية، لكنه يحاول إيقاف مريض نفسي يستخدم دمية طفل لإساءة معاملة المقيمين، مما يؤدي لعواقب وخيمة.",
+        "overview_ar": "Confined to a secluded rest home and trapped within his stroke-ridden body, a former Judge must stop an elderly psychopath who employs a child's puppet to abuse the home's residents with deadly consequences.",
         "poster_path": "/5vqK1wbrgmUvqHn6yPt9b6qT9iL.jpg",
         "vote_average": 6.0,
         "release_date": "2025-03-07",
@@ -10320,6 +10320,18 @@
         "popularity": 8.9767
     },
     {
+        "id": 49519,
+        "type": "movie",
+        "title": "The Croods",
+        "title_ar": "عائلة كرود",
+        "overview": "The prehistoric Croods family live in a particularly dangerous moment in time. Patriarch Grug, his mate Ugga, teenage daughter Eep, son Thunk, and feisty Gran gather food by day and huddle together in a cave at night. When a more evolved caveman named Guy arrives on the scene, Grug is distrustful, but it soon becomes apparent that Guy is correct about the impending destruction of their world.",
+        "overview_ar": "تعيش عائلة كرودز من عصور ما قبل التاريخ في لحظة عصيبة. يجمع البطريرك \"غروغ\" ورفيقته \"أوغا\" وابنته المراهقة \"إيب\" وابنه \"ثونك\" و\"غران\" المشاكسة، الطعام نهارًا ويجتمعون معًا في كهف ليلًا. عندما يصل رجل كهف أكثر تطورًا يُدعى جاي إلى مكان الحادث، يشعر جروج بعدم الثقة، ولكن سرعان ما يتضح أن جاي على حق بشأن التدمير الوشيك لعالمهم.",
+        "poster_path": "/27zvjVOtOi5ped1HSlJKNsKXkFH.jpg",
+        "vote_average": 6.9,
+        "release_date": "2013-03-15",
+        "popularity": 9.8947
+    },
+    {
         "id": 296,
         "type": "movie",
         "title": "Terminator 3: Rise of the Machines",
@@ -10375,7 +10387,7 @@
         "overview": "Alex, Marty, and other zoo animals find a way to escape from Madagascar when the penguins reassemble a wrecked airplane. The precariously repaired craft stays airborne just long enough to make it to the African continent. There the New Yorkers encounter members of their own species for the first time. Africa proves to be a wild place, but Alex and company wonder if it is better than their Central Park home.",
         "overview_ar": "إستكمالاً لأحداث الجزء الأول، تحاول الحيوانات العودة إلى موطنها في نيويورك، ومنهم الأسد (أليكس) بعد أن تخلى عن طبيعته المفترسة، لكن تسقط الطائرة التي صنعها البطاريق في إحدى المحميات في أفريقيا، يلتقي فيها الأسد (أليكس) بعائلته، ويحاول إثبات نسبه الملكي بالصراع مع (مكونجا)، في الوقت ذاته تكون الزرافة (ميلما) هي الطبيب الساحر الجديد، في الوقت الذي تحاول فيه البطاريق صنع طائرة جديدة للعودة إلى نيويورك.",
         "poster_path": "/agRbLOHgN46TQO4YdKR462iR7To.jpg",
-        "vote_average": 6.524,
+        "vote_average": 6.525,
         "release_date": "2008-10-30",
         "popularity": 10.9854
     },
@@ -10411,7 +10423,7 @@
         "overview": "After discovering she can see everyone's imaginary friends, a girl embarks on a magical adventure to reconnect forgotten imaginary friends with their kids.",
         "overview_ar": "يمكن للرجل أن يرى ويتحدث إلى أصدقاء الناس الوهميين ، ويصادق أولئك الذين تم نسيانهم أو التخلص منهم. ومع ذلك ، فإن بعض الأصدقاء الوهميين ، الذين يفتقرون إلى الحب والصداقة ، يلجأون إلى الجانب المظلم ويجب إيقافهم.",
         "poster_path": "/xbKFv4KF3sVYuWKllLlwWDmuZP7.jpg",
-        "vote_average": 7.0,
+        "vote_average": 6.988,
         "release_date": "2024-05-08",
         "popularity": 9.6176
     },
@@ -10423,7 +10435,7 @@
         "overview": "An epic journey into the world of dinosaurs where an Apatosaurus named Arlo makes an unlikely human friend.",
         "overview_ar": "يحكي الفيلم قصة الديناصور المراهق والمنتمي إلى فصيلة (أباتوصور)  يُدعى (أرلو) الذي فقد اباه في حادث مأسوي بعد فيضان نهر وغرق الاب ، وعلى أثره يخرج في رحلة، حيث يقابل الفتى (سبوت) من بني البشر، تتطور بينهم علاقة صداقة تغير مجرى حياتهم",
         "poster_path": "/8RSkxOO80btfKjyiC5ZiTaCHIT8.jpg",
-        "vote_average": 6.737,
+        "vote_average": 6.736,
         "release_date": "2015-11-14",
         "popularity": 10.8409
     },
@@ -10447,7 +10459,7 @@
         "overview": "Tanjiro Kamado, joined with Inosuke Hashibira, a boy raised by boars who wears a boar's head, and Zenitsu Agatsuma, a scared boy who reveals his true power when he sleeps, boards the Infinity Train on a new mission with the Fire Hashira, Kyojuro Rengoku, to defeat a demon who has been tormenting the people and killing the demon slayers who oppose it!",
         "overview_ar": "قصة فيلم Kimetsu no Yaiba Movie: Mugen Ressha-hen تتمة لاحداث الانمي، حيث يقوم “تانجيرو” و “زينتسو” و“اينوسوكي” بشراء تذاكر لـ“القطار الغير محدود” للبحث عن “رينغوكو كونجيرو” عمود اللهب. بأمل أن لديه بعض المعلومات عن رقصة إلاه النار. يخبرهم “رينغوكو” أنه أُرسل في القطار لقتل شيطان يعتقد أنه يسكن بداخله، وأنه لا يعرف شيئًا عن رقصة إلاه النار. سرعان ما أحس بالشيطان وقتله، لتطلب المجموعة التي أعجبت بمهاراته، أن يجعلهم “تسوغوكو” و“رينغوكو” خاص به.",
         "poster_path": "/h8Rb9gBr48ODIwYUttZNYeMWeUU.jpg",
-        "vote_average": 8.2,
+        "vote_average": 8.206,
         "release_date": "2020-10-16",
         "popularity": 10.9427
     },
@@ -10507,7 +10519,7 @@
         "overview": "When five friends inadvertently cause a deadly car accident, they cover up their involvement and make a pact to keep it a secret rather than face the consequences. A year later, their past comes back to haunt them and they're forced to confront a horrifying truth: someone knows what they did last summer…and is hell-bent on revenge.",
         "overview_ar": "عندما يتسبب خمسة أصدقاء، دون قصد، في حادث سيارة مميت، يُخفون تورطهم ويعقدون اتفاقًا على إبقاء الأمر سرًا بدلًا من مواجهة العواقب. بعد عام، يعود ماضيهم ليطاردهم، ويضطرون لمواجهة حقيقة مروعة: أحدهم يعلم ما فعلوه الصيف الماضي... وهو عازم على الانتقام.",
         "poster_path": "/A06yXys3hrCWu8xiNoHCFLTG5SH.jpg",
-        "vote_average": 5.764,
+        "vote_average": 5.765,
         "release_date": "2025-07-16",
         "popularity": 9.6051
     },
@@ -10546,18 +10558,6 @@
         "vote_average": 6.136,
         "release_date": "2025-09-25",
         "popularity": 9.7028
-    },
-    {
-        "id": 197,
-        "type": "movie",
-        "title": "Braveheart",
-        "title_ar": "قلب شجاع",
-        "overview": "Enraged at the slaughter of Murron, his new bride and childhood love, Scottish warrior William Wallace slays a platoon of the local English lord's soldiers. This leads the village to revolt and, eventually, the entire country to rise up against English rule.",
-        "overview_ar": "غضب المحارب الاسكتلندي ويليام والاس من ذبح مورون وعروسه الجديدة وحبه للطفولة ، ويقتل فصيلة من جنود اللورد الإنجليز المحليين. هذا يقود القرية إلى التمرد ، وفي النهاية ، تنهض الدولة بأكملها ضد الحكم الإنجليزي.",
-        "poster_path": "/or1gBugydmjToAEq7OZY0owwFk.jpg",
-        "vote_average": 7.94,
-        "release_date": "1995-05-24",
-        "popularity": 9.3766
     },
     {
         "id": 1366745,
@@ -10791,9 +10791,9 @@
         "id": 44896,
         "type": "movie",
         "title": "Rango",
-        "title_ar": "رانجو",
+        "title_ar": "Rango",
         "overview": "When Rango, a lost family pet, accidentally winds up in the gritty, gun-slinging town of Dirt, the less-than-courageous lizard suddenly finds he stands out. Welcomed as the last hope the town has been waiting for, new Sheriff Rango is forced to play his new role to the hilt.",
-        "overview_ar": "عندما ينتهي الأمر ب رانجو ، وهو أليف عائلي مفقود ، عن طريق الخطأ في بلدة الوسخ الشجاعة التي تقذف بالأسلحة النارية ، تجد السحلية الأقل شجاعة فجأة أنه يبرز. تم الترحيب به باعتباره الأمل الأخير الذي كانت المدينة تنتظره ، يضطر الشريف الجديد رانجو إلى لعب دوره الجديد إلى أقصى حد.",
+        "overview_ar": "When Rango, a lost family pet, accidentally winds up in the gritty, gun-slinging town of Dirt, the less-than-courageous lizard suddenly finds he stands out. Welcomed as the last hope the town has been waiting for, new Sheriff Rango is forced to play his new role to the hilt.",
         "poster_path": "/A5MP1guV8pbruieG0tnpPIbaJtt.jpg",
         "vote_average": 6.9,
         "release_date": "2011-03-02",
@@ -13711,7 +13711,7 @@
         "overview": "In honor of his birthday, San Francisco banker Nicholas Van Orton, a financial genius and a cold-hearted loner, receives an unusual present from his younger brother, Conrad: a gift certificate to play a unique kind of game. In nary a nanosecond, Nicholas finds himself consumed by a dangerous set of ever-changing rules, unable to distinguish where the charade ends and reality begins.",
         "overview_ar": "تكريما لعيد ميلاده ، تلقى المصرفي في سان فرانسيسكو نيكولاس فان أورتن ، وهو عبقري مالي وعازف القلب ، هدية غير عادية من شقيقه الأصغر كونراد: شهادة هدية للعب لعبة فريدة من نوعها. في نانو ثانية ، يجد نيكولاس نفسه مستهلكًا لمجموعة خطيرة من القواعد المتغيرة باستمرار ، غير قادر على التمييز بين المكان الذي تنتهي فيه التمثيلية ويبدأ الواقع.",
         "poster_path": "/4UOa079915QjiTA2u5hT2yKVgUu.jpg",
-        "vote_average": 7.567,
+        "vote_average": 7.568,
         "release_date": "1997-09-12",
         "popularity": 8.6467
     },
@@ -13879,7 +13879,7 @@
         "overview": "A well-meaning but rather inept angel named Gabriel meddles in the lives of a struggling gig worker and a wealthy capitalist.",
         "overview_ar": "A well-meaning but rather inept angel named Gabriel meddles in the lives of a struggling gig worker and a wealthy capitalist.",
         "poster_path": "/r83HIGA0mUiy7I9qVr17pF7SCDP.jpg",
-        "vote_average": 7.015,
+        "vote_average": 7.019,
         "release_date": "2025-10-14",
         "popularity": 7.3857
     },
@@ -13896,18 +13896,6 @@
         "popularity": 10.1313
     },
     {
-        "id": 770,
-        "type": "movie",
-        "title": "Gone with the Wind",
-        "title_ar": "Gone with the Wind",
-        "overview": "The spoiled daughter of a Georgia plantation owner conducts a tumultuous romance with a cynical profiteer during the American Civil War and Reconstruction Era.",
-        "overview_ar": "تُجبر الابنة المدللة لمالك مزرعة ميسور على استخدام كل الوسائل المتاحة لها للخروج من الفقر ، بعد الميجور جنرال ويليام شيرمان \"مسيرة إلى البحر\" المدمرة ، خلال الحرب الأهلية الأمريكية.",
-        "poster_path": "/lNz2Ow0wGCAvzckW7EOjE03KcYv.jpg",
-        "vote_average": 7.92,
-        "release_date": "1939-12-15",
-        "popularity": 7.6163
-    },
-    {
         "id": 27576,
         "type": "movie",
         "title": "Salt",
@@ -13918,6 +13906,18 @@
         "vote_average": 6.413,
         "release_date": "2010-07-21",
         "popularity": 7.9206
+    },
+    {
+        "id": 384521,
+        "type": "movie",
+        "title": "The Cloverfield Paradox",
+        "title_ar": "The Cloverfield Paradox",
+        "overview": "Orbiting above a planet on the brink of war, scientists test a device to solve an energy crisis and end up face-to-face with a dark alternate reality.",
+        "overview_ar": "Orbiting above a planet on the brink of war, scientists test a device to solve an energy crisis and end up face-to-face with a dark alternate reality.",
+        "poster_path": "/vJi2ExTcWdJR3150VPKqqtdGxsT.jpg",
+        "vote_average": 5.629,
+        "release_date": "2018-02-04",
+        "popularity": 9.1343
     },
     {
         "id": 1072699,
@@ -15600,18 +15600,6 @@
         "popularity": 9.3958
     },
     {
-        "id": 77805,
-        "type": "movie",
-        "title": "Lovelace",
-        "title_ar": "Lovelace",
-        "overview": "Story of Linda Lovelace, who is used and abused by the porn industry at the behest of her coercive husband, before taking control of her life.",
-        "overview_ar": "Story of Linda Lovelace, who is used and abused by the porn industry at the behest of her coercive husband, before taking control of her life.",
-        "poster_path": "/ibt7chnBsaDbE6ZVwyneuZwYfsC.jpg",
-        "vote_average": 6.022,
-        "release_date": "2013-08-08",
-        "popularity": 7.7536
-    },
-    {
         "id": 37931,
         "type": "movie",
         "title": "MacGruber",
@@ -15835,9 +15823,21 @@
         "overview": "Thirty years ago, aliens arrive on Earth. Not to conquer or give aid, but to find refuge from their dying planet. Separated from humans in a South African area called District 9, the aliens are managed by Multi-National United, which is unconcerned with the aliens' welfare but will do anything to master their advanced technology. When a company field agent contracts a mysterious virus that begins to alter his DNA, there is only one place he can hide: District 9.",
         "overview_ar": "قبل ثلاثين عامًا ، وصل الفضائيون إلى الأرض. ليس للغزو أو تقديم المساعدة ، ولكن للبحث عن ملجأ من كوكبهم المحتضر منفصلة عن البشر في منطقة جنوب إفريقيا تسمى المنطقة 9 ، تتم إدارة الأجانب بواسطة شركة Multi-National United ، التي لا تهتم برفاهية الأجانب ولكنها ستفعل أي شيء لإتقان تقنيتهم المتقدمة. عندما يتعاقد الوكيل الميداني للشركة مع فيروس غامض يبدأ في تغيير حمضه النووي ، فهناك مكان واحد فقط يمكنه إخفاءه: المنطقة 9.",
         "poster_path": "/tuGlQkqLxnodDSk6mp5c2wvxUEd.jpg",
-        "vote_average": 7.461,
+        "vote_average": 7.46,
         "release_date": "2009-08-05",
         "popularity": 8.1053
+    },
+    {
+        "id": 813,
+        "type": "movie",
+        "title": "Airplane!",
+        "title_ar": "Airplane!",
+        "overview": "An ex-fighter pilot forced to take over the controls of an airliner when the flight crew succumbs to food poisoning.",
+        "overview_ar": "طور الطيار المدمن على الكحول ، تيد سترايكر ، خوفًا من الطيران بسبب صدمة الحرب ، لكنه مع ذلك يصعد على متن طائرة ركاب في محاولة لجذب صديقته المضيفة. يؤدي التسمم الغذائي إلى تدمير الركاب والطاقم ، مما يترك الأمر للمهاجم للهبوط بالطائرة بمساعدة مراقب الحركة الجوية الذي يعمل على شم الغراء وقبطان القوات الجوية السابق المنتقم لـ Striker ، والذي يجب عليهما التحدث معه.",
+        "poster_path": "/7Q3efxd3AF1vQjlSxnlerSA7RzN.jpg",
+        "vote_average": 7.311,
+        "release_date": "1980-06-27",
+        "popularity": 6.9258
     },
     {
         "id": 993708,
@@ -16975,7 +16975,7 @@
         "overview": "A mild-mannered guy who is engaged to a monstrous woman meets the woman of his dreams, and schemes to find a way to be with her.",
         "overview_ar": "A mild-mannered guy who is engaged to a monstrous woman meets the woman of his dreams, and schemes to find a way to be with her.",
         "poster_path": "/XcZ5NzygPp54csxCnzvQKuxFL2.jpg",
-        "vote_average": 5.67,
+        "vote_average": 5.671,
         "release_date": "2007-02-08",
         "popularity": 8.6458
     },
@@ -16999,21 +16999,9 @@
         "overview": "While in his teens, Donny fathered a son, Todd, and raised him as a single parent up until Todd's 18th birthday. Now, after not seeing each other for years, Todd's world comes crashing down when Donny resurfaces just before Todd's wedding.",
         "overview_ar": "تندلع الخلافات بين الأب وابنه عندما يقرر الأب المزعج سيئ الطباع الانتقال إلى منزل ابنه وخطيبته قبل زواجهما.",
         "poster_path": "/oaLhdRsZ5Mq8VfZtA4Wlvjzzn0X.jpg",
-        "vote_average": 5.8,
+        "vote_average": 5.808,
         "release_date": "2012-06-14",
         "popularity": 7.3408
-    },
-    {
-        "id": 509,
-        "type": "movie",
-        "title": "Notting Hill",
-        "title_ar": "Notting Hill",
-        "overview": "London bookstore owner William Thacker's quiet life turns upside down when a chance encounter with famous actress Anna Scott sparks an unlikely romance challenged by their vastly different worlds.",
-        "overview_ar": "London bookstore owner William Thacker's quiet life turns upside down when a chance encounter with famous actress Anna Scott sparks an unlikely romance challenged by their vastly different worlds.",
-        "poster_path": "/hHRIf2XHeQMbyRb3HUx19SF5Ujw.jpg",
-        "vote_average": 7.3,
-        "release_date": "1999-05-21",
-        "popularity": 7.5806
     },
     {
         "id": 1406657,
@@ -17038,6 +17026,18 @@
         "vote_average": 6.738,
         "release_date": "1988-11-09",
         "popularity": 7.2343
+    },
+    {
+        "id": 97020,
+        "type": "movie",
+        "title": "RoboCop",
+        "title_ar": "RoboCop",
+        "overview": "In RoboCop, the year is 2028 and multinational conglomerate OmniCorp is at the center of robot technology.  Overseas, their drones have been used by the military for years, but have been forbidden for law enforcement in America.  Now OmniCorp wants to bring their controversial technology to the home front, and they see a golden opportunity to do it.  When Alex Murphy – a loving husband, father and good cop doing his best to stem the tide of crime and corruption in Detroit – is critically injured, OmniCorp sees their chance to build a part-man, part-robot police officer.  OmniCorp envisions a RoboCop in every city and even more billions for their shareholders, but they never counted on one thing: there is still a man inside the machine.",
+        "overview_ar": "يرصد الفيلم في جو الحركة الممزوج بالخيال العلمي ،قصة أليكس ميرفي (جويل كينامان)، يعيش أليكس بديترويت في عام 2028 ، زوجٌ مخلصٌ وأبٌ عطوفٌ وضابط شرطةٍ شغوفٌ بعمله. ولكن عندما يُصاب أثناء القيام بواجبه كشرطي يرى (تكتل السلك الشرطي متعدد الجنسيات) فرصتهم سانحةً للحصول على رجل شرطة نصفه إنسانٌ ونصفه إنسانٌ آليّ ، يساعدهم في كل الأعمال الشاقة، ومن هنا تبدأ حياة أليكس في التغير وتنقلب رأسًا على عقب.",
+        "poster_path": "/gM5ql3BKYmHG3WtZ0buKXN7xY8O.jpg",
+        "vote_average": 5.886,
+        "release_date": "2014-01-30",
+        "popularity": 8.6278
     },
     {
         "id": 238615,
@@ -17259,9 +17259,9 @@
         "id": 11360,
         "type": "movie",
         "title": "Dumbo",
-        "title_ar": "Dumbo",
+        "title_ar": "دمبو",
         "overview": "Dumbo is a baby elephant born with over-sized ears and a supreme lack of confidence. But thanks to his even more diminutive buddy Timothy the Mouse,  the pint-sized pachyderm learns to surmount all obstacles.",
-        "overview_ar": "Dumbo is a baby elephant born with over-sized ears and a supreme lack of confidence. But thanks to his even more diminutive buddy Timothy the Mouse,  the pint-sized pachyderm learns to surmount all obstacles.",
+        "overview_ar": "يقوم طائر اللقلق بتسليم فيل وليد إلى السيدة الفيلة (جمبو)؛ المخضرمة في ألعاب السيرك وتتمنى الأمومة. لكن يتعرض الوليد إلى سخرية الجميع بسبب آذانه هائلة الحجم، ثم يُطلَق عليه اسم (دامبو).. بعد فصل دامبو عن والدته، يتم إلحاقه بألعاب مهرجين السيرك الخطيرة، فيصبح الأمر متروكًا لصديقه الفأر حتى يساعده على وضعه المعقد ويعاونه على اكتشاف كامل إمكاناته.",
         "poster_path": "/4x9FmvdJ464Fg7A9XcbYSmxfVw3.jpg",
         "vote_average": 6.987,
         "release_date": "1941-10-31",
@@ -17271,9 +17271,9 @@
         "id": 718789,
         "type": "movie",
         "title": "Lightyear",
-        "title_ar": "Lightyear",
+        "title_ar": "باز يطير",
         "overview": "Legendary Space Ranger Buzz Lightyear embarks on an intergalactic adventure alongside a group of ambitious recruits and his robot companion Sox.",
-        "overview_ar": "Legendary Space Ranger Buzz Lightyear embarks on an intergalactic adventure alongside a group of ambitious recruits and his robot companion Sox.",
+        "overview_ar": "اللانهاية في انتظارك.\r يشرع حارس الفضاء الأسطوري ( باز ) في مغامرة بين المجرات جنبا إلى جنب مع مجموعة من المجندين الطموحين ورفيقه الآلي .",
         "poster_path": "/b9t3w1loraDh7hjdWmpc9ZsaYns.jpg",
         "vote_average": 6.9,
         "release_date": "2022-06-15",
@@ -17760,30 +17760,6 @@
         "popularity": 6.5507
     },
     {
-        "id": 433,
-        "type": "movie",
-        "title": "Mary Poppins",
-        "title_ar": "ماري بوبينز",
-        "overview": "In turn of the century London, a magical nanny employs music and adventure to help two neglected children become closer to their father.",
-        "overview_ar": "تدور الأحداث حول (ماري بوبينز) المربية الخارقة التي تنتقل دوماً بواسطة شمسيتها، يطلب منها السيد (بانكس) أن تحضر إلى منزله كمربية أطفال في أسرة يغلفها الملل والبرود، فتستخدم قواها السحرية، وقدراتها الخفية في إضفاء المرح على الأسرة وعلى المساعدة في أداء مهمتها.",
-        "poster_path": "/pHyWpWn2pRIfhS3Arcn4SKtKKW4.jpg",
-        "vote_average": 7.6,
-        "release_date": "1964-12-17",
-        "popularity": 6.9311
-    },
-    {
-        "id": 4032,
-        "type": "movie",
-        "title": "My Girl",
-        "title_ar": "My Girl",
-        "overview": "Vada Sultenfuss is obsessed with death. Her mother is dead, and her father runs a funeral parlor. She is also in love with her English teacher, and joins a poetry class over the summer just to impress him. Thomas J., her best friend, is \"allergic to everything\", and sticks with Vada despite her hangups. When Vada's father hires Shelly, and begins to fall for her, things take a turn to the worse...",
-        "overview_ar": "Vada Sultenfuss is obsessed with death. Her mother is dead, and her father runs a funeral parlor. She is also in love with her English teacher, and joins a poetry class over the summer just to impress him. Thomas J., her best friend, is \"allergic to everything\", and sticks with Vada despite her hangups. When Vada's father hires Shelly, and begins to fall for her, things take a turn to the worse...",
-        "poster_path": "/qyJJNHteA7BUwQSey05t7qP4vRV.jpg",
-        "vote_average": 7.407,
-        "release_date": "1991-11-27",
-        "popularity": 7.6431
-    },
-    {
         "id": 39468,
         "type": "movie",
         "title": "Godzilla vs. Megaguirus",
@@ -17983,7 +17959,7 @@
         "overview": "After Police Chief Carter discovers the remains of eleven women, FBI Special Agent Petrovick is recruited to profile the serial killer responsible for the infamous \"boneyard\" killings. As the police force, narcotics agency, and FBI lock horns, a tangled web of intrigue turns everyone into a suspect.",
         "overview_ar": "After Police Chief Carter discovers the remains of eleven women, FBI Special Agent Petrovick is recruited to profile the serial killer responsible for the infamous \"boneyard\" killings. As the police force, narcotics agency, and FBI lock horns, a tangled web of intrigue turns everyone into a suspect.",
         "poster_path": "/At4aWmOnKwH9k1ciB5ZNe0dP1jH.jpg",
-        "vote_average": 5.5,
+        "vote_average": 5.503,
         "release_date": "2024-07-02",
         "popularity": 6.7656
     },
@@ -17995,9 +17971,33 @@
         "overview": "Lady, a golden cocker spaniel, meets up with a mongrel dog who calls himself the Tramp. He is obviously from the wrong side of town, but happenings at Lady's home make her decide to travel with him for a while.",
         "overview_ar": "لايدي الكلبة الذهبية تتعرف على كلب هجين يطلق على نفسه اسم \"ترامب\". ترامب ينتمي لأصل وضيع، ومن الواضح جدا أنه أتى من مكان فقير غير المكان الذي تقيم فيه لايدى. تقرر لايدي مرافقة ترامب في رحلته وتنقلاته من أجل الاستكشاف وتجربة شئ جديد، لتكتشف أنها كانت فكرة خاطئة تماما وتوقعهم في عديد من المشاكل؛ حيث لا يوجد أي كلب فوق القانون.",
         "poster_path": "/340NcWz9SQXWQyf4oicMxjbrLOb.jpg",
-        "vote_average": 7.121,
+        "vote_average": 7.119,
         "release_date": "1955-06-22",
         "popularity": 8.2566
+    },
+    {
+        "id": 7443,
+        "type": "movie",
+        "title": "Chicken Run",
+        "title_ar": "Chicken Run",
+        "overview": "The creators of Wallace & Gromit bring you an exciting and original story about a group of chickens determined to fly the coop–even if they can’t fly! It’s hardly poultry in motion when Rocky attempts to teach Ginger and her feathered friends to fly…but, with teamwork, determination and a little bit o’ cluck, the fearless flock plots one last attempt in a spectacular bid for freedom.",
+        "overview_ar": "The creators of Wallace & Gromit bring you an exciting and original story about a group of chickens determined to fly the coop–even if they can’t fly! It’s hardly poultry in motion when Rocky attempts to teach Ginger and her feathered friends to fly…but, with teamwork, determination and a little bit o’ cluck, the fearless flock plots one last attempt in a spectacular bid for freedom.",
+        "poster_path": "/oYbVT9e0k2ZSrRhDSCw2Yqshe1n.jpg",
+        "vote_average": 6.832,
+        "release_date": "2000-06-23",
+        "popularity": 6.6999
+    },
+    {
+        "id": 936075,
+        "type": "movie",
+        "title": "Michael",
+        "title_ar": "Michael",
+        "overview": "Discover the story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music, tracing his journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+        "overview_ar": "Discover the story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music, tracing his journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+        "poster_path": "/j57QWe3OoaXL9Idi9gLtsAybWLP.jpg",
+        "vote_average": 0.0,
+        "release_date": "2026-04-22",
+        "popularity": 7.1095
     },
     {
         "id": 62213,

@@ -5040,42 +5040,6 @@
         "popularity": 48.8751
     },
     {
-        "id": 41727,
-        "type": "tv",
-        "title": "Banshee",
-        "title_ar": "بانشي",
-        "overview": "Banshee is an American drama television series set in a small town in Pennsylvania Amish country and features an enigmatic ex-con posing as a murdered sheriff who imposes his own brand of justice while also cooking up plans that serve his own interests.",
-        "overview_ar": "في سياق من التشويق واﻹثارة، يحاول ضابط سابق تتبع جريمة قتل رقيب في بلدة بانشي الواقعة في ولاية بنسلفينا، فيكتشف أن الرقيب كان لديه بعض الأعمال غير المنتهية.",
-        "poster_path": "/5nXFiz8Rn8eezVjSTZBd7HmnF1G.jpg",
-        "vote_average": 8.0,
-        "release_date": "2013-01-11",
-        "popularity": 45.0434
-    },
-    {
-        "id": 1759,
-        "type": "tv",
-        "title": "The Cosby Show",
-        "title_ar": "The Cosby Show",
-        "overview": "The Cosby Show is an American television situation comedy starring Bill Cosby, which aired for eight seasons on NBC from September 20, 1984 until April 30, 1992. The show focuses on the Huxtable family, an upper middle-class African-American family living in Brooklyn, New York.",
-        "overview_ar": "The Cosby Show is an American television situation comedy starring Bill Cosby, which aired for eight seasons on NBC from September 20, 1984 until April 30, 1992. The show focuses on the Huxtable family, an upper middle-class African-American family living in Brooklyn, New York.",
-        "poster_path": "/dc6sR5FWN4uX8fZENq2UTsrSg3x.jpg",
-        "vote_average": 6.995,
-        "release_date": "1984-09-20",
-        "popularity": 37.8903
-    },
-    {
-        "id": 2389,
-        "type": "tv",
-        "title": "Las Vegas",
-        "title_ar": "Las Vegas",
-        "overview": "Ed Deline is a strict ex-CIA officer who went from being Head of Security to becoming President of Operations of the Montecito, whose job is to run the day-to-day operations of the casino. Following his departure, former Marine Danny McCoy, Ed's former protégé, becomes the Montecito's new President of Operations.",
-        "overview_ar": "Ed Deline is a strict ex-CIA officer who went from being Head of Security to becoming President of Operations of the Montecito, whose job is to run the day-to-day operations of the casino. Following his departure, former Marine Danny McCoy, Ed's former protégé, becomes the Montecito's new President of Operations.",
-        "poster_path": "/AknZ6uDYvswlIrUKDm2Nte32xge.jpg",
-        "vote_average": 7.032,
-        "release_date": "2003-09-22",
-        "popularity": 43.5644
-    },
-    {
         "id": 221606,
         "type": "tv",
         "title": "News Treasury",
@@ -5278,6 +5242,42 @@
         "vote_average": 7.761,
         "release_date": "2003-09-28",
         "popularity": 42.9692
+    },
+    {
+        "id": 67116,
+        "type": "tv",
+        "title": "Lethal Weapon",
+        "title_ar": "Lethal Weapon",
+        "overview": "A slightly unhinged former Navy SEAL lands a job as a police officer in Los Angeles where he's partnered with a veteran detective trying to keep maintain a low stress level in his life.",
+        "overview_ar": "A slightly unhinged former Navy SEAL lands a job as a police officer in Los Angeles where he's partnered with a veteran detective trying to keep maintain a low stress level in his life.",
+        "poster_path": "/grGOtTZ0OfNQoWnNtdJOiY1LB8e.jpg",
+        "vote_average": 7.308,
+        "release_date": "2016-09-21",
+        "popularity": 43.3963
+    },
+    {
+        "id": 2673,
+        "type": "tv",
+        "title": "The O.C.",
+        "title_ar": "The O.C.",
+        "overview": "Ryan Atwood, a teen from the wrong side of the tracks, moves in with a wealthy family willing to give him a chance. But Ryan's arrival disturbs the status quo of the affluent, privileged community of Newport Beach, California.",
+        "overview_ar": "Ryan Atwood, a teen from the wrong side of the tracks, moves in with a wealthy family willing to give him a chance. But Ryan's arrival disturbs the status quo of the affluent, privileged community of Newport Beach, California.",
+        "poster_path": "/xDc6BMGDaeyalpSZ9KKk7RCBCz5.jpg",
+        "vote_average": 7.7,
+        "release_date": "2003-08-05",
+        "popularity": 42.4245
+    },
+    {
+        "id": 89456,
+        "type": "tv",
+        "title": "Primal",
+        "title_ar": "Primal",
+        "overview": "A caveman forms a bond with a dinosaur as they struggle to survive in a hostile world.",
+        "overview_ar": "A caveman forms a bond with a dinosaur as they struggle to survive in a hostile world.",
+        "poster_path": "/mf12pRakr3eYdJtv6klQtoznnbU.jpg",
+        "vote_average": 8.614,
+        "release_date": "2019-10-08",
+        "popularity": 43.7887
     },
     {
         "id": 89456,
@@ -6960,30 +6960,6 @@
         "popularity": 34.5686
     },
     {
-        "id": 2243,
-        "type": "tv",
-        "title": "Touched by an Angel",
-        "title_ar": "Touched by an Angel",
-        "overview": "Monica, an angel, is tasked with bringing guidance and messages from God to various people who are at a crossroads in their lives.",
-        "overview_ar": "Monica, an angel, is tasked with bringing guidance and messages from God to various people who are at a crossroads in their lives.",
-        "poster_path": "/jiSv0xNx6MGhAFfv05Ov7DgDELJ.jpg",
-        "vote_average": 7.189,
-        "release_date": "1994-09-21",
-        "popularity": 34.5686
-    },
-    {
-        "id": 47480,
-        "type": "tv",
-        "title": "The Tom and Jerry Show",
-        "title_ar": "The Tom and Jerry Show",
-        "overview": "The iconic cat and mouse rivals are back in a fresh take on the classic series. Preserving the look, characters and sensibility of the original, this series shines a brightly colored, high-definition lens on the madcap slapstick and never-ending battle that has made Tom and Jerry two of the most beloved characters of all time.",
-        "overview_ar": "The iconic cat and mouse rivals are back in a fresh take on the classic series. Preserving the look, characters and sensibility of the original, this series shines a brightly colored, high-definition lens on the madcap slapstick and never-ending battle that has made Tom and Jerry two of the most beloved characters of all time.",
-        "poster_path": "/41EWXLXTZO4MLb2BL28mWZuydyq.jpg",
-        "vote_average": 7.3,
-        "release_date": "2014-04-09",
-        "popularity": 32.1908
-    },
-    {
         "id": 2303,
         "type": "tv",
         "title": "Hawaii Five-O",
@@ -7030,6 +7006,18 @@
         "vote_average": 7.837,
         "release_date": "2016-05-02",
         "popularity": 37.9943
+    },
+    {
+        "id": 69500,
+        "type": "tv",
+        "title": "Natsume's Book of Friends",
+        "title_ar": "夏目友人帳",
+        "overview": "Natsume Takashi has the ability to see spirits, which he has long kept secret. However, once he inherits a strange book that belonged to his deceased grandmother, Reiko, he discovers the reason why spirits surround him.",
+        "overview_ar": "Natsume Takashi has the ability to see spirits, which he has long kept secret. However, once he inherits a strange book that belonged to his deceased grandmother, Reiko, he discovers the reason why spirits surround him.",
+        "poster_path": "/4IAX5fgsyj9SnV2sqEh5JfuOvUo.jpg",
+        "vote_average": 8.1,
+        "release_date": "2008-07-08",
+        "popularity": 40.1981
     },
     {
         "id": 4686,
@@ -7198,6 +7186,18 @@
         "vote_average": 8.212,
         "release_date": "2012-04-14",
         "popularity": 35.8706
+    },
+    {
+        "id": 1437,
+        "type": "tv",
+        "title": "Firefly",
+        "title_ar": "Firefly",
+        "overview": "In the year 2517, after the arrival of humans in a new star system, follow the adventures of the renegade crew of Serenity, a \"Firefly-class\" spaceship.",
+        "overview_ar": "خمسمائة عام في المستقبل، وعلى متن مركبة صغيرة في الفضاء، يحاول الطاقم المنشق البقاء على قيد الحياة، في رحلتهم إلى أجزاء غير معروفة في المجرة، بها فصائل متحاربة، يجب عليهم الهروب منها.",
+        "poster_path": "/vZcKsy4sGAvWMVqLluwYuoi11Kj.jpg",
+        "vote_average": 8.3,
+        "release_date": "2002-09-20",
+        "popularity": 40.4144
     },
     {
         "id": 2813,
@@ -7680,18 +7680,6 @@
         "popularity": 33.3113
     },
     {
-        "id": 46786,
-        "type": "tv",
-        "title": "Bates Motel",
-        "title_ar": "Bates Motel",
-        "overview": "A \"contemporary prequel\" to the 1960 film Psycho, depicting the life of Norman Bates and his mother Norma prior to the events portrayed in Hitchcock's film, albeit in a different fictional town and in a modern setting. The series begins after the death of Norma's husband, when she purchases a motel located in a coastal Oregon town so she and Norman can start a new life.",
-        "overview_ar": "A \"contemporary prequel\" to the 1960 film Psycho, depicting the life of Norman Bates and his mother Norma prior to the events portrayed in Hitchcock's film, albeit in a different fictional town and in a modern setting. The series begins after the death of Norma's husband, when she purchases a motel located in a coastal Oregon town so she and Norman can start a new life.",
-        "poster_path": "/xXKcfZE7ulYxgjjYv51s0zDG69s.jpg",
-        "vote_average": 8.057,
-        "release_date": "2013-03-18",
-        "popularity": 33.3113
-    },
-    {
         "id": 71488,
         "type": "tv",
         "title": "Tales of the Bizarre",
@@ -7918,6 +7906,18 @@
         "vote_average": 7.081,
         "release_date": "1979-08-24",
         "popularity": 32.2223
+    },
+    {
+        "id": 202411,
+        "type": "tv",
+        "title": "Monarch: Legacy of Monsters",
+        "title_ar": "Monarch: Legacy of Monsters",
+        "overview": "After surviving Godzilla's attack on San Francisco, Cate is shaken yet again by a shocking secret. Amid monstrous threats, she embarks on a globetrotting adventure to learn the truth about her family—and the mysterious organization known as Monarch.",
+        "overview_ar": "بعد النجاة من هجوم \"غودزيلا\" على \"سان فرانسيسكو\"، تُصدم \"كايت\" مرة أخرى بسر مروع. وسط التهديدات الوحشية، تخوض مغامرة حول العالم لتكتشف الحقيقة عن عائلتها، والمنظمة الغامضة باسم \"مونارك\".",
+        "poster_path": "/nbuWvW6AJy4Kd6kgfEWyU8rVWqU.jpg",
+        "vote_average": 7.706,
+        "release_date": "2023-11-16",
+        "popularity": 34.5315
     },
     {
         "id": 648,
@@ -8491,7 +8491,7 @@
         "overview": "Jimmy is struggling to grieve the loss of his wife while being a dad, friend, and therapist. He decides to try a new approach with everyone in his path: unfiltered, brutal honesty. Will it make things better—or unleash uproarious chaos?",
         "overview_ar": "\"جيمي\" يكافح للحداد على وفاة زوجته، بينما يشغل دور الأب والصديق والطبيب النفسي. فيقرّر تجربة نهج جديد مع كل من في طريقه: الصراحة القاسية التامة. فهل سيحسّن ذلك الأوضاع، أم يتسبّب في خلق فوضى عارمة؟",
         "poster_path": "/zEFKMNPBKq6JG7uuDkzTQ9WwErn.jpg",
-        "vote_average": 7.81,
+        "vote_average": 7.815,
         "release_date": "2023-01-26",
         "popularity": 32.43
     },
@@ -8563,7 +8563,7 @@
         "overview": "An ex-con becomes the traveling partner of a conman who turns out to be one of the older gods trying to recruit troops to battle the upstart deities. Based on Neil Gaiman's fantasy novel.",
         "overview_ar": "An ex-con becomes the traveling partner of a conman who turns out to be one of the older gods trying to recruit troops to battle the upstart deities. Based on Neil Gaiman's fantasy novel.",
         "poster_path": "/3KCAZaKHmoMIN9dHutqaMtubQqD.jpg",
-        "vote_average": 7.083,
+        "vote_average": 7.085,
         "release_date": "2017-04-30",
         "popularity": 32.0716
     },
@@ -9163,7 +9163,7 @@
         "overview": "A young group of cadets come together to pursue a common dream of hope and optimism. Under the watchful and demanding eyes of their instructors, they will discover what it takes to become Starfleet officers as they navigate blossoming friendships, explosive rivalries, first loves and a new enemy that threatens both the Academy and the Federation itself.",
         "overview_ar": "A young group of cadets come together to pursue a common dream of hope and optimism. Under the watchful and demanding eyes of their instructors, they will discover what it takes to become Starfleet officers as they navigate blossoming friendships, explosive rivalries, first loves and a new enemy that threatens both the Academy and the Federation itself.",
         "poster_path": "/m4JnADIJkF5ck6jq7GUEcPBKxd0.jpg",
-        "vote_average": 4.817,
+        "vote_average": 4.8,
         "release_date": "2026-01-15",
         "popularity": 30.867
     },
@@ -12855,9 +12855,9 @@
         "id": 68854,
         "type": "tv",
         "title": "From Me to You: Kimi ni Todoke",
-        "title_ar": "From Me to You: Kimi ni Todoke",
+        "title_ar": "منّي إليك: كيمي ني تودوكي",
         "overview": "Nicknamed \"Sadako\" for her spooky appearance, high schooler Sawako begins to break out of her shell when she befriends popular boy Kazehaya.",
-        "overview_ar": "Nicknamed \"Sadako\" for her spooky appearance, high schooler Sawako begins to break out of her shell when she befriends popular boy Kazehaya.",
+        "overview_ar": "تبدأ طالبة المدرسة الثانوية \"سواكو\"، التي تحمل اللقب \"سداكو\" بسبب مظهرها الغريب، في الخروج من قوقعتها حين تصادق الفتى \"كازيهايا\"، صاحب الشعبية الكبيرة بين أقرانه.",
         "poster_path": "/lLUAZzJc6vfyE2TeY56AGGb3E5K.jpg",
         "vote_average": 8.4,
         "release_date": "2009-10-07",
@@ -17760,30 +17760,6 @@
         "popularity": 20.1753
     },
     {
-        "id": 68398,
-        "type": "tv",
-        "title": "Dr. Romantic",
-        "title_ar": "Dr. Romantic",
-        "overview": "An eccentric, triple board-certified virtuoso surgeon leaves a top job in Seoul and ends up at a provincial hospital, where he mentors young doctors.",
-        "overview_ar": "An eccentric, triple board-certified virtuoso surgeon leaves a top job in Seoul and ends up at a provincial hospital, where he mentors young doctors.",
-        "poster_path": "/9fbRJgZ2zDTnSUId1bOwsllHNr7.jpg",
-        "vote_average": 8.2,
-        "release_date": "2016-11-07",
-        "popularity": 20.2329
-    },
-    {
-        "id": 5917,
-        "type": "tv",
-        "title": "90210",
-        "title_ar": "90210",
-        "overview": "90210 revolves around several students at the fictional West Beverly Hills High School, including new Beverly Hills residents Annie Wilson and Dixon Wilson. Their father, Harry Wilson, has returned from Kansas to his Beverly Hills childhood home with his family to care for his mother, former television and theater actress Tabitha Wilson, who has a drinking problem and clashes with his wife Debbie Wilson. Annie and Dixon struggle to adjust to their new lives while making friends and yet adhering to their parents' wishes.",
-        "overview_ar": "90210 revolves around several students at the fictional West Beverly Hills High School, including new Beverly Hills residents Annie Wilson and Dixon Wilson. Their father, Harry Wilson, has returned from Kansas to his Beverly Hills childhood home with his family to care for his mother, former television and theater actress Tabitha Wilson, who has a drinking problem and clashes with his wife Debbie Wilson. Annie and Dixon struggle to adjust to their new lives while making friends and yet adhering to their parents' wishes.",
-        "poster_path": "/6uy8Le8X8qqvc5X7pSFn3BJA69M.jpg",
-        "vote_average": 5.761,
-        "release_date": "2008-09-02",
-        "popularity": 20.1753
-    },
-    {
         "id": 31179,
         "type": "tv",
         "title": "The Lone Ranger",
@@ -17839,7 +17815,7 @@
         "overview": "In 1960, seven outcast kids known as \"The Losers' Club\" fight against an ancient shape-shifting alien who poses as a child-killing clown, while also dealing with bullies and abusive parents. Thirty years later, they reunite to stop the creature once and for all when it returns to their hometown.",
         "overview_ar": "In 1960, seven outcast kids known as \"The Losers' Club\" fight against an ancient shape-shifting alien who poses as a child-killing clown, while also dealing with bullies and abusive parents. Thirty years later, they reunite to stop the creature once and for all when it returns to their hometown.",
         "poster_path": "/4ybQ6gopB3H3cu0seVZLznDnIKo.jpg",
-        "vote_average": 6.935,
+        "vote_average": 6.9,
         "release_date": "1990-11-18",
         "popularity": 22.1326
     },
@@ -17988,6 +17964,18 @@
         "popularity": 23.7604
     },
     {
+        "id": 249522,
+        "type": "tv",
+        "title": "Beast Games",
+        "title_ar": "ألعاب الوحوش",
+        "overview": "I gathered 1,000 people to fight for $5,000,000, the LARGEST cash prize in TV history! We're also giving away a private island, Lamborghinis, and millions more in cash throughout the competition! Go watch to see the greatest show ever made!",
+        "overview_ar": "جمعتُ 1000 شخص للتنافس على جائزة نقدية بقيمة 5,000,000 دولار، وهي أكبر جائزة نقدية في تاريخ التلفزيون! كما سنقدم جزيرة خاصة، سيارات لامبورغيني، وملايين أخرى كجوائز نقدية خلال المنافسة! شاهدوا لتكتشفوا أعظم عرض تم إنتاجه على الإطلاق!",
+        "poster_path": "/6Zww0KyC518xni9m12dA3qB392D.jpg",
+        "vote_average": 7.513,
+        "release_date": "2024-12-19",
+        "popularity": 22.9275
+    },
+    {
         "id": 97890,
         "type": "tv",
         "title": "Power Book II: Ghost",
@@ -17998,6 +17986,18 @@
         "vote_average": 8.238,
         "release_date": "2020-09-06",
         "popularity": 19.0094
+    },
+    {
+        "id": 64347,
+        "type": "tv",
+        "title": "Amachan",
+        "title_ar": "Amachan",
+        "overview": "Aki Amano, a high-school girl from Tokyo moves to the Sanriku Coast in the Tohoku region to become a female diver. She becomes a local idol, then returns to Tokyo to try to become a real idol, and finally returns to Tohoku to help revitalize the area after the Great East Japan earthquake.",
+        "overview_ar": "Aki Amano, a high-school girl from Tokyo moves to the Sanriku Coast in the Tohoku region to become a female diver. She becomes a local idol, then returns to Tokyo to try to become a real idol, and finally returns to Tohoku to help revitalize the area after the Great East Japan earthquake.",
+        "poster_path": "/xWC8HFCflXr8QN08BX7aZaYhGGS.jpg",
+        "vote_average": 8.636,
+        "release_date": "2013-04-01",
+        "popularity": 16.4843
     },
     {
         "id": 3266,
