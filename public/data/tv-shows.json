@@ -43,7 +43,7 @@
         "overview": "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands. Since the beginning, the series has been a pop culture icon, attracting hundreds of celebrities to guest star. The show has also made name for itself in its fearless satirical take on politics, media and American life in general.",
         "overview_ar": "مغامرات ساخرة لعائلة متوسطة الدخل في مدينة سبرينقفيلدز الأمريكية  (للكبار فقط).",
         "poster_path": "/uWpG7GqfKGQqX4YMAo3nv5OrglV.jpg",
-        "vote_average": 8.0,
+        "vote_average": 8.012,
         "release_date": "1989-12-17",
         "popularity": 281.2337
     },
@@ -84,18 +84,6 @@
         "popularity": 234.4044
     },
     {
-        "id": 549,
-        "type": "tv",
-        "title": "Law & Order",
-        "title_ar": "القانون ونظام",
-        "overview": "In cases ripped from the headlines, police investigate serious and often deadly crimes, weighing the evidence and questioning the suspects until someone is taken into custody. The district attorney's office then builds a case to convict the perpetrator by proving the person guilty beyond a reasonable doubt. Working together, these expert teams navigate all sides of the complex criminal justice system to make New York a safer place.",
-        "overview_ar": "في حالات مستمدة من الأحداث الراهنة، يقوم رجال الشرطة بالتحقيق في جرائم خطيرة وغالباً ما تكون قاتلة، حيث يقومون بتحليل الأدلة واستجواب المشتبه بهم حتى يتم اعتقال شخص ما. ثم يقوم مكتب الادعاء ببناء قضية لإدانة الجاني من خلال إثبات إدانته بما يفوق الشك العادل. يعمل هذان الفريقان المتخصصان معًا على التنقل في جميع جوانب النظام القضائي الجنائي المعقد لجعل نيويورك مكانًا أكثر أمانًا.",
-        "poster_path": "/haJ9eHytVO3H3JooMJG1DiWwDNm.jpg",
-        "vote_average": 7.349,
-        "release_date": "1990-09-13",
-        "popularity": 214.0926
-    },
-    {
         "id": 4614,
         "type": "tv",
         "title": "NCIS",
@@ -115,7 +103,7 @@
         "overview": "A century before the events of Game of Thrones, two unlikely heroes wandered Westeros: a young, naive but courageous knight, Ser Duncan the Tall, and his diminutive squire, Egg. Set in an age when the Targaryen line still holds the Iron Throne and the last dragon has not yet passed from living memory, great destinies, powerful foes, and dangerous exploits await these improbable and incomparable friends.",
         "overview_ar": "تدور الأحداث في زمن لا يزال فيه سلالة تارجارين تسيطر على العرش الحديدي، وذكرى آخر تنين لم تغب بعد عن الذاكرة الحية. تنتظر الأقدار العظيمة، والأعداء الأقوياء، والمغامرات الخطيرة هؤلاء الأصدقاء الذين لا مثيل لهم والذين لا يمكن توقعهم.",
         "poster_path": "/abrZg2iodq4XeBngpNESOgfPvBM.jpg",
-        "vote_average": 8.3,
+        "vote_average": 8.264,
         "release_date": "2026-01-18",
         "popularity": 214.0248
     },
@@ -132,6 +120,18 @@
         "popularity": 203.466
     },
     {
+        "id": 549,
+        "type": "tv",
+        "title": "Law & Order",
+        "title_ar": "القانون ونظام",
+        "overview": "In cases ripped from the headlines, police investigate serious and often deadly crimes, weighing the evidence and questioning the suspects until someone is taken into custody. The district attorney's office then builds a case to convict the perpetrator by proving the person guilty beyond a reasonable doubt. Working together, these expert teams navigate all sides of the complex criminal justice system to make New York a safer place.",
+        "overview_ar": "في حالات مستمدة من الأحداث الراهنة، يقوم رجال الشرطة بالتحقيق في جرائم خطيرة وغالباً ما تكون قاتلة، حيث يقومون بتحليل الأدلة واستجواب المشتبه بهم حتى يتم اعتقال شخص ما. ثم يقوم مكتب الادعاء ببناء قضية لإدانة الجاني من خلال إثبات إدانته بما يفوق الشك العادل. يعمل هذان الفريقان المتخصصان معًا على التنقل في جميع جوانب النظام القضائي الجنائي المعقد لجعل نيويورك مكانًا أكثر أمانًا.",
+        "poster_path": "/haJ9eHytVO3H3JooMJG1DiWwDNm.jpg",
+        "vote_average": 7.349,
+        "release_date": "1990-09-13",
+        "popularity": 214.0926
+    },
+    {
         "id": 95479,
         "type": "tv",
         "title": "JUJUTSU KAISEN",
@@ -139,7 +139,7 @@
         "overview": "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.",
         "overview_ar": "إيتادوري يوجي فتى يملك قوة جسدية هائلة، لكنّه يعيش حياة مدرسية عادية تمامًا. في أحد الأيّام، ومن أجل إنقاذ صديق هاجمته لعنة، يأكل إصبع طيفٍ ذو وجهين ويمتص اللعنة. وهنا تبدأ قصة فتى يصبح لعنة كي يطرد لعنة تحت إشراف أقوى مستعمل جوجيتسو، غوجو ساتورو.",
         "poster_path": "/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg",
-        "vote_average": 8.561,
+        "vote_average": 8.6,
         "release_date": "2020-10-03",
         "popularity": 199.7131
     },
@@ -223,7 +223,7 @@
         "overview": "A Las Vegas team of forensic investigators are trained to solve criminal cases by scouring the crime scene, collecting irrefutable evidence and finding the missing pieces that solve the mystery.",
         "overview_ar": "في إطار من الجريمة والغموض، تدور الأحداث حول مجموعة من خبراء الطب الشرعى التابعين للشرطة في وﻻية لوس أنجلوس الأمريكية، الذين يقومون بالتحقيق فى القضايا الغامضة.",
         "poster_path": "/i5hmoRjHNWady4AtAGICTUXknKH.jpg",
-        "vote_average": 7.631,
+        "vote_average": 7.63,
         "release_date": "2000-10-06",
         "popularity": 155.34
     },
@@ -499,7 +499,7 @@
         "overview": "The exploits of the Los Angeles–based Office of Special Projects (OSP), an elite division of the Naval Criminal Investigative Service that specializes in undercover assignments.",
         "overview_ar": "بعد أن نشأوا كأطفال شوارع، يلتحق كل من (كالين)، و(سام) للعمل بالشرطة، وينضمان لفريق العمليات الخاصة لمكافحة الجريمة بـ(لوس أنجلوس)، ليحاولا كشف غموض العديد من الجرائم، ومطاردة المجرمين، والقبض عليهم، في إطار من الإثارة والتشويق.",
         "poster_path": "/TIIgcznwNfNr3KOZvxn26eKV99.jpg",
-        "vote_average": 7.5,
+        "vote_average": 7.535,
         "release_date": "2009-09-22",
         "popularity": 110.798
     },
@@ -643,7 +643,7 @@
         "overview": "The story of Stargate SG-1 begins about a year after the events of the feature film, when the United States government learns that an ancient alien device called the Stargate can access a network of such devices on a multitude of planets. SG-1 is an elite Air Force special operations team, one of more than two dozen teams from Earth who explore the galaxy and defend against alien threats such as the Goa'uld, Replicators, and the Ori.",
         "overview_ar": "تبدأ قصة Stargate SG-1 بعد حوالي عام من أحداث الفيلم الروائي ، عندما علمت حكومة الولايات المتحدة أن جهازًا فضائيًا قديمًا يسمى Stargate يمكنه الوصول إلى شبكة من هذه الأجهزة على العديد من الكواكب. SG-1 هو فريق عمليات خاص من نخبة القوات الجوية ، وهو واحد من أكثر من عشرين فريقًا من الأرض يستكشفون المجرة ويدافعون ضد التهديدات الفضائية مثل Goa'uld و Replicators و Ori.",
         "poster_path": "/dQjmI7XxI47v8IM2MUysHG0LuU2.jpg",
-        "vote_average": 8.277,
+        "vote_average": 8.276,
         "release_date": "1997-07-27",
         "popularity": 114.941
     },
@@ -703,7 +703,7 @@
         "overview": "After Portland homicide detective Nick Burkhardt discovers he's descended from an elite line of criminal profilers known as \"Grimms,\" he increasingly finds his responsibilities as a detective at odds with his new responsibilities as a Grimm.",
         "overview_ar": "يتم تكليف (نيك بوكهاردت) محقق جرائم القتل في إدارة شرطة (بورتلاند) بأن يكون من (الأوصياء) المكلفين بحفظ التوازن بين البشر ، والمخلوقات الخارقة ، وعليه محاربة مجموعة من المخلوقات الخطرة ، بمساعدة صديقه ، وشريكه المحقق (هانك جريفين) .",
         "poster_path": "/iOptnt1QHi6bIHmOq6adnZTV0bU.jpg",
-        "vote_average": 8.3,
+        "vote_average": 8.268,
         "release_date": "2011-10-28",
         "popularity": 103.8812
     },
@@ -715,9 +715,21 @@
         "overview": "The adventures of Ragnar Lothbrok, the greatest hero of his age. The series tells the sagas of Ragnar's band of Viking brothers and his family, as he rises to become King of the Viking tribes. As well as being a fearless warrior, Ragnar embodies the Norse traditions of devotion to the gods. Legend has it that he was a direct descendant of Odin, the god of war and warriors.",
         "overview_ar": "يتبع الفايكنقز مغامرات راقنار لوثبروك، أعظم بطل في عصره، حيث يرتفع ليصبح ملكا لقبيلة الفايكنقز. فضلا عن كونه محارب لا يعرف الخوف، يجسد راقنار التقاليد الإسكندنافية. تقول الأسطورة أنه كان سليل مباشر لأودين، آله الحرب .",
         "poster_path": "/bQLrHIRNEkE3PdIWQrZHynQZazu.jpg",
-        "vote_average": 8.094,
+        "vote_average": 8.1,
         "release_date": "2013-03-03",
         "popularity": 108.0758
+    },
+    {
+        "id": 209867,
+        "type": "tv",
+        "title": "Frieren: Beyond Journey's End",
+        "title_ar": "فريرن: ما وراء نهاية الرحلة",
+        "overview": "Decades after her party defeated the Demon King, an old friend's funeral launches the elf wizard Frieren on a journey of self-discovery.",
+        "overview_ar": "هُزم الملك الشيطان، وعاد فريق الأبطال المنتصر إلى المنزل قبل أن يتفكك. الأربعة: الساحرة “فريرين“، والبطل “هيميل“، والكاهن “هايتر“، والمحارب “آيزن“. يتذكرون رحلتهم التي استمرت عقدًا من الزمان مع حلول لحظة وداع بعضهم البعض. لكن مرور الوقت يختلف بالنسبة للجان، وبالتالي تشهد “فريرين” رفاقها يموتون ببطء واحدًا تلو الآخر.",
+        "poster_path": "/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
+        "vote_average": 8.771,
+        "release_date": "2023-09-29",
+        "popularity": 107.064
     },
     {
         "id": 57532,
@@ -883,7 +895,7 @@
         "overview": "Seventeen years after being wrongly imprisoned, a talented songwriter seeks justice against the men who caused her downfall and killed her family.",
         "overview_ar": "بعد قضاء سبعة عشر عاما في السجن بشكل غير عادل، تسعى كاتبة أغاني موهوبة إلى الانتقام من الرجال الذين أغرقوها وقتلوا عائلتها.",
         "poster_path": "/fuVuDYrs8sxvEolnYr0wCSvtyTi.jpg",
-        "vote_average": 8.0,
+        "vote_average": 7.99,
         "release_date": "2018-06-12",
         "popularity": 93.0767
     },
@@ -946,18 +958,6 @@
         "vote_average": 7.7,
         "release_date": "2026-02-05",
         "popularity": 86.4745
-    },
-    {
-        "id": 688,
-        "type": "tv",
-        "title": "The West Wing",
-        "title_ar": "The West Wing",
-        "overview": "The West Wing provides a glimpse into presidential politics in the nation's capital as it tells the stories of the members of a fictional presidential administration. These interesting characters have humor and dedication that touches the heart while the politics that they discuss touch on everyday life.",
-        "overview_ar": "The West Wing provides a glimpse into presidential politics in the nation's capital as it tells the stories of the members of a fictional presidential administration. These interesting characters have humor and dedication that touches the heart while the politics that they discuss touch on everyday life.",
-        "poster_path": "/yqDWr5NAE7m1IWrygYwLyEB6pN0.jpg",
-        "vote_average": 8.251,
-        "release_date": "1999-09-22",
-        "popularity": 85.7818
     },
     {
         "id": 688,
@@ -2631,9 +2631,9 @@
         "id": 1438,
         "type": "tv",
         "title": "The Wire",
-        "title_ar": "السلك",
+        "title_ar": "The Wire",
         "overview": "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated.",
-        "overview_ar": "يستعرض المسلسل في قالب من اﻹثارة والتشويق عالم المخدرات المتشابك والمعقد والمركب في مدينة بالتيمور كما يروى من قبل تجارها ورجال الشرطة، ومشاكل كلا الطرفين.",
+        "overview_ar": "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated.",
         "poster_path": "/4lbclFySvugI51fwsyxBTOm4DqK.jpg",
         "vote_average": 8.614,
         "release_date": "2002-06-02",
@@ -3600,6 +3600,42 @@
         "popularity": 51.451
     },
     {
+        "id": 270444,
+        "type": "tv",
+        "title": "Lead Children",
+        "title_ar": "Lead Children",
+        "overview": "When a young doctor discovers that children living near a smelting plant suffer from lead poisoning, she risks her career and safety to save them.",
+        "overview_ar": "When a young doctor discovers that children living near a smelting plant suffer from lead poisoning, she risks her career and safety to save them.",
+        "poster_path": "/8Er3yj5yRnHGALKPbtuiyMlIh6R.jpg",
+        "vote_average": 9.0,
+        "release_date": "2026-02-11",
+        "popularity": 51.451
+    },
+    {
+        "id": 46896,
+        "type": "tv",
+        "title": "The Originals",
+        "title_ar": "النسخ الأصلية",
+        "overview": "The Vampire Diaries spin-off that follows the Mikaelsons, a family of millennia-old, power-hungry vampires who want to reclaim the city they built, New Orleans, and dominate all those who have wronged them.",
+        "overview_ar": "قصة مأخوذة من مسلسل (يوميات مصاص دماء) وتدور القصة حول مجموعة من مصاصي الدماء يعودون ليجتمعوا في مدينة (نيو أورليانز) بعد أن تركوها قبل نحو تسعين عامًا وأثناء غيابهم سيطرت مجموعة أخرى على المدينة فيبدأ الصراع بين أصحاب المدينة الأصليين والجدد .",
+        "poster_path": "/keJOhJXGiLL54EW6QocbyvQGquA.jpg",
+        "vote_average": 8.589,
+        "release_date": "2013-10-03",
+        "popularity": 48.5934
+    },
+    {
+        "id": 42912,
+        "type": "tv",
+        "title": "Inazuma Eleven",
+        "title_ar": "ابطال الكرة",
+        "overview": "Mamoru Endou is a cheerful goalkeeper in Raimon Jr High, with six other players in the team. But there was a day when the team was almost lead to disbandment by Natsumi unless they are able to win the match against the Teikoku Gakuen, currently the best team in Japan. He tried to save the club by gathering four more players to join the team.",
+        "overview_ar": "حكاية مجموعة لاعبين من الصغار، مشكلتهم الأساسية أنهم لا يثقون بأنفسهم أو بما يملكون من مهارات، لكنهم يخطون أول خطواتهم نحو الفوز بفضل عامر انه قائد الفريق وحارس مرماه، وهو القائد بحق، فلولا جهوده لما اكتمل ذلك الفريق، ولولا تشجيعه المستمر لما استطاعوا مواجهة الفرق المتحدية. أفراد فريق النسور همهم الأول أن يستمر فريقهم في اللعب، لأن مدير المدرسة أنذرهم أكثر من مرة بقرار حل الفريق ان لم يحققوا نتائج ترضيه، فالميزانية المخصصة للفريق لا تسمح باستمراره ان لم يكن منافسا لبقية الفرق. وهكذا يبدأ عامر ببث روح التنافس وتحريض اللاعبين على العمل من أجل استمرار الفريق وتحقيق الانتصارات.",
+        "poster_path": "/9kQWvBMPWz1gykKLXuX6JBjC9uQ.jpg",
+        "vote_average": 8.0,
+        "release_date": "2008-10-05",
+        "popularity": 46.6562
+    },
+    {
         "id": 86848,
         "type": "tv",
         "title": "Evil",
@@ -3610,18 +3646,6 @@
         "vote_average": 7.758,
         "release_date": "2019-09-26",
         "popularity": 51.47
-    },
-    {
-        "id": 258462,
-        "type": "tv",
-        "title": "In the Mud",
-        "title_ar": "In the Mud",
-        "overview": "Five female prisoners forge a unique bond after a deadly accident... until corruption and turf wars within a ruthless prison threaten to destroy them.",
-        "overview_ar": "Five female prisoners forge a unique bond after a deadly accident... until corruption and turf wars within a ruthless prison threaten to destroy them.",
-        "poster_path": "/9JWQYB7FkGtg47wFO7GOrUDgYrx.jpg",
-        "vote_average": 7.395,
-        "release_date": "2025-08-14",
-        "popularity": 89.772
     },
     {
         "id": 86831,
@@ -3691,7 +3715,7 @@
         "overview": "Set twenty years after the events of Star Trek Nemesis, we follow the now-retired Admiral Picard into the next chapter of his life.",
         "overview_ar": "مرت سنوات عديدة منذ زوال - داتا - وبعد تدمير رومولوس وسحب دعم الاتحاد لإخلائه، استقال جان لوك بيكارد من ستارفليت احتجاجًا على ذلك.",
         "poster_path": "/nIlAKIrLKxOeoEnc0Urb65yNCp.jpg",
-        "vote_average": 7.269,
+        "vote_average": 7.3,
         "release_date": "2020-01-23",
         "popularity": 47.3424
     },
@@ -3751,7 +3775,7 @@
         "overview": "Lawyer-by-day Matt Murdock uses his heightened senses from being blinded as a young boy to fight crime at night on the streets of Hell’s Kitchen as Daredevil.",
         "overview_ar": "يستخدم المحامي مات موردوك حواسه المتزايدة لمكافحة الجرائم في شوارع - هيلز كتشن - بعد تعرضه للعمى وهو صبي صغير، تحت اسم ديرديفل.",
         "poster_path": "/u6tICVagGwukuFPr0qBUwOqCKSn.jpg",
-        "vote_average": 8.158,
+        "vote_average": 8.2,
         "release_date": "2015-04-10",
         "popularity": 44.4331
     },
@@ -3814,30 +3838,6 @@
         "vote_average": 8.067,
         "release_date": "1993-11-03",
         "popularity": 48.1824
-    },
-    {
-        "id": 41018,
-        "type": "tv",
-        "title": "SOKO Wismar",
-        "title_ar": "SOKO Wismar",
-        "overview": "",
-        "overview_ar": "",
-        "poster_path": "/jvc2fWkPfr5CdiK18k9VOM6xYZ5.jpg",
-        "vote_average": 6.1,
-        "release_date": "2004-10-06",
-        "popularity": 32.8705
-    },
-    {
-        "id": 709,
-        "type": "tv",
-        "title": "Robot Chicken",
-        "title_ar": "Robot Chicken",
-        "overview": "A series of pop-culture parodies using stop-motion animation of toys, action figures and dolls. The title character was an ordinary chicken until he was run down by a car and subsequently brought back to life in cyborg form by mad scientist Fritz Huhnmorder, who tortures Robot Chicken by forcing him to watch a random selection of TV shows, the sketches that make up the body of each episode.",
-        "overview_ar": "A series of pop-culture parodies using stop-motion animation of toys, action figures and dolls. The title character was an ordinary chicken until he was run down by a car and subsequently brought back to life in cyborg form by mad scientist Fritz Huhnmorder, who tortures Robot Chicken by forcing him to watch a random selection of TV shows, the sketches that make up the body of each episode.",
-        "poster_path": "/lMZv3mJC9QRolgzflM3ajtB3o2U.jpg",
-        "vote_average": 7.664,
-        "release_date": "2005-02-20",
-        "popularity": 46.9049
     },
     {
         "id": 709,
@@ -5520,18 +5520,6 @@
         "popularity": 38.6794
     },
     {
-        "id": 247718,
-        "type": "tv",
-        "title": "MobLand",
-        "title_ar": "أرض العصابات",
-        "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
-        "overview_ar": "السلطة على المحكّ، إذ تتصادم عائلتان إجراميتان متحاربتان في معركة تُهدّد بإسقاط إمبراطوريتين. في مرمى النيران، يقف هاري دا سوزا، \"المُدبّر\" البارع، الذي يعرف جيدًا أين تكمن الولاءات عند تصادم القوى المتعارضة.",
-        "poster_path": "/abeH7n5pcuQcwYcTxG6DTZvXLP1.jpg",
-        "vote_average": 8.328,
-        "release_date": "2025-03-30",
-        "popularity": 40.0003
-    },
-    {
         "id": 45247,
         "type": "tv",
         "title": "Chihayafuru",
@@ -5710,6 +5698,18 @@
         "vote_average": 7.8,
         "release_date": "2004-12-12",
         "popularity": 37.3567
+    },
+    {
+        "id": 154770,
+        "type": "tv",
+        "title": "Hello Saturday",
+        "title_ar": "Hello Saturday",
+        "overview": "\"Hello, Saturday\" is the rebranding of the popular Chinese show \"Happy Camp\", hosted by He Jiong and with a fixed group of regular celebrity members.\n\nThe program showcases the talent of various stars as well as social topics through creative and diverse content and games. It aims to spread positive energy while keeping up with the current trends and leading youth culture.",
+        "overview_ar": "\"Hello, Saturday\" is the rebranding of the popular Chinese show \"Happy Camp\", hosted by He Jiong and with a fixed group of regular celebrity members.\n\nThe program showcases the talent of various stars as well as social topics through creative and diverse content and games. It aims to spread positive energy while keeping up with the current trends and leading youth culture.",
+        "poster_path": "/wsTjWy6NE2s3h0neChr0D92ddwI.jpg",
+        "vote_average": 6.4,
+        "release_date": "2022-01-01",
+        "popularity": 40.7556
     },
     {
         "id": 113962,
@@ -8880,18 +8880,6 @@
         "popularity": 27.8353
     },
     {
-        "id": 242965,
-        "type": "tv",
-        "title": "After Midnight",
-        "title_ar": "After Midnight",
-        "overview": "Celebrated comedian Taylor Tomlinson hosts the smartest show on television about the dumbest things on the internet alongside a panel of guests from the worlds of entertainment, comedy, music, and beyond.",
-        "overview_ar": "Celebrated comedian Taylor Tomlinson hosts the smartest show on television about the dumbest things on the internet alongside a panel of guests from the worlds of entertainment, comedy, music, and beyond.",
-        "poster_path": "/7O67hHXEaiW30UQdunBqlyPsfGh.jpg",
-        "vote_average": 5.476,
-        "release_date": "2024-01-17",
-        "popularity": 27.8483
-    },
-    {
         "id": 131041,
         "type": "tv",
         "title": "BLUE LOCK",
@@ -8911,7 +8899,7 @@
         "overview": "The students of Class 3-E have a mission: kill their teacher before graduation. He has already destroyed the moon, and has promised to destroy the Earth if he can not be killed within a year. But how can this class of misfits kill a tentacled monster, capable of reaching Mach 20 speed, who may be the best teacher any of them have ever had?",
         "overview_ar": "The students of Class 3-E have a mission: kill their teacher before graduation. He has already destroyed the moon, and has promised to destroy the Earth if he can not be killed within a year. But how can this class of misfits kill a tentacled monster, capable of reaching Mach 20 speed, who may be the best teacher any of them have ever had?",
         "poster_path": "/qf0l0nQ2t06Es3cSXflqx6l6vsJ.jpg",
-        "vote_average": 8.401,
+        "vote_average": 8.399,
         "release_date": "2015-01-10",
         "popularity": 26.6779
     },
@@ -9118,6 +9106,18 @@
         "vote_average": 7.9,
         "release_date": "2009-01-21",
         "popularity": 30.2845
+    },
+    {
+        "id": 63164,
+        "type": "tv",
+        "title": "Sgt. Frog",
+        "title_ar": "الملازم كيرو",
+        "overview": "Alien frogs come to take over the planet & get into all kinds of trouble while living under the roof of a small family.",
+        "overview_ar": "تدور قصة المسلسل حول فرقة الملازم كيرو، مجموعة من الضفادع الغزاة  القادمين من كوكب الضفادع، الذين يحاولون غزو الأرض، ولكنهم يفشلون كل مرة.\n\nقائد الفرقة، الملازم كيرو، يشعر بالفرح والذهول عندما يرى الألعاب  التركيبية، ويمضي معظم وقته في تركيبها واستعمال حاسوبه عوضاً عن التفكير  في غزو الأرض.\n\nالرقيب المولع بالقتال، جيرو، يغضب من الملازم كيرو عندما يراه يلهو  بألعابه دون التفكير في المهمة التي جاء من أجلها، أكبر عثرة في طريق غزوهم  لكوكب الأرض هي عائلة هيناتا التي اعتنت بكيرو بعد أن تركه الجيش الفضائي  وحيداً.\n\nكيرو دائماً يعمل في بيت تلك العائلة يقوم الأعمال المنزلية مجبراً من قبل  الفتاة ناتسومي وهناك أربعة آخرون من الفضائيين، كل واحد منهم وجد نفسه في  رعاية أحد البشريين المتصلين بعائلة هيناتا.",
+        "poster_path": "/9cgmkJnUVawW1o6jmmy8kqIl5IJ.jpg",
+        "vote_average": 6.904,
+        "release_date": "2004-04-03",
+        "popularity": 28.9156
     },
     {
         "id": 63164,
@@ -9603,7 +9603,7 @@
         "id": 84134,
         "type": "tv",
         "title": "My Wife's Girlfriends",
-        "title_ar": "ჩემი ცოლის დაქალები",
+        "title_ar": "My Wife's Girlfriends",
         "overview": "",
         "overview_ar": "",
         "poster_path": "/rnFIou3thkIg4VNRvMFgUFd5MEs.jpg",
@@ -12720,30 +12720,6 @@
         "popularity": 21.0754
     },
     {
-        "id": 65503,
-        "type": "tv",
-        "title": "Aikatsu!",
-        "title_ar": "Aikatsu!",
-        "overview": "Ichigo Hoshimiya is a regular, ordinary middle school girl. But when her best friend Aoi invites her to join the idol training academy, Starlight Academy, her whole world is turned upside down. As she encounters all kinds of rivals and learns what it takes to be an idol, she uses her Aikatsu Cards to challenge countless auditions.",
-        "overview_ar": "Ichigo Hoshimiya is a regular, ordinary middle school girl. But when her best friend Aoi invites her to join the idol training academy, Starlight Academy, her whole world is turned upside down. As she encounters all kinds of rivals and learns what it takes to be an idol, she uses her Aikatsu Cards to challenge countless auditions.",
-        "poster_path": "/tRALkRAPfXlDsJ8XPx9Shz4mvsC.jpg",
-        "vote_average": 6.7,
-        "release_date": "2012-10-08",
-        "popularity": 21.0754
-    },
-    {
-        "id": 494,
-        "type": "tv",
-        "title": "Alice",
-        "title_ar": "Alice",
-        "overview": "Alice is an American sitcom television series that ran from August 31, 1976 to March 19, 1985 on CBS. The series is based on the 1974 film Alice Doesn't Live Here Anymore. The show stars Linda Lavin in the title role, a widow who moves with her young son to start her life over again, and finds a job working at a roadside diner on the outskirts of Phoenix, Arizona. Most of the episodes revolve around events at Mel's Diner.",
-        "overview_ar": "Alice is an American sitcom television series that ran from August 31, 1976 to March 19, 1985 on CBS. The series is based on the 1974 film Alice Doesn't Live Here Anymore. The show stars Linda Lavin in the title role, a widow who moves with her young son to start her life over again, and finds a job working at a roadside diner on the outskirts of Phoenix, Arizona. Most of the episodes revolve around events at Mel's Diner.",
-        "poster_path": "/iEEtQs1mPz3kvvaEFR7HVnME9Or.jpg",
-        "vote_average": 7.071,
-        "release_date": "1976-08-31",
-        "popularity": 24.0646
-    },
-    {
         "id": 46732,
         "type": "tv",
         "title": "MTV Video Music Awards",
@@ -12958,6 +12934,30 @@
         "vote_average": 8.0,
         "release_date": "2023-09-10",
         "popularity": 23.7544
+    },
+    {
+        "id": 1941,
+        "type": "tv",
+        "title": "GARO",
+        "title_ar": "牙狼＜GARO＞",
+        "overview": "The Makai fight a secret war against the demon forces known as Horrors, evil creatures that manifest themselves through darkness to devour Humanity. On the frontlines are the Makai Knights, given the task of watching over a district and eliminating any Horrors that manifest there.\n\nGARO follows the tales of the Knights bearing the title of ‘Golden Knight Garo’, and their duty to vanquish the Horrors and protect Humanity from the darkness.",
+        "overview_ar": "The Makai fight a secret war against the demon forces known as Horrors, evil creatures that manifest themselves through darkness to devour Humanity. On the frontlines are the Makai Knights, given the task of watching over a district and eliminating any Horrors that manifest there.\n\nGARO follows the tales of the Knights bearing the title of ‘Golden Knight Garo’, and their duty to vanquish the Horrors and protect Humanity from the darkness.",
+        "poster_path": "/3IBGi1F4oRlykR0k9beIwygn8YM.jpg",
+        "vote_average": 7.7,
+        "release_date": "2005-10-07",
+        "popularity": 20.912
+    },
+    {
+        "id": 2199,
+        "type": "tv",
+        "title": "Tales of the Unexpected",
+        "title_ar": "Tales of the Unexpected",
+        "overview": "A British television anthology of stories, often with sinister and wryly comedic undertones, and a twist at the end. With early episodes written and presented by Roald Dahl, the series featured a plethora of big name guest stars.",
+        "overview_ar": "A British television anthology of stories, often with sinister and wryly comedic undertones, and a twist at the end. With early episodes written and presented by Roald Dahl, the series featured a plethora of big name guest stars.",
+        "poster_path": "/vfG5gafbtxtfMvgDdNi56evx4Og.jpg",
+        "vote_average": 6.7,
+        "release_date": "1979-03-24",
+        "popularity": 18.7735
     },
     {
         "id": 2199,
@@ -17535,7 +17535,7 @@
         "id": 50878,
         "type": "tv",
         "title": "Empresses in the Palace",
-        "title_ar": "甄嬛传",
+        "title_ar": "Empresses in the Palace",
         "overview": "Zhen Huan, a 17-year-old innocent introduced into the imperial court as the latest concubine of Emperor Yong Zheng. Her dreams of a new life of love and prosperity are swiftly dashed as she enters a dog-eat-dog world of treachery and corruption.",
         "overview_ar": "Zhen Huan, a 17-year-old innocent introduced into the imperial court as the latest concubine of Emperor Yong Zheng. Her dreams of a new life of love and prosperity are swiftly dashed as she enters a dog-eat-dog world of treachery and corruption.",
         "poster_path": "/gLJ1d3OHxYOkiBCNNPJA1lzehjI.jpg",
@@ -18240,30 +18240,6 @@
         "popularity": 17.161
     },
     {
-        "id": 34391,
-        "type": "tv",
-        "title": "Marvel's Ultimate Spider-Man",
-        "title_ar": "Marvel's Ultimate Spider-Man",
-        "overview": "While being trained by S.H.I.E.L.D., Spider-Man battles evil with a new team of teen colleagues.",
-        "overview_ar": "While being trained by S.H.I.E.L.D., Spider-Man battles evil with a new team of teen colleagues.",
-        "poster_path": "/jK3pc8XOQT8UgdvSjMFk8xLQOxE.jpg",
-        "vote_average": 7.679,
-        "release_date": "2012-04-01",
-        "popularity": 18.4309
-    },
-    {
-        "id": 1952,
-        "type": "tv",
-        "title": "Mystery Science Theater 3000",
-        "title_ar": "Mystery Science Theater 3000",
-        "overview": "A stranded spaceship pilot captured by mad scientists survives a blitz of cheesy B movies by riffing on them with his funny robot pals.",
-        "overview_ar": "A stranded spaceship pilot captured by mad scientists survives a blitz of cheesy B movies by riffing on them with his funny robot pals.",
-        "poster_path": "/nNeb35RFoeLwxu0CFzZ9NAI5UTA.jpg",
-        "vote_average": 7.686,
-        "release_date": "1989-11-25",
-        "popularity": 18.9669
-    },
-    {
         "id": 2418,
         "type": "tv",
         "title": "The Venture Bros.",
@@ -18478,6 +18454,30 @@
         "vote_average": 8.099,
         "release_date": "2021-10-22",
         "popularity": 18.2812
+    },
+    {
+        "id": 72637,
+        "type": "tv",
+        "title": "Once",
+        "title_ar": "Once",
+        "overview": "The series revolves around Gabo, a soccer-loving teenager who, upon receiving a scholarship from the prestigious Sports Academic Institute (IAD) of Buenos Aires, will see his dream of playing at Los Halcones Dorados, the renowned amateur team of the school, and also his longing to become a professional footballer.",
+        "overview_ar": "The series revolves around Gabo, a soccer-loving teenager who, upon receiving a scholarship from the prestigious Sports Academic Institute (IAD) of Buenos Aires, will see his dream of playing at Los Halcones Dorados, the renowned amateur team of the school, and also his longing to become a professional footballer.",
+        "poster_path": "/d4vPg3QsTJJh6C5MHARTb5CyqOu.jpg",
+        "vote_average": 8.631,
+        "release_date": "2017-06-19",
+        "popularity": 19.2033
+    },
+    {
+        "id": 310239,
+        "type": "tv",
+        "title": "Museum of Innocence",
+        "title_ar": "Museum of Innocence",
+        "overview": "In 1970s Istanbul, a man's forbidden love for a shop-girl evolves into a lifelong journey of obsession and longing.",
+        "overview_ar": "In 1970s Istanbul, a man's forbidden love for a shop-girl evolves into a lifelong journey of obsession and longing.",
+        "poster_path": "/gdDPQ5vs7HdhoqUqV0DOgqUPcXU.jpg",
+        "vote_average": 7.0,
+        "release_date": "2026-02-13",
+        "popularity": 19.4685
     },
     {
         "id": 72637,
@@ -18720,54 +18720,6 @@
         "popularity": 16.0928
     },
     {
-        "id": 157194,
-        "type": "tv",
-        "title": "Pole to Pole with Will Smith",
-        "title_ar": "Pole to Pole with Will Smith",
-        "overview": "Inspired by his late mentor, Will Smith spends 100 days facing extreme challenges, venturing from pole to pole with scientists, explorers and experts.",
-        "overview_ar": "Inspired by his late mentor, Will Smith spends 100 days facing extreme challenges, venturing from pole to pole with scientists, explorers and experts.",
-        "poster_path": "/74zSvHdqFoCfQdXc8ZFqhkrbrPj.jpg",
-        "vote_average": 6.263,
-        "release_date": "2026-01-13",
-        "popularity": 18.4162
-    },
-    {
-        "id": 21729,
-        "type": "tv",
-        "title": "Gurren Lagann",
-        "title_ar": "غورن لاجان",
-        "overview": "When a young laborer escapes to the world aboveground, he discovers a violent land in which humans battle robots controlled by a power-hungry noble.",
-        "overview_ar": "القصة تدور حول صبي اسمه سيمون و مآثره لإيجاد قدره في عالم ملئ بالألغاز والمخاطر. عاش في قريته جيها طوال حياته , وكانت قريته تقع في باطن الأرض , وكان يعمل حفارا للقرية و الغرض من هذا توسيعها , لكن سيمون كان يحفر لإيجاد الكنوز أيضا. في يوم من الأيام احتفظ بمثقاب صغير الشكل وجده أثناء حفره . ولم يعلم بان هذا المثقاب سيغير مجرى حياته إلى الأبد مع القروي الآخر كامينا. وكان كامينا بمثابة الأخ لسيمون وكان هدفهم السماء (سطح الأرض) . وشاءت الأقدار بأن يجتمعوا بيوكو وكانت تطارد مخلوقا ميكانيكيا الذي ظهر في قريتهم . بعد هزيمة المخلوق الميكانيكي بواسطة رأس ميكانيكي وجده سيمون في وقت سابق . من هنا بدأت الرحلة لإيجاد قدرهم وهو يمتد إلى السماء.",
-        "poster_path": "/xL6HsYsk5N9PKwk6jFwMNQq3K3M.jpg",
-        "vote_average": 8.149,
-        "release_date": "2007-04-01",
-        "popularity": 16.0928
-    },
-    {
-        "id": 46188,
-        "type": "tv",
-        "title": "Vivement dimanche",
-        "title_ar": "Vivement dimanche",
-        "overview": "",
-        "overview_ar": "",
-        "poster_path": "/nRrrsDkH1kYgjvTpirkwMqZFjc5.jpg",
-        "vote_average": 3.0,
-        "release_date": "1998-09-20",
-        "popularity": 15.9845
-    },
-    {
-        "id": 1716,
-        "type": "tv",
-        "title": "Early Edition",
-        "title_ar": "Early Edition",
-        "overview": "Gary Hobson thinks he may even be losing his mind when tomorrow's newspaper mysteriously arrives today giving him a disconcerting look into the future. What will he do with tomorrow's news?",
-        "overview_ar": "Gary Hobson thinks he may even be losing his mind when tomorrow's newspaper mysteriously arrives today giving him a disconcerting look into the future. What will he do with tomorrow's news?",
-        "poster_path": "/uycL5H5ir0ckyyt17FXZAuSQU4p.jpg",
-        "vote_average": 7.323,
-        "release_date": "1996-09-28",
-        "popularity": 15.7663
-    },
-    {
         "id": 229858,
         "type": "tv",
         "title": "Fate/strange Fake",
@@ -18864,6 +18816,18 @@
         "popularity": 17.8651
     },
     {
+        "id": 71769,
+        "type": "tv",
+        "title": "The Alienist",
+        "title_ar": "The Alienist",
+        "overview": "New York, 1896. Police commissioner Theodore Roosevelt brings together criminal psychologist Dr. Laszlo Kreizler, newspaper illustrator John Moore and secretary Sara Howard to investigate several murders of male prostitutes.",
+        "overview_ar": "New York, 1896. Police commissioner Theodore Roosevelt brings together criminal psychologist Dr. Laszlo Kreizler, newspaper illustrator John Moore and secretary Sara Howard to investigate several murders of male prostitutes.",
+        "poster_path": "/zUd4RPbfHuB1zIG2iNI5bdZcQo3.jpg",
+        "vote_average": 7.5,
+        "release_date": "2018-01-22",
+        "popularity": 19.2112
+    },
+    {
         "id": 89491,
         "type": "tv",
         "title": "America Says",
@@ -18958,6 +18922,42 @@
         "vote_average": 8.089,
         "release_date": "2010-11-26",
         "popularity": 16.2947
+    },
+    {
+        "id": 19836,
+        "type": "tv",
+        "title": "Magical Girl Lyrical Nanoha",
+        "title_ar": "魔法少女リリカルなのは",
+        "overview": "Yuuno Scraia is a mage from a distant planet working to fix the problem he started when Jewel Seeds were accidentally spread around the world. In a failed attempt to seal a seed properly, he winds up on Earth in the form of a ferret. However, his battle with the seeds did not end upon reaching the Earth and he needs somebody else's help to seal the seeds for him. Takamachi Nanoha hears his telepathic cries for help and comes to his rescue. When she is given a pearl known as the Raging Heart she is able to transform into Magical Girl Lyrical Nanoha and wield a staff to fend off the evil that lies within the Seeds. In order to help Yuuno complete his mission, she needs to seal all 21 Jewel Seeds away, but Fate may be playing a hand in the matter to prevent Nanoha's goals.",
+        "overview_ar": "Yuuno Scraia is a mage from a distant planet working to fix the problem he started when Jewel Seeds were accidentally spread around the world. In a failed attempt to seal a seed properly, he winds up on Earth in the form of a ferret. However, his battle with the seeds did not end upon reaching the Earth and he needs somebody else's help to seal the seeds for him. Takamachi Nanoha hears his telepathic cries for help and comes to his rescue. When she is given a pearl known as the Raging Heart she is able to transform into Magical Girl Lyrical Nanoha and wield a staff to fend off the evil that lies within the Seeds. In order to help Yuuno complete his mission, she needs to seal all 21 Jewel Seeds away, but Fate may be playing a hand in the matter to prevent Nanoha's goals.",
+        "poster_path": "/yRAqx0q58cvU9saJhvwavYF6XgV.jpg",
+        "vote_average": 7.227,
+        "release_date": "2004-10-02",
+        "popularity": 17.6086
+    },
+    {
+        "id": 81046,
+        "type": "tv",
+        "title": "The Dragon Prince",
+        "title_ar": "The Dragon Prince",
+        "overview": "An extraordinary discovery inspires two human princes and an elven assassin to team up on an epic quest to bring peace to their warring lands.",
+        "overview_ar": "An extraordinary discovery inspires two human princes and an elven assassin to team up on an epic quest to bring peace to their warring lands.",
+        "poster_path": "/d7PIRa6ez7ZEl9D4JUrnSsmcnVD.jpg",
+        "vote_average": 8.213,
+        "release_date": "2018-09-14",
+        "popularity": 18.7748
+    },
+    {
+        "id": 309280,
+        "type": "tv",
+        "title": "Baddies USA",
+        "title_ar": "Baddies USA",
+        "overview": "Baddies USA is the eighth season of the popular Zeus Network reality franchise, serving as an all-star, cross-country edition featuring veteran cast members from previous Baddies seasons and Bad Girls Club, focusing on promotional events, touring U.S. cities, and inevitable drama, fights, and unexpected alliances among personalities like Natalie Nunn, Rollie, Tommie Lee, Chrisean Rock, and Tanisha Thomas, all centered around hosting parties and confronting personal beefs.",
+        "overview_ar": "Baddies USA is the eighth season of the popular Zeus Network reality franchise, serving as an all-star, cross-country edition featuring veteran cast members from previous Baddies seasons and Bad Girls Club, focusing on promotional events, touring U.S. cities, and inevitable drama, fights, and unexpected alliances among personalities like Natalie Nunn, Rollie, Tommie Lee, Chrisean Rock, and Tanisha Thomas, all centered around hosting parties and confronting personal beefs.",
+        "poster_path": "/27IYhrFLxogxRNKIVWivDnNfwF9.jpg",
+        "vote_average": 9.375,
+        "release_date": "2025-11-23",
+        "popularity": 20.5654
     },
     {
         "id": 81046,
@@ -19407,9 +19407,9 @@
         "id": 282810,
         "type": "tv",
         "title": "The Judge Returns",
-        "title_ar": "عودة القاضي",
+        "title_ar": "The Judge Returns",
         "overview": "The return of corrupt judge Lee Han-young, who was a slave to a large law firm, to the past 10 years ago. He makes new choices to punish evil and implement justice.",
-        "overview_ar": "بعد سقوطه في الفساد ثم التخلّي عنه، يُقتل القاضي لي هان يونغ، لكنه يستيقظ فجأة قبل عشر سنوات من موته، في زمنٍ كان ما يزال فيه قاضيًا مبتدئًا. يمنحه القدر فرصة ثانية ليعيد تشكيل حياته ويواجه القوى المظلمة التي تحكم القضاء من خلف الستار.",
+        "overview_ar": "The return of corrupt judge Lee Han-young, who was a slave to a large law firm, to the past 10 years ago. He makes new choices to punish evil and implement justice.",
         "poster_path": "/AjLnvyKlbTPS9DnX8exBqF2RTIU.jpg",
         "vote_average": 10.0,
         "release_date": "2026-01-02",

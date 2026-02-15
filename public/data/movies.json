@@ -2403,9 +2403,9 @@
         "id": 1038392,
         "type": "movie",
         "title": "The Conjuring: Last Rites",
-        "title_ar": "The Conjuring: Last Rites",
+        "title_ar": "الشعوذة: الطقوس الأخيرة",
         "overview": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-        "overview_ar": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+        "overview_ar": "يتولى المحققان في الظواهر الخارقة للطبيعة إد ولورين وارين قضية مرعبة أخيرة تتعلق بكيانات غامضة يتعين عليهم مواجهتها.",
         "poster_path": "/byWgphT74ClOVa8EOGzYDkl8DVL.jpg",
         "vote_average": 6.914,
         "release_date": "2025-09-03",
@@ -2451,9 +2451,9 @@
         "id": 372058,
         "type": "movie",
         "title": "Your Name.",
-        "title_ar": "اسمك",
+        "title_ar": "Your Name.",
         "overview": "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
-        "overview_ar": "يجد اثنان من الغرباء أنفسهم مرتبطين بطريقة غريبة. عندما يتشكل اتصال ، هل ستكون المسافة هي الشيء الوحيد الذي يجعلهم منفصلين؟",
+        "overview_ar": "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
         "poster_path": "/q719jXXEzOoYaps6babgKnONONX.jpg",
         "vote_average": 8.478,
         "release_date": "2016-08-26",
@@ -12960,6 +12960,30 @@
         "popularity": 8.2485
     },
     {
+        "id": 2503,
+        "type": "movie",
+        "title": "The Bourne Ultimatum",
+        "title_ar": "The Bourne Ultimatum",
+        "overview": "Bourne is brought out of hiding once again by reporter Simon Ross who is trying to unveil Operation Blackbriar, an upgrade to Project Treadstone, in a series of newspaper columns. Information from the reporter stirs a new set of memories, and Bourne must finally uncover his dark past while dodging The Company's best efforts to eradicate him.",
+        "overview_ar": "Bourne is brought out of hiding once again by reporter Simon Ross who is trying to unveil Operation Blackbriar, an upgrade to Project Treadstone, in a series of newspaper columns. Information from the reporter stirs a new set of memories, and Bourne must finally uncover his dark past while dodging The Company's best efforts to eradicate him.",
+        "poster_path": "/15rMz5MRXFp7CP4VxhjYw4y0FUn.jpg",
+        "vote_average": 7.434,
+        "release_date": "2007-08-03",
+        "popularity": 7.9805
+    },
+    {
+        "id": 1895,
+        "type": "movie",
+        "title": "Star Wars: Episode III - Revenge of the Sith",
+        "title_ar": "Star Wars: Episode III - Revenge of the Sith",
+        "overview": "When the sinister Sith unveil a thousand-year-old plot to rule the galaxy, the Republic crumbles and from its ashes rises the evil Galactic Empire. Jedi hero Anakin Skywalker must choose a side.",
+        "overview_ar": "When the sinister Sith unveil a thousand-year-old plot to rule the galaxy, the Republic crumbles and from its ashes rises the evil Galactic Empire. Jedi hero Anakin Skywalker must choose a side.",
+        "poster_path": "/xfSAoBEm9MNBjmlNcDYLvLSMlnq.jpg",
+        "vote_average": 7.459,
+        "release_date": "2005-05-17",
+        "popularity": 8.2485
+    },
+    {
         "id": 955,
         "type": "movie",
         "title": "Mission: Impossible II",
@@ -13015,7 +13039,7 @@
         "overview": "The story of the Agojie, the all-female unit of warriors who protected the African Kingdom of Dahomey in the 1800s with skills and a fierceness unlike anything the world has ever seen, and General Nanisca as she trains the next generation of recruits and readies them for battle against an enemy determined to destroy their way of life.",
         "overview_ar": "قصة Agojie، الوحدة النسائية بالكامل من المحاربين الذين قاموا بحماية مملكة داهومي الأفريقية في القرن التاسع عشر بمهارات وشراسة لا تشبه أي شيء رآه العالم على الإطلاق، والجنرال نانيسكا وهي تدرب الجيل القادم من المجندين وتجهزهم للمعركة ضد عدو مصمم على تدمير أسلوب حياتهم.",
         "poster_path": "/438QXt1E3WJWb3PqNniK0tAE5c1.jpg",
-        "vote_average": 7.625,
+        "vote_average": 7.624,
         "release_date": "2022-09-16",
         "popularity": 7.3698
     },
@@ -13099,7 +13123,7 @@
         "overview": "When the bumbling Lieutenant Frank Drebin investigates events following the shooting of his partner, he stumbles upon an attempt to assassinate Queen Elizabeth II.",
         "overview_ar": "الملازم (فرانك ديربان) محقق أخرق في فرقة الشرطة أحد أقسام شرطة لوس أنجلوس. يعود إلى البلاد مع أسرته من رحلة في بيروت ليجد صديقه وزميله المحقق (نوردبيرج) تم إطلاق النار عليه وقتله في إحدى العمليات، وقت أن كان متخفيا .فيقرر فرانك التحقيق في عملية قتل نوردبيرج وتقوده التحقيقات للشك في رجل الأعمال المشهور (فنسنت لودوج) ويكتشف مخططاته في اغتيال الملكة إليزابيث.",
         "poster_path": "/zT0mhZqZQJE1gSY5Eg9qcGP4NYo.jpg",
-        "vote_average": 7.269,
+        "vote_average": 7.27,
         "release_date": "1988-12-02",
         "popularity": 8.173
     },
@@ -13174,30 +13198,6 @@
         "vote_average": 6.889,
         "release_date": "2015-09-15",
         "popularity": 8.6928
-    },
-    {
-        "id": 196,
-        "type": "movie",
-        "title": "Back to the Future Part III",
-        "title_ar": "العودة إلى المستقبل الجزء 3",
-        "overview": "The final installment finds Marty digging the trusty DeLorean out of a mineshaft and looking for Doc in the Wild West of 1885. But when their time machine breaks down, the travelers are stranded in a land of spurs. More problems arise when Doc falls for pretty schoolteacher Clara Clayton, and Marty tangles with Buford Tannen.",
-        "overview_ar": "يعلم مارتي مكفلي بأن حياة صديقة الدكتور إيميت براون في خطر ، بينما يستمتع براون بالحياة الهادئة في عام 1885، فيقرر السفر إلى الماضي لإنقاذ صديقه. ويتلقى مارتي رسالة من د. إيميت تعود عمرها للقرن الماضي، يخبره فيها أنه قرر العودة بالزمن إلى عام 1885، وأنه قد خبأ آلته بمنجم مهجور خارج المدينة.",
-        "poster_path": "/crzoVQnMzIrRfHtQw0tLBirNfVg.jpg",
-        "vote_average": 7.489,
-        "release_date": "1990-05-25",
-        "popularity": 8.4569
-    },
-    {
-        "id": 212778,
-        "type": "movie",
-        "title": "Chef",
-        "title_ar": "الشيف",
-        "overview": "When Chef Carl Casper suddenly quits his job at a prominent Los Angeles restaurant after refusing to compromise his creative integrity for its controlling owner, he is left to figure out what's next. Finding himself in Miami, he teams up with his ex-wife, his friend and his son to launch a food truck. Taking to the road, Chef Carl goes back to his roots to reignite his passion for the kitchen -- and zest for life and love.",
-        "overview_ar": "عندما استقال الشيف كارل كاسبر فجأة من وظيفته في مطعم شهير في لوس أنجلوس بعد رفضه المساومة على نزاهته الإبداعية لمالكه المسيطر ، يُترك لمعرفة الخطوة التالية. عندما وجد نفسه في ميامي ، تعاون مع زوجته السابقة وصديقه وابنه لإطلاق شاحنة طعام. في الطريق ، يعود الشيف كارل إلى جذوره ليُشعل من جديد شغفه بالمطبخ - وحماس الحياة والحب.",
-        "poster_path": "/hyp8EXDmO4dSC8V6Q5jU7gD1kcg.jpg",
-        "vote_average": 7.114,
-        "release_date": "2014-05-08",
-        "popularity": 8.516
     },
     {
         "id": 1193128,
@@ -19647,9 +19647,9 @@
         "id": 116149,
         "type": "movie",
         "title": "Paddington",
-        "title_ar": "Paddington",
+        "title_ar": "بادينجتون",
         "overview": "A young Peruvian bear travels to London in search of a home. Finding himself lost and alone at Paddington Station, he meets the kindly Brown family, who offer him a temporary haven.",
-        "overview_ar": "A young Peruvian bear travels to London in search of a home. Finding himself lost and alone at Paddington Station, he meets the kindly Brown family, who offer him a temporary haven.",
+        "overview_ar": "المغامرات الطريفة المليئة بالحوادث المتعثرة التي خاضها دب بيروفي فتي، يسافر إلى لندن بحثاً عن موطن له.",
         "poster_path": "/wpchRGhRhvhtU083PfX2yixXtiw.jpg",
         "vote_average": 7.1,
         "release_date": "2014-11-24",
@@ -23520,18 +23520,6 @@
         "popularity": 7.2496
     },
     {
-        "id": 1159206,
-        "type": "movie",
-        "title": "Father Mother Sister Brother",
-        "title_ar": "Father Mother Sister Brother",
-        "overview": "Three stories concerning the relationships between adult children, their somewhat distant parent (or parents), and each other: a reclusive father visited by his grown children in the US, sisters visiting their novelist mother in Dublin, and adult twins called back to their Paris apartment to address a family tragedy.",
-        "overview_ar": "Three stories concerning the relationships between adult children, their somewhat distant parent (or parents), and each other: a reclusive father visited by his grown children in the US, sisters visiting their novelist mother in Dublin, and adult twins called back to their Paris apartment to address a family tragedy.",
-        "poster_path": "/zewZA6sL52YSH8xIH4wbG5GadjV.jpg",
-        "vote_average": 6.558,
-        "release_date": "2025-12-01",
-        "popularity": 6.1056
-    },
-    {
         "id": 816904,
         "type": "movie",
         "title": "Mummies",
@@ -23758,6 +23746,18 @@
         "vote_average": 6.438,
         "release_date": "2025-01-15",
         "popularity": 5.9497
+    },
+    {
+        "id": 332210,
+        "type": "movie",
+        "title": "Storks",
+        "title_ar": "Storks",
+        "overview": "Storks deliver babies…or at least they used to. Now they deliver packages for a global internet retail giant. Junior, the company’s top delivery stork, is about to be promoted when he accidentally activates the Baby Making Machine, producing an adorable and wholly unauthorized baby girl...",
+        "overview_ar": "تتوقف طيور اللقلق عن توصيل اﻷطفال التي كانت مهمتهم الرئيسية، والآن يقومون بتوصيل الطرود إلى موقع انترنت، (جونيور) كبير اللقالق المُوصلين على وشك أن يترقى، يشغل بالصدفة ماكينة تصنيع الأطفال، لتنتج طفلة مدهشة وغير مُصرّح بها، هنا يقوم (جونيور) وصديقه (توليب) برحلة رهيبة لمعالجة الأمر.",
+        "poster_path": "/pwGolX8JmGJhhcUjO5SJt38Uk0m.jpg",
+        "vote_average": 6.67,
+        "release_date": "2016-09-22",
+        "popularity": 5.6156
     },
     {
         "id": 291870,
