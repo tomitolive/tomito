@@ -2215,7 +2215,7 @@
         "overview": "An American actor in Tokyo struggles to find purpose until he lands an unusual gig: working for a Japanese 'rental family' agency, playing stand-in roles for strangers. As he immerses himself in his clients' worlds, he begins to form genuine bonds that blur the lines between performance and reality.",
         "overview_ar": "An American actor in Tokyo struggles to find purpose until he lands an unusual gig: working for a Japanese 'rental family' agency, playing stand-in roles for strangers. As he immerses himself in his clients' worlds, he begins to form genuine bonds that blur the lines between performance and reality.",
         "poster_path": "/A5lswNlytTUrnMWsuD0NFfhZlf3.jpg",
-        "vote_average": 7.875,
+        "vote_average": 7.874,
         "release_date": "2025-11-20",
         "popularity": 21.9117
     },
@@ -2256,18 +2256,6 @@
         "popularity": 21.1807
     },
     {
-        "id": 475557,
-        "type": "movie",
-        "title": "Joker",
-        "title_ar": "جوكر",
-        "overview": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
-        "overview_ar": "خلال الثمانينيات من القرن الماضي، ممثل كوميدي فاشل - مدفوعًا بالجنون - يتحول إلى حياة الجريمة والفوضى في مدينة قوثام بينما يصبح شخصية مجرمة بنفسية سيئة.",
-        "poster_path": "/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
-        "vote_average": 8.128,
-        "release_date": "2019-10-01",
-        "popularity": 20.8235
-    },
-    {
         "id": 216015,
         "type": "movie",
         "title": "Fifty Shades of Grey",
@@ -2290,18 +2278,6 @@
         "vote_average": 7.547,
         "release_date": "2024-06-11",
         "popularity": 20.1182
-    },
-    {
-        "id": 414906,
-        "type": "movie",
-        "title": "The Batman",
-        "title_ar": "باتمان",
-        "overview": "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.",
-        "overview_ar": "في سنته الثانية من محاربة الجريمة ، يكشف باتمان عن فساد في مدينة جوثام يتصل بعائلته بينما يواجه قاتلًا متسلسلاً يُعرف باسم ريدلر",
-        "poster_path": "/74xTEgt7R36Fpooo50r9T25onhq.jpg",
-        "vote_average": 7.656,
-        "release_date": "2022-03-01",
-        "popularity": 19.4296
     },
     {
         "id": 557,
@@ -2328,6 +2304,18 @@
         "popularity": 20.4923
     },
     {
+        "id": 475557,
+        "type": "movie",
+        "title": "Joker",
+        "title_ar": "جوكر",
+        "overview": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
+        "overview_ar": "خلال الثمانينيات من القرن الماضي، ممثل كوميدي فاشل - مدفوعًا بالجنون - يتحول إلى حياة الجريمة والفوضى في مدينة قوثام بينما يصبح شخصية مجرمة بنفسية سيئة.",
+        "poster_path": "/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+        "vote_average": 8.1,
+        "release_date": "2019-10-01",
+        "popularity": 20.8235
+    },
+    {
         "id": 558449,
         "type": "movie",
         "title": "Gladiator II",
@@ -2335,7 +2323,7 @@
         "overview": "Years after witnessing the death of the revered hero Maximus at the hands of his uncle, Lucius is forced to enter the Colosseum after his home is conquered by the tyrannical Emperors who now lead Rome with an iron fist. With rage in his heart and the future of the Empire at stake, Lucius must look to his past to find strength and honor to return the glory of Rome to its people.",
         "overview_ar": "تدور أحداث العمل حول (لوشيوس)، ابن حبيبة (ماكسيموس) والتي تُعرف باسم (لوسيا)، ذلك في أعقاب وفاة (ماكسيموس) وانقلاب موازين القوة.",
         "poster_path": "/2cxhvwyEwRlysAmRH4iodkvo0z5.jpg",
-        "vote_average": 6.633,
+        "vote_average": 6.634,
         "release_date": "2024-11-13",
         "popularity": 18.9505
     },
@@ -2347,7 +2335,7 @@
         "overview": "Plagued by a violent recurring nightmare, college student Stefanie heads home to track down the one person who might be able to break the cycle and save her family from the grisly demise that inevitably awaits them all.",
         "overview_ar": "بعد أن عانت من كابوس عنيف متكرر، تعود طالبة الجامعة ستيفاني إلى منزلها لتعقب الشخص الوحيد الذي قد يكون قادرًا على كسر هذه الدائرة وإنقاذ عائلتها من الموت المروع الذي ينتظرهم جميعًا حتمًا.",
         "poster_path": "/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg",
-        "vote_average": 7.08,
+        "vote_average": 7.079,
         "release_date": "2025-05-14",
         "popularity": 19.729
     },
@@ -2398,6 +2386,18 @@
         "vote_average": 7.281,
         "release_date": "2025-08-04",
         "popularity": 20.3697
+    },
+    {
+        "id": 1038392,
+        "type": "movie",
+        "title": "The Conjuring: Last Rites",
+        "title_ar": "The Conjuring: Last Rites",
+        "overview": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+        "overview_ar": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+        "poster_path": "/byWgphT74ClOVa8EOGzYDkl8DVL.jpg",
+        "vote_average": 6.914,
+        "release_date": "2025-09-03",
+        "popularity": 21.5762
     },
     {
         "id": 1038392,
@@ -2640,30 +2640,6 @@
         "popularity": 19.439
     },
     {
-        "id": 385687,
-        "type": "movie",
-        "title": "Fast X",
-        "title_ar": "السريع 10",
-        "overview": "Over many missions and against impossible odds, Dom Toretto and his family have outsmarted, out-nerved and outdriven every foe in their path. Now, they confront the most lethal opponent they've ever faced: A terrifying threat emerging from the shadows of the past who's fueled by blood revenge, and who is determined to shatter this family and destroy everything—and everyone—that Dom loves, forever.",
-        "overview_ar": "تدور احداث الفيلم حيث ينطلق (دانتي) - ابن زعيم الجريمة (هيرنان رييس) - الذي قُتل قبل عشر سنوات للانتقام من البطل (دوم توريتو) وعائلته وشركائه بعد التسبب في مقتل والده وسرقة أمواله.",
-        "poster_path": "/fiVW06jE7z9YnO4trhaMEdclSiC.jpg",
-        "vote_average": 7.005,
-        "release_date": "2023-05-17",
-        "popularity": 19.439
-    },
-    {
-        "id": 263115,
-        "type": "movie",
-        "title": "Logan",
-        "title_ar": "لوغان",
-        "overview": "In the near future, a weary Logan cares for an ailing Professor X in a hideout on the Mexican border. But Logan's attempts to hide from the world and his legacy are upended when a young mutant arrives, pursued by dark forces.",
-        "overview_ar": "لقد حان وقته.  في المستقبل القريب ، يعتني لوغان المرهق بالبروفيسور X المريض في مخبأ على الحدود المكسيكية. لكن محاولات لوغان للاختباء من العالم وإرثه تنقلب رأسا على عقب عندما يصل متحولة شابة ، تلاحقها قوى الظلام.",
-        "poster_path": "/fnbjcRDYn6YviCcePDnGdyAkYsB.jpg",
-        "vote_average": 7.818,
-        "release_date": "2017-02-28",
-        "popularity": 19.5137
-    },
-    {
         "id": 447365,
         "type": "movie",
         "title": "Guardians of the Galaxy Vol. 3",
@@ -2724,16 +2700,16 @@
         "popularity": 19.0379
     },
     {
-        "id": 1193501,
+        "id": 414906,
         "type": "movie",
-        "title": "Whistle",
-        "title_ar": "Whistle",
-        "overview": "A misfit group of unwitting high school students stumble upon a cursed object, an ancient Aztec Death Whistle. They discover that blowing the whistle and the terrifying sound it emits will summon their future deaths to hunt them down.",
-        "overview_ar": "A misfit group of unwitting high school students stumble upon a cursed object, an ancient Aztec Death Whistle. They discover that blowing the whistle and the terrifying sound it emits will summon their future deaths to hunt them down.",
-        "poster_path": "/otCoDQYnNy2x1QzTVn3JCp0jV4O.jpg",
-        "vote_average": 6.286,
-        "release_date": "2026-01-20",
-        "popularity": 16.4675
+        "title": "The Batman",
+        "title_ar": "The Batman",
+        "overview": "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.",
+        "overview_ar": "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.",
+        "poster_path": "/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+        "vote_average": 7.7,
+        "release_date": "2022-03-01",
+        "popularity": 19.4296
     },
     {
         "id": 1726,
@@ -2782,18 +2758,6 @@
         "vote_average": 7.396,
         "release_date": "2019-06-28",
         "popularity": 19.0414
-    },
-    {
-        "id": 1317149,
-        "type": "movie",
-        "title": "I Swear",
-        "title_ar": "I Swear",
-        "overview": "Diagnosed with Tourette Syndrome at 15, John Davidson navigates his way against the odds through troubled teenage years and into adulthood, finding inspiration in the kindness of others to discover his true purpose in life.",
-        "overview_ar": "Diagnosed with Tourette Syndrome at 15, John Davidson navigates his way against the odds through troubled teenage years and into adulthood, finding inspiration in the kindness of others to discover his true purpose in life.",
-        "poster_path": "/lC4NgQPqyKxNJ3PEgl2HVUxTY1t.jpg",
-        "vote_average": 8.022,
-        "release_date": "2025-09-22",
-        "popularity": 18.4258
     },
     {
         "id": 348,
@@ -2868,6 +2832,18 @@
         "popularity": 18.987
     },
     {
+        "id": 696393,
+        "type": "movie",
+        "title": "Cold Storage",
+        "title_ar": "Cold Storage",
+        "overview": "When a mutating, highly contagious fungus escapes a sealed facility, two young employees – joined by a grizzled bioterror operative – must survive the wildest night shift ever to save humanity from extinction.",
+        "overview_ar": "When a mutating, highly contagious fungus escapes a sealed facility, two young employees – joined by a grizzled bioterror operative – must survive the wildest night shift ever to save humanity from extinction.",
+        "poster_path": "/pfqkETJ2A3zXZJuNcufZbAJNnKA.jpg",
+        "vote_average": 5.9,
+        "release_date": "2026-01-29",
+        "popularity": 19.0996
+    },
+    {
         "id": 1184918,
         "type": "movie",
         "title": "The Wild Robot",
@@ -2878,6 +2854,30 @@
         "vote_average": 8.313,
         "release_date": "2024-09-12",
         "popularity": 16.5179
+    },
+    {
+        "id": 420818,
+        "type": "movie",
+        "title": "The Lion King",
+        "title_ar": "The Lion King",
+        "overview": "Simba idolizes his father, King Mufasa, and takes to heart his own royal destiny. But not everyone in the kingdom celebrates the new cub's arrival. Scar, Mufasa's brother—and former heir to the throne—has plans of his own. The battle for Pride Rock is ravaged with betrayal, tragedy and drama, ultimately resulting in Simba's exile. With help from a curious pair of newfound friends, Simba will have to figure out how to grow up and take back what is rightfully his.",
+        "overview_ar": "Simba idolizes his father, King Mufasa, and takes to heart his own royal destiny. But not everyone in the kingdom celebrates the new cub's arrival. Scar, Mufasa's brother—and former heir to the throne—has plans of his own. The battle for Pride Rock is ravaged with betrayal, tragedy and drama, ultimately resulting in Simba's exile. With help from a curious pair of newfound friends, Simba will have to figure out how to grow up and take back what is rightfully his.",
+        "poster_path": "/dzBtMocZuJbjLOXvrl4zGYigDzh.jpg",
+        "vote_average": 7.1,
+        "release_date": "2019-07-12",
+        "popularity": 16.4678
+    },
+    {
+        "id": 1007734,
+        "type": "movie",
+        "title": "Nobody 2",
+        "title_ar": "Nobody 2",
+        "overview": "Former assassin Hutch Mansell takes his family on a nostalgic vacation to a small-town theme park, only to be pulled back into violence when they clash with a corrupt operator, a crooked sheriff, and a ruthless crime boss.",
+        "overview_ar": "Former assassin Hutch Mansell takes his family on a nostalgic vacation to a small-town theme park, only to be pulled back into violence when they clash with a corrupt operator, a crooked sheriff, and a ruthless crime boss.",
+        "poster_path": "/iyxwxDZCpIm0vIORaHpmgJv2BGF.jpg",
+        "vote_average": 6.993,
+        "release_date": "2025-08-13",
+        "popularity": 16.7927
     },
     {
         "id": 420818,
@@ -3600,18 +3600,6 @@
         "popularity": 16.304
     },
     {
-        "id": 12444,
-        "type": "movie",
-        "title": "Harry Potter and the Deathly Hallows: Part 1",
-        "title_ar": "هاري بوتر و مقدسات الموت - الجزء ١",
-        "overview": "Harry, Ron and Hermione walk away from their last year at Hogwarts to find and destroy the remaining Horcruxes, putting an end to Voldemort's bid for immortality. But with Harry's beloved Dumbledore dead and Voldemort's unscrupulous Death Eaters on the loose, the world is more dangerous than ever.",
-        "overview_ar": "هاري ورون وهيرميون يبتعدون عن عامهم الأخير في هوجورتس للعثور على الهوركروكس المتبقية وتدميرهم ، مما يضع حداً لمحاولة فولدمورت للخلود.  ولكن مع وفاة دمبلدور المحبوب لدى هاري وإفلات أكلة الموت عديمي الضمير من فولدمورت ، أصبح العالم أكثر خطورة من أي وقت مضى.",
-        "poster_path": "/iGoXIpQb7Pot00EEdwpwPajheZ5.jpg",
-        "vote_average": 7.736,
-        "release_date": "2010-11-17",
-        "popularity": 16.304
-    },
-    {
         "id": 85,
         "type": "movie",
         "title": "Raiders of the Lost Ark",
@@ -3690,7 +3678,7 @@
         "title_ar": "Misdirection",
         "overview": "A desperate couple have pulled off a string of high-end break-ins to pay off a mob debt. When they attempt to rob their latest victim, they find themselves caught in a deadly game of cat and mouse. The tables are turned and the hunters become the hunted.",
         "overview_ar": "A desperate couple have pulled off a string of high-end break-ins to pay off a mob debt. When they attempt to rob their latest victim, they find themselves caught in a deadly game of cat and mouse. The tables are turned and the hunters become the hunted.",
-        "poster_path": "/tDPW2j6L6r6YfsChYLfLRQ6Vjwh.jpg",
+        "poster_path": "/z7padnoIDHbmxPdqEHryhqlaVqc.jpg",
         "vote_average": 5.9,
         "release_date": "2026-01-13",
         "popularity": 19.6036
@@ -3775,7 +3763,7 @@
         "overview": "During a weekend getaway at a secluded lakeside estate, a group of friends finds themselves entangled in a web of secrets, deception, and advanced technology. As tensions rise and loyalties are tested, they uncover unsettling truths about themselves and the world around them.",
         "overview_ar": "يدور العمل حول رجل جذاب ومضطرب نفسيًا يتقابل مع امرأة تمر بالعديد من المتاعب والألاعيب، فتحمل لهما الأحداث الكثير من الأمور المشوقة.",
         "poster_path": "/oCoTgC3UyWGfyQ9thE10ulWR7bn.jpg",
-        "vote_average": 7.021,
+        "vote_average": 7.019,
         "release_date": "2025-01-22",
         "popularity": 16.3132
     },
@@ -3838,6 +3826,18 @@
         "vote_average": 0.0,
         "release_date": "1960-11-18",
         "popularity": 15.9664
+    },
+    {
+        "id": 315162,
+        "type": "movie",
+        "title": "Puss in Boots: The Last Wish",
+        "title_ar": "Puss in Boots: The Last Wish",
+        "overview": "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.",
+        "overview_ar": "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.",
+        "poster_path": "/kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
+        "vote_average": 8.205,
+        "release_date": "2022-12-07",
+        "popularity": 15.5447
     },
     {
         "id": 315162,
@@ -7203,9 +7203,9 @@
         "id": 748783,
         "type": "movie",
         "title": "The Garfield Movie",
-        "title_ar": "جارفيلد الفيلم",
+        "title_ar": "The Garfield Movie",
         "overview": "Garfield, the world-famous, Monday-hating, lasagna-loving indoor cat, is about to have a wild outdoor adventure! After an unexpected reunion with his long-lost father – scruffy street cat Vic – Garfield and his canine friend Odie are forced from their perfectly pampered life into joining Vic in a hilarious, high-stakes heist.",
-        "overview_ar": "جارفيلد، القط الداخلي الشهير عالميًا، والذي يكره يوم الاثنين ويحب اللازانيا، على وشك خوض مغامرة برية في الهواء الطلق! بعد لقاء غير متوقع مع والده المفقود منذ فترة طويلة - قط الشوارع الرث فيك - يُجبر غارفيلد وصديقه الكلب أودي على ترك حياتهم المدللة تمامًا للانضمام إلى فيك في عملية سرقة مرحة وعالية المخاطر.",
+        "overview_ar": "Garfield, the world-famous, Monday-hating, lasagna-loving indoor cat, is about to have a wild outdoor adventure! After an unexpected reunion with his long-lost father – scruffy street cat Vic – Garfield and his canine friend Odie are forced from their perfectly pampered life into joining Vic in a hilarious, high-stakes heist.",
         "poster_path": "/xYduFGuch9OwbCOEUiamml18ZoB.jpg",
         "vote_average": 7.014,
         "release_date": "2024-04-30",
@@ -7431,9 +7431,9 @@
         "id": 508883,
         "type": "movie",
         "title": "The Boy and the Heron",
-        "title_ar": "The Boy and the Heron",
+        "title_ar": "الصبي والبلشون",
         "overview": "While the Second World War rages, the teenage Mahito, haunted by his mother's tragic death, is relocated from Tokyo to the serene rural home of his new stepmother Natsuko, a woman who bears a striking resemblance to the boy's mother. As he tries to adjust, this strange new world grows even stranger following the appearance of a persistent gray heron, who perplexes and bedevils Mahito, dubbing him the \"long-awaited one.\"",
-        "overview_ar": "While the Second World War rages, the teenage Mahito, haunted by his mother's tragic death, is relocated from Tokyo to the serene rural home of his new stepmother Natsuko, a woman who bears a striking resemblance to the boy's mother. As he tries to adjust, this strange new world grows even stranger following the appearance of a persistent gray heron, who perplexes and bedevils Mahito, dubbing him the \"long-awaited one.\"",
+        "overview_ar": "تدور أحداث الفيلم حول \"ماهتو\"، الفتى الذي يفقد والدته في أحداث الحرب العالمية الثانية، مما يدفعه للانتقال إلى الريف للعيش مع والده وزوجة والده الجديدة التي تنتظر مولودًا. خلال فترة تأقلمه مع الحياة الجديدة في الريف، يواجه ماهتو سلسلة من التحديات والصراعات النفسية نتيجة فقدانه والدته. وفي أحد الأيام، يقوده طائر بلشون غامض إلى عالم خيالي مليء بالمخلوقات الغريبة والمشاهد الساحرة. يكتشف ماهتو في هذا العالم السري قوى الطبيعة والأرواح القديمة، ويخوض رحلة داخلية تعكس معاناته مع الحزن والفقدان والبحث عن السلام الداخلي",
         "poster_path": "/f4oZTcfGrVTXKTWg157AwikXqmP.jpg",
         "vote_average": 7.404,
         "release_date": "2023-07-14",
@@ -9475,7 +9475,7 @@
         "overview": "12-year-old Dre Parker could've been the most popular kid in Detroit, but his mother's latest career move has landed him in China. Dre immediately falls for his classmate Mei Ying but the cultural differences make such a friendship impossible. Even worse, Dre's feelings make him an enemy of the class bully, Cheng. With no friends in a strange land, Dre has nowhere to turn but maintenance man Mr. Han, who is a kung fu master. As Han teaches Dre that kung fu is not about punches and parries, but maturity and calm, Dre realizes that facing down the bullies will be the fight of his life.",
         "overview_ar": "في \"الصين\"، يتعلّم \"دري\" الدفاع عن نفسه ضدّ متنمّر باتباع إرشادات معلّم كونغ فو متواضع في هذه النسخة الجديدة من الفيلم الكلاسيكي لعام ‎1984‏.",
         "poster_path": "/b1RBy3l297N0c7PHjlz35cClWju.jpg",
-        "vote_average": 6.565,
+        "vote_average": 6.6,
         "release_date": "2010-06-10",
         "popularity": 10.1759
     },
@@ -9523,7 +9523,7 @@
         "overview": "A police chief in the war-torn streets of Los Angeles discovers that an extraterrestrial creature is hunting down residents - and that he is the next target.",
         "overview_ar": "تدور أحداث الفيلم حول إنسان آلي متطور بشكل كبير يطارد سكان مدينة لوس انجلوس يحاول الجميع التصدي له ولكن تبوء محاولتهم بالفشل إلا أن الضابط مايك هاريجان (داني جلوفر) والمتخصص في محاربة تجار المخدرات يبدأ في محاربته وخاصة بعد سقوط العديد من الجرائم الوحشية التي يتولى التحقيق فيها.",
         "poster_path": "/83X4VwY9sdSJykskmsplIVG0a4h.jpg",
-        "vote_average": 6.292,
+        "vote_average": 6.293,
         "release_date": "1990-11-21",
         "popularity": 10.4736
     },
@@ -9547,7 +9547,7 @@
         "overview": "The former World Heavyweight Champion Rocky Balboa serves as a trainer and mentor to Adonis Johnson, the son of his late friend and former rival Apollo Creed.",
         "overview_ar": "بطل العالم السابق للوزن الثقيل روكي بالبوا هو بمثابة مدرب ومرشد لأدونيس جونسون ، ابن صديقه ومنافسه المتوفي أبولو كريد.",
         "poster_path": "/1BfTsk5VWuw8FCocAhCyqnRbEzq.jpg",
-        "vote_average": 7.402,
+        "vote_average": 7.403,
         "release_date": "2015-11-25",
         "popularity": 9.5495
     },
@@ -15840,6 +15840,54 @@
         "popularity": 9.9618
     },
     {
+        "id": 96721,
+        "type": "movie",
+        "title": "Rush",
+        "title_ar": "Rush",
+        "overview": "In the 1970s, a rivalry propels race car drivers Niki Lauda and James Hunt to fame and glory — until a horrible accident threatens to end it all.",
+        "overview_ar": "In the 1970s, a rivalry propels race car drivers Niki Lauda and James Hunt to fame and glory — until a horrible accident threatens to end it all.",
+        "poster_path": "/95BDrWmcfJDEa2WCfjmLgi67jhi.jpg",
+        "vote_average": 7.731,
+        "release_date": "2013-09-02",
+        "popularity": 7.4778
+    },
+    {
+        "id": 668489,
+        "type": "movie",
+        "title": "Havoc",
+        "title_ar": "Havoc",
+        "overview": "When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city's criminal underworld to save a politician's son.",
+        "overview_ar": "When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city's criminal underworld to save a politician's son.",
+        "poster_path": "/ubP2OsF3GlfqYPvXyLw9d78djGX.jpg",
+        "vote_average": 6.379,
+        "release_date": "2025-04-25",
+        "popularity": 7.9076
+    },
+    {
+        "id": 851644,
+        "type": "movie",
+        "title": "20th Century Girl",
+        "title_ar": "20th Century Girl",
+        "overview": "In 1999, a teen girl keeps close tabs on a boy in school on behalf of her deeply smitten best friend – then she gets swept up in a love story of her own.",
+        "overview_ar": "In 1999, a teen girl keeps close tabs on a boy in school on behalf of her deeply smitten best friend – then she gets swept up in a love story of her own.",
+        "poster_path": "/od22ftNnyag0TTxcnJhlsu3aLoU.jpg",
+        "vote_average": 8.147,
+        "release_date": "2022-10-06",
+        "popularity": 8.8481
+    },
+    {
+        "id": 43949,
+        "type": "movie",
+        "title": "Flipped",
+        "title_ar": "Flipped",
+        "overview": "When Juli meets Bryce in the second grade, she knows it's true love. After spending six years trying to convince Bryce the same, she's ready to give up - until he starts to reconsider.",
+        "overview_ar": "When Juli meets Bryce in the second grade, she knows it's true love. After spending six years trying to convince Bryce the same, she's ready to give up - until he starts to reconsider.",
+        "poster_path": "/6zDYFigohwncqFL00MKbFV01dWb.jpg",
+        "vote_average": 8.004,
+        "release_date": "2010-08-06",
+        "popularity": 9.9618
+    },
+    {
         "id": 337170,
         "type": "movie",
         "title": "American Made",
@@ -15883,7 +15931,7 @@
         "overview": "Hapless museum night watchman Larry Daley must help his living, breathing exhibit friends out of a pickle now that they've been transferred to the archives at the Smithsonian Institution. Larry's (mis)adventures this time include close encounters with Amelia Earhart, Abe Lincoln and Ivan the Terrible.",
         "overview_ar": "يعود لاري حارس المتحف في الجزء الثاني لينقذ متحف السميثسونيون الشهير الذي وقع تحت سحر حجر أثري فرعوني يحي جميع المعروضات بالمتحف من بعد غروب الشمس. يقع لاري في مغامرات طريفة و هو يحاول استرجاع هذا الحجر من الملك الشرير بمساعدة اصدقائه آينشتين، نابليون، والرئيس روزفيلت، والمزيد من الشخصيات التاريخية.",
         "poster_path": "/l9yAQn6TyrA3gv5xZZkiMMoZsiw.jpg",
-        "vote_average": 6.2,
+        "vote_average": 6.152,
         "release_date": "2009-05-20",
         "popularity": 7.0812
     },
@@ -16030,54 +16078,6 @@
         "vote_average": 5.673,
         "release_date": "2014-03-07",
         "popularity": 8.2136
-    },
-    {
-        "id": 49529,
-        "type": "movie",
-        "title": "John Carter",
-        "title_ar": "John Carter",
-        "overview": "John Carter is a war-weary, former military captain who's inexplicably transported to the mysterious and exotic planet of Barsoom (Mars) and reluctantly becomes embroiled in an epic conflict. It's a world on the brink of collapse, and Carter rediscovers his humanity when he realizes the survival of Barsoom and its people rests in his hands.",
-        "overview_ar": "جون كارتر هو كابتن عسكري سابق مرهق من الحرب وتم نقله لسبب غير مفهوم إلى كوكب برسوم الغامض والغريب (المريخ) وأصبح متورطًا على مضض في صراع ملحمي. إنه عالم على وشك الانهيار ، ويعيد كارتر اكتشاف إنسانيته عندما يدرك أن بقاء برصوم وشعبه بين يديه.",
-        "poster_path": "/lCxz1Yus07QCQQCb6I0Dr3Lmqpx.jpg",
-        "vote_average": 6.355,
-        "release_date": "2012-03-07",
-        "popularity": 8.4502
-    },
-    {
-        "id": 1035048,
-        "type": "movie",
-        "title": "Elevation",
-        "title_ar": "ارتفاع",
-        "overview": "Post-apocalyptic survivors find refuge in the Rocky Mountains to hide from giant, insect-like creatures that can't live above 8,000 feet. However, when one of them needs life-saving supplies, they risk it all to venture into the danger zone.",
-        "overview_ar": "في إطار من الخيال العلمي والحركة، ينطلق رجل وامرأتان في مواجهة محفوفة بالمخاطر ضد مخلوقات متوحشة؛ في سبيل إنقاذ حياة صبي صغير.",
-        "poster_path": "/tnfc0NJ3BzhJrGJhkkEd6MHBdq5.jpg",
-        "vote_average": 6.447,
-        "release_date": "2024-11-07",
-        "popularity": 7.7724
-    },
-    {
-        "id": 697843,
-        "type": "movie",
-        "title": "Extraction 2",
-        "title_ar": "إكستراكشن 2",
-        "overview": "Back from the brink of death, highly skilled commando Tyler Rake takes on another dangerous mission: saving the imprisoned family of a ruthless gangster.",
-        "overview_ar": "يعود المقدام البارع \"تايلر ريك\" بعد نجاته من فم الموت، ويقع على عاتقه الآن تنفيذ مهمة أخرى محفوفة بالمخاطر... وهي إنقاذ عائلة رجل عصابات قاسٍ من السجن.",
-        "poster_path": "/7gKI9hpEMcZUQpNgKrkDzJpbnNS.jpg",
-        "vote_average": 7.394,
-        "release_date": "2023-06-09",
-        "popularity": 7.0042
-    },
-    {
-        "id": 378064,
-        "type": "movie",
-        "title": "A Silent Voice: The Movie",
-        "title_ar": "الحزن الصامت",
-        "overview": "Shouya Ishida starts bullying the new girl in class, Shouko Nishimiya, because she is deaf. But as the teasing continues, the rest of the class starts to turn on Shouya for his lack of compassion. When they leave elementary school, Shouko and Shouya do not speak to each other again... until an older, wiser Shouya, tormented by his past behaviour, decides he must see Shouko once more. He wants to atone for his sins, but is it already too late...?",
-        "overview_ar": "شويا إيشيدا تبدأ بالتنمر على الفتاة الجديدة في الفصل ، شوكو نيشيميا ، لأنها صماء. ولكن مع استمرار المضايقة ، بدأ باقي الفصل في الانقلاب على شوية لافتقاره إلى التعاطف. عندما يغادران المدرسة الابتدائية ، لا يتحدث شوكو وشوية مع بعضهما البعض مرة أخرى ... حتى يقرر شويا الأكبر سنا والأكثر حكمة ، المعذب من سلوكه السابق ، أنه يجب أن يرى شوكو مرة أخرى. يريد التكفير عن خطاياه ولكن هل فات الأوان ...؟",
-        "poster_path": "/tuFaWiqX0TXoWu7DGNcmX3UW7sT.jpg",
-        "vote_average": 8.384,
-        "release_date": "2016-09-17",
-        "popularity": 9.2583
     },
     {
         "id": 697843,
@@ -16875,9 +16875,9 @@
         "id": 435,
         "type": "movie",
         "title": "The Day After Tomorrow",
-        "title_ar": "ما بعد الغد",
+        "title_ar": "The Day After Tomorrow",
         "overview": "After paleoclimatologist Jack Hall is largely ignored by UN officials when presenting his environmental concerns about the beginning of a new Ice Age, his research proves true when a superstorm develops, setting off catastrophic natural disasters throughout the world. Trying to get to his son, Sam, who is trapped in New York City with his friend Laura and others, Jack and his crew must travel to get to Sam before it's too late.",
-        "overview_ar": "بعد سنوات من الزيادات في تأثير الاحتباس الحراري ، عاثت الخراب عالميًا في شكل أعاصير كارثية وأعاصير وموجات مدية وفيضانات وبداية عصر جليدي جديد. يحاول عالم المناخ القديم ، جاك هول ، أن يحذر العالم بينما يرعى ابنه أيضًا ، المحاصر في نيويورك بعد أن طغت على المدينة بداية التجميد الكبير الجديد.",
+        "overview_ar": "After paleoclimatologist Jack Hall is largely ignored by UN officials when presenting his environmental concerns about the beginning of a new Ice Age, his research proves true when a superstorm develops, setting off catastrophic natural disasters throughout the world. Trying to get to his son, Sam, who is trapped in New York City with his friend Laura and others, Jack and his crew must travel to get to Sam before it's too late.",
         "poster_path": "/Wr4HeYQRvwVCxzOV5TmGE7UkXq.jpg",
         "vote_average": 6.549,
         "release_date": "2004-05-26",
@@ -17019,9 +17019,9 @@
         "id": 17654,
         "type": "movie",
         "title": "District 9",
-        "title_ar": "المقاطعة 9",
+        "title_ar": "District 9",
         "overview": "Thirty years ago, aliens arrive on Earth. Not to conquer or give aid, but to find refuge from their dying planet. Separated from humans in a South African area called District 9, the aliens are managed by Multi-National United, which is unconcerned with the aliens' welfare but will do anything to master their advanced technology. When a company field agent contracts a mysterious virus that begins to alter his DNA, there is only one place he can hide: District 9.",
-        "overview_ar": "قبل ثلاثين عامًا ، وصل الفضائيون إلى الأرض. ليس للغزو أو تقديم المساعدة ، ولكن للبحث عن ملجأ من كوكبهم المحتضر منفصلة عن البشر في منطقة جنوب إفريقيا تسمى المنطقة 9 ، تتم إدارة الأجانب بواسطة شركة Multi-National United ، التي لا تهتم برفاهية الأجانب ولكنها ستفعل أي شيء لإتقان تقنيتهم المتقدمة. عندما يتعاقد الوكيل الميداني للشركة مع فيروس غامض يبدأ في تغيير حمضه النووي ، فهناك مكان واحد فقط يمكنه إخفاءه: المنطقة 9.",
+        "overview_ar": "Thirty years ago, aliens arrive on Earth. Not to conquer or give aid, but to find refuge from their dying planet. Separated from humans in a South African area called District 9, the aliens are managed by Multi-National United, which is unconcerned with the aliens' welfare but will do anything to master their advanced technology. When a company field agent contracts a mysterious virus that begins to alter his DNA, there is only one place he can hide: District 9.",
         "poster_path": "/tuGlQkqLxnodDSk6mp5c2wvxUEd.jpg",
         "vote_average": 7.46,
         "release_date": "2009-08-05",
@@ -17031,9 +17031,9 @@
         "id": 15070,
         "type": "movie",
         "title": "Undisputed",
-        "title_ar": "بلا منازع",
+        "title_ar": "Undisputed",
         "overview": "Monroe Hutchens is the heavyweight champion of Sweetwater, a maximum security prison. He was convicted to a life sentence due to a passionate crime. Iceman Chambers is the heavyweight champion, who lost his title due to a rape conviction to ten years in Sweetwater. When these two giants collide in the same prison, they fight against each other disputing who is the real champion.",
-        "overview_ar": "تنقلب حياة شامبرز رأسًا على عقب عندما يتم اتهامه بالاغتصاب ويذهب إلى السجن.  عندما يصل إلى السجن، يسمع عن مونرو هاتشن بطل السجن في الملاكمة لمدة عشر سنوات.يرغب شامبرز في توضيح الأمور منذ البداية وأنه لن يكون أبدًا في المركز الثاني، ويؤدي ذلك للعديد من المشاكل.  يقرر زميلهم المُدان إيمانويل أن يستغل ذلك التوتر في جني بعض المال، فينظم مباراةَ ملاكمةٍ بين الاثنين لتحديد البطل الحقيقي.",
+        "overview_ar": "Monroe Hutchens is the heavyweight champion of Sweetwater, a maximum security prison. He was convicted to a life sentence due to a passionate crime. Iceman Chambers is the heavyweight champion, who lost his title due to a rape conviction to ten years in Sweetwater. When these two giants collide in the same prison, they fight against each other disputing who is the real champion.",
         "poster_path": "/q8smM97IBBEWmkaUCmkPqysh7k7.jpg",
         "vote_average": 6.5,
         "release_date": "2002-07-17",
@@ -22560,30 +22560,6 @@
         "popularity": 6.5865
     },
     {
-        "id": 1315988,
-        "type": "movie",
-        "title": "Mikaela",
-        "title_ar": "Mikaela",
-        "overview": "During the eve of the 6th of January, a record-breaking snowstorm sweeps across Spain. In the midst of its chaos, a group of robbers seizes the opportunity to hijack an armoured van. A few meters away is Leo, a finished policeman who has nothing to lose. With the unexpected aid of a young woman, he will try to stop the band from running away with their loot.",
-        "overview_ar": "عشية السادس من يناير، اجتاحت عاصفة ثلجية قياسية إسبانيا. وفي خضم هذه الفوضى، انتهزت مجموعة من اللصوص الفرصة لسرقة شاحنة مدرعة. على بُعد أمتار قليلة، يقف ليو، الشرطي المتمرس الذي ليس لديه ما يخسره. وبمساعدة غير متوقعة من شابة، سيحاول منع العصابة من الهرب بغنائمهم.",
-        "poster_path": "/jm6lNbpmKcxX6M0pieaKhP6hs3w.jpg",
-        "vote_average": 6.045,
-        "release_date": "2025-01-31",
-        "popularity": 6.8248
-    },
-    {
-        "id": 319,
-        "type": "movie",
-        "title": "True Romance",
-        "title_ar": "True Romance",
-        "overview": "Clarence marries hooker Alabama, steals cocaine from her pimp, and tries to sell it in Hollywood, while the owners of the coke try to reclaim it.",
-        "overview_ar": "Clarence marries hooker Alabama, steals cocaine from her pimp, and tries to sell it in Hollywood, while the owners of the coke try to reclaim it.",
-        "poster_path": "/39lXk6ud6KiJgGbbWI2PUKS7y2.jpg",
-        "vote_average": 7.5,
-        "release_date": "1993-09-09",
-        "popularity": 7.0047
-    },
-    {
         "id": 1145221,
         "type": "movie",
         "title": "It Feeds",
@@ -22594,6 +22570,18 @@
         "vote_average": 6.719,
         "release_date": "2025-04-17",
         "popularity": 6.3635
+    },
+    {
+        "id": 936075,
+        "type": "movie",
+        "title": "Michael",
+        "title_ar": "Michael",
+        "overview": "Discover the story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music, tracing his journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+        "overview_ar": "Discover the story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music, tracing his journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+        "poster_path": "/j57QWe3OoaXL9Idi9gLtsAybWLP.jpg",
+        "vote_average": 0.0,
+        "release_date": "2026-04-22",
+        "popularity": 7.0495
     },
     {
         "id": 6637,
@@ -22798,6 +22786,18 @@
         "vote_average": 5.9,
         "release_date": "2001-06-15",
         "popularity": 6.1611
+    },
+    {
+        "id": 11507,
+        "type": "movie",
+        "title": "Body Double",
+        "title_ar": "Body Double",
+        "overview": "After losing an acting role and his girlfriend, Jake Scully finally catches a break: he gets offered a gig house-sitting in the Hollywood Hills. While peering through the beautiful home's telescope one night, he spies a gorgeous woman dancing in her window. But when he witnesses the girl's murder, it leads Scully through the netherworld of the adult entertainment industry on a search for answers—with porn actress Holly Body as his guide.",
+        "overview_ar": "After losing an acting role and his girlfriend, Jake Scully finally catches a break: he gets offered a gig house-sitting in the Hollywood Hills. While peering through the beautiful home's telescope one night, he spies a gorgeous woman dancing in her window. But when he witnesses the girl's murder, it leads Scully through the netherworld of the adult entertainment industry on a search for answers—with porn actress Holly Body as his guide.",
+        "poster_path": "/lRFm5P2AdOGpELwm3HHhmUz6k5I.jpg",
+        "vote_average": 6.769,
+        "release_date": "1984-10-25",
+        "popularity": 6.6857
     },
     {
         "id": 844398,
@@ -23040,30 +23040,6 @@
         "popularity": 7.7621
     },
     {
-        "id": 87516,
-        "type": "movie",
-        "title": "Oldboy",
-        "title_ar": "Oldboy",
-        "overview": "A man has only three and a half days and limited resources to discover why he was imprisoned in a nondescript room for 20 years without any explanation.",
-        "overview_ar": "لدى الرجل اليومي ثلاثة أيام ونصف فقط وموارد محدودة لاكتشاف سبب سجنه في غرفة لا توصف لمدة 20 عامًا دون أي تفسير.",
-        "poster_path": "/iX93YdBrZA1EpGbphmjf4ARj1Za.jpg",
-        "vote_average": 5.914,
-        "release_date": "2013-11-14",
-        "popularity": 6.7292
-    },
-    {
-        "id": 196867,
-        "type": "movie",
-        "title": "Annie",
-        "title_ar": "Annie",
-        "overview": "Annie is a young, happy foster kid who's also tough enough to make her way on the streets of New York in 2014. Originally left by her parents as a baby with the promise that they'd be back for her someday, it's been a hard knock life ever since with her mean foster mom Miss Hannigan. But everything's about to change when the hard-nosed tycoon and New York mayoral candidate Will Stacks—advised by his brilliant VP and his shrewd and scheming campaign advisor—makes a thinly-veiled campaign move and takes her in. Stacks believes he's her guardian angel, but Annie's self-assured nature and bright, sun-will-come-out-tomorrow outlook on life just might mean it's the other way around.",
-        "overview_ar": "آني هي طفلة حاضنة صغيرة وسعيدة ، كما أنها قوية بما يكفي لتشق طريقها في شوارع نيويورك في عام 2014. تركها والداها في الأصل عندما كانت طفلة مع وعد بأنهما سيعودان لها يومًا ما ، كان الأمر صعبًا تدق الحياة منذ ذلك الحين مع والدتها بالتبني الآنسة هانيجان. لكن كل شيء على وشك أن يتغير عندما يقوم رجل الأعمال المتشدد ومرشح عمدة نيويورك ويل ستاكس - الذي نصحه نائب رئيسه اللامع ومستشار حملته الداهية والمكر - بحركة حملته غير واضحة ويأخذها. تعتقد Stacks أنه الملاك الحارس ، لكن طبيعة آني الواثقة من نفسها والنظرة المشرقة للحياة في الغد والشمس قد تعني أنها في الاتجاه المعاكس.",
-        "poster_path": "/aKAM9V0izx4VhsdyAdBvAB26UCZ.jpg",
-        "vote_average": 6.237,
-        "release_date": "2014-12-18",
-        "popularity": 7.7621
-    },
-    {
         "id": 259695,
         "type": "movie",
         "title": "Live by Night",
@@ -23098,6 +23074,18 @@
         "vote_average": 6.771,
         "release_date": "2022-09-21",
         "popularity": 5.6944
+    },
+    {
+        "id": 1262815,
+        "type": "movie",
+        "title": "The Choral",
+        "title_ar": "The Choral",
+        "overview": "As World War I rages on, Dr. Henry Guthrie takes over a British choral society that's lost most of its men to the army. The community soon discovers that the best response to the chaos of war is to make beautiful music together.",
+        "overview_ar": "As World War I rages on, Dr. Henry Guthrie takes over a British choral society that's lost most of its men to the army. The community soon discovers that the best response to the chaos of war is to make beautiful music together.",
+        "poster_path": "/yQtms7CSM0CE0W6dYbLLAATb5rL.jpg",
+        "vote_average": 6.1,
+        "release_date": "2025-11-07",
+        "popularity": 6.9791
     },
     {
         "id": 314365,
@@ -23407,7 +23395,7 @@
         "overview": "Big Nick is back on the hunt in Europe and closing in on Donnie, who is embroiled in the treacherous and unpredictable world of diamond thieves and the infamous Panther mafia, as they plot a massive heist of the world's largest diamond exchange.",
         "overview_ar": "يعود \"بيغ نيك\" للمطاردة في أوروبا ويقترب من \"دوني\" الذي يتورط في عالم لصوص الألماس الغادر والمتقلب الذي لا يمكن التنبؤ به ومافيا الفهود سيئة السمعة، حيث يخططون لعملية سرقة ضخمة لأكبر بورصة ألماس في العالم.",
         "poster_path": "/rxcyxxarD17xMliStDEhM6y2AYQ.jpg",
-        "vote_average": 6.6,
+        "vote_average": 6.598,
         "release_date": "2025-01-08",
         "popularity": 5.3609
     },
@@ -23518,6 +23506,18 @@
         "vote_average": 7.311,
         "release_date": "1980-06-27",
         "popularity": 7.2496
+    },
+    {
+        "id": 1159206,
+        "type": "movie",
+        "title": "Father Mother Sister Brother",
+        "title_ar": "Father Mother Sister Brother",
+        "overview": "Three stories concerning the relationships between adult children, their somewhat distant parent (or parents), and each other: a reclusive father visited by his grown children in the US, sisters visiting their novelist mother in Dublin, and adult twins called back to their Paris apartment to address a family tragedy.",
+        "overview_ar": "Three stories concerning the relationships between adult children, their somewhat distant parent (or parents), and each other: a reclusive father visited by his grown children in the US, sisters visiting their novelist mother in Dublin, and adult twins called back to their Paris apartment to address a family tragedy.",
+        "poster_path": "/zewZA6sL52YSH8xIH4wbG5GadjV.jpg",
+        "vote_average": 6.558,
+        "release_date": "2025-12-01",
+        "popularity": 6.1056
     },
     {
         "id": 816904,

@@ -2400,6 +2400,18 @@
         "popularity": 54.7013
     },
     {
+        "id": 74561,
+        "type": "tv",
+        "title": "Who's the Murderer",
+        "title_ar": "明星大侦探",
+        "overview": "The cast is introduced to the settings and suspects of a murder case for the new episode. The cast then chooses their role in the episode, as a particular suspect or the detective.",
+        "overview_ar": "The cast is introduced to the settings and suspects of a murder case for the new episode. The cast then chooses their role in the episode, as a particular suspect or the detective.",
+        "poster_path": "/bBtd3p4DZmVEuv8L9SelQ0MVE2B.jpg",
+        "vote_average": 8.4,
+        "release_date": "2016-03-27",
+        "popularity": 54.7013
+    },
+    {
         "id": 12786,
         "type": "tv",
         "title": "Murdoch Mysteries",
@@ -2491,7 +2503,7 @@
         "overview": "ER explores the inner workings of an urban teaching hospital and the critical issues faced by the dedicated physicians and staff of its overburdened emergency room.",
         "overview_ar": "ER explores the inner workings of an urban teaching hospital and the critical issues faced by the dedicated physicians and staff of its overburdened emergency room.",
         "poster_path": "/fuS63AoFTkprf8PFeL1f8z68zJr.jpg",
-        "vote_average": 7.8,
+        "vote_average": 7.827,
         "release_date": "1994-09-19",
         "popularity": 57.4238
     },
@@ -2551,7 +2563,7 @@
         "overview": "To fulfill his dreams of becoming a legendary Hunter like his dad, a young boy must pass a rigorous examination and find his missing father.",
         "overview_ar": "تبدأ القصة باكتشاف غون أن والده لا يزال حياً من قبل صياد غريب قدم إلى قريته، فانطلق في رحلة للبحث عن أبيه والحصول على رخصة الصيد عبر دخوله لامتحان الصيادين، متجاوزاً الصعاب العديدة التي كانت تواجهه بمساعدة أصدقائه الذين التقى بهم خلال رحلته. تتميز القصة بحبكة فريدة من نوعها، وباعتمادها على بعضاً من الأخلاقيات كأساس لها، مثل الشجاعة والصداقة. كذلك، تنقسم القصة إلى عدة أجزاء، كل منها يمثل مرحلة معينة، تتميز باختلافها عن باقي الأجزاء، وبارتباطها معاً في الآن نفسه",
         "poster_path": "/i2EEr2uBvRlAwJ8d8zTG2Y19mIa.jpg",
-        "vote_average": 8.668,
+        "vote_average": 8.667,
         "release_date": "2011-10-02",
         "popularity": 56.8855
     },
@@ -2626,18 +2638,6 @@
         "vote_average": 7.629,
         "release_date": "2015-08-23",
         "popularity": 57.6901
-    },
-    {
-        "id": 1438,
-        "type": "tv",
-        "title": "The Wire",
-        "title_ar": "The Wire",
-        "overview": "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated.",
-        "overview_ar": "Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated.",
-        "poster_path": "/4lbclFySvugI51fwsyxBTOm4DqK.jpg",
-        "vote_average": 8.614,
-        "release_date": "2002-06-02",
-        "popularity": 56.6507
     },
     {
         "id": 1438,
@@ -5391,7 +5391,7 @@
         "id": 223911,
         "type": "tv",
         "title": "Renegade Immortal",
-        "title_ar": "Renegade Immortal",
+        "title_ar": "仙逆",
         "overview": "It tells the story of Wang Lin, an ordinary young man in the countryside, who is moved by his heart and cultivates against immortality. His pursuit is not only for longevity, but also for getting rid of the ants behind it. He firmly believed in human beings and entered the path of cultivation with mediocre qualifications. After experiencing ups and downs, with his wise mind, he gradually reached the pinnacle and became famous in the cultivation world with his own strength.",
         "overview_ar": "It tells the story of Wang Lin, an ordinary young man in the countryside, who is moved by his heart and cultivates against immortality. His pursuit is not only for longevity, but also for getting rid of the ants behind it. He firmly believed in human beings and entered the path of cultivation with mediocre qualifications. After experiencing ups and downs, with his wise mind, he gradually reached the pinnacle and became famous in the cultivation world with his own strength.",
         "poster_path": "/6AVM12M6UunFmX0bSmP2o4N5Bnt.jpg",
@@ -5703,7 +5703,7 @@
         "id": 154770,
         "type": "tv",
         "title": "Hello Saturday",
-        "title_ar": "Hello Saturday",
+        "title_ar": "你好，星期六",
         "overview": "\"Hello, Saturday\" is the rebranding of the popular Chinese show \"Happy Camp\", hosted by He Jiong and with a fixed group of regular celebrity members.\n\nThe program showcases the talent of various stars as well as social topics through creative and diverse content and games. It aims to spread positive energy while keeping up with the current trends and leading youth culture.",
         "overview_ar": "\"Hello, Saturday\" is the rebranding of the popular Chinese show \"Happy Camp\", hosted by He Jiong and with a fixed group of regular celebrity members.\n\nThe program showcases the talent of various stars as well as social topics through creative and diverse content and games. It aims to spread positive energy while keeping up with the current trends and leading youth culture.",
         "poster_path": "/wsTjWy6NE2s3h0neChr0D92ddwI.jpg",
@@ -5746,6 +5746,18 @@
         "vote_average": 7.756,
         "release_date": "1985-09-27",
         "popularity": 36.4029
+    },
+    {
+        "id": 2179,
+        "type": "tv",
+        "title": "Quincy, M.E.",
+        "title_ar": "Quincy, M.E.",
+        "overview": "Los Angeles County medical examiner Quincy routinely engages in police investigations.",
+        "overview_ar": "Los Angeles County medical examiner Quincy routinely engages in police investigations.",
+        "poster_path": "/e0bsxZqhE5fhRjaX2LKu8GuKccE.jpg",
+        "vote_average": 7.491,
+        "release_date": "1976-10-03",
+        "popularity": 34.4046
     },
     {
         "id": 2179,
@@ -5986,18 +5998,6 @@
         "vote_average": 7.495,
         "release_date": "2013-06-30",
         "popularity": 37.5612
-    },
-    {
-        "id": 86310,
-        "type": "tv",
-        "title": "RadhaKrishn",
-        "title_ar": "राधाकृष्ण",
-        "overview": "The story of Radha and Krishna is the epitome of eternal love, which transcends eras and emotions.",
-        "overview_ar": "The story of Radha and Krishna is the epitome of eternal love, which transcends eras and emotions.",
-        "poster_path": "/3SiMmfY0663JmjpAfftmj1h6XGP.jpg",
-        "vote_average": 9.0,
-        "release_date": "2018-10-01",
-        "popularity": 35.0831
     },
     {
         "id": 60866,
@@ -10080,18 +10080,6 @@
         "popularity": 25.9086
     },
     {
-        "id": 4583,
-        "type": "tv",
-        "title": "Derrick",
-        "title_ar": "Derrick",
-        "overview": "Derrick was a German TV series produced by Telenova Film und Fernsehproduktion in association with ZDF, ORF and SRG between 1974 and 1998 about Detective Chief Inspector Stephan Derrick and his loyal assistant Inspector Harry Klein, who solve murder cases in Munich and surroundings.",
-        "overview_ar": "Derrick was a German TV series produced by Telenova Film und Fernsehproduktion in association with ZDF, ORF and SRG between 1974 and 1998 about Detective Chief Inspector Stephan Derrick and his loyal assistant Inspector Harry Klein, who solve murder cases in Munich and surroundings.",
-        "poster_path": "/5HPuyO4V3rcoMgPZmgcdKJrdXUI.jpg",
-        "vote_average": 6.0,
-        "release_date": "1974-10-20",
-        "popularity": 32.4384
-    },
-    {
         "id": 31585,
         "type": "tv",
         "title": "Rookie Blue",
@@ -10152,18 +10140,6 @@
         "popularity": 25.9002
     },
     {
-        "id": 15804,
-        "type": "tv",
-        "title": "Batman: The Brave and the Bold",
-        "title_ar": "Batman: The Brave and the Bold",
-        "overview": "The Caped Crusader is teamed up with Blue Beetle, Green Arrow, Aquaman and countless others in his quest to uphold justice.",
-        "overview_ar": "The Caped Crusader is teamed up with Blue Beetle, Green Arrow, Aquaman and countless others in his quest to uphold justice.",
-        "poster_path": "/ukXZ1N9Pd99vDNetFKYNpFYgoXF.jpg",
-        "vote_average": 7.6,
-        "release_date": "2008-11-14",
-        "popularity": 25.075
-    },
-    {
         "id": 72755,
         "type": "tv",
         "title": "Absentia",
@@ -10207,7 +10183,7 @@
         "overview": "In Chicago, Marissa Irvine arrives at 14 Arthur Avenue, expecting to pick up her young son Milo from his first playdate with a boy at his new school. But the woman who answers the door isn't a mother she recognizes. She isn't the nanny. She doesn't have Milo. And so begins every parent's worst nightmare.",
         "overview_ar": "In Chicago, Marissa Irvine arrives at 14 Arthur Avenue, expecting to pick up her young son Milo from his first playdate with a boy at his new school. But the woman who answers the door isn't a mother she recognizes. She isn't the nanny. She doesn't have Milo. And so begins every parent's worst nightmare.",
         "poster_path": "/o8vZKZlc8H4OcgpbJuqP0iK4B2.jpg",
-        "vote_average": 8.127,
+        "vote_average": 8.111,
         "release_date": "2025-11-07",
         "popularity": 26.3448
     },
@@ -10315,9 +10291,33 @@
         "overview": "The Tudors is a history-based drama series following the young, vibrant King Henry VIII, a competitive and lustful monarch who navigates the intrigues of the English court and the human heart with equal vigor and justifiable suspicion.",
         "overview_ar": "The Tudors is a history-based drama series following the young, vibrant King Henry VIII, a competitive and lustful monarch who navigates the intrigues of the English court and the human heart with equal vigor and justifiable suspicion.",
         "poster_path": "/7wmyiVEhmJ7OUvwBIsvOFqMa0q9.jpg",
-        "vote_average": 7.805,
+        "vote_average": 7.807,
         "release_date": "2007-04-01",
         "popularity": 27.569
+    },
+    {
+        "id": 3572,
+        "type": "tv",
+        "title": "Kojak",
+        "title_ar": "Kojak",
+        "overview": "A bald, lollipop sucking police detective with a fiery righteous attitude battles crime in New York City.",
+        "overview_ar": "A bald, lollipop sucking police detective with a fiery righteous attitude battles crime in New York City.",
+        "poster_path": "/7F1eH97Bpi8zQbc172drbJCsOsG.jpg",
+        "vote_average": 7.1,
+        "release_date": "1973-10-24",
+        "popularity": 19.083
+    },
+    {
+        "id": 271548,
+        "type": "tv",
+        "title": "6 of Us",
+        "title_ar": "6 of Us",
+        "overview": "A story of six siblings—Azize, Cemo, Zeliha, Fidan, Samet, and Balım—who, after suddenly losing their parents, struggle to stay united and survive. The roots of their tragedy trace back to their parents, Bala and Rıfat, whose forbidden love began in a village in Mardin. Rıfat, a teacher, falls in love with Bala, but Yavuz, the wealthy and obsessive son of Mardin’s richest family, kidnaps her. Despite his abuse, Bala escapes with Rıfat, and they build a secluded life in the forest, raising six children in peace. However, Yavuz’s revenge shatters their world when he finds and attacks them. Fleeing to Istanbul, the siblings face the dangers of the city while seeking refuge with “Uncle Aslan,” their father’s trusted friend. The story highlights resilience, as the older siblings are forced to grow up quickly to protect their younger brothers and sisters in the face of overwhelming challenges.",
+        "overview_ar": "A story of six siblings—Azize, Cemo, Zeliha, Fidan, Samet, and Balım—who, after suddenly losing their parents, struggle to stay united and survive. The roots of their tragedy trace back to their parents, Bala and Rıfat, whose forbidden love began in a village in Mardin. Rıfat, a teacher, falls in love with Bala, but Yavuz, the wealthy and obsessive son of Mardin’s richest family, kidnaps her. Despite his abuse, Bala escapes with Rıfat, and they build a secluded life in the forest, raising six children in peace. However, Yavuz’s revenge shatters their world when he finds and attacks them. Fleeing to Istanbul, the siblings face the dangers of the city while seeking refuge with “Uncle Aslan,” their father’s trusted friend. The story highlights resilience, as the older siblings are forced to grow up quickly to protect their younger brothers and sisters in the face of overwhelming challenges.",
+        "poster_path": "/l0g0CAq7VjoKslVE9JZZQFMI9Tt.jpg",
+        "vote_average": 5.5,
+        "release_date": "2024-11-13",
+        "popularity": 28.6142
     },
     {
         "id": 3572,
@@ -12003,9 +12003,9 @@
         "id": 219826,
         "type": "tv",
         "title": "My Name Is Farah",
-        "title_ar": "اسمي فرح",
+        "title_ar": "My Name Is Farah",
         "overview": "A murder unintentionally witnessed by Farah, who had to flee her country and illegally struggle to survive with her son, and Tahir Lekesiz, whom she met on the same night, will change their lives forever.",
-        "overview_ar": "عندما تشهد لاجئة إيرانية في اسطنبول على جريمة قتل، تصبح مستهدفة من قبل المافيا المحلية. حينئذ، يتوجب عليها إنقاذ نفسها وحماية ابنها المصاب بمرض مزمن.",
+        "overview_ar": "A murder unintentionally witnessed by Farah, who had to flee her country and illegally struggle to survive with her son, and Tahir Lekesiz, whom she met on the same night, will change their lives forever.",
         "poster_path": "/Aj4qfs1KxhdfcPphWyJiTNYXirE.jpg",
         "vote_average": 8.719,
         "release_date": "2023-03-01",
@@ -18960,30 +18960,6 @@
         "popularity": 20.5654
     },
     {
-        "id": 81046,
-        "type": "tv",
-        "title": "The Dragon Prince",
-        "title_ar": "The Dragon Prince",
-        "overview": "An extraordinary discovery inspires two human princes and an elven assassin to team up on an epic quest to bring peace to their warring lands.",
-        "overview_ar": "An extraordinary discovery inspires two human princes and an elven assassin to team up on an epic quest to bring peace to their warring lands.",
-        "poster_path": "/d7PIRa6ez7ZEl9D4JUrnSsmcnVD.jpg",
-        "vote_average": 8.213,
-        "release_date": "2018-09-14",
-        "popularity": 18.7748
-    },
-    {
-        "id": 309280,
-        "type": "tv",
-        "title": "Baddies USA",
-        "title_ar": "Baddies USA",
-        "overview": "Baddies USA is the eighth season of the popular Zeus Network reality franchise, serving as an all-star, cross-country edition featuring veteran cast members from previous Baddies seasons and Bad Girls Club, focusing on promotional events, touring U.S. cities, and inevitable drama, fights, and unexpected alliances among personalities like Natalie Nunn, Rollie, Tommie Lee, Chrisean Rock, and Tanisha Thomas, all centered around hosting parties and confronting personal beefs.",
-        "overview_ar": "Baddies USA is the eighth season of the popular Zeus Network reality franchise, serving as an all-star, cross-country edition featuring veteran cast members from previous Baddies seasons and Bad Girls Club, focusing on promotional events, touring U.S. cities, and inevitable drama, fights, and unexpected alliances among personalities like Natalie Nunn, Rollie, Tommie Lee, Chrisean Rock, and Tanisha Thomas, all centered around hosting parties and confronting personal beefs.",
-        "poster_path": "/27IYhrFLxogxRNKIVWivDnNfwF9.jpg",
-        "vote_average": 9.375,
-        "release_date": "2025-11-23",
-        "popularity": 20.5654
-    },
-    {
         "id": 5031,
         "type": "tv",
         "title": "The Fall Guy",
@@ -19066,6 +19042,42 @@
         "vote_average": 7.73,
         "release_date": "2015-10-31",
         "popularity": 18.1078
+    },
+    {
+        "id": 18123,
+        "type": "tv",
+        "title": "Scooby-Doo! Mystery Incorporated",
+        "title_ar": "Scooby-Doo! Mystery Incorporated",
+        "overview": "This incarnation of the popular cartoon series finds Scooby and the gang living in Crystal Cove, a small town with a long history of ghost sightings, monster tales and other mysteries ripe for the sleuths to solve once and for all. But the longstanding Crystal Cove residents, who bank on the town's reputation to attract tourists, are prepared to do what it takes to protect their turf.",
+        "overview_ar": "This incarnation of the popular cartoon series finds Scooby and the gang living in Crystal Cove, a small town with a long history of ghost sightings, monster tales and other mysteries ripe for the sleuths to solve once and for all. But the longstanding Crystal Cove residents, who bank on the town's reputation to attract tourists, are prepared to do what it takes to protect their turf.",
+        "poster_path": "/crKsdtMuN7Y2JdXmmkzIrQzzo36.jpg",
+        "vote_average": 8.2,
+        "release_date": "2010-07-12",
+        "popularity": 19.1004
+    },
+    {
+        "id": 236534,
+        "type": "tv",
+        "title": "Tales of Herding Gods",
+        "title_ar": "Tales of Herding Gods",
+        "overview": "",
+        "overview_ar": "",
+        "poster_path": "/k6q3k6lUvjbYdgQyqIGVaY9VlAm.jpg",
+        "vote_average": 8.2,
+        "release_date": "2024-10-27",
+        "popularity": 19.095
+    },
+    {
+        "id": 38409,
+        "type": "tv",
+        "title": "RuPaul's Drag Race: Untucked",
+        "title_ar": "RuPaul's Drag Race: Untucked",
+        "overview": "The access-all-areas pass to the drama that you didn't see on the runway—the backstage bitchiness, the catfights, the struggles, the tears and the secrets. See what happens behind the scenes of RuPaul's Drag Race when the queens let their tucks breathe... and let their emotions flow.",
+        "overview_ar": "The access-all-areas pass to the drama that you didn't see on the runway—the backstage bitchiness, the catfights, the struggles, the tears and the secrets. See what happens behind the scenes of RuPaul's Drag Race when the queens let their tucks breathe... and let their emotions flow.",
+        "poster_path": "/2KU7A0jvylEZfYyR5O2ZbnMt9TK.jpg",
+        "vote_average": 6.1,
+        "release_date": "2010-02-01",
+        "popularity": 19.0841
     },
     {
         "id": 2430,
@@ -19356,18 +19368,6 @@
         "popularity": 15.4889
     },
     {
-        "id": 13700,
-        "type": "tv",
-        "title": "Indian Idol",
-        "title_ar": "Indian Idol",
-        "overview": "The Indian version of the Pop Idol format.",
-        "overview_ar": "The Indian version of the Pop Idol format.",
-        "poster_path": "/jCMw8httzGvjTu0NZjiclqUQD6c.jpg",
-        "vote_average": 6.1,
-        "release_date": "2004-10-28",
-        "popularity": 15.6565
-    },
-    {
         "id": 1848,
         "type": "tv",
         "title": "Winx Club",
@@ -19404,18 +19404,6 @@
         "popularity": 15.5947
     },
     {
-        "id": 282810,
-        "type": "tv",
-        "title": "The Judge Returns",
-        "title_ar": "The Judge Returns",
-        "overview": "The return of corrupt judge Lee Han-young, who was a slave to a large law firm, to the past 10 years ago. He makes new choices to punish evil and implement justice.",
-        "overview_ar": "The return of corrupt judge Lee Han-young, who was a slave to a large law firm, to the past 10 years ago. He makes new choices to punish evil and implement justice.",
-        "poster_path": "/AjLnvyKlbTPS9DnX8exBqF2RTIU.jpg",
-        "vote_average": 10.0,
-        "release_date": "2026-01-02",
-        "popularity": 20.9189
-    },
-    {
         "id": 202101,
         "type": "tv",
         "title": "Night Court",
@@ -19438,6 +19426,18 @@
         "vote_average": 7.5,
         "release_date": "2024-09-30",
         "popularity": 18.8919
+    },
+    {
+        "id": 119845,
+        "type": "tv",
+        "title": "Power Book IV: Force",
+        "title_ar": "Power Book IV: Force",
+        "overview": "Tommy Egan leaves New York behind and plans to take on Chicago, using his outsider status to break all the local rules and rewrite them on his quest to become the biggest drug dealer in the city.",
+        "overview_ar": "Tommy Egan leaves New York behind and plans to take on Chicago, using his outsider status to break all the local rules and rewrite them on his quest to become the biggest drug dealer in the city.",
+        "poster_path": "/cR0ursLXoT0zfX9XDGAzQRAnK0W.jpg",
+        "vote_average": 8.325,
+        "release_date": "2022-02-06",
+        "popularity": 18.2164
     },
     {
         "id": 119845,
@@ -21360,30 +21360,6 @@
         "popularity": 15.4871
     },
     {
-        "id": 117030,
-        "type": "tv",
-        "title": "We Baby Bears",
-        "title_ar": "We Baby Bears",
-        "overview": "Follow Grizz, Panda and Ice Bear – as their younger baby selves – traveling in a magical box to fantastic new worlds searching for a place to call home. Along the way, they meet new friends, learn a few lessons and discover that “home” can mean wherever they are, as long as they’re together.",
-        "overview_ar": "Follow Grizz, Panda and Ice Bear – as their younger baby selves – traveling in a magical box to fantastic new worlds searching for a place to call home. Along the way, they meet new friends, learn a few lessons and discover that “home” can mean wherever they are, as long as they’re together.",
-        "poster_path": "/cXJ1m6f8KORhoIcrPSOYap56aAe.jpg",
-        "vote_average": 7.2,
-        "release_date": "2022-01-01",
-        "popularity": 15.4871
-    },
-    {
-        "id": 223731,
-        "type": "tv",
-        "title": "Potol Kumar Gaanwala",
-        "title_ar": "Potol Kumar Gaanwala",
-        "overview": "Potol, a singing prodigy, lives in a village with her mother, uncle and aunt. However, after her mother's death, she sets out to search for her father, whose identity she does not know.",
-        "overview_ar": "Potol, a singing prodigy, lives in a village with her mother, uncle and aunt. However, after her mother's death, she sets out to search for her father, whose identity she does not know.",
-        "poster_path": "/mjU2bDDZBgKRvpgZER2KkLb83sb.jpg",
-        "vote_average": 10.0,
-        "release_date": "2015-12-14",
-        "popularity": 16.7348
-    },
-    {
         "id": 387,
         "type": "tv",
         "title": "SpongeBob SquarePants",
@@ -21492,18 +21468,6 @@
         "popularity": 15.667
     },
     {
-        "id": 4615,
-        "type": "tv",
-        "title": "Hercules: The Legendary Journeys",
-        "title_ar": "Hercules: The Legendary Journeys",
-        "overview": "The legendary son of Zeus journeys across the earth fighting monsters and helping people.",
-        "overview_ar": "The legendary son of Zeus journeys across the earth fighting monsters and helping people.",
-        "poster_path": "/AbmVXsi7Btr6cvppvaHAZflnjTC.jpg",
-        "vote_average": 7.0,
-        "release_date": "1995-01-29",
-        "popularity": 15.9872
-    },
-    {
         "id": 33922,
         "type": "tv",
         "title": "Portlandia",
@@ -21562,6 +21526,18 @@
         "vote_average": 8.0,
         "release_date": "2024-04-02",
         "popularity": 15.0107
+    },
+    {
+        "id": 241372,
+        "type": "tv",
+        "title": "56 Days",
+        "title_ar": "56 Days",
+        "overview": "After meeting randomly in a supermarket, Oliver and Ciara fall for each other fast, and dangerously hard. Fifty-six days later, homicide investigators arrive at Oliver's apartment to find an unidentified body—brutally murdered and intentionally decomposed.",
+        "overview_ar": "After meeting randomly in a supermarket, Oliver and Ciara fall for each other fast, and dangerously hard. Fifty-six days later, homicide investigators arrive at Oliver's apartment to find an unidentified body—brutally murdered and intentionally decomposed.",
+        "poster_path": "/sdJLbucggwGj8NdX0UN2zt1Vwmn.jpg",
+        "vote_average": 0.0,
+        "release_date": "2026-02-18",
+        "popularity": 17.594
     },
     {
         "id": 91552,
@@ -21756,6 +21732,18 @@
         "popularity": 15.2341
     },
     {
+        "id": 197368,
+        "type": "tv",
+        "title": "Blue Orchestra",
+        "title_ar": "Blue Orchestra",
+        "overview": "In the fall of his third and final year of middle school, Hajime Aono, a violin prodigy, stopped playing violin for his own personal reasons. But it was also that year when he got to know a girl who told him about a high school with a prestigious school orchestra. Suddenly, the gears in the clock of Aono's life began to turn again. This is the story of a youth drama that brings forth the harmony between music and the heart!",
+        "overview_ar": "In the fall of his third and final year of middle school, Hajime Aono, a violin prodigy, stopped playing violin for his own personal reasons. But it was also that year when he got to know a girl who told him about a high school with a prestigious school orchestra. Suddenly, the gears in the clock of Aono's life began to turn again. This is the story of a youth drama that brings forth the harmony between music and the heart!",
+        "poster_path": "/5FVHmNW0ARlYSa7R0BZCuEfo7ei.jpg",
+        "vote_average": 7.0,
+        "release_date": "2023-04-09",
+        "popularity": 17.49
+    },
+    {
         "id": 80281,
         "type": "tv",
         "title": "Larva",
@@ -21838,6 +21826,18 @@
         "vote_average": 7.5,
         "release_date": "2024-09-18",
         "popularity": 16.3452
+    },
+    {
+        "id": 1600,
+        "type": "tv",
+        "title": "Ned's Declassified School Survival Guide",
+        "title_ar": "Ned's Declassified School Survival Guide",
+        "overview": "The whacky adventures of Ned Bigby and his best pals Moze and Cookie at James K. Polk Middle School, as \"every-kid\" Ned shatters the fourth wall to share tips and tricks on navigating middle school or junior high hurdles. Ned's not super cool, and he has no superpowers. He is, however, witty, well-groomed, upbeat and self-aware. Moreover, with more than a little help from his two best friends, he's equipped to conquer middle school minefields. From crushing bullies to crushes, from off- the-wall, mean and cool teachers to pop quizzes, elections and detentions, Ned knows that nothing, including the seventh grade, is as bad as it seems, and friendship matters most.",
+        "overview_ar": "The whacky adventures of Ned Bigby and his best pals Moze and Cookie at James K. Polk Middle School, as \"every-kid\" Ned shatters the fourth wall to share tips and tricks on navigating middle school or junior high hurdles. Ned's not super cool, and he has no superpowers. He is, however, witty, well-groomed, upbeat and self-aware. Moreover, with more than a little help from his two best friends, he's equipped to conquer middle school minefields. From crushing bullies to crushes, from off- the-wall, mean and cool teachers to pop quizzes, elections and detentions, Ned knows that nothing, including the seventh grade, is as bad as it seems, and friendship matters most.",
+        "poster_path": "/3kUXoJFmj6vOdmqMMoiYZj0eY2F.jpg",
+        "vote_average": 8.482,
+        "release_date": "2004-09-12",
+        "popularity": 17.3199
     },
     {
         "id": 1600,
