@@ -1680,6 +1680,18 @@
         "popularity": 69.9636
     },
     {
+        "id": 580,
+        "type": "tv",
+        "title": "Star Trek: Deep Space Nine",
+        "title_ar": "Star Trek: Deep Space Nine",
+        "overview": "At Deep Space Nine, a space station located next to a wormhole in the vicinity of the liberated planet of Bajor, Commander Sisko and crew welcome alien visitors, root out evildoers and solve all types of unexpected problems that come their way.",
+        "overview_ar": "At Deep Space Nine, a space station located next to a wormhole in the vicinity of the liberated planet of Bajor, Commander Sisko and crew welcome alien visitors, root out evildoers and solve all types of unexpected problems that come their way.",
+        "poster_path": "/vE6138ykaEXQkCSEHyuBIgfGlUZ.jpg",
+        "vote_average": 7.9,
+        "release_date": "1993-01-03",
+        "popularity": 69.9636
+    },
+    {
         "id": 63247,
         "type": "tv",
         "title": "Westworld",
@@ -1692,18 +1704,6 @@
         "popularity": 67.9623
     },
     {
-        "id": 273977,
-        "type": "tv",
-        "title": "The Art of Sarah",
-        "title_ar": "فنون سارا",
-        "overview": "A body found in the middle of town. A luxe label on the rise. A detective tests every stitch of a woman's story that keeps changing. What really happened?",
-        "overview_ar": "ما بين جثّة تظهر في وسط المدينة وعلامة تجارية فاخرة تشقّ طريقها نحو النجاح، يختبر محقق كل خيط في رواية امرأة تتبدّل تفاصيلها باستمرار... فماذا حدث حقًّا؟",
-        "poster_path": "/nP2PRGSmLdbZtQtoXPPppcDAsNw.jpg",
-        "vote_average": 8.0,
-        "release_date": "2026-02-13",
-        "popularity": 107.0238
-    },
-    {
         "id": 32415,
         "type": "tv",
         "title": "Conan",
@@ -1711,7 +1711,7 @@
         "overview": "A late night television talk show hosted by  Conan O'Brien.",
         "overview_ar": "A late night television talk show hosted by  Conan O'Brien.",
         "poster_path": "/oQxrvUhP3ycwnlxIrIMQ9Z3kleq.jpg",
-        "vote_average": 7.1,
+        "vote_average": 7.118,
         "release_date": "2010-11-08",
         "popularity": 68.8402
     },
@@ -1812,18 +1812,6 @@
         "popularity": 64.6861
     },
     {
-        "id": 41956,
-        "type": "tv",
-        "title": "Death in Paradise",
-        "title_ar": "Death in Paradise",
-        "overview": "A brilliant but idiosyncratic British detective and his resourceful local team solve baffling murder mysteries on the fictional Caribbean island of Saint Marie.",
-        "overview_ar": "A brilliant but idiosyncratic British detective and his resourceful local team solve baffling murder mysteries on the fictional Caribbean island of Saint Marie.",
-        "poster_path": "/u7t6vCyqAdD5hE4eEfTrZmVljDi.jpg",
-        "vote_average": 7.5,
-        "release_date": "2011-10-25",
-        "popularity": 70.567
-    },
-    {
         "id": 4194,
         "type": "tv",
         "title": "Star Wars: The Clone Wars",
@@ -1872,6 +1860,18 @@
         "popularity": 60.8954
     },
     {
+        "id": 41956,
+        "type": "tv",
+        "title": "Death in Paradise",
+        "title_ar": "Death in Paradise",
+        "overview": "A brilliant but idiosyncratic British detective and his resourceful local team solve baffling murder mysteries on the fictional Caribbean island of Saint Marie.",
+        "overview_ar": "A brilliant but idiosyncratic British detective and his resourceful local team solve baffling murder mysteries on the fictional Caribbean island of Saint Marie.",
+        "poster_path": "/u7t6vCyqAdD5hE4eEfTrZmVljDi.jpg",
+        "vote_average": 7.5,
+        "release_date": "2011-10-25",
+        "popularity": 70.567
+    },
+    {
         "id": 8592,
         "type": "tv",
         "title": "Parks and Recreation",
@@ -1891,7 +1891,7 @@
         "overview": "A crime she committed in her youthful past sends Piper Chapman to a women's prison, where she trades her comfortable New York life for one of unexpected camaraderie and conflict in an eccentric group of fellow inmates.",
         "overview_ar": "عندما تلاحق قضيّة من الماضي إحدى سيّدات \"نيويورك\"، ينتهي بها المطاف في سجن النساء، حيث سرعان ما تكتسب الصداقات والعداوات على حدّ سواء.",
         "poster_path": "/ekaa7YjGPTkFLcPhwWXTnARuCEU.jpg",
-        "vote_average": 7.7,
+        "vote_average": 7.653,
         "release_date": "2013-07-11",
         "popularity": 71.2016
     },
@@ -6725,7 +6725,7 @@
         "title": "Snowfall",
         "title_ar": "Snowfall",
         "overview": "Los Angeles. 1983. A storm is coming and its name is crack. Set against the infancy of the crack cocaine epidemic and its ultimate radical impact on the culture as we know it, the story follows numerous characters on a violent collision course.",
-        "overview_ar": "Los Angeles. 1983. A storm is coming and its name is crack. Set against the infancy of the crack cocaine epidemic and its ultimate radical impact on the culture as we know it, the story follows numerous characters on a violent collision course.",
+        "overview_ar": "لوس أنجلوس، ١٩٨٣. تدور الأحداث حول الأيام الأولى التي شهدت الانتشار المخيف للكوكايين الصلب في مدينة لوس أنجلوس خلال بداية الثمانينات، وما تركه من أثر على أرواح وعقول مدمنيه.",
         "poster_path": "/y7ntzl7msiaS6o7dvDbNG7XFYcR.jpg",
         "vote_average": 8.354,
         "release_date": "2017-07-05",
@@ -13440,18 +13440,6 @@
         "popularity": 23.4475
     },
     {
-        "id": 16870,
-        "type": "tv",
-        "title": "Comedy Club",
-        "title_ar": "Comedy Club",
-        "overview": "Comedy Club is a Russian stand-up comedy TV show broadcast by the Russian TNT channel since April 23, 2005. Long-time residents of the club are Garik Martirosyan, Timur Batrutdinov, Garik Kharlamov, Pavel Volya, Alexandr Revva, Alexander Nezlobin and others. The show host is Garik Martirosyan. Comedy Club headquarters are located in Moscow.",
-        "overview_ar": "Comedy Club is a Russian stand-up comedy TV show broadcast by the Russian TNT channel since April 23, 2005. Long-time residents of the club are Garik Martirosyan, Timur Batrutdinov, Garik Kharlamov, Pavel Volya, Alexandr Revva, Alexander Nezlobin and others. The show host is Garik Martirosyan. Comedy Club headquarters are located in Moscow.",
-        "poster_path": "/tPIbd7JZVxSWNjcJQYEvPu3qo5z.jpg",
-        "vote_average": 6.5,
-        "release_date": "2005-04-23",
-        "popularity": 22.3431
-    },
-    {
         "id": 97860,
         "type": "tv",
         "title": "Tower of God",
@@ -13678,6 +13666,18 @@
         "vote_average": 6.3,
         "release_date": "2010-10-14",
         "popularity": 22.4778
+    },
+    {
+        "id": 20477,
+        "type": "tv",
+        "title": "Wogan",
+        "title_ar": "Wogan",
+        "overview": "Chat show hosted by Terry Wogan, featuring live studio interviews with famous and notable personalities.",
+        "overview_ar": "Chat show hosted by Terry Wogan, featuring live studio interviews with famous and notable personalities.",
+        "poster_path": "/7NNaUmZWzJsqMvDNu2WB0HsVmvu.jpg",
+        "vote_average": 4.5,
+        "release_date": "1982-05-04",
+        "popularity": 21.5708
     },
     {
         "id": 2203,
@@ -15600,18 +15600,6 @@
         "popularity": 18.4097
     },
     {
-        "id": 115,
-        "type": "tv",
-        "title": "A Different World",
-        "title_ar": "A Different World",
-        "overview": "A Different World is a spin-off series from The Cosby Show and originally centered on Denise Huxtable and the life of students at Hillman College, a fictional mixed but historically black college in the state of Virginia. After Bonet's departure in the first season, the remainder of the series primarily focused more on Southern belle Whitley Gilbert and mathematics whiz Dwayne Wayne. The series frequently depicted members of the major historically black fraternities and sororities.",
-        "overview_ar": "A Different World is a spin-off series from The Cosby Show and originally centered on Denise Huxtable and the life of students at Hillman College, a fictional mixed but historically black college in the state of Virginia. After Bonet's departure in the first season, the remainder of the series primarily focused more on Southern belle Whitley Gilbert and mathematics whiz Dwayne Wayne. The series frequently depicted members of the major historically black fraternities and sororities.",
-        "poster_path": "/v7fuifcJjcqQxAsOjPviupcmFIZ.jpg",
-        "vote_average": 7.0,
-        "release_date": "1987-09-24",
-        "popularity": 18.4097
-    },
-    {
         "id": 311281,
         "type": "tv",
         "title": "Tozkoparan İskender: Kaos",
@@ -15658,6 +15646,18 @@
         "vote_average": 6.9,
         "release_date": "1997-04-19",
         "popularity": 20.4949
+    },
+    {
+        "id": 138502,
+        "type": "tv",
+        "title": "X-Men '97",
+        "title_ar": "إكس-مِن ٩٧",
+        "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
+        "overview_ar": "تستخدم مجموعة من المتحولين مواهبها غير الطبيعية لحماية عالم يكرههم ويخافهم.",
+        "poster_path": "/9Ycz7yYRf9V4jk3YXwcZhFtbNcF.jpg",
+        "vote_average": 8.5,
+        "release_date": "2024-03-20",
+        "popularity": 21.6017
     },
     {
         "id": 70558,
@@ -15835,7 +15835,7 @@
         "overview": "New Yorker Zoe Hart has it all figured out - after graduating top of her class from medical school, she'll follow in her father's footsteps and become a cardio-thoracic surgeon. But when her dreams fall apart, Zoe decides to work at a small practice in Bluebell, Alabama.",
         "overview_ar": "New Yorker Zoe Hart has it all figured out - after graduating top of her class from medical school, she'll follow in her father's footsteps and become a cardio-thoracic surgeon. But when her dreams fall apart, Zoe decides to work at a small practice in Bluebell, Alabama.",
         "poster_path": "/xOwH2ZUtdzqeat5RhiD3oes2ASx.jpg",
-        "vote_average": 7.3,
+        "vote_average": 7.277,
         "release_date": "2011-09-26",
         "popularity": 17.4567
     },
@@ -21135,7 +21135,7 @@
         "id": 1149,
         "type": "tv",
         "title": "KO One",
-        "title_ar": "終極一班",
+        "title_ar": "KO One",
         "overview": "Gifted with special powers, fighting skills and slick hair, the rowdy KO One navigates tough friendships and high school romance.",
         "overview_ar": "Gifted with special powers, fighting skills and slick hair, the rowdy KO One navigates tough friendships and high school romance.",
         "poster_path": "/tnrWCtRdYUiVMTTnAWvGLYXUj6I.jpg",
@@ -21840,18 +21840,6 @@
         "popularity": 17.3199
     },
     {
-        "id": 1600,
-        "type": "tv",
-        "title": "Ned's Declassified School Survival Guide",
-        "title_ar": "Ned's Declassified School Survival Guide",
-        "overview": "The whacky adventures of Ned Bigby and his best pals Moze and Cookie at James K. Polk Middle School, as \"every-kid\" Ned shatters the fourth wall to share tips and tricks on navigating middle school or junior high hurdles. Ned's not super cool, and he has no superpowers. He is, however, witty, well-groomed, upbeat and self-aware. Moreover, with more than a little help from his two best friends, he's equipped to conquer middle school minefields. From crushing bullies to crushes, from off- the-wall, mean and cool teachers to pop quizzes, elections and detentions, Ned knows that nothing, including the seventh grade, is as bad as it seems, and friendship matters most.",
-        "overview_ar": "The whacky adventures of Ned Bigby and his best pals Moze and Cookie at James K. Polk Middle School, as \"every-kid\" Ned shatters the fourth wall to share tips and tricks on navigating middle school or junior high hurdles. Ned's not super cool, and he has no superpowers. He is, however, witty, well-groomed, upbeat and self-aware. Moreover, with more than a little help from his two best friends, he's equipped to conquer middle school minefields. From crushing bullies to crushes, from off- the-wall, mean and cool teachers to pop quizzes, elections and detentions, Ned knows that nothing, including the seventh grade, is as bad as it seems, and friendship matters most.",
-        "poster_path": "/3kUXoJFmj6vOdmqMMoiYZj0eY2F.jpg",
-        "vote_average": 8.482,
-        "release_date": "2004-09-12",
-        "popularity": 17.3199
-    },
-    {
         "id": 46441,
         "type": "tv",
         "title": "Tyler Perry's The Haves and the Have Nots",
@@ -22042,6 +22030,18 @@
         "vote_average": 8.8,
         "release_date": "2025-04-06",
         "popularity": 16.7401
+    },
+    {
+        "id": 293608,
+        "type": "tv",
+        "title": "Undercover Miss Hong",
+        "title_ar": "الآنسة هونغ في مهمة سرية",
+        "overview": "A retro office comedy depicting the chaotic events that unfold in the late 1990s when Sammo Hung, a 30-year-old elite securities supervisor who only cares about work, goes undercover as a 20-year-old high school graduate employee at a securities firm where suspicious money flows are detected.",
+        "overview_ar": "تتخفّى محققة عنيدة داخل شركة أوراق مالية لكشف الفساد، لكن مهمتها تتعقد بسبب المدير التنفيذي الجديد الذي كان حبيبها في الماضي.",
+        "poster_path": "/bZr3i8yczHGDzyqZQ9oOArEEVON.jpg",
+        "vote_average": 7.2,
+        "release_date": "2026-01-17",
+        "popularity": 17.3234
     },
     {
         "id": 130237,
