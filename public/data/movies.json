@@ -6003,9 +6003,9 @@
         "id": 141052,
         "type": "movie",
         "title": "Justice League",
-        "title_ar": "فرقة العدالة",
+        "title_ar": "Justice League",
         "overview": "Fuelled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne and Diana Prince assemble a team of metahumans consisting of Barry Allen, Arthur Curry and Victor Stone to face the catastrophic threat of Steppenwolf and the Parademons who are on the hunt for three Mother Boxes on Earth.",
-        "overview_ar": "يبدأ (بروس واين) في استعادة ثقته بالإنسانية، ويعزم على تجميع فريق العدالة للدفاع عن الأرض، ويطلب من حليفته الجديدة (الأميرة ديانا) مساعدته في مواجهة أكبر عدو على الإطلاق، وتجنيد فريق العدالة للوقوف ضد هذا التهديد، ويهب (باتمان)، (المرأة العجيبة)، (أكوامان)، (سايبورج)، (الفلاش) لإنقاذ كوكب الأرض.",
+        "overview_ar": "Fuelled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne and Diana Prince assemble a team of metahumans consisting of Barry Allen, Arthur Curry and Victor Stone to face the catastrophic threat of Steppenwolf and the Parademons who are on the hunt for three Mother Boxes on Earth.",
         "poster_path": "/eifGNCSDuxJeS1loAXil5bIGgvC.jpg",
         "vote_average": 6.07,
         "release_date": "2017-11-15",
@@ -7200,18 +7200,6 @@
         "popularity": 11.1982
     },
     {
-        "id": 131631,
-        "type": "movie",
-        "title": "The Hunger Games: Mockingjay - Part 1",
-        "title_ar": "The Hunger Games: Mockingjay - Part 1",
-        "overview": "After surviving the Quarter Quell, Katniss finds herself in the hidden stronghold of District 13, where the rebellion against the Capitol is gaining momentum. Struggling with the weight of becoming the symbol of resistance, she must navigate fragile alliances while trying to protect those she loves. As propaganda battles rage and Panem moves closer to full-scale war, Katniss is forced to confront the true cost of revolution.",
-        "overview_ar": "يرصد فيلم ( ألعاب الجوع: الطائر المحاكي - الجزء الأول) حياة كاتنيس إيفردين (جينيفر لورانس) حيث إنها على مضض ورغماً عنها أصبحت رمزًا لمنطقة بانيم وأيقونة للتمرد على الظلم والطغيان والاستبداد. تقود كاتنيس المتمردين والثوار في حرب حياة أو موت لتحدد مصير بانيم إلى الأبد. تتصاعد الأحداث ويمتد العنف لجميع المناطق. تجد كاتنيس نفسها في صراع داخلي جسيم حيث يتعين عليها تحديد من بإمكانها الوثوق به ومن لا يستحق ثقتها وعليها اتخاذ العديد من القرارات المصيرية.",
-        "poster_path": "/4FAA18ZIja70d1Tu5hr5cj2q1sB.jpg",
-        "vote_average": 6.817,
-        "release_date": "2014-11-19",
-        "popularity": 12.92
-    },
-    {
         "id": 748783,
         "type": "movie",
         "title": "The Garfield Movie",
@@ -7282,18 +7270,6 @@
         "vote_average": 8.118,
         "release_date": "1992-09-02",
         "popularity": 10.7968
-    },
-    {
-        "id": 1366,
-        "type": "movie",
-        "title": "Rocky",
-        "title_ar": "Rocky",
-        "overview": "Rocky Balboa is a Philadelphia club fighter who seems to be going nowhere. But when a stroke of fate puts him in the ring with a world heavyweight champion, Rocky knows that it's his one shot at the big time — a once-in-a-lifetime opportunity to go the distance and come out a winner!",
-        "overview_ar": "Rocky Balboa is a Philadelphia club fighter who seems to be going nowhere. But when a stroke of fate puts him in the ring with a world heavyweight champion, Rocky knows that it's his one shot at the big time — a once-in-a-lifetime opportunity to go the distance and come out a winner!",
-        "poster_path": "/hEjK9A9BkNXejFW4tfacVAEHtkn.jpg",
-        "vote_average": 7.8,
-        "release_date": "1976-11-20",
-        "popularity": 12.0407
     },
     {
         "id": 262543,
@@ -7438,6 +7414,30 @@
         "vote_average": 7.9,
         "release_date": "2013-09-04",
         "popularity": 12.0727
+    },
+    {
+        "id": 264660,
+        "type": "movie",
+        "title": "Ex Machina",
+        "title_ar": "لم تعد آلة",
+        "overview": "Caleb, a coder at the world's largest internet company, wins a competition to spend a week at a private mountain retreat belonging to Nathan, the reclusive CEO of the company. But when Caleb arrives at the remote location he finds that he will have to participate in a strange and fascinating experiment in which he must interact with the world's first true artificial intelligence, housed in the body of a beautiful robot girl.",
+        "overview_ar": "لا يوجد شيء أكثر إنسانية من إرادة البقاء\r فاز كاليب ، وهو مبرمج في أكبر شركة إنترنت في العالم ، بمسابقة لقضاء أسبوع في منتجع جبلي خاص تابع لناثان ، الرئيس التنفيذي المنعزل للشركة. ولكن عندما يصل كالب إلى الموقع البعيد ، يجد أنه سيتعين عليه المشاركة في تجربة غريبة ورائعة يجب أن يتفاعل فيها مع أول ذكاء اصطناعي حقيقي في العالم ، موجود في جسد فتاة روبوت جميلة.",
+        "poster_path": "/dmJW8IAKHKxFNiUnoDR7JfsK7Rp.jpg",
+        "vote_average": 7.573,
+        "release_date": "2015-01-21",
+        "popularity": 11.0795
+    },
+    {
+        "id": 508883,
+        "type": "movie",
+        "title": "The Boy and the Heron",
+        "title_ar": "The Boy and the Heron",
+        "overview": "While the Second World War rages, the teenage Mahito, haunted by his mother's tragic death, is relocated from Tokyo to the serene rural home of his new stepmother Natsuko, a woman who bears a striking resemblance to the boy's mother. As he tries to adjust, this strange new world grows even stranger following the appearance of a persistent gray heron, who perplexes and bedevils Mahito, dubbing him the \"long-awaited one.\"",
+        "overview_ar": "While the Second World War rages, the teenage Mahito, haunted by his mother's tragic death, is relocated from Tokyo to the serene rural home of his new stepmother Natsuko, a woman who bears a striking resemblance to the boy's mother. As he tries to adjust, this strange new world grows even stranger following the appearance of a persistent gray heron, who perplexes and bedevils Mahito, dubbing him the \"long-awaited one.\"",
+        "poster_path": "/f4oZTcfGrVTXKTWg157AwikXqmP.jpg",
+        "vote_average": 7.404,
+        "release_date": "2023-07-14",
+        "popularity": 10.2872
     },
     {
         "id": 508883,
@@ -11523,9 +11523,9 @@
         "id": 81188,
         "type": "movie",
         "title": "Rise of the Guardians",
-        "title_ar": "Rise of the Guardians",
+        "title_ar": "نهوض الحراس",
         "overview": "When an evil spirit known as Pitch lays down the gauntlet to take over the world, the immortal Guardians must join forces for the first time to protect the hopes, beliefs and imagination of children all over the world.",
-        "overview_ar": "When an evil spirit known as Pitch lays down the gauntlet to take over the world, the immortal Guardians must join forces for the first time to protect the hopes, beliefs and imagination of children all over the world.",
+        "overview_ar": "عندما تضع روح شريرة تعرف باسم  زفت القفاز للسيطرة على العالم ، يجب على الأوصياء الخالدين توحيد قواهم لأول مرة لحماية آمال ومعتقدات وخيال الأطفال في جميع أنحاء العالم.",
         "poster_path": "/sW4qOa9yF0Ikg7lppncQ0n5UhKX.jpg",
         "vote_average": 7.372,
         "release_date": "2012-11-21",
@@ -12963,9 +12963,9 @@
         "id": 2503,
         "type": "movie",
         "title": "The Bourne Ultimatum",
-        "title_ar": "The Bourne Ultimatum",
+        "title_ar": "إنذار بورن",
         "overview": "Bourne is brought out of hiding once again by reporter Simon Ross who is trying to unveil Operation Blackbriar, an upgrade to Project Treadstone, in a series of newspaper columns. Information from the reporter stirs a new set of memories, and Bourne must finally uncover his dark past while dodging The Company's best efforts to eradicate him.",
-        "overview_ar": "Bourne is brought out of hiding once again by reporter Simon Ross who is trying to unveil Operation Blackbriar, an upgrade to Project Treadstone, in a series of newspaper columns. Information from the reporter stirs a new set of memories, and Bourne must finally uncover his dark past while dodging The Company's best efforts to eradicate him.",
+        "overview_ar": "تم إخراج بورن من مخبأه مرة أخرى بواسطة المراسل سيمون روس الذي يحاول الكشف عن عملية Blackbriar ، وهي ترقية لمشروع Treadstone ، في سلسلة من الأعمدة الصحفية. تثير المعلومات الواردة من المراسل مجموعة جديدة من الذكريات ، ويجب على بورن أخيرًا الكشف عن ماضيه المظلم بينما يتفادى أفضل جهود الشركة للقضاء عليه.",
         "poster_path": "/15rMz5MRXFp7CP4VxhjYw4y0FUn.jpg",
         "vote_average": 7.434,
         "release_date": "2007-08-03",
@@ -12975,9 +12975,9 @@
         "id": 1895,
         "type": "movie",
         "title": "Star Wars: Episode III - Revenge of the Sith",
-        "title_ar": "Star Wars: Episode III - Revenge of the Sith",
+        "title_ar": "حرب النجوم الجزء الثالث: انتقام السيث",
         "overview": "When the sinister Sith unveil a thousand-year-old plot to rule the galaxy, the Republic crumbles and from its ashes rises the evil Galactic Empire. Jedi hero Anakin Skywalker must choose a side.",
-        "overview_ar": "When the sinister Sith unveil a thousand-year-old plot to rule the galaxy, the Republic crumbles and from its ashes rises the evil Galactic Empire. Jedi hero Anakin Skywalker must choose a side.",
+        "overview_ar": "يشرع الشرير Darth Sidious خطته النهائية لقوة غير محدودة - ويجب على البطل Jedi Anakin Skywalker اختيار جانب.",
         "poster_path": "/xfSAoBEm9MNBjmlNcDYLvLSMlnq.jpg",
         "vote_average": 7.459,
         "release_date": "2005-05-17",
@@ -13179,9 +13179,9 @@
         "id": 296,
         "type": "movie",
         "title": "Terminator 3: Rise of the Machines",
-        "title_ar": "المدمر 3 صعود الآلات",
+        "title_ar": "Terminator 3: Rise of the Machines",
         "overview": "It's been 10 years since John Connor saved Earth from Judgment Day, and he's now living under the radar, steering clear of using anything Skynet can trace. That is, until he encounters T-X, a robotic assassin ordered to finish what T-1000 started. Good thing Connor's former nemesis, the Terminator, is back to aid the now-adult Connor … just like he promised.",
-        "overview_ar": "أصبح جون كونور في العشرينات من العمر، الآن تسعى مدمرة أنثى تدعى تي – إكس أو \"تريميناتركس\" لقتله، بعدها يتم إرسال مدمر من طراز تي - 800 مرة أخرى عبر الزمن لحماية جون كونور، في الوقت الذي تكون فيه الآلات على وشك النهوض.",
+        "overview_ar": "It's been 10 years since John Connor saved Earth from Judgment Day, and he's now living under the radar, steering clear of using anything Skynet can trace. That is, until he encounters T-X, a robotic assassin ordered to finish what T-1000 started. Good thing Connor's former nemesis, the Terminator, is back to aid the now-adult Connor … just like he promised.",
         "poster_path": "/vvevzdYIrk2636maNW4qeWmlPFG.jpg",
         "vote_average": 6.182,
         "release_date": "2003-07-02",
@@ -13193,7 +13193,7 @@
         "title": "Hidden",
         "title_ar": "Hidden",
         "overview": "A family takes refuge in a fallout shelter to avoid a dangerous outbreak.",
-        "overview_ar": "تقرر عائلة الاختباء في مأوى تحت الأرض، وذلك من أجل الهرب من مصير مأساوي في الخارج، ولكن تكتشف العائلة بعد فترة أن البقاء تحت الأرض هو أمر من قبيل المستحيل.",
+        "overview_ar": "A family takes refuge in a fallout shelter to avoid a dangerous outbreak.",
         "poster_path": "/mPuaHaczkoJDzlYD9GyXiDjMXig.jpg",
         "vote_average": 6.889,
         "release_date": "2015-09-15",
@@ -18960,18 +18960,6 @@
         "popularity": 7.7488
     },
     {
-        "id": 1314481,
-        "type": "movie",
-        "title": "The Devil Wears Prada 2",
-        "title_ar": "The Devil Wears Prada 2",
-        "overview": "Miranda Priestly navigates her career amid the decline of traditional magazine publishing. She faces off against Emily Charlton, her one-time assistant, now a high-powered executive for a luxury group, with advertising dollars that Priestly desperately needs.",
-        "overview_ar": "Miranda Priestly navigates her career amid the decline of traditional magazine publishing. She faces off against Emily Charlton, her one-time assistant, now a high-powered executive for a luxury group, with advertising dollars that Priestly desperately needs.",
-        "poster_path": "/4z7xA341upljSwxC2q0MO3GncQj.jpg",
-        "vote_average": 0.0,
-        "release_date": "2026-04-29",
-        "popularity": 7.8404
-    },
-    {
         "id": 9532,
         "type": "movie",
         "title": "Final Destination",
@@ -18979,7 +18967,7 @@
         "overview": "After a teenager has a terrifying vision of him and his friends dying in a plane crash, he prevents the accident only to have Death hunt them down, one by one.",
         "overview_ar": "بعد مشاهدة مراهق رؤيا مرعبة له ولأصحابه وهم يموتون في حادث تحطم طائرة، ويمنع وقوع الحادث إلا أن الموت يتعقبهم، واحدًا تلو الآخر.",
         "poster_path": "/1mXhlQMnlfvJ2frxTjZSQNnA9Vp.jpg",
-        "vote_average": 6.628,
+        "vote_average": 6.629,
         "release_date": "2000-03-17",
         "popularity": 7.7488
     },
@@ -19198,6 +19186,18 @@
         "vote_average": 6.198,
         "release_date": "1988-05-24",
         "popularity": 6.3185
+    },
+    {
+        "id": 869,
+        "type": "movie",
+        "title": "Planet of the Apes",
+        "title_ar": "Planet of the Apes",
+        "overview": "After a spectacular crash-landing on an uncharted planet, brash astronaut Leo Davidson finds himself trapped in a savage world where talking apes dominate the human race. Desperate to find a way home, Leo must evade the invincible gorilla army led by Ruthless General Thade.",
+        "overview_ar": "After a spectacular crash-landing on an uncharted planet, brash astronaut Leo Davidson finds himself trapped in a savage world where talking apes dominate the human race. Desperate to find a way home, Leo must evade the invincible gorilla army led by Ruthless General Thade.",
+        "poster_path": "/eEsOgbgKXMvI2FEw1WENamVXi41.jpg",
+        "vote_average": 5.762,
+        "release_date": "2001-07-26",
+        "popularity": 6.8508
     },
     {
         "id": 75258,
@@ -20160,30 +20160,6 @@
         "popularity": 6.4059
     },
     {
-        "id": 68737,
-        "type": "movie",
-        "title": "Seventh Son",
-        "title_ar": "Seventh Son",
-        "overview": "John Gregory, who is a seventh son of a seventh son and also the local spook, has protected the country from witches, boggarts, ghouls and all manner of things that go bump in the night. However John is not young anymore, and has been seeking an apprentice to carry on his trade. Most have failed to survive. The last hope is a young farmer's son named Thomas Ward. Will he survive the training to become the spook that so many others couldn't?",
-        "overview_ar": "John Gregory, who is a seventh son of a seventh son and also the local spook, has protected the country from witches, boggarts, ghouls and all manner of things that go bump in the night. However John is not young anymore, and has been seeking an apprentice to carry on his trade. Most have failed to survive. The last hope is a young farmer's son named Thomas Ward. Will he survive the training to become the spook that so many others couldn't?",
-        "poster_path": "/7Q8DfXSjcFSSQDOxz1Sk865wNqI.jpg",
-        "vote_average": 5.516,
-        "release_date": "2014-12-12",
-        "popularity": 5.1386
-    },
-    {
-        "id": 407451,
-        "type": "movie",
-        "title": "A Wrinkle in Time",
-        "title_ar": "A Wrinkle in Time",
-        "overview": "After the disappearance of her scientist father, three peculiar beings send Meg, her brother, and her friend to space in order to find him.",
-        "overview_ar": "After the disappearance of her scientist father, three peculiar beings send Meg, her brother, and her friend to space in order to find him.",
-        "poster_path": "/yAcb58vipewa1BfNit2RjE6boXA.jpg",
-        "vote_average": 5.061,
-        "release_date": "2018-03-08",
-        "popularity": 6.4059
-    },
-    {
         "id": 9654,
         "type": "movie",
         "title": "The Italian Job",
@@ -20398,6 +20374,30 @@
         "vote_average": 5.871,
         "release_date": "2024-10-31",
         "popularity": 6.5945
+    },
+    {
+        "id": 814776,
+        "type": "movie",
+        "title": "Bottoms",
+        "title_ar": "Bottoms",
+        "overview": "Unpopular best friends PJ and Josie start a high school self-defense club to meet girls and lose their virginity. They soon find themselves in over their heads when the most popular students start beating each other up in the name of self-defense.",
+        "overview_ar": "يدور العمل حول فتاتين في مدرسة ثانوية كبيرة، ورحلتهما عبر سلسلة من الأحداث الفوضوية قبل تخرجهما.",
+        "poster_path": "/jeyTQrNEpyE1LZIgVlswYh3sc34.jpg",
+        "vote_average": 6.744,
+        "release_date": "2023-08-25",
+        "popularity": 7.4379
+    },
+    {
+        "id": 635731,
+        "type": "movie",
+        "title": "Pig",
+        "title_ar": "خنزيرة",
+        "overview": "A truffle hunter who lives alone in the Oregon wilderness must visit Portland to find the mysterious person who stole his beloved foraging pig.",
+        "overview_ar": "باحث عن فطر الكمأ يعيش لوحده في غابات ولاية أورجان الأمريكية ويعود إلى ماضيه في مدينة بورتلاند ليبحث عن خنزيرته المُسِنّة المُختَطًفة.",
+        "poster_path": "/1InMm4Mbjx8wCKvIy5gglo5i3HN.jpg",
+        "vote_average": 6.633,
+        "release_date": "2021-07-16",
+        "popularity": 6.8111
     },
     {
         "id": 635731,
@@ -22800,30 +22800,6 @@
         "popularity": 6.1611
     },
     {
-        "id": 1995,
-        "type": "movie",
-        "title": "Lara Croft: Tomb Raider",
-        "title_ar": "Lara Croft: Tomb Raider",
-        "overview": "Orphaned heiress, English aristocrat and intrepid archaeologist, Lara Croft, embarks on a dangerous quest to retrieve the two halves of an ancient artifact which controls time before it falls into the wrong hands. As an extremely rare planetary alignment is about to occur for the first time in 5,000 years, the fearless tomb raider will have to team up with rival adventurers and sworn enemies to collect the pieces, while time is running out. But, in the end, who can harness the archaic talisman's unlimited power?",
-        "overview_ar": "Orphaned heiress, English aristocrat and intrepid archaeologist, Lara Croft, embarks on a dangerous quest to retrieve the two halves of an ancient artifact which controls time before it falls into the wrong hands. As an extremely rare planetary alignment is about to occur for the first time in 5,000 years, the fearless tomb raider will have to team up with rival adventurers and sworn enemies to collect the pieces, while time is running out. But, in the end, who can harness the archaic talisman's unlimited power?",
-        "poster_path": "/ye5h6fhfz8TkKV4QeuTucvFzxB9.jpg",
-        "vote_average": 5.9,
-        "release_date": "2001-06-15",
-        "popularity": 6.1611
-    },
-    {
-        "id": 11507,
-        "type": "movie",
-        "title": "Body Double",
-        "title_ar": "البديل الجسدي",
-        "overview": "After losing an acting role and his girlfriend, Jake Scully finally catches a break: he gets offered a gig house-sitting in the Hollywood Hills. While peering through the beautiful home's telescope one night, he spies a gorgeous woman dancing in her window. But when he witnesses the girl's murder, it leads Scully through the netherworld of the adult entertainment industry on a search for answers—with porn actress Holly Body as his guide.",
-        "overview_ar": "بعد أن فقد دوره التمثيلي وصديقته ، حصل جيك سكالي أخيرًا على استراحة: فقد عُرض عليه إقامة منزل في هوليوود هيلز. بينما كان يحدق من خلال تلسكوب المنزل الجميل ذات ليلة ، يتجسس شقراء رائعة ترقص في نافذتها. ولكن عندما يشهد مقتل الفتاة ، فإنه يقود سكالي عبر العالم السفلي لصناعة الترفيه للبالغين بحثًا عن إجابات - مع الممثلة الإباحية هولي بودي كدليل له.",
-        "poster_path": "/lRFm5P2AdOGpELwm3HHhmUz6k5I.jpg",
-        "vote_average": 6.769,
-        "release_date": "1984-10-25",
-        "popularity": 6.6857
-    },
-    {
         "id": 844398,
         "type": "movie",
         "title": "Shattered",
@@ -23038,6 +23014,30 @@
         "vote_average": 6.667,
         "release_date": "2005-05-27",
         "popularity": 6.6043
+    },
+    {
+        "id": 87516,
+        "type": "movie",
+        "title": "Oldboy",
+        "title_ar": "Oldboy",
+        "overview": "A man has only three and a half days and limited resources to discover why he was imprisoned in a nondescript room for 20 years without any explanation.",
+        "overview_ar": "لدى الرجل اليومي ثلاثة أيام ونصف فقط وموارد محدودة لاكتشاف سبب سجنه في غرفة لا توصف لمدة 20 عامًا دون أي تفسير.",
+        "poster_path": "/iX93YdBrZA1EpGbphmjf4ARj1Za.jpg",
+        "vote_average": 5.914,
+        "release_date": "2013-11-14",
+        "popularity": 6.7292
+    },
+    {
+        "id": 196867,
+        "type": "movie",
+        "title": "Annie",
+        "title_ar": "Annie",
+        "overview": "Annie is a young, happy foster kid who's also tough enough to make her way on the streets of New York in 2014. Originally left by her parents as a baby with the promise that they'd be back for her someday, it's been a hard knock life ever since with her mean foster mom Miss Hannigan. But everything's about to change when the hard-nosed tycoon and New York mayoral candidate Will Stacks—advised by his brilliant VP and his shrewd and scheming campaign advisor—makes a thinly-veiled campaign move and takes her in. Stacks believes he's her guardian angel, but Annie's self-assured nature and bright, sun-will-come-out-tomorrow outlook on life just might mean it's the other way around.",
+        "overview_ar": "Annie is a young, happy foster kid who's also tough enough to make her way on the streets of New York in 2014. Originally left by her parents as a baby with the promise that they'd be back for her someday, it's been a hard knock life ever since with her mean foster mom Miss Hannigan. But everything's about to change when the hard-nosed tycoon and New York mayoral candidate Will Stacks—advised by his brilliant VP and his shrewd and scheming campaign advisor—makes a thinly-veiled campaign move and takes her in. Stacks believes he's her guardian angel, but Annie's self-assured nature and bright, sun-will-come-out-tomorrow outlook on life just might mean it's the other way around.",
+        "poster_path": "/aKAM9V0izx4VhsdyAdBvAB26UCZ.jpg",
+        "vote_average": 6.237,
+        "release_date": "2014-12-18",
+        "popularity": 7.7621
     },
     {
         "id": 87516,

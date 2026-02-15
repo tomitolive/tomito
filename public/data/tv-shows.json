@@ -4803,7 +4803,7 @@
         "id": 154770,
         "type": "tv",
         "title": "Hello Saturday",
-        "title_ar": "你好，星期六",
+        "title_ar": "Hello Saturday",
         "overview": "\"Hello, Saturday\" is the rebranding of the popular Chinese show \"Happy Camp\", hosted by He Jiong and with a fixed group of regular celebrity members.\n\nThe program showcases the talent of various stars as well as social topics through creative and diverse content and games. It aims to spread positive energy while keeping up with the current trends and leading youth culture.",
         "overview_ar": "\"Hello, Saturday\" is the rebranding of the popular Chinese show \"Happy Camp\", hosted by He Jiong and with a fixed group of regular celebrity members.\n\nThe program showcases the talent of various stars as well as social topics through creative and diverse content and games. It aims to spread positive energy while keeping up with the current trends and leading youth culture.",
         "poster_path": "/wsTjWy6NE2s3h0neChr0D92ddwI.jpg",
@@ -5031,9 +5031,9 @@
         "id": 31572,
         "type": "tv",
         "title": "Lupin the 3rd",
-        "title_ar": "Lupin the 3rd",
+        "title_ar": "لوبين الثالث",
         "overview": "Follow the exciting adventures of Arsene Lupin III, the grandson of the world's greatest thief, Arsene Lupin. Together with Daisuke Jigen, Goemon Ishikawa and his love interest Fujiko Mine, he carries out the greatest robberies of all time, all the while evading the control of Inspector Koichi Zenigata.",
-        "overview_ar": "Follow the exciting adventures of Arsene Lupin III, the grandson of the world's greatest thief, Arsene Lupin. Together with Daisuke Jigen, Goemon Ishikawa and his love interest Fujiko Mine, he carries out the greatest robberies of all time, all the while evading the control of Inspector Koichi Zenigata.",
+        "overview_ar": "تدور قصة هذا الأنمي حول لوبين الثالث اللص الذكي الذي يسرق أي شيء بماعدة جيجن دايسكي وإيشيكاوا الثالث وفوجيكو ويتعقب هذا اللص الشرطي زينيقاتا إلا أنه يفشل في إلقاء القبض عليه",
         "poster_path": "/aywOqgw5opNykCW4R8os1liPVnq.jpg",
         "vote_average": 7.976,
         "release_date": "1971-10-24",
@@ -12245,7 +12245,7 @@
         "title": "Shangri-La Frontier",
         "title_ar": "Shangri-La Frontier",
         "overview": "Rakuro Hizutome only cares about one thing: beating crappy VR games. He devotes his entire life to these buggy games and could clear them all in his sleep. One day, he decides to challenge himself and play a popular god-tier game called Shangri-La Frontier. But he quickly learns just how difficult it is. Will his expert skills be enough to uncover its hidden secrets?",
-        "overview_ar": "\"متى كانت آخر مرة لعبت فيها لعبة ليست سيئة\" هذا عالم في المستقبل القريب حيث الألعاب التي تستعمل الشاشات تُعتبر رجعية. أي شيء لا يمكنه مجاراة تقنية الواقع الافتراضي المتطورة يُعتبر \"حثالة ألعاب\"، وهناك الكثير من حثالات الألعاب تصدر. أولئك الذين يكرسون حياتهم لإنهاء هذه الألعاب يسمون \"صيادو حثالة الألعاب\"، وهيزوتومي راكورو واحد منهم. اللعبة التي اختار لعبها تاليًا هي شانغري-لا فرونتير، لعبة من الطراز الأول لديها 30 مليون لاعب.",
+        "overview_ar": "Rakuro Hizutome only cares about one thing: beating crappy VR games. He devotes his entire life to these buggy games and could clear them all in his sleep. One day, he decides to challenge himself and play a popular god-tier game called Shangri-La Frontier. But he quickly learns just how difficult it is. Will his expert skills be enough to uncover its hidden secrets?",
         "poster_path": "/aCGdpgNkgz66R1winFkTFsMAhlC.jpg",
         "vote_average": 8.102,
         "release_date": "2023-10-01",
@@ -13200,30 +13200,6 @@
         "popularity": 21.324
     },
     {
-        "id": 92782,
-        "type": "tv",
-        "title": "Ms. Marvel",
-        "title_ar": "Ms. Marvel",
-        "overview": "A great student, avid gamer, and voracious fan-fic scribe, Kamala Khan has a special affinity for superheroes, particularly Captain Marvel. However, she struggles to fit in at home and at school — that is, until she gets superpowers like the heroes she’s always looked up to. Life is easier with superpowers, right?",
-        "overview_ar": "كاملا خان مراهقة مسلمة، تعيش مع عائلتها، حيث تكافح خلال مرحلة المراهقة من أجل إثبات نفسها، ولكن تتغير حياتها تماما حينما تتعرض لعدوى من قبل مخلوق غامض يدعى تيرين ميست، وتصبح لدى كاملا القدرة على التحكم في جسدها من خلال التمدد والتضخم، أو التحول إلى حجم الذرة الصغيرة.",
-        "poster_path": "/3HWWh92kZbD7odwJX7nKmXNZsYo.jpg",
-        "vote_average": 6.297,
-        "release_date": "2022-06-08",
-        "popularity": 21.324
-    },
-    {
-        "id": 2085,
-        "type": "tv",
-        "title": "Courage the Cowardly Dog",
-        "title_ar": "كوردج الجبان",
-        "overview": "The bizarre misadventures of a cowardly dog named Courage and his elderly owners in a farmhouse in Nowhere, Kansas.",
-        "overview_ar": "كوردج الجبان يحكي عن كلب يدعى كوردج، يسهل إخافته، يعيش كوردج في مزرعة مع ميورييل ويوستاس بيغ بالقرب من بلدة خيالية تدعى \"نووير\" في كانساس بالولايات المتحدة الأمريكية والذي تم التخلي عنه عندما كان جرواً حتى وجدته ميورييل (امرأة عجوز إسكتلندية لطيفة) مع زوجها يوستاس (مزارع عصبي وجشع والذي يتمتع بتخويف كوردج بواسطة قناع أخضر كبير بعينين أبيض ونمري وأنف أرجواني وشفتين صفراوتين وأسنان وردية). كوردج وميورييل ويوستاس في كثير من الأحيان يقابلون الوحوش والكائنات الفضائية والأشرار والعلماء المجانيين والزومبي والكثير من المخاطر ويجب على كوردج إنقاذ عائلته الجديدة.",
-        "poster_path": "/uJQsBgzlrgZpjeB5fHBtJQA04nS.jpg",
-        "vote_average": 8.192,
-        "release_date": "1999-11-12",
-        "popularity": 22.7889
-    },
-    {
         "id": 154521,
         "type": "tv",
         "title": "The Kardashians",
@@ -13416,18 +13392,6 @@
         "popularity": 21.235
     },
     {
-        "id": 114473,
-        "type": "tv",
-        "title": "Detective Academy",
-        "title_ar": "Detective Academy",
-        "overview": "\"Detective College\", as a derivative of the fifth season of \"Who's the Murderer\", is a star reasoning variety show where selected detective assistants launched by Mango TV. The star guests determine the number of advances by rolling the dice on the checkerboard. When the game is triggered, the corresponding game needs to be completed. The first guest to reach the end becomes the current No.1. The program combines the form of team battles and individual battles to inspire the star guests ’IQ and Contest of logical ability. No. 1 selected in the show will appear on the scene of the fifth season of \"Who's the Murderer\". \"Detective College\" consists of Pu Yixing, Zhou Junwei, Tang Jiuzhou, Qi Sijun, Shi Kai, Guo Wentao, Shao Mingming, etc., and premiered on November 3, 2019.",
-        "overview_ar": "\"Detective College\", as a derivative of the fifth season of \"Who's the Murderer\", is a star reasoning variety show where selected detective assistants launched by Mango TV. The star guests determine the number of advances by rolling the dice on the checkerboard. When the game is triggered, the corresponding game needs to be completed. The first guest to reach the end becomes the current No.1. The program combines the form of team battles and individual battles to inspire the star guests ’IQ and Contest of logical ability. No. 1 selected in the show will appear on the scene of the fifth season of \"Who's the Murderer\". \"Detective College\" consists of Pu Yixing, Zhou Junwei, Tang Jiuzhou, Qi Sijun, Shi Kai, Guo Wentao, Shao Mingming, etc., and premiered on November 3, 2019.",
-        "poster_path": "/wuUvhZ2WLqX1z0b1NXkapWoov9j.jpg",
-        "vote_average": 7.3,
-        "release_date": "2019-11-03",
-        "popularity": 23.2861
-    },
-    {
         "id": 95226,
         "type": "tv",
         "title": "Champs-Elysées",
@@ -13438,6 +13402,42 @@
         "vote_average": 6.3,
         "release_date": "1982-01-16",
         "popularity": 18.7696
+    },
+    {
+        "id": 16870,
+        "type": "tv",
+        "title": "Comedy Club",
+        "title_ar": "Камеди Клаб",
+        "overview": "Comedy Club is a Russian stand-up comedy TV show broadcast by the Russian TNT channel since April 23, 2005. Long-time residents of the club are Garik Martirosyan, Timur Batrutdinov, Garik Kharlamov, Pavel Volya, Alexandr Revva, Alexander Nezlobin and others. The show host is Garik Martirosyan. Comedy Club headquarters are located in Moscow.",
+        "overview_ar": "Comedy Club is a Russian stand-up comedy TV show broadcast by the Russian TNT channel since April 23, 2005. Long-time residents of the club are Garik Martirosyan, Timur Batrutdinov, Garik Kharlamov, Pavel Volya, Alexandr Revva, Alexander Nezlobin and others. The show host is Garik Martirosyan. Comedy Club headquarters are located in Moscow.",
+        "poster_path": "/tPIbd7JZVxSWNjcJQYEvPu3qo5z.jpg",
+        "vote_average": 6.5,
+        "release_date": "2005-04-23",
+        "popularity": 22.3431
+    },
+    {
+        "id": 97860,
+        "type": "tv",
+        "title": "Tower of God",
+        "title_ar": "Tower of God",
+        "overview": "Reach the top, and everything will be yours. At the top of the tower exists everything in this world, and all of it can be yours. You can become a god. This is the story of the beginning and the end of Rachel, the girl who climbed the tower so she could see the stars, and Bam, the boy who needed nothing but her.",
+        "overview_ar": "Reach the top, and everything will be yours. At the top of the tower exists everything in this world, and all of it can be yours. You can become a god. This is the story of the beginning and the end of Rachel, the girl who climbed the tower so she could see the stars, and Bam, the boy who needed nothing but her.",
+        "poster_path": "/9QXO4C0AwAuBa15nuDLZU2MyktB.jpg",
+        "vote_average": 8.214,
+        "release_date": "2020-04-02",
+        "popularity": 22.5387
+    },
+    {
+        "id": 127235,
+        "type": "tv",
+        "title": "Invasion",
+        "title_ar": "Invasion",
+        "overview": "Earth is visited by an alien species that threatens humanity's existence. Events unfold in real time through the eyes of five ordinary people across the globe as they struggle to make sense of the chaos unraveling around them.",
+        "overview_ar": "Earth is visited by an alien species that threatens humanity's existence. Events unfold in real time through the eyes of five ordinary people across the globe as they struggle to make sense of the chaos unraveling around them.",
+        "poster_path": "/1PdNB3rYTcf8VXc8rcmZ0SeYxSq.jpg",
+        "vote_average": 7.2,
+        "release_date": "2021-10-21",
+        "popularity": 23.4475
     },
     {
         "id": 16870,
@@ -16200,18 +16200,6 @@
         "popularity": 20.6543
     },
     {
-        "id": 308482,
-        "type": "tv",
-        "title": "Taskaree: The Smuggler's Web",
-        "title_ar": "तस्करी: द स्मगलर्स वेब",
-        "overview": "A dedicated customs officer and his team take on a notorious smuggler leading a powerful syndicate, but unexpected obstacles threaten their mission.",
-        "overview_ar": "A dedicated customs officer and his team take on a notorious smuggler leading a powerful syndicate, but unexpected obstacles threaten their mission.",
-        "poster_path": "/4ZTtFT94oCwC09yt8vQ1mEFwEeV.jpg",
-        "vote_average": 7.222,
-        "release_date": "2026-01-14",
-        "popularity": 21.2651
-    },
-    {
         "id": 194764,
         "type": "tv",
         "title": "The Penguin",
@@ -16387,7 +16375,7 @@
         "overview": "An anthology of sweeping true love stories that captured the world’s attention.",
         "overview_ar": "An anthology of sweeping true love stories that captured the world’s attention.",
         "poster_path": "/7WU3cXD0rip5ONc7owI2dBWAVjW.jpg",
-        "vote_average": 8.667,
+        "vote_average": 8.7,
         "release_date": "2026-02-12",
         "popularity": 26.3878
     },
@@ -16414,6 +16402,18 @@
         "vote_average": 7.679,
         "release_date": "2025-03-25",
         "popularity": 19.0257
+    },
+    {
+        "id": 282810,
+        "type": "tv",
+        "title": "The Judge Returns",
+        "title_ar": "عودة القاضي",
+        "overview": "The return of corrupt judge Lee Han-young, who was a slave to a large law firm, to the past 10 years ago. He makes new choices to punish evil and implement justice.",
+        "overview_ar": "بعد سقوطه في الفساد ثم التخلّي عنه، يُقتل القاضي لي هان يونغ، لكنه يستيقظ فجأة قبل عشر سنوات من موته، في زمنٍ كان ما يزال فيه قاضيًا مبتدئًا. يمنحه القدر فرصة ثانية ليعيد تشكيل حياته ويواجه القوى المظلمة التي تحكم القضاء من خلف الستار.",
+        "poster_path": "/AjLnvyKlbTPS9DnX8exBqF2RTIU.jpg",
+        "vote_average": 8.667,
+        "release_date": "2026-01-02",
+        "popularity": 20.9189
     },
     {
         "id": 19253,
@@ -16531,7 +16531,7 @@
         "overview": "After a traumatic year, all an Indian-American teen wants is to go from pariah to popular -- but friends, family and feeling won't make it easy on her.",
         "overview_ar": "بعد عام مفجع، كل ما تريده مراهقة هندية أمريكية مهمّشة أن تصبح فتاة محبوبة... لكنّ أصدقاءها وعائلتها لن يجعلوا الأمر سهلًا، وكذلك مشاعرها.",
         "poster_path": "/hd5fnBixab6IzfUwjC5wfdbX3eM.jpg",
-        "vote_average": 8.1,
+        "vote_average": 8.064,
         "release_date": "2020-04-27",
         "popularity": 19.8589
     },
