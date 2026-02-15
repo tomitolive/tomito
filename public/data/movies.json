@@ -4519,7 +4519,7 @@
         "overview": "In a dystopian near-future America, fifty teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
         "overview_ar": "في مستقبل قريب تحولت فيه أمريكا إلى دولة بوليسية، يختار مئة فتى للمشاركة في مسابقة سنوية، يمنح الفائز فيها ما يشاء لبقية حياته. قواعد اللعبة بسيطة: يجب الحفاظ على سرعة مشي ثابتة لا تقل عن ثلاثة أميال في الساعة دون توقف. ثلاثة تحذيرات تعني الخروج نهائيا.",
         "poster_path": "/wobVTa99eW0ht6c1rNNzLkazPtR.jpg",
-        "vote_average": 6.953,
+        "vote_average": 6.955,
         "release_date": "2025-09-10",
         "popularity": 15.3988
     },
@@ -4975,7 +4975,7 @@
         "overview": "Bryan Mills, a former government operative, is trying to reconnect with his teenage daughter Kim. After reluctantly agreeing with his ex-wife to let Kim go to Paris on vacation with a friend, his worst nightmare comes true. While on the phone with his daughter shortly after she arrives in Paris, she and her friend are abducted by a gang of human traffickers. Working against the clock, Bryan relies on his extensive training and skills to track down the ruthless gang that abducted her and launch a one-man war to rescue his daughter.",
         "overview_ar": "أخذوا ابنته. سوف يأخذ حياتهم.\r أثناء إجازتها مع صديق في باريس ، يتم اختطاف فتاة أمريكية من قبل عصابة من المتاجرين بالبشر عازمين على بيعها في الدعارة القسرية. العمل ضد عقارب الساعة ، يجب على والدها الجاسوس السابق سحب كل المحطات لإنقاذها. ولكن مع أفضل سنواته التي ربما تكون وراءه ، قد تكون الوظيفة أكثر مما يمكنه التعامل معه.",
         "poster_path": "/ognkaUSNgJe1a2pjB4UNdzEo5jT.jpg",
-        "vote_average": 7.399,
+        "vote_average": 7.4,
         "release_date": "2008-02-18",
         "popularity": 13.8799
     },
@@ -8400,6 +8400,18 @@
         "popularity": 10.5821
     },
     {
+        "id": 648878,
+        "type": "movie",
+        "title": "Eddington",
+        "title_ar": "إدينغتون",
+        "overview": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
+        "overview_ar": "في مايو 2020، اندلعت مواجهة بين عمدة بلدة صغيرة ورئيس البلدية مما أدى إلى صراعات، حيث يتنافس الجار ضد جاره في إدينغتون، نيومكسيكو.",
+        "poster_path": "/4GIqZUgPZ146BhibsPHMHef2nXX.jpg",
+        "vote_average": 6.423,
+        "release_date": "2025-07-16",
+        "popularity": 10.6773
+    },
+    {
         "id": 60898,
         "type": "movie",
         "title": "Erotic Ghost Story",
@@ -8626,18 +8638,6 @@
         "vote_average": 6.82,
         "release_date": "1998-08-21",
         "popularity": 10.3342
-    },
-    {
-        "id": 725201,
-        "type": "movie",
-        "title": "The Gray Man",
-        "title_ar": "The Gray Man",
-        "overview": "When a shadowy CIA agent uncovers damning agency secrets, he's hunted across the globe by a sociopathic rogue operative who's put a bounty on his head.",
-        "overview_ar": "When a shadowy CIA agent uncovers damning agency secrets, he's hunted across the globe by a sociopathic rogue operative who's put a bounty on his head.",
-        "poster_path": "/8cXbitsS6dWQ5gfMTZdorpAAzEH.jpg",
-        "vote_average": 6.914,
-        "release_date": "2022-07-13",
-        "popularity": 10.6729
     },
     {
         "id": 725201,
@@ -8880,6 +8880,18 @@
         "popularity": 9.999
     },
     {
+        "id": 1161617,
+        "type": "movie",
+        "title": "Code 3",
+        "title_ar": "Code 3",
+        "overview": "A burned-out paramedic tries to survive his last 24 hours on the job while training a new recruit.",
+        "overview_ar": "A burned-out paramedic tries to survive his last 24 hours on the job while training a new recruit.",
+        "poster_path": "/gIAYMDb5mIAeCAj76q1sRsKjkzo.jpg",
+        "vote_average": 7.028,
+        "release_date": "2025-09-12",
+        "popularity": 10.3988
+    },
+    {
         "id": 607,
         "type": "movie",
         "title": "Men in Black",
@@ -8899,9 +8911,9 @@
         "overview": "Amid a future war between the human race and the forces of artificial intelligence, a hardened ex-special forces agent grieving the disappearance of his wife, is recruited to hunt down and kill the Creator, the elusive architect of advanced AI who has developed a mysterious weapon with the power to end the war—and mankind itself.",
         "overview_ar": "‫وسط حرب مستقبلية بين الجنس البشري وقوات الذكاء الاصطناعي، يجري تجنيد \"جوشوا\" (جون دايفد واشنطن)، عميل سابق متمرس في القوات الخاصة، وهو في حالة حزن على اختفاء زوجته (جيما شان) لمطاردة وقتل المخترع، وهو المهندس المتملص في مجال الذكاء الاصطناعي المتطور الذي قد طور سلاحاً غامضاً له القدرة على إنهاء الحرب، وإبادة البشرية. يغوص \"جوشوا\" وفريقه من العملاء النخبويين عبر خطوط العدو في الوسط الداكن لمنطقة الذكاء الاصطناعي المحتلة، ليكتشفوا بأن سلاح نهاية العالم الذي تلقى أوامر بتدميره هو ذكاء اصطناعي بشكل فتاة صغيرة، في فيلم الحركة المشوق الملحمي هذا من الخيال العلمي، من إخراج \"غاريث إدواردز\" (Rogue One: A Star Wars Story)، والسيناريو تأليف \"إدواردز\" و\"كريس وايتز\".",
         "poster_path": "/3dSivDtOuyxLDxPH4v2tcNG1fP7.jpg",
-        "vote_average": 7.015,
+        "vote_average": 7.013,
         "release_date": "2023-09-27",
-        "popularity": 11.3126
+        "popularity": 9.0663
     },
     {
         "id": 661374,
@@ -8935,7 +8947,7 @@
         "overview": "A top Marine sniper, Bob Lee Swagger, leaves the military after a mission goes horribly awry and disappears, living in seclusion. He is coaxed back into service after a high-profile government official convinces him to help thwart a plot to kill the President of the United States. Ultimately double-crossed and framed for the attempt, Swagger becomes the target of a nationwide manhunt. He goes on the run to track the real killer and find out who exactly set him up, and why, eventually seeking revenge against some of the most powerful and corrupt leaders in the free world.",
         "overview_ar": "يتم إقناع الرامي الذي يعيش في المنفى بالعودة إلى العمل بعد أن علم بمؤامرة لقتل الرئيس. في نهاية المطاف ، قام بمحاولة مزدوجة وإطار من أجل المحاولة ، وهو يركض لتتبع القاتل الحقيقي ومعرفة من قام بإعداده بالضبط ، ولماذا ؟؟",
         "poster_path": "/2aWGxo1E5polpBjPvtBRkWp7qaS.jpg",
-        "vote_average": 7.12,
+        "vote_average": 7.1,
         "release_date": "2007-03-22",
         "popularity": 9.8572
     },
@@ -9021,7 +9033,7 @@
         "poster_path": "/2U0oAVAE0lDRhNmJPPYhDW9kQ8t.jpg",
         "vote_average": 6.711,
         "release_date": "2019-06-19",
-        "popularity": 11.2527
+        "popularity": 10.124
     },
     {
         "id": 61791,
@@ -9067,7 +9079,7 @@
         "overview": "With her life crashing down around her, Linda attempts to navigate her child's mysterious illness, her absent husband, a missing person, and an increasingly hostile relationship with her therapist.",
         "overview_ar": "With her life crashing down around her, Linda attempts to navigate her child's mysterious illness, her absent husband, a missing person, and an increasingly hostile relationship with her therapist.",
         "poster_path": "/va0TQ9WprMXRqQAzY56vyqY0Yd5.jpg",
-        "vote_average": 6.527,
+        "vote_average": 6.524,
         "release_date": "2025-10-10",
         "popularity": 11.6207
     },
@@ -9106,18 +9118,6 @@
         "vote_average": 6.4,
         "release_date": "2010-05-20",
         "popularity": 9.7586
-    },
-    {
-        "id": 1429520,
-        "type": "movie",
-        "title": "Sidelined 2: Intercepted",
-        "title_ar": "Sidelined 2: Intercepted",
-        "overview": "Freshman star quarterback Drayton struggles with the weight of expectations after a devastating setback, while dancer Dallas begins to question the future she thought she wanted. As their high school relationship begins to unravel under the pressures of distance and self-discovery, they’ll learn that the bravest versions of themselves emerge when they let life redirect them.",
-        "overview_ar": "Freshman star quarterback Drayton struggles with the weight of expectations after a devastating setback, while dancer Dallas begins to question the future she thought she wanted. As their high school relationship begins to unravel under the pressures of distance and self-discovery, they’ll learn that the bravest versions of themselves emerge when they let life redirect them.",
-        "poster_path": "/sEIP1pTVXa8BJaYSuVeVG3wFN10.jpg",
-        "vote_average": 7.209,
-        "release_date": "2025-11-27",
-        "popularity": 11.1876
     },
     {
         "id": 1429520,
@@ -9603,9 +9603,9 @@
         "id": 423108,
         "type": "movie",
         "title": "The Conjuring: The Devil Made Me Do It",
-        "title_ar": "The Conjuring: The Devil Made Me Do It",
+        "title_ar": "الشعوذة: الشيطان جعلني أفعل ذلك",
         "overview": "Paranormal investigators Ed and Lorraine Warren encounter what would become one of the most sensational cases from their files. The fight for the soul of a young boy takes them beyond anything they'd ever seen before, to mark the first time in U.S. history that a murder suspect would claim demonic possession as a defense.",
-        "overview_ar": "Paranormal investigators Ed and Lorraine Warren encounter what would become one of the most sensational cases from their files. The fight for the soul of a young boy takes them beyond anything they'd ever seen before, to mark the first time in U.S. history that a murder suspect would claim demonic possession as a defense.",
+        "overview_ar": "في إطار من الرعب والغموض، تدور أحداث العمل حول عودة \"لورين\" وزوجها \"إيد\" الخبيران الروحانيان من أجل حل لغز جديد في عالم الشياطين المروعة والمنازل المسكونة.",
         "poster_path": "/rQfX2xx8TUoNvyk892yKWNikJaM.jpg",
         "vote_average": 7.366,
         "release_date": "2021-05-25",
@@ -9840,6 +9840,18 @@
         "popularity": 10.4144
     },
     {
+        "id": 1724,
+        "type": "movie",
+        "title": "The Incredible Hulk",
+        "title_ar": "The Incredible Hulk",
+        "overview": "Scientist Bruce Banner scours the planet for an antidote to the unbridled force of rage within him: the Hulk. But when the military masterminds who dream of exploiting his powers force him back to civilization, he finds himself coming face to face with a new, deadly foe.",
+        "overview_ar": "Scientist Bruce Banner scours the planet for an antidote to the unbridled force of rage within him: the Hulk. But when the military masterminds who dream of exploiting his powers force him back to civilization, he finds himself coming face to face with a new, deadly foe.",
+        "poster_path": "/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg",
+        "vote_average": 6.231,
+        "release_date": "2008-06-12",
+        "popularity": 10.9213
+    },
+    {
         "id": 274857,
         "type": "movie",
         "title": "King Arthur: Legend of the Sword",
@@ -9883,7 +9895,7 @@
         "overview": "Ex-hitman John Wick comes out of retirement to track down the gangsters that took everything from him.",
         "overview_ar": "تدور أحداث الفيلم حول القاتل المحترف السابق جون ويك (كيانو ريفز) ، والذي يحدث له شيء يعكر عليه حياته المسالمة الحالية ، حيث يقوم أحد اللصوص باقتحام بيته ، وسرقة سيارته ، وقتل كلبه ، الكلب الذي أعطته له زوجته السابقة ، فيذهب (جون) إلى (نيويورك) سعيا إلى الانتقام من هذا اللص ، ولكن يكتشف أن والد هذا اللص هو زعيم عصابة روسي ، والذي يضع مكافأة لمن يقتل (جون) ، وإذا بـ(ماركوس) الشريك السابق ، وصديق (جون) يحاول الحصول على هذه المكافأة .",
         "poster_path": "/wXqWR7dHncNRbxoEGybEy7QTe9h.jpg",
-        "vote_average": 7.454,
+        "vote_average": 7.5,
         "release_date": "2014-10-22",
         "popularity": 10.0287
     },
@@ -10051,7 +10063,7 @@
         "overview": "A beautiful girl, Snow White, takes refuge in the forest in the house of seven dwarfs to hide from her stepmother, the wicked Queen. The Queen is jealous because she wants to be known as \"the fairest in the land,\" and Snow White's beauty surpasses her own.",
         "overview_ar": "فتاة جميلة ، بياض الثلج (سنو وايت) ، تلجأ إلى الغابة في منزل الأقزام السبعة للاختباء من زوجة أبيها ، الملكة الشريرة. تشعر الملكة بالغيرة لأنها تريد أن تُعرف باسم \"الأجمل في الأرض\" ، وجمال بياض الثلج يفوق جمالها.",
         "poster_path": "/3VAHfuNb6Z7UiW12iYKANSPBl8m.jpg",
-        "vote_average": 7.123,
+        "vote_average": 7.1,
         "release_date": "1938-01-14",
         "popularity": 10.5301
     },
@@ -10066,18 +10078,6 @@
         "vote_average": 7.495,
         "release_date": "1984-06-08",
         "popularity": 11.1005
-    },
-    {
-        "id": 338953,
-        "type": "movie",
-        "title": "Fantastic Beasts: The Secrets of Dumbledore",
-        "title_ar": "الوحوش المذهلة: أسرار دمبلدور",
-        "overview": "Professor Albus Dumbledore knows the powerful, dark wizard Gellert Grindelwald is moving to seize control of the wizarding world. Unable to stop him alone, he entrusts magizoologist Newt Scamander to lead an intrepid team of wizards and witches. They soon encounter an array of old and new beasts as they clash with Grindelwald's growing legion of followers.",
-        "overview_ar": "العودة إلى السحر.\r يعرف البروفيسور ألبوس دمبلدور أن الساحر القوي المظلم جيلرت جريندلفالد يتحرك للسيطرة على عالم السحرة. غير قادر على إيقافه بمفرده ، يعهد إلى عالم الأحياء نيوت سكاماندر بقيادة فريق جريء من السحرة والسحرة. سرعان ما يواجهون مجموعة من الوحوش القديمة والجديدة أثناء اشتباكهم مع فيلق جريندلفالد المتزايد من أتباعه.",
-        "poster_path": "/3c5GNLB4yRSLBby0trHoA1DSQxQ.jpg",
-        "vote_average": 6.629,
-        "release_date": "2022-04-06",
-        "popularity": 9.2082
     },
     {
         "id": 920,
@@ -10551,9 +10551,9 @@
         "id": 9928,
         "type": "movie",
         "title": "Robots",
-        "title_ar": "روبوتات",
+        "title_ar": "Robots",
         "overview": "Rodney Copperbottom is a young robot inventor who dreams of making the world a better place, until the evil Ratchet takes over Bigweld Industries. Now, Rodney's dreams – and those of his friends – are in danger of becoming obsolete.",
-        "overview_ar": "تدور قصة الفيلم حول شاب مخترع يسافر إلى إحدى المدن الكبرى في دنيا الآليات وينضم إلى الشركة التي طالما يحلم بها، إلا أنه عقب ذلك يكتشف فساد إدارتها الجديدة مما يتعارض مع كل أحلامه وآماله.",
+        "overview_ar": "Rodney Copperbottom is a young robot inventor who dreams of making the world a better place, until the evil Ratchet takes over Bigweld Industries. Now, Rodney's dreams – and those of his friends – are in danger of becoming obsolete.",
         "poster_path": "/fnKCh67l2DDG9NxxIlk9IpsXQ99.jpg",
         "vote_average": 6.479,
         "release_date": "2005-03-10",
@@ -13421,7 +13421,7 @@
         "title": "Ted",
         "title_ar": "Ted",
         "overview": "John Bennett, a man whose childhood wish of bringing his teddy bear to life came true, now must decide between keeping the relationship with the bear or his girlfriend, Lori.",
-        "overview_ar": "تدور قصة الفيلم حول الدمية (تيدي) المُهدى إلى (جون) في عيد ميلاده، ونتيجة لأمنية تمناها (جون) منذ الصغر، يصبح ذلك الدب حيًا، ومن هنا يلازم الدب (جون) جميع أوقاته حتى الكبر، وعليه الحفاظ على التوازن بين علاقته مع دميته ومع صديقته (لوري).",
+        "overview_ar": "John Bennett, a man whose childhood wish of bringing his teddy bear to life came true, now must decide between keeping the relationship with the bear or his girlfriend, Lori.",
         "poster_path": "/tZPTcdGTpxq4yJx1YxqBl0gthNz.jpg",
         "vote_average": 6.448,
         "release_date": "2012-06-29",
@@ -14640,6 +14640,30 @@
         "popularity": 7.4469
     },
     {
+        "id": 1410399,
+        "type": "movie",
+        "title": "Death Whisperer 3",
+        "title_ar": "ธี่หยด 3",
+        "overview": "After successfully defeated the black-suited ghost, Yak must now set out on another journey to find Yee, his youngest sister who has been kidnapped by a cult. Yak and his partner Sergeant Paphan are forced to enter a fearsome cursed village.",
+        "overview_ar": "After successfully defeated the black-suited ghost, Yak must now set out on another journey to find Yee, his youngest sister who has been kidnapped by a cult. Yak and his partner Sergeant Paphan are forced to enter a fearsome cursed village.",
+        "poster_path": "/iGKM5vTczW0U17Wi0Aek4Mkl1y.jpg",
+        "vote_average": 5.357,
+        "release_date": "2025-09-30",
+        "popularity": 7.8716
+    },
+    {
+        "id": 379149,
+        "type": "movie",
+        "title": "The Foreigner",
+        "title_ar": "الأجنبي",
+        "overview": "Quan is a humble London businessman whose long-buried past erupts in a revenge-fueled vendetta when the only person left for him to love – his teenage daughter – dies in an Irish Republican Army car bombing. His relentless search to find the terrorists leads to a cat-and-mouse conflict with a British government official whose own past may hold the clues to the identities of the elusive killers.",
+        "overview_ar": "كوان (جاكي شان) رجل أعمال متواضع في (لندن)، يثور ماضيه الدفين الذي كان قد وأده خلفه، عندما تُقتل ابنته الحبيبة من قِبَل جماعة إرهابية ذات دوافع سياسية انتقامًا منه، وبينما يستقصي كوان هوية الإرهابيين يتورط في لعبة قط وفأر مع مسئول الحكومة البريطانية.",
+        "poster_path": "/rwM4hzrmc5HiWfQD9ls9DL4QgGl.jpg",
+        "vote_average": 6.971,
+        "release_date": "2017-09-28",
+        "popularity": 7.4469
+    },
+    {
         "id": 614933,
         "type": "movie",
         "title": "Atlas",
@@ -14659,7 +14683,7 @@
         "overview": "Toni Chichiarelli arrives in Rome with the dream of becoming a painter, but his talent leads him elsewhere — from art galleries to state secrets. Between art, crime, and power, his signature ends up everywhere — even in the history of Italy.",
         "overview_ar": "يتحول رسام طموح إلى مزوّر محترف يعمل لصالح عصابات إجرامية تمارس أنشطتها خفيةً في عالم \"روما\" المظلم خلال سبعينيات القرن الماضي، في هذا الفيلم الدرامي المستوحى من أحداث حقيقية.",
         "poster_path": "/A188B94iDLdB6499QBYbz74WgOF.jpg",
-        "vote_average": 6.661,
+        "vote_average": 6.66,
         "release_date": "2025-10-19",
         "popularity": 8.1133
     },
@@ -14695,7 +14719,7 @@
         "overview": "A wealthy entrepreneur secretly creates a theme park featuring living dinosaurs drawn from prehistoric DNA. Before opening day, he invites a team of experts and his two eager grandchildren to experience the park and help calm anxious investors. However, the park is anything but amusing as the security systems go off-line and the dinosaurs escape.",
         "overview_ar": "ينشئ رجل أعمال ثري سراً متنزهًا يضم ديناصورات حية مأخوذة من الحمض النووي لعصور ما قبل التاريخ. قبل يوم الافتتاح ، دعا فريقًا من الخبراء وأحفاده المتحمسين لتجربة الحديقة ومساعدة المستثمرين القلقين. ومع ذلك ، فإن الحديقة ليست مسلية على الإطلاق حيث أن أنظمة الأمان تخرج عن الخط وتهرب الديناصورات.",
         "poster_path": "/maFjKnJ62hDQ9E66dKqDZgbUy0H.jpg",
-        "vote_average": 7.964,
+        "vote_average": 7.965,
         "release_date": "1993-06-11",
         "popularity": 8.7294
     },
@@ -14803,7 +14827,7 @@
         "overview": "Five friends head out to rural Texas to visit the grave of a grandfather. On the way, they stumble across what appears to be a deserted house, only to discover something sinister within. Something armed with a chainsaw.",
         "overview_ar": "Five friends head out to rural Texas to visit the grave of a grandfather. On the way, they stumble across what appears to be a deserted house, only to discover something sinister within. Something armed with a chainsaw.",
         "poster_path": "/mpgkRPH1GNkMCgdPk2OMyHzAks7.jpg",
-        "vote_average": 7.281,
+        "vote_average": 7.282,
         "release_date": "1974-10-11",
         "popularity": 9.3809
     },
@@ -14854,30 +14878,6 @@
         "vote_average": 6.762,
         "release_date": "1997-06-05",
         "popularity": 7.7147
-    },
-    {
-        "id": 68724,
-        "type": "movie",
-        "title": "Elysium",
-        "title_ar": "Elysium",
-        "overview": "In the year 2159, two classes of people exist: the very wealthy who live on a pristine man-made space station called Elysium, and the rest, who live on an overpopulated, ruined Earth. Secretary Rhodes, a hard line government official, will stop at nothing to enforce anti-immigration laws and preserve the luxurious lifestyle of the citizens of Elysium. That doesn’t stop the people of Earth from trying to get in, by any means they can. When unlucky Max is backed into a corner, he agrees to take on a daunting mission that, if successful, will not only save his life, but could bring equality to these polarized worlds.",
-        "overview_ar": "In the year 2159, two classes of people exist: the very wealthy who live on a pristine man-made space station called Elysium, and the rest, who live on an overpopulated, ruined Earth. Secretary Rhodes, a hard line government official, will stop at nothing to enforce anti-immigration laws and preserve the luxurious lifestyle of the citizens of Elysium. That doesn’t stop the people of Earth from trying to get in, by any means they can. When unlucky Max is backed into a corner, he agrees to take on a daunting mission that, if successful, will not only save his life, but could bring equality to these polarized worlds.",
-        "poster_path": "/uiiXHBd9oUrtUa4YqZiAoy05cRz.jpg",
-        "vote_average": 6.514,
-        "release_date": "2013-08-07",
-        "popularity": 8.1147
-    },
-    {
-        "id": 454639,
-        "type": "movie",
-        "title": "Masters of the Universe",
-        "title_ar": "Masters of the Universe",
-        "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
-        "overview_ar": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
-        "poster_path": "/nm2ianYVp7OXElUZVeeAbNTqBLr.jpg",
-        "vote_average": 0.0,
-        "release_date": "2026-06-03",
-        "popularity": 7.6088
     },
     {
         "id": 710,
@@ -15341,7 +15341,7 @@
         "title": "Die Hard: With a Vengeance",
         "title_ar": "Die Hard: With a Vengeance",
         "overview": "New York detective John McClane is back and kicking bad-guy butt in the third installment of this action-packed series, which finds him teaming with civilian Zeus Carver to prevent the loss of innocent lives. McClane thought he'd seen it all, until a genius named Simon engages McClane, his new \"partner\" -- and his beloved city -- in a deadly game that demands their concentration.",
-        "overview_ar": "تندلع في نيويورك كثير من جرائم العنصرية المضادة، كما تندلع أحداث شغب، ولكن كل هذه الأمور يبدو أن وراءهه أمر آخر؛ إذ تكتشف الشرطة أن هناك قنبلة مزروعة في إحدى المدارس، وتلك القنبلة لديها حساسية شديدة تجاة أجهزة اللاسلكية الخاصة بالشرطة، ووراء ذلك الإرهابي الألماني العالمي (سيمون جروبر) الذي يخطط لسرقة الاحتياطي الفيدرالي، وعلى (ماكين) إيقافه.",
+        "overview_ar": "New York detective John McClane is back and kicking bad-guy butt in the third installment of this action-packed series, which finds him teaming with civilian Zeus Carver to prevent the loss of innocent lives. McClane thought he'd seen it all, until a genius named Simon engages McClane, his new \"partner\" -- and his beloved city -- in a deadly game that demands their concentration.",
         "poster_path": "/buqmCdFQEWwEpL3agGgg2GVjN2d.jpg",
         "vote_average": 7.276,
         "release_date": "1995-05-19",
@@ -15353,7 +15353,7 @@
         "title": "Saw X",
         "title_ar": "Saw X",
         "overview": "Between the events of 'Saw' and 'Saw II', a sick and desperate John Kramer travels to Mexico for a risky and experimental medical procedure in hopes of a miracle cure for his cancer, only to discover the entire operation is a scam to defraud the most vulnerable. Armed with a newfound purpose, the infamous serial killer returns to his work, turning the tables on the con artists in his signature visceral way through devious, deranged, and ingenious traps.",
-        "overview_ar": "تدور الأحداث حول جون كرامر، والذي يسافر إلى المكسيك بحثًا عن علاج لحالته المتأخرة بسبب السرطان، ولكن سرعان ما يكتشف تعرضه للخداع من قبل مجموعة من المحتالين؛ فيقرر جون الانتقام منهم.",
+        "overview_ar": "Between the events of 'Saw' and 'Saw II', a sick and desperate John Kramer travels to Mexico for a risky and experimental medical procedure in hopes of a miracle cure for his cancer, only to discover the entire operation is a scam to defraud the most vulnerable. Armed with a newfound purpose, the infamous serial killer returns to his work, turning the tables on the con artists in his signature visceral way through devious, deranged, and ingenious traps.",
         "poster_path": "/u7Lp1Hi8aBS73jv4KRMIv5aK4ax.jpg",
         "vote_average": 7.184,
         "release_date": "2023-09-27",
@@ -19200,30 +19200,6 @@
         "popularity": 6.3185
     },
     {
-        "id": 1370,
-        "type": "movie",
-        "title": "Rambo III",
-        "title_ar": "Rambo III",
-        "overview": "Combat has taken its toll on Rambo, but he's finally begun to find inner peace in a monastery. When Rambo's friend and mentor Col. Trautman asks for his help on a top secret mission to Afghanistan, Rambo declines but must reconsider when Trautman is captured.",
-        "overview_ar": "لقد أثر القتال على رامبو ، لكنه بدأ أخيرًا في إيجاد السلام الداخلي في أحد الأديرة. عندما طلب صديق ومعلم رامبو الكولونيل تراوتمان مساعدته في مهمة سرية للغاية إلى أفغانستان ، رفض رامبو ولكن يجب أن يعيد النظر عندما يتم القبض على تراوتمان.",
-        "poster_path": "/uycbt9iVlAnKkQIisqUWuO8hVcm.jpg",
-        "vote_average": 6.198,
-        "release_date": "1988-05-24",
-        "popularity": 6.3185
-    },
-    {
-        "id": 869,
-        "type": "movie",
-        "title": "Planet of the Apes",
-        "title_ar": "Planet of the Apes",
-        "overview": "After a spectacular crash-landing on an uncharted planet, brash astronaut Leo Davidson finds himself trapped in a savage world where talking apes dominate the human race. Desperate to find a way home, Leo must evade the invincible gorilla army led by Ruthless General Thade.",
-        "overview_ar": "After a spectacular crash-landing on an uncharted planet, brash astronaut Leo Davidson finds himself trapped in a savage world where talking apes dominate the human race. Desperate to find a way home, Leo must evade the invincible gorilla army led by Ruthless General Thade.",
-        "poster_path": "/eEsOgbgKXMvI2FEw1WENamVXi41.jpg",
-        "vote_average": 5.762,
-        "release_date": "2001-07-26",
-        "popularity": 6.8508
-    },
-    {
         "id": 75258,
         "type": "movie",
         "title": "Secret of the Wings",
@@ -19279,7 +19255,7 @@
         "overview": "Vada Sultenfuss is obsessed with death. Her mother is dead, and her father runs a funeral parlor. She is also in love with her English teacher, and joins a poetry class over the summer just to impress him. Thomas J., her best friend, is \"allergic to everything\", and sticks with Vada despite her hangups. When Vada's father hires Shelly, and begins to fall for her, things take a turn to the worse...",
         "overview_ar": "Vada Sultenfuss is obsessed with death. Her mother is dead, and her father runs a funeral parlor. She is also in love with her English teacher, and joins a poetry class over the summer just to impress him. Thomas J., her best friend, is \"allergic to everything\", and sticks with Vada despite her hangups. When Vada's father hires Shelly, and begins to fall for her, things take a turn to the worse...",
         "poster_path": "/qyJJNHteA7BUwQSey05t7qP4vRV.jpg",
-        "vote_average": 7.407,
+        "vote_average": 7.408,
         "release_date": "1991-11-27",
         "popularity": 7.7232
     },
@@ -19440,6 +19416,18 @@
         "popularity": 7.2562
     },
     {
+        "id": 2567,
+        "type": "movie",
+        "title": "The Aviator",
+        "title_ar": "The Aviator",
+        "overview": "A biopic depicting the life of filmmaker and aviation pioneer Howard Hughes from 1927 to 1947, during which time he became a successful film producer and an aviation magnate, while simultaneously growing more unstable due to severe obsessive-compulsive disorder.",
+        "overview_ar": "سيرة ذاتية تصور حياة صانع الأفلام ورائد الطيران هوارد هيوز من عام 1927 إلى عام 1947 ، وخلال ذلك الوقت أصبح منتج أفلام ناجحًا وقطبًا في مجال الطيران ، بينما أصبح في نفس الوقت غير مستقر بسبب اضطراب الوسواس القهري الشديد.",
+        "poster_path": "/lx4kWcZc3o9PaNxlQpEJZM17XUI.jpg",
+        "vote_average": 7.215,
+        "release_date": "2004-12-17",
+        "popularity": 6.8798
+    },
+    {
         "id": 50359,
         "type": "movie",
         "title": "Hop",
@@ -19488,18 +19476,6 @@
         "popularity": 6.3735
     },
     {
-        "id": 7340,
-        "type": "movie",
-        "title": "Carrie",
-        "title_ar": "كاري",
-        "overview": "Withdrawn and sensitive teenager Carrie White faces bullying from classmates and abuse from her fanatically pious mother. When she begins to suspect that she has supernatural powers, things take a dark and violent turn.",
-        "overview_ar": "كاري وايت، مراهقة خجولة وحساسة تتعرض للسخرية من زملائها في المدرسة وتُعاني من سوء معاملة والدتها المتعصبة دينيا. عندما تبدأ أحداث غريبة بالتكرار من حولها، تشتبه في أنها تمتلك قوى خارقة.",
-        "poster_path": "/8tT1rqlsTguyfUBMrbHR9cv1rxM.jpg",
-        "vote_average": 7.327,
-        "release_date": "1976-11-03",
-        "popularity": 7.4463
-    },
-    {
         "id": 664,
         "type": "movie",
         "title": "Twister",
@@ -19531,7 +19507,7 @@
         "overview": "On a lavish yacht for an assignment, a journalist sees a passenger go overboard. But when no one believes her, she risks her life to uncover the truth.",
         "overview_ar": "خلال مهمة عمل على متن يخت فخم، ترى صحفية شخصًا من ركابه يسقط في البحر... لكن حين لا يصدّقها أحد، تُخاطر بحياتها لكشف حقيقة الأمر.",
         "poster_path": "/4kpdyePOlcELQQJcxXPF5GB1Adw.jpg",
-        "vote_average": 6.2,
+        "vote_average": 6.202,
         "release_date": "2025-10-09",
         "popularity": 6.6901
     },
@@ -19678,6 +19654,30 @@
         "vote_average": 7.1,
         "release_date": "2014-11-24",
         "popularity": 6.0756
+    },
+    {
+        "id": 507076,
+        "type": "movie",
+        "title": "Climax",
+        "title_ar": "Climax",
+        "overview": "When a dance troupe is lured to an empty school, a bowl of drug-laced sangria causes their jubilant rehearsal to descend into a dark and explosive nightmare as they try to survive the night—and find who's responsible—before it's too late.",
+        "overview_ar": "When a dance troupe is lured to an empty school, a bowl of drug-laced sangria causes their jubilant rehearsal to descend into a dark and explosive nightmare as they try to survive the night—and find who's responsible—before it's too late.",
+        "poster_path": "/47IXH2iEWwX0F7vIyGXaKQ0psBG.jpg",
+        "vote_average": 7.05,
+        "release_date": "2018-09-19",
+        "popularity": 6.7969
+    },
+    {
+        "id": 18892,
+        "type": "movie",
+        "title": "Jawbreaker",
+        "title_ar": "Jawbreaker",
+        "overview": "When an exclusive clique of teenage socialites accidentally murder their best friend on the morning of her birthday, the three girls responsible conspire to hide the truth.",
+        "overview_ar": "When an exclusive clique of teenage socialites accidentally murder their best friend on the morning of her birthday, the three girls responsible conspire to hide the truth.",
+        "poster_path": "/7YrxXoG25hVCK4nYDHQv9YIk3Ye.jpg",
+        "vote_average": 6.4,
+        "release_date": "1999-01-30",
+        "popularity": 6.997
     },
     {
         "id": 18892,
@@ -19911,9 +19911,9 @@
         "id": 22881,
         "type": "movie",
         "title": "The Blind Side",
-        "title_ar": "The Blind Side",
+        "title_ar": "الجانب الخفي",
         "overview": "The story of Michael Oher, a homeless and traumatized boy who became an All American football player and first round NFL draft pick with the help of a caring woman and her family.",
-        "overview_ar": "The story of Michael Oher, a homeless and traumatized boy who became an All American football player and first round NFL draft pick with the help of a caring woman and her family.",
+        "overview_ar": "قصة مايكل أوهير ، فتى مشرد ومصاب بصدمة نفسية أصبح لاعب كرة قدم أمريكي بالكامل وجولة أولى في اختيار اتحاد كرة القدم الأميركي بمساعدة امرأة حانية وعائلتها",
         "poster_path": "/bMgq7VBriuBFknXEe9E9pVBYGZq.jpg",
         "vote_average": 7.667,
         "release_date": "2009-11-20",
@@ -20165,7 +20165,7 @@
         "title": "Seventh Son",
         "title_ar": "Seventh Son",
         "overview": "John Gregory, who is a seventh son of a seventh son and also the local spook, has protected the country from witches, boggarts, ghouls and all manner of things that go bump in the night. However John is not young anymore, and has been seeking an apprentice to carry on his trade. Most have failed to survive. The last hope is a young farmer's son named Thomas Ward. Will he survive the training to become the spook that so many others couldn't?",
-        "overview_ar": "قام جون جريجوري ، وهو الابن السابع للابن السابع والشبح المحلي أيضًا ، بحماية البلاد من السحرة والبوغارت والغول وجميع أنواع الأشياء التي تصطدم بالليل. ومع ذلك ، لم يعد جون شابًا ، وكان يبحث عن متدرب لمواصلة تجارته. فشل معظمهم في البقاء. الأمل الأخير هو ابن مزارع شاب اسمه توماس وارد. هل سينجو من التدريبات ليصبح الشبح الذي لم يستطع الكثيرون غيره؟",
+        "overview_ar": "John Gregory, who is a seventh son of a seventh son and also the local spook, has protected the country from witches, boggarts, ghouls and all manner of things that go bump in the night. However John is not young anymore, and has been seeking an apprentice to carry on his trade. Most have failed to survive. The last hope is a young farmer's son named Thomas Ward. Will he survive the training to become the spook that so many others couldn't?",
         "poster_path": "/7Q8DfXSjcFSSQDOxz1Sk865wNqI.jpg",
         "vote_average": 5.516,
         "release_date": "2014-12-12",
@@ -20177,7 +20177,7 @@
         "title": "A Wrinkle in Time",
         "title_ar": "A Wrinkle in Time",
         "overview": "After the disappearance of her scientist father, three peculiar beings send Meg, her brother, and her friend to space in order to find him.",
-        "overview_ar": "كن محاربا\r بعد اختفاء والدها العالم ، ترسل ثلاثة كائنات غريبة ميج وشقيقها وصديقها إلى الفضاء للعثور عليه.",
+        "overview_ar": "After the disappearance of her scientist father, three peculiar beings send Meg, her brother, and her friend to space in order to find him.",
         "poster_path": "/yAcb58vipewa1BfNit2RjE6boXA.jpg",
         "vote_average": 5.061,
         "release_date": "2018-03-08",
@@ -20271,9 +20271,9 @@
         "id": 7340,
         "type": "movie",
         "title": "Carrie",
-        "title_ar": "Carrie",
+        "title_ar": "كاري",
         "overview": "Withdrawn and sensitive teenager Carrie White faces bullying from classmates and abuse from her fanatically pious mother. When she begins to suspect that she has supernatural powers, things take a dark and violent turn.",
-        "overview_ar": "Withdrawn and sensitive teenager Carrie White faces bullying from classmates and abuse from her fanatically pious mother. When she begins to suspect that she has supernatural powers, things take a dark and violent turn.",
+        "overview_ar": "كاري وايت، مراهقة خجولة وحساسة تتعرض للسخرية من زملائها في المدرسة وتُعاني من سوء معاملة والدتها المتعصبة دينيا. عندما تبدأ أحداث غريبة بالتكرار من حولها، تشتبه في أنها تمتلك قوى خارقة.",
         "poster_path": "/8tT1rqlsTguyfUBMrbHR9cv1rxM.jpg",
         "vote_average": 7.3,
         "release_date": "1976-11-03",
@@ -20880,30 +20880,6 @@
         "popularity": 6.5668
     },
     {
-        "id": 16859,
-        "type": "movie",
-        "title": "Kiki's Delivery Service",
-        "title_ar": "كيكي لخدمة التوصيل",
-        "overview": "A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.",
-        "overview_ar": "ساحرة صغيرة تُدعى (كيكي)، تبلغ الىن ثلاثة عشر عامًا من العمر، ولا تزال قليلة الخبرة كثيرة العِند، لكن لها من الخيال والعزم والحيلة كثيرًا، مع قطها المتحدث (جيجي) دومًا بجانبها، نجدها على استعداد لمواجهة العالم بأسره أو على الأقل القرية الساحلية الاوروبية الطريفة التي انتقتها كموطنها الجديد.",
-        "poster_path": "/Aufa4YdZIv4AXpR9rznwVA5SEfd.jpg",
-        "vote_average": 7.829,
-        "release_date": "1989-07-29",
-        "popularity": 6.5668
-    },
-    {
-        "id": 471506,
-        "type": "movie",
-        "title": "Greta",
-        "title_ar": "جريتا",
-        "overview": "A young woman returns a lonely widow’s lost purse, leading to an unlikely relationship between the two — until the young woman discovers the widow might not be all that she seems.",
-        "overview_ar": "فتاة شابة اسمها (فرانسيس) تفتقد والدتها المتوفاة فتنتقل إلى مانهاتن، وهناك تعقد صداقة غير متوقعة مع (جريتا) وهى أرملة تعيش وحيدة، ولكن سرعان ما تنطلي نواياهما بالشر.",
-        "poster_path": "/9hBpFyJ3pGdupXbaC2L7nGvLMBn.jpg",
-        "vote_average": 6.6,
-        "release_date": "2019-02-28",
-        "popularity": 6.7289
-    },
-    {
         "id": 8961,
         "type": "movie",
         "title": "Bad Boys II",
@@ -21118,6 +21094,30 @@
         "vote_average": 6.418,
         "release_date": "2015-06-17",
         "popularity": 6.3585
+    },
+    {
+        "id": 238615,
+        "type": "movie",
+        "title": "Self/less",
+        "title_ar": "Self/less",
+        "overview": "An extremely wealthy elderly man dying from cancer undergoes a radical medical procedure that transfers his consciousness to the body of a healthy young man but everything may not be as good as it seems when he starts to uncover the mystery of the body's origins and the secret organization that will kill to keep its secrets.",
+        "overview_ar": "An extremely wealthy elderly man dying from cancer undergoes a radical medical procedure that transfers his consciousness to the body of a healthy young man but everything may not be as good as it seems when he starts to uncover the mystery of the body's origins and the secret organization that will kill to keep its secrets.",
+        "poster_path": "/6ri3y5n3BXahy6lu2i0ndrqA4CA.jpg",
+        "vote_average": 6.417,
+        "release_date": "2015-07-10",
+        "popularity": 7.6807
+    },
+    {
+        "id": 1265063,
+        "type": "movie",
+        "title": "After the Hunt",
+        "title_ar": "After the Hunt",
+        "overview": "A college professor finds herself at a personal and professional crossroads when a star pupil levels an accusation against one of her colleagues, and a dark secret from her own past threatens to come to light.",
+        "overview_ar": "A college professor finds herself at a personal and professional crossroads when a star pupil levels an accusation against one of her colleagues, and a dark secret from her own past threatens to come to light.",
+        "poster_path": "/ryF8QPGUGlo8gRB4OYKb4J0r3aJ.jpg",
+        "vote_average": 5.68,
+        "release_date": "2025-10-09",
+        "popularity": 7.7067
     },
     {
         "id": 20453,
@@ -21821,7 +21821,7 @@
         "title": "Tom Clancy's Without Remorse",
         "title_ar": "Tom Clancy's Without Remorse",
         "overview": "An elite Navy SEAL uncovers an international conspiracy while seeking justice for the murder of his pregnant wife.",
-        "overview_ar": "An elite Navy SEAL uncovers an international conspiracy while seeking justice for the murder of his pregnant wife.",
+        "overview_ar": "تكشف نخبة البحرية الأمريكية عن مؤامرة دولية أثناء سعيها لتحقيق العدالة في مقتل زوجته الحامل.",
         "poster_path": "/6GCOpT8QcNzup09TAMmvvk22LTR.jpg",
         "vote_average": 6.938,
         "release_date": "2021-04-29",
@@ -21831,9 +21831,9 @@
         "id": 137116,
         "type": "movie",
         "title": "Smurfs: The Lost Village",
-        "title_ar": "Smurfs: The Lost Village",
+        "title_ar": "السنافر3∶ القرية المفقودة",
         "overview": "In this fully animated, all-new take on the Smurfs, a mysterious map sets Smurfette and her friends Brainy, Clumsy and Hefty on an exciting race through the Forbidden Forest leading to the discovery of the biggest secret in Smurf history.",
-        "overview_ar": "In this fully animated, all-new take on the Smurfs, a mysterious map sets Smurfette and her friends Brainy, Clumsy and Hefty on an exciting race through the Forbidden Forest leading to the discovery of the biggest secret in Smurf history.",
+        "overview_ar": "تدور احداث الفيلم  حول العثور على خريطة سرية  تدل على الغابة المحرمة  فتذهب سنفورة فى مغامرة مع اصدقائها السنافر سنفور مفكر وسنفور اخرق وسنفور بدين ، فيذهبوا عبر هذة الغابة  محاولين اكتشاف قرية السنافر الرائعه قبل ان يبلغها عدوهم الساحر الشرير (جارجاميل)",
         "poster_path": "/swt9crREg1UcKgg3wGWfoFNlXOz.jpg",
         "vote_average": 6.4,
         "release_date": "2017-03-23",
@@ -23760,18 +23760,6 @@
         "popularity": 5.9497
     },
     {
-        "id": 332210,
-        "type": "movie",
-        "title": "Storks",
-        "title_ar": "Storks",
-        "overview": "Storks deliver babies…or at least they used to. Now they deliver packages for a global internet retail giant. Junior, the company’s top delivery stork, is about to be promoted when he accidentally activates the Baby Making Machine, producing an adorable and wholly unauthorized baby girl...",
-        "overview_ar": "تتوقف طيور اللقلق عن توصيل اﻷطفال التي كانت مهمتهم الرئيسية، والآن يقومون بتوصيل الطرود إلى موقع انترنت، (جونيور) كبير اللقالق المُوصلين على وشك أن يترقى، يشغل بالصدفة ماكينة تصنيع الأطفال، لتنتج طفلة مدهشة وغير مُصرّح بها، هنا يقوم (جونيور) وصديقه (توليب) برحلة رهيبة لمعالجة الأمر.",
-        "poster_path": "/pwGolX8JmGJhhcUjO5SJt38Uk0m.jpg",
-        "vote_average": 6.67,
-        "release_date": "2016-09-22",
-        "popularity": 5.6156
-    },
-    {
         "id": 291870,
         "type": "movie",
         "title": "Dirty Grandpa",
@@ -23998,5 +23986,17 @@
         "vote_average": 8.096,
         "release_date": "2012-10-25",
         "popularity": 6.1341
+    },
+    {
+        "id": 864,
+        "type": "movie",
+        "title": "Cool Runnings",
+        "title_ar": "Cool Runnings",
+        "overview": "When a Jamaican sprinter is disqualified from the Olympic Games, he enlists the help of a dishonored coach to start the first Jamaican bobsled team.",
+        "overview_ar": "When a Jamaican sprinter is disqualified from the Olympic Games, he enlists the help of a dishonored coach to start the first Jamaican bobsled team.",
+        "poster_path": "/6fXuGEb7EqGmAeUodxm7l5ELPZ.jpg",
+        "vote_average": 7.008,
+        "release_date": "1993-10-01",
+        "popularity": 6.6639
     }
 ]
