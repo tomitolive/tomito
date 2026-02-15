@@ -1200,16 +1200,16 @@
         "popularity": 81.5403
     },
     {
-        "id": 250307,
+        "id": 1435,
         "type": "tv",
-        "title": "The Pitt",
-        "title_ar": "مستشفى بيتسبرغ",
-        "overview": "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
-        "overview_ar": "الحياة اليومية لمقدمي الرعاية الصحية في مستشفى بيتسبرغ في بنسلفانيا صراع، فهم يحاولون التوفيق بين الأزمات الشخصية وسياسات مكان العمل وتكلفة علاج المرضى المصابين بأمراض خطيرة، مما يكشف عن المرونة المطلوبة في دعوتهم النبيلة.",
-        "poster_path": "/kvFSpESyBZMjaeOJDx7RS3P1jey.jpg",
-        "vote_average": 8.68,
-        "release_date": "2025-01-09",
-        "popularity": 84.8639
+        "title": "The Good Wife",
+        "title_ar": "The Good Wife",
+        "overview": "Alicia Florrick boldly assumes full responsibility for her family and re-enters the workforce after her husband's very public sex and political corruption scandal lands him in jail.",
+        "overview_ar": "Alicia Florrick boldly assumes full responsibility for her family and re-enters the workforce after her husband's very public sex and political corruption scandal lands him in jail.",
+        "poster_path": "/lasNCd45fpPLirlA7QxkuopWro.jpg",
+        "vote_average": 7.582,
+        "release_date": "2009-09-22",
+        "popularity": 79.9842
     },
     {
         "id": 46296,
@@ -1392,6 +1392,18 @@
         "popularity": 78.7489
     },
     {
+        "id": 250307,
+        "type": "tv",
+        "title": "The Pitt",
+        "title_ar": "مستشفى بيتسبرغ",
+        "overview": "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
+        "overview_ar": "الحياة اليومية لمقدمي الرعاية الصحية في مستشفى بيتسبرغ في بنسلفانيا صراع، فهم يحاولون التوفيق بين الأزمات الشخصية وسياسات مكان العمل وتكلفة علاج المرضى المصابين بأمراض خطيرة، مما يكشف عن المرونة المطلوبة في دعوتهم النبيلة.",
+        "poster_path": "/kvFSpESyBZMjaeOJDx7RS3P1jey.jpg",
+        "vote_average": 8.681,
+        "release_date": "2025-01-09",
+        "popularity": 84.8639
+    },
+    {
         "id": 80748,
         "type": "tv",
         "title": "FBI",
@@ -1426,18 +1438,6 @@
         "vote_average": 8.3,
         "release_date": "1990-04-08",
         "popularity": 83.5398
-    },
-    {
-        "id": 4239,
-        "type": "tv",
-        "title": "Married... with Children",
-        "title_ar": "Married... with Children",
-        "overview": "Al Bundy is an unsuccessful middle aged shoe salesman with a miserable life and an equally dysfunctional family. He hates his job, his wife is lazy, his son is dysfunctional (especially with women), and his daughter is dim-witted and promiscuous.",
-        "overview_ar": "Al Bundy is an unsuccessful middle aged shoe salesman with a miserable life and an equally dysfunctional family. He hates his job, his wife is lazy, his son is dysfunctional (especially with women), and his daughter is dim-witted and promiscuous.",
-        "poster_path": "/qxdOgESOkBMmfcWUizL01mbdqzl.jpg",
-        "vote_average": 7.718,
-        "release_date": "1987-04-05",
-        "popularity": 69.7913
     },
     {
         "id": 4239,
@@ -3120,6 +3120,18 @@
         "popularity": 54.3069
     },
     {
+        "id": 49011,
+        "type": "tv",
+        "title": "Mom",
+        "title_ar": "Mom",
+        "overview": "Aan irreverent and outrageous take on true family love‐and dysfunction. Newly sober single mom Christy struggles to raise two children in a world full of temptations and pitfalls. Testing her sobriety is her formerly estranged mother, now back in Christy's life and eager to share passive-aggressive insights into her daughter's many mistakes.",
+        "overview_ar": "Aan irreverent and outrageous take on true family love‐and dysfunction. Newly sober single mom Christy struggles to raise two children in a world full of temptations and pitfalls. Testing her sobriety is her formerly estranged mother, now back in Christy's life and eager to share passive-aggressive insights into her daughter's many mistakes.",
+        "poster_path": "/kIi3T7X0kmiV9vGDme146P2d979.jpg",
+        "vote_average": 7.307,
+        "release_date": "2013-09-23",
+        "popularity": 54.3069
+    },
+    {
         "id": 15844,
         "type": "tv",
         "title": "A Kindred Spirit",
@@ -3163,7 +3175,7 @@
         "overview": "During a violent confrontation arranged between radical fans of two football clubs, Salvador Aguirre, an ambulance driver, rescues his injured daughter Milena, a member of the ultra group, which defends racist, violent and homophobic values, totally opposed to those he instilled in her.",
         "overview_ar": "During a violent confrontation arranged between radical fans of two football clubs, Salvador Aguirre, an ambulance driver, rescues his injured daughter Milena, a member of the ultra group, which defends racist, violent and homophobic values, totally opposed to those he instilled in her.",
         "poster_path": "/8pLnnRB2qG1vZHXpjm2gVFNyUX.jpg",
-        "vote_average": 6.368,
+        "vote_average": 6.4,
         "release_date": "2026-02-06",
         "popularity": 50.2942
     },
@@ -3343,21 +3355,9 @@
         "overview": "Smart, sarcastic and a little dead inside, Wednesday Addams investigates twisted mysteries while making new friends — and foes — at Nevermore Academy.",
         "overview_ar": "تحقّق \"وينزداي آدامز\"، الفتاة الذكية والساخرة ومتبلّدة المشاعر، في ألغاز غامضة في الوقت الذي تكسب فيه الأصدقاء والأعداء الجُدد في أكاديمية \"نيفرمور\".",
         "poster_path": "/36xXlhEpQqVVPuiZhfoQuaY4OlA.jpg",
-        "vote_average": 8.357,
+        "vote_average": 8.358,
         "release_date": "2022-11-23",
         "popularity": 54.3992
-    },
-    {
-        "id": 307423,
-        "type": "tv",
-        "title": "Doménica Montero",
-        "title_ar": "Doménica Montero",
-        "overview": "A respected and renowned businesswoman and philanthropist, considered one of the most sought-after brides in the country, who is left at the altar on her wedding day. Humiliated, betrayed, and turned into a target of public scrutiny, Doménica decides to flee and take refuge in one of her parents’ old estates. There, marked by pain, she faces new challenges and meets Luis Fernando, the owner of the neighboring estate, who also carries a painful past. Between them, an explosive relationship develops, marked by pride, misunderstandings, and growing attraction, where land disputes intertwine with their shared desire to rebuild, heal, and give new meaning to their lives.",
-        "overview_ar": "A respected and renowned businesswoman and philanthropist, considered one of the most sought-after brides in the country, who is left at the altar on her wedding day. Humiliated, betrayed, and turned into a target of public scrutiny, Doménica decides to flee and take refuge in one of her parents’ old estates. There, marked by pain, she faces new challenges and meets Luis Fernando, the owner of the neighboring estate, who also carries a painful past. Between them, an explosive relationship develops, marked by pride, misunderstandings, and growing attraction, where land disputes intertwine with their shared desire to rebuild, heal, and give new meaning to their lives.",
-        "poster_path": "/A02M5F5DcQ3glHrvBUSGnzTlvW1.jpg",
-        "vote_average": 8.243,
-        "release_date": "2025-12-08",
-        "popularity": 52.5168
     },
     {
         "id": 307423,
@@ -3591,9 +3591,9 @@
         "id": 270444,
         "type": "tv",
         "title": "Lead Children",
-        "title_ar": "التلامذة المرضى",
+        "title_ar": "Lead Children",
         "overview": "When a young doctor discovers that children living near a smelting plant suffer from lead poisoning, she risks her career and safety to save them.",
-        "overview_ar": "حين تكتشف تفشّي حالات التسمم بالحديد بين الأطفال الذين يعيشون قرب منشأة صهر، لا تتورع طبيبة شابة عن المخاطرة بسلامتها ومستقبلها المهني من أجل إنقاذهم.",
+        "overview_ar": "When a young doctor discovers that children living near a smelting plant suffer from lead poisoning, she risks her career and safety to save them.",
         "poster_path": "/8Er3yj5yRnHGALKPbtuiyMlIh6R.jpg",
         "vote_average": 9.0,
         "release_date": "2026-02-11",
@@ -4080,6 +4080,18 @@
         "popularity": 43.8627
     },
     {
+        "id": 32608,
+        "type": "tv",
+        "title": "Ancient Aliens",
+        "title_ar": "Ancient Aliens",
+        "overview": "Did intelligent beings from outer space visit Earth thousands of years ago? From the age of the dinosaurs to ancient Egypt, from early cave drawings to continued mass sightings in the US, each episode gives historic depth to the questions, speculations, provocative controversies, first-hand accounts and grounded theories surrounding this age old debate.",
+        "overview_ar": "Did intelligent beings from outer space visit Earth thousands of years ago? From the age of the dinosaurs to ancient Egypt, from early cave drawings to continued mass sightings in the US, each episode gives historic depth to the questions, speculations, provocative controversies, first-hand accounts and grounded theories surrounding this age old debate.",
+        "poster_path": "/6X2hftdC8y78SKMSgfzeUItqaVq.jpg",
+        "vote_average": 7.0,
+        "release_date": "2010-04-20",
+        "popularity": 43.8627
+    },
+    {
         "id": 2290,
         "type": "tv",
         "title": "Stargate Atlantis",
@@ -4135,7 +4147,7 @@
         "overview": "Babylon 5 is a five-mile long space station located in neutral space. Built by the Earth Alliance in the 2250s, its goal is to maintain peace among the various alien races by providing a sanctuary where grievances and negotiations can be worked out among duly appointed ambassadors. A council made up of representatives from the five major space-faring civilizations - the Earth Alliance, Minbari Federation, Centauri Republic, Narn Regime, and Vorlon Empire - work with the League of Non-Aligned Worlds to keep interstellar relations under control. Aside from its diplomatic function, Babylon 5 also serves as a military post for Earth and a port of call for travelers, traders, businessmen, criminals, and Rangers.",
         "overview_ar": "Babylon 5 is a five-mile long space station located in neutral space. Built by the Earth Alliance in the 2250s, its goal is to maintain peace among the various alien races by providing a sanctuary where grievances and negotiations can be worked out among duly appointed ambassadors. A council made up of representatives from the five major space-faring civilizations - the Earth Alliance, Minbari Federation, Centauri Republic, Narn Regime, and Vorlon Empire - work with the League of Non-Aligned Worlds to keep interstellar relations under control. Aside from its diplomatic function, Babylon 5 also serves as a military post for Earth and a port of call for travelers, traders, businessmen, criminals, and Rangers.",
         "poster_path": "/td8O6KJQpN9ZRiuyFUILziXFMrk.jpg",
-        "vote_average": 8.024,
+        "vote_average": 8.026,
         "release_date": "1994-01-26",
         "popularity": 45.4024
     },
@@ -4162,18 +4174,6 @@
         "vote_average": 8.551,
         "release_date": "2012-10-06",
         "popularity": 45.8079
-    },
-    {
-        "id": 71738,
-        "type": "tv",
-        "title": "The Orville",
-        "title_ar": "The Orville",
-        "overview": "Follow the crew of the not-so-functional exploratory ship in the Earth's interstellar fleet, 400 years in the future.",
-        "overview_ar": "تقع الأحداث بعد أربعمائة عام في المستقبل، حيث نشهد مغامرات سفينة الفضاء الاستكشافية (أورفيل) في رحلتها عبر غلاف جو الكرة الأرضية، والمغامرات التي يخوضها أفراد طاقم السفينة، وما يواجهونه من تحديات مختلفة وظروف عسيرة خلال رحلتهم الاستكشافية.",
-        "poster_path": "/78xnHh9H5wYcUeZoB0bt1UgInAW.jpg",
-        "vote_average": 7.621,
-        "release_date": "2017-09-10",
-        "popularity": 43.0364
     },
     {
         "id": 61511,
@@ -4243,21 +4243,9 @@
         "overview": "Watch Carly, Sam, and Freddie, as they try to balance their everyday 8th grade lives with their newfound fame managing and starring in the most awesome show on the web.",
         "overview_ar": "Watch Carly, Sam, and Freddie, as they try to balance their everyday 8th grade lives with their newfound fame managing and starring in the most awesome show on the web.",
         "poster_path": "/zswxst53aM8g2LysdVbtQNJAiKM.jpg",
-        "vote_average": 8.0,
+        "vote_average": 7.964,
         "release_date": "2007-09-08",
         "popularity": 44.343
-    },
-    {
-        "id": 49036,
-        "type": "tv",
-        "title": "Love Stories in the Countryside",
-        "title_ar": "乡村爱情",
-        "overview": "",
-        "overview_ar": "",
-        "poster_path": "/2XlU2bzsESbc6x9lBKe0gyk90oO.jpg",
-        "vote_average": 6.1,
-        "release_date": "2006-09-30",
-        "popularity": 44.3865
     },
     {
         "id": 301507,
@@ -4318,6 +4306,18 @@
         "vote_average": 8.5,
         "release_date": "2011-05-03",
         "popularity": 43.2592
+    },
+    {
+        "id": 37854,
+        "type": "tv",
+        "title": "One Piece",
+        "title_ar": "One Piece",
+        "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+        "overview_ar": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+        "poster_path": "/cMD9Ygz11zjJzAovURpO75Qg7rT.jpg",
+        "vote_average": 8.723,
+        "release_date": "1999-10-20",
+        "popularity": 46.2393
     },
     {
         "id": 4018,
@@ -6720,6 +6720,18 @@
         "popularity": 34.964
     },
     {
+        "id": 71694,
+        "type": "tv",
+        "title": "Snowfall",
+        "title_ar": "Snowfall",
+        "overview": "Los Angeles. 1983. A storm is coming and its name is crack. Set against the infancy of the crack cocaine epidemic and its ultimate radical impact on the culture as we know it, the story follows numerous characters on a violent collision course.",
+        "overview_ar": "Los Angeles. 1983. A storm is coming and its name is crack. Set against the infancy of the crack cocaine epidemic and its ultimate radical impact on the culture as we know it, the story follows numerous characters on a violent collision course.",
+        "poster_path": "/y7ntzl7msiaS6o7dvDbNG7XFYcR.jpg",
+        "vote_average": 8.354,
+        "release_date": "2017-07-05",
+        "popularity": 34.964
+    },
+    {
         "id": 11366,
         "type": "tv",
         "title": "Big Brother",
@@ -6775,7 +6787,7 @@
         "overview": "Lim Ju-kyung is a high school student. Since she was little, she has had a complex about her appearance. To hide her bare face, Ju-kyung always wears make-up. Her excellent make-up skills make her pretty and she hides her bare face in front of others. She gets involved with 2 men; Lee Su-ho and Han Seo-jun.",
         "overview_ar": "تعرضت طالبة المدرسة الثانوية ايم جو كيونغ البالغة من العمر 18 عامًا (مون قا يونغ)، والتي تعاني من عقدة نقص فيما يتعلق بمظهرها للتمييز المستمر من قبل عائلتها والتخويف من قبل زملائها بسبب باعتبارها قبيحة، بدأت في تعلم كيفية استخدام المكياج عن طريق مشاهدة مقاطع الفيديو التعليمية على الإنترنت وسرعان ما اتقنت استخدام المكياج قبل أن تنتقل إلى مدرستها الجديدة لتصبح في غاية الجمال وترتفع إلى الشهرة ويطلق عليها زملائها لقب «إلهة».\n\nعلى الرغم من شعبيتها الحديثة لا تزال جو كيونغ تعتبر نفسها قبيحة، وخوفها الأكبر أن يرى أقرانها وجهها الحقيقي. ويحدث هذا فعلاً للأسف عندما يتعرف عليها زميلها الوسيم لي سو هو (تشا اين وو )والذي قد صادفته سابقًا بوجهها الخالي من المكياج عدة مرات، يحظى سوهو بشعبية كبيرة بين الطالبات في المدرسة، لكنه يكره أن يكون مركز الاهتمام المستمر، لديه مخاوفه الخاصة ويخفي سرًا مظلمًا يطارده لفترة طويلة. إضافة إلى ذلك، هناك هان سيو جون الجامح (هوانغ إن يوب) المرتبط بماضي سوهو ويحب جو كيونغ أيضًا.",
         "poster_path": "/kst64PWtzQZpnrdOAJY2NWkFeHE.jpg",
-        "vote_average": 8.251,
+        "vote_average": 8.252,
         "release_date": "2020-12-09",
         "popularity": 33.2759
     },
@@ -6895,7 +6907,7 @@
         "overview": "4400 centers on the return of 4400 people who, previously presumed dead or reported missing, reappear on Earth. Though they have not aged physically, some of them seem to have deeper alterations ranging from superhuman strength to an unexplained healing touch. A government agency is formed to track the 4400 people after one of them commits a murder.",
         "overview_ar": "4400 centers on the return of 4400 people who, previously presumed dead or reported missing, reappear on Earth. Though they have not aged physically, some of them seem to have deeper alterations ranging from superhuman strength to an unexplained healing touch. A government agency is formed to track the 4400 people after one of them commits a murder.",
         "poster_path": "/nWpatnVtPVxjsn7mMiRZNAalEMf.jpg",
-        "vote_average": 7.174,
+        "vote_average": 7.173,
         "release_date": "2004-07-11",
         "popularity": 30.1451
     },
@@ -6946,18 +6958,6 @@
         "vote_average": 5.5,
         "release_date": "1978-01-02",
         "popularity": 28.7799
-    },
-    {
-        "id": 2473,
-        "type": "tv",
-        "title": "The Avengers",
-        "title_ar": "The Avengers",
-        "overview": "A quirky spy show of the adventures of eccentrically suave British Agent John Steed and his predominantly female partners. Jonathan Steed - an urbane, proper gentleman spy - teams with various assistants throughout the series' run, including Dr. David Keel, Cathy Gale, Emma Peel and Tara King, to repeatedly save the world from diabolical schemes plotted by equally diabolical evil-doers (among them robots and man-eating monsters).",
-        "overview_ar": "A quirky spy show of the adventures of eccentrically suave British Agent John Steed and his predominantly female partners. Jonathan Steed - an urbane, proper gentleman spy - teams with various assistants throughout the series' run, including Dr. David Keel, Cathy Gale, Emma Peel and Tara King, to repeatedly save the world from diabolical schemes plotted by equally diabolical evil-doers (among them robots and man-eating monsters).",
-        "poster_path": "/fQ4GHecDFEAmJcwc10zUrdIDLFd.jpg",
-        "vote_average": 7.717,
-        "release_date": "1961-01-07",
-        "popularity": 34.5401
     },
     {
         "id": 95205,
@@ -8263,7 +8263,7 @@
         "overview": "Jimmy is struggling to grieve the loss of his wife while being a dad, friend, and therapist. He decides to try a new approach with everyone in his path: unfiltered, brutal honesty. Will it make things better—or unleash uproarious chaos?",
         "overview_ar": "\"جيمي\" يكافح للحداد على وفاة زوجته، بينما يشغل دور الأب والصديق والطبيب النفسي. فيقرّر تجربة نهج جديد مع كل من في طريقه: الصراحة القاسية التامة. فهل سيحسّن ذلك الأوضاع، أم يتسبّب في خلق فوضى عارمة؟",
         "poster_path": "/zEFKMNPBKq6JG7uuDkzTQ9WwErn.jpg",
-        "vote_average": 7.8,
+        "vote_average": 7.815,
         "release_date": "2023-01-26",
         "popularity": 30.7449
     },
@@ -9360,18 +9360,6 @@
         "popularity": 28.3972
     },
     {
-        "id": 797,
-        "type": "tv",
-        "title": "Have I Got News for You",
-        "title_ar": "Have I Got News for You",
-        "overview": "Hilarious, totally-irreverent, near-slanderous political quiz show, based mainly on news stories from the last week or so, that leaves no party, personality or action unscathed in pursuit of laughs.",
-        "overview_ar": "Hilarious, totally-irreverent, near-slanderous political quiz show, based mainly on news stories from the last week or so, that leaves no party, personality or action unscathed in pursuit of laughs.",
-        "poster_path": "/917ZwaLnDX5A5iVotS8NGObNtgO.jpg",
-        "vote_average": 7.12,
-        "release_date": "1990-09-28",
-        "popularity": 29.052
-    },
-    {
         "id": 110492,
         "type": "tv",
         "title": "Peacemaker",
@@ -9511,7 +9499,7 @@
         "overview": "When Emily Thorne moves to the Hamptons, everyone wonders about the new girl, but she knows everything about them, including what they did to her family. Years ago, they took everything from her. Now, one by one, she's going to make them pay.",
         "overview_ar": "تدور أحداث المسلسل في أحد مجتمعات الطبقة العليا ببلدة هامبتون الأمريكية ويركز المسلسل على إيميلي ثورن‏ التي استأجرت المنزل المجاور لعائلة غرايسون  للإستمتاع بالصيف. ثم يتبين أن إيميلي قد أتت من قبل لبلدة هامبتون وأن اسمها الحقيقي هو أماندا كلاركوهي ابنة متهم بتفجير طائرة قد حكم عليه بالسجن المؤبد الجريمة التي لم يرتكبها وقد قتل في وقت لاحق بالسجن.  لذا فقد عادت (إميلي) لبلدة هامبتون عازمة على الثأر والانتقام لوالدها الذي دفع ثمن جريمة شنعاء لم يرتكبها. فهي تريد أن تنتقم من كل شخص كان له دور في تدمير طفولتها، وكل أسرة أو شخصية عملت مع عائلة غرايسون لإدانة والدها ظلما. وعلى رأس القائمة التي وضعتها إيميلي للانتقام، فيكتوريا غرايسون الأم الحاكمة لأسرة غرايسون وهي إمراة أحبها والدها لكن في نهاية المطاف خانته وغدرت به.",
         "poster_path": "/qx7XytRgg1F03NN5BoK8jx3Cyft.jpg",
-        "vote_average": 7.568,
+        "vote_average": 7.571,
         "release_date": "2011-09-21",
         "popularity": 27.7873
     },
@@ -9598,6 +9586,18 @@
         "vote_average": 5.4,
         "release_date": "2017-02-06",
         "popularity": 29.9215
+    },
+    {
+        "id": 84134,
+        "type": "tv",
+        "title": "My Wife's Girlfriends",
+        "title_ar": "My Wife's Girlfriends",
+        "overview": "",
+        "overview_ar": "",
+        "poster_path": "/rnFIou3thkIg4VNRvMFgUFd5MEs.jpg",
+        "vote_average": 6.8,
+        "release_date": "2012-10-22",
+        "popularity": 27.348
     },
     {
         "id": 84134,
@@ -11007,9 +11007,9 @@
         "id": 108545,
         "type": "tv",
         "title": "3 Body Problem",
-        "title_ar": "3 Body Problem",
+        "title_ar": "معضلة الأجسام الثلاثة",
         "overview": "Across continents and decades, five brilliant friends make earth-shattering discoveries as the laws of science unravel and an existential threat emerges.",
-        "overview_ar": "Across continents and decades, five brilliant friends make earth-shattering discoveries as the laws of science unravel and an existential threat emerges.",
+        "overview_ar": "على مدى عدة عقود وفي قارات مختلفة، يتوصل خمسة أصدقاء أذكياء إلى اكتشافات مزلزلة، في الوقت الذي تتضح فيه القوانين العلمية ويلوح في الأفق خطر يهدد وجود البشرية.",
         "poster_path": "/ykZ7hlShkdRQaL2aiieXdEMmrLb.jpg",
         "vote_average": 7.458,
         "release_date": "2024-03-21",
@@ -11280,54 +11280,6 @@
         "popularity": 27.5394
     },
     {
-        "id": 104877,
-        "type": "tv",
-        "title": "Love Is in the Air",
-        "title_ar": "أطرق بابي",
-        "overview": "Eda, who ties all her hopes to her education, confronts Serkan Bolat, who cuts off her international education scholarship and leaves her with high school diploma. Serkan Bolat offers Eda to give her scholarship back if she pretends to be his fiance for two months. Although Eda rejects the offer of this man as she hates him, she has to accept it when the conditions change. While pretending to be engaged, Serkan and Eda begin to experience a passionate, challenging relationship that will make them forget all they know right. Because love is difficult. And that's why it's amazing.",
-        "overview_ar": "تلتقي عايدة الطموحة بالشاب الغني والمحب للسيطرة راكان ويكرهان بعضهما منذ اللحظة الأولى، لكن عليهما البقاء قريبين لمدة حتى يحصل كل منهما على ما يريد.",
-        "poster_path": "/bE71f9A3eztjcd5JT3MmHB8MbzA.jpg",
-        "vote_average": 8.218,
-        "release_date": "2020-07-08",
-        "popularity": 27.5394
-    },
-    {
-        "id": 953,
-        "type": "tv",
-        "title": "Maverick",
-        "title_ar": "Maverick",
-        "overview": "The Maverick boys - Bret, Bart, Beau and Brent - are a clan of well-dressed dandies, gamblers who'd much rather make their money playing cards than messing up their fine clothing with actual work. Sly and clever, none of the Mavericks are much for acts of derring do, but they can be courageous when the situation calls for it. Most often, however, they live by their wits and considerable charm.",
-        "overview_ar": "The Maverick boys - Bret, Bart, Beau and Brent - are a clan of well-dressed dandies, gamblers who'd much rather make their money playing cards than messing up their fine clothing with actual work. Sly and clever, none of the Mavericks are much for acts of derring do, but they can be courageous when the situation calls for it. Most often, however, they live by their wits and considerable charm.",
-        "poster_path": "/psVbZjMHt9f9X7EIks9IQdCMZke.jpg",
-        "vote_average": 6.866,
-        "release_date": "1957-09-22",
-        "popularity": 23.9275
-    },
-    {
-        "id": 69629,
-        "type": "tv",
-        "title": "The Gifted",
-        "title_ar": "The Gifted",
-        "overview": "A suburban couple's ordinary lives are rocked by the sudden discovery that their children possess mutant powers. Forced to go on the run from a hostile government, the family joins up with an underground network of mutants and must fight to survive.",
-        "overview_ar": "A suburban couple's ordinary lives are rocked by the sudden discovery that their children possess mutant powers. Forced to go on the run from a hostile government, the family joins up with an underground network of mutants and must fight to survive.",
-        "poster_path": "/nshCqszjTNuqhrB53vrSqWO18sE.jpg",
-        "vote_average": 7.6,
-        "release_date": "2017-10-02",
-        "popularity": 26.4073
-    },
-    {
-        "id": 93221,
-        "type": "tv",
-        "title": "The Great North",
-        "title_ar": "The Great North",
-        "overview": "Follow the Alaskan adventures of the Tobin family as a single dad does his best to keep his weird bunch of kids close, especially as the artistic dreams of his only daughter lead her away from the family fishing boat and into the glamorous world of the local mall.",
-        "overview_ar": "Follow the Alaskan adventures of the Tobin family as a single dad does his best to keep his weird bunch of kids close, especially as the artistic dreams of his only daughter lead her away from the family fishing boat and into the glamorous world of the local mall.",
-        "poster_path": "/7Ww56dPIuXn4NZGrJJPdoafLHGu.jpg",
-        "vote_average": 6.929,
-        "release_date": "2021-01-03",
-        "popularity": 24.1449
-    },
-    {
         "id": 504,
         "type": "tv",
         "title": "The Ren & Stimpy Show",
@@ -11537,7 +11489,7 @@
         "title": "The Marvelous Mrs. Maisel",
         "title_ar": "The Marvelous Mrs. Maisel",
         "overview": "It’s 1958 Manhattan and Miriam “Midge” Maisel has everything she’s ever wanted - the perfect husband, kids, and Upper West Side apartment. But when her life suddenly takes a turn and Midge must start over, she discovers a previously unknown talent - one that will take her all the way from the comedy clubs of Greenwich Village to a spot on Johnny Carson’s couch.",
-        "overview_ar": "إنه عام 1958 مانهاتن وميريام \"ميدج\" مايزل لديها كل ما تريده على الإطلاق - الزوج المثالي والأطفال وشقة الجانب الغربي العلوي . ولكن عندما تأخذ حياتها فجأة منعطفا ويجب أن تبدأ ميدج من جديد ، تكتشف موهبة لم تكن معروفة من قبل - موهبة ستأخذها على طول الطريق من نوادي الكوميديا في قرية غرينتش إلى مكان على أريكة جوني كارسون.",
+        "overview_ar": "It’s 1958 Manhattan and Miriam “Midge” Maisel has everything she’s ever wanted - the perfect husband, kids, and Upper West Side apartment. But when her life suddenly takes a turn and Midge must start over, she discovers a previously unknown talent - one that will take her all the way from the comedy clubs of Greenwich Village to a spot on Johnny Carson’s couch.",
         "poster_path": "/zS7fQiOZiKCVH2vlYSiIsFWW8hh.jpg",
         "vote_average": 8.049,
         "release_date": "2017-03-16",
@@ -11547,9 +11499,9 @@
         "id": 245927,
         "type": "tv",
         "title": "Paradise",
-        "title_ar": "جريمة في النعيم",
+        "title_ar": "Paradise",
         "overview": "The tranquility in a serene, wealthy community inhabited by some of the world's most prominent individuals explodes when a shocking murder occurs and a high stakes investigation unfolds.",
-        "overview_ar": "في مجتمع هادئ يضم نخبة من الشخصيات البارزة، تهزّ جريمة قتل غامضة أركانه، مما يدفع العميل السري زافيير كولينز إلى كشف أسرار خطيرة تهدد استقرار الجميع.",
+        "overview_ar": "The tranquility in a serene, wealthy community inhabited by some of the world's most prominent individuals explodes when a shocking murder occurs and a high stakes investigation unfolds.",
         "poster_path": "/sJUti0JDtE1IYl7RVJARAGyKHqz.jpg",
         "vote_average": 7.579,
         "release_date": "2025-01-26",
@@ -11635,7 +11587,7 @@
         "overview": "The Meiji Era was one of great renewal for Japan, where swords and killing were outlawed. However, many survivors from the time of Revolution still live, lurking in the shadows and waiting for a chance to use their killing blades again. Only Kenshin Himura, formerly one of the most brutal of killers, hopes to keep his swordsman's honor and still live in the new era.",
         "overview_ar": "كان عصر ميجي أحد التجديدات العظيمة لليابان ، حيث تم حظر استخدام السيوف والقتل. ومع ذلك ، لا يزال العديد من الناجين من زمن الثورة يعيشون ، يتربصون في الظل وينتظرون فرصة لاستخدام شفرات القتل مرة أخرى. فقط كينشن هيمورا ، الذي كان سابقًا أحد أكثر القتلة وحشية ، يأمل في الحفاظ على شرف المبارز ولا يزال يعيش في العصر الجديد.",
         "poster_path": "/iP6i2AJGkxSugByBRrxNd2Goey8.jpg",
-        "vote_average": 8.525,
+        "vote_average": 8.526,
         "release_date": "1996-01-10",
         "popularity": 24.295
     },
@@ -11758,6 +11710,54 @@
         "vote_average": 7.418,
         "release_date": "2021-05-13",
         "popularity": 23.5104
+    },
+    {
+        "id": 2398,
+        "type": "tv",
+        "title": "Girlfriends",
+        "title_ar": "Girlfriends",
+        "overview": "The series revolves around the friendship of four African-American women in different phases of their lives. They explore the many trials and tribulations that most women face today such as relationships, family, friends and other current issues that will interest most women. Whether it’s getting over a divorce, finding a career, or looking for true love, Girlfriends delivers along with comedy and wit.",
+        "overview_ar": "The series revolves around the friendship of four African-American women in different phases of their lives. They explore the many trials and tribulations that most women face today such as relationships, family, friends and other current issues that will interest most women. Whether it’s getting over a divorce, finding a career, or looking for true love, Girlfriends delivers along with comedy and wit.",
+        "poster_path": "/buFnsyWEg4pPR7dco5Vbsm6HCIY.jpg",
+        "vote_average": 7.4,
+        "release_date": "2000-09-11",
+        "popularity": 24.2391
+    },
+    {
+        "id": 2093,
+        "type": "tv",
+        "title": "Matlock",
+        "title_ar": "Matlock",
+        "overview": "Matlock is an American television legal drama, starring Andy Griffith in the title role of criminal defense attorney Ben Matlock. The show, produced by The Fred Silverman Company, Dean Hargrove Productions, Viacom Productions and Paramount Television originally aired from September 23, 1986 to May 8, 1992 on NBC; and from November 5, 1992 until May 7, 1995 on ABC.\n\nThe show's format is similar to that of CBS's Perry Mason, with Matlock identifying the perpetrators and then confronting them in dramatic courtroom scenes. One difference, however, was that whereas Mason usually exculpated his clients at a pretrial hearing, Matlock usually secured an acquittal at trial, from the jury.",
+        "overview_ar": "Matlock is an American television legal drama, starring Andy Griffith in the title role of criminal defense attorney Ben Matlock. The show, produced by The Fred Silverman Company, Dean Hargrove Productions, Viacom Productions and Paramount Television originally aired from September 23, 1986 to May 8, 1992 on NBC; and from November 5, 1992 until May 7, 1995 on ABC.\n\nThe show's format is similar to that of CBS's Perry Mason, with Matlock identifying the perpetrators and then confronting them in dramatic courtroom scenes. One difference, however, was that whereas Mason usually exculpated his clients at a pretrial hearing, Matlock usually secured an acquittal at trial, from the jury.",
+        "poster_path": "/2eGYyekQjcAXVmcYW1g4keR4plV.jpg",
+        "vote_average": 7.1,
+        "release_date": "1986-03-03",
+        "popularity": 21.0193
+    },
+    {
+        "id": 22634,
+        "type": "tv",
+        "title": "Shakugan no Shana",
+        "title_ar": "Shakugan no Shana",
+        "overview": "Murdered by a demonic being, 15-year-old Yuji Sakai has his life force replaced by a flame that dims with each day. When the flame dies, no one will remember he was ever alive. This is how he meets Shana: a warrior with a burning sword, and the will of a god as her guide. The two form a bond as Yuji becomes Shana’s accomplice in her battles to keep the balance between the ordinary world and hers.",
+        "overview_ar": "Murdered by a demonic being, 15-year-old Yuji Sakai has his life force replaced by a flame that dims with each day. When the flame dies, no one will remember he was ever alive. This is how he meets Shana: a warrior with a burning sword, and the will of a god as her guide. The two form a bond as Yuji becomes Shana’s accomplice in her battles to keep the balance between the ordinary world and hers.",
+        "poster_path": "/sesXxmmb2TZ9uq6ETIkOQkxK1wV.jpg",
+        "vote_average": 7.4,
+        "release_date": "2005-10-06",
+        "popularity": 24.1821
+    },
+    {
+        "id": 6744,
+        "type": "tv",
+        "title": "The Merv Griffin Show",
+        "title_ar": "The Merv Griffin Show",
+        "overview": "",
+        "overview_ar": "",
+        "poster_path": "/pF9rFdF6Gd4dNJ0Rh4mFsaFTi3m.jpg",
+        "vote_average": 6.2,
+        "release_date": "1962-10-01",
+        "popularity": 23.3486
     },
     {
         "id": 6744,
@@ -15087,9 +15087,9 @@
         "id": 138502,
         "type": "tv",
         "title": "X-Men '97",
-        "title_ar": "إكس-مِن ٩٧",
+        "title_ar": "X-Men '97",
         "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
-        "overview_ar": "تستخدم مجموعة من المتحولين مواهبها غير الطبيعية لحماية عالم يكرههم ويخافهم.",
+        "overview_ar": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
         "poster_path": "/9Ycz7yYRf9V4jk3YXwcZhFtbNcF.jpg",
         "vote_average": 8.521,
         "release_date": "2024-03-20",
@@ -17280,42 +17280,6 @@
         "popularity": 23.4985
     },
     {
-        "id": 103506,
-        "type": "tv",
-        "title": "Jeffrey Epstein: Filthy Rich",
-        "title_ar": "Jeffrey Epstein: Filthy Rich",
-        "overview": "Stories from survivors fuel this docuseries examining how convicted sex offender Jeffrey Epstein used his wealth and power to carry out his abuses.",
-        "overview_ar": "Stories from survivors fuel this docuseries examining how convicted sex offender Jeffrey Epstein used his wealth and power to carry out his abuses.",
-        "poster_path": "/vV72HIa2a1nnqb5nCHUf5Dn2Y5d.jpg",
-        "vote_average": 7.047,
-        "release_date": "2020-05-27",
-        "popularity": 18.8675
-    },
-    {
-        "id": 99748,
-        "type": "tv",
-        "title": "Let's Meet at Hinatazaka",
-        "title_ar": "日向坂で会いましょう",
-        "overview": "Hinatazaka46's variety show following the format of the prequel Hiragana Oshi after the group changed their name from Hiragana Keyakizaka46 to Hinatazaka46. The show started on 7th April 2019 and is aired every Sunday late night 1:05 am JST.",
-        "overview_ar": "Hinatazaka46's variety show following the format of the prequel Hiragana Oshi after the group changed their name from Hiragana Keyakizaka46 to Hinatazaka46. The show started on 7th April 2019 and is aired every Sunday late night 1:05 am JST.",
-        "poster_path": "/10JBHKcQkhO9upveCfrClhMEbeF.jpg",
-        "vote_average": 8.5,
-        "release_date": "2019-04-07",
-        "popularity": 17.907
-    },
-    {
-        "id": 3690,
-        "type": "tv",
-        "title": "Tyler Perry's House of Payne",
-        "title_ar": "Tyler Perry's House of Payne",
-        "overview": "The show revolved around a multi-generational family living under one roof in Atlanta led by patriarch Curtis Payne and his wife Ella.",
-        "overview_ar": "The show revolved around a multi-generational family living under one roof in Atlanta led by patriarch Curtis Payne and his wife Ella.",
-        "poster_path": "/2NdUdJnZnwI6skvm6OXWrK2D42U.jpg",
-        "vote_average": 7.516,
-        "release_date": "2007-06-06",
-        "popularity": 19.7954
-    },
-    {
         "id": 132982,
         "type": "tv",
         "title": "Sasmos",
@@ -17518,6 +17482,42 @@
         "vote_average": 7.0,
         "release_date": "1996-01-23",
         "popularity": 17.0609
+    },
+    {
+        "id": 79611,
+        "type": "tv",
+        "title": "Charmed",
+        "title_ar": "Charmed",
+        "overview": "Set in the fictional college town of Hilltowne, Charmed follows the lives of three sisters, Macy, Mel and Maggie Vera who, after the tragic death of their mother, discover they are three of the most powerful witches of all time.",
+        "overview_ar": "Set in the fictional college town of Hilltowne, Charmed follows the lives of three sisters, Macy, Mel and Maggie Vera who, after the tragic death of their mother, discover they are three of the most powerful witches of all time.",
+        "poster_path": "/doXHjfOtEmX8kEq1tsMnNqq9YLZ.jpg",
+        "vote_average": 7.2,
+        "release_date": "2018-10-14",
+        "popularity": 18.3475
+    },
+    {
+        "id": 50878,
+        "type": "tv",
+        "title": "Empresses in the Palace",
+        "title_ar": "Empresses in the Palace",
+        "overview": "Zhen Huan, a 17-year-old innocent introduced into the imperial court as the latest concubine of Emperor Yong Zheng. Her dreams of a new life of love and prosperity are swiftly dashed as she enters a dog-eat-dog world of treachery and corruption.",
+        "overview_ar": "Zhen Huan, a 17-year-old innocent introduced into the imperial court as the latest concubine of Emperor Yong Zheng. Her dreams of a new life of love and prosperity are swiftly dashed as she enters a dog-eat-dog world of treachery and corruption.",
+        "poster_path": "/gLJ1d3OHxYOkiBCNNPJA1lzehjI.jpg",
+        "vote_average": 8.569,
+        "release_date": "2011-11-17",
+        "popularity": 20.537
+    },
+    {
+        "id": 1778,
+        "type": "tv",
+        "title": "Zoey 101",
+        "title_ar": "Zoey 101",
+        "overview": "Zoey 101 is an American television series which originally aired on Nickelodeon from January 9, 2005 until May 2, 2008. It focuses on the lives of teenager Zoey Brooks and her friends as they attend Pacific Coast Academy, a fictional boarding school in Southern California. It was created by Dan Schneider. It was initially filmed at Pepperdine University in Malibu, California, then at stages in Valencia, California beginning in season 3. It was nominated for an \"Outstanding Children's Program\" Emmy in 2005. Zoey 101 was the most expensive production ever for Nickelodeon series, as it was shot completely on location in Malibu. It was also Nickelodeon's best performance for a series premiere in almost eight years. Despite this, many critics have made negative comments about the show, its setting, and its characters.",
+        "overview_ar": "Zoey 101 is an American television series which originally aired on Nickelodeon from January 9, 2005 until May 2, 2008. It focuses on the lives of teenager Zoey Brooks and her friends as they attend Pacific Coast Academy, a fictional boarding school in Southern California. It was created by Dan Schneider. It was initially filmed at Pepperdine University in Malibu, California, then at stages in Valencia, California beginning in season 3. It was nominated for an \"Outstanding Children's Program\" Emmy in 2005. Zoey 101 was the most expensive production ever for Nickelodeon series, as it was shot completely on location in Malibu. It was also Nickelodeon's best performance for a series premiere in almost eight years. Despite this, many critics have made negative comments about the show, its setting, and its characters.",
+        "poster_path": "/3eOM57RTccTSvqcYFhWwm9DAba8.jpg",
+        "vote_average": 8.102,
+        "release_date": "2005-01-09",
+        "popularity": 19.2943
     },
     {
         "id": 79611,
@@ -23451,9 +23451,9 @@
         "id": 293608,
         "type": "tv",
         "title": "Undercover Miss Hong",
-        "title_ar": "الآنسة هونغ في مهمة سرية",
+        "title_ar": "Undercover Miss Hong",
         "overview": "A retro office comedy depicting the chaotic events that unfold in the late 1990s when Sammo Hung, a 30-year-old elite securities supervisor who only cares about work, goes undercover as a 20-year-old high school graduate employee at a securities firm where suspicious money flows are detected.",
-        "overview_ar": "تتخفّى محققة عنيدة داخل شركة أوراق مالية لكشف الفساد، لكن مهمتها تتعقد بسبب المدير التنفيذي الجديد الذي كان حبيبها في الماضي.",
+        "overview_ar": "A retro office comedy depicting the chaotic events that unfold in the late 1990s when Sammo Hung, a 30-year-old elite securities supervisor who only cares about work, goes undercover as a 20-year-old high school graduate employee at a securities firm where suspicious money flows are detected.",
         "poster_path": "/bZr3i8yczHGDzyqZQ9oOArEEVON.jpg",
         "vote_average": 7.2,
         "release_date": "2026-01-17",
