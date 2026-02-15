@@ -960,6 +960,18 @@
         "popularity": 85.7818
     },
     {
+        "id": 688,
+        "type": "tv",
+        "title": "The West Wing",
+        "title_ar": "The West Wing",
+        "overview": "The West Wing provides a glimpse into presidential politics in the nation's capital as it tells the stories of the members of a fictional presidential administration. These interesting characters have humor and dedication that touches the heart while the politics that they discuss touch on everyday life.",
+        "overview_ar": "The West Wing provides a glimpse into presidential politics in the nation's capital as it tells the stories of the members of a fictional presidential administration. These interesting characters have humor and dedication that touches the heart while the politics that they discuss touch on everyday life.",
+        "poster_path": "/yqDWr5NAE7m1IWrygYwLyEB6pN0.jpg",
+        "vote_average": 8.251,
+        "release_date": "1999-09-22",
+        "popularity": 85.7818
+    },
+    {
         "id": 116799,
         "type": "tv",
         "title": "The Lincoln Lawyer",
@@ -1104,18 +1116,6 @@
         "popularity": 90.2492
     },
     {
-        "id": 209867,
-        "type": "tv",
-        "title": "Frieren: Beyond Journey's End",
-        "title_ar": "فريرن: ما وراء نهاية الرحلة",
-        "overview": "Decades after her party defeated the Demon King, an old friend's funeral launches the elf wizard Frieren on a journey of self-discovery.",
-        "overview_ar": "هُزم الملك الشيطان، وعاد فريق الأبطال المنتصر إلى المنزل قبل أن يتفكك. الأربعة: الساحرة “فريرين“، والبطل “هيميل“، والكاهن “هايتر“، والمحارب “آيزن“. يتذكرون رحلتهم التي استمرت عقدًا من الزمان مع حلول لحظة وداع بعضهم البعض. لكن مرور الوقت يختلف بالنسبة للجان، وبالتالي تشهد “فريرين” رفاقها يموتون ببطء واحدًا تلو الآخر.",
-        "poster_path": "/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
-        "vote_average": 8.768,
-        "release_date": "2023-09-29",
-        "popularity": 107.064
-    },
-    {
         "id": 76479,
         "type": "tv",
         "title": "The Boys",
@@ -1164,6 +1164,18 @@
         "popularity": 89.7379
     },
     {
+        "id": 258462,
+        "type": "tv",
+        "title": "In the Mud",
+        "title_ar": "عالقات في الوحل",
+        "overview": "Five female prisoners forge a unique bond after a deadly accident... until corruption and turf wars within a ruthless prison threaten to destroy them.",
+        "overview_ar": "تتوطد العلاقة بين خمس سجينات بشكل استثنائي بعد حادثة نَجوْنَ منها من رحم الموت... إلى أن يبدأ الفساد والصراع على النفوذ داخل سجنٍ وحشي بتهديد ما يجمعهن وتمزيقه.",
+        "poster_path": "/9JWQYB7FkGtg47wFO7GOrUDgYrx.jpg",
+        "vote_average": 7.356,
+        "release_date": "2025-08-14",
+        "popularity": 89.772
+    },
+    {
         "id": 1100,
         "type": "tv",
         "title": "How I Met Your Mother",
@@ -1186,18 +1198,6 @@
         "vote_average": 7.3,
         "release_date": "1995-09-23",
         "popularity": 81.5403
-    },
-    {
-        "id": 1435,
-        "type": "tv",
-        "title": "The Good Wife",
-        "title_ar": "The Good Wife",
-        "overview": "Alicia Florrick boldly assumes full responsibility for her family and re-enters the workforce after her husband's very public sex and political corruption scandal lands him in jail.",
-        "overview_ar": "Alicia Florrick boldly assumes full responsibility for her family and re-enters the workforce after her husband's very public sex and political corruption scandal lands him in jail.",
-        "poster_path": "/lasNCd45fpPLirlA7QxkuopWro.jpg",
-        "vote_average": 7.582,
-        "release_date": "2009-09-22",
-        "popularity": 79.9842
     },
     {
         "id": 250307,
@@ -6245,7 +6245,7 @@
         "title": "The Artful Dodger",
         "title_ar": "The Artful Dodger",
         "overview": "It's a tale of reinvention, betrayal, redemption, and love with a twist. Jack Dawkins is The Artful Dodger, whose pickpocketing fingers have become the skilled hands of a surgeon. He is torn between an impossible love and the criminal underworld he secretly craves. This will require Artfulness.",
-        "overview_ar": "\"جاك دوكينز\" هو المراوغ الماهر الذي أصبح جرّاحاً حائراً بين حب مستحيل وماضيه الإجرامي.",
+        "overview_ar": "It's a tale of reinvention, betrayal, redemption, and love with a twist. Jack Dawkins is The Artful Dodger, whose pickpocketing fingers have become the skilled hands of a surgeon. He is torn between an impossible love and the criminal underworld he secretly craves. This will require Artfulness.",
         "poster_path": "/lcyax0pIH6vZWbho2hxsMTt9KpN.jpg",
         "vote_average": 8.125,
         "release_date": "2023-11-29",
@@ -12960,18 +12960,6 @@
         "popularity": 23.7544
     },
     {
-        "id": 1941,
-        "type": "tv",
-        "title": "GARO",
-        "title_ar": "GARO",
-        "overview": "The Makai fight a secret war against the demon forces known as Horrors, evil creatures that manifest themselves through darkness to devour Humanity. On the frontlines are the Makai Knights, given the task of watching over a district and eliminating any Horrors that manifest there.\n\nGARO follows the tales of the Knights bearing the title of ‘Golden Knight Garo’, and their duty to vanquish the Horrors and protect Humanity from the darkness.",
-        "overview_ar": "The Makai fight a secret war against the demon forces known as Horrors, evil creatures that manifest themselves through darkness to devour Humanity. On the frontlines are the Makai Knights, given the task of watching over a district and eliminating any Horrors that manifest there.\n\nGARO follows the tales of the Knights bearing the title of ‘Golden Knight Garo’, and their duty to vanquish the Horrors and protect Humanity from the darkness.",
-        "poster_path": "/3IBGi1F4oRlykR0k9beIwygn8YM.jpg",
-        "vote_average": 7.7,
-        "release_date": "2005-10-07",
-        "popularity": 20.912
-    },
-    {
         "id": 2199,
         "type": "tv",
         "title": "Tales of the Unexpected",
@@ -13198,6 +13186,18 @@
         "vote_average": 4.4,
         "release_date": "2000-05-15",
         "popularity": 18.3013
+    },
+    {
+        "id": 92782,
+        "type": "tv",
+        "title": "Ms. Marvel",
+        "title_ar": "Ms. Marvel",
+        "overview": "A great student, avid gamer, and voracious fan-fic scribe, Kamala Khan has a special affinity for superheroes, particularly Captain Marvel. However, she struggles to fit in at home and at school — that is, until she gets superpowers like the heroes she’s always looked up to. Life is easier with superpowers, right?",
+        "overview_ar": "كاملا خان مراهقة مسلمة، تعيش مع عائلتها، حيث تكافح خلال مرحلة المراهقة من أجل إثبات نفسها، ولكن تتغير حياتها تماما حينما تتعرض لعدوى من قبل مخلوق غامض يدعى تيرين ميست، وتصبح لدى كاملا القدرة على التحكم في جسدها من خلال التمدد والتضخم، أو التحول إلى حجم الذرة الصغيرة.",
+        "poster_path": "/3HWWh92kZbD7odwJX7nKmXNZsYo.jpg",
+        "vote_average": 6.297,
+        "release_date": "2022-06-08",
+        "popularity": 21.324
     },
     {
         "id": 92782,
@@ -18480,18 +18480,6 @@
         "popularity": 18.2812
     },
     {
-        "id": 657,
-        "type": "tv",
-        "title": "Rocko's Modern Life",
-        "title_ar": "Rocko's Modern Life",
-        "overview": "Rocko is a wallaby who has emigrated to America from Australia. He lives in O-Town and tries to get through life but, of course, comes across a multitude of dilemmas and misadventures he must get through. Other characters include Rocko's best friend, Heffer, a steer who has been raised by wolves, Filbert, a paranoid hypochondriac turtle, Rocko's faithful (but none-too-bright) dog Spunky, and Ed Bighead who detests Rocko and hates having him for a next door neighbor. On this show, Rocko has such adventures as trying to adapt to a new vacuum cleaner, having Heffer move in temporarily after his parents kick him out, and going to a movie theater.",
-        "overview_ar": "Rocko is a wallaby who has emigrated to America from Australia. He lives in O-Town and tries to get through life but, of course, comes across a multitude of dilemmas and misadventures he must get through. Other characters include Rocko's best friend, Heffer, a steer who has been raised by wolves, Filbert, a paranoid hypochondriac turtle, Rocko's faithful (but none-too-bright) dog Spunky, and Ed Bighead who detests Rocko and hates having him for a next door neighbor. On this show, Rocko has such adventures as trying to adapt to a new vacuum cleaner, having Heffer move in temporarily after his parents kick him out, and going to a movie theater.",
-        "poster_path": "/ydi5M4Dq10Doi9PPkkN95T8ao7Z.jpg",
-        "vote_average": 7.4,
-        "release_date": "1993-09-18",
-        "popularity": 19.0435
-    },
-    {
         "id": 72637,
         "type": "tv",
         "title": "Once",
@@ -18526,18 +18514,6 @@
         "vote_average": 7.4,
         "release_date": "2021-09-28",
         "popularity": 17.9062
-    },
-    {
-        "id": 38409,
-        "type": "tv",
-        "title": "RuPaul's Drag Race: Untucked",
-        "title_ar": "RuPaul's Drag Race: Untucked",
-        "overview": "The access-all-areas pass to the drama that you didn't see on the runway—the backstage bitchiness, the catfights, the struggles, the tears and the secrets. See what happens behind the scenes of RuPaul's Drag Race when the queens let their tucks breathe... and let their emotions flow.",
-        "overview_ar": "The access-all-areas pass to the drama that you didn't see on the runway—the backstage bitchiness, the catfights, the struggles, the tears and the secrets. See what happens behind the scenes of RuPaul's Drag Race when the queens let their tucks breathe... and let their emotions flow.",
-        "poster_path": "/2KU7A0jvylEZfYyR5O2ZbnMt9TK.jpg",
-        "vote_average": 6.1,
-        "release_date": "2010-02-01",
-        "popularity": 19.0841
     },
     {
         "id": 18352,
@@ -18583,7 +18559,7 @@
         "overview": "A young drifter named Joe Yabuki wanders through the slums of Tokyo, but when the local ruffians try to give him a hard time he teaches them a rough lesson with his fists. The spectacle sparks a gleam in the eye of an old drunk who happens to be watching—Danpei Tange, a failed boxer and former coach who sees something special in the boy. He pleads with Joe to train with him off, but the cocky young fighter brushes him. Later, though, when Joe is arrested and put in a juvenile detention facility, he realizes that he’s going to need to hone his raw fighting skills if he wants to survive. Thus is born a partnership that might just take Joe all the way to the top…",
         "overview_ar": "شابٌ .. يتيم .. مُشرد هارب في طفولته من ملجأ الأيتام يعيش حياته في الشوارع وبين الأزقة، تحتويه الأحياء الفقيرة بغضبه وحزنه.. جو الذي دائمًا ما يتورط في نزاعات تنهيها قبضته القوية لكي يحافظ على مأواه ويفرض قوته وهيبته على خصومة مشرّدي الأحياء الأخرى! وفي احدى تلك النزاعات.. يرى المدرب السكير دانبي في هذا الفتى ملاكمًا موهوبًا.. فيحاول إقناعه بالدخول إلى هذا العالم ولكن… يتورط جو في مشكلات يدخل على إثرها إصلاحية الشباب،حيث يقابل فيها ورو ريكيشي وإثر خلافٍ بينهما هناك يتعاهد الإثنان على المواجهة في حلبة الملاكمة كخصميْن، ولأجل الوفاء بهذا الوعد، خرج يابوكي جو من الإصلاحية راغباً في أن يكون ملاكمًا وخصمًا يليق بـ ريكيشي.",
         "poster_path": "/b7xpXIT5imM3G92Asshnobt8VNi.jpg",
-        "vote_average": 7.867,
+        "vote_average": 7.9,
         "release_date": "1970-04-01",
         "popularity": 17.7988
     },
@@ -18718,6 +18694,30 @@
         "vote_average": 5.5,
         "release_date": "2018-08-22",
         "popularity": 17.3313
+    },
+    {
+        "id": 157194,
+        "type": "tv",
+        "title": "Pole to Pole with Will Smith",
+        "title_ar": "Pole to Pole with Will Smith",
+        "overview": "Inspired by his late mentor, Will Smith spends 100 days facing extreme challenges, venturing from pole to pole with scientists, explorers and experts.",
+        "overview_ar": "Inspired by his late mentor, Will Smith spends 100 days facing extreme challenges, venturing from pole to pole with scientists, explorers and experts.",
+        "poster_path": "/74zSvHdqFoCfQdXc8ZFqhkrbrPj.jpg",
+        "vote_average": 6.263,
+        "release_date": "2026-01-13",
+        "popularity": 18.4162
+    },
+    {
+        "id": 21729,
+        "type": "tv",
+        "title": "Gurren Lagann",
+        "title_ar": "غورن لاجان",
+        "overview": "When a young laborer escapes to the world aboveground, he discovers a violent land in which humans battle robots controlled by a power-hungry noble.",
+        "overview_ar": "القصة تدور حول صبي اسمه سيمون و مآثره لإيجاد قدره في عالم ملئ بالألغاز والمخاطر. عاش في قريته جيها طوال حياته , وكانت قريته تقع في باطن الأرض , وكان يعمل حفارا للقرية و الغرض من هذا توسيعها , لكن سيمون كان يحفر لإيجاد الكنوز أيضا. في يوم من الأيام احتفظ بمثقاب صغير الشكل وجده أثناء حفره . ولم يعلم بان هذا المثقاب سيغير مجرى حياته إلى الأبد مع القروي الآخر كامينا. وكان كامينا بمثابة الأخ لسيمون وكان هدفهم السماء (سطح الأرض) . وشاءت الأقدار بأن يجتمعوا بيوكو وكانت تطارد مخلوقا ميكانيكيا الذي ظهر في قريتهم . بعد هزيمة المخلوق الميكانيكي بواسطة رأس ميكانيكي وجده سيمون في وقت سابق . من هنا بدأت الرحلة لإيجاد قدرهم وهو يمتد إلى السماء.",
+        "poster_path": "/xL6HsYsk5N9PKwk6jFwMNQq3K3M.jpg",
+        "vote_average": 8.149,
+        "release_date": "2007-04-01",
+        "popularity": 16.0928
     },
     {
         "id": 157194,
