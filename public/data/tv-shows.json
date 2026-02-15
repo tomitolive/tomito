@@ -6240,18 +6240,6 @@
         "popularity": 39.5898
     },
     {
-        "id": 202208,
-        "type": "tv",
-        "title": "The Artful Dodger",
-        "title_ar": "The Artful Dodger",
-        "overview": "It's a tale of reinvention, betrayal, redemption, and love with a twist. Jack Dawkins is The Artful Dodger, whose pickpocketing fingers have become the skilled hands of a surgeon. He is torn between an impossible love and the criminal underworld he secretly craves. This will require Artfulness.",
-        "overview_ar": "It's a tale of reinvention, betrayal, redemption, and love with a twist. Jack Dawkins is The Artful Dodger, whose pickpocketing fingers have become the skilled hands of a surgeon. He is torn between an impossible love and the criminal underworld he secretly craves. This will require Artfulness.",
-        "poster_path": "/lcyax0pIH6vZWbho2hxsMTt9KpN.jpg",
-        "vote_average": 8.125,
-        "release_date": "2023-11-29",
-        "popularity": 39.5898
-    },
-    {
         "id": 62117,
         "type": "tv",
         "title": "Younger",
@@ -6295,7 +6283,7 @@
         "overview": "A drama about the local field office that investigates criminal cases affecting military personnel in The Big Easy, a city known for its music, entertainment and decadence.",
         "overview_ar": "يحقق المكتب الميداني بقيادة العميل الخاص دواين برايد فى الجرائم التى تورط فيها عسكريون حيث تدور اﻷحداث في مدينة تتميز بالموسيقي والمتعة ونابضة بالحيوية وبرغم ذلك تحدث فيها الكثير من الجرائم .",
         "poster_path": "/1WJJUUZODmRTcFydLDBUtiztL6x.jpg",
-        "vote_average": 7.291,
+        "vote_average": 7.292,
         "release_date": "2014-09-23",
         "popularity": 35.2063
     },
@@ -6478,6 +6466,18 @@
         "vote_average": 7.48,
         "release_date": "2015-11-20",
         "popularity": 33.7
+    },
+    {
+        "id": 2317,
+        "type": "tv",
+        "title": "My Name Is Earl",
+        "title_ar": "My Name Is Earl",
+        "overview": "When petty criminal Earl Hickey wins the lottery, he sets off on a quest to repair his questionable karma.",
+        "overview_ar": "When petty criminal Earl Hickey wins the lottery, he sets off on a quest to repair his questionable karma.",
+        "poster_path": "/57shLTTkHvhLUhyP1t0lNZPoAxD.jpg",
+        "vote_average": 7.659,
+        "release_date": "2005-09-20",
+        "popularity": 31.8589
     },
     {
         "id": 2317,
@@ -10560,30 +10560,6 @@
         "popularity": 23.4675
     },
     {
-        "id": 4046,
-        "type": "tv",
-        "title": "Spooks",
-        "title_ar": "Spooks",
-        "overview": "Tense drama series about the different challenges faced by the British Security Service as they work against the clock to safeguard the nation. The title is a popular colloquialism for spies, and the series follows the work of a group of MI5 officers based at the service's Thames House headquarters, in a highly secure suite of offices known as The Grid.",
-        "overview_ar": "Tense drama series about the different challenges faced by the British Security Service as they work against the clock to safeguard the nation. The title is a popular colloquialism for spies, and the series follows the work of a group of MI5 officers based at the service's Thames House headquarters, in a highly secure suite of offices known as The Grid.",
-        "poster_path": "/5kODxCYihuM49oQWke6GfHdsRT6.jpg",
-        "vote_average": 7.68,
-        "release_date": "2002-05-13",
-        "popularity": 23.9143
-    },
-    {
-        "id": 271548,
-        "type": "tv",
-        "title": "6 of Us",
-        "title_ar": "6 of Us",
-        "overview": "A story of six siblings—Azize, Cemo, Zeliha, Fidan, Samet, and Balım—who, after suddenly losing their parents, struggle to stay united and survive. The roots of their tragedy trace back to their parents, Bala and Rıfat, whose forbidden love began in a village in Mardin. Rıfat, a teacher, falls in love with Bala, but Yavuz, the wealthy and obsessive son of Mardin’s richest family, kidnaps her. Despite his abuse, Bala escapes with Rıfat, and they build a secluded life in the forest, raising six children in peace. However, Yavuz’s revenge shatters their world when he finds and attacks them. Fleeing to Istanbul, the siblings face the dangers of the city while seeking refuge with “Uncle Aslan,” their father’s trusted friend. The story highlights resilience, as the older siblings are forced to grow up quickly to protect their younger brothers and sisters in the face of overwhelming challenges.",
-        "overview_ar": "A story of six siblings—Azize, Cemo, Zeliha, Fidan, Samet, and Balım—who, after suddenly losing their parents, struggle to stay united and survive. The roots of their tragedy trace back to their parents, Bala and Rıfat, whose forbidden love began in a village in Mardin. Rıfat, a teacher, falls in love with Bala, but Yavuz, the wealthy and obsessive son of Mardin’s richest family, kidnaps her. Despite his abuse, Bala escapes with Rıfat, and they build a secluded life in the forest, raising six children in peace. However, Yavuz’s revenge shatters their world when he finds and attacks them. Fleeing to Istanbul, the siblings face the dangers of the city while seeking refuge with “Uncle Aslan,” their father’s trusted friend. The story highlights resilience, as the older siblings are forced to grow up quickly to protect their younger brothers and sisters in the face of overwhelming challenges.",
-        "poster_path": "/l0g0CAq7VjoKslVE9JZZQFMI9Tt.jpg",
-        "vote_average": 5.5,
-        "release_date": "2024-11-13",
-        "popularity": 28.6142
-    },
-    {
         "id": 131378,
         "type": "tv",
         "title": "Adventure Time: Fionna & Cake",
@@ -10800,18 +10776,6 @@
         "popularity": 23.1936
     },
     {
-        "id": 14951,
-        "type": "tv",
-        "title": "Nature",
-        "title_ar": "Nature",
-        "overview": "Consistently stunning documentaries transport viewers to far-flung locations ranging from the torrid African plains to the chilly splendours of icy Antarctica. The show's primary focus is on animals and ecosystems around the world. A comic book based on the show, meant to be used an as educational tool for kids, was briefly distributed to museums and schools at no cost in the mid-2000s.",
-        "overview_ar": "Consistently stunning documentaries transport viewers to far-flung locations ranging from the torrid African plains to the chilly splendours of icy Antarctica. The show's primary focus is on animals and ecosystems around the world. A comic book based on the show, meant to be used an as educational tool for kids, was briefly distributed to museums and schools at no cost in the mid-2000s.",
-        "poster_path": "/qRg5boKJdJhJKoGJdchVqPGQTEl.jpg",
-        "vote_average": 7.866,
-        "release_date": "1982-10-10",
-        "popularity": 25.5458
-    },
-    {
         "id": 19612,
         "type": "tv",
         "title": "Mashin Hero Wataru",
@@ -10915,7 +10879,7 @@
         "overview": "This equal parts survival epic, psychological horror story and coming-of-age drama tells the saga of a team of wildly talented high school girls soccer players who become the (un)lucky survivors of a plane crash deep in the remote northern wilderness. The series chronicles their descent from a complicated but thriving team to savage clans, while also tracking the lives they’ve attempted to piece back together nearly 25 years later.",
         "overview_ar": "تتحطم طائرة على متنها فريق كرة قدم يتكون من مجموعة من اللاعبات الموهوبات، وسرعان ما تُصبح حياتهن في خطرًا كبير في قلب الحياة البرية بأونتاريو.",
         "poster_path": "/xRnGrn7Z7SC0KIBodocoU1QgDZF.jpg",
-        "vote_average": 7.5,
+        "vote_average": 7.46,
         "release_date": "2021-11-14",
         "popularity": 27.6934
     },
@@ -10927,7 +10891,7 @@
         "overview": "The provocative story of Cole, a time traveler from a decimated future in a high-stakes race against the clock. Utilizing a dangerous and untested method of time travel, he journeys from 2043 to the present day on a mission to locate and eradicate the source of a deadly plague that will all but annihilate the human race.",
         "overview_ar": "The provocative story of Cole, a time traveler from a decimated future in a high-stakes race against the clock. Utilizing a dangerous and untested method of time travel, he journeys from 2043 to the present day on a mission to locate and eradicate the source of a deadly plague that will all but annihilate the human race.",
         "poster_path": "/w5u1PqBYfDyfrlkxADTA38jYG3I.jpg",
-        "vote_average": 7.398,
+        "vote_average": 7.4,
         "release_date": "2015-01-16",
         "popularity": 24.7081
     },
@@ -11038,6 +11002,42 @@
         "vote_average": 7.805,
         "release_date": "2013-03-30",
         "popularity": 25.0114
+    },
+    {
+        "id": 108545,
+        "type": "tv",
+        "title": "3 Body Problem",
+        "title_ar": "3 Body Problem",
+        "overview": "Across continents and decades, five brilliant friends make earth-shattering discoveries as the laws of science unravel and an existential threat emerges.",
+        "overview_ar": "Across continents and decades, five brilliant friends make earth-shattering discoveries as the laws of science unravel and an existential threat emerges.",
+        "poster_path": "/ykZ7hlShkdRQaL2aiieXdEMmrLb.jpg",
+        "vote_average": 7.458,
+        "release_date": "2024-03-21",
+        "popularity": 25.4158
+    },
+    {
+        "id": 36994,
+        "type": "tv",
+        "title": "Workaholics",
+        "title_ar": "Workaholics",
+        "overview": "The misadventures of three recent college dropouts, roommates, and co-workers at a telemarketing company and their drug dealer.",
+        "overview_ar": "The misadventures of three recent college dropouts, roommates, and co-workers at a telemarketing company and their drug dealer.",
+        "poster_path": "/kXg4tFUHN7h7bNdBTeLIIKqw9UJ.jpg",
+        "vote_average": 7.395,
+        "release_date": "2011-04-06",
+        "popularity": 24.7967
+    },
+    {
+        "id": 2506,
+        "type": "tv",
+        "title": "Wings",
+        "title_ar": "Wings",
+        "overview": "Brothers Brian and Joe Hackett attempt to run an airline on the New England island of Nantucket while surrounded by their various wacky friends and employees.",
+        "overview_ar": "Brothers Brian and Joe Hackett attempt to run an airline on the New England island of Nantucket while surrounded by their various wacky friends and employees.",
+        "poster_path": "/eqf5p8fU7liYAMznUBMWMeSYfCQ.jpg",
+        "vote_average": 6.851,
+        "release_date": "1990-04-19",
+        "popularity": 22.5841
     },
     {
         "id": 36994,
@@ -12240,18 +12240,6 @@
         "popularity": 25.4894
     },
     {
-        "id": 307969,
-        "type": "tv",
-        "title": "Για Μια Θέση στον Ήλιο",
-        "title_ar": "Για Μια Θέση στον Ήλιο",
-        "overview": "",
-        "overview_ar": "",
-        "poster_path": "/uE4ye0BbxJjXEWo3JMNk7wQnDnS.jpg",
-        "vote_average": 7.0,
-        "release_date": "1999-10-04",
-        "popularity": 27.1919
-    },
-    {
         "id": 205050,
         "type": "tv",
         "title": "Shangri-La Frontier",
@@ -12348,6 +12336,18 @@
         "popularity": 24.5992
     },
     {
+        "id": 14951,
+        "type": "tv",
+        "title": "Nature",
+        "title_ar": "Nature",
+        "overview": "Consistently stunning documentaries transport viewers to far-flung locations ranging from the torrid African plains to the chilly splendours of icy Antarctica. The show's primary focus is on animals and ecosystems around the world. A comic book based on the show, meant to be used an as educational tool for kids, was briefly distributed to museums and schools at no cost in the mid-2000s.",
+        "overview_ar": "Consistently stunning documentaries transport viewers to far-flung locations ranging from the torrid African plains to the chilly splendours of icy Antarctica. The show's primary focus is on animals and ecosystems around the world. A comic book based on the show, meant to be used an as educational tool for kids, was briefly distributed to museums and schools at no cost in the mid-2000s.",
+        "poster_path": "/qRg5boKJdJhJKoGJdchVqPGQTEl.jpg",
+        "vote_average": 7.866,
+        "release_date": "1982-10-10",
+        "popularity": 25.5458
+    },
+    {
         "id": 66370,
         "type": "tv",
         "title": "Ode to Joy",
@@ -12427,7 +12427,7 @@
         "overview": "In the story, Kagami Taiga has just enrolled into Seirin High School when he meets Kuroko Tetsuya of the school's basketball team. Kuroko happens to be the shadowy sixth member of the legendary Generation of Miracles basketball team. Together, Kagami and Kuroko aim to take their team to the inter-high school championship - against Kuroko's former teammates.",
         "overview_ar": "فريق مدرسة تييكو المتوسطة ارتقى بتميز من خلال سحق جميع المنافسات. أعضاء الفريق الأساسيون معروفين بـ\"جيل المعجزات\".وهم:كيسي ريوتا المعروف بنسخ الحركات وتقليدها. ميدوريما شينتارو المعروف بإدخال الثلاثيات من أي مكان في الملعب. أوميني دايكي المعروف بمهارته واسلوبه الفني في اللعب. موراساكيبارا أتسوشي المعروف بطوله البالغ 208سنتيمتر. وأخيرا كابتن الفريق أكاشي سيجورو المعروف بعينه المسماة عين الإمبراطور فهي تستطيع رؤية المستقبل وإبطال حركة الخصم. بعد التخرج من المدرسة المتوسطة، هؤلاء النجوم الخمسة ارتادوا مدارس ثانوية مختلفة تمتلك صفوة فرق كرة السلة. مع ذلك، هنالك حقيقة قليل يعلم بشأنها وهي عن وجود لاعب آخر في \"جيل المعجزات\": لاعب خفي سادس. هذا اللاعب الغامض هو الآن طالب جديد في ثانوية سيرين، ثانوية جديدة ذات فريق قوي، وغير معروف. اللآن كوروكو تيتسويا، هو ذو شعر وعينين زرقاوين يمتاز بسرعة الحركة والتمريرات المتقنة التي تعتمد على أسلوب التضليل كما أنه يستطيع التمرير من أول إلى آخر الملعب بتمريرى مذهلة، رغم ان قوته تتراجع دون مستقبل قوي وبارع لتمريراته العضو الخفي السادس لـجيل المعجزات، وكاغامي تايغا، لاعب موهوب فطريا الذي قضى أغلب سنوات مدرسته المتوسطة في الولايات المتحدة، هو شخص يحب التحديات يضحك دائما عند مواجهته لخصم قوي وهو ذو بنية قوية وشعر أحمر يهدف لجعل سيرين في قمة فرق اليابان، متحديًا زملاء كوروكو السابقين واحدًا تلو الآخر، ويشكل كاجامي وكوروكو ثنائيا رائعا ويسعيان للفوز في بطولة كأس الشتاء",
         "poster_path": "/qi8dlAgQEeahpEn1AOb5BJEOcVB.jpg",
-        "vote_average": 8.406,
+        "vote_average": 8.409,
         "release_date": "2012-04-08",
         "popularity": 24.3337
     },
@@ -18963,9 +18963,9 @@
         "id": 81046,
         "type": "tv",
         "title": "The Dragon Prince",
-        "title_ar": "الأمير التنين",
+        "title_ar": "The Dragon Prince",
         "overview": "An extraordinary discovery inspires two human princes and an elven assassin to team up on an epic quest to bring peace to their warring lands.",
-        "overview_ar": "بينما تستعد مملكة كاتوليس البشرية لهجوم من جانب Moonshadow elves ، يخطط الملك Harrow لإرسال الأبناء Callum و Ezran بعيدًا إلى مكان آمن.",
+        "overview_ar": "An extraordinary discovery inspires two human princes and an elven assassin to team up on an epic quest to bring peace to their warring lands.",
         "poster_path": "/d7PIRa6ez7ZEl9D4JUrnSsmcnVD.jpg",
         "vote_average": 8.213,
         "release_date": "2018-09-14",
@@ -19920,30 +19920,6 @@
         "popularity": 16.5458
     },
     {
-        "id": 4459,
-        "type": "tv",
-        "title": "The Muppet Show",
-        "title_ar": "The Muppet Show",
-        "overview": "Go behind the curtains as Kermit the Frog and his muppet friends struggle to put on a weekly variety show.",
-        "overview_ar": "Go behind the curtains as Kermit the Frog and his muppet friends struggle to put on a weekly variety show.",
-        "poster_path": "/x1aZsosXqaCpZTI12lLpNYIj6HX.jpg",
-        "vote_average": 8.0,
-        "release_date": "1976-09-05",
-        "popularity": 17.8951
-    },
-    {
-        "id": 206296,
-        "type": "tv",
-        "title": "Golden Horse Awards",
-        "title_ar": "金馬獎",
-        "overview": "The Taipei Golden Horse Film Festival and Awards (Chinese: 台北金馬影展; pinyin: Táiběi Jīnmǎ Yǐngzhǎn; Pe̍h-ōe-jī: Tâi-pak Kim-má iáⁿ-tián) is a film festival and awards ceremony held annually in Taiwan. It was founded in 1962 by the Government Information Office of the Republic of China (ROC) in Taiwan. The awards ceremony is usually held in November or December in Taipei, although the event has also been held in other locations in Taiwan in recent times",
-        "overview_ar": "The Taipei Golden Horse Film Festival and Awards (Chinese: 台北金馬影展; pinyin: Táiběi Jīnmǎ Yǐngzhǎn; Pe̍h-ōe-jī: Tâi-pak Kim-má iáⁿ-tián) is a film festival and awards ceremony held annually in Taiwan. It was founded in 1962 by the Government Information Office of the Republic of China (ROC) in Taiwan. The awards ceremony is usually held in November or December in Taipei, although the event has also been held in other locations in Taiwan in recent times",
-        "poster_path": "/q9H3q7q99hIwMFmxaA9pVD8jdoU.jpg",
-        "vote_average": 9.0,
-        "release_date": "1962-10-31",
-        "popularity": 20.5923
-    },
-    {
         "id": 64710,
         "type": "tv",
         "title": "Noragami",
@@ -20158,6 +20134,30 @@
         "vote_average": 7.1,
         "release_date": "2017-01-01",
         "popularity": 15.5681
+    },
+    {
+        "id": 78,
+        "type": "tv",
+        "title": "Dateline",
+        "title_ar": "Dateline",
+        "overview": "Dateline NBC, or simply Dateline, is a weekly American television newsmagazine series. It was previously the network's flagship newsmagazine, but now focuses mainly on true crime stories with only occasional editions that focus on other topics.",
+        "overview_ar": "Dateline NBC, or simply Dateline, is a weekly American television newsmagazine series. It was previously the network's flagship newsmagazine, but now focuses mainly on true crime stories with only occasional editions that focus on other topics.",
+        "poster_path": "/xj9zonhdomfBpEhZQmAON5u3CiB.jpg",
+        "vote_average": 6.4,
+        "release_date": "1992-03-31",
+        "popularity": 17.2843
+    },
+    {
+        "id": 1850,
+        "type": "tv",
+        "title": "Caroline in the City",
+        "title_ar": "Caroline in the City",
+        "overview": "Caroline in the City is an American situation comedy that ran on the NBC television network. It stars Lea Thompson as cartoonist Caroline Duffy, who lives in Manhattan in New York City. The series premiered on September 21, 1995 in the \"Must See TV\" Thursday night block after Seinfeld. The show ran for 97 episodes over four seasons, before it was cancelled; its final episode was broadcast on April 26, 1999.",
+        "overview_ar": "Caroline in the City is an American situation comedy that ran on the NBC television network. It stars Lea Thompson as cartoonist Caroline Duffy, who lives in Manhattan in New York City. The series premiered on September 21, 1995 in the \"Must See TV\" Thursday night block after Seinfeld. The show ran for 97 episodes over four seasons, before it was cancelled; its final episode was broadcast on April 26, 1999.",
+        "poster_path": "/eI7GP4fL77x6zsn2d505GzzCTnK.jpg",
+        "vote_average": 6.4,
+        "release_date": "1995-09-21",
+        "popularity": 15.7038
     },
     {
         "id": 78,
@@ -21375,7 +21375,7 @@
         "id": 223731,
         "type": "tv",
         "title": "Potol Kumar Gaanwala",
-        "title_ar": "পটল কুমার গানওয়ালা",
+        "title_ar": "Potol Kumar Gaanwala",
         "overview": "Potol, a singing prodigy, lives in a village with her mother, uncle and aunt. However, after her mother's death, she sets out to search for her father, whose identity she does not know.",
         "overview_ar": "Potol, a singing prodigy, lives in a village with her mother, uncle and aunt. However, after her mother's death, she sets out to search for her father, whose identity she does not know.",
         "poster_path": "/mjU2bDDZBgKRvpgZER2KkLb83sb.jpg",
@@ -22791,9 +22791,9 @@
         "id": 25707,
         "type": "tv",
         "title": "Captain Tsubasa",
-        "title_ar": "Captain Tsubasa",
+        "title_ar": "كابتن ماجد",
         "overview": "Tsubasa Ozora loves playing football since he was a little child. After moving to the japanese town of Nankatsu together with his mother, the 11-year-old boy quickly finds friends and joins the local football team of his elementary school. Together with his newly made friends and Brazilian mentor Roberto, Tsubasa starts his exciting journey to chase after his most desired dream - one day winning the FIFA World Cup.",
-        "overview_ar": "Tsubasa Ozora loves playing football since he was a little child. After moving to the japanese town of Nankatsu together with his mother, the 11-year-old boy quickly finds friends and joins the local football team of his elementary school. Together with his newly made friends and Brazilian mentor Roberto, Tsubasa starts his exciting journey to chase after his most desired dream - one day winning the FIFA World Cup.",
+        "overview_ar": "الفتى ماجد يحلم منذ طفولته بأن يصبح نجماً من نجوم الملاعب. مسيرة مليئة بالتشويق وإصرار لا مثيل له، وروح رياضية عالية ستغير مفاهيم المنافسة تماماً.",
         "poster_path": "/qHVVaYYlD509eh1V4LYE0M927uw.jpg",
         "vote_average": 7.843,
         "release_date": "1983-10-13",
@@ -23523,7 +23523,7 @@
         "id": 107255,
         "type": "tv",
         "title": "Dragon Raja -The Blazing Dawn-",
-        "title_ar": "龙族",
+        "title_ar": "Dragon Raja -The Blazing Dawn-",
         "overview": "A letter from Cassell College broke the calm life of the youth. The unexpected admission notice, the frightened interview, the surprise rescue under the full view of the public, and the day of freedom to display their heroic spirit. When Lu Mingfei decided to choose the hidden option, the ordinary youth embarked on the legendary road of fighting against the dragon race.",
         "overview_ar": "A letter from Cassell College broke the calm life of the youth. The unexpected admission notice, the frightened interview, the surprise rescue under the full view of the public, and the day of freedom to display their heroic spirit. When Lu Mingfei decided to choose the hidden option, the ordinary youth embarked on the legendary road of fighting against the dragon race.",
         "poster_path": "/4OxjZt3Evt0UY65Ozr4C4S895CO.jpg",
@@ -23535,9 +23535,9 @@
         "id": 239385,
         "type": "tv",
         "title": "The Manipulated",
-        "title_ar": "المظلوم",
+        "title_ar": "The Manipulated",
         "overview": "Mild-mannered Tae-jung is wrongfully imprisoned for a heinous crime. He soon discovers that a mysterious figure named Yo-han orchestrated his downfall. Fueled by vengeance, Tae-jung sets out to make Yo-han pay.",
-        "overview_ar": "تاي جونغ، اللطيف الخلق، يُسجن ظلماً لارتكابه جريمة شنيعة. وسرعان ما يكتشف أن شخصية غامضة تُدعى يو هان هي من دبرت سقوطه. مدفوعاً برغبة في الانتقام، ينطلق تاي جونغ ليجعل يو هان يدفع ثمن جريمته.",
+        "overview_ar": "Mild-mannered Tae-jung is wrongfully imprisoned for a heinous crime. He soon discovers that a mysterious figure named Yo-han orchestrated his downfall. Fueled by vengeance, Tae-jung sets out to make Yo-han pay.",
         "poster_path": "/nOj4nsomFyAVJgpp68L0xq3cREc.jpg",
         "vote_average": 8.337,
         "release_date": "2025-11-05",

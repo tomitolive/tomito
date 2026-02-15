@@ -3135,9 +3135,9 @@
         "id": 98,
         "type": "movie",
         "title": "Gladiator",
-        "title_ar": "المجالد",
+        "title_ar": "Gladiator",
         "overview": "After the death of Emperor Marcus Aurelius, his devious son takes power and demotes Maximus, one of Rome's most capable generals who Marcus preferred. Eventually, Maximus is forced to become a gladiator and battle to the death against other men for the amusement of paying audiences.",
-        "overview_ar": "في روما القديمة، تتحول حياة الجنرال العظيم ماكسيموس إلى مأساة عندما يقتل الإمبراطور الجديد كومودوس عائلته ويرسله للعبودية. يجد ماكسيموس نفسه مجبراً على القتال كمصارع في حلبات الموت، متخذاً طريقاً دموياً نحو روما حيث يسعى للانتقام من الطاغية الذي دمر حياته.",
+        "overview_ar": "After the death of Emperor Marcus Aurelius, his devious son takes power and demotes Maximus, one of Rome's most capable generals who Marcus preferred. Eventually, Maximus is forced to become a gladiator and battle to the death against other men for the amusement of paying audiences.",
         "poster_path": "/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
         "vote_average": 8.221,
         "release_date": "2000-05-04",
@@ -4080,6 +4080,18 @@
         "popularity": 15.0702
     },
     {
+        "id": 30112,
+        "type": "movie",
+        "title": "Lost in Beijing",
+        "title_ar": "苹果",
+        "overview": "A look at modern-day life in China's capital centered on a ménage-a-quatre involving a young woman, her boss, her husband and her boss's wife.",
+        "overview_ar": "A look at modern-day life in China's capital centered on a ménage-a-quatre involving a young woman, her boss, her husband and her boss's wife.",
+        "poster_path": "/2LZ7qbdnCqlOzlngcj5wdvnLfjA.jpg",
+        "vote_average": 6.541,
+        "release_date": "2007-09-26",
+        "popularity": 12.5001
+    },
+    {
         "id": 324786,
         "type": "movie",
         "title": "Hacksaw Ridge",
@@ -4123,7 +4135,7 @@
         "overview": "Expert thief Parker gets a shot at a major heist, but to pull it off he and his team must outsmart a South American dictator, the New York mob, and the world's richest man.",
         "overview_ar": "ينفّذ لص محترف أكبر عملية سرقة في حياته في فيلم اللعب القذر، فيلم إثارة مليء بالحركة من إخراج \"شين بلاك\". يشارك \"باركر\"، الذي يؤدي دوره \"مارك والبيرغ\"، إلى جانب \"غروفيلد\" الذي يؤدي دوره \"لاكيث ستانفيلد\"، و\"زين\" التي تؤدي دورها \"روزا سالازار\"، وفريق ماهر، لتنفيذ سرقة العمر التي اكتشفوها بالصدفة، وتلك تقودهم إلى مواجهة مباشرة مع مافيا \"نيويورك\"، في هذه المغامرة الجريئة الذكية والمليئة بالتشويق.",
         "poster_path": "/ovZ0zq0NwRghtWI1oLaM0lWuoEw.jpg",
-        "vote_average": 6.605,
+        "vote_average": 6.599,
         "release_date": "2025-09-30",
         "popularity": 13.58
     },
@@ -4198,18 +4210,6 @@
         "vote_average": 7.239,
         "release_date": "2017-09-06",
         "popularity": 16.1096
-    },
-    {
-        "id": 1119449,
-        "type": "movie",
-        "title": "Good Luck, Have Fun, Don't Die",
-        "title_ar": "Good Luck, Have Fun, Don't Die",
-        "overview": "A man claiming to be from the future takes the patrons of an iconic Los Angeles diner hostage in search of unlikely recruits in a quest to save the world.",
-        "overview_ar": "A man claiming to be from the future takes the patrons of an iconic Los Angeles diner hostage in search of unlikely recruits in a quest to save the world.",
-        "poster_path": "/rWcfOdY7TU6lTdazWj0ebDZnAfO.jpg",
-        "vote_average": 8.0,
-        "release_date": "2026-02-13",
-        "popularity": 51.2756
     },
     {
         "id": 447273,
@@ -4291,7 +4291,7 @@
         "overview": "Rose, a desperate mother, takes her adopted daughter, Sharon, to the town of Silent Hill in an attempt to cure her of her ailment. After a violent car crash, Sharon disappears, and Rose embarks on a horrific journey to get her back and begins to uncover the truth behind the apocalyptic disaster that burned the town 30 years earlier.",
         "overview_ar": "ستنادًا إلى واحدة من أشهر ألعاب الفيديو على اﻹطلاق، تذهب امرأة للبحث عن ابنتها ضمن حدود غريبة، مدينة مهجورة تسمى \"سايلنت هيل\"، وهناك تقابل سلسلة من اﻷهوال.",
         "poster_path": "/dVW2L5eu6Hv0nfEEp0nY2lYmcbc.jpg",
-        "vote_average": 6.616,
+        "vote_average": 6.6,
         "release_date": "2006-04-21",
         "popularity": 15.3379
     },
@@ -4431,9 +4431,9 @@
         "id": 4232,
         "type": "movie",
         "title": "Scream",
-        "title_ar": "الصرخة",
+        "title_ar": "Scream",
         "overview": "A year after the murder of her mother, a teenage girl is terrorized by a masked killer who targets her and her friends by using scary movies as part of a deadly game.",
-        "overview_ar": "تعيش (سيدني) الفتاة الشابة التي تسكن مع والدها ، والتي لم تلتئم أحزانها الناتجة عن قتل والدتها ، والاعتداء عليها بعد ، كما تعاني أيضا من قتل صديقها، وسرعان ما يأتي دور (سيدني) لتبدأ في تلقي مكالمات من شخص غريب ، يبدأ في تهديدها بتصرفات مماثلة ، في نفس الوقت يسافر والد (سيدني) للخارج ويترك (سيدني) وحدها في المنزل ، فتلجأ لصديقها (بيللي) ليؤنس وحشتها خاصة بعد تلك المكالمات الغريبة ،وتبدأ في الشك في كل من حولها .",
+        "overview_ar": "A year after the murder of her mother, a teenage girl is terrorized by a masked killer who targets her and her friends by using scary movies as part of a deadly game.",
         "poster_path": "/lr9ZIrmuwVmZhpZuTCW8D9g0ZJe.jpg",
         "vote_average": 7.425,
         "release_date": "1996-12-20",
@@ -5544,18 +5544,6 @@
         "popularity": 12.222
     },
     {
-        "id": 667538,
-        "type": "movie",
-        "title": "Transformers: Rise of the Beasts",
-        "title_ar": "المتحولون: صعود الوحوش",
-        "overview": "When a new threat capable of destroying the entire planet emerges, Optimus Prime and the Autobots must team up with a powerful faction known as the Maximals. With the fate of humanity hanging in the balance, humans Noah and Elena will do whatever it takes to help the Transformers as they engage in the ultimate battle to save Earth.",
-        "overview_ar": "تدور احداث الفيلم في إطار من الحركة والخيال العلمي، تظهر مجموعة من الحيوانات الآلية، مما يطلق العنان لحربا كبرى يشارك بها كافة المتحولون.",
-        "poster_path": "/gPbM0MK8CP8A174rmUwGsADNYKD.jpg",
-        "vote_average": 7.189,
-        "release_date": "2023-06-06",
-        "popularity": 11.9266
-    },
-    {
         "id": 181808,
         "type": "movie",
         "title": "Star Wars: The Last Jedi",
@@ -5707,7 +5695,7 @@
         "overview": "Alice, now 19 years old, returns to the whimsical world she first entered as a child and embarks on a journey to discover her true destiny.",
         "overview_ar": "أنت مدعو إلى تاريخ مهم للغاية.  تعود أليس ، البالغة من العمر الآن 19 عاما ، إلى العالم غريب الأطوار الذي دخلته لأول مرة عندما كانت طفلة وتشرع في رحلة لاكتشاف مصيرها الحقيقي.",
         "poster_path": "/o0kre9wRCZz3jjSjaru7QU0UtFz.jpg",
-        "vote_average": 6.6,
+        "vote_average": 6.637,
         "release_date": "2010-03-03",
         "popularity": 12.8273
     },
@@ -5743,7 +5731,7 @@
         "overview": "Will Hunting is a headstrong, working-class genius who is failing the lessons of life. After one too many run-ins with the law, Will's last chance is a psychology professor, who might be the only man who can reach him.",
         "overview_ar": "يتمتع Will Hunting بذكاء على مستوى عبقري ولكنه يختار العمل كبواب في معهد ماساتشوستس للتكنولوجيا. عندما يحل مشكلة رياضية صعبة على مستوى الدراسات العليا ، يكتشف البروفيسور جيرالد لامبو مواهبه ، الذي يقرر مساعدة الشباب المضلل للوصول إلى إمكاناته. عندما يتم القبض على ويل لمهاجمته ضابط شرطة ، يعقد البروفيسور لامبو صفقة للحصول على تساهل معه إذا كان سيحصل على العلاج من المعالج شون ماجواير.",
         "poster_path": "/z2FnLKpFi1HPO7BEJxdkv6hpJSU.jpg",
-        "vote_average": 8.158,
+        "vote_average": 8.159,
         "release_date": "1997-12-05",
         "popularity": 11.8725
     },
@@ -5758,6 +5746,18 @@
         "vote_average": 6.4,
         "release_date": "2025-10-30",
         "popularity": 13.1425
+    },
+    {
+        "id": 260346,
+        "type": "movie",
+        "title": "Taken 3",
+        "title_ar": "Taken 3",
+        "overview": "Ex-government operative Bryan Mills finds his life is shattered when he's falsely accused of a murder that hits close to home. As he's pursued by a savvy police inspector, Mills employs his particular set of skills to track the real killer and exact his unique brand of justice.",
+        "overview_ar": "Ex-government operative Bryan Mills finds his life is shattered when he's falsely accused of a murder that hits close to home. As he's pursued by a savvy police inspector, Mills employs his particular set of skills to track the real killer and exact his unique brand of justice.",
+        "poster_path": "/vzvMXMypMq7ieDofKThsxjHj9hn.jpg",
+        "vote_average": 6.26,
+        "release_date": "2014-12-16",
+        "popularity": 11.6463
     },
     {
         "id": 260346,
@@ -8153,7 +8153,7 @@
         "title": "Independence Day",
         "title_ar": "Independence Day",
         "overview": "Strange phenomena surface around the globe. The skies ignite. Terror races through the world's major cities. As these extraordinary events unfold, it becomes increasingly clear that a force of incredible magnitude has arrived. Its mission: total annihilation over the Fourth of July weekend. The last hope to stop the destruction is an unlikely group of people united by fate and unimaginable circumstances.",
-        "overview_ar": "تهبط سفينة فضائية ضخمة إلى الغلاف الجوي للأرض، وتتسبب في فوضى بجميع الاتصالات داخل الكوكب، ثم يكتشف أحد العلماء نية الكائنات الفضائية في ضرب جميع النقاط الحيوية بالأرض من أجل احتلال الكوكب، وتبدأ من هنا الحرب بين البشر وتلك الكانئات الفضائية.",
+        "overview_ar": "Strange phenomena surface around the globe. The skies ignite. Terror races through the world's major cities. As these extraordinary events unfold, it becomes increasingly clear that a force of incredible magnitude has arrived. Its mission: total annihilation over the Fourth of July weekend. The last hope to stop the destruction is an unlikely group of people united by fate and unimaginable circumstances.",
         "poster_path": "/p0BPQGSPoSa8Ml0DAf2mB2kCU0R.jpg",
         "vote_average": 6.899,
         "release_date": "1996-06-25",
@@ -12000,6 +12000,18 @@
         "popularity": 9.5487
     },
     {
+        "id": 5548,
+        "type": "movie",
+        "title": "RoboCop",
+        "title_ar": "RoboCop",
+        "overview": "In a violent, near-apocalyptic Detroit, evil corporation Omni Consumer Products wins a contract from the city government to privatize the police force. To test their crime-eradicating cyborgs, the company leads street cop Alex Murphy into an armed confrontation with crime lord Boddicker so they can use his body to support their untested RoboCop prototype. But when RoboCop learns of the company's nefarious plans, he turns on his masters.",
+        "overview_ar": "In a violent, near-apocalyptic Detroit, evil corporation Omni Consumer Products wins a contract from the city government to privatize the police force. To test their crime-eradicating cyborgs, the company leads street cop Alex Murphy into an armed confrontation with crime lord Boddicker so they can use his body to support their untested RoboCop prototype. But when RoboCop learns of the company's nefarious plans, he turns on his masters.",
+        "poster_path": "/esmAU0fCO28FbS6bUBKLAzJrohZ.jpg",
+        "vote_average": 7.352,
+        "release_date": "1987-07-17",
+        "popularity": 9.4941
+    },
+    {
         "id": 214756,
         "type": "movie",
         "title": "Ted 2",
@@ -12226,18 +12238,6 @@
         "vote_average": 6.716,
         "release_date": "2006-03-29",
         "popularity": 8.2666
-    },
-    {
-        "id": 2109,
-        "type": "movie",
-        "title": "Rush Hour",
-        "title_ar": "Rush Hour",
-        "overview": "When Hong Kong Inspector Lee is summoned to Los Angeles to investigate a kidnapping, the FBI doesn't want any outside help and assigns cocky LAPD Detective James Carter to distract Lee from the case. Not content to watch the action from the sidelines, Lee and Carter form an unlikely partnership and investigate the case themselves.",
-        "overview_ar": "When Hong Kong Inspector Lee is summoned to Los Angeles to investigate a kidnapping, the FBI doesn't want any outside help and assigns cocky LAPD Detective James Carter to distract Lee from the case. Not content to watch the action from the sidelines, Lee and Carter form an unlikely partnership and investigate the case themselves.",
-        "poster_path": "/3WsLE6FtxEPRa6U9sbY1ckrn39s.jpg",
-        "vote_average": 7.061,
-        "release_date": "1998-09-18",
-        "popularity": 9.2809
     },
     {
         "id": 1267319,
@@ -16080,6 +16080,30 @@
         "popularity": 9.2583
     },
     {
+        "id": 697843,
+        "type": "movie",
+        "title": "Extraction 2",
+        "title_ar": "Extraction 2",
+        "overview": "Back from the brink of death, highly skilled commando Tyler Rake takes on another dangerous mission: saving the imprisoned family of a ruthless gangster.",
+        "overview_ar": "Back from the brink of death, highly skilled commando Tyler Rake takes on another dangerous mission: saving the imprisoned family of a ruthless gangster.",
+        "poster_path": "/7gKI9hpEMcZUQpNgKrkDzJpbnNS.jpg",
+        "vote_average": 7.394,
+        "release_date": "2023-06-09",
+        "popularity": 7.0042
+    },
+    {
+        "id": 378064,
+        "type": "movie",
+        "title": "A Silent Voice: The Movie",
+        "title_ar": "A Silent Voice: The Movie",
+        "overview": "Shouya Ishida starts bullying the new girl in class, Shouko Nishimiya, because she is deaf. But as the teasing continues, the rest of the class starts to turn on Shouya for his lack of compassion. When they leave elementary school, Shouko and Shouya do not speak to each other again... until an older, wiser Shouya, tormented by his past behaviour, decides he must see Shouko once more. He wants to atone for his sins, but is it already too late...?",
+        "overview_ar": "Shouya Ishida starts bullying the new girl in class, Shouko Nishimiya, because she is deaf. But as the teasing continues, the rest of the class starts to turn on Shouya for his lack of compassion. When they leave elementary school, Shouko and Shouya do not speak to each other again... until an older, wiser Shouya, tormented by his past behaviour, decides he must see Shouko once more. He wants to atone for his sins, but is it already too late...?",
+        "poster_path": "/tuFaWiqX0TXoWu7DGNcmX3UW7sT.jpg",
+        "vote_average": 8.384,
+        "release_date": "2016-09-17",
+        "popularity": 9.2583
+    },
+    {
         "id": 365177,
         "type": "movie",
         "title": "Borderlands",
@@ -16099,7 +16123,7 @@
         "overview": "Molly Bloom, a young skier and former Olympic hopeful becomes a successful entrepreneur (and a target of an FBI investigation) when she establishes a high-stakes, international poker game.",
         "overview_ar": "Molly Bloom, a young skier and former Olympic hopeful becomes a successful entrepreneur (and a target of an FBI investigation) when she establishes a high-stakes, international poker game.",
         "poster_path": "/zrGQwKNmAz5awZI2V1k5M4eTTTN.jpg",
-        "vote_average": 7.2,
+        "vote_average": 7.15,
         "release_date": "2017-12-07",
         "popularity": 7.2571
     },
@@ -16111,7 +16135,7 @@
         "overview": "New York, early 1960s. Against the backdrop of a vibrant music scene and tumultuous cultural upheaval, an enigmatic 19-year-old from Minnesota arrives in the West Village with his guitar and revolutionary talent, destined to change the course of American music.",
         "overview_ar": "نيويورك، أوائل ستينيات القرن العشرين. على خلفية مشهد موسيقي نابض بالحياة واضطرابات ثقافية عارمة، يصل شاب غامض في التاسعة عشرة من عمره من مينيسوتا إلى ويست فيليدج مع غيتاره وموهبته الثورية، مُقدّر له أن يُغيّر مسار الموسيقى الأمريكية.",
         "poster_path": "/llWl3GtNoXosbvYboelmoT459NM.jpg",
-        "vote_average": 7.084,
+        "vote_average": 7.1,
         "release_date": "2024-12-25",
         "popularity": 7.6362
     },
@@ -16171,7 +16195,7 @@
         "overview": "After barely surviving a brutal attack by a sadistic serial killer, crime boss Jang Dong-su is left humiliated. Determined to catch the killer known as K, he forms an uneasy alliance with Jung Tae-seok, a relentless and incorruptible detective who often disrupts his illegal business. However, while Jang Dong-su wants K dead, Jung Tae-suk is determined to bring him to justice. With a deal in place—whoever finds K first will decide his fate—the hunt begins, blurring the lines between crime and law.",
         "overview_ar": "تدور أحداث الفيلم حول رئيس عصابة ينجو من هجوم قاتل متسلسل استهدفه ليقرر ملاحقته والإنتقام منه، فيضطر شرطي للعمل معه من أجل الإمساك بالقاتل، فمن منهما سيفوز بالرهان ويقبض على الشيطان؟",
         "poster_path": "/oHlM4abRm6BzrRcz9Nup1uidw9H.jpg",
-        "vote_average": 7.843,
+        "vote_average": 7.845,
         "release_date": "2019-05-15",
         "popularity": 8.5012
     },
@@ -16186,6 +16210,18 @@
         "vote_average": 7.97,
         "release_date": "1986-08-02",
         "popularity": 7.6569
+    },
+    {
+        "id": 713,
+        "type": "movie",
+        "title": "The Piano",
+        "title_ar": "The Piano",
+        "overview": "When an arranged marriage brings Ada and her spirited daughter to the wilderness of nineteenth-century New Zealand, she finds herself locked in a battle of wills with both her controlling husband and a rugged frontiersman to whom she develops a forbidden attraction.",
+        "overview_ar": "بعد رحلة طويلة من اسكتلندا ، تُركت عازفة البيانو أدا ماكغراث وابنتها الصغيرة فلورا مع كل متعلقاتهما ، بما في ذلك البيانو ، على أحد شواطئ نيوزيلندا. تم بيع آدا ، التي كانت صامتة منذ الطفولة ، للزواج من رجل محلي يدعى أليسادير ستيوارت. يحاول القليل من الإحماء إلى Alisdair ، وسرعان ما أصبح Ada مفتونًا من قبل صديقه الماوري ، George Baines ، مما يؤدي إلى صراعات متوترة ومغيرة للحياة.",
+        "poster_path": "/dUxjG6baSzGIgP7R8BQI5rpMuET.jpg",
+        "vote_average": 7.4,
+        "release_date": "1993-05-18",
+        "popularity": 8.3006
     },
     {
         "id": 438689,
@@ -16282,42 +16318,6 @@
         "vote_average": 7.379,
         "release_date": "2011-12-14",
         "popularity": 7.4731
-    },
-    {
-        "id": 446893,
-        "type": "movie",
-        "title": "Trolls World Tour",
-        "title_ar": "ترولز 2∶ جولة حول العالم",
-        "overview": "Queen Poppy and Branch make a surprising discovery — there are other Troll worlds beyond their own, and their distinct differences create big clashes between these various tribes. When a mysterious threat puts all of the Trolls across the land in danger, Poppy, Branch, and their band of friends must embark on an epic quest to create harmony among the feuding Trolls to unite them against certain doom.",
-        "overview_ar": "يكتشف كل من بوبي وبرانش أنهم يمثلون مجرد قبيلة واحدة من ست قبائل من الدُمى، وهم متوزعين في ستة أراضي مختلفة، وكل قبيلة كل منهم مكرسة لصنف بعينه من الموسيقى، وسرعان ما يُكبر عالم الدمى.",
-        "poster_path": "/7W0G3YECgDAfnuiHG91r8WqgIOe.jpg",
-        "vote_average": 7.246,
-        "release_date": "2020-03-11",
-        "popularity": 5.8219
-    },
-    {
-        "id": 147441,
-        "type": "movie",
-        "title": "Exodus: Gods and Kings",
-        "title_ar": "Exodus: Gods and Kings",
-        "overview": "The defiant leader Moses rises up against the Egyptian Pharaoh Ramses, setting 400,000 slaves on a monumental journey of escape from Egypt and its terrifying cycle of deadly plagues.",
-        "overview_ar": "مرة واحدة الإخوة ، والآن الأعداء.\r ينتفض القائد المتحدي موسى ضد الفرعون المصري رمسيس ، ويضع 400000 عبد في رحلة ضخمة للهروب من مصر ودورتها المرعبة من الأوبئة القاتلة.",
-        "poster_path": "/uaDj37JtvLan9tihxZ18e6qL33b.jpg",
-        "vote_average": 5.882,
-        "release_date": "2014-12-03",
-        "popularity": 6.969
-    },
-    {
-        "id": 414,
-        "type": "movie",
-        "title": "Batman Forever",
-        "title_ar": "Batman Forever",
-        "overview": "Batman faces off against two foes: the schizophrenic, horribly scarred former District Attorney Harvey Dent, aka Two-Face, and the Riddler, a disgruntled ex-Wayne Enterprises inventor seeking revenge against his former employer by unleashing his brain-sucking weapon on Gotham City's residents. As the caped crusader also copes with tortured memories of his parents' murder, he has a new romance, with psychologist Chase Meridian.",
-        "overview_ar": "Batman faces off against two foes: the schizophrenic, horribly scarred former District Attorney Harvey Dent, aka Two-Face, and the Riddler, a disgruntled ex-Wayne Enterprises inventor seeking revenge against his former employer by unleashing his brain-sucking weapon on Gotham City's residents. As the caped crusader also copes with tortured memories of his parents' murder, he has a new romance, with psychologist Chase Meridian.",
-        "poster_path": "/i0fJS8M5UKoETjjJ0zwUiKaR8tr.jpg",
-        "vote_average": 5.454,
-        "release_date": "1995-06-16",
-        "popularity": 7.1703
     },
     {
         "id": 414,
@@ -16755,7 +16755,7 @@
         "id": 1305781,
         "type": "movie",
         "title": "Blades of the Guardians",
-        "title_ar": "镖人：风起大漠",
+        "title_ar": "Blades of the Guardians",
         "overview": "Dao Ma, the \"second most wanted fugitive,\" is entrusted by his benefactor, the chief of Mo family clan, to take on a mysterious escort mission-escorting the \"most wanted fugitive\" to Chang'an.",
         "overview_ar": "Dao Ma, the \"second most wanted fugitive,\" is entrusted by his benefactor, the chief of Mo family clan, to take on a mysterious escort mission-escorting the \"most wanted fugitive\" to Chang'an.",
         "poster_path": "/AbunjMKX4P1sDNlKfhYrWkIoRD9.jpg",
@@ -16793,7 +16793,7 @@
         "title": "Hot Fuzz",
         "title_ar": "Hot Fuzz",
         "overview": "Former London constable Nicholas Angel finds it difficult to adapt to his new assignment in the sleepy British village of Sandford. Not only does he miss the excitement of the big city, but he also has a well-meaning oaf for a partner. However, when a series of grisly accidents rocks Sandford, Angel smells something rotten in the idyllic village.",
-        "overview_ar": "نيكولاس آنجيل (سيمون بيج) هو مثال للشرطي المحترف، فهو يمتلك سجلًا مهنيًا ممتازًا بفضل مهاراته وذكائه وسرعة حركته.\r ولكن رئيسه يقرر نقل هذا الشرطي المثالي من مقر عمله بالعاصمة لندن إلى بلدة سانفورد المنعزلة، وذلك حتى لا يبدو أقرانه في العمل أقل كفاءة منه مما قد يتسبب في ضغائن بينهم.\r في البلدة الصغيرة يصبح نيكولاس شريكًا للشرطي داني باترمان (نيك فروست)، وعندما يكتشف نيكولاس سلسلة من الوفيات التي تم تدوينها في السجلات باعتبارها مجرد حوادث، يقرر أن يحرك المياة الراكدة ليكتشف سر تلك المدينة الهادئة.",
+        "overview_ar": "Former London constable Nicholas Angel finds it difficult to adapt to his new assignment in the sleepy British village of Sandford. Not only does he miss the excitement of the big city, but he also has a well-meaning oaf for a partner. However, when a series of grisly accidents rocks Sandford, Angel smells something rotten in the idyllic village.",
         "poster_path": "/zPib4ukTSdXvHP9pxGkFCe34f3y.jpg",
         "vote_average": 7.563,
         "release_date": "2007-02-14",
@@ -18245,7 +18245,7 @@
         "title": "Anaconda",
         "title_ar": "Anaconda",
         "overview": "A 'National Geographic' film crew is taken hostage by an insane hunter, who takes them along on his quest to capture the world's largest — and deadliest — snake.",
-        "overview_ar": "يتم أخذ طاقم تصوير \"ناشيونال جيوغرافيك\" كرهائن من قبل صياد مجنون ، يأخذهم في سعيه للقبض على أكبر ثعبان في العالم وأكثرهم دموية.",
+        "overview_ar": "A 'National Geographic' film crew is taken hostage by an insane hunter, who takes them along on his quest to capture the world's largest — and deadliest — snake.",
         "poster_path": "/33NysOnLpLZY0ewHTcfpalzAsRG.jpg",
         "vote_average": 5.259,
         "release_date": "1997-04-11",
@@ -18720,18 +18720,6 @@
         "popularity": 5.8562
     },
     {
-        "id": 975714,
-        "type": "movie",
-        "title": "Collision",
-        "title_ar": "مصائر متشابكة",
-        "overview": "Over the course of one fateful day, a corrupt businessman and his socialite wife race to save their daughter from a notorious crime lord.",
-        "overview_ar": "على مدار يوم مصيري عصيب، يسارع رجل أعمال فاسد وزوجته صاحبة الشخصية البارزة في المجتمع لإنقاذ ابنتهما من زعيم عصابة سيّئ السمعة.",
-        "poster_path": "/k4KWmmV51Cc7bIFbaS4jzz9PYGf.jpg",
-        "vote_average": 5.812,
-        "release_date": "2022-06-16",
-        "popularity": 7.2467
-    },
-    {
         "id": 1538,
         "type": "movie",
         "title": "Collateral",
@@ -18775,7 +18763,7 @@
         "overview": "After a horrifying PredAlien crash-lands near a small Colorado town, killing everyone it encounters and producing countless Alien offspring, a lone Predator arrives to \"clean up\" the infestation.",
         "overview_ar": "يهبط مخلوق غريب على المدينة الهادئة ويقتل اثنين من السكان، ثم يهبط مخلوق آخر يبحث عن المخلوق الأول، لتتحول المدينة لساحة حرب بين الإثنين، وليصبح أهل المدينة وسط هذه الحرب، وعليهم أن يقرروا العمل معًا من أجل أي فرصة للبقاء على قيد الحياة، لكنهم ينقسموا في التفكير في كيفية النجاة.",
         "poster_path": "/5iTwPDNtvK6ZZF607BHBbU3HO0B.jpg",
-        "vote_average": 5.179,
+        "vote_average": 5.178,
         "release_date": "2007-12-25",
         "popularity": 8.1789
     },
@@ -18907,7 +18895,7 @@
         "overview": "Bill Whitney is worried that he is different to his sister and parents. They mix with other upper-class people while Bill is more down to earth. Even his girlfriend seems a bit odd. All is revealed when Bill returns home to find a party in full swing.",
         "overview_ar": "Bill Whitney is worried that he is different to his sister and parents. They mix with other upper-class people while Bill is more down to earth. Even his girlfriend seems a bit odd. All is revealed when Bill returns home to find a party in full swing.",
         "poster_path": "/8Yg51sD6loLBYIlUcMDCO0bUGSh.jpg",
-        "vote_average": 6.7,
+        "vote_average": 6.67,
         "release_date": "1989-05-13",
         "popularity": 7.2459
     },
@@ -18922,18 +18910,6 @@
         "vote_average": 6.935,
         "release_date": "2023-12-08",
         "popularity": 7.3914
-    },
-    {
-        "id": 1107216,
-        "type": "movie",
-        "title": "Pets on a Train",
-        "title_ar": "Falcon Express",
-        "overview": "When a train unexpectedly starts up, taking only pets with it, the animals discover that Hans, a badger with a grudge is behind it all. While the crash seems inevitable, the animals can count on Falcon, a roguish Raccoon who will do anything to save them.",
-        "overview_ar": "When a train unexpectedly starts up, taking only pets with it, the animals discover that Hans, a badger with a grudge is behind it all. While the crash seems inevitable, the animals can count on Falcon, a roguish Raccoon who will do anything to save them.",
-        "poster_path": "/b10qy1KwrfmH0MGS2rBUJ0BxgYB.jpg",
-        "vote_average": 6.958,
-        "release_date": "2025-07-02",
-        "popularity": 7.0938
     },
     {
         "id": 10386,
@@ -18958,6 +18934,30 @@
         "vote_average": 7.414,
         "release_date": "2020-08-14",
         "popularity": 6.5767
+    },
+    {
+        "id": 1314481,
+        "type": "movie",
+        "title": "The Devil Wears Prada 2",
+        "title_ar": "The Devil Wears Prada 2",
+        "overview": "Miranda Priestly navigates her career amid the decline of traditional magazine publishing. She faces off against Emily Charlton, her one-time assistant, now a high-powered executive for a luxury group, with advertising dollars that Priestly desperately needs.",
+        "overview_ar": "Miranda Priestly navigates her career amid the decline of traditional magazine publishing. She faces off against Emily Charlton, her one-time assistant, now a high-powered executive for a luxury group, with advertising dollars that Priestly desperately needs.",
+        "poster_path": "/4z7xA341upljSwxC2q0MO3GncQj.jpg",
+        "vote_average": 0.0,
+        "release_date": "2026-04-29",
+        "popularity": 7.8404
+    },
+    {
+        "id": 9532,
+        "type": "movie",
+        "title": "Final Destination",
+        "title_ar": "Final Destination",
+        "overview": "After a teenager has a terrifying vision of him and his friends dying in a plane crash, he prevents the accident only to have Death hunt them down, one by one.",
+        "overview_ar": "After a teenager has a terrifying vision of him and his friends dying in a plane crash, he prevents the accident only to have Death hunt them down, one by one.",
+        "poster_path": "/1mXhlQMnlfvJ2frxTjZSQNnA9Vp.jpg",
+        "vote_average": 6.629,
+        "release_date": "2000-03-17",
+        "popularity": 7.7488
     },
     {
         "id": 1314481,
@@ -22080,42 +22080,6 @@
         "popularity": 6.2899
     },
     {
-        "id": 258509,
-        "type": "movie",
-        "title": "Alvin and the Chipmunks: The Road Chip",
-        "title_ar": "Alvin and the Chipmunks: The Road Chip",
-        "overview": "Through a series of misunderstandings, Alvin, Simon and Theodore come to believe that Dave is going to propose to his new girlfriend in New York City - and dump them. They have three days to get to him and stop the proposal.",
-        "overview_ar": "Through a series of misunderstandings, Alvin, Simon and Theodore come to believe that Dave is going to propose to his new girlfriend in New York City - and dump them. They have three days to get to him and stop the proposal.",
-        "poster_path": "/16OcuuW5z509WILR6BmscNdXgw0.jpg",
-        "vote_average": 6.031,
-        "release_date": "2015-12-17",
-        "popularity": 6.402
-    },
-    {
-        "id": 15121,
-        "type": "movie",
-        "title": "The Sound of Music",
-        "title_ar": "The Sound of Music",
-        "overview": "In the years before World War II, a tomboyish postulant at an Austrian abbey is hired as a governess in the home of a widowed naval captain with seven children and brings a new love of life and music into the home.",
-        "overview_ar": "In the years before World War II, a tomboyish postulant at an Austrian abbey is hired as a governess in the home of a widowed naval captain with seven children and brings a new love of life and music into the home.",
-        "poster_path": "/c6CrUZypAsBCaRWX0M3RVRDbhNS.jpg",
-        "vote_average": 7.7,
-        "release_date": "1965-03-29",
-        "popularity": 6.2899
-    },
-    {
-        "id": 267860,
-        "type": "movie",
-        "title": "London Has Fallen",
-        "title_ar": "London Has Fallen",
-        "overview": "In London for the Prime Minister's funeral, Mike Banning discovers a plot to assassinate all the attending world leaders.",
-        "overview_ar": "في لندن لحضور جنازة رئيس الوزراء ، اكتشف مايك بانينج مؤامرة لاغتيال جميع قادة العالم الحاضرين.",
-        "poster_path": "/iEbLkYzyiUdOKNK4WNBFyGH7r2Y.jpg",
-        "vote_average": 6.22,
-        "release_date": "2016-03-02",
-        "popularity": 6.2492
-    },
-    {
         "id": 1607,
         "type": "movie",
         "title": "A Bronx Tale",
@@ -22236,18 +22200,6 @@
         "popularity": 6.6496
     },
     {
-        "id": 936075,
-        "type": "movie",
-        "title": "Michael",
-        "title_ar": "Michael",
-        "overview": "Discover the story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music, tracing his journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
-        "overview_ar": "Discover the story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music, tracing his journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
-        "poster_path": "/j57QWe3OoaXL9Idi9gLtsAybWLP.jpg",
-        "vote_average": 0.0,
-        "release_date": "2026-04-22",
-        "popularity": 7.0495
-    },
-    {
         "id": 503736,
         "type": "movie",
         "title": "Army of the Dead",
@@ -22279,7 +22231,7 @@
         "overview": "An orphan little girl befriends a benevolent giant who takes her to Giant Country, where they attempt to stop the man-eating giants that are invading the human world.",
         "overview_ar": "صوفي فتاة بالغة الحذر، ومنكفئة على نفسها، تصادف في يوم من الأيام العملاق الودود الضخم الذي يتضح مع الوقت أن مظهره يختلف تمامًا عن جوهره، وبالرغم من مظهره المخيف، إلا أنه طيب وودود للغاية على خلاف أقرانه من العمالقة الذين يمقتونه بسبب رفضه لالتهام الصبية والفتيات مثلهم، وتتوثق العلاقة أكثر فأكثر بين صوفي والعملاق.",
         "poster_path": "/w17Mc2x2olB5CtewznUFxgpvne0.jpg",
-        "vote_average": 6.3,
+        "vote_average": 6.285,
         "release_date": "2016-06-01",
         "popularity": 6.2814
     },
@@ -22318,6 +22270,54 @@
         "vote_average": 6.989,
         "release_date": "2015-02-05",
         "popularity": 6.2375
+    },
+    {
+        "id": 1278101,
+        "type": "movie",
+        "title": "Big World",
+        "title_ar": "小小的我",
+        "overview": "Liu Chunhe, suffering from cerebral palsy, bravely breaks through the shackles of body and mind to realize the dream stage for his grandmother, while trying to find the coordinates of his own life. After experiencing a summer transformation, he finally embarked on a new journey.",
+        "overview_ar": "Liu Chunhe, suffering from cerebral palsy, bravely breaks through the shackles of body and mind to realize the dream stage for his grandmother, while trying to find the coordinates of his own life. After experiencing a summer transformation, he finally embarked on a new journey.",
+        "poster_path": "/rLj287mA1tp4hZmd69umb1rOZu8.jpg",
+        "vote_average": 7.859,
+        "release_date": "2024-12-27",
+        "popularity": 6.379
+    },
+    {
+        "id": 36593,
+        "type": "movie",
+        "title": "Naked Gun 33⅓: The Final Insult",
+        "title_ar": "السلاح العاري 33⅓: الإهانة الأخيرة",
+        "overview": "Frank Drebin is persuaded out of retirement to go undercover in a state prison. There he has to find out what top terrorist, Rocco, has planned for when he escapes. Adding to his problems, Frank's wife, Jane, is desperate for a baby.",
+        "overview_ar": "تدور أحداث الفيلم بعد تقاعد العميل (فرانك دريبين) واختياره للحياة الهادئة، لكنه يقرر أن يعود ليتعاون مع الشرطة من أجل الوصول لعصابةٍ تخطط لتفجير قنبلة أثناء حفل توزيع جوائز الأوسكار.",
+        "poster_path": "/p0AYsdgkudR9P5fNV5AjzbwQt8W.jpg",
+        "vote_average": 6.494,
+        "release_date": "1994-03-18",
+        "popularity": 6.2116
+    },
+    {
+        "id": 496450,
+        "type": "movie",
+        "title": "Miraculous: Ladybug & Cat Noir, The Movie",
+        "title_ar": "Miraculous: Ladybug & Cat Noir, The Movie",
+        "overview": "After a guardian of magical jewels turns an awkward girl and a popular boy into superheroes, they can never reveal their identities — even to each other.",
+        "overview_ar": "After a guardian of magical jewels turns an awkward girl and a popular boy into superheroes, they can never reveal their identities — even to each other.",
+        "poster_path": "/dQNJ8SdCMn3zWwHzzQD2xrphR1X.jpg",
+        "vote_average": 7.6,
+        "release_date": "2023-07-05",
+        "popularity": 5.7127
+    },
+    {
+        "id": 64494,
+        "type": "movie",
+        "title": "Malibu Express",
+        "title_ar": "Malibu Express",
+        "overview": "In this erotic spy tale private eye Cody Abilene teams up with the Contessa Luciana and policewoman Beverly McAfee to infiltrate a mansion and discover who is sending computer secrets to the Russians.",
+        "overview_ar": "In this erotic spy tale private eye Cody Abilene teams up with the Contessa Luciana and policewoman Beverly McAfee to infiltrate a mansion and discover who is sending computer secrets to the Russians.",
+        "poster_path": "/6ssdfTlmT3ORRoJNnLBYiOhDlf7.jpg",
+        "vote_average": 4.8,
+        "release_date": "1985-03-01",
+        "popularity": 6.5325
     },
     {
         "id": 496450,
