@@ -249,7 +249,7 @@
         "poster_path": "/gigxjNnACiXAfrwoMox5WJFgc0I.jpg",
         "vote_average": 8.298,
         "release_date": "2005-09-22",
-        "popularity": 159.2626
+        "popularity": 153.3277
     },
     {
         "id": 1405,
@@ -261,19 +261,7 @@
         "poster_path": "/q8dWfc4JwQuv3HayIZeO84jAXED.jpg",
         "vote_average": 8.226,
         "release_date": "2006-10-01",
-        "popularity": 157.9422
-    },
-    {
-        "id": 4656,
-        "type": "tv",
-        "title": "Raw",
-        "title_ar": "Raw",
-        "overview": "A regularly scheduled, live, year-round program featuring some of the biggest WWE Superstars.",
-        "overview_ar": "A regularly scheduled, live, year-round program featuring some of the biggest WWE Superstars.",
-        "poster_path": "/pv5WNnLUo7mpT8k901Lo8UovrqI.jpg",
-        "vote_average": 6.803,
-        "release_date": "1993-01-11",
-        "popularity": 155.7997
+        "popularity": 155.8526
     },
     {
         "id": 22980,
@@ -285,7 +273,7 @@
         "poster_path": "/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
         "vote_average": 5.0,
         "release_date": "2009-07-16",
-        "popularity": 155.4115
+        "popularity": 167.0863
     },
     {
         "id": 1911,
@@ -297,7 +285,19 @@
         "poster_path": "/eyTu5c8LniVciRZIOSHTvvkkgJa.jpg",
         "vote_average": 8.197,
         "release_date": "2005-09-13",
-        "popularity": 154.4704
+        "popularity": 148.6202
+    },
+    {
+        "id": 4656,
+        "type": "tv",
+        "title": "Raw",
+        "title_ar": "Raw",
+        "overview": "A regularly scheduled, live, year-round program featuring some of the biggest WWE Superstars.",
+        "overview_ar": "A regularly scheduled, live, year-round program featuring some of the biggest WWE Superstars.",
+        "poster_path": "/pv5WNnLUo7mpT8k901Lo8UovrqI.jpg",
+        "vote_average": 6.803,
+        "release_date": "1993-01-11",
+        "popularity": 152.823
     },
     {
         "id": 34307,
@@ -309,7 +309,7 @@
         "poster_path": "/ifo31fMWLmyOVpdak9K0kY4jldQ.jpg",
         "vote_average": 8.169,
         "release_date": "2011-01-09",
-        "popularity": 151.7929
+        "popularity": 146.6231
     },
     {
         "id": 57243,
@@ -321,19 +321,7 @@
         "poster_path": "/w8enSKCf6Zm0topeQ2XPccDqsqp.jpg",
         "vote_average": 7.588,
         "release_date": "2005-03-26",
-        "popularity": 150.3671
-    },
-    {
-        "id": 2316,
-        "type": "tv",
-        "title": "The Office",
-        "title_ar": "المكتب",
-        "overview": "The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company.",
-        "overview_ar": "يتناول المسلسل في إطار كوميدي يوميات العمل المستمر في إحدى الشركات المتخصصة في الورق، والعلاقات التي تجمع بين موظفي الشركة أجمعين، وعلاقتهم بالمدير غريب الأطوار مايكل سكوت.",
-        "poster_path": "/dg9e5fPRRId8PoBE0F6jl5y85Eu.jpg",
-        "vote_average": 8.594,
-        "release_date": "2005-03-24",
-        "popularity": 149.1038
+        "popularity": 151.2358
     },
     {
         "id": 91239,
@@ -345,7 +333,7 @@
         "poster_path": "/uXTg565ahu9RwonCX1V2Hex1NU6.jpg",
         "vote_average": 8.1,
         "release_date": "2020-12-25",
-        "popularity": 146.2415
+        "popularity": 141.2022
     },
     {
         "id": 4087,
@@ -357,7 +345,7 @@
         "poster_path": "/rcBx0p8h51LHceyhquYMxbspJQu.jpg",
         "vote_average": 8.374,
         "release_date": "1993-09-10",
-        "popularity": 145.732
+        "popularity": 144.5566
     },
     {
         "id": 1433,
@@ -369,19 +357,7 @@
         "poster_path": "/eb9sH2am9IUSQ8GhXTNAVoujk8W.jpg",
         "vote_average": 7.0,
         "release_date": "2005-02-06",
-        "popularity": 144.6127
-    },
-    {
-        "id": 71712,
-        "type": "tv",
-        "title": "The Good Doctor",
-        "title_ar": "الطبيب الطيّب",
-        "overview": "Shaun Murphy, a young surgeon with autism and savant syndrome, relocates from a quiet country life to join a prestigious hospital's surgical unit. Unable to personally connect with those around him, Shaun uses his extraordinary medical gifts to save lives and challenge the skepticism of his colleagues.",
-        "overview_ar": "جراح شاب مصاب بمرض التوحد ومتلازمة سافانت يعمل في وحدة لجراحات الأطفال في مستشفى مرموق. السؤال الذي سينتشر : هل هذا الشخص الذي لا يمتلك القدرة على التواصل مع الآخرين سيستطيع إنقاذهم حقًا؟",
-        "poster_path": "/luhKkdD80qe62fwop6sdrXK9jUT.jpg",
-        "vote_average": 8.464,
-        "release_date": "2017-09-25",
-        "popularity": 141.3151
+        "popularity": 149.4128
     },
     {
         "id": 2661,
@@ -393,7 +369,7 @@
         "poster_path": "/lv3OlrXyTNg4Dz0JrtopOmMziNs.jpg",
         "vote_average": 6.5,
         "release_date": "1971-04-03",
-        "popularity": 140.3208
+        "popularity": 134.2052
     },
     {
         "id": 4607,
@@ -405,7 +381,7 @@
         "poster_path": "/og6S0aTZU6YUJAbqxeKjCa3kY1E.jpg",
         "vote_average": 7.947,
         "release_date": "2004-09-22",
-        "popularity": 140.0436
+        "popularity": 143.4332
     },
     {
         "id": 59941,
@@ -415,9 +391,21 @@
         "overview": "After Jay Leno's second retirement from the program, Jimmy Fallon stepped in as his permanent replacement. After 42 years in Los Angeles the program was brought back to New York.",
         "overview_ar": "After Jay Leno's second retirement from the program, Jimmy Fallon stepped in as his permanent replacement. After 42 years in Los Angeles the program was brought back to New York.",
         "poster_path": "/1N4o5PmmqhlVDrcdJ2RlCFWbLGX.jpg",
-        "vote_average": 5.9,
+        "vote_average": 5.863,
         "release_date": "2014-02-17",
-        "popularity": 138.5467
+        "popularity": 128.7194
+    },
+    {
+        "id": 71712,
+        "type": "tv",
+        "title": "The Good Doctor",
+        "title_ar": "الطبيب الطيّب",
+        "overview": "Shaun Murphy, a young surgeon with autism and savant syndrome, relocates from a quiet country life to join a prestigious hospital's surgical unit. Unable to personally connect with those around him, Shaun uses his extraordinary medical gifts to save lives and challenge the skepticism of his colleagues.",
+        "overview_ar": "جراح شاب مصاب بمرض التوحد ومتلازمة سافانت يعمل في وحدة لجراحات الأطفال في مستشفى مرموق. السؤال الذي سينتشر : هل هذا الشخص الذي لا يمتلك القدرة على التواصل مع الآخرين سيستطيع إنقاذهم حقًا؟",
+        "poster_path": "/luhKkdD80qe62fwop6sdrXK9jUT.jpg",
+        "vote_average": 8.464,
+        "release_date": "2017-09-25",
+        "popularity": 138.1383
     },
     {
         "id": 764,
@@ -429,7 +417,7 @@
         "poster_path": "/pz7tsWxe0TTdfJnWPjZAEnrSl5M.jpg",
         "vote_average": 7.51,
         "release_date": "1997-03-23",
-        "popularity": 137.968
+        "popularity": 140.4334
     },
     {
         "id": 1421,
@@ -439,9 +427,9 @@
         "overview": "The Pritchett-Dunphy-Tucker clan is a wonderfully large and blended family. They give us an honest and often hilarious look into the sometimes warm, sometimes twisted, embrace of the modern family.",
         "overview_ar": "يتتبع هذا العمل الحائز على جائزة الإيمي، حياة \"جاي بريتشيت\" وأسرته الانتقائية في تعاملهم مع تحديات الحياة المعاصرة في لوس أنجلوس.",
         "poster_path": "/k5Qg5rgPoKdh3yTJJrLtyoyYGwC.jpg",
-        "vote_average": 7.9,
+        "vote_average": 7.896,
         "release_date": "2009-09-23",
-        "popularity": 137.4281
+        "popularity": 137.241
     },
     {
         "id": 58841,
@@ -453,7 +441,7 @@
         "poster_path": "/bez40PgT36RUu4gstD2A6GSM0tP.jpg",
         "vote_average": 8.416,
         "release_date": "2014-01-08",
-        "popularity": 133.9617
+        "popularity": 107.9426
     },
     {
         "id": 240459,
@@ -465,7 +453,7 @@
         "poster_path": "/vNByuzy60v31nmUVPMA8oAtneUK.jpg",
         "vote_average": 6.715,
         "release_date": "2025-12-05",
-        "popularity": 129.9227
+        "popularity": 123.2451
     },
     {
         "id": 106379,
@@ -475,9 +463,21 @@
         "overview": "The story of haves and have-nots in a world in which there's almost nothing left to have. 200 years after the apocalypse, the gentle denizens of luxury fallout shelters are forced to return to the irradiated hellscape their ancestors left behind — and are shocked to discover an incredibly complex, gleefully weird, and highly violent universe waiting for them.",
         "overview_ar": "سلسلة Fallout مقتبسة عن واحدة من أعظمِ ألعاب الفيديو على الإطلاق تتناول موضوع ما يقتنيه الفرد أو لا يقتنيه، في عالم لم يتبقّ فيه شيئ. بعد مئتي عام على نهاية العالم، أجبرت قاطنة مسالمة في أحد الملاجئ على العودة إلى السطح، وكم كانت صدمتها كبيرة حين رأت الأرض القاحلة التي في انتظارها.",
         "poster_path": "/c15BtJxCXMrISLVmysdsnZUPQft.jpg",
-        "vote_average": 8.136,
+        "vote_average": 8.135,
         "release_date": "2024-04-10",
-        "popularity": 128.5073
+        "popularity": 122.7311
+    },
+    {
+        "id": 2316,
+        "type": "tv",
+        "title": "The Office",
+        "title_ar": "المكتب",
+        "overview": "The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company.",
+        "overview_ar": "يتناول المسلسل في إطار كوميدي يوميات العمل المستمر في إحدى الشركات المتخصصة في الورق، والعلاقات التي تجمع بين موظفي الشركة أجمعين، وعلاقتهم بالمدير غريب الأطوار مايكل سكوت.",
+        "poster_path": "/dg9e5fPRRId8PoBE0F6jl5y85Eu.jpg",
+        "vote_average": 8.6,
+        "release_date": "2005-03-24",
+        "popularity": 125.1636
     },
     {
         "id": 1402,
@@ -5765,7 +5765,7 @@
         "title": "Firefly",
         "title_ar": "Firefly",
         "overview": "In the year 2517, after the arrival of humans in a new star system, follow the adventures of the renegade crew of Serenity, a \"Firefly-class\" spaceship.",
-        "overview_ar": "خمسمائة عام في المستقبل، وعلى متن مركبة صغيرة في الفضاء، يحاول الطاقم المنشق البقاء على قيد الحياة، في رحلتهم إلى أجزاء غير معروفة في المجرة، بها فصائل متحاربة، يجب عليهم الهروب منها.",
+        "overview_ar": "In the year 2517, after the arrival of humans in a new star system, follow the adventures of the renegade crew of Serenity, a \"Firefly-class\" spaceship.",
         "poster_path": "/vZcKsy4sGAvWMVqLluwYuoi11Kj.jpg",
         "vote_average": 8.336,
         "release_date": "2002-09-20",
@@ -7923,7 +7923,7 @@
         "id": 139798,
         "type": "tv",
         "title": "Single's Inferno",
-        "title_ar": "Single's Inferno",
+        "title_ar": "솔로지옥",
         "overview": "On a deserted island, flirtatious singles look for love, because only as a couple can they leave the island for a romantic date in paradise.",
         "overview_ar": "On a deserted island, flirtatious singles look for love, because only as a couple can they leave the island for a romantic date in paradise.",
         "poster_path": "/86zkkFCrNc4VeqvCANTmpGNgFEF.jpg",
@@ -13920,30 +13920,6 @@
         "popularity": 21.2055
     },
     {
-        "id": 62474,
-        "type": "tv",
-        "title": "Seaside Hotel",
-        "title_ar": "Badehotellet",
-        "overview": "At Andersen’s Seaside Hotel by the North Sea dunes, meet three young people as they try to emancipate themselves from the plans other people have made on their behalf.",
-        "overview_ar": "At Andersen’s Seaside Hotel by the North Sea dunes, meet three young people as they try to emancipate themselves from the plans other people have made on their behalf.",
-        "poster_path": "/2YrFeKSc23Glr9g3GSgOclEjizd.jpg",
-        "vote_average": 7.6,
-        "release_date": "2013-12-30",
-        "popularity": 21.5445
-    },
-    {
-        "id": 259140,
-        "type": "tv",
-        "title": "Ranma1/2",
-        "title_ar": "Ranma1/2",
-        "overview": "Akane Tendo meets her new fiancé, Ranma Saotome, a martial arts prodigy with a twist: he magically transforms into a girl upon touching cold water.",
-        "overview_ar": "تلتقي \"أكاني تيندو\" بخطيبها الجديد \"رانما ساوتومي\"، وهو لاعب فنون قتالية موهوب بمفارقة واحدة... إنه يتحول سحريًّا إلى فتاة عندما يلامس الماء البارد.",
-        "poster_path": "/cDThx8yRYbdPOSgHbjihS4q7GYc.jpg",
-        "vote_average": 8.2,
-        "release_date": "2024-10-06",
-        "popularity": 24.1008
-    },
-    {
         "id": 134,
         "type": "tv",
         "title": "Space: 1999",
@@ -14136,6 +14112,18 @@
         "popularity": 19.2429
     },
     {
+        "id": 114473,
+        "type": "tv",
+        "title": "Detective Academy",
+        "title_ar": "Detective Academy",
+        "overview": "\"Detective College\", as a derivative of the fifth season of \"Who's the Murderer\", is a star reasoning variety show where selected detective assistants launched by Mango TV. The star guests determine the number of advances by rolling the dice on the checkerboard. When the game is triggered, the corresponding game needs to be completed. The first guest to reach the end becomes the current No.1. The program combines the form of team battles and individual battles to inspire the star guests ’IQ and Contest of logical ability. No. 1 selected in the show will appear on the scene of the fifth season of \"Who's the Murderer\". \"Detective College\" consists of Pu Yixing, Zhou Junwei, Tang Jiuzhou, Qi Sijun, Shi Kai, Guo Wentao, Shao Mingming, etc., and premiered on November 3, 2019.",
+        "overview_ar": "\"Detective College\", as a derivative of the fifth season of \"Who's the Murderer\", is a star reasoning variety show where selected detective assistants launched by Mango TV. The star guests determine the number of advances by rolling the dice on the checkerboard. When the game is triggered, the corresponding game needs to be completed. The first guest to reach the end becomes the current No.1. The program combines the form of team battles and individual battles to inspire the star guests ’IQ and Contest of logical ability. No. 1 selected in the show will appear on the scene of the fifth season of \"Who's the Murderer\". \"Detective College\" consists of Pu Yixing, Zhou Junwei, Tang Jiuzhou, Qi Sijun, Shi Kai, Guo Wentao, Shao Mingming, etc., and premiered on November 3, 2019.",
+        "poster_path": "/wuUvhZ2WLqX1z0b1NXkapWoov9j.jpg",
+        "vote_average": 7.3,
+        "release_date": "2019-11-03",
+        "popularity": 23.2861
+    },
+    {
         "id": 213402,
         "type": "tv",
         "title": "Campfire Cooking in Another World with My Absurd Skill",
@@ -14158,6 +14146,18 @@
         "vote_average": 5.7,
         "release_date": "1963-10-04",
         "popularity": 19.0583
+    },
+    {
+        "id": 80736,
+        "type": "tv",
+        "title": "The Manager",
+        "title_ar": "The Manager",
+        "overview": "We will get involved in every little detail of the stars’ lives. The managers who work closely with the stars reveal their mundane lives. Once the information is all revealed, the professional meddlers from various different fields are invited to make comments regarding even the smallest details. Lee Yeong Ja, Jun Hyun Moo, Song Eun I, Kim Saeng Min, Yang Se Hyeong and Yoo Byung Jae participate as the life meddlers along with the professionals.",
+        "overview_ar": "We will get involved in every little detail of the stars’ lives. The managers who work closely with the stars reveal their mundane lives. Once the information is all revealed, the professional meddlers from various different fields are invited to make comments regarding even the smallest details. Lee Yeong Ja, Jun Hyun Moo, Song Eun I, Kim Saeng Min, Yang Se Hyeong and Yoo Byung Jae participate as the life meddlers along with the professionals.",
+        "poster_path": "/jASfIetUKhrbqEEKBnjRjjgfuGK.jpg",
+        "vote_average": 5.5,
+        "release_date": "2018-03-10",
+        "popularity": 23.2616
     },
     {
         "id": 122194,
@@ -15840,18 +15840,6 @@
         "popularity": 17.4567
     },
     {
-        "id": 1711,
-        "type": "tv",
-        "title": "Strictly Come Dancing",
-        "title_ar": "Strictly Come Dancing",
-        "overview": "A dance competition where celebrities compete to be crowned the winner. Who is kicked out of the competition each week is decided by the judges scores and viewer votes. Are today's celebrities fleet of foot or do they have two left feet?",
-        "overview_ar": "A dance competition where celebrities compete to be crowned the winner. Who is kicked out of the competition each week is decided by the judges scores and viewer votes. Are today's celebrities fleet of foot or do they have two left feet?",
-        "poster_path": "/uu7VGiQzhBDjH6oh85QWa8Z5qXY.jpg",
-        "vote_average": 5.9,
-        "release_date": "2004-05-15",
-        "popularity": 20.185
-    },
-    {
         "id": 251,
         "type": "tv",
         "title": "Aqua Teen Hunger Force",
@@ -15972,6 +15960,18 @@
         "popularity": 19.0092
     },
     {
+        "id": 71715,
+        "type": "tv",
+        "title": "Good Girls",
+        "title_ar": "Good Girls",
+        "overview": "Three \"good girl\" suburban wives and mothers suddenly find themselves in desperate circumstances and decide to stop playing it safe and risk everything to take their power back.",
+        "overview_ar": "تُنظِّم ثلاث أمّهات في الضواحي عمليّة سطو على متجر بقالة محليّ للهرب من المصاعب الماديّة وتحقيق استقلالهنّ... بالاشتراك معًا.",
+        "poster_path": "/wpgg6G3UHXepH2Zgpt4W60d6gxR.jpg",
+        "vote_average": 7.8,
+        "release_date": "2018-02-26",
+        "popularity": 21.3725
+    },
+    {
         "id": 72636,
         "type": "tv",
         "title": "Made in Abyss",
@@ -16027,7 +16027,7 @@
         "overview": "Based on Robert Saviano's bestselling book, this gritty Italian crime drama paints a portrait of the brutal Neapolitan crime organisation the Camorra, as seen through the eyes of Ciro Di Marzo, the obedient and self- confident right-hand man of the clan's godfather, Pietro Savastano.",
         "overview_ar": "تدور احداث المسلسل حول عشائر تخوض الجريمة المنظمة الحروب وتقيم تحالفات عابرة في العالم السفلي لمدينة نابولي الإيطالية الفقيرة. لدى جينارو، ابن عشيرة سافاستانو ووريثها، وسيرو دي مارزيو، أحد ضباط هذه العشيرة، طموح كبير للتقدم إلى مستويات أعلى من أي وقت مضى.",
         "poster_path": "/cXsagSyQQki9vTbV3TTxRCGIIlQ.jpg",
-        "vote_average": 8.056,
+        "vote_average": 8.1,
         "release_date": "2014-05-06",
         "popularity": 20.5843
     },
@@ -17040,6 +17040,18 @@
         "popularity": 19.1376
     },
     {
+        "id": 2102,
+        "type": "tv",
+        "title": "Simon & Simon",
+        "title_ar": "Simon & Simon",
+        "overview": "A.J. Simon is a polished fellow with a taste for classic cars and tailored suits. Rick Simon is his less refined (but still pleasant) older brother who has a taste for cowboy boots and four-wheel drive pickups. The two of them live in San Diego, where they own a private detective agency.",
+        "overview_ar": "A.J. Simon is a polished fellow with a taste for classic cars and tailored suits. Rick Simon is his less refined (but still pleasant) older brother who has a taste for cowboy boots and four-wheel drive pickups. The two of them live in San Diego, where they own a private detective agency.",
+        "poster_path": "/h1wId4z79SQOOhEnc3oEqf3qpro.jpg",
+        "vote_average": 6.7,
+        "release_date": "1981-11-24",
+        "popularity": 17.2841
+    },
+    {
         "id": 113268,
         "type": "tv",
         "title": "The Uncanny Counter",
@@ -17062,6 +17074,18 @@
         "vote_average": 7.0,
         "release_date": "2023-04-09",
         "popularity": 17.49
+    },
+    {
+        "id": 68398,
+        "type": "tv",
+        "title": "Dr. Romantic",
+        "title_ar": "낭만닥터 김사부",
+        "overview": "An eccentric, triple board-certified virtuoso surgeon leaves a top job in Seoul and ends up at a provincial hospital, where he mentors young doctors.",
+        "overview_ar": "An eccentric, triple board-certified virtuoso surgeon leaves a top job in Seoul and ends up at a provincial hospital, where he mentors young doctors.",
+        "poster_path": "/9fbRJgZ2zDTnSUId1bOwsllHNr7.jpg",
+        "vote_average": 8.2,
+        "release_date": "2016-11-07",
+        "popularity": 20.4272
     },
     {
         "id": 229192,
@@ -17244,18 +17268,6 @@
         "popularity": 16.9326
     },
     {
-        "id": 71769,
-        "type": "tv",
-        "title": "The Alienist",
-        "title_ar": "The Alienist",
-        "overview": "New York, 1896. Police commissioner Theodore Roosevelt brings together criminal psychologist Dr. Laszlo Kreizler, newspaper illustrator John Moore and secretary Sara Howard to investigate several murders of male prostitutes.",
-        "overview_ar": "New York, 1896. Police commissioner Theodore Roosevelt brings together criminal psychologist Dr. Laszlo Kreizler, newspaper illustrator John Moore and secretary Sara Howard to investigate several murders of male prostitutes.",
-        "poster_path": "/zUd4RPbfHuB1zIG2iNI5bdZcQo3.jpg",
-        "vote_average": 7.513,
-        "release_date": "2018-01-22",
-        "popularity": 19.2112
-    },
-    {
         "id": 303911,
         "type": "tv",
         "title": "Meri Zindagi Hai Tu",
@@ -17266,18 +17278,6 @@
         "vote_average": 10.0,
         "release_date": "2025-11-07",
         "popularity": 23.4985
-    },
-    {
-        "id": 103506,
-        "type": "tv",
-        "title": "Jeffrey Epstein: Filthy Rich",
-        "title_ar": "Jeffrey Epstein: Filthy Rich",
-        "overview": "Stories from survivors fuel this docuseries examining how convicted sex offender Jeffrey Epstein used his wealth and power to carry out his abuses.",
-        "overview_ar": "Stories from survivors fuel this docuseries examining how convicted sex offender Jeffrey Epstein used his wealth and power to carry out his abuses.",
-        "poster_path": "/vV72HIa2a1nnqb5nCHUf5Dn2Y5d.jpg",
-        "vote_average": 7.047,
-        "release_date": "2020-05-27",
-        "popularity": 18.8675
     },
     {
         "id": 103506,
@@ -23040,42 +23040,6 @@
         "popularity": 14.1323
     },
     {
-        "id": 2191,
-        "type": "tv",
-        "title": "One Day at a Time",
-        "title_ar": "One Day at a Time",
-        "overview": "The misadventures of a divorced mother,  two teenage daughters, and new building superintendent in Indianapolis.",
-        "overview_ar": "The misadventures of a divorced mother,  two teenage daughters, and new building superintendent in Indianapolis.",
-        "poster_path": "/zheJWmmDRUYuApz83ZVrrPUjL2F.jpg",
-        "vote_average": 6.738,
-        "release_date": "1975-12-16",
-        "popularity": 14.2494
-    },
-    {
-        "id": 645,
-        "type": "tv",
-        "title": "Rhoda",
-        "title_ar": "Rhoda",
-        "overview": "",
-        "overview_ar": "",
-        "poster_path": "/7nVSlqyqtlXuTiEYjku7fzWYav5.jpg",
-        "vote_average": 6.2,
-        "release_date": "1974-09-09",
-        "popularity": 14.1323
-    },
-    {
-        "id": 114461,
-        "type": "tv",
-        "title": "Ahsoka",
-        "title_ar": "أسوكا",
-        "overview": "Former Jedi Knight Ahsoka Tano investigates an emerging threat to a vulnerable galaxy.",
-        "overview_ar": "بعد انهيار إمبراطورية المجرة، تسعى أسوكا للتحقيق في تهديد جديد يضع المجرة بكاملها في خطر.",
-        "poster_path": "/eiJeWeCAEZAmRppnXHiTWDcCd3Q.jpg",
-        "vote_average": 7.44,
-        "release_date": "2023-08-22",
-        "popularity": 16.871
-    },
-    {
         "id": 92611,
         "type": "tv",
         "title": "RuPaul's Drag Race UK",
@@ -23278,6 +23242,42 @@
         "vote_average": 6.861,
         "release_date": "2013-07-09",
         "popularity": 13.9669
+    },
+    {
+        "id": 72311,
+        "type": "tv",
+        "title": "The Advisors Alliance",
+        "title_ar": "大军师司马懿之军师联盟",
+        "overview": "The story of Sima Yi, a great politician and strategist who lived during the Three Kingdoms era. By his side, Sima Yi has his politically-astute distaff members of his household, and pitted against them are the formidable Cao Cao and his heirs. After defending the Kingdom of Wei from Kongming formidable talents, who will end up with the ultimate power?",
+        "overview_ar": "The story of Sima Yi, a great politician and strategist who lived during the Three Kingdoms era. By his side, Sima Yi has his politically-astute distaff members of his household, and pitted against them are the formidable Cao Cao and his heirs. After defending the Kingdom of Wei from Kongming formidable talents, who will end up with the ultimate power?",
+        "poster_path": "/xdlltLF34oFEJ0yIQ64JROFR2VN.jpg",
+        "vote_average": 8.346,
+        "release_date": "2017-06-22",
+        "popularity": 15.4215
+    },
+    {
+        "id": 73157,
+        "type": "tv",
+        "title": "Future Man",
+        "title_ar": "رجل المستقبل",
+        "overview": "Josh Futturman, a janitor by day/world-ranked gamer by night, is tasked with preventing the extinction of humanity after mysterious visitors from the future proclaim him the key to defeating the imminent super-race invasion.",
+        "overview_ar": "بواب في الصباح و لاعب محترف لالعاب الكمبيوتر في المساء، يطلب منه ان يمنع انقراض البشرية من قبل اشخاص اتو من المستقبل. بعد اعطائة الطريقة للانتصار.",
+        "poster_path": "/49mOgAEa4eKpPsoBH8UvvXwEMDT.jpg",
+        "vote_average": 7.143,
+        "release_date": "2017-11-14",
+        "popularity": 16.5259
+    },
+    {
+        "id": 2041,
+        "type": "tv",
+        "title": "McLeod's Daughters",
+        "title_ar": "McLeod's Daughters",
+        "overview": "When Jack McLeod passes away, his two daughters inherit Drovers Run, a vast cattle ranch in the Australian outback. Ultimately, Tess and Claire decide to run the ranch together, with their housekeeper, Meg, her teenage daughter, Jodi, and a local girl, Becky. Their lives are hard and the obstacles many, but the rewards are every bit as grand as the wild open land they've inherited.",
+        "overview_ar": "When Jack McLeod passes away, his two daughters inherit Drovers Run, a vast cattle ranch in the Australian outback. Ultimately, Tess and Claire decide to run the ranch together, with their housekeeper, Meg, her teenage daughter, Jodi, and a local girl, Becky. Their lives are hard and the obstacles many, but the rewards are every bit as grand as the wild open land they've inherited.",
+        "poster_path": "/twQwGmxL6XFdpSBikzINOdVm17M.jpg",
+        "vote_average": 7.195,
+        "release_date": "2001-08-08",
+        "popularity": 13.9707
     },
     {
         "id": 2041,
