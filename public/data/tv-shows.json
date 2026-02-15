@@ -5280,42 +5280,6 @@
         "popularity": 43.0956
     },
     {
-        "id": 607,
-        "type": "tv",
-        "title": "The Powerpuff Girls",
-        "title_ar": "The Powerpuff Girls",
-        "overview": "The Powerpuff Girls is a animated television series about Blossom, Bubbles, and Buttercup, three kindergarten-aged girls with superpowers, as well as their \"father\", the brainy scientist Professor Utonium, who all live in the fictional city of Townsville, USA. The girls are frequently called upon by the town's childlike and naive mayor to help fight nearby criminals using their powers.",
-        "overview_ar": "The Powerpuff Girls is a animated television series about Blossom, Bubbles, and Buttercup, three kindergarten-aged girls with superpowers, as well as their \"father\", the brainy scientist Professor Utonium, who all live in the fictional city of Townsville, USA. The girls are frequently called upon by the town's childlike and naive mayor to help fight nearby criminals using their powers.",
-        "poster_path": "/468mmhMd21pY4Yx0S0woqeEcxtL.jpg",
-        "vote_average": 7.5,
-        "release_date": "1998-11-18",
-        "popularity": 40.1206
-    },
-    {
-        "id": 106449,
-        "type": "tv",
-        "title": "A Record of a Mortal's Journey to Immortality",
-        "title_ar": "凡人修仙传",
-        "overview": "A poor and ordinary boy from a village joins a minor sect in Jiang Hu and becomes an Unofficial Disciple by chance. How will Han Li, a commoner by birth, establish a foothold for himself in his sect? With his mediocre aptitude, he must successfully traverse the treacherous path of cultivation and avoid the notice of those who may do him harm. This is a story of an ordinary mortal who, against all odds, clashes with devilish demons and ancient celestials in order to find his own path towards immortality.",
-        "overview_ar": "A poor and ordinary boy from a village joins a minor sect in Jiang Hu and becomes an Unofficial Disciple by chance. How will Han Li, a commoner by birth, establish a foothold for himself in his sect? With his mediocre aptitude, he must successfully traverse the treacherous path of cultivation and avoid the notice of those who may do him harm. This is a story of an ordinary mortal who, against all odds, clashes with devilish demons and ancient celestials in order to find his own path towards immortality.",
-        "poster_path": "/i6SYuRHPtODpZ8VX9ql21nj0tDq.jpg",
-        "vote_average": 8.5,
-        "release_date": "2020-07-25",
-        "popularity": 43.0956
-    },
-    {
-        "id": 280948,
-        "type": "tv",
-        "title": "Spring Fever",
-        "title_ar": "نشوة الربيع",
-        "overview": "After moving to a quiet rural town to heal from past heartbreak, a withdrawn teacher slowly rediscovers warmth and joy through her unexpected connection with a rough-around-the-edges but kindhearted local man.",
-        "overview_ar": "تصل ظاهرة تُعرف باسم \"نشوة الربيع\"، وهي حالة من الإرهاق النفسي والعاطفي التي تصيب الناس في هذا الفصل، إلى حياة بوم يون، وهو معلم معروف ببروده العاطفي. ينتقل بوم يون إلى مدرسة ريفية صغيرة، وهناك يبدأ تدريجيًا باستعادة بهجة الحياة بفضل دفء وبساطة جاي غيو سان، لتبدأ رحلة رومانسية هادئة مليئة بالمواقف الإنسانية.",
-        "poster_path": "/50e9qtv8rKmcayAQSgB9P9XELpQ.jpg",
-        "vote_average": 7.96,
-        "release_date": "2026-01-05",
-        "popularity": 42.8271
-    },
-    {
         "id": 74440,
         "type": "tv",
         "title": "Harley Quinn",
@@ -5388,6 +5352,18 @@
         "popularity": 36.3603
     },
     {
+        "id": 89456,
+        "type": "tv",
+        "title": "Primal",
+        "title_ar": "البدائي",
+        "overview": "A caveman forms a bond with a dinosaur as they struggle to survive in a hostile world.",
+        "overview_ar": "يشكل رجل الكهف رابطة مع ديناصور بينما يكافحان من أجل البقاء على قيد الحياة في عالم معادي.",
+        "poster_path": "/mf12pRakr3eYdJtv6klQtoznnbU.jpg",
+        "vote_average": 8.615,
+        "release_date": "2019-10-08",
+        "popularity": 42.1955
+    },
+    {
         "id": 2384,
         "type": "tv",
         "title": "Knight Rider",
@@ -5412,6 +5388,18 @@
         "popularity": 36.6189
     },
     {
+        "id": 223911,
+        "type": "tv",
+        "title": "Renegade Immortal",
+        "title_ar": "Renegade Immortal",
+        "overview": "It tells the story of Wang Lin, an ordinary young man in the countryside, who is moved by his heart and cultivates against immortality. His pursuit is not only for longevity, but also for getting rid of the ants behind it. He firmly believed in human beings and entered the path of cultivation with mediocre qualifications. After experiencing ups and downs, with his wise mind, he gradually reached the pinnacle and became famous in the cultivation world with his own strength.",
+        "overview_ar": "It tells the story of Wang Lin, an ordinary young man in the countryside, who is moved by his heart and cultivates against immortality. His pursuit is not only for longevity, but also for getting rid of the ants behind it. He firmly believed in human beings and entered the path of cultivation with mediocre qualifications. After experiencing ups and downs, with his wise mind, he gradually reached the pinnacle and became famous in the cultivation world with his own strength.",
+        "poster_path": "/6AVM12M6UunFmX0bSmP2o4N5Bnt.jpg",
+        "vote_average": 8.833,
+        "release_date": "2023-09-25",
+        "popularity": 41.9744
+    },
+    {
         "id": 76331,
         "type": "tv",
         "title": "Succession",
@@ -5419,7 +5407,7 @@
         "overview": "Follow the lives of the Roy family as they contemplate their future once their aging father begins to step back from the media and entertainment conglomerate they control.",
         "overview_ar": "تدور الأحداث حول عائلة تمتلك شركة إعلامية كبيرة جدًا، لكن هذه العائلة بها الكثير من الاختلال بين أفرادها، حتى أنهم لديهم صراعات داخلية، بسبب طموحات البعض الخاصة وبسبب الميول الغريبة لدى البعض الآخر، وهو ما يمكن القول معه أنها عائلة إعلامية مختلة.",
         "poster_path": "/z0XiwdrCQ9yVIr4O0pxzaAYRxdW.jpg",
-        "vote_average": 8.285,
+        "vote_average": 8.3,
         "release_date": "2018-06-03",
         "popularity": 41.91
     },
@@ -5431,7 +5419,7 @@
         "overview": "Special Agent Will Trent was abandoned at birth and endured a harsh coming-of-age in Atlanta's overwhelmed foster care system. Determined to make sure no one feels as he did, he now has the highest clearance rate.",
         "overview_ar": "يتابع المسلسل العميل ويل ترينت من مكتب التحقيقات بجورجيا، محقق بارع بقدرات تحليلية استثنائية. نشأ في دار رعاية، مما منحه منظورًا فريدًا يساعده في حل القضايا المعقدة بأساليب غير تقليدية. مستوحى من روايات كارين سلوتر، يجمع المسلسل بين التشويق، التحقيقات الجنائية، والدراما الإنسانية.",
         "poster_path": "/qG5O46gUxxYGImld03tl2zLhvrg.jpg",
-        "vote_average": 7.4,
+        "vote_average": 7.354,
         "release_date": "2023-01-03",
         "popularity": 37.5193
     },
@@ -5467,7 +5455,7 @@
         "overview": "Each year, hopeful singers from all over the country audition to be part of one of the biggest shows in American television history. Who will become the new American Idol?",
         "overview_ar": "Each year, hopeful singers from all over the country audition to be part of one of the biggest shows in American television history. Who will become the new American Idol?",
         "poster_path": "/xmZexciNAuKYxZcwM0VVqigOIPs.jpg",
-        "vote_average": 5.1,
+        "vote_average": 5.084,
         "release_date": "2002-06-11",
         "popularity": 39.9521
     },
@@ -5518,6 +5506,18 @@
         "vote_average": 7.8,
         "release_date": "2003-01-23",
         "popularity": 38.6794
+    },
+    {
+        "id": 247718,
+        "type": "tv",
+        "title": "MobLand",
+        "title_ar": "MobLand",
+        "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
+        "overview_ar": "Two mob families clash in a war that threatens to topple empires and lives.",
+        "poster_path": "/abeH7n5pcuQcwYcTxG6DTZvXLP1.jpg",
+        "vote_average": 8.328,
+        "release_date": "2025-03-30",
+        "popularity": 40.0003
     },
     {
         "id": 45247,
@@ -8753,7 +8753,7 @@
         "title": "The Ancient Magus' Bride",
         "title_ar": "The Ancient Magus' Bride",
         "overview": "Hatori Chise has lived a life full of neglect and abuse, devoid of anything resembling love. Far from the warmth of family, she has had her share of troubles and pitfalls. Just when all hope seems lost, a fateful encounter awaits her. When a man with the head of a beast, wielding strange powers, obtains her through a slave auction, Chise's life will never be the same again.\n\nThe man is a \"magus,\"a sorcerer of great power, who decides to free Chise from the bonds of captivity. The magus then makes a bold statement: Chise will become his apprentice--and his bride!",
-        "overview_ar": "تشيسي هاتوري، ذات 15 سنة. ضائعة، بلا أمل، وبلا عائلة، اُشترت بالمال - ليس من قِبل شخص اعتيادي، ولكن بساحر غير بشري اسمه إلياس. على الرغم من ترددها، تبدأ حياة جديدة كتلميذته وزوجته المستقبلية. تنتقل إلى حياتها الجديدة والآمنة برويّة. إلى أن تجد كتاب صور ياباني ضمن العديد من الذي أُرسل لها من لندن بواسطة أنجليكا. إنّه كتاب مقدّر اكتشفته في صغرها. عندما كانت مضطربة ووحيدة.",
+        "overview_ar": "Hatori Chise has lived a life full of neglect and abuse, devoid of anything resembling love. Far from the warmth of family, she has had her share of troubles and pitfalls. Just when all hope seems lost, a fateful encounter awaits her. When a man with the head of a beast, wielding strange powers, obtains her through a slave auction, Chise's life will never be the same again.\n\nThe man is a \"magus,\"a sorcerer of great power, who decides to free Chise from the bonds of captivity. The magus then makes a bold statement: Chise will become his apprentice--and his bride!",
         "poster_path": "/xXGAFMGiG55oS8uzuVz7V5JxFb2.jpg",
         "vote_average": 8.406,
         "release_date": "2017-10-08",
@@ -13455,9 +13455,9 @@
         "id": 97860,
         "type": "tv",
         "title": "Tower of God",
-        "title_ar": "برج السماء",
+        "title_ar": "Tower of God",
         "overview": "Reach the top, and everything will be yours. At the top of the tower exists everything in this world, and all of it can be yours. You can become a god. This is the story of the beginning and the end of Rachel, the girl who climbed the tower so she could see the stars, and Bam, the boy who needed nothing but her.",
-        "overview_ar": "يورو الذى قضى معظم حياته محاصرًا تحت برج شاسع وغامض برفقة صديقته المقربة راهيرو و بعد مدة من دخول راهيرو البرج تمكن يورو من فتح الباب للدخول أيضًا ليبدأ مواجهة تحديات في كل طابق من هذا البرج وهو يحاول العثور على رفيقته الوحيدة فما الذى سيحدث",
+        "overview_ar": "Reach the top, and everything will be yours. At the top of the tower exists everything in this world, and all of it can be yours. You can become a god. This is the story of the beginning and the end of Rachel, the girl who climbed the tower so she could see the stars, and Bam, the boy who needed nothing but her.",
         "poster_path": "/9QXO4C0AwAuBa15nuDLZU2MyktB.jpg",
         "vote_average": 8.214,
         "release_date": "2020-04-02",
@@ -17520,42 +17520,6 @@
         "popularity": 19.2943
     },
     {
-        "id": 79611,
-        "type": "tv",
-        "title": "Charmed",
-        "title_ar": "Charmed",
-        "overview": "Set in the fictional college town of Hilltowne, Charmed follows the lives of three sisters, Macy, Mel and Maggie Vera who, after the tragic death of their mother, discover they are three of the most powerful witches of all time.",
-        "overview_ar": "Set in the fictional college town of Hilltowne, Charmed follows the lives of three sisters, Macy, Mel and Maggie Vera who, after the tragic death of their mother, discover they are three of the most powerful witches of all time.",
-        "poster_path": "/doXHjfOtEmX8kEq1tsMnNqq9YLZ.jpg",
-        "vote_average": 7.2,
-        "release_date": "2018-10-14",
-        "popularity": 18.3475
-    },
-    {
-        "id": 50878,
-        "type": "tv",
-        "title": "Empresses in the Palace",
-        "title_ar": "Empresses in the Palace",
-        "overview": "Zhen Huan, a 17-year-old innocent introduced into the imperial court as the latest concubine of Emperor Yong Zheng. Her dreams of a new life of love and prosperity are swiftly dashed as she enters a dog-eat-dog world of treachery and corruption.",
-        "overview_ar": "Zhen Huan, a 17-year-old innocent introduced into the imperial court as the latest concubine of Emperor Yong Zheng. Her dreams of a new life of love and prosperity are swiftly dashed as she enters a dog-eat-dog world of treachery and corruption.",
-        "poster_path": "/gLJ1d3OHxYOkiBCNNPJA1lzehjI.jpg",
-        "vote_average": 8.569,
-        "release_date": "2011-11-17",
-        "popularity": 20.537
-    },
-    {
-        "id": 1778,
-        "type": "tv",
-        "title": "Zoey 101",
-        "title_ar": "Zoey 101",
-        "overview": "Zoey 101 is an American television series which originally aired on Nickelodeon from January 9, 2005 until May 2, 2008. It focuses on the lives of teenager Zoey Brooks and her friends as they attend Pacific Coast Academy, a fictional boarding school in Southern California. It was created by Dan Schneider. It was initially filmed at Pepperdine University in Malibu, California, then at stages in Valencia, California beginning in season 3. It was nominated for an \"Outstanding Children's Program\" Emmy in 2005. Zoey 101 was the most expensive production ever for Nickelodeon series, as it was shot completely on location in Malibu. It was also Nickelodeon's best performance for a series premiere in almost eight years. Despite this, many critics have made negative comments about the show, its setting, and its characters.",
-        "overview_ar": "Zoey 101 is an American television series which originally aired on Nickelodeon from January 9, 2005 until May 2, 2008. It focuses on the lives of teenager Zoey Brooks and her friends as they attend Pacific Coast Academy, a fictional boarding school in Southern California. It was created by Dan Schneider. It was initially filmed at Pepperdine University in Malibu, California, then at stages in Valencia, California beginning in season 3. It was nominated for an \"Outstanding Children's Program\" Emmy in 2005. Zoey 101 was the most expensive production ever for Nickelodeon series, as it was shot completely on location in Malibu. It was also Nickelodeon's best performance for a series premiere in almost eight years. Despite this, many critics have made negative comments about the show, its setting, and its characters.",
-        "poster_path": "/3eOM57RTccTSvqcYFhWwm9DAba8.jpg",
-        "vote_average": 8.102,
-        "release_date": "2005-01-09",
-        "popularity": 19.2943
-    },
-    {
         "id": 1798,
         "type": "tv",
         "title": "Fame",
@@ -17695,7 +17659,7 @@
         "overview": "Kousei Arima was a genius pianist until his mother's sudden death took away his ability to play. Each day was dull for Kousei. But, then he meets a violinist named Kaori Miyazono who has an eccentric playing style. Can the heartfelt sounds of the girl's violin lead the boy to play the piano again?",
         "overview_ar": "كان كوسي أريما عازف بيانو عبقري حتى حسم موت والدته المفاجئ قدرته على العزف. كان كل يوم مملًا بالنسبة لكوزي. لكنه بعد ذلك يلتقي بعازف كمان يُدعى كاوري ميازونو الذي يتميز بأسلوب عزف غريب الأطوار. هل يمكن للأصوات القلبية للفتاة أن تقود الفتى إلى العزف على البيانو مرة أخرى؟",
         "poster_path": "/rRjfH3ckTYz8z8aSkJshFL4VyK9.jpg",
-        "vote_average": 8.568,
+        "vote_average": 8.567,
         "release_date": "2014-10-10",
         "popularity": 17.145
     },
@@ -17758,6 +17722,42 @@
         "vote_average": 6.863,
         "release_date": "2009-06-04",
         "popularity": 17.5604
+    },
+    {
+        "id": 32815,
+        "type": "tv",
+        "title": "Raising Hope",
+        "title_ar": "Raising Hope",
+        "overview": "James \"Jimmy\" Chance is a clueless 24-year-old who impregnates a serial killer during a one-night-stand. Earning custody of his daughter after the mother is sentenced to death, Jimmy relies on his oddball but well-intentioned family for support in raising the child.",
+        "overview_ar": "James \"Jimmy\" Chance is a clueless 24-year-old who impregnates a serial killer during a one-night-stand. Earning custody of his daughter after the mother is sentenced to death, Jimmy relies on his oddball but well-intentioned family for support in raising the child.",
+        "poster_path": "/uoQlWrYVERlifyUjDVUHiSu2ELo.jpg",
+        "vote_average": 7.416,
+        "release_date": "2010-09-21",
+        "popularity": 17.937
+    },
+    {
+        "id": 100010,
+        "type": "tv",
+        "title": "Big Sky",
+        "title_ar": "Big Sky",
+        "overview": "Private detective Cassie Dewell partners with ex-cop Jenny Hoyt on a search for two sisters who have been kidnapped by a truck driver on a remote highway in Montana. When they discover that these are not the only girls who have disappeared in the area, they must race against the clock to stop the perpetrator before another woman is taken.",
+        "overview_ar": "Private detective Cassie Dewell partners with ex-cop Jenny Hoyt on a search for two sisters who have been kidnapped by a truck driver on a remote highway in Montana. When they discover that these are not the only girls who have disappeared in the area, they must race against the clock to stop the perpetrator before another woman is taken.",
+        "poster_path": "/4CUK42x0TvcWvuRXfjAFQlCeRdf.jpg",
+        "vote_average": 7.246,
+        "release_date": "2020-11-17",
+        "popularity": 17.6227
+    },
+    {
+        "id": 250060,
+        "type": "tv",
+        "title": "The First Frost",
+        "title_ar": "The First Frost",
+        "overview": "Wen Yifan, by chance, ends up living with her high school classmate Sang Yan, whom she once rejected. They keep their distance until Wen Yifan learns from Sang Yan that she sleepwalks, intertwining their lives once more.",
+        "overview_ar": "Wen Yifan, by chance, ends up living with her high school classmate Sang Yan, whom she once rejected. They keep their distance until Wen Yifan learns from Sang Yan that she sleepwalks, intertwining their lives once more.",
+        "poster_path": "/maAi8GmKrYy4FfjyoDGTQnt3e1J.jpg",
+        "vote_average": 8.4,
+        "release_date": "2025-02-18",
+        "popularity": 19.0197
     },
     {
         "id": 32815,
@@ -18821,7 +18821,7 @@
         "title": "The Alienist",
         "title_ar": "The Alienist",
         "overview": "New York, 1896. Police commissioner Theodore Roosevelt brings together criminal psychologist Dr. Laszlo Kreizler, newspaper illustrator John Moore and secretary Sara Howard to investigate several murders of male prostitutes.",
-        "overview_ar": "New York, 1896. Police commissioner Theodore Roosevelt brings together criminal psychologist Dr. Laszlo Kreizler, newspaper illustrator John Moore and secretary Sara Howard to investigate several murders of male prostitutes.",
+        "overview_ar": "في مدينة نيويورك عام 1896، يُجنّد مفوض الشرطة \"ثيودور روزفلت\" الأخصائي النفسي \"لازلو كرايسلر\" للقبض على قاتل يستهدف الصبية المشردين.",
         "poster_path": "/zUd4RPbfHuB1zIG2iNI5bdZcQo3.jpg",
         "vote_average": 7.5,
         "release_date": "2018-01-22",
@@ -18939,9 +18939,9 @@
         "id": 81046,
         "type": "tv",
         "title": "The Dragon Prince",
-        "title_ar": "The Dragon Prince",
+        "title_ar": "الأمير التنين",
         "overview": "An extraordinary discovery inspires two human princes and an elven assassin to team up on an epic quest to bring peace to their warring lands.",
-        "overview_ar": "An extraordinary discovery inspires two human princes and an elven assassin to team up on an epic quest to bring peace to their warring lands.",
+        "overview_ar": "بينما تستعد مملكة كاتوليس البشرية لهجوم من جانب Moonshadow elves ، يخطط الملك Harrow لإرسال الأبناء Callum و Ezran بعيدًا إلى مكان آمن.",
         "poster_path": "/d7PIRa6ez7ZEl9D4JUrnSsmcnVD.jpg",
         "vote_average": 8.213,
         "release_date": "2018-09-14",
