@@ -1440,18 +1440,6 @@
         "popularity": 69.7622
     },
     {
-        "id": 1100,
-        "type": "tv",
-        "title": "How I Met Your Mother",
-        "title_ar": "كيف قابلت امك",
-        "overview": "A father recounts to his children - through a series of flashbacks - the journey he and his four best friends took leading up to him meeting their mother.",
-        "overview_ar": "يعيل \"تيد\" على استرجاع ذكريات الماضي ليروي بحثه الملحمي عن نصفه الآخر، وكشخص بالغ يروي \"تيد\" لأطفاله كيف التقى بأمهما.",
-        "poster_path": "/b34jPzmB0wZy7EjUZoleXOl2RRI.jpg",
-        "vote_average": 8.137,
-        "release_date": "2005-09-19",
-        "popularity": 72.092
-    },
-    {
         "id": 502,
         "type": "tv",
         "title": "Sesame Street",
@@ -1578,7 +1566,7 @@
         "title_ar": "الذئب المراهق",
         "overview": "Scott McCall, a high school student living in the town of Beacon Hills has his life drastically changed when he's bitten by a werewolf, becoming one himself. He must henceforth learn to balance his problematic new identity with his day-to-day teenage life. The following characters are instrumental to his struggle: Stiles, his best friend; Allison, his love interest who comes from a family of werewolf hunters; and Derek, a mysterious werewolf with a dark past. Throughout the series, he strives to keep his loved ones safe while maintaining normal relationships with them.",
         "overview_ar": "سكوت ماكول ، طالب في مدرسة ثانوية يعيش في بلدة بيكون هيلز ، تغيرت حياته بشكل جذري عندما يعضه ذئب ، ويصبح هو نفسه. يجب أن يتعلم من الآن فصاعدًا أن يوازن بين هويته الجديدة الإشكالية وحياته المراهقة اليومية. الشخصيات التالية لها دور فعال في كفاحه: Stiles ، أفضل صديق له ؛ أليسون ، مصلحته التي تنحدر من عائلة من صيادي المستذئبين ؛ وديريك ، مستذئب غامض له ماض مظلم. طوال المسلسل ، يسعى جاهداً للحفاظ على أمان أحبائه مع الحفاظ على علاقات طبيعية معهم.",
-        "poster_path": "/8Ij1O2nU8exLgwPXU8Eo6PZdCDC.jpg",
+        "poster_path": "/f8vfN4ziStFVcTp8n6WYLftad5c.jpg",
         "vote_average": 8.5,
         "release_date": "2011-06-05",
         "popularity": 74.6647
@@ -1666,6 +1654,18 @@
         "vote_average": 7.389,
         "release_date": "2011-10-23",
         "popularity": 70.7634
+    },
+    {
+        "id": 1100,
+        "type": "tv",
+        "title": "How I Met Your Mother",
+        "title_ar": "كيف قابلت امك",
+        "overview": "A father recounts to his children - through a series of flashbacks - the journey he and his four best friends took leading up to him meeting their mother.",
+        "overview_ar": "يعيل \"تيد\" على استرجاع ذكريات الماضي ليروي بحثه الملحمي عن نصفه الآخر، وكشخص بالغ يروي \"تيد\" لأطفاله كيف التقى بأمهما.",
+        "poster_path": "/b34jPzmB0wZy7EjUZoleXOl2RRI.jpg",
+        "vote_average": 8.137,
+        "release_date": "2005-09-19",
+        "popularity": 72.092
     },
     {
         "id": 12225,
@@ -2160,6 +2160,18 @@
         "popularity": 60.0228
     },
     {
+        "id": 65942,
+        "type": "tv",
+        "title": "Re:ZERO -Starting Life in Another World-",
+        "title_ar": "الحياة في عالم مختلف من الصفر",
+        "overview": "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find something she's looking for.",
+        "overview_ar": "القصة تتحدث عن سوبارو ناتسوكي و هو طالب عادي فُقد في العالم البديل و تم إنقاذه من قِبل فتاة جميلة ذات شعر فضي، بقي سوبارو بالقرب منها كي يرد لها الجميل لكن مصيرها ثقيل بشكل أكبر من أن يتخيله بطلنا، يقوم الأعداء بمهاجمتهما و يتقلانهما، بعدها يكتشف بطلنا أن لديه القدرة على العودة من الموت إلى الوقت الذي قدم فيه إلى هذا العالم أول مرة، لكنه الوحيد الذي يتذكر ما حدث في ذلك الحين.",
+        "poster_path": "/aRwmcX36r1ZpR5Xq5mmFcpUDQ8J.jpg",
+        "vote_average": 7.827,
+        "release_date": "2016-04-04",
+        "popularity": 60.0228
+    },
+    {
         "id": 63639,
         "type": "tv",
         "title": "The Expanse",
@@ -2386,18 +2398,6 @@
         "vote_average": 7.811,
         "release_date": "2004-09-22",
         "popularity": 53.8688
-    },
-    {
-        "id": 4589,
-        "type": "tv",
-        "title": "Arrested Development",
-        "title_ar": "Arrested Development",
-        "overview": "The story of a wealthy family that lost everything, and the one son who had no choice but to keep them all together.",
-        "overview_ar": "The story of a wealthy family that lost everything, and the one son who had no choice but to keep them all together.",
-        "poster_path": "/p4r4RD7RsNcJVoz0H6z3dBoTBtW.jpg",
-        "vote_average": 7.932,
-        "release_date": "2003-11-02",
-        "popularity": 55.8341
     },
     {
         "id": 4589,
@@ -2640,6 +2640,18 @@
         "popularity": 53.0134
     },
     {
+        "id": 32895,
+        "type": "tv",
+        "title": "Rizzoli & Isles",
+        "title_ar": "Rizzoli & Isles",
+        "overview": "Perhaps their strikingly different personalities make the relationship between detective Jane Rizzoli and medical examiner Maura Isles so effective. Jane, the only female cop in Boston's homicide division, is tough, relentless and rarely lets her guard down, while the impeccably dressed Maura displays a sometimes icy temperament — she is, after all, more comfortable among the dead than the living. Together, the best friends have forged a quirky and supportive relationship; they drop the protective shield in each other's company, and combine their expertise to solve Boston's most complex cases.",
+        "overview_ar": "Perhaps their strikingly different personalities make the relationship between detective Jane Rizzoli and medical examiner Maura Isles so effective. Jane, the only female cop in Boston's homicide division, is tough, relentless and rarely lets her guard down, while the impeccably dressed Maura displays a sometimes icy temperament — she is, after all, more comfortable among the dead than the living. Together, the best friends have forged a quirky and supportive relationship; they drop the protective shield in each other's company, and combine their expertise to solve Boston's most complex cases.",
+        "poster_path": "/kuCNyr4XVQ4MZWiNjVS6DypE988.jpg",
+        "vote_average": 7.9,
+        "release_date": "2010-07-12",
+        "popularity": 50.052
+    },
+    {
         "id": 36,
         "type": "tv",
         "title": "Medium",
@@ -2731,7 +2743,7 @@
         "overview": "Mark Grayson is a normal teenager except for the fact that his father is the most powerful superhero on the planet. Shortly after his seventeenth birthday, Mark begins to develop powers of his own and enters into his father’s tutelage.",
         "overview_ar": "عندما يرث \"مارك غرايسون\" قوى خارقة في السابعة عشر من عمره، ينضم إلى والده كواحد من أعظم أبطال الأرض. هذا يحقق جميع أحلامه - إلى أن يغير حدث مروع كل شيء",
         "poster_path": "/jBn4LWlgdsf6xIUYhYBwpctBVsj.jpg",
-        "vote_average": 8.616,
+        "vote_average": 8.615,
         "release_date": "2021-03-25",
         "popularity": 53.9486
     },
@@ -2794,18 +2806,6 @@
         "vote_average": 7.873,
         "release_date": "2019-11-20",
         "popularity": 54.8004
-    },
-    {
-        "id": 60694,
-        "type": "tv",
-        "title": "Last Week Tonight with John Oliver",
-        "title_ar": "لأسبوع الماضي مع جون أوليفر",
-        "overview": "A half-hour satirical look at the week in news, politics and current events.",
-        "overview_ar": "نظرة ساخرة لمدة نصف ساعة على الأحداث الأسبوعية في الأخبار والسياسة والأحداث الحالية.",
-        "poster_path": "/b12eM3FXNjN7yM7XYTIdmeQRud9.jpg",
-        "vote_average": 7.8,
-        "release_date": "2014-04-27",
-        "popularity": 62.5545
     },
     {
         "id": 918,
@@ -2971,7 +2971,7 @@
         "overview": "When heroes alone are not enough ... the world needs legends. Having seen the future, one he will desperately try to prevent from happening, time-traveling rogue Rip Hunter is tasked with assembling a disparate group of both heroes and villains to confront an unstoppable threat — one in which not only is the planet at stake, but all of time itself. Can this ragtag team defeat an immortal threat unlike anything they have ever known?",
         "overview_ar": "عندما الأبطال لا يكفون لوحدهم … العالم بحاجة الأساطير. بعد أن شاهدوا  المستقبل، وقرروا انهم سوف يحاولون جاهدين لمنع حدوث ذلك ، يتم تكليف مسافر  عبر زمن ومانع للكوارث (ريب هانتر ) ان يعمل بتجميع مجموعة متباينة من كل  من الأبطال و الأشرار لمواجهة هذا  التهديد الذي لا يمكن وقفها – وليس فقط  كوكب الأرض في خطر ، ولكن الوقت نفسه في خطر . فهل يمكن لهذا الفريق هزيمة  تهديد الشرير الخالد والذي على عكس أي شيء شاهدوا من قبل ؟",
         "poster_path": "/AcEFDh272YVTR6B6zrrusk8BjJG.jpg",
-        "vote_average": 7.266,
+        "vote_average": 7.264,
         "release_date": "2016-01-21",
         "popularity": 52.1098
     },
@@ -2995,7 +2995,7 @@
         "overview": "Smart, sarcastic and a little dead inside, Wednesday Addams investigates twisted mysteries while making new friends — and foes — at Nevermore Academy.",
         "overview_ar": "تحقّق \"وينزداي آدامز\"، الفتاة الذكية والساخرة ومتبلّدة المشاعر، في ألغاز غامضة في الوقت الذي تكسب فيه الأصدقاء والأعداء الجُدد في أكاديمية \"نيفرمور\".",
         "poster_path": "/36xXlhEpQqVVPuiZhfoQuaY4OlA.jpg",
-        "vote_average": 8.357,
+        "vote_average": 8.358,
         "release_date": "2022-11-23",
         "popularity": 53.8523
     },
@@ -3079,7 +3079,7 @@
         "overview": "Set in present-day suburbia, a young couple returns to the husband's childhood home. Their world is upended when new neighbors move in next door, bringing old secrets of the cul-de-sac to light, and new deadly threats shatter the illusion of their quiet little neighborhood.",
         "overview_ar": "Set in present-day suburbia, a young couple returns to the husband's childhood home. Their world is upended when new neighbors move in next door, bringing old secrets of the cul-de-sac to light, and new deadly threats shatter the illusion of their quiet little neighborhood.",
         "poster_path": "/q1Ere9Lash2d6aOMStkRHfsixZC.jpg",
-        "vote_average": 4.618,
+        "vote_average": 4.529,
         "release_date": "2026-02-08",
         "popularity": 50.2862
     },
@@ -4145,7 +4145,7 @@
         "title": "Tom Clancy's Jack Ryan",
         "title_ar": "Tom Clancy's Jack Ryan",
         "overview": "When CIA analyst Jack Ryan stumbles upon a suspicious series of bank transfers his search for answers pulls him from the safety of his desk job and catapults him into a deadly game of cat and mouse throughout Europe and the Middle East, with a rising terrorist figurehead preparing for a massive attack against the US and her allies.",
-        "overview_ar": "When CIA analyst Jack Ryan stumbles upon a suspicious series of bank transfers his search for answers pulls him from the safety of his desk job and catapults him into a deadly game of cat and mouse throughout Europe and the Middle East, with a rising terrorist figurehead preparing for a massive attack against the US and her allies.",
+        "overview_ar": "عندما يتعثر محلل وكالة المخابرات المركزية جاك ريان في سلسلة مشبوهة من التحويلات المصرفية، فإن بحثه عن إجابات يسحبه من أمان وظيفته المكتبية ويقذفه إلى لعبة القط والفأر القاتلة في جميع أنحاء أوروبا والشرق الأوسط، مع شخصية إرهابية صاعدة تستعد لهجوم واسع النطاق ضد الولايات المتحدة وحلفائها.",
         "poster_path": "/cO4py3L3q5GNPrA0qr1wVDrosK1.jpg",
         "vote_average": 7.679,
         "release_date": "2018-08-30",
@@ -4313,7 +4313,7 @@
         "title": "Jane the Virgin",
         "title_ar": "Jane the Virgin",
         "overview": "A comedy-drama following a chaste young woman who is accidentally impregnated via artificial insemination as she struggles to inform her devoutly religious family and make the right choices concerning the child. Based on the telenovela \"Juana la virgen.\"",
-        "overview_ar": "A comedy-drama following a chaste young woman who is accidentally impregnated via artificial insemination as she struggles to inform her devoutly religious family and make the right choices concerning the child. Based on the telenovela \"Juana la virgen.\"",
+        "overview_ar": "بعد تعهدها بالبقاء عفيفة حتى تتزوج، تكتشف \"جين فييانويفا\" أنها حامل بسبب خطأ طبي غير مقصود، مما يجعلها تعيد التفكير في مستقبلها.",
         "poster_path": "/DRRHgvsNEfBloMgIP8bBw4zi4E.jpg",
         "vote_average": 7.918,
         "release_date": "2014-10-13",
@@ -5040,30 +5040,6 @@
         "popularity": 39.1736
     },
     {
-        "id": 63333,
-        "type": "tv",
-        "title": "The Last Kingdom",
-        "title_ar": "The Last Kingdom",
-        "overview": "A show of heroic deeds and epic battles with a thematic depth that embraces politics, religion, warfare, courage, love, loyalty and our universal search for identity. Combining real historical figures and events with fictional characters, it is the story of how a people combined their strength under one of the most iconic kings of history in order to reclaim their land for themselves and build a place they call home.",
-        "overview_ar": "A show of heroic deeds and epic battles with a thematic depth that embraces politics, religion, warfare, courage, love, loyalty and our universal search for identity. Combining real historical figures and events with fictional characters, it is the story of how a people combined their strength under one of the most iconic kings of history in order to reclaim their land for themselves and build a place they call home.",
-        "poster_path": "/8eJf0hxgIhE6QSxbtuNCekTddy1.jpg",
-        "vote_average": 8.242,
-        "release_date": "2015-10-10",
-        "popularity": 40.7687
-    },
-    {
-        "id": 199332,
-        "type": "tv",
-        "title": "Only You",
-        "title_ar": "Only You",
-        "overview": "",
-        "overview_ar": "",
-        "poster_path": "/mwE7mKwab8yIKjbJd302D7NaCgA.jpg",
-        "vote_average": 0.0,
-        "release_date": "2010-10-30",
-        "popularity": 45.2593
-    },
-    {
         "id": 89456,
         "type": "tv",
         "title": "Primal",
@@ -5071,7 +5047,7 @@
         "overview": "A caveman forms a bond with a dinosaur as they struggle to survive in a hostile world.",
         "overview_ar": "يشكل رجل الكهف رابطة مع ديناصور بينما يكافحان من أجل البقاء على قيد الحياة في عالم معادي.",
         "poster_path": "/mf12pRakr3eYdJtv6klQtoznnbU.jpg",
-        "vote_average": 8.616,
+        "vote_average": 8.6,
         "release_date": "2019-10-08",
         "popularity": 40.1624
     },
@@ -5131,7 +5107,7 @@
         "overview": "The most powerful superhero in the world can kill anyone with one blow. But nothing can challenge him, so he struggles with ennui and depression.",
         "overview_ar": "بدأ سايتاما كبطل من أجل المتعة فحسب. وبعد ثلاثة سنوات من التّداريب \"الخاصّة\"، أصبح قويًّا لدرجة أنّ بإمكانه هزيمة خصومه بلكمة واحدة. والآن، سايتاما جاهز ليبدأ واجباته الرّسميّة كبطل محترف مع منظمة الأبطال رفقة جينوس، تلميذه السّايبورغ المخلص. ولكن، وتيرة ظهور الوحوش تتصاعد كما جاء في نبوءة العرّافة العظيمة شيباباوا الّتي تحكي عن دمار الأرض الوشيك. ووسط هذه الأزمة، يظهر غارو الّذي يدعو نفسه بـ\"صائد الأبطال\".",
         "poster_path": "/dT10AxJIXVvRwFAew4tt2RhzJrD.jpg",
-        "vote_average": 8.382,
+        "vote_average": 8.381,
         "release_date": "2015-10-05",
         "popularity": 42.4162
     },
@@ -5143,7 +5119,7 @@
         "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
         "overview_ar": "السلطة على المحكّ، إذ تتصادم عائلتان إجراميتان متحاربتان في معركة تُهدّد بإسقاط إمبراطوريتين. في مرمى النيران، يقف هاري دا سوزا، \"المُدبّر\" البارع، الذي يعرف جيدًا أين تكمن الولاءات عند تصادم القوى المتعارضة.",
         "poster_path": "/abeH7n5pcuQcwYcTxG6DTZvXLP1.jpg",
-        "vote_average": 8.328,
+        "vote_average": 8.33,
         "release_date": "2025-03-30",
         "popularity": 38.3932
     },
@@ -5167,7 +5143,7 @@
         "overview": "Each year, hopeful singers from all over the country audition to be part of one of the biggest shows in American television history. Who will become the new American Idol?",
         "overview_ar": "Each year, hopeful singers from all over the country audition to be part of one of the biggest shows in American television history. Who will become the new American Idol?",
         "poster_path": "/xmZexciNAuKYxZcwM0VVqigOIPs.jpg",
-        "vote_average": 5.084,
+        "vote_average": 5.055,
         "release_date": "2002-06-11",
         "popularity": 35.3986
     },
@@ -5278,6 +5254,30 @@
         "vote_average": 8.4,
         "release_date": "2019-02-25",
         "popularity": 36.6902
+    },
+    {
+        "id": 106,
+        "type": "tv",
+        "title": "The Andy Griffith Show",
+        "title_ar": "The Andy Griffith Show",
+        "overview": "The Andy Griffith Show is an American sitcom first televised on CBS between October 3, 1960 and April 1, 1968. Andy Griffith portrays the widowed sheriff of the fictional small community of Mayberry, North Carolina. His life is complicated by an inept, but well-meaning deputy, Barney Fife, a spinster aunt and housekeeper, Aunt Bee, and a precocious young son, Opie. Local ne'er-do-wells, bumbling pals, and temperamental girlfriends further complicate his life. Andy Griffith stated in a Today Show interview, with respect to the time period of the show: \"Well, though we never said it, and though it was shot in the '60s, it had a feeling of the '30s. It was when we were doing it, of a time gone by.\"\n\nThe series never placed lower than seventh in the Nielsen ratings and ended its final season at number one. It has been ranked by TV Guide as the 9th-best show in American television history. Though neither Griffith nor the show won awards during its eight-season run, series co-stars Knotts and Bavier accumulated a combined total of six Emmy Awards. The show, a semi-spin-off from an episode of The Danny Thomas Show titled \"Danny Meets Andy Griffith\", spawned its own spin-off series, Gomer Pyle, U.S.M.C., a sequel series, Mayberry R.F.D., and a reunion telemovie, Return to Mayberry. The show's enduring popularity has generated a good deal of show-related merchandise. Reruns currently air on TV Land, and the complete series is available on DVD. All eight seasons are also now available by streaming video services such as Netflix.",
+        "overview_ar": "The Andy Griffith Show is an American sitcom first televised on CBS between October 3, 1960 and April 1, 1968. Andy Griffith portrays the widowed sheriff of the fictional small community of Mayberry, North Carolina. His life is complicated by an inept, but well-meaning deputy, Barney Fife, a spinster aunt and housekeeper, Aunt Bee, and a precocious young son, Opie. Local ne'er-do-wells, bumbling pals, and temperamental girlfriends further complicate his life. Andy Griffith stated in a Today Show interview, with respect to the time period of the show: \"Well, though we never said it, and though it was shot in the '60s, it had a feeling of the '30s. It was when we were doing it, of a time gone by.\"\n\nThe series never placed lower than seventh in the Nielsen ratings and ended its final season at number one. It has been ranked by TV Guide as the 9th-best show in American television history. Though neither Griffith nor the show won awards during its eight-season run, series co-stars Knotts and Bavier accumulated a combined total of six Emmy Awards. The show, a semi-spin-off from an episode of The Danny Thomas Show titled \"Danny Meets Andy Griffith\", spawned its own spin-off series, Gomer Pyle, U.S.M.C., a sequel series, Mayberry R.F.D., and a reunion telemovie, Return to Mayberry. The show's enduring popularity has generated a good deal of show-related merchandise. Reruns currently air on TV Land, and the complete series is available on DVD. All eight seasons are also now available by streaming video services such as Netflix.",
+        "poster_path": "/3KvTKLH40z5zDMilg2lXqmOUrRy.jpg",
+        "vote_average": 7.611,
+        "release_date": "1960-10-03",
+        "popularity": 33.6346
+    },
+    {
+        "id": 734,
+        "type": "tv",
+        "title": "Magnum, P.I.",
+        "title_ar": "Magnum, P.I.",
+        "overview": "A private investigator who works when he wants, lives in a beachfront estate in Hawaii, drives a posh Ferrari, runs up an unlimited tab at a swank bar, and charms attractive women in peril - that's the lifestyle of Thomas Magnum, aka Magnum, P.I.",
+        "overview_ar": "A private investigator who works when he wants, lives in a beachfront estate in Hawaii, drives a posh Ferrari, runs up an unlimited tab at a swank bar, and charms attractive women in peril - that's the lifestyle of Thomas Magnum, aka Magnum, P.I.",
+        "poster_path": "/ht0dsKCZxbPawKdTPLeNtnnbxim.jpg",
+        "vote_average": 7.3,
+        "release_date": "1980-12-11",
+        "popularity": 38.9983
     },
     {
         "id": 67116,
@@ -5727,7 +5727,7 @@
         "id": 154770,
         "type": "tv",
         "title": "Hello Saturday",
-        "title_ar": "Hello Saturday",
+        "title_ar": "你好，星期六",
         "overview": "\"Hello, Saturday\" is the rebranding of the popular Chinese show \"Happy Camp\", hosted by He Jiong and with a fixed group of regular celebrity members.\n\nThe program showcases the talent of various stars as well as social topics through creative and diverse content and games. It aims to spread positive energy while keeping up with the current trends and leading youth culture.",
         "overview_ar": "\"Hello, Saturday\" is the rebranding of the popular Chinese show \"Happy Camp\", hosted by He Jiong and with a fixed group of regular celebrity members.\n\nThe program showcases the talent of various stars as well as social topics through creative and diverse content and games. It aims to spread positive energy while keeping up with the current trends and leading youth culture.",
         "poster_path": "/wsTjWy6NE2s3h0neChr0D92ddwI.jpg",
@@ -5854,18 +5854,6 @@
         "vote_average": 7.6,
         "release_date": "1974-09-13",
         "popularity": 31.4784
-    },
-    {
-        "id": 224,
-        "type": "tv",
-        "title": "Match of the Day",
-        "title_ar": "Match of the Day",
-        "overview": "BBC's football highlights and analysis.\n\n\"The longest-running football television programme in the world\" as recognised by Guinness World Records in 2015.",
-        "overview_ar": "BBC's football highlights and analysis.\n\n\"The longest-running football television programme in the world\" as recognised by Guinness World Records in 2015.",
-        "poster_path": "/paRFRd11WlFOxVbGnzjjCBym7FW.jpg",
-        "vote_average": 7.592,
-        "release_date": "1964-08-22",
-        "popularity": 28.9738
     },
     {
         "id": 85948,
@@ -5998,6 +5986,18 @@
         "vote_average": 7.184,
         "release_date": "2025-12-12",
         "popularity": 35.0591
+    },
+    {
+        "id": 46880,
+        "type": "tv",
+        "title": "The Fosters",
+        "title_ar": "The Fosters",
+        "overview": "Stef Foster, a dedicated police officer, and her partner Lena Adams, a school vice principal, have built a close-knit, loving family with Stef's biological son from a previous marriage, Brandon, and their adopted twins, Mariana and Jesus. Their lives are disrupted in unexpected ways when Lena meets Callie, a hardened teen with an abusive past who has spent her life in and out of foster homes. Lena and Stef welcome Callie and her brother, Jude, into their home thinking it's just for a few weeks, until a more permanent placement can be found. But life has something else in store for the Fosters.",
+        "overview_ar": "Stef Foster, a dedicated police officer, and her partner Lena Adams, a school vice principal, have built a close-knit, loving family with Stef's biological son from a previous marriage, Brandon, and their adopted twins, Mariana and Jesus. Their lives are disrupted in unexpected ways when Lena meets Callie, a hardened teen with an abusive past who has spent her life in and out of foster homes. Lena and Stef welcome Callie and her brother, Jude, into their home thinking it's just for a few weeks, until a more permanent placement can be found. But life has something else in store for the Fosters.",
+        "poster_path": "/iRCmazqaUNNsgZyR6tNDl88pXp3.jpg",
+        "vote_average": 7.515,
+        "release_date": "2013-06-03",
+        "popularity": 32.5816
     },
     {
         "id": 46880,
@@ -6723,9 +6723,9 @@
         "id": 67178,
         "type": "tv",
         "title": "Marvel's The Punisher",
-        "title_ar": "مارفل' المعاقب",
+        "title_ar": "Marvel's The Punisher",
         "overview": "A former Marine out to punish the criminals responsible for his family's murder finds himself ensnared in a military conspiracy.",
-        "overview_ar": "يجد جندي البحرية السابق الذي خرج لمعاقبة المجرمين المسؤولين عن مقتل عائلته نفسه متورطًا في مؤامرة عسكرية.",
+        "overview_ar": "A former Marine out to punish the criminals responsible for his family's murder finds himself ensnared in a military conspiracy.",
         "poster_path": "/tM6xqRKXoloH9UchaJEyyRE9O1w.jpg",
         "vote_average": 8.135,
         "release_date": "2017-11-17",
@@ -6735,7 +6735,7 @@
         "id": 64356,
         "type": "tv",
         "title": "The Return of Superman",
-        "title_ar": "슈퍼맨이 돌아왔다",
+        "title_ar": "The Return of Superman",
         "overview": "An up-close look at celebrity dads who have to take care of their kids for the next 48 hours without any help. Will it be a dad-tastrophe, or can they finish their wives' to-do lists while having fun with their kids?",
         "overview_ar": "An up-close look at celebrity dads who have to take care of their kids for the next 48 hours without any help. Will it be a dad-tastrophe, or can they finish their wives' to-do lists while having fun with their kids?",
         "poster_path": "/qjBx2RCnyyBPgu9qBV7j3UiXjeo.jpg",
@@ -6797,7 +6797,7 @@
         "title": "Hijack",
         "title_ar": "Hijack",
         "overview": "Expert negotiator Sam Nelson is in for the ride of his life—and so is everyone on board with him—after a group of hijackers take control. Sam will try every move in his playbook to take them down...as the stakes grow higher by the second.",
-        "overview_ar": "Expert negotiator Sam Nelson is in for the ride of his life—and so is everyone on board with him—after a group of hijackers take control. Sam will try every move in his playbook to take them down...as the stakes grow higher by the second.",
+        "overview_ar": "يخوض المفاوض المخضرم، \"سام نلسون\"، أكثر رحلة لن ينساها في حياته، ما ينطبق على كل الركاب كذلك، بعدما تولّت مجموعة خاطفين زمام السيطرة. سيجرّب \"سام\" كل الحيل التي يعرفها للنيل منهم، إذ يزداد الخطر بمرور كل لحظة.",
         "poster_path": "/2C51clnxQdiqPDeqQlXcUx70hse.jpg",
         "vote_average": 7.609,
         "release_date": "2023-06-28",
@@ -9159,9 +9159,9 @@
         "id": 110492,
         "type": "tv",
         "title": "Peacemaker",
-        "title_ar": "صانع السلام",
+        "title_ar": "Peacemaker",
         "overview": "The continuing story of Peacemaker, a vainglorious superhero/supervillain who believes in peace at any cost — no matter how many people he has to kill. After a miraculous recovery from his duel with Bloodsport, Peacemaker soon discovers that his freedom comes at a price.",
-        "overview_ar": "يتناول العمل القصة الأصلية لشخصية بيسميكر، صانع السلام والذي يُكرس حياته من أجل نشر السلام العالمي وفعل كل ما في وسعه لتحقيق سعيه حتى لو كان ذلك باستخدام السلاح.",
+        "overview_ar": "The continuing story of Peacemaker, a vainglorious superhero/supervillain who believes in peace at any cost — no matter how many people he has to kill. After a miraculous recovery from his duel with Bloodsport, Peacemaker soon discovers that his freedom comes at a price.",
         "poster_path": "/eYzbGcYnOUlvj2fa76pTgIXogd7.jpg",
         "vote_average": 8.204,
         "release_date": "2022-01-13",
@@ -9305,7 +9305,7 @@
         "title": "Barry",
         "title_ar": "Barry",
         "overview": "A hit man from the Midwest moves to Los Angeles and gets caught up in the city's theatre arts scene.",
-        "overview_ar": "باري: تركز هذه الكوميديا المظلمة على قاتل متواضع ووحيد غير مستأجر من الغرب الأوسط الذي يسافر إلى لوس أنجلوس من أجل قتل ممثل طموح ، وينتهي به المطاف بقبوله في مجتمع مع مجموعة من المتحمسين التواقين ضمن مسرح لوس أنجلوس.",
+        "overview_ar": "A hit man from the Midwest moves to Los Angeles and gets caught up in the city's theatre arts scene.",
         "poster_path": "/j1XpwD11f0BAEI7pX6UdMhUVX2F.jpg",
         "vote_average": 7.9,
         "release_date": "2018-03-25",
@@ -9351,7 +9351,7 @@
         "id": 50712,
         "type": "tv",
         "title": "Black Butler",
-        "title_ar": "Black Butler",
+        "title_ar": "黒執事",
         "overview": "In Victorian London, 12-year-old business magnate Ciel Phantomhive thwarts dangers to the queen as he's watched over by his demon butler, Sebastian.",
         "overview_ar": "In Victorian London, 12-year-old business magnate Ciel Phantomhive thwarts dangers to the queen as he's watched over by his demon butler, Sebastian.",
         "poster_path": "/iXGs130TRoUplHf0o86zp9MqAYc.jpg",
@@ -9840,18 +9840,6 @@
         "popularity": 24.6352
     },
     {
-        "id": 83121,
-        "type": "tv",
-        "title": "Kaguya-sama: Love Is War",
-        "title_ar": "Kaguya-sama: Love Is War",
-        "overview": "Considered a genius due to having the highest grades in the country, Miyuki Shirogane leads the prestigious Shuchiin Academy's student council as its president, working alongside the beautiful and wealthy vice president Kaguya Shinomiya. The two are often regarded as the perfect couple by students despite them not being in any sort of romantic relationship.",
-        "overview_ar": "Considered a genius due to having the highest grades in the country, Miyuki Shirogane leads the prestigious Shuchiin Academy's student council as its president, working alongside the beautiful and wealthy vice president Kaguya Shinomiya. The two are often regarded as the perfect couple by students despite them not being in any sort of romantic relationship.",
-        "poster_path": "/5khbC6AuNgnvnoDbjIMKCOhEtIc.jpg",
-        "vote_average": 8.556,
-        "release_date": "2019-01-12",
-        "popularity": 24.6352
-    },
-    {
         "id": 732,
         "type": "tv",
         "title": "L.A. Law",
@@ -10123,7 +10111,7 @@
         "overview": "Sandokan is a Malaysian pirate who, along with his friend Yanez and their crew, attacks the British forces from his island of Mompracem. During his adventures, he falls in love with Lady Marianna Guillonk, an English-Italian aristocrat.",
         "overview_ar": "Sandokan is a Malaysian pirate who, along with his friend Yanez and their crew, attacks the British forces from his island of Mompracem. During his adventures, he falls in love with Lady Marianna Guillonk, an English-Italian aristocrat.",
         "poster_path": "/6P5WCgqB4D5jL8FDx0ZlNyUu5X5.jpg",
-        "vote_average": 7.6,
+        "vote_average": 7.595,
         "release_date": "2025-12-01",
         "popularity": 25.3455
     },
@@ -10318,6 +10306,18 @@
         "vote_average": 8.7,
         "release_date": "2026-02-12",
         "popularity": 23.4291
+    },
+    {
+        "id": 44953,
+        "type": "tv",
+        "title": "El Señor de los Cielos",
+        "title_ar": "El señor de los cielos",
+        "overview": "Set in the 1990s, these are the life and times of Amado Carrillo Fuentes, a man who became the head of the Juárez cartel. Nicknamed “El Señor de los Cielos” (Lord of the Skies) because of the large fleet of airplanes he used to transport drugs, he was also known for washing more than $200 million through Colombia to finance his huge fleet. He is described as the most powerful drug trafficker of his time.",
+        "overview_ar": "Set in the 1990s, these are the life and times of Amado Carrillo Fuentes, a man who became the head of the Juárez cartel. Nicknamed “El Señor de los Cielos” (Lord of the Skies) because of the large fleet of airplanes he used to transport drugs, he was also known for washing more than $200 million through Colombia to finance his huge fleet. He is described as the most powerful drug trafficker of his time.",
+        "poster_path": "/Ag7VUdnrRz5Qpq3Yn3E5OCvFnu0.jpg",
+        "vote_average": 7.917,
+        "release_date": "2013-04-15",
+        "popularity": 24.6002
     },
     {
         "id": 44953,
@@ -11283,7 +11283,7 @@
         "id": 2808,
         "type": "tv",
         "title": "Totally Spies!",
-        "title_ar": "الجاسوسات",
+        "title_ar": "Totally Spies!",
         "overview": "Totally Spies! depicts three girlfriends 'with an attitude' who have to cope with their daily lives at high school as well as the unpredictable pressures of international espionage. They confront the most intimidating - and demented - of villains, each with their own special agenda for demonic, global rude behavior.",
         "overview_ar": "Totally Spies! depicts three girlfriends 'with an attitude' who have to cope with their daily lives at high school as well as the unpredictable pressures of international espionage. They confront the most intimidating - and demented - of villains, each with their own special agenda for demonic, global rude behavior.",
         "poster_path": "/ioPQVkwnunF4rqLuwiqmqFHW7UL.jpg",
@@ -11511,9 +11511,9 @@
         "id": 92685,
         "type": "tv",
         "title": "The Owl House",
-        "title_ar": "The Owl House",
+        "title_ar": "منزل البوم",
         "overview": "An animated fantasy-comedy series that follows Luz, a self-assured teenage girl who accidentally stumbles upon a portal to a magical world where she befriends a rebellious witch, Eda, and an adorably tiny warrior, King. Despite not having magical abilities, Luz pursues her dream of becoming a witch by serving as Eda's apprentice at the Owl House and ultimately finds a new family in an unlikely setting.",
-        "overview_ar": "An animated fantasy-comedy series that follows Luz, a self-assured teenage girl who accidentally stumbles upon a portal to a magical world where she befriends a rebellious witch, Eda, and an adorably tiny warrior, King. Despite not having magical abilities, Luz pursues her dream of becoming a witch by serving as Eda's apprentice at the Owl House and ultimately finds a new family in an unlikely setting.",
+        "overview_ar": "مسلسل رسوم متحركة خيالي كوميدي يتبع لوز ، وهي فتاة مراهقة واثقة من نفسها تتعثر عن طريق الخطأ على بوابة إلى عالم سحري حيث تصادق ساحرة متمردة ، إيدا ، ومحارب صغير بشكل رائع ، الملك. على الرغم من عدم امتلاكها قدرات سحرية ، إلا أن لوز تسعى لتحقيق حلمها في أن تصبح ساحرة من خلال العمل كمتدرب لدى إيدا في بيت البومة وتجد في النهاية عائلة جديدة في بيئة غير محتملة.",
         "poster_path": "/rhzwpJBhi2WkfihXndS1xUdQlzB.jpg",
         "vote_average": 8.662,
         "release_date": "2020-01-10",
@@ -12000,18 +12000,6 @@
         "popularity": 22.2313
     },
     {
-        "id": 2382,
-        "type": "tv",
-        "title": "Freaks and Geeks",
-        "title_ar": "Freaks and Geeks",
-        "overview": "High school mathlete Lindsay Weir rebels and begins hanging out with a crowd of burnouts (the \"freaks\"), while her brother Sam Weir navigates a different part of the social universe with his nerdy friends (the \"geeks\").",
-        "overview_ar": "High school mathlete Lindsay Weir rebels and begins hanging out with a crowd of burnouts (the \"freaks\"), while her brother Sam Weir navigates a different part of the social universe with his nerdy friends (the \"geeks\").",
-        "poster_path": "/tPqV63zcW6ZV0Hd48DMGb5UzQIG.jpg",
-        "vote_average": 8.175,
-        "release_date": "1999-09-25",
-        "popularity": 22.2313
-    },
-    {
         "id": 4046,
         "type": "tv",
         "title": "Spooks",
@@ -12115,7 +12103,7 @@
         "overview": "At the turn of the century, the Angels returned to Earth, seeking to wipe out humanity in an apocalyptic fury. Devastated, mankind's last remnants moved underground to wait for the day when the Angels would come back to finish the job. Fifteen years later, that day has come... but this time, humanity is ready to fight back with terrifying bio-mechanical weapons known as the Evangelions. Watch as Shinji, Rei, Asuka and the rest of the mysterious shadow agency Nerv battle to save earth from total annihilation.",
         "overview_ar": "At the turn of the century, the Angels returned to Earth, seeking to wipe out humanity in an apocalyptic fury. Devastated, mankind's last remnants moved underground to wait for the day when the Angels would come back to finish the job. Fifteen years later, that day has come... but this time, humanity is ready to fight back with terrifying bio-mechanical weapons known as the Evangelions. Watch as Shinji, Rei, Asuka and the rest of the mysterious shadow agency Nerv battle to save earth from total annihilation.",
         "poster_path": "/y2ah9t0navXyIvoHg1uIbIHO3tt.jpg",
-        "vote_average": 8.565,
+        "vote_average": 8.564,
         "release_date": "1995-10-04",
         "popularity": 22.2832
     },
@@ -12163,7 +12151,7 @@
         "overview": "Daryl washes ashore in France and struggles to piece together how he got there and why. The series tracks his journey across a broken but resilient France as he hopes to find a way back home. As he makes the journey, though, the connections he forms along the way complicate his ultimate plan.",
         "overview_ar": "يصل \"داريل\" إلى الشاطئ في فرنسا ويكافح من أجل فهم كيفية وصوله إلى هناك ولماذا. يتتبع المسلسل رحلته عبر فرنسا المكسورة ولكن المرنة حيث يأمل في العثور على طريق العودة إلى الوطن. أثناء قيامه بالرحلة، فإن الروابط التي يشكلها على طول الطريق تزيد من تعقيد خطته النهائية.",
         "poster_path": "/sP5QdW9FN18XWcA4ROz3MPAQBTx.jpg",
-        "vote_average": 8.021,
+        "vote_average": 8.02,
         "release_date": "2023-09-10",
         "popularity": 23.7153
     },
@@ -12235,9 +12223,21 @@
         "overview": "Denji has a simple dream—to live a happy and peaceful life, spending time with a girl he likes. This is a far cry from reality, however, as Denji is forced by the yakuza into killing devils in order to pay off his crushing debts. Using his pet devil Pochita as a weapon, he is ready to do anything for a bit of cash.",
         "overview_ar": "بالطبع لا يسمى العرض \"رجل المنشار\" من أجل لا شيء. دينجي يجعل صداقات مع (الذي هو في الواقع كل من الشيطان والمنشار) يدعى بوتشيتا. بعد مقتل دينجي ، يندمج الشيطان معه ، ويحول البطل إلى \"هجين\" ويمنحه القدرة على تفريخ المناشير في جميع أنحاء جسده. لديه أيضا رأس حلو يشبه الميكا مع أسنان حادة ومنشار جبين ، والذي يستخدمه لتقطيع الشياطين الضخمة. movil00",
         "poster_path": "/yVtx7Xn9UxNJqvG2BkvhCcmed9S.jpg",
-        "vote_average": 8.51,
+        "vote_average": 8.509,
         "release_date": "2022-10-12",
         "popularity": 22.3645
+    },
+    {
+        "id": 10952,
+        "type": "tv",
+        "title": "Rawhide",
+        "title_ar": "Rawhide",
+        "overview": "The tale of trail boss Gil Favor and his trusty foreman Rowdy Yates as they drives cattle across the old west. Along the way they meet up with adventure and drama.",
+        "overview_ar": "The tale of trail boss Gil Favor and his trusty foreman Rowdy Yates as they drives cattle across the old west. Along the way they meet up with adventure and drama.",
+        "poster_path": "/lz5B4BoaOxNJuvjGe9LcS3GpBEK.jpg",
+        "vote_average": 7.2,
+        "release_date": "1959-01-09",
+        "popularity": 19.3148
     },
     {
         "id": 35790,
@@ -14355,7 +14355,7 @@
         "id": 278043,
         "type": "tv",
         "title": "You and I Are Polar Opposites",
-        "title_ar": "You and I Are Polar Opposites",
+        "title_ar": "正反対な君と僕",
         "overview": "Suzuki's a high school girl in love, but the guy she's fallen for is nothing like her! While she's cheerful, outgoing, and always trying to fit in, her classmate Yusuke Tani is stoic, quiet, and doesn't seem to care what people think of him. Will Suzuki be able to overcome her anxieties and ask him out, or will she discover that opposites really don't attract?",
         "overview_ar": "Suzuki's a high school girl in love, but the guy she's fallen for is nothing like her! While she's cheerful, outgoing, and always trying to fit in, her classmate Yusuke Tani is stoic, quiet, and doesn't seem to care what people think of him. Will Suzuki be able to overcome her anxieties and ask him out, or will she discover that opposites really don't attract?",
         "poster_path": "/9hRuMU33DBz4z1vaYBRqLLuFFbQ.jpg",
@@ -15120,6 +15120,18 @@
         "popularity": 19.4407
     },
     {
+        "id": 87739,
+        "type": "tv",
+        "title": "The Queen's Gambit",
+        "title_ar": "مناورة الملكة",
+        "overview": "In a 1950s orphanage, a young girl reveals an astonishing talent for chess and begins an unlikely journey to stardom while grappling with addiction.",
+        "overview_ar": "في دار للأيتام في الخمسينيّات، تُظهر فتاة صغيرة موهبتها المذهلة في لعبة الشطرنج، وتبدأ رحلة نحو النجومية لم تخطر ببالها فيما تصارع إدمانها.",
+        "poster_path": "/zU0htwkhNvBQdVSIKB9s6hgVeFK.jpg",
+        "vote_average": 8.447,
+        "release_date": "2020-10-23",
+        "popularity": 20.1375
+    },
+    {
         "id": 4602,
         "type": "tv",
         "title": "That's So Raven",
@@ -15199,7 +15211,7 @@
         "overview": "A high energy, fast paced cooking competition that challenges four up-and-coming chefs to turn a selection of everyday ingredients into an extraordinary three-course meal. After each course, a contestant gets “chopped” by our panel of esteemed culinary luminaries until the last man or woman left standing claims victory.",
         "overview_ar": "A high energy, fast paced cooking competition that challenges four up-and-coming chefs to turn a selection of everyday ingredients into an extraordinary three-course meal. After each course, a contestant gets “chopped” by our panel of esteemed culinary luminaries until the last man or woman left standing claims victory.",
         "poster_path": "/x7g390tj73dtlGX3ajZrlQRcRpO.jpg",
-        "vote_average": 6.451,
+        "vote_average": 6.395,
         "release_date": "2009-01-13",
         "popularity": 19.9081
     },
@@ -15331,7 +15343,7 @@
         "overview": "The orphaned Baudelaire children face trials, tribulations and the evil Count Olaf, all in their quest to uncover the secret of their parents' death.",
         "overview_ar": "يواجه أطفال \"بودلير\" اليتامى المصاعب والمحن بالإضافة إلى الكونت \"أولاف\" الشرير، في مسعاهم المصيري لكشف أسرارهم العائلية الدفينة.",
         "poster_path": "/qg7WXAatXyQq6zO3SnWnRJEayeZ.jpg",
-        "vote_average": 7.4,
+        "vote_average": 7.393,
         "release_date": "2017-01-13",
         "popularity": 18.7442
     },
@@ -15586,18 +15598,6 @@
         "vote_average": 7.907,
         "release_date": "1951-10-15",
         "popularity": 18.5093
-    },
-    {
-        "id": 242199,
-        "type": "tv",
-        "title": "贝瓦儿歌",
-        "title_ar": "贝瓦儿歌",
-        "overview": "",
-        "overview_ar": "",
-        "poster_path": "/dD6sterTquFEY4Up8O47zvCxUjb.jpg",
-        "vote_average": 0.0,
-        "release_date": "2015-01-20",
-        "popularity": 21.0291
     },
     {
         "id": 242199,
@@ -20160,18 +20160,6 @@
         "popularity": 15.9463
     },
     {
-        "id": 20353,
-        "type": "tv",
-        "title": "Magical DoReMi",
-        "title_ar": "دروبي مع دو ري مي",
-        "overview": "Ojamajo Doremi, known as Magical DoReMi internationally, is a magical girl anime television series created by Toei Animation in 1999. It focuses on elementary school students who become witch apprentices. Led by Doremi Harukaze, the girls must maintain their double lives in secret.\n\nOjamajo Doremi has been followed up by three direct sequels, lasting until its end in 2003. During the television series' runtime, two companion films were released in theaters. The English dub, produced by 4Kids Entertainment, released a preview episode in the US airing on August 13, 2005, and the first episode on September 10, 2005.",
-        "overview_ar": "رأت رفيف محل السحر فدخلته فرأت الانسة هناء وعرفت انها ساحرة فتحولت  إلى ضفدع أخضر اسمه طب طب ولكي تعود إلى هيأتها الطبيعية يجب أن يتجاوز  الشخص الذي عرفها وهي رفيف 10 اختبارات في عالم السحر أو بالدبلجة العربية \"  كوكب سيما \" فجعلها تمثل كوكب الأرض وبعدها أصبحت صديقاتها مثلها وهما  ليلى وصفاء وقد اعطوهن عصا الطلبات لكي تلبى أي طلب لهم ولكن تحتاج عصا  الطلبات إلى كرات لكي تعمل\n\nو هذه الكرات لابد ان يشترهن بالمال لذلك قاموا بعمل محل لبيع الأشياء وبعدها يحصلون على المال.",
-        "poster_path": "/iCINo8JNXswWelsEycO1frahHS1.jpg",
-        "vote_average": 8.4,
-        "release_date": "1999-02-07",
-        "popularity": 15.9463
-    },
-    {
         "id": 239385,
         "type": "tv",
         "title": "The Manipulated",
@@ -20251,7 +20239,7 @@
         "overview": "Former Jedi Knight Ahsoka Tano investigates an emerging threat to a vulnerable galaxy.",
         "overview_ar": "بعد انهيار إمبراطورية المجرة، تسعى أسوكا للتحقيق في تهديد جديد يضع المجرة بكاملها في خطر.",
         "poster_path": "/eiJeWeCAEZAmRppnXHiTWDcCd3Q.jpg",
-        "vote_average": 7.439,
+        "vote_average": 7.435,
         "release_date": "2023-08-22",
         "popularity": 16.5093
     },
@@ -20374,6 +20362,18 @@
         "vote_average": 6.384,
         "release_date": "2013-02-03",
         "popularity": 14.2111
+    },
+    {
+        "id": 312175,
+        "type": "tv",
+        "title": "The Secret Friends Club",
+        "title_ar": "마니또 클럽",
+        "overview": "“The Secret Friends Club” is a reality variety show where cast members secretly prepare a special gift for someone without revealing their identities.",
+        "overview_ar": "“The Secret Friends Club” is a reality variety show where cast members secretly prepare a special gift for someone without revealing their identities.",
+        "poster_path": "/8q5JnU3QeDPwkAPXrSnO2BVvm7k.jpg",
+        "vote_average": 6.0,
+        "release_date": "2026-02-01",
+        "popularity": 16.7697
     },
     {
         "id": 67156,
@@ -20640,18 +20640,6 @@
         "popularity": 16.559
     },
     {
-        "id": 204266,
-        "type": "tv",
-        "title": "TRIGUN STAMPEDE",
-        "title_ar": "TRIGUN STAMPEDE",
-        "overview": "Vash the Stampede's a joyful gunslinging pacifist, so why does he have a $$6 million bounty on his head? That's what's puzzling rookie reporter Meryl Stryfe and her jaded veteran partner when looking into the vigilante only to find someone who hates blood. But their investigation turns out to uncover something heinous—his evil twin brother, Millions Knives.",
-        "overview_ar": "Vash the Stampede's a joyful gunslinging pacifist, so why does he have a $$6 million bounty on his head? That's what's puzzling rookie reporter Meryl Stryfe and her jaded veteran partner when looking into the vigilante only to find someone who hates blood. But their investigation turns out to uncover something heinous—his evil twin brother, Millions Knives.",
-        "poster_path": "/h1AvI9Mt6v15q5ynb3t9Dp4czBm.jpg",
-        "vote_average": 7.271,
-        "release_date": "2023-01-07",
-        "popularity": 16.559
-    },
-    {
         "id": 248361,
         "type": "tv",
         "title": "Beyond the Gates",
@@ -20827,7 +20815,7 @@
         "overview": "A fresh and funny take on modern friendship and what one urban family will do to stay friends after the perfect couple who brought them all together break up on their wedding day. The failed wedding forces them all to question their life choices. Then there are Alex and Dave themselves, who strike a truce and must learn to live with the changes their breakup has brought.",
         "overview_ar": "A fresh and funny take on modern friendship and what one urban family will do to stay friends after the perfect couple who brought them all together break up on their wedding day. The failed wedding forces them all to question their life choices. Then there are Alex and Dave themselves, who strike a truce and must learn to live with the changes their breakup has brought.",
         "poster_path": "/lY44BjOnwCqtUO4VoKOz7IcG9RC.jpg",
-        "vote_average": 6.9,
+        "vote_average": 6.871,
         "release_date": "2011-04-13",
         "popularity": 13.6615
     },
@@ -20875,29 +20863,17 @@
         "overview": "After the foods win their war against the humans at the end of the film, they create Cibopolis, a city of their own ruled entirely by foods. But soon, problems arise, including rain, crows, and internal discord among the foods. To find answers, Frank, Brenda, and Barry set out to find a human.",
         "overview_ar": "After the foods win their war against the humans at the end of the film, they create Cibopolis, a city of their own ruled entirely by foods. But soon, problems arise, including rain, crows, and internal discord among the foods. To find answers, Frank, Brenda, and Barry set out to find a human.",
         "poster_path": "/cPLk5uvh0Am0UQlxRP4xqNcVQD3.jpg",
-        "vote_average": 6.874,
+        "vote_average": 6.848,
         "release_date": "2024-07-11",
         "popularity": 16.35
-    },
-    {
-        "id": 125909,
-        "type": "tv",
-        "title": "Batman: Caped Crusader",
-        "title_ar": "Batman: Caped Crusader",
-        "overview": "Welcome to Gotham City, where the corrupt outnumber the good, criminals run rampant and law-abiding citizens live in a constant state of fear. Forged in the fire of tragedy, wealthy socialite Bruce Wayne becomes something both more and less than human—the Batman. His one-man crusade for justice attracts unexpected allies within the GCPD and City Hall, but his heroic actions spawn deadly, unforeseen ramifications.",
-        "overview_ar": "Welcome to Gotham City, where the corrupt outnumber the good, criminals run rampant and law-abiding citizens live in a constant state of fear. Forged in the fire of tragedy, wealthy socialite Bruce Wayne becomes something both more and less than human—the Batman. His one-man crusade for justice attracts unexpected allies within the GCPD and City Hall, but his heroic actions spawn deadly, unforeseen ramifications.",
-        "poster_path": "/imuZQcnPNKNygPw28TESUq4tNsb.jpg",
-        "vote_average": 7.331,
-        "release_date": "2024-08-01",
-        "popularity": 15.2063
     },
     {
         "id": 76121,
         "type": "tv",
         "title": "DARLING in the FRANXX",
-        "title_ar": "حبيبي في فرانكس",
+        "title_ar": "DARLING in the FRANXX",
         "overview": "The distant future: Humanity established the mobile fort city, Plantation, upon the ruined wasteland. Within the city were pilot quarters, Mistilteinn, otherwise known as the “Birdcage.” That is where the children live... Their only mission in life was the fight. Their enemies are the mysterious giant organisms known as Kyoryu. The children operate robots known as FRANXX in order to face these still unseen enemies. Among them was a boy who was once called a child prodigy: Code number 016, Hiro. One day, a mysterious girl called Zero Two appears in front of Hiro. “I’ve found you, my Darling.”",
-        "overview_ar": "تدور أحداث القصة في المستقبل البعيد.  دمرت الأرض ، وأنشأت البشرية مدينة الحصن المتنقلة بلانتيشن.  يعيش الطيارون المنتجون داخل بلانتيشن في مستلتين ، ويعرفون أيضًا باسم \"قفص العصافير\".  يعيش الأطفال هناك ولا يعرفون شيئًا عن العالم الخارجي أو حرية السماء.  تتكون حياتهم من القتال لتنفيذ المهام.  أعداؤهم عبارة عن أشكال حياة عملاقة غامضة تُعرف باسم Kyouryuu ، ويطلق الروبوتات التي يقودها الأطفال والتي تسمى Franxx لمواجهتها.  بالنسبة للأطفال ، فإن ركوب فرانكس يثبت وجودهم.  ولد اسمه هيرو كود: 016 ، وكان معروفا في السابق بأنه معجزة.  ومع ذلك ، فقد تخلف ، ويبدو أن وجوده غير ضروري.  عدم تجريب فرانكس هو نفس التوقف عن الوجود.  في أحد الأيام ، ظهرت أمامه فتاة غامضة تُعرف باسم \"زيرو تو\".  ينمو من رأسها قرنان.",
+        "overview_ar": "The distant future: Humanity established the mobile fort city, Plantation, upon the ruined wasteland. Within the city were pilot quarters, Mistilteinn, otherwise known as the “Birdcage.” That is where the children live... Their only mission in life was the fight. Their enemies are the mysterious giant organisms known as Kyoryu. The children operate robots known as FRANXX in order to face these still unseen enemies. Among them was a boy who was once called a child prodigy: Code number 016, Hiro. One day, a mysterious girl called Zero Two appears in front of Hiro. “I’ve found you, my Darling.”",
         "poster_path": "/m6R8gI3brohD6izeVCXFmuGeV2m.jpg",
         "vote_average": 8.536,
         "release_date": "2018-01-13",
@@ -21060,18 +21036,6 @@
         "popularity": 15.0656
     },
     {
-        "id": 72844,
-        "type": "tv",
-        "title": "The Haunting of Hill House",
-        "title_ar": "The Haunting of Hill House",
-        "overview": "Flashing between past and present, a fractured family confronts haunting memories of their old home and the terrifying events that drove them from it.",
-        "overview_ar": "Flashing between past and present, a fractured family confronts haunting memories of their old home and the terrifying events that drove them from it.",
-        "poster_path": "/38PkhBGRQtmVx2drvPik3F42qHO.jpg",
-        "vote_average": 8.108,
-        "release_date": "2018-10-12",
-        "popularity": 15.815
-    },
-    {
         "id": 2617,
         "type": "tv",
         "title": "Step by Step",
@@ -21118,6 +21082,42 @@
         "vote_average": 5.6,
         "release_date": "1958-10-05",
         "popularity": 13.0931
+    },
+    {
+        "id": 223564,
+        "type": "tv",
+        "title": "The 100 Girlfriends Who Really, Really, Really, Really, REALLY Love You",
+        "title_ar": "君のことが大大大大大好きな100人の彼女",
+        "overview": "Rentaro Aijo was rejected 100 times in middle school. He visits a shrine and prays for better luck in high school. The God of Love appears and promises that he'll soon meet 100 people he's destined to date. But there's a catch—once destiny introduces someone to him, the two must happily love each other. If they don't, they'll die. What will befall Rentaro and his 100 girlfriends in high school?",
+        "overview_ar": "Rentaro Aijo was rejected 100 times in middle school. He visits a shrine and prays for better luck in high school. The God of Love appears and promises that he'll soon meet 100 people he's destined to date. But there's a catch—once destiny introduces someone to him, the two must happily love each other. If they don't, they'll die. What will befall Rentaro and his 100 girlfriends in high school?",
+        "poster_path": "/kBiPU7I7TEJdDXu8tHgVrgL5zAU.jpg",
+        "vote_average": 8.082,
+        "release_date": "2023-10-08",
+        "popularity": 15.6441
+    },
+    {
+        "id": 25760,
+        "type": "tv",
+        "title": "Higurashi: When They Cry",
+        "title_ar": "ひぐらしのなく頃に",
+        "overview": "After moving into the quiet town of Hinamizawa, Maebara Keiichi spends his days blissfully in school often playing games with his local friends. However, appearances can be deceiving. One fateful day, Keiichi stumbles upon news of a murder that had occurred in Hinamizawa. From this point on, horrific events unfold in front of Keiichi, as he soon learns his close friends may not be all that they seem.",
+        "overview_ar": "After moving into the quiet town of Hinamizawa, Maebara Keiichi spends his days blissfully in school often playing games with his local friends. However, appearances can be deceiving. One fateful day, Keiichi stumbles upon news of a murder that had occurred in Hinamizawa. From this point on, horrific events unfold in front of Keiichi, as he soon learns his close friends may not be all that they seem.",
+        "poster_path": "/z6GrUoKte5lzPxR7HWyiSLVieUC.jpg",
+        "vote_average": 7.698,
+        "release_date": "2006-04-05",
+        "popularity": 14.5666
+    },
+    {
+        "id": 4330,
+        "type": "tv",
+        "title": "Millennium",
+        "title_ar": "Millennium",
+        "overview": "A retired FBI serial-profiler joins the mysterious Millennium Group, a team of underground ex-law enforcement experts dedicated to fighting against the ever-growing forces of evil and darkness in the world.",
+        "overview_ar": "A retired FBI serial-profiler joins the mysterious Millennium Group, a team of underground ex-law enforcement experts dedicated to fighting against the ever-growing forces of evil and darkness in the world.",
+        "poster_path": "/ctTG2tps3tbcYvFAguKgsc6y8C7.jpg",
+        "vote_average": 7.691,
+        "release_date": "1996-10-25",
+        "popularity": 13.413
     },
     {
         "id": 62974,
@@ -21615,9 +21615,9 @@
         "id": 76075,
         "type": "tv",
         "title": "Laid-Back Camp",
-        "title_ar": "Laid-Back Camp",
+        "title_ar": "مخيم الاسترخاء",
         "overview": "Nadeshiko, a high school student who had moved from Shizuoka to Yamanashi, decides to see the famous, 1000 yen-bill-featured Mount Fuji. Even though she manages to bike all the way to Motosu, she's forced to turn back because of worsening weather. Unable to set her eyes on her goal, she faints partway to her destination. When she wakes up, it's night, in a place she's never been before, with no way of knowing how to get home. Nadeshiko is saved when she encounters Rin, a girl who is out camping by herself. This outdoorsy girls story begins with this first encounter between Nadeshiko and Rin.",
-        "overview_ar": "Nadeshiko, a high school student who had moved from Shizuoka to Yamanashi, decides to see the famous, 1000 yen-bill-featured Mount Fuji. Even though she manages to bike all the way to Motosu, she's forced to turn back because of worsening weather. Unable to set her eyes on her goal, she faints partway to her destination. When she wakes up, it's night, in a place she's never been before, with no way of knowing how to get home. Nadeshiko is saved when she encounters Rin, a girl who is out camping by herself. This outdoorsy girls story begins with this first encounter between Nadeshiko and Rin.",
+        "overview_ar": "ناديشيكو، تلميذة في المدرسة الثانويّة كانت قد انتقلت من شيزوكا إلى ياماناشي، تقرّر أن ترى جبل فوجي الشّهير والمرسوم على العملة الورقيّة من فئة 1000 ين. ورغم أنّها تتمكّن من قطع كلّ المسافة إلى موتوسو بدرّاجة هوائيّة، إلّا أنّها تضطرّ للتراجع بسببِ سوء حالة الطقس. في عجزها عن تحقيقِ هدفها، تغيب عن الوعي في منتصفِ الطرق إلى وجهتها. عندما تستيقظ، تجد نفسها ليلاً في مكانٍ لم تكن فيه من قبل، ولا تعرف ضالّتها إلى المنزلِ إطلاقاً. تنجو ناديشيكو عندما تلتقي برين، وهي فتاةٌ خرجَتْ بمفردها للتخييم. قصّة الفتيات في الهواءِ الطلق هذه تبدأ بهذا اللّقاء الأوّل بين ناديشيكو ورين.",
         "poster_path": "/1c5xBDBQQwa1bvX5fibAeymReGg.jpg",
         "vote_average": 8.2,
         "release_date": "2018-01-04",
@@ -21807,7 +21807,7 @@
         "id": 83639,
         "type": "tv",
         "title": "Girl from Nowhere",
-        "title_ar": "Girl from Nowhere",
+        "title_ar": "เด็กใหม่",
         "overview": "A mysterious, clever girl named Nanno transfers to different schools, exposing the lies and misdeeds of the students and faculty at every turn.",
         "overview_ar": "A mysterious, clever girl named Nanno transfers to different schools, exposing the lies and misdeeds of the students and faculty at every turn.",
         "poster_path": "/9hDXqzN5l4lBmEtb8IstXr91k8z.jpg",
@@ -21819,7 +21819,7 @@
         "id": 242722,
         "type": "tv",
         "title": "Shrimad Ramayan",
-        "title_ar": "Shrimad Ramayan",
+        "title_ar": "श्रीमद् रामायण",
         "overview": "Shrimad Ramayan is an ambitious television series that brings to life the timeless epic, the Ramayan, with a deep commitment to authenticity, cultural reverence and a contemporary sensibility.",
         "overview_ar": "Shrimad Ramayan is an ambitious television series that brings to life the timeless epic, the Ramayan, with a deep commitment to authenticity, cultural reverence and a contemporary sensibility.",
         "poster_path": "/AkBFffK3kKrBgNEz81IHC1G9Eks.jpg",
@@ -21833,7 +21833,7 @@
         "title": "Dead to Me",
         "title_ar": "Dead to Me",
         "overview": "A hotheaded widow searching for the hit-and-run driver who mowed down her husband befriends an eccentric optimist who isn't quite what she seems.",
-        "overview_ar": "A hotheaded widow searching for the hit-and-run driver who mowed down her husband befriends an eccentric optimist who isn't quite what she seems.",
+        "overview_ar": "خلال بحث أرملة صعبة المراس عن سائق سيارة دهس زوجها ولاذ بالفرار، تنشأ صداقة بينها وبين امرأة متفائلة غريبة الأطوار تخفي ماضيًا مريبًا.",
         "poster_path": "/mAj18PHeACxqcrEus4pD8pksRmB.jpg",
         "vote_average": 7.301,
         "release_date": "2019-05-03",
@@ -22080,42 +22080,6 @@
         "popularity": 12.1588
     },
     {
-        "id": 67676,
-        "type": "tv",
-        "title": "The Disastrous Life of Saiki K.",
-        "title_ar": "斉木楠雄のΨ難",
-        "overview": "High school sophomore Kusuo Saiki swore as a child that he would keep his psychic talents hidden, but his abilities still make his life difficult.",
-        "overview_ar": "High school sophomore Kusuo Saiki swore as a child that he would keep his psychic talents hidden, but his abilities still make his life difficult.",
-        "poster_path": "/tpym31HVeQgenaubvCxkMF3kFHy.jpg",
-        "vote_average": 8.3,
-        "release_date": "2016-07-11",
-        "popularity": 14.389
-    },
-    {
-        "id": 80281,
-        "type": "tv",
-        "title": "Larva",
-        "title_ar": "라바",
-        "overview": "Two curious worms spend their days investigating the otherworldly objects that fall through the grate into their subterranean world.",
-        "overview_ar": "Two curious worms spend their days investigating the otherworldly objects that fall through the grate into their subterranean world.",
-        "poster_path": "/jDZ2rAmJ8mTojT929wTRMFKpv2L.jpg",
-        "vote_average": 7.0,
-        "release_date": "2011-03-26",
-        "popularity": 15.2984
-    },
-    {
-        "id": 1530,
-        "type": "tv",
-        "title": "My Three Sons",
-        "title_ar": "My Three Sons",
-        "overview": "A widower and aeronautical engineer named Steven Douglas raises three sons with the help of his father-in-law, and later the boys' great-uncle. An adopted son, a stepdaughter, wives, and another generation of sons join the loving family in later seasons.",
-        "overview_ar": "A widower and aeronautical engineer named Steven Douglas raises three sons with the help of his father-in-law, and later the boys' great-uncle. An adopted son, a stepdaughter, wives, and another generation of sons join the loving family in later seasons.",
-        "poster_path": "/jOnSZ87XrV04mu5ZKgr8TUVVVz4.jpg",
-        "vote_average": 6.5,
-        "release_date": "1960-09-29",
-        "popularity": 12.1588
-    },
-    {
         "id": 2560,
         "type": "tv",
         "title": "UFO",
@@ -22207,7 +22171,7 @@
         "overview": "When her life comes to an abrupt end, George discovers that death is nothing like she thought it would be. Recruited to collect the souls of others as they die, she suddenly finds herself an unwilling participant in a line of work she never knew existed: Grim Reaping!",
         "overview_ar": "When her life comes to an abrupt end, George discovers that death is nothing like she thought it would be. Recruited to collect the souls of others as they die, she suddenly finds herself an unwilling participant in a line of work she never knew existed: Grim Reaping!",
         "poster_path": "/92pJimSg6exk0Dt5u5XB1O5DZtz.jpg",
-        "vote_average": 7.7,
+        "vote_average": 7.648,
         "release_date": "2003-06-27",
         "popularity": 15.0805
     },
@@ -22318,6 +22282,42 @@
         "vote_average": 6.5,
         "release_date": "2001-10-05",
         "popularity": 14.4662
+    },
+    {
+        "id": 64190,
+        "type": "tv",
+        "title": "Volle Kanne",
+        "title_ar": "Volle Kanne",
+        "overview": "",
+        "overview_ar": "",
+        "poster_path": null,
+        "vote_average": 3.8,
+        "release_date": "1999-08-30",
+        "popularity": 14.4406
+    },
+    {
+        "id": 2651,
+        "type": "tv",
+        "title": "Profiler",
+        "title_ar": "Profiler",
+        "overview": "Rachel Burke is a criminal profiler, one of the best, actually.\n\nShe, along with a sophisticated team of specialists on the FBI's Violent Crimes Task Force in Atlanta, investigates crimes throughout the country.\n\nTogether, they solve the toughest of cases while trying to live their lives as best they can.",
+        "overview_ar": "Rachel Burke is a criminal profiler, one of the best, actually.\n\nShe, along with a sophisticated team of specialists on the FBI's Violent Crimes Task Force in Atlanta, investigates crimes throughout the country.\n\nTogether, they solve the toughest of cases while trying to live their lives as best they can.",
+        "poster_path": "/rZPFS2CRMZOy2LV4hE64KBxAbGg.jpg",
+        "vote_average": 7.021,
+        "release_date": "1996-09-21",
+        "popularity": 12.1692
+    },
+    {
+        "id": 241609,
+        "type": "tv",
+        "title": "Your Friends & Neighbors",
+        "title_ar": "Your Friends & Neighbors",
+        "overview": "When a financial titan suddenly finds himself divorced and jobless, he starts robbing his wealthy neighbors to stay afloat. Stealing from his own social circle strangely exhilarates him—but he gradually gets tangled in a deadly web.",
+        "overview_ar": "يجد عملاق مالي نفسه فجأة مطلّقاً وعاطلاً عن العمل، فيبدأ بسرقة جيرانه الأثرياء ليدبّر أموره ويتبين أن السرقة من أفراد دائرته الاجتماعية تثيره بشكل غريب. إلّا أنه يتورط تدريجياً في شبكة فتاكة.",
+        "poster_path": "/yhqduKpikyUNQXlCQk9DrwMuBM8.jpg",
+        "vote_average": 7.388,
+        "release_date": "2025-04-10",
+        "popularity": 14.0437
     },
     {
         "id": 241609,
@@ -23520,30 +23520,6 @@
         "popularity": 15.1246
     },
     {
-        "id": 131040,
-        "type": "tv",
-        "title": "Call Me By Fire",
-        "title_ar": "Call Me By Fire",
-        "overview": "The male version of Sisters Who Make Waves. The show focuses on breaking the limit plus challenging oneself, and opening up the long-lost dream of being in a boy band for the brothers. Regarding the competition system, after three months of live-in training & subject assessment, the winning team will finally be born and make their debut in a group.",
-        "overview_ar": "The male version of Sisters Who Make Waves. The show focuses on breaking the limit plus challenging oneself, and opening up the long-lost dream of being in a boy band for the brothers. Regarding the competition system, after three months of live-in training & subject assessment, the winning team will finally be born and make their debut in a group.",
-        "poster_path": "/hB5wJgHi7g04zcTTn92bshEKkQ4.jpg",
-        "vote_average": 8.0,
-        "release_date": "2021-08-12",
-        "popularity": 15.2812
-    },
-    {
-        "id": 62313,
-        "type": "tv",
-        "title": "Lip Sync Battle",
-        "title_ar": "Lip Sync Battle",
-        "overview": "Each episode features two A-list celebrities like you've never seen them before - syncing their hearts out in hysterically epic performances. Hosted by LL Cool J with colorful commentary by social media maven and supermodel co-host, Chrissy Teigen. The mic is off, the battle is on!",
-        "overview_ar": "Each episode features two A-list celebrities like you've never seen them before - syncing their hearts out in hysterically epic performances. Hosted by LL Cool J with colorful commentary by social media maven and supermodel co-host, Chrissy Teigen. The mic is off, the battle is on!",
-        "poster_path": "/AYmEExaBgjiEIwrLPb7AoH4nqy.jpg",
-        "vote_average": 6.39,
-        "release_date": "2015-04-02",
-        "popularity": 13.8583
-    },
-    {
         "id": 66830,
         "type": "tv",
         "title": "Greenleaf",
@@ -23592,6 +23568,18 @@
         "popularity": 12.4043
     },
     {
+        "id": 125909,
+        "type": "tv",
+        "title": "Batman: Caped Crusader",
+        "title_ar": "الرجل الوطواط، المحارب ذو الرداء",
+        "overview": "Welcome to Gotham City, where the corrupt outnumber the good, criminals run rampant and law-abiding citizens live in a constant state of fear. Forged in the fire of tragedy, wealthy socialite Bruce Wayne becomes something both more and less than human—the Batman. His one-man crusade for justice attracts unexpected allies within the GCPD and City Hall, but his heroic actions spawn deadly, unforeseen ramifications.",
+        "overview_ar": "مرحباً بكم في مدينة \"غوثام\"، حيث يعيث المجرمون فساداً ويعيش المواطنون الملتزمون بالقانون في حالة دائمة من الخوف. من خلال المعاناة، يتحول الاجتماعي الثري \"بروس وين\" إلى شخصية تشبه الأبطال الخارقين، أي إلى \"الرجل الوطواط\". تجذب حملته الفردية من أجل تحقيق العدالة حلفاء غير متوقعين داخل شرطة \"غوثام\" وبلدية المدينة، لكن أفعاله البطولية تولد عواقب مميتة وغير متوقعة.",
+        "poster_path": "/imuZQcnPNKNygPw28TESUq4tNsb.jpg",
+        "vote_average": 7.3,
+        "release_date": "2024-08-01",
+        "popularity": 15.2063
+    },
+    {
         "id": 208851,
         "type": "tv",
         "title": "A Thousand Blows",
@@ -23623,7 +23611,7 @@
         "overview": "Navy SEAL Commander James Reece turns to vengeance as he investigates the mysterious forces behind the murder of his entire platoon. Free from the military’s command structure, Reece applies the lessons he’s learned from nearly two decades of warfare to hunt down the people responsible.",
         "overview_ar": "يتحول رائد البحرية \"جيمس ريس\" إلى الانتقام بينما يحقق في القوى الغامضة وراء مقتل فصيلته بأكملها. بعيدًا عن هيكل القيادة العسكرية، يطبق\"ريس\" الدروس التي تعلمها من ما يقرب من عقدين من الحرب لتعقب الأشخاص المسؤولين.",
         "poster_path": "/jbyaKYNexl1poKZnEmB6Qobn60s.jpg",
-        "vote_average": 7.967,
+        "vote_average": 7.966,
         "release_date": "2022-06-30",
         "popularity": 15.0618
     },
@@ -23695,7 +23683,7 @@
         "overview": "Wannabe writer Betty Suarez is a plain girl from Queens, who is smart, hardworking and savvy but lacks a fashionable sense of style. When publishing mogul Bradford Meade puts his son Daniel in charge of Mode magazine, he hires Betty to be Daniel's new assistant -- mostly because he knows that she may be the only woman in Manhattan with whom the younger man won't sleep.",
         "overview_ar": "Wannabe writer Betty Suarez is a plain girl from Queens, who is smart, hardworking and savvy but lacks a fashionable sense of style. When publishing mogul Bradford Meade puts his son Daniel in charge of Mode magazine, he hires Betty to be Daniel's new assistant -- mostly because he knows that she may be the only woman in Manhattan with whom the younger man won't sleep.",
         "poster_path": "/prGylxnFpIWMcvHh9sUC46hmiIC.jpg",
-        "vote_average": 6.401,
+        "vote_average": 6.393,
         "release_date": "2006-09-28",
         "popularity": 12.887
     },
@@ -23758,6 +23746,18 @@
         "vote_average": 8.378,
         "release_date": "1983-06-06",
         "popularity": 12.977
+    },
+    {
+        "id": 80605,
+        "type": "tv",
+        "title": "Pékin Express",
+        "title_ar": "Pékin Express",
+        "overview": "",
+        "overview_ar": "",
+        "poster_path": "/FTtjQqz19eJKWxYFll2FDLid1Z.jpg",
+        "vote_average": 6.9,
+        "release_date": "2006-01-15",
+        "popularity": 14.1969
     },
     {
         "id": 10048,
