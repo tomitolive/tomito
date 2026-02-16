@@ -15,6 +15,7 @@ export default function Home() {
     const [trendingMovies, setTrendingMovies] = useState<any[]>([]);
     const [latestMovies, setLatestMovies] = useState<any[]>([]);
     const [latestSeries, setLatestSeries] = useState<any[]>([]);
+    const [ramadanSeries, setRamadanSeries] = useState<any[]>([]);
     const [topRated, setTopRated] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
 
@@ -27,14 +28,16 @@ export default function Home() {
                     trendingData,
                     nowPlayingData,
                     onTheAirData,
-                    topRatedData
+                    topRatedData,
+                    ramadanData
                 ] = await Promise.all([
                     fetchPopular("movie"),
                     fetchPopular("tv"),
                     fetchTrending("movie"),
                     fetchNowPlaying(),
                     fetchOnTheAir(),
-                    fetchTopRated("movie")
+                    fetchTopRated("movie"),
+                    import("@/lib/tmdb").then(m => m.fetchRamadan2026())
                 ]);
 
                 setPopularMovies(popularMoviesData.results);
@@ -42,6 +45,7 @@ export default function Home() {
                 setTrendingMovies(trendingData);
                 setLatestMovies(nowPlayingData.results);
                 setLatestSeries(onTheAirData.results);
+                setRamadanSeries(ramadanData);
                 setTopRated(topRatedData.results);
             } catch (err) {
                 console.error("Failed to fetch dynamic data:", err);
@@ -65,6 +69,15 @@ export default function Home() {
             <Navbar />
             <HeroCarousel items={popularMovies.slice(0, 10)} type="movie" />
             <div className="container mx-auto px-4 py-8 space-y-12">
+                {/* Ramadan 2026 Coming Soon */}
+                {ramadanSeries.length > 0 && (
+                    <ContentRow
+                        title={"قريبا (مسلسلات رمضان 2026)"}
+                        items={ramadanSeries}
+                        type="tv"
+                    />
+                )}
+
                 {/* Trending Section */}
                 <ContentRow title={t("trendingMovies")} items={trendingMovies} type="movie" />
 
