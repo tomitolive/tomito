@@ -960,6 +960,18 @@
         "popularity": 89.7023
     },
     {
+        "id": 80240,
+        "type": "tv",
+        "title": "The Queen of Flow",
+        "title_ar": "رينا ديل فلو",
+        "overview": "Seventeen years after being wrongly imprisoned, a talented songwriter seeks justice against the men who caused her downfall and killed her family.",
+        "overview_ar": "بعد قضاء سبعة عشر عاما في السجن بشكل غير عادل، تسعى كاتبة أغاني موهوبة إلى الانتقام من الرجال الذين أغرقوها وقتلوا عائلتها.",
+        "poster_path": "/fuVuDYrs8sxvEolnYr0wCSvtyTi.jpg",
+        "vote_average": 8.0,
+        "release_date": "2018-06-12",
+        "popularity": 89.7023
+    },
+    {
         "id": 1398,
         "type": "tv",
         "title": "The Sopranos",
@@ -1051,21 +1063,9 @@
         "overview": "Five female prisoners forge a unique bond after a deadly accident... until corruption and turf wars within a ruthless prison threaten to destroy them.",
         "overview_ar": "تتوطد العلاقة بين خمس سجينات بشكل استثنائي بعد حادثة نَجوْنَ منها من رحم الموت... إلى أن يبدأ الفساد والصراع على النفوذ داخل سجنٍ وحشي بتهديد ما يجمعهن وتمزيقه.",
         "poster_path": "/9JWQYB7FkGtg47wFO7GOrUDgYrx.jpg",
-        "vote_average": 7.383,
+        "vote_average": 7.409,
         "release_date": "2025-08-14",
         "popularity": 109.409
-    },
-    {
-        "id": 73586,
-        "type": "tv",
-        "title": "Yellowstone",
-        "title_ar": "يلوستون",
-        "overview": "Follow the violent world of the Dutton family, who controls the largest contiguous ranch in the United States. Led by their patriarch John Dutton, the family defends their property against constant attack by land developers, an Indian reservation, and America’s first National Park.",
-        "overview_ar": "تعيش عائلة (دوتون) كأكبر عائلة في الولايات المتحدة تدير أراضي زراعية، ولكنهم دائمًا يتعرضون لمضايقات من تجار الأراضي، حيث يتعين على العائلة التصدي لتعدي جديد على أرضهم.",
-        "poster_path": "/s4QRRYc1V2e68Qy9Wel9MI8fhRP.jpg",
-        "vote_average": 8.262,
-        "release_date": "2018-06-20",
-        "popularity": 93.8545
     },
     {
         "id": 1695,
@@ -1188,16 +1188,16 @@
         "popularity": 85.0161
     },
     {
-        "id": 250307,
+        "id": 57911,
         "type": "tv",
-        "title": "The Pitt",
-        "title_ar": "مستشفى بيتسبرغ",
-        "overview": "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
-        "overview_ar": "الحياة اليومية لمقدمي الرعاية الصحية في مستشفى بيتسبرغ في بنسلفانيا صراع، فهم يحاولون التوفيق بين الأزمات الشخصية وسياسات مكان العمل وتكلفة علاج المرضى المصابين بأمراض خطيرة، مما يكشف عن المرونة المطلوبة في دعوتهم النبيلة.",
-        "poster_path": "/kvFSpESyBZMjaeOJDx7RS3P1jey.jpg",
-        "vote_average": 8.692,
-        "release_date": "2025-01-09",
-        "popularity": 83.5709
+        "title": "Doraemon",
+        "title_ar": "عبقور",
+        "overview": "Doraemon is an anime TV series created by Fujiko F. Fujio and based on the manga series of the same name. This anime is the much more successful successor of the 1973 anime.",
+        "overview_ar": "روبرت آلي يشبه القط غذاءه المفضل معجون الفاصوليا والكعك المحلى, أتى من المستقبل من القرن الثاني والعشرون، لديه جيب بُعدي في بطنه يمكنه إستخراج أدوات كثيرة منه ليساعد الأطفال بكل الأدوات التي جلبها معه في جيبه البعدي.\n\nيدخل في مغامرات كثيرة ويواجه مشاكل كثيرة تتعلق بأصدقائه الأطفال فكيف سيستطيع التعامل معها؟",
+        "poster_path": "/bHMqPDsW7Lb71CVHXq4PuEvQ4NY.jpg",
+        "vote_average": 7.675,
+        "release_date": "1979-04-02",
+        "popularity": 86.9866
     },
     {
         "id": 615,
@@ -7680,30 +7680,6 @@
         "popularity": 27.0571
     },
     {
-        "id": 219826,
-        "type": "tv",
-        "title": "My Name Is Farah",
-        "title_ar": "اسمي فرح",
-        "overview": "A murder unintentionally witnessed by Farah, who had to flee her country and illegally struggle to survive with her son, and Tahir Lekesiz, whom she met on the same night, will change their lives forever.",
-        "overview_ar": "عندما تشهد لاجئة إيرانية في اسطنبول على جريمة قتل، تصبح مستهدفة من قبل المافيا المحلية. حينئذ، يتوجب عليها إنقاذ نفسها وحماية ابنها المصاب بمرض مزمن.",
-        "poster_path": "/Aj4qfs1KxhdfcPphWyJiTNYXirE.jpg",
-        "vote_average": 8.719,
-        "release_date": "2023-03-01",
-        "popularity": 29.0458
-    },
-    {
-        "id": 90282,
-        "type": "tv",
-        "title": "The Morning Show",
-        "title_ar": "The Morning Show",
-        "overview": "A behind-the-scenes look at the lives of the people who help America wake up in the morning, exploring the unique challenges faced by the men and women who carry out this daily televised ritual.",
-        "overview_ar": "عودة لإشراقة برامج الصباح مع مسلسل درامي صريح وجريء حائز على جائزة Emmy، يستعرض بيئة العمل المعاصرة من منظور الأشخاص الذين يساعدون أمريكا على الاستيقاظ.",
-        "poster_path": "/y9x2R87yt2U616736NJrP0d56dt.jpg",
-        "vote_average": 7.746,
-        "release_date": "2019-11-01",
-        "popularity": 28.36
-    },
-    {
         "id": 198182,
         "type": "tv",
         "title": "Throne of Seal",
@@ -7762,18 +7738,6 @@
         "vote_average": 7.528,
         "release_date": "2010-07-09",
         "popularity": 25.9893
-    },
-    {
-        "id": 223530,
-        "type": "tv",
-        "title": "Star Trek: Starfleet Academy",
-        "title_ar": "Star Trek: Starfleet Academy",
-        "overview": "A young group of cadets come together to pursue a common dream of hope and optimism. Under the watchful and demanding eyes of their instructors, they will discover what it takes to become Starfleet officers as they navigate blossoming friendships, explosive rivalries, first loves and a new enemy that threatens both the Academy and the Federation itself.",
-        "overview_ar": "A young group of cadets come together to pursue a common dream of hope and optimism. Under the watchful and demanding eyes of their instructors, they will discover what it takes to become Starfleet officers as they navigate blossoming friendships, explosive rivalries, first loves and a new enemy that threatens both the Academy and the Federation itself.",
-        "poster_path": "/m4JnADIJkF5ck6jq7GUEcPBKxd0.jpg",
-        "vote_average": 4.759,
-        "release_date": "2026-01-15",
-        "popularity": 28.6778
     },
     {
         "id": 47480,
@@ -7963,7 +7927,7 @@
         "overview": "When Steven Grant, a mild-mannered gift-shop employee, becomes plagued with blackouts and memories of another life, he discovers he has dissociative identity disorder and shares a body with mercenary Marc Spector. As Steven/Marc’s enemies converge upon them, they must navigate their complex identities while thrust into a deadly mystery among the powerful gods of Egypt.",
         "overview_ar": "عندما يعاني ستيفن غرانت، وهو موظف في متجر هدايا معتدل السلوك، من انقطاع التيار الكهربائي وذكريات حياة أخرى، يكتشف أنه يعاني من اضطراب الهوية التفارقية ويشارك جثة مع المرتزق مارك سبيكتور. بينما يتلاقى أعداء ستيفن/مارك عليهم، يجب عليهم التنقل في هوياتهم المعقدة بينما يدفعون إلى لغز قاتل بين آلهة مصر القوية.",
         "poster_path": "/vKDUmKO6F9bSKKyHhg7YGbgcEeF.jpg",
-        "vote_average": 7.653,
+        "vote_average": 7.651,
         "release_date": "2022-03-30",
         "popularity": 31.2387
     },
@@ -8124,6 +8088,18 @@
         "popularity": 30.2166
     },
     {
+        "id": 203737,
+        "type": "tv",
+        "title": "【OSHI NO KO】",
+        "title_ar": "【推しの子】",
+        "overview": "A small-town doctor gets sucked into the ruthless world of show business when he crosses paths with a popular teen idol who holds a secret.",
+        "overview_ar": "قصة الانمي تدور حول آي هوشينو البالغة من العمر ستة عشر عامًا هي آيدول موهوبة وجميلة يعشقها معجبوها. إنها تجسيد لبكر شابة نقية. لكن كل ما يلمع ليس ذهبًا. جورو أميميا طبيبة نسائية في الريف ومن أشد المعجبين بـ آي. لذلك عندما يظهر المعبود الحامل في مستشفاه ، يكون في حيرة من أمره. يعدها جورو بولادة آمنة. لا يعرف سوى القليل ، فإن لقاءه بشخصية غامضة سيؤدي إلى موته المفاجئ – أو هكذا كان يعتقد. يفتح غورو عينيه في حضن معبوده المحبوب ، ويجد أنه ولد من جديد باسم أكوامارين هوشينو – الابن الوليد لعي! بعد أن انقلب عالمه رأسًا على عقب ، سرعان ما يدرك غورو أن عالم الترفيه مليء بالأشواك ، حيث لا تولد الموهبة دائمًا النجاح. هل سيتمكن من حماية ابتسامة آي التي يحبها كثيرًا بمساعدة حليف غريب الأطوار وغير متوقع؟",
+        "poster_path": "/rFp74PFpz14AHrtlVPrLyrSng47.jpg",
+        "vote_average": 8.343,
+        "release_date": "2023-04-12",
+        "popularity": 30.5248
+    },
+    {
         "id": 13654,
         "type": "tv",
         "title": "Play for Today",
@@ -8143,7 +8119,7 @@
         "overview": "Follow a new generation of the Dutton family during the early twentieth century when pandemics, historic drought, the end of Prohibition and the Great Depression all plague the mountain west, and the Duttons who call it home.",
         "overview_ar": "يواجه آل “دوتون” مجموعة جديدة من التحديات في أوائل القرن العشرين، بما في ذلك ازدياد التوسع الغربي وحظر الخمور والكساد العظيم. مسلسل مشتق من مسلسل Yellowstone.",
         "poster_path": "/zgZRJZvZn5cpsWAB0zMUdad3iZd.jpg",
-        "vote_average": 8.219,
+        "vote_average": 8.222,
         "release_date": "2022-12-18",
         "popularity": 29.8236
     },
@@ -8158,6 +8134,30 @@
         "vote_average": 8.209,
         "release_date": "2022-10-09",
         "popularity": 28.3948
+    },
+    {
+        "id": 62017,
+        "type": "tv",
+        "title": "The Man in the High Castle",
+        "title_ar": "The Man in the High Castle",
+        "overview": "Explore what it would be like if the Allied Powers had lost WWII, and Japan and Germany ruled the United States. Based on Philip K. Dick's award-winning novel.",
+        "overview_ar": "خسر الحلفاء الحرب العالمية الثانية ، وأمريكا الآن منقسمة بين إمبراطورية اليابان وألمانيا النازية.  بعد ما يقرب من عقدين من التعايش بين القوتين العظيمتين ، تبدأ اضطرابات مع ظهور اشرطة افلام تعرض واقع مغاير ، وشائعات حول تدهور صحة الفوهرر هتلر",
+        "poster_path": "/xhoDZbMNeyCA0BGPZQsdIiO43Dp.jpg",
+        "vote_average": 7.525,
+        "release_date": "2015-01-15",
+        "popularity": 29.5839
+    },
+    {
+        "id": 45782,
+        "type": "tv",
+        "title": "Sword Art Online",
+        "title_ar": "Sword Art Online",
+        "overview": "In the near future, a Virtual Reality Massive Multiplayer Online Role-Playing Game (VRMMORPG) called Sword Art Online has been released where players control their avatars with their bodies using a piece of technology called Nerve Gear. One day, players discover they cannot log out, as the game creator is holding them captive unless they reach the 100th floor of the game's tower and defeat the final boss. However, if they die in the game, they die in real life. Their struggle for survival starts now...",
+        "overview_ar": "دخل مُبرمج عبقري يُدعى “كازوتو” إلى عالم أفتراضي، عالمُ أنترنت يدعى “فن السيف الرقمي” ليس هُناك مهربٌ من هذا العالم حتى يقوم اللاعب بانهاء اللعبة و لكن سيُؤدي حصول اللاعب على “game over” إلى موته .",
+        "poster_path": "/9m8bFIXPg26taNrFSXGwEORVACD.jpg",
+        "vote_average": 8.173,
+        "release_date": "2012-07-08",
+        "popularity": 27.5819
     },
     {
         "id": 62017,
@@ -9156,18 +9156,6 @@
         "popularity": 27.7215
     },
     {
-        "id": 110492,
-        "type": "tv",
-        "title": "Peacemaker",
-        "title_ar": "Peacemaker",
-        "overview": "The continuing story of Peacemaker, a vainglorious superhero/supervillain who believes in peace at any cost — no matter how many people he has to kill. After a miraculous recovery from his duel with Bloodsport, Peacemaker soon discovers that his freedom comes at a price.",
-        "overview_ar": "The continuing story of Peacemaker, a vainglorious superhero/supervillain who believes in peace at any cost — no matter how many people he has to kill. After a miraculous recovery from his duel with Bloodsport, Peacemaker soon discovers that his freedom comes at a price.",
-        "poster_path": "/eYzbGcYnOUlvj2fa76pTgIXogd7.jpg",
-        "vote_average": 8.204,
-        "release_date": "2022-01-13",
-        "popularity": 26.269
-    },
-    {
         "id": 30801,
         "type": "tv",
         "title": "2 Days and 1 Night",
@@ -9300,18 +9288,6 @@
         "popularity": 27.6771
     },
     {
-        "id": 73107,
-        "type": "tv",
-        "title": "Barry",
-        "title_ar": "Barry",
-        "overview": "A hit man from the Midwest moves to Los Angeles and gets caught up in the city's theatre arts scene.",
-        "overview_ar": "A hit man from the Midwest moves to Los Angeles and gets caught up in the city's theatre arts scene.",
-        "poster_path": "/j1XpwD11f0BAEI7pX6UdMhUVX2F.jpg",
-        "vote_average": 7.9,
-        "release_date": "2018-03-25",
-        "popularity": 26.3515
-    },
-    {
         "id": 39297,
         "type": "tv",
         "title": "Last Man Standing",
@@ -9358,6 +9334,30 @@
         "vote_average": 7.726,
         "release_date": "2008-10-02",
         "popularity": 25.3832
+    },
+    {
+        "id": 67419,
+        "type": "tv",
+        "title": "Victoria",
+        "title_ar": "Victoria",
+        "overview": "The story of Queen Victoria, who came to the throne at a time of great economic turbulence and resurgent republicanism – and died 64 years later the head of the largest empire the world had ever seen, having revitalised the throne’s public image and become “grandmother of Europe”.",
+        "overview_ar": "The story of Queen Victoria, who came to the throne at a time of great economic turbulence and resurgent republicanism – and died 64 years later the head of the largest empire the world had ever seen, having revitalised the throne’s public image and become “grandmother of Europe”.",
+        "poster_path": "/wtu2oxkUuP8bQu8YY7slIlvvvpX.jpg",
+        "vote_average": 7.3,
+        "release_date": "2016-08-28",
+        "popularity": 27.4241
+    },
+    {
+        "id": 1803,
+        "type": "tv",
+        "title": "The Facts of Life",
+        "title_ar": "The Facts of Life",
+        "overview": "Mrs. Edna Garrett, housemother and dietitian at the Eastland School, teaches a group of girls in her charge how to solve those problems that every teenager has to face.",
+        "overview_ar": "Mrs. Edna Garrett, housemother and dietitian at the Eastland School, teaches a group of girls in her charge how to solve those problems that every teenager has to face.",
+        "poster_path": "/45i9VujUbQITmHl3QE3eNs9ZUv3.jpg",
+        "vote_average": 7.081,
+        "release_date": "1979-08-24",
+        "popularity": 26.526
     },
     {
         "id": 67419,
@@ -18480,30 +18480,6 @@
         "popularity": 14.8541
     },
     {
-        "id": 64198,
-        "type": "tv",
-        "title": "Blaze and the Monster Machines",
-        "title_ar": "Blaze and the Monster Machines",
-        "overview": "AJ is an 8-year-old techie who drives monster-truck Blaze, the top racer in Axle City. The two go on adventures that have them taking on problems involving science and math. Many predicaments they face are caused by Blaze's rival, Crusher, a tractor-trailer that will do anything to beat other vehicles to the finish line. The animated series is billed as the first TV show for preschoolers to comprehensively cover areas of science, technology, engineering and math. Each episode introduces different STEM concepts, including buoyancy and trajectory.",
-        "overview_ar": "AJ is an 8-year-old techie who drives monster-truck Blaze, the top racer in Axle City. The two go on adventures that have them taking on problems involving science and math. Many predicaments they face are caused by Blaze's rival, Crusher, a tractor-trailer that will do anything to beat other vehicles to the finish line. The animated series is billed as the first TV show for preschoolers to comprehensively cover areas of science, technology, engineering and math. Each episode introduces different STEM concepts, including buoyancy and trajectory.",
-        "poster_path": "/5DzjYIdgoePjMlmS7RCyUYWhpIK.jpg",
-        "vote_average": 7.3,
-        "release_date": "2014-10-13",
-        "popularity": 14.8541
-    },
-    {
-        "id": 14575,
-        "type": "tv",
-        "title": "The Steve Allen Show",
-        "title_ar": "The Steve Allen Show",
-        "overview": "",
-        "overview_ar": "",
-        "poster_path": "/6Adg8Zw4RkuWVvqMEH3CK5EhCDl.jpg",
-        "vote_average": 5.6,
-        "release_date": "1956-06-24",
-        "popularity": 14.2005
-    },
-    {
         "id": 79086,
         "type": "tv",
         "title": "Godfather of Harlem",
@@ -18535,7 +18511,7 @@
         "overview": "James \"Jimmy\" Chance is a clueless 24-year-old who impregnates a serial killer during a one-night-stand. Earning custody of his daughter after the mother is sentenced to death, Jimmy relies on his oddball but well-intentioned family for support in raising the child.",
         "overview_ar": "James \"Jimmy\" Chance is a clueless 24-year-old who impregnates a serial killer during a one-night-stand. Earning custody of his daughter after the mother is sentenced to death, Jimmy relies on his oddball but well-intentioned family for support in raising the child.",
         "poster_path": "/uoQlWrYVERlifyUjDVUHiSu2ELo.jpg",
-        "vote_average": 7.416,
+        "vote_average": 7.421,
         "release_date": "2010-09-21",
         "popularity": 16.1488
     },
@@ -18691,7 +18667,7 @@
         "overview": "The long-awaited rebirth of the greatest superhero team of all time: Batman, Superman, Wonder Woman, The Flash, Hawkgirl, Green Lantern, and Martian Manhunter.",
         "overview_ar": "The long-awaited rebirth of the greatest superhero team of all time: Batman, Superman, Wonder Woman, The Flash, Hawkgirl, Green Lantern, and Martian Manhunter.",
         "poster_path": "/caIAQIoM9NLZofT8fz8t47W1gYe.jpg",
-        "vote_average": 8.2,
+        "vote_average": 8.201,
         "release_date": "2001-11-17",
         "popularity": 16.9536
     },
@@ -18718,6 +18694,30 @@
         "vote_average": 8.462,
         "release_date": "2023-11-24",
         "popularity": 17.7216
+    },
+    {
+        "id": 39775,
+        "type": "tv",
+        "title": "Fantasy Island",
+        "title_ar": "Fantasy Island",
+        "overview": "A magical island hosted by Mr Roarke and Tattoo where weekly guests learn valuable life lessons in their pursuit of fulfilling their dreams. Not all dreams are fulfilled as expected.",
+        "overview_ar": "A magical island hosted by Mr Roarke and Tattoo where weekly guests learn valuable life lessons in their pursuit of fulfilling their dreams. Not all dreams are fulfilled as expected.",
+        "poster_path": "/ppxhytiPrgojE4eb6Tw0EonDzeP.jpg",
+        "vote_average": 6.435,
+        "release_date": "1978-01-28",
+        "popularity": 16.4721
+    },
+    {
+        "id": 61339,
+        "type": "tv",
+        "title": "Sailor Moon Crystal",
+        "title_ar": "美少女戦士セーラームーンCrystal",
+        "overview": "Usagi Tsukino is chosen to be a guardian of justice and is sent on a quest to locate a Silver Crystal before the Dark Kingdom invades the Earth.",
+        "overview_ar": "Usagi Tsukino is chosen to be a guardian of justice and is sent on a quest to locate a Silver Crystal before the Dark Kingdom invades the Earth.",
+        "poster_path": "/mVXlsNJw4fxD2UWNzaUh2TFfI5c.jpg",
+        "vote_average": 8.138,
+        "release_date": "2014-07-05",
+        "popularity": 16.5937
     },
     {
         "id": 39775,
