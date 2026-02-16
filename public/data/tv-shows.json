@@ -1200,18 +1200,6 @@
         "popularity": 83.5709
     },
     {
-        "id": 57911,
-        "type": "tv",
-        "title": "Doraemon",
-        "title_ar": "عبقور",
-        "overview": "Doraemon is an anime TV series created by Fujiko F. Fujio and based on the manga series of the same name. This anime is the much more successful successor of the 1973 anime.",
-        "overview_ar": "روبرت آلي يشبه القط غذاءه المفضل معجون الفاصوليا والكعك المحلى, أتى من المستقبل من القرن الثاني والعشرون، لديه جيب بُعدي في بطنه يمكنه إستخراج أدوات كثيرة منه ليساعد الأطفال بكل الأدوات التي جلبها معه في جيبه البعدي.\n\nيدخل في مغامرات كثيرة ويواجه مشاكل كثيرة تتعلق بأصدقائه الأطفال فكيف سيستطيع التعامل معها؟",
-        "poster_path": "/bHMqPDsW7Lb71CVHXq4PuEvQ4NY.jpg",
-        "vote_average": 7.675,
-        "release_date": "1979-04-02",
-        "popularity": 86.9866
-    },
-    {
         "id": 615,
         "type": "tv",
         "title": "Futurama",
@@ -1222,6 +1210,18 @@
         "vote_average": 8.368,
         "release_date": "1999-03-28",
         "popularity": 79.5057
+    },
+    {
+        "id": 250307,
+        "type": "tv",
+        "title": "The Pitt",
+        "title_ar": "مستشفى بيتسبرغ",
+        "overview": "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
+        "overview_ar": "الحياة اليومية لمقدمي الرعاية الصحية في مستشفى بيتسبرغ في بنسلفانيا صراع، فهم يحاولون التوفيق بين الأزمات الشخصية وسياسات مكان العمل وتكلفة علاج المرضى المصابين بأمراض خطيرة، مما يكشف عن المرونة المطلوبة في دعوتهم النبيلة.",
+        "poster_path": "/kvFSpESyBZMjaeOJDx7RS3P1jey.jpg",
+        "vote_average": 8.691,
+        "release_date": "2025-01-09",
+        "popularity": 83.5709
     },
     {
         "id": 1920,
@@ -1387,7 +1387,7 @@
         "overview": "Bob's Burgers follows a third-generation restaurateur, Bob, as he runs Bob's Burgers with the help of his wife and their three kids. Bob and his quirky family have big ideas about burgers, but fall short on service and sophistication. Despite the greasy counters, lousy location and a dearth of customers, Bob and his family are determined to make Bob's Burgers \"grand re-re-re-opening\" a success.",
         "overview_ar": "Bob's Burgers follows a third-generation restaurateur, Bob, as he runs Bob's Burgers with the help of his wife and their three kids. Bob and his quirky family have big ideas about burgers, but fall short on service and sophistication. Despite the greasy counters, lousy location and a dearth of customers, Bob and his family are determined to make Bob's Burgers \"grand re-re-re-opening\" a success.",
         "poster_path": "/iIHsQe3Qjs3NH62HdamyQEPeqTR.jpg",
-        "vote_average": 7.835,
+        "vote_average": 7.8,
         "release_date": "2011-01-09",
         "popularity": 73.0715
     },
@@ -3199,7 +3199,7 @@
         "overview": "A respected and renowned businesswoman and philanthropist, considered one of the most sought-after brides in the country, who is left at the altar on her wedding day. Humiliated, betrayed, and turned into a target of public scrutiny, Doménica decides to flee and take refuge in one of her parents’ old estates. There, marked by pain, she faces new challenges and meets Luis Fernando, the owner of the neighboring estate, who also carries a painful past. Between them, an explosive relationship develops, marked by pride, misunderstandings, and growing attraction, where land disputes intertwine with their shared desire to rebuild, heal, and give new meaning to their lives.",
         "overview_ar": "A respected and renowned businesswoman and philanthropist, considered one of the most sought-after brides in the country, who is left at the altar on her wedding day. Humiliated, betrayed, and turned into a target of public scrutiny, Doménica decides to flee and take refuge in one of her parents’ old estates. There, marked by pain, she faces new challenges and meets Luis Fernando, the owner of the neighboring estate, who also carries a painful past. Between them, an explosive relationship develops, marked by pride, misunderstandings, and growing attraction, where land disputes intertwine with their shared desire to rebuild, heal, and give new meaning to their lives.",
         "poster_path": "/A02M5F5DcQ3glHrvBUSGnzTlvW1.jpg",
-        "vote_average": 8.21,
+        "vote_average": 8.222,
         "release_date": "2025-12-08",
         "popularity": 53.9591
     },
@@ -3211,7 +3211,7 @@
         "overview": "They say whatever doesn’t kill you makes you stronger, but that’s not the case for the world’s weakest hunter Sung Jinwoo. After being brutally slaughtered by monsters in a high-ranking dungeon, Jinwoo came back with the System, a program only he could see, that’s leveling him up in every way. Now, he’s inspired to discover the secrets behind his powers and the dungeon that spawned them.",
         "overview_ar": "مضى أكثر من عقد على الظهور المفاجئ للسراديب المدعوة بالبوابات والتي تربط هذا العالم ببعد آخر واستفاقة الأشخاص ذوي القوى الخارقة المدعووين بالصيادين. يستعمل الصيادون قواهم الخارقة لغزو الدياميس التي بداخل البوابات لكسب عيشهم، وسون جينوو، صياد من أقل درجة، يُعتبر الصياد الأضعف في البشرية. في أحد الأيام يجد نفسه في ديماس مزدوج، وهو ديماس من درجة عالية مخفيّ في ديماس من درجة منخفضة. أمام جينوو المصاب بجروح بليغة، تظهر نافذة مهمة غامضة. بينما هو على شفير الموت، يقرر جينوو قبول المهمة، ما يجعله الشخص الوحيد القادر على رفع مستواه",
         "poster_path": "/geCRueV3ElhRTr0xtJuEWJt6dJ1.jpg",
-        "vote_average": 8.608,
+        "vote_average": 8.607,
         "release_date": "2024-01-07",
         "popularity": 51.165
     },
@@ -3235,7 +3235,7 @@
         "overview": "Set in a dystopian future, a woman is forced to live as a concubine under a fundamentalist theocratic dictatorship.",
         "overview_ar": "استولت الأوتوقراطية المستندة بالدين على معظم الولايات المتحدة، وأعادت تسمية الدولة - جلعاد -  في هذا البلد النساء مواطنات من الدرجة الثانية. يعاقب أي شخص يحاول الهروب. أحد هؤلاء الأشخاص هي - جون -  الذي تُعتقل أثناء محاولتها للهرب مع زوجها وطفلها ويُحكم عليها بأن تكون جارية، وتحمل أطفالاً لمسؤولين حكوميين بلا أطفال. كخادمه، يتم تغيير اسمها إلى أوفريد، وهذه قصتها...",
         "poster_path": "/eGUT7j3n3rn5yGihlCgwUnD70HV.jpg",
-        "vote_average": 8.149,
+        "vote_average": 8.148,
         "release_date": "2017-04-26",
         "popularity": 49.2093
     },
@@ -3331,7 +3331,7 @@
         "overview": "Skeptical forensic psychologist Kristen Bouchard joins priest-in-training David Acosta and technology expert Ben Shakir as they investigate supposed miracles, demonic possessions, and other extraordinary occurrences to assess for a scientific explanation or if something truly supernatural is at work.",
         "overview_ar": "تقرر امرأة تحاول الهروب من الواقع الإنضمام إلى دورة تدريبية للراهبات، تركز على المعجزات الغريبة، وفكرة إستحواذ الشيطان على أجساد البشر، وتقرر البحث عن تفسيرات علمية لهذه الظواهر.",
         "poster_path": "/auRAAVxlyT6YACql96UdtnpFHy3.jpg",
-        "vote_average": 7.758,
+        "vote_average": 7.755,
         "release_date": "2019-09-26",
         "popularity": 46.4026
     },
@@ -5280,18 +5280,6 @@
         "popularity": 36.6902
     },
     {
-        "id": 106,
-        "type": "tv",
-        "title": "The Andy Griffith Show",
-        "title_ar": "The Andy Griffith Show",
-        "overview": "The Andy Griffith Show is an American sitcom first televised on CBS between October 3, 1960 and April 1, 1968. Andy Griffith portrays the widowed sheriff of the fictional small community of Mayberry, North Carolina. His life is complicated by an inept, but well-meaning deputy, Barney Fife, a spinster aunt and housekeeper, Aunt Bee, and a precocious young son, Opie. Local ne'er-do-wells, bumbling pals, and temperamental girlfriends further complicate his life. Andy Griffith stated in a Today Show interview, with respect to the time period of the show: \"Well, though we never said it, and though it was shot in the '60s, it had a feeling of the '30s. It was when we were doing it, of a time gone by.\"\n\nThe series never placed lower than seventh in the Nielsen ratings and ended its final season at number one. It has been ranked by TV Guide as the 9th-best show in American television history. Though neither Griffith nor the show won awards during its eight-season run, series co-stars Knotts and Bavier accumulated a combined total of six Emmy Awards. The show, a semi-spin-off from an episode of The Danny Thomas Show titled \"Danny Meets Andy Griffith\", spawned its own spin-off series, Gomer Pyle, U.S.M.C., a sequel series, Mayberry R.F.D., and a reunion telemovie, Return to Mayberry. The show's enduring popularity has generated a good deal of show-related merchandise. Reruns currently air on TV Land, and the complete series is available on DVD. All eight seasons are also now available by streaming video services such as Netflix.",
-        "overview_ar": "The Andy Griffith Show is an American sitcom first televised on CBS between October 3, 1960 and April 1, 1968. Andy Griffith portrays the widowed sheriff of the fictional small community of Mayberry, North Carolina. His life is complicated by an inept, but well-meaning deputy, Barney Fife, a spinster aunt and housekeeper, Aunt Bee, and a precocious young son, Opie. Local ne'er-do-wells, bumbling pals, and temperamental girlfriends further complicate his life. Andy Griffith stated in a Today Show interview, with respect to the time period of the show: \"Well, though we never said it, and though it was shot in the '60s, it had a feeling of the '30s. It was when we were doing it, of a time gone by.\"\n\nThe series never placed lower than seventh in the Nielsen ratings and ended its final season at number one. It has been ranked by TV Guide as the 9th-best show in American television history. Though neither Griffith nor the show won awards during its eight-season run, series co-stars Knotts and Bavier accumulated a combined total of six Emmy Awards. The show, a semi-spin-off from an episode of The Danny Thomas Show titled \"Danny Meets Andy Griffith\", spawned its own spin-off series, Gomer Pyle, U.S.M.C., a sequel series, Mayberry R.F.D., and a reunion telemovie, Return to Mayberry. The show's enduring popularity has generated a good deal of show-related merchandise. Reruns currently air on TV Land, and the complete series is available on DVD. All eight seasons are also now available by streaming video services such as Netflix.",
-        "poster_path": "/3KvTKLH40z5zDMilg2lXqmOUrRy.jpg",
-        "vote_average": 7.611,
-        "release_date": "1960-10-03",
-        "popularity": 33.6346
-    },
-    {
         "id": 67116,
         "type": "tv",
         "title": "Lethal Weapon",
@@ -5575,7 +5563,7 @@
         "overview": "A 34-year-old hikikomori is kicked out of his home by his family after the death of his parents. After his eviction, he saves a group of teenagers from being killed by a speeding truck, but loses his life in the process. When he comes to, he realizes he has been reborn as Rudeus Greyrat, in a world of swords and sorcery.",
         "overview_ar": "عندما تدهس شاحنة شابًا يبلغ من العمر 34 سنة، لا تنتهي قصته هناك. بل يعاد بعثه في عالم جديد كرضيع، ينتهز رودي كلّ فرصة ليعيش الحياة التي لطالما أرادها. مدعومًا بأصدقاء جُدد، وبعض القدرات السحرية المكتسبة حديثًا، والشجاعة لفعل الأشياء التي كان يحلم بها دائمًا، ينطلق في مغامرة ملحمية، مع تذكره لكل تجربته السابقة",
         "poster_path": "/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
-        "vote_average": 8.54,
+        "vote_average": 8.541,
         "release_date": "2021-01-11",
         "popularity": 35.0136
     },
@@ -5734,6 +5722,18 @@
         "vote_average": 6.993,
         "release_date": "1984-09-20",
         "popularity": 32.9541
+    },
+    {
+        "id": 154770,
+        "type": "tv",
+        "title": "Hello Saturday",
+        "title_ar": "Hello Saturday",
+        "overview": "\"Hello, Saturday\" is the rebranding of the popular Chinese show \"Happy Camp\", hosted by He Jiong and with a fixed group of regular celebrity members.\n\nThe program showcases the talent of various stars as well as social topics through creative and diverse content and games. It aims to spread positive energy while keeping up with the current trends and leading youth culture.",
+        "overview_ar": "\"Hello, Saturday\" is the rebranding of the popular Chinese show \"Happy Camp\", hosted by He Jiong and with a fixed group of regular celebrity members.\n\nThe program showcases the talent of various stars as well as social topics through creative and diverse content and games. It aims to spread positive energy while keeping up with the current trends and leading youth culture.",
+        "poster_path": "/wsTjWy6NE2s3h0neChr0D92ddwI.jpg",
+        "vote_average": 6.4,
+        "release_date": "2022-01-01",
+        "popularity": 37.2358
     },
     {
         "id": 155,
@@ -8179,7 +8179,7 @@
         "overview": "In the near future, a Virtual Reality Massive Multiplayer Online Role-Playing Game (VRMMORPG) called Sword Art Online has been released where players control their avatars with their bodies using a piece of technology called Nerve Gear. One day, players discover they cannot log out, as the game creator is holding them captive unless they reach the 100th floor of the game's tower and defeat the final boss. However, if they die in the game, they die in real life. Their struggle for survival starts now...",
         "overview_ar": "دخل مُبرمج عبقري يُدعى “كازوتو” إلى عالم أفتراضي، عالمُ أنترنت يدعى “فن السيف الرقمي” ليس هُناك مهربٌ من هذا العالم حتى يقوم اللاعب بانهاء اللعبة و لكن سيُؤدي حصول اللاعب على “game over” إلى موته .",
         "poster_path": "/9m8bFIXPg26taNrFSXGwEORVACD.jpg",
-        "vote_average": 8.172,
+        "vote_average": 8.173,
         "release_date": "2012-07-08",
         "popularity": 27.5819
     },
@@ -8359,7 +8359,7 @@
         "overview": "The story of Daniel Arizmendi's rise, the corruption and fear that allowed his gang to terrorize Mexico in the 1990s, where he became known as \"el mochaorejas\" for his shady crimes",
         "overview_ar": "The story of Daniel Arizmendi's rise, the corruption and fear that allowed his gang to terrorize Mexico in the 1990s, where he became known as \"el mochaorejas\" for his shady crimes",
         "poster_path": "/oYZ5gWX0wgqQQojoGK9d482qI5f.jpg",
-        "vote_average": 7.733,
+        "vote_average": 7.677,
         "release_date": "2026-01-23",
         "popularity": 29.4959
     },
@@ -9605,7 +9605,7 @@
         "title": "Yellowjackets",
         "title_ar": "Yellowjackets",
         "overview": "This equal parts survival epic, psychological horror story and coming-of-age drama tells the saga of a team of wildly talented high school girls soccer players who become the (un)lucky survivors of a plane crash deep in the remote northern wilderness. The series chronicles their descent from a complicated but thriving team to savage clans, while also tracking the lives they’ve attempted to piece back together nearly 25 years later.",
-        "overview_ar": "تتحطم طائرة على متنها فريق كرة قدم يتكون من مجموعة من اللاعبات الموهوبات، وسرعان ما تُصبح حياتهن في خطرًا كبير في قلب الحياة البرية بأونتاريو.",
+        "overview_ar": "This equal parts survival epic, psychological horror story and coming-of-age drama tells the saga of a team of wildly talented high school girls soccer players who become the (un)lucky survivors of a plane crash deep in the remote northern wilderness. The series chronicles their descent from a complicated but thriving team to savage clans, while also tracking the lives they’ve attempted to piece back together nearly 25 years later.",
         "poster_path": "/xRnGrn7Z7SC0KIBodocoU1QgDZF.jpg",
         "vote_average": 7.46,
         "release_date": "2021-11-14",
@@ -12305,7 +12305,7 @@
         "title": "Killing Eve",
         "title_ar": "Killing Eve",
         "overview": "A security consultant hunts for a ruthless assassin. Equally obsessed with each other, they go head to head in an epic game of cat-and-mouse.",
-        "overview_ar": "A security consultant hunts for a ruthless assassin. Equally obsessed with each other, they go head to head in an epic game of cat-and-mouse.",
+        "overview_ar": "مقتبس من كتاب يحمل اسم Codename Villanelle، حول ضابطة مخابرات تُدعى (أيف) تعيش حياة مملة لم ترتقي أبدًا لتوقعاتها ولا لتخيلاتها لحياة الجاسوسية وعالم المخابرات لكن ذلك سيتغير كلياً عندما ستبدأ بعملية مطاردة ومحاولة اصطياد القاتلة (فيلانيل).",
         "poster_path": "/4wKhTVw8aGq5AZMa0Q1spERdi7n.jpg",
         "vote_average": 7.9,
         "release_date": "2018-04-08",
@@ -12459,7 +12459,7 @@
         "id": 80736,
         "type": "tv",
         "title": "The Manager",
-        "title_ar": "The Manager",
+        "title_ar": "전지적 참견 시점",
         "overview": "We will get involved in every little detail of the stars’ lives. The managers who work closely with the stars reveal their mundane lives. Once the information is all revealed, the professional meddlers from various different fields are invited to make comments regarding even the smallest details. Lee Yeong Ja, Jun Hyun Moo, Song Eun I, Kim Saeng Min, Yang Se Hyeong and Yoo Byung Jae participate as the life meddlers along with the professionals.",
         "overview_ar": "We will get involved in every little detail of the stars’ lives. The managers who work closely with the stars reveal their mundane lives. Once the information is all revealed, the professional meddlers from various different fields are invited to make comments regarding even the smallest details. Lee Yeong Ja, Jun Hyun Moo, Song Eun I, Kim Saeng Min, Yang Se Hyeong and Yoo Byung Jae participate as the life meddlers along with the professionals.",
         "poster_path": "/jASfIetUKhrbqEEKBnjRjjgfuGK.jpg",
@@ -16263,7 +16263,7 @@
         "id": 68398,
         "type": "tv",
         "title": "Dr. Romantic",
-        "title_ar": "Dr. Romantic",
+        "title_ar": "낭만닥터 김사부",
         "overview": "An eccentric, triple board-certified virtuoso surgeon leaves a top job in Seoul and ends up at a provincial hospital, where he mentors young doctors.",
         "overview_ar": "An eccentric, triple board-certified virtuoso surgeon leaves a top job in Seoul and ends up at a provincial hospital, where he mentors young doctors.",
         "poster_path": "/9fbRJgZ2zDTnSUId1bOwsllHNr7.jpg",
@@ -16800,6 +16800,18 @@
         "popularity": 14.5446
     },
     {
+        "id": 80054,
+        "type": "tv",
+        "title": "Truth Be Told",
+        "title_ar": "Truth Be Told",
+        "overview": "Descend into the world of true-crime podcasts with Poppy Parnell, who risks everything—including her life—to pursue truth and justice.",
+        "overview_ar": "Descend into the world of true-crime podcasts with Poppy Parnell, who risks everything—including her life—to pursue truth and justice.",
+        "poster_path": "/3T2TJ61ems7ArVGwb6kiVuKcdUk.jpg",
+        "vote_average": 7.07,
+        "release_date": "2019-12-06",
+        "popularity": 14.5446
+    },
+    {
         "id": 11576,
         "type": "tv",
         "title": "Bob Hope Presents the Chrysler Theatre",
@@ -16846,18 +16858,6 @@
         "vote_average": 7.4,
         "release_date": "1993-09-18",
         "popularity": 17.848
-    },
-    {
-        "id": 278127,
-        "type": "tv",
-        "title": "Unveil: Jadewind",
-        "title_ar": "唐宫奇案之青雾风鸣",
-        "overview": "During the Lantern Festival, Princess Ningyuan dies mysteriously at the night banquet. Li Peiyi, Princess of Fuchang County, and Xiao Huaijin, deputy director of the Astronomical Bureau, are ordered to investigate. Cold on the outside but kind at heart, Peiyi reads people fast and fights even faster. Huaijin is meticulous, with a razor-sharp memory. Working in sync, they follow threads through arrogant nobles and an Imperial Guard commander hiding secrets, cracking the case and unmasking the killer. More eerie palace mysteries soon follow, each tied to the fates of women in the inner court. As they chase truth deeper into the Tang palace, they also uncover what really happened behind Peiyi's family massacre fifteen years ago, and the mastermind's plot. In the end, Peiyi clears her father's name, finds loyal allies at her side, and earns hard-won redemption.",
-        "overview_ar": "During the Lantern Festival, Princess Ningyuan dies mysteriously at the night banquet. Li Peiyi, Princess of Fuchang County, and Xiao Huaijin, deputy director of the Astronomical Bureau, are ordered to investigate. Cold on the outside but kind at heart, Peiyi reads people fast and fights even faster. Huaijin is meticulous, with a razor-sharp memory. Working in sync, they follow threads through arrogant nobles and an Imperial Guard commander hiding secrets, cracking the case and unmasking the killer. More eerie palace mysteries soon follow, each tied to the fates of women in the inner court. As they chase truth deeper into the Tang palace, they also uncover what really happened behind Peiyi's family massacre fifteen years ago, and the mastermind's plot. In the end, Peiyi clears her father's name, finds loyal allies at her side, and earns hard-won redemption.",
-        "poster_path": "/qFQ6OhZJCg5ESkA2DToqNGJzjhx.jpg",
-        "vote_average": 6.5,
-        "release_date": "2026-02-05",
-        "popularity": 18.2468
     },
     {
         "id": 34899,
@@ -17520,18 +17520,6 @@
         "popularity": 19.5003
     },
     {
-        "id": 94181,
-        "type": "tv",
-        "title": "Agries Melisses",
-        "title_ar": "Άγριες Μέλισσες",
-        "overview": "Every time a daughter was born, the father of Eleni, Asimina and Froso planted a poplar tree at the edge of their orchard to commemorate the arrival of the new child. As they grew and grew tall and slender, he boasted of them as his daughters. In the proudest poplar, however, Helen's poplar, a swarm of wild bees had already nested. \"You will be happy, my daughter, and life will be as sweet as this honey. You'll see,\" her father used to tell her. But, the years passed and Eleni looked at the poplar and listened to the hum... \"How do you know, father... How do you know that life has written only bitterness for my root\".",
-        "overview_ar": "Every time a daughter was born, the father of Eleni, Asimina and Froso planted a poplar tree at the edge of their orchard to commemorate the arrival of the new child. As they grew and grew tall and slender, he boasted of them as his daughters. In the proudest poplar, however, Helen's poplar, a swarm of wild bees had already nested. \"You will be happy, my daughter, and life will be as sweet as this honey. You'll see,\" her father used to tell her. But, the years passed and Eleni looked at the poplar and listened to the hum... \"How do you know, father... How do you know that life has written only bitterness for my root\".",
-        "poster_path": "/klyEn63r54TziUXXmfgjNChXM9w.jpg",
-        "vote_average": 7.3,
-        "release_date": "2019-09-29",
-        "popularity": 19.5003
-    },
-    {
         "id": 113268,
         "type": "tv",
         "title": "The Uncanny Counter",
@@ -17575,7 +17563,7 @@
         "overview": "When the intimidating Rintaro meets the open-minded Kaoruko, the unlikely duo grows closer. The issue? Their neighboring high schools hate each other.",
         "overview_ar": "تتوطد علاقة غير متوقعة بين \"رينتارو\" المعروف بمظهره المُخيف و\"كاوروكو\" صاحبة العقل المنفتح... فيما تكمن المشكلة في أجواء الكراهية المتبادلة بين مدرستيهما المتجاورتين.",
         "poster_path": "/g1sYAQt0OeCxzyfagSEqxUlsLnt.jpg",
-        "vote_average": 8.693,
+        "vote_average": 8.668,
         "release_date": "2025-07-06",
         "popularity": 16.9025
     },
@@ -17647,7 +17635,7 @@
         "overview": "A man struggling with his faith is haunted by the sins of his past but is suddenly thrust into the role of defending humanity from the gathering forces of darkness.",
         "overview_ar": "A man struggling with his faith is haunted by the sins of his past but is suddenly thrust into the role of defending humanity from the gathering forces of darkness.",
         "poster_path": "/gQ3bA1DBKyZwkDCHJFEAT0MkKpu.jpg",
-        "vote_average": 7.757,
+        "vote_average": 7.756,
         "release_date": "2014-10-24",
         "popularity": 17.5893
     },
@@ -17686,18 +17674,6 @@
         "vote_average": 7.924,
         "release_date": "2014-06-01",
         "popularity": 17.3953
-    },
-    {
-        "id": 278043,
-        "type": "tv",
-        "title": "You and I Are Polar Opposites",
-        "title_ar": "正反対な君と僕",
-        "overview": "Suzuki's a high school girl in love, but the guy she's fallen for is nothing like her! While she's cheerful, outgoing, and always trying to fit in, her classmate Yusuke Tani is stoic, quiet, and doesn't seem to care what people think of him. Will Suzuki be able to overcome her anxieties and ask him out, or will she discover that opposites really don't attract?",
-        "overview_ar": "Suzuki's a high school girl in love, but the guy she's fallen for is nothing like her! While she's cheerful, outgoing, and always trying to fit in, her classmate Yusuke Tani is stoic, quiet, and doesn't seem to care what people think of him. Will Suzuki be able to overcome her anxieties and ask him out, or will she discover that opposites really don't attract?",
-        "poster_path": "/9hRuMU33DBz4z1vaYBRqLLuFFbQ.jpg",
-        "vote_average": 8.6,
-        "release_date": "2026-01-11",
-        "popularity": 21.2671
     },
     {
         "id": 30982,
@@ -17758,6 +17734,30 @@
         "vote_average": 7.6,
         "release_date": "2021-03-19",
         "popularity": 18.0181
+    },
+    {
+        "id": 79,
+        "type": "tv",
+        "title": "Dora the Explorer",
+        "title_ar": "مغامرات دورا",
+        "overview": "A young girl named Dora goes on adventures with her red boot-wearing monkey named Boots.",
+        "overview_ar": "سواء كنت تُصلح آليًّا، أو تبحث عن طريقك في متاهة الذرة، أو تزور \"بابا نويل\" في القطب الشمالي، فستساعدك \"دورا\" وأصدقاؤها في إنجاز تلك المهام.",
+        "poster_path": "/iaJNOSpEQgU4yePsbcC6yxneRNF.jpg",
+        "vote_average": 6.2,
+        "release_date": "2000-08-14",
+        "popularity": 17.7714
+    },
+    {
+        "id": 2686,
+        "type": "tv",
+        "title": "Three's Company",
+        "title_ar": "Three's Company",
+        "overview": "When two single girls, Janet and Chrissy, need a roommate to share their Santa Monica apartment, they decide to offer a room to Jack, a man they find passed out in the bathtub after the going-away party for their last roommate. However, hijinks ensure when Jack must pretend to be gay in order to throw off the scent of the trio's conservative landlady.",
+        "overview_ar": "When two single girls, Janet and Chrissy, need a roommate to share their Santa Monica apartment, they decide to offer a room to Jack, a man they find passed out in the bathtub after the going-away party for their last roommate. However, hijinks ensure when Jack must pretend to be gay in order to throw off the scent of the trio's conservative landlady.",
+        "poster_path": "/6xn9XQ5iwJIa1FkoZAFtnh5tAQl.jpg",
+        "vote_average": 7.632,
+        "release_date": "1977-03-15",
+        "popularity": 15.7004
     },
     {
         "id": 2686,
@@ -19200,30 +19200,6 @@
         "popularity": 16.2589
     },
     {
-        "id": 18202,
-        "type": "tv",
-        "title": "Cougar Town",
-        "title_ar": "Cougar Town",
-        "overview": "Jules Cobb is a mom in her forties facing the often humorous challenges, pitfalls and rewards of life's next chapter. Along for the journey is her son, her ex-husband, her husband/neighbor and her friends who together make up her dysfunctional, but supportive and caring extended family... even if they have a funny way of showing it sometimes.",
-        "overview_ar": "Jules Cobb is a mom in her forties facing the often humorous challenges, pitfalls and rewards of life's next chapter. Along for the journey is her son, her ex-husband, her husband/neighbor and her friends who together make up her dysfunctional, but supportive and caring extended family... even if they have a funny way of showing it sometimes.",
-        "poster_path": "/AvxlfUW8OVQ630v7Se1mesDYbfW.jpg",
-        "vote_average": 6.486,
-        "release_date": "2009-09-23",
-        "popularity": 15.1934
-    },
-    {
-        "id": 83135,
-        "type": "tv",
-        "title": "The Twilight Zone",
-        "title_ar": "The Twilight Zone",
-        "overview": "Tales of science fiction, fantasy and the occult, exploring humanity's hopes, despairs, prides and prejudices in metaphoric ways. Next stop ahead The Twilight Zone.",
-        "overview_ar": "Tales of science fiction, fantasy and the occult, exploring humanity's hopes, despairs, prides and prejudices in metaphoric ways. Next stop ahead The Twilight Zone.",
-        "poster_path": "/aEuzZqJTEH9E4JwQyv8JtuCu22B.jpg",
-        "vote_average": 6.707,
-        "release_date": "2019-04-01",
-        "popularity": 16.2589
-    },
-    {
         "id": 2962,
         "type": "tv",
         "title": "The Mary Tyler Moore Show",
@@ -19318,6 +19294,18 @@
         "vote_average": 8.2,
         "release_date": "2025-01-25",
         "popularity": 16.1969
+    },
+    {
+        "id": 73223,
+        "type": "tv",
+        "title": "Black Clover",
+        "title_ar": "البرسيم الأسود",
+        "overview": "Asta and Yuno are two orphans who want the same thing: to become the Wizard King. Locked in a friendly rivalry, they work hard towards their goal. While Yuno excels at magic, Asta has a problem uncommon in this world: he has no powers! But, on the day they receive their grimoires, they surprise everyone. To reach their goal, they’ll each find their own path to greatness—with or without magic.",
+        "overview_ar": "تدور القصة في عالم السحرة وبطلها هو فتى يطمح أن يكون الأفضل في هذا المجال ولكنه يفتقر للقدرة. يحصل في يوم من الأيام على كتاب تعويذات ليحصنه من التعاويذ السحرية.",
+        "poster_path": "/kaMisKeOoTBPxPkbC3OW7Wgt6ON.jpg",
+        "vote_average": 8.49,
+        "release_date": "2017-10-03",
+        "popularity": 17.446
     },
     {
         "id": 33257,
@@ -19446,6 +19434,18 @@
         "title_ar": "الآنسة هونغ في مهمة سرية",
         "overview": "A retro office comedy depicting the chaotic events that unfold in the late 1990s when Sammo Hung, a 30-year-old elite securities supervisor who only cares about work, goes undercover as a 20-year-old high school graduate employee at a securities firm where suspicious money flows are detected.",
         "overview_ar": "تتخفّى محققة عنيدة داخل شركة أوراق مالية لكشف الفساد، لكن مهمتها تتعقد بسبب المدير التنفيذي الجديد الذي كان حبيبها في الماضي.",
+        "poster_path": "/bZr3i8yczHGDzyqZQ9oOArEEVON.jpg",
+        "vote_average": 7.2,
+        "release_date": "2026-01-17",
+        "popularity": 18.0301
+    },
+    {
+        "id": 293608,
+        "type": "tv",
+        "title": "Undercover Miss Hong",
+        "title_ar": "Undercover Miss Hong",
+        "overview": "A retro office comedy depicting the chaotic events that unfold in the late 1990s when Sammo Hung, a 30-year-old elite securities supervisor who only cares about work, goes undercover as a 20-year-old high school graduate employee at a securities firm where suspicious money flows are detected.",
+        "overview_ar": "A retro office comedy depicting the chaotic events that unfold in the late 1990s when Sammo Hung, a 30-year-old elite securities supervisor who only cares about work, goes undercover as a 20-year-old high school graduate employee at a securities firm where suspicious money flows are detected.",
         "poster_path": "/bZr3i8yczHGDzyqZQ9oOArEEVON.jpg",
         "vote_average": 7.2,
         "release_date": "2026-01-17",
@@ -21351,7 +21351,7 @@
         "id": 67575,
         "type": "tv",
         "title": "Moomin",
-        "title_ar": "Moomin",
+        "title_ar": "وادي الأمان",
         "overview": "In the remote and mysterious Moominvalley live the Moomins, gentle and peaceful creatures. Young Moomintroll and his family experience many strange adventures, both magical and mundane.",
         "overview_ar": "In the remote and mysterious Moominvalley live the Moomins, gentle and peaceful creatures. Young Moomintroll and his family experience many strange adventures, both magical and mundane.",
         "poster_path": "/oNwa7eEqZpnPaNGkFrvvd3mSKeJ.jpg",
@@ -21600,66 +21600,6 @@
         "popularity": 14.9808
     },
     {
-        "id": 44305,
-        "type": "tv",
-        "title": "DreamWorks Dragons",
-        "title_ar": "كيف تروض تنينك",
-        "overview": "From the creators of \"How to Train Your Dragon\" comes a new series that takes Hiccup and Toothless to the edge of adventure.",
-        "overview_ar": "تدور مغامرات حاذوقة وصديقه التنين غضب الليل في جزيرة بيرك حيث يعيش (الفايكينج)، والتنانين على غير وفاق. ولكن بعد ان يُنقذ حاذوقة وتنينه الجزيرة من الموت الأحمر، يقتنع والد حاذوقة رئيس الفايكينج ببناء أكاديمية لترويض التنانين رغم معارضة الفايكنج",
-        "poster_path": "/gFhBIF8oXjpdVk1NbI4kP4l8LAe.jpg",
-        "vote_average": 7.8,
-        "release_date": "2012-08-07",
-        "popularity": 15.0585
-    },
-    {
-        "id": 11978,
-        "type": "tv",
-        "title": "The Name of the Game",
-        "title_ar": "The Name of the Game",
-        "overview": "The Name of the Game is an American television series starring Tony Franciosa, Gene Barry, and Robert Stack that ran from 1968 to 1971 on NBC, totaling 76 episodes of 90 minutes. It was a pioneering wheel series, setting the stage for The Bold Ones and the NBC Mystery Movie in the 1970s. The show had an extremely large budget for a television series.",
-        "overview_ar": "The Name of the Game is an American television series starring Tony Franciosa, Gene Barry, and Robert Stack that ran from 1968 to 1971 on NBC, totaling 76 episodes of 90 minutes. It was a pioneering wheel series, setting the stage for The Bold Ones and the NBC Mystery Movie in the 1970s. The show had an extremely large budget for a television series.",
-        "poster_path": "/tc5VyBM94h8GJ3Z5MvyemSFiESO.jpg",
-        "vote_average": 6.8,
-        "release_date": "1968-09-20",
-        "popularity": 13.0855
-    },
-    {
-        "id": 34415,
-        "type": "tv",
-        "title": "The Killing",
-        "title_ar": "The Killing",
-        "overview": "The Killing is an American crime drama television series based upon the Danish television series Forbrydelsen. Set in Seattle, Washington, the series follows the various murder investigations by homicide detectives Sarah Linden and Stephen Holder.",
-        "overview_ar": "The Killing is an American crime drama television series based upon the Danish television series Forbrydelsen. Set in Seattle, Washington, the series follows the various murder investigations by homicide detectives Sarah Linden and Stephen Holder.",
-        "poster_path": "/3yiwAUNGn1rsPSVmFgVwPVJFtYf.jpg",
-        "vote_average": 7.846,
-        "release_date": "2011-04-03",
-        "popularity": 15.5023
-    },
-    {
-        "id": 14525,
-        "type": "tv",
-        "title": "Martin Morning",
-        "title_ar": "Martin Matin",
-        "overview": "Martin, an ordinary nine-year-old boy, has one strange characteristic: every morning he awakes to find himself transformed into fantastic and legendary beings. Despite the transformations, he goes to school with his friends, and adventures then ensue.",
-        "overview_ar": "Martin, an ordinary nine-year-old boy, has one strange characteristic: every morning he awakes to find himself transformed into fantastic and legendary beings. Despite the transformations, he goes to school with his friends, and adventures then ensue.",
-        "poster_path": "/6hRjWz6tmJuUqfvFlQdBArVtPLb.jpg",
-        "vote_average": 6.765,
-        "release_date": "2003-01-01",
-        "popularity": 15.9215
-    },
-    {
-        "id": 21729,
-        "type": "tv",
-        "title": "Gurren Lagann",
-        "title_ar": "غورن لاجان",
-        "overview": "When a young laborer escapes to the world aboveground, he discovers a violent land in which humans battle robots controlled by a power-hungry noble.",
-        "overview_ar": "القصة تدور حول صبي اسمه سيمون و مآثره لإيجاد قدره في عالم ملئ بالألغاز والمخاطر. عاش في قريته جيها طوال حياته , وكانت قريته تقع في باطن الأرض , وكان يعمل حفارا للقرية و الغرض من هذا توسيعها , لكن سيمون كان يحفر لإيجاد الكنوز أيضا. في يوم من الأيام احتفظ بمثقاب صغير الشكل وجده أثناء حفره . ولم يعلم بان هذا المثقاب سيغير مجرى حياته إلى الأبد مع القروي الآخر كامينا. وكان كامينا بمثابة الأخ لسيمون وكان هدفهم السماء (سطح الأرض) . وشاءت الأقدار بأن يجتمعوا بيوكو وكانت تطارد مخلوقا ميكانيكيا الذي ظهر في قريتهم . بعد هزيمة المخلوق الميكانيكي بواسطة رأس ميكانيكي وجده سيمون في وقت سابق . من هنا بدأت الرحلة لإيجاد قدرهم وهو يمتد إلى السماء.",
-        "poster_path": "/xL6HsYsk5N9PKwk6jFwMNQq3K3M.jpg",
-        "vote_average": 8.149,
-        "release_date": "2007-04-01",
-        "popularity": 14.9064
-    },
-    {
         "id": 11285,
         "type": "tv",
         "title": "The Mysterious Cities of Gold",
@@ -21670,6 +21610,18 @@
         "vote_average": 7.802,
         "release_date": "1982-06-29",
         "popularity": 15.8534
+    },
+    {
+        "id": 76075,
+        "type": "tv",
+        "title": "Laid-Back Camp",
+        "title_ar": "Laid-Back Camp",
+        "overview": "Nadeshiko, a high school student who had moved from Shizuoka to Yamanashi, decides to see the famous, 1000 yen-bill-featured Mount Fuji. Even though she manages to bike all the way to Motosu, she's forced to turn back because of worsening weather. Unable to set her eyes on her goal, she faints partway to her destination. When she wakes up, it's night, in a place she's never been before, with no way of knowing how to get home. Nadeshiko is saved when she encounters Rin, a girl who is out camping by herself. This outdoorsy girls story begins with this first encounter between Nadeshiko and Rin.",
+        "overview_ar": "Nadeshiko, a high school student who had moved from Shizuoka to Yamanashi, decides to see the famous, 1000 yen-bill-featured Mount Fuji. Even though she manages to bike all the way to Motosu, she's forced to turn back because of worsening weather. Unable to set her eyes on her goal, she faints partway to her destination. When she wakes up, it's night, in a place she's never been before, with no way of knowing how to get home. Nadeshiko is saved when she encounters Rin, a girl who is out camping by herself. This outdoorsy girls story begins with this first encounter between Nadeshiko and Rin.",
+        "poster_path": "/1c5xBDBQQwa1bvX5fibAeymReGg.jpg",
+        "vote_average": 8.2,
+        "release_date": "2018-01-04",
+        "popularity": 16.0742
     },
     {
         "id": 2126,
@@ -21775,7 +21727,7 @@
         "overview": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
         "overview_ar": "في واقع مستقبلي بائس يغزوه الفساد والأعضاء الإلكترونية، يسعى فتًى مشرّد موهوب، لكنّه مندفع، ليصبح مرتزقًا خارجًا على القانون... أي مُجازفًا.",
         "poster_path": "/7jSWOc6jWSw5hZ78HB8Hw3pJxuk.jpg",
-        "vote_average": 8.486,
+        "vote_average": 8.485,
         "release_date": "2022-09-13",
         "popularity": 15.3861
     },
@@ -21787,7 +21739,7 @@
         "overview": "In 2033, people who are near death can be “uploaded” into virtual reality hotels run by 6 tech firms. Cash-strapped Nora lives in Brooklyn and works customer service for the luxurious “Lakeview” digital afterlife. When L.A. party-boy/coder Nathan’s self-driving car crashes, his high-maintenance girlfriend uploads him permanently into Nora’s VR world.",
         "overview_ar": "في المستقبل القريب، يمكن \"تحميل\" الأشخاص الذين يقتربون من الموت إلى بيئات الواقع الافتراضي.",
         "poster_path": "/6TPGDrU9MyWbn2TpggJphVAVXiq.jpg",
-        "vote_average": 7.797,
+        "vote_average": 7.795,
         "release_date": "2020-04-30",
         "popularity": 14.5448
     },
@@ -21855,7 +21807,7 @@
         "id": 83639,
         "type": "tv",
         "title": "Girl from Nowhere",
-        "title_ar": "เด็กใหม่",
+        "title_ar": "Girl from Nowhere",
         "overview": "A mysterious, clever girl named Nanno transfers to different schools, exposing the lies and misdeeds of the students and faculty at every turn.",
         "overview_ar": "A mysterious, clever girl named Nanno transfers to different schools, exposing the lies and misdeeds of the students and faculty at every turn.",
         "poster_path": "/9hDXqzN5l4lBmEtb8IstXr91k8z.jpg",
@@ -21867,7 +21819,7 @@
         "id": 242722,
         "type": "tv",
         "title": "Shrimad Ramayan",
-        "title_ar": "श्रीमद् रामायण",
+        "title_ar": "Shrimad Ramayan",
         "overview": "Shrimad Ramayan is an ambitious television series that brings to life the timeless epic, the Ramayan, with a deep commitment to authenticity, cultural reverence and a contemporary sensibility.",
         "overview_ar": "Shrimad Ramayan is an ambitious television series that brings to life the timeless epic, the Ramayan, with a deep commitment to authenticity, cultural reverence and a contemporary sensibility.",
         "poster_path": "/AkBFffK3kKrBgNEz81IHC1G9Eks.jpg",
@@ -21881,7 +21833,7 @@
         "title": "Dead to Me",
         "title_ar": "Dead to Me",
         "overview": "A hotheaded widow searching for the hit-and-run driver who mowed down her husband befriends an eccentric optimist who isn't quite what she seems.",
-        "overview_ar": "خلال بحث أرملة صعبة المراس عن سائق سيارة دهس زوجها ولاذ بالفرار، تنشأ صداقة بينها وبين امرأة متفائلة غريبة الأطوار تخفي ماضيًا مريبًا.",
+        "overview_ar": "A hotheaded widow searching for the hit-and-run driver who mowed down her husband befriends an eccentric optimist who isn't quite what she seems.",
         "poster_path": "/mAj18PHeACxqcrEus4pD8pksRmB.jpg",
         "vote_average": 7.301,
         "release_date": "2019-05-03",
@@ -22078,6 +22030,54 @@
         "vote_average": 6.784,
         "release_date": "2005-07-20",
         "popularity": 12.5429
+    },
+    {
+        "id": 67676,
+        "type": "tv",
+        "title": "The Disastrous Life of Saiki K.",
+        "title_ar": "The Disastrous Life of Saiki K.",
+        "overview": "High school sophomore Kusuo Saiki swore as a child that he would keep his psychic talents hidden, but his abilities still make his life difficult.",
+        "overview_ar": "High school sophomore Kusuo Saiki swore as a child that he would keep his psychic talents hidden, but his abilities still make his life difficult.",
+        "poster_path": "/tpym31HVeQgenaubvCxkMF3kFHy.jpg",
+        "vote_average": 8.3,
+        "release_date": "2016-07-11",
+        "popularity": 14.389
+    },
+    {
+        "id": 72844,
+        "type": "tv",
+        "title": "The Haunting of Hill House",
+        "title_ar": "The Haunting of Hill House",
+        "overview": "Flashing between past and present, a fractured family confronts haunting memories of their old home and the terrifying events that drove them from it.",
+        "overview_ar": "Flashing between past and present, a fractured family confronts haunting memories of their old home and the terrifying events that drove them from it.",
+        "poster_path": "/38PkhBGRQtmVx2drvPik3F42qHO.jpg",
+        "vote_average": 8.106,
+        "release_date": "2018-10-12",
+        "popularity": 15.815
+    },
+    {
+        "id": 80281,
+        "type": "tv",
+        "title": "Larva",
+        "title_ar": "Larva",
+        "overview": "Two curious worms spend their days investigating the otherworldly objects that fall through the grate into their subterranean world.",
+        "overview_ar": "Two curious worms spend their days investigating the otherworldly objects that fall through the grate into their subterranean world.",
+        "poster_path": "/jDZ2rAmJ8mTojT929wTRMFKpv2L.jpg",
+        "vote_average": 7.0,
+        "release_date": "2011-03-26",
+        "popularity": 15.2984
+    },
+    {
+        "id": 1530,
+        "type": "tv",
+        "title": "My Three Sons",
+        "title_ar": "My Three Sons",
+        "overview": "A widower and aeronautical engineer named Steven Douglas raises three sons with the help of his father-in-law, and later the boys' great-uncle. An adopted son, a stepdaughter, wives, and another generation of sons join the loving family in later seasons.",
+        "overview_ar": "A widower and aeronautical engineer named Steven Douglas raises three sons with the help of his father-in-law, and later the boys' great-uncle. An adopted son, a stepdaughter, wives, and another generation of sons join the loving family in later seasons.",
+        "poster_path": "/jOnSZ87XrV04mu5ZKgr8TUVVVz4.jpg",
+        "vote_average": 6.5,
+        "release_date": "1960-09-29",
+        "popularity": 12.1588
     },
     {
         "id": 67676,
@@ -22325,7 +22325,7 @@
         "title": "Your Friends & Neighbors",
         "title_ar": "Your Friends & Neighbors",
         "overview": "When a financial titan suddenly finds himself divorced and jobless, he starts robbing his wealthy neighbors to stay afloat. Stealing from his own social circle strangely exhilarates him—but he gradually gets tangled in a deadly web.",
-        "overview_ar": "يجد عملاق مالي نفسه فجأة مطلّقاً وعاطلاً عن العمل، فيبدأ بسرقة جيرانه الأثرياء ليدبّر أموره ويتبين أن السرقة من أفراد دائرته الاجتماعية تثيره بشكل غريب. إلّا أنه يتورط تدريجياً في شبكة فتاكة.",
+        "overview_ar": "When a financial titan suddenly finds himself divorced and jobless, he starts robbing his wealthy neighbors to stay afloat. Stealing from his own social circle strangely exhilarates him—but he gradually gets tangled in a deadly web.",
         "poster_path": "/yhqduKpikyUNQXlCQk9DrwMuBM8.jpg",
         "vote_average": 7.388,
         "release_date": "2025-04-10",
@@ -22539,9 +22539,9 @@
         "id": 126485,
         "type": "tv",
         "title": "Moving",
-        "title_ar": "Moving",
+        "title_ar": "무빙",
         "overview": "Children who live in hiding with superpowers, along with their parents who live with painful secrets of the past, face enormous dangers together.",
-        "overview_ar": "Children who live in hiding with superpowers, along with their parents who live with painful secrets of the past, face enormous dangers together.",
+        "overview_ar": "الأطفال الذين يعيشون في الخفاء مع قوى خارقة، جنبًا إلى جنب مع آبائهم الذين يعيشون مع أسرار الماضي المؤلمة، يواجهون معًا مخاطر هائلة.",
         "poster_path": "/vf9SNXNAFqzKBGksFwrXhkg9cb7.jpg",
         "vote_average": 8.498,
         "release_date": "2023-08-09",
@@ -23043,7 +23043,7 @@
         "id": 32958,
         "type": "tv",
         "title": "Survivor",
-        "title_ar": "הישרדות",
+        "title_ar": "Survivor",
         "overview": "Survivor (Hebrew: הישרדות‎, Hisardut), formerly known as Survivor 10, is an Israeli reality competition game show based on the popular international Survivor television franchise. The series began in December 2007 and aired on Israeli's Channel 10 for 6 seasons. After legal issues between Channel 10 and Castaway Television, the series went on a three-year hiatus before returning in 2015 on Reshet. The show is hosted by actor and singer Guy Zu-Aretz.",
         "overview_ar": "Survivor (Hebrew: הישרדות‎, Hisardut), formerly known as Survivor 10, is an Israeli reality competition game show based on the popular international Survivor television franchise. The series began in December 2007 and aired on Israeli's Channel 10 for 6 seasons. After legal issues between Channel 10 and Castaway Television, the series went on a three-year hiatus before returning in 2015 on Reshet. The show is hosted by actor and singer Guy Zu-Aretz.",
         "poster_path": "/vbMk3HiapgmJvK3pVPJFFMlhCII.jpg",
@@ -23055,7 +23055,7 @@
         "id": 72311,
         "type": "tv",
         "title": "The Advisors Alliance",
-        "title_ar": "大军师司马懿之军师联盟",
+        "title_ar": "The Advisors Alliance",
         "overview": "The story of Sima Yi, a great politician and strategist who lived during the Three Kingdoms era. By his side, Sima Yi has his politically-astute distaff members of his household, and pitted against them are the formidable Cao Cao and his heirs. After defending the Kingdom of Wei from Kongming formidable talents, who will end up with the ultimate power?",
         "overview_ar": "The story of Sima Yi, a great politician and strategist who lived during the Three Kingdoms era. By his side, Sima Yi has his politically-astute distaff members of his household, and pitted against them are the formidable Cao Cao and his heirs. After defending the Kingdom of Wei from Kongming formidable talents, who will end up with the ultimate power?",
         "poster_path": "/xdlltLF34oFEJ0yIQ64JROFR2VN.jpg",
