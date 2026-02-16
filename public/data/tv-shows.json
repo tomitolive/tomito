@@ -1699,7 +1699,7 @@
         "overview": "A crime she committed in her youthful past sends Piper Chapman to a women's prison, where she trades her comfortable New York life for one of unexpected camaraderie and conflict in an eccentric group of fellow inmates.",
         "overview_ar": "عندما تلاحق قضيّة من الماضي إحدى سيّدات \"نيويورك\"، ينتهي بها المطاف في سجن النساء، حيث سرعان ما تكتسب الصداقات والعداوات على حدّ سواء.",
         "poster_path": "/ekaa7YjGPTkFLcPhwWXTnARuCEU.jpg",
-        "vote_average": 7.653,
+        "vote_average": 7.651,
         "release_date": "2013-07-11",
         "popularity": 65.5431
     },
@@ -1747,7 +1747,7 @@
         "overview": "Al Bundy is an unsuccessful middle aged shoe salesman with a miserable life and an equally dysfunctional family. He hates his job, his wife is lazy, his son is dysfunctional (especially with women), and his daughter is dim-witted and promiscuous.",
         "overview_ar": "Al Bundy is an unsuccessful middle aged shoe salesman with a miserable life and an equally dysfunctional family. He hates his job, his wife is lazy, his son is dysfunctional (especially with women), and his daughter is dim-witted and promiscuous.",
         "poster_path": "/qxdOgESOkBMmfcWUizL01mbdqzl.jpg",
-        "vote_average": 7.718,
+        "vote_average": 7.719,
         "release_date": "1987-04-05",
         "popularity": 65.4631
     },
@@ -1810,18 +1810,6 @@
         "vote_average": 8.025,
         "release_date": "2016-10-02",
         "popularity": 62.4446
-    },
-    {
-        "id": 33238,
-        "type": "tv",
-        "title": "Running Man",
-        "title_ar": "Running Man",
-        "overview": "These days, as variety shows are gradually disappearing, this is one of Korea’s representative variety shows that has been responsible for Sunday evenings for over 10 years. This program features numerous stars and members going around various places, playing games, and completing missions. In particular, among the many fun elements of variety shows, this one focuses solely on laughter.\n\nOpen your eyes! Big fun is coming in!\n\nOpen your mouth! Big laughter is coming in!\n\nOpen your heart! Useful lessons are coming in!",
-        "overview_ar": "These days, as variety shows are gradually disappearing, this is one of Korea’s representative variety shows that has been responsible for Sunday evenings for over 10 years. This program features numerous stars and members going around various places, playing games, and completing missions. In particular, among the many fun elements of variety shows, this one focuses solely on laughter.\n\nOpen your eyes! Big fun is coming in!\n\nOpen your mouth! Big laughter is coming in!\n\nOpen your heart! Useful lessons are coming in!",
-        "poster_path": "/2Wmmu1MkqxJ48J7aySET9EKEjXz.jpg",
-        "vote_average": 8.3,
-        "release_date": "2010-07-11",
-        "popularity": 59.5183
     },
     {
         "id": 254071,
@@ -1918,6 +1906,18 @@
         "vote_average": 8.5,
         "release_date": "2008-10-03",
         "popularity": 62.3622
+    },
+    {
+        "id": 82856,
+        "type": "tv",
+        "title": "The Mandalorian",
+        "title_ar": "الماندالوري",
+        "overview": "After the fall of the Galactic Empire, lawlessness has spread throughout the galaxy. A lone gunfighter makes his way through the outer reaches, earning his keep as a bounty hunter.",
+        "overview_ar": "بعد سقوط الإمبراطورية وقبل ظهور الرتبة الأولى،  مقاتل وحيد في الروافد الخارجية للمجرة يعمل بعيدا عن سلطة الجمهورية الجديدة.",
+        "poster_path": "/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg",
+        "vote_average": 8.41,
+        "release_date": "2019-11-12",
+        "popularity": 65.1222
     },
     {
         "id": 82856,
@@ -6480,6 +6480,18 @@
         "popularity": 32.2466
     },
     {
+        "id": 68073,
+        "type": "tv",
+        "title": "The Loud House",
+        "title_ar": "The Loud House",
+        "overview": "Welcome to the Loud House, where life can get pretty crazy. One boy, TEN girls?! Lincoln Loud wouldn’t change it for the world!",
+        "overview_ar": "Welcome to the Loud House, where life can get pretty crazy. One boy, TEN girls?! Lincoln Loud wouldn’t change it for the world!",
+        "poster_path": "/v0xMCeZIkgBUQtiije0IDc8ReHr.jpg",
+        "vote_average": 7.837,
+        "release_date": "2016-05-02",
+        "popularity": 32.2466
+    },
+    {
         "id": 61923,
         "type": "tv",
         "title": "Star vs. the Forces of Evil",
@@ -6490,18 +6502,6 @@
         "vote_average": 8.4,
         "release_date": "2015-01-18",
         "popularity": 31.7185
-    },
-    {
-        "id": 198102,
-        "type": "tv",
-        "title": "Hijack",
-        "title_ar": "Hijack",
-        "overview": "Expert negotiator Sam Nelson is in for the ride of his life—and so is everyone on board with him—after a group of hijackers take control. Sam will try every move in his playbook to take them down...as the stakes grow higher by the second.",
-        "overview_ar": "Expert negotiator Sam Nelson is in for the ride of his life—and so is everyone on board with him—after a group of hijackers take control. Sam will try every move in his playbook to take them down...as the stakes grow higher by the second.",
-        "poster_path": "/2C51clnxQdiqPDeqQlXcUx70hse.jpg",
-        "vote_average": 7.609,
-        "release_date": "2023-06-28",
-        "popularity": 33.3237
     },
     {
         "id": 39276,
@@ -6571,7 +6571,7 @@
         "overview": "When the big woods of Wisconsin becomes a difficult spot for hunting, Charles Ingalls reluctantly decides to move his family, pioneering west. Their life on the farm in Walnut Grove, Minnesota, in the 1870s and 1880s is full of adventure, tragedy, and triumph. Based on the books of Laura Ingalls Wilder.",
         "overview_ar": "عندما أصبحت الغابات الكثيفة في ولاية ويسكونسن مكانًا صعبًا للصيد، قرر تشارلز إنغلس على مضض الانتقال بعائلته إلى الغرب، رائدًا في استكشاف الأراضي الجديدة. تستقر العائلة في مزرعة بالقرب من بلدة وولنات غروف في ولاية مينيسوتا خلال سبعينيات وثمانينيات القرن التاسع عشر، حيث يواجهون مغامرات وتحديات وانتصارات. يستند المسلسل إلى سلسلة الكتب التي كتبتها لورا إنغلس وايلدر، والتي توثق تجاربها الشخصية كفتاة نشأت في الريف الأمريكي.",
         "poster_path": "/eVpvlqKZfEVsBOttNFTUyfPoA6K.jpg",
-        "vote_average": 7.9,
+        "vote_average": 7.906,
         "release_date": "1974-09-11",
         "popularity": 32.626
     },
@@ -6583,7 +6583,7 @@
         "overview": "The unlikely friendship between Merlin, a young man gifted with extraordinary magical powers, and Prince Arthur, heir to the crown of Camelot.",
         "overview_ar": "The unlikely friendship between Merlin, a young man gifted with extraordinary magical powers, and Prince Arthur, heir to the crown of Camelot.",
         "poster_path": "/8eR5Jg7CxsuCOEBU5wW0opObxpi.jpg",
-        "vote_average": 7.819,
+        "vote_average": 7.818,
         "release_date": "2008-09-20",
         "popularity": 32.8921
     },
@@ -7455,9 +7455,9 @@
         "id": 110316,
         "type": "tv",
         "title": "Alice in Borderland",
-        "title_ar": "أوراق الموت",
+        "title_ar": "Alice in Borderland",
         "overview": "With his two friends, a video-game-obsessed young man finds himself in a strange version of Tokyo where they must compete in dangerous games to win.",
-        "overview_ar": "يجد لاعب ألعاب فيديو بلا هدف وصديقاه أنفسهم في \"طوكيو\" الموازية، حيث يُضطرّون إلى التنافس في سلسلة من الألعاب السادية لأجل النجاة بحياتهم.",
+        "overview_ar": "With his two friends, a video-game-obsessed young man finds himself in a strange version of Tokyo where they must compete in dangerous games to win.",
         "poster_path": "/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
         "vote_average": 8.121,
         "release_date": "2020-12-10",
@@ -8400,18 +8400,6 @@
         "popularity": 29.4565
     },
     {
-        "id": 259812,
-        "type": "tv",
-        "title": "Leyla",
-        "title_ar": "ليلى",
-        "overview": "As a child, Leyla suffers a blow from her stepmother and sees her world turned upside down. She loses everything - except the thirst for revenge. In search of justice, Leyla transforms into someone else and returns determined to settle accounts with the woman who destroyed her life and left her in a garbage dump. However, her revenge falters when she discovers the relationship between her ex-stepmother and the man, with whom she shared an innocent and unforgettable love affair",
-        "overview_ar": "بعد سنوات على تخلي زوجة أبيها عنها، تعود ليلى بخطة جهنمية للانتقام ممن آذوها في صغرها.",
-        "poster_path": "/or7YWXNJdmjIisff11ynSzocafz.jpg",
-        "vote_average": 8.2,
-        "release_date": "2024-09-11",
-        "popularity": 27.5804
-    },
-    {
         "id": 43865,
         "type": "tv",
         "title": "Psycho-Pass",
@@ -8527,7 +8515,7 @@
         "overview": "In Japan in the year 1600, at the dawn of a century-defining civil war, Lord Yoshii Toranaga is fighting for his life as his enemies on the Council of Regents unite against him, when a mysterious European ship is found marooned in a nearby fishing village.",
         "overview_ar": "في اليابان عام 1600، في فجر حرب أهلية حددت قرنًا من الزمان، يقاتل اللورد يوشي توراناجا من أجل حياته بينما يتحد أعداؤه في مجلس الحكام ضده، عندما يتم العثور على سفينة أوروبية غامضة تقطعت بها السبل في منطقة صيد قريبة. قرية.",
         "poster_path": "/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
-        "vote_average": 8.437,
+        "vote_average": 8.435,
         "release_date": "2024-02-27",
         "popularity": 29.5189
     },
@@ -8652,6 +8640,18 @@
         "popularity": 27.3575
     },
     {
+        "id": 46639,
+        "type": "tv",
+        "title": "American Gods",
+        "title_ar": "الآلهة الأمريكية",
+        "overview": "An ex-con becomes the traveling partner of a conman who turns out to be one of the older gods trying to recruit troops to battle the upstart deities. Based on Neil Gaiman's fantasy novel.",
+        "overview_ar": "An ex-con becomes the traveling partner of a conman who turns out to be one of the older gods trying to recruit troops to battle the upstart deities. Based on Neil Gaiman's fantasy novel.",
+        "poster_path": "/3KCAZaKHmoMIN9dHutqaMtubQqD.jpg",
+        "vote_average": 7.085,
+        "release_date": "2017-04-30",
+        "popularity": 27.3575
+    },
+    {
         "id": 222766,
         "type": "tv",
         "title": "The Day of the Jackal",
@@ -8753,7 +8753,7 @@
         "title": "Disenchantment",
         "title_ar": "Disenchantment",
         "overview": "Set in a ruined medieval city called Dreamland, Disenchantment follows the grubby adventures of a hard-drinking princess, her feisty elf companion and her personal demon.",
-        "overview_ar": "يستدعي الواجب الأميرة \"بين\"، ولكنّها تُفضّل الشراب... فها هي \"بين\" المفعمة بالحيوية تُثير سخط الملك بسبب عبثها بصحبة شيطانها ورفيقها القزم.",
+        "overview_ar": "Set in a ruined medieval city called Dreamland, Disenchantment follows the grubby adventures of a hard-drinking princess, her feisty elf companion and her personal demon.",
         "poster_path": "/1WynayCqKRzrl4cFZR8NOfiDwd6.jpg",
         "vote_average": 7.418,
         "release_date": "2018-08-17",
@@ -9600,30 +9600,6 @@
         "popularity": 27.4026
     },
     {
-        "id": 117488,
-        "type": "tv",
-        "title": "Yellowjackets",
-        "title_ar": "Yellowjackets",
-        "overview": "This equal parts survival epic, psychological horror story and coming-of-age drama tells the saga of a team of wildly talented high school girls soccer players who become the (un)lucky survivors of a plane crash deep in the remote northern wilderness. The series chronicles their descent from a complicated but thriving team to savage clans, while also tracking the lives they’ve attempted to piece back together nearly 25 years later.",
-        "overview_ar": "This equal parts survival epic, psychological horror story and coming-of-age drama tells the saga of a team of wildly talented high school girls soccer players who become the (un)lucky survivors of a plane crash deep in the remote northern wilderness. The series chronicles their descent from a complicated but thriving team to savage clans, while also tracking the lives they’ve attempted to piece back together nearly 25 years later.",
-        "poster_path": "/xRnGrn7Z7SC0KIBodocoU1QgDZF.jpg",
-        "vote_average": 7.46,
-        "release_date": "2021-11-14",
-        "popularity": 27.4026
-    },
-    {
-        "id": 42282,
-        "type": "tv",
-        "title": "Girls",
-        "title_ar": "Girls",
-        "overview": "The assorted humiliations, disasters and rare triumphs of four very different twenty-something girls: Hannah, an aspiring writer; Marnie, an art gallery assistant and cousins Jessa and Shoshanna.",
-        "overview_ar": "The assorted humiliations, disasters and rare triumphs of four very different twenty-something girls: Hannah, an aspiring writer; Marnie, an art gallery assistant and cousins Jessa and Shoshanna.",
-        "poster_path": "/ikyT3hnELofnYRsPIqVGgUhDbOT.jpg",
-        "vote_average": 6.384,
-        "release_date": "2012-04-15",
-        "popularity": 25.4669
-    },
-    {
         "id": 14328,
         "type": "tv",
         "title": "Dick Powell's Zane Grey Theatre",
@@ -9679,7 +9655,7 @@
         "overview": "Eda, who ties all her hopes to her education, confronts Serkan Bolat, who cuts off her international education scholarship and leaves her with high school diploma. Serkan Bolat offers Eda to give her scholarship back if she pretends to be his fiance for two months. Although Eda rejects the offer of this man as she hates him, she has to accept it when the conditions change. While pretending to be engaged, Serkan and Eda begin to experience a passionate, challenging relationship that will make them forget all they know right. Because love is difficult. And that's why it's amazing.",
         "overview_ar": "تلتقي عايدة الطموحة بالشاب الغني والمحب للسيطرة راكان ويكرهان بعضهما منذ اللحظة الأولى، لكن عليهما البقاء قريبين لمدة حتى يحصل كل منهما على ما يريد.",
         "poster_path": "/bE71f9A3eztjcd5JT3MmHB8MbzA.jpg",
-        "vote_average": 8.218,
+        "vote_average": 8.219,
         "release_date": "2020-07-08",
         "popularity": 26.8622
     },
@@ -9703,7 +9679,7 @@
         "overview": "Two estranged spouses — one a detective, the other a news reporter — vie to solve a murder in which each believes the other is a prime suspect.",
         "overview_ar": "يسعى زوجان منفصلان، أحدهما محقق والأخرى مراسلة أخبار، لفك خيوط جريمة قتل يظن كل منهما أن الآخر هو المشتبه به الرئيسي فيها.",
         "poster_path": "/vRXw6fUD9B4RhMoTvhcJcnHYIMP.jpg",
-        "vote_average": 7.199,
+        "vote_average": 7.202,
         "release_date": "2026-01-08",
         "popularity": 27.5769
     },
@@ -9762,7 +9738,7 @@
         "title_ar": "秦时明月",
         "overview": "The Legend of Qin follows the Qin dynasty from when the Emperor of the Qin, King Zheng conquered the other 6 nations and unified China, to the rise of the king of Western Chu, Xiang Yu, who capture the capital city, Xianyang.",
         "overview_ar": "The Legend of Qin follows the Qin dynasty from when the Emperor of the Qin, King Zheng conquered the other 6 nations and unified China, to the rise of the king of Western Chu, Xiang Yu, who capture the capital city, Xianyang.",
-        "poster_path": "/x48e2npV0eFTwDQhpt8qF7HUsLI.jpg",
+        "poster_path": "/9DbO3oDr5GxXYC2nQ3MHIcTsrRc.jpg",
         "vote_average": 8.7,
         "release_date": "2007-02-14",
         "popularity": 27.199
@@ -9790,6 +9766,18 @@
         "vote_average": 8.343,
         "release_date": "2006-10-05",
         "popularity": 25.6877
+    },
+    {
+        "id": 73021,
+        "type": "tv",
+        "title": "Disenchantment",
+        "title_ar": "Disenchantment",
+        "overview": "Set in a ruined medieval city called Dreamland, Disenchantment follows the grubby adventures of a hard-drinking princess, her feisty elf companion and her personal demon.",
+        "overview_ar": "يستدعي الواجب الأميرة \"بين\"، ولكنّها تُفضّل الشراب... فها هي \"بين\" المفعمة بالحيوية تُثير سخط الملك بسبب عبثها بصحبة شيطانها ورفيقها القزم.",
+        "poster_path": "/1WynayCqKRzrl4cFZR8NOfiDwd6.jpg",
+        "vote_average": 7.418,
+        "release_date": "2018-08-17",
+        "popularity": 27.3547
     },
     {
         "id": 106393,
@@ -9838,6 +9826,18 @@
         "vote_average": 2.731,
         "release_date": "2022-09-12",
         "popularity": 21.1543
+    },
+    {
+        "id": 83121,
+        "type": "tv",
+        "title": "Kaguya-sama: Love Is War",
+        "title_ar": "كاغويا تريد أن يعترف لها: ~حرب عباقرة القلوب والعقول~",
+        "overview": "Considered a genius due to having the highest grades in the country, Miyuki Shirogane leads the prestigious Shuchiin Academy's student council as its president, working alongside the beautiful and wealthy vice president Kaguya Shinomiya. The two are often regarded as the perfect couple by students despite them not being in any sort of romantic relationship.",
+        "overview_ar": "تتحدث عن كاغويا شينوميا و ميوكي شيروغاني و هما عضوان في مجلس طلبة أكادمية شوتشين للنخبة، يحتلان موقعهما كعباقرة بين العباقرة. الوقت الذي يقضيانه معا دفعهما إلى تكوين مشاعر نحو الطرف الآخر، لكن كبرياء كل واحد منهما لا يسمح له بأن يكون أول من يعترف و يصبح الطرف الخاضع في العلاقة! الحب عبارة عن حرب، و معركتها في جعل الآخر يعترف قد بدأت الآن",
+        "poster_path": "/5khbC6AuNgnvnoDbjIMKCOhEtIc.jpg",
+        "vote_average": 8.556,
+        "release_date": "2019-01-12",
+        "popularity": 24.6352
     },
     {
         "id": 83121,
@@ -10323,7 +10323,7 @@
         "id": 44953,
         "type": "tv",
         "title": "El Señor de los Cielos",
-        "title_ar": "El señor de los cielos",
+        "title_ar": "El Señor de los Cielos",
         "overview": "Set in the 1990s, these are the life and times of Amado Carrillo Fuentes, a man who became the head of the Juárez cartel. Nicknamed “El Señor de los Cielos” (Lord of the Skies) because of the large fleet of airplanes he used to transport drugs, he was also known for washing more than $200 million through Colombia to finance his huge fleet. He is described as the most powerful drug trafficker of his time.",
         "overview_ar": "Set in the 1990s, these are the life and times of Amado Carrillo Fuentes, a man who became the head of the Juárez cartel. Nicknamed “El Señor de los Cielos” (Lord of the Skies) because of the large fleet of airplanes he used to transport drugs, he was also known for washing more than $200 million through Colombia to finance his huge fleet. He is described as the most powerful drug trafficker of his time.",
         "poster_path": "/Ag7VUdnrRz5Qpq3Yn3E5OCvFnu0.jpg",
@@ -10397,7 +10397,7 @@
         "title": "The Ancient Magus' Bride",
         "title_ar": "The Ancient Magus' Bride",
         "overview": "Hatori Chise has lived a life full of neglect and abuse, devoid of anything resembling love. Far from the warmth of family, she has had her share of troubles and pitfalls. Just when all hope seems lost, a fateful encounter awaits her. When a man with the head of a beast, wielding strange powers, obtains her through a slave auction, Chise's life will never be the same again.\n\nThe man is a \"magus,\"a sorcerer of great power, who decides to free Chise from the bonds of captivity. The magus then makes a bold statement: Chise will become his apprentice--and his bride!",
-        "overview_ar": "تشيسي هاتوري، ذات 15 سنة. ضائعة، بلا أمل، وبلا عائلة، اُشترت بالمال - ليس من قِبل شخص اعتيادي، ولكن بساحر غير بشري اسمه إلياس. على الرغم من ترددها، تبدأ حياة جديدة كتلميذته وزوجته المستقبلية. تنتقل إلى حياتها الجديدة والآمنة برويّة. إلى أن تجد كتاب صور ياباني ضمن العديد من الذي أُرسل لها من لندن بواسطة أنجليكا. إنّه كتاب مقدّر اكتشفته في صغرها. عندما كانت مضطربة ووحيدة.",
+        "overview_ar": "Hatori Chise has lived a life full of neglect and abuse, devoid of anything resembling love. Far from the warmth of family, she has had her share of troubles and pitfalls. Just when all hope seems lost, a fateful encounter awaits her. When a man with the head of a beast, wielding strange powers, obtains her through a slave auction, Chise's life will never be the same again.\n\nThe man is a \"magus,\"a sorcerer of great power, who decides to free Chise from the bonds of captivity. The magus then makes a bold statement: Chise will become his apprentice--and his bride!",
         "poster_path": "/xXGAFMGiG55oS8uzuVz7V5JxFb2.jpg",
         "vote_average": 8.402,
         "release_date": "2017-10-08",
@@ -10467,7 +10467,7 @@
         "id": 300015,
         "type": "tv",
         "title": "Ichigo Aika: Strawberry Elegy",
-        "title_ar": "イチゴ哀歌～雑で生イキな妹と割り切れない兄～",
+        "title_ar": "Ichigo Aika: Strawberry Elegy",
         "overview": "The story centers on a pair of stepsiblings. When Kōta's father gets remarried, Kōta's first impression of his new stepsister Aika is that she is beautiful, but that image is shattered pretty quickly. His new stepsister is a super sassy and foul-mouthed gyaru who behaves uncontrollably while their parents are away, making Kōta's life a living hell. However, their relationship begins to change when Aika gradually warms up to Kōta's caring older-brother nature.",
         "overview_ar": "The story centers on a pair of stepsiblings. When Kōta's father gets remarried, Kōta's first impression of his new stepsister Aika is that she is beautiful, but that image is shattered pretty quickly. His new stepsister is a super sassy and foul-mouthed gyaru who behaves uncontrollably while their parents are away, making Kōta's life a living hell. However, their relationship begins to change when Aika gradually warms up to Kōta's caring older-brother nature.",
         "poster_path": "/fjKOO6PBLwLG3ViyvrIL9oZUmbU.jpg",
@@ -10803,9 +10803,9 @@
         "id": 309328,
         "type": "tv",
         "title": "Shadows of Love",
-        "title_ar": "تحت الارض",
+        "title_ar": "Shadows of Love",
         "overview": "Haydar Ali after avenging his family’s murder, ends up in prison. There, he finds himself in the middle of one of Türkiye’s most dangerous underground cartels. However, the truly deadly confrontation begins three years later, when he regains his freedom and learns that the woman whom he has never been able to forget, is now the wife of the man closest to him.",
-        "overview_ar": "بعد أن ثأر حيدر علي لمقتل عائلته بقتله، وجد نفسه متورطًا في واحدة من أخطر عصابات المخدرات في تركيا عندما انتهى به المطاف في السجن. لكن المواجهة الحقيقية المميتة بدأت بعد ثلاث سنوات عندما أُطلق سراحه: المرأة التي لا يزال حيدر علي عاجزًا عن نسيانها أصبحت الآن زوجة أقرب الناس إليه.",
+        "overview_ar": "Haydar Ali after avenging his family’s murder, ends up in prison. There, he finds himself in the middle of one of Türkiye’s most dangerous underground cartels. However, the truly deadly confrontation begins three years later, when he regains his freedom and learns that the woman whom he has never been able to forget, is now the wife of the man closest to him.",
         "poster_path": "/bu8ks983hBPEzyAH8gSATW5aPJ7.jpg",
         "vote_average": 9.0,
         "release_date": "2026-01-28",
@@ -11031,9 +11031,9 @@
         "id": 68604,
         "type": "tv",
         "title": "Ishqbaaaz",
-        "title_ar": "Ishqbaaaz",
+        "title_ar": "للعشق جنون",
         "overview": "Follows three brothers - Shivaay, Omkara and Rudra -- who share an unbreakable bond despite their dysfunctional family.What happens when cupid strikes each of them?",
-        "overview_ar": "Follows three brothers - Shivaay, Omkara and Rudra -- who share an unbreakable bond despite their dysfunctional family.What happens when cupid strikes each of them?",
+        "overview_ar": "القصة الرائعة لثلاثة أشقاء هم شيفاي، أومكارا ورودرا والذين تجمعهم علاقة متماسكة وقوية على الرغم من عدم ترابط أسرتهم.",
         "poster_path": "/lOa6zZVA9q6tBVZobRhWIdRMtEp.jpg",
         "vote_average": 9.0,
         "release_date": "2016-06-27",
@@ -13920,18 +13920,6 @@
         "popularity": 17.446
     },
     {
-        "id": 3782,
-        "type": "tv",
-        "title": "Naked City",
-        "title_ar": "Naked City",
-        "overview": "Naked City is a police drama series which aired from 1958 to 1963 on the ABC television network. It was inspired by the 1948 motion picture of the same name, and mimics its dramatic “semi-documentary” format.\n\nIn 1997, the episode “Sweet Prince of Delancey Street” was ranked #93 on TV Guide’s “100 Greatest Episodes of All Time”.",
-        "overview_ar": "Naked City is a police drama series which aired from 1958 to 1963 on the ABC television network. It was inspired by the 1948 motion picture of the same name, and mimics its dramatic “semi-documentary” format.\n\nIn 1997, the episode “Sweet Prince of Delancey Street” was ranked #93 on TV Guide’s “100 Greatest Episodes of All Time”.",
-        "poster_path": "/56pxzIXS9dEwtUHsQc4ggDMkSX2.jpg",
-        "vote_average": 5.5,
-        "release_date": "1958-09-30",
-        "popularity": 17.446
-    },
-    {
         "id": 14511,
         "type": "tv",
         "title": "WordGirl",
@@ -13951,7 +13939,7 @@
         "overview": "Natural World is a nature documentary television series broadcast annually on BBC Two and regarded by the BBC as its flagship natural history brand. It is currently the longest-running series in its genre on British television, with more than 400 episodes broadcast since its inception in 1983.\n\nNatural World is produced by the BBC Natural History Unit in Bristol, but individual programmes can be in-house productions, collaborative productions with other broadcasters or films made and distributed by independent production companies and purchased by the BBC. Natural World programmes are often broadcast as PBS Nature episodes in the USA. Since 2008, most Natural World programmes have been shot and broadcast in high definition.",
         "overview_ar": "Natural World is a nature documentary television series broadcast annually on BBC Two and regarded by the BBC as its flagship natural history brand. It is currently the longest-running series in its genre on British television, with more than 400 episodes broadcast since its inception in 1983.\n\nNatural World is produced by the BBC Natural History Unit in Bristol, but individual programmes can be in-house productions, collaborative productions with other broadcasters or films made and distributed by independent production companies and purchased by the BBC. Natural World programmes are often broadcast as PBS Nature episodes in the USA. Since 2008, most Natural World programmes have been shot and broadcast in high definition.",
         "poster_path": "/lM2O6k77POzauRNR6iAcOFZKwqY.jpg",
-        "vote_average": 7.3,
+        "vote_average": 7.362,
         "release_date": "1983-10-30",
         "popularity": 18.6847
     },
@@ -14179,7 +14167,7 @@
         "overview": "In a world of monsters, adventurers and magic, some of the most gifted healers are subjugated to brute force. Keyaru gains the ability to rewind time and turns the tables on those who’ve exploited him in this dark fantasy tale of vengeance and fury.",
         "overview_ar": "In a world of monsters, adventurers and magic, some of the most gifted healers are subjugated to brute force. Keyaru gains the ability to rewind time and turns the tables on those who’ve exploited him in this dark fantasy tale of vengeance and fury.",
         "poster_path": "/9T7TT0w92RbeRP5QSnNq81HHxde.jpg",
-        "vote_average": 8.34,
+        "vote_average": 8.3,
         "release_date": "2021-01-13",
         "popularity": 20.0776
     },
@@ -14347,7 +14335,7 @@
         "overview": "A great student, avid gamer, and voracious fan-fic scribe, Kamala Khan has a special affinity for superheroes, particularly Captain Marvel. However, she struggles to fit in at home and at school — that is, until she gets superpowers like the heroes she’s always looked up to. Life is easier with superpowers, right?",
         "overview_ar": "كاملا خان مراهقة مسلمة، تعيش مع عائلتها، حيث تكافح خلال مرحلة المراهقة من أجل إثبات نفسها، ولكن تتغير حياتها تماما حينما تتعرض لعدوى من قبل مخلوق غامض يدعى تيرين ميست، وتصبح لدى كاملا القدرة على التحكم في جسدها من خلال التمدد والتضخم، أو التحول إلى حجم الذرة الصغيرة.",
         "poster_path": "/3HWWh92kZbD7odwJX7nKmXNZsYo.jpg",
-        "vote_average": 6.297,
+        "vote_average": 6.293,
         "release_date": "2022-06-08",
         "popularity": 20.0806
     },
@@ -14362,6 +14350,18 @@
         "vote_average": 8.438,
         "release_date": "2017-07-12",
         "popularity": 20.4032
+    },
+    {
+        "id": 278043,
+        "type": "tv",
+        "title": "You and I Are Polar Opposites",
+        "title_ar": "You and I Are Polar Opposites",
+        "overview": "Suzuki's a high school girl in love, but the guy she's fallen for is nothing like her! While she's cheerful, outgoing, and always trying to fit in, her classmate Yusuke Tani is stoic, quiet, and doesn't seem to care what people think of him. Will Suzuki be able to overcome her anxieties and ask him out, or will she discover that opposites really don't attract?",
+        "overview_ar": "Suzuki's a high school girl in love, but the guy she's fallen for is nothing like her! While she's cheerful, outgoing, and always trying to fit in, her classmate Yusuke Tani is stoic, quiet, and doesn't seem to care what people think of him. Will Suzuki be able to overcome her anxieties and ask him out, or will she discover that opposites really don't attract?",
+        "poster_path": "/9hRuMU33DBz4z1vaYBRqLLuFFbQ.jpg",
+        "vote_average": 8.6,
+        "release_date": "2026-01-11",
+        "popularity": 21.2671
     },
     {
         "id": 308482,
@@ -14883,9 +14883,9 @@
         "id": 67195,
         "type": "tv",
         "title": "Legion",
-        "title_ar": "Legion",
+        "title_ar": "ليجون",
         "overview": "David Haller, AKA Legion, is a troubled young man who may be more than human. Diagnosed as schizophrenic, David has been in and out of psychiatric hospitals for years. But after a strange encounter with a fellow patient, he’s confronted with the possibility that the voices he hears and the visions he sees might be real.",
-        "overview_ar": "David Haller, AKA Legion, is a troubled young man who may be more than human. Diagnosed as schizophrenic, David has been in and out of psychiatric hospitals for years. But after a strange encounter with a fellow patient, he’s confronted with the possibility that the voices he hears and the visions he sees might be real.",
+        "overview_ar": "بعدما أقضّت مضجعه رؤى مزعجة، يبدأ \"ديفيد هالر\" الشاب في جمع ذكرياته المُبعثرة معًا ويدرك أنه قد يمتلك قوًى خاصة خارقة.",
         "poster_path": "/xhJtYVTsdXQCIlB5hAXkMCPUG9y.jpg",
         "vote_average": 7.503,
         "release_date": "2017-02-08",
@@ -16560,6 +16560,18 @@
         "popularity": 17.3057
     },
     {
+        "id": 9937,
+        "type": "tv",
+        "title": "Intimate Portrait",
+        "title_ar": "Intimate Portrait",
+        "overview": "Intimate Portrait is a biographical television series on the Lifetime Television cable network focusing on different celebrities, which includes interviews with each subject.\n\nAmong the people profiled were Grace Kelly, Natalie Wood, Carly Simon, Jackie Kennedy, Katharine Hepburn, Carol Burnett, Tanya Tucker, and Marla Maples.",
+        "overview_ar": "Intimate Portrait is a biographical television series on the Lifetime Television cable network focusing on different celebrities, which includes interviews with each subject.\n\nAmong the people profiled were Grace Kelly, Natalie Wood, Carly Simon, Jackie Kennedy, Katharine Hepburn, Carol Burnett, Tanya Tucker, and Marla Maples.",
+        "poster_path": "/3S3G8DTeWrXcQn1QQSfAZ9sWXk2.jpg",
+        "vote_average": 4.5,
+        "release_date": "1993-11-14",
+        "popularity": 15.3396
+    },
+    {
         "id": 67549,
         "type": "tv",
         "title": "Milo Murphy's Law",
@@ -16786,18 +16798,6 @@
         "vote_average": 3.0,
         "release_date": "2001-09-17",
         "popularity": 17.8221
-    },
-    {
-        "id": 80054,
-        "type": "tv",
-        "title": "Truth Be Told",
-        "title_ar": "Truth Be Told",
-        "overview": "Descend into the world of true-crime podcasts with Poppy Parnell, who risks everything—including her life—to pursue truth and justice.",
-        "overview_ar": "ادخل عالم المدوّنات الصوتية للجرائم الحقيقية. هذا المسلسل الدرامي الفائز بجائزة \"إن إيه إيه سي بي إيمدج\" ومن بطولة \"أوكتافيا سبنسر\" في دور المدوّنة",
-        "poster_path": "/3T2TJ61ems7ArVGwb6kiVuKcdUk.jpg",
-        "vote_average": 7.07,
-        "release_date": "2019-12-06",
-        "popularity": 14.5446
     },
     {
         "id": 80054,
@@ -19680,18 +19680,6 @@
         "popularity": 15.1584
     },
     {
-        "id": 92892,
-        "type": "tv",
-        "title": "Ahiru no Sora",
-        "title_ar": "Ahiru no Sora",
-        "overview": "Sora joins the high school basketball club, but his unmotivated teammates don't care about the game. To get anywhere, he has to change their minds.",
-        "overview_ar": "Sora joins the high school basketball club, but his unmotivated teammates don't care about the game. To get anywhere, he has to change their minds.",
-        "poster_path": "/jAVcBnYvxEHY5CR0lDnaPkjNTX3.jpg",
-        "vote_average": 8.441,
-        "release_date": "2019-10-01",
-        "popularity": 14.6667
-    },
-    {
         "id": 62,
         "type": "tv",
         "title": "The Challenge",
@@ -19918,6 +19906,18 @@
         "vote_average": 8.3,
         "release_date": "2025-10-08",
         "popularity": 16.383
+    },
+    {
+        "id": 103,
+        "type": "tv",
+        "title": "The Time Tunnel",
+        "title_ar": "The Time Tunnel",
+        "overview": "The Time Tunnel is a 1966–1967 U.S. color science fiction TV series, written around a theme of time travel adventure. The show was creator-producer Irwin Allen's third science fiction television series, released by 20th Century Fox and broadcast on ABC. The show ran for one season of 30 episodes. Reruns are viewable on cable and by internet streaming. A pilot for a new series was produced in 2002, although it was not picked up.",
+        "overview_ar": "The Time Tunnel is a 1966–1967 U.S. color science fiction TV series, written around a theme of time travel adventure. The show was creator-producer Irwin Allen's third science fiction television series, released by 20th Century Fox and broadcast on ABC. The show ran for one season of 30 episodes. Reruns are viewable on cable and by internet streaming. A pilot for a new series was produced in 2002, although it was not picked up.",
+        "poster_path": "/6E3Ncd9iLWqi8m1GcdkU5bSwOnS.jpg",
+        "vote_average": 7.606,
+        "release_date": "1966-09-09",
+        "popularity": 15.4442
     },
     {
         "id": 66599,
@@ -20151,9 +20151,9 @@
         "id": 20353,
         "type": "tv",
         "title": "Magical DoReMi",
-        "title_ar": "Magical DoReMi",
+        "title_ar": "دروبي مع دو ري مي",
         "overview": "Ojamajo Doremi, known as Magical DoReMi internationally, is a magical girl anime television series created by Toei Animation in 1999. It focuses on elementary school students who become witch apprentices. Led by Doremi Harukaze, the girls must maintain their double lives in secret.\n\nOjamajo Doremi has been followed up by three direct sequels, lasting until its end in 2003. During the television series' runtime, two companion films were released in theaters. The English dub, produced by 4Kids Entertainment, released a preview episode in the US airing on August 13, 2005, and the first episode on September 10, 2005.",
-        "overview_ar": "Ojamajo Doremi, known as Magical DoReMi internationally, is a magical girl anime television series created by Toei Animation in 1999. It focuses on elementary school students who become witch apprentices. Led by Doremi Harukaze, the girls must maintain their double lives in secret.\n\nOjamajo Doremi has been followed up by three direct sequels, lasting until its end in 2003. During the television series' runtime, two companion films were released in theaters. The English dub, produced by 4Kids Entertainment, released a preview episode in the US airing on August 13, 2005, and the first episode on September 10, 2005.",
+        "overview_ar": "رأت رفيف محل السحر فدخلته فرأت الانسة هناء وعرفت انها ساحرة فتحولت  إلى ضفدع أخضر اسمه طب طب ولكي تعود إلى هيأتها الطبيعية يجب أن يتجاوز  الشخص الذي عرفها وهي رفيف 10 اختبارات في عالم السحر أو بالدبلجة العربية \"  كوكب سيما \" فجعلها تمثل كوكب الأرض وبعدها أصبحت صديقاتها مثلها وهما  ليلى وصفاء وقد اعطوهن عصا الطلبات لكي تلبى أي طلب لهم ولكن تحتاج عصا  الطلبات إلى كرات لكي تعمل\n\nو هذه الكرات لابد ان يشترهن بالمال لذلك قاموا بعمل محل لبيع الأشياء وبعدها يحصلون على المال.",
         "poster_path": "/iCINo8JNXswWelsEycO1frahHS1.jpg",
         "vote_average": 8.4,
         "release_date": "1999-02-07",
@@ -22035,7 +22035,7 @@
         "id": 67676,
         "type": "tv",
         "title": "The Disastrous Life of Saiki K.",
-        "title_ar": "The Disastrous Life of Saiki K.",
+        "title_ar": "斉木楠雄のΨ難",
         "overview": "High school sophomore Kusuo Saiki swore as a child that he would keep his psychic talents hidden, but his abilities still make his life difficult.",
         "overview_ar": "High school sophomore Kusuo Saiki swore as a child that he would keep his psychic talents hidden, but his abilities still make his life difficult.",
         "poster_path": "/tpym31HVeQgenaubvCxkMF3kFHy.jpg",
@@ -22049,7 +22049,7 @@
         "title": "The Haunting of Hill House",
         "title_ar": "The Haunting of Hill House",
         "overview": "Flashing between past and present, a fractured family confronts haunting memories of their old home and the terrifying events that drove them from it.",
-        "overview_ar": "Flashing between past and present, a fractured family confronts haunting memories of their old home and the terrifying events that drove them from it.",
+        "overview_ar": "تنتقل أسرة مُفكّكة سريعًا ما بين الماضي والحاضر، ويواجه أفرادها ذكريات مُخيفة عن منزلهم القديم والأحداث المُرعبة التي أبعدتهم عنه.",
         "poster_path": "/38PkhBGRQtmVx2drvPik3F42qHO.jpg",
         "vote_average": 8.106,
         "release_date": "2018-10-12",
@@ -22059,7 +22059,7 @@
         "id": 80281,
         "type": "tv",
         "title": "Larva",
-        "title_ar": "Larva",
+        "title_ar": "라바",
         "overview": "Two curious worms spend their days investigating the otherworldly objects that fall through the grate into their subterranean world.",
         "overview_ar": "Two curious worms spend their days investigating the otherworldly objects that fall through the grate into their subterranean world.",
         "poster_path": "/jDZ2rAmJ8mTojT929wTRMFKpv2L.jpg",
@@ -23283,9 +23283,9 @@
         "id": 926,
         "type": "tv",
         "title": "Scooby-Doo, Where Are You!",
-        "title_ar": "سكوبي دو أين انت!",
+        "title_ar": "Scooby-Doo, Where Are You!",
         "overview": "Fred, Daphne, Velma, Shaggy, and the talking dog, Scooby-Doo, travel on the Mystery Machine van, in search of weird mysteries to solve.",
-        "overview_ar": "سكوبي دو أين أنت! هو مسلسل تلفزيوني كوميدي أمريكي للرسوم المتحركة من تأليف جو روبي وكين سبيرز وإنتاج هانا باربيرا لشبكة سي بي إس. تم عرض المسلسل لأول مرة كجزء من جدول الرسوم المتحركة الصباحية يوم السبت للشبكة في 13 سبتمبر 1969 ، وتم بثه لمدة موسمين حتى 31 أكتوبر 1970.",
+        "overview_ar": "Fred, Daphne, Velma, Shaggy, and the talking dog, Scooby-Doo, travel on the Mystery Machine van, in search of weird mysteries to solve.",
         "poster_path": "/lTzUSCtXR77CmGmEHcaxpxu2b4h.jpg",
         "vote_average": 7.8,
         "release_date": "1969-09-13",
