@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams, useSearchParams, Link } from "react-router-dom";
+import { useParams, useSearchParams, Link, useNavigate } from "react-router-dom";
 import { Play, Star, Clock, Calendar, ArrowRight, Users, ChevronDown, Maximize, Settings2, Server } from "lucide-react";
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { Navbar } from "@/components/Navbar";
@@ -28,6 +28,7 @@ import { event as trackEvent } from "@/lib/analytics";
 
 export default function WatchTV() {
   const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const [show, setShow] = useState<TVShowDetails | null>(null);
   const [cast, setCast] = useState<Cast[]>([]);
@@ -158,6 +159,9 @@ export default function WatchTV() {
       <div className="relative pt-24 pb-8 container mx-auto px-4">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
+          <Button variant="ghost" size="icon" onClick={() => navigate(-1)} className="mr-2">
+            <ArrowRight className="w-4 h-4 rtl-flip" />
+          </Button>
           <Link to="/" className="hover:text-primary transition-colors">{t("home")}</Link>
           <ArrowRight className="w-4 h-4 rtl-flip" />
           <Link to="/category/tv/all" className="hover:text-primary transition-colors">{t("tvShows")}</Link>

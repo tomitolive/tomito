@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { Play, Star, Clock, Calendar, ArrowRight, Users, Maximize, Settings2, Server } from "lucide-react";
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { Navbar } from "@/components/Navbar";
@@ -27,6 +27,7 @@ import { event as trackEvent } from "@/lib/analytics";
 
 export default function WatchMovie() {
   const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
   const [movie, setMovie] = useState<MovieDetails | null>(null);
   const [cast, setCast] = useState<Cast[]>([]);
   const [similar, setSimilar] = useState<Movie[]>([]);
@@ -117,6 +118,9 @@ export default function WatchMovie() {
       <div className="relative pt-24 pb-8 container mx-auto px-4">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
+          <Button variant="ghost" size="icon" onClick={() => navigate(-1)} className="mr-2">
+            <ArrowRight className="w-4 h-4 rtl-flip" />
+          </Button>
           <Link to="/" className="hover:text-primary transition-colors">{t("home")}</Link>
           <ArrowRight className="w-4 h-4 rtl-flip" />
           <Link to="/category/movie/all" className="hover:text-primary transition-colors">{t("movies")}</Link>
