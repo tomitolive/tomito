@@ -1349,3 +1349,20 @@ export async function fetchByCompany(mediaType: "movie" | "tv", companyId: strin
   const url = `${TMDB_CONFIG.BASE_URL}/discover/${mediaType}?api_key=${TMDB_CONFIG.API_KEY}&with_companies=${companyId}`;
   return fetchAndMergeLocale(url, page);
 }
+
+export async function fetchRamadan2026() {
+  try {
+    const response = await fetch("/ramadan_series_2026.json");
+    const data = await response.json();
+    return data.map((item: any) => ({
+      ...item,
+      name: item.title_en,
+      first_air_date: item.date,
+      vote_average: item.rating,
+      poster_path: item.poster.replace(/https:\/\/image\.tmdb\.org\/t\/p\/w500/, ""),
+    })) as TVShow[];
+  } catch (error) {
+    console.error("Failed to fetch Ramadan 2026 series:", error);
+    return [];
+  }
+}
