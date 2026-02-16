@@ -2607,7 +2607,7 @@
         "id": 73861,
         "type": "movie",
         "title": "A Serbian Film",
-        "title_ar": "Srpski film",
+        "title_ar": "A Serbian Film",
         "overview": "Retired porn star Milos leads a normal family life trying to make ends meet. Presented with the opportunity of a lifetime to financially support his family for the rest of their lives, Milos must participate in one last mysterious film. From then on, Milos is drawn into a maelstrom of unbelievable cruelty and mayhem.",
         "overview_ar": "Retired porn star Milos leads a normal family life trying to make ends meet. Presented with the opportunity of a lifetime to financially support his family for the rest of their lives, Milos must participate in one last mysterious film. From then on, Milos is drawn into a maelstrom of unbelievable cruelty and mayhem.",
         "poster_path": "/cToUzXZ9AcUylfIt8vnXhiy6Y9m.jpg",
@@ -2619,9 +2619,9 @@
         "id": 263115,
         "type": "movie",
         "title": "Logan",
-        "title_ar": "لوغان",
+        "title_ar": "Logan",
         "overview": "In the near future, a weary Logan cares for an ailing Professor X in a hideout on the Mexican border. But Logan's attempts to hide from the world and his legacy are upended when a young mutant arrives, pursued by dark forces.",
-        "overview_ar": "لقد حان وقته.  في المستقبل القريب ، يعتني لوغان المرهق بالبروفيسور X المريض في مخبأ على الحدود المكسيكية. لكن محاولات لوغان للاختباء من العالم وإرثه تنقلب رأسا على عقب عندما يصل متحولة شابة ، تلاحقها قوى الظلام.",
+        "overview_ar": "In the near future, a weary Logan cares for an ailing Professor X in a hideout on the Mexican border. But Logan's attempts to hide from the world and his legacy are upended when a young mutant arrives, pursued by dark forces.",
         "poster_path": "/fnbjcRDYn6YviCcePDnGdyAkYsB.jpg",
         "vote_average": 7.818,
         "release_date": "2017-02-28",
@@ -2631,9 +2631,9 @@
         "id": 912649,
         "type": "movie",
         "title": "Venom: The Last Dance",
-        "title_ar": "فينوم: الرقصة الأخيرة",
+        "title_ar": "Venom: The Last Dance",
         "overview": "Eddie and Venom are on the run. Hunted by both of their worlds and with the net closing in, the duo are forced into a devastating decision that will bring the curtains down on Venom and Eddie's last dance.",
-        "overview_ar": "يشكل الفصل الأخير في رحلة إيدي بروك (الذي يؤديه توم هاردي) والسمبيوت الفضائي فينوم. الفيلم يستعرض صراع الثنائي في مواجهة أعداء جدد، منهم شخصية شريرة تدعى \"كنول\"، بينما يواجهان مطاردة مستمرة تضطرهما لاتخاذ قرارات مصيرية ومدمرة لضمان بقائهما على قيد الحياة.",
+        "overview_ar": "Eddie and Venom are on the run. Hunted by both of their worlds and with the net closing in, the duo are forced into a devastating decision that will bring the curtains down on Venom and Eddie's last dance.",
         "poster_path": "/1RaSkWakWBxxYOWRrqmwo2my5zg.jpg",
         "vote_average": 6.664,
         "release_date": "2024-10-22",
@@ -3120,6 +3120,18 @@
         "popularity": 16.3457
     },
     {
+        "id": 1280875,
+        "type": "movie",
+        "title": "Fate/kaleid liner Prisma☆Illya 2wei!: Magical Girl in Hot Springs Inn",
+        "title_ar": "Fate/kaleid liner プリズマ☆イリヤ ツヴァイ! 魔法少女in温泉旅行",
+        "overview": "An OVA released between Fate/Kaleid Liner Prisma Illya 2Wei! and Fate/Kaleid Liner Prisma Illya 2Wei Herz!",
+        "overview_ar": "An OVA released between Fate/Kaleid Liner Prisma Illya 2Wei! and Fate/Kaleid Liner Prisma Illya 2Wei Herz!",
+        "poster_path": "/mxV8YOD0btBX6Nn8qBRswJHmMWi.jpg",
+        "vote_average": 10.0,
+        "release_date": "2015-07-25",
+        "popularity": 18.023
+    },
+    {
         "id": 280,
         "type": "movie",
         "title": "Terminator 2: Judgment Day",
@@ -3127,7 +3139,7 @@
         "overview": "Ten years after the events of the original, a reprogrammed T-800 is sent back in time to protect young John Connor from the shape-shifting T-1000. Together with his mother Sarah, he fights to stop Skynet from triggering a nuclear apocalypse.",
         "overview_ar": "مرت ما يقرب من 10 سنوات منذ أن تم استهداف سارة كونور من قبل سايبورغ من المستقبل. الآن ابنها ، جون ، القائد المستقبلي للمقاومة ، هو هدف لمنهي جديد أكثر فتكًا. مرة أخرى ، تمكنت المقاومة من إعادة حاميها في محاولة لإنقاذ جون ووالدته سارة.",
         "poster_path": "/jFTVD4XoWQTcg7wdyJKa8PEds5q.jpg",
-        "vote_average": 8.138,
+        "vote_average": 8.139,
         "release_date": "1991-07-03",
         "popularity": 16.9197
     },
@@ -3187,7 +3199,7 @@
         "overview": "As their marriage quietly unravels, Alex faces middle age and an impending divorce, seeking new purpose in the New York comedy scene while Tess confronts the sacrifices she made for their family—forcing them to navigate co-parenting, identity, and whether love can take a new form.",
         "overview_ar": "As their marriage quietly unravels, Alex faces middle age and an impending divorce, seeking new purpose in the New York comedy scene while Tess confronts the sacrifices she made for their family—forcing them to navigate co-parenting, identity, and whether love can take a new form.",
         "poster_path": "/YD6QzcokTMe3EViM0hLbNCxf4y.jpg",
-        "vote_average": 6.828,
+        "vote_average": 6.8,
         "release_date": "2025-12-19",
         "popularity": 17.483
     },
@@ -3223,7 +3235,7 @@
         "overview": "Under the direction of a ruthless instructor, a talented young drummer begins to pursue perfection at any cost, even his humanity.",
         "overview_ar": "تحت إشراف مدرب لا يرحم ، يبدأ عازف إيقاع شاب موهوب في السعي وراء الكمال بأي ثمن ، حتى إنسانيته.",
         "poster_path": "/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
-        "vote_average": 8.374,
+        "vote_average": 8.4,
         "release_date": "2014-10-10",
         "popularity": 17.3091
     },
@@ -3391,7 +3403,7 @@
         "overview": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
         "overview_ar": "الحياة والحرية والسعي وراء الانتقام.  بمساعدة صياد جوائز ألماني ، ينطلق عبد محرر لإنقاذ زوجته من مالك مزرعة وحشي في ولاية ميسيسيبي.",
         "poster_path": "/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg",
-        "vote_average": 8.187,
+        "vote_average": 8.2,
         "release_date": "2012-12-25",
         "popularity": 16.0409
     },
@@ -3415,7 +3427,7 @@
         "overview": "Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the destruction of his home-world and the end of Asgardian civilization, at the hands of a powerful new threat, the ruthless Hela.",
         "overview_ar": "ثور في الجانب الآخر من الكون، يجد نفسه في سباق مع الزمن للعودة إلى - ازقارد-  ليوقف الراقناروك، ونبوءة تدمير عالمه ونهاية حضارة - أزقارديان - على يد تهديد جديد قوي - هيلا - القاسية.",
         "poster_path": "/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
-        "vote_average": 7.581,
+        "vote_average": 7.6,
         "release_date": "2017-10-02",
         "popularity": 16.5105
     },
@@ -3547,7 +3559,7 @@
         "overview": "While the Civil War rages on between the Union and the Confederacy, three men – a quiet loner, a ruthless hitman, and a Mexican bandit – comb the American Southwest in search of a strongbox containing $200,000 in stolen gold.",
         "overview_ar": "أثناء اندلاع الحرب الأهلية بين الاتحاد والكونفدرالية ، يقوم ثلاثة رجال - وحيد هادئ ، ورجل قاتل لا يرحم ولصوص مكسيكي - بتمشيط جنوب غرب أمريكا بحثًا عن صندوق يحتوي على 200 ألف دولار من الذهب المسروق.",
         "poster_path": "/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg",
-        "vote_average": 8.468,
+        "vote_average": 8.5,
         "release_date": "1966-12-22",
         "popularity": 16.6721
     },
@@ -3571,7 +3583,7 @@
         "overview": "The Grand Budapest Hotel tells of a legendary concierge at a famous European hotel between the wars and his friendship with a young employee who becomes his trusted protégé. The story involves the theft and recovery of a priceless Renaissance painting, the battle for an enormous family fortune and the slow and then sudden upheavals that transformed Europe during the first half of the 20th century.",
         "overview_ar": "يحكي فندق Grand Budapest Hotel عن كونسيرج أسطوري في فندق أوروبي شهير بين الحربين وصداقته مع موظف شاب أصبح ربيبه الموثوق به. تتضمن القصة سرقة واستعادة لوحة لا تقدر بثمن من عصر النهضة ، والمعركة من أجل ثروة عائلية هائلة والاضطرابات البطيئة ثم المفاجئة التي غيرت أوروبا خلال النصف الأول من القرن العشرين.",
         "poster_path": "/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
-        "vote_average": 8.033,
+        "vote_average": 8.0,
         "release_date": "2014-02-26",
         "popularity": 15.2645
     },
@@ -3586,18 +3598,6 @@
         "vote_average": 5.496,
         "release_date": "2025-11-12",
         "popularity": 16.8761
-    },
-    {
-        "id": 573435,
-        "type": "movie",
-        "title": "Bad Boys: Ride or Die",
-        "title_ar": "Bad Boys: Ride or Die",
-        "overview": "After their late former Captain is framed, Lowrey and Burnett try to clear his name, only to end up on the run themselves.",
-        "overview_ar": "After their late former Captain is framed, Lowrey and Burnett try to clear his name, only to end up on the run themselves.",
-        "poster_path": "/oGythE98MYleE6mZlGs5oBGkux1.jpg",
-        "vote_average": 7.339,
-        "release_date": "2024-06-05",
-        "popularity": 16.4926
     },
     {
         "id": 675,
@@ -4503,9 +4503,9 @@
         "id": 321612,
         "type": "movie",
         "title": "Beauty and the Beast",
-        "title_ar": "Beauty and the Beast",
+        "title_ar": "الجميلة والوحش",
         "overview": "A live-action adaptation of Disney's version of the classic tale of a cursed prince and a beautiful young woman who helps him break the spell.",
-        "overview_ar": "A live-action adaptation of Disney's version of the classic tale of a cursed prince and a beautiful young woman who helps him break the spell.",
+        "overview_ar": "تأخذ الرسوم المتحركة الكلاسيكية من ديزني شكلاً جديدًا، لأمير شاب. سٌجن في شكل وحش، يمكن تحريره فقط بالحب الحقيقي. قد تكون فرصته الوحيدة عندما يقابل-  بيل -  وهي الفتاة الوحيدة التي زارت القلعة منذ أن تم سحرها.",
         "poster_path": "/hKegSKIDep2ewJWPUQD7u0KqFIp.jpg",
         "vote_average": 7.0,
         "release_date": "2017-03-16",
@@ -6240,6 +6240,18 @@
         "popularity": 11.2086
     },
     {
+        "id": 4488,
+        "type": "movie",
+        "title": "Friday the 13th",
+        "title_ar": "Friday the 13th",
+        "overview": "Camp counselors are stalked and murdered by an unknown assailant while trying to reopen a summer camp that was the site of a child's drowning.",
+        "overview_ar": "Camp counselors are stalked and murdered by an unknown assailant while trying to reopen a summer camp that was the site of a child's drowning.",
+        "poster_path": "/uGGpnWHOmWTARVN9wbC1nPxNgps.jpg",
+        "vote_average": 6.401,
+        "release_date": "1980-05-09",
+        "popularity": 11.2086
+    },
+    {
         "id": 77338,
         "type": "movie",
         "title": "The Intouchables",
@@ -6379,7 +6391,7 @@
         "overview": "The year is 2029. John Connor, leader of the resistance continues the war against the machines. At the Los Angeles offensive, John's fears of the unknown future begin to emerge when TECOM spies reveal a new plot by SkyNet that will attack him from both fronts; past and future, and will ultimately change warfare forever.",
         "overview_ar": "بعد العثور على خط زمني جديد، تقوم سارة (إميليلا كلارك)، والدة جون كونور بالتعاون مع كل من كايل ريس (جاي كورتني) المرسل من قبل ابنها لحمايتها، ومع أحد المدمرين القدامي في سبيل محاولة إيقاف الخطر الذي ينتظرهم في المستقبل ومحاولة إعادة ضبطه من جديد بعد اختلاله ومواجهتهم لنسخة جديدة وغير معتادة من الأحداث الماضية.",
         "poster_path": "/oZRVDpNtmHk8M1VYy1aeOWUXgbC.jpg",
-        "vote_average": 5.947,
+        "vote_average": 5.948,
         "release_date": "2015-06-23",
         "popularity": 11.8711
     },
@@ -6504,18 +6516,6 @@
         "popularity": 14.2392
     },
     {
-        "id": 47971,
-        "type": "movie",
-        "title": "xXx: Return of Xander Cage",
-        "title_ar": "ثلاثية ايكس : عودة إسكندر كيدج",
-        "overview": "Xander Cage is left for dead after an incident, though he secretly returns to action for a new, tough assignment with his handler Augustus Gibbons.",
-        "overview_ar": "بعد اختفائه لفترة طويلة، يعود البطل الرياضي الذي بات عميلًا ﻹحدى الجهات الحكومية، والمدعو إكساندر كيدج من منفاه الاختياري، وعليه اﻵن أن يواجه زيانج وفريقه الذين يملكون سلاحًا فائق الخطورة يدعى (صندوق بندورا)، و يكون عند مفترق طرق في مؤامرة كبرى تشترك فيها عدة حكومات.",
-        "poster_path": "/hba8zREJpP1AYhaXgb2oJLQeO0K.jpg",
-        "vote_average": 6.133,
-        "release_date": "2017-01-13",
-        "popularity": 11.9127
-    },
-    {
         "id": 1241470,
         "type": "movie",
         "title": "Osiris",
@@ -6612,18 +6612,6 @@
         "popularity": 10.7412
     },
     {
-        "id": 1495,
-        "type": "movie",
-        "title": "Kingdom of Heaven",
-        "title_ar": "مملكة الجَنَّة",
-        "overview": "After his wife dies, a blacksmith named Balian is thrust into royalty, political intrigue and bloody holy wars during the Crusades.",
-        "overview_ar": "بعد وفاة زوجته ، انغمس حداد يُدعى باليان في الملوك والمؤامرات السياسية والحروب المقدسة الدموية خلال الحروب الصليبية.",
-        "poster_path": "/rNaBe4TwbMef71sgscqabpGKsxh.jpg",
-        "vote_average": 7.015,
-        "release_date": "2005-05-03",
-        "popularity": 11.9619
-    },
-    {
         "id": 141052,
         "type": "movie",
         "title": "Justice League",
@@ -6718,6 +6706,18 @@
         "vote_average": 7.5,
         "release_date": "2022-01-14",
         "popularity": 9.6011
+    },
+    {
+        "id": 4951,
+        "type": "movie",
+        "title": "10 Things I Hate About You",
+        "title_ar": "10 Things I Hate About You",
+        "overview": "On the first day at his new school, Cameron instantly falls for Bianca, the gorgeous girl of his dreams. The only problem is that Bianca is forbidden to date until her ill-tempered, completely un-dateable older sister Kat goes out, too. In an attempt to solve his problem, Cameron singles out the only guy who could possibly be a match for Kat: a mysterious bad boy with a nasty reputation of his own.",
+        "overview_ar": "On the first day at his new school, Cameron instantly falls for Bianca, the gorgeous girl of his dreams. The only problem is that Bianca is forbidden to date until her ill-tempered, completely un-dateable older sister Kat goes out, too. In an attempt to solve his problem, Cameron singles out the only guy who could possibly be a match for Kat: a mysterious bad boy with a nasty reputation of his own.",
+        "poster_path": "/ujERk3aKABXU3NDXOAxEQYTHe9A.jpg",
+        "vote_average": 7.6,
+        "release_date": "1999-03-30",
+        "popularity": 10.9398
     },
     {
         "id": 57800,
@@ -7231,7 +7231,7 @@
         "overview": "Tarzan was a small orphan who was raised by an ape named Kala since he was a child. He believed that this was his family, but on an expedition Jane Porter is rescued by Tarzan. He then finds out that he's human. Now Tarzan must make the decision as to which family he should belong to...",
         "overview_ar": "طرزان شاب نشأ وسط عائلة من الغوريلات عندما جنحت مركب والدي الرضيع طرزان وغرقت، وتمكن والداه من النجاة بعد توجههم إلى سواحل القارة الإفريقية لبدء حياة جديدة وسط بقية مخلوقات الغابة ومنها الغوريلات التي تتخذ الغابة مأوى لها.",
         "poster_path": "/bTvHlcqiOjGa3lFtbrTLTM3zasY.jpg",
-        "vote_average": 7.4,
+        "vote_average": 7.396,
         "release_date": "1999-06-17",
         "popularity": 11.0472
     },
@@ -7243,7 +7243,7 @@
         "overview": "Several friends travel to Sweden to study as anthropologists a summer festival that is held every ninety years in the remote hometown of one of them. What begins as a dream vacation in a place where the sun never sets, gradually turns into a dark nightmare as the mysterious inhabitants invite them to participate in their disturbing festive activities.",
         "overview_ar": "يسافر عدد من الأصدقاء إلى السويد لدراسة مهرجان صيفي يُقام كل تسعين عامًا في مسقط رأس أحدهم النائي. وما يبدأ كعطلة حالمة في مكان لا تغيب فيه الشمس، سرعان ما يتحوّل إلى كابوس مظلم، إذ يدعوهم السكان الغامضون للمشاركة في طقوسهم الاحتفالية المقلقة.",
         "poster_path": "/7LEI8ulZzO5gy9Ww2NVCrKmHeDZ.jpg",
-        "vote_average": 7.2,
+        "vote_average": 7.153,
         "release_date": "2019-07-03",
         "popularity": 11.4989
     },
@@ -7267,7 +7267,7 @@
         "overview": "Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon take the music world by storm when they form the rock 'n' roll band Queen in 1970. Hit songs become instant classics. When Mercury's increasingly wild lifestyle starts to spiral out of control, Queen soon faces its greatest challenge yet – finding a way to keep the band together amid the success and excess.",
         "overview_ar": "حياة بلا خوف إلى الأبد  المغني فريدي ميركوري وعازف الجيتار بريان ماي وعازف الدرامز روجر تايلور وعازف الجيتار الجهير جون ديكون يأخذون عالم الموسيقى عن طريق العاصفة عندما شكلوا فرقة الروك أند رول كوين في عام 1970. الأغاني الناجحة تصبح كلاسيكية فورية. عندما يبدأ أسلوب حياة ميركوري الجامح بشكل متزايد في الخروج عن نطاق السيطرة ، سرعان ما تواجه كوين أكبر تحد لها حتى الآن - إيجاد طريقة للحفاظ على الفرقة معا وسط النجاح والفائض.",
         "poster_path": "/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg",
-        "vote_average": 8.0,
+        "vote_average": 7.961,
         "release_date": "2018-10-24",
         "popularity": 11.744
     },
@@ -7279,7 +7279,7 @@
         "overview": "Two young missionaries are forced to prove their faith when they knock on the wrong door and are greeted by a diabolical Mr. Reed, becoming ensnared in his deadly game of cat-and-mouse.",
         "overview_ar": "Two young missionaries are forced to prove their faith when they knock on the wrong door and are greeted by a diabolical Mr. Reed, becoming ensnared in his deadly game of cat-and-mouse.",
         "poster_path": "/fr96XzlzsONrQrGfdLMiwtQjott.jpg",
-        "vote_average": 6.978,
+        "vote_average": 6.977,
         "release_date": "2024-10-31",
         "popularity": 11.5173
     },
@@ -7291,7 +7291,7 @@
         "overview": "As U.S. troops storm the beaches of Normandy, three brothers lie dead on the battlefield, with a fourth trapped behind enemy lines. Ranger captain John Miller and seven men are tasked with penetrating German-held territory and bringing the boy home.",
         "overview_ar": "عندما اقتحمت القوات الأمريكية شواطئ نورماندي ، مات ثلاثة أشقاء في ساحة المعركة ، بينما حوصر رابع خلف خطوط العدو. تم تكليف قائد الحارس جون ميلر وسبعة رجال باختراق الأراضي التي تسيطر عليها ألمانيا وإحضار الصبي إلى المنزل.",
         "poster_path": "/uqx37cS8cpHg8U35f9U5IBlrCV3.jpg",
-        "vote_average": 8.2,
+        "vote_average": 8.221,
         "release_date": "1998-07-24",
         "popularity": 11.7067
     },
@@ -7315,7 +7315,7 @@
         "overview": "Shrek, Fiona, and Donkey set off to Far, Far Away to meet Fiona's mother and father, the Queen and King, who are shocked to discover Fiona has married an ogre— and became one herself. But when the Fairy Godmother discovers that Fiona has married Shrek instead of her son Prince Charming as King Harold had promised, she plots to destroy their marriage and replace Shrek with her son Charming.",
         "overview_ar": "يبدأ الجزء الثاني من حيث انتهى الجزء الأول، بعدما تحولت الأميرة فيونا إلى غولة قبيحة وتزوجت شريك وعاشا معا في مستنقعة، يتوجب على فيونا وشريك زيارة والديها الملك والملكة بعد فترة غياب عنهما طويلة، لكنهما يصابان بصدمة كبيرة، بعد لقائهما مع ابنتهما في هيئتها الجديدة، تتقبل الملكة الأم الواقع الجديد الأليم، بينما يرفضه الملك ويقرر التخلص من شريك، وبعد فشله بجميع المؤامرات، يلجأ إلى الجنية العرابة لتعيد له ابنته بصورتها الحقيقة، ولكنها تشترط عليه أن تتزوج من ابنها المغرور.",
         "poster_path": "/2yYP0PQjG8zVqturh1BAqu2Tixl.jpg",
-        "vote_average": 7.306,
+        "vote_average": 7.307,
         "release_date": "2004-05-19",
         "popularity": 11.0513
     },
@@ -7423,7 +7423,7 @@
         "overview": "With her life crashing down around her, Linda attempts to navigate her child's mysterious illness, her absent husband, a missing person, and an increasingly hostile relationship with her therapist.",
         "overview_ar": "With her life crashing down around her, Linda attempts to navigate her child's mysterious illness, her absent husband, a missing person, and an increasingly hostile relationship with her therapist.",
         "poster_path": "/va0TQ9WprMXRqQAzY56vyqY0Yd5.jpg",
-        "vote_average": 6.5,
+        "vote_average": 6.512,
         "release_date": "2025-10-10",
         "popularity": 10.07
     },
@@ -8160,30 +8160,6 @@
         "popularity": 10.5806
     },
     {
-        "id": 635302,
-        "type": "movie",
-        "title": "Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train",
-        "title_ar": "Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train",
-        "overview": "Tanjiro Kamado, joined with Inosuke Hashibira, a boy raised by boars who wears a boar's head, and Zenitsu Agatsuma, a scared boy who reveals his true power when he sleeps, boards the Infinity Train on a new mission with the Fire Hashira, Kyojuro Rengoku, to defeat a demon who has been tormenting the people and killing the demon slayers who oppose it!",
-        "overview_ar": "Tanjiro Kamado, joined with Inosuke Hashibira, a boy raised by boars who wears a boar's head, and Zenitsu Agatsuma, a scared boy who reveals his true power when he sleeps, boards the Infinity Train on a new mission with the Fire Hashira, Kyojuro Rengoku, to defeat a demon who has been tormenting the people and killing the demon slayers who oppose it!",
-        "poster_path": "/h8Rb9gBr48ODIwYUttZNYeMWeUU.jpg",
-        "vote_average": 8.205,
-        "release_date": "2020-10-16",
-        "popularity": 10.5806
-    },
-    {
-        "id": 1239499,
-        "type": "movie",
-        "title": "Canada's Atom Goes to Work",
-        "title_ar": "Canada's Atom Goes to Work",
-        "overview": "Canada, rich in uranium, is harnessing atomic science for peacetime living. This film provides a progress report on nuclear research conducted at the atomic energy plant at Chalk River, Ontario, and shows some of the constructive applications of atomic energy carried out in hospitals (including Canada's celebrated \"cobalt bomb\"), in agricultural experimental stations and in industry. Interior views of the Chalk River plant afford a look at NRX, the atomic pile itself. A brief survey is made of atomic research in Canadian universities.",
-        "overview_ar": "Canada, rich in uranium, is harnessing atomic science for peacetime living. This film provides a progress report on nuclear research conducted at the atomic energy plant at Chalk River, Ontario, and shows some of the constructive applications of atomic energy carried out in hospitals (including Canada's celebrated \"cobalt bomb\"), in agricultural experimental stations and in industry. Interior views of the Chalk River plant afford a look at NRX, the atomic pile itself. A brief survey is made of atomic research in Canadian universities.",
-        "poster_path": null,
-        "vote_average": 0.0,
-        "release_date": "1952-02-02",
-        "popularity": 8.6575
-    },
-    {
         "id": 335977,
         "type": "movie",
         "title": "Indiana Jones and the Dial of Destiny",
@@ -8263,7 +8239,7 @@
         "overview": "Following the death of the Leigh family matriarch, Annie and her children uncover disturbing secrets about their heritage. Their daily lives are not only impacted, but they also become entangled in a chilling fate from which they cannot escape, driving them to the brink of madness.",
         "overview_ar": "تشرع عائلة (جراهام) في كشف ألغاز موت جدتهم المنعزلة، والتي - حتى بعد رحيلها - تُلقي ظلالًا مُظلمة على الأسرة، خاصًة حفيدتها المراهقة صاحبة الجاذبية الاستثنائية (تشارلي).. يتلاشى السلام من محيط الأسرة بعد سيطرة الرعب القاتم عليهم؛ مما يدفع الأم إلى الغوص في عالم أكثر إظلامًا للهروب من مصيرهم الحالك الذي توارثوه.",
         "poster_path": "/hjlZSXM86wJrfCv5VKfR5DI2VeU.jpg",
-        "vote_average": 7.291,
+        "vote_average": 7.292,
         "release_date": "2018-06-07",
         "popularity": 13.6703
     },
@@ -8299,7 +8275,7 @@
         "overview": "Unlikely hero Mickey Barnes finds himself in the extraordinary circumstance of working for an employer who demands the ultimate commitment to the job… to die, for a living.",
         "overview_ar": "ميكي 17 هو \"مستهلك\" ، موظف يمكن التخلص منه ، في رحلة استكشافية بشرية أرسلت لاستعمار عالم الجليد نيفلهايم . بعد وفاة تكرار واحد ، يتم تجديد جسم جديد مع بقاء معظم ذكرياته سليمة.",
         "poster_path": "/edKpE9B5qN3e559OuMCLZdW1iBZ.jpg",
-        "vote_average": 6.831,
+        "vote_average": 6.8,
         "release_date": "2025-02-28",
         "popularity": 10.7143
     },
@@ -8352,6 +8328,18 @@
         "popularity": 9.5806
     },
     {
+        "id": 87,
+        "type": "movie",
+        "title": "Indiana Jones and the Temple of Doom",
+        "title_ar": "Indiana Jones and the Temple of Doom",
+        "overview": "After arriving in India, Indiana Jones is asked by a desperate village to find a mystical stone. He agrees – and stumbles upon a secret cult plotting a terrible plan in the catacombs of an ancient palace.",
+        "overview_ar": "بعد وصوله إلى الهند ، طلبت قرية يائسة من إنديانا جونز العثور على حجر صوفي. يوافق - ويعثر على عبادة سرية تخطط لخطة مروعة في سراديب الموتى في قصر قديم.",
+        "poster_path": "/gpdVNUaa4LhRMLfJOPj1AZdhAZ3.jpg",
+        "vote_average": 7.304,
+        "release_date": "1984-05-23",
+        "popularity": 11.1468
+    },
+    {
         "id": 527774,
         "type": "movie",
         "title": "Raya and the Last Dragon",
@@ -8398,6 +8386,18 @@
         "vote_average": 6.752,
         "release_date": "2021-09-30",
         "popularity": 10.7409
+    },
+    {
+        "id": 620,
+        "type": "movie",
+        "title": "Ghostbusters",
+        "title_ar": "صائدو الأشباح",
+        "overview": "After losing their academic posts at a prestigious university, a team of parapsychologists goes into business as proton-pack-toting \"ghostbusters\" who exterminate ghouls, hobgoblins and supernatural pests of all stripes. An ad campaign pays off when a knockout cellist hires the squad to purge her swanky digs of demons that appear to be living in her refrigerator.",
+        "overview_ar": "3 علماء غريبو الأطوار يتم فصلهم من مراكزهم في جامعة نيويورك بسبب دراستهم لعلوم ما وراء الطبيعة، فيقررون أن يشكلوا مجموعة لصيد الأشباح يقدموا فيها خدماتهم للناس؛ حيث يطاردون الأرواح الغاضبة، والأشباح الصاخبة وهذا في مقابل المال. الآن ُتفتح بوابة بين الأبعاد على عالم آخر، ويتسرب منها شر رهيب على المدينة، فيتم استدعاء صائدي الأشباح لإنقاذ الجميع.",
+        "poster_path": "/7E8nLijS9AwwUEPu2oFYOVKhdFA.jpg",
+        "vote_average": 7.495,
+        "release_date": "1984-06-08",
+        "popularity": 10.4878
     },
     {
         "id": 198184,
@@ -8643,7 +8643,7 @@
         "id": 1193128,
         "type": "movie",
         "title": "I Was a Stranger",
-        "title_ar": "قضية الغرباء",
+        "title_ar": "I Was a Stranger",
         "overview": "A Syrian doctor and her daughter flee Aleppo, setting off a chain of events that binds five strangers together. A smuggler, a soldier, a poet, and a coast guard captain collide in a crisis that tests their courage, their choices, and their humanity.",
         "overview_ar": "A Syrian doctor and her daughter flee Aleppo, setting off a chain of events that binds five strangers together. A smuggler, a soldier, a poet, and a coast guard captain collide in a crisis that tests their courage, their choices, and their humanity.",
         "poster_path": "/RBIrEveMOIy5Kxg2WzgMnCIhaN.jpg",
@@ -8871,9 +8871,9 @@
         "id": 348893,
         "type": "movie",
         "title": "Boyka: Undisputed IV",
-        "title_ar": "Boyka: Undisputed IV",
+        "title_ar": "بويكا: بلا منازع",
         "overview": "In the fourth installment of the fighting franchise, Boyka is shooting for the big leagues when an accidental death in the ring makes him question everything he stands for. When he finds out the wife of the man he accidentally killed is in trouble, Boyka offers to fight in a series of impossible battles to free her from a life of servitude.",
-        "overview_ar": "In the fourth installment of the fighting franchise, Boyka is shooting for the big leagues when an accidental death in the ring makes him question everything he stands for. When he finds out the wife of the man he accidentally killed is in trouble, Boyka offers to fight in a series of impossible battles to free her from a life of servitude.",
+        "overview_ar": "تدور أحداث الفيلم حول الملاكم (يوري بويكا)، حيث يخوض مباراة ويتعرض خصمه للقتل على يديه في الحلبة، يعلم (بويكا) بتدهور حال زوجة الملاكم الراحل وتعرضها لأزمة كبيرة، يقرر (بويكا) القتال مجددًا في سلسلة من مباريات الملاكمة بهدف مساعدة الأرملة على التحرر من وضعها السيء.",
         "poster_path": "/7QGdIJWWTkPhVjpQ0zA6z69khod.jpg",
         "vote_average": 7.182,
         "release_date": "2016-08-01",
@@ -9123,9 +9123,9 @@
         "id": 810,
         "type": "movie",
         "title": "Shrek the Third",
-        "title_ar": "شريك 3",
+        "title_ar": "Shrek the Third",
         "overview": "The King of Far Far Away has died and Shrek and Fiona are to become King & Queen. However, Shrek wants to return to his cozy swamp and live in peace and quiet, so when he finds out there is another heir to the throne, they set off to bring him back to rule the kingdom.",
-        "overview_ar": "عندما يسقط حماه -الملك هارولد- مريضًا، يصبح شريك الوريث المنتظر للأرض البعيدة، من أجل عدم التخلي عن حبيبته، يجند شريك أصدقائه الحمار والقط لتثبيت أرتي المتمرد الملك الجديد، ولكن الأميرة فيونا، تنظم مسيرات مجموعة من الصديقات الملكية لدرء انقلاب من قبل الأمير الساحر.",
+        "overview_ar": "The King of Far Far Away has died and Shrek and Fiona are to become King & Queen. However, Shrek wants to return to his cozy swamp and live in peace and quiet, so when he finds out there is another heir to the throne, they set off to bring him back to rule the kingdom.",
         "poster_path": "/n4SexGGQzI26E269tfpa80MZaGV.jpg",
         "vote_average": 6.303,
         "release_date": "2007-05-17",
@@ -9840,18 +9840,6 @@
         "popularity": 9.7539
     },
     {
-        "id": 624860,
-        "type": "movie",
-        "title": "The Matrix Resurrections",
-        "title_ar": "The Matrix Resurrections",
-        "overview": "Plagued by strange memories, Neo's life takes an unexpected turn when he finds himself back inside the Matrix.",
-        "overview_ar": "Plagued by strange memories, Neo's life takes an unexpected turn when he finds himself back inside the Matrix.",
-        "poster_path": "/8c4a8kE7PizaGQQnditMmI1xbRp.jpg",
-        "vote_average": 6.346,
-        "release_date": "2021-12-16",
-        "popularity": 10.0127
-    },
-    {
         "id": 10144,
         "type": "movie",
         "title": "The Little Mermaid",
@@ -9886,6 +9874,18 @@
         "vote_average": 6.448,
         "release_date": "2012-06-29",
         "popularity": 9.8994
+    },
+    {
+        "id": 1405769,
+        "type": "movie",
+        "title": "I Can Only Imagine 2",
+        "title_ar": "I Can Only Imagine 2",
+        "overview": "After the breakout success of the song \"I Can Only Imagine,\" MercyMe's Bart Millard is living the dream—sold-out arenas, a devoted fan base, and a thriving career. But behind the spotlight, Bart's past threatens the family he's built, especially the fragile bond with his son, Sam. When hopeful newcomer Tim Timmons joins the band for their biggest tour yet, he unknowingly brings a renewed gratitude to Bart's life through their unlikely friendship. Bart soon discovers that Tim carries hardships—and secrets—of his own, forcing him to face his past and repair his relationships with Sam and his wife, Shannon, before fame costs him what matters most.",
+        "overview_ar": "After the breakout success of the song \"I Can Only Imagine,\" MercyMe's Bart Millard is living the dream—sold-out arenas, a devoted fan base, and a thriving career. But behind the spotlight, Bart's past threatens the family he's built, especially the fragile bond with his son, Sam. When hopeful newcomer Tim Timmons joins the band for their biggest tour yet, he unknowingly brings a renewed gratitude to Bart's life through their unlikely friendship. Bart soon discovers that Tim carries hardships—and secrets—of his own, forcing him to face his past and repair his relationships with Sam and his wife, Shannon, before fame costs him what matters most.",
+        "poster_path": "/qYBCs9nBmdNCLduw5BTlendq89z.jpg",
+        "vote_average": 0.0,
+        "release_date": "2026-02-20",
+        "popularity": 10.2128
     },
     {
         "id": 270946,
@@ -10039,7 +10039,7 @@
         "overview": "The continuation of Joe's sexually dictated life delves into the darker aspects of her adult life and what led to her being in Seligman's care.",
         "overview_ar": "The continuation of Joe's sexually dictated life delves into the darker aspects of her adult life and what led to her being in Seligman's care.",
         "poster_path": "/iLUNqgNKuWn667kXCKztSxYbT3k.jpg",
-        "vote_average": 6.708,
+        "vote_average": 6.7,
         "release_date": "2013-12-25",
         "popularity": 9.5688
     },
@@ -11520,18 +11520,6 @@
         "popularity": 8.1691
     },
     {
-        "id": 30497,
-        "type": "movie",
-        "title": "The Texas Chain Saw Massacre",
-        "title_ar": "The Texas Chain Saw Massacre",
-        "overview": "Five friends head out to rural Texas to visit the grave of a grandfather. On the way, they stumble across what appears to be a deserted house, only to discover something sinister within. Something armed with a chainsaw.",
-        "overview_ar": "Five friends head out to rural Texas to visit the grave of a grandfather. On the way, they stumble across what appears to be a deserted house, only to discover something sinister within. Something armed with a chainsaw.",
-        "poster_path": "/mpgkRPH1GNkMCgdPk2OMyHzAks7.jpg",
-        "vote_average": 7.3,
-        "release_date": "1974-10-11",
-        "popularity": 8.1691
-    },
-    {
         "id": 22970,
         "type": "movie",
         "title": "The Cabin in the Woods",
@@ -11599,7 +11587,7 @@
         "overview": "An American Ambassador is killed during an attack at a U.S. compound in Libya as a security team struggles to make sense out of the chaos.",
         "overview_ar": "عندما سارت الأمور على نحو خاطئ ، كان لدى ستة رجال الشجاعة لفعل ما هو صحيح.\r قتل سفير أمريكي خلال هجوم على مجمع أمريكي في ليبيا بينما يكافح فريق أمني للخروج من الفوضى.",
         "poster_path": "/fZlAxZMo6BId1SiqyjLmkd7oUB7.jpg",
-        "vote_average": 7.274,
+        "vote_average": 7.273,
         "release_date": "2016-01-14",
         "popularity": 7.8908
     },
@@ -11695,7 +11683,7 @@
         "overview": "Andy and her team of immortal warriors fight with renewed purpose as they face a powerful new foe threatening their mission to protect humanity.",
         "overview_ar": "تقاتل \"آندي\" وفريقها من المحاربين الخالدين بحماسة متجددة أثناء مواجهتهم عدوًا قويًا يهدد مهمتهم في حماية الإنسانية.",
         "poster_path": "/wqfu3bPLJaEWJVk3QOm0rKhxf1A.jpg",
-        "vote_average": 5.93,
+        "vote_average": 5.926,
         "release_date": "2025-07-01",
         "popularity": 9.3392
     },
@@ -11719,9 +11707,21 @@
         "overview": "The life of an unsuccessful writer is transformed by a top-secret 'smart drug' that allows him to use 100% of his brain and become a perfect version of himself. His enhanced abilities soon attract shadowy forces that threaten his new life.",
         "overview_ar": "فيلم إثارة يغذيها جنون العظمة ويدور حول كاتب فاشل تتحول حياته من خلال \"عقار ذكي\" سري للغاية يسمح له باستخدام 100٪ من دماغه ويصبح نسخة مثالية عن نفسه. سرعان ما تجذب قدراته المحسّنة قوى غامضة تهدد حياته الجديدة في هذا الفيلم الكوميدي والاستفزازي القاتم.",
         "poster_path": "/kCokPP4WCQRrrAuZ7FcpIyHr8b2.jpg",
-        "vote_average": 7.194,
+        "vote_average": 7.2,
         "release_date": "2011-03-17",
         "popularity": 9.8047
+    },
+    {
+        "id": 93685,
+        "type": "movie",
+        "title": "Swingers",
+        "title_ar": "Swingers",
+        "overview": "Despite Diana's insecure nature, she and her husband Julian agree with the idea to sexually experiment with another couple. They put out an ad on the net to which the well experienced Alex and Timo react. We follow Diana and Julian as they prepare for the arrival of Alex and Timo, who they have invited to their home for the weekend. Diana is nervous. As soon as she is confronted with the self-confident and ravishingly sexy Alex, her insecurity increases even more. Timo seems disinterested, a sharp contrast to the boyish excitement of Julian. But as night falls and their sexual exploration begins, we notice Timo may not be as casual as he initially seemed and Diana on the other hand contains hidden strength. And so we realize there's more to 'Swingers' than just sex. Swingers: could your relationship stand the test?",
+        "overview_ar": "Despite Diana's insecure nature, she and her husband Julian agree with the idea to sexually experiment with another couple. They put out an ad on the net to which the well experienced Alex and Timo react. We follow Diana and Julian as they prepare for the arrival of Alex and Timo, who they have invited to their home for the weekend. Diana is nervous. As soon as she is confronted with the self-confident and ravishingly sexy Alex, her insecurity increases even more. Timo seems disinterested, a sharp contrast to the boyish excitement of Julian. But as night falls and their sexual exploration begins, we notice Timo may not be as casual as he initially seemed and Diana on the other hand contains hidden strength. And so we realize there's more to 'Swingers' than just sex. Swingers: could your relationship stand the test?",
+        "poster_path": "/cEIVkvx6mGSjnkOxlXh6eHd1Y4K.jpg",
+        "vote_average": 5.8,
+        "release_date": "2002-10-01",
+        "popularity": 9.3233
     },
     {
         "id": 1433719,
@@ -11755,7 +11755,7 @@
         "overview": "After discovering she can see everyone's imaginary friends, a girl embarks on a magical adventure to reconnect forgotten imaginary friends with their kids.",
         "overview_ar": "يمكن للرجل أن يرى ويتحدث إلى أصدقاء الناس الوهميين ، ويصادق أولئك الذين تم نسيانهم أو التخلص منهم. ومع ذلك ، فإن بعض الأصدقاء الوهميين ، الذين يفتقرون إلى الحب والصداقة ، يلجأون إلى الجانب المظلم ويجب إيقافهم.",
         "poster_path": "/xbKFv4KF3sVYuWKllLlwWDmuZP7.jpg",
-        "vote_average": 6.988,
+        "vote_average": 6.986,
         "release_date": "2024-05-08",
         "popularity": 8.1399
     },
@@ -14859,7 +14859,7 @@
         "id": 80788,
         "type": "movie",
         "title": "Beautiful Teacher in Torture Hell",
-        "title_ar": "Beautiful Teacher in Torture Hell",
+        "title_ar": "団鬼六 美教師地獄責め",
         "overview": "A female teacher who is skilled in kendo is assigned to a rural high school in a beautiful remote valley. But she is soon trapped in a wide conspiracy of lust and perversion by those around her.",
         "overview_ar": "A female teacher who is skilled in kendo is assigned to a rural high school in a beautiful remote valley. But she is soon trapped in a wide conspiracy of lust and perversion by those around her.",
         "poster_path": "/lphE85vShoj6TeRuoSvuFhcqYdr.jpg",
@@ -14873,7 +14873,7 @@
         "title": "Noah",
         "title_ar": "Noah",
         "overview": "A man who suffers visions of an apocalyptic deluge takes measures to protect his family from the coming flood.",
-        "overview_ar": "A man who suffers visions of an apocalyptic deluge takes measures to protect his family from the coming flood.",
+        "overview_ar": "نهاية العالم ليست سوى البداية.\r رجل يعاني من رؤى طوفان مروع يتخذ تدابير لحماية عائلته من الفيضان القادم.",
         "poster_path": "/vVLkHabnF5lVpCpqyhZBI5iCYMA.jpg",
         "vote_average": 5.673,
         "release_date": "2014-03-07",
@@ -15101,7 +15101,7 @@
         "title": "Argo",
         "title_ar": "Argo",
         "overview": "As the Iranian revolution reaches a boiling point, a CIA 'exfiltration' specialist concocts a risky plan to free six Americans who have found shelter at the home of the Canadian ambassador.",
-        "overview_ar": "As the Iranian revolution reaches a boiling point, a CIA 'exfiltration' specialist concocts a risky plan to free six Americans who have found shelter at the home of the Canadian ambassador.",
+        "overview_ar": "قصة حقيقة وقعت احداثها عام 1979 عندما قام أحد موظفي وزارة الخارجية الأمريكية بعملية إنقاذ 6 دبلوماسيين تم اختطافهما أثناء الثورة الإيرانية محاولا إتمام مهمته بأقل الخسائر وفي سلام.",
         "poster_path": "/m5gPWFZFIp4UJFABgWyLkbXv8GX.jpg",
         "vote_average": 7.281,
         "release_date": "2012-10-11",
@@ -18243,9 +18243,9 @@
         "id": 752623,
         "type": "movie",
         "title": "The Lost City",
-        "title_ar": "The Lost City",
+        "title_ar": "المدينة المفقودة",
         "overview": "Reclusive author Loretta Sage writes about exotic places in her popular adventure novels that feature a handsome cover model named Alan. While on tour promoting her new book with Alan, Loretta gets kidnapped by an eccentric billionaire who hopes she can lead him to the ancient city's lost treasure that featured in her latest story. Alan, determined to prove he can be a hero in real life and not just on the pages of her books, sets off to rescue her.",
-        "overview_ar": "Reclusive author Loretta Sage writes about exotic places in her popular adventure novels that feature a handsome cover model named Alan. While on tour promoting her new book with Alan, Loretta gets kidnapped by an eccentric billionaire who hopes she can lead him to the ancient city's lost treasure that featured in her latest story. Alan, determined to prove he can be a hero in real life and not just on the pages of her books, sets off to rescue her.",
+        "overview_ar": "المغامرة حقيقية. الأبطال ليسوا كذلك.\r تكتب الكاتبة المنعزلة لوريتا سيج عن الأماكن الغريبة في روايات المغامرات الشهيرة التي تتميز بنموذج غلاف وسيم يدعى آلان. أثناء قيامها بجولة للترويج لكتابها الجديد مع آلان ، يتم اختطاف لوريتا من قبل ملياردير غريب الأطوار يأمل أن تتمكن من قيادته إلى كنز المدينة القديمة المفقود الذي ظهر في قصتها الأخيرة. آلان ، المصمم على إثبات أنه يمكن أن يكون بطلا في الحياة الواقعية وليس فقط على صفحات كتبها ، ينطلق لإنقاذها.",
         "poster_path": "/rnheO8cFvCYcmZsDrBoabJbKLFE.jpg",
         "vote_average": 6.468,
         "release_date": "2022-03-23",
@@ -19440,6 +19440,42 @@
         "popularity": 7.6653
     },
     {
+        "id": 627,
+        "type": "movie",
+        "title": "Trainspotting",
+        "title_ar": "تِرَينسبوتينغ",
+        "overview": "Heroin addict Mark Renton stumbles through bad ideas and sobriety attempts with his unreliable friends --Sick Boy, Begbie, Spud and Tommy. He also has an underage girlfriend, Diane, along for the ride. After cleaning up and moving from Edinburgh to London, Mark finds he can't escape the life he left behind as Begbie and Sick Boy come knocking.",
+        "overview_ar": "مارك رينتون، مدمن هيروين يعاني من أوهام وأفكار سيئة ويحاول التوقف عن الإدمان برفقة أصدقائه غير الموثوق بهم: سيك بوي، بيغبي، سباد وتومي. كما لديه علاقة مع ديان قاصر. بعد نقاهته ونقله من إدنبرة إلى لندن، يكتشف مارك أنّه لا مفرّ من حياته السابقة حين يظهر بيغبي فجأة عند باب شقته، ويتبعه صبٍّ مريض.",
+        "poster_path": "/y0HmDV0bZDTtXWHqqYYbT9XoshB.jpg",
+        "vote_average": 7.959,
+        "release_date": "1996-02-23",
+        "popularity": 7.6653
+    },
+    {
+        "id": 466282,
+        "type": "movie",
+        "title": "To All the Boys I've Loved Before",
+        "title_ar": "To All the Boys I've Loved Before",
+        "overview": "Lara Jean's love life goes from imaginary to out of control when her secret letters to every boy she's ever fallen for are mysteriously mailed out.",
+        "overview_ar": "تنقلب الأمور تمامًا، وذلك حينما تخرج خطابات سرية لفتاة مراهقة تخص أولاد كانت تواعدهم إلى النور، لتنكشف العديد من الأسرار حول العلاقات الاجتماعية والبشر.",
+        "poster_path": "/hKHZhUbIyUAjcSrqJThFGYIR6kI.jpg",
+        "vote_average": 7.595,
+        "release_date": "2018-08-17",
+        "popularity": 7.1886
+    },
+    {
+        "id": 354287,
+        "type": "movie",
+        "title": "War Machine",
+        "title_ar": "War Machine",
+        "overview": "A rock star general bent on winning the “impossible” war in Afghanistan takes us inside the complex machinery of modern war. Inspired by the true story of General Stanley McChrystal.",
+        "overview_ar": "جنرال نجم موسيقى الروك مصمم على كسب الحرب \"المستحيلة\" في أفغانستان يأخذنا إلى داخل الآلية المعقدة للحرب الحديثة. مستوحى من القصة الحقيقية للجنرال ستانلي ماكريستال.",
+        "poster_path": "/bU2Q2rCH5VFrJNKSyx6wSmQZFsX.jpg",
+        "vote_average": 5.613,
+        "release_date": "2017-05-26",
+        "popularity": 6.273
+    },
+    {
         "id": 937278,
         "type": "movie",
         "title": "A Man Called Otto",
@@ -19522,18 +19558,6 @@
         "vote_average": 5.4,
         "release_date": "1974-04-24",
         "popularity": 6.7324
-    },
-    {
-        "id": 481848,
-        "type": "movie",
-        "title": "The Call of the Wild",
-        "title_ar": "نداء البرية",
-        "overview": "Buck is a big-hearted dog whose blissful domestic life is turned upside down when he is suddenly uprooted from his California home and transplanted to the exotic wilds of the Yukon during the Gold Rush of the 1890s. As the newest rookie on a mail delivery dog sled team—and later its leader—Buck experiences the adventure of a lifetime, ultimately finding his true place in the world and becoming his own master.",
-        "overview_ar": "استنادا إلى الرواية الأسطورية\r باك هو كبير القلب تنقلب حياته المنزلية السعيدة رأسا على عقب عندما يتم اقتلاعه فجأة من منزله في كاليفورنيا وزرعه في براري يوكون الغريبة خلال جولد راش في 1890s. بصفته أحدث مبتدئ في فريق الزلاجات التي تجرها الكلاب لتوصيل البريد - وقائده لاحقا - يختبر باك مغامرة العمر ، ويجد في النهاية مكانه الحقيقي في العالم ويصبح سيد نفسه.",
-        "poster_path": "/33VdppGbeNxICrFUtW2WpGHvfYc.jpg",
-        "vote_average": 7.524,
-        "release_date": "2020-02-19",
-        "popularity": 7.2511
     },
     {
         "id": 11005,
@@ -19656,36 +19680,12 @@
         "popularity": 6.9094
     },
     {
-        "id": 9482,
-        "type": "movie",
-        "title": "Judge Dredd",
-        "title_ar": "Judge Dredd",
-        "overview": "In a dystopian future, Dredd, the most famous judge (a cop with instant field judiciary powers) is convicted for a crime he did not commit while his murderous counterpart escapes.",
-        "overview_ar": "In a dystopian future, Dredd, the most famous judge (a cop with instant field judiciary powers) is convicted for a crime he did not commit while his murderous counterpart escapes.",
-        "poster_path": "/cfSnKn8NDU3m8UxihjVcYprA0Aq.jpg",
-        "vote_average": 5.843,
-        "release_date": "1995-06-30",
-        "popularity": 7.2802
-    },
-    {
         "id": 4564,
         "type": "movie",
         "title": "Sex and the City",
         "title_ar": "Sex and the City",
         "overview": "A New York writer on sex and love is finally getting married to her Mr. Big. But her three best girlfriends must console her after one of them inadvertently leads Mr. Big to jilt her.",
         "overview_ar": "حين تُقدم \"كاري\" على خطوة مهمّة في علاقتها وتخرج الأمور عن مسارها، تساعدها صديقاتها المقرّبات \"شارلوت\" و\"ميراندا\" و\"سمانثا\" على لملمة نفسها.",
-        "poster_path": "/AhNfnsGW95RKHQNLdgFH48UN0Zy.jpg",
-        "vote_average": 6.6,
-        "release_date": "2008-05-12",
-        "popularity": 7.5511
-    },
-    {
-        "id": 4564,
-        "type": "movie",
-        "title": "Sex and the City",
-        "title_ar": "Sex and the City",
-        "overview": "A New York writer on sex and love is finally getting married to her Mr. Big. But her three best girlfriends must console her after one of them inadvertently leads Mr. Big to jilt her.",
-        "overview_ar": "A New York writer on sex and love is finally getting married to her Mr. Big. But her three best girlfriends must console her after one of them inadvertently leads Mr. Big to jilt her.",
         "poster_path": "/AhNfnsGW95RKHQNLdgFH48UN0Zy.jpg",
         "vote_average": 6.6,
         "release_date": "2008-05-12",
@@ -19899,9 +19899,9 @@
         "id": 930094,
         "type": "movie",
         "title": "Red, White & Royal Blue",
-        "title_ar": "الأحمر والأبيض والأزرق الملكي",
+        "title_ar": "Red, White & Royal Blue",
         "overview": "After an altercation between Alex, the president's son, and Britain's Prince Henry at a royal event becomes tabloid fodder, their long-running feud now threatens to drive a wedge in U.S./British relations. When the rivals are forced into a staged truce, their icy relationship begins to thaw and the friction between them sparks something deeper than they ever expected.",
-        "overview_ar": "مقتبس من كتاب \"نيويورك تايمز\" الأكثر مبيعاً، الأحمر والأبيض والأزرق الملكي. تتمحور القصة حول \"ألكس\"، ابن رئيسة الجمهورية، وأمير \"بريطانيا\"، \"هنري\"، والعداء طويل الأمد بينهما الذي يهدّد العلاقات بين \"الولايات المتحدة\" و\"بريطانيا\". لكن عندما يتمّ إرغامهما على إبرام هدنة منظّمة، يبدأ ينكسر الجمود بينهما... وسرعان ما تشتعل العلاقة لتصبح أعمق مما كانا يتصوّران.",
+        "overview_ar": "After an altercation between Alex, the president's son, and Britain's Prince Henry at a royal event becomes tabloid fodder, their long-running feud now threatens to drive a wedge in U.S./British relations. When the rivals are forced into a staged truce, their icy relationship begins to thaw and the friction between them sparks something deeper than they ever expected.",
         "poster_path": "/ta3ReqbdEcLJM3mcHMzbYFZI8v7.jpg",
         "vote_average": 7.937,
         "release_date": "2023-07-27",
@@ -22080,6 +22080,30 @@
         "popularity": 5.6855
     },
     {
+        "id": 433808,
+        "type": "movie",
+        "title": "The Ritual",
+        "title_ar": "The Ritual",
+        "overview": "A group of college friends reunite for a trip to the forest, but encounter a menacing presence in the woods that's stalking them.",
+        "overview_ar": "A group of college friends reunite for a trip to the forest, but encounter a menacing presence in the woods that's stalking them.",
+        "poster_path": "/9022CYEGqYETCeXN1oE3uwYJWub.jpg",
+        "vote_average": 6.27,
+        "release_date": "2017-10-11",
+        "popularity": 6.482
+    },
+    {
+        "id": 1863,
+        "type": "movie",
+        "title": "Sunflower",
+        "title_ar": "Sunflower",
+        "overview": "After World War II, a woman refuses to believe her husband, missing on the Russian front, is dead. Flashbacks reveal their brief courtship and marriage. Years later, she travels to Russia with his photo, determined to find him. What will she discover?",
+        "overview_ar": "After World War II, a woman refuses to believe her husband, missing on the Russian front, is dead. Flashbacks reveal their brief courtship and marriage. Years later, she travels to Russia with his photo, determined to find him. What will she discover?",
+        "poster_path": "/eVxcQRc3xfA2IOOzXHT0ML1CjzS.jpg",
+        "vote_average": 7.506,
+        "release_date": "1970-03-14",
+        "popularity": 5.6855
+    },
+    {
         "id": 70578,
         "type": "movie",
         "title": "Trespass",
@@ -22294,30 +22318,6 @@
         "vote_average": 6.629,
         "release_date": "2008-05-15",
         "popularity": 6.6347
-    },
-    {
-        "id": 18823,
-        "type": "movie",
-        "title": "Clash of the Titans",
-        "title_ar": "صراع الجبابرة",
-        "overview": "Born of a god but raised as a man, Perseus is helpless to save his family from Hades, vengeful god of the underworld. With nothing to lose, Perseus volunteers to lead a dangerous mission to defeat Hades before he can seize power from Zeus and unleash hell on earth. Battling unholy demons and fearsome beasts, Perseus and his warriors will only survive if Perseus accepts his power as a god, defies fate and creates his own destiny.",
-        "overview_ar": "سوف جبابرة الصدام.  ولد بيرسيوس من إله ولكنه نشأ كرجل ، وهو عاجز عن إنقاذ عائلته من الجحيم ، إله العالم السفلي المنتقم. مع عدم وجود ما يخسره ، يتطوع بيرسيوس لقيادة مهمة خطيرة لهزيمة هاديس قبل أن يتمكن من الاستيلاء على السلطة من زيوس وإطلاق العنان للجحيم على الأرض. محاربة الشياطين غير المقدسة والوحوش المخيفة ، لن ينجو بيرسيوس ومحاربوه إلا إذا قبل بيرسيوس قوته كإله ، وتحدى القدر وخلق مصيره.",
-        "poster_path": "/6iHYLipwEyZUPNO8MM3l1yHDaFE.jpg",
-        "vote_average": 5.918,
-        "release_date": "2010-03-26",
-        "popularity": 5.7589
-    },
-    {
-        "id": 431693,
-        "type": "movie",
-        "title": "Spies in Disguise",
-        "title_ar": "الجواسيس المتنكرون",
-        "overview": "Super spy Lance Sterling and scientist Walter Beckett are almost exact opposites. Lance is smooth, suave and debonair. Walter is… not. But what Walter lacks in social skills he makes up for in smarts and invention, creating the awesome gadgets Lance uses on his epic missions. But when events take an unexpected turn, Walter and Lance suddenly have to rely on each other in a whole new way.",
-        "overview_ar": "سوبر جاسوس. سوبر فلاي.\r الجاسوس الخارق لانس ستيرلينج والعالم والتر بيكيت متعارضان تماما. انس على نحو سلس ، رقيق و مبتهج . والتر هو ... لا. لكن ما يفتقر إليه والتر في المهارات الاجتماعية يعوضه في الذكاء والاختراع ، ويخلق الأدوات الرائعة التي يستخدمها لانس في مهامه الملحمية. ولكن عندما تأخذ الأحداث منعطفا غير متوقع ، يتعين على والتر ولانس فجأة الاعتماد على بعضهما البعض بطريقة جديدة تماما.",
-        "poster_path": "/e7rWcrnuNej3JeVjqmRu0jVeRa4.jpg",
-        "vote_average": 7.562,
-        "release_date": "2019-12-04",
-        "popularity": 6.4339
     },
     {
         "id": 39874,
@@ -23760,6 +23760,30 @@
         "popularity": 6.3496
     },
     {
+        "id": 18491,
+        "type": "movie",
+        "title": "Neon Genesis Evangelion: The End of Evangelion",
+        "title_ar": "新世紀エヴァンゲリオン劇場版 Air／まごころを、君に",
+        "overview": "SEELE orders an all-out attack on NERV, aiming to destroy the Evas before Gendo can advance his own plans for the Human Instrumentality Project. Shinji is pushed to the limits of his sanity as he is forced to decide the fate of humanity.",
+        "overview_ar": "SEELE orders an all-out attack on NERV, aiming to destroy the Evas before Gendo can advance his own plans for the Human Instrumentality Project. Shinji is pushed to the limits of his sanity as he is forced to decide the fate of humanity.",
+        "poster_path": "/j6G24dqI4WgUtChhWjfnI4lnmiK.jpg",
+        "vote_average": 8.263,
+        "release_date": "1997-07-19",
+        "popularity": 6.0328
+    },
+    {
+        "id": 353616,
+        "type": "movie",
+        "title": "Pitch Perfect 3",
+        "title_ar": "Pitch Perfect 3",
+        "overview": "After the highs of winning the world championships, the Bellas find themselves split apart and discovering there aren't job prospects for making music with your mouth. But when they get the chance to reunite for an overseas USO tour, this group of awesome nerds will come together to make some music, and some questionable decisions, one last time.",
+        "overview_ar": "عقب فوزهن جميعًا في بطولة العالم، تتحد عصبة الفتيات من جديد بعد انفصالهن من أجل العودة لمسابقة غناء جديدة عبر البحار، لكن العصبة تجد نفسها في مواجهة فريق عتي هذه المرة، لا يعتمدن على الموهبة الصوتية فقط، وإنما يعتمدن كذلك على تفوقهن في العزف والرقص.",
+        "poster_path": "/v4tbRRX0OSOHcgz2869rEjcBwOJ.jpg",
+        "vote_average": 6.511,
+        "release_date": "2017-12-20",
+        "popularity": 6.789
+    },
+    {
         "id": 1106739,
         "type": "movie",
         "title": "Juror #2",
@@ -23974,29 +23998,5 @@
         "vote_average": 7.107,
         "release_date": "2019-11-06",
         "popularity": 6.1376
-    },
-    {
-        "id": 1285965,
-        "type": "movie",
-        "title": "Dangerous Animals",
-        "title_ar": "Dangerous Animals",
-        "overview": "A savvy and free-spirited surfer is abducted by a shark-obsessed serial killer. Held captive on his boat, she must figure out how to escape before he carries out a ritualistic feeding to the sharks below.",
-        "overview_ar": "A savvy and free-spirited surfer is abducted by a shark-obsessed serial killer. Held captive on his boat, she must figure out how to escape before he carries out a ritualistic feeding to the sharks below.",
-        "poster_path": "/9tk3Si960hg4E49eMt81dS7Qe9Z.jpg",
-        "vote_average": 6.5,
-        "release_date": "2025-06-05",
-        "popularity": 5.7303
-    },
-    {
-        "id": 1145221,
-        "type": "movie",
-        "title": "It Feeds",
-        "title_ar": "It Feeds",
-        "overview": "A clairvoyant therapist confronts her own personal demons while trying to save a young girl who believes a malevolent entity is feeding on her.",
-        "overview_ar": "A clairvoyant therapist confronts her own personal demons while trying to save a young girl who believes a malevolent entity is feeding on her.",
-        "poster_path": "/uC3lzzgOUgkubje7HR20qznAAGj.jpg",
-        "vote_average": 6.719,
-        "release_date": "2025-04-17",
-        "popularity": 6.2266
     }
 ]
