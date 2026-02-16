@@ -720,18 +720,6 @@
         "popularity": 100.3942
     },
     {
-        "id": 2691,
-        "type": "tv",
-        "title": "Two and a Half Men",
-        "title_ar": "Two and a Half Men",
-        "overview": "A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.",
-        "overview_ar": "A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.",
-        "poster_path": "/xgfjxyV3g1S68opzuvG6G87muDp.jpg",
-        "vote_average": 7.444,
-        "release_date": "2003-09-22",
-        "popularity": 102.8844
-    },
-    {
         "id": 57532,
         "type": "tv",
         "title": "PAW Patrol",
@@ -741,7 +729,7 @@
         "poster_path": "/8HXkgUBO5OF8ZK9XbY69RM4S5rv.jpg",
         "vote_average": 7.0,
         "release_date": "2013-08-12",
-        "popularity": 102.4317
+        "popularity": 97.3411
     },
     {
         "id": 32692,
@@ -753,7 +741,7 @@
         "poster_path": "/q1WlrxnCvNhBjJ4N7V0JQXjnIBN.jpg",
         "vote_average": 7.78,
         "release_date": "2010-09-24",
-        "popularity": 102.4157
+        "popularity": 94.2719
     },
     {
         "id": 44006,
@@ -765,7 +753,7 @@
         "poster_path": "/r915sk2JpthZSjHEgZKifWxgo6L.jpg",
         "vote_average": 8.4,
         "release_date": "2012-10-10",
-        "popularity": 101.1404
+        "popularity": 100.125
     },
     {
         "id": 65334,
@@ -775,9 +763,9 @@
         "overview": "Marinette and Adrien, two Parisian teenagers, are entrusted with powerful jewels in order to transform into superheroes Ladybug and Cat Noir. But neither hero knows the other's true identity — or that they're classmates!",
         "overview_ar": "عندما تقع باريس في محنة، تتحول \"مارينات\" إلى \"الدعسوقة\" دون أن تدري أن حبيبها المدرسي \"إدريان\" هو \"القط الأسود\"، بطل خارق آخر ينقذ المدينة.",
         "poster_path": "/acrtAy8gmxcsEvrDP09MpMSCeDZ.jpg",
-        "vote_average": 8.0,
+        "vote_average": 8.047,
         "release_date": "2015-10-19",
-        "popularity": 100.8895
+        "popularity": 101.3175
     },
     {
         "id": 60572,
@@ -787,9 +775,9 @@
         "overview": "Join Ash accompanied by his partner Pikachu, as he travels through many regions, meets new friends and faces new challenges on his quest to become a Pokémon Master.",
         "overview_ar": "انضم إلى - اش كاتشم -  برفقه شريكه - بيكاتشو - وهو يسافر عبر العديد من المناطق، ويلتقي بأصدقاء جدد ويواجه تحديات جديدة في سعيه إلى أن يصبح بوكيمون ماستر.",
         "poster_path": "/rOuGm07PxBhEsK9TaGPRQVJQm1X.jpg",
-        "vote_average": 8.0,
+        "vote_average": 7.966,
         "release_date": "1997-04-01",
-        "popularity": 100.7638
+        "popularity": 93.2733
     },
     {
         "id": 2288,
@@ -799,9 +787,9 @@
         "overview": "Due to a political conspiracy, an innocent man is sent to death row and his only hope is his brother, who makes it his mission to deliberately get himself sent to the same prison in order to break the both of them out, from the inside out.",
         "overview_ar": "بسبب مؤامرة سياسية ، يُحكم على رجل بريء بالإعدام وأمله الوحيد هو شقيقه ، الذي يجعل مهمته إرسال نفسه عمدًا إلى نفس السجن من أجل كسر كلاهما ، من الداخل إلى الخارج.",
         "poster_path": "/wnmNPaLvhnMeOqnWlhNkYCZxtda.jpg",
-        "vote_average": 8.1,
+        "vote_average": 8.073,
         "release_date": "2005-08-29",
-        "popularity": 100.1916
+        "popularity": 100.7369
     },
     {
         "id": 873,
@@ -813,7 +801,7 @@
         "poster_path": "/2JCD8vab3fircOU8cM2HJCxfv4I.jpg",
         "vote_average": 8.083,
         "release_date": "1971-09-15",
-        "popularity": 99.3355
+        "popularity": 94.1603
     },
     {
         "id": 67136,
@@ -825,7 +813,7 @@
         "poster_path": "/huxmY6Dmzwpv5Q2hnNft0UMK7vf.jpg",
         "vote_average": 8.224,
         "release_date": "2016-09-20",
-        "popularity": 98.3067
+        "popularity": 95.026
     },
     {
         "id": 62650,
@@ -837,7 +825,7 @@
         "poster_path": "/9eym662FRJJb9wdgCiDKPDciZzf.jpg",
         "vote_average": 8.283,
         "release_date": "2015-11-17",
-        "popularity": 97.8785
+        "popularity": 94.7745
     },
     {
         "id": 655,
@@ -849,7 +837,7 @@
         "poster_path": "/vkLzXddgUKH5VcpnYiRzpJFrZhz.jpg",
         "vote_average": 8.4,
         "release_date": "1987-09-28",
-        "popularity": 97.7847
+        "popularity": 92.4404
     },
     {
         "id": 15260,
@@ -861,7 +849,7 @@
         "poster_path": "/qk3eQ8jW4opJ48gFWYUXWaMT4l.jpg",
         "vote_average": 8.497,
         "release_date": "2010-04-05",
-        "popularity": 96.8063
+        "popularity": 93.7797
     },
     {
         "id": 1400,
@@ -873,7 +861,7 @@
         "poster_path": "/aCw8ONfyz3AhngVQa1E2Ss4KSUQ.jpg",
         "vote_average": 8.25,
         "release_date": "1989-07-05",
-        "popularity": 96.3906
+        "popularity": 89.6015
     },
     {
         "id": 1419,
@@ -885,7 +873,7 @@
         "poster_path": "/diXBeMzvfJb2iJg3G0kCUaMCzEc.jpg",
         "vote_average": 7.971,
         "release_date": "2009-03-09",
-        "popularity": 96.2123
+        "popularity": 88.1897
     },
     {
         "id": 71790,
@@ -897,7 +885,7 @@
         "poster_path": "/ttzrYMdsKWR8PTRLw7uo4noqaOJ.jpg",
         "vote_average": 8.055,
         "release_date": "2017-11-02",
-        "popularity": 96.076
+        "popularity": 89.6497
     },
     {
         "id": 124364,
@@ -907,9 +895,9 @@
         "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
         "overview_ar": "في إطار من الرعب والخيال العلمي، يتم كشف الغموض عن مدينة في وسط الولايات المتحدة تسجن كل من يدخلها. بينما يكافح السكان للحفاظ على حياتهم الطبيعية والبحث عن مخرج، ويجب عليهم أيضًا البقاء على قيد الحياة من تهديدات الغابة المحيطة.",
         "poster_path": "/cjXLrg4R7FRPFafvuQ3SSznQOd9.jpg",
-        "vote_average": 8.153,
+        "vote_average": 8.152,
         "release_date": "2022-02-20",
-        "popularity": 95.6652
+        "popularity": 94.8936
     },
     {
         "id": 37680,
@@ -921,7 +909,19 @@
         "poster_path": "/vQiryp6LioFxQThywxbC6TuoDjy.jpg",
         "vote_average": 8.22,
         "release_date": "2011-06-23",
-        "popularity": 95.6572
+        "popularity": 92.5095
+    },
+    {
+        "id": 39351,
+        "type": "tv",
+        "title": "Grimm",
+        "title_ar": "جريم",
+        "overview": "After Portland homicide detective Nick Burkhardt discovers he's descended from an elite line of criminal profilers known as \"Grimms,\" he increasingly finds his responsibilities as a detective at odds with his new responsibilities as a Grimm.",
+        "overview_ar": "يتم تكليف (نيك بوكهاردت) محقق جرائم القتل في إدارة شرطة (بورتلاند) بأن يكون من (الأوصياء) المكلفين بحفظ التوازن بين البشر ، والمخلوقات الخارقة ، وعليه محاربة مجموعة من المخلوقات الخطرة ، بمساعدة صديقه ، وشريكه المحقق (هانك جريفين) .",
+        "poster_path": "/iOptnt1QHi6bIHmOq6adnZTV0bU.jpg",
+        "vote_average": 8.3,
+        "release_date": "2011-10-28",
+        "popularity": 95.5957
     },
     {
         "id": 5092,
@@ -933,7 +933,7 @@
         "poster_path": "/3ZIPTvMnzI5ThmdGeEYQFxJV5Sg.jpg",
         "vote_average": 7.7,
         "release_date": "2005-04-23",
-        "popularity": 93.8784
+        "popularity": 90.356
     },
     {
         "id": 60059,
@@ -945,7 +945,7 @@
         "poster_path": "/fC2HDm5t0kHl7mTm7jxMR31b7by.jpg",
         "vote_average": 8.703,
         "release_date": "2015-02-08",
-        "popularity": 93.2389
+        "popularity": 89.6288
     },
     {
         "id": 80240,
@@ -957,7 +957,7 @@
         "poster_path": "/fuVuDYrs8sxvEolnYr0wCSvtyTi.jpg",
         "vote_average": 8.0,
         "release_date": "2018-06-12",
-        "popularity": 93.0767
+        "popularity": 89.7023
     },
     {
         "id": 1398,
@@ -4089,7 +4089,7 @@
         "poster_path": "/dhtiYYbob8saEUFWle3aWgVY28M.jpg",
         "vote_average": 8.469,
         "release_date": "1986-10-11",
-        "popularity": 45.4817
+        "popularity": 42.2197
     },
     {
         "id": 91363,
@@ -4099,9 +4099,9 @@
         "overview": "Taking inspiration from the comic books of the same name, each episode of this animated anthology series questions, revisits and twists classic Marvel Cinematic moments.",
         "overview_ar": "في إطار من الخيال والمغامرات، يغوص العمل في العديد من البقاع الغير متوقعة في عالم أبطال مارفل، ويضع العديد من الفرضيات والأحداث المتناقضة تمامًا عن ما حدث في كافة أفلام مارفل السابقة.",
         "poster_path": "/lztz5XBMG1x6Y5ubz7CxfPFsAcW.jpg",
-        "vote_average": 8.068,
+        "vote_average": 8.067,
         "release_date": "2021-08-11",
-        "popularity": 45.4295
+        "popularity": 42.6486
     },
     {
         "id": 3137,
@@ -4113,7 +4113,7 @@
         "poster_path": "/td8O6KJQpN9ZRiuyFUILziXFMrk.jpg",
         "vote_average": 8.026,
         "release_date": "1994-01-26",
-        "popularity": 45.4024
+        "popularity": 41.4493
     },
     {
         "id": 46533,
@@ -4125,7 +4125,7 @@
         "poster_path": "/w1UBlxEXhbKe8sp0fxFZh7MqTce.jpg",
         "vote_average": 7.877,
         "release_date": "2013-01-30",
-        "popularity": 45.3969
+        "popularity": 42.7789
     },
     {
         "id": 33217,
@@ -4135,9 +4135,21 @@
         "overview": "Teenage superheroes strive to prove themselves as members of the Justice League.",
         "overview_ar": "يسعى الأبطال الخارقون المراهقون جاهدين لإثبات أنفسهم كأعضاء في رابطة العدالة.",
         "poster_path": "/zMJw34G4OJhcd9NjKSRjJdDqjbR.jpg",
-        "vote_average": 8.387,
+        "vote_average": 8.386,
         "release_date": "2010-11-26",
-        "popularity": 45.2212
+        "popularity": 40.0233
+    },
+    {
+        "id": 73375,
+        "type": "tv",
+        "title": "Tom Clancy's Jack Ryan",
+        "title_ar": "Tom Clancy's Jack Ryan",
+        "overview": "When CIA analyst Jack Ryan stumbles upon a suspicious series of bank transfers his search for answers pulls him from the safety of his desk job and catapults him into a deadly game of cat and mouse throughout Europe and the Middle East, with a rising terrorist figurehead preparing for a massive attack against the US and her allies.",
+        "overview_ar": "When CIA analyst Jack Ryan stumbles upon a suspicious series of bank transfers his search for answers pulls him from the safety of his desk job and catapults him into a deadly game of cat and mouse throughout Europe and the Middle East, with a rising terrorist figurehead preparing for a massive attack against the US and her allies.",
+        "poster_path": "/cO4py3L3q5GNPrA0qr1wVDrosK1.jpg",
+        "vote_average": 7.679,
+        "release_date": "2018-08-30",
+        "popularity": 45.216
     },
     {
         "id": 63401,
@@ -4149,19 +4161,7 @@
         "poster_path": "/3xWzlLZ0kAD6SkVZTekFM9lxZyP.jpg",
         "vote_average": 7.7,
         "release_date": "2015-08-24",
-        "popularity": 45.209
-    },
-    {
-        "id": 734,
-        "type": "tv",
-        "title": "Magnum, P.I.",
-        "title_ar": "Magnum, P.I.",
-        "overview": "A private investigator who works when he wants, lives in a beachfront estate in Hawaii, drives a posh Ferrari, runs up an unlimited tab at a swank bar, and charms attractive women in peril - that's the lifestyle of Thomas Magnum, aka Magnum, P.I.",
-        "overview_ar": "A private investigator who works when he wants, lives in a beachfront estate in Hawaii, drives a posh Ferrari, runs up an unlimited tab at a swank bar, and charms attractive women in peril - that's the lifestyle of Thomas Magnum, aka Magnum, P.I.",
-        "poster_path": "/ht0dsKCZxbPawKdTPLeNtnnbxim.jpg",
-        "vote_average": 7.3,
-        "release_date": "1980-12-11",
-        "popularity": 45.1413
+        "popularity": 41.6937
     },
     {
         "id": 85009,
@@ -4173,7 +4173,7 @@
         "poster_path": "/zvS0sib3PgjlyPol1iHbalujTCp.jpg",
         "vote_average": 8.2,
         "release_date": "1998-04-01",
-        "popularity": 44.8847
+        "popularity": 44.1539
     },
     {
         "id": 4598,
@@ -4185,7 +4185,7 @@
         "poster_path": "/b0bXUCfpcsgQ6EVVmucU2G76ixT.jpg",
         "vote_average": 7.905,
         "release_date": "2004-10-03",
-        "popularity": 44.7622
+        "popularity": 37.6759
     },
     {
         "id": 2426,
@@ -4197,7 +4197,7 @@
         "poster_path": "/kEMZk8uVksoWScKA77x68qJEUfI.jpg",
         "vote_average": 7.9,
         "release_date": "1999-10-05",
-        "popularity": 44.5997
+        "popularity": 41.457
     },
     {
         "id": 211288,
@@ -4209,7 +4209,7 @@
         "poster_path": "/otula4h1ITZ0eV84eg7Lb8u614C.jpg",
         "vote_average": 7.5,
         "release_date": "2024-02-11",
-        "popularity": 44.5488
+        "popularity": 43.2941
     },
     {
         "id": 194916,
@@ -4221,7 +4221,7 @@
         "poster_path": "/cXm3mxmlOWJZAyn5fqFI9JpARa3.jpg",
         "vote_average": 8.2,
         "release_date": "2022-04-04",
-        "popularity": 44.5061
+        "popularity": 39.861
     },
     {
         "id": 4454,
@@ -4233,7 +4233,7 @@
         "poster_path": "/kTkWxh0e4Lzmn19KWQxzMdKE4NC.jpg",
         "vote_average": 6.838,
         "release_date": "1998-09-21",
-        "popularity": 44.4494
+        "popularity": 40.7859
     },
     {
         "id": 61889,
@@ -4245,19 +4245,7 @@
         "poster_path": "/u6tICVagGwukuFPr0qBUwOqCKSn.jpg",
         "vote_average": 8.158,
         "release_date": "2015-04-10",
-        "popularity": 44.4331
-    },
-    {
-        "id": 49036,
-        "type": "tv",
-        "title": "Love Stories in the Countryside",
-        "title_ar": "乡村爱情",
-        "overview": "",
-        "overview_ar": "",
-        "poster_path": "/2XlU2bzsESbc6x9lBKe0gyk90oO.jpg",
-        "vote_average": 6.1,
-        "release_date": "2006-09-30",
-        "popularity": 44.3865
+        "popularity": 41.3274
     },
     {
         "id": 5371,
@@ -4269,7 +4257,7 @@
         "poster_path": "/zswxst53aM8g2LysdVbtQNJAiKM.jpg",
         "vote_average": 7.964,
         "release_date": "2007-09-08",
-        "popularity": 44.343
+        "popularity": 43.8872
     },
     {
         "id": 2389,
@@ -4281,7 +4269,7 @@
         "poster_path": "/AknZ6uDYvswlIrUKDm2Nte32xge.jpg",
         "vote_average": 7.028,
         "release_date": "2003-09-22",
-        "popularity": 44.2634
+        "popularity": 37.6062
     },
     {
         "id": 2723,
@@ -4293,7 +4281,7 @@
         "poster_path": "/ddZ7Q2WZ0xAHkVXYvcEgNGFgVkw.jpg",
         "vote_average": 8.4,
         "release_date": "2001-08-10",
-        "popularity": 44.2399
+        "popularity": 41.7188
     },
     {
         "id": 40521,
@@ -4305,7 +4293,7 @@
         "poster_path": "/knQh5E3YazUwkupxvfSyy11VqW0.jpg",
         "vote_average": 7.1,
         "release_date": "2005-02-12",
-        "popularity": 44.1966
+        "popularity": 42.9043
     },
     {
         "id": 4630,
@@ -4317,7 +4305,7 @@
         "poster_path": "/3ryMj7tIvVtiXyI2tLvHYTjOjq4.jpg",
         "vote_average": 7.6,
         "release_date": "2001-03-30",
-        "popularity": 44.1614
+        "popularity": 39.1477
     },
     {
         "id": 61418,
@@ -4325,7 +4313,19 @@
         "title": "Jane the Virgin",
         "title_ar": "Jane the Virgin",
         "overview": "A comedy-drama following a chaste young woman who is accidentally impregnated via artificial insemination as she struggles to inform her devoutly religious family and make the right choices concerning the child. Based on the telenovela \"Juana la virgen.\"",
-        "overview_ar": "بعد تعهدها بالبقاء عفيفة حتى تتزوج، تكتشف \"جين فييانويفا\" أنها حامل بسبب خطأ طبي غير مقصود، مما يجعلها تعيد التفكير في مستقبلها.",
+        "overview_ar": "A comedy-drama following a chaste young woman who is accidentally impregnated via artificial insemination as she struggles to inform her devoutly religious family and make the right choices concerning the child. Based on the telenovela \"Juana la virgen.\"",
+        "poster_path": "/DRRHgvsNEfBloMgIP8bBw4zi4E.jpg",
+        "vote_average": 7.918,
+        "release_date": "2014-10-13",
+        "popularity": 42.1381
+    },
+    {
+        "id": 61418,
+        "type": "tv",
+        "title": "Jane the Virgin",
+        "title_ar": "Jane the Virgin",
+        "overview": "A comedy-drama following a chaste young woman who is accidentally impregnated via artificial insemination as she struggles to inform her devoutly religious family and make the right choices concerning the child. Based on the telenovela \"Juana la virgen.\"",
+        "overview_ar": "A comedy-drama following a chaste young woman who is accidentally impregnated via artificial insemination as she struggles to inform her devoutly religious family and make the right choices concerning the child. Based on the telenovela \"Juana la virgen.\"",
         "poster_path": "/DRRHgvsNEfBloMgIP8bBw4zi4E.jpg",
         "vote_average": 7.918,
         "release_date": "2014-10-13",
@@ -9111,7 +9111,7 @@
         "id": 34742,
         "type": "tv",
         "title": "To LOVE-Ru",
-        "title_ar": "To LOVE-Ru",
+        "title_ar": "To LOVEる -とらぶる-",
         "overview": "The story is about Rito Yuuki , a high-school boy who cannot confess to the girl of his dreams, Haruna Sairenji. One day when coming home and sulking in the bathtub a mysterious, nude girl, appears out of nowhere. Her name is Lala and she comes from the planet Deviluke, where she is the heir to the throne. Her father wants her to return to her home planet so she can marry one of the husband candidates, but she decides that she wants to marry Rito in order to stay on Earth.",
         "overview_ar": "The story is about Rito Yuuki , a high-school boy who cannot confess to the girl of his dreams, Haruna Sairenji. One day when coming home and sulking in the bathtub a mysterious, nude girl, appears out of nowhere. Her name is Lala and she comes from the planet Deviluke, where she is the heir to the throne. Her father wants her to return to her home planet so she can marry one of the husband candidates, but she decides that she wants to marry Rito in order to stay on Earth.",
         "poster_path": "/vsWNCisRhrBbUaTR56qCk6pLsEn.jpg",
@@ -9843,9 +9843,9 @@
         "id": 83121,
         "type": "tv",
         "title": "Kaguya-sama: Love Is War",
-        "title_ar": "كاغويا تريد أن يعترف لها: ~حرب عباقرة القلوب والعقول~",
+        "title_ar": "Kaguya-sama: Love Is War",
         "overview": "Considered a genius due to having the highest grades in the country, Miyuki Shirogane leads the prestigious Shuchiin Academy's student council as its president, working alongside the beautiful and wealthy vice president Kaguya Shinomiya. The two are often regarded as the perfect couple by students despite them not being in any sort of romantic relationship.",
-        "overview_ar": "تتحدث عن كاغويا شينوميا و ميوكي شيروغاني و هما عضوان في مجلس طلبة أكادمية شوتشين للنخبة، يحتلان موقعهما كعباقرة بين العباقرة. الوقت الذي يقضيانه معا دفعهما إلى تكوين مشاعر نحو الطرف الآخر، لكن كبرياء كل واحد منهما لا يسمح له بأن يكون أول من يعترف و يصبح الطرف الخاضع في العلاقة! الحب عبارة عن حرب، و معركتها في جعل الآخر يعترف قد بدأت الآن",
+        "overview_ar": "Considered a genius due to having the highest grades in the country, Miyuki Shirogane leads the prestigious Shuchiin Academy's student council as its president, working alongside the beautiful and wealthy vice president Kaguya Shinomiya. The two are often regarded as the perfect couple by students despite them not being in any sort of romantic relationship.",
         "poster_path": "/5khbC6AuNgnvnoDbjIMKCOhEtIc.jpg",
         "vote_average": 8.556,
         "release_date": "2019-01-12",
@@ -10071,9 +10071,9 @@
         "id": 90462,
         "type": "tv",
         "title": "Chucky",
-        "title_ar": "Chucky",
+        "title_ar": "تشاكي",
         "overview": "After a vintage Chucky doll turns up at a suburban yard sale, an idyllic American town is thrown into chaos as a series of horrifying murders begin to expose the town’s hypocrisies and secrets. Meanwhile, the arrival of enemies — and allies — from Chucky’s past threatens to expose the truth behind the killings, as well as the demon doll’s untold origins.",
-        "overview_ar": "After a vintage Chucky doll turns up at a suburban yard sale, an idyllic American town is thrown into chaos as a series of horrifying murders begin to expose the town’s hypocrisies and secrets. Meanwhile, the arrival of enemies — and allies — from Chucky’s past threatens to expose the truth behind the killings, as well as the demon doll’s untold origins.",
+        "overview_ar": "بعد ظهور دمية تشاكي القديمة في ساحة بيع في إحدى ضواحي المدينة تدخل مدينة أمريكية في حالة من الفوضى مع بدء سلسلة من عمليات القتل المرعبة التي تفضح نفاق المدينة وأسرارها",
         "poster_path": "/7KbhQpg6OV2o58SoulRbEtK9HYT.jpg",
         "vote_average": 7.824,
         "release_date": "2021-10-12",
@@ -14719,7 +14719,7 @@
         "overview": "The return of corrupt judge Lee Han-young, who was a slave to a large law firm, to the past 10 years ago. He makes new choices to punish evil and implement justice.",
         "overview_ar": "بعد سقوطه في الفساد ثم التخلّي عنه، يُقتل القاضي لي هان يونغ، لكنه يستيقظ فجأة قبل عشر سنوات من موته، في زمنٍ كان ما يزال فيه قاضيًا مبتدئًا. يمنحه القدر فرصة ثانية ليعيد تشكيل حياته ويواجه القوى المظلمة التي تحكم القضاء من خلف الستار.",
         "poster_path": "/AjLnvyKlbTPS9DnX8exBqF2RTIU.jpg",
-        "vote_average": 8.7,
+        "vote_average": 7.75,
         "release_date": "2026-01-02",
         "popularity": 19.8401
     },
@@ -14734,6 +14734,18 @@
         "vote_average": 7.7,
         "release_date": "2005-10-07",
         "popularity": 19.2425
+    },
+    {
+        "id": 72896,
+        "type": "tv",
+        "title": "My Little Old Boy",
+        "title_ar": "미운 우리 새끼",
+        "overview": "How much do you know about your grown up son? In Mom’s Diary, the daily lives of the grown up celebrity sons are closely observed by their mothers. Do you know why your son drinks so much these days? How much do you know about your son’s philosophy in his life style? Heart-warming moments of observational communication between a mother and a son can be seen on Mom’s Diary.",
+        "overview_ar": "How much do you know about your grown up son? In Mom’s Diary, the daily lives of the grown up celebrity sons are closely observed by their mothers. Do you know why your son drinks so much these days? How much do you know about your son’s philosophy in his life style? Heart-warming moments of observational communication between a mother and a son can be seen on Mom’s Diary.",
+        "poster_path": "/fgeWRIiigNHLxy3qEzM0HqNcFHT.jpg",
+        "vote_average": 7.0,
+        "release_date": "2016-08-26",
+        "popularity": 20.8865
     },
     {
         "id": 118924,
@@ -14866,18 +14878,6 @@
         "vote_average": 7.926,
         "release_date": "2013-03-04",
         "popularity": 21.6902
-    },
-    {
-        "id": 67195,
-        "type": "tv",
-        "title": "Legion",
-        "title_ar": "Legion",
-        "overview": "David Haller, AKA Legion, is a troubled young man who may be more than human. Diagnosed as schizophrenic, David has been in and out of psychiatric hospitals for years. But after a strange encounter with a fellow patient, he’s confronted with the possibility that the voices he hears and the visions he sees might be real.",
-        "overview_ar": "David Haller, AKA Legion, is a troubled young man who may be more than human. Diagnosed as schizophrenic, David has been in and out of psychiatric hospitals for years. But after a strange encounter with a fellow patient, he’s confronted with the possibility that the voices he hears and the visions he sees might be real.",
-        "poster_path": "/xhJtYVTsdXQCIlB5hAXkMCPUG9y.jpg",
-        "vote_average": 7.503,
-        "release_date": "2017-02-08",
-        "popularity": 20.4155
     },
     {
         "id": 67195,
@@ -15667,7 +15667,7 @@
         "overview": "Two dimwitted teenagers discuss TV, heavy-metal music, nachos, and trying to \"score with chicks.\" When the duo aren't sitting on the couch, they try to pick up girls at the local convenience store, slack off at school, or wreak havoc while working at a burger joint.",
         "overview_ar": "Two dimwitted teenagers discuss TV, heavy-metal music, nachos, and trying to \"score with chicks.\" When the duo aren't sitting on the couch, they try to pick up girls at the local convenience store, slack off at school, or wreak havoc while working at a burger joint.",
         "poster_path": "/8BwmD9hMsfUHTAAsVephjJS8pIF.jpg",
-        "vote_average": 7.13,
+        "vote_average": 7.1,
         "release_date": "1993-03-08",
         "popularity": 19.6108
     },
@@ -15679,7 +15679,7 @@
         "overview": "The most powerful villains on the planet escape from prison. However, none of the superheroes can stop them without help, not even S.H.I.E.L.D. The Avengers then join forces to fight evil, and discover that as a group they are stronger.",
         "overview_ar": "The most powerful villains on the planet escape from prison. However, none of the superheroes can stop them without help, not even S.H.I.E.L.D. The Avengers then join forces to fight evil, and discover that as a group they are stronger.",
         "poster_path": "/r1JDhMrqCOZKh7lc0vQlRYQ46cE.jpg",
-        "vote_average": 8.202,
+        "vote_average": 8.203,
         "release_date": "2010-10-20",
         "popularity": 17.9437
     },
@@ -15763,7 +15763,7 @@
         "overview": "In his quest for a bride to break his immortal curse, a 939-year-old guardian of souls meets a grim reaper and a sprightly student with a tragic past.",
         "overview_ar": "أثناء بحثه عن عروس ليُبطل لعنته الأبدية، يلتقي حارس الأرواح البالغ 939 عامًا بحاصد الأرواح، وبطالبة مفعمة بالحيوية تعاني من ماضٍ مأساوي.",
         "poster_path": "/sPkxHNw5BFvuCFGWw825TS7n6X3.jpg",
-        "vote_average": 8.6,
+        "vote_average": 8.598,
         "release_date": "2016-12-02",
         "popularity": 18.0676
     },
@@ -15811,7 +15811,7 @@
         "overview": "Johnny Bravo tells the story of a biceps-bulging, karate-chopping free spirit who believes he is a gift from God to the women of the earth. Unfortunately for Johnny, everyone else sees him as a narcissistic Mama's boy with big muscles and even bigger hair. In short, he is the quintessential guy who 'just doesn't get it.' No matter what he does, or where he finds himself, he always winds up being his own worst enemy.",
         "overview_ar": "Johnny Bravo tells the story of a biceps-bulging, karate-chopping free spirit who believes he is a gift from God to the women of the earth. Unfortunately for Johnny, everyone else sees him as a narcissistic Mama's boy with big muscles and even bigger hair. In short, he is the quintessential guy who 'just doesn't get it.' No matter what he does, or where he finds himself, he always winds up being his own worst enemy.",
         "poster_path": "/obbdeoOk8XSXzJrWGiBbaeMMSMl.jpg",
-        "vote_average": 7.3,
+        "vote_average": 7.281,
         "release_date": "1997-07-07",
         "popularity": 19.431
     },
@@ -16089,7 +16089,7 @@
         "poster_path": "/zcHUwD20mqMD4g8LKdpKD12QRhE.jpg",
         "vote_average": 6.489,
         "release_date": "1982-03-13",
-        "popularity": 19.5383
+        "popularity": 15.7102
     },
     {
         "id": 37288,
@@ -16101,7 +16101,7 @@
         "poster_path": "/aJlCBcmAE4xvLGR1xFMMB3rd1GI.jpg",
         "vote_average": 3.5,
         "release_date": "1992-07-19",
-        "popularity": 19.5361
+        "popularity": 16.9801
     },
     {
         "id": 248947,
@@ -16113,7 +16113,7 @@
         "poster_path": "/wj5i6YgZj7LltRE3yE6VTgfdbK0.jpg",
         "vote_average": 7.941,
         "release_date": "2024-07-07",
-        "popularity": 19.5327
+        "popularity": 18.3909
     },
     {
         "id": 112738,
@@ -16125,7 +16125,7 @@
         "poster_path": "/93PXzpXC0i5RVBEAGFR76NC1ylT.jpg",
         "vote_average": 7.6,
         "release_date": "2021-04-29",
-        "popularity": 19.5295
+        "popularity": 19.399
     },
     {
         "id": 3797,
@@ -16137,7 +16137,7 @@
         "poster_path": "/4zTDeRJxdMqH3Si2fIZjQi44k17.jpg",
         "vote_average": 7.663,
         "release_date": "2007-09-26",
-        "popularity": 19.5221
+        "popularity": 17.6153
     },
     {
         "id": 103768,
@@ -16149,7 +16149,7 @@
         "poster_path": "/rgMfhcrVZjuy5b7Pn0KzCRCEnMX.jpg",
         "vote_average": 7.774,
         "release_date": "2021-06-04",
-        "popularity": 19.5176
+        "popularity": 19.2532
     },
     {
         "id": 3670,
@@ -16161,7 +16161,7 @@
         "poster_path": "/zZy2Eg2ioxRgWc9WjMIu67ueT97.jpg",
         "vote_average": 6.635,
         "release_date": "1989-03-11",
-        "popularity": 19.5128
+        "popularity": 19.418
     },
     {
         "id": 89247,
@@ -16173,7 +16173,7 @@
         "poster_path": "/pBpxKiitMuYXvtsXNSzya8DKKzV.jpg",
         "vote_average": 6.87,
         "release_date": "2019-10-06",
-        "popularity": 19.5046
+        "popularity": 17.4487
     },
     {
         "id": 6040,
@@ -16185,7 +16185,7 @@
         "poster_path": "/pGhCUqPaXZ0Xp4dUCT7Q6hjJArf.jpg",
         "vote_average": 8.3,
         "release_date": "2008-04-18",
-        "popularity": 19.4996
+        "popularity": 17.5631
     },
     {
         "id": 70058,
@@ -16197,7 +16197,7 @@
         "poster_path": "/nXKXaGE0SkjvhnbFKc0dUWh1uwo.jpg",
         "vote_average": 7.0,
         "release_date": "2012-10-16",
-        "popularity": 19.497
+        "popularity": 18.4459
     },
     {
         "id": 27845,
@@ -16209,7 +16209,7 @@
         "poster_path": "/6Q1yvR5q5c5EItFe2QKfN4Y4vGF.jpg",
         "vote_average": 8.4,
         "release_date": "2001-10-10",
-        "popularity": 19.4783
+        "popularity": 16.2924
     },
     {
         "id": 310239,
@@ -16219,9 +16219,9 @@
         "overview": "In 1970s Istanbul, a man's forbidden love for a shop-girl evolves into a lifelong journey of obsession and longing.",
         "overview_ar": "في \"إسطنبول\" خلال سبعينيات القرن الماضي، يتحول الحبّ المحظور الذي يكنّه رجل تجاه فتاة تعمل في متجر لرحلة هوس تمتد مدى الحياة. من وحي رواية \"أورهان باموق\" الشهيرة.",
         "poster_path": "/gdDPQ5vs7HdhoqUqV0DOgqUPcXU.jpg",
-        "vote_average": 7.0,
+        "vote_average": 7.6,
         "release_date": "2026-02-13",
-        "popularity": 19.4685
+        "popularity": 28.4901
     },
     {
         "id": 64189,
@@ -16233,7 +16233,7 @@
         "poster_path": "/iDyRo1jkDP17uvZfUcw44WRWudc.jpg",
         "vote_average": 6.5,
         "release_date": "1979-02-09",
-        "popularity": 19.4654
+        "popularity": 16.3306
     },
     {
         "id": 13949,
@@ -16245,7 +16245,7 @@
         "poster_path": null,
         "vote_average": 0.0,
         "release_date": "2006-01-05",
-        "popularity": 19.4653
+        "popularity": 21.068
     },
     {
         "id": 203139,
@@ -16257,7 +16257,19 @@
         "poster_path": "/6I0HHar1ADjcK1GdQsNGQRntsPo.jpg",
         "vote_average": 0.0,
         "release_date": "1972-09-02",
-        "popularity": 19.4648
+        "popularity": 21.6987
+    },
+    {
+        "id": 68398,
+        "type": "tv",
+        "title": "Dr. Romantic",
+        "title_ar": "Dr. Romantic",
+        "overview": "An eccentric, triple board-certified virtuoso surgeon leaves a top job in Seoul and ends up at a provincial hospital, where he mentors young doctors.",
+        "overview_ar": "An eccentric, triple board-certified virtuoso surgeon leaves a top job in Seoul and ends up at a provincial hospital, where he mentors young doctors.",
+        "poster_path": "/9fbRJgZ2zDTnSUId1bOwsllHNr7.jpg",
+        "vote_average": 8.2,
+        "release_date": "2016-11-07",
+        "popularity": 19.4591
     },
     {
         "id": 80006,
@@ -16269,7 +16281,7 @@
         "poster_path": "/tmB1PghtrIBbdrFAmRncuO1wQLQ.jpg",
         "vote_average": 7.5,
         "release_date": "2019-01-08",
-        "popularity": 19.4453
+        "popularity": 16.5241
     },
     {
         "id": 14944,
@@ -16281,7 +16293,7 @@
         "poster_path": "/jZLS9pS4JGltYIB43c2UvXhqZqW.jpg",
         "vote_average": 5.6,
         "release_date": "1950-01-30",
-        "popularity": 19.4318
+        "popularity": 15.218
     },
     {
         "id": 202998,
@@ -16293,7 +16305,7 @@
         "poster_path": "/bC2Mix1WPUiY6pldh77oiFl1MvI.jpg",
         "vote_average": 4.6,
         "release_date": "2023-05-04",
-        "popularity": 19.3972
+        "popularity": 17.6294
     },
     {
         "id": 92830,
@@ -16303,21 +16315,9 @@
         "overview": "During the reign of the Galactic Empire, former Jedi Master, Obi-Wan Kenobi, embarks on a crucial mission to confront allies turned enemies and face the wrath of the Empire.",
         "overview_ar": "تدور أحداث المسلسل بعد عشر سنوات من فيلم \"حرب النجوم الجزء الثالث: انتقام السيث\" وبعد عملية مسح الجيداي من كل المجرة.",
         "poster_path": "/4Lok3HBSfbQxibQZBygoVCwKKrZ.jpg",
-        "vote_average": 7.03,
+        "vote_average": 7.028,
         "release_date": "2022-05-26",
-        "popularity": 19.396
-    },
-    {
-        "id": 81615,
-        "type": "tv",
-        "title": "Savdhaan India",
-        "title_ar": "Savdhaan India",
-        "overview": "From a dangerous murder plot to a planned robbery, unmask the gory face of terror through a dramatised version of the crimes happening around you!",
-        "overview_ar": "From a dangerous murder plot to a planned robbery, unmask the gory face of terror through a dramatised version of the crimes happening around you!",
-        "poster_path": "/epdc0Aw8wTRB3xqJSEdF6vQkYWj.jpg",
-        "vote_average": 9.0,
-        "release_date": "2012-04-23",
-        "popularity": 19.3835
+        "popularity": 19.2377
     },
     {
         "id": 81615,
@@ -17280,18 +17280,6 @@
         "popularity": 15.983
     },
     {
-        "id": 201900,
-        "type": "tv",
-        "title": "Dee Girls Talk",
-        "title_ar": "小姐不熙娣",
-        "overview": "",
-        "overview_ar": "",
-        "poster_path": "/hEi1zZmS0Bgm8j2X7j8Rvv2yfHJ.jpg",
-        "vote_average": 6.5,
-        "release_date": "2022-02-14",
-        "popularity": 18.7955
-    },
-    {
         "id": 60603,
         "type": "tv",
         "title": "The Curse of Oak Island",
@@ -17301,7 +17289,7 @@
         "poster_path": "/gtkxUUmHDF31iDUOlxQqUXmiU71.jpg",
         "vote_average": 7.3,
         "release_date": "2014-01-05",
-        "popularity": 18.7875
+        "popularity": 17.3381
     },
     {
         "id": 81046,
@@ -17313,7 +17301,7 @@
         "poster_path": "/d7PIRa6ez7ZEl9D4JUrnSsmcnVD.jpg",
         "vote_average": 8.213,
         "release_date": "2018-09-14",
-        "popularity": 18.7748
+        "popularity": 16.847
     },
     {
         "id": 2199,
@@ -17325,7 +17313,7 @@
         "poster_path": "/vfG5gafbtxtfMvgDdNi56evx4Og.jpg",
         "vote_average": 6.7,
         "release_date": "1979-03-24",
-        "popularity": 18.7735
+        "popularity": 14.0374
     },
     {
         "id": 95226,
@@ -17337,7 +17325,7 @@
         "poster_path": "/uA6Waea7ozD7OEXNGaSqPtydPdd.jpg",
         "vote_average": 6.3,
         "release_date": "1982-01-16",
-        "popularity": 18.7696
+        "popularity": 15.1148
     },
     {
         "id": 1386,
@@ -17349,7 +17337,7 @@
         "poster_path": "/dlpqUF9io9Sl00jb7vhlqaTyFvq.jpg",
         "vote_average": 7.225,
         "release_date": "1984-09-30",
-        "popularity": 18.7577
+        "popularity": 16.9484
     },
     {
         "id": 30504,
@@ -17361,7 +17349,7 @@
         "poster_path": "/5hkYEnIuKZRSIwvVhWAKgIFv0UJ.jpg",
         "vote_average": 7.0,
         "release_date": "1974-03-13",
-        "popularity": 18.7557
+        "popularity": 15.3907
     },
     {
         "id": 424,
@@ -17373,7 +17361,7 @@
         "poster_path": "/bv7C5r7QyXGsaMxvU40FVY7SvrD.jpg",
         "vote_average": 7.31,
         "release_date": "2006-10-22",
-        "popularity": 18.7511
+        "popularity": 14.2612
     },
     {
         "id": 81502,
@@ -17385,7 +17373,7 @@
         "poster_path": "/flNWgUPwtkAGv8wyxxBlKaAwLzt.jpg",
         "vote_average": 7.4,
         "release_date": "2018-12-23",
-        "popularity": 18.7457
+        "popularity": 17.594
     },
     {
         "id": 280049,
@@ -17397,7 +17385,7 @@
         "poster_path": "/kjeeFHqhEtv1HsRLlV4bQRpDzsU.jpg",
         "vote_average": 10.0,
         "release_date": "2026-01-10",
-        "popularity": 18.7416
+        "popularity": 19.5594
     },
     {
         "id": 5721,
@@ -17409,7 +17397,7 @@
         "poster_path": "/k2XTj9D0tzca3dSgvVojU9xk8F5.jpg",
         "vote_average": 6.9,
         "release_date": "2008-07-01",
-        "popularity": 18.7364
+        "popularity": 16.1416
     },
     {
         "id": 209576,
@@ -17421,7 +17409,7 @@
         "poster_path": "/nGB8bgftc1KCL6D5OC3h5z0YYqB.jpg",
         "vote_average": 0.0,
         "release_date": "2000-11-13",
-        "popularity": 18.7351
+        "popularity": 17.3137
     },
     {
         "id": 124834,
@@ -17433,7 +17421,7 @@
         "poster_path": "/wJJt1HG62h3WoGnLcRIbO2nNNkg.jpg",
         "vote_average": 8.565,
         "release_date": "2022-04-22",
-        "popularity": 18.7337
+        "popularity": 19.6051
     },
     {
         "id": 609,
@@ -17445,7 +17433,7 @@
         "poster_path": "/1tCh5D0dyPw8tiknprgbljAAEPw.jpg",
         "vote_average": 7.3,
         "release_date": "1965-09-15",
-        "popularity": 18.716
+        "popularity": 17.4204
     },
     {
         "id": 1847,
@@ -17457,7 +17445,7 @@
         "poster_path": "/ez0fX5nA68BJWL8jfP6dYr5WrcL.jpg",
         "vote_average": 7.0,
         "release_date": "1996-11-12",
-        "popularity": 18.7159
+        "popularity": 15.3747
     },
     {
         "id": 217211,
@@ -17469,7 +17457,7 @@
         "poster_path": "/jJtOpfgV4iPu9RtxllHwZgn9dqI.jpg",
         "vote_average": 6.583,
         "release_date": "2023-09-25",
-        "popularity": 18.6991
+        "popularity": 16.8247
     },
     {
         "id": 71116,
@@ -17481,7 +17469,7 @@
         "poster_path": "/6dnUpv9ghx84pgxlMOb4uuJrWDs.jpg",
         "vote_average": 7.2,
         "release_date": "2018-07-25",
-        "popularity": 18.6963
+        "popularity": 17.7459
     },
     {
         "id": 13881,
@@ -17493,7 +17481,7 @@
         "poster_path": "/a6hE0lx1ploE0bLw8R9nv3IrI5T.jpg",
         "vote_average": 6.8,
         "release_date": "1967-01-10",
-        "popularity": 18.6756
+        "popularity": 16.737
     },
     {
         "id": 2443,
@@ -17505,7 +17493,7 @@
         "poster_path": "/1SgcheHtEcacQxRFKpIuP0jYw6u.jpg",
         "vote_average": 6.969,
         "release_date": "1979-09-20",
-        "popularity": 18.6748
+        "popularity": 18.0179
     },
     {
         "id": 14307,
@@ -17517,7 +17505,19 @@
         "poster_path": "/3dL7GQl5bHZTWaapNmfs9EJZ0Wa.jpg",
         "vote_average": 6.3,
         "release_date": "1995-10-12",
-        "popularity": 18.6717
+        "popularity": 20.0843
+    },
+    {
+        "id": 94181,
+        "type": "tv",
+        "title": "Agries Melisses",
+        "title_ar": "Agries Melisses",
+        "overview": "Every time a daughter was born, the father of Eleni, Asimina and Froso planted a poplar tree at the edge of their orchard to commemorate the arrival of the new child. As they grew and grew tall and slender, he boasted of them as his daughters. In the proudest poplar, however, Helen's poplar, a swarm of wild bees had already nested. \"You will be happy, my daughter, and life will be as sweet as this honey. You'll see,\" her father used to tell her. But, the years passed and Eleni looked at the poplar and listened to the hum... \"How do you know, father... How do you know that life has written only bitterness for my root\".",
+        "overview_ar": "Every time a daughter was born, the father of Eleni, Asimina and Froso planted a poplar tree at the edge of their orchard to commemorate the arrival of the new child. As they grew and grew tall and slender, he boasted of them as his daughters. In the proudest poplar, however, Helen's poplar, a swarm of wild bees had already nested. \"You will be happy, my daughter, and life will be as sweet as this honey. You'll see,\" her father used to tell her. But, the years passed and Eleni looked at the poplar and listened to the hum... \"How do you know, father... How do you know that life has written only bitterness for my root\".",
+        "poster_path": "/klyEn63r54TziUXXmfgjNChXM9w.jpg",
+        "vote_average": 7.3,
+        "release_date": "2019-09-29",
+        "popularity": 19.5003
     },
     {
         "id": 94181,
@@ -18960,30 +18960,6 @@
         "popularity": 17.1491
     },
     {
-        "id": 44256,
-        "type": "tv",
-        "title": "The Adventures of the Mole",
-        "title_ar": "The Adventures of the Mole",
-        "overview": "Created by Czech director and animator Zdeněk Miler in 1956, Krtek, or The Mole in English, was an international hit with children. Because the cartoons were presented with no dialogue, Krtek was held to no national boundaries.\n\nMilers daughter voiced the noises and grunts that Krtek made, and gave Miler the feedback from a child's perspective he needed to keep his stories focus on his young fans.",
-        "overview_ar": "Created by Czech director and animator Zdeněk Miler in 1956, Krtek, or The Mole in English, was an international hit with children. Because the cartoons were presented with no dialogue, Krtek was held to no national boundaries.\n\nMilers daughter voiced the noises and grunts that Krtek made, and gave Miler the feedback from a child's perspective he needed to keep his stories focus on his young fans.",
-        "poster_path": "/tkuoiW7Q8iOHBckBEePhwV8SVLI.jpg",
-        "vote_average": 8.0,
-        "release_date": "1957-09-13",
-        "popularity": 17.0603
-    },
-    {
-        "id": 288589,
-        "type": "tv",
-        "title": "Easygoing Territory Defense by the Optimistic Lord",
-        "title_ar": "お気楽領主の楽しい領地防衛 ～生産系魔術で名もなき村を最強の城塞都市に～",
-        "overview": "Reborn as a marquis’ fourth son, Van was once hailed as a genius prodigy—until he’s exiled to a nameless frontier village for possessing Production Magic, a useless type of magic in this world. But when he uses his “useless” power to craft weapons, tools, and wonders beyond imagination, the village begins to thrive! What began as exile is now the start of a new life—and a world-changing adventure!",
-        "overview_ar": "Reborn as a marquis’ fourth son, Van was once hailed as a genius prodigy—until he’s exiled to a nameless frontier village for possessing Production Magic, a useless type of magic in this world. But when he uses his “useless” power to craft weapons, tools, and wonders beyond imagination, the village begins to thrive! What began as exile is now the start of a new life—and a world-changing adventure!",
-        "poster_path": "/2ctXv1LyyVad5VLToS1t2ZqSCQa.jpg",
-        "vote_average": 7.7,
-        "release_date": "2026-01-10",
-        "popularity": 18.0694
-    },
-    {
         "id": 100010,
         "type": "tv",
         "title": "Big Sky",
@@ -19068,6 +19044,18 @@
         "popularity": 17.3038
     },
     {
+        "id": 237529,
+        "type": "tv",
+        "title": "Medalist",
+        "title_ar": "Medalist",
+        "overview": "Tsukasa Akeuraji, a frustrated skater, meets Inori Yuitsuka, a girl who yearns to be a figure skater. Motivated by Inori's obsession on the rink, Tsukasa begins coaching Inori. Inori's talent blossoms, and Tsukasa becomes a brilliant mentor. Together they aim to make her a glorious medalist!",
+        "overview_ar": "Tsukasa Akeuraji, a frustrated skater, meets Inori Yuitsuka, a girl who yearns to be a figure skater. Motivated by Inori's obsession on the rink, Tsukasa begins coaching Inori. Inori's talent blossoms, and Tsukasa becomes a brilliant mentor. Together they aim to make her a glorious medalist!",
+        "poster_path": "/hK5eKFaj99mZwpmILnvKehWe9t1.jpg",
+        "vote_average": 8.435,
+        "release_date": "2025-01-05",
+        "popularity": 17.605
+    },
+    {
         "id": 241372,
         "type": "tv",
         "title": "56 Days",
@@ -19111,7 +19099,7 @@
         "overview": "This spooky anthology series for kids recounts ghost stories told by the young members of the Midnight Society as they gather around a campfire. Each episode opens with members of the Midnight Society at their secret spot in the woods, where they prepare their fire and the night's storyteller announces the title of the his or her offering. However, the cameras soon leave the storyteller and switch to the tale being told.",
         "overview_ar": "This spooky anthology series for kids recounts ghost stories told by the young members of the Midnight Society as they gather around a campfire. Each episode opens with members of the Midnight Society at their secret spot in the woods, where they prepare their fire and the night's storyteller announces the title of the his or her offering. However, the cameras soon leave the storyteller and switch to the tale being told.",
         "poster_path": "/9CB16J0RHvbaO8Z7KXXwcknqlSX.jpg",
-        "vote_average": 8.174,
+        "vote_average": 8.2,
         "release_date": "1992-08-15",
         "popularity": 15.3087
     },
@@ -19164,18 +19152,6 @@
         "popularity": 14.4202
     },
     {
-        "id": 56559,
-        "type": "tv",
-        "title": "Theatre of Darkness: Yamishibai",
-        "title_ar": "Theatre of Darkness: Yamishibai",
-        "overview": "Yamishibai is a picture-story style of animation whose motif is surrounded and based off the rumors, and urban legends throughout the history of Japan.",
-        "overview_ar": "Yamishibai is a picture-story style of animation whose motif is surrounded and based off the rumors, and urban legends throughout the history of Japan.",
-        "poster_path": "/coYJ1i9QLlHZTanckLZ4iceptlj.jpg",
-        "vote_average": 7.4,
-        "release_date": "2013-07-15",
-        "popularity": 17.7568
-    },
-    {
         "id": 50821,
         "type": "tv",
         "title": "Among Friends",
@@ -19198,6 +19174,30 @@
         "vote_average": 8.26,
         "release_date": "2019-10-05",
         "popularity": 15.9506
+    },
+    {
+        "id": 18202,
+        "type": "tv",
+        "title": "Cougar Town",
+        "title_ar": "Cougar Town",
+        "overview": "Jules Cobb is a mom in her forties facing the often humorous challenges, pitfalls and rewards of life's next chapter. Along for the journey is her son, her ex-husband, her husband/neighbor and her friends who together make up her dysfunctional, but supportive and caring extended family... even if they have a funny way of showing it sometimes.",
+        "overview_ar": "Jules Cobb is a mom in her forties facing the often humorous challenges, pitfalls and rewards of life's next chapter. Along for the journey is her son, her ex-husband, her husband/neighbor and her friends who together make up her dysfunctional, but supportive and caring extended family... even if they have a funny way of showing it sometimes.",
+        "poster_path": "/AvxlfUW8OVQ630v7Se1mesDYbfW.jpg",
+        "vote_average": 6.486,
+        "release_date": "2009-09-23",
+        "popularity": 15.1934
+    },
+    {
+        "id": 83135,
+        "type": "tv",
+        "title": "The Twilight Zone",
+        "title_ar": "The Twilight Zone",
+        "overview": "Tales of science fiction, fantasy and the occult, exploring humanity's hopes, despairs, prides and prejudices in metaphoric ways. Next stop ahead The Twilight Zone.",
+        "overview_ar": "Tales of science fiction, fantasy and the occult, exploring humanity's hopes, despairs, prides and prejudices in metaphoric ways. Next stop ahead The Twilight Zone.",
+        "poster_path": "/aEuzZqJTEH9E4JwQyv8JtuCu22B.jpg",
+        "vote_average": 6.707,
+        "release_date": "2019-04-01",
+        "popularity": 16.2589
     },
     {
         "id": 18202,
@@ -19683,9 +19683,9 @@
         "id": 92892,
         "type": "tv",
         "title": "Ahiru no Sora",
-        "title_ar": "آهيرو نو سورا",
+        "title_ar": "Ahiru no Sora",
         "overview": "Sora joins the high school basketball club, but his unmotivated teammates don't care about the game. To get anywhere, he has to change their minds.",
-        "overview_ar": "قد يكون قصيرًا، ولكن سورا كوروماتاني يستطيع تسجيل نقاطًا كثيرة في كرة السلة! بحبه الذي ورثه من والدته لكرة السلة، يقسم سورا لوالدته أنّه سيحقق المركز الأول في بطولة المرحلة الثانوية لكرة السلة. ولكن هناك مشكلة. تحول نادي كرة السلة في مدرسته الجديدة إلى تجمع للجانحين! هل سيغير سورا رأيهم بأدائه المذهل ورمياته الثلاثية المدهشة؟ أقل",
+        "overview_ar": "Sora joins the high school basketball club, but his unmotivated teammates don't care about the game. To get anywhere, he has to change their minds.",
         "poster_path": "/jAVcBnYvxEHY5CR0lDnaPkjNTX3.jpg",
         "vote_average": 8.441,
         "release_date": "2019-10-01",
@@ -23031,7 +23031,7 @@
         "id": 32958,
         "type": "tv",
         "title": "Survivor",
-        "title_ar": "Survivor",
+        "title_ar": "הישרדות",
         "overview": "Survivor (Hebrew: הישרדות‎, Hisardut), formerly known as Survivor 10, is an Israeli reality competition game show based on the popular international Survivor television franchise. The series began in December 2007 and aired on Israeli's Channel 10 for 6 seasons. After legal issues between Channel 10 and Castaway Television, the series went on a three-year hiatus before returning in 2015 on Reshet. The show is hosted by actor and singer Guy Zu-Aretz.",
         "overview_ar": "Survivor (Hebrew: הישרדות‎, Hisardut), formerly known as Survivor 10, is an Israeli reality competition game show based on the popular international Survivor television franchise. The series began in December 2007 and aired on Israeli's Channel 10 for 6 seasons. After legal issues between Channel 10 and Castaway Television, the series went on a three-year hiatus before returning in 2015 on Reshet. The show is hosted by actor and singer Guy Zu-Aretz.",
         "poster_path": "/vbMk3HiapgmJvK3pVPJFFMlhCII.jpg",
