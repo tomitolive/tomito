@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Play, Star, Clock, Calendar, ArrowRight, Users, Maximize, Settings2, Server } from "lucide-react";
 import { VideoPlayer } from "@/components/VideoPlayer";
+import { SupremePlayer } from "@/components/SupremePlayer";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
@@ -23,6 +24,7 @@ import {
 } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
+import { useSupremeServers } from "@/hooks/useSupremeServers";
 
 
 export default function WatchMovie() {
@@ -33,6 +35,11 @@ export default function WatchMovie() {
   const [imdbId, setImdbId] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [currentServer, setCurrentServer] = useState<VideoServer>(MOVIE_SERVERS[0]);
+
+  const supremeServers = useSupremeServers({
+    movieTitle: movie?.title,
+    movieTitleAr: movie?.ar_title
+  });
 
 
   useEffect(() => {
@@ -208,39 +215,48 @@ export default function WatchMovie() {
             {t("watchMovie")}
           </h2>
 
-
-          {/* Server Selection UI - Moved from inside VideoPlayer */}
-          <div className="flex flex-wrap items-center gap-2 mb-4 justify-center">
-            {MOVIE_SERVERS.map((server) => (
-              <button
-                key={server.id}
-                onClick={() => setCurrentServer(server)}
-                className={cn(
-                  "h-9 px-4 rounded-lg transition-all backdrop-blur-md shadow-sm border flex items-center gap-2",
-                  currentServer.id === server.id
-                    ? "bg-primary text-primary-foreground border-primary shadow-md"
-                    : "bg-secondary/50 text-muted-foreground hover:text-foreground border-border hover:bg-secondary"
-                )}
-              >
-                <Server className="w-4 h-4" />
-                <span className="text-xs font-bold uppercase tracking-wide">{server.name}</span>
-              </button>
-            ))}
-          </div>
-
-          {/* Video Player Container */}
-          <div className="relative group max-w-4xl mx-auto">
-            <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl border border-border/50">
-              {movie && (
-                <VideoPlayer
-                  id={movie.id}
-                  type="movie"
-                  title={movie.title}
-                  currentServer={currentServer}
-                />
-              )}
+          {/* Conditional Player Logic */}
+          {supremeServers.length > 0 ? (
+            <div className="mb-0">
+              {/* New Frame/Supreme Player for Ramadan Content */}
+              <SupremePlayer servers={supremeServers} title={movie.title} />
             </div>
-          </div>
+          ) : (
+            <>
+              {/* Server Selection UI - Foreign/Standard series only */}
+              <div className="flex flex-wrap items-center gap-2 mb-4 justify-center">
+                {MOVIE_SERVERS.map((server) => (
+                  <button
+                    key={server.id}
+                    onClick={() => setCurrentServer(server)}
+                    className={cn(
+                      "h-9 px-4 rounded-lg transition-all backdrop-blur-md shadow-sm border flex items-center gap-2",
+                      currentServer.id === server.id
+                        ? "bg-primary text-primary-foreground border-primary shadow-md"
+                        : "bg-secondary/50 text-muted-foreground hover:text-foreground border-border hover:bg-secondary"
+                    )}
+                  >
+                    <Server className="w-4 h-4" />
+                    <span className="text-xs font-bold uppercase tracking-wide">{server.name}</span>
+                  </button>
+                ))}
+              </div>
+
+              {/* Standard Video Player Container */}
+              <div className="relative group max-w-4xl mx-auto">
+                <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl border border-border/50">
+                  {movie && (
+                    <VideoPlayer
+                      id={movie.id}
+                      type="movie"
+                      title={movie.title}
+                      currentServer={currentServer}
+                    />
+                  )}
+                </div>
+              </div>
+            </>
+          )}
         </div>
 
         {/* Cast Section */}

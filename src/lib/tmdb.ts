@@ -1356,7 +1356,8 @@ export async function fetchRamadan2026() {
     const data = await response.json();
     return data.map((item: any) => ({
       ...item,
-      name: item.title_en,
+      name: item.title_ar || item.title_en,
+      overview: item.overview_ar || item.overview_en,
       first_air_date: item.date,
       vote_average: item.rating,
       poster_path: item.poster.replace(/https:\/\/image\.tmdb\.org\/t\/p\/w500/, ""),
