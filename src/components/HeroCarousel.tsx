@@ -39,7 +39,7 @@ export function HeroCarousel({ items, type }: HeroCarouselProps) {
   const overview = currentItem.overview || t("noDescription");
   const rating = currentItem.vote_average?.toFixed(1) || "N/A";
   const link = type === "movie" ? `/movie/${currentItem.id}` : `/tv/${currentItem.id}`;
-  const backdropUrl = getBackdropUrl(currentItem.backdrop_path);
+  const backdropUrl = getBackdropUrl(currentItem.backdrop_path || currentItem.poster_path);
 
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
@@ -57,7 +57,7 @@ export function HeroCarousel({ items, type }: HeroCarouselProps) {
         className="absolute inset-0 transition-opacity duration-700"
         style={{
           backgroundImage: backdropUrl ? `url(${backdropUrl})` : undefined,
-          backgroundSize: "cover",
+          backgroundSize: backdropUrl ? "cover" : "contain",
           backgroundPosition: "center top",
         }}
       />

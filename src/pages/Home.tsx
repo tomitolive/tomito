@@ -69,17 +69,21 @@ export default function Home() {
             <Navbar />
             <HeroCarousel items={popularMovies.slice(0, 10)} type="movie" />
             <div className="container mx-auto px-4 py-8 space-y-12">
-                {/* Ramadan 2026 Coming Soon */}
-                {ramadanSeries.length > 0 && (
-                    <ContentRow
-                        title={"قريبا (مسلسلات رمضان 2026)"}
-                        items={ramadanSeries}
-                        type="tv"
-                    />
-                )}
-
                 {/* Trending Section */}
                 <ContentRow title={t("trendingMovies")} items={trendingMovies} type="movie" />
+
+                {/* Featured Ramadan 2026 Carousel */}
+                {ramadanSeries.length > 0 && (
+                    <div className="space-y-4">
+                        <h2 className="text-2xl font-bold px-0">رمضان 2026</h2>
+                        <div className="rounded-2xl overflow-hidden shadow-2xl border border-border/50">
+                            <HeroCarousel
+                                items={ramadanSeries.filter(s => [302770, 308850, 304229, 304650, 301329].includes(s.id))}
+                                type="tv"
+                            />
+                        </div>
+                    </div>
+                )}
 
                 {/* Production Companies Bar */}
                 <ProductionCompaniesBar />
