@@ -7,7 +7,7 @@ import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
 import { HeroCarousel } from "@/components/HeroCarousel";
 import { ProductionCompaniesBar } from "@/components/ProductionCompaniesBar";
-import { fetchPopular, fetchTrending, fetchNowPlaying, fetchOnTheAir, fetchTopRated, t } from "@/lib/tmdb";
+import { fetchPopular, fetchTrending, fetchNowPlaying, fetchOnTheAir, fetchTopRated, searchMulti, TMDB_CONFIG, t } from "@/lib/tmdb";
 
 
 export default function Home() {
@@ -47,27 +47,43 @@ export default function Home() {
                 setLatestSeries(onTheAirData.results);
                 setTopRated(topRatedData.results);
 
-                // Fetch Ramadan Supreme data
-                const ramadanResponse = await fetch("/ramadan_2026_supreme.json");
+                // Fetch Ramadan Results data
+                const ramadanResponse = await fetch("/ramadan_2026_results.json");
                 const ramadanData = await ramadanResponse.json();
 
-                // Group by series title to show unique items on home page
-                const seriesMap = new Map();
-                ramadanData.forEach((item: any) => {
-                    const titleMatch = item.title.match(/^(?:مسلسل|برنامج)\s+(.+?)(?:\s+الحلقة|$)/);
-                    const name = titleMatch ? titleMatch[1].trim() : item.title.replace(/\s+الحلقة\s+\d+.*$/, "");
-                    if (!seriesMap.has(name)) {
-                        seriesMap.set(name, {
-                            id: item.id,
-                            name: name,
-                            poster_path: item.poster, // Use full URL directly
-                            vote_average: 8.5,
-                            first_air_date: item.year || "2026",
-                            isSupreme: true // Flag to handle routing if needed
-                        });
-                    }
-                });
-                setRamadanSeries(Array.from(seriesMap.values()).slice(0, 12));
+                // Search TMDB for each series to get proper images
+                const first6 = ramadanData.slice(0, 6);
+                const mappedRamadan = await Promise.all(
+                    first6.map(async (series: any) => {
+                        let tmdbPoster = series.poster;
+                        let tmdbBackdrop = series.poster;
+                        try {
+                            const searchResult = await searchMulti(series.clean_title || series.title);
+                            const hit = searchResult?.results?.[0];
+                            if (hit?.poster_path) {
+                                tmdbPoster = `${TMDB_CONFIG.IMG_URL}/w500${hit.poster_path}`;
+                            }
+                            if (hit?.backdrop_path) {
+                                tmdbBackdrop = `${TMDB_CONFIG.IMG_URL}/original${hit.backdrop_path}`;
+                            } else if (hit?.poster_path) {
+                                tmdbBackdrop = `${TMDB_CONFIG.IMG_URL}/w780${hit.poster_path}`;
+                            }
+                        } catch (_) { /* keep original poster on error */ }
+                        return {
+                            id: series.id,
+                            name: series.title,
+                            clean_title: series.clean_title,
+                            poster_path: tmdbPoster,
+                            backdrop_path: tmdbBackdrop,
+                            overview: series.description,
+                            vote_average: 9.1,
+                            first_air_date: series.year || "2026",
+                            isSupreme: true
+                        };
+                    })
+                );
+
+                setRamadanSeries(mappedRamadan);
 
             } catch (err) {
                 console.error("Failed to fetch dynamic data:", err);
@@ -89,7 +105,7 @@ export default function Home() {
             />
 
             <Navbar />
-            <HeroCarousel items={popularMovies.slice(0, 10)} type="movie" />
+            <HeroCarousel items={popularTV.slice(0, 10)} type="tv" />
             <div className="container mx-auto px-4 py-8 space-y-12">
 
                 {/* Ramadan 2026 Section */}
@@ -106,7 +122,7 @@ export default function Home() {
                         </div>
                         <ContentRow
                             title=""
-                            items={ramadanSeries}
+                            items={ramadanSeries.slice(0, 6)}
                             type="tv"
                             isRamadan={true}
                         />

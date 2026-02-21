@@ -2,27 +2,25 @@ import json
 import os
 import re
 from datetime import datetime
+from urllib.parse import quote
 
 # Configuration
 BASE_URL = "https://tomito.xyz"
 cwd = os.getcwd()
-RAMADAN_DATA_PATH = os.path.join(cwd, "public/ramadan_series_2026.json")
+# Path to the real data file used by the app
+RAMADAN_DATA_PATH = os.path.join(cwd, "public/ramadan_2026_supreme.json")
 SITEMAP_PATH = os.path.join(cwd, "public/sitemap-ramadan.xml")
 
-def create_slug(text):
-    if not text:
+def clean_title(title):
+    if not title:
         return ""
-    # Exact replication of frontend logic in src/lib/utils.ts
-    text = text.lower().strip()
-    # Keep alphanumeric and Arabic chars. Replace everything else with -
-    text = re.sub(r'[^\w\u0621-\u064A-]+', '', text)
-    text = re.sub(r'\s+', '-', text)
-    text = re.sub(r'\--+', '-', text)
-    text = text.strip('-')
-    return text
-
-def create_slug_with_id(id, title):
-    return f"{id}-{create_slug(title)}"
+    # Standardized cleaning logic (matches frontend)
+    title = re.sub(r'^(مسلسل|برنامج)\s+', '', title)
+    title = re.sub(r'\s+الحلقة\s+\d+.*$', '', title)
+    title = re.sub(r'\s+الحلقه\s+\d+.*$', '', title)
+    title = re.sub(r'\s+-\s+.*$', '', title)
+    title = re.sub(r'كامل|بجودة|عالية|مترجم|مدبلج', '', title)
+    return title.strip()
 
 def generate_ramadan_sitemap():
     if not os.path.exists(RAMADAN_DATA_PATH):
@@ -31,26 +29,21 @@ def generate_ramadan_sitemap():
 
     urls = []
     
+    # Static Ramadan main page
+    urls.append(f"{BASE_URL}/ramadan")
+    
     with open(RAMADAN_DATA_PATH, 'r', encoding='utf-8') as f:
-        ramadan_series = json.load(f)
-        for series in ramadan_series:
-            series_id = series.get('id')
-            title_en = series.get('title_en')
-            title_ar = series.get('title_ar')
-            
-            if series_id:
-                # English Slug URL
-                if title_en:
-                    slug_en = create_slug_with_id(series_id, title_en)
-                    urls.append(f"{BASE_URL}/tv/{slug_en}")
-                
-                # Arabic Slug URL
-                if title_ar:
-                    slug_ar = create_slug_with_id(series_id, title_ar)
-                    urls.append(f"{BASE_URL}/tv/{slug_ar}")
-
-                # Watch page (ID based, only need one)
-                urls.append(f"{BASE_URL}/tv/{series_id}/watch")
+        ramadan_data = json.load(f)
+        
+        # Group by cleaned title to mirror the UI
+        unique_series = set()
+        for entry in ramadan_data:
+            series_name = clean_title(entry.get('title'))
+            if series_name and series_name not in unique_series:
+                unique_series.add(series_name)
+                # Encoded URL for the series
+                safe_name = quote(series_name)
+                urls.append(f"{BASE_URL}/watch-ramadan/{safe_name}")
 
     # Generate XML
     now = datetime.now().strftime("%Y-%m-%d")
@@ -61,8 +54,8 @@ def generate_ramadan_sitemap():
         xml_content.append('  <url>')
         xml_content.append(f'    <loc>{url}</loc>')
         xml_content.append(f'    <lastmod>{now}</lastmod>')
-        xml_content.append('    <changefreq>weekly</changefreq>')
-        xml_content.append('    <priority>0.9</priority>') # Higher priority for new content
+        xml_content.append('    <changefreq>daily</changefreq>')
+        xml_content.append('    <priority>1.0</priority>')
         xml_content.append('  </url>')
     
     xml_content.append('</urlset>')

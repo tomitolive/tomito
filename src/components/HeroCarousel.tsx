@@ -35,11 +35,20 @@ export function HeroCarousel({ items, type }: HeroCarouselProps) {
   }
 
   const currentItem = items[currentIndex];
-  const title = "title" in currentItem ? currentItem.title : currentItem.name;
+  const title = "title" in currentItem ? (currentItem as any).title : (currentItem as any).name;
   const overview = currentItem.overview || t("noDescription");
   const rating = currentItem.vote_average?.toFixed(1) || "N/A";
-  const link = type === "movie" ? `/movie/${currentItem.id}` : `/tv/${currentItem.id}`;
-  const backdropUrl = getBackdropUrl(currentItem.backdrop_path || currentItem.poster_path);
+
+  const isSupreme = (currentItem as any).isSupreme;
+  const link = isSupreme
+    ? `/ramadan-trailer/${encodeURIComponent((currentItem as any).clean_title || title)}`
+    : type === "movie"
+      ? `/movie/${currentItem.id}`
+      : `/tv/${currentItem.id}`;
+
+  const backdropUrl = isSupreme
+    ? currentItem.poster_path // Use poster as backdrop for supreme if no backdrop
+    : getBackdropUrl(currentItem.backdrop_path || currentItem.poster_path);
 
   const goToSlide = (index: number) => {
     setCurrentIndex(index);

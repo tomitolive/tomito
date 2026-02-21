@@ -39,7 +39,7 @@ export function MovieCard({
       : "N/A";
 
   const link = item.isSupreme
-    ? `/watch-ramadan/${encodeURIComponent(title)}`
+    ? `/ramadan-trailer/${encodeURIComponent(item.clean_title || title)}`
     : type === "movie"
       ? `/movie/${createSlugWithId(item.id, title)}`
       : `/tv/${createSlugWithId(item.id, title)}`;

@@ -23,19 +23,28 @@ async function loadSupremeData(): Promise<SupremeEntry[]> {
 
     fetchPromise = Promise.all([
         fetch("/supreme_results.json").then((res) => res.json()),
-        fetch("/ramadan_2026_supreme.json").then((res) => res.json()).catch(() => []), // Gracefully handle if missing
+        fetch("/ramadan_2026_results.json").then((res) => res.json()).catch(() => []), // Gracefully handle if missing
     ])
-        .then(([supremeData, ramadanData]: [SupremeEntry[], SupremeEntry[]]) => {
-            // Normalize Ramadan data to use 'servers' field
-            const normalizedRamadan = ramadanData.map((entry) => ({
-                ...entry,
-                servers: (entry.watch_servers || entry.servers || []).map((s) => ({
-                    ...s,
-                    quality: (s as any).quality || "HD",
-                })),
-            }));
+        .then(([supremeData, ramadanData]: [SupremeEntry[], any[]]) => {
+            // Flatten nested Ramadan data: episodes become individual entries for matching
+            const flattenedRamadan: SupremeEntry[] = [];
 
-            const combined = [...supremeData, ...normalizedRamadan];
+            ramadanData.forEach((series: any) => {
+                if (series.episodes && Array.isArray(series.episodes)) {
+                    series.episodes.forEach((ep: any) => {
+                        flattenedRamadan.push({
+                            title: ep.title,
+                            original_url: "", // Not used in this context
+                            servers: (ep.watch_servers || []).map((s: any) => ({
+                                ...s,
+                                quality: s.quality || "HD",
+                            })),
+                        });
+                    });
+                }
+            });
+
+            const combined = [...supremeData, ...flattenedRamadan];
             cachedData = combined;
             return combined;
         })
