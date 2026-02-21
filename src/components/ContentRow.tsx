@@ -9,13 +9,14 @@ import { FocusContext } from "@noriginmedia/norigin-spatial-navigation";
 
 interface ContentRowProps {
   title: string;
-  items: (Movie | TVShow)[];
+  items: (Movie | TVShow | any)[];
   type: "movie" | "tv";
   isLoading?: boolean;
   showAll?: string;
+  isRamadan?: boolean;
 }
 
-export function ContentRow({ title, items, type, isLoading, showAll }: ContentRowProps) {
+export function ContentRow({ title, items, type, isLoading, showAll, isRamadan }: ContentRowProps) {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: "left" | "right") => {
@@ -37,7 +38,7 @@ export function ContentRow({ title, items, type, isLoading, showAll }: ContentRo
 
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-1">
-              
+
             </div>
 
             {showAll && (
@@ -68,7 +69,7 @@ export function ContentRow({ title, items, type, isLoading, showAll }: ContentRo
               ))
               : items.map((item) => (
                 <div key={item.id} className="flex-shrink-0 w-36 md:w-44 lg:w-48 snap-start">
-                  <MovieCard item={item} type={type} />
+                  <MovieCard item={item} type={type} isRamadan={isRamadan} />
                 </div>
               ))}
           </div>

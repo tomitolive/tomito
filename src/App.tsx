@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import MovieDetail from "./pages/MovieDetail";
 import TVDetail from "./pages/TVDetail";
@@ -17,6 +17,11 @@ import CompanyContent from "./pages/CompanyContent";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
+import RamadanPage from "./pages/RamadanPage";
+import { WatchRamadanPage } from "./pages/WatchRamadanPage";
+import { RamadanTrailerPage } from "./pages/RamadanTrailerPage";
+import { RamadanDownloadPage } from "./pages/RamadanDownloadPage";
+
 
 
 import { HelmetProvider } from "react-helmet-async";
@@ -47,6 +52,11 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/privacy" element={<Privacy />} />
+                <Route path="/ramadan" element={<RamadanPage />} />
+                <Route path="/ramadan-trailer/:slug" element={<RamadanTrailerPage />} />
+                <Route path="/watch-ramadan/:slug" element={<WatchRamadanPage />} />
+                <Route path="/ramadan-download/:slug" element={<RamadanDownloadPage />} />
+
 
               </Routes>
             </Router>

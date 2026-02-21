@@ -1349,3 +1349,41 @@ export async function fetchByCompany(mediaType: "movie" | "tv", companyId: strin
   const url = `${TMDB_CONFIG.BASE_URL}/discover/${mediaType}?api_key=${TMDB_CONFIG.API_KEY}&with_companies=${companyId}`;
   return fetchAndMergeLocale(url, page);
 }
+
+export async function fetchRamadan2026() {
+  try {
+    const response = await fetch("/ramadan_2026_supreme.json");
+    const data = await response.json();
+
+    // Group episodes by series title
+    const seriesMap = new Map<string, TVShow>();
+
+    data.forEach((item: any) => {
+      // Extract series title (e.g., "مسلسل درش" from "مسلسل درش الحلقة 3 الثالثة")
+      const seriesTitleMatch = item.title.match(/^(?:مسلسل|برنامج)\s+(.+?)(?:\s+الحلقة|$)/);
+      const seriesTitle = seriesTitleMatch ? seriesTitleMatch[0].trim() : item.title;
+
+      if (!seriesMap.has(seriesTitle)) {
+        seriesMap.set(seriesTitle, {
+          id: item.id, // Using the ID of the first episode as a proxy
+          name: seriesTitle,
+          original_name: seriesTitle,
+          overview: item.description,
+          poster_path: item.poster.replace(/https:\/\/shaaheid4u\.net\/photos\/uploads\//, ""),
+          backdrop_path: item.poster.replace(/https:\/\/shaaheid4u\.net\/photos\/uploads\//, ""),
+          first_air_date: item.year || "2026",
+          vote_average: 8.5, // Default rating as individual items don't have it
+          vote_count: 0,
+          genre_ids: [],
+          popularity: 0,
+        });
+      }
+    });
+
+    return Array.from(seriesMap.values());
+  } catch (error) {
+    console.error("Failed to fetch Ramadan 2026 series:", error);
+    return [];
+  }
+}
+
