@@ -1,9 +1,7 @@
-import { t } from "@/lib/tmdb";
+import { t } from "../lib/tmdb";
 import { Home as HomeIcon, Lock, Eye, FileText, Database } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SEO } from "@/components/SEO";
-
-
 
 export default function Privacy() {
     const lastUpdated = new Date().toLocaleDateString('ar-EG', { year: 'numeric', month: 'long', day: 'numeric' });
