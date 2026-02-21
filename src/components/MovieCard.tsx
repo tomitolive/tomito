@@ -8,9 +8,10 @@ import { useFocusable } from "@/hooks/useFocusable";
 type MediaType = "movie" | "tv";
 
 interface MovieCardProps {
-  item: Movie | TVShow;
+  item: Movie | TVShow | any;
   type: MediaType;
   className?: string;
+  isRamadan?: boolean;
 }
 
 export function MovieCard({
@@ -37,8 +38,9 @@ export function MovieCard({
       ? item.vote_average.toFixed(1)
       : "N/A";
 
-  const link =
-    type === "movie"
+  const link = item.isSupreme
+    ? `/watch-ramadan/${encodeURIComponent(title)}`
+    : type === "movie"
       ? `/movie/${createSlugWithId(item.id, title)}`
       : `/tv/${createSlugWithId(item.id, title)}`;
 
@@ -136,7 +138,7 @@ export function MovieCard({
         ) : null}
 
         <img
-          src={getImageUrl(item.poster_path, "w500")}
+          src={item.isSupreme ? item.poster_path : getImageUrl(item.poster_path, "w500")}
           alt={title}
           className={cn(
             "h-full w-full object-cover transition-transform duration-500",

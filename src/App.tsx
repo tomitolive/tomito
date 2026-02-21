@@ -18,6 +18,9 @@ import CompanyContent from "./pages/CompanyContent";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
+import RamadanPage from "./pages/RamadanPage";
+import { WatchRamadanPage } from "./pages/WatchRamadanPage";
+
 
 
 import { HelmetProvider } from "react-helmet-async";
@@ -47,6 +50,9 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/privacy" element={<Privacy />} />
+                <Route path="/ramadan" element={<RamadanPage />} />
+                <Route path="/watch-ramadan/:slug" element={<WatchRamadanPage />} />
+
 
               </Routes>
             </Router>

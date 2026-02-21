@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { SEO } from "@/components/SEO";
 
+import { Link } from "react-router-dom";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
@@ -22,6 +23,7 @@ export default function Home() {
     useEffect(() => {
         const loadData = async () => {
             try {
+                // Fetch TMDB data
                 const [
                     popularMoviesData,
                     popularTVData,
@@ -29,7 +31,6 @@ export default function Home() {
                     nowPlayingData,
                     onTheAirData,
                     topRatedData,
-                    ramadanData
                 ] = await Promise.all([
                     fetchPopular("movie"),
                     fetchPopular("tv"),
@@ -37,7 +38,6 @@ export default function Home() {
                     fetchNowPlaying(),
                     fetchOnTheAir(),
                     fetchTopRated("movie"),
-                    import("@/lib/tmdb").then(m => m.fetchRamadan2026())
                 ]);
 
                 setPopularMovies(popularMoviesData.results);
@@ -45,8 +45,30 @@ export default function Home() {
                 setTrendingMovies(trendingData);
                 setLatestMovies(nowPlayingData.results);
                 setLatestSeries(onTheAirData.results);
-                setRamadanSeries(ramadanData);
                 setTopRated(topRatedData.results);
+
+                // Fetch Ramadan Supreme data
+                const ramadanResponse = await fetch("/ramadan_2026_supreme.json");
+                const ramadanData = await ramadanResponse.json();
+
+                // Group by series title to show unique items on home page
+                const seriesMap = new Map();
+                ramadanData.forEach((item: any) => {
+                    const titleMatch = item.title.match(/^(?:مسلسل|برنامج)\s+(.+?)(?:\s+الحلقة|$)/);
+                    const name = titleMatch ? titleMatch[1].trim() : item.title.replace(/\s+الحلقة\s+\d+.*$/, "");
+                    if (!seriesMap.has(name)) {
+                        seriesMap.set(name, {
+                            id: item.id,
+                            name: name,
+                            poster_path: item.poster, // Use full URL directly
+                            vote_average: 8.5,
+                            first_air_date: item.year || "2026",
+                            isSupreme: true // Flag to handle routing if needed
+                        });
+                    }
+                });
+                setRamadanSeries(Array.from(seriesMap.values()).slice(0, 12));
+
             } catch (err) {
                 console.error("Failed to fetch dynamic data:", err);
             } finally {
@@ -59,7 +81,7 @@ export default function Home() {
     if (loading) return <div className="h-screen flex items-center justify-center">Loading...</div>;
 
     return (
-        <div className="min-h-screen bg-background">
+        <div className="min-h-screen bg-background text-foreground">
             <SEO
                 title="مشاهدة أفلام ومسلسلات مجانية أونلاين"
                 description="شاهد آلاف الأفلام والمسلسلات العربية والأجنبية مجاناً على Tomito. أحدث الأفلام بجودة HD، مسلسلات مترجمة ومشاهدة مباشرة بدون تحميل."
@@ -69,21 +91,30 @@ export default function Home() {
             <Navbar />
             <HeroCarousel items={popularMovies.slice(0, 10)} type="movie" />
             <div className="container mx-auto px-4 py-8 space-y-12">
-                {/* Trending Section */}
-                <ContentRow title={t("trendingMovies")} items={trendingMovies} type="movie" />
 
-                {/* Featured Ramadan 2026 Carousel */}
+                {/* Ramadan 2026 Section */}
                 {ramadanSeries.length > 0 && (
-                    <div className="space-y-4">
-                        <h2 className="text-2xl font-bold px-0">رمضان 2026</h2>
-                        <div className="rounded-2xl overflow-hidden shadow-2xl border border-border/50">
-                            <HeroCarousel
-                                items={ramadanSeries.filter(s => [302770, 308850, 304229, 304650, 301329].includes(s.id))}
-                                type="tv"
-                            />
+                    <div className="space-y-6">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center gap-3">
+                                <div className="w-1.5 h-8 bg-primary rounded-full shadow-[0_0_15px_rgba(var(--primary),0.5)]" />
+                                <h2 className="text-2xl font-bold">مسلسلات رمضان 2026</h2>
+                            </div>
+                            <Link to="/ramadan" className="text-primary hover:underline font-medium text-sm">
+                                عرض الكل
+                            </Link>
                         </div>
+                        <ContentRow
+                            title=""
+                            items={ramadanSeries}
+                            type="tv"
+                            isRamadan={true}
+                        />
                     </div>
                 )}
+
+                {/* Trending Section */}
+                <ContentRow title={t("trendingMovies")} items={trendingMovies} type="movie" />
 
                 {/* Production Companies Bar */}
                 <ProductionCompaniesBar />
@@ -102,4 +133,5 @@ export default function Home() {
             <Footer />
         </div>
     );
-}  
+}
+
