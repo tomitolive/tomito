@@ -9,41 +9,40 @@ BASE_URL = "https://tomito.xyz"
 cwd = os.getcwd()
 # Path to the real data file used by the app
 RAMADAN_DATA_PATH = os.path.join(cwd, "public/ramadan_2026_results.json")
-SITEMAP_PATH = os.path.join(cwd, "public/sitemap-ramadan.xml")
+SITEMAP_PATH = os.path.join(cwd, "public/sitemap-ramadan-full.xml")
 
-def clean_title(title):
-    if not title:
-        return ""
-    # Standardized cleaning logic (matches frontend)
-    title = re.sub(r'^(مسلسل|برنامج)\s+', '', title)
-    title = re.sub(r'\s+الحلقة\s+\d+.*$', '', title)
-    title = re.sub(r'\s+الحلقه\s+\d+.*$', '', title)
-    title = re.sub(r'\s+-\s+.*$', '', title)
-    title = re.sub(r'كامل|بجودة|عالية|مترجم|مدبلج', '', title)
-    return title.strip()
-
-def generate_ramadan_sitemap():
+def generate_ramadan_full_sitemap():
     if not os.path.exists(RAMADAN_DATA_PATH):
         print(f"Error: Ramadan data file not found at {RAMADAN_DATA_PATH}")
         return
 
     urls = []
     
-    # Static Ramadan main page
+    # 1. Static Ramadan main page
     urls.append(f"{BASE_URL}/ramadan")
     
     with open(RAMADAN_DATA_PATH, 'r', encoding='utf-8') as f:
         ramadan_data = json.load(f)
         
-        # Group by cleaned title to mirror the UI
-        unique_series = set()
         for entry in ramadan_data:
-            series_name = clean_title(entry.get('title'))
-            if series_name and series_name not in unique_series:
-                unique_series.add(series_name)
+            full_title = entry.get('title')
+            if full_title:
                 # Encoded URL for the series
-                safe_name = quote(series_name)
-                urls.append(f"{BASE_URL}/watch-ramadan/{safe_name}")
+                safe_name = quote(full_title)
+                
+                # 1. Main series trailer/info page
+                urls.append(f"{BASE_URL}/ramadan-trailer/{safe_name}")
+                
+                # 2. Episode specific links
+                episodes = entry.get('episodes', [])
+                for ep in episodes:
+                    ep_num = ep.get('episode_number')
+                    if ep_num:
+                        # Episode trailer/info link
+                        urls.append(f"{BASE_URL}/ramadan-trailer/{safe_name}?episode={ep_num}")
+                        
+                        # Episode download link
+                        urls.append(f"{BASE_URL}/ramadan-download/{safe_name}?episode={ep_num}")
 
     # Generate XML
     now = datetime.now().strftime("%Y-%m-%d")
@@ -66,7 +65,7 @@ def generate_ramadan_sitemap():
     with open(SITEMAP_PATH, 'w', encoding='utf-8') as f:
         f.write("\n".join(xml_content))
 
-    print(f"Ramadan sitemap generated successfully with {len(urls)} URLs at {SITEMAP_PATH}")
+    print(f"Full Ramadan sitemap generated successfully with {len(urls)} URLs at {SITEMAP_PATH}")
 
 if __name__ == "__main__":
-    generate_ramadan_sitemap()
+    generate_ramadan_full_sitemap()
