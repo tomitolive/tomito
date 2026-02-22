@@ -85,14 +85,14 @@ export function RamadanTrailerPage() {
 
     if (loading) {
         return (
-            <div className="min-h-screen bg-[#050505] text-white">
+            <div className="min-h-screen bg-background text-foreground">
                 <Navbar />
                 <div className="pt-32 flex flex-col items-center justify-center gap-6">
                     <div className="relative">
                         <div className="w-16 h-16 border-4 border-primary/20 rounded-full" />
                         <div className="absolute inset-0 w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin" />
                     </div>
-                    <p className="text-muted-foreground animate-pulse font-bold tracking-widest uppercase text-sm">جاري التجهيز...</p>
+                    <p className="text-muted-foreground animate-pulse font-bold tracking-widest uppercase text-[10px]">جاري التجهيز...</p>
                 </div>
             </div>
         );
@@ -100,16 +100,16 @@ export function RamadanTrailerPage() {
 
     if (!series) {
         return (
-            <div className="min-h-screen bg-[#050505] text-white flex flex-col items-center justify-center pt-24 text-center px-4">
+            <div className="min-h-screen bg-background text-foreground flex flex-col items-center justify-center pt-24 text-center px-4">
                 <Navbar />
-                <div className="bg-white/5 p-12 rounded-[40px] border border-white/10 max-w-lg space-y-6">
-                    <div className="w-20 h-20 bg-red-500/10 rounded-full flex items-center justify-center mx-auto">
-                        <Play className="w-10 h-10 text-red-500" />
+                <div className="bg-card p-10 rounded-2xl border border-border max-w-lg space-y-4">
+                    <div className="w-16 h-16 bg-destructive/10 rounded-full flex items-center justify-center mx-auto">
+                        <Play className="w-8 h-8 text-destructive" />
                     </div>
-                    <h1 className="text-4xl font-black">المسلسل غير موجود</h1>
-                    <p className="text-muted-foreground text-lg">عذراً، لم نتمكن من العثور على البيانات المطلوبة لهذا المسلسل.</p>
+                    <h1 className="text-2xl font-black">المسلسل غير موجود</h1>
+                    <p className="text-muted-foreground text-sm">عذراً، لم نتمكن من العثور على البيانات المطلوبة لهذا المسلسل.</p>
                     <Link to="/ramadan" className="block">
-                        <Button variant="secondary" className="w-full h-14 rounded-2xl font-black text-lg">العودة للقائمة</Button>
+                        <Button variant="secondary" className="w-full h-12 rounded-xl font-bold text-base">العودة للقائمة</Button>
                     </Link>
                 </div>
             </div>
@@ -117,14 +117,14 @@ export function RamadanTrailerPage() {
     }
 
     return (
-        <div className="min-h-screen bg-[#050505] text-white selection:bg-primary/30">
+        <div className="min-h-screen bg-background text-foreground selection:bg-primary/30">
             <Navbar />
 
             {/* ── Dynamic Cinema Backdrop ── */}
-            <div className="fixed inset-0 -z-10 bg-black overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-b from-primary/30 via-[#050505]/90 to-[#050505] z-10" />
+            <div className="fixed inset-0 -z-10 bg-background overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-background/90 to-background z-10" />
                 {tmdbPoster || series.poster ? (
-                    <div className="relative w-full h-full scale-110 blur-[80px] opacity-30">
+                    <div className="relative w-full h-full scale-105 blur-[60px] opacity-20">
                         <img
                             src={tmdbPoster || series.poster}
                             className="w-full h-full object-cover animate-slow-zoom"
@@ -134,23 +134,23 @@ export function RamadanTrailerPage() {
                 ) : null}
             </div>
 
-            <main className="container mx-auto px-4 pt-40 pb-24 relative z-20">
+            <main className="container mx-auto px-4 pt-32 pb-24 relative z-20">
                 {/* Modern Breadcrumbs */}
-                <nav className="flex items-center gap-3 text-sm text-muted-foreground/60 mb-12 overflow-x-auto whitespace-nowrap pb-2 no-scrollbar">
-                    <Link to="/" className="hover:text-primary transition-colors flex items-center gap-2 font-bold focus:outline-none">
-                        <Home className="w-4 h-4" /> الرئيسية
+                <nav className="flex items-center gap-2 text-[11px] text-muted-foreground/60 mb-10 overflow-x-auto whitespace-nowrap pb-2 no-scrollbar uppercase font-bold">
+                    <Link to="/" className="hover:text-primary transition-colors flex items-center gap-1.5 focus:outline-none">
+                        <Home className="w-3.5 h-3.5" /> الرئيسية
                     </Link>
-                    <ChevronRight className="w-3.5 h-3.5 flex-shrink-0" />
-                    <Link to="/ramadan" className="hover:text-primary transition-colors font-bold focus:outline-none">رمضان 2026</Link>
-                    <ChevronRight className="w-3.5 h-3.5 flex-shrink-0" />
-                    <span className="text-white font-black">{seriesName}</span>
+                    <ChevronRight className="w-3 h-3 flex-shrink-0" />
+                    <Link to="/ramadan" className="hover:text-primary transition-colors focus:outline-none">رمضان 2026</Link>
+                    <ChevronRight className="w-3 h-3 flex-shrink-0" />
+                    <span className="text-foreground font-black tracking-wide">{seriesName}</span>
                 </nav>
 
                 <div className="grid md:grid-cols-[320px_1fr] lg:grid-cols-[400px_1fr] gap-12 lg:gap-20 items-start">
                     {/* Iconic Poster Column */}
-                    <div className="relative group mx-auto md:mx-0 w-full max-w-[350px] md:max-w-none">
-                        <div className="absolute -inset-1.5 bg-gradient-to-br from-primary via-purple-600 to-blue-600 rounded-[40px] blur-xl opacity-30 group-hover:opacity-60 transition duration-1000" />
-                        <div className="relative aspect-[2/3] rounded-[32px] overflow-hidden border border-white/10 shadow-[0_40px_100px_-20px_rgba(0,0,0,1)] ring-1 ring-white/10">
+                    <div className="relative group mx-auto md:mx-0 w-full max-w-[300px] md:max-w-none">
+                        <div className="absolute -inset-1 bg-gradient-to-br from-primary via-purple-600 to-blue-600 rounded-2xl blur-lg opacity-10 group-hover:opacity-30 transition duration-1000" />
+                        <div className="relative aspect-[2/3] rounded-2xl overflow-hidden border border-border shadow-2xl ring-1 ring-border/10">
                             <PosterImage
                                 src={tmdbPoster || series.poster}
                                 alt={seriesName}
@@ -160,93 +160,92 @@ export function RamadanTrailerPage() {
                     </div>
 
                     {/* Information Column */}
-                    <div className="space-y-12">
-                        <div className="space-y-8">
-                            <div className="flex flex-wrap items-center gap-4">
-                                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 border border-primary/30 backdrop-blur-xl">
-                                    <Sparkles className="w-3.5 h-3.5 text-primary" />
-                                    <span className="text-[10px] font-black tracking-[0.2em] uppercase text-primary">حصري 2026</span>
+                    <div className="space-y-10">
+                        <div className="space-y-6">
+                            <div className="flex flex-wrap items-center gap-3">
+                                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-primary/10 border border-primary/20 backdrop-blur-xl">
+                                    <Sparkles className="w-3 h-3 text-primary" />
+                                    <span className="text-[9px] font-black tracking-[0.15em] uppercase text-primary">حصري 2026</span>
                                 </div>
-                                <div className="flex items-center gap-2 text-yellow-500 font-black bg-white/5 px-4 py-2 rounded-2xl border border-white/5 shadow-xl">
-                                    <Star className="w-4 h-4 fill-current" />
-                                    <span className="text-sm tracking-tighter">9.1 / 10</span>
+                                <div className="flex items-center gap-1.5 text-yellow-600 font-bold bg-muted px-3 py-1 rounded-lg border border-border shadow-sm">
+                                    <Star className="w-3.5 h-3.5 fill-current" />
+                                    <span className="text-xs tracking-tighter">9.1 / 10</span>
                                 </div>
-                                <div className="flex items-center gap-2 text-muted-foreground/80 font-black bg-white/5 px-4 py-2 rounded-2xl border border-white/5 shadow-xl uppercase tracking-widest text-[10px]">
-                                    <Clock className="w-4 h-4 text-primary/60" />
+                                <div className="flex items-center gap-1.5 text-muted-foreground font-black bg-muted px-3 py-1 rounded-lg border border-border shadow-sm uppercase tracking-widest text-[9px]">
+                                    <Clock className="w-3.5 h-3.5 text-primary/60" />
                                     <span>45 MINS</span>
                                 </div>
                             </div>
 
-                            <h1 className="text-3xl md:text-5xl lg:text-6xl font-black leading-[0.95] tracking-tighter drop-shadow-2xl">
+                            <h1 className="text-2xl md:text-4xl lg:text-5xl font-black leading-tight tracking-tight drop-shadow-sm">
                                 {seriesName}
                             </h1>
 
-                            <div className="flex items-center gap-4 text-sm md:text-base font-bold text-muted-foreground/60">
-                                <Calendar className="w-6 h-6 text-primary/40" />
+                            <div className="flex items-center gap-3 text-xs md:text-sm font-bold text-muted-foreground/80">
+                                <Calendar className="w-5 h-5 text-primary/40" />
                                 <span>موسم رمضان {series.year}</span>
-                                <span className="w-1.5 h-1.5 bg-white/10 rounded-full" />
+                                <div className="w-1 h-1 bg-border rounded-full" />
                                 <span className="tracking-widest uppercase">دراما عربية</span>
                             </div>
                         </div>
 
-                        <div className="space-y-6 max-w-4xl">
-                            <div className="flex items-center gap-3">
-                                <div className="w-1.5 h-8 bg-primary rounded-full shadow-[0_0_20px_rgba(var(--primary),0.8)]" />
-                                <h3 className="text-xl font-black tracking-tight">قصة العمل</h3>
+                        <div className="space-y-4 max-w-3xl">
+                            <div className="flex items-center gap-2">
+                                <div className="w-1 h-6 bg-primary rounded-full shadow-[0_0_10px_rgba(var(--primary),0.8)]" />
+                                <h3 className="text-lg font-black tracking-tight uppercase">قصة العمل</h3>
                             </div>
-                            <p className="text-base md:text-lg text-muted-foreground/80 leading-[1.6] font-medium italic">
+                            <p className="text-sm md:text-base text-muted-foreground/80 leading-relaxed font-medium italic">
                                 "{series.description || "لا يوجد وصف متوفر حالياً لهذا المسلسل، ولكن من المتوقع أن يكون من أبرز أعمال الموسم."}"
                             </p>
                         </div>
 
                         {/* Interactive Episode List */}
-                        <div className="space-y-8 pt-6">
-                            <div className="flex items-center justify-between border-b border-white/5 pb-6">
-                                <h3 className="text-xl font-black flex items-center gap-4">
-                                    <ListVideo className="w-8 h-8 text-primary" />
+                        <div className="space-y-6 pt-4">
+                            <div className="flex items-center justify-between border-b border-border pb-4">
+                                <h3 className="text-lg font-black flex items-center gap-3 uppercase">
+                                    <ListVideo className="w-6 h-6 text-primary" />
                                     قائمة الحلقات
                                 </h3>
-                                <div className="bg-white/5 px-5 py-2.5 rounded-2xl border border-white/10 text-sm font-black text-muted-foreground uppercase tracking-widest">
+                                <div className="bg-muted px-4 py-1.5 rounded-lg border border-border text-[9px] font-black text-muted-foreground uppercase tracking-widest">
                                     {series.episodes?.length || 0} ITEMS
                                 </div>
                             </div>
 
-                            <div className="grid grid-cols-1 gap-6">
+                            <div className="grid grid-cols-1 gap-4">
                                 {series.episodes?.map((ep, idx) => {
                                     const epNum = ep.episode_number || (idx + 1);
                                     return (
                                         <div key={ep.id} className="group relative">
-                                            <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/20 to-purple-600/20 rounded-[32px] opacity-0 group-hover:opacity-100 transition-opacity blur" />
-                                            <div className="relative bg-white/[0.02] border border-white/5 rounded-[32px] p-6 lg:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-8 transition-all duration-500 group-hover:bg-white/[0.04] group-hover:border-white/10 group-hover:translate-x-2">
-                                                <div className="flex items-center gap-6 md:gap-8">
-                                                    <div className="relative w-16 h-16 md:w-20 md:h-20 flex-shrink-0">
-                                                        <div className="absolute inset-0 bg-primary/10 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform duration-500" />
-                                                        <div className="relative w-full h-full bg-black border border-white/10 rounded-2xl flex items-center justify-center font-black text-primary text-2xl md:text-3xl shadow-2xl">
+                                            <div className="relative bg-card/40 border border-border rounded-2xl p-4 lg:p-6 flex flex-col lg:flex-row lg:items-center justify-between gap-6 transition-all duration-300 hover:bg-card/60 hover:border-primary/20 hover:translate-x-1">
+                                                <div className="flex items-center gap-4">
+                                                    <div className="relative w-12 h-12 md:w-14 md:h-14 flex-shrink-0">
+                                                        <div className="absolute inset-0 bg-primary/5 rounded-xl rotate-3 group-hover:rotate-6 transition-transform duration-300" />
+                                                        <div className="relative w-full h-full bg-background border border-border rounded-xl flex items-center justify-center font-black text-primary text-xl md:text-2xl shadow-sm">
                                                             {epNum}
                                                         </div>
                                                     </div>
                                                     <div>
-                                                        <h4 className="text-base md:text-lg font-black group-hover:text-primary transition-colors">الحلقة {epNum}</h4>
-                                                        <div className="flex items-center gap-3 mt-1.5 opacity-40">
-                                                            <span className="text-[10px] font-black uppercase tracking-[0.2em]">Ready to Stream</span>
-                                                            <div className="w-1 h-1 bg-white rounded-full" />
-                                                            <span className="text-[10px] font-black uppercase tracking-[0.2em]">Full HD 1080p</span>
+                                                        <h4 className="text-sm md:text-base font-bold group-hover:text-primary transition-colors">الحلقة {epNum}</h4>
+                                                        <div className="flex items-center gap-2 mt-1 opacity-50">
+                                                            <span className="text-[8px] font-black uppercase tracking-wider">Ready to Stream</span>
+                                                            <div className="w-1 h-1 bg-border rounded-full" />
+                                                            <span className="text-[8px] font-black uppercase tracking-wider">Full HD 1080p</span>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div className="flex flex-wrap items-center gap-4">
+                                                <div className="flex flex-wrap items-center gap-3">
                                                     <Link to={`/watch-ramadan/${encodeURIComponent(seriesName)}?episode=${epNum}`} className="flex-grow sm:flex-grow-0">
-                                                        <Button className="w-full sm:w-auto h-16 px-10 rounded-2xl font-black text-lg gap-4 shadow-2xl shadow-primary/20 hover:scale-105 active:scale-95 transition-all">
-                                                            <Play className="w-5 h-5 fill-current" />
+                                                        <Button className="w-full sm:w-auto h-11 px-6 rounded-xl font-bold text-sm gap-3 transition-all">
+                                                            <Play className="w-4 h-4 fill-current" />
                                                             ابدأ المشاهدة
                                                         </Button>
                                                     </Link>
 
                                                     {ep.download_links && ep.download_links.length > 0 && (
                                                         <Link to={`/ramadan-download/${encodeURIComponent(seriesName)}?episode=${epNum}`} className="flex-grow sm:flex-grow-0">
-                                                            <Button variant="secondary" className="w-full sm:w-auto h-16 px-8 rounded-2xl font-black text-lg gap-4 border border-white/5 hover:bg-white/10 hover:scale-105 active:scale-95 transition-all">
-                                                                <Download className="w-5 h-5" />
+                                                            <Button variant="secondary" className="w-full sm:w-auto h-11 px-5 rounded-xl font-bold text-sm gap-3 border border-border hover:bg-accent transition-all">
+                                                                <Download className="w-4 h-4" />
                                                                 تحميل الحلقة
                                                             </Button>
                                                         </Link>

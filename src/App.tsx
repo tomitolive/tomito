@@ -6,7 +6,6 @@ import Category from "./pages/Category";
 import Search from "./pages/Search";
 import { ThemeProvider } from "./context/ThemeContext";
 import { SpatialNavigationProvider } from "./context/SpatialNavigationContext";
-import { TooltipProvider } from "@/components/ui/tooltip";
 import WatchMovie from "./pages/WatchMovie";
 import WatchTV from "./pages/WatchTV";
 import MovieTrailer from "./pages/MovieTrailer";
@@ -26,6 +25,7 @@ import { RamadanDownloadPage } from "./pages/RamadanDownloadPage";
 
 
 import { HelmetProvider } from "react-helmet-async";
+import { TooltipProvider } from "./components/ui/tooltip";
 
 function App() {
   return (

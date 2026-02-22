@@ -1,0 +1,58 @@
+{
+  "hash": "253ca00a",
+  "configHash": "dd5cc9c7",
+  "lockfileHash": "4930e94d",
+  "browserHash": "6c5a782b",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "8b216d8a",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "1d0201f6",
+      "needsInterop": true
+    },
+    "react-helmet-async": {
+      "src": "../../node_modules/react-helmet-async/lib/index.esm.js",
+      "file": "react-helmet-async.js",
+      "fileHash": "0cad028e",
+      "needsInterop": false
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "51445e55",
+      "needsInterop": false
+    },
+    "lucide-react": {
+      "src": "../../node_modules/lucide-react/dist/esm/lucide-react.js",
+      "file": "lucide-react.js",
+      "fileHash": "5f26c394",
+      "needsInterop": false
+    },
+    "@noriginmedia/norigin-spatial-navigation": {
+      "src": "../../node_modules/@noriginmedia/norigin-spatial-navigation/dist/index.js",
+      "file": "@noriginmedia_norigin-spatial-navigation.js",
+      "fileHash": "e7fb5532",
+      "needsInterop": true
+    },
+    "@radix-ui/react-tooltip": {
+      "src": "../../node_modules/@radix-ui/react-tooltip/dist/index.mjs",
+      "file": "@radix-ui_react-tooltip.js",
+      "fileHash": "6b34823c",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-JQGNYJIG": {
+      "file": "chunk-JQGNYJIG.js"
+    },
+    "chunk-COGEVBLD": {
+      "file": "chunk-COGEVBLD.js"
+    }
+  }
+}
