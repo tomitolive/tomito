@@ -11,6 +11,17 @@ cwd = os.getcwd()
 RAMADAN_DATA_PATH = os.path.join(cwd, "public/ramadan_2026_results.json")
 SITEMAP_PATH = os.path.join(cwd, "public/sitemap-ramadan-full.xml")
 
+def clean_title(title):
+    if not title:
+        return ""
+    # Standardized cleaning logic (matches frontend and simple sitemap)
+    title = re.sub(r'^(مسلسل|برنامج)\s+', '', title)
+    title = re.sub(r'\s+الحلقة\s+\d+.*$', '', title)
+    title = re.sub(r'\s+الحلقه\s+\d+.*$', '', title)
+    title = re.sub(r'\s+-\s+.*$', '', title)
+    title = re.sub(r'كامل|بجودة|عالية|مترجم|مدبلج', '', title)
+    return title.strip()
+
 def generate_ramadan_full_sitemap():
     if not os.path.exists(RAMADAN_DATA_PATH):
         print(f"Error: Ramadan data file not found at {RAMADAN_DATA_PATH}")
@@ -25,24 +36,25 @@ def generate_ramadan_full_sitemap():
         ramadan_data = json.load(f)
         
         for entry in ramadan_data:
-            full_title = entry.get('title')
-            if full_title:
-                # Encoded URL for the series
-                safe_name = quote(full_title)
+            # Use clean title for URLs as requested
+            series_slug = clean_title(entry.get('title'))
+            if series_slug:
+                safe_slug = quote(series_slug)
                 
-                # 1. Main series trailer/info page
-                urls.append(f"{BASE_URL}/ramadan-trailer/{safe_name}")
+                # 1. Main series watch page (consistent with simple sitemap)
+                urls.append(f"{BASE_URL}/watch-ramadan/{safe_slug}")
                 
-                # 2. Episode specific links
+                # 2. Episode specific links (using the clean/watch format)
                 episodes = entry.get('episodes', [])
                 for ep in episodes:
                     ep_num = ep.get('episode_number')
                     if ep_num:
-                        # Episode trailer/info link
-                        urls.append(f"{BASE_URL}/ramadan-trailer/{safe_name}?episode={ep_num}")
+                        # Clean watch-ramadan link for episodes
+                        urls.append(f"{BASE_URL}/watch-ramadan/{safe_slug}?episode={ep_num}")
                         
-                        # Episode download link
-                        urls.append(f"{BASE_URL}/ramadan-download/{safe_name}?episode={ep_num}")
+                        # We can also keep the trailer/download links if they are still needed, 
+                        # but "clean" usually implies the primary watch path.
+                        # I will focus on watch links as requested in the example.
 
     # Generate XML
     now = datetime.now().strftime("%Y-%m-%d")

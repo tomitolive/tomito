@@ -128,14 +128,18 @@ export function WatchRamadanPage() {
         loadData();
     }, [seriesName]);
 
-    // Keep URL in sync with current episode
+    // Keep URL in sync with current episode without triggering redundant state updates
     useEffect(() => {
         if (series && series.episodes.length > 0) {
             const ep = series.episodes[selectedEpisodeIndex];
             const epNum = ep.episode_number || (selectedEpisodeIndex + 1);
-            setSearchParams({ episode: String(epNum) });
+            const currentUrlEp = searchParams.get("episode");
+
+            if (currentUrlEp !== String(epNum)) {
+                setSearchParams({ episode: String(epNum) }, { replace: true });
+            }
         }
-    }, [selectedEpisodeIndex, series]);
+    }, [selectedEpisodeIndex, series, searchParams, setSearchParams]);
 
     const selectEpisode = (index: number) => {
         setSelectedEpisodeIndex(index);
@@ -231,7 +235,6 @@ export function WatchRamadanPage() {
                             <div className="absolute -inset-2 bg-gradient-to-br from-primary via-purple-600 to-blue-600 rounded-[40px] blur-2xl opacity-10 group-hover:opacity-20 transition duration-1000" />
                             <div
                                 className="relative aspect-video rounded-[32px] overflow-hidden bg-black border border-white/10 shadow-[0_40px_120px_-30px_rgba(0,0,0,1)] ring-1 ring-white/10"
-                                style={{ touchAction: 'none' }}
                             >
                                 {activeServer ? (
                                     <iframe
@@ -242,7 +245,6 @@ export function WatchRamadanPage() {
                                         allowFullScreen
                                         scrolling="no"
                                         title={`${series.title} - الحلقة ${episodeNumber}`}
-                                        style={{ touchAction: 'none' }}
                                     />
                                 ) : (
                                     <div className="flex flex-col items-center justify-center h-full text-muted-foreground space-y-4">
