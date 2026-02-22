@@ -83,6 +83,7 @@ export function WatchRamadanPage() {
     const [selectedEpisodeIndex, setSelectedEpisodeIndex] = useState(0);
     const [activeServerIndex, setActiveServerIndex] = useState(0);
     const [iframeKey, setIframeKey] = useState(0);
+    const [showOverlay, setShowOverlay] = useState(true);
 
     const seriesName = decodeURIComponent(slug || "");
 
@@ -146,12 +147,14 @@ export function WatchRamadanPage() {
         const epServers = series?.episodes[index]?.watch_servers || [];
         setActiveServerIndex(findVKIndex(epServers));
         setIframeKey((k) => k + 1);
+        setShowOverlay(true);
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
     const selectServer = (index: number) => {
         setActiveServerIndex(index);
         setIframeKey((k) => k + 1);
+        setShowOverlay(true);
     };
 
     const currentEntry = series?.episodes[selectedEpisodeIndex];
@@ -233,15 +236,29 @@ export function WatchRamadanPage() {
                                 style={{ touchAction: 'none' }}
                             >
                                 {activeServer ? (
-                                    <iframe
-                                        key={iframeKey}
-                                        src={activeServer.url}
-                                        className="w-full h-full"
-                                        allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
-                                        allowFullScreen
-                                        scrolling="no"
-                                        title={`${series.title} - الحلقة ${episodeNumber}`}
-                                    />
+                                    <>
+                                        {showOverlay && (
+                                            <div
+                                                className="absolute inset-0 z-10 cursor-pointer flex items-center justify-center bg-black/40 backdrop-blur-[2px] group/overlay"
+                                                onClick={() => setShowOverlay(false)}
+                                            >
+                                                <div className="bg-primary/95 text-white px-8 py-4 rounded-full font-black text-xl shadow-2xl scale-90 group-hover/overlay:scale-100 transition-transform flex items-center gap-3 border border-white/20">
+                                                    <Play className="w-6 h-6 fill-current" />
+                                                    انقر للمشاهدة بدون إعلانات
+                                                </div>
+                                            </div>
+                                        )}
+                                        <iframe
+                                            key={iframeKey}
+                                            src={activeServer.url}
+                                            className="w-full h-full"
+                                            allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+                                            allowFullScreen
+                                            sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+                                            scrolling="no"
+                                            title={`${series.title} - الحلقة ${episodeNumber}`}
+                                        />
+                                    </>
                                 ) : (
                                     <div className="flex flex-col items-center justify-center h-full text-muted-foreground space-y-4">
                                         <Play className="w-12 h-12 opacity-10" />
