@@ -142,8 +142,9 @@ def transform_data(input_paths, output_path):
 
 if __name__ == "__main__":
     sources = [
-        '/home/tomito/Desktop/tomito/public/ramadan_2026_results.json', # Current public (flattened)
-        '/home/tomito/Desktop/tomito/dist/ramadan_2026_results.json'   # Latest dist bits
+        '/home/tomito/Desktop/tomito/public/ramadan_2026_results.json', # Current public (nested/flattened)
+        '/home/tomito/Desktop/tomito/dist/ramadan_2026_results.json',   # Latest dist bits
+        '/home/tomito/Desktop/tomito/dist/ramadan_2026_results_batch2.json' # New batch
     ]
     transform_data(sources, '/home/tomito/Desktop/tomito/public/ramadan_2026_results.json')
 
