@@ -38,7 +38,8 @@ export function Navbar() {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const navigate = useNavigate();
-  const { pathname } = useLocation();
+  const location = useLocation();
+  const { pathname } = location;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -93,7 +94,7 @@ export function Navbar() {
               <Button
                 variant="ghost"
                 size="icon"
-                onClick={() => navigate(-1)}
+                onClick={() => location.key !== "default" ? navigate(-1) : navigate("/")}
                 className="w-9 h-9 rounded-full hover:bg-accent transition-colors"
                 aria-label="رجوع"
               >
