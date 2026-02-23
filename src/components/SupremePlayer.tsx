@@ -95,6 +95,7 @@ export function SupremePlayer({ servers, title }: SupremePlayerProps) {
                         src={currentServer.url}
                         className="w-full h-full border-0 rounded-xl"
                         allow="autoplay; encrypted-media; fullscreen; picture-in-picture; clipboard-write; web-share; accelerometer; gyroscope; focus-without-user-activation; layout-animations; speaker-selection"
+                        sandbox="allow-forms allow-scripts allow-same-origin allow-presentation"
                         referrerPolicy="origin"
                         title={`${title} - ${SERVER_LABELS[currentServer.name] || currentServer.name}`}
                         allowFullScreen

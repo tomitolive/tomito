@@ -94,6 +94,7 @@ export function VideoPlayer({ id, type, title, season, episode, onNavigate, curr
                 src={videoUrl}
                 className="w-full h-full border-0"
                 allow="autoplay; encrypted-media; fullscreen; picture-in-picture; clipboard-write; web-share; accelerometer; gyroscope; focus-without-user-activation; layout-animations; speaker-selection"
+                sandbox="allow-forms allow-scripts allow-same-origin allow-presentation"
                 referrerPolicy="origin"
                 title={`${title} - ${currentServer.name}`}
                 allowFullScreen
