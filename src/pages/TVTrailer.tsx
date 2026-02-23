@@ -198,6 +198,7 @@ export default function TVTrailer() {
                 ogTitle={`تريلر ${tvShow.name}`}
                 ogDescription={tvShow.overview || ''}
                 ogType="video.other"
+                canonical={`https://tomito.xyz/tv/${slug}`}
             />
 
 

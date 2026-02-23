@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { PosterImage } from "@/components/PosterImage";
 import { getImageUrl, searchMulti } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
+import { SEO } from "@/components/SEO";
 
 // Utility to clean titles for better matching and TMDB searching
 const cleanTitle = (title: string): string => {
@@ -118,6 +119,12 @@ export function RamadanTrailerPage() {
 
     return (
         <div className="min-h-screen bg-background text-foreground selection:bg-primary/30">
+            <SEO
+                title={`مشاهدة تريلر ${seriesName} | رمضان 2026`}
+                description={`شاهد تريلر ${seriesName} الرسمي وتعرف على قصة المسلسل وقائمة الحلقات في موسم رمضان 2026.`}
+                keywords={`${seriesName}, تريلر, رمضان 2026, مسلسلات رمضان, مشاهدة, ${seriesName} الحلقة 1`}
+                canonical={`https://tomito.xyz/ramadan-trailer/${slug}`}
+            />
             <Navbar />
 
             {/* ── Dynamic Cinema Backdrop ── */}

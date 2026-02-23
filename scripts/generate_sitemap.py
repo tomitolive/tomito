@@ -21,9 +21,11 @@ def create_slug(text):
         return ""
     # Exact replication of frontend logic in src/lib/utils.ts
     text = text.lower().strip()
-    # Keep alphanumeric and Arabic chars. Replace everything else with -
-    text = re.sub(r'[^\w\u0621-\u064A-]+', '', text)
+    # Replace spaces with dashes first
     text = re.sub(r'\s+', '-', text)
+    # Keep alphanumeric and Arabic chars. Replace everything else with nothing
+    text = re.sub(r'[^\w\u0621-\u064A-]+', '', text)
+    # Double - to single -
     text = re.sub(r'--+', '-', text)
     text = text.strip('-')
     return text
@@ -48,7 +50,7 @@ def generate_sitemap():
         if page == "":
              urls.append(f"{BASE_URL}")
         else:
-             urls.append(f"{BASE_URL}/#{page}")
+             urls.append(f"{BASE_URL}{page}")
 
     # 2. Add Movies
     movies_file = os.path.join(DATA_DIR, "movies.json")
@@ -61,9 +63,9 @@ def generate_sitemap():
                 if movie_id and title:
                     slug = create_slug_with_id(movie_id, title)
                     # Trailer page
-                    urls.append(f"{BASE_URL}/#/movie/{slug}")
+                    urls.append(f"{BASE_URL}/movie/{slug}")
                     # Watch page
-                    urls.append(f"{BASE_URL}/#/movie/{movie_id}/watch")
+                    urls.append(f"{BASE_URL}/movie/{movie_id}/watch")
 
     # 3. Add TV Shows
     tv_shows_file = os.path.join(DATA_DIR, "tv-shows.json")
@@ -76,9 +78,9 @@ def generate_sitemap():
                 if show_id and name:
                     slug = create_slug_with_id(show_id, name)
                     # Trailer page
-                    urls.append(f"{BASE_URL}/#/tv/{slug}")
+                    urls.append(f"{BASE_URL}/tv/{slug}")
                     # Watch page
-                    urls.append(f"{BASE_URL}/#/tv/{show_id}/watch")
+                    urls.append(f"{BASE_URL}/tv/{show_id}/watch")
 
     # Generate XML
     now = datetime.now().strftime("%Y-%m-%d")

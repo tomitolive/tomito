@@ -115,6 +115,7 @@ export default function MovieTrailer() {
                 ogTitle={`تريلر ${movie.title}`}
                 ogDescription={movie.overview || ''}
                 ogType="video.other"
+                canonical={`https://tomito.xyz/movie/${slug}`}
             />
 
 
@@ -257,7 +258,7 @@ export default function MovieTrailer() {
                             className="w-full max-w-[280px] lg:max-w-[240px] rounded-xl shadow-2xl mx-auto"
                         />
 
-                      
+
                     </div>
                 </div>
 
@@ -268,7 +269,7 @@ export default function MovieTrailer() {
                     </div>
                 )}
 
-            
+
             </div>
 
             <Footer />

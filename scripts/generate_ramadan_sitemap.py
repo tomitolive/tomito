@@ -22,6 +22,19 @@ def clean_title(title):
     title = re.sub(r'كامل|بجودة|عالية|مترجم|مدبلج', '', title)
     return title.strip()
 
+def create_slug(text):
+    if not text:
+        return ""
+    text = text.lower().strip()
+    # Replace spaces with dashes
+    text = re.sub(r'\s+', '-', text)
+    # Keep alphanumeric and Arabic chars. Replace everything else with nothing
+    text = re.sub(r'[^\w\u0621-\u064A-]+', '', text)
+    # Double - to single -
+    text = re.sub(r'--+', '-', text)
+    text = text.strip('-')
+    return text
+
 def generate_ramadan_sitemap():
     if not os.path.exists(RAMADAN_DATA_PATH):
         print(f"Error: Ramadan data file not found at {RAMADAN_DATA_PATH}")
@@ -42,8 +55,9 @@ def generate_ramadan_sitemap():
             if series_name and series_name not in unique_series:
                 unique_series.add(series_name)
                 # Encoded URL for the series
-                safe_name = quote(series_name)
-                urls.append(f"{BASE_URL}/watch-ramadan/{safe_name}")
+                series_slug = create_slug(series_name)
+                safe_name = quote(series_slug)
+                urls.append(f"{BASE_URL}/ramadan-trailer/{safe_name}")
 
     # Generate XML
     now = datetime.now().strftime("%Y-%m-%d")

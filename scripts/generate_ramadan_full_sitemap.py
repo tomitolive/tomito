@@ -22,6 +22,19 @@ def clean_title(title):
     title = re.sub(r'كامل|بجودة|عالية|مترجم|مدبلج', '', title)
     return title.strip()
 
+def create_slug(text):
+    if not text:
+        return ""
+    text = text.lower().strip()
+    # Replace spaces with dashes
+    text = re.sub(r'\s+', '-', text)
+    # Keep alphanumeric and Arabic chars. Replace everything else with nothing
+    text = re.sub(r'[^\w\u0621-\u064A-]+', '', text)
+    # Double - to single -
+    text = re.sub(r'--+', '-', text)
+    text = text.strip('-')
+    return text
+
 def generate_ramadan_full_sitemap():
     if not os.path.exists(RAMADAN_DATA_PATH):
         print(f"Error: Ramadan data file not found at {RAMADAN_DATA_PATH}")
@@ -37,20 +50,16 @@ def generate_ramadan_full_sitemap():
         
         for entry in ramadan_data:
             # Use clean title for URLs as requested
-            series_slug = clean_title(entry.get('title'))
-            if series_slug:
+            series_name = clean_title(entry.get('title'))
+            if series_name:
+                series_slug = create_slug(series_name)
                 safe_slug = quote(series_slug)
                 
-                # 1. Main series watch page (consistent with simple sitemap)
-                urls.append(f"{BASE_URL}/watch-ramadan/{safe_slug}")
+                # 1. Main series trailer page
+                urls.append(f"{BASE_URL}/ramadan-trailer/{safe_slug}")
                 
-                # 2. Episode specific links (using the clean/watch format)
-                episodes = entry.get('episodes', [])
-                for ep in episodes:
-                    ep_num = ep.get('episode_number')
-                    if ep_num:
-                        # Clean watch-ramadan link for episodes
-                        urls.append(f"{BASE_URL}/watch-ramadan/{safe_slug}?episode={ep_num}")
+                # We remove episode-specific links as they all point to the same series trailer,
+                # which Google considers duplicate content.
                         
                         # We can also keep the trailer/download links if they are still needed, 
                         # but "clean" usually implies the primary watch path.
