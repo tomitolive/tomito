@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo, useRef } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { Play, Star, Calendar, ArrowRight, Users, Tv } from "lucide-react";
+import { Play, Star, Calendar, ArrowRight, Users, Tv, Download, Server, ChevronDown } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
@@ -22,14 +22,42 @@ import { event as trackEvent } from "@/lib/analytics";
 import { SEO } from "@/components/SEO";
 
 
+// Types for sharded data
+interface DownloadLink {
+    host: string;
+    quality: string;
+    url: string;
+}
+
+interface Season {
+    season: string;
+    downloads: DownloadLink[];
+}
+
+interface SeriesShardedData {
+    tmdb_id: string;
+    title: string;
+    seasons: Season[];
+}
+
+// Global cache for index
+let seriesIndexCache: Record<string, { t: string, b: number }> | null = null;
+
 export default function TVTrailer() {
     const { slug } = useParams<{ slug: string }>();
     const navigate = useNavigate();
+    const downloadSectionRef = useRef<HTMLDivElement>(null);
+
     const [tvShow, setTVShow] = useState<TVShowDetails | null>(null);
     const [cast, setCast] = useState<Cast[]>([]);
     const [similar, setSimilar] = useState<TVShow[]>([]);
     const [trailerKey, setTrailerKey] = useState<string | null>(null);
     const [isLoading, setIsLoading] = useState(true);
+
+    // Download data state
+    const [downloadData, setDownloadData] = useState<SeriesShardedData | null>(null);
+    const [isDownloadingLoading, setIsDownloadingLoading] = useState(false);
+    const [activeSeason, setActiveSeason] = useState<string | null>(null);
 
     useEffect(() => {
         const loadTVShow = async () => {
@@ -64,6 +92,10 @@ export default function TVTrailer() {
                     label: tvData.name,
                     value: tvData.id,
                 });
+
+                // --- Load Sharded Data ---
+                loadShardedData(actualId);
+
             } catch (error) {
                 console.error("Error loading TV show:", error);
             } finally {
@@ -71,9 +103,60 @@ export default function TVTrailer() {
             }
         };
 
+        const loadShardedData = async (tmdbId: string) => {
+            setIsDownloadingLoading(true);
+            try {
+                // 1. Get or Load Index
+                if (!seriesIndexCache) {
+                    const idxRes = await fetch("/data_series/index.json");
+                    seriesIndexCache = await idxRes.json();
+                }
+
+                // 2. Find in Index
+                const entry = seriesIndexCache?.[tmdbId];
+                if (entry && entry.b) {
+                    // 3. Fetch specific chunk
+                    const chunkRes = await fetch(`/data_series/chunks/chunk_${entry.b}.json`);
+                    const chunkData: SeriesShardedData[] = await chunkRes.json();
+
+                    // 4. Find the show in chunk
+                    const showData = chunkData.find(s => s.tmdb_id === tmdbId.toString());
+                    if (showData) {
+                        setDownloadData(showData);
+                        if (showData.seasons.length > 0) {
+                            setActiveSeason(showData.seasons[0].season);
+                        }
+                    }
+                }
+            } catch (err) {
+                console.error("Failed to load download data:", err);
+            } finally {
+                setIsDownloadingLoading(false);
+            }
+        };
+
         loadTVShow();
         window.scrollTo(0, 0);
     }, [slug]);
+
+    const scrollToDownloads = () => {
+        downloadSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+    };
+
+    const groupedLinks = useMemo(() => {
+        if (!downloadData || !activeSeason) return {};
+        const season = downloadData.seasons.find(s => s.season === activeSeason);
+        if (!season) return {};
+
+        const groups: Record<string, DownloadLink[]> = {};
+        season.downloads.forEach(link => {
+            if (!groups[link.quality]) {
+                groups[link.quality] = [];
+            }
+            groups[link.quality].push(link);
+        });
+        return groups;
+    }, [downloadData, activeSeason]);
 
     if (isLoading) {
         return (
@@ -170,17 +253,31 @@ export default function TVTrailer() {
                         </div>
 
                         {/* Watch Now Button - Positioned directly under trailer */}
-                        <Button
-                            size="lg"
-                            className="w-full bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white shadow-[0_10px_30px_rgba(var(--primary),0.3)] transition-all hover:scale-105 active:scale-95 px-6 py-8 text-xl font-bold group/btn"
-                            onClick={() => navigate(`/tv/${tvShow.id}/watch`)}
-                        >
-                            <Play className="w-6 h-6 mr-3 fill-current group-hover/btn:animate-pulse" />
-                            <span className="relative">
-                                {t("watchNow")}
-                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover/btn:w-full" />
-                            </span>
-                        </Button>
+                        <div className="flex flex-col sm:flex-row gap-4">
+                            <Button
+                                size="lg"
+                                className="flex-1 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white shadow-[0_10px_30px_rgba(var(--primary),0.3)] transition-all hover:scale-[1.02] active:scale-95 px-6 py-8 text-xl font-bold group/btn"
+                                onClick={() => navigate(`/tv/${tvShow.id}/watch`)}
+                            >
+                                <Play className="w-6 h-6 mr-3 fill-current group-hover/btn:animate-pulse" />
+                                <span className="relative">
+                                    {t("watchNow")}
+                                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover/btn:w-full" />
+                                </span>
+                            </Button>
+
+                            {downloadData && (
+                                <Button
+                                    size="lg"
+                                    variant="outline"
+                                    className="flex-1 border-primary/20 hover:bg-primary/5 text-primary px-6 py-8 text-xl font-bold transition-all hover:scale-[1.02] active:scale-95"
+                                    onClick={scrollToDownloads}
+                                >
+                                    <Download className="w-6 h-6 mr-3" />
+                                    تحميل المسلسل
+                                </Button>
+                            )}
+                        </div>
 
                         {/* TV Show Info */}
                         <div>
@@ -263,7 +360,7 @@ export default function TVTrailer() {
                             className="w-full max-w-[280px] lg:max-w-[240px] rounded-xl shadow-2xl mx-auto"
                         />
 
-                      
+
                     </div>
                 </div>
 
@@ -274,7 +371,102 @@ export default function TVTrailer() {
                 )}
 
 
-        
+                {/* Download Section */}
+                {downloadData && (
+                    <div ref={downloadSectionRef} className="mt-20 space-y-12 animate-in fade-in slide-in-from-bottom-8 duration-700">
+                        {/* Section Header */}
+                        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/5 pb-8">
+                            <div className="space-y-4">
+                                <div className="flex items-center gap-3">
+                                    <div className="w-2 h-10 bg-primary rounded-full shadow-[0_0_20px_rgba(var(--primary),0.5)]" />
+                                    <h2 className="text-3xl font-black tracking-tight">{t("download" as any) || "تحميل المسلسل"}</h2>
+                                </div>
+                                <p className="text-muted-foreground text-sm font-medium mr-5">
+                                    روابط تحميل مباشرة سريعة لجميع مواسم {tvShow.name}
+                                </p>
+                            </div>
+
+                            {/* Season Selector */}
+                            <div className="flex flex-wrap gap-2 mr-5">
+                                {downloadData.seasons.map((s) => (
+                                    <button
+                                        key={s.season}
+                                        onClick={() => setActiveSeason(s.season)}
+                                        className={cn(
+                                            "px-6 py-2 rounded-xl text-sm font-bold transition-all border",
+                                            activeSeason === s.season
+                                                ? "bg-primary text-white border-primary shadow-lg shadow-primary/20 scale-105"
+                                                : "bg-white/5 text-muted-foreground border-white/10 hover:bg-white/10 hover:text-foreground"
+                                        )}
+                                    >
+                                        الموسم {s.season}
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Links Grid */}
+                        <div className="grid gap-6">
+                            {Object.entries(groupedLinks).length > 0 ? (
+                                Object.entries(groupedLinks).map(([quality, links]) => (
+                                    <div key={quality} className="bg-card/40 backdrop-blur-xl border border-white/5 rounded-3xl p-8 space-y-6 hover:bg-card/60 transition-colors">
+                                        <div className="flex items-center gap-3">
+                                            <div className={cn(
+                                                "px-4 py-1 rounded-lg text-xs font-black uppercase tracking-widest border",
+                                                quality.includes("1080") || quality.toLowerCase() === "fhd"
+                                                    ? "bg-primary/10 text-primary border-primary/20"
+                                                    : "bg-white/5 text-muted-foreground border-white/10"
+                                            )}>
+                                                {quality}
+                                            </div>
+                                            <div className="h-px flex-1 bg-white/5" />
+                                        </div>
+
+                                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+                                            {links.map((link, idx) => (
+                                                <a
+                                                    key={idx}
+                                                    href={link.url}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="group/link block"
+                                                >
+                                                    <div className="flex flex-col items-center justify-center gap-2 p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 group-hover/link:-translate-y-1">
+                                                        <Server className="w-5 h-5 text-muted-foreground group-hover/link:text-primary transition-colors" />
+                                                        <span className="text-xs font-bold text-muted-foreground group-hover/link:text-foreground line-clamp-1">{link.host}</span>
+                                                    </div>
+                                                </a>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))
+                            ) : (
+                                <div className="text-center py-20 bg-white/5 rounded-3xl border border-dashed border-white/10">
+                                    <p className="text-muted-foreground">لا توجد روابط تحميل متاحة لهذا الموسم حالياً</p>
+                                </div>
+                            )}
+                        </div>
+
+                        {/* CTA / Info Box */}
+                        <div className="bg-gradient-to-br from-primary/10 to-purple-600/10 border border-white/10 rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-center justify-between">
+                            <div className="flex gap-6 items-start text-right md:text-right">
+                                <div className="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center flex-shrink-0 text-primary">
+                                    <Download className="w-7 h-7" />
+                                </div>
+                                <div className="space-y-2">
+                                    <h4 className="font-black text-lg">تحميل آمن وسريع</h4>
+                                    <p className="text-muted-foreground/80 text-sm font-medium leading-relaxed max-w-xl">
+                                        نحن نوفر أفضل سيرفرات التحميل المباشرة لضمان أفضل تجربة. في حال تعطل أحد الروابط يمكنك دائماً تجربة سيرفر بديل أو مراسلتنا.
+                                    </p>
+                                </div>
+                            </div>
+                            <Button className="h-12 px-8 rounded-xl font-bold shadow-lg shadow-primary/20 active:scale-95 transition-all">
+                                انضم لمجتمعنا
+                            </Button>
+                        </div>
+                    </div>
+                )}
+
             </div>
 
             <Footer />
