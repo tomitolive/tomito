@@ -5,6 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
 import { Button } from "@/components/ui/button";
+import { BackButton } from "@/components/BackButton";
 import {
     fetchMovieDetails,
     fetchCredits,
@@ -273,6 +274,7 @@ export default function MovieTrailer() {
             </div>
 
             <Footer />
+            <BackButton />
         </div>
     );
 }

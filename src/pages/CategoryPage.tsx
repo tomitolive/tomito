@@ -5,6 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { MovieCard, MovieCardSkeleton } from "@/components/MovieCard";
 import { Button } from "@/components/ui/button";
+import { BackButton } from "@/components/BackButton";
 import { fetchByGenre, fetchPopular, fetchGenres, Genre, Movie, TVShow, t } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
 

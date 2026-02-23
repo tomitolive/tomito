@@ -5,6 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
+import { BackButton } from "@/components/BackButton";
 import { Input } from "@/components/ui/input";
 import { PosterImage } from "@/components/PosterImage";
 import { cn, createSlugWithId } from "@/lib/utils";
@@ -257,6 +258,7 @@ export default function SeriesDownloadList() {
             </main>
 
             <Footer />
+            <BackButton />
         </div>
     );
 }

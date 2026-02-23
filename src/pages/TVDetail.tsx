@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Navbar } from "@/components/Navbar";
+import { BackButton } from "@/components/BackButton";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
 import { Star, Calendar, Play, LayoutGrid } from "lucide-react";
@@ -79,7 +80,7 @@ export default function TVDetail() {
                         <span className="bg-primary/20 text-primary px-3 py-0.5 rounded-full">{tv.number_of_seasons} {t("seasons")}</span>
                     </div>
                 </div>
-            </div>
+            </div >
 
             <div className="container mx-auto px-4 py-12">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -198,6 +199,7 @@ export default function TVDetail() {
                 </div>
             </div>
             <Footer />
+            <BackButton />
         </div>
     );
 }

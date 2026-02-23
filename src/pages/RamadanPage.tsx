@@ -5,6 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
+import { BackButton } from "@/components/BackButton";
 import { Input } from "@/components/ui/input";
 import { getImageUrl, searchMulti } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
@@ -313,6 +314,7 @@ export default function RamadanPage() {
             </div>
 
             <Footer />
+            <BackButton />
         </div>
     );
 }

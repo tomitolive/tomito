@@ -8,6 +8,7 @@ import {
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { BackButton } from "@/components/BackButton";
 import { cn } from "@/lib/utils";
 
 interface WatchServer {
@@ -514,6 +515,7 @@ export function WatchRamadanPage() {
             </main >
 
             <Footer />
+            <BackButton />
         </div >
     );
 }

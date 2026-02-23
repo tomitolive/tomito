@@ -3,7 +3,7 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import {
   Search, Film, Tv, Menu, X, ChevronDown, Home,
   Zap, Laugh, Drama, Ghost, Heart, Rocket,
-  Swords, Sparkles, Users, Clapperboard, Download
+  Swords, Sparkles, Users, Clapperboard, Download, ArrowRight
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -88,7 +88,20 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Logo />
+          <div className="flex items-center gap-2">
+            {pathname !== "/" && (
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => navigate(-1)}
+                className="w-9 h-9 rounded-full hover:bg-accent transition-colors"
+                aria-label="رجوع"
+              >
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            )}
+            <Logo />
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-6">
@@ -233,13 +246,20 @@ export function Navbar() {
                   placeholder={t("searchPlaceholder")}
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" && searchQuery.trim()) {
+                      navigate(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+                      setSearchQuery("");
+                      setIsSearchOpen(false);
+                    }
+                  }}
                   className={cn(
                     "bg-secondary/50 border-border h-10 pr-10 transition-all",
                     isSearchOpen ? "opacity-100" : "opacity-0 w-0"
                   )}
                 />
                 <Button
-                  type={isSearchOpen && searchQuery ? "submit" : "button"}
+                  type={isSearchOpen ? "submit" : "button"}
                   variant="ghost"
                   size="icon"
                   className="absolute right-0 h-10 w-10"

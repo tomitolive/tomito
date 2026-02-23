@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { MovieCard } from "@/components/MovieCard";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { BackButton } from "@/components/BackButton";
 import { searchMulti, getImageUrl, t } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
 

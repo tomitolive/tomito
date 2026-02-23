@@ -7,6 +7,7 @@ import { MovieCard } from "@/components/MovieCard";
 import { SkeletonCard } from "@/components/SkeletonCard";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { BackButton } from "@/components/BackButton";
 
 export default function CompanyContent() {
     const { companyId } = useParams<{ companyId: string }>();
@@ -67,9 +68,6 @@ export default function CompanyContent() {
                             <h1 className="text-3xl md:text-4xl font-extrabold mb-4 text-gradient">
                                 {company?.nameAr}
                             </h1>
-                            <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl">
-                                {company?.descriptionAr}
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -122,6 +120,7 @@ export default function CompanyContent() {
             </main>
 
             <Footer />
+            <BackButton />
         </div>
     );
 }

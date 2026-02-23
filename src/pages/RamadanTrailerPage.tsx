@@ -7,6 +7,7 @@ import {
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { BackButton } from "@/components/BackButton";
 import { PosterImage } from "@/components/PosterImage";
 import { getImageUrl, searchMulti } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
@@ -269,6 +270,7 @@ export function RamadanTrailerPage() {
                 </div>
             </main>
             <Footer />
+            <BackButton />
         </div>
     );
 }

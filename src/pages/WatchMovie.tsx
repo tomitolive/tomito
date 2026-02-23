@@ -8,6 +8,7 @@ import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
 import { GenreFilters } from "@/components/GenreFilters";
 import { Button } from "@/components/ui/button";
+import { BackButton } from "@/components/BackButton";
 import {
   fetchMovieDetails,
   fetchCredits,
@@ -295,6 +296,7 @@ export default function WatchMovie() {
       </div>
 
       <Footer />
+      <BackButton />
     </div>
   );
 }

@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
 import { Star, Clock, Calendar } from "lucide-react";
 import { VideoPlayer } from "@/components/VideoPlayer";
+import { BackButton } from "@/components/BackButton";
 import { fetchMovieDetails, t } from "@/lib/tmdb";
 import { MovieSEO } from "@/components/SEO/MovieSEO";
 import { getMovieById, Movie as LocalMovie } from "@/services/localData";
@@ -61,7 +62,7 @@ export default function MovieDetail() {
                         <span className="flex items-center gap-2"><Calendar size={18} /> {movie.release_date?.split('-')[0]}</span>
                     </div>
                 </div>
-            </div>
+            </div >
 
             <div className="container mx-auto px-4 py-12">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -93,6 +94,7 @@ export default function MovieDetail() {
                 </div>
             </div>
             <Footer />
-        </div>
+            <BackButton />
+        </div >
     );
 }

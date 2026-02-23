@@ -8,6 +8,7 @@ import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
 import { GenreFilters } from "@/components/GenreFilters";
 import { Button } from "@/components/ui/button";
+import { BackButton } from "@/components/BackButton";
 import {
   fetchTVDetails,
   fetchSeasonDetails,
@@ -416,6 +417,7 @@ export default function WatchTV() {
       </div>
 
       <Footer />
+      <BackButton />
     </div>
   );
 }

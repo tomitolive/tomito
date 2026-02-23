@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Navbar } from "@/components/Navbar";
+import { BackButton } from "@/components/BackButton";
 import { Footer } from "@/components/Footer";
 import { MovieCard } from "@/components/MovieCard";
 import { fetchByGenre } from "@/lib/tmdb";
@@ -109,6 +110,7 @@ export default function Category() {
                 )}
             </div>
             <Footer />
+            <BackButton />
         </div>
     );
 }

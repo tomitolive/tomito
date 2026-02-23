@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { t } from "@/lib/tmdb";
 import Logo from "@/components/Logo";
 import { SEO } from "@/components/SEO";
+import { Footer } from "@/components/Footer";
+import { BackButton } from "@/components/BackButton";
 
 
 export default function About() {
@@ -94,6 +96,8 @@ export default function About() {
                     </p>
                 </div>
             </div>
+            <Footer />
+            <BackButton />
         </div>
     );
 }

@@ -5,6 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
 import { Button } from "@/components/ui/button";
+import { BackButton } from "@/components/BackButton";
 import {
     fetchTVDetails,
     fetchCredits,
@@ -113,7 +114,7 @@ export default function TVTrailer() {
                 }
 
                 // 2. Find in Index
-                const entry = seriesIndexCache?.[tmdbId];
+                const entry = seriesIndexCache?.[tmdbId.toString()];
                 if (entry && entry.b) {
                     // 3. Fetch specific chunk
                     const chunkRes = await fetch(`/data_series/chunks/chunk_${entry.b}.json`);
@@ -471,6 +472,7 @@ export default function TVTrailer() {
             </div>
 
             <Footer />
+            <BackButton />
         </div>
     );
 }

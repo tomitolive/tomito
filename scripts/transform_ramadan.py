@@ -98,8 +98,6 @@ def transform_data(input_paths, output_path):
             ep_num = ep.get('episode_number') or extract_episode_number(ep.get('title'))
             if ep_num is None: ep_num = 0
 
-            # Merge episode data. If already exists, we might want to prioritize specific sources
-            # For simplicity, if it exists and has servers, we keep it, otherwise update.
             existing_ep = series_map[parent_id]["episodes_map"].get(ep_num)
             
             new_ep_data = {
@@ -112,8 +110,32 @@ def transform_data(input_paths, output_path):
                 "download_links": ep.get('download_links', [])
             }
 
-            if not existing_ep or len(new_ep_data["watch_servers"]) >= len(existing_ep.get("watch_servers", [])):
+            # Merge episode data. We now merge servers and download links from all sources.
+            if not existing_ep:
                 series_map[parent_id]["episodes_map"][ep_num] = new_ep_data
+            else:
+                # Merge watch_servers
+                existing_servers = existing_ep.get('watch_servers', [])
+                existing_urls = {s['url'] for s in existing_servers}
+                for s in new_ep_data['watch_servers']:
+                    if s['url'] not in existing_urls:
+                        existing_servers.append(s)
+                        existing_urls.add(s['url'])
+                existing_ep['watch_servers'] = existing_servers
+                
+                # Merge download_links
+                existing_dls = existing_ep.get('download_links', [])
+                existing_dl_urls = {s['url'] for s in existing_dls}
+                for s in new_ep_data['download_links']:
+                    if s['url'] not in existing_dl_urls:
+                        existing_dls.append(s)
+                        existing_dl_urls.add(s['url'])
+                existing_ep['download_links'] = existing_dls
+                
+                # Update other fields if empty
+                for key in ["id", "title", "poster", "description"]:
+                    if not existing_ep.get(key) and new_ep_data.get(key):
+                        existing_ep[key] = new_ep_data[key]
 
     # Final cleanup and nesting
     final_data = []
@@ -123,9 +145,6 @@ def transform_data(input_paths, output_path):
         for num in sorted_nums:
             ep = s["episodes_map"][num]
             if ep["watch_servers"]:
-                # SPECIAL CLEANUP FOR AL-MADDAH
-                if 'المداح' in s.get('title', ''):
-                    ep['watch_servers'] = ep['watch_servers'][-4:]
                 eps.append(ep)
         
         if eps:

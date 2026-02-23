@@ -7,6 +7,7 @@ import {
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { BackButton } from "@/components/BackButton";
 import { PosterImage } from "@/components/PosterImage";
 import { cn } from "@/lib/utils";
 
@@ -233,6 +234,7 @@ export function RamadanDownloadPage() {
             </main>
 
             <Footer />
+            <BackButton />
         </div>
     );
 }

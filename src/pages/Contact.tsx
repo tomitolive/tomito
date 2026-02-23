@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { SEO } from "@/components/SEO";
+import { BackButton } from "@/components/BackButton";
 
 
 export default function Contact() {
@@ -125,6 +126,7 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
+            <BackButton />
         </div>
     );
 }

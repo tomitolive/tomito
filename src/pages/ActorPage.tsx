@@ -5,6 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { MovieCard } from "@/components/MovieCard";
 import { Button } from "@/components/ui/button";
+import { BackButton } from "@/components/BackButton";
 import { fetchPersonDetails, fetchPersonCredits, getImageUrl } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
 
@@ -82,9 +83,9 @@ export default function ActorPage() {
 
   const age = person.birthday
     ? Math.floor(
-        (new Date().getTime() - new Date(person.birthday).getTime()) /
-          (365.25 * 24 * 60 * 60 * 1000)
-      )
+      (new Date().getTime() - new Date(person.birthday).getTime()) /
+      (365.25 * 24 * 60 * 60 * 1000)
+    )
     : null;
 
   return (
@@ -176,7 +177,7 @@ export default function ActorPage() {
         <div>
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
             <h2 className="text-2xl font-bold">الأعمال</h2>
-            
+
             {/* Filters */}
             <div className="flex gap-2">
               <Button
@@ -229,6 +230,7 @@ export default function ActorPage() {
       </div>
 
       <Footer />
+      <BackButton />
     </div>
   );
 }
