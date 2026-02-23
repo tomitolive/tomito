@@ -42,6 +42,7 @@ def generate_sitemap():
         "/about",
         "/contact",
         "/privacy",
+        "/ramadan",
         "/category/movie/all",
         "/category/tv/all"
     ]

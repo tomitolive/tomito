@@ -50,19 +50,19 @@ def generate_ramadan_full_sitemap():
         
         for entry in ramadan_data:
             # Use clean title for URLs as requested
-            series_name = clean_title(entry.get('title'))
+            series_name = entry.get('clean_title') or clean_title(entry.get('title'))
             if series_name:
                 series_slug = create_slug(series_name)
                 
                 # 1. Main series trailer page
                 urls.append(f"{BASE_URL}/ramadan-trailer/{series_slug}")
                 
-                # We remove episode-specific links as they all point to the same series trailer,
-                # which Google considers duplicate content.
-                        
-                        # We can also keep the trailer/download links if they are still needed, 
-                        # but "clean" usually implies the primary watch path.
-                        # I will focus on watch links as requested in the example.
+                # 2. Episode watch and download links
+                for ep in entry.get('episodes', []):
+                    ep_num = ep.get('episode_number')
+                    if ep_num:
+                        urls.append(f"{BASE_URL}/watch-ramadan/{series_slug}?episode={ep_num}")
+                        urls.append(f"{BASE_URL}/ramadan-download/{series_slug}?episode={ep_num}")
 
     # Generate XML
     now = datetime.now().strftime("%Y-%m-%d")
