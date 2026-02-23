@@ -46,7 +46,7 @@ interface SeriesItem {
 
 export function RamadanTrailerPage() {
     const { slug } = useParams<{ slug: string }>();
-    const seriesName = decodeURIComponent(slug || "");
+    const seriesName = decodeURIComponent(slug || "").replace(/-/g, " ");
     const [series, setSeries] = useState<SeriesItem | null>(null);
     const [tmdbPoster, setTmdbPoster] = useState<string | null>(null);
     const [loading, setLoading] = useState(true);
@@ -57,9 +57,10 @@ export function RamadanTrailerPage() {
                 const response = await fetch("/ramadan_2026_results.json");
                 const data: SeriesItem[] = await response.json();
 
+                const normalize = (s: string) => s.replace(/-/g, " ").replace(/\s+/g, " ").trim().toLowerCase();
                 const found = data.find(item =>
-                    (item.clean_title && item.clean_title.toLowerCase() === seriesName.toLowerCase()) ||
-                    (item.title && item.title.toLowerCase() === seriesName.toLowerCase())
+                    (item.clean_title && normalize(item.clean_title) === normalize(seriesName)) ||
+                    (item.title && normalize(item.title) === normalize(seriesName))
                 );
 
                 if (found) {

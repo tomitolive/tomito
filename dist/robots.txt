@@ -13,6 +13,8 @@ Allow: /
 User-agent: *
 Allow: /
 
+Sitemap: https://tomito.xyz/sitemap_index.xml
 Sitemap: https://tomito.xyz/sitemap.xml
 Sitemap: https://tomito.xyz/sitemap-ramadan.xml
+Sitemap: https://tomito.xyz/sitemap-ramadan-full.xml
 
