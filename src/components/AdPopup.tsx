@@ -8,8 +8,16 @@ const AD_URLS = [
     "https://www.effectivegatecpm.com/jsmds4sje?key=f4a2480b6a059baee6bfa7a01f6c4cad",
 ];
 
+const EXCLUDED_PATHS = [/\/movie\/\d+\/watch/, /\/tv\/\d+\/watch/];
+
 const AdPopup: React.FC = () => {
     const location = useLocation();
+
+    // Don't render at all on watch pages
+    if (EXCLUDED_PATHS.some((pattern) => pattern.test(location.pathname))) {
+        return null;
+    }
+
     const [isVisible, setIsVisible] = useState(true);
     const [countdown, setCountdown] = useState(7);
     const [adUrl, setAdUrl] = useState("");
