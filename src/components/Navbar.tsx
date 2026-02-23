@@ -3,7 +3,7 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import {
   Search, Film, Tv, Menu, X, ChevronDown, Home,
   Zap, Laugh, Drama, Ghost, Heart, Rocket,
-  Swords, Sparkles, Users, Clapperboard
+  Swords, Sparkles, Users, Clapperboard, Download
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -197,7 +197,17 @@ export function Navbar() {
               رمضان 2026
             </Link>
 
-
+            {/* Series Download Link */}
+            <Link
+              to="/series-download"
+              className={cn(
+                "flex items-center gap-2 text-sm font-bold transition-all duration-300 px-4 py-1.5 rounded-full hover:bg-primary/10",
+                pathname === "/series-download" ? "text-primary bg-primary/10" : "text-primary border border-primary/20 hover:border-primary/40"
+              )}
+            >
+              <Download className="w-4 h-4" />
+              تحميل المسلسلات
+            </Link>
           </div>
 
           {/* Search, Theme, Language & Mobile Menu */}
@@ -346,6 +356,16 @@ export function Navbar() {
               >
                 <Sparkles className="w-5 h-5" />
                 رمضان 2026
+              </Link>
+
+              {/* Mobile Series Download Link */}
+              <Link
+                to="/series-download"
+                className="flex items-center gap-3 px-4 py-2 text-primary font-bold hover:bg-primary/10 rounded-lg transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <Download className="w-5 h-5" />
+                تحميل المسلسلات
               </Link>
 
 
