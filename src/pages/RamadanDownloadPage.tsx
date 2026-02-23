@@ -184,7 +184,7 @@ export function RamadanDownloadPage() {
                             <div className="space-y-2">
                                 <h4 className="font-black text-base">نصيحة تقنية</h4>
                                 <p className="text-muted-foreground/80 font-medium leading-relaxed">
-                                    نحن نوصي باستخدام سيرفرات **StreamHG** أو **savefiles** لأفضل سرعة تحميل واستمرارية للروابط. في حال واجهت أي مشكلة في التحميل، جرب سيرفر آخر أو تواصل معنا عبر التليجرام.
+                                    نحن نوصي باستخدام سيرفرات **StreamHG** لأفضل سرعة تحميل واستمرارية للروابط. في حال واجهت أي مشكلة في التحميل، جرب سيرفر آخر أو تواصل معنا عبر التليجرام.
                                 </p>
                             </div>
                         </div>

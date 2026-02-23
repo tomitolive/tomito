@@ -49,22 +49,29 @@ export default function Home() {
 
                 // Fetch Ramadan Results data
                 const ramadanResponse = await fetch("/ramadan_2026_results.json");
-                const ramadanData = await ramadanResponse.json();
+                const ramadanData: any[] = await ramadanResponse.json();
+
+                // Filter out specific series as requested
+                const filteredRamadan = ramadanData.filter((item: any) => {
+                    const title = item.title || "";
+                    const excluded = ["صحاب الارض", "صحاب الأرض", "شمس الصيل", "شمس الأصيل", "شمس الاصيل"];
+                    return !excluded.some(ex => title.includes(ex));
+                });
 
                 // Search TMDB for each series to get proper images
-                const first6 = ramadanData.slice(0, 6);
+                const first12 = filteredRamadan.slice(0, 12);
                 const mappedRamadan = await Promise.all(
-                    first6.map(async (series: any) => {
+                    first12.map(async (series: any) => {
                         let tmdbPoster = series.poster;
                         let tmdbBackdrop = series.poster;
                         try {
                             const searchResult = await searchMulti(series.clean_title || series.title);
                             const hit = searchResult?.results?.[0];
                             if (hit?.poster_path) {
-                                tmdbPoster = `${TMDB_CONFIG.IMG_URL}/w500${hit.poster_path}`;
+                                tmdbPoster = `${TMDB_CONFIG.IMG_URL}/w342${hit.poster_path}`;
                             }
                             if (hit?.backdrop_path) {
-                                tmdbBackdrop = `${TMDB_CONFIG.IMG_URL}/original${hit.backdrop_path}`;
+                                tmdbBackdrop = `${TMDB_CONFIG.IMG_URL}/w780${hit.backdrop_path}`;
                             } else if (hit?.poster_path) {
                                 tmdbBackdrop = `${TMDB_CONFIG.IMG_URL}/w780${hit.poster_path}`;
                             }
@@ -122,7 +129,7 @@ export default function Home() {
                         </div>
                         <ContentRow
                             title=""
-                            items={ramadanSeries.slice(0, 6)}
+                            items={ramadanSeries.slice(0, 12)}
                             type="tv"
                             isRamadan={true}
                         />

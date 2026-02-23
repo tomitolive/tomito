@@ -44,7 +44,6 @@ function getServerLabel(name: string): string {
         EarnVids: "EarnVids",
         VK: "VK",
         doodstream: "DoodStream",
-        savefiles: "SaveFiles",
         vinovo: "Vinovo",
         mxdrop: "MxDrop",
         streamtape: "StreamTape",
@@ -85,6 +84,7 @@ export function WatchRamadanPage() {
     const [activeServerIndex, setActiveServerIndex] = useState(0);
     const [iframeKey, setIframeKey] = useState(0);
     const [isFullscreen, setIsFullscreen] = useState(false);
+    const [shieldClicks, setShieldClicks] = useState(2);
     const containerRef = useRef<HTMLDivElement>(null);
 
     // Sync fullscreen state with browser changes
@@ -171,12 +171,14 @@ export function WatchRamadanPage() {
         const epServers = series?.episodes[index]?.watch_servers || [];
         setActiveServerIndex(findVKIndex(epServers));
         setIframeKey((k) => k + 1);
+        setShieldClicks(2);
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
     const selectServer = (index: number) => {
         setActiveServerIndex(index);
         setIframeKey((k) => k + 1);
+        setShieldClicks(2);
     };
 
     const currentEntry = series?.episodes[selectedEpisodeIndex];
@@ -231,7 +233,7 @@ export function WatchRamadanPage() {
                 <div className="absolute top-40 right-16 w-1 h-1 bg-primary rounded-full opacity-30 animate-pulse" style={{ animationDelay: '0.5s' }} />
             </div>
 
-            <main className="container mx-auto px-4 pt-32 pb-24">
+            <main className="max-w-[1550px] mx-auto px-4 pt-32 pb-24 relative z-10">
                 {/* High-End Breadcrumbs */}
                 <nav className="flex items-center gap-2 text-[11px] text-muted-foreground/60 mb-8 overflow-x-auto whitespace-nowrap pb-2 no-scrollbar font-bold uppercase tracking-wide">
                     <Link to="/" className="hover:text-primary transition-colors flex items-center gap-1.5 focus:outline-none">
@@ -247,7 +249,7 @@ export function WatchRamadanPage() {
                     <span className="text-primary font-black flex-shrink-0 bg-primary/10 px-2 py-1 rounded-lg border border-primary/20">الحلقة {episodeNumber}</span>
                 </nav>
 
-                <div className="grid lg:grid-cols-[1fr_380px] gap-12 lg:gap-16 items-start">
+                <div className="grid lg:grid-cols-[1fr_300px] gap-10 lg:gap-14 items-start">
                     {/* ── Main Production Column ── */}
                     <div className="space-y-8 flex flex-col">
                         {/* ── Simple Video Player ── */}
@@ -260,16 +262,80 @@ export function WatchRamadanPage() {
                                 )}
                             >
                                 {activeServer ? (
-                                    <iframe
-                                        key={iframeKey}
-                                        src={activeServer.url}
-                                        className="w-full h-full border-0"
-                                        allow="autoplay; encrypted-media; fullscreen; picture-in-picture; clipboard-write; web-share; accelerometer; gyroscope; focus-without-user-activation; layout-animations; speaker-selection"
-                                        referrerPolicy="origin"
-                                        allowFullScreen
-                                        scrolling="no"
-                                        title={`${series.title} - الحلقة ${episodeNumber}`}
-                                    />
+                                    <div className="relative w-full h-full">
+                                        <iframe
+                                            key={iframeKey}
+                                            src={activeServer.url}
+                                            className="w-full h-full border-0"
+                                            allow="autoplay; encrypted-media; fullscreen; picture-in-picture; clipboard-write; web-share; accelerometer; gyroscope; focus-without-user-activation; layout-animations; speaker-selection"
+                                            sandbox="allow-forms allow-scripts allow-same-origin allow-presentation"
+                                            referrerPolicy="origin"
+                                            allowFullScreen
+                                            scrolling="no"
+                                            title={`${series.title} - الحلقة ${episodeNumber}`}
+                                        />
+
+                                        {/* Click Shield Overlay (Multi-Stage AdBlocker) - Ramadan Specific */}
+                                        {shieldClicks > 0 && (
+                                            <div
+                                                className="absolute inset-0 z-20 bg-black/60 backdrop-blur-[6px] cursor-pointer flex flex-col items-center justify-center group/shield transition-all duration-500"
+                                                onClick={(e) => {
+                                                    e.preventDefault();
+                                                    e.stopPropagation();
+                                                    setShieldClicks(prev => prev - 1);
+                                                }}
+                                            >
+                                                <div className="relative">
+                                                    <div className={cn(
+                                                        "absolute inset-0 bg-primary/20 blur-3xl rounded-full transition-all duration-700",
+                                                        shieldClicks === 1 ? "bg-orange-500/30 scale-150" : "group-hover/shield:scale-150"
+                                                    )} />
+                                                    <div className={cn(
+                                                        "relative w-28 h-28 rounded-full flex items-center justify-center shadow-2xl border-4 border-white/10 transition-all duration-500",
+                                                        shieldClicks === 1 ? "bg-orange-500 scale-110 rotate-12" : "bg-primary group-hover/shield:scale-110"
+                                                    )}>
+                                                        {shieldClicks === 2 ? (
+                                                            <Play className="w-12 h-12 fill-white translate-x-1" />
+                                                        ) : (
+                                                            <Sparkles className="w-12 h-12 text-white animate-pulse" />
+                                                        )}
+                                                    </div>
+                                                </div>
+
+                                                <div className="mt-10 text-center space-y-4 max-w-xs px-6">
+                                                    <p className="text-2xl font-black text-white tracking-tight">
+                                                        {shieldClicks === 2 ? "تشغيل آمن" : "تأكيد الحماية"}
+                                                    </p>
+
+                                                    <div className={cn(
+                                                        "flex items-center gap-2 justify-center px-5 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest transition-colors duration-500",
+                                                        shieldClicks === 2
+                                                            ? "bg-green-500/10 border border-green-500/20 text-green-500"
+                                                            : "bg-orange-500/20 border border-orange-500/30 text-orange-400"
+                                                    )}>
+                                                        <div className={cn(
+                                                            "w-2 h-2 rounded-full animate-pulse",
+                                                            shieldClicks === 2 ? "bg-green-500" : "bg-orange-500"
+                                                        )} />
+                                                        {shieldClicks === 2 ? "RAMADAN SHIELD ACTIVE" : "BLOCKING POPUPS... CLICK AGAIN"}
+                                                    </div>
+
+                                                    <p className="text-white/40 text-[10px] font-bold leading-relaxed">
+                                                        {shieldClicks === 2
+                                                            ? "اضغط هنا لبدء المشاهدة بدون إعلانات منبثقة أو بانيرات"
+                                                            : "نقرة واحدة أخيرة لفتح المشغل بآمان تام"}
+                                                    </p>
+                                                </div>
+
+                                                <div className="absolute bottom-10 flex flex-col items-center gap-2">
+                                                    <div className="flex gap-1.5">
+                                                        <div className={cn("w-8 h-1 rounded-full transition-all duration-500", shieldClicks <= 2 ? "bg-primary" : "bg-white/10")} />
+                                                        <div className={cn("w-8 h-1 rounded-full transition-all duration-500", shieldClicks <= 1 ? "bg-primary" : "bg-white/10")} />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        )}
+                                    </div>
                                 ) : (
                                     <div className="flex flex-col items-center justify-center h-full text-muted-foreground space-y-4">
                                         <Play className="w-12 h-12 opacity-10" />
