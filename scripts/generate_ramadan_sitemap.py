@@ -54,10 +54,9 @@ def generate_ramadan_sitemap():
             series_name = clean_title(entry.get('title'))
             if series_name and series_name not in unique_series:
                 unique_series.add(series_name)
-                # Encoded URL for the series
+                # Unencoded URL for the series
                 series_slug = create_slug(series_name)
-                safe_name = quote(series_slug)
-                urls.append(f"{BASE_URL}/ramadan-trailer/{safe_name}")
+                urls.append(f"{BASE_URL}/ramadan-trailer/{series_slug}")
 
     # Generate XML
     now = datetime.now().strftime("%Y-%m-%d")

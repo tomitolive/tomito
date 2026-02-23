@@ -53,10 +53,9 @@ def generate_ramadan_full_sitemap():
             series_name = clean_title(entry.get('title'))
             if series_name:
                 series_slug = create_slug(series_name)
-                safe_slug = quote(series_slug)
                 
                 # 1. Main series trailer page
-                urls.append(f"{BASE_URL}/ramadan-trailer/{safe_slug}")
+                urls.append(f"{BASE_URL}/ramadan-trailer/{series_slug}")
                 
                 # We remove episode-specific links as they all point to the same series trailer,
                 # which Google considers duplicate content.

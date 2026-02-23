@@ -59,7 +59,8 @@ def fix_sitemap(file_path):
 files_to_fix = [
     '/home/tomito/Desktop/tomito/public/sitemap-ramadan.xml',
     '/home/tomito/Desktop/tomito/public/sitemap-ramadan-full.xml',
-    '/home/tomito/Desktop/tomito/dist/sitemap-ramadan-full.xml'
+    '/home/tomito/Desktop/tomito/dist/sitemap-ramadan-full.xml',
+    '/home/tomito/Desktop/tomito/dist/sitemap-ramadan.xml'
 ]
 
 for f in files_to_fix:
