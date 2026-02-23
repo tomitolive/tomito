@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { Server, Play } from "lucide-react";
+import React, { useState, useEffect, useRef } from "react";
+import { Server, Play, Maximize2, Minimize2, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { SupremeServer } from "@/hooks/useSupremeServers";
+import { Button } from "@/components/ui/button";
 
 interface SupremePlayerProps {
     servers: SupremeServer[];
@@ -20,6 +21,30 @@ const SERVER_LABELS: Record<string, string> = {
 export function SupremePlayer({ servers, title }: SupremePlayerProps) {
     const [currentServer, setCurrentServer] = useState<SupremeServer>(servers[0]);
     const [iframeKey, setIframeKey] = useState(0);
+    const [isFullscreen, setIsFullscreen] = useState(false);
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    // Sync fullscreen state with browser changes
+    useEffect(() => {
+        const handleFullscreenChange = () => {
+            setIsFullscreen(!!document.fullscreenElement);
+        };
+        document.addEventListener("fullscreenchange", handleFullscreenChange);
+        return () => document.removeEventListener("fullscreenchange", handleFullscreenChange);
+    }, []);
+
+    const toggleFullscreen = async () => {
+        if (!containerRef.current) return;
+        try {
+            if (!document.fullscreenElement) {
+                await containerRef.current.requestFullscreen();
+            } else {
+                await document.exitFullscreen();
+            }
+        } catch (err) {
+            console.error("Fullscreen error:", err);
+        }
+    };
 
     if (!servers.length) return null;
 
@@ -36,7 +61,7 @@ export function SupremePlayer({ servers, title }: SupremePlayerProps) {
             </h2>
 
             {/* Server Selection */}
-            <div className="flex flex-wrap items-center gap-2 mb-4 justify-center">
+            <div className="flex flex-wrap items-center gap-2 mb-6 justify-center">
                 {servers.map((server, idx) => (
                     <button
                         key={`${server.name}-${idx}`}
@@ -57,15 +82,35 @@ export function SupremePlayer({ servers, title }: SupremePlayerProps) {
             </div>
 
             {/* Video Player */}
-            <div className="relative group max-w-4xl mx-auto">
-                <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl border border-border/50">
+            <div className="relative max-w-4xl mx-auto group/player">
+                <div
+                    ref={containerRef}
+                    className={cn(
+                        "relative aspect-video rounded-xl shadow-2xl border border-border/50 transition-all duration-300",
+                        isFullscreen && "rounded-none border-0"
+                    )}
+                >
                     <iframe
                         key={iframeKey}
                         src={currentServer.url}
-                        className="w-full h-full"
-                        allow="autoplay; encrypted-media; fullscreen; picture-in-picture; clipboard-write; web-share"
+                        className="w-full h-full border-0 rounded-xl"
+                        allow="autoplay; encrypted-media; fullscreen; picture-in-picture; clipboard-write; web-share; accelerometer; gyroscope; focus-without-user-activation; layout-animations; speaker-selection"
+                        referrerPolicy="origin"
                         title={`${title} - ${SERVER_LABELS[currentServer.name] || currentServer.name}`}
+                        allowFullScreen
                     />
+
+                    {/* Floating Zoom Button - Bottom Right (Extreme Edge) */}
+                    <div className="absolute bottom-4 right-4 z-[9999] opacity-100 lg:opacity-0 lg:group-hover/player:opacity-100 transition-opacity">
+                        <Button
+                            variant="ghost"
+                            size="icon"
+                            onClick={toggleFullscreen}
+                            className="h-10 w-10 bg-black/40 hover:bg-black/60 text-white border border-white/10 backdrop-blur-md shadow-2xl rounded-full"
+                        >
+                            {isFullscreen ? <Minimize2 className="w-5 h-5" /> : <Maximize2 className="w-5 h-5" />}
+                        </Button>
+                    </div>
                 </div>
             </div>
         </div>

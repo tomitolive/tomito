@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useParams, useSearchParams, Link, useNavigate } from "react-router-dom";
 import {
     Play, Star, Clock, Calendar, ArrowRight, Home,
-    ListVideo, Server, ChevronRight, Info, Sparkles
+    ListVideo, Server, ChevronRight, Info, Sparkles,
+    Maximize2, Minimize2, X
 } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -83,6 +84,30 @@ export function WatchRamadanPage() {
     const [selectedEpisodeIndex, setSelectedEpisodeIndex] = useState(0);
     const [activeServerIndex, setActiveServerIndex] = useState(0);
     const [iframeKey, setIframeKey] = useState(0);
+    const [isFullscreen, setIsFullscreen] = useState(false);
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    // Sync fullscreen state with browser changes
+    useEffect(() => {
+        const handleFullscreenChange = () => {
+            setIsFullscreen(!!document.fullscreenElement);
+        };
+        document.addEventListener("fullscreenchange", handleFullscreenChange);
+        return () => document.removeEventListener("fullscreenchange", handleFullscreenChange);
+    }, []);
+
+    const toggleFullscreen = async () => {
+        if (!containerRef.current) return;
+        try {
+            if (!document.fullscreenElement) {
+                await containerRef.current.requestFullscreen();
+            } else {
+                await document.exitFullscreen();
+            }
+        } catch (err) {
+            console.error("Fullscreen error:", err);
+        }
+    };
 
     const seriesName = decodeURIComponent(slug || "");
 
@@ -224,22 +249,24 @@ export function WatchRamadanPage() {
 
                 <div className="grid lg:grid-cols-[1fr_380px] gap-12 lg:gap-16 items-start">
                     {/* ── Main Production Column ── */}
-                    <div className="space-y-8">
-                        {/* ── Cinematic Video Player ── */}
-                        <div className="relative group">
-                            <div className="absolute -inset-1 bg-gradient-to-br from-primary via-purple-600 to-blue-600 rounded-2xl blur-xl opacity-10 group-hover:opacity-20 transition duration-1000" />
+                    <div className="space-y-8 flex flex-col">
+                        {/* ── Simple Video Player ── */}
+                        <div className="relative aspect-video group/player">
                             <div
-                                className="relative aspect-video rounded-[32px] overflow-hidden bg-black border border-white/10 shadow-[0_40px_120px_-30px_rgba(0,0,0,1)] ring-1 ring-white/10"
-                                style={{ touchAction: 'none' }}
+                                ref={containerRef}
+                                className={cn(
+                                    "relative w-full h-full bg-black rounded-xl overflow-hidden shadow-2xl transition-all duration-300",
+                                    isFullscreen && "rounded-none border-0"
+                                )}
                             >
                                 {activeServer ? (
                                     <iframe
                                         key={iframeKey}
                                         src={activeServer.url}
-                                        className="w-full h-full"
-                                        allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+                                        className="w-full h-full border-0"
+                                        allow="autoplay; encrypted-media; fullscreen; picture-in-picture; clipboard-write; web-share; accelerometer; gyroscope; focus-without-user-activation; layout-animations; speaker-selection"
+                                        referrerPolicy="origin"
                                         allowFullScreen
-                                        sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
                                         scrolling="no"
                                         title={`${series.title} - الحلقة ${episodeNumber}`}
                                     />
@@ -249,40 +276,44 @@ export function WatchRamadanPage() {
                                         <p className="text-lg font-bold">لا يوجد رابط مشاهدة متاح حالياً</p>
                                     </div>
                                 )}
+
+                                {/* Floating Zoom Button */}
+                                <div className="absolute bottom-4 right-4 z-[9999] opacity-100 lg:opacity-0 lg:group-hover/player:opacity-100 transition-opacity pointer-events-none">
+                                    <Button
+                                        variant="ghost"
+                                        size="icon"
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            toggleFullscreen();
+                                        }}
+                                        className="h-10 w-10 bg-black/40 hover:bg-black/60 text-white border border-white/10 backdrop-blur-md shadow-2xl rounded-full pointer-events-auto"
+                                    >
+                                        {isFullscreen ? <Minimize2 className="w-5 h-5" /> : <Maximize2 className="w-5 h-5" />}
+                                    </Button>
+                                </div>
                             </div>
                         </div>
 
-                        {/* ── Multi-Server Selection ── */}
-                        {servers.length > 0 && (
-                            <div className="bg-card/50 backdrop-blur-3xl border border-border rounded-2xl p-6 space-y-6 shadow-xl">
-                                <div className="flex items-center justify-between">
-                                    <div className="flex items-center gap-3">
-                                        <Server className="w-5 h-5 text-primary" />
-                                        <h3 className="text-lg font-black tracking-tight">تبديل السيرفر</h3>
-                                    </div>
-                                    <div className="flex items-center gap-2 px-3 py-1 rounded-lg bg-green-500/10 border border-green-500/20">
-                                        <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
-                                        <span className="text-[9px] font-black text-green-500 uppercase tracking-widest">متصل</span>
-                                    </div>
-                                </div>
-                                <div className="flex flex-wrap gap-2">
-                                    {servers.map((server, idx) => (
-                                        <button
-                                            key={`${server.name}-${idx}`}
-                                            onClick={() => selectServer(idx)}
-                                            className={cn(
-                                                "flex items-center gap-2.5 px-5 py-3 rounded-xl text-[12px] font-bold border transition-all duration-300 active:scale-95 group",
-                                                idx === activeServerIndex
-                                                    ? "bg-primary text-white border-primary shadow-lg shadow-primary/20"
-                                                    : "bg-muted/50 text-muted-foreground border-border hover:bg-accent hover:text-foreground hover:border-primary/30"
-                                            )}
-                                        >
-                                            <Play className={cn("w-3.5 h-3.5", idx === activeServerIndex ? "fill-white" : "text-primary group-hover:fill-primary")} />
+                        {/* ── Server Selection ── */}
+                        {servers.length > 1 && (
+                            <div className="flex flex-wrap items-center gap-2 mb-4 justify-center">
+                                {servers.map((server, idx) => (
+                                    <button
+                                        key={`${server.name}-${idx}`}
+                                        onClick={() => selectServer(idx)}
+                                        className={cn(
+                                            "h-9 px-4 rounded-lg transition-all backdrop-blur-md shadow-sm border flex items-center gap-2",
+                                            idx === activeServerIndex
+                                                ? "bg-primary text-primary-foreground border-primary shadow-md"
+                                                : "bg-secondary/50 text-muted-foreground hover:text-foreground border-border hover:bg-secondary"
+                                        )}
+                                    >
+                                        <Server className="w-4 h-4" />
+                                        <span className="text-xs font-bold uppercase tracking-wide">
                                             {getServerLabel(server.name)}
-                                        </button>
-                                    ))}
-                                </div>
-                                <p className="text-[10px] text-muted-foreground/60 font-medium italic">إذا توقف السيرفر عن العمل، يرجى تجربة سيرفر آخر.</p>
+                                        </span>
+                                    </button>
+                                ))}
                             </div>
                         )}
 
@@ -413,10 +444,10 @@ export function WatchRamadanPage() {
                             })}
                         </div>
                     </div>
-                </div>
-            </main>
+                </div >
+            </main >
 
             <Footer />
-        </div>
+        </div >
     );
 }
