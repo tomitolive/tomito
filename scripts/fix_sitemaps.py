@@ -41,11 +41,11 @@ def fix_sitemap(file_path):
         
         if '/ramadan-trailer/' in base:
             prefix, title = base.split('/ramadan-trailer/', 1)
-            title = title.replace('-', ' ')
+            title = title.replace(' ', '-')
             base = f"{prefix}/ramadan-trailer/{title}"
         elif '/watch-ramadan/' in base:
             prefix, title = base.split('/watch-ramadan/', 1)
-            title = title.replace('-', ' ')
+            title = title.replace(' ', '-')
             base = f"{prefix}/watch-ramadan/{title}"
             
         return f"<loc>{base}{query}</loc>"

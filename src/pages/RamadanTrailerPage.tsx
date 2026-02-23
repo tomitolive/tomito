@@ -243,7 +243,7 @@ export function RamadanTrailerPage() {
                                                 </div>
 
                                                 <div className="flex flex-wrap items-center gap-3">
-                                                    <Link to={`/watch-ramadan/${encodeURIComponent(seriesName)}?episode=${epNum}`} className="flex-grow sm:flex-grow-0">
+                                                    <Link to={`/watch-ramadan/${encodeURIComponent(seriesName.replace(/\s+/g, "-"))}?episode=${epNum}`} className="flex-grow sm:flex-grow-0">
                                                         <Button className="w-full sm:w-auto h-11 px-6 rounded-xl font-bold text-sm gap-3 transition-all">
                                                             <Play className="w-4 h-4 fill-current" />
                                                             ابدأ المشاهدة
@@ -251,7 +251,7 @@ export function RamadanTrailerPage() {
                                                     </Link>
 
                                                     {ep.download_links && ep.download_links.length > 0 && (
-                                                        <Link to={`/ramadan-download/${encodeURIComponent(seriesName)}?episode=${epNum}`} className="flex-grow sm:flex-grow-0">
+                                                        <Link to={`/ramadan-download/${encodeURIComponent(seriesName.replace(/\s+/g, "-"))}?episode=${epNum}`} className="flex-grow sm:flex-grow-0">
                                                             <Button variant="secondary" className="w-full sm:w-auto h-11 px-5 rounded-xl font-bold text-sm gap-3 border border-border hover:bg-accent transition-all">
                                                                 <Download className="w-4 h-4" />
                                                                 تحميل الحلقة

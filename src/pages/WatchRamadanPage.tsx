@@ -109,7 +109,7 @@ export function WatchRamadanPage() {
         }
     };
 
-    const seriesName = decodeURIComponent(slug || "");
+    const seriesName = decodeURIComponent(slug || "").replace(/-/g, " ");
 
     // Helper: find VK server index, fallback to 0
     const findVKIndex = (servers: WatchServer[]): number => {
@@ -242,7 +242,7 @@ export function WatchRamadanPage() {
                     <ChevronRight className="w-3 h-3 flex-shrink-0" />
                     <Link to="/ramadan" className="hover:text-primary transition-colors focus:outline-none">رمضان 2026</Link>
                     <ChevronRight className="w-3 h-3 flex-shrink-0" />
-                    <Link to={`/ramadan-trailer/${encodeURIComponent(series.clean_title || series.title)}`} className="hover:text-primary transition-colors focus:outline-none max-w-[150px] truncate">
+                    <Link to={`/ramadan-trailer/${encodeURIComponent((series.clean_title || series.title).replace(/\s+/g, "-"))}`} className="hover:text-primary transition-colors focus:outline-none max-w-[150px] truncate">
                         {series.title}
                     </Link>
                     <ChevronRight className="w-3 h-3 flex-shrink-0" />
@@ -429,7 +429,7 @@ export function WatchRamadanPage() {
                                 <Button
                                     variant="outline"
                                     className="h-11 px-6 rounded-xl gap-2 font-bold text-sm border-border hover:bg-accent transition-all"
-                                    onClick={() => navigate(`/ramadan-trailer/${encodeURIComponent(series.clean_title || series.title)}`)}
+                                    onClick={() => navigate(`/ramadan-trailer/${encodeURIComponent((series.clean_title || series.title).replace(/\s+/g, "-"))}`)}
                                 >
                                     تفاصيل المسلسل
                                 </Button>

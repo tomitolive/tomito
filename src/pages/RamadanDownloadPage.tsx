@@ -34,7 +34,7 @@ interface SeriesItem {
 export function RamadanDownloadPage() {
     const { slug } = useParams<{ slug: string }>();
     const [searchParams] = useSearchParams();
-    const seriesName = decodeURIComponent(slug || "");
+    const seriesName = decodeURIComponent(slug || "").replace(/-/g, " ");
     const episodeNum = parseInt(searchParams.get("episode") || "1");
 
     const [series, setSeries] = useState<SeriesItem | null>(null);
@@ -107,7 +107,7 @@ export function RamadanDownloadPage() {
                     <ChevronRight className="w-3 h-3 flex-shrink-0" />
                     <Link to="/ramadan" className="hover:text-primary transition-colors">رمضان 2026</Link>
                     <ChevronRight className="w-3 h-3 flex-shrink-0" />
-                    <Link to={`/ramadan-trailer/${encodeURIComponent(series.clean_title || series.title)}`} className="hover:text-primary transition-colors max-w-[120px] truncate">
+                    <Link to={`/ramadan-trailer/${encodeURIComponent((series.clean_title || series.title).replace(/\s+/g, "-"))}`} className="hover:text-primary transition-colors max-w-[120px] truncate">
                         {series.title}
                     </Link>
                     <ChevronRight className="w-3 h-3 flex-shrink-0" />
@@ -212,14 +212,14 @@ export function RamadanDownloadPage() {
                                 خيارات أخرى
                             </h3>
                             <div className="grid grid-cols-1 gap-2">
-                                <Link to={`/watch-ramadan/${encodeURIComponent(seriesName)}?episode=${episodeNum}`}>
+                                <Link to={`/watch-ramadan/${encodeURIComponent(seriesName.replace(/\s+/g, "-"))}?episode=${episodeNum}`}>
                                     <Button variant="outline" className="w-full h-11 rounded-xl font-bold text-xs gap-3 border-border hover:bg-accent group">
                                         <Play className="w-4 h-4 fill-primary text-primary" />
                                         مشاهدة هذه الحلقة أونلاين
                                         <ArrowRight className="w-4 h-4 ml-auto opacity-20 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
                                     </Button>
                                 </Link>
-                                <Link to={`/ramadan-trailer/${encodeURIComponent(seriesName)}`}>
+                                <Link to={`/ramadan-trailer/${encodeURIComponent(seriesName.replace(/\s+/g, "-"))}`}>
                                     <Button variant="outline" className="w-full h-11 rounded-xl font-bold text-xs gap-3 border-border hover:bg-accent group">
                                         <ChevronRight className="w-4 h-4" />
                                         العودة لصفحة المسلسل

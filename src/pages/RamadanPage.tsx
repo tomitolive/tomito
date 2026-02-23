@@ -208,7 +208,7 @@ export default function RamadanPage() {
                         {filteredSeries.map((series, idx) => (
                             <Link
                                 key={series.id}
-                                to={`/ramadan-trailer/${encodeURIComponent(series.clean_title || cleanTitle(series.title))}`}
+                                to={`/ramadan-trailer/${encodeURIComponent((series.clean_title || cleanTitle(series.title)).replace(/\s+/g, "-"))}`}
                                 className="group relative flex flex-col gap-6 focus:outline-none animate-in fade-in zoom-in-95 duration-700"
                                 style={{ animationDelay: `${idx * 40}ms` }}
                             >
