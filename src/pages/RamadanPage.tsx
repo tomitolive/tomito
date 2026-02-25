@@ -41,7 +41,7 @@ interface SeriesItem {
     year: string;
     type: string;
     episodes: Episode[];
-    // For local UI state
+    isSupreme?: boolean;
     allPosters?: string[];
 }
 
@@ -69,18 +69,26 @@ export default function RamadanPage() {
 
                 await Promise.all(
                     initialSeries.map(async (item) => {
-                        const searchName = item.clean_title || cleanTitle(item.title);
-                        if (searchName.length < 2) return;
-                        try {
-                            const searchResult = await searchMulti(searchName);
-                            const bestMatch = searchResult.results?.find((r: any) =>
-                                (r.media_type === "tv" || r.media_type === "movie") && r.poster_path
-                            );
-                            if (bestMatch?.poster_path) {
-                                posterMap.set(item.id, getImageUrl(bestMatch.poster_path, "w500"));
+                        const cleanName = item.clean_title || cleanTitle(item.title);
+                        const fullTitle = item.title;
+                        const shortTitle = fullTitle.split(/\s+/).slice(0, 2).join(" ");
+
+                        // Search candidates in order of preference
+                        const searchCandidates = [cleanName, fullTitle, shortTitle].filter(n => n && n.length > 2);
+
+                        for (const name of searchCandidates) {
+                            try {
+                                const searchResult = await searchMulti(name);
+                                const bestMatch = searchResult.results?.find((r: any) =>
+                                    (r.media_type === "tv" || r.media_type === "movie") && r.poster_path
+                                );
+                                if (bestMatch?.poster_path) {
+                                    posterMap.set(item.id, getImageUrl(bestMatch.poster_path, "w500"));
+                                    break; // Found one, stop searching for this item
+                                }
+                            } catch (err) {
+                                console.error(`TMDB search failed for: ${name}`, err);
                             }
-                        } catch (err) {
-                            console.error(`TMDB search failed for: ${item.title}`, err);
                         }
                     })
                 );
@@ -108,13 +116,35 @@ export default function RamadanPage() {
         loadData();
     }, []);
 
-    const filteredSeries = useMemo(() => {
+    const sortedAndFiltered = useMemo(() => {
         const query = searchQuery.toLowerCase().trim();
-        if (!query) return allSeries;
-        return allSeries.filter((s) =>
-            s.title.toLowerCase().includes(query) ||
-            (s.clean_title && s.clean_title.toLowerCase().includes(query))
-        );
+        let filtered = allSeries;
+
+        if (query) {
+            filtered = allSeries.filter((s) =>
+                s.title.toLowerCase().includes(query) ||
+                (s.clean_title && s.clean_title.toLowerCase().includes(query))
+            );
+        }
+
+        // Sorting Logic:
+        // 1. isSupreme (Priority)
+        // 2. Has TMDB poster (or high-quality poster)
+        // 3. Alphabetical / Original
+        return [...filtered].sort((a, b) => {
+            // First priority: isSupreme
+            if (a.isSupreme && !b.isSupreme) return -1;
+            if (!a.isSupreme && b.isSupreme) return 1;
+
+            // Second priority: Has high-quality image (from allPosters or if poster isn't a placeholder)
+            const hasImageA = a.poster && !a.poster.includes("placeholder") && !a.poster.includes("original/undefined");
+            const hasImageB = b.poster && !b.poster.includes("placeholder") && !b.poster.includes("original/undefined");
+
+            if (hasImageA && !hasImageB) return -1;
+            if (!hasImageA && hasImageB) return 1;
+
+            return 0;
+        });
     }, [allSeries, searchQuery]);
 
     if (loading) {
@@ -193,7 +223,7 @@ export default function RamadanPage() {
                             <div className="w-1.5 h-8 bg-primary rounded-full shadow-[0_0_15px_rgba(var(--primary),0.8)]" />
                             <h2 className="text-xl font-black tracking-tight">قائمة العروض</h2>
                         </div>
-                        <p className="text-muted-foreground text-xs mr-4.5 font-medium">استكشف {filteredSeries.length} عمل فني حصري</p>
+                        <p className="text-muted-foreground text-xs mr-4.5 font-medium">استكشف {sortedAndFiltered.length} عمل فني حصري</p>
                     </div>
 
                     <div className="flex items-center gap-3 text-[10px] font-black tracking-widest uppercase">
@@ -204,9 +234,9 @@ export default function RamadanPage() {
                 </div>
 
                 {/* ── Premium Series Grid ── */}
-                {filteredSeries.length > 0 ? (
+                {sortedAndFiltered.length > 0 ? (
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-8 gap-y-12 sm:gap-x-12 sm:gap-y-16">
-                        {filteredSeries.map((series, idx) => (
+                        {sortedAndFiltered.map((series, idx) => (
                             <Link
                                 key={series.id}
                                 to={`/ramadan-trailer/${encodeURIComponent((series.clean_title || cleanTitle(series.title)).replace(/\s+/g, "-"))}`}

@@ -1,6 +1,8 @@
 import json
 import os
 import re
+import requests
+import time
 
 # Dictionary to map Arabic number words to digits
 ARABIC_NUMBERS = {
@@ -16,6 +18,34 @@ ARABIC_NUMBERS = {
     'العاشرة': 10, 'العاشر': 10, 'العاشره': 10,
     'الاخيرة': 30, 'الأخيرة': 30
 }
+
+# Configuration
+TMDB_API_KEY = "882e741f7283dc9ba1654d4692ec30f6"
+TMDB_BASE_URL = "https://api.themoviedb.org/3"
+TMDB_IMG_URL = "https://image.tmdb.org/t/p/w500"
+
+def fetch_tmdb_poster(query):
+    if not query:
+        return None
+    try:
+        url = f"{TMDB_BASE_URL}/search/multi"
+        params = {
+            "api_key": TMDB_API_KEY,
+            "query": query,
+            "language": "ar"
+        }
+        response = requests.get(url, params=params, timeout=10)
+        if response.status_code == 200:
+            data = response.json()
+            if data.get("results"):
+                # Try to find a TV or Movie match
+                for res in data["results"]:
+                    if res.get("media_type") in ["tv", "movie"] and res.get("poster_path"):
+                        return f"{TMDB_IMG_URL}{res['poster_path']}"
+        return None
+    except Exception as e:
+        print(f"Error fetching TMDB poster for {query}: {e}")
+        return None
 
 def clean_title(title):
     if not title: return ""
@@ -139,31 +169,63 @@ def transform_data(input_paths, output_path):
 
     # Final cleanup and nesting
     final_data = []
-    for s_id, s in series_map.items():
+    # Sort series map by title to keep a stable order
+    sorted_ids = sorted(series_map.keys(), key=lambda x: series_map[x].get('title', ''))
+    
+    final_data = []
+    print(f"Enriching {len(sorted_ids)} series with TMDB posters...")
+    
+    for s_id in sorted_ids:
+        s = series_map[s_id]
+        
+        # TMDB Enrichment: Try clean_title first, then title
+        tmdb_poster = fetch_tmdb_poster(s.get("clean_title"))
+        if not tmdb_poster:
+            tmdb_poster = fetch_tmdb_poster(s.get("title"))
+            
+        if tmdb_poster:
+            s["poster"] = tmdb_poster
+            print(f"Found TMDB poster for: {s.get('title')}")
+            # Optional: Sleep slightly to be nice to API
+            time.sleep(0.1)
+        else:
+            print(f"No TMDB poster found for: {s.get('title')}")
+
         sorted_nums = sorted(s["episodes_map"].keys())
         eps = []
         for num in sorted_nums:
             ep = s["episodes_map"][num]
-            if ep["watch_servers"]:
-                eps.append(ep)
+            # INCLUSIVE: Keep even without watch_servers
+            eps.append(ep)
         
-        if eps:
-            s["episodes"] = eps
+        # INCLUSIVE: Keep series even if eps is empty
+        s["episodes"] = eps
+        if "episodes_map" in s:
             del s["episodes_map"]
-            final_data.append(s)
+        final_data.append(s)
 
-    # Sort final series by title or popularity? Let's keep existing order mostly
+    # Final count check
+    print(f"Total series in memory: {len(final_data)}")
+    total_eps = sum(len(s.get('episodes', [])) for s in final_data)
+    print(f"Total episodes in memory: {total_eps}")
+
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(final_data, f, ensure_ascii=False, indent=2)
     
     print(f"Successfully cleaned, merged, and re-transformed {len(final_data)} series.")
+    print(f"Total nested episodes: {total_eps}")
     print(f"Output: {output_path}")
 
 if __name__ == "__main__":
     sources = [
-        '/home/tomito/Desktop/tomito/public/ramadan_2026_results.json', # Current public (nested/flattened)
-        '/home/tomito/Desktop/tomito/dist/ramadan_2026_results.json',   # Latest dist bits
-        '/home/tomito/Desktop/tomito/dist/ramadan_2026_results_batch2.json' # New batch
+        '/home/tomito/Desktop/tomito/public/ramadan_2026_results.json',
+        '/home/tomito/Desktop/tomito/dist/ramadan_2026_results.json'
     ]
-    transform_data(sources, '/home/tomito/Desktop/tomito/public/ramadan_2026_results.json')
+    output_path = '/home/tomito/Desktop/tomito/public/ramadan_2026_results.json'
+    transform_data(sources, output_path)
+    
+    # Also copy to dist to keep them in sync
+    import shutil
+    shutil.copy2(output_path, '/home/tomito/Desktop/tomito/dist/ramadan_2026_results.json')
+    print(f"Synced to dist/ramadan_2026_results.json")
 

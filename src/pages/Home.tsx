@@ -58,24 +58,40 @@ export default function Home() {
                     return !excluded.some(ex => title.includes(ex));
                 });
 
+                // Sort so isSupreme series come first
+                const sortedRamadan = [...filteredRamadan].sort((a, b) => {
+                    if (a.isSupreme && !b.isSupreme) return -1;
+                    if (!a.isSupreme && b.isSupreme) return 1;
+                    return 0;
+                });
+
                 // Search TMDB for each series to get proper images
-                const first12 = filteredRamadan.slice(0, 12);
+                const first12 = sortedRamadan.slice(0, 12);
                 const mappedRamadan = await Promise.all(
                     first12.map(async (series: any) => {
                         let tmdbPoster = series.poster;
                         let tmdbBackdrop = series.poster;
-                        try {
-                            const searchResult = await searchMulti(series.clean_title || series.title);
-                            const hit = searchResult?.results?.[0];
-                            if (hit?.poster_path) {
-                                tmdbPoster = `${TMDB_CONFIG.IMG_URL}/w342${hit.poster_path}`;
-                            }
-                            if (hit?.backdrop_path) {
-                                tmdbBackdrop = `${TMDB_CONFIG.IMG_URL}/w780${hit.backdrop_path}`;
-                            } else if (hit?.poster_path) {
-                                tmdbBackdrop = `${TMDB_CONFIG.IMG_URL}/w780${hit.poster_path}`;
-                            }
-                        } catch (_) { /* keep original poster on error */ }
+
+                        const cleanName = series.clean_title || series.title;
+                        const shortTitle = series.title.split(/\s+/).slice(0, 2).join(" ");
+                        const searchCandidates = [cleanName, series.title, shortTitle].filter(n => n && n.length > 2);
+
+                        for (const name of searchCandidates) {
+                            try {
+                                const searchResult = await searchMulti(name);
+                                const hit = searchResult?.results?.[0];
+                                if (hit?.poster_path) {
+                                    tmdbPoster = `${TMDB_CONFIG.IMG_URL}/w500${hit.poster_path}`;
+                                    if (hit.backdrop_path) {
+                                        tmdbBackdrop = `${TMDB_CONFIG.IMG_URL}/w780${hit.backdrop_path}`;
+                                    } else {
+                                        tmdbBackdrop = `${TMDB_CONFIG.IMG_URL}/w780${hit.poster_path}`;
+                                    }
+                                    break;
+                                }
+                            } catch (_) { /* bypass */ }
+                        }
+
                         return {
                             id: series.id,
                             name: series.title,
@@ -85,7 +101,7 @@ export default function Home() {
                             overview: series.description,
                             vote_average: 9.1,
                             first_air_date: series.year || "2026",
-                            isSupreme: true
+                            isSupreme: series.isSupreme === true
                         };
                     })
                 );
