@@ -18,6 +18,7 @@ export function MovieCard({
   item,
   type,
   className,
+  isRamadan,
 }: MovieCardProps): JSX.Element {
   const navigate = useNavigate();
   const [trailerKey, setTrailerKey] = useState<string | null>(null);
@@ -38,8 +39,9 @@ export function MovieCard({
       ? item.vote_average.toFixed(1)
       : "N/A";
 
-  const link = item.isSupreme
-    ? `/ramadan-trailer/${encodeURIComponent((item.clean_title || title).replace(/\s+/g, "-"))}`
+  const ramadanSlug = encodeURIComponent((item.clean_title || title).replace(/\s+/g, "-"));
+  const link = (item.isSupreme || isRamadan)
+    ? `/ramadan-trailer/${ramadanSlug}`
     : type === "movie"
       ? `/movie/${createSlugWithId(item.id, title)}`
       : `/tv/${createSlugWithId(item.id, title)}`;
