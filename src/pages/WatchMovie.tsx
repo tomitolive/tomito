@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { Play, Star, Clock, Calendar, ArrowRight, Users, Maximize, Settings2, Server } from "lucide-react";
+import { Play, Star, Clock, Calendar, ArrowRight, Users, Server, ExternalLink, Monitor } from "lucide-react";
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { SupremePlayer } from "@/components/SupremePlayer";
 import { Navbar } from "@/components/Navbar";
@@ -50,10 +50,8 @@ export default function WatchMovie() {
     movie?.ar_title
   );
 
-  const combinedSupremeServers = [
-    ...(externalMovie?.watch_servers || []).map(s => ({ ...s, quality: "HD" })),
-    ...supremeServers
-  ];
+  // External watch servers open in new tab (avoids X-Frame-Options + popup issues)
+  const externalWatchServers = externalMovie?.watch_servers || [];
 
 
   useEffect(() => {
@@ -232,45 +230,69 @@ export default function WatchMovie() {
             {t("watchMovie")}
           </h2>
 
-          {/* Conditional Player Logic */}
-          {combinedSupremeServers.length > 0 ? (
-            <div className="mb-0">
-              {/* New Frame/Supreme Player for Ramadan Content or External Data */}
-              <SupremePlayer servers={combinedSupremeServers} title={movie.title} />
+          {/* Standard Embedded Player - always visible */}
+          <>
+            {/* Server Selection UI */}
+            <div className="flex flex-wrap items-center gap-2 mb-4 justify-center">
+              {MOVIE_SERVERS.map((server) => (
+                <button
+                  key={server.id}
+                  onClick={() => setCurrentServer(server)}
+                  className={cn(
+                    "h-9 px-4 rounded-lg transition-all backdrop-blur-md shadow-sm border flex items-center gap-2",
+                    currentServer.id === server.id
+                      ? "bg-primary text-primary-foreground border-primary shadow-md"
+                      : "bg-secondary/50 text-muted-foreground hover:text-foreground border-border hover:bg-secondary"
+                  )}
+                >
+                  <Server className="w-4 h-4" />
+                  <span className="text-xs font-bold uppercase tracking-wide">{server.name}</span>
+                </button>
+              ))}
             </div>
-          ) : (
-            <>
-              {/* Server Selection UI - Foreign/Standard series only */}
-              <div className="flex flex-wrap items-center gap-2 mb-4 justify-center">
-                {MOVIE_SERVERS.map((server) => (
-                  <button
-                    key={server.id}
-                    onClick={() => setCurrentServer(server)}
-                    className={cn(
-                      "h-9 px-4 rounded-lg transition-all backdrop-blur-md shadow-sm border flex items-center gap-2",
-                      currentServer.id === server.id
-                        ? "bg-primary text-primary-foreground border-primary shadow-md"
-                        : "bg-secondary/50 text-muted-foreground hover:text-foreground border-border hover:bg-secondary"
-                    )}
+
+            {/* Main Video Player */}
+            <div className="max-w-4xl mx-auto">
+              {movie && (
+                <VideoPlayer
+                  id={movie.id}
+                  type="movie"
+                  title={movie.title}
+                  currentServer={currentServer}
+                />
+              )}
+            </div>
+          </>
+
+          {/* External Watch Servers (open in new tab - avoids embed/popup issues) */}
+          {externalWatchServers.length > 0 && (
+            <div className="mt-6 p-5 rounded-2xl bg-secondary/20 border border-border/50">
+              <h3 className="text-base font-bold mb-3 flex items-center gap-2 text-muted-foreground">
+                <Monitor className="w-4 h-4 text-primary" />
+                مشاهدة من مزودين آخرين
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {externalWatchServers.map((server, idx) => (
+                  <a
+                    key={idx}
+                    href={server.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 h-9 px-4 rounded-lg bg-secondary/50 border border-border hover:border-primary/50 hover:bg-secondary text-muted-foreground hover:text-foreground transition-all text-xs font-bold uppercase tracking-wide"
                   >
-                    <Server className="w-4 h-4" />
-                    <span className="text-xs font-bold uppercase tracking-wide">{server.name}</span>
-                  </button>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                    {server.name}
+                  </a>
                 ))}
               </div>
+            </div>
+          )}
 
-              {/* Simple Video Player Container */}
-              <div className="max-w-4xl mx-auto">
-                {movie && (
-                  <VideoPlayer
-                    id={movie.id}
-                    type="movie"
-                    title={movie.title}
-                    currentServer={currentServer}
-                  />
-                )}
-              </div>
-            </>
+          {/* SupremePlayer - only for supreme_results.json content (Ramadan etc) */}
+          {supremeServers.length > 0 && (
+            <div className="mt-6">
+              <SupremePlayer servers={supremeServers} title={movie.title} />
+            </div>
           )}
         </div>
 
