@@ -108,8 +108,7 @@ def update_posters():
             
             if found_poster:
                 item["poster"] = found_poster
-                if found_backdrop:
-                    item["backdrop"] = found_backdrop
+                item["backdrop"] = found_backdrop # Store backdrop even if None to maintain structure
                 updated_count += 1
                 print(f"    -> FOUND: {found_poster}")
             else:

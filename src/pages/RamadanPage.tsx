@@ -53,59 +53,17 @@ export default function RamadanPage() {
     useEffect(() => {
         const loadData = async () => {
             try {
-                const response = await fetch("/ramadan_2026_results.json");
+                // 1. Fetch lightweight JSON for initial load
+                const response = await fetch("/ramadan_2026_results_light.json");
                 const data: SeriesItem[] = await response.json();
 
-                // Initialize allPosters for fallback handling
+                // Initialize allPosters for fallback handling using pre-populated metadata
                 const initialSeries = data.map(item => ({
                     ...item,
                     allPosters: item.poster ? [item.poster] : []
                 }));
 
                 setAllSeries(initialSeries);
-
-                // 2. Async fetch TMDB posters for unique series names
-                const posterMap = new Map<string, string>();
-
-                await Promise.all(
-                    initialSeries.map(async (item) => {
-                        const cleanName = item.clean_title || cleanTitle(item.title);
-                        const fullTitle = item.title;
-                        const shortTitle = fullTitle.split(/\s+/).slice(0, 2).join(" ");
-
-                        // Search candidates in order of preference
-                        const searchCandidates = [cleanName, fullTitle, shortTitle].filter(n => n && n.length > 2);
-
-                        for (const name of searchCandidates) {
-                            try {
-                                const searchResult = await searchMulti(name);
-                                const bestMatch = searchResult.results?.find((r: any) =>
-                                    (r.media_type === "tv" || r.media_type === "movie") && r.poster_path
-                                );
-                                if (bestMatch?.poster_path) {
-                                    posterMap.set(item.id, getImageUrl(bestMatch.poster_path, "w500"));
-                                    break; // Found one, stop searching for this item
-                                }
-                            } catch (err) {
-                                console.error(`TMDB search failed for: ${name}`, err);
-                            }
-                        }
-                    })
-                );
-
-                // 3. Update allSeries with TMDB posters where found
-                setAllSeries(prev => prev.map(item => {
-                    const tmdbPoster = posterMap.get(item.id);
-                    if (tmdbPoster) {
-                        return {
-                            ...item,
-                            poster: tmdbPoster,
-                            allPosters: [tmdbPoster, ...(item.allPosters || [])]
-                        };
-                    }
-                    return item;
-                }));
-
             } catch (error) {
                 console.error("Failed to load Ramadan data:", error);
             } finally {

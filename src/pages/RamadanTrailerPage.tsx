@@ -66,16 +66,8 @@ export function RamadanTrailerPage() {
 
                 if (found) {
                     setSeries(found);
-
-                    // Fetch TMDB poster
-                    const searchName = found.clean_title || cleanTitle(found.title);
-                    const searchResult = await searchMulti(searchName);
-                    const bestMatch = searchResult.results?.find((r: any) =>
-                        (r.media_type === "tv" || r.media_type === "movie") && r.poster_path
-                    );
-                    if (bestMatch?.poster_path) {
-                        setTmdbPoster(getImageUrl(bestMatch.poster_path, "w780"));
-                    }
+                    // Use pre-populated poster and backdrop from JSON
+                    setTmdbPoster(found.poster || null);
                 }
             } catch (err) {
                 console.error("Failed to load Ramadan trailer data:", err);
@@ -132,10 +124,10 @@ export function RamadanTrailerPage() {
             {/* ── Dynamic Cinema Backdrop ── */}
             <div className="fixed inset-0 -z-10 bg-background overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-background/90 to-background z-10" />
-                {tmdbPoster || series.poster ? (
+                {(series as any)?.backdrop || tmdbPoster || series.poster ? (
                     <div className="relative w-full h-full scale-105 blur-[60px] opacity-20">
                         <img
-                            src={tmdbPoster || series.poster}
+                            src={(series as any)?.backdrop || tmdbPoster || series.poster}
                             className="w-full h-full object-cover animate-slow-zoom"
                             alt=""
                         />
