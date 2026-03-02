@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { Play, Star, Clock, Calendar, ArrowRight, Users } from "lucide-react";
+import { Play, Star, Clock, Calendar, ArrowRight, Users, Download, ExternalLink } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
@@ -21,6 +21,7 @@ import {
 import { cn, getIdFromSlug } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
 import { SEO } from "@/components/SEO";
+import { useExternalMovieData } from "@/hooks/useExternalMovieData";
 
 
 export default function MovieTrailer() {
@@ -31,6 +32,12 @@ export default function MovieTrailer() {
     const [similar, setSimilar] = useState<Movie[]>([]);
     const [trailerKey, setTrailerKey] = useState<string | null>(null);
     const [isLoading, setIsLoading] = useState(true);
+
+    const { externalMovie } = useExternalMovieData(
+        movie?.title,
+        movie?.release_date ? new Date(movie.release_date).getFullYear().toString() : undefined,
+        movie?.ar_title
+    );
 
     useEffect(() => {
         const loadMovie = async () => {
@@ -183,6 +190,38 @@ export default function MovieTrailer() {
                                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover/btn:w-full" />
                             </span>
                         </Button>
+
+                        {/* Download Section */}
+                        {externalMovie && externalMovie.download_links && externalMovie.download_links.length > 0 && (
+                            <div className="space-y-4 mt-6 p-6 rounded-2xl bg-secondary/30 border border-border/50 backdrop-blur-sm">
+                                <h3 className="text-xl font-bold flex items-center gap-2">
+                                    <Download className="w-6 h-6 text-primary" />
+                                    {t("downloadMovie") || "تحميل الفيلم"}
+                                </h3>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                    {externalMovie.download_links.map((link, index) => (
+                                        <a
+                                            key={index}
+                                            href={link.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center justify-between p-4 rounded-xl bg-background/50 border border-border hover:border-primary/50 hover:bg-background transition-all group shadow-sm hover:shadow-md"
+                                        >
+                                            <div className="flex items-center gap-3">
+                                                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                                    <Download className="w-5 h-5" />
+                                                </div>
+                                                <div>
+                                                    <p className="font-bold text-sm">{link.host}</p>
+                                                    <p className="text-xs text-muted-foreground">{link.quality}</p>
+                                                </div>
+                                            </div>
+                                            <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
 
                         {/* Movie Info */}
                         <div>

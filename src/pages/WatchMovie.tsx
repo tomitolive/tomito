@@ -26,6 +26,7 @@ import {
 import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
 import { useSupremeServers } from "@/hooks/useSupremeServers";
+import { useExternalMovieData } from "@/hooks/useExternalMovieData";
 
 
 export default function WatchMovie() {
@@ -42,6 +43,17 @@ export default function WatchMovie() {
     movieTitle: movie?.title,
     movieTitleAr: movie?.ar_title
   });
+
+  const { externalMovie } = useExternalMovieData(
+    movie?.title,
+    movie?.release_date ? new Date(movie.release_date).getFullYear().toString() : undefined,
+    movie?.ar_title
+  );
+
+  const combinedSupremeServers = [
+    ...(externalMovie?.watch_servers || []).map(s => ({ ...s, quality: "HD" })),
+    ...supremeServers
+  ];
 
 
   useEffect(() => {
@@ -221,10 +233,10 @@ export default function WatchMovie() {
           </h2>
 
           {/* Conditional Player Logic */}
-          {supremeServers.length > 0 ? (
+          {combinedSupremeServers.length > 0 ? (
             <div className="mb-0">
-              {/* New Frame/Supreme Player for Ramadan Content */}
-              <SupremePlayer servers={supremeServers} title={movie.title} />
+              {/* New Frame/Supreme Player for Ramadan Content or External Data */}
+              <SupremePlayer servers={combinedSupremeServers} title={movie.title} />
             </div>
           ) : (
             <>

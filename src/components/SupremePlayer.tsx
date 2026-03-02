@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Server, Play, Maximize2, Minimize2, X } from "lucide-react";
+import { Server, Play, Maximize2, Minimize2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { SupremeServer } from "@/hooks/useSupremeServers";
 import { Button } from "@/components/ui/button";
@@ -22,6 +22,7 @@ export function SupremePlayer({ servers, title }: SupremePlayerProps) {
     const [currentServer, setCurrentServer] = useState<SupremeServer>(servers[0]);
     const [iframeKey, setIframeKey] = useState(0);
     const [isFullscreen, setIsFullscreen] = useState(false);
+    const [shieldClicks, setShieldClicks] = useState(2);
     const containerRef = useRef<HTMLDivElement>(null);
 
     // Sync fullscreen state with browser changes
@@ -51,6 +52,7 @@ export function SupremePlayer({ servers, title }: SupremePlayerProps) {
     const handleServerChange = (server: SupremeServer) => {
         setCurrentServer(server);
         setIframeKey((k) => k + 1);
+        setShieldClicks(2); // Reset shield on server change
     };
 
     return (
@@ -101,7 +103,70 @@ export function SupremePlayer({ servers, title }: SupremePlayerProps) {
                         allowFullScreen
                     />
 
-                    {/* Floating Zoom Button - Bottom Right (Extreme Edge) */}
+                    {/* AdBlock Shield Overlay */}
+                    {shieldClicks > 0 && (
+                        <div
+                            className="absolute inset-0 z-20 bg-black/60 backdrop-blur-[6px] cursor-pointer flex flex-col items-center justify-center group/shield transition-all duration-500"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                setShieldClicks(prev => prev - 1);
+                            }}
+                        >
+                            <div className="relative">
+                                <div className={cn(
+                                    "absolute inset-0 bg-primary/20 blur-3xl rounded-full transition-all duration-700",
+                                    shieldClicks === 1 ? "bg-orange-500/30 scale-150" : "group-hover/shield:scale-150"
+                                )} />
+                                <div className={cn(
+                                    "relative w-28 h-28 rounded-full flex items-center justify-center shadow-2xl border-4 border-white/10 transition-all duration-500",
+                                    shieldClicks === 1 ? "bg-orange-500 scale-110 rotate-12" : "bg-primary group-hover/shield:scale-110"
+                                )}>
+                                    {shieldClicks === 2 ? (
+                                        <Play className="w-12 h-12 fill-white translate-x-1" />
+                                    ) : (
+                                        <svg className="w-12 h-12 text-white animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
+                                        </svg>
+                                    )}
+                                </div>
+                            </div>
+
+                            <div className="mt-10 text-center space-y-4 max-w-xs px-6">
+                                <p className="text-2xl font-black text-white tracking-tight">
+                                    {shieldClicks === 2 ? "تشغيل آمن" : "تأكيد الحماية"}
+                                </p>
+
+                                <div className={cn(
+                                    "flex items-center gap-2 justify-center px-5 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest transition-colors duration-500",
+                                    shieldClicks === 2
+                                        ? "bg-green-500/10 border border-green-500/20 text-green-500"
+                                        : "bg-orange-500/20 border border-orange-500/30 text-orange-400"
+                                )}>
+                                    <div className={cn(
+                                        "w-2 h-2 rounded-full animate-pulse",
+                                        shieldClicks === 2 ? "bg-green-500" : "bg-orange-500"
+                                    )} />
+                                    {shieldClicks === 2 ? "SHIELD ACTIVE" : "BLOCKING POPUPS... CLICK AGAIN"}
+                                </div>
+
+                                <p className="text-white/40 text-[10px] font-bold leading-relaxed">
+                                    {shieldClicks === 2
+                                        ? "اضغط هنا لبدء المشاهدة بدون إعلانات منبثقة"
+                                        : "نقرة واحدة أخيرة لفتح المشغل بأمان تام"}
+                                </p>
+                            </div>
+
+                            <div className="absolute bottom-10 flex flex-col items-center gap-2">
+                                <div className="flex gap-1.5">
+                                    <div className={cn("w-8 h-1 rounded-full transition-all duration-500", shieldClicks <= 2 ? "bg-primary" : "bg-white/10")} />
+                                    <div className={cn("w-8 h-1 rounded-full transition-all duration-500", shieldClicks <= 1 ? "bg-primary" : "bg-white/10")} />
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
+                    {/* Floating Zoom Button */}
                     <div className="absolute bottom-4 right-4 z-[9999] opacity-100 lg:opacity-0 lg:group-hover/player:opacity-100 transition-opacity">
                         <Button
                             variant="ghost"
