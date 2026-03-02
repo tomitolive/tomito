@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { BackButton } from "@/components/BackButton";
 import { searchMulti, getImageUrl, t } from "@/lib/tmdb";
+import { searchRamadan } from "@/lib/ramadan";
 import { cn } from "@/lib/utils";
 
 type MediaType = "all" | "movie" | "tv" | "person";
@@ -32,9 +33,40 @@ export default function SearchPage() {
     if (!q.trim()) return;
     setIsLoading(true);
     try {
-      const data = await searchMulti(q);
-      setResults(data.results);
-      setTotalResults(data.total_results);
+      const [tmdbData, ramadanResults] = await Promise.all([
+        searchMulti(q),
+        searchRamadan(q)
+      ]);
+
+      // Combine results: Ramadan results first for priority
+      const combined = [...ramadanResults, ...tmdbData.results];
+
+      // Robust normalization for Arabic titles
+      const normalize = (text: string) => {
+        if (!text) return "";
+        return text.toLowerCase()
+          .replace(/^(مسلسل|برنامج)\s+/, "")
+          .replace(/[أإآ]/g, "ا")
+          .replace(/[ى]/g, "ي")
+          .replace(/[ة]/g, "ه")
+          .replace(/\s+/g, " ")
+          .trim();
+      };
+
+      const ramadanTitles = new Set();
+      ramadanResults.forEach(r => {
+        ramadanTitles.add(normalize(r.title));
+        if (r.clean_title) ramadanTitles.add(normalize(r.clean_title));
+      });
+
+      const unique = combined.filter(item => {
+        if (item.isRamadan) return true;
+        const itemTitle = normalize(item.title || item.name || "");
+        return !ramadanTitles.has(itemTitle);
+      });
+
+      setResults(unique);
+      setTotalResults(unique.length);
     } catch (error) {
       console.error("Search error:", error);
     } finally {
@@ -191,6 +223,7 @@ export default function SearchPage() {
                   key={item.id}
                   item={item}
                   type={item.media_type as "movie" | "tv"}
+                  isRamadan={item.isRamadan}
                 />
               );
             })}

@@ -32,12 +32,12 @@ export function MovieCard({
   const releaseDate =
     "release_date" in item ? item.release_date : item.first_air_date;
 
-  const year = releaseDate ? new Date(releaseDate).getFullYear() : "";
+  const year = releaseDate ? new Date(releaseDate).getFullYear() : (item.year || "");
 
   const rating =
     typeof item.vote_average === "number"
       ? item.vote_average.toFixed(1)
-      : "N/A";
+      : (isRamadan || item.isSupreme) ? "9.5" : "N/A";
 
   const ramadanSlug = encodeURIComponent((item.clean_title || title).replace(/\s+/g, "-"));
   const link = (item.isSupreme || isRamadan)
@@ -140,7 +140,7 @@ export function MovieCard({
         ) : null}
 
         <img
-          src={item.isSupreme ? item.poster_path : getImageUrl(item.poster_path, "w500")}
+          src={(item.isSupreme || isRamadan) ? item.poster_path : getImageUrl(item.poster_path, "w500")}
           alt={title}
           className={cn(
             "h-full w-full object-cover transition-transform duration-500",
@@ -157,6 +157,13 @@ export function MovieCard({
           <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
           {rating}
         </div>
+
+        {/* Ramadan Exclusive Badge */}
+        {(item.isSupreme || isRamadan) && (
+          <div className="absolute top-2 left-2 z-20 bg-primary/90 backdrop-blur-md px-2 py-1 rounded-md shadow-lg border border-white/10">
+            <span className="text-[9px] font-black text-white uppercase tracking-widest">حصري</span>
+          </div>
+        )}
 
         {/* Info Slide-up */}
         <div className="absolute bottom-0 left-0 right-0 z-20 p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
