@@ -44,6 +44,17 @@ const AdPopup: React.FC = () => {
         };
     }, [resetAd]);
 
+    // Trigger: Custom event for programatic trigger (e.g. server switch)
+    useEffect(() => {
+        const handleTrigger = () => {
+            resetAd();
+        };
+        window.addEventListener("trigger-ad-popup", handleTrigger);
+        return () => {
+            window.removeEventListener("trigger-ad-popup", handleTrigger);
+        };
+    }, [resetAd]);
+
     useEffect(() => {
         if (!isVisible) return;
 

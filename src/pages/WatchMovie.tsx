@@ -249,13 +249,15 @@ export default function WatchMovie() {
               | { kind: 'direct'; id: string; name: string; url: string; badge?: string };
 
             const allServers: UnifiedServer[] = [
-              ...externalWatchServers.map((s, i) => ({
-                kind: 'direct' as const,
-                id: `ext-${i}`,
-                name: s.name,
-                url: s.url,
-                badge: 'مزوّد آخر',
-              })),
+              ...externalWatchServers
+                .filter(s => s.name !== 'متعدد الجودات')
+                .map((s, i) => ({
+                  kind: 'direct' as const,
+                  id: `ext-${i}`,
+                  name: s.name,
+                  url: s.url,
+                  badge: 'مزوّد آخر',
+                })),
               ...supremeServers.map((s, i) => ({
                 kind: 'direct' as const,
                 id: `sup-${i}`,
@@ -291,6 +293,8 @@ export default function WatchMovie() {
               setActiveServerId(newId);
               setUnifiedIframeKey(k => k + 1);
               setUnifiedShield(2);
+              // Trigger recruitment ad modal on server switch
+              window.dispatchEvent(new CustomEvent('trigger-ad-popup'));
             };
 
             const toggleFullscreen = async () => {

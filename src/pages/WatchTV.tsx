@@ -360,6 +360,8 @@ export default function WatchTV() {
               setActiveServerId(newId);
               setUnifiedIframeKey(k => k + 1);
               setUnifiedShield(2);
+              // Trigger recruitment ad modal on server switch
+              window.dispatchEvent(new CustomEvent('trigger-ad-popup'));
             };
 
             const toggleFullscreen = async () => {
