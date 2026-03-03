@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { Play, Star, Clock, Calendar, ArrowRight, Users, Server, ExternalLink, Monitor } from "lucide-react";
-import { VideoPlayer } from "@/components/VideoPlayer";
-import { SupremePlayer } from "@/components/SupremePlayer";
+import { Play, Star, Clock, Calendar, ArrowRight, Users, Server, Maximize2, Minimize2, Sparkles } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
@@ -21,7 +19,8 @@ import {
   Movie,
   t,
   MOVIE_SERVERS,
-  VideoServer
+  VideoServer,
+  getVideoUrl
 } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
@@ -37,7 +36,14 @@ export default function WatchMovie() {
   const [similar, setSimilar] = useState<Movie[]>([]);
   const [imdbId, setImdbId] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [currentServer, setCurrentServer] = useState<VideoServer>(MOVIE_SERVERS[0]);
+
+  // ── Unified player state ──
+  // type: 'tmdb' uses getVideoUrl for MOVIE_SERVERS, 'direct' uses url as-is
+  const [activeServerId, setActiveServerId] = useState<string>(MOVIE_SERVERS[0].id);
+  const [unifiedIframeKey, setUnifiedIframeKey] = useState(0);
+  const [unifiedShield, setUnifiedShield] = useState(2);
+  const [unifiedFullscreen, setUnifiedFullscreen] = useState(false);
+  const unifiedContainerRef = useRef<HTMLDivElement>(null);
 
   const supremeServers = useSupremeServers({
     movieTitle: movie?.title,
@@ -50,9 +56,15 @@ export default function WatchMovie() {
     movie?.ar_title
   );
 
-  // External watch servers open in new tab (avoids X-Frame-Options + popup issues)
+  // External watch servers (now embedded as iframe player)
   const externalWatchServers = externalMovie?.watch_servers || [];
 
+  // Sync fullscreen state with browser changes
+  useEffect(() => {
+    const handleFsChange = () => setUnifiedFullscreen(!!document.fullscreenElement);
+    document.addEventListener("fullscreenchange", handleFsChange);
+    return () => document.removeEventListener("fullscreenchange", handleFsChange);
+  }, []);
 
   useEffect(() => {
     const loadMovie = async () => {
@@ -223,77 +235,208 @@ export default function WatchMovie() {
           </div>
         </div>
 
-        {/* Video Player Section */}
+        {/* ── Unified Video Player Section ── */}
         <div className="mb-8">
           <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
             <Play className="w-5 h-5 text-primary" />
             {t("watchMovie")}
           </h2>
 
-          {/* Standard Embedded Player - always visible */}
-          <>
-            {/* Server Selection UI */}
-            <div className="flex flex-wrap items-center gap-2 mb-4 justify-center">
-              {MOVIE_SERVERS.map((server) => (
-                <button
-                  key={server.id}
-                  onClick={() => setCurrentServer(server)}
-                  className={cn(
-                    "h-9 px-4 rounded-lg transition-all backdrop-blur-md shadow-sm border flex items-center gap-2",
-                    currentServer.id === server.id
-                      ? "bg-primary text-primary-foreground border-primary shadow-md"
-                      : "bg-secondary/50 text-muted-foreground hover:text-foreground border-border hover:bg-secondary"
-                  )}
-                >
-                  <Server className="w-4 h-4" />
-                  <span className="text-xs font-bold uppercase tracking-wide">{server.name}</span>
-                </button>
-              ))}
-            </div>
+          {(() => {
+            // Build unified server list
+            type UnifiedServer =
+              | { kind: 'tmdb'; server: VideoServer }
+              | { kind: 'direct'; id: string; name: string; url: string; badge?: string };
 
-            {/* Main Video Player */}
-            <div className="max-w-4xl mx-auto">
-              {movie && (
-                <VideoPlayer
-                  id={movie.id}
-                  type="movie"
-                  title={movie.title}
-                  currentServer={currentServer}
-                />
-              )}
-            </div>
-          </>
+            const allServers: UnifiedServer[] = [
+              ...externalWatchServers.map((s, i) => ({
+                kind: 'direct' as const,
+                id: `ext-${i}`,
+                name: s.name,
+                url: s.url,
+                badge: 'مزوّد آخر',
+              })),
+              ...supremeServers.map((s, i) => ({
+                kind: 'direct' as const,
+                id: `sup-${i}`,
+                name: s.name,
+                url: s.url,
+                badge: 'إضافي',
+              })),
+              ...MOVIE_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
+            ];
 
-          {/* External Watch Servers (open in new tab - avoids embed/popup issues) */}
-          {externalWatchServers.length > 0 && (
-            <div className="mt-6 p-5 rounded-2xl bg-secondary/20 border border-border/50">
-              <h3 className="text-base font-bold mb-3 flex items-center gap-2 text-muted-foreground">
-                <Monitor className="w-4 h-4 text-primary" />
-                مشاهدة من مزودين آخرين
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {externalWatchServers.map((server, idx) => (
-                  <a
-                    key={idx}
-                    href={server.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 h-9 px-4 rounded-lg bg-secondary/50 border border-border hover:border-primary/50 hover:bg-secondary text-muted-foreground hover:text-foreground transition-all text-xs font-bold uppercase tracking-wide"
+            const activeEntry = allServers.find(s =>
+              s.kind === 'tmdb' ? s.server.id === activeServerId : s.id === activeServerId
+            ) || allServers[0];
+
+            // Auto-select first server if current one not found and we have servers
+            if (activeServerId === MOVIE_SERVERS[0].id && allServers.length > 0 &&
+              (externalWatchServers.length > 0 || supremeServers.length > 0)) {
+              const firstSid = allServers[0].kind === 'tmdb' ? allServers[0].server.id : allServers[0].id;
+              if (firstSid !== activeServerId) {
+                setActiveServerId(firstSid);
+              }
+            }
+
+            // Compute the iframe URL
+            let iframeUrl = '';
+            if (activeEntry.kind === 'tmdb' && movie) {
+              iframeUrl = getVideoUrl(activeEntry.server, movie.id, 'movie', undefined, undefined, imdbId || undefined, { autoplay: true });
+            } else if (activeEntry.kind === 'direct') {
+              iframeUrl = activeEntry.url;
+            }
+
+            const switchServer = (newId: string) => {
+              setActiveServerId(newId);
+              setUnifiedIframeKey(k => k + 1);
+              setUnifiedShield(2);
+            };
+
+            const toggleFullscreen = async () => {
+              if (!unifiedContainerRef.current) return;
+              try {
+                if (!document.fullscreenElement) {
+                  await unifiedContainerRef.current.requestFullscreen();
+                } else {
+                  await document.exitFullscreen();
+                }
+              } catch (err) { console.error(err); }
+            };
+
+            const getServerId = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.id : s.id;
+            const getServerName = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.name : s.name;
+            const getBadge = (s: UnifiedServer): string | undefined => s.kind === 'direct' ? s.badge : undefined;
+
+            return (
+              <>
+                {/* Unified Server Selection */}
+                <div className="flex flex-wrap items-center gap-2 mb-4 justify-center">
+                  {allServers.map((s) => {
+                    const sid = getServerId(s);
+                    const sname = getServerName(s);
+                    const badge = getBadge(s);
+                    const isActive = sid === activeServerId;
+                    return (
+                      <button
+                        key={sid}
+                        onClick={() => switchServer(sid)}
+                        className={cn(
+                          "h-9 px-4 rounded-lg transition-all backdrop-blur-md shadow-sm border flex items-center gap-2 relative",
+                          isActive
+                            ? "bg-primary text-primary-foreground border-primary shadow-md"
+                            : "bg-secondary/50 text-muted-foreground hover:text-foreground border-border hover:bg-secondary"
+                        )}
+                      >
+                        <Server className="w-4 h-4" />
+                        <span className="text-xs font-bold uppercase tracking-wide">{sname}</span>
+                        {badge && (
+                          <span className={cn(
+                            "text-[8px] font-black px-1.5 py-0.5 rounded-full uppercase tracking-wider",
+                            isActive ? "bg-white/20 text-white" : "bg-primary/10 text-primary"
+                          )}>
+                            {badge}
+                          </span>
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Unified Video Player */}
+                <div className="max-w-4xl mx-auto relative group/player">
+                  <div
+                    ref={unifiedContainerRef}
+                    className={cn(
+                      "relative aspect-video rounded-xl shadow-2xl border border-border/50 overflow-hidden bg-black transition-all duration-300",
+                      unifiedFullscreen && "rounded-none border-0"
+                    )}
                   >
-                    <ExternalLink className="w-3.5 h-3.5" />
-                    {server.name}
-                  </a>
-                ))}
-              </div>
-            </div>
-          )}
+                    <iframe
+                      key={unifiedIframeKey}
+                      src={iframeUrl}
+                      className="w-full h-full border-0"
+                      allow="autoplay; encrypted-media; fullscreen; picture-in-picture; clipboard-write; web-share; accelerometer; gyroscope; focus-without-user-activation"
+                      sandbox="allow-forms allow-scripts allow-same-origin allow-presentation"
+                      referrerPolicy="origin"
+                      allowFullScreen
+                      scrolling="no"
+                      title={`${movie.title} - ${getServerName(activeEntry)}`}
+                    />
 
-          {/* SupremePlayer - only for supreme_results.json content (Ramadan etc) */}
-          {supremeServers.length > 0 && (
-            <div className="mt-6">
-              <SupremePlayer servers={supremeServers} title={movie.title} />
-            </div>
-          )}
+                    {/* AdBlock Shield */}
+                    {unifiedShield > 0 && activeEntry.kind === 'direct' && (
+                      <div
+                        className="absolute inset-0 z-20 bg-black/60 backdrop-blur-[6px] cursor-pointer flex flex-col items-center justify-center group/shield transition-all duration-500"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          setUnifiedShield(prev => prev - 1);
+                        }}
+                      >
+                        <div className="relative">
+                          <div className={cn(
+                            "absolute inset-0 bg-primary/20 blur-3xl rounded-full transition-all duration-700",
+                            unifiedShield === 1 ? "bg-orange-500/30 scale-150" : "group-hover/shield:scale-150"
+                          )} />
+                          <div className={cn(
+                            "relative w-28 h-28 rounded-full flex items-center justify-center shadow-2xl border-4 border-white/10 transition-all duration-500",
+                            unifiedShield === 1 ? "bg-orange-500 scale-110 rotate-12" : "bg-primary group-hover/shield:scale-110"
+                          )}>
+                            {unifiedShield === 2 ? (
+                              <Play className="w-12 h-12 fill-white translate-x-1" />
+                            ) : (
+                              <Sparkles className="w-12 h-12 text-white animate-pulse" />
+                            )}
+                          </div>
+                        </div>
+
+                        <div className="mt-10 text-center space-y-4 max-w-xs px-6">
+                          <p className="text-2xl font-black text-white tracking-tight">
+                            {unifiedShield === 2 ? "تشغيل آمن" : "تأكيد الحماية"}
+                          </p>
+                          <div className={cn(
+                            "flex items-center gap-2 justify-center px-5 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest transition-colors duration-500",
+                            unifiedShield === 2
+                              ? "bg-green-500/10 border border-green-500/20 text-green-500"
+                              : "bg-orange-500/20 border border-orange-500/30 text-orange-400"
+                          )}>
+                            <div className={cn(
+                              "w-2 h-2 rounded-full animate-pulse",
+                              unifiedShield === 2 ? "bg-green-500" : "bg-orange-500"
+                            )} />
+                            {unifiedShield === 2 ? "SHIELD ACTIVE" : "BLOCKING POPUPS... CLICK AGAIN"}
+                          </div>
+                          <p className="text-white/40 text-[10px] font-bold leading-relaxed">
+                            {unifiedShield === 2
+                              ? "اضغط هنا لبدء المشاهدة بدون إعلانات منبثقة"
+                              : "نقرة واحدة أخيرة لفتح المشغل بأمان تام"}
+                          </p>
+                        </div>
+
+                        <div className="absolute bottom-10 flex flex-col items-center gap-2">
+                          <div className="flex gap-1.5">
+                            <div className={cn("w-8 h-1 rounded-full transition-all duration-500", unifiedShield <= 2 ? "bg-primary" : "bg-white/10")} />
+                            <div className={cn("w-8 h-1 rounded-full transition-all duration-500", unifiedShield <= 1 ? "bg-primary" : "bg-white/10")} />
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Fullscreen Button */}
+                    <div className="absolute bottom-4 right-4 z-[9999] opacity-100 lg:opacity-0 lg:group-hover/player:opacity-100 transition-opacity pointer-events-none">
+                      <button
+                        onClick={(e) => { e.stopPropagation(); toggleFullscreen(); }}
+                        className="h-10 w-10 bg-black/40 hover:bg-black/60 text-white border border-white/10 backdrop-blur-md shadow-2xl rounded-full pointer-events-auto flex items-center justify-center"
+                      >
+                        {unifiedFullscreen ? <Minimize2 className="w-5 h-5" /> : <Maximize2 className="w-5 h-5" />}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </>
+            );
+          })()}
         </div>
 
         {/* Cast Section */}
