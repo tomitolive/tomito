@@ -184,7 +184,7 @@ export function WatchRamadanPage() {
 
     const currentEntry = series?.episodes[selectedEpisodeIndex];
     const episodeNumber = currentEntry?.episode_number || (selectedEpisodeIndex + 1);
-    const servers = currentEntry?.watch_servers || [];
+    const servers = (currentEntry?.watch_servers || []).filter(s => !s.name.toLowerCase().includes("streamtape"));
     const activeServer = servers[activeServerIndex];
 
     if (loading) {

@@ -250,7 +250,7 @@ export default function WatchMovie() {
 
             const allServers: UnifiedServer[] = [
               ...externalWatchServers
-                .filter(s => s.name !== 'متعدد الجودات')
+                .filter(s => s.name !== 'متعدد الجودات' && !s.name.toLowerCase().includes("streamtape"))
                 .map((s, i) => ({
                   kind: 'direct' as const,
                   id: `ext-${i}`,
@@ -258,13 +258,15 @@ export default function WatchMovie() {
                   url: s.url,
                   badge: 'مزوّد آخر',
                 })),
-              ...supremeServers.map((s, i) => ({
-                kind: 'direct' as const,
-                id: `sup-${i}`,
-                name: s.name,
-                url: s.url,
-                badge: 'إضافي',
-              })),
+              ...supremeServers
+                .filter(s => !s.name.toLowerCase().includes("streamtape"))
+                .map((s, i) => ({
+                  kind: 'direct' as const,
+                  id: `sup-${i}`,
+                  name: s.name,
+                  url: s.url,
+                  badge: 'إضافي',
+                })),
               ...MOVIE_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
             ];
 
@@ -368,7 +370,7 @@ export default function WatchMovie() {
                     />
 
                     {/* AdBlock Shield */}
-                    {unifiedShield > 0 && activeEntry.kind === 'direct' && (
+                    {unifiedShield > 0 && (
                       <div
                         className="absolute inset-0 z-20 bg-black/60 backdrop-blur-[6px] cursor-pointer flex flex-col items-center justify-center group/shield transition-all duration-500"
                         onClick={(e) => {

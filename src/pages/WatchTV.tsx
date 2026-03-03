@@ -324,13 +324,15 @@ export default function WatchTV() {
               | { kind: 'direct'; id: string; name: string; url: string; badge?: string };
 
             const allServers: UnifiedServer[] = [
-              ...supremeServers.map((s, i) => ({
-                kind: 'direct' as const,
-                id: `sup-${i}`,
-                name: s.name,
-                url: s.url,
-                badge: 'إضافي',
-              })),
+              ...supremeServers
+                .filter(s => !s.name.toLowerCase().includes("streamtape"))
+                .map((s, i) => ({
+                  kind: 'direct' as const,
+                  id: `sup-${i}`,
+                  name: s.name,
+                  url: s.url,
+                  badge: 'إضافي',
+                })),
               ...TV_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
             ];
 
@@ -434,8 +436,8 @@ export default function WatchTV() {
                       title={`${show.name} - ${getServerName(activeEntry)}`}
                     />
 
-                    {/* AdBlock Shield - Only for direct/supreme servers */}
-                    {unifiedShield > 0 && activeEntry.kind === 'direct' && (
+                    {/* AdBlock Shield - All servers */}
+                    {unifiedShield > 0 && (
                       <div
                         className="absolute inset-0 z-20 bg-black/60 backdrop-blur-[6px] cursor-pointer flex flex-col items-center justify-center group/shield transition-all duration-500"
                         onClick={(e) => {
