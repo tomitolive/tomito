@@ -428,7 +428,6 @@ export default function WatchTV() {
                       src={iframeUrl}
                       className="w-full h-full border-0"
                       allow="autoplay; encrypted-media; fullscreen; picture-in-picture; clipboard-write; web-share; accelerometer; gyroscope; focus-without-user-activation"
-                      sandbox="allow-forms allow-scripts allow-same-origin allow-presentation allow-popups allow-popups-to-escape-sandbox allow-downloads allow-modals allow-pointer-lock"
                       referrerPolicy="origin"
                       allowFullScreen
                       scrolling="no"
