@@ -270,13 +270,19 @@ export default function WatchMovie() {
               ...MOVIE_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
             ];
 
+            // Prioritize server_5: find it and move to front
+            const s5Index = allServers.findIndex(s => (s.kind === 'tmdb' && s.server.id === 'server_5') || (s.kind === 'direct' && s.name === 'سيرفر 5'));
+            if (s5Index > -1) {
+              const [s5] = allServers.splice(s5Index, 1);
+              allServers.unshift(s5);
+            }
+
             const activeEntry = allServers.find(s =>
               s.kind === 'tmdb' ? s.server.id === activeServerId : s.id === activeServerId
             ) || allServers[0];
 
-            // Auto-select first server if current one not found and we have servers
-            if (activeServerId === MOVIE_SERVERS[0].id && allServers.length > 0 &&
-              (externalWatchServers.length > 0 || supremeServers.length > 0)) {
+            // Update activeServerId if it's the default and we want to auto-select the now-prioritized first server
+            if (activeServerId === 'server_6' && allServers.length > 0) {
               const firstSid = allServers[0].kind === 'tmdb' ? allServers[0].server.id : allServers[0].id;
               if (firstSid !== activeServerId) {
                 setActiveServerId(firstSid);

@@ -515,8 +515,32 @@ export interface VideoServer {
 
 export const MOVIE_SERVERS: VideoServer[] = [
   {
-    id: 'server_3',
+    id: 'server_5',
+    name: 'سيرفر 5',
+    movieUrl: 'https://vidsrc.me/embed/movie/',
+    tvUrl: 'https://vidsrc.me/embed/tv/',
+    quality: 'HD',
+    icon: 'star',
+    color: '#16a085',
+    description: 'سيرفر احتياطي بديل',
+    useIdType: 'tmdb',
+    subtitles: 'ar'
+  },
+  {
+    id: 'server_6',
     name: 'سيرفر الرئيسي',
+    movieUrl: 'https://moviesapi.club/movie/',
+    tvUrl: 'https://moviesapi.club/tv/',
+    quality: 'HD+',
+    icon: 'database',
+    color: '#e67e22',
+    description: 'سيرفر احتياطي كبير',
+    useIdType: 'tmdb',
+    subtitles: 'ar'
+  },
+  {
+    id: 'server_3',
+    name: 'سيرفر 2',
     movieUrl: 'https://vidsrc-embed.ru/embed/movie/',
     tvUrl: 'https://vidsrc-embed.ru/embed/tv/',
     quality: 'FHD',
@@ -564,30 +588,6 @@ export const MOVIE_SERVERS: VideoServer[] = [
     icon: 'tv',
     color: '#c0392b',
     description: 'سيرفر احتياطي عربي',
-    useIdType: 'tmdb',
-    subtitles: 'ar'
-  },
-  {
-    id: 'server_5',
-    name: 'سيرفر 5',
-    movieUrl: 'https://vidsrc.me/embed/movie/',
-    tvUrl: 'https://vidsrc.me/embed/tv/',
-    quality: 'HD',
-    icon: 'star',
-    color: '#16a085',
-    description: 'سيرفر احتياطي بديل',
-    useIdType: 'tmdb',
-    subtitles: 'ar'
-  },
-  {
-    id: 'server_6',
-    name: 'سيرفر 6',
-    movieUrl: 'https://moviesapi.club/movie/',
-    tvUrl: 'https://moviesapi.club/tv/',
-    quality: 'HD+',
-    icon: 'database',
-    color: '#e67e22',
-    description: 'سيرفر احتياطي كبير',
     useIdType: 'tmdb',
     subtitles: 'ar'
   },
