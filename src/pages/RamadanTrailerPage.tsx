@@ -9,7 +9,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { BackButton } from "@/components/BackButton";
 import { PosterImage } from "@/components/PosterImage";
-import { getImageUrl, searchMulti } from "@/lib/tmdb";
+import { getImageUrl, searchMulti, searchTV, fetchSeasonDetails, TMDB_CONFIG } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
 import { SEO } from "@/components/SEO";
 
@@ -65,9 +65,46 @@ export function RamadanTrailerPage() {
                 );
 
                 if (found) {
-                    setSeries(found);
+                    // Sort episodes by episode_number ascending
+                    const sortedEpisodes = [...found.episodes].sort((a, b) =>
+                        (a.episode_number || 0) - (b.episode_number || 0)
+                    );
+                    const updatedFound = { ...found, episodes: sortedEpisodes };
+                    setSeries(updatedFound);
                     // Use pre-populated poster and backdrop from JSON
-                    setTmdbPoster(found.poster || null);
+                    setTmdbPoster(updatedFound.poster || null);
+
+                    // ── Dynamic TMDB Enrichment ──
+                    try {
+                        const cleanName = updatedFound.clean_title || updatedFound.title;
+                        const searchResult = await searchTV(cleanName);
+                        const hit = searchResult?.results?.[0];
+
+                        if (hit) {
+                            // Default to season 1 for Ramadan series
+                            const seasonDetails = await fetchSeasonDetails(hit.id, 1);
+                            if (seasonDetails?.episodes) {
+                                setSeries(prev => {
+                                    if (!prev) return prev;
+                                    const enrichedEpisodes = prev.episodes.map(ep => {
+                                        const tmdbEp = seasonDetails.episodes.find(
+                                            te => te.episode_number === ep.episode_number
+                                        );
+                                        if (tmdbEp?.still_path) {
+                                            return {
+                                                ...ep,
+                                                poster: `${TMDB_CONFIG.IMG_URL}/w500${tmdbEp.still_path}`
+                                            };
+                                        }
+                                        return ep;
+                                    });
+                                    return { ...prev, episodes: enrichedEpisodes };
+                                });
+                            }
+                        }
+                    } catch (tmdbErr) {
+                        console.error("Failed to enrich with TMDB data:", tmdbErr);
+                    }
                 }
             } catch (err) {
                 console.error("Failed to load Ramadan trailer data:", err);
@@ -212,45 +249,51 @@ export function RamadanTrailerPage() {
                                 </div>
                             </div>
 
-                            <div className="grid grid-cols-1 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                                 {series.episodes?.map((ep, idx) => {
                                     const epNum = ep.episode_number || (idx + 1);
                                     return (
                                         <div key={ep.id} className="group relative">
-                                            <div className="relative bg-card/40 border border-border rounded-2xl p-4 lg:p-6 flex flex-col lg:flex-row lg:items-center justify-between gap-6 transition-all duration-300 hover:bg-card/60 hover:border-primary/20 hover:translate-x-1">
-                                                <div className="flex items-center gap-4">
-                                                    <div className="relative w-12 h-12 md:w-14 md:h-14 flex-shrink-0">
-                                                        <div className="absolute inset-0 bg-primary/5 rounded-xl rotate-3 group-hover:rotate-6 transition-transform duration-300" />
-                                                        <div className="relative w-full h-full bg-background border border-border rounded-xl flex items-center justify-center font-black text-primary text-xl md:text-2xl shadow-sm">
-                                                            {epNum}
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <h4 className="text-sm md:text-base font-bold group-hover:text-primary transition-colors">الحلقة {epNum}</h4>
-                                                        <div className="flex items-center gap-2 mt-1 opacity-50">
-                                                            <span className="text-[8px] font-black uppercase tracking-wider">Ready to Stream</span>
-                                                            <div className="w-1 h-1 bg-border rounded-full" />
-                                                            <span className="text-[8px] font-black uppercase tracking-wider">Full HD 1080p</span>
-                                                        </div>
+                                            <div className="relative bg-card/40 border border-border rounded-2xl p-4 flex flex-col gap-4 transition-all duration-300 hover:bg-card/60 hover:border-primary/20 hover:-translate-y-1 hover:shadow-xl">
+                                                {/* Episode Thumbnail */}
+                                                <div className="relative aspect-video rounded-xl overflow-hidden bg-muted">
+                                                    <img
+                                                        src={ep.poster || tmdbPoster || series.poster}
+                                                        alt={`الحلقة ${epNum}`}
+                                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                                        onError={(e) => {
+                                                            (e.target as HTMLImageElement).src = "/placeholder.svg";
+                                                        }}
+                                                    />
+                                                    <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
+                                                    <div className="absolute top-2 right-2 bg-black/80 backdrop-blur-md px-2 py-1 rounded-lg text-[10px] font-black text-white">
+                                                        EP {epNum}
                                                     </div>
                                                 </div>
 
-                                                <div className="flex flex-wrap items-center gap-3">
-                                                    <Link to={`/watch-ramadan/${encodeURIComponent(seriesName.replace(/\s+/g, "-"))}?episode=${epNum}`} className="flex-grow sm:flex-grow-0">
-                                                        <Button className="w-full sm:w-auto h-11 px-6 rounded-xl font-bold text-sm gap-3 transition-all">
-                                                            <Play className="w-4 h-4 fill-current" />
-                                                            ابدأ المشاهدة
-                                                        </Button>
-                                                    </Link>
+                                                <div className="space-y-4">
+                                                    <div>
+                                                        <h4 className="text-sm font-bold group-hover:text-primary transition-colors line-clamp-1">الحلقة {epNum}</h4>
+                                                        <p className="text-[9px] text-muted-foreground mt-1 font-bold uppercase tracking-wider">Ready to Stream • 1080p</p>
+                                                    </div>
 
-                                                    {ep.download_links && ep.download_links.length > 0 && (
-                                                        <Link to={`/ramadan-download/${encodeURIComponent(seriesName.replace(/\s+/g, "-"))}?episode=${epNum}`} className="flex-grow sm:flex-grow-0">
-                                                            <Button variant="secondary" className="w-full sm:w-auto h-11 px-5 rounded-xl font-bold text-sm gap-3 border border-border hover:bg-accent transition-all">
-                                                                <Download className="w-4 h-4" />
-                                                                تحميل الحلقة
+                                                    <div className="grid grid-cols-2 gap-2">
+                                                        <Link to={`/watch-ramadan/${encodeURIComponent(seriesName.replace(/\s+/g, "-"))}?episode=${epNum}`} className="w-full">
+                                                            <Button className="w-full h-9 rounded-xl font-bold text-[10px] gap-2">
+                                                                <Play className="w-3.5 h-3.5 fill-current" />
+                                                                مشاهدة
                                                             </Button>
                                                         </Link>
-                                                    )}
+
+                                                        {ep.download_links && ep.download_links.length > 0 && (
+                                                            <Link to={`/ramadan-download/${encodeURIComponent(seriesName.replace(/\s+/g, "-"))}?episode=${epNum}`} className="w-full">
+                                                                <Button variant="secondary" className="w-full h-9 rounded-xl font-bold text-[10px] gap-2 border border-border">
+                                                                    <Download className="w-3.5 h-3.5" />
+                                                                    تحميل
+                                                                </Button>
+                                                            </Link>
+                                                        )}
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

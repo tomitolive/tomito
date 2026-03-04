@@ -57,11 +57,23 @@ export default function RamadanPage() {
                 const response = await fetch("/ramadan_2026_results_light.json");
                 const data: SeriesItem[] = await response.json();
 
-                // Initialize allPosters for fallback handling using pre-populated metadata
-                const initialSeries = data.map(item => ({
-                    ...item,
-                    allPosters: item.poster ? [item.poster] : []
-                }));
+                // Initialize allPosters and prefer TMDB posters
+                const initialSeries = data.map(item => {
+                    const posters = item.poster ? [item.poster] : [];
+                    // Sort posters to put TMDB first
+                    const sortedPosters = [...posters].sort((a, b) => {
+                        const isTmdbA = a.includes("tmdb.org");
+                        const isTmdbB = b.includes("tmdb.org");
+                        if (isTmdbA && !isTmdbB) return -1;
+                        if (!isTmdbA && isTmdbB) return 1;
+                        return 0;
+                    });
+                    return {
+                        ...item,
+                        poster: sortedPosters[0] || item.poster,
+                        allPosters: sortedPosters
+                    };
+                });
 
                 setAllSeries(initialSeries);
             } catch (error) {
@@ -87,19 +99,17 @@ export default function RamadanPage() {
 
         // Sorting Logic:
         // 1. isSupreme (Priority)
-        // 2. Has TMDB poster (or high-quality poster)
-        // 3. Alphabetical / Original
+        // 2. Has TMDB poster
+        // 3. Alphabetical
         return [...filtered].sort((a, b) => {
-            // First priority: isSupreme
             if (a.isSupreme && !b.isSupreme) return -1;
             if (!a.isSupreme && b.isSupreme) return 1;
 
-            // Second priority: Has high-quality image (from allPosters or if poster isn't a placeholder)
-            const hasImageA = a.poster && !a.poster.includes("placeholder") && !a.poster.includes("original/undefined");
-            const hasImageB = b.poster && !b.poster.includes("placeholder") && !b.poster.includes("original/undefined");
+            const isTmdbA = a.poster && a.poster.includes("tmdb.org");
+            const isTmdbB = b.poster && b.poster.includes("tmdb.org");
 
-            if (hasImageA && !hasImageB) return -1;
-            if (!hasImageA && hasImageB) return 1;
+            if (isTmdbA && !isTmdbB) return -1;
+            if (!isTmdbA && isTmdbB) return 1;
 
             return 0;
         });
@@ -193,7 +203,7 @@ export default function RamadanPage() {
 
                 {/* ── Premium Series Grid ── */}
                 {sortedAndFiltered.length > 0 ? (
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-8 gap-y-12 sm:gap-x-12 sm:gap-y-16">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-4 gap-y-10 sm:gap-x-6 sm:gap-y-12">
                         {sortedAndFiltered.map((series, idx) => (
                             <Link
                                 key={series.id}

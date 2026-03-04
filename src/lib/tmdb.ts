@@ -422,6 +422,11 @@ export async function searchMulti(query: string, page = 1) {
   return fetchAndMergeLocale(url, page);
 }
 
+export async function searchTV(query: string, page = 1) {
+  const url = `${TMDB_CONFIG.BASE_URL}/search/tv?api_key=${TMDB_CONFIG.API_KEY}&query=${encodeURIComponent(query)}`;
+  return fetchAndMergeLocale(url, page);
+}
+
 export async function fetchVideos(id: number, type: "movie" | "tv") {
   const response = await fetch(
     `${TMDB_CONFIG.BASE_URL}/${type}/${id}/videos?api_key=${TMDB_CONFIG.API_KEY}`

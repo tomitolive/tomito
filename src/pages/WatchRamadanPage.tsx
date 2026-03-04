@@ -10,6 +10,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { BackButton } from "@/components/BackButton";
 import { cn } from "@/lib/utils";
+import { searchTV, fetchSeasonDetails, TMDB_CONFIG } from "@/lib/tmdb";
 
 interface WatchServer {
     name: string;
@@ -130,19 +131,57 @@ export function WatchRamadanPage() {
                 );
 
                 if (found) {
-                    setSeries(found);
+                    // Sort episodes by episode_number ascending
+                    const sortedEpisodes = [...found.episodes].sort((a, b) =>
+                        (a.episode_number || 0) - (b.episode_number || 0)
+                    );
+                    const updatedFound = { ...found, episodes: sortedEpisodes };
+
+                    setSeries(updatedFound);
                     const urlEpNum = parseInt(searchParams.get("episode") || "0");
                     let epIdx = 0;
                     if (urlEpNum > 0) {
-                        const idx = found.episodes.findIndex(
+                        const idx = updatedFound.episodes.findIndex(
                             (e) => (e.episode_number === urlEpNum)
                         );
                         if (idx !== -1) epIdx = idx;
                     }
                     setSelectedEpisodeIndex(epIdx);
                     // Default to VK server
-                    const servers = found.episodes[epIdx]?.watch_servers || [];
+                    const servers = updatedFound.episodes[epIdx]?.watch_servers || [];
                     setActiveServerIndex(findVKIndex(servers));
+
+                    // ── Dynamic TMDB Enrichment ──
+                    try {
+                        const cleanName = updatedFound.clean_title || updatedFound.title;
+                        const searchResult = await searchTV(cleanName);
+                        const hit = searchResult?.results?.[0];
+
+                        if (hit) {
+                            // Default to season 1 for Ramadan series
+                            const seasonDetails = await fetchSeasonDetails(hit.id, 1);
+                            if (seasonDetails?.episodes) {
+                                setSeries(prev => {
+                                    if (!prev) return prev;
+                                    const enrichedEpisodes = prev.episodes.map(ep => {
+                                        const tmdbEp = seasonDetails.episodes.find(
+                                            te => te.episode_number === ep.episode_number
+                                        );
+                                        if (tmdbEp?.still_path) {
+                                            return {
+                                                ...ep,
+                                                poster: `${TMDB_CONFIG.IMG_URL}/w500${tmdbEp.still_path}`
+                                            };
+                                        }
+                                        return ep;
+                                    });
+                                    return { ...prev, episodes: enrichedEpisodes };
+                                });
+                            }
+                        }
+                    } catch (tmdbErr) {
+                        console.error("Failed to enrich with TMDB data:", tmdbErr);
+                    }
                 }
             } catch (error) {
                 console.error("Failed to load WatchRamadanPage data:", error);
@@ -450,7 +489,7 @@ export function WatchRamadanPage() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-3 max-h-[70vh] overflow-y-auto pr-2 no-scrollbar p-1">
+                        <div className="grid grid-cols-2 gap-3 max-h-[70vh] overflow-y-auto pr-2 no-scrollbar p-1">
                             {series.episodes.map((ep, index) => {
                                 const epNum = ep.episode_number || (index + 1);
                                 const isActive = index === selectedEpisodeIndex;
@@ -459,53 +498,36 @@ export function WatchRamadanPage() {
                                         key={ep.id}
                                         onClick={() => selectEpisode(index)}
                                         className={cn(
-                                            "group relative flex items-center gap-3.5 p-3.5 rounded-2xl border text-right transition-all duration-300 focus:outline-none",
+                                            "group relative flex flex-col p-2 rounded-xl border text-right transition-all duration-300 focus:outline-none",
                                             isActive
                                                 ? "bg-primary border-primary shadow-lg shadow-primary/20"
                                                 : "bg-card/50 border-border hover:bg-accent hover:border-primary/20 active:scale-95"
                                         )}
                                     >
                                         {/* Thumbnail Container */}
-                                        <div className="relative w-24 aspect-video rounded-xl overflow-hidden flex-shrink-0 bg-muted shadow-lg">
-                                            <EpisodeThumbnail src={ep.poster} alt={`الحلقة ${epNum}`} />
+                                        <div className="relative aspect-video rounded-lg overflow-hidden bg-muted shadow-sm mb-2">
+                                            <EpisodeThumbnail src={ep.poster || series.poster} alt={`الحلقة ${epNum}`} />
                                             {isActive ? (
                                                 <div className="absolute inset-0 bg-primary/40 backdrop-blur-[1px] flex items-center justify-center">
-                                                    <div className="flex gap-1">
-                                                        {[3, 5, 2].map((h, i) => (
-                                                            <div
-                                                                key={i}
-                                                                className="w-1 bg-white rounded-full animate-bounce"
-                                                                style={{ height: `${h * 4}px`, animationDelay: `${i * 0.2}s` }}
-                                                            />
-                                                        ))}
-                                                    </div>
+                                                    <Play className="w-6 h-6 fill-white" />
                                                 </div>
                                             ) : (
                                                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                                                    <Play className="w-5 h-5 fill-white drop-shadow-xl" />
+                                                    <Play className="w-6 h-6 fill-white drop-shadow-xl" />
                                                 </div>
                                             )}
+                                            <div className="absolute top-1 right-1 bg-black/80 px-1.5 py-0.5 rounded text-[8px] font-black text-white">
+                                                EP {epNum}
+                                            </div>
                                         </div>
 
                                         {/* Episode Info */}
-                                        <div className="min-w-0 pr-1">
+                                        <div className="min-w-0">
                                             <p className={cn(
-                                                "text-[8px] font-black uppercase tracking-widest mb-0.5",
-                                                isActive ? "text-white/60" : "text-primary"
-                                            )}>EPISODE {epNum}</p>
-                                            <p className={cn(
-                                                "font-bold text-base truncate leading-tight",
+                                                "font-bold text-xs truncate leading-tight",
                                                 isActive ? "text-white" : "text-foreground group-hover:text-primary"
                                             )}>الحلقة {epNum}</p>
-                                            <p className={cn(
-                                                "text-[8px] font-bold mt-1 text-muted-foreground/50",
-                                                isActive && "text-white/50"
-                                            )}>Full HD 1080p</p>
                                         </div>
-
-                                        {isActive && (
-                                            <div className="absolute -left-1 w-2 h-10 bg-white rounded-full translate-y-[-50%] top-1/2" />
-                                        )}
                                     </button>
                                 );
                             })}
