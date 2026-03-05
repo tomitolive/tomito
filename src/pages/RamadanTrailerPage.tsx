@@ -55,14 +55,10 @@ export function RamadanTrailerPage() {
     useEffect(() => {
         const loadData = async () => {
             try {
-                const response = await fetch("/ramadan_2026_results.json");
-                const data: SeriesItem[] = await response.json();
-
-                const normalize = (s: string) => s.replace(/-/g, " ").replace(/\s+/g, " ").trim().toLowerCase();
-                const found = data.find(item =>
-                    (item.clean_title && normalize(item.clean_title) === normalize(seriesName)) ||
-                    (item.title && normalize(item.title) === normalize(seriesName))
-                );
+                // Fetch granular JSON for instant loading
+                const response = await fetch(`/ramadan-data/${slug}.json`);
+                if (!response.ok) throw new Error("Series not found");
+                const found: SeriesItem = await response.json();
 
                 if (found) {
                     // Sort episodes by episode_number ascending
@@ -74,37 +70,8 @@ export function RamadanTrailerPage() {
                     // Use pre-populated poster and backdrop from JSON
                     setTmdbPoster(updatedFound.poster || null);
 
-                    // ── Dynamic TMDB Enrichment ──
-                    try {
-                        const cleanName = updatedFound.clean_title || updatedFound.title;
-                        const searchResult = await searchTV(cleanName);
-                        const hit = searchResult?.results?.[0];
-
-                        if (hit) {
-                            // Default to season 1 for Ramadan series
-                            const seasonDetails = await fetchSeasonDetails(hit.id, 1);
-                            if (seasonDetails?.episodes) {
-                                setSeries(prev => {
-                                    if (!prev) return prev;
-                                    const enrichedEpisodes = prev.episodes.map(ep => {
-                                        const tmdbEp = seasonDetails.episodes.find(
-                                            te => te.episode_number === ep.episode_number
-                                        );
-                                        if (tmdbEp?.still_path) {
-                                            return {
-                                                ...ep,
-                                                poster: `${TMDB_CONFIG.IMG_URL}/w500${tmdbEp.still_path}`
-                                            };
-                                        }
-                                        return ep;
-                                    });
-                                    return { ...prev, episodes: enrichedEpisodes };
-                                });
-                            }
-                        }
-                    } catch (tmdbErr) {
-                        console.error("Failed to enrich with TMDB data:", tmdbErr);
-                    }
+                    // Note: TMDB Enrichment is now handled server-side/during data merge
+                    // to ensure all images (posters, backdrops, stills) are consistent and high-quality.
                 }
             } catch (err) {
                 console.error("Failed to load Ramadan trailer data:", err);
@@ -113,7 +80,7 @@ export function RamadanTrailerPage() {
             }
         };
         loadData();
-    }, [seriesName]);
+    }, [slug]);
 
     if (loading) {
         return (

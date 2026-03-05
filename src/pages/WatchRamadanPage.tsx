@@ -122,13 +122,10 @@ export function WatchRamadanPage() {
     useEffect(() => {
         const loadData = async () => {
             try {
-                const response = await fetch("/ramadan_2026_results.json");
-                const data: SeriesItem[] = await response.json();
-
-                const found = data.find(item =>
-                    (item.clean_title && item.clean_title.toLowerCase() === seriesName.toLowerCase()) ||
-                    (item.title && item.title.toLowerCase() === seriesName.toLowerCase())
-                );
+                // Fetch granular JSON for instant loading
+                const response = await fetch(`/ramadan-data/${slug}.json`);
+                if (!response.ok) throw new Error("Series not found");
+                const found: SeriesItem = await response.json();
 
                 if (found) {
                     // Sort episodes by episode_number ascending
@@ -151,37 +148,8 @@ export function WatchRamadanPage() {
                     const servers = updatedFound.episodes[epIdx]?.watch_servers || [];
                     setActiveServerIndex(findVKIndex(servers));
 
-                    // ── Dynamic TMDB Enrichment ──
-                    try {
-                        const cleanName = updatedFound.clean_title || updatedFound.title;
-                        const searchResult = await searchTV(cleanName);
-                        const hit = searchResult?.results?.[0];
-
-                        if (hit) {
-                            // Default to season 1 for Ramadan series
-                            const seasonDetails = await fetchSeasonDetails(hit.id, 1);
-                            if (seasonDetails?.episodes) {
-                                setSeries(prev => {
-                                    if (!prev) return prev;
-                                    const enrichedEpisodes = prev.episodes.map(ep => {
-                                        const tmdbEp = seasonDetails.episodes.find(
-                                            te => te.episode_number === ep.episode_number
-                                        );
-                                        if (tmdbEp?.still_path) {
-                                            return {
-                                                ...ep,
-                                                poster: `${TMDB_CONFIG.IMG_URL}/w500${tmdbEp.still_path}`
-                                            };
-                                        }
-                                        return ep;
-                                    });
-                                    return { ...prev, episodes: enrichedEpisodes };
-                                });
-                            }
-                        }
-                    } catch (tmdbErr) {
-                        console.error("Failed to enrich with TMDB data:", tmdbErr);
-                    }
+                    // Note: TMDB Enrichment is now handled server-side/during data merge
+                    // to ensure all images (posters, backdrops, stills) are consistent and high-quality.
                 }
             } catch (error) {
                 console.error("Failed to load WatchRamadanPage data:", error);
@@ -191,7 +159,7 @@ export function WatchRamadanPage() {
         };
 
         loadData();
-    }, [seriesName]);
+    }, [slug, searchParams]);
 
     // Keep URL in sync with current episode without triggering redundant state updates
     useEffect(() => {
@@ -230,12 +198,22 @@ export function WatchRamadanPage() {
         return (
             <div className="min-h-screen bg-background text-foreground">
                 <Navbar />
-                <div className="pt-32 flex flex-col items-center justify-center gap-6">
-                    <div className="relative">
-                        <div className="w-16 h-16 border-4 border-primary/20 rounded-full" />
-                        <div className="absolute inset-0 w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin" />
+                <main className="max-w-[1550px] mx-auto px-4 pt-32 pb-24">
+                    <div className="grid lg:grid-cols-[1fr_300px] gap-10 lg:gap-14">
+                        <div className="space-y-8">
+                            <div className="aspect-video bg-muted/20 animate-pulse rounded-xl" />
+                            <div className="h-64 bg-muted/10 animate-pulse rounded-3xl" />
+                        </div>
+                        <div className="space-y-6">
+                            <div className="h-8 bg-muted/20 animate-pulse rounded-lg w-1/2" />
+                            <div className="grid grid-cols-2 gap-3">
+                                {[...Array(6)].map((_, i) => (
+                                    <div key={i} className="aspect-video bg-muted/10 animate-pulse rounded-xl" />
+                                ))}
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </main>
             </div>
         );
     }

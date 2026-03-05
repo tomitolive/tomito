@@ -44,13 +44,10 @@ export function RamadanDownloadPage() {
     useEffect(() => {
         const loadData = async () => {
             try {
-                const response = await fetch("/ramadan_2026_results.json");
-                const data: SeriesItem[] = await response.json();
-
-                const found = data.find(item =>
-                    (item.clean_title && item.clean_title.toLowerCase() === seriesName.toLowerCase()) ||
-                    (item.title && item.title.toLowerCase() === seriesName.toLowerCase())
-                );
+                // Fetch granular JSON for instant loading
+                const response = await fetch(`/ramadan-data/${slug}.json`);
+                if (!response.ok) throw new Error("Series not found");
+                const found: SeriesItem = await response.json();
 
                 if (found) {
                     setSeries(found);
@@ -62,7 +59,7 @@ export function RamadanDownloadPage() {
             }
         };
         loadData();
-    }, [seriesName]);
+    }, [slug]);
 
     if (loading) {
         return (

@@ -161,8 +161,47 @@ def robust_merge(sources, output_path):
     print(f"Writing to {output_path}...")
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(final_list, f, ensure_ascii=False, indent=2)
+    
+    # --- Split into individual files for Watch Page Performance ---
+    data_dir = "public/ramadan-data"
+    if not os.path.exists(data_dir):
+        os.makedirs(data_dir)
+        print(f"Created directory: {data_dir}")
+    
+    print(f"Splitting into individual files in {data_dir}...")
+    for s in final_list:
+        slug_title = s.get('clean_title') or clean_title(s.get('title'))
+        # Generate slug consistent with frontend
+        slug = slug_title.replace(" ", "-")
+        # Handle characters that might be problematic in filenames but allow Arabic
+        # We just need it to match the JS encodeURIComponent / decodeURIComponent logic
+        # Actually, for filenames, simple dash replace is usually enough if we are careful
         
+        file_path = os.path.join(data_dir, f"{slug}.json")
+        with open(file_path, 'w', encoding='utf-8') as f:
+            json.dump(s, f, ensure_ascii=False, indent=2)
+            
     print(f"Final stats: {len(final_list)} series, {sum(len(s['episodes']) for s in final_list)} episodes.")
+
+    # --- Generate Lightweight JSON for Main Grid ---
+    light_list = []
+    for s in final_list:
+        light_list.append({
+            "id": s.get("id"),
+            "title": s.get("title"),
+            "clean_title": s.get("clean_title"),
+            "poster": s.get("poster"),
+            "backdrop": s.get("backdrop"),
+            "description": s.get("description"),
+            "year": s.get("year", "2026"),
+            "isSupreme": s.get("isSupreme", False),
+            "episode_count": len(s.get("episodes", []))
+        })
+    
+    light_path = "public/ramadan_2026_results_light.json"
+    print(f"Writing lightweight JSON to {light_path}...")
+    with open(light_path, 'w', encoding='utf-8') as f:
+        json.dump(light_list, f, ensure_ascii=False, indent=2)
 
 if __name__ == "__main__":
     sources = [
