@@ -258,10 +258,10 @@ export async function fetchTrending(mediaType: "movie" | "tv" = "movie", timeWin
 
 export async function fetchPopular(mediaType: "movie" | "tv" = "movie", page = 1) {
   const url = `${TMDB_CONFIG.BASE_URL}/${mediaType}/popular?api_key=${TMDB_CONFIG.API_KEY}`;
-  
+
   const data = await fetchAndMergeLocale(url, page);
   if (data.results) {
-    data.results = data.results.filter((item: any) => 
+    data.results = data.results.filter((item: any) =>
       item.name !== "Tagesschau" && item.original_name !== "Tagesschau"
     );
   }
@@ -649,8 +649,38 @@ export const MOVIE_SERVERS: VideoServer[] = [
 export const TV_SERVERS: VideoServer[] = [
   {
     id: 'vidsrc_embed',
-    name: '🎬 سيرفر',
+    name: '🎬 vidsrc.ru',
     baseUrl: 'https://vidsrc-embed.ru/embed/tv',
+    quality: 'HD',
+    icon: 'film',
+    color: '#e74c3c',
+    supportsSeasons: true,
+    format: '{id}/{season}/{episode}'
+  },
+  {
+    id: 'vidsrc_embed_su',
+    name: '🎬 vidsrc.su',
+    baseUrl: 'https://vidsrc-embed.su/embed/tv',
+    quality: 'HD',
+    icon: 'film',
+    color: '#e74c3c',
+    supportsSeasons: true,
+    format: '{id}/{season}/{episode}'
+  },
+  {
+    id: 'vidsrcme_su',
+    name: '🎬 vidsrcme.su',
+    baseUrl: 'https://vidsrcme.su/embed/tv',
+    quality: 'HD',
+    icon: 'film',
+    color: '#e74c3c',
+    supportsSeasons: true,
+    format: '{id}/{season}/{episode}'
+  },
+  {
+    id: 'vsrc_su',
+    name: '🎬 vsrc.su',
+    baseUrl: 'https://vsrc.su/embed/tv',
     quality: 'HD',
     icon: 'film',
     color: '#e74c3c',
