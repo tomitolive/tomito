@@ -258,7 +258,14 @@ export async function fetchTrending(mediaType: "movie" | "tv" = "movie", timeWin
 
 export async function fetchPopular(mediaType: "movie" | "tv" = "movie", page = 1) {
   const url = `${TMDB_CONFIG.BASE_URL}/${mediaType}/popular?api_key=${TMDB_CONFIG.API_KEY}`;
-  return fetchAndMergeLocale(url, page);
+  
+  const data = await fetchAndMergeLocale(url, page);
+  if (data.results) {
+    data.results = data.results.filter((item: any) => 
+      item.name !== "Tagesschau" && item.original_name !== "Tagesschau"
+    );
+  }
+  return data;
 }
 
 export async function fetchTopRated(mediaType: "movie" | "tv" = "movie", page = 1) {
