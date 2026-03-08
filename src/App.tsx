@@ -23,6 +23,7 @@ import { WatchRamadanPage } from "./pages/WatchRamadanPage";
 import { RamadanTrailerPage } from "./pages/RamadanTrailerPage";
 import { RamadanDownloadPage } from "./pages/RamadanDownloadPage";
 import SeriesDownloadList from "./pages/SeriesDownloadList";
+import { useIsMobile } from "./hooks/use-mobile";
 
 
 
@@ -30,6 +31,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { TooltipProvider } from "./components/ui/tooltip";
 
 function App() {
+  const isMobile = useIsMobile();
   return (
     <HelmetProvider>
       <ThemeProvider>
@@ -38,8 +40,7 @@ function App() {
 
             <Router>
               <GoogleAnalytics />
-              {/* <AdPopup /> */}
-              <AdManager />
+              {isMobile ? <AdPopup /> : <AdManager />}
               <Routes>
                 <Route path="/" element={<Home />} />
                 {/* Trailer pages - shown first when clicking on content */}

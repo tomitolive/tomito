@@ -6,6 +6,8 @@ const AD_URLS = [
     "https://www.effectivegatecpm.com/c9ctjvq7a?key=676182e8578e3502074cce1ff7c1e0b5",
     "https://www.effectivegatecpm.com/c9ypfz5and?key=2fb5110bcc456ed6f2662a281991b682",
     "https://www.effectivegatecpm.com/jsmds4sje?key=f4a2480b6a059baee6bfa7a01f6c4cad",
+    "https://www.effectivegatecpm.com/zqp1gwkp?key=00c57a06237869e67f5dcd8b4827f5a7",
+    "https://www.effectivegatecpm.com/us5ctnac?key=aebc978279e0d73b57aea0a428a06b24"
 ];
 
 const AdPopup: React.FC = () => {
