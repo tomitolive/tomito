@@ -13,6 +13,7 @@ import TVTrailer from "./pages/TVTrailer";
 import ActorPage from "./pages/ActorPage";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import AdPopup from "./components/AdPopup";
+import AdManager from "./components/AdManager";
 import CompanyContent from "./pages/CompanyContent";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -37,7 +38,8 @@ function App() {
 
             <Router>
               <GoogleAnalytics />
-              <AdPopup />
+              {/* <AdPopup /> */}
+              <AdManager />
               <Routes>
                 <Route path="/" element={<Home />} />
                 {/* Trailer pages - shown first when clicking on content */}
