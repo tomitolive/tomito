@@ -2,10 +2,10 @@ import React, { useState, useEffect, useCallback } from "react";
 import { useLocation } from "react-router-dom";
 
 const AD_URLS = [
-    "https://www.effectivegatecpm.com/ugkzyij0?key=7b72564910a2bebc2f23a80e99bb76d8",
-    "https://www.effectivegatecpm.com/vzpabvps?key=f479de2b93d7e39b9dc37b31e77b45d1",
-    "https://www.effectivegatecpm.com/zqp1gwkp?key=00c57a06237869e67f5dcd8b4827f5a7",
-    "https://www.effectivegatecpm.com/us5ctnac?key=aebc978279e0d73b57aea0a428a06b24"
+    "https://balkliving.com/tszteupt7k?key=81f8a8dff730e45c2dd693d8fe4f3c49",
+    "https://balkliving.com/tn2f6xe981?key=dc322fc006af4453947abd7a67780582",
+    "https://balkliving.com/in0iu3cky7?key=6f366a7f8746e36745b518826f053222",
+    "https://balkliving.com/p40u8jfv?key=21e8367c927eba15a77babca508f1d47",
 ];
 
 const AdPopup: React.FC = () => {
