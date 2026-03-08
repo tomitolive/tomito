@@ -2,10 +2,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import { useLocation } from "react-router-dom";
 
 const AD_URLS = [
-    "https://www.effectivegatecpm.com/dgu0qrka?key=c4910c58837838bcdfd2133530744a67",
-    "https://www.effectivegatecpm.com/c9ctjvq7a?key=676182e8578e3502074cce1ff7c1e0b5",
-    "https://www.effectivegatecpm.com/c9ypfz5and?key=2fb5110bcc456ed6f2662a281991b682",
-    "https://www.effectivegatecpm.com/jsmds4sje?key=f4a2480b6a059baee6bfa7a01f6c4cad",
+    "https://www.effectivegatecpm.com/ugkzyij0?key=7b72564910a2bebc2f23a80e99bb76d8",
+    "https://www.effectivegatecpm.com/vzpabvps?key=f479de2b93d7e39b9dc37b31e77b45d1",
     "https://www.effectivegatecpm.com/zqp1gwkp?key=00c57a06237869e67f5dcd8b4827f5a7",
     "https://www.effectivegatecpm.com/us5ctnac?key=aebc978279e0d73b57aea0a428a06b24"
 ];
