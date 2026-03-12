@@ -55,8 +55,8 @@ export function RamadanTrailerPage() {
     useEffect(() => {
         const loadData = async () => {
             try {
-                // Fetch granular JSON for instant loading
-                const response = await fetch(`/ramadan-data/${slug}.json`);
+                // Fetch granular JSON from new data directory
+                const response = await fetch(`/data/ramadan/${slug}.json`);
                 if (!response.ok) throw new Error("Series not found");
                 const found: SeriesItem = await response.json();
 

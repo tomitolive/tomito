@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { BackButton } from "@/components/BackButton";
 import { cn } from "@/lib/utils";
 import { searchTV, fetchSeasonDetails, TMDB_CONFIG } from "@/lib/tmdb";
+import { SupremePlayer } from "@/components/SupremePlayer";
 
 interface WatchServer {
     name: string;
@@ -83,33 +84,6 @@ export function WatchRamadanPage() {
     const [loading, setLoading] = useState(true);
     const [series, setSeries] = useState<SeriesItem | null>(null);
     const [selectedEpisodeIndex, setSelectedEpisodeIndex] = useState(0);
-    const [activeServerIndex, setActiveServerIndex] = useState(0);
-    const [iframeKey, setIframeKey] = useState(0);
-    const [isFullscreen, setIsFullscreen] = useState(false);
-    const [shieldClicks, setShieldClicks] = useState(2);
-    const containerRef = useRef<HTMLDivElement>(null);
-
-    // Sync fullscreen state with browser changes
-    useEffect(() => {
-        const handleFullscreenChange = () => {
-            setIsFullscreen(!!document.fullscreenElement);
-        };
-        document.addEventListener("fullscreenchange", handleFullscreenChange);
-        return () => document.removeEventListener("fullscreenchange", handleFullscreenChange);
-    }, []);
-
-    const toggleFullscreen = async () => {
-        if (!containerRef.current) return;
-        try {
-            if (!document.fullscreenElement) {
-                await containerRef.current.requestFullscreen();
-            } else {
-                await document.exitFullscreen();
-            }
-        } catch (err) {
-            console.error("Fullscreen error:", err);
-        }
-    };
 
     const seriesName = decodeURIComponent(slug || "").replace(/-/g, " ");
 
@@ -122,8 +96,8 @@ export function WatchRamadanPage() {
     useEffect(() => {
         const loadData = async () => {
             try {
-                // Fetch granular JSON for instant loading
-                const response = await fetch(`/ramadan-data/${slug}.json`);
+                // Fetch granular JSON from new data directory
+                const response = await fetch(`/data/ramadan/${slug}.json`);
                 if (!response.ok) throw new Error("Series not found");
                 const found: SeriesItem = await response.json();
 
@@ -144,9 +118,6 @@ export function WatchRamadanPage() {
                         if (idx !== -1) epIdx = idx;
                     }
                     setSelectedEpisodeIndex(epIdx);
-                    // Default to VK server
-                    const servers = updatedFound.episodes[epIdx]?.watch_servers || [];
-                    setActiveServerIndex(findVKIndex(servers));
 
                     // Note: TMDB Enrichment is now handled server-side/during data merge
                     // to ensure all images (posters, backdrops, stills) are consistent and high-quality.
@@ -176,23 +147,12 @@ export function WatchRamadanPage() {
 
     const selectEpisode = (index: number) => {
         setSelectedEpisodeIndex(index);
-        const epServers = series?.episodes[index]?.watch_servers || [];
-        setActiveServerIndex(findVKIndex(epServers));
-        setIframeKey((k) => k + 1);
-        setShieldClicks(2);
         window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-
-    const selectServer = (index: number) => {
-        setActiveServerIndex(index);
-        setIframeKey((k) => k + 1);
-        setShieldClicks(2);
     };
 
     const currentEntry = series?.episodes[selectedEpisodeIndex];
     const episodeNumber = currentEntry?.episode_number || (selectedEpisodeIndex + 1);
     const servers = (currentEntry?.watch_servers || []).filter(s => !s.name.toLowerCase().includes("streamtape"));
-    const activeServer = servers[activeServerIndex];
 
     if (loading) {
         return (
@@ -270,136 +230,15 @@ export function WatchRamadanPage() {
                 <div className="grid lg:grid-cols-[1fr_300px] gap-10 lg:gap-14 items-start">
                     {/* ── Main Production Column ── */}
                     <div className="space-y-8 flex flex-col">
-                        {/* ── Simple Video Player ── */}
-                        <div className="relative aspect-video group/player">
-                            <div
-                                ref={containerRef}
-                                className={cn(
-                                    "relative w-full h-full bg-black rounded-xl overflow-hidden shadow-2xl transition-all duration-300",
-                                    isFullscreen && "rounded-none border-0"
-                                )}
-                            >
-                                {activeServer ? (
-                                    <div className="relative w-full h-full">
-                                        <iframe
-                                            key={iframeKey}
-                                            src={activeServer.url}
-                                            className="w-full h-full border-0"
-                                            allow="autoplay; encrypted-media; fullscreen; picture-in-picture; clipboard-write; web-share; accelerometer; gyroscope; focus-without-user-activation; layout-animations; speaker-selection"
-                                            sandbox="allow-forms allow-scripts allow-same-origin allow-presentation"
-                                            referrerPolicy="origin"
-                                            allowFullScreen
-                                            scrolling="no"
-                                            title={`${series.title} - الحلقة ${episodeNumber}`}
-                                        />
-
-                                        {/* Click Shield Overlay (Multi-Stage AdBlocker) - Ramadan Specific */}
-                                        {shieldClicks > 0 && (
-                                            <div
-                                                className="absolute inset-0 z-20 bg-black/60 backdrop-blur-[6px] cursor-pointer flex flex-col items-center justify-center group/shield transition-all duration-500"
-                                                onClick={(e) => {
-                                                    e.preventDefault();
-                                                    e.stopPropagation();
-                                                    setShieldClicks(prev => prev - 1);
-                                                }}
-                                            >
-                                                <div className="relative">
-                                                    <div className={cn(
-                                                        "absolute inset-0 bg-primary/20 blur-3xl rounded-full transition-all duration-700",
-                                                        shieldClicks === 1 ? "bg-orange-500/30 scale-150" : "group-hover/shield:scale-150"
-                                                    )} />
-                                                    <div className={cn(
-                                                        "relative w-28 h-28 rounded-full flex items-center justify-center shadow-2xl border-4 border-white/10 transition-all duration-500",
-                                                        shieldClicks === 1 ? "bg-orange-500 scale-110 rotate-12" : "bg-primary group-hover/shield:scale-110"
-                                                    )}>
-                                                        {shieldClicks === 2 ? (
-                                                            <Play className="w-12 h-12 fill-white translate-x-1" />
-                                                        ) : (
-                                                            <Sparkles className="w-12 h-12 text-white animate-pulse" />
-                                                        )}
-                                                    </div>
-                                                </div>
-
-                                                <div className="mt-10 text-center space-y-4 max-w-xs px-6">
-                                                    <p className="text-2xl font-black text-white tracking-tight">
-                                                        {shieldClicks === 2 ? "تشغيل آمن" : "تأكيد الحماية"}
-                                                    </p>
-
-                                                    <div className={cn(
-                                                        "flex items-center gap-2 justify-center px-5 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest transition-colors duration-500",
-                                                        shieldClicks === 2
-                                                            ? "bg-green-500/10 border border-green-500/20 text-green-500"
-                                                            : "bg-orange-500/20 border border-orange-500/30 text-orange-400"
-                                                    )}>
-                                                        <div className={cn(
-                                                            "w-2 h-2 rounded-full animate-pulse",
-                                                            shieldClicks === 2 ? "bg-green-500" : "bg-orange-500"
-                                                        )} />
-                                                        {shieldClicks === 2 ? "RAMADAN SHIELD ACTIVE" : "BLOCKING POPUPS... CLICK AGAIN"}
-                                                    </div>
-
-                                                    <p className="text-white/40 text-[10px] font-bold leading-relaxed">
-                                                        {shieldClicks === 2
-                                                            ? "اضغط هنا لبدء المشاهدة بدون إعلانات منبثقة أو بانيرات"
-                                                            : "نقرة واحدة أخيرة لفتح المشغل بآمان تام"}
-                                                    </p>
-                                                </div>
-
-                                                <div className="absolute bottom-10 flex flex-col items-center gap-2">
-                                                    <div className="flex gap-1.5">
-                                                        <div className={cn("w-8 h-1 rounded-full transition-all duration-500", shieldClicks <= 2 ? "bg-primary" : "bg-white/10")} />
-                                                        <div className={cn("w-8 h-1 rounded-full transition-all duration-500", shieldClicks <= 1 ? "bg-primary" : "bg-white/10")} />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        )}
-                                    </div>
-                                ) : (
-                                    <div className="flex flex-col items-center justify-center h-full text-muted-foreground space-y-4">
-                                        <Play className="w-12 h-12 opacity-10" />
-                                        <p className="text-lg font-bold">لا يوجد رابط مشاهدة متاح حالياً</p>
-                                    </div>
-                                )}
-
-                                {/* Floating Zoom Button */}
-                                <div className="absolute bottom-4 right-4 z-[9999] opacity-100 lg:opacity-0 lg:group-hover/player:opacity-100 transition-opacity pointer-events-none">
-                                    <Button
-                                        variant="ghost"
-                                        size="icon"
-                                        onClick={(e) => {
-                                            e.stopPropagation();
-                                            toggleFullscreen();
-                                        }}
-                                        className="h-10 w-10 bg-black/40 hover:bg-black/60 text-white border border-white/10 backdrop-blur-md shadow-2xl rounded-full pointer-events-auto"
-                                    >
-                                        {isFullscreen ? <Minimize2 className="w-5 h-5" /> : <Maximize2 className="w-5 h-5" />}
-                                    </Button>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* ── Server Selection ── */}
-                        {servers.length > 1 && (
-                            <div className="flex flex-wrap items-center gap-2 mb-4 justify-center">
-                                {servers.map((server, idx) => (
-                                    <button
-                                        key={`${server.name}-${idx}`}
-                                        onClick={() => selectServer(idx)}
-                                        className={cn(
-                                            "h-9 px-4 rounded-lg transition-all backdrop-blur-md shadow-sm border flex items-center gap-2",
-                                            idx === activeServerIndex
-                                                ? "bg-primary text-primary-foreground border-primary shadow-md"
-                                                : "bg-secondary/50 text-muted-foreground hover:text-foreground border-border hover:bg-secondary"
-                                        )}
-                                    >
-                                        <Server className="w-4 h-4" />
-                                        <span className="text-xs font-bold uppercase tracking-wide">
-                                            {getServerLabel(server.name)}
-                                        </span>
-                                    </button>
-                                ))}
-                            </div>
-                        )}
+                        {/* ── Supreme Video Player ── */}
+                        <SupremePlayer
+                            servers={servers.map(s => ({
+                                name: getServerLabel(s.name),
+                                url: s.url,
+                                quality: "HD"
+                            }))}
+                            title={`${series.title} - الحلقة ${episodeNumber}`}
+                        />
 
                         {/* ── Rich Episode Metadata ── */}
                         <div className="bg-card/30 border border-border rounded-3xl p-8 space-y-8 relative overflow-hidden">

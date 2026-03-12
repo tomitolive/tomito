@@ -69,7 +69,7 @@ export default function RamadanPage() {
     useEffect(() => {
         const loadData = async () => {
             try {
-                const response = await fetch("/ramadan_2026_results_light.json");
+                const response = await fetch("/data/ramadan.json");
                 const data: SeriesItem[] = await response.json();
 
                 const initialSeries = data.map(item => {
