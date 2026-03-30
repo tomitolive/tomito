@@ -131,26 +131,7 @@ export default function Home() {
             <HeroCarousel items={popularTV.slice(0, 10)} type="tv" />
             <div className="container mx-auto px-4 py-8 space-y-12">
 
-                {/* Ramadan 2026 Section */}
-                {ramadanSeries.length > 0 && (
-                    <div className="space-y-6">
-                        <div className="flex items-center justify-between">
-                            <div className="flex items-center gap-3">
-                                <div className="w-1.5 h-8 bg-primary rounded-full shadow-[0_0_15px_rgba(var(--primary),0.5)]" />
-                                <h2 className="text-2xl font-bold">مسلسلات رمضان 2026</h2>
-                            </div>
-                            <Link to="/ramadan" className="text-primary hover:underline font-medium text-sm">
-                                عرض الكل
-                            </Link>
-                        </div>
-                        <ContentRow
-                            title=""
-                            items={ramadanSeries.slice(0, 12)}
-                            type="tv"
-                            isRamadan={true}
-                        />
-                    </div>
-                )}
+                
 
                 {/* Trending Section */}
                 <ContentRow title={t("trendingMovies")} items={trendingMovies} type="movie" />
