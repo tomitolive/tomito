@@ -8,12 +8,7 @@ export interface ProductionCompany {
 }
 
 export const PRODUCTION_COMPANIES: ProductionCompany[] = [
-    {
-        id: 420,
-        name: "Marvel Studios",
-        nameAr: "مارفل ستوديوز",
-        logo: "https://www.themoviedb.org/t/p/original/hUzeosd33nzE5MCNsZxCGEKTXaQ.svg"
-    },
+ 
     {
         id: 3,
         name: "Pixar",
@@ -73,11 +68,5 @@ export const PRODUCTION_COMPANIES: ProductionCompany[] = [
         name: "DC Entertainment",
         nameAr: "دي سي",
         logo: "https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg"
-    },
-    {
-        id: 178464,
-        name: "Netflix",
-        nameAr: "نتفليكس",
-        logo: "https://www.themoviedb.org/t/p/original/tyHnxjQJLH6h4iDQKhN5iqebWmX.svg"
     }
 ];

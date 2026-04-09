@@ -37,14 +37,11 @@ export function MovieCard({
   const rating =
     typeof item.vote_average === "number"
       ? item.vote_average.toFixed(1)
-      : (isRamadan || item.isSupreme) ? "9.5" : "N/A";
+      : "N/A";
 
-  const ramadanSlug = encodeURIComponent((item.clean_title || title).replace(/\s+/g, "-"));
-  const link = (item.isSupreme || isRamadan)
-    ? `/ramadan-trailer/${ramadanSlug}`
-    : type === "movie"
-      ? `/movie/${createSlugWithId(item.id, title)}`
-      : `/tv/${createSlugWithId(item.id, title)}`;
+  const link = type === "movie"
+    ? `/movie/${createSlugWithId(item.id, title)}`
+    : `/tv/${createSlugWithId(item.id, title)}`;
 
   // Spatial navigation support
   const { ref, focused } = useFocusable({
@@ -140,7 +137,7 @@ export function MovieCard({
         ) : null}
 
         <img
-          src={(item.isSupreme || isRamadan) ? item.poster_path : getImageUrl(item.poster_path, "w500")}
+          src={getImageUrl(item.poster_path, "w500")}
           alt={title}
           className={cn(
             "h-full w-full object-cover transition-transform duration-500",
@@ -149,7 +146,7 @@ export function MovieCard({
           loading="lazy"
         />
 
-        {/* Gradient Overlay - Ensure z-index is higher than video (z-10) */}
+        {/* Gradient Overlay */}
         <div className="absolute inset-0 z-20 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
         {/* Rating Badge */}
@@ -157,13 +154,6 @@ export function MovieCard({
           <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
           {rating}
         </div>
-
-        {/* Ramadan Exclusive Badge */}
-        {(item.isSupreme || isRamadan) && (
-          <div className="absolute top-2 left-2 z-20 bg-primary/90 backdrop-blur-md px-2 py-1 rounded-md shadow-lg border border-white/10">
-            <span className="text-[9px] font-black text-white uppercase tracking-widest">حصري</span>
-          </div>
-        )}
 
         {/* Info Slide-up */}
         <div className="absolute bottom-0 left-0 right-0 z-20 p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-500">

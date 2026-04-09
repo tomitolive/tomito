@@ -39,16 +39,11 @@ export function HeroCarousel({ items, type }: HeroCarouselProps) {
   const overview = currentItem.overview || t("noDescription");
   const rating = currentItem.vote_average?.toFixed(1) || "N/A";
 
-  const isSupreme = (currentItem as any).isSupreme;
-  const link = isSupreme
-    ? `/ramadan-trailer/${encodeURIComponent((currentItem as any).clean_title || title)}`
-    : type === "movie"
-      ? `/movie/${currentItem.id}`
-      : `/tv/${currentItem.id}`;
+  const link = type === "movie"
+    ? `/movie/${currentItem.id}`
+    : `/tv/${currentItem.id}`;
 
-  const backdropUrl = isSupreme
-    ? currentItem.poster_path // Use poster as backdrop for supreme if no backdrop
-    : getBackdropUrl(currentItem.backdrop_path || currentItem.poster_path);
+  const backdropUrl = getBackdropUrl(currentItem.backdrop_path || currentItem.poster_path);
 
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
