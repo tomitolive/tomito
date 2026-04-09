@@ -18,11 +18,6 @@ import CompanyContent from "./pages/CompanyContent";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
-import RamadanPage from "./pages/RamadanPage";
-import { WatchRamadanPage } from "./pages/WatchRamadanPage";
-import { RamadanTrailerPage } from "./pages/RamadanTrailerPage";
-import { RamadanDownloadPage } from "./pages/RamadanDownloadPage";
-import SeriesDownloadList from "./pages/SeriesDownloadList";
 import { useIsMobile } from "./hooks/use-mobile";
 
 
@@ -56,11 +51,6 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/privacy" element={<Privacy />} />
-                <Route path="/ramadan" element={<RamadanPage />} />
-                <Route path="/ramadan-trailer/:slug" element={<RamadanTrailerPage />} />
-                <Route path="/watch-ramadan/:slug" element={<WatchRamadanPage />} />
-                <Route path="/ramadan-download/:slug" element={<RamadanDownloadPage />} />
-                <Route path="/series-download" element={<SeriesDownloadList />} />
 
 
               </Routes>

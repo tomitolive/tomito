@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { ChevronRight, ArrowLeft } from "lucide-react";
-import { fetchByCompany, t } from "@/lib/tmdb";
+import { fetchByCompany, fetchCompanyDetails, t, TMDB_CONFIG } from "@/lib/tmdb";
 import { PRODUCTION_COMPANIES } from "@/config/productionCompanies";
 import { MovieCard } from "@/components/MovieCard";
 import { SkeletonCard } from "@/components/SkeletonCard";
@@ -19,6 +19,7 @@ export default function CompanyContent() {
     const [activeTab, setActiveTab] = useState<"movie" | "tv">("movie");
     const [page, setPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
+    const [companyInfo, setCompanyInfo] = useState<any>(null);
 
     const company = PRODUCTION_COMPANIES.find(c => c.id === Number(companyId));
 
@@ -52,6 +53,16 @@ export default function CompanyContent() {
     };
 
     useEffect(() => {
+        const loadCompanyInfo = async () => {
+            if (!companyId) return;
+            try {
+                const info = await fetchCompanyDetails(Number(companyId));
+                setCompanyInfo(info);
+            } catch (err) {
+                console.error("Failed to fetch company info:", err);
+            }
+        };
+        loadCompanyInfo();
         setPage(1);
         loadData(1, false);
     }, [companyId, activeTab]);
@@ -78,20 +89,26 @@ export default function CompanyContent() {
 
                     <div className="flex flex-col md:flex-row-reverse items-start md:items-center gap-8 bg-card/40 backdrop-blur-md p-8 rounded-3xl border border-primary/20 shadow-2xl relative overflow-hidden">
                         {/* Background subtle logo */}
-                        {company?.logo && (
-                            <img src={company.logo} alt="" className="absolute left-0 top-0 w-64 h-64 object-contain opacity-5 -translate-x-1/4 -translate-y-1/4 pointer-events-none filter grayscale" />
+                        {(companyInfo?.logo_path || company?.logo) && (
+                            <img src={companyInfo?.logo_path ? `${TMDB_CONFIG.IMG_URL}/original${companyInfo.logo_path}` : company?.logo} alt="" className="absolute left-0 top-0 w-64 h-64 object-contain opacity-5 -translate-x-1/4 -translate-y-1/4 pointer-events-none filter grayscale" />
                         )}
 
                         <div className="flex-shrink-0 w-full md:w-48 h-24 bg-white/5 rounded-2xl p-4 flex items-center justify-center border border-white/10 shadow-inner">
-                            {company?.logo && (
-                                <img src={company.logo} alt={company.name} className="max-w-full max-h-full object-contain filter brightness-110 drop-shadow-lg" />
+                            {(companyInfo?.logo_path || company?.logo) && (
+                                <img src={companyInfo?.logo_path ? `${TMDB_CONFIG.IMG_URL}/original${companyInfo.logo_path}` : company?.logo} alt={companyInfo?.name || company?.name} className="max-w-full max-h-full object-contain filter brightness-110 drop-shadow-lg" />
                             )}
                         </div>
 
                         <div className="flex-grow">
-                            <h1 className="text-3xl md:text-4xl font-extrabold mb-4 text-gradient">
-                                {company?.nameAr}
+                            <h1 className="text-3xl md:text-4xl font-extrabold mb-2 text-gradient">
+                                {company?.nameAr || companyInfo?.name}
                             </h1>
+                            {companyInfo?.headquarters && (
+                                <p className="text-muted-foreground text-sm flex items-center gap-2">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+                                    {companyInfo.headquarters}
+                                </p>
+                            )}
                         </div>
                     </div>
                 </div>
