@@ -5,6 +5,7 @@ import { BackButton } from "@/components/BackButton";
 import { Footer } from "@/components/Footer";
 import { MovieCard } from "@/components/MovieCard";
 import { fetchByGenre } from "@/lib/tmdb";
+import { PageLoader } from "@/components/PageLoader";
 
 export default function Category() {
     const { type, genreId } = useParams();
@@ -81,6 +82,8 @@ export default function Category() {
             setIsFetchingMore(false);
         }
     };
+
+    if (loading) return <PageLoader />;
 
     return (
         <div className="min-h-screen bg-background">

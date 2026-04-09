@@ -12,78 +12,72 @@ export const PRODUCTION_COMPANIES: ProductionCompany[] = [
         id: 420,
         name: "Marvel Studios",
         nameAr: "مارفل ستوديوز",
-        logo: "https://image.tmdb.org/t/p/original/hUzeosd33nzE5MCNsZxCGEKTXaQ.png"
+        logo: "https://www.themoviedb.org/t/p/original/hUzeosd33nzE5MCNsZxCGEKTXaQ.svg"
     },
     {
         id: 3,
         name: "Pixar",
         nameAr: "بيكسار",
-        logo: "https://image.tmdb.org/t/p/original/1TjvGVDMYsj6JBxOAkUHpPEwLf7.png"
+        logo: "https://www.themoviedb.org/t/p/original/1TjvGVDMYsj6JBxOAkUHpPEwLf7.svg"
     },
     {
         id: 33,
         name: "Universal Pictures",
         nameAr: "يونيفرسال بيكتشرز",
-        logo: "https://image.tmdb.org/t/p/original/8lvHyhjr8oUKOOy2dKXoALWKdp0.png"
+        logo: "https://www.themoviedb.org/t/p/original/8lvHyhjr8oUKOOy2dKXoALWKdp0.svg"
     },
     {
         id: 174,
         name: "Warner Bros. Pictures",
         nameAr: "وارنر برذرز",
-        logo: "https://image.tmdb.org/t/p/original/IuAlhI9eVC9Z8UQWOIDdWRKSEJ.png"
+        logo: "https://www.themoviedb.org/t/p/original/zhD3hhtKB5qyv7ZeL4uLpNxgMVU.svg"
     },
     {
-        id: 21,
+        id: 1,
         name: "Lucasfilm",
         nameAr: "لوكاس فيلم",
-        logo: "https://image.tmdb.org/t/p/original/o86DbpburjxrqAzEDhXZcyE8pDb.png"
+        logo: "https://www.themoviedb.org/t/p/original/tlVSws0RvvtPBwViUyOFAO0vcQS.svg"
     },
     {
         id: 4,
         name: "Paramount Pictures",
         nameAr: "باراماونت بيكتشرز",
-        logo: "https://image.tmdb.org/t/p/original/gz66EfNoYPqHTYI4q9UEN4CbHRc.png"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/9/90/Paramount_Pictures_Corporation_logo.svg"
     },
     {
         id: 2,
         name: "Walt Disney Pictures",
         nameAr: "والت ديزني",
-        logo: "https://image.tmdb.org/t/p/original/wdrCwmRnLFJhEoH8GSfymY85KHT.png"
+        logo: "https://www.themoviedb.org/t/p/original/wdrCwmRnLFJhEoH8GSfymY85KHT.svg"
     },
     {
         id: 1632,
         name: "Lionsgate",
         nameAr: "ليونزغيت",
-        logo: "https://image.tmdb.org/t/p/original/cisLn1YAUuptXVBa0xjq7ST9cH0.png"
+        logo: "https://www.themoviedb.org/t/p/original/cisLn1YAUuptXVBa0xjq7ST9cH0.svg"
     },
     {
         id: 7,
         name: "DreamWorks Pictures",
         nameAr: "دريم ووركس",
-        logo: "https://image.tmdb.org/t/p/original/vru2SssLX3FPhnKZGtYw00pVIS9.png"
+        logo: "https://www.themoviedb.org/t/p/original/vru2SssLX3FPhnKZGtYw00pVIS9.svg"
     },
     {
         id: 34,
         name: "Sony Pictures",
         nameAr: "سوني بيكتشرز",
-        logo: "https://image.tmdb.org/t/p/original/GagSvqWlyPdkFHMfQ3pNq6ix9P.png"
+        logo: "https://www.themoviedb.org/t/p/original/mtp1fvZbe4H991Ka1HOORl572VH.svg"
     },
     {
-        id: 429,
+        id: 9993,
         name: "DC Entertainment",
         nameAr: "دي سي",
-        logo: "https://image.tmdb.org/t/p/original/2Tc1P3Ac8M479naPp1kYT3izLS5.png"
+        logo: "https://www.themoviedb.org/t/p/original/53WLa6t6HKBpIEUSmsit29kBUOV.svg"
     },
     {
-        id: 521,
+        id: 178464,
         name: "Netflix",
         nameAr: "نتفليكس",
-        logo: "https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.png"
-    },
-    {
-        id: 1,
-        name: "Legendary Pictures",
-        nameAr: "ليجندري",
-        logo: "https://image.tmdb.org/t/p/original/8M99Dkt23MjQMTTWukq4m5XsEuo.png"
+        logo: "https://www.themoviedb.org/t/p/original/tyHnxjQJLH6h4iDQKhN5iqebWmX.svg"
     }
 ];

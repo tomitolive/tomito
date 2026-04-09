@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { BackButton } from "@/components/BackButton";
 import { fetchPersonDetails, fetchPersonCredits, getImageUrl } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
+import { PageLoader } from "@/components/PageLoader";
 
 export default function ActorPage() {
   const { id } = useParams<{ id: string }>();
@@ -41,19 +42,7 @@ export default function ActorPage() {
     window.scrollTo(0, 0);
   }, [id]);
 
-  if (isLoading) {
-    return (
-      <div className="min-h-screen bg-background">
-        <Navbar />
-        <div className="pt-20 flex items-center justify-center min-h-[60vh]">
-          <div className="text-center">
-            <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-            <p className="text-muted-foreground">جاري التحميل...</p>
-          </div>
-        </div>
-      </div>
-    );
-  }
+  if (isLoading) return <PageLoader />;
 
   if (!person) {
     return (

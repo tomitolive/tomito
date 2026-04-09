@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
 import { HeroCarousel } from "@/components/HeroCarousel";
 import { ProductionCompaniesBar } from "@/components/ProductionCompaniesBar";
+import { PageLoader } from "@/components/PageLoader";
 import { fetchPopular, fetchTrending, fetchNowPlaying, fetchOnTheAir, fetchTopRated, searchMulti, TMDB_CONFIG, t } from "@/lib/tmdb";
 
 
@@ -117,7 +118,7 @@ export default function Home() {
         loadData();
     }, []);
 
-    if (loading) return <div className="h-screen flex items-center justify-center">Loading...</div>;
+    if (loading) return <PageLoader />;
 
     return (
         <div className="min-h-screen bg-background text-foreground">

@@ -6,6 +6,7 @@ import { MovieCard } from "@/components/MovieCard";
 import { searchMulti } from "@/lib/tmdb";
 import { searchRamadan } from "@/lib/ramadan";
 import { event as trackEvent } from "@/lib/analytics";
+import { PageLoader } from "@/components/PageLoader";
 
 export default function Search() {
     const [searchParams] = useSearchParams();
@@ -72,7 +73,7 @@ export default function Search() {
                 <h1 className="text-3xl font-bold mb-8">نتائج البحث عن: {query}</h1>
 
                 {loading ? (
-                    <div>Loading...</div>
+                    <PageLoader />
                 ) : (
                     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
                         {results.map((item: any) => (

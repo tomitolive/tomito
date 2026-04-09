@@ -27,6 +27,7 @@ import {
 import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
 import { useSupremeServers } from "@/hooks/useSupremeServers";
+import { PageLoader } from "@/components/PageLoader";
 
 export default function WatchTV() {
   const { id } = useParams<{ id: string }>();
@@ -133,19 +134,7 @@ export default function WatchTV() {
     setUnifiedIframeKey(k => k + 1);
   }, [selectedSeason, selectedEpisode, setSearchParams]);
 
-  if (isLoading) {
-    return (
-      <div className="min-h-screen bg-background">
-        <Navbar />
-        <div className="pt-20 flex items-center justify-center min-h-[60vh]">
-          <div className="text-center">
-            <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-            <p className="text-muted-foreground">{t("loading")}</p>
-          </div>
-        </div>
-      </div>
-    );
-  }
+  if (isLoading) return <PageLoader />;
 
   if (!show) {
     return (

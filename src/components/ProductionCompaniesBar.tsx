@@ -13,54 +13,98 @@ export const ProductionCompaniesBar = () => {
     };
 
     return (
-        <div className="w-full max-w-7xl mx-auto my-12 animate-fade-in relative z-10">
-            {/* Header / Title */}
-            <div className="flex items-center gap-3 px-4 mb-6">
-                <div className="h-6 w-1 bg-primary rounded-full" />
-                <h2 className="text-xl font-bold tracking-tight text-foreground/90">{t("productionCompanies")}</h2>
-            </div>
+        <div className="relative w-full py-20 my-10 border-y border-border/10">
+            {/* Theme-aware Cinematic Backgrounds */}
+            <div className="absolute inset-0 bg-background pointer-events-none opacity-50 transition-colors duration-700" />
+            <div className="absolute -top-[10%] -left-[5%] w-[40%] h-[120%] bg-primary/5 blur-[100px] rounded-full animate-float pointer-events-none" />
+            <div className="absolute -bottom-[10%] -right-[5%] w-[40%] h-[120%] bg-primary/5 blur-[100px] rounded-full animate-float pointer-events-none" style={{ animationDelay: '3s' }} />
 
-            {/* Content Container with Horizontal Scroll on Mobile */}
-            <div className="relative group/bar px-4">
-                {/* Fade Masks for horizontal scroll */}
-                <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-background to-transparent z-20 pointer-events-none opacity-0 sm:hidden group-hover:opacity-100 transition-opacity" />
-                <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-background to-transparent z-20 pointer-events-none opacity-0 sm:hidden group-hover:opacity-100 transition-opacity" />
+            <div className="relative z-10 max-w-7xl mx-auto px-4">
+                {/* Header / Title */}
+                <div className="flex items-center gap-4 mb-10 group/title">
+                    <div className="h-8 w-1.5 bg-primary rounded-full shadow-[0_0_15px_hsl(var(--primary)/0.6)] group-hover/title:shadow-[0_0_25px_hsl(var(--primary)/0.8)] transition-all duration-500" />
+                    <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground/90 group-hover/title:text-foreground transition-colors duration-500">
+                        {t("productionCompanies")}
+                    </h2>
+                </div>
 
-                <div className="flex items-center gap-4 py-6 overflow-x-auto hide-scrollbar sm:flex-wrap sm:justify-center px-2 flex-nowrap">
-                    {PRODUCTION_COMPANIES.map((company, index) => (
-                        <div
-                            key={company.id}
-                            className="flex-shrink-0 animate-slide-up"
-                            style={{ animationDelay: `${index * 50}ms` }}
-                        >
-                            <Link
-                                to={`/company/${company.id}`}
-                                className="group relative block"
+                {/* Horizontal Scrollable Content */}
+                <div className="flex gap-4 sm:gap-6 overflow-x-auto pt-10 pb-12 hide-scrollbar snap-x snap-mandatory">
+                    {PRODUCTION_COMPANIES.slice(0, 12).map((company, index) => {
+                        const isPixar = company.name.toLowerCase() === 'pixar';
+                        
+                        return (
+                            <div
+                                key={company.id}
+                                className="flex-shrink-0 w-36 sm:w-44 md:w-48 snap-start animate-slide-up"
+                                style={{ animationDelay: `${index * 50}ms` }}
                             >
-                                <div className="relative w-32 h-16 sm:w-36 sm:h-20 flex items-center justify-center p-3 sm:p-4 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-primary/50 transition-all duration-500 shadow-sm hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-1 active:scale-95 group overflow-hidden">
-                                    {/* Glass reflection effect */}
-                                    <div className="absolute inset-x-0 -top-full h-full bg-gradient-to-b from-white/10 to-transparent rotate-12 transition-all duration-700 group-hover:top-full" />
-
-                                    <div className="w-full h-full flex items-center justify-center bg-white/95 rounded-lg p-2 shadow-inner">
-                                        <img
-                                            src={company.logo}
-                                            alt={company.name}
-                                            className="max-w-full max-h-full object-contain transition-all duration-500 group-hover:scale-110"
-                                            loading="lazy"
-                                        />
+                                <Link
+                                    to={`/company/${company.id}`}
+                                    className="group relative block aspect-[2/3] transition-all duration-700 z-10 hover:z-20"
+                                >
+                                    {/* Cinematic Magic Glow - Universal on Hover */}
+                                    <div className="absolute inset-0 pointer-events-none overflow-visible opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160%] h-[160%] bg-primary/20 blur-[50px] animate-pulse pointer-events-none" />
+                                        {/* Particles */}
+                                        {[...Array(8)].map((_, i) => (
+                                            <div 
+                                                key={i}
+                                                className="absolute w-1 h-1 bg-primary rounded-full blur-[1px] animate-float opacity-0 translate-x-0"
+                                                style={{ 
+                                                    top: `${Math.random() * 100}%`, 
+                                                    left: `${Math.random() * 100}%`,
+                                                    animationDelay: `${i * 1.5}s`,
+                                                    animationDuration: `${5 + Math.random() * 5}s`
+                                                }}
+                                            />
+                                        ))}
                                     </div>
 
-                                    {/* Hover glow */}
-                                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-primary/5 transition-opacity duration-500" />
-                                </div>
+                                    {/* Main Vertical Card */}
+                                    <div className="
+                                        relative h-full flex flex-col items-center justify-center p-6 rounded-3xl
+                                        backdrop-blur-3xl transition-all duration-700 overflow-hidden
+                                        bg-card/20 border border-black/10 dark:border-white/10
+                                        group-hover:bg-primary/[0.03] group-hover:border-primary/50 
+                                        group-hover:shadow-[0_0_40px_hsl(var(--primary)/0.2)] group-hover:animate-pulse-glow
+                                        group-hover:-translate-y-3 group-hover:scale-[1.05]
+                                    ">
+                                        {/* Glass Shimmer */}
+                                        <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-black/10 opacity-30 pointer-events-none" />
+                                        
+                                        {/* Logo Container - Large Iconic Center */}
+                                        <div className="relative w-full h-[70%] flex items-center justify-center mb-4 p-2 transition-transform duration-700 group-hover:scale-110">
+                                            <img
+                                                src={company.logo}
+                                                alt={company.name}
+                                                className={`
+                                                    max-w-[100%] max-h-[100%] object-contain transition-all duration-700
+                                                    ${isPixar 
+                                                        ? 'scale-125 drop-shadow-[0_0_20px_hsl(var(--primary)/0.5)]' 
+                                                        : 'drop-shadow-[0_0_8px_rgba(0,0,0,0.3)] dark:drop-shadow-[0_0_12px_rgba(255,255,255,0.1)]'
+                                                    }
+                                                    saturate-[1.1] contrast-[1.05]
+                                                `}
+                                                loading="lazy"
+                                            />
+                                        </div>
 
-                                {/* Label */}
-                                <div className="text-center mt-3 text-[10px] sm:text-xs font-bold text-muted-foreground/40 group-hover:text-primary transition-colors tracking-wide uppercase">
-                                    {getCompanyName(company)}
-                                </div>
-                            </Link>
-                        </div>
-                    ))}
+                                        {/* Symbolic Company Details */}
+                                        <div className="
+                                            flex flex-col items-center gap-1 transition-all duration-500
+                                            translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100
+                                        ">
+                                            <p className="text-[10px] sm:text-xs font-black tracking-widest uppercase transition-colors duration-500 text-foreground/60 group-hover:text-primary">
+                                                {getCompanyName(company)}
+                                            </p>
+                                            <div className="w-4 h-1 bg-primary rounded-full opacity-50" />
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         </div>

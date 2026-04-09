@@ -9,6 +9,7 @@ import { BackButton } from "@/components/BackButton";
 import { fetchMovieDetails, t } from "@/lib/tmdb";
 import { MovieSEO } from "@/components/SEO/MovieSEO";
 import { getMovieById, Movie as LocalMovie } from "@/services/localData";
+import { PageLoader } from "@/components/PageLoader";
 
 
 export default function MovieDetail() {
@@ -36,7 +37,7 @@ export default function MovieDetail() {
         loadMovie();
     }, [id]);
 
-    if (loading) return <div className="h-screen flex items-center justify-center">Loading...</div>;
+    if (loading) return <PageLoader />;
     if (!movie) return <div className="h-screen flex items-center justify-center">Movie not found</div>;
 
     return (

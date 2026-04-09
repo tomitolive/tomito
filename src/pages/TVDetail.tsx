@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { fetchTVDetails, fetchSeasonDetails, t } from "@/lib/tmdb";
 import { MovieSEO } from "@/components/SEO/MovieSEO";
 import { getMovieById, Movie as LocalMovie } from "@/services/localData";
+import { PageLoader } from "@/components/PageLoader";
 
 
 export default function TVDetail() {
@@ -56,7 +57,7 @@ export default function TVDetail() {
         }
     };
 
-    if (loading) return <div className="h-screen flex items-center justify-center">Loading...</div>;
+    if (loading) return <PageLoader />;
     if (!tv) return <div className="h-screen flex items-center justify-center">TV Show not found</div>;
 
     return (

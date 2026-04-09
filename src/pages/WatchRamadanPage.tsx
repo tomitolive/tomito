@@ -12,6 +12,7 @@ import { BackButton } from "@/components/BackButton";
 import { cn } from "@/lib/utils";
 import { searchTV, fetchSeasonDetails, TMDB_CONFIG } from "@/lib/tmdb";
 import { SupremePlayer } from "@/components/SupremePlayer";
+import { PageLoader } from "@/components/PageLoader";
 
 interface WatchServer {
     name: string;
@@ -154,29 +155,7 @@ export function WatchRamadanPage() {
     const episodeNumber = currentEntry?.episode_number || (selectedEpisodeIndex + 1);
     const servers = (currentEntry?.watch_servers || []).filter(s => !s.name.toLowerCase().includes("streamtape"));
 
-    if (loading) {
-        return (
-            <div className="min-h-screen bg-background text-foreground">
-                <Navbar />
-                <main className="max-w-[1550px] mx-auto px-4 pt-32 pb-24">
-                    <div className="grid lg:grid-cols-[1fr_300px] gap-10 lg:gap-14">
-                        <div className="space-y-8">
-                            <div className="aspect-video bg-muted/20 animate-pulse rounded-xl" />
-                            <div className="h-64 bg-muted/10 animate-pulse rounded-3xl" />
-                        </div>
-                        <div className="space-y-6">
-                            <div className="h-8 bg-muted/20 animate-pulse rounded-lg w-1/2" />
-                            <div className="grid grid-cols-2 gap-3">
-                                {[...Array(6)].map((_, i) => (
-                                    <div key={i} className="aspect-video bg-muted/10 animate-pulse rounded-xl" />
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </main>
-            </div>
-        );
-    }
+    if (loading) return <PageLoader />;
 
     if (!series || series.episodes.length === 0) {
         return (

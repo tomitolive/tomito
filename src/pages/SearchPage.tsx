@@ -10,6 +10,7 @@ import { BackButton } from "@/components/BackButton";
 import { searchMulti, getImageUrl, t } from "@/lib/tmdb";
 import { searchRamadan } from "@/lib/ramadan";
 import { cn } from "@/lib/utils";
+import { PageLoader } from "@/components/PageLoader";
 
 type MediaType = "all" | "movie" | "tv" | "person";
 
@@ -188,14 +189,7 @@ export default function SearchPage() {
         )}
 
         {/* Loading State */}
-        {isLoading && (
-          <div className="flex items-center justify-center min-h-[40vh]">
-            <div className="text-center">
-              <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-              <p className="text-muted-foreground">{t("searching")}</p>
-            </div>
-          </div>
-        )}
+        {isLoading && <PageLoader />}
 
         {/* Results Grid */}
         {!isLoading && filteredResults.length > 0 && (

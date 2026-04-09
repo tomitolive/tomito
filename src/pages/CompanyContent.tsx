@@ -8,35 +8,59 @@ import { SkeletonCard } from "@/components/SkeletonCard";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { BackButton } from "@/components/BackButton";
+import { PageLoader } from "@/components/PageLoader";
 
 export default function CompanyContent() {
     const { companyId } = useParams<{ companyId: string }>();
     const [movies, setMovies] = useState<any[]>([]);
     const [tvShows, setTvShows] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
+    const [loadingMore, setLoadingMore] = useState(false);
     const [activeTab, setActiveTab] = useState<"movie" | "tv">("movie");
+    const [page, setPage] = useState(1);
+    const [totalPages, setTotalPages] = useState(1);
 
     const company = PRODUCTION_COMPANIES.find(c => c.id === Number(companyId));
 
-    useEffect(() => {
-        const loadData = async () => {
-            if (!companyId) return;
+    const loadData = async (currentPage: number, append = false) => {
+        if (!companyId) return;
+        
+        if (append) {
+            setLoadingMore(true);
+        } else {
             setLoading(true);
-            try {
-                const [movieData, tvData] = await Promise.all([
-                    fetchByCompany("movie", companyId),
-                    fetchByCompany("tv", companyId)
-                ]);
-                setMovies(movieData.results || []);
-                setTvShows(tvData.results || []);
-            } catch (err) {
-                console.error("Failed to fetch company content:", err);
-            } finally {
-                setLoading(false);
+            setMovies([]);
+            setTvShows([]);
+        }
+
+        try {
+            const data = await fetchByCompany(activeTab, companyId, currentPage);
+            
+            if (activeTab === "movie") {
+                setMovies(prev => append ? [...prev, ...(data.results || [])] : (data.results || []));
+            } else {
+                setTvShows(prev => append ? [...prev, ...(data.results || [])] : (data.results || []));
             }
-        };
-        loadData();
-    }, [companyId]);
+            
+            setTotalPages(data.total_pages || 1);
+        } catch (err) {
+            console.error("Failed to fetch company content:", err);
+        } finally {
+            setLoading(false);
+            setLoadingMore(false);
+        }
+    };
+
+    useEffect(() => {
+        setPage(1);
+        loadData(1, false);
+    }, [companyId, activeTab]);
+
+    const handleLoadMore = () => {
+        const nextPage = page + 1;
+        setPage(nextPage);
+        loadData(nextPage, true);
+    };
 
     const displayContent = activeTab === "movie" ? movies : tvShows;
 
@@ -89,26 +113,47 @@ export default function CompanyContent() {
                 </div>
 
                 {/* Content Grid */}
-                {loading ? (
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
-                        {[...Array(12)].map((_, i) => (
-                            <SkeletonCard key={i} />
-                        ))}
-                    </div>
+                {loading && page === 1 ? (
+                    <PageLoader />
                 ) : displayContent.length > 0 ? (
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 animate-fade-in">
-                        {displayContent.map((item, index) => (
-                            <div
-                                key={item.id}
-                                className="animate-slide-up"
-                                style={{ animationDelay: `${index * 50}ms` }}
-                            >
-                                <MovieCard
-                                    item={item as any}
-                                    type={activeTab}
-                                />
+                    <div className="space-y-12">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 animate-fade-in">
+                            {displayContent.map((item, index) => (
+                                <div
+                                    key={`${item.id}-${index}`}
+                                    className="animate-slide-up"
+                                    style={{ animationDelay: `${(index % 20) * 50}ms` }}
+                                >
+                                    <MovieCard
+                                        item={item as any}
+                                        type={activeTab}
+                                    />
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Load More Button */}
+                        {page < totalPages && (
+                            <div className="flex justify-center pt-8">
+                                <button
+                                    onClick={handleLoadMore}
+                                    disabled={loadingMore}
+                                    className="group relative flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground rounded-2xl font-bold transition-all duration-300 hover:scale-105 active:scale-95 disabled:opacity-50 disabled:scale-100 shadow-xl shadow-primary/25"
+                                >
+                                    {loadingMore ? (
+                                        <>
+                                            <div className="w-5 h-5 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full animate-spin" />
+                                            <span>{t("loading")}</span>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <span>{t("loadMore")}</span>
+                                            <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform rotate-90" />
+                                        </>
+                                    )}
+                                </button>
                             </div>
-                        ))}
+                        )}
                     </div>
                 ) : (
                     <div className="text-center py-20 bg-card/20 rounded-2xl border border-dashed border-white/10">
