@@ -22,7 +22,7 @@ export function SupremePlayer({ servers, title }: SupremePlayerProps) {
     const [currentServer, setCurrentServer] = useState<SupremeServer>(servers[0]);
     const [iframeKey, setIframeKey] = useState(0);
     const [isFullscreen, setIsFullscreen] = useState(false);
-    const [shieldClicks, setShieldClicks] = useState(2);
+    const [shieldClicks, setShieldClicks] = useState(0);
     const containerRef = useRef<HTMLDivElement>(null);
 
     // Sync fullscreen state with browser changes
@@ -52,7 +52,6 @@ export function SupremePlayer({ servers, title }: SupremePlayerProps) {
     const handleServerChange = (server: SupremeServer) => {
         setCurrentServer(server);
         setIframeKey((k) => k + 1);
-        setShieldClicks(2); // Reset shield on server change
     };
 
     return (

@@ -46,7 +46,7 @@ export default function WatchTV() {
   // ── Unified player state ──
   const [activeServerId, setActiveServerId] = useState<string>(TV_SERVERS[0].id);
   const [unifiedIframeKey, setUnifiedIframeKey] = useState(0);
-  const [unifiedShield, setUnifiedShield] = useState(2);
+  const [unifiedShield, setUnifiedShield] = useState(0);
   const [unifiedFullscreen, setUnifiedFullscreen] = useState(false);
   const unifiedContainerRef = useRef<HTMLDivElement>(null);
 
@@ -130,7 +130,6 @@ export default function WatchTV() {
   useEffect(() => {
     setSearchParams({ season: String(selectedSeason), episode: String(selectedEpisode) });
     // Reset player state when episode changes
-    setUnifiedShield(2);
     setUnifiedIframeKey(k => k + 1);
   }, [selectedSeason, selectedEpisode, setSearchParams]);
 
@@ -361,7 +360,6 @@ export default function WatchTV() {
             const switchServer = (newId: string) => {
               setActiveServerId(newId);
               setUnifiedIframeKey(k => k + 1);
-              setUnifiedShield(2);
               // Trigger recruitment ad modal on server switch
               window.dispatchEvent(new CustomEvent('trigger-ad-popup'));
             };

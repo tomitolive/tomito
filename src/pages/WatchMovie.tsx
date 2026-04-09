@@ -41,7 +41,7 @@ export default function WatchMovie() {
   // type: 'tmdb' uses getVideoUrl for MOVIE_SERVERS, 'direct' uses url as-is
   const [activeServerId, setActiveServerId] = useState<string>(MOVIE_SERVERS[0].id);
   const [unifiedIframeKey, setUnifiedIframeKey] = useState(0);
-  const [unifiedShield, setUnifiedShield] = useState(2);
+  const [unifiedShield, setUnifiedShield] = useState(0);
   const [unifiedFullscreen, setUnifiedFullscreen] = useState(false);
   const unifiedContainerRef = useRef<HTMLDivElement>(null);
 
@@ -300,7 +300,6 @@ export default function WatchMovie() {
             const switchServer = (newId: string) => {
               setActiveServerId(newId);
               setUnifiedIframeKey(k => k + 1);
-              setUnifiedShield(2);
               // Trigger recruitment ad modal on server switch
               window.dispatchEvent(new CustomEvent('trigger-ad-popup'));
             };
