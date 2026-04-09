@@ -72,7 +72,7 @@ export const PRODUCTION_COMPANIES: ProductionCompany[] = [
         id: 9993,
         name: "DC Entertainment",
         nameAr: "دي سي",
-        logo: "https://www.themoviedb.org/t/p/original/53WLa6t6HKBpIEUSmsit29kBUOV.svg"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg"
     },
     {
         id: 178464,
