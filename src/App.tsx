@@ -24,6 +24,7 @@ import { RamadanTrailerPage } from "./pages/RamadanTrailerPage";
 import { RamadanDownloadPage } from "./pages/RamadanDownloadPage";
 import SeriesDownloadList from "./pages/SeriesDownloadList";
 import { useIsMobile } from "./hooks/use-mobile";
+import { AIAssistant } from "./components/AIAssistant";
 
 
 
@@ -64,6 +65,7 @@ function App() {
 
 
               </Routes>
+              <AIAssistant />
             </Router>
           </TooltipProvider>
         </SpatialNavigationProvider>
