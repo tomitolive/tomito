@@ -6,6 +6,11 @@ import { t } from "@/lib/tmdb";
 export function Footer() {
   return (
     <footer className="bg-card border-t border-border mt-16">
+      {/* Ad Container */}
+      <div className="container mx-auto px-4 py-4">
+        <div id="container-40d8069a7626b6b8606581e30c0aecfd"></div>
+      </div>
+      
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <Logo />
