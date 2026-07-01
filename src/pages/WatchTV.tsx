@@ -46,7 +46,6 @@ export default function WatchTV() {
   // ── Unified player state ──
   const [activeServerId, setActiveServerId] = useState<string>(TV_SERVERS[0].id);
   const [unifiedIframeKey, setUnifiedIframeKey] = useState(0);
-  const [unifiedShield, setUnifiedShield] = useState(2);
   const [unifiedFullscreen, setUnifiedFullscreen] = useState(false);
   const unifiedContainerRef = useRef<HTMLDivElement>(null);
 
@@ -130,7 +129,6 @@ export default function WatchTV() {
   useEffect(() => {
     setSearchParams({ season: String(selectedSeason), episode: String(selectedEpisode) });
     // Reset player state when episode changes
-    setUnifiedShield(2);
     setUnifiedIframeKey(k => k + 1);
   }, [selectedSeason, selectedEpisode, setSearchParams]);
 
@@ -361,7 +359,6 @@ export default function WatchTV() {
             const switchServer = (newId: string) => {
               setActiveServerId(newId);
               setUnifiedIframeKey(k => k + 1);
-              setUnifiedShield(2);
               // Trigger recruitment ad modal on server switch
               window.dispatchEvent(new CustomEvent('trigger-ad-popup'));
             };
@@ -436,64 +433,6 @@ export default function WatchTV() {
                       title={`${show.name} - ${getServerName(activeEntry)}`}
                     />
 
-                    {/* AdBlock Shield - All servers */}
-                    {unifiedShield > 0 && (
-                      <div
-                        className="absolute inset-0 z-20 bg-black/60 backdrop-blur-[6px] cursor-pointer flex flex-col items-center justify-center group/shield transition-all duration-500"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          e.stopPropagation();
-                          setUnifiedShield(prev => prev - 1);
-                        }}
-                      >
-                        <div className="relative">
-                          <div className={cn(
-                            "absolute inset-0 bg-primary/20 blur-3xl rounded-full transition-all duration-700",
-                            unifiedShield === 1 ? "bg-orange-500/30 scale-150" : "group-hover/shield:scale-150"
-                          )} />
-                          <div className={cn(
-                            "relative w-28 h-28 rounded-full flex items-center justify-center shadow-2xl border-4 border-white/10 transition-all duration-500",
-                            unifiedShield === 1 ? "bg-orange-500 scale-110 rotate-12" : "bg-primary group-hover/shield:scale-110"
-                          )}>
-                            {unifiedShield === 2 ? (
-                              <Play className="w-12 h-12 fill-white translate-x-1" />
-                            ) : (
-                              <Sparkles className="w-12 h-12 text-white animate-pulse" />
-                            )}
-                          </div>
-                        </div>
-
-                        <div className="mt-10 text-center space-y-4 max-w-xs px-6">
-                          <p className="text-2xl font-black text-white tracking-tight">
-                            {unifiedShield === 2 ? "تشغيل آمن" : "تأكيد الحماية"}
-                          </p>
-                          <div className={cn(
-                            "flex items-center gap-2 justify-center px-5 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest transition-colors duration-500",
-                            unifiedShield === 2
-                              ? "bg-green-500/10 border border-green-500/20 text-green-500"
-                              : "bg-orange-500/20 border border-orange-500/30 text-orange-400"
-                          )}>
-                            <div className={cn(
-                              "w-2 h-2 rounded-full animate-pulse",
-                              unifiedShield === 2 ? "bg-green-500" : "bg-orange-500"
-                            )} />
-                            {unifiedShield === 2 ? "SHIELD ACTIVE" : "BLOCKING POPUPS... CLICK AGAIN"}
-                          </div>
-                          <p className="text-white/40 text-[10px] font-bold leading-relaxed">
-                            {unifiedShield === 2
-                              ? "اضغط هنا لبدء المشاهدة بدون إعلانات منبثقة"
-                              : "نقرة واحدة أخيرة لفتح المشغل بأمان تام"}
-                          </p>
-                        </div>
-
-                        <div className="absolute bottom-10 flex flex-col items-center gap-2">
-                          <div className="flex gap-1.5">
-                            <div className={cn("w-8 h-1 rounded-full transition-all duration-500", unifiedShield <= 2 ? "bg-primary" : "bg-white/10")} />
-                            <div className={cn("w-8 h-1 rounded-full transition-all duration-500", unifiedShield <= 1 ? "bg-primary" : "bg-white/10")} />
-                          </div>
-                        </div>
-                      </div>
-                    )}
 
                     {/* Fullscreen Button */}
                     <div className="absolute bottom-4 right-4 z-[9999] opacity-100 lg:opacity-0 lg:group-hover/player:opacity-100 transition-opacity pointer-events-none">
