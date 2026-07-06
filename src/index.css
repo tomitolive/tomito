@@ -84,6 +84,8 @@
 
     /* Custom Gradients for Dark Mode */
     --gradient-hero: linear-gradient(to top, hsl(222 64% 6%) 0%, transparent 50%, transparent 100%);
+    --gradient-hero-fade: linear-gradient(to top, transparent 0%, hsl(222 64% 6% / 0.45) 35%, hsl(222 64% 6% / 0.15) 65%, transparent 100%);
+    --gradient-hero-bottom: linear-gradient(to top, transparent 0%, hsl(222 64% 6% / 0.5) 60%, hsl(222 64% 6% / 0.75) 100%);
     --gradient-card: linear-gradient(to top, hsl(222 64% 4% / 0.9) 0%, transparent 100%);
     --gradient-nav: linear-gradient(to bottom, hsl(222 64% 4% / 0.9) 0%, transparent 100%);
 
@@ -125,6 +127,8 @@
 
     /* Light Mode Gradients */
     --gradient-hero: linear-gradient(to top, hsl(0 0% 100%) 0%, transparent 50%, transparent 100%);
+    --gradient-hero-fade: linear-gradient(to top, transparent 0%, hsl(0 0% 100% / 0.45) 35%, hsl(0 0% 100% / 0.15) 65%, transparent 100%);
+    --gradient-hero-bottom: linear-gradient(to top, transparent 0%, hsl(0 0% 100% / 0.5) 60%, hsl(0 0% 100% / 0.75) 100%);
     --gradient-card: linear-gradient(to top, hsl(0 0% 100% / 0.9) 0%, transparent 100%);
     --gradient-nav: linear-gradient(to bottom, hsl(0 0% 100% / 0.9) 0%, transparent 100%);
 
@@ -146,6 +150,31 @@
   body {
     @apply bg-background text-foreground font-cairo antialiased;
     font-feature-settings: "ss01", "ss02";
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/background-image.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .dark body::before {
+    opacity: 0.1;
+  }
+
+  .light body::before {
+    opacity: 0.15;
   }
 
   /* Custom Scrollbar */
@@ -196,8 +225,12 @@
     background: var(--gradient-hero);
   }
 
-  .hero-gradient-side {
-    background: linear-gradient(to left, transparent 0%, hsl(0 0% 8%) 100%);
+  .hero-gradient-fade {
+    background: var(--gradient-hero-fade);
+  }
+
+  .hero-gradient-bottom {
+    background: var(--gradient-hero-bottom);
   }
 
   /* Navbar Glassmorphism */

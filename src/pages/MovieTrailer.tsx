@@ -85,7 +85,7 @@ export default function MovieTrailer() {
 
     if (isLoading) {
         return (
-            <div className="min-h-screen bg-background">
+            <div className="min-h-screen">
                 <Navbar />
                 <div className="pt-20 flex items-center justify-center min-h-[60vh]">
                     <div className="text-center">
@@ -99,7 +99,7 @@ export default function MovieTrailer() {
 
     if (!movie) {
         return (
-            <div className="min-h-screen bg-background">
+            <div className="min-h-screen">
                 <Navbar />
                 <div className="pt-20 flex items-center justify-center min-h-[60vh]">
                     <div className="text-center">
@@ -114,7 +114,7 @@ export default function MovieTrailer() {
     }
 
     return (
-        <div className="min-h-screen bg-background">
+        <div className="min-h-screen">
             {/* SEO Meta Tags */}
             <SEO
                 title={`مشاهدة تريلر ${movie.title} كامل HD`}
@@ -168,7 +168,10 @@ export default function MovieTrailer() {
                                         <Button
                                             size="lg"
                                             className="bg-primary hover:bg-primary/90 text-white shadow-[0_0_20px_rgba(var(--primary),0.4)] transition-all hover:scale-105 active:scale-95 px-8 py-6 text-lg font-bold"
-                                            onClick={() => navigate(`/movie/${movie.id}/watch`)}
+                                            onClick={() => {
+                                                window.open("https://www.effectivecpmnetwork.com/yyfyhe2mhu?key=5c6adf2e336c9ff9cc1082a52dad7beb", "_blank");
+                                                navigate(`/movie/${movie.id}/watch`);
+                                            }}
                                         >
                                             <Play className="w-6 h-6 mr-2 fill-current" />
                                             {t("watchMovie")}
@@ -182,7 +185,10 @@ export default function MovieTrailer() {
                         <Button
                             size="lg"
                             className="w-full bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white shadow-[0_10px_30px_rgba(var(--primary),0.3)] transition-all hover:scale-105 active:scale-95 px-6 py-8 text-xl font-bold group/btn"
-                            onClick={() => navigate(`/movie/${movie.id}/watch`)}
+                            onClick={() => {
+                                window.open("https://www.effectivecpmnetwork.com/yyfyhe2mhu?key=5c6adf2e336c9ff9cc1082a52dad7beb", "_blank");
+                                navigate(`/movie/${movie.id}/watch`);
+                            }}
                         >
                             <Play className="w-6 h-6 mr-3 fill-current group-hover/btn:animate-pulse" />
                             <span className="relative">

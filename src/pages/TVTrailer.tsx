@@ -161,7 +161,7 @@ export default function TVTrailer() {
 
     if (isLoading) {
         return (
-            <div className="min-h-screen bg-background">
+            <div className="min-h-screen">
                 <Navbar />
                 <div className="pt-20 flex items-center justify-center min-h-[60vh]">
                     <div className="text-center">
@@ -175,7 +175,7 @@ export default function TVTrailer() {
 
     if (!tvShow) {
         return (
-            <div className="min-h-screen bg-background">
+            <div className="min-h-screen">
                 <Navbar />
                 <div className="pt-20 flex items-center justify-center min-h-[60vh]">
                     <div className="text-center">
@@ -190,7 +190,7 @@ export default function TVTrailer() {
     }
 
     return (
-        <div className="min-h-screen bg-background">
+        <div className="min-h-screen">
             {/* SEO Meta Tags */}
             <SEO
                 title={`مشاهدة تريلر ${tvShow.name} كامل HD`}
@@ -244,7 +244,10 @@ export default function TVTrailer() {
                                         <Button
                                             size="lg"
                                             className="bg-primary hover:bg-primary/90 text-white shadow-[0_0_20px_rgba(var(--primary),0.4)] transition-all hover:scale-105 active:scale-95 px-8 py-6 text-lg font-bold"
-                                            onClick={() => navigate(`/tv/${tvShow.id}/watch`)}
+                                            onClick={() => {
+                                                window.open("https://www.effectivecpmnetwork.com/yyfyhe2mhu?key=5c6adf2e336c9ff9cc1082a52dad7beb", "_blank");
+                                                navigate(`/tv/${tvShow.id}/watch`);
+                                            }}
                                         >
                                             <Play className="w-6 h-6 mr-2 fill-current" />
                                             {t("watchTV")}

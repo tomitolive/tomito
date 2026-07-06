@@ -156,7 +156,7 @@ export function WatchRamadanPage() {
 
     if (loading) {
         return (
-            <div className="min-h-screen bg-background text-foreground">
+            <div className="min-h-screen text-foreground">
                 <Navbar />
                 <main className="max-w-[1550px] mx-auto px-4 pt-32 pb-24">
                     <div className="grid lg:grid-cols-[1fr_300px] gap-10 lg:gap-14">
@@ -180,7 +180,7 @@ export function WatchRamadanPage() {
 
     if (!series || series.episodes.length === 0) {
         return (
-            <div className="min-h-screen bg-background text-foreground flex flex-col items-center justify-center pt-24 text-center px-4">
+            <div className="min-h-screen text-foreground flex flex-col items-center justify-center pt-24 text-center px-4">
                 <Navbar />
                 <div className="bg-card p-10 rounded-2xl border border-border max-w-lg space-y-4">
                     <h1 className="text-2xl font-black">المسلسل غير موجود</h1>
@@ -195,7 +195,7 @@ export function WatchRamadanPage() {
     }
 
     return (
-        <div className="min-h-screen bg-background text-foreground selection:bg-primary/30">
+        <div className="min-h-screen text-foreground selection:bg-primary/30">
             <Navbar />
 
             {/* Cinematic Background Ambient Effects + Ramadan Crescents */}

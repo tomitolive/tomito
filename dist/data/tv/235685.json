@@ -1,0 +1,1189 @@
+{
+  "adult": false,
+  "backdrop_path": "/lDmFwAaHL1kXnAfZeUTieAdUTko.jpg",
+  "created_by": [
+    {
+      "id": 1319442,
+      "credit_id": "66ebc190e43f07de82eb7282",
+      "name": "Jeremy Boreing",
+      "original_name": "Jeremy Boreing",
+      "gender": 2,
+      "profile_path": "/sInXT9hbDVqb1zOguXj1JH7POo4.jpg"
+    },
+    {
+      "id": 4950860,
+      "credit_id": "6910ac4b34eec9d9e7dd1d97",
+      "name": "Stephen R. Lawhead",
+      "original_name": "Stephen R. Lawhead",
+      "gender": 0,
+      "profile_path": null
+    }
+  ],
+  "episode_run_time": [],
+  "first_air_date": "2026-01-22",
+  "genres": [
+    {
+      "id": 10765,
+      "name": "خيال علمي وفانتازيا"
+    },
+    {
+      "id": 10759,
+      "name": "حركة ومغامرة"
+    },
+    {
+      "id": 10751,
+      "name": "عائلي"
+    },
+    {
+      "id": 18,
+      "name": "دراما"
+    }
+  ],
+  "homepage": "https://pendragoncycle.com/",
+  "id": 235685,
+  "in_production": true,
+  "languages": [
+    "en"
+  ],
+  "last_air_date": "2026-01-29",
+  "last_episode_to_air": {
+    "id": 4754647,
+    "name": "الحلقة 4",
+    "overview": "",
+    "vote_average": 10,
+    "vote_count": 1,
+    "air_date": "2026-02-05",
+    "episode_number": 4,
+    "episode_type": "standard",
+    "production_code": "",
+    "runtime": null,
+    "season_number": 1,
+    "show_id": 235685,
+    "still_path": "/pHH0cF7IPNWjkQOrlb1Psbqaqxy.jpg"
+  },
+  "name": "The Pendragon Cycle: Rise of the Merlin",
+  "next_episode_to_air": {
+    "id": 4754649,
+    "name": "الحلقة 5",
+    "overview": "",
+    "vote_average": 0,
+    "vote_count": 0,
+    "air_date": "2026-02-12",
+    "episode_number": 5,
+    "episode_type": "standard",
+    "production_code": "",
+    "runtime": null,
+    "season_number": 1,
+    "show_id": 235685,
+    "still_path": null
+  },
+  "networks": [
+    {
+      "id": 7148,
+      "logo_path": "/sX27wxgwZbJRuKRQ8MBxPXMp1s0.png",
+      "name": "DailyWire+",
+      "origin_country": "US"
+    }
+  ],
+  "number_of_episodes": 7,
+  "number_of_seasons": 1,
+  "origin_country": [
+    "US"
+  ],
+  "original_language": "en",
+  "original_name": "The Pendragon Cycle: Rise of the Merlin",
+  "overview": "",
+  "popularity": 138.0783,
+  "poster_path": "/gUooqhhzLVwDuyUZpZlscT9IzXY.jpg",
+  "production_companies": [
+    {
+      "id": 148930,
+      "logo_path": "/5vQU9dfSiYNQyTuciY8T3tUfI4a.png",
+      "name": "Bonfire Legend",
+      "origin_country": "US"
+    },
+    {
+      "id": 119153,
+      "logo_path": "/4QVWLiNT8svS71FU2qsRErGeIar.png",
+      "name": "Hero Squared",
+      "origin_country": "HU"
+    },
+    {
+      "id": 271151,
+      "logo_path": "/y9AzjDZZq3h7INjtP9iShwPNjhh.png",
+      "name": "Tirian Films",
+      "origin_country": "US"
+    },
+    {
+      "id": 41735,
+      "logo_path": "/je9Ko1f6iu0AfLL3dINJEaxLvEb.png",
+      "name": "Buffalo 8",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "HU",
+      "name": "Hungary"
+    },
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "seasons": [
+    {
+      "air_date": "2023-10-12",
+      "episode_count": 25,
+      "id": 424163,
+      "name": "العروض الخاصة",
+      "overview": "",
+      "poster_path": "/igHhvv8eXAecrPDbRszUIq84roH.jpg",
+      "season_number": 0,
+      "vote_average": 0
+    },
+    {
+      "air_date": "2026-01-22",
+      "episode_count": 7,
+      "id": 358260,
+      "name": "الموسم 1",
+      "overview": "",
+      "poster_path": "/pF7GNfSQ846D5Pfe7UnXfNjkpPl.jpg",
+      "season_number": 1,
+      "vote_average": 9.2
+    }
+  ],
+  "spoken_languages": [
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Returning Series",
+  "tagline": "",
+  "type": "Scripted",
+  "vote_average": 8.429,
+  "vote_count": 21,
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2040266,
+        "known_for_department": "Acting",
+        "name": "Tom Sharp",
+        "original_name": "Tom Sharp",
+        "popularity": 2.8771,
+        "profile_path": "/hdG7WkimU65SJhD9V3kC2UIveps.jpg",
+        "character": "Merlin",
+        "credit_id": "650f47703a4a120139558133",
+        "order": 0
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1963088,
+        "known_for_department": "Acting",
+        "name": "Rose Reid",
+        "original_name": "Rose Reid",
+        "popularity": 2.8698,
+        "profile_path": "/mtYxHu4GC3Imdf0jwF5OOy8Sv0T.jpg",
+        "character": "Charis",
+        "credit_id": "650f469ae8d0b400ca85b976",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 5739157,
+        "known_for_department": "Acting",
+        "name": "James Arden",
+        "original_name": "James Arden",
+        "popularity": 0.6088,
+        "profile_path": "/w28wKs5botIbnqNgqU3XyM3vk8d.jpg",
+        "character": "Taliesin",
+        "credit_id": "6910a8382768a98e62c05dbc",
+        "order": 2
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 3498933,
+        "known_for_department": "Acting",
+        "name": "Emree Franklin",
+        "original_name": "Emree Franklin",
+        "popularity": 1.2612,
+        "profile_path": "/4VlmDkvdq5sjbvnR6xAjQ2zcxTy.jpg",
+        "character": "Morgain",
+        "credit_id": "66ebc2fae43f07de82eb7325",
+        "order": 3
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2251047,
+        "known_for_department": "Acting",
+        "name": "Myles Clohessy",
+        "original_name": "Myles Clohessy",
+        "popularity": 1.4208,
+        "profile_path": "/7qhWkGv1W4taPFBVZ43U0snlrDm.jpg",
+        "character": "Uther",
+        "credit_id": "650f46b1f29d66013962d8a2",
+        "order": 4
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1718226,
+        "known_for_department": "Acting",
+        "name": "Finney Cassidy",
+        "original_name": "Finney Cassidy",
+        "popularity": 0.3231,
+        "profile_path": "/idrv9NADppAB3zbJ6sYl4KkRkJS.jpg",
+        "character": "Aurellius",
+        "credit_id": "6910a7d2583f19f6ae9abf3d",
+        "order": 5
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1347606,
+        "known_for_department": "Acting",
+        "name": "Brett Cooper",
+        "original_name": "Brett Cooper",
+        "popularity": 0.7936,
+        "profile_path": "/roOmM60pHoOnFLU0N1zSbrnhbSR.jpg",
+        "character": "Ganieda",
+        "credit_id": "650f481e3a4a120139558182",
+        "order": 6
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4287427,
+        "known_for_department": "Acting",
+        "name": "Alex Laurence - Phillips",
+        "original_name": "Alex Laurence - Phillips",
+        "popularity": 0.1097,
+        "profile_path": "/9QYX5QIGZkNsa9KxjG99lup7xyh.jpg",
+        "character": "Pelleas",
+        "credit_id": "650f470ef29d6600ad65a665",
+        "order": 7
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1218926,
+        "known_for_department": "Acting",
+        "name": "Colin Cunningham",
+        "original_name": "Colin Cunningham",
+        "popularity": 0.9992,
+        "profile_path": "/5ooKQ9tpLZDtDc5dHeREdvAWAOJ.jpg",
+        "character": "Vortigern",
+        "credit_id": "694acfe4b426a6bc67155e77",
+        "order": 8
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 210519,
+        "known_for_department": "Acting",
+        "name": "Nicholas Boulton",
+        "original_name": "Nicholas Boulton",
+        "popularity": 0.2538,
+        "profile_path": "/xxEpuETxcbWEKMiatZyiek5VLdt.jpg",
+        "character": "Morcant",
+        "credit_id": "6910a78b1bfc2ab5fdce875e",
+        "order": 9
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 133327,
+        "known_for_department": "Acting",
+        "name": "Daniel Fathers",
+        "original_name": "Daniel Fathers",
+        "popularity": 3.7572,
+        "profile_path": "/b0qxCiBh5h0BSE4Hik4W1GxWrNx.jpg",
+        "character": "King Avallach",
+        "credit_id": "6910a6b3119eef2e209abeb0",
+        "order": 10
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1194792,
+        "known_for_department": "Acting",
+        "name": "Steve Varnom",
+        "original_name": "Steve Varnom",
+        "popularity": 0.1176,
+        "profile_path": "/pRxGgD0DfK63b0bg7jZIm6OdGNE.jpg",
+        "character": "Custennin",
+        "credit_id": "6910a91e119eef2e209abebb",
+        "order": 11
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1384920,
+        "known_for_department": "Acting",
+        "name": "David Brooks",
+        "original_name": "David Brooks",
+        "popularity": 0.9383,
+        "profile_path": "/pGgFO5rLshi1jEuQJxo3bAQNcHh.jpg",
+        "character": "Tewdrig",
+        "credit_id": "6910a94ff125b88b5631ae8f",
+        "order": 12
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3334445,
+        "known_for_department": "Acting",
+        "name": "Alex Arco",
+        "original_name": "Alex Arco",
+        "popularity": 0.2079,
+        "profile_path": "/z8WDDw6ytqonCnnxZ7wH2oVp4Ct.jpg",
+        "character": "Meurig",
+        "credit_id": "6910a9705a6e68d567ce87bd",
+        "order": 13
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4226375,
+        "known_for_department": "Acting",
+        "name": "Thor Rosland",
+        "original_name": "Thor Rosland",
+        "popularity": 0.0311,
+        "profile_path": "/v7SdowUMJXMgu2LFj4AmOeYBkRs.jpg",
+        "character": "Hengist",
+        "credit_id": "6910a74c95aa21afb7a0c788",
+        "order": 14
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 5617991,
+        "known_for_department": "Acting",
+        "name": "Tom Tidiman",
+        "original_name": "Tom Tidiman",
+        "popularity": 0.0487,
+        "profile_path": "/drWZj9el8iN5fHShvW40k9yclEZ.jpg",
+        "character": "Aldwyn",
+        "credit_id": "6910a70b41b0b93d78a0c8bc",
+        "order": 15
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 4731253,
+        "known_for_department": "Acting",
+        "name": "George Osborne",
+        "original_name": "George Osborne",
+        "popularity": 0.064,
+        "profile_path": "/dBlhoyNdw4dkUX4bRXwhALose5C.jpg",
+        "character": "Lot",
+        "credit_id": "68f637e6412b0b4b4d321372",
+        "order": 16
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 2180302,
+        "known_for_department": "Acting",
+        "name": "Rebecka Johnston",
+        "original_name": "Rebecka Johnston",
+        "popularity": 0.5283,
+        "profile_path": "/gV37gbJwiXXL78JZr0aEKSdZMos.jpg",
+        "character": "Rhonwyn",
+        "credit_id": "6910a8941655f14dc7ce8979",
+        "order": 17
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4243034,
+        "known_for_department": "Directing",
+        "name": "Ryan Whitaker",
+        "original_name": "Ryan Whitaker",
+        "popularity": 0.1078,
+        "profile_path": null,
+        "credit_id": "66d88db5b228ac48180ee889",
+        "department": "Directing",
+        "job": "Director"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1319442,
+        "known_for_department": "Production",
+        "name": "Jeremy Boreing",
+        "original_name": "Jeremy Boreing",
+        "popularity": 0.5227,
+        "profile_path": "/sInXT9hbDVqb1zOguXj1JH7POo4.jpg",
+        "credit_id": "66d88dd9878cfc5bf70ee625",
+        "department": "Directing",
+        "job": "Director"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 77295,
+        "known_for_department": "Directing",
+        "name": "Jesse V. Johnson",
+        "original_name": "Jesse V. Johnson",
+        "popularity": 0.8351,
+        "profile_path": "/tXjWQ5sCLGSaL0YnwWFvF3O3XzQ.jpg",
+        "credit_id": "66d88deba155e9fc080ee9ca",
+        "department": "Directing",
+        "job": "Director"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 939456,
+        "known_for_department": "Production",
+        "name": "Dallas Sonnier",
+        "original_name": "Dallas Sonnier",
+        "popularity": 4.7146,
+        "profile_path": "/lkPw23rSkKujUKYXyKmIT3xDaus.jpg",
+        "credit_id": "66d88e2e818c4481480eebdc",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1319442,
+        "known_for_department": "Production",
+        "name": "Jeremy Boreing",
+        "original_name": "Jeremy Boreing",
+        "popularity": 0.5227,
+        "profile_path": "/sInXT9hbDVqb1zOguXj1JH7POo4.jpg",
+        "credit_id": "66d88e3f4b7414d4b11ab966",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4950860,
+        "known_for_department": "Writing",
+        "name": "Stephen R. Lawhead",
+        "original_name": "Stephen R. Lawhead",
+        "popularity": 0.1013,
+        "profile_path": null,
+        "credit_id": "66ebc1d62d67799ad3eb7535",
+        "department": "Writing",
+        "job": "Novel"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4950861,
+        "known_for_department": "Writing",
+        "name": "Lee Blaylock",
+        "original_name": "Lee Blaylock",
+        "popularity": 0.0143,
+        "profile_path": null,
+        "credit_id": "66ebc1e062c4bb18c9747b5b",
+        "department": "Writing",
+        "job": "Writer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4243034,
+        "known_for_department": "Directing",
+        "name": "Ryan Whitaker",
+        "original_name": "Ryan Whitaker",
+        "popularity": 0.1078,
+        "profile_path": null,
+        "credit_id": "66ebc1ec2d67799ad3eb753f",
+        "department": "Writing",
+        "job": "Writer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1395205,
+        "known_for_department": "Production",
+        "name": "Jerilyn Bickford",
+        "original_name": "Jerilyn Bickford",
+        "popularity": 0.0862,
+        "profile_path": null,
+        "credit_id": "66ebc2005168a896e11fd362",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 939456,
+        "known_for_department": "Production",
+        "name": "Dallas Sonnier",
+        "original_name": "Dallas Sonnier",
+        "popularity": 4.7146,
+        "profile_path": "/lkPw23rSkKujUKYXyKmIT3xDaus.jpg",
+        "credit_id": "66ebc2195168a896e11fd36c",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1319442,
+        "known_for_department": "Production",
+        "name": "Jeremy Boreing",
+        "original_name": "Jeremy Boreing",
+        "popularity": 0.5227,
+        "profile_path": "/sInXT9hbDVqb1zOguXj1JH7POo4.jpg",
+        "credit_id": "66ebc2235168a896e11fd36f",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 2153271,
+        "known_for_department": "Production",
+        "name": "Amanda Presmyk",
+        "original_name": "Amanda Presmyk",
+        "popularity": 2.6065,
+        "profile_path": "/hzYeBmu63Lh3pn52goDur1X1j2I.jpg",
+        "credit_id": "66ebc22ee43f07de82eb72c2",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3212243,
+        "known_for_department": "Production",
+        "name": "Caleb Robinson",
+        "original_name": "Caleb Robinson",
+        "popularity": 0.07,
+        "profile_path": null,
+        "credit_id": "66ebc23a2d67799ad3eb7547",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 3610766,
+        "known_for_department": "Directing",
+        "name": "Jonathan Hay",
+        "original_name": "Jonathan Hay",
+        "popularity": 0.0388,
+        "profile_path": null,
+        "credit_id": "66ebc2435168a896e11fd382",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 3138754,
+        "known_for_department": "Production",
+        "name": "Jonathan Halperyn",
+        "original_name": "Jonathan Halperyn",
+        "popularity": 0.0453,
+        "profile_path": null,
+        "credit_id": "66ebc24f5168a896e11fd389",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2856471,
+        "known_for_department": "Directing",
+        "name": "Travis LaSalle",
+        "original_name": "Travis LaSalle",
+        "popularity": 0.1268,
+        "profile_path": null,
+        "credit_id": "66ebc25d9bd4250430747660",
+        "department": "Production",
+        "job": "Associate Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2327110,
+        "known_for_department": "Production",
+        "name": "Daniel Kresmery",
+        "original_name": "Daniel Kresmery",
+        "popularity": 0.1009,
+        "profile_path": null,
+        "credit_id": "66ebc2652d67799ad3eb755f",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1460444,
+        "known_for_department": "Directing",
+        "name": "Ari Novak",
+        "original_name": "Ari Novak",
+        "popularity": 0.3261,
+        "profile_path": null,
+        "credit_id": "66ebc2749bd425043074766e",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2381102,
+        "known_for_department": "Sound",
+        "name": "Kyle McCuiston",
+        "original_name": "Kyle McCuiston",
+        "popularity": 0.0214,
+        "profile_path": null,
+        "credit_id": "66ebc2845168a896e11fd3a2",
+        "department": "Sound",
+        "job": "Music"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1518125,
+        "known_for_department": "Camera",
+        "name": "Akis Konstantakopoulos",
+        "original_name": "Akis Konstantakopoulos",
+        "popularity": 0.1417,
+        "profile_path": null,
+        "credit_id": "66ebc291e43f07de82eb72ea",
+        "department": "Camera",
+        "job": "Director of Photography"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1618705,
+        "known_for_department": "Camera",
+        "name": "Dávid Lukács",
+        "original_name": "Dávid Lukács",
+        "popularity": 0.0648,
+        "profile_path": null,
+        "credit_id": "66ebc29f62c4bb18c9747bc2",
+        "department": "Camera",
+        "job": "Director of Photography"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 23461,
+        "known_for_department": "Camera",
+        "name": "Maxime Alexandre",
+        "original_name": "Maxime Alexandre",
+        "popularity": 0.4525,
+        "profile_path": "/W0YnA5kR1g0PBliPg78ZQPeYO9.jpg",
+        "credit_id": "66ebc2aee43f07de82eb72fe",
+        "department": "Camera",
+        "job": "Director of Photography"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1288071,
+        "known_for_department": "Camera",
+        "name": "Kristopher S. Kimlin",
+        "original_name": "Kristopher S. Kimlin",
+        "popularity": 4.8028,
+        "profile_path": null,
+        "credit_id": "66ebc2b55168a896e11fd3b8",
+        "department": "Camera",
+        "job": "Director of Photography"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2079521,
+        "known_for_department": "Editing",
+        "name": "Jared Bentley",
+        "original_name": "Jared Bentley",
+        "popularity": 0.0895,
+        "profile_path": null,
+        "credit_id": "66ebc2c55168a896e11fd3bd",
+        "department": "Editing",
+        "job": "Editor"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1640119,
+        "known_for_department": "Editing",
+        "name": "Dániel Hajnal",
+        "original_name": "Dániel Hajnal",
+        "popularity": 0.2541,
+        "profile_path": null,
+        "credit_id": "66ebc2cb5168a896e11fd3c4",
+        "department": "Editing",
+        "job": "Editor"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1587301,
+        "known_for_department": "Crew",
+        "name": "Vi-Dan Tran",
+        "original_name": "Vi-Dan Tran",
+        "popularity": 0.395,
+        "profile_path": "/hlPpKfTSiYB4S4e7BsXTKzYjIfJ.jpg",
+        "credit_id": "68238d185efb48fc486eeabf",
+        "department": "Crew",
+        "job": "Stunts"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1587301,
+        "known_for_department": "Crew",
+        "name": "Vi-Dan Tran",
+        "original_name": "Vi-Dan Tran",
+        "popularity": 0.395,
+        "profile_path": "/hlPpKfTSiYB4S4e7BsXTKzYjIfJ.jpg",
+        "credit_id": "6823911ce5b34d36067e82fc",
+        "department": "Camera",
+        "job": "Camera Operator"
+      }
+    ]
+  },
+  "similar": {
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/d7oqsHVgoyqUs475EzOomeQAUhg.jpg",
+        "genre_ids": [
+          16,
+          10765
+        ],
+        "id": 129633,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "슈퍼 시크릿",
+        "overview": "",
+        "popularity": 0.1782,
+        "poster_path": "/8B50bslPGBnTwKmDZRKbORl00Tc.jpg",
+        "first_air_date": "2020-05-30",
+        "name": "슈퍼 시크릿",
+        "vote_average": 7,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/y3yozX8AW3PcLxS3WkezjJRKoM0.jpg",
+        "genre_ids": [
+          10765,
+          9648,
+          18
+        ],
+        "id": 129676,
+        "origin_country": [
+          "PL"
+        ],
+        "original_language": "pl",
+        "original_name": "Otwórz oczy",
+        "overview": "",
+        "popularity": 1.0464,
+        "poster_path": "/50nfmMwCoQ5DDoVL0lrpCuKjJIs.jpg",
+        "first_air_date": "2021-08-25",
+        "name": "Otwórz oczy",
+        "vote_average": 6.9,
+        "vote_count": 35
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/cENiQ3AJIHjpPsE9dW8KDmvldTK.jpg",
+        "genre_ids": [
+          9648,
+          18
+        ],
+        "id": 129680,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "I Know What You Did Last Summer",
+        "overview": "في بلدة هاواي المشمسة ذات ماض غامض ، تترك مجموعة من الأصدقاء مع سر مظلم بعد حادث مأساوي. بعد عام واحد ، يتلقى أحد أعضاء المجموعة رسالة تهديد ، ويعرف الأصدقاء الآن أن شخصا ما يعتزم جعلهم يدفعون ثمن الصيف الماضي.",
+        "popularity": 4.3494,
+        "poster_path": "/udvw5tHwEu8VI7e07qpVLZAw8o2.jpg",
+        "first_air_date": "2021-10-14",
+        "name": "I Know What You Did Last Summer",
+        "vote_average": 6.439,
+        "vote_count": 231
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/rir2tvfLpYZym2G9WBUHWgapNwV.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 129682,
+        "origin_country": [
+          "PK"
+        ],
+        "original_language": "ur",
+        "original_name": "پری‌زاد",
+        "overview": "",
+        "popularity": 2.7984,
+        "poster_path": "/rKPB1TNRmHLvB7CWDs5qltwSlwG.jpg",
+        "first_air_date": "2021-07-20",
+        "name": "پری‌زاد",
+        "vote_average": 8.8,
+        "vote_count": 4
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/7OrZdXUPBwCOaXtkGR18QjNJd5y.jpg",
+        "genre_ids": [
+          35,
+          18
+        ],
+        "id": 129694,
+        "origin_country": [
+          "CN"
+        ],
+        "original_language": "zh",
+        "original_name": "我的女主别太萌",
+        "overview": "",
+        "popularity": 0.9451,
+        "poster_path": "/mpdsWxuIe0E8kEIhFeqwGh9HwhD.jpg",
+        "first_air_date": "2021-07-23",
+        "name": "我的女主别太萌",
+        "vote_average": 6,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/noVfb78he1sLVNaMC9sGz3dpUoa.jpg",
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 129747,
+        "origin_country": [
+          "TH"
+        ],
+        "original_language": "th",
+        "original_name": "ส่งร้อน เสิร์ฟรัก",
+        "overview": "",
+        "popularity": 0.3661,
+        "poster_path": "/fFO5JqfwxJJtnMmVEKwBDidEaWs.jpg",
+        "first_air_date": "2021-08-29",
+        "name": "ส่งร้อน เสิร์ฟรัก",
+        "vote_average": 4.9,
+        "vote_count": 7
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/oR8SfUuISRo5WByCfYhaBIGQIgi.jpg",
+        "genre_ids": [
+          10765,
+          35,
+          18
+        ],
+        "id": 129768,
+        "origin_country": [
+          "TH"
+        ],
+        "original_language": "th",
+        "original_name": "ธิดาซาตาน",
+        "overview": "",
+        "popularity": 0.3419,
+        "poster_path": "/tflDiD9NeAy6dUww84tXUIXAZTq.jpg",
+        "first_air_date": "2021-04-19",
+        "name": "ธิดาซาตาน",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/28k8rUuBU4HDUmFMonYZYFwxN3p.jpg",
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 129956,
+        "origin_country": [
+          "TH"
+        ],
+        "original_language": "th",
+        "original_name": "รักนาย My Ride",
+        "overview": "",
+        "popularity": 2.3076,
+        "poster_path": "/jLtYRr37td5p6lDtZODYQ8LtMaD.jpg",
+        "first_air_date": "2022-01-28",
+        "name": "รักนาย My Ride",
+        "vote_average": 7.8,
+        "vote_count": 6
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/k2uhpsO3ry8Z3kOmsCzKpKrwTgk.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 282982,
+        "origin_country": [
+          "CN"
+        ],
+        "original_language": "zh",
+        "original_name": "大国手（系列）",
+        "overview": "",
+        "popularity": 1.77,
+        "poster_path": "/vcIqgWpiY3z6w1nYHT0rF0jW9fY.jpg",
+        "first_air_date": "2010-05-26",
+        "name": "大国手（系列）",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/llihrqe9uHy0CbJ5CQTHPccYfcw.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 283013,
+        "origin_country": [
+          "CN"
+        ],
+        "original_language": "zh",
+        "original_name": "半醒浮生",
+        "overview": "",
+        "popularity": 1.5696,
+        "poster_path": "/66pvqCNtpsyMDfNxJOqe427HKNm.jpg",
+        "first_air_date": "2025-07-24",
+        "name": "半醒浮生",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/r53nUDQBqeH8iY0SztgRaXjGOZT.jpg",
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 283020,
+        "origin_country": [
+          "TH"
+        ],
+        "original_language": "th",
+        "original_name": "ฤดูหลงป่า",
+        "overview": "",
+        "popularity": 1.4335,
+        "poster_path": "/2OCO2eYuNCptmr0Fr9jsGKVlLeQ.jpg",
+        "first_air_date": "2025-03-19",
+        "name": "ฤดูหลงป่า",
+        "vote_average": 8.2,
+        "vote_count": 6
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          18
+        ],
+        "id": 283038,
+        "origin_country": [
+          "CN"
+        ],
+        "original_language": "zh",
+        "original_name": "大梦想家",
+        "overview": "",
+        "popularity": 0.3734,
+        "poster_path": "/jFf77PP28rnRKZjqJv9rZVK9ThN.jpg",
+        "first_air_date": "",
+        "name": "大梦想家",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/ezqcfedWzq7ggxAuar6z23xClow.jpg",
+        "genre_ids": [
+          18,
+          10766
+        ],
+        "id": 283073,
+        "origin_country": [
+          "BR"
+        ],
+        "original_language": "pt",
+        "original_name": "Paulo, o Apóstolo",
+        "overview": "",
+        "popularity": 1.0988,
+        "poster_path": "/yRFFSL5cid6hbi6rQQycZKgg2AN.jpg",
+        "first_air_date": "2025-05-28",
+        "name": "Paulo, o Apóstolo",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          35,
+          18
+        ],
+        "id": 283118,
+        "origin_country": [
+          "TH"
+        ],
+        "original_language": "th",
+        "original_name": "ชิชาสาวน้อยมหัศจรรย์",
+        "overview": "",
+        "popularity": 0.1852,
+        "poster_path": "/e1AX8L0ojyiDHLqYPjyRRdBnyYX.jpg",
+        "first_air_date": "2005-01-28",
+        "name": "ชิชาสาวน้อยมหัศจรรย์",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          18
+        ],
+        "id": 282731,
+        "origin_country": [
+          "CN"
+        ],
+        "original_language": "zh",
+        "original_name": "风月不相关",
+        "overview": "",
+        "popularity": 1.8955,
+        "poster_path": null,
+        "first_air_date": "",
+        "name": "风月不相关",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          10765
+        ],
+        "id": 282740,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Rise of the Empress",
+        "overview": "",
+        "popularity": 0.268,
+        "poster_path": null,
+        "first_air_date": "",
+        "name": "Rise of the Empress",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/d5H2bPrUo2h5z8CXfoeb4dyvtGq.jpg",
+        "genre_ids": [
+          35,
+          18,
+          10751
+        ],
+        "id": 282750,
+        "origin_country": [
+          "PS"
+        ],
+        "original_language": "ar",
+        "original_name": "فنجان البلد",
+        "overview": "مسلسل فلسطيني ساخر يستعرض القضايا المجتمعية والسياسية بأسلوب الكوميديا السوداء .  من تأليف وإخراج عبدالرحمن ظاهر .  تم عرض مواسمه على  شبكة التلفزيون العربي و قناة رؤيا الفضائية .",
+        "popularity": 2.2705,
+        "poster_path": "/toClp9H90lIfVGVAeSf2ADq0JrM.jpg",
+        "first_air_date": "2013-07-10",
+        "name": "فنجان البلد",
+        "vote_average": 9,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/47cdJm6WGJqCsdE6QvPh6fLKwuo.jpg",
+        "genre_ids": [
+          16,
+          10759,
+          10765
+        ],
+        "id": 213402,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "とんでもスキルで異世界放浪メシ",
+        "overview": "",
+        "popularity": 15.1564,
+        "poster_path": "/6IZkTbgZEkzeVPKqfe644mSxbfF.jpg",
+        "first_air_date": "2023-01-11",
+        "name": "とんでもスキルで異世界放浪メシ",
+        "vote_average": 8.3,
+        "vote_count": 273
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/4vrsO0uY553HiE2YozyPYs8iaj1.jpg",
+        "genre_ids": [
+          10759,
+          10768,
+          9648
+        ],
+        "id": 129814,
+        "origin_country": [
+          "RU"
+        ],
+        "original_language": "ru",
+        "original_name": "Турецкий гамбит",
+        "overview": "",
+        "popularity": 0.9873,
+        "poster_path": "/hmtAk4NL8p2pEIgyDY85p6i734H.jpg",
+        "first_air_date": "2006-12-25",
+        "name": "Турецкий гамбит",
+        "vote_average": 7,
+        "vote_count": 3
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          9648,
+          10759,
+          10765
+        ],
+        "id": 130019,
+        "origin_country": [
+          "CN"
+        ],
+        "original_language": "zh",
+        "original_name": "吉星高照",
+        "overview": "",
+        "popularity": 2.0941,
+        "poster_path": "/q9TOQQt4ZNEdKvgkBCOQ8bcC36C.jpg",
+        "first_air_date": "",
+        "name": "吉星高照",
+        "vote_average": 0,
+        "vote_count": 0
+      }
+    ],
+    "total_pages": 3103,
+    "total_results": 62054
+  },
+  "videos": {
+    "results": []
+  }
+}

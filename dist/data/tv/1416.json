@@ -1,0 +1,1135 @@
+{
+  "adult": false,
+  "backdrop_path": "/jP0Rhj9OTPDAwQlHQwOLFDdeE8t.jpg",
+  "created_by": [
+    {
+      "id": 25539,
+      "credit_id": "5256cf6c19c2956ff609bd8e",
+      "name": "شوندا رايمز",
+      "original_name": "Shonda Rhimes",
+      "gender": 1,
+      "profile_path": "/pIQbVxfjNwZ0DaAjo3q107nng1b.jpg"
+    }
+  ],
+  "episode_run_time": [],
+  "first_air_date": "2005-03-27",
+  "genres": [
+    {
+      "id": 18,
+      "name": "دراما"
+    }
+  ],
+  "homepage": "https://abc.com/show/b7d90f97-dbb2-4ab5-b141-f9cbeae53581",
+  "id": 1416,
+  "in_production": true,
+  "languages": [
+    "en"
+  ],
+  "last_air_date": "2026-01-29",
+  "last_episode_to_air": {
+    "id": 6661369,
+    "name": "الحلقة 10",
+    "overview": "",
+    "vote_average": 9,
+    "vote_count": 2,
+    "air_date": "2026-01-29",
+    "episode_number": 10,
+    "episode_type": "mid_season",
+    "production_code": "",
+    "runtime": 44,
+    "season_number": 22,
+    "show_id": 1416,
+    "still_path": "/mskjWs8EfXrfteoimcutn4w6Gxs.jpg"
+  },
+  "name": "تشريح غراي",
+  "next_episode_to_air": {
+    "id": 6809167,
+    "name": "الحلقة 11",
+    "overview": "",
+    "vote_average": 0,
+    "vote_count": 0,
+    "air_date": "2026-02-26",
+    "episode_number": 11,
+    "episode_type": "standard",
+    "production_code": "",
+    "runtime": null,
+    "season_number": 22,
+    "show_id": 1416,
+    "still_path": null
+  },
+  "networks": [
+    {
+      "id": 2,
+      "logo_path": "/2uy2ZWcplrSObIyt4x0Y9rkG6qO.png",
+      "name": "ABC",
+      "origin_country": "US"
+    }
+  ],
+  "number_of_episodes": 465,
+  "number_of_seasons": 22,
+  "origin_country": [
+    "US"
+  ],
+  "original_language": "en",
+  "original_name": "Grey's Anatomy",
+  "overview": "الحياة الشخصية والمهنية لمجموعة من الأطباء في مستشفى - قراي سلون - في سياتل، الولايات المتحدة.",
+  "popularity": 194.4017,
+  "poster_path": "/hjJkrLXhWvGHpLeLBDFznpBTY1S.jpg",
+  "production_companies": [
+    {
+      "id": 1557,
+      "logo_path": "/ccz9bqCu3jSFKbPFnfWmjAKZLBL.png",
+      "name": "The Mark Gordon Company",
+      "origin_country": "US"
+    },
+    {
+      "id": 34209,
+      "logo_path": "/rYt8Q3nYxyE4YBLmVojvoKvIROv.png",
+      "name": "shondaland",
+      "origin_country": "US"
+    },
+    {
+      "id": 19366,
+      "logo_path": "/vOH8dyQhLK01pg5fYkgiS31jlFm.png",
+      "name": "ABC Studios",
+      "origin_country": "US"
+    },
+    {
+      "id": 1558,
+      "logo_path": "/wwaKUcOENHix2jxLfFBfNkCtOEQ.png",
+      "name": "Touchstone Television",
+      "origin_country": "US"
+    },
+    {
+      "id": 51848,
+      "logo_path": "/jmrRZgqHnYmJC4uePQI2sLijpSk.png",
+      "name": "Entertainment One Television",
+      "origin_country": "CA"
+    },
+    {
+      "id": 28523,
+      "logo_path": "/zzULw9w7d50BHR8fE30PZT3zJ1D.png",
+      "name": "Lionsgate Television",
+      "origin_country": "US"
+    },
+    {
+      "id": 236613,
+      "logo_path": "/9DTggoZARHzATCRewGRs9XSNOWP.png",
+      "name": "ABC Signature",
+      "origin_country": "US"
+    },
+    {
+      "id": 141553,
+      "logo_path": null,
+      "name": "Trip the Light Productions",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    },
+    {
+      "iso_3166_1": "CA",
+      "name": "Canada"
+    }
+  ],
+  "seasons": [
+    {
+      "air_date": "2006-02-14",
+      "episode_count": 68,
+      "id": 3722,
+      "name": "العروض الخاصة",
+      "overview": "",
+      "poster_path": "/snQYndfsEr3Sto2jOmkmsQuUXAQ.jpg",
+      "season_number": 0,
+      "vote_average": 0
+    },
+    {
+      "air_date": "2005-03-27",
+      "episode_count": 9,
+      "id": 3718,
+      "name": "الموسم 1",
+      "overview": "",
+      "poster_path": "/ulGju8GyXE36wCgmvyFJL3sLiVm.jpg",
+      "season_number": 1,
+      "vote_average": 7.7
+    },
+    {
+      "air_date": "2005-09-25",
+      "episode_count": 27,
+      "id": 3719,
+      "name": "الموسم 2",
+      "overview": "",
+      "poster_path": "/bO0S3fU8Tcqn0g5DCmDcX1oqA2t.jpg",
+      "season_number": 2,
+      "vote_average": 8.4
+    },
+    {
+      "air_date": "2006-09-21",
+      "episode_count": 25,
+      "id": 3715,
+      "name": "الموسم 3",
+      "overview": "",
+      "poster_path": "/aY7NuvFj5Uzliy0nrFxVWmlZFiK.jpg",
+      "season_number": 3,
+      "vote_average": 8.3
+    },
+    {
+      "air_date": "2007-09-27",
+      "episode_count": 17,
+      "id": 3716,
+      "name": "الموسم 4",
+      "overview": "",
+      "poster_path": "/gDQR39nMdjAvGyWe4lOPCj4iMQx.jpg",
+      "season_number": 4,
+      "vote_average": 7.9
+    },
+    {
+      "air_date": "2008-09-25",
+      "episode_count": 24,
+      "id": 3717,
+      "name": "الموسم 5",
+      "overview": "",
+      "poster_path": "/bnOS0AKjbfPY1xVqF80qk0iBQBX.jpg",
+      "season_number": 5,
+      "vote_average": 8.4
+    },
+    {
+      "air_date": "2009-09-24",
+      "episode_count": 24,
+      "id": 3720,
+      "name": "الموسم 6",
+      "overview": "",
+      "poster_path": "/8oclDsuHPZIVXh311u5SHlTNQzA.jpg",
+      "season_number": 6,
+      "vote_average": 8.2
+    },
+    {
+      "air_date": "2010-09-23",
+      "episode_count": 22,
+      "id": 3721,
+      "name": "الموسم 7",
+      "overview": "",
+      "poster_path": "/wmGUedMQJkmSZFYJA35AKPrHsGJ.jpg",
+      "season_number": 7,
+      "vote_average": 7.8
+    },
+    {
+      "air_date": "2011-09-21",
+      "episode_count": 24,
+      "id": 3723,
+      "name": "الموسم 8",
+      "overview": "",
+      "poster_path": "/pvuMQwMPWDqunRiajmeGQmUF0zS.jpg",
+      "season_number": 8,
+      "vote_average": 8.1
+    },
+    {
+      "air_date": "2012-09-27",
+      "episode_count": 24,
+      "id": 3724,
+      "name": "الموسم 9",
+      "overview": "",
+      "poster_path": "/gLP8aeWDfoOIqp1EFEMLSoHlIHW.jpg",
+      "season_number": 9,
+      "vote_average": 7.9
+    },
+    {
+      "air_date": "2013-09-26",
+      "episode_count": 24,
+      "id": 3725,
+      "name": "الموسم 10",
+      "overview": "",
+      "poster_path": "/h0z0USK1KerDJu02c218zFMIa52.jpg",
+      "season_number": 10,
+      "vote_average": 8
+    },
+    {
+      "air_date": "2014-09-25",
+      "episode_count": 24,
+      "id": 62051,
+      "name": "الموسم 11",
+      "overview": "",
+      "poster_path": "/AvMxKxyj6zIG5fR0fg7D6bWH4AY.jpg",
+      "season_number": 11,
+      "vote_average": 8
+    },
+    {
+      "air_date": "2015-09-24",
+      "episode_count": 24,
+      "id": 70494,
+      "name": "الموسم 12",
+      "overview": "",
+      "poster_path": "/b8pkzoNM5X0XSwppEA7jTID5Dcm.jpg",
+      "season_number": 12,
+      "vote_average": 8.1
+    },
+    {
+      "air_date": "2016-09-22",
+      "episode_count": 24,
+      "id": 79174,
+      "name": "الموسم 13",
+      "overview": "",
+      "poster_path": "/i4gNHaY1MzP50zcjgw3ew2hKCCW.jpg",
+      "season_number": 13,
+      "vote_average": 7.8
+    },
+    {
+      "air_date": "2017-09-28",
+      "episode_count": 24,
+      "id": 92088,
+      "name": "الموسم 14",
+      "overview": "",
+      "poster_path": "/2eSQFbeZZ7lCru40Q0UYGJ20itx.jpg",
+      "season_number": 14,
+      "vote_average": 8.2
+    },
+    {
+      "air_date": "2018-09-27",
+      "episode_count": 25,
+      "id": 108798,
+      "name": "الموسم 15",
+      "overview": "",
+      "poster_path": "/ravweBHwq9jkxQDDDwmqpyBDvCf.jpg",
+      "season_number": 15,
+      "vote_average": 8.4
+    },
+    {
+      "air_date": "2019-09-26",
+      "episode_count": 21,
+      "id": 129348,
+      "name": "الموسم 16",
+      "overview": "",
+      "poster_path": "/obzo1GdJUQ0OPnW9T9SNOCBxhD.jpg",
+      "season_number": 16,
+      "vote_average": 8
+    },
+    {
+      "air_date": "2020-11-12",
+      "episode_count": 17,
+      "id": 163320,
+      "name": "الموسم 17",
+      "overview": "",
+      "poster_path": "/clnyhPqj1SNgpAdeSS6a6fwE6Bo.jpg",
+      "season_number": 17,
+      "vote_average": 8.1
+    },
+    {
+      "air_date": "2021-09-30",
+      "episode_count": 20,
+      "id": 202440,
+      "name": "الموسم 18",
+      "overview": "",
+      "poster_path": "/zPIug5giU8oug6Xes5K1sTfQJxY.jpg",
+      "season_number": 18,
+      "vote_average": 8.4
+    },
+    {
+      "air_date": "2022-10-06",
+      "episode_count": 20,
+      "id": 297653,
+      "name": "الموسم 19",
+      "overview": "",
+      "poster_path": "/daSFbrt8QCXV2hSwB0hqYjbj681.jpg",
+      "season_number": 19,
+      "vote_average": 8.3
+    },
+    {
+      "air_date": "2024-03-14",
+      "episode_count": 10,
+      "id": 366034,
+      "name": "الموسم 20",
+      "overview": "",
+      "poster_path": "/jcEl8SISNfGdlQFwLzeEtsjDvpw.jpg",
+      "season_number": 20,
+      "vote_average": 8.7
+    },
+    {
+      "air_date": "2024-09-26",
+      "episode_count": 18,
+      "id": 401696,
+      "name": "الموسم 21",
+      "overview": "",
+      "poster_path": "/7jEVqXC14bhfAzSPgr896dMdDv6.jpg",
+      "season_number": 21,
+      "vote_average": 8.5
+    },
+    {
+      "air_date": "2025-10-09",
+      "episode_count": 18,
+      "id": 465873,
+      "name": "الموسم 22",
+      "overview": "",
+      "poster_path": "/hjJkrLXhWvGHpLeLBDFznpBTY1S.jpg",
+      "season_number": 22,
+      "vote_average": 8.1
+    }
+  ],
+  "spoken_languages": [
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Returning Series",
+  "tagline": "",
+  "type": "Scripted",
+  "vote_average": 8.21,
+  "vote_count": 10763,
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 9280,
+        "known_for_department": "Acting",
+        "name": "Ellen Pompeo",
+        "original_name": "Ellen Pompeo",
+        "popularity": 1.8347,
+        "profile_path": "/yPd4G2RcjXQPNWkKUPbWh5v1flC.jpg",
+        "character": "Meredith Grey",
+        "credit_id": "5256cf6919c2956ff609b6c8",
+        "order": 0
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 171075,
+        "known_for_department": "Acting",
+        "name": "شاندرا ويلسن",
+        "original_name": "Chandra Wilson",
+        "popularity": 1.524,
+        "profile_path": "/83Ynxlv3jV4ahkOiAEfunM7Rez2.jpg",
+        "character": "Miranda Bailey",
+        "credit_id": "5410f900c3a3680212000229",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 25544,
+        "known_for_department": "Acting",
+        "name": "James Pickens Jr.",
+        "original_name": "James Pickens Jr.",
+        "popularity": 1.671,
+        "profile_path": "/iddDcaysDQ6IVMUjJ97Bv3lTBCu.jpg",
+        "character": "Richard Webber",
+        "credit_id": "5410f8efc3a368020a000279",
+        "order": 4
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 81684,
+        "known_for_department": "Acting",
+        "name": "كاترينا سكورسون",
+        "original_name": "Caterina Scorsone",
+        "popularity": 1.581,
+        "profile_path": "/eLexGfeg4SyY9anPyNoh8hzKATD.jpg",
+        "character": "Amelia Shepherd",
+        "credit_id": "5410f7e7c3a368020a00025a",
+        "order": 5
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 236021,
+        "known_for_department": "Acting",
+        "name": "Camilla Luddington",
+        "original_name": "Camilla Luddington",
+        "popularity": 2.6051,
+        "profile_path": "/eKF5lSEdEtOCbsgb5mKjd8vYLck.jpg",
+        "character": "Jo Wilson",
+        "credit_id": "5410f84dc3a368020f000253",
+        "order": 6
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 9013,
+        "known_for_department": "Acting",
+        "name": "Kevin McKidd",
+        "original_name": "Kevin McKidd",
+        "popularity": 1.5567,
+        "profile_path": "/KtmEKOSehmQ35JfGjEjpqlypbP.jpg",
+        "character": "Owen Hunt",
+        "credit_id": "5410f8c5c3a368020f00025b",
+        "order": 6
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 17836,
+        "known_for_department": "Acting",
+        "name": "Kim Raver",
+        "original_name": "Kim Raver",
+        "popularity": 2.2274,
+        "profile_path": "/o9OYkG0b48125tim78ebyGeC4lO.jpg",
+        "character": "Teddy Altman",
+        "credit_id": "5256cf6b19c2956ff609bb0c",
+        "order": 7
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 95475,
+        "known_for_department": "Acting",
+        "name": "Jason George",
+        "original_name": "Jason George",
+        "popularity": 1.6863,
+        "profile_path": "/eTiyxcbtEsdANo1NGFsfk3mZPW3.jpg",
+        "character": "Ben Warren",
+        "credit_id": "5cb1745dc3a3680891aa837c",
+        "order": 9
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 87440,
+        "known_for_department": "Acting",
+        "name": "Chris Carmack",
+        "original_name": "Chris Carmack",
+        "popularity": 1.6334,
+        "profile_path": "/ubJHfIw8aItjkY266hyTCc4NERA.jpg",
+        "character": "Atticus Lincoln",
+        "credit_id": "6001994a7390c0003bf7ea39",
+        "order": 10
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1583975,
+        "known_for_department": "Acting",
+        "name": "Anthony Hill",
+        "original_name": "Anthony Hill",
+        "popularity": 3.5226,
+        "profile_path": "/dUaUfI29UIsq0jqCEdNlTsvAFjC.jpg",
+        "character": "Winston Ndugu",
+        "credit_id": "604c790a326c19003d1a56dc",
+        "order": 11
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 131781,
+        "known_for_department": "Acting",
+        "name": "Adelaide Kane",
+        "original_name": "Adelaide Kane",
+        "popularity": 2.1782,
+        "profile_path": "/6X6LsRE9xMRbRncHtTzo2wVUiMg.jpg",
+        "character": "Jules Millin",
+        "credit_id": "634b32bc25a536007aa12ac8",
+        "order": 12
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 2298241,
+        "known_for_department": "Acting",
+        "name": "Alexis Floyd",
+        "original_name": "Alexis Floyd",
+        "popularity": 0.6226,
+        "profile_path": "/iMdaTr01pvQjbnbNMyxUsYDqFH3.jpg",
+        "character": "Simone Griffith",
+        "credit_id": "634b32cc414291009882ac69",
+        "order": 13
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2455682,
+        "known_for_department": "Acting",
+        "name": "Niko Terho",
+        "original_name": "Niko Terho",
+        "popularity": 0.7361,
+        "profile_path": "/pi536mDzHtZAvZTdlgKbCaBEsEg.jpg",
+        "character": "Lucas Adams",
+        "credit_id": "634b32e6d6dbba007a10a504",
+        "order": 15
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 232499,
+        "known_for_department": "Acting",
+        "name": "هاري شم جونيور",
+        "original_name": "Harry Shum Jr.",
+        "popularity": 5.472,
+        "profile_path": "/xFQsThmdyuOk9jt3zgZL08ixf2b.jpg",
+        "character": "Benson 'Blue' Kwan",
+        "credit_id": "634b32a3389da10081cd0aa5",
+        "order": 17
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 984055,
+        "known_for_department": "Acting",
+        "name": "Trevor Jackson",
+        "original_name": "Trevor Jackson",
+        "popularity": 2.5116,
+        "profile_path": "/dMHjMtC69wHlztu3vP8y6RPuCXT.jpg",
+        "character": "Wes Bryant",
+        "credit_id": "681d8e4adc937285bc88c549",
+        "order": 18
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1443033,
+        "known_for_department": "Costume & Make-Up",
+        "name": "Ketty Gonzalez",
+        "original_name": "Ketty Gonzalez",
+        "popularity": 0.4078,
+        "profile_path": null,
+        "credit_id": "676f47dc8258294bb8617a1e",
+        "department": "Costume & Make-Up",
+        "job": "Hairstylist"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 2825707,
+        "known_for_department": "Art",
+        "name": "Nicole Gonzalez",
+        "original_name": "Nicole Gonzalez",
+        "popularity": 0.2469,
+        "profile_path": null,
+        "credit_id": "676f4913aa8f3159d612c696",
+        "department": "Art",
+        "job": "Props"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4195552,
+        "known_for_department": "Camera",
+        "name": "Marcial Gonzalez",
+        "original_name": "Marcial Gonzalez",
+        "popularity": 0.1546,
+        "profile_path": null,
+        "credit_id": "676f49e08258294bb8617b80",
+        "department": "Camera",
+        "job": "Dolly Grip"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1287869,
+        "known_for_department": "Costume & Make-Up",
+        "name": "Kelly Golden",
+        "original_name": "Kelly Golden",
+        "popularity": 0.2721,
+        "profile_path": null,
+        "credit_id": "676f4a586cc4caf8fb9273b7",
+        "department": "Costume & Make-Up",
+        "job": "Prosthetic Makeup Artist"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2153413,
+        "known_for_department": "Costume & Make-Up",
+        "name": "Natalie Vermiglio",
+        "original_name": "Natalie Vermiglio",
+        "popularity": 0.1308,
+        "profile_path": null,
+        "credit_id": "676f4b51d0b08f9718616aed",
+        "department": "Costume & Make-Up",
+        "job": "Hairstylist"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1607173,
+        "known_for_department": "Art",
+        "name": "Glen Hall",
+        "original_name": "Glen Hall",
+        "popularity": 0.2181,
+        "profile_path": null,
+        "credit_id": "676f4e4bd0b08f9718616bf3",
+        "department": "Costume & Make-Up",
+        "job": "On Set Dresser"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1607173,
+        "known_for_department": "Art",
+        "name": "Glen Hall",
+        "original_name": "Glen Hall",
+        "popularity": 0.2181,
+        "profile_path": null,
+        "credit_id": "676f4f21bf10ff1984618a50",
+        "department": "Art",
+        "job": "Supervising Art Director"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 5144548,
+        "known_for_department": "Editing",
+        "name": "Sara Steinberg",
+        "original_name": "Sara Steinberg",
+        "popularity": 0.1177,
+        "profile_path": null,
+        "credit_id": "676f5561cfe62644df12d3b9",
+        "department": "Editing",
+        "job": "Assistant Editor"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 4329041,
+        "known_for_department": "Camera",
+        "name": "John Wesley DeWolfe",
+        "original_name": "John Wesley DeWolfe",
+        "popularity": 0.2782,
+        "profile_path": null,
+        "credit_id": "681481547e064a68518b76a0",
+        "department": "Editing",
+        "job": "Dailies Technician"
+      }
+    ]
+  },
+  "similar": {
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/28k8rUuBU4HDUmFMonYZYFwxN3p.jpg",
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 129956,
+        "origin_country": [
+          "TH"
+        ],
+        "original_language": "th",
+        "original_name": "รักนาย My Ride",
+        "overview": "",
+        "popularity": 2.3076,
+        "poster_path": "/jLtYRr37td5p6lDtZODYQ8LtMaD.jpg",
+        "first_air_date": "2022-01-28",
+        "name": "รักนาย My Ride",
+        "vote_average": 7.8,
+        "vote_count": 6
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/AlKnW6mDzdgsDh57NtAWjfGq8Ig.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 130018,
+        "origin_country": [
+          "CN"
+        ],
+        "original_language": "zh",
+        "original_name": "站住！花小姐",
+        "overview": "",
+        "popularity": 2.6944,
+        "poster_path": "/4YK1Gwbxhd1BujGOMbYlwdzCTc0.jpg",
+        "first_air_date": "2021-07-28",
+        "name": "站住！花小姐",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/lVX7HGBcUqxVS0odAlXk7x3ZDx8.jpg",
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 134071,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "너의 밤이 되어줄게",
+        "overview": "",
+        "popularity": 1.8197,
+        "poster_path": "/8p1kRlCIPKYMDhnwwa9YE8SlFkO.jpg",
+        "first_air_date": "2021-11-07",
+        "name": "너의 밤이 되어줄게",
+        "vote_average": 6.7,
+        "vote_count": 12
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/8kF28ohZWy2BbgQFuHRV6wd5guf.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 134150,
+        "origin_country": [
+          "TW"
+        ],
+        "original_language": "zh",
+        "original_name": "無邪",
+        "overview": "",
+        "popularity": 0.9061,
+        "poster_path": "/gm3YfLaa3I3o3lmdxO1n9Glk4r7.jpg",
+        "first_air_date": "2021-09-24",
+        "name": "無邪",
+        "vote_average": 4,
+        "vote_count": 4
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          35,
+          18
+        ],
+        "id": 3587,
+        "origin_country": [
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "No Angels",
+        "overview": "",
+        "popularity": 1.1936,
+        "poster_path": "/scGXdI978kDTBMwB2Hx56WGsF89.jpg",
+        "first_air_date": "2004-03-02",
+        "name": "No Angels",
+        "vote_average": 5.5,
+        "vote_count": 8
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/14aJrAGtZvAgCwIhZOfVMTqIjtp.jpg",
+        "genre_ids": [
+          18,
+          80,
+          9648,
+          35
+        ],
+        "id": 32708,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Body of Proof",
+        "overview": "",
+        "popularity": 9.8154,
+        "poster_path": "/8LyLUgvwawgnNKOzIFX5lSgTNeq.jpg",
+        "first_air_date": "2011-03-29",
+        "name": "Body of Proof",
+        "vote_average": 7,
+        "vote_count": 180
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/oZ2ST23FHaAWgN2A04oTBQU9lqE.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 133908,
+        "origin_country": [
+          "CA"
+        ],
+        "original_language": "en",
+        "original_name": "SkyMed",
+        "overview": "",
+        "popularity": 4.4266,
+        "poster_path": "/tOKUKERvfaOf7Dy2IAKT5HYYXJJ.jpg",
+        "first_air_date": "2022-07-10",
+        "name": "SkyMed",
+        "vote_average": 6.877,
+        "vote_count": 81
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/3N6effQUWb64LeWUflfiB59BXNW.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 99477,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "그 남자의 기억법",
+        "overview": "تنشأ علاقة عميقة بين مذيع أخبار يتذكّر كلّ لحظة قد مرّت عليه في حياته، وممثّلة فقدت ذكريات ماضيها… تُرى إلامَ سينتهي بهما المطاف؟",
+        "popularity": 2.942,
+        "poster_path": "/uQhpgk9Gy0GiWisb3Y8Vmunhx8j.jpg",
+        "first_air_date": "2020-03-18",
+        "name": "جِدني في ذاكرتك",
+        "vote_average": 8,
+        "vote_count": 33
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/ajSETcBuftCMeloOxqHMkzdelpa.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 99530,
+        "origin_country": [
+          "CA"
+        ],
+        "original_language": "en",
+        "original_name": "Transplant",
+        "overview": "",
+        "popularity": 6.0232,
+        "poster_path": "/ukvqJZI0XctnLst0CTE2r0AC2eu.jpg",
+        "first_air_date": "2020-02-26",
+        "name": "Transplant",
+        "vote_average": 7.507,
+        "vote_count": 140
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/r20ZFzZ50dilUrrFtUeqA91iH7Z.jpg",
+        "genre_ids": [
+          18,
+          80,
+          10766,
+          35
+        ],
+        "id": 249112,
+        "origin_country": [
+          "SE"
+        ],
+        "original_language": "sv",
+        "original_name": "Sociala Medier Akuten",
+        "overview": "",
+        "popularity": 0.1314,
+        "poster_path": "/wdR2C7BuRdb4zsI070ffuPUIk1w.jpg",
+        "first_air_date": "2022-05-25",
+        "name": "Sociala Medier Akuten",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/yftuT4mcMhaKvRmCaSipk3gwwE7.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 249168,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "シークレット同盟",
+        "overview": "",
+        "popularity": 1.5089,
+        "poster_path": "/x439bCsZu4j6bXr7ouyywtEks4E.jpg",
+        "first_air_date": "2024-04-05",
+        "name": "シークレット同盟",
+        "vote_average": 6,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/o9Z8O0gdi6Qvvzk86RdnnBjBGDq.jpg",
+        "genre_ids": [
+          18,
+          10759
+        ],
+        "id": 65143,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "태양의 후예",
+        "overview": "يعجب جندي مندفع بجرّاحة موهوبة بعد لقائهما الأول في المستشفى، لكنّهما يفترقان لاختلاف مبادئهما في الحياة... فهل يخبّئ لهما القدر خططًا أخرى؟",
+        "popularity": 8.3061,
+        "poster_path": "/oftJqc7t6TULfpRVlWz0DJwHYj1.jpg",
+        "first_air_date": "2016-02-24",
+        "name": "أحفاد الشمس",
+        "vote_average": 8.372,
+        "vote_count": 781
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/2iYitemZYaZUcmSo0l2p3WHvj5J.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 3172,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Private Practice",
+        "overview": "",
+        "popularity": 19.9684,
+        "poster_path": "/pW20ANAGdrgreYJExduUVaWos6H.jpg",
+        "first_air_date": "2007-09-26",
+        "name": "Private Practice",
+        "vote_average": 7.546,
+        "vote_count": 346
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/9SZWGari27b3SNIKXPKGkXPZ91n.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 3213,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Marcus Welby, M.D.",
+        "overview": "",
+        "popularity": 14.6411,
+        "poster_path": "/areZG2JxZUYjCs2oDpkf2TW1ziX.jpg",
+        "first_air_date": "1969-09-23",
+        "name": "Marcus Welby, M.D.",
+        "vote_average": 6.5,
+        "vote_count": 19
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          18
+        ],
+        "id": 3239,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "3 lbs",
+        "overview": "",
+        "popularity": 1.3584,
+        "poster_path": "/ag1BWbuttURLSzJuINPT843HBg0.jpg",
+        "first_air_date": "2006-11-14",
+        "name": "3 lbs",
+        "vote_average": 4.2,
+        "vote_count": 4
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/vvvwefAwrJ9xaVrFOuk8BKQfvIK.jpg",
+        "genre_ids": [
+          18,
+          80
+        ],
+        "id": 60956,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "닥터 이방인",
+        "overview": "تتحدث دراما “الطبيب الغريب” عن “بارك هون”، طفل أختطف هو ووالده من قِبل كوريا الشمالية. وهناك تدرّب “بارك هون” على يدي والده الطبيب ليٌصبح طبيباً. وأصبح “بارك هون” جرّاح صدر عبقري ومن ثم هرب إلى كوريا الجنوبية. وبدأ يعمل هناك كطبيب في أفضل مستشفى في كوريا الجنوبية وهو مستشفى جامعة دونغوو، لكنه على الرغم من هذا يشعر كغريب بينهم. يبذل قُصارى جهده لجمع",
+        "popularity": 3.3338,
+        "poster_path": "/bmTdYYgDWdtEYWlaDfaVjZIt301.jpg",
+        "first_air_date": "2014-05-05",
+        "name": "الطبيب الغريب",
+        "vote_average": 8.1,
+        "vote_count": 294
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/wkQRvJEExw8vdwNU0Hbo4rZ62Vp.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 150,
+        "origin_country": [
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "This Life",
+        "overview": "",
+        "popularity": 2.4941,
+        "poster_path": "/wC8V4g0AsyWO6ZFCRqg7bkNsmVC.jpg",
+        "first_air_date": "1996-03-18",
+        "name": "This Life",
+        "vote_average": 7.5,
+        "vote_count": 24
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/9VKoWUd81e8NRi2PxC0BlVoUO7V.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 61014,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "The Knick",
+        "overview": "",
+        "popularity": 4.2278,
+        "poster_path": "/oeEqDSIVOi6q0GcZj8L9Q6G7fGC.jpg",
+        "first_air_date": "2014-08-08",
+        "name": "The Knick",
+        "vote_average": 7.853,
+        "vote_count": 491
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/oQBv5KUDuceheaYL8nMmF7Dg3K8.jpg",
+        "genre_ids": [
+          10759,
+          18
+        ],
+        "id": 216445,
+        "origin_country": [
+          "CN"
+        ],
+        "original_language": "zh",
+        "original_name": "我的人间烟火",
+        "overview": "“كان سونغ يان” و”شو تشين” أفضل الأصدقاء في الطفولة، لكن اضطرت أسرهما إلى فصلهما. بعد عشر سنوات، يعمل كل منهما بجد في مجالات مختلفة، وعندما يتدخل القدر، يتساءلون عما إذا كان بإمكانهما بناء علاقة جديدة أم أنها مجرد علاقة عابرة.",
+        "popularity": 10.356,
+        "poster_path": "/1aFjbcTM47n2TddirkDfRPLQbL.jpg",
+        "first_air_date": "2023-07-05",
+        "name": "الألعاب النارية من قلبي",
+        "vote_average": 7.9,
+        "vote_count": 54
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/rdbobph13U9CHSgcnwbCiv1a89O.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 99053,
+        "origin_country": [
+          "MX"
+        ],
+        "original_language": "es",
+        "original_name": "Médicos, línea de vida",
+        "overview": "",
+        "popularity": 2.3206,
+        "poster_path": "/zH5Qx1etw2b61zoQkQ1egMGlIfO.jpg",
+        "first_air_date": "2019-11-11",
+        "name": "Médicos, línea de vida",
+        "vote_average": 6.3,
+        "vote_count": 3
+      }
+    ],
+    "total_pages": 2393,
+    "total_results": 47849
+  },
+  "videos": {
+    "results": [
+      {
+        "iso_639_1": "ar",
+        "iso_3166_1": "SA",
+        "name": "اكثر مشهد مُحزن من مسلسل Grey's Anatomy",
+        "key": "C9qGrwIXlUU",
+        "site": "YouTube",
+        "size": 480,
+        "type": "Trailer",
+        "official": false,
+        "published_at": "2016-04-01T21:59:46.000Z",
+        "id": "637c8db9b2e07401912c1341"
+      }
+    ]
+  }
+}

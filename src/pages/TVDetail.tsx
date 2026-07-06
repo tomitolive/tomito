@@ -60,7 +60,7 @@ export default function TVDetail() {
     if (!tv) return <div className="h-screen flex items-center justify-center">TV Show not found</div>;
 
     return (
-        <div className="min-h-screen bg-background text-foreground">
+        <div className="min-h-screen text-foreground">
             <MovieSEO movie={localTV} lang="ar" />
             <Navbar />
 

@@ -112,7 +112,7 @@ export default function SeriesDownloadList() {
     };
 
     return (
-        <div className="min-h-screen bg-background text-foreground selection:bg-primary/30">
+        <div className="min-h-screen text-foreground selection:bg-primary/30">
             <SEO
                 title="تحميل المسلسلات برابط واحد - مكتبة المسلسلات الكاملة"
                 description="مكتبة شاملة لتحميل المسلسلات الكاملة بروابط مباشرة وسريعة. سيرفرات متعددة وجودات عالية."

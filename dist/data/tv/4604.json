@@ -1,0 +1,989 @@
+{
+  "adult": false,
+  "backdrop_path": "/hBSSm06lrxjhbCKhCUiRN8AGBQG.jpg",
+  "created_by": [
+    {
+      "id": 18924,
+      "credit_id": "5975988ec3a36821db0084c5",
+      "name": "ألفرد غوغ",
+      "original_name": "Alfred Gough",
+      "gender": 2,
+      "profile_path": "/wZV1hProzjw9oR9HtjILDMn2K6A.jpg"
+    },
+    {
+      "id": 18923,
+      "credit_id": "5975989392514106a801fe34",
+      "name": "مايلز ميلر",
+      "original_name": "Miles Millar",
+      "gender": 2,
+      "profile_path": "/4phggQUKYg2WMMEy4JW8y6pKEVS.jpg"
+    }
+  ],
+  "episode_run_time": [
+    43
+  ],
+  "first_air_date": "2001-10-16",
+  "genres": [
+    {
+      "id": 10765,
+      "name": "خيال علمي وفانتازيا"
+    },
+    {
+      "id": 10759,
+      "name": "حركة ومغامرة"
+    },
+    {
+      "id": 18,
+      "name": "دراما"
+    }
+  ],
+  "homepage": "",
+  "id": 4604,
+  "in_production": false,
+  "languages": [
+    "en"
+  ],
+  "last_air_date": "2011-05-13",
+  "last_episode_to_air": {
+    "id": 333451,
+    "name": "الحلقة 21",
+    "overview": "",
+    "vote_average": 9.5,
+    "vote_count": 13,
+    "air_date": "2011-05-13",
+    "episode_number": 21,
+    "episode_type": "finale",
+    "production_code": "3X6020|3X6022",
+    "runtime": 84,
+    "season_number": 10,
+    "show_id": 4604,
+    "still_path": "/n84H7AfbFhJ8jHfbhZ55pEShG0h.jpg"
+  },
+  "name": "سمولفيل",
+  "next_episode_to_air": null,
+  "networks": [
+    {
+      "id": 21,
+      "logo_path": "/9GlDHjQj9c2dkfARCR3zlH87R66.png",
+      "name": "The WB",
+      "origin_country": "US"
+    },
+    {
+      "id": 71,
+      "logo_path": "/hEpcdJ4O6eitG9ADSnDXNUrlovS.png",
+      "name": "The CW",
+      "origin_country": "US"
+    }
+  ],
+  "number_of_episodes": 216,
+  "number_of_seasons": 10,
+  "origin_country": [
+    "US"
+  ],
+  "original_language": "en",
+  "original_name": "Smallville",
+  "overview": "يرصد المسلسل القدرات العبقرية والعديدة لدي كلارك كينت (طوم ويلنج) حيث يقوم بعمليات إنقاذ واسعة تثير الشكوك حوله في بلدة سمولفيل. كلارك كينت سريع للغاية ويقال أنه يعرف طريقه للمشاكل جيدًا. كلارك كينت وُجد من قبل مارثا كينت (أنيت أوتول) وجوناثان كينت (جون شنايدر) في يوم لا يُنسى وتم تبنيه من قبل مارثا وجوناثان. ولكن هناك من ينبش وراء أصل كلارك كينت ويسعى بكل ما أوتي من قوة من أجل كشف سره.",
+  "popularity": 121.5291,
+  "poster_path": "/azU5zRPEaiACTY6kAlEddIe8ypk.jpg",
+  "production_companies": [
+    {
+      "id": 429,
+      "logo_path": "/4Y00XuSMuP1gimd0jP6JT57QbCI.png",
+      "name": "DC",
+      "origin_country": "US"
+    },
+    {
+      "id": 1957,
+      "logo_path": "/pJJw98MtNFC9cHn3o15G7vaUnnX.png",
+      "name": "Warner Bros. Television",
+      "origin_country": "US"
+    },
+    {
+      "id": 2184,
+      "logo_path": null,
+      "name": "Tollin/Robbins Productions",
+      "origin_country": "US"
+    },
+    {
+      "id": 20356,
+      "logo_path": "/awFYFsOyoG3VttUmWvnhgZgXxxh.png",
+      "name": "Millar Gough Ink",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "seasons": [
+    {
+      "air_date": null,
+      "episode_count": 38,
+      "id": 14028,
+      "name": "العروض الخاصة",
+      "overview": "",
+      "poster_path": "/mrrJu4MOgsDrhLKPc88RVg0iGfm.jpg",
+      "season_number": 0,
+      "vote_average": 0
+    },
+    {
+      "air_date": "2001-10-16",
+      "episode_count": 21,
+      "id": 14018,
+      "name": "الموسم 1",
+      "overview": "",
+      "poster_path": "/mY3OB1DwTdO0Y1I566k2uf2nWtC.jpg",
+      "season_number": 1,
+      "vote_average": 8
+    },
+    {
+      "air_date": "2002-09-24",
+      "episode_count": 23,
+      "id": 14019,
+      "name": "الموسم 2",
+      "overview": "",
+      "poster_path": "/uSr3nf44jkWSswhNnToln9t1dLB.jpg",
+      "season_number": 2,
+      "vote_average": 8.2
+    },
+    {
+      "air_date": "2003-10-01",
+      "episode_count": 22,
+      "id": 14020,
+      "name": "الموسم 3",
+      "overview": "",
+      "poster_path": "/f60xCocHvSKZE3hNh7JrlqVKg9V.jpg",
+      "season_number": 3,
+      "vote_average": 8.3
+    },
+    {
+      "air_date": "2004-09-22",
+      "episode_count": 22,
+      "id": 14021,
+      "name": "الموسم 4",
+      "overview": "",
+      "poster_path": "/aVi3L1r9ZWOOSacAXvpIdoNCfWW.jpg",
+      "season_number": 4,
+      "vote_average": 8.4
+    },
+    {
+      "air_date": "2005-09-29",
+      "episode_count": 22,
+      "id": 14022,
+      "name": "الموسم 5",
+      "overview": "",
+      "poster_path": "/ssd1X4oehoyv7AU75hwoGGX75nS.jpg",
+      "season_number": 5,
+      "vote_average": 8.4
+    },
+    {
+      "air_date": "2006-09-28",
+      "episode_count": 22,
+      "id": 14023,
+      "name": "الموسم 6",
+      "overview": "",
+      "poster_path": "/r8xOSL0V4srx6KrWjgYY0ZqZfFS.jpg",
+      "season_number": 6,
+      "vote_average": 8.2
+    },
+    {
+      "air_date": "2007-09-27",
+      "episode_count": 20,
+      "id": 14024,
+      "name": "الموسم 7",
+      "overview": "",
+      "poster_path": "/6lGHd6lBbpEkoq5pgI8XDRy2WYB.jpg",
+      "season_number": 7,
+      "vote_average": 8.2
+    },
+    {
+      "air_date": "2008-09-18",
+      "episode_count": 22,
+      "id": 14025,
+      "name": "الموسم 8",
+      "overview": "",
+      "poster_path": "/jqEDADJiQbdtLMLSoXVulSiQkfh.jpg",
+      "season_number": 8,
+      "vote_average": 8.4
+    },
+    {
+      "air_date": "2009-09-25",
+      "episode_count": 21,
+      "id": 14026,
+      "name": "الموسم 9",
+      "overview": "",
+      "poster_path": "/sxfkMgX4aEqvMQhDicf8LcbBWs3.jpg",
+      "season_number": 9,
+      "vote_average": 8.3
+    },
+    {
+      "air_date": "2010-09-24",
+      "episode_count": 21,
+      "id": 14027,
+      "name": "الموسم 10",
+      "overview": "",
+      "poster_path": "/nUiw76eCg1uT8uz5Ibtu6FWYlgX.jpg",
+      "season_number": 10,
+      "vote_average": 8.4
+    }
+  ],
+  "spoken_languages": [
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Ended",
+  "tagline": "",
+  "type": "Scripted",
+  "vote_average": 8.184,
+  "vote_count": 4341,
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 11824,
+        "known_for_department": "Acting",
+        "name": "Tom Welling",
+        "original_name": "Tom Welling",
+        "popularity": 4.0119,
+        "profile_path": "/jR4YIePjxQL7ftoUKii3WlqI8Y.jpg",
+        "character": "Clark Kent",
+        "credit_id": "5257751c760ee36aaa50e171",
+        "order": 0
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 46897,
+        "known_for_department": "Acting",
+        "name": "Erica Durance",
+        "original_name": "Erica Durance",
+        "popularity": 2.2001,
+        "profile_path": "/kshDl70fwwTHOvog60VFqMjCFUL.jpg",
+        "character": "Lois Lane",
+        "credit_id": "5257751c760ee36aaa50e3b3",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 138770,
+        "known_for_department": "Acting",
+        "name": "Cassidy Freeman",
+        "original_name": "Cassidy Freeman",
+        "popularity": 3.0988,
+        "profile_path": "/6QooKF97oaUoIrW2lbx36aYYGZH.jpg",
+        "character": "Tess Mercer",
+        "credit_id": "52a4157f760ee35a172fb528",
+        "order": 2
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1222596,
+        "known_for_department": "Acting",
+        "name": "Justin Hartley",
+        "original_name": "Justin Hartley",
+        "popularity": 3.9257,
+        "profile_path": "/oo7vqWz30pA1tY6quUOnS6O0AgB.jpg",
+        "character": "Oliver Queen",
+        "credit_id": "52a415dc760ee37518196a87",
+        "order": 5
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 72445,
+        "known_for_department": "Writing",
+        "name": "Turi Meyer",
+        "original_name": "Turi Meyer",
+        "popularity": 0.4955,
+        "profile_path": null,
+        "credit_id": "57a8b5329251415cfb007e89",
+        "department": "Production",
+        "job": "Co-Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1223889,
+        "known_for_department": "Writing",
+        "name": "Anne Cofell Saunders",
+        "original_name": "Anne Cofell Saunders",
+        "popularity": 0.2257,
+        "profile_path": "/qMq91XSmWzlDZJmkjIo9yag6orb.jpg",
+        "credit_id": "57a8aab49251417659006b9d",
+        "department": "Production",
+        "job": "Supervising Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 11824,
+        "known_for_department": "Acting",
+        "name": "Tom Welling",
+        "original_name": "Tom Welling",
+        "popularity": 4.0119,
+        "profile_path": "/jR4YIePjxQL7ftoUKii3WlqI8Y.jpg",
+        "credit_id": "5257752f760ee36aaa50eea8",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1237458,
+        "known_for_department": "Production",
+        "name": "Tom Flores",
+        "original_name": "Tom Flores",
+        "popularity": 0.1129,
+        "profile_path": null,
+        "credit_id": "52577533760ee36aaa50f11b",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 72446,
+        "known_for_department": "Writing",
+        "name": "Alfredo Septién",
+        "original_name": "Alfredo Septién",
+        "popularity": 0.4122,
+        "profile_path": "/rOJbDVsNp1QtXvjQR4HFqYxLcjg.jpg",
+        "credit_id": "57a88355925141746f005fe1",
+        "department": "Production",
+        "job": "Co-Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1237457,
+        "known_for_department": "Production",
+        "name": "Tim Scanlan",
+        "original_name": "Tim Scanlan",
+        "popularity": 0.1999,
+        "profile_path": null,
+        "credit_id": "57a8b29792514177dc007302",
+        "department": "Production",
+        "job": "Co-Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1237465,
+        "known_for_department": "Production",
+        "name": "Cristina Verano",
+        "original_name": "Cristina Verano",
+        "popularity": 0.0614,
+        "profile_path": null,
+        "credit_id": "57a8891a9251415cfb0069b7",
+        "department": "Production",
+        "job": "Associate Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1237460,
+        "known_for_department": "Production",
+        "name": "Jae Marchant",
+        "original_name": "Jae Marchant",
+        "popularity": 0.1733,
+        "profile_path": null,
+        "credit_id": "57a88660925141777c0062ff",
+        "department": "Production",
+        "job": "Co-Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1237463,
+        "known_for_department": "Production",
+        "name": "Christopher Petry",
+        "original_name": "Christopher Petry",
+        "popularity": 0.2847,
+        "profile_path": null,
+        "credit_id": "57a8878dc3a36835f6005472",
+        "department": "Production",
+        "job": "Associate Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1228529,
+        "known_for_department": "Directing",
+        "name": "James Marshall",
+        "original_name": "James Marshall",
+        "popularity": 0.3303,
+        "profile_path": "/6dexEtY8U7to4Z8KQeRgzIDYDme.jpg",
+        "credit_id": "5257752f760ee36aaa50eef0",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1237420,
+        "known_for_department": "Writing",
+        "name": "Kelly Souders",
+        "original_name": "Kelly Souders",
+        "popularity": 0.2461,
+        "profile_path": null,
+        "credit_id": "52577533760ee36aaa50f1af",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1237421,
+        "known_for_department": "Writing",
+        "name": "Brian Peterson",
+        "original_name": "Brian Peterson",
+        "popularity": 0.2157,
+        "profile_path": null,
+        "credit_id": "57a88292c3a3682617005c4b",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 53177,
+        "known_for_department": "Production",
+        "name": "Brian Robbins",
+        "original_name": "Brian Robbins",
+        "popularity": 0.8859,
+        "profile_path": "/sBHXouMBM9bon05a1Fy4QvBd11n.jpg",
+        "credit_id": "5257752e760ee36aaa50ee22",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1212141,
+        "known_for_department": "Production",
+        "name": "Joe Davola",
+        "original_name": "Joe Davola",
+        "popularity": 0.2356,
+        "profile_path": null,
+        "credit_id": "5257752e760ee36aaa50edd4",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 53178,
+        "known_for_department": "Directing",
+        "name": "Michael Tollin",
+        "original_name": "Michael Tollin",
+        "popularity": 0.4432,
+        "profile_path": "/zZEUZh2Oh20wFBXaEfGvwqCBWmv.jpg",
+        "credit_id": "5257752e760ee36aaa50ed86",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 17309,
+        "known_for_department": "Directing",
+        "name": "Greg Beeman",
+        "original_name": "Greg Beeman",
+        "popularity": 0.5396,
+        "profile_path": "/eMZIGB6jbIldPK4YyZ44uf7ZIGg.jpg",
+        "credit_id": "5257752e760ee36aaa50ed38",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 20007,
+        "known_for_department": "Writing",
+        "name": "جيري سيغل",
+        "original_name": "Jerry Siegel",
+        "popularity": 1.1875,
+        "profile_path": "/tpkgpm3pHrkSNewoDasKz6Chpg4.jpg",
+        "credit_id": "597598cd92514157dd008458",
+        "department": "Writing",
+        "job": "Characters"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 20008,
+        "known_for_department": "Writing",
+        "name": "جو شوستر",
+        "original_name": "Joe Shuster",
+        "popularity": 0.9728,
+        "profile_path": "/bb2RpPm1GZy45dxndVdlxNx7AvU.jpg",
+        "credit_id": "597598d8c3a3680cb7008fae",
+        "department": "Writing",
+        "job": "Characters"
+      }
+    ]
+  },
+  "similar": {
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/uDCuJv8qooKHx7OrkfdWQmMZqom.jpg",
+        "genre_ids": [
+          10759,
+          10765,
+          10762,
+          35
+        ],
+        "id": 129643,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "機界戦隊ゼンカイジャー スピンオフ ゼンカイレッド大紹介！",
+        "overview": "",
+        "popularity": 1.0939,
+        "poster_path": "/53wJO3sGx1BDH8bedHLua3FDefn.jpg",
+        "first_air_date": "2021-03-21",
+        "name": "機界戦隊ゼンカイジャー スピンオフ ゼンカイレッド大紹介！",
+        "vote_average": 10,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/tXPfLEpHejNZP6pR2kiwtTKgM5Q.jpg",
+        "genre_ids": [
+          10759,
+          18,
+          35,
+          10765
+        ],
+        "id": 129715,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "救星戦隊ワクセイバー",
+        "overview": "",
+        "popularity": 3.0283,
+        "poster_path": "/na8bbbmER8KISQKiWUvpBogs0Mf.jpg",
+        "first_air_date": "2021-07-02",
+        "name": "救星戦隊ワクセイバー",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/noVfb78he1sLVNaMC9sGz3dpUoa.jpg",
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 129747,
+        "origin_country": [
+          "TH"
+        ],
+        "original_language": "th",
+        "original_name": "ส่งร้อน เสิร์ฟรัก",
+        "overview": "",
+        "popularity": 0.3661,
+        "poster_path": "/fFO5JqfwxJJtnMmVEKwBDidEaWs.jpg",
+        "first_air_date": "2021-08-29",
+        "name": "ส่งร้อน เสิร์ฟรัก",
+        "vote_average": 4.9,
+        "vote_count": 7
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/2IcUiCCRAkKufqRvuHiM30qtnyl.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 283052,
+        "origin_country": [
+          "MD"
+        ],
+        "original_language": "en",
+        "original_name": "When a Parrot Knocked on the Window",
+        "overview": "",
+        "popularity": 0.5351,
+        "poster_path": "/4O9gIu4LxStT1fEfAq0AfSUWVZC.jpg",
+        "first_air_date": "2024-12-29",
+        "name": "When a Parrot Knocked on the Window",
+        "vote_average": 7,
+        "vote_count": 2
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/hgo15B8eUnbEjszVV1qdV8sGz9S.jpg",
+        "genre_ids": [
+          10765
+        ],
+        "id": 213375,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "VisionQuest",
+        "overview": "",
+        "popularity": 2.8882,
+        "poster_path": "/6j60tGRAjBmWRPTOEwhW6oRbPMP.jpg",
+        "first_air_date": "",
+        "name": "VisionQuest",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/47cdJm6WGJqCsdE6QvPh6fLKwuo.jpg",
+        "genre_ids": [
+          16,
+          10759,
+          10765
+        ],
+        "id": 213402,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "とんでもスキルで異世界放浪メシ",
+        "overview": "",
+        "popularity": 15.1564,
+        "poster_path": "/6IZkTbgZEkzeVPKqfe644mSxbfF.jpg",
+        "first_air_date": "2023-01-11",
+        "name": "とんでもスキルで異世界放浪メシ",
+        "vote_average": 8.3,
+        "vote_count": 273
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/tPnTMXXuZ3Ylt4tdmIfN5mtjL9f.jpg",
+        "genre_ids": [
+          10759,
+          10765,
+          10762
+        ],
+        "id": 213439,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "王様戦隊キングオージャー",
+        "overview": "",
+        "popularity": 7.9172,
+        "poster_path": "/9DTsXGdP9KZeA0hF3Ga8JLY1R5R.jpg",
+        "first_air_date": "2023-03-05",
+        "name": "王様戦隊キングオージャー",
+        "vote_average": 7.8,
+        "vote_count": 19
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/mv8vg7F0IoANSXEHUbS0XhNpXnn.jpg",
+        "genre_ids": [
+          10759,
+          18,
+          10765,
+          35
+        ],
+        "id": 213442,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "ウルトラマンブレーザー",
+        "overview": "",
+        "popularity": 4.6307,
+        "poster_path": "/eODY3s9Ww5sz95MnImgE4RWhwCu.jpg",
+        "first_air_date": "2023-07-08",
+        "name": "ウルトラマンブレーザー",
+        "vote_average": 8.6,
+        "vote_count": 15
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/wbL2xBxLH7iYSQvPijnRQack0Q5.jpg",
+        "genre_ids": [
+          10759,
+          16,
+          35
+        ],
+        "id": 29816,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "砂漠の海賊！ キャプテンクッパ",
+        "overview": "",
+        "popularity": 3.577,
+        "poster_path": "/czFv70bNNKafX6IZCWzw3hn3lKe.jpg",
+        "first_air_date": "2001-08-13",
+        "name": "砂漠の海賊！ キャプテンクッパ",
+        "vote_average": 8,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/hPYlTczDtllJfU0SY3sA96s7Uy6.jpg",
+        "genre_ids": [
+          16,
+          10759,
+          35
+        ],
+        "id": 285788,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "東島丹三郎は仮面ライダーになりたい",
+        "overview": "",
+        "popularity": 11.2635,
+        "poster_path": "/wqczcoNCokVreXw4QA4nyDlxkal.jpg",
+        "first_air_date": "2025-10-05",
+        "name": "東島丹三郎は仮面ライダーになりたい",
+        "vote_average": 7.7,
+        "vote_count": 10
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/aTSHegWfhzonUnouL6dhBxK9S9M.jpg",
+        "genre_ids": [
+          10759,
+          16,
+          35,
+          10751,
+          10762
+        ],
+        "id": 3319,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Darkwing Duck",
+        "overview": "",
+        "popularity": 6.2082,
+        "poster_path": "/win95lA5rfDxwRGyOMKVWja0OSZ.jpg",
+        "first_air_date": "1991-09-06",
+        "name": "البط السري",
+        "vote_average": 7.4,
+        "vote_count": 320
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/7O1f7OWj61quryRpuGIGj4Y7jq7.jpg",
+        "genre_ids": [
+          10762,
+          16,
+          10759,
+          35,
+          10765
+        ],
+        "id": 3320,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Biker Mice from Mars",
+        "overview": "",
+        "popularity": 4.0589,
+        "poster_path": "/gBnbkQ7t6Ctri0A4nKDYWqIVF3f.jpg",
+        "first_air_date": "1993-09-18",
+        "name": "Biker Mice from Mars",
+        "vote_average": 6.2,
+        "vote_count": 67
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          10765,
+          18
+        ],
+        "id": 3327,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Them",
+        "overview": "",
+        "popularity": 0.4608,
+        "poster_path": null,
+        "first_air_date": "2007-01-01",
+        "name": "Them",
+        "vote_average": 6,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/nQViCFfoObO5Xs8oHVjyfF4rHeL.jpg",
+        "genre_ids": [
+          10759,
+          10765,
+          9648
+        ],
+        "id": 3425,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "ウルトラマン",
+        "overview": "",
+        "popularity": 9.0144,
+        "poster_path": "/nGrEoYb07hzAsvyNurxfMEeJJyE.jpg",
+        "first_air_date": "1966-07-17",
+        "name": "ウルトラマン",
+        "vote_average": 8.4,
+        "vote_count": 54
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/lA7QcvHSolLPSd3ECynGd9fdVI3.jpg",
+        "genre_ids": [
+          10765,
+          10759,
+          18
+        ],
+        "id": 3459,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "ウルトラマンダイナ",
+        "overview": "",
+        "popularity": 3.7299,
+        "poster_path": "/cRh5cQlNIBRyN8j8WODJePlp9Io.jpg",
+        "first_air_date": "1997-09-06",
+        "name": "ウルトラマンダイナ",
+        "vote_average": 8.9,
+        "vote_count": 15
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          16,
+          10765,
+          10762
+        ],
+        "id": 3464,
+        "origin_country": [
+          "BE",
+          "CA",
+          "US",
+          "FR"
+        ],
+        "original_language": "en",
+        "original_name": "Flash Gordon",
+        "overview": "",
+        "popularity": 1.7715,
+        "poster_path": "/wuZQNrTTKPNHKX0kOpJKh35Lk3Q.jpg",
+        "first_air_date": "1996-09-21",
+        "name": "Flash Gordon",
+        "vote_average": 5.8,
+        "vote_count": 6
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/gqxuGoJwzpIfsp2O3N5Ph9k8xfe.jpg",
+        "genre_ids": [
+          18,
+          10759,
+          10765
+        ],
+        "id": 134224,
+        "origin_country": [
+          "PH"
+        ],
+        "original_language": "tl",
+        "original_name": "Voltes V: Legacy",
+        "overview": "",
+        "popularity": 3.7305,
+        "poster_path": "/8Sio0GDDIP0okgG4dez1yuKQBPW.jpg",
+        "first_air_date": "2023-05-08",
+        "name": "Voltes V: Legacy",
+        "vote_average": 7.2,
+        "vote_count": 35
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/wxz9DOg9wMhkl4E2F3CjwZWSYS9.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 134331,
+        "origin_country": [
+          "CN"
+        ],
+        "original_language": "zh",
+        "original_name": "点燃我，温暖你",
+        "overview": "",
+        "popularity": 6.0281,
+        "poster_path": "/4sTPsdWANtK4oo9eGeQAI1ugi54.jpg",
+        "first_air_date": "2022-11-03",
+        "name": "点燃我，温暖你",
+        "vote_average": 8.056,
+        "vote_count": 36
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/2kO3UsgwI3yoooc7UABYj59gms7.jpg",
+        "genre_ids": [
+          16,
+          10762,
+          10751,
+          10765,
+          10759
+        ],
+        "id": 3530,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Road Rovers",
+        "overview": "",
+        "popularity": 3.5164,
+        "poster_path": "/pzfFiYmyv2tgApUNZUNaPwXh1jR.jpg",
+        "first_air_date": "1996-09-07",
+        "name": "Road Rovers",
+        "vote_average": 6.5,
+        "vote_count": 6
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          35,
+          10759
+        ],
+        "id": 3625,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Monster Squad",
+        "overview": "",
+        "popularity": 1.3304,
+        "poster_path": "/sUus4aefKUz176WYdiIk5cbbYIe.jpg",
+        "first_air_date": "1976-09-11",
+        "name": "Monster Squad",
+        "vote_average": 5.3,
+        "vote_count": 3
+      }
+    ],
+    "total_pages": 2849,
+    "total_results": 56970
+  },
+  "videos": {
+    "results": []
+  }
+}

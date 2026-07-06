@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import { SEO } from "@/components/SEO";
 
-import { Link } from "react-router-dom";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
 import { HeroCarousel } from "@/components/HeroCarousel";
 import { ProductionCompaniesBar } from "@/components/ProductionCompaniesBar";
-import { fetchPopular, fetchTrending, fetchNowPlaying, fetchOnTheAir, fetchTopRated, searchMulti, TMDB_CONFIG, t } from "@/lib/tmdb";
+import { fetchPopular, fetchTrending, fetchNowPlaying, fetchOnTheAir, fetchTopRated, fetchBestUSContent, searchMulti, TMDB_CONFIG, t, HeroMediaItem } from "@/lib/tmdb";
 
 
 export default function Home() {
@@ -16,8 +15,10 @@ export default function Home() {
     const [trendingMovies, setTrendingMovies] = useState<any[]>([]);
     const [latestMovies, setLatestMovies] = useState<any[]>([]);
     const [latestSeries, setLatestSeries] = useState<any[]>([]);
+    const [newTVShows, setNewTVShows] = useState<any[]>([]);
     const [ramadanSeries, setRamadanSeries] = useState<any[]>([]);
     const [topRated, setTopRated] = useState<any[]>([]);
+    const [heroItems, setHeroItems] = useState<HeroMediaItem[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -28,44 +29,47 @@ export default function Home() {
                     popularMoviesData,
                     popularTVData,
                     trendingData,
+                    trendingTVData,
                     nowPlayingData,
                     onTheAirData,
                     topRatedData,
+                    bestUSContent,
                 ] = await Promise.all([
                     fetchPopular("movie"),
                     fetchPopular("tv"),
                     fetchTrending("movie"),
+                    fetchTrending("tv"),
                     fetchNowPlaying(),
                     fetchOnTheAir(),
                     fetchTopRated("movie"),
+                    fetchBestUSContent(10),
                 ]);
 
                 setPopularMovies(popularMoviesData.results);
                 setPopularTV(popularTVData.results);
                 setTrendingMovies(trendingData);
+                setNewTVShows(trendingTVData);
                 setLatestMovies(nowPlayingData.results);
                 setLatestSeries(onTheAirData.results);
                 setTopRated(topRatedData.results);
+                setHeroItems(bestUSContent);
 
                 // Fetch Ramadan Results data
                 const ramadanResponse = await fetch("/ramadan_2026_results.json");
                 const ramadanData: any[] = await ramadanResponse.json();
 
-                // Filter out specific series as requested
                 const filteredRamadan = ramadanData.filter((item: any) => {
                     const title = item.title || "";
                     const excluded = ["صحاب الارض", "صحاب الأرض", "شمس الصيل", "شمس الأصيل", "شمس الاصيل"];
                     return !excluded.some(ex => title.includes(ex));
                 });
 
-                // Sort so isSupreme series come first
                 const sortedRamadan = [...filteredRamadan].sort((a, b) => {
                     if (a.isSupreme && !b.isSupreme) return -1;
                     if (!a.isSupreme && b.isSupreme) return 1;
                     return 0;
                 });
 
-                // Search TMDB for each series to get proper images
                 const first12 = sortedRamadan.slice(0, 12);
                 const mappedRamadan = await Promise.all(
                     first12.map(async (series: any) => {
@@ -120,7 +124,7 @@ export default function Home() {
     if (loading) return <div className="h-screen flex items-center justify-center">Loading...</div>;
 
     return (
-        <div className="min-h-screen bg-background text-foreground">
+        <div className="min-h-screen text-foreground">
             <SEO
                 title="مشاهدة أفلام ومسلسلات مجانية أونلاين"
                 description="شاهد آلاف الأفلام والمسلسلات العربية والأجنبية مجاناً على Tomito. أحدث الأفلام بجودة HD، مسلسلات مترجمة ومشاهدة مباشرة بدون تحميل."
@@ -128,28 +132,17 @@ export default function Home() {
             />
 
             <Navbar />
-            <HeroCarousel items={popularTV.slice(0, 10)} type="tv" />
-            <div className="container mx-auto px-4 py-8 space-y-12">
+            <HeroCarousel items={heroItems} fullViewport />
+            <div className="container mx-auto px-4 pt-2 pb-8 space-y-12">
 
-                {/* Ramadan 2026 Section */}
-                {ramadanSeries.length > 0 && (
-                    <div className="space-y-6">
-                        <div className="flex items-center justify-between">
-                            <div className="flex items-center gap-3">
-                                <div className="w-1.5 h-8 bg-primary rounded-full shadow-[0_0_15px_rgba(var(--primary),0.5)]" />
-                                <h2 className="text-2xl font-bold">مسلسلات رمضان 2026</h2>
-                            </div>
-                            <Link to="/ramadan" className="text-primary hover:underline font-medium text-sm">
-                                عرض الكل
-                            </Link>
-                        </div>
-                        <ContentRow
-                            title=""
-                            items={ramadanSeries.slice(0, 12)}
-                            type="tv"
-                            isRamadan={true}
-                        />
-                    </div>
+                {/* New TV Shows Section */}
+                {newTVShows.length > 0 && (
+                    <ContentRow
+                        title={t("newTVShows")}
+                        items={newTVShows.slice(0, 12)}
+                        type="tv"
+                        showAll="/category/tv/all"
+                    />
                 )}
 
                 {/* Trending Section */}
@@ -165,6 +158,17 @@ export default function Home() {
                 {/* Popular Sections */}
                 <ContentRow title={t("popularMovies")} items={popularMovies} type="movie" />
                 <ContentRow title={t("popularTV")} items={popularTV} type="tv" />
+
+                {/* Ramadan 2026 Section */}
+                {ramadanSeries.length > 0 && (
+                    <ContentRow
+                        title="مسلسلات رمضان 2026"
+                        items={ramadanSeries.slice(0, 12)}
+                        type="tv"
+                        isRamadan={true}
+                        showAll="/ramadan"
+                    />
+                )}
 
                 {/* Opinion / Critics' Choice Section */}
                 <ContentRow title={t("criticsChoice")} items={topRated} type="movie" />

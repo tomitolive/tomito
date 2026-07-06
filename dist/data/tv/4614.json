@@ -1,0 +1,1022 @@
+{
+  "adult": false,
+  "backdrop_path": "/nn3SuLTO4hum8yAxaY4ql8h6kRk.jpg",
+  "created_by": [
+    {
+      "id": 1218788,
+      "credit_id": "525776ce760ee36aaa5306f0",
+      "name": "دون ماكجيل",
+      "original_name": "Don McGill",
+      "gender": 2,
+      "profile_path": "/9QMLJDoA3hYlWdOhQyTVqimPok9.jpg"
+    },
+    {
+      "id": 160145,
+      "credit_id": "540dcbbf0e0a262b3d0069a8",
+      "name": "دونالد بيليساريو",
+      "original_name": "Donald P. Bellisario",
+      "gender": 2,
+      "profile_path": "/8xjZRZvWfn0aaZVHlYxRUtlqJIR.jpg"
+    }
+  ],
+  "episode_run_time": [],
+  "first_air_date": "2003-09-23",
+  "genres": [
+    {
+      "id": 80,
+      "name": "جريمة"
+    },
+    {
+      "id": 18,
+      "name": "دراما"
+    },
+    {
+      "id": 10759,
+      "name": "حركة ومغامرة"
+    }
+  ],
+  "homepage": "http://www.cbs.com/shows/ncis/",
+  "id": 4614,
+  "in_production": true,
+  "languages": [
+    "en"
+  ],
+  "last_air_date": "2025-12-16",
+  "last_episode_to_air": {
+    "id": 6632810,
+    "name": "الحلقة 9",
+    "overview": "",
+    "vote_average": 0,
+    "vote_count": 1,
+    "air_date": "2025-12-16",
+    "episode_number": 9,
+    "episode_type": "standard",
+    "production_code": "",
+    "runtime": 43,
+    "season_number": 23,
+    "show_id": 4614,
+    "still_path": "/vAPStktXqTyC7JbnAuGwNBPd9mg.jpg"
+  },
+  "name": "إن سي آي أس",
+  "next_episode_to_air": {
+    "id": 6670294,
+    "name": "الحلقة 10",
+    "overview": "",
+    "vote_average": 0,
+    "vote_count": 0,
+    "air_date": "2026-03-03",
+    "episode_number": 10,
+    "episode_type": "standard",
+    "production_code": "",
+    "runtime": 43,
+    "season_number": 23,
+    "show_id": 4614,
+    "still_path": null
+  },
+  "networks": [
+    {
+      "id": 16,
+      "logo_path": "/wju8KhOUsR5y4bH9p3Jc50hhaLO.png",
+      "name": "CBS",
+      "origin_country": "US"
+    }
+  ],
+  "number_of_episodes": 499,
+  "number_of_seasons": 23,
+  "origin_country": [
+    "US"
+  ],
+  "original_language": "en",
+  "original_name": "NCIS",
+  "overview": "تتناول حلقات المسلسل قصة العديد من المخاطر التي يتعرض لها العملاء السريين التابعين لمكتب العمليات الخاصة، والذي يتوجب عليهم التخفي الدائم في عملهم عن طريق استخدام هويات مزيفة للإيقاع بالخارجين عن القانون والذين يمثلون خطرا وتهديدا كبيرا على الأمن القومي.",
+  "popularity": 142.2632,
+  "poster_path": "/mBcu8d6x6zB1el3MPNl7cZQEQ31.jpg",
+  "production_companies": [
+    {
+      "id": 9223,
+      "logo_path": "/40qzTBM38vokoWhLKurficZ5syV.png",
+      "name": "Paramount Television",
+      "origin_country": "US"
+    },
+    {
+      "id": 23341,
+      "logo_path": null,
+      "name": "Belisarius Productions",
+      "origin_country": "US"
+    },
+    {
+      "id": 1081,
+      "logo_path": "/19kn4jVvpc3sAL3YpZNb3elhSMl.png",
+      "name": "CBS Studios",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "seasons": [
+    {
+      "air_date": "2003-04-22",
+      "episode_count": 122,
+      "id": 14081,
+      "name": "العروض الخاصة",
+      "overview": "",
+      "poster_path": "/hkW1UQReivBH3fhuN9i5iv6N7iM.jpg",
+      "season_number": 0,
+      "vote_average": 0
+    },
+    {
+      "air_date": "2003-09-23",
+      "episode_count": 23,
+      "id": 14073,
+      "name": "الموسم 1",
+      "overview": "",
+      "poster_path": "/AdMZuXYZTLZ24iZLKwrQaHp3YCR.jpg",
+      "season_number": 1,
+      "vote_average": 7.6
+    },
+    {
+      "air_date": "2004-09-28",
+      "episode_count": 23,
+      "id": 14076,
+      "name": "الموسم 2",
+      "overview": "",
+      "poster_path": "/rmjfoD5lTGD0I1sXMxLapPT0MOe.jpg",
+      "season_number": 2,
+      "vote_average": 7.6
+    },
+    {
+      "air_date": "2005-09-20",
+      "episode_count": 24,
+      "id": 14077,
+      "name": "الموسم 3",
+      "overview": "",
+      "poster_path": "/tS64hCnGsAl3dceUlVx5cDlOP2t.jpg",
+      "season_number": 3,
+      "vote_average": 7.5
+    },
+    {
+      "air_date": "2006-09-19",
+      "episode_count": 24,
+      "id": 14075,
+      "name": "الموسم 4",
+      "overview": "",
+      "poster_path": "/ermXCC1Nz1PrcG7dna7vcrXN4zY.jpg",
+      "season_number": 4,
+      "vote_average": 7.4
+    },
+    {
+      "air_date": "2007-09-25",
+      "episode_count": 19,
+      "id": 14074,
+      "name": "الموسم 5",
+      "overview": "",
+      "poster_path": "/nLinif1UCp6dMXBJKRixiCxyKLA.jpg",
+      "season_number": 5,
+      "vote_average": 7.6
+    },
+    {
+      "air_date": "2008-09-23",
+      "episode_count": 25,
+      "id": 14072,
+      "name": "الموسم 6",
+      "overview": "",
+      "poster_path": "/oxs7PozBPGSTw6YXi7KwgBSnEwp.jpg",
+      "season_number": 6,
+      "vote_average": 7.5
+    },
+    {
+      "air_date": "2009-09-22",
+      "episode_count": 24,
+      "id": 14078,
+      "name": "الموسم 7",
+      "overview": "",
+      "poster_path": "/fTflbVcM48B7rhiGDpwHwifeICH.jpg",
+      "season_number": 7,
+      "vote_average": 7.5
+    },
+    {
+      "air_date": "2010-09-21",
+      "episode_count": 24,
+      "id": 14079,
+      "name": "الموسم 8",
+      "overview": "",
+      "poster_path": "/mJHZYjWMo03AsIqgnQA1Z8Oa7FP.jpg",
+      "season_number": 8,
+      "vote_average": 7.4
+    },
+    {
+      "air_date": "2011-09-20",
+      "episode_count": 24,
+      "id": 14080,
+      "name": "الموسم 9",
+      "overview": "",
+      "poster_path": "/d2ud6bmKP4eWwaMnpYT1YR0miDO.jpg",
+      "season_number": 9,
+      "vote_average": 7.6
+    },
+    {
+      "air_date": "2012-09-25",
+      "episode_count": 24,
+      "id": 14082,
+      "name": "الموسم 10",
+      "overview": "",
+      "poster_path": "/3G9B4F7R6fkiSGeJvEzibpwwzk2.jpg",
+      "season_number": 10,
+      "vote_average": 7.5
+    },
+    {
+      "air_date": "2013-09-24",
+      "episode_count": 24,
+      "id": 14083,
+      "name": "الموسم 11",
+      "overview": "",
+      "poster_path": "/aGHnemk8i1amzACZRjCtHQjCmYR.jpg",
+      "season_number": 11,
+      "vote_average": 7.8
+    },
+    {
+      "air_date": "2014-09-23",
+      "episode_count": 24,
+      "id": 62834,
+      "name": "الموسم 12",
+      "overview": "",
+      "poster_path": "/gTMzMkGAbygR1Cy8IyO5OC6Cj2.jpg",
+      "season_number": 12,
+      "vote_average": 7.5
+    },
+    {
+      "air_date": "2015-09-21",
+      "episode_count": 24,
+      "id": 70439,
+      "name": "الموسم 13",
+      "overview": "",
+      "poster_path": "/VfG3LekB3PQpfjCt4qbX0H6Ake.jpg",
+      "season_number": 13,
+      "vote_average": 7.7
+    },
+    {
+      "air_date": "2016-09-20",
+      "episode_count": 24,
+      "id": 79755,
+      "name": "الموسم 14",
+      "overview": "",
+      "poster_path": "/q2xXdJav6f0CW1FCutbwQy2nWMr.jpg",
+      "season_number": 14,
+      "vote_average": 7.9
+    },
+    {
+      "air_date": "2017-09-26",
+      "episode_count": 24,
+      "id": 91258,
+      "name": "الموسم 15",
+      "overview": "",
+      "poster_path": "/jaeLT47Llte3HhwPIpMl6YWLfrr.jpg",
+      "season_number": 15,
+      "vote_average": 8.3
+    },
+    {
+      "air_date": "2018-09-25",
+      "episode_count": 24,
+      "id": 106151,
+      "name": "الموسم 16",
+      "overview": "",
+      "poster_path": "/sQz8u7UpRE02SthffFgIywogoKS.jpg",
+      "season_number": 16,
+      "vote_average": 8.3
+    },
+    {
+      "air_date": "2019-09-24",
+      "episode_count": 20,
+      "id": 126158,
+      "name": "الموسم 17",
+      "overview": "",
+      "poster_path": "/iEaVpsdPpk2cx2PCrwnhNfzHv8l.jpg",
+      "season_number": 17,
+      "vote_average": 8.2
+    },
+    {
+      "air_date": "2020-11-17",
+      "episode_count": 16,
+      "id": 167653,
+      "name": "الموسم 18",
+      "overview": "",
+      "poster_path": "/2xj9ftsD0T6dC7u8kijjbD82day.jpg",
+      "season_number": 18,
+      "vote_average": 8.4
+    },
+    {
+      "air_date": "2021-09-20",
+      "episode_count": 21,
+      "id": 201998,
+      "name": "الموسم 19",
+      "overview": "",
+      "poster_path": "/5zKA1SSjOvT6ZNdj2mmfUih2ddB.jpg",
+      "season_number": 19,
+      "vote_average": 8.8
+    },
+    {
+      "air_date": "2022-09-19",
+      "episode_count": 22,
+      "id": 298439,
+      "name": "الموسم 20",
+      "overview": "",
+      "poster_path": "/on5cerOcqQsSTsy3iaJ8rAEJgyy.jpg",
+      "season_number": 20,
+      "vote_average": 8.4
+    },
+    {
+      "air_date": "2024-02-11",
+      "episode_count": 10,
+      "id": 365595,
+      "name": "الموسم 21",
+      "overview": "",
+      "poster_path": "/zUHSosuxi8HQJT9Rnb6bZOGatK2.jpg",
+      "season_number": 21,
+      "vote_average": 7.9
+    },
+    {
+      "air_date": "2024-10-14",
+      "episode_count": 20,
+      "id": 402099,
+      "name": "الموسم 22",
+      "overview": "",
+      "poster_path": "/wqD5SOeVpAiOb5lqMt7YIaXyitj.jpg",
+      "season_number": 22,
+      "vote_average": 8.8
+    },
+    {
+      "air_date": "2025-10-14",
+      "episode_count": 12,
+      "id": 465505,
+      "name": "الموسم 23",
+      "overview": "",
+      "poster_path": "/kAwtgCTderh3sUqxhJzWTtQotyD.jpg",
+      "season_number": 23,
+      "vote_average": 7.8
+    }
+  ],
+  "spoken_languages": [
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Returning Series",
+  "tagline": "",
+  "type": "Scripted",
+  "vote_average": 7.622,
+  "vote_count": 2449,
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1230381,
+        "known_for_department": "Acting",
+        "name": "Sean Murray",
+        "original_name": "Sean Murray",
+        "popularity": 1.4892,
+        "profile_path": "/1RlMqC3qL5gKlfqyAR2xzgKjWrN.jpg",
+        "character": "Timothy McGee",
+        "credit_id": "525776cd760ee36aaa5304fa",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 18975,
+        "known_for_department": "Acting",
+        "name": "Wilmer Valderrama",
+        "original_name": "Wilmer Valderrama",
+        "popularity": 3.1718,
+        "profile_path": "/uohkEwMGIGCq4k8P2AiomuKQwYv.jpg",
+        "character": "Nick Torres",
+        "credit_id": "5846a53692514166ba020564",
+        "order": 3
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 164930,
+        "known_for_department": "Acting",
+        "name": "Katrina Law",
+        "original_name": "Katrina Law",
+        "popularity": 3.3957,
+        "profile_path": "/y7LzCN8BaoPPSXDBo0UwPQ4UwSB.jpg",
+        "character": "Jessica Knight",
+        "credit_id": "6061feed0e64af003e1aeb6c",
+        "order": 4
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1213580,
+        "known_for_department": "Acting",
+        "name": "Brian Dietzen",
+        "original_name": "Brian Dietzen",
+        "popularity": 0.7667,
+        "profile_path": "/njOHd9yWWGQrTS7btmp2vbMbQjE.jpg",
+        "character": "Jimmy Palmer",
+        "credit_id": "525776cd760ee36aaa530594",
+        "order": 6
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 27448,
+        "known_for_department": "Acting",
+        "name": "Rocky Carroll",
+        "original_name": "Rocky Carroll",
+        "popularity": 2.6073,
+        "profile_path": "/pqjqmRChGqhDXXY7Etka3bmOatN.jpg",
+        "character": "Leon Vance",
+        "credit_id": "660eb38733a376017d843eb3",
+        "order": 15
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1470346,
+        "known_for_department": "Acting",
+        "name": "Diona Reasonover",
+        "original_name": "Diona Reasonover",
+        "popularity": 0.8381,
+        "profile_path": "/eor8QzQjERWozp1iv7Tgw6TYnAG.jpg",
+        "character": "Kasie Hines",
+        "credit_id": "660eb77015dea00162350425",
+        "order": 16
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 21163,
+        "known_for_department": "Acting",
+        "name": "Gary Cole",
+        "original_name": "Gary Cole",
+        "popularity": 3.5844,
+        "profile_path": "/cqsNC0LRZZz2k1dbgIcGITQ4DZN.jpg",
+        "character": "Alden Parker",
+        "credit_id": "660eb7e95aadc4013062893b",
+        "order": 17
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 160145,
+        "known_for_department": "Creator",
+        "name": "دونالد بيليساريو",
+        "original_name": "Donald P. Bellisario",
+        "popularity": 1.086,
+        "profile_path": "/8xjZRZvWfn0aaZVHlYxRUtlqJIR.jpg",
+        "credit_id": "564bff7e9251414dcb005838",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1045137,
+        "known_for_department": "Production",
+        "name": "Susan Bluestein",
+        "original_name": "Susan Bluestein",
+        "popularity": 2.1211,
+        "profile_path": "/dvnRCD7PQ5Sufbr1uumyaFztbNo.jpg",
+        "credit_id": "635a55f38d2f8d007d26f002",
+        "department": "Production",
+        "job": "Original Casting"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 3759853,
+        "known_for_department": "Costume & Make-Up",
+        "name": "Carla Dean",
+        "original_name": "Carla Dean",
+        "popularity": 0.2521,
+        "profile_path": null,
+        "credit_id": "635a620b894ed60091434560",
+        "department": "Costume & Make-Up",
+        "job": "Hairstylist"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2179758,
+        "known_for_department": "Writing",
+        "name": "Leon Carroll Jr.",
+        "original_name": "Leon Carroll Jr.",
+        "popularity": 0.2234,
+        "profile_path": "/1dzxcAKhl8muYzBoj0ulBVV9ynf.jpg",
+        "credit_id": "635a693ab1f68d0082e3df1e",
+        "department": "Crew",
+        "job": "Technical Advisor"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3759891,
+        "known_for_department": "Crew",
+        "name": "Craig Harvey",
+        "original_name": "Craig Harvey",
+        "popularity": 0.1327,
+        "profile_path": "/rza2bnmzCu0jKK8jwPCz45YmSlv.jpg",
+        "credit_id": "635a6adb2d8ef3007c9db4d6",
+        "department": "Crew",
+        "job": "Technical Advisor"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3759903,
+        "known_for_department": "Sound",
+        "name": "Maurice Jackson",
+        "original_name": "Maurice Jackson",
+        "popularity": 0.0964,
+        "profile_path": null,
+        "credit_id": "635a7279894ed6007f58b45e",
+        "department": "Sound",
+        "job": "Theme Song Performance"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3759904,
+        "known_for_department": "Sound",
+        "name": "Matt Hawkins",
+        "original_name": "Matt Hawkins",
+        "popularity": 0.1756,
+        "profile_path": null,
+        "credit_id": "635a72b12495ab007a210526",
+        "department": "Sound",
+        "job": "Theme Song Performance"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3759905,
+        "known_for_department": "Sound",
+        "name": "Neil Martin",
+        "original_name": "Neil Martin",
+        "popularity": 0.109,
+        "profile_path": null,
+        "credit_id": "635a743fb1f68d0082e3e396",
+        "department": "Sound",
+        "job": "Theme Song Performance"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3759907,
+        "known_for_department": "Production",
+        "name": "David Schiller",
+        "original_name": "David Schiller",
+        "popularity": 0.1038,
+        "profile_path": null,
+        "credit_id": "635a75ea3c887d0091556a2a",
+        "department": "Production",
+        "job": "Production Supervisor"
+      }
+    ]
+  },
+  "similar": {
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/xcvzQvQv6wsMPRyctek4jhDS8Yi.jpg",
+        "genre_ids": [
+          80,
+          18,
+          9648
+        ],
+        "id": 3476,
+        "origin_country": [
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "Inspector Morse",
+        "overview": "",
+        "popularity": 14.0677,
+        "poster_path": "/cvGqqBcCwahSQgLsCLdUKZG1Skq.jpg",
+        "first_air_date": "1987-01-06",
+        "name": "Inspector Morse",
+        "vote_average": 7.8,
+        "vote_count": 135
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          18,
+          10759
+        ],
+        "id": 3597,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "UC: Undercover",
+        "overview": "",
+        "popularity": 2.2467,
+        "poster_path": "/ylqJy97U9NbkgD9G7Q5a6TZP8KS.jpg",
+        "first_air_date": "2001-09-30",
+        "name": "UC: Undercover",
+        "vote_average": 6.4,
+        "vote_count": 8
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/i3WNbk47niwSrWe3Q81vqpSndiY.jpg",
+        "genre_ids": [
+          80,
+          18
+        ],
+        "id": 32632,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Law & Order: LA",
+        "overview": "",
+        "popularity": 5.8513,
+        "poster_path": "/mxYWv7XeeUqT0ikW9ccIyjeJKTQ.jpg",
+        "first_air_date": "2010-09-29",
+        "name": "Law & Order: LA",
+        "vote_average": 6.8,
+        "vote_count": 40
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/goDtZCB5pFIuuSfYDvApe6iXTID.jpg",
+        "genre_ids": [
+          80,
+          18
+        ],
+        "id": 32692,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Blue Bloods",
+        "overview": "تدور حلقات وأحداث المسلسل في إطار بوليسي شيق حيث ضابط الشرطة فرانك وعائلته التي تحاول أن تحمي شوارع نيويورك، وتحاول أن تعيد كل شيء إلى نظامه في الطرقات.",
+        "popularity": 54.2792,
+        "poster_path": "/q1WlrxnCvNhBjJ4N7V0JQXjnIBN.jpg",
+        "first_air_date": "2010-09-24",
+        "name": "الدماء الزرقاء",
+        "vote_average": 7.779,
+        "vote_count": 975
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/14aJrAGtZvAgCwIhZOfVMTqIjtp.jpg",
+        "genre_ids": [
+          18,
+          80,
+          9648,
+          35
+        ],
+        "id": 32708,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Body of Proof",
+        "overview": "",
+        "popularity": 9.8154,
+        "poster_path": "/8LyLUgvwawgnNKOzIFX5lSgTNeq.jpg",
+        "first_air_date": "2011-03-29",
+        "name": "Body of Proof",
+        "vote_average": 7,
+        "vote_count": 180
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/3Ujyp6wzwcfPp76K7XqP5CYYxPE.jpg",
+        "genre_ids": [
+          35,
+          18
+        ],
+        "id": 3215,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "커피프린스 1호점",
+        "overview": "احداث المسلسل تدور حول امرأة تعمل “دراما مقهي الامير“حياة جو اون تشان ليست سهلة، تعمل في وظائف عديدة لتدفع الديون، حتى أنها تخلّت عن هيئتها الانثوية، تشوي هان كيول هو وريث شركة أطعمة كبيرة، ولكن تريد جدته أن يستقر، لذا دبرت له عدة مواعيد. بعد أن اصطدمت اون تشان بهان كيول ظن بالخطأ أنها فتى، وقرر أن يوظف اون تشان لتكون حبيبه الشاذ ليتجنب مواعيد جدته. وافقت اون تشان لأنها كانت بحاجة ماسة إلى المال، كلّفت الجدة هان كيول بإدارة مقهى قذر معرض لخطر الإفلاس.",
+        "popularity": 4.1618,
+        "poster_path": "/oQ37FBHA7ABhnAKpmdOMVLV4Dib.jpg",
+        "first_air_date": "2007-07-02",
+        "name": "مقهي الامير",
+        "vote_average": 8.2,
+        "vote_count": 272
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/51BoopTmVwTchhGFneUHOozlAtB.jpg",
+        "genre_ids": [
+          10759,
+          10765
+        ],
+        "id": 3291,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Manimal",
+        "overview": "",
+        "popularity": 3.0997,
+        "poster_path": "/deTedoQduoqW9Kduktf9eVfiY3V.jpg",
+        "first_air_date": "1983-09-30",
+        "name": "Manimal",
+        "vote_average": 7.3,
+        "vote_count": 134
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/bBhJaZq7m4p6yd1Wet1RENHLby3.jpg",
+        "genre_ids": [
+          18,
+          80
+        ],
+        "id": 213146,
+        "origin_country": [
+          "PL"
+        ],
+        "original_language": "pl",
+        "original_name": "Erynie",
+        "overview": "",
+        "popularity": 2.1183,
+        "poster_path": "/itDfBShHgUg8jPaJFivczFSK4Xw.jpg",
+        "first_air_date": "2022-10-25",
+        "name": "Erynie",
+        "vote_average": 5.727,
+        "vote_count": 11
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/37NYkXhZBGgRHCCXLbIQXoJZUYS.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 95555,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Daisy Jones & the Six",
+        "overview": "",
+        "popularity": 3.0864,
+        "poster_path": "/ltfscPUljehY7IwGG85vij2TEbQ.jpg",
+        "first_air_date": "2023-03-02",
+        "name": "Daisy Jones & the Six",
+        "vote_average": 8,
+        "vote_count": 203
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          80
+        ],
+        "id": 60946,
+        "origin_country": [
+          "DE"
+        ],
+        "original_language": "de",
+        "original_name": "Sperling",
+        "overview": "",
+        "popularity": 1.1019,
+        "poster_path": null,
+        "first_air_date": "1996-03-02",
+        "name": "Sperling",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/rU15hist9z9hY91O4Eux7TWYiUy.jpg",
+        "genre_ids": [
+          80,
+          99
+        ],
+        "id": 216516,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Real Time Crime",
+        "overview": "",
+        "popularity": 0.2966,
+        "poster_path": "/76Idpwc5YgRqbkCbBpXgl3k2nCo.jpg",
+        "first_air_date": "2022-12-13",
+        "name": "Real Time Crime",
+        "vote_average": 5.5,
+        "vote_count": 4
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/9TOI2Erq7e13Nf8dsYVCfgalYnV.jpg",
+        "genre_ids": [
+          80,
+          18
+        ],
+        "id": 2873,
+        "origin_country": [
+          "DK"
+        ],
+        "original_language": "da",
+        "original_name": "Ørnen: En Krimi Odyssè",
+        "overview": "",
+        "popularity": 2.8204,
+        "poster_path": "/oTuHsoyVPlzDnUQ4noA0tgmyWN1.jpg",
+        "first_air_date": "2004-10-10",
+        "name": "Ørnen: En Krimi Odyssè",
+        "vote_average": 6.8,
+        "vote_count": 12
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/x4ywn3gV8LO5iWdnlKFRjEI40H9.jpg",
+        "genre_ids": [
+          18,
+          10759,
+          80
+        ],
+        "id": 285453,
+        "origin_country": [
+          "TH"
+        ],
+        "original_language": "th",
+        "original_name": "เปิดโหมดล่า",
+        "overview": "",
+        "popularity": 0.875,
+        "poster_path": "/qBXbXhIvq8oVsd33IJE179XDBhl.jpg",
+        "first_air_date": "2025-03-03",
+        "name": "เปิดโหมดล่า",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/biL1i895i3F6O8LD66JU6SjJgur.jpg",
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 248752,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Good Cop/Bad Cop",
+        "overview": "",
+        "popularity": 4.0239,
+        "poster_path": "/hTKVwlXuZLgWrfcqRd8IIqF7BEo.jpg",
+        "first_air_date": "2025-02-19",
+        "name": "Good Cop/Bad Cop",
+        "vote_average": 6.5,
+        "vote_count": 22
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/oGsh97JAA6LYu92B6TEswrjac8W.jpg",
+        "genre_ids": [
+          9648,
+          18
+        ],
+        "id": 248852,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "UNTAMED",
+        "overview": "تتسبب وفاة امرأة داخل محمية \"يوسميتي\" الوطنية، الممتدة على مساحة شاسعة، في استكشاف عميل فيدرالي لأراضٍ لا تخضع للقانون... فالطبيعة هناك لا تذعن إلّا لقوانينها الخاصة.",
+        "popularity": 8.3432,
+        "poster_path": "/YQRx3t9iaHVGNXfo7TUiyH71Ky.jpg",
+        "first_air_date": "2025-07-17",
+        "name": "طبيعة جامحة",
+        "vote_average": 7.299,
+        "vote_count": 333
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/j8NSaQJqnSOx8vsxwEukY3oATNj.jpg",
+        "genre_ids": [
+          80,
+          18
+        ],
+        "id": 64513,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "American Crime Story",
+        "overview": "",
+        "popularity": 15.5341,
+        "poster_path": "/51Gihm701NoaXSzR7Zb7flVtbu0.jpg",
+        "first_air_date": "2016-02-02",
+        "name": "American Crime Story",
+        "vote_average": 7.557,
+        "vote_count": 1024
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/nmbhymKrATtjjEgbZzyKNJhBPI3.jpg",
+        "genre_ids": [
+          80,
+          18
+        ],
+        "id": 64589,
+        "origin_country": [
+          "FR"
+        ],
+        "original_language": "fr",
+        "original_name": "Profilage",
+        "overview": "",
+        "popularity": 6.5518,
+        "poster_path": "/9Z3J7qep9g29gL0B1elMZ0Z84qD.jpg",
+        "first_air_date": "2009-04-23",
+        "name": "Profilage",
+        "vote_average": 6.9,
+        "vote_count": 32
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/lUrtMjiunomHPDC2sQNIxswbmdU.jpg",
+        "genre_ids": [
+          18,
+          80
+        ],
+        "id": 3034,
+        "origin_country": [
+          "AT",
+          "DE",
+          "CH"
+        ],
+        "original_language": "de",
+        "original_name": "Tatort",
+        "overview": "",
+        "popularity": 31.9161,
+        "poster_path": "/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
+        "first_air_date": "1970-11-29",
+        "name": "Tatort",
+        "vote_average": 6.154,
+        "vote_count": 120
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/wnAboUyDiTILkZfPhFyVIiY87Fa.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 3050,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "The Practice",
+        "overview": "",
+        "popularity": 25.1384,
+        "poster_path": "/7OKZSUIWhjFP0F2s478zTrAYwDB.jpg",
+        "first_air_date": "1997-03-04",
+        "name": "The Practice",
+        "vote_average": 7.6,
+        "vote_count": 108
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/ymdCZck7hy7EDxUTR4Uq1MisfyX.jpg",
+        "genre_ids": [
+          18,
+          10765,
+          10759
+        ],
+        "id": 3137,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Babylon 5",
+        "overview": "",
+        "popularity": 20.6316,
+        "poster_path": "/td8O6KJQpN9ZRiuyFUILziXFMrk.jpg",
+        "first_air_date": "1994-01-26",
+        "name": "Babylon 5",
+        "vote_average": 8.024,
+        "vote_count": 577
+      }
+    ],
+    "total_pages": 2894,
+    "total_results": 57872
+  },
+  "videos": {
+    "results": []
+  }
+}

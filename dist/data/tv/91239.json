@@ -1,0 +1,871 @@
+{
+  "adult": false,
+  "backdrop_path": "/6umsRLI7t0ydFwCl0JNEIO0q2LH.jpg",
+  "created_by": [
+    {
+      "id": 1224075,
+      "credit_id": "5d2f3fc7caab6d5d98984285",
+      "name": "Chris Van Dusen",
+      "original_name": "Chris Van Dusen",
+      "gender": 2,
+      "profile_path": "/sm5KrdRKGZdPbTbQsz3GHTlDut1.jpg"
+    }
+  ],
+  "episode_run_time": [],
+  "first_air_date": "2020-12-25",
+  "genres": [
+    {
+      "id": 18,
+      "name": "دراما"
+    }
+  ],
+  "homepage": "https://www.netflix.com/title/80232398",
+  "id": 91239,
+  "in_production": true,
+  "languages": [
+    "en"
+  ],
+  "last_air_date": "2026-01-29",
+  "last_episode_to_air": {
+    "id": 6599346,
+    "name": "عرض من رجل نبيل",
+    "overview": "وسط حماستها للتركيز على وظيفتها الجديدة، تواجه \"صوفي\" صعوبة في كبت اشتياقها إلى \"بينيديكت\"، فيما تطرح \"فرانشيسكا\" موضوعًا حساسًا للمناقشة وتعقد \"فيوليت\" جلسة بالغة الخصوصية.",
+    "vote_average": 5.206,
+    "vote_count": 17,
+    "air_date": "2026-01-29",
+    "episode_number": 4,
+    "episode_type": "mid_season",
+    "production_code": "",
+    "runtime": 63,
+    "season_number": 4,
+    "show_id": 91239,
+    "still_path": "/hN1UL8mFauVY7VzkJQ8h1Pd37Mo.jpg"
+  },
+  "name": "بريدجرتون",
+  "next_episode_to_air": {
+    "id": 6599347,
+    "name": "الحلقة 5",
+    "overview": "",
+    "vote_average": 0,
+    "vote_count": 0,
+    "air_date": "2026-02-26",
+    "episode_number": 5,
+    "episode_type": "standard",
+    "production_code": "",
+    "runtime": null,
+    "season_number": 4,
+    "show_id": 91239,
+    "still_path": null
+  },
+  "networks": [
+    {
+      "id": 213,
+      "logo_path": "/wwemzKWzjKYJFfCeiB57q3r4Bcm.png",
+      "name": "Netflix",
+      "origin_country": ""
+    }
+  ],
+  "number_of_episodes": 32,
+  "number_of_seasons": 4,
+  "origin_country": [
+    "US"
+  ],
+  "original_language": "en",
+  "original_name": "Bridgerton",
+  "overview": "يبحث ثمانية أشقّاء مترابطين من عائلة \"بريدجرتون\" عن الحبّ والسعادة في مجتمع \"لندن\" الراقي.",
+  "popularity": 218.134,
+  "poster_path": "/uXTg565ahu9RwonCX1V2Hex1NU6.jpg",
+  "production_companies": [
+    {
+      "id": 34209,
+      "logo_path": "/rYt8Q3nYxyE4YBLmVojvoKvIROv.png",
+      "name": "shondaland",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "seasons": [
+    {
+      "air_date": "2020-12-22",
+      "episode_count": 8,
+      "id": 127918,
+      "name": "الموسم 1",
+      "overview": "",
+      "poster_path": "/qaewZKBKmXjb4ZfFBb1LCug6BE8.jpg",
+      "season_number": 1,
+      "vote_average": 6.8
+    },
+    {
+      "air_date": "2022-03-25",
+      "episode_count": 8,
+      "id": 177923,
+      "name": "الموسم 2",
+      "overview": "يصطدم الواجب بالرغبة والفضيحة عندما يعتزم الفيكونت \"أنتوني بريدجرتون\" الزواج، إذ يتضح أن توأم روحه هي الأخت الكبرى والعنيدة لعروسه المرتقبة.",
+      "poster_path": "/luoKpgVwi1E5nQsi7W0UuKHu2Rq.jpg",
+      "season_number": 2,
+      "vote_average": 6.6
+    },
+    {
+      "air_date": "2024-05-16",
+      "episode_count": 8,
+      "id": 301726,
+      "name": "الموسم 3",
+      "overview": "بينما تتوق مجموعة جديدة من المبتدئات للتميّز في الحفل الراقص، تتألق شخصية خجولة تعيش حياة مزدوجة وسط الأسرار والمفاجآت.",
+      "poster_path": "/zCEm0xrRMa5fLCQ9d0nvcw6tvcr.jpg",
+      "season_number": 3,
+      "vote_average": 6.7
+    },
+    {
+      "air_date": "2026-01-29",
+      "episode_count": 8,
+      "id": 403308,
+      "name": "الموسم 4",
+      "overview": "",
+      "poster_path": "/uXTg565ahu9RwonCX1V2Hex1NU6.jpg",
+      "season_number": 4,
+      "vote_average": 5.1
+    }
+  ],
+  "spoken_languages": [
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Returning Series",
+  "tagline": "",
+  "type": "Scripted",
+  "vote_average": 8.066,
+  "vote_count": 3129,
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 18031,
+        "known_for_department": "Acting",
+        "name": "روث غيميل",
+        "original_name": "Ruth Gemmell",
+        "popularity": 13.2533,
+        "profile_path": "/lq8W1V45lIWAhpgjb7ezYB3B79p.jpg",
+        "character": "Lady Violet Bridgerton",
+        "credit_id": "5d2f48be6a300b16aaa1c4a6",
+        "order": 0
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1127887,
+        "known_for_department": "Acting",
+        "name": "لوك تومبسون",
+        "original_name": "Luke Thompson",
+        "popularity": 10.7104,
+        "profile_path": "/nPNXCTpvBsnVILldwjVcDK4yrby.jpg",
+        "character": "Benedict Bridgerton",
+        "credit_id": "622c3b9f025764004647d1ed",
+        "order": 2
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 2611199,
+        "known_for_department": "Acting",
+        "name": "Yerin Ha",
+        "original_name": "Yerin Ha",
+        "popularity": 7.5416,
+        "profile_path": "/amG2VsVHn3dBH8ey3H9RVDoxgyz.jpg",
+        "character": "Sophie Baek",
+        "credit_id": "66c00143805425622081c884",
+        "order": 6
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1794961,
+        "known_for_department": "Acting",
+        "name": "لوك نيوتن",
+        "original_name": "Luke Newton",
+        "popularity": 5.3413,
+        "profile_path": "/hQsWTiBUpE2Jywg8vvvrDLVmG5m.jpg",
+        "character": "Colin Bridgerton",
+        "credit_id": "5d2f47c427d9cc416d7bbaf8",
+        "order": 7
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1439488,
+        "known_for_department": "Acting",
+        "name": "كلوديا جيسي",
+        "original_name": "Claudia Jessie",
+        "popularity": 7.8094,
+        "profile_path": "/urv0p4Mi81m1jZO8YWF1i9NpLL7.jpg",
+        "character": "Eloise Bridgerton",
+        "credit_id": "5d2f48586a300b0010a84cbd",
+        "order": 11
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 2908684,
+        "known_for_department": "Acting",
+        "name": "فلورانس هانت",
+        "original_name": "Florence Hunt",
+        "popularity": 2.5955,
+        "profile_path": "/2PQxOhgqnS4S4JNiAmQtquqgDjF.jpg",
+        "character": "Hyacinth Bridgerton",
+        "credit_id": "5fe4a5e770309f003d80f60d",
+        "order": 12
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1686681,
+        "known_for_department": "Acting",
+        "name": "ويل تيلستون",
+        "original_name": "Will Tilston",
+        "popularity": 1.2315,
+        "profile_path": "/fdIByL5EeTImhVHtSPaEMBErF2C.jpg",
+        "character": "Gregory Bridgerton",
+        "credit_id": "622c39c34a0b19006b24fe49",
+        "order": 13
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 109651,
+        "known_for_department": "Acting",
+        "name": "أدجوا أندوه",
+        "original_name": "Adjoa Andoh",
+        "popularity": 2.7208,
+        "profile_path": "/4dsLkxU3Vcw1P97JoyGWlbYhV1h.jpg",
+        "character": "Lady Agatha Danbury",
+        "credit_id": "62300d846d1bb2007a7c3997",
+        "order": 15
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 5823,
+        "known_for_department": "Acting",
+        "name": "جولي آندروز",
+        "original_name": "Julie Andrews",
+        "popularity": 3.3895,
+        "profile_path": "/kTXM2KfsXh2vSav0s9vaDKfs4lR.jpg",
+        "character": "Lady Whistledown (voice)",
+        "credit_id": "5d2f477627d9cc416d7bba6f",
+        "order": 18
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1856875,
+        "known_for_department": "Acting",
+        "name": "غولدا روشيفيل",
+        "original_name": "Golda Rosheuvel",
+        "popularity": 6.5464,
+        "profile_path": "/nlSIvTWzMEzZGljKYgpZxGcsJtv.jpg",
+        "character": "Queen Charlotte",
+        "credit_id": "62300ee9414291007bbe9e97",
+        "order": 20
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 234933,
+        "known_for_department": "Acting",
+        "name": "كاتي ليونغ",
+        "original_name": "Katie Leung",
+        "popularity": 5.3457,
+        "profile_path": "/9gztOAk27dpZVspSJpb27ek7LlT.jpg",
+        "character": "Lady Araminta Gun",
+        "credit_id": "697b91143270e48ac6b81d60",
+        "order": 25
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 2141470,
+        "known_for_department": "Acting",
+        "name": "Michelle Mao",
+        "original_name": "Michelle Mao",
+        "popularity": 5.2709,
+        "profile_path": "/59OPKUdFv7vfg7T8CePmmqXQTip.jpg",
+        "character": "Rosamund Li",
+        "credit_id": "697b9095a7d85af76b22bae5",
+        "order": 29
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 3578843,
+        "known_for_department": "Acting",
+        "name": "Isabella Wei",
+        "original_name": "Isabella Wei",
+        "popularity": 0.5876,
+        "profile_path": "/rUUpr6qdGm88Kc6zdOJtyVXwMez.jpg",
+        "character": "Posy Li",
+        "credit_id": "697b90c2cea78a0dbc8f9067",
+        "order": 33
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1768996,
+        "known_for_department": "Acting",
+        "name": "دانييل فرانسيز",
+        "original_name": "Daniel Francis",
+        "popularity": 2.1869,
+        "profile_path": "/ltLYFcQHcaS5wdxX085Lhn0vX5v.jpg",
+        "character": "Lord Marcus Anderson",
+        "credit_id": "66c007e43b2c08bc171f4ccb",
+        "order": 41
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 3080488,
+        "known_for_department": "Acting",
+        "name": "Julie Meghan Brown",
+        "original_name": "Julie Meghan Brown",
+        "popularity": 0.1344,
+        "profile_path": "/ivrPS5Zqw80qQAJXdJPWF5gaDQZ.jpg",
+        "credit_id": "68e9a58126bd32d38d1f6190",
+        "department": "Production",
+        "job": "Post Production Coordinator"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1736953,
+        "known_for_department": "Art",
+        "name": "Sarah Notley",
+        "original_name": "Sarah Notley",
+        "popularity": 0.1954,
+        "profile_path": null,
+        "credit_id": "697c237bdc2adf740059a069",
+        "department": "Art",
+        "job": "Art Direction"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2439890,
+        "known_for_department": "Art",
+        "name": "Alison Gartshore",
+        "original_name": "Alison Gartshore",
+        "popularity": 0.0826,
+        "profile_path": null,
+        "credit_id": "66c150b7214e2242e9922aa1",
+        "department": "Production",
+        "job": "Production Designer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1790275,
+        "known_for_department": "Writing",
+        "name": "Jess Brownell",
+        "original_name": "Jess Brownell",
+        "popularity": 0.189,
+        "profile_path": "/vtM6LI2IRufMiO5HUJLkBxltq28.jpg",
+        "credit_id": "66c151f5667e1ca650d53c24",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 155423,
+        "known_for_department": "Acting",
+        "name": "Tom Verica",
+        "original_name": "Tom Verica",
+        "popularity": 2.8459,
+        "profile_path": "/kNh4u2PUzXw3shi3M1tmYvsJu4y.jpg",
+        "credit_id": "689b592f89fa8b0a0526856d",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 25539,
+        "known_for_department": "Writing",
+        "name": "شوندا رايمز",
+        "original_name": "Shonda Rhimes",
+        "popularity": 1.4488,
+        "profile_path": "/pIQbVxfjNwZ0DaAjo3q107nng1b.jpg",
+        "credit_id": "5fe6cc5b489d000040990b38",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1224075,
+        "known_for_department": "Writing",
+        "name": "Chris Van Dusen",
+        "original_name": "Chris Van Dusen",
+        "popularity": 0.5191,
+        "profile_path": "/sm5KrdRKGZdPbTbQsz3GHTlDut1.jpg",
+        "credit_id": "5fe6cc7d4539d0003da0c889",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 2911709,
+        "known_for_department": "Writing",
+        "name": "جوليا كوين",
+        "original_name": "Julia Quinn",
+        "popularity": 0.3272,
+        "profile_path": null,
+        "credit_id": "5fe7f51e1d6c5f003ee245b4",
+        "department": "Writing",
+        "job": "Novel"
+      }
+    ]
+  },
+  "similar": {
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/haa2oP894hZDJghBd5dgOZ1HoEB.jpg",
+        "genre_ids": [
+          35,
+          18
+        ],
+        "id": 214927,
+        "origin_country": [
+          "CN"
+        ],
+        "original_language": "zh",
+        "original_name": "墨白",
+        "overview": "",
+        "popularity": 1.5422,
+        "poster_path": "/krNKR07uq6wvCA91wI2uc5cNwDe.jpg",
+        "first_air_date": "2022-12-10",
+        "name": "墨白",
+        "vote_average": 7.333,
+        "vote_count": 3
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/t2fl4Po0H38ZYwzPboTTXhQ6v3Y.jpg",
+        "genre_ids": [
+          18,
+          9648
+        ],
+        "id": 214994,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "청담국제고등학교",
+        "overview": "",
+        "popularity": 4.5268,
+        "poster_path": "/7Wlxdu6Z1sYcti7xgbtLLmxRFOk.jpg",
+        "first_air_date": "2023-05-31",
+        "name": "청담국제고등학교",
+        "vote_average": 8.3,
+        "vote_count": 33
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/klu50uMoobVoY39djCRQBDJJqjR.jpg",
+        "genre_ids": [
+          18,
+          9648
+        ],
+        "id": 214996,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "행복배틀",
+        "overview": "",
+        "popularity": 2.445,
+        "poster_path": "/58VB6Wl3ajyLBrm1pltR4ZkPXw2.jpg",
+        "first_air_date": "2023-05-31",
+        "name": "معركة السعادة",
+        "vote_average": 4.8,
+        "vote_count": 16
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/jLDPdyYbwjCGv54yNT3KPS3TkQk.jpg",
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 215000,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "놀아주는 여자",
+        "overview": "تلتقي صانعة محتوى للأطفال ورسولة الحبّ والبراءة بصديق طفولتها، رجل العصابة الذي تاب عن الإجرام، فتكون له منارة أمل تبتلع ماضيه القاتم.",
+        "popularity": 3.8827,
+        "poster_path": "/7CBp5rso645veMKIiTS7eCko5Mw.jpg",
+        "first_air_date": "2024-06-12",
+        "name": "حبيبي عضو العصابة اللطيف",
+        "vote_average": 7.646,
+        "vote_count": 24
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/jJMfTkvU2exHwCFoBHsIqwaHImh.jpg",
+        "genre_ids": [
+          18,
+          10765,
+          35
+        ],
+        "id": 215001,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "이 연애는 불가항력",
+        "overview": "يتشابك مصير محامٍ مقيّد بلعنة تعود إلى قرون من الزمن مع موظفة خدمة مدنية تملك مفتاح حريته… فتشتعل بينهما علاقة عاطفية غير متوقعة.",
+        "popularity": 9.5041,
+        "poster_path": "/6vJBIAnQ0dDqikESJCImEdCbKvT.jpg",
+        "first_air_date": "2023-08-23",
+        "name": "أنت قدري",
+        "vote_average": 8.099,
+        "vote_count": 218
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/bAnZxpaffUsW7JwkBKbOjPF27hh.jpg",
+        "genre_ids": [
+          10765,
+          18,
+          35
+        ],
+        "id": 215003,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "사랑의 안단테",
+        "overview": "حبّ يزدهر لإحلال السلام بين الكوريتين، بعد صراع دام لـ 70 عامًا.",
+        "popularity": 0.824,
+        "poster_path": "/AhnAZk78473zwAABsvUmLlIUB45.jpg",
+        "first_air_date": "2024-08-07",
+        "name": "حب هادئ",
+        "vote_average": 7.8,
+        "vote_count": 4
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/7Yj4QbECkH3JavlZxw4NWReoN7B.jpg",
+        "genre_ids": [
+          80,
+          18
+        ],
+        "id": 1621,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Boardwalk Empire",
+        "overview": "مع بزوغ فجر عصر \"الحظر\"، بدت \"أتلانتيك سيتي\" مكاناً لا تسري فيه القواعد. والرجل الذي يمسك بزمام الأمور فيها - سواء بالطرق القانونية أو غيرها - هو أمين صندوق المدينة \"إينوك 'ناكي' طومسون\"، الذي يجمع في شخصيته مناصفةً بين السياسي ورجل العصابات.",
+        "popularity": 18.5617,
+        "poster_path": "/5atVVXB8f4disOgQE7fZtVYv6sI.jpg",
+        "first_air_date": "2010-09-19",
+        "name": "إمبراطُورية المَمَر الخَشَبِي",
+        "vote_average": 8.008,
+        "vote_count": 1208
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/jNmHcPQ3rK1oftbltbaUOgGgnV1.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 1669,
+        "origin_country": [
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "Oranges Are Not the Only Fruit",
+        "overview": "",
+        "popularity": 1.5364,
+        "poster_path": "/mMETYbPN7PJeSkEpKeOlSrzStTV.jpg",
+        "first_air_date": "1990-01-10",
+        "name": "Oranges Are Not the Only Fruit",
+        "vote_average": 6.5,
+        "vote_count": 26
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/koUdc0xLF7HVbKsGg2cSHDybOfI.jpg",
+        "genre_ids": [
+          18,
+          10768
+        ],
+        "id": 30956,
+        "origin_country": [
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "Land Girls",
+        "overview": "",
+        "popularity": 1.9609,
+        "poster_path": "/q6V76CQOwAHlg2kZ1K7uu3tgkT1.jpg",
+        "first_air_date": "2009-09-07",
+        "name": "Land Girls",
+        "vote_average": 7.8,
+        "vote_count": 26
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/uhzxwbB980oXT1i8qRqLz0x1Zhi.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 30961,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "별의 소리",
+        "overview": "",
+        "popularity": 0.5639,
+        "poster_path": "/wuvt6wLgoa2JjfdV0Bcd1HDNZVg.jpg",
+        "first_air_date": "2004-01-30",
+        "name": "별의 소리",
+        "vote_average": 6.5,
+        "vote_count": 2
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/fowIZg4V8WEfhA8pOUWpBHWf42f.jpg",
+        "genre_ids": [
+          16,
+          18,
+          35
+        ],
+        "id": 30979,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "グラビテーション",
+        "overview": "",
+        "popularity": 3.6488,
+        "poster_path": "/1WGRX9mvcycn3PgNap0clEy0KgJ.jpg",
+        "first_air_date": "2000-10-04",
+        "name": "グラビテーション",
+        "vote_average": 6.429,
+        "vote_count": 14
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/qsiYayWAoPEhbCld0m2PpVeiM2Z.jpg",
+        "genre_ids": [
+          16,
+          18
+        ],
+        "id": 131660,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "しょうたいむ！〜歌のお姉さんだってしたい〜",
+        "overview": "",
+        "popularity": 4.6147,
+        "poster_path": "/7S86pkMfatspJmXENcPZfgaKB33.jpg",
+        "first_air_date": "2021-10-04",
+        "name": "しょうたいむ！〜歌のお姉さんだってしたい〜",
+        "vote_average": 7.2,
+        "vote_count": 9
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/ruvK8Wdyy4FikT9DkUFYTMnBuZW.jpg",
+        "genre_ids": [
+          35,
+          18
+        ],
+        "id": 131673,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "유 레이즈 미 업",
+        "overview": "",
+        "popularity": 1.1194,
+        "poster_path": "/kcsrapozsVyTtXjf0NhoJa2HW36.jpg",
+        "first_air_date": "2021-08-31",
+        "name": "유 레이즈 미 업",
+        "vote_average": 6.5,
+        "vote_count": 12
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/oTfSXFevmc9buv5Bzi4XT57Kyho.jpg",
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 131688,
+        "origin_country": [
+          "TH"
+        ],
+        "original_language": "th",
+        "original_name": "สะใภ้เจ้าสัว",
+        "overview": "",
+        "popularity": 0.6049,
+        "poster_path": "/wpqbxJHYHOCmbngEKNywZzPOqO9.jpg",
+        "first_air_date": "2021-04-07",
+        "name": "สะใภ้เจ้าสัว",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          18
+        ],
+        "id": 284202,
+        "origin_country": [
+          "CN"
+        ],
+        "original_language": "zh",
+        "original_name": "虽然不能同时拥有一切",
+        "overview": "",
+        "popularity": 0.7922,
+        "poster_path": "/9QAMT79905jltQU6g8uxdQyFBdE.jpg",
+        "first_air_date": "",
+        "name": "虽然不能同时拥有一切",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/wMbRI29ob0DmlYdPYj1pde1y13k.jpg",
+        "genre_ids": [
+          18,
+          80
+        ],
+        "id": 62829,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Bonnie & Clyde",
+        "overview": "",
+        "popularity": 2.1602,
+        "poster_path": "/tOLZpg3fxxdbkkMZWT3WfOM5d4k.jpg",
+        "first_air_date": "2013-12-08",
+        "name": "Bonnie & Clyde",
+        "vote_average": 7.305,
+        "vote_count": 150
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/6Nls77iKuRKHkRb1OOMenXqKwoR.jpg",
+        "genre_ids": [
+          16,
+          35,
+          18,
+          10765
+        ],
+        "id": 62911,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "信長協奏曲（コンツェルト）",
+        "overview": "",
+        "popularity": 3.743,
+        "poster_path": "/yQluy7X8zj2GtMCoK3bV52MUp3r.jpg",
+        "first_air_date": "2014-07-12",
+        "name": "信長協奏曲（コンツェルト）",
+        "vote_average": 6.7,
+        "vote_count": 11
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/lU28XFV7ITJLnWAqRJpvK10deA6.jpg",
+        "genre_ids": [
+          10766,
+          18
+        ],
+        "id": 62917,
+        "origin_country": [
+          "BR"
+        ],
+        "original_language": "pt",
+        "original_name": "Verdades Secretas",
+        "overview": "",
+        "popularity": 3.78,
+        "poster_path": "/js4ME0psGSLwJQs3zbiYN2fhlEE.jpg",
+        "first_air_date": "2015-06-08",
+        "name": "Verdades Secretas",
+        "vote_average": 7.8,
+        "vote_count": 298
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/b9bgLoPSDLAr7QjCwzpjoKxmXbC.jpg",
+        "genre_ids": [
+          10766,
+          9648,
+          18
+        ],
+        "id": 62921,
+        "origin_country": [
+          "CL"
+        ],
+        "original_language": "es",
+        "original_name": "La Poseída",
+        "overview": "",
+        "popularity": 1.4335,
+        "poster_path": "/AtFz0hoKRJywgntcVFHUj6vC1Vk.jpg",
+        "first_air_date": "2015-05-17",
+        "name": "La Poseída",
+        "vote_average": 6,
+        "vote_count": 2
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/dBh58h71ZMi7WJE4ZQr2xT9iW4i.jpg",
+        "genre_ids": [
+          18,
+          80
+        ],
+        "id": 62927,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Wicked City",
+        "overview": "",
+        "popularity": 1.8516,
+        "poster_path": "/myEcHo82olJ5HM5IC9hTCehSpIV.jpg",
+        "first_air_date": "2015-10-27",
+        "name": "Wicked City",
+        "vote_average": 5.9,
+        "vote_count": 46
+      }
+    ],
+    "total_pages": 2490,
+    "total_results": 49783
+  },
+  "videos": {
+    "results": []
+  }
+}

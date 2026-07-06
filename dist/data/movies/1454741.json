@@ -1,0 +1,772 @@
+{
+  "adult": false,
+  "backdrop_path": "/lALfCsv7YMNrqpWzIaxjS81JKOm.jpg",
+  "belongs_to_collection": null,
+  "budget": 0,
+  "genres": [
+    {
+      "id": 27,
+      "name": "رعب"
+    }
+  ],
+  "homepage": "",
+  "id": 1454741,
+  "imdb_id": "tt35838700",
+  "origin_country": [
+    "US"
+  ],
+  "original_language": "en",
+  "original_title": "The Confession",
+  "overview": "",
+  "popularity": 96.533,
+  "poster_path": "/xJCwYlJX6UfYQuUmLfWWcRP27gK.jpg",
+  "production_companies": [
+    {
+      "id": 117109,
+      "logo_path": null,
+      "name": "Three Folks Pictures",
+      "origin_country": ""
+    },
+    {
+      "id": 105900,
+      "logo_path": null,
+      "name": "Five by Five",
+      "origin_country": ""
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "release_date": "2026-01-08",
+  "revenue": 0,
+  "runtime": 87,
+  "spoken_languages": [
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Released",
+  "tagline": "",
+  "title": "The Confession",
+  "video": false,
+  "vote_average": 5.278,
+  "vote_count": 18,
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 212429,
+        "known_for_department": "Acting",
+        "name": "Italia Ricci",
+        "original_name": "Italia Ricci",
+        "popularity": 2.3733,
+        "profile_path": "/sLQAYErTlb9DiiLlXmUH7me47vK.jpg",
+        "cast_id": 1,
+        "character": "Naomi Riley",
+        "credit_id": "67e48a755f0bfa0b66ba1ecb",
+        "order": 0
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 41464,
+        "known_for_department": "Acting",
+        "name": "Scott Mechlowicz",
+        "original_name": "Scott Mechlowicz",
+        "popularity": 0.9376,
+        "profile_path": "/2PMsSnuukuRmHCKcQqqCnD0MIN8.jpg",
+        "cast_id": 2,
+        "character": "Grayson Phillips",
+        "credit_id": "67e48a825f3e0ac18800170a",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2554513,
+        "known_for_department": "Acting",
+        "name": "Zachary Golinger",
+        "original_name": "Zachary Golinger",
+        "popularity": 1.2845,
+        "profile_path": "/rtGsdhPDEEc132Ev4NJ2dubb3t0.jpg",
+        "cast_id": 3,
+        "character": "Dylan Riley",
+        "credit_id": "67e48a94f846794e99108fc2",
+        "order": 2
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1411625,
+        "known_for_department": "Acting",
+        "name": "Terence Rosemore",
+        "original_name": "Terence Rosemore",
+        "popularity": 0.8108,
+        "profile_path": "/mjBaREqAREvJLxDpOlUGLxaYrIP.jpg",
+        "cast_id": 4,
+        "character": "Harling Guidry",
+        "credit_id": "67e48abef846794e99108fcf",
+        "order": 3
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1213245,
+        "known_for_department": "Acting",
+        "name": "Justin Matthew Smith",
+        "original_name": "Justin Matthew Smith",
+        "popularity": 2.0908,
+        "profile_path": "/kJ0PvqWuhpuH35SlGlrUfwYwqg8.jpg",
+        "cast_id": 5,
+        "character": "The Piper",
+        "credit_id": "67e48ad85f0bfa0b66ba1f0b",
+        "order": 4
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1497461,
+        "known_for_department": "Acting",
+        "name": "Allie McCulloch",
+        "original_name": "Allie McCulloch",
+        "popularity": 0.5616,
+        "profile_path": "/nQeTolpRV1NRF6mVaMyJDGRbEoE.jpg",
+        "cast_id": 6,
+        "character": "Luellen",
+        "credit_id": "67e48b0ce8a1910e65108ccc",
+        "order": 5
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1591104,
+        "known_for_department": "Acting",
+        "name": "Ron Fallica",
+        "original_name": "Ron Fallica",
+        "popularity": 0.2581,
+        "profile_path": "/rivF06MZ6xrHx9d7v5CcZFRjdEu.jpg",
+        "cast_id": 7,
+        "character": "Evan",
+        "credit_id": "67e48b1b421eb8c331ba2414",
+        "order": 6
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1763910,
+        "known_for_department": "Acting",
+        "name": "Jay DeVon Johnson",
+        "original_name": "Jay DeVon Johnson",
+        "popularity": 0.4861,
+        "profile_path": "/k21WcVCo5TAhKPEAMXSO5g9HC21.jpg",
+        "cast_id": 8,
+        "character": "Detective Armas",
+        "credit_id": "67e48b37421eb8c331ba2421",
+        "order": 7
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1694113,
+        "known_for_department": "Acting",
+        "name": "Troy Rudeseal",
+        "original_name": "Troy Rudeseal",
+        "popularity": 5.4975,
+        "profile_path": "/9WE9pizvYtG0zVGXpYZF5v2gOtV.jpg",
+        "cast_id": 9,
+        "character": "Principal Hodges",
+        "credit_id": "67e48b4af846794e99108ff4",
+        "order": 8
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1757329,
+        "known_for_department": "Acting",
+        "name": "Vince Eisenson",
+        "original_name": "Vince Eisenson",
+        "popularity": 3.5083,
+        "profile_path": "/tEu8DZM6OzcEtBwyDljaF7CQlLr.jpg",
+        "cast_id": 10,
+        "character": "The Skinny Man",
+        "credit_id": "67e48b5ce8a1910e65108cd7",
+        "order": 9
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 3976780,
+        "known_for_department": "Acting",
+        "name": "Craig Kolkebeck",
+        "original_name": "Craig Kolkebeck",
+        "popularity": 0.1188,
+        "profile_path": null,
+        "cast_id": 11,
+        "character": "Arthur Riley",
+        "credit_id": "67e48b6b2580eef1e80026e6",
+        "order": 10
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2912654,
+        "known_for_department": "Acting",
+        "name": "Fleming Moore",
+        "original_name": "Fleming Moore",
+        "popularity": 0.0363,
+        "profile_path": null,
+        "cast_id": 12,
+        "character": "Royce Cobb",
+        "credit_id": "67e48b7b5f0bfa0b66ba1f5f",
+        "order": 11
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 3760555,
+        "known_for_department": "Acting",
+        "name": "Keeley Kollmann",
+        "original_name": "Keeley Kollmann",
+        "popularity": 0.0239,
+        "profile_path": null,
+        "cast_id": 24,
+        "character": "Possessed Adult (uncredited)",
+        "credit_id": "6969e92b0110749a72279a2c",
+        "order": 12
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 223098,
+        "known_for_department": "Writing",
+        "name": "Will Canon",
+        "original_name": "Will Canon",
+        "popularity": 0.6075,
+        "profile_path": "/qU4LuPlEE4ejdW7VABth5G7sp56.jpg",
+        "credit_id": "67e48bdae8a1910e65108d0d",
+        "department": "Directing",
+        "job": "Director"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2236998,
+        "known_for_department": "Production",
+        "name": "Rosanna Eden-Ellis",
+        "original_name": "Rosanna Eden-Ellis",
+        "popularity": 0.0214,
+        "profile_path": null,
+        "credit_id": "67e48bf5421eb8c331ba2473",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 572035,
+        "known_for_department": "Camera",
+        "name": "John W. Rutland",
+        "original_name": "John W. Rutland",
+        "popularity": 0.4345,
+        "profile_path": null,
+        "credit_id": "67e48c05e8a1910e65108d30",
+        "department": "Camera",
+        "job": "Director of Photography"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2251595,
+        "known_for_department": "Art",
+        "name": "'Jungle Jim' Shaughnessy",
+        "original_name": "'Jungle Jim' Shaughnessy",
+        "popularity": 0.5674,
+        "profile_path": null,
+        "credit_id": "67e48c162580eef1e800271f",
+        "department": "Art",
+        "job": "Production Design"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 5330437,
+        "known_for_department": "Costume & Make-Up",
+        "name": "Tara Sall",
+        "original_name": "Tara Sall",
+        "popularity": 0.0357,
+        "profile_path": null,
+        "credit_id": "67e48c6e421eb8c331ba24ad",
+        "department": "Costume & Make-Up",
+        "job": "Makeup Department Head"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4172297,
+        "known_for_department": "Costume & Make-Up",
+        "name": "Lizzie Lovett",
+        "original_name": "Lizzie Lovett",
+        "popularity": 0.0621,
+        "profile_path": null,
+        "credit_id": "67e48c892074b0ee56001da2",
+        "department": "Costume & Make-Up",
+        "job": "Costume Designer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4105665,
+        "known_for_department": "Editing",
+        "name": "Kyle Walczak",
+        "original_name": "Kyle Walczak",
+        "popularity": 0.0338,
+        "profile_path": null,
+        "credit_id": "67e48ceb5f0bfa0b66ba1fb7",
+        "department": "Editing",
+        "job": "Editor"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1795686,
+        "known_for_department": "Production",
+        "name": "Neely Eisenstein",
+        "original_name": "Neely Eisenstein",
+        "popularity": 0.2508,
+        "profile_path": null,
+        "credit_id": "67e49285f846794e9910920d",
+        "department": "Production",
+        "job": "Casting Director"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1461191,
+        "known_for_department": "Sound",
+        "name": "Dan Marocco",
+        "original_name": "Dan Marocco",
+        "popularity": 0.1337,
+        "profile_path": null,
+        "credit_id": "691b9c6cce430394eb5e01d5",
+        "department": "Sound",
+        "job": "Original Music Composer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 223098,
+        "known_for_department": "Writing",
+        "name": "Will Canon",
+        "original_name": "Will Canon",
+        "popularity": 0.6075,
+        "profile_path": "/qU4LuPlEE4ejdW7VABth5G7sp56.jpg",
+        "credit_id": "6983ae8c6d733256431a2046",
+        "department": "Writing",
+        "job": "Screenplay"
+      }
+    ]
+  },
+  "similar": {
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/rg3hBiQbDet8uNQkgfbpk7306p8.jpg",
+        "genre_ids": [
+          27,
+          14,
+          9648
+        ],
+        "id": 779,
+        "original_language": "de",
+        "original_title": "Vampyr - Der Traum des Allan Grey",
+        "overview": "",
+        "popularity": 0.6046,
+        "poster_path": "/tgnL5gAI1iGmycmjyL2ytTXcrDX.jpg",
+        "release_date": "1932-05-06",
+        "title": "Vampyr - Der Traum des Allan Grey",
+        "video": false,
+        "vote_average": 7.3,
+        "vote_count": 581
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/kNfHJGdKpAg2yRudmEObPodk542.jpg",
+        "genre_ids": [
+          27,
+          9648
+        ],
+        "id": 3021,
+        "original_language": "en",
+        "original_title": "1408",
+        "overview": "تدور أحداث الفيلم حول أحد الأشخاص النفسيون متخصص في البحث عن الخوارق الطبيعية يعلم بوجود غرفة رقم 1408 بأحد الفنادق يحدث بها خوارق ويقتل كل من يقطن بها فيحاول كشف الحقيقة ...فترى هل سيكون الضحية التالية؟",
+        "popularity": 4.7433,
+        "poster_path": "/yE9MCW7ZNxSw5SC1TMqm51pMBIV.jpg",
+        "release_date": "2007-06-22",
+        "title": "1408",
+        "video": false,
+        "vote_average": 6.699,
+        "vote_count": 4761
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/t8EpRpdRnBa6mn0vfh6wyOViPuc.jpg",
+        "genre_ids": [
+          27,
+          9648
+        ],
+        "id": 854529,
+        "original_language": "en",
+        "original_title": "Night at the Eagle Inn",
+        "overview": "",
+        "popularity": 0.407,
+        "poster_path": "/i2c6Pv7y4WU0HVcHcRfr242RNFp.jpg",
+        "release_date": "2021-10-08",
+        "title": "Night at the Eagle Inn",
+        "video": false,
+        "vote_average": 4.886,
+        "vote_count": 22
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/Aiac3QUnmXfOKdYUJngL1SuaZEF.jpg",
+        "genre_ids": [
+          12,
+          35,
+          27
+        ],
+        "id": 460910,
+        "original_language": "en",
+        "original_title": "The Haunted House on Kirby Road",
+        "overview": "",
+        "popularity": 0.2112,
+        "poster_path": "/vTBqImpVG2W8RVEWsPaKSeOrbEy.jpg",
+        "release_date": "2016-09-09",
+        "title": "The Haunted House on Kirby Road",
+        "video": false,
+        "vote_average": 3.5,
+        "vote_count": 18
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          35,
+          27
+        ],
+        "id": 504922,
+        "original_language": "en",
+        "original_title": "Haunt Me",
+        "overview": "",
+        "popularity": 1.437,
+        "poster_path": "/laFzJa7f8ENTMgiKCiMEEAUqILp.jpg",
+        "release_date": "2017-01-14",
+        "title": "Haunt Me",
+        "video": false,
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/AF0PiDItegyUtlBGDMGlSQbtro.jpg",
+        "genre_ids": [
+          35,
+          27
+        ],
+        "id": 43593,
+        "original_language": "en",
+        "original_title": "Piranha 3D",
+        "overview": "",
+        "popularity": 3.5332,
+        "poster_path": "/lMLS2OFBbNYMSB1ZbVp4q2S4zTU.jpg",
+        "release_date": "2010-08-20",
+        "title": "Piranha 3D",
+        "video": false,
+        "vote_average": 5.416,
+        "vote_count": 2346
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/b91RCtEZcSWb5HwFOmyeMmrqCMi.jpg",
+        "genre_ids": [
+          27
+        ],
+        "id": 14228,
+        "original_language": "en",
+        "original_title": "Mortuary",
+        "overview": "",
+        "popularity": 3.9958,
+        "poster_path": "/xGHamiIcrFQsB5NkBG8bqkabJG3.jpg",
+        "release_date": "2005-08-08",
+        "title": "Mortuary",
+        "video": false,
+        "vote_average": 4.4,
+        "vote_count": 124
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/mqCI7qblcDhTGPxDZ5VHW97d3fF.jpg",
+        "genre_ids": [
+          28,
+          27,
+          9648,
+          53
+        ],
+        "id": 655857,
+        "original_language": "ko",
+        "original_title": "악의제국: 13일의금요일 챕터2",
+        "overview": "",
+        "popularity": 0.6295,
+        "poster_path": "/dWJYqYs4u13ajhfoV4nAHzK9jBD.jpg",
+        "release_date": "2019-12-13",
+        "title": "악의제국: 13일의금요일 챕터2",
+        "video": true,
+        "vote_average": 6,
+        "vote_count": 3
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/plsdKhrNZ4vIN1qZJ8ccihiMZI7.jpg",
+        "genre_ids": [
+          27,
+          53
+        ],
+        "id": 10790,
+        "original_language": "en",
+        "original_title": "The Abandoned",
+        "overview": "",
+        "popularity": 1.363,
+        "poster_path": "/32DhJlTTmLeaPNQeh2oHuDNRmqF.jpg",
+        "release_date": "2006-09-11",
+        "title": "The Abandoned",
+        "video": false,
+        "vote_average": 5.494,
+        "vote_count": 250
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/9yIgoqsnbGmXu8o9myKD5cSQBrx.jpg",
+        "genre_ids": [
+          28,
+          35,
+          14,
+          27
+        ],
+        "id": 15724,
+        "original_language": "cn",
+        "original_title": "鬼打鬼",
+        "overview": "",
+        "popularity": 1.0935,
+        "poster_path": "/gQcr4qwBxT9ZQZejzVyMGcV0sOe.jpg",
+        "release_date": "1980-12-24",
+        "title": "鬼打鬼",
+        "video": false,
+        "vote_average": 6.75,
+        "vote_count": 98
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/wAJgbeOAI6dPanjmay4jyHTmaoL.jpg",
+        "genre_ids": [
+          27
+        ],
+        "id": 286659,
+        "original_language": "tl",
+        "original_title": "Gabi ng Lagim",
+        "overview": "",
+        "popularity": 0.1499,
+        "poster_path": "/rjgNm6fNEVQipxjFLt0mdVnLj7u.jpg",
+        "release_date": "1960-02-29",
+        "title": "Gabi ng Lagim",
+        "video": false,
+        "vote_average": 5.8,
+        "vote_count": 4
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/vzw5733T4PSielVOeq268GdSzhS.jpg",
+        "genre_ids": [
+          27,
+          9648
+        ],
+        "id": 15856,
+        "original_language": "en",
+        "original_title": "House on Haunted Hill",
+        "overview": "يدعو فريدريك لورين خمسة غرباء لحضور حفلة لا تُنسى؛ يعد كل واحد منهم بمبلغ 10000 دولار إذا أمكنه البقاء ليلة كاملة في هذا المنزل... لكنّه ليس منزلاً عادياً. يُشتهر بجرائم قتل سابقة. يمنحهم فريدريك مسدّساً لحمايتهم. يصلون جميعاً في سيارة نقل الموتى، وسيغادرونه إمّا أغنى بمبلغ 10000 دولار أو ميتين!",
+        "popularity": 1.3914,
+        "poster_path": "/g5kdFt3piV3w1pG65W9sSToJ7HB.jpg",
+        "release_date": "1959-01-01",
+        "title": "البيت على التل المسكون",
+        "video": false,
+        "vote_average": 6.761,
+        "vote_count": 590
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/fjgKMNFo6uj7znrWwTbLzNBVzIT.jpg",
+        "genre_ids": [
+          27,
+          9648
+        ],
+        "id": 477462,
+        "original_language": "en",
+        "original_title": "The Twin",
+        "overview": "في إطار من الرعب، تحاول أم تجاوز مأساة وفاة ابنها الصغير، ولكنها تجد نفسها في مواجهة ما هي أصعب حينما تطرأ أمورًا غريبة على شقيقه التوأم.",
+        "popularity": 1.1249,
+        "poster_path": "/uUUSkKQEptTHjYejxzaT5TVkiAG.jpg",
+        "release_date": "2022-04-06",
+        "title": "The Twin",
+        "video": false,
+        "vote_average": 5.823,
+        "vote_count": 237
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/jS82cGBJF3PEYFnJ6TE07SSaI7q.jpg",
+        "genre_ids": [
+          18,
+          53,
+          27
+        ],
+        "id": 18467,
+        "original_language": "en",
+        "original_title": "Spiral",
+        "overview": "",
+        "popularity": 0.5014,
+        "poster_path": "/cyzyZ8HA2zqL9C3QrpHI7QqGr0r.jpg",
+        "release_date": "2007-01-27",
+        "title": "Spiral",
+        "video": false,
+        "vote_average": 6.134,
+        "vote_count": 86
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/gggdkmSWasCCwtEItnvQw9NpFLi.jpg",
+        "genre_ids": [
+          53,
+          18,
+          27,
+          9648
+        ],
+        "id": 18256,
+        "original_language": "en",
+        "original_title": "Castle Freak",
+        "overview": "",
+        "popularity": 3.998,
+        "poster_path": "/rZv3aUkNngyZeiCgAjOEF5n0tve.jpg",
+        "release_date": "1996-04-20",
+        "title": "Castle Freak",
+        "video": false,
+        "vote_average": 6.1,
+        "vote_count": 234
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/8zKe66yxRGKuW7IvghGOciZgxIL.jpg",
+        "genre_ids": [
+          27
+        ],
+        "id": 290656,
+        "original_language": "en",
+        "original_title": "Raised by Wolves",
+        "overview": "",
+        "popularity": 0.1315,
+        "poster_path": "/rrOTHRNKw7l0FdPwQUqcH406xb4.jpg",
+        "release_date": "2014-08-18",
+        "title": "Raised by Wolves",
+        "video": false,
+        "vote_average": 6.111,
+        "vote_count": 36
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/pI7OGeLTRuemBVLJCRBNSNl0sJd.jpg",
+        "genre_ids": [
+          27
+        ],
+        "id": 482234,
+        "original_language": "hi",
+        "original_title": "Bees Saal Baad",
+        "overview": "",
+        "popularity": 0.2453,
+        "poster_path": "/9VIqMPbERYie5W6cdkR5K6cYNwp.jpg",
+        "release_date": "1989-02-03",
+        "title": "Bees Saal Baad",
+        "video": false,
+        "vote_average": 5,
+        "vote_count": 2
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/uoqaOGsVt0xah6mFHt9dmkh7OFt.jpg",
+        "genre_ids": [
+          35,
+          27
+        ],
+        "id": 482247,
+        "original_language": "ta",
+        "original_title": "கா..கா..கா..",
+        "overview": "",
+        "popularity": 0.1626,
+        "poster_path": "/vF6TMI0JtVagbrio2WtGonHo39q.jpg",
+        "release_date": "2017-08-18",
+        "title": "கா..கா..கா..",
+        "video": false,
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/hO1on1VXIPxpv1G3Z8jzGkFdeKY.jpg",
+        "genre_ids": [
+          35,
+          14,
+          27
+        ],
+        "id": 25623,
+        "original_language": "ja",
+        "original_title": "ハウス",
+        "overview": "",
+        "popularity": 2.0781,
+        "poster_path": "/5JmLSvGDPbq7w2avI2u6Y1OpZlD.jpg",
+        "release_date": "1977-08-26",
+        "title": "ハウス",
+        "video": false,
+        "vote_average": 7.314,
+        "vote_count": 760
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/ejSBZuLfTFzGftPhcOQRo576FcC.jpg",
+        "genre_ids": [
+          27
+        ],
+        "id": 25748,
+        "original_language": "en",
+        "original_title": "Children of the Corn II: The Final Sacrifice",
+        "overview": "",
+        "popularity": 0.6256,
+        "poster_path": "/5UaH4zhfKT1taJGHUwPxm29ZENf.jpg",
+        "release_date": "1992-01-29",
+        "title": "Children of the Corn II: The Final Sacrifice",
+        "video": false,
+        "vote_average": 4.756,
+        "vote_count": 271
+      }
+    ],
+    "total_pages": 3493,
+    "total_results": 69851
+  },
+  "videos": {
+    "results": []
+  }
+}

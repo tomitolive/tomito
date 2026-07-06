@@ -34,7 +34,10 @@ export function ContentRow({ title, items, type, isLoading, showAll, isRamadan }
       <section className="py-6">
         {/* Header */}
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl md:text-2xl font-bold">{title}</h2>
+          <div className="flex items-center gap-3">
+            <div className="w-1.5 h-8 bg-primary rounded-full shadow-[0_0_15px_rgba(var(--primary),0.5)]" />
+            <h2 className="text-xl md:text-2xl font-bold">{title}</h2>
+          </div>
 
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-1">

@@ -1,0 +1,931 @@
+{
+  "adult": false,
+  "backdrop_path": "/gmECX1DvFgdUPjtio2zaL8BPYPu.jpg",
+  "created_by": [],
+  "episode_run_time": [
+    24
+  ],
+  "first_air_date": "2020-10-03",
+  "genres": [
+    {
+      "id": 16,
+      "name": "رسوم متحركة"
+    },
+    {
+      "id": 10759,
+      "name": "حركة ومغامرة"
+    },
+    {
+      "id": 10765,
+      "name": "خيال علمي وفانتازيا"
+    }
+  ],
+  "homepage": "https://jujutsukaisen.jp",
+  "id": 95479,
+  "in_production": true,
+  "languages": [
+    "ja"
+  ],
+  "last_air_date": "2026-01-30",
+  "last_episode_to_air": {
+    "id": 6827063,
+    "name": "الحلقة 52",
+    "overview": "",
+    "vote_average": 8.8,
+    "vote_count": 4,
+    "air_date": "2026-01-30",
+    "episode_number": 52,
+    "episode_type": "standard",
+    "production_code": "",
+    "runtime": 24,
+    "season_number": 1,
+    "show_id": 95479,
+    "still_path": "/23K5urvtRHxcioABuLkob714EcZ.jpg"
+  },
+  "name": "JUJUTSU KAISEN",
+  "next_episode_to_air": {
+    "id": 6827064,
+    "name": "الحلقة 53",
+    "overview": "",
+    "vote_average": 8,
+    "vote_count": 4,
+    "air_date": "2026-02-06",
+    "episode_number": 53,
+    "episode_type": "standard",
+    "production_code": "",
+    "runtime": 24,
+    "season_number": 1,
+    "show_id": 95479,
+    "still_path": "/5tqAW2GJY9Zz6MatEc1z9Uhp5qR.jpg"
+  },
+  "networks": [
+    {
+      "id": 94,
+      "logo_path": "/7RNXnyiMbjgqtPAjja13wchcrGI.png",
+      "name": "MBS",
+      "origin_country": "JP"
+    },
+    {
+      "id": 160,
+      "logo_path": "/lUACMATs6jcscXIrzNCQzbvNVN5.png",
+      "name": "TBS",
+      "origin_country": "JP"
+    },
+    {
+      "id": 201,
+      "logo_path": "/qNooLje0YQh1y3y9LUM2Y5QCtiF.png",
+      "name": "CBC",
+      "origin_country": "JP"
+    },
+    {
+      "id": 896,
+      "logo_path": "/qfUzYnpnN5bnd2bqGUH0OlAMell.png",
+      "name": "Tulip Television",
+      "origin_country": "JP"
+    },
+    {
+      "id": 1559,
+      "logo_path": "/artkCykJgOAh6lAjfrNNgANasgk.png",
+      "name": "SBC",
+      "origin_country": "JP"
+    },
+    {
+      "id": 2460,
+      "logo_path": "/34sNEcsgcTAuDidRMrgxdfNyVjL.png",
+      "name": "BSN",
+      "origin_country": "JP"
+    },
+    {
+      "id": 2461,
+      "logo_path": "/b4Ivxqz6UY0EogjYc09Y22ctC6F.png",
+      "name": "tys",
+      "origin_country": "JP"
+    },
+    {
+      "id": 2462,
+      "logo_path": "/7zXfwh5ZhFqvdOWgWX80weU6Sqb.png",
+      "name": "NBC",
+      "origin_country": "JP"
+    },
+    {
+      "id": 3658,
+      "logo_path": "/sJwRsE1lfMwAwYZi1OtRfn7V03t.png",
+      "name": "HBC",
+      "origin_country": "JP"
+    },
+    {
+      "id": 3705,
+      "logo_path": "/zOgixhlAa61yUb32bsXvRtD63wI.png",
+      "name": "RKK",
+      "origin_country": "JP"
+    },
+    {
+      "id": 3969,
+      "logo_path": "/nhCsLIGjzIIp6jIFCdHN0cQEzjP.png",
+      "name": "i-Television",
+      "origin_country": "JP"
+    },
+    {
+      "id": 3970,
+      "logo_path": "/9coKtCf4jSNCdSqGveVFyzvjrZt.png",
+      "name": "SBS",
+      "origin_country": "JP"
+    },
+    {
+      "id": 3971,
+      "logo_path": "/6bhZ2SWdYTbSTQf8Bhmf1q0aBef.png",
+      "name": "IBC",
+      "origin_country": "JP"
+    },
+    {
+      "id": 3972,
+      "logo_path": "/rL2IlndcEiQnIbym5EoSEM7rGlx.png",
+      "name": "BSS",
+      "origin_country": "JP"
+    },
+    {
+      "id": 3973,
+      "logo_path": "/dh4E8hGvqD9Xqu51kbqUU06UKbt.png",
+      "name": "MRO",
+      "origin_country": "JP"
+    },
+    {
+      "id": 3974,
+      "logo_path": "/yMQxsmGs88q54bslmcSeXlmpObC.png",
+      "name": "OBS",
+      "origin_country": "JP"
+    },
+    {
+      "id": 3975,
+      "logo_path": "/6ACZlk44MWsIIwYHxjRGXGKlpRb.png",
+      "name": "TUF",
+      "origin_country": "JP"
+    },
+    {
+      "id": 3977,
+      "logo_path": "/sGMMrdCmptaLLwJX7CsXTDaduLO.png",
+      "name": "RSK",
+      "origin_country": "JP"
+    },
+    {
+      "id": 3978,
+      "logo_path": "/zOz9LK6WWLUWGuG0fthzDzCIXlA.png",
+      "name": "TUY",
+      "origin_country": "JP"
+    },
+    {
+      "id": 3979,
+      "logo_path": "/yWlWHPUn6FHjNUulL1vp8croYFw.png",
+      "name": "tbc",
+      "origin_country": "JP"
+    },
+    {
+      "id": 4748,
+      "logo_path": "/o5Hlt7ZXJPEm4Qrx2Pl2rtc9A5y.png",
+      "name": "RKB",
+      "origin_country": "JP"
+    },
+    {
+      "id": 4792,
+      "logo_path": "/8kzeHaKeW3gZubs3cqlGWFvfJI7.png",
+      "name": "KUTV",
+      "origin_country": "JP"
+    },
+    {
+      "id": 4859,
+      "logo_path": "/6jr76BpIItwLV5oKbZmRJsVh3c6.png",
+      "name": "RBC",
+      "origin_country": "JP"
+    },
+    {
+      "id": 6171,
+      "logo_path": "/ekXN1cfYutjLfudy1MKyGzNynEa.png",
+      "name": "UTY",
+      "origin_country": "JP"
+    },
+    {
+      "id": 6172,
+      "logo_path": "/mKslL0MTHHt9ukugWOv3Vh8Tn0E.png",
+      "name": "RCC",
+      "origin_country": "JP"
+    },
+    {
+      "id": 6173,
+      "logo_path": "/YfewT1YYtAqkgvdu8oCX4mnJCs.png",
+      "name": "MRT",
+      "origin_country": "JP"
+    },
+    {
+      "id": 6174,
+      "logo_path": "/aawphEBuBGT9RVP6xG3BZV8NOCw.png",
+      "name": "ATV",
+      "origin_country": "JP"
+    },
+    {
+      "id": 6175,
+      "logo_path": "/iaaU6q82URj2mBbjQIbfAMUz14J.png",
+      "name": "MBC",
+      "origin_country": "JP"
+    }
+  ],
+  "number_of_episodes": 59,
+  "number_of_seasons": 1,
+  "origin_country": [
+    "JP"
+  ],
+  "original_language": "ja",
+  "original_name": "呪術廻戦",
+  "overview": "إيتادوري يوجي فتى يملك قوة جسدية هائلة، لكنّه يعيش حياة مدرسية عادية تمامًا. في أحد الأيّام، ومن أجل إنقاذ صديق هاجمته لعنة، يأكل إصبع طيفٍ ذو وجهين ويمتص اللعنة. وهنا تبدأ قصة فتى يصبح لعنة كي يطرد لعنة تحت إشراف أقوى مستعمل جوجيتسو، غوجو ساتورو.",
+  "popularity": 177.8257,
+  "poster_path": "/feS8k6Wy8b0mLGzJLwmEyVkZ9xx.jpg",
+  "production_companies": [
+    {
+      "id": 21444,
+      "logo_path": "/wSejGn3lAZdQ5muByxvzigwyDY6.png",
+      "name": "MAPPA",
+      "origin_country": "JP"
+    },
+    {
+      "id": 158200,
+      "logo_path": "/rf4ZArxPuqx5hdeU7rPIU8IQlYx.png",
+      "name": "Sumzap",
+      "origin_country": "JP"
+    },
+    {
+      "id": 2918,
+      "logo_path": "/gyEWUBWwqrm3H5T2hkERD9LxpOq.png",
+      "name": "Shueisha",
+      "origin_country": "JP"
+    },
+    {
+      "id": 3363,
+      "logo_path": "/sj3vD7n63bTCih7bcf6GnWvRf1Q.png",
+      "name": "MBS",
+      "origin_country": "JP"
+    },
+    {
+      "id": 882,
+      "logo_path": "/fRSWWjquvzcHjACbtF53utZFIll.png",
+      "name": "TOHO",
+      "origin_country": "JP"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "JP",
+      "name": "Japan"
+    }
+  ],
+  "seasons": [
+    {
+      "air_date": "2021-01-09",
+      "episode_count": 9,
+      "id": 175591,
+      "name": "العروض الخاصة",
+      "overview": "",
+      "poster_path": "/eNWo1SAzHVnXNBYagafAm9yjMgJ.jpg",
+      "season_number": 0,
+      "vote_average": 0
+    },
+    {
+      "air_date": "2020-10-03",
+      "episode_count": 59,
+      "id": 135856,
+      "name": "الموسم 1",
+      "overview": "إيتادوري يوجي فتى يملك قوة جسدية هائلة، لكنّه يعيش حياة مدرسية عادية تمامًا. في أحد الأيّام، ومن أجل إنقاذ صديق هاجمته لعنة، يأكل إصبع طيفٍ ذو وجهين ويمتص اللعنة. وهنا تبدأ قصة فتى يصبح لعنة كي يطرد لعنة تحت إشراف أقوى مستعمل جوجيتسو، غوجو ساتورو.",
+      "poster_path": "/zKFkzRn1UyE11Jv9CJjVmvmQFvR.jpg",
+      "season_number": 1,
+      "vote_average": 8.4
+    }
+  ],
+  "spoken_languages": [
+    {
+      "english_name": "Japanese",
+      "iso_639_1": "ja",
+      "name": "日本語"
+    }
+  ],
+  "status": "Returning Series",
+  "tagline": "فتى يقاتل... من أجل \"الموت الصحيح\".",
+  "type": "Scripted",
+  "vote_average": 8.6,
+  "vote_count": 4165,
+  "credits": {
+    "cast": [],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1491863,
+        "known_for_department": "Writing",
+        "name": "Hiroshi Seko",
+        "original_name": "瀬古浩司",
+        "popularity": 1.2681,
+        "profile_path": "/zdTUsjMPFEZhygVdKs5rABtHJyk.jpg",
+        "credit_id": "5f197b7851e6ab0038d74a85",
+        "department": "Writing",
+        "job": "Series Composition"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2765983,
+        "known_for_department": "Camera",
+        "name": "伊藤哲平",
+        "original_name": "伊藤哲平",
+        "popularity": 0.2221,
+        "profile_path": null,
+        "credit_id": "5f526277498ef90037a9797b",
+        "department": "Camera",
+        "job": "Director of Photography"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2536500,
+        "known_for_department": "Editing",
+        "name": "柳圭介",
+        "original_name": "柳圭介",
+        "popularity": 0.3918,
+        "profile_path": null,
+        "credit_id": "5f5263a4c740d90033918dfe",
+        "department": "Editing",
+        "job": "Editor"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2847146,
+        "known_for_department": "Production",
+        "name": "瀬下恵介",
+        "original_name": "瀬下恵介",
+        "popularity": 2.4354,
+        "profile_path": null,
+        "credit_id": "5fa6f97e700bf7003e575eb9",
+        "department": "Production",
+        "job": "Line Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2645698,
+        "known_for_department": "Sound",
+        "name": "照井順政",
+        "original_name": "照井順政",
+        "popularity": 0.2388,
+        "profile_path": "/rWIHVqeLQ6uNLtspEKMz9HHQZ9o.jpg",
+        "credit_id": "5f70efdcfea0d70034fb4cd8",
+        "department": "Sound",
+        "job": "Original Music Composer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2794067,
+        "known_for_department": "Sound",
+        "name": "小林健樹",
+        "original_name": "小林健樹",
+        "popularity": 0.5624,
+        "profile_path": null,
+        "credit_id": "5f7ef8afd11e0e0035bee6b0",
+        "department": "Sound",
+        "job": "Music Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 3020260,
+        "known_for_department": "Visual Effects",
+        "name": "雪駄",
+        "original_name": "雪駄",
+        "popularity": 3.4415,
+        "profile_path": null,
+        "credit_id": "6058a1130792e100542bb947",
+        "department": "Art",
+        "job": "Title Designer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2797830,
+        "known_for_department": "Production",
+        "name": "大塚学",
+        "original_name": "大塚学",
+        "popularity": 3.8588,
+        "profile_path": "/4JGI2EvcOn0NxMKU58dUFovJRwn.jpg",
+        "credit_id": "605e4aa439a1a60053f07908",
+        "department": "Production",
+        "job": "Production Supervisor"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1820199,
+        "known_for_department": "Sound",
+        "name": "中野勝博",
+        "original_name": "中野勝博",
+        "popularity": 0.3421,
+        "profile_path": null,
+        "credit_id": "60c23fbb05a53300292f5f7b",
+        "department": "Sound",
+        "job": "Sound Effects"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3432037,
+        "known_for_department": "Sound",
+        "name": "佐竹徹也",
+        "original_name": "佐竹徹也",
+        "popularity": 0.1777,
+        "profile_path": null,
+        "credit_id": "6237bea8df29450019e180b3",
+        "department": "Sound",
+        "job": "Sound Mixer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1491902,
+        "known_for_department": "Camera",
+        "name": "淡輪雄介",
+        "original_name": "淡輪雄介",
+        "popularity": 0.4668,
+        "profile_path": "/8jFNhTVETAD7YiOgLJ7aR21pHgL.jpg",
+        "credit_id": "632c5fc22dffd80091fda58e",
+        "department": "Visual Effects",
+        "job": "Compositing Supervisor"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2720273,
+        "known_for_department": "Writing",
+        "name": "芥見下々",
+        "original_name": "芥見下々",
+        "popularity": 5.4553,
+        "profile_path": null,
+        "credit_id": "690ef6fab71c88ee06d24f43",
+        "department": "Writing",
+        "job": "Original Story"
+      }
+    ]
+  },
+  "similar": {
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/kcLShSpn7nhoO7n3Fxy82m7d5eO.jpg",
+        "genre_ids": [
+          16,
+          18
+        ],
+        "id": 214899,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "夜廻り猫",
+        "overview": "",
+        "popularity": 0.8408,
+        "poster_path": "/At7vAlQb5xXxDzsgGQUZGOsiPus.jpg",
+        "first_air_date": "2023-03-21",
+        "name": "夜廻り猫",
+        "vote_average": 5,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/jJMfTkvU2exHwCFoBHsIqwaHImh.jpg",
+        "genre_ids": [
+          18,
+          10765,
+          35
+        ],
+        "id": 215001,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "이 연애는 불가항력",
+        "overview": "يتشابك مصير محامٍ مقيّد بلعنة تعود إلى قرون من الزمن مع موظفة خدمة مدنية تملك مفتاح حريته… فتشتعل بينهما علاقة عاطفية غير متوقعة.",
+        "popularity": 9.5041,
+        "poster_path": "/6vJBIAnQ0dDqikESJCImEdCbKvT.jpg",
+        "first_air_date": "2023-08-23",
+        "name": "أنت قدري",
+        "vote_average": 8.099,
+        "vote_count": 218
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/ro0tlgnsco4SwbdAgmscLkSlMSL.jpg",
+        "genre_ids": [
+          18,
+          9648,
+          10765
+        ],
+        "id": 1622,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Supernatural",
+        "overview": "منذ الصغر، خسر سام ودين وينشستر أمهما لقوة خارقة غامضة وشيطانية. وفي وقت لاحق، رباهم والدهم ليكونوا جنودا. علمهم عن الشر الخارق الذي يعيش في الزوايا المظلمة وعلى الطرق الخلفية في أمريكا ... وعلمهم كيف يقتلونها. الآن ، يخترق الأخوة وينتشيستر البلاد في  تشيفي إمبالا موديل 67، ويقاتلون كل نوع من التهديدات الخارقة التي يواجهونها على طول الطريق.",
+        "popularity": 269.3925,
+        "poster_path": "/u40gJarLPlIkwouKlzGdobQOV9k.jpg",
+        "first_air_date": "2005-09-13",
+        "name": "خارق للطبيعة",
+        "vote_average": 8.305,
+        "vote_count": 8207
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/kRRYafjTZh8gnZDLKSg5imj80es.jpg",
+        "genre_ids": [
+          10765,
+          10759,
+          18
+        ],
+        "id": 1663,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "The Six Million Dollar Man",
+        "overview": "بَعدَ إِصابَةِ طَيَّار اختبار (ستيف أوستِن)  بِجرُوحٍ خَطيرَةٍ  في عَمَلِهِ، تَمَّ إِعادَةُ بِناءِ جِسمِهِ بِأَطرافٍ وَزَرعٍ آلِيَّةٍ تَعمَلُ بِالطَّاقَةِ النَّوَوِيَّةِ وَتَوظِيفِهِ كَوَكيلِ استِخبارات.",
+        "popularity": 16.9324,
+        "poster_path": "/8AgBpRXvrjnLpZ6RpkmpUvjPXPi.jpg",
+        "first_air_date": "1974-01-18",
+        "name": "رَجُل السِّتَّةُ مَلايينِ دُولار",
+        "vote_average": 7.3,
+        "vote_count": 419
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/eksjqZGaGUtSZJD6nWQPsqzDMn0.jpg",
+        "genre_ids": [
+          10765,
+          18,
+          9648
+        ],
+        "id": 1705,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Fringe",
+        "overview": "عميلة لمركز التحقيقات الفدرالي الأمريكي FBI تجد نفسها مضطرة للعمل مع عالِم وابنِه لتفسير ظواهر علمية غريبة.",
+        "popularity": 39.266,
+        "poster_path": "/yI3XEqH1xsUr3BcsMOQCML32KcP.jpg",
+        "first_air_date": "2008-09-09",
+        "name": "هامشية",
+        "vote_average": 8.138,
+        "vote_count": 2696
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/cGgqLzBGUY0dxsE5i3W7SXBGRbe.jpg",
+        "genre_ids": [
+          16,
+          10759,
+          35,
+          10765
+        ],
+        "id": 30977,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "とある科学の超電磁砲",
+        "overview": "",
+        "popularity": 17.6686,
+        "poster_path": "/clPfDVNKT8hkmH7ydBSxQ3dxup9.jpg",
+        "first_air_date": "2009-10-02",
+        "name": "とある科学の超電磁砲",
+        "vote_average": 7.372,
+        "vote_count": 117
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/fowIZg4V8WEfhA8pOUWpBHWf42f.jpg",
+        "genre_ids": [
+          16,
+          18,
+          35
+        ],
+        "id": 30979,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "グラビテーション",
+        "overview": "",
+        "popularity": 3.6488,
+        "poster_path": "/1WGRX9mvcycn3PgNap0clEy0KgJ.jpg",
+        "first_air_date": "2000-10-04",
+        "name": "グラビテーション",
+        "vote_average": 6.429,
+        "vote_count": 14
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/73uQJImy9J9w93zFEh8JtdQVOQR.jpg",
+        "genre_ids": [
+          16,
+          10765,
+          35,
+          9648
+        ],
+        "id": 30980,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "とある魔術の禁書目録",
+        "overview": "",
+        "popularity": 16.5077,
+        "poster_path": "/3dvNJsc1qfTuOxTQyl0gzIybWGQ.jpg",
+        "first_air_date": "2008-10-05",
+        "name": "とある魔術の禁書目録",
+        "vote_average": 7.566,
+        "vote_count": 181
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/6T19aRp9zLMghZo1dTEwoNyreNZ.jpg",
+        "genre_ids": [
+          16,
+          18,
+          80,
+          9648
+        ],
+        "id": 30981,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "MONSTER",
+        "overview": "تتكلم القصة عن جرائم وشخص يقف وراها وطبيب يقع ضحيه اتهام الشرطه له بأرتكاب الجرائم الطبيب اخطأ بالماضي ولكنه لم يترك خطأه وحاول اصلاحه بعد مرور عدة سنين وافنى نفسه لكي يصلح ما اخطأ به ينجرف جرّاح أعصاب ياباني لامع في عالم الظلام حين يحاول حلّ ألغاز سلسلة من جرائم القتل تتضمّن مريضًا قد عالجه ذات يوم وأنقذ حياته.",
+        "popularity": 26.9741,
+        "poster_path": "/o38ptRl2CvMVb6HZnstFLPcveDK.jpg",
+        "first_air_date": "2004-04-07",
+        "name": "الوحش",
+        "vote_average": 8.5,
+        "vote_count": 721
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/bu0qFo9cD6AQ69KtTZoCypPKTny.jpg",
+        "genre_ids": [
+          16,
+          10765
+        ],
+        "id": 30982,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "ヒカルの碁",
+        "overview": "",
+        "popularity": 14.7019,
+        "poster_path": "/AcwUhnZ3WrEIetehut1zCGosHTB.jpg",
+        "first_air_date": "2001-10-10",
+        "name": "ヒカルの碁",
+        "vote_average": 7.7,
+        "vote_count": 46
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/5546GF3zT3yA25ydCz0KlujjRA3.jpg",
+        "genre_ids": [
+          16,
+          80,
+          9648,
+          35
+        ],
+        "id": 30983,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "名探偵コナン",
+        "overview": "كودو شينتشي هو متحرٍ في المدرسة الثانوية ذاع صيته لحله العديد من القضايا الصعبة، وهو ابن مؤلف الروايات الغموض العالمي، كودو يوساكو. يتورط شينتشي في حادثة مع رجال منظمة غامضة ذوي رداء أسود، ويجبرونه على تجرع عقار غريب بقلص جسده، فيصبح إيدوغاوا كونان. على شينتشي الآن الانتقال لمنزل صديقة طفولته، موري ران، حيث يعمل والدها متحرياً لإيجاد معلومات عن أولئك الرجال.",
+        "popularity": 67.2622,
+        "poster_path": "/9BhczLWHd0O9qOgBzO9dWKKH01a.jpg",
+        "first_air_date": "1996-01-08",
+        "name": "المحقق كونان",
+        "vote_average": 7.999,
+        "vote_count": 733
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/53a0N8CSKhbPeSaLzHH3ty9rjuO.jpg",
+        "genre_ids": [
+          18,
+          10765,
+          10766
+        ],
+        "id": 1734,
+        "origin_country": [
+          "CA",
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Dante's Cove",
+        "overview": "",
+        "popularity": 1.7226,
+        "poster_path": "/w0r2lEUZbAcxlPTyJnDxpwC60LP.jpg",
+        "first_air_date": "2005-10-07",
+        "name": "Dante's Cove",
+        "vote_average": 5.4,
+        "vote_count": 25
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/ayfwvmKfg7v7xL0DeHtuGuKyOBj.jpg",
+        "genre_ids": [
+          16,
+          10759,
+          35,
+          10765
+        ],
+        "id": 131629,
+        "origin_country": [
+          "CN"
+        ],
+        "original_language": "zh",
+        "original_name": "我气哭了百万修炼者",
+        "overview": "",
+        "popularity": 0.6538,
+        "poster_path": "/hVoJxzcRgr1f7LldwDUFEPg0vEU.jpg",
+        "first_air_date": "2021-08-19",
+        "name": "我气哭了百万修炼者",
+        "vote_average": 8.3,
+        "vote_count": 3
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/eyRPT3Rk4XBSXmZk1QIFxbWoIOQ.jpg",
+        "genre_ids": [
+          16,
+          10765,
+          10759
+        ],
+        "id": 131647,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "サイボーグ009",
+        "overview": "",
+        "popularity": 2.589,
+        "poster_path": "/d3eHENLgMBGnXXbtvAqLN0DOrBb.jpg",
+        "first_air_date": "1979-03-06",
+        "name": "サイボーグ009",
+        "vote_average": 10,
+        "vote_count": 3
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/qsiYayWAoPEhbCld0m2PpVeiM2Z.jpg",
+        "genre_ids": [
+          16,
+          18
+        ],
+        "id": 131660,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "しょうたいむ！〜歌のお姉さんだってしたい〜",
+        "overview": "",
+        "popularity": 4.6147,
+        "poster_path": "/7S86pkMfatspJmXENcPZfgaKB33.jpg",
+        "first_air_date": "2021-10-04",
+        "name": "しょうたいむ！〜歌のお姉さんだってしたい〜",
+        "vote_average": 7.2,
+        "vote_count": 9
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/6CzCEn98WyKUofkItUbNDUniiHH.jpg",
+        "genre_ids": [
+          16,
+          18
+        ],
+        "id": 131681,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "群青のファンファーレ",
+        "overview": "",
+        "popularity": 2.2794,
+        "poster_path": "/lwemAReugVfFG1N61CdVOZacQf6.jpg",
+        "first_air_date": "2022-04-02",
+        "name": "群青のファンファーレ",
+        "vote_average": 8,
+        "vote_count": 9
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/k94F4HFlijdvo4hg6jglvstXZnG.jpg",
+        "genre_ids": [
+          10759,
+          16,
+          10762,
+          10765,
+          35
+        ],
+        "id": 131713,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "真・女神転生 デビチル",
+        "overview": "",
+        "popularity": 1.8458,
+        "poster_path": "/jKdTxKWCbFtR84ld5HrrLlZbI3p.jpg",
+        "first_air_date": "2000-10-07",
+        "name": "真・女神転生 デビチル",
+        "vote_average": 10,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/hw8vGukROGMlriQs4DkRn8Kifcr.jpg",
+        "genre_ids": [
+          10759,
+          16,
+          35,
+          18,
+          10765
+        ],
+        "id": 62883,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "ゲットバッカーズ -奪還屋-",
+        "overview": "",
+        "popularity": 5.6469,
+        "poster_path": "/rU0plBxW0FkB5zYmuUvZcqH7HY2.jpg",
+        "first_air_date": "2002-10-05",
+        "name": "ゲットバッカーズ -奪還屋-",
+        "vote_average": 7.5,
+        "vote_count": 36
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/6Nls77iKuRKHkRb1OOMenXqKwoR.jpg",
+        "genre_ids": [
+          16,
+          35,
+          18,
+          10765
+        ],
+        "id": 62911,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "信長協奏曲（コンツェルト）",
+        "overview": "",
+        "popularity": 3.743,
+        "poster_path": "/yQluy7X8zj2GtMCoK3bV52MUp3r.jpg",
+        "first_air_date": "2014-07-12",
+        "name": "信長協奏曲（コンツェルト）",
+        "vote_average": 6.7,
+        "vote_count": 11
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/wOygXyITWIQtfbiUD0xPr2wKahj.jpg",
+        "genre_ids": [
+          16,
+          10759,
+          10765
+        ],
+        "id": 62913,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "サザンアイズ",
+        "overview": "",
+        "popularity": 3.4051,
+        "poster_path": "/cFzh4AEckD3bVnD6a33i3SJj11l.jpg",
+        "first_air_date": "1991-07-25",
+        "name": "サザンアイズ",
+        "vote_average": 6,
+        "vote_count": 26
+      }
+    ],
+    "total_pages": 1253,
+    "total_results": 25053
+  },
+  "videos": {
+    "results": []
+  }
+}

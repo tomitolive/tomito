@@ -43,7 +43,7 @@ export default function ActorPage() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen">
         <Navbar />
         <div className="pt-20 flex items-center justify-center min-h-[60vh]">
           <div className="text-center">
@@ -57,7 +57,7 @@ export default function ActorPage() {
 
   if (!person) {
     return (
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen">
         <Navbar />
         <div className="pt-20 flex items-center justify-center min-h-[60vh]">
           <div className="text-center">
@@ -89,7 +89,7 @@ export default function ActorPage() {
     : null;
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <Navbar />
 
       <div className="pt-24 pb-8 container mx-auto px-4">

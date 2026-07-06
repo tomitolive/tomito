@@ -1,4 +1,15 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 import Home from "./pages/Home";
 import MovieDetail from "./pages/MovieDetail";
 import TVDetail from "./pages/TVDetail";
@@ -25,6 +36,7 @@ import { RamadanDownloadPage } from "./pages/RamadanDownloadPage";
 import SeriesDownloadList from "./pages/SeriesDownloadList";
 import { useIsMobile } from "./hooks/use-mobile";
 import { AIAssistant } from "./components/AIAssistant";
+import NetworkAds from "./components/NetworkAds";
 
 
 
@@ -40,6 +52,8 @@ function App() {
           <TooltipProvider>
 
             <Router>
+              <ScrollToTop />
+              <NetworkAds />
               <GoogleAnalytics />
               {/* {isMobile ? <AdPopup /> : <AdManager />} */}
               <Routes>

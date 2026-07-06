@@ -63,7 +63,7 @@ export function RamadanDownloadPage() {
 
     if (loading) {
         return (
-            <div className="min-h-screen bg-background text-foreground flex items-center justify-center">
+            <div className="min-h-screen text-foreground flex items-center justify-center">
                 <Navbar />
                 <div className="animate-spin w-10 h-10 border-4 border-primary border-t-transparent rounded-full" />
             </div>
@@ -74,7 +74,7 @@ export function RamadanDownloadPage() {
 
     if (!series || !episode) {
         return (
-            <div className="min-h-screen bg-background text-foreground flex flex-col items-center justify-center pt-24 text-center px-4">
+            <div className="min-h-screen text-foreground flex flex-col items-center justify-center pt-24 text-center px-4">
                 <Navbar />
                 <div className="bg-card p-10 rounded-2xl border border-border max-w-lg space-y-4">
                     <h1 className="text-3xl font-black text-destructive">حدث خطأ ما</h1>
@@ -88,7 +88,7 @@ export function RamadanDownloadPage() {
     }
 
     return (
-        <div className="min-h-screen bg-background text-foreground selection:bg-primary/30">
+        <div className="min-h-screen text-foreground selection:bg-primary/30">
             <Navbar />
 
             {/* Ambient background effect */}

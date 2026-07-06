@@ -84,7 +84,7 @@ export function RamadanTrailerPage() {
 
     if (loading) {
         return (
-            <div className="min-h-screen bg-background text-foreground">
+            <div className="min-h-screen text-foreground">
                 <Navbar />
                 <div className="pt-32 flex flex-col items-center justify-center gap-6">
                     <div className="relative">
@@ -99,7 +99,7 @@ export function RamadanTrailerPage() {
 
     if (!series) {
         return (
-            <div className="min-h-screen bg-background text-foreground flex flex-col items-center justify-center pt-24 text-center px-4">
+            <div className="min-h-screen text-foreground flex flex-col items-center justify-center pt-24 text-center px-4">
                 <Navbar />
                 <div className="bg-card p-10 rounded-2xl border border-border max-w-lg space-y-4">
                     <div className="w-16 h-16 bg-destructive/10 rounded-full flex items-center justify-center mx-auto">
@@ -116,7 +116,7 @@ export function RamadanTrailerPage() {
     }
 
     return (
-        <div className="min-h-screen bg-background text-foreground selection:bg-primary/30">
+        <div className="min-h-screen text-foreground selection:bg-primary/30">
             <SEO
                 title={`مشاهدة تريلر ${seriesName} | رمضان 2026`}
                 description={`شاهد تريلر ${seriesName} الرسمي وتعرف على قصة المسلسل وقائمة الحلقات في موسم رمضان 2026.`}

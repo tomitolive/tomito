@@ -273,6 +273,32 @@ export async function fetchTopRated(mediaType: "movie" | "tv" = "movie", page = 
   return fetchAndMergeLocale(url, page);
 }
 
+export type HeroMediaItem = (Movie | TVShow) & { mediaType: "movie" | "tv" };
+
+export async function fetchBestUSContent(limit = 10): Promise<HeroMediaItem[]> {
+  const movieParams = `api_key=${TMDB_CONFIG.API_KEY}&sort_by=vote_average.desc&vote_count.gte=1000&with_origin_country=US`;
+  const tvParams = `api_key=${TMDB_CONFIG.API_KEY}&sort_by=vote_average.desc&vote_count.gte=500&with_origin_country=US`;
+
+  const [moviesData, tvData] = await Promise.all([
+    fetchAndMergeLocale(`${TMDB_CONFIG.BASE_URL}/discover/movie?${movieParams}`),
+    fetchAndMergeLocale(`${TMDB_CONFIG.BASE_URL}/discover/tv?${tvParams}`),
+  ]);
+
+  const movies: HeroMediaItem[] = (moviesData.results || []).map((item: Movie) => ({
+    ...item,
+    mediaType: "movie" as const,
+  }));
+  const tvShows: HeroMediaItem[] = (tvData.results || []).map((item: TVShow) => ({
+    ...item,
+    mediaType: "tv" as const,
+  }));
+
+  return [...movies, ...tvShows]
+    .filter((item) => item.backdrop_path || item.poster_path)
+    .sort((a, b) => (b.vote_average || 0) - (a.vote_average || 0))
+    .slice(0, limit);
+}
+
 export async function fetchByGenre(mediaType: "movie" | "tv", genreId: number, page = 1) {
   const isAll = isNaN(genreId);
   const genreParam = isAll ? "" : `&with_genres=${genreId}`;
@@ -998,10 +1024,10 @@ export const UI_TRANSLATIONS = {
     disclaimer: "هذا الموقع لا يستضيف أي محتوى على سيرفراته",
     popularMovies: "أفلام شائعة",
     popularTV: "مسلسلات شائعة",
-    trendingMovies: "🔥 الأفلام الشائعة",
-    trendingTV: "📺 المسلسلات الشائعة",
-    topRatedMovies: "⭐ أفضل الأفلام تقييماً",
-    topRatedTV: "🏆 أفضل المسلسلات تقييماً",
+    trendingMovies: "الأفلام الشائعة",
+    trendingTV: "المسلسلات الشائعة",
+    topRatedMovies: "أفضل الأفلام تقييماً",
+    topRatedTV: "أفضل المسلسلات تقييماً",
     noDescription: "لا يوجد وصف متاح",
     filterByGenre: "تصفية حسب التصنيف",
     all: "الكل",
@@ -1047,6 +1073,7 @@ export const UI_TRANSLATIONS = {
     notFoundText: "ربما تم نقل الصفحة التي تبحث عنها أو أنها لم تعد موجودة.",
     latestMovies: "أحدث الأفلام",
     latestSeries: "أحدث المسلسلات",
+    newTVShows: "مسلسلات جديدة",
     opinion: "آراء",
     criticsChoice: "اختيارات النقاد",
     recommended: "مقترح لك",
@@ -1105,10 +1132,10 @@ export const UI_TRANSLATIONS = {
     disclaimer: "This site does not host any content on its servers",
     popularMovies: "Popular Movies",
     popularTV: "Popular TV Shows",
-    trendingMovies: "🔥 Trending Movies",
-    trendingTV: "📺 Trending TV Shows",
-    topRatedMovies: "⭐ Top Rated Movies",
-    topRatedTV: "🏆 Top Rated TV Shows",
+    trendingMovies: "Trending Movies",
+    trendingTV: "Trending TV Shows",
+    topRatedMovies: "Top Rated Movies",
+    topRatedTV: "Top Rated TV Shows",
     noDescription: "No description available",
     filterByGenre: "Filter by Genre",
     all: "All",
@@ -1154,6 +1181,7 @@ export const UI_TRANSLATIONS = {
     notFoundText: "The page you are looking for might have been moved or doesn't exist anymore.",
     latestMovies: "Latest Movies",
     latestSeries: "Latest TV Shows",
+    newTVShows: "New TV Shows",
     opinion: "Opinions",
     criticsChoice: "Critics' Choice",
     recommended: "Recommended for You",
@@ -1212,10 +1240,10 @@ export const UI_TRANSLATIONS = {
     disclaimer: "Ce site n'héberge aucun contenu sur ses serveurs",
     popularMovies: "Films populaires",
     popularTV: "Séries populaires",
-    trendingMovies: "🔥 Films Tendances",
-    trendingTV: "📺 Séries Tendances",
-    topRatedMovies: "⭐ Films les mieux notés",
-    topRatedTV: "🏆 Séries les mieux notées",
+    trendingMovies: "Films Tendances",
+    trendingTV: "Séries Tendances",
+    topRatedMovies: "Films les mieux notés",
+    topRatedTV: "Séries les mieux notées",
     noDescription: "Aucune description disponible",
     filterByGenre: "Filtrer par genre",
     all: "Tout",
@@ -1252,6 +1280,7 @@ export const UI_TRANSLATIONS = {
     tvGenres: "Genres de séries",
     latestMovies: "Derniers Films",
     latestSeries: "Dernières Séries",
+    newTVShows: "Nouvelles Séries",
     opinion: "Opinions",
     criticsChoice: "Choix des Critiques",
     recommended: "Recommandé pour vous",
@@ -1310,10 +1339,10 @@ export const UI_TRANSLATIONS = {
     disclaimer: "Este sitio no aloja ningún contenido en sus servidores",
     popularMovies: "Películas populares",
     popularTV: "Series populares",
-    trendingMovies: "🔥 Películas populares",
-    trendingTV: "📺 Series populares",
-    topRatedMovies: "⭐ Películas mejor valoradas",
-    topRatedTV: "🏆 Series mejor valoradas",
+    trendingMovies: "Películas populares",
+    trendingTV: "Series populares",
+    topRatedMovies: "Películas mejor valoradas",
+    topRatedTV: "Series mejor valoradas",
     noDescription: "Sin descripción disponible",
     filterByGenre: "Filtrar por género",
     all: "Todo",

@@ -40,7 +40,7 @@ export default function MovieDetail() {
     if (!movie) return <div className="h-screen flex items-center justify-center">Movie not found</div>;
 
     return (
-        <div className="min-h-screen bg-background text-white">
+        <div className="min-h-screen text-white">
             <MovieSEO movie={localMovie} lang="ar" />
             <Navbar />
 

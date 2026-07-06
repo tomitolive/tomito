@@ -1,0 +1,919 @@
+{
+  "adult": false,
+  "backdrop_path": "/ro0tlgnsco4SwbdAgmscLkSlMSL.jpg",
+  "created_by": [
+    {
+      "id": 58321,
+      "credit_id": "52570ed519c295731c00c866",
+      "name": "Eric Kripke",
+      "original_name": "Eric Kripke",
+      "gender": 2,
+      "profile_path": "/dd7EgfOEKPqQxWtBfAvjYZahbSc.jpg"
+    }
+  ],
+  "episode_run_time": [
+    45
+  ],
+  "first_air_date": "2005-09-13",
+  "genres": [
+    {
+      "id": 18,
+      "name": "دراما"
+    },
+    {
+      "id": 9648,
+      "name": "غموض"
+    },
+    {
+      "id": 10765,
+      "name": "خيال علمي وفانتازيا"
+    }
+  ],
+  "homepage": "https://www.warnerbros.com/tv/supernatural",
+  "id": 1622,
+  "in_production": false,
+  "languages": [
+    "en"
+  ],
+  "last_air_date": "2020-11-19",
+  "last_episode_to_air": {
+    "id": 2203670,
+    "name": "الحلقة 20",
+    "overview": "",
+    "vote_average": 7,
+    "vote_count": 31,
+    "air_date": "2020-11-19",
+    "episode_number": 20,
+    "episode_type": "finale",
+    "production_code": "T13.21770",
+    "runtime": 42,
+    "season_number": 15,
+    "show_id": 1622,
+    "still_path": "/frpiXDldkh3P2VtNPxetsRawbpm.jpg"
+  },
+  "name": "خارق للطبيعة",
+  "next_episode_to_air": null,
+  "networks": [
+    {
+      "id": 21,
+      "logo_path": "/9GlDHjQj9c2dkfARCR3zlH87R66.png",
+      "name": "The WB",
+      "origin_country": "US"
+    },
+    {
+      "id": 71,
+      "logo_path": "/hEpcdJ4O6eitG9ADSnDXNUrlovS.png",
+      "name": "The CW",
+      "origin_country": "US"
+    }
+  ],
+  "number_of_episodes": 327,
+  "number_of_seasons": 15,
+  "origin_country": [
+    "US"
+  ],
+  "original_language": "en",
+  "original_name": "Supernatural",
+  "overview": "منذ الصغر، خسر سام ودين وينشستر أمهما لقوة خارقة غامضة وشيطانية. وفي وقت لاحق، رباهم والدهم ليكونوا جنودا. علمهم عن الشر الخارق الذي يعيش في الزوايا المظلمة وعلى الطرق الخلفية في أمريكا ... وعلمهم كيف يقتلونها. الآن ، يخترق الأخوة وينتشيستر البلاد في  تشيفي إمبالا موديل 67، ويقاتلون كل نوع من التهديدات الخارقة التي يواجهونها على طول الطريق.",
+  "popularity": 269.3925,
+  "poster_path": "/u40gJarLPlIkwouKlzGdobQOV9k.jpg",
+  "production_companies": [
+    {
+      "id": 38398,
+      "logo_path": null,
+      "name": "Kripke Enterprises",
+      "origin_country": "US"
+    },
+    {
+      "id": 38399,
+      "logo_path": null,
+      "name": "Supernatural Pictures",
+      "origin_country": "US"
+    },
+    {
+      "id": 4022,
+      "logo_path": "/q6Xts6ztGkTHrY1WfHttlhL3Pfc.png",
+      "name": "Wonderland Sound and Vision",
+      "origin_country": "US"
+    },
+    {
+      "id": 1957,
+      "logo_path": "/pJJw98MtNFC9cHn3o15G7vaUnnX.png",
+      "name": "Warner Bros. Television",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "seasons": [
+    {
+      "air_date": null,
+      "episode_count": 106,
+      "id": 6902,
+      "name": "العروض الخاصة",
+      "overview": "",
+      "poster_path": "/fg3MNPPng5PEV2Em8oiWfo1SN60.jpg",
+      "season_number": 0,
+      "vote_average": 0
+    },
+    {
+      "air_date": "2005-09-13",
+      "episode_count": 22,
+      "id": 6904,
+      "name": "الموسم 1",
+      "overview": "",
+      "poster_path": "/fFn80y3PPmCcTbIIjQS5ft0jNFc.jpg",
+      "season_number": 1,
+      "vote_average": 7.8
+    },
+    {
+      "air_date": "2006-09-28",
+      "episode_count": 22,
+      "id": 6905,
+      "name": "الموسم 2",
+      "overview": "",
+      "poster_path": "/235GDaro5DuRJ9ogXmV7tOB6W5j.jpg",
+      "season_number": 2,
+      "vote_average": 8.1
+    },
+    {
+      "air_date": "2007-10-04",
+      "episode_count": 16,
+      "id": 6906,
+      "name": "الموسم 3",
+      "overview": "",
+      "poster_path": "/vDIg3XI9JHfEORxTWstO2seUyCw.jpg",
+      "season_number": 3,
+      "vote_average": 8.1
+    },
+    {
+      "air_date": "2008-09-18",
+      "episode_count": 22,
+      "id": 6907,
+      "name": "الموسم 4",
+      "overview": "",
+      "poster_path": "/uswpAvIhUX98ybJEJYJp6EUe3d6.jpg",
+      "season_number": 4,
+      "vote_average": 8.1
+    },
+    {
+      "air_date": "2009-09-10",
+      "episode_count": 22,
+      "id": 6908,
+      "name": "الموسم 5",
+      "overview": "",
+      "poster_path": "/hAeufhaaL5nBoCLOxyw3AbWtxWH.jpg",
+      "season_number": 5,
+      "vote_average": 8.1
+    },
+    {
+      "air_date": "2010-09-24",
+      "episode_count": 22,
+      "id": 6909,
+      "name": "الموسم 6",
+      "overview": "",
+      "poster_path": "/hGInmwwUlG3yvrvSH9CYcL6Ba1j.jpg",
+      "season_number": 6,
+      "vote_average": 7.8
+    },
+    {
+      "air_date": "2011-09-23",
+      "episode_count": 23,
+      "id": 6910,
+      "name": "الموسم 7",
+      "overview": "",
+      "poster_path": "/qiuf2qxR2Zd5sInYytZzSIXbUuL.jpg",
+      "season_number": 7,
+      "vote_average": 7.7
+    },
+    {
+      "air_date": "2012-10-03",
+      "episode_count": 23,
+      "id": 6911,
+      "name": "الموسم 8",
+      "overview": "",
+      "poster_path": "/pmzX28gvLj52HtN5qeyb1Qw4q5l.jpg",
+      "season_number": 8,
+      "vote_average": 7.7
+    },
+    {
+      "air_date": "2013-10-08",
+      "episode_count": 23,
+      "id": 6903,
+      "name": "الموسم 9",
+      "overview": "",
+      "poster_path": "/gzxekP92imqSSq6FhagISMTr3dg.jpg",
+      "season_number": 9,
+      "vote_average": 7.6
+    },
+    {
+      "air_date": "2014-10-07",
+      "episode_count": 23,
+      "id": 62088,
+      "name": "الموسم 10",
+      "overview": "",
+      "poster_path": "/y9Q90gjBX820NZw59O8HWlkZOek.jpg",
+      "season_number": 10,
+      "vote_average": 7.5
+    },
+    {
+      "air_date": "2015-10-07",
+      "episode_count": 23,
+      "id": 70169,
+      "name": "الموسم 11",
+      "overview": "",
+      "poster_path": "/ye95dj8FL4Me65bLnrXWo3Sk74Z.jpg",
+      "season_number": 11,
+      "vote_average": 7.7
+    },
+    {
+      "air_date": "2016-10-13",
+      "episode_count": 23,
+      "id": 78350,
+      "name": "الموسم 12",
+      "overview": "",
+      "poster_path": "/gkNzVg2k8dF6mXsMnjhaMX1NpUy.jpg",
+      "season_number": 12,
+      "vote_average": 7.6
+    },
+    {
+      "air_date": "2017-10-12",
+      "episode_count": 23,
+      "id": 92695,
+      "name": "الموسم 13",
+      "overview": "",
+      "poster_path": "/22BarYiD0QFajKT1AG71RhBrJfH.jpg",
+      "season_number": 13,
+      "vote_average": 7.7
+    },
+    {
+      "air_date": "2018-10-11",
+      "episode_count": 20,
+      "id": 105970,
+      "name": "الموسم 14",
+      "overview": "",
+      "poster_path": "/bbzLtfh7VwfoaeQkkNJ2EMv6lKS.jpg",
+      "season_number": 14,
+      "vote_average": 7.5
+    },
+    {
+      "air_date": "2019-10-10",
+      "episode_count": 20,
+      "id": 132243,
+      "name": "الموسم 15",
+      "overview": "",
+      "poster_path": "/j3kk9PK1Xp8G3r6nDxVLOL1rqLo.jpg",
+      "season_number": 15,
+      "vote_average": 7.6
+    }
+  ],
+  "spoken_languages": [
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Ended",
+  "tagline": "",
+  "type": "Scripted",
+  "vote_average": 8.305,
+  "vote_count": 8207,
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 49623,
+        "known_for_department": "Acting",
+        "name": "جاريد بادالكي",
+        "original_name": "Jared Padalecki",
+        "popularity": 4.5113,
+        "profile_path": "/q2YR6o6MKqO2szOhmmSSAnjs2aC.jpg",
+        "character": "Sam Winchester",
+        "credit_id": "52570ed219c295731c00c568",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 49624,
+        "known_for_department": "Acting",
+        "name": "Jensen Ackles",
+        "original_name": "Jensen Ackles",
+        "popularity": 7.2795,
+        "profile_path": "/vFegIjLLQGwPn6af4SE9LAbnGNE.jpg",
+        "character": "Dean Winchester",
+        "credit_id": "52570ed419c295731c00c7e8",
+        "order": 3
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 42747,
+        "known_for_department": "Acting",
+        "name": "Misha Collins",
+        "original_name": "Misha Collins",
+        "popularity": 2.6886,
+        "profile_path": "/szigprnenokR4yOpELIB2rj1Er2.jpg",
+        "character": "Castiel",
+        "credit_id": "604cedea22e480006ad2e09b",
+        "order": 5
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1197120,
+        "known_for_department": "Acting",
+        "name": "Catherine Michaud",
+        "original_name": "Catherine Michaud",
+        "popularity": 0.2786,
+        "profile_path": "/jzCknZsbGQkxusiCeRGf3cUVQxh.jpg",
+        "credit_id": "5e892c1dd207f30016979758",
+        "department": "Production",
+        "job": "Casting Coordinator"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2589982,
+        "known_for_department": "Writing",
+        "name": "Talli Buchanan",
+        "original_name": "Talli Buchanan",
+        "popularity": 0.0881,
+        "profile_path": null,
+        "credit_id": "5e892c95b84f940014cac8fc",
+        "department": "Writing",
+        "job": "Writers' Production"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2589986,
+        "known_for_department": "Production",
+        "name": "Susan Milne",
+        "original_name": "Susan Milne",
+        "popularity": 0.1083,
+        "profile_path": null,
+        "credit_id": "5e892cc66c74b900159659cd",
+        "department": "Production",
+        "job": "Executive Assistant"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1319152,
+        "known_for_department": "Costume & Make-Up",
+        "name": "Kerry Weinrauch",
+        "original_name": "Kerry Weinrauch",
+        "popularity": 0.2661,
+        "profile_path": null,
+        "credit_id": "69146c019e0edb599f875eb4",
+        "department": "Costume & Make-Up",
+        "job": "Costume Design"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1197284,
+        "known_for_department": "Production",
+        "name": "Carol Kritzer",
+        "original_name": "Carol Kritzer",
+        "popularity": 0.3608,
+        "profile_path": null,
+        "credit_id": "5741b666c3a3687b330007ca",
+        "department": "Production",
+        "job": "Casting"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 77200,
+        "known_for_department": "Production",
+        "name": "Eric Dawson",
+        "original_name": "Eric Dawson",
+        "popularity": 0.4046,
+        "profile_path": null,
+        "credit_id": "5741b685c3a368761b002b62",
+        "department": "Production",
+        "job": "Casting"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 77202,
+        "known_for_department": "Production",
+        "name": "Robert J. Ulrich",
+        "original_name": "Robert J. Ulrich",
+        "popularity": 0.5495,
+        "profile_path": null,
+        "credit_id": "5741b695c3a3680736005ba5",
+        "department": "Production",
+        "job": "Casting"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 5363,
+        "known_for_department": "Production",
+        "name": "Coreen Mayrs",
+        "original_name": "Coreen Mayrs",
+        "popularity": 0.5806,
+        "profile_path": null,
+        "credit_id": "5741b6c792514173b900287f",
+        "department": "Production",
+        "job": "Casting"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 5362,
+        "known_for_department": "Production",
+        "name": "Heike Brandstatter",
+        "original_name": "Heike Brandstatter",
+        "popularity": 0.5643,
+        "profile_path": null,
+        "credit_id": "5741b6df92514173b9002883",
+        "department": "Production",
+        "job": "Casting"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1326722,
+        "known_for_department": "Art",
+        "name": "George Neuman",
+        "original_name": "George Neuman",
+        "popularity": 0.2633,
+        "profile_path": null,
+        "credit_id": "5741b7979251416ca400021d",
+        "department": "Art",
+        "job": "Set Decoration"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 6992,
+        "known_for_department": "Camera",
+        "name": "Serge Ladouceur",
+        "original_name": "Serge Ladouceur",
+        "popularity": 0.2789,
+        "profile_path": null,
+        "credit_id": "5741b80a92514173b90028a8",
+        "department": "Camera",
+        "job": "Director of Photography"
+      }
+    ]
+  },
+  "similar": {
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/pUqejexFekrdaXLVdDKUbJm52wT.jpg",
+        "genre_ids": [
+          10765,
+          18
+        ],
+        "id": 3486,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Surface",
+        "overview": "",
+        "popularity": 3.6605,
+        "poster_path": "/ipFnYr4VpVKVOzKTPPtNEVImZaE.jpg",
+        "first_air_date": "2005-09-19",
+        "name": "Surface",
+        "vote_average": 7.071,
+        "vote_count": 133
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/17vLrCRmYxj9V2F7KLf17DUf4G5.jpg",
+        "genre_ids": [
+          99,
+          9648
+        ],
+        "id": 3574,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "In Search of...",
+        "overview": "",
+        "popularity": 1.1572,
+        "poster_path": "/bJunFmZZ3WiUv0ZIR5tXVXwd6Hu.jpg",
+        "first_air_date": "1977-04-17",
+        "name": "In Search of...",
+        "vote_average": 8.1,
+        "vote_count": 20
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/enAeczWdMNlSkJFzYyFPKKPjBAY.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 3576,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Kindred: The Embraced",
+        "overview": "",
+        "popularity": 2.4895,
+        "poster_path": "/xcI72282j6X2Dw6HNq5H7XLhVBQ.jpg",
+        "first_air_date": "1996-04-02",
+        "name": "Kindred: The Embraced",
+        "vote_average": 6.964,
+        "vote_count": 28
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/qvbF51PVZwOdAY8QjhNGROS6op0.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 3608,
+        "origin_country": [
+          "PH"
+        ],
+        "original_language": "tl",
+        "original_name": "T.G.I.S.",
+        "overview": "",
+        "popularity": 4.0279,
+        "poster_path": "/aPPbvFuXcjsIafknHdJWPYNM6By.jpg",
+        "first_air_date": "1995-08-12",
+        "name": "T.G.I.S.",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          10765,
+          18
+        ],
+        "id": 32624,
+        "origin_country": [
+          "PH"
+        ],
+        "original_language": "tl",
+        "original_name": "Rosalka",
+        "overview": "",
+        "popularity": 0.7803,
+        "poster_path": null,
+        "first_air_date": "2010-05-17",
+        "name": "Rosalka",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/3GBkukPGWm8oC5kMUetR9UrEalL.jpg",
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 32722,
+        "origin_country": [
+          "AU"
+        ],
+        "original_language": "en",
+        "original_name": "Angry Boys",
+        "overview": "",
+        "popularity": 0.4933,
+        "poster_path": "/kviE2G5B4X5SfuQOITDkKhyYepH.jpg",
+        "first_air_date": "2011-05-11",
+        "name": "Angry Boys",
+        "vote_average": 7,
+        "vote_count": 32
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/bUrkfOB3cslMf4k7nTPW9poC6hR.jpg",
+        "genre_ids": [
+          10765,
+          18,
+          10759
+        ],
+        "id": 32731,
+        "origin_country": [
+          "PH"
+        ],
+        "original_language": "en",
+        "original_name": "Imortal",
+        "overview": "",
+        "popularity": 1.8463,
+        "poster_path": "/ob2fes0siMi0Old6eTwikY59Ui7.jpg",
+        "first_air_date": "2010-10-04",
+        "name": "Imortal",
+        "vote_average": 8,
+        "vote_count": 2
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/aF1uXRZPzlQz9N892QRq0MmjcVf.jpg",
+        "genre_ids": [
+          16,
+          10759,
+          10765
+        ],
+        "id": 99769,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "ドラゴンズドグマ",
+        "overview": "",
+        "popularity": 2.1469,
+        "poster_path": "/vj0alCBuOutq55ZhmlLwEkalZpR.jpg",
+        "first_air_date": "2020-09-17",
+        "name": "ドラゴンズドグマ",
+        "vote_average": 6.937,
+        "vote_count": 190
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/7Iorh0CtvK85oX96BdP2jXziir5.jpg",
+        "genre_ids": [
+          16,
+          18,
+          10765,
+          10759
+        ],
+        "id": 99772,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "ヴァンパイア・イン・ザ・ガーデン",
+        "overview": "تتّحد ملكة مصّاصي دماء وفتاة بشرية رغم كلّ التحدّيات والصعاب بحثًا عن \"فردوس\"، وهو المكان الذي يتعايش فيه البشر ومصّاصو الدماء بسلام.",
+        "popularity": 5.4289,
+        "poster_path": "/wG8d0FW5k2LnNAR0sAIDb1sMDcH.jpg",
+        "first_air_date": "2022-05-16",
+        "name": "أمنيات ممنوعة",
+        "vote_average": 7.169,
+        "vote_count": 68
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/7hQ4jjfuH04stb1d4H2u4CLoQvu.jpg",
+        "genre_ids": [
+          16,
+          35,
+          10759,
+          10765
+        ],
+        "id": 99778,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "THE GOD OF HIGH SCHOOL ゴッド・オブ・ハイスクール",
+        "overview": "أعلن جين موري عن نفسه الأقوى في المدارس الثّانويّة. إلّا أنّ حياته تغيّرت بعد تلقّيه لدعوةٍ للمشاركة في \"إله الثّانويّة\"، وهي بطولة لتحديد أقوى طالب في المدارس الثّانويّة على الإطلاق. فضلًا عن ذلك، تمّ إخباره أنّه في حال إن فاز، سيحقّقون له أيّ رغبة... جميع المشاركين منافسون أقوياء يقاتلون بكلّ ما لديهم لتحقيق رغباتهم. فما الّذي ينتظرهم في نهاية البطولة يا ترى؟ قتال مضطرب بين طلّاب ثانويّة أقوياء بشكلٍ لا يصدّق على وشك أن يبدأ!",
+        "popularity": 12.148,
+        "poster_path": "/gfMBnUVzWTlal8Hr0RfgnVe6kHW.jpg",
+        "first_air_date": "2020-07-06",
+        "name": "إله الثانوية",
+        "vote_average": 8.188,
+        "vote_count": 731
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/4jaGeTbps5BKk6l1x6K2P9b3Qto.jpg",
+        "genre_ids": [
+          16,
+          10759,
+          10765,
+          35
+        ],
+        "id": 99779,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "NOBLESSE -ノブレス-",
+        "overview": "يستفيق رايزل من سباتٍ دام 820 سنة. يحمل هذا الأخير لقب نوبلس، نبيل ذو دمٍ أصيل وحامي جميع النّبلاء الآخرين. في محاولته لحماية رايزل، يقوم خادمه فرانكينشتاين بتسجيله في مدرسة يي ران الثّانويّة، حيث يتعلّم رايزل الرّوتينيّات البسيطة والعاديّة للعالم البشريّ من خلال زملائه في الفصل. لكنّ الاتّحاد، مؤسّسة سريّة تتآمر للسّيطرة على العالم، تُرسل بشرًا معدّلين وتتعدّى تدريجيًّا على حياة رايزل، ممّا يضطرّه لاستخدام قوّته الجبّارة لحماية من حوله.",
+        "popularity": 3.5847,
+        "poster_path": "/czcrMXV7oCwg0gRfTAHcphmSnVl.jpg",
+        "first_air_date": "2020-10-08",
+        "name": "النبلاء",
+        "vote_average": 8.4,
+        "vote_count": 418
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/2oXMiubdk0rDjAWgRlwY6zYis5q.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 252101,
+        "origin_country": [
+          "CN"
+        ],
+        "original_language": "zh",
+        "original_name": "当我跑步时我什么都不想",
+        "overview": "",
+        "popularity": 0.5939,
+        "poster_path": "/nwKHLK1C7zBk05QXOu3b0CTN4p2.jpg",
+        "first_air_date": "2024-04-17",
+        "name": "当我跑步时我什么都不想",
+        "vote_average": 8,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/jH1XqmoBfMzz7bGOOqn7uIaWgff.jpg",
+        "genre_ids": [
+          10765,
+          9648,
+          18
+        ],
+        "id": 68058,
+        "origin_country": [
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "HIM",
+        "overview": "",
+        "popularity": 0.6245,
+        "poster_path": "/8VaMw9b9uMFJvUxemxxr6bqmdKZ.jpg",
+        "first_air_date": "2016-10-19",
+        "name": "HIM",
+        "vote_average": 6.1,
+        "vote_count": 15
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/upIaC4KJO2GZTo1axxX5WLKBAVH.jpg",
+        "genre_ids": [
+          16,
+          10759,
+          18,
+          10765
+        ],
+        "id": 68079,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "魔法少女育成計画",
+        "overview": "",
+        "popularity": 2.7529,
+        "poster_path": "/vUGQhcXIkPHS6dyM6w3ruzRw7DQ.jpg",
+        "first_air_date": "2016-10-01",
+        "name": "魔法少女育成計画",
+        "vote_average": 6,
+        "vote_count": 21
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/7ZoUMc2C7c93g6ki3e5RyE1JmCc.jpg",
+        "genre_ids": [
+          10759,
+          16,
+          18
+        ],
+        "id": 68080,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "終末のイゼッタ",
+        "overview": "تدور في عام 1939 عندما قامت دولة ألمانيا الامبريالية بغزو مفاجئ للدول المجاورة ، فدخلت أوروبا كلها في حرب، ثم في عام 1940 قامت المانيا بتشكيل مقاطعة صغيرة عند جبال الألب و الطبيعة الخضراء وأسمتها \" ايليستادت \" ،احداث مشوقة بانتظاركم مع \" إيزتا \" التي عليها حماية الأميرة \" فين \".",
+        "popularity": 2.828,
+        "poster_path": "/a6q5cUCY0j58Doio22D8ranGMLx.jpg",
+        "first_air_date": "2016-10-01",
+        "name": "ايزيتا الساحرة الاخيرة",
+        "vote_average": 7.317,
+        "vote_count": 60
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/qSl3su7eKXg76qoX0iyG20y58c8.jpg",
+        "genre_ids": [
+          10759,
+          16,
+          9648
+        ],
+        "id": 68101,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "Trickster -江戸川乱歩「少年探偵団」より-",
+        "overview": "",
+        "popularity": 4.8516,
+        "poster_path": "/qPosMKw0qUryfNtVA8AHjj3CFpB.jpg",
+        "first_air_date": "2016-10-04",
+        "name": "Trickster -江戸川乱歩「少年探偵団」より-",
+        "vote_average": 6.5,
+        "vote_count": 10
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/mNf5yD2GrrZDTrDEsP3DyqvWevP.jpg",
+        "genre_ids": [
+          10759,
+          16,
+          35,
+          18
+        ],
+        "id": 68144,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "一课一练",
+        "overview": "",
+        "popularity": 1.3957,
+        "poster_path": "/8xgSahlLxsIsfnXZHol0Qzj6d.jpg",
+        "first_air_date": "2016-10-05",
+        "name": "一课一练",
+        "vote_average": 5.4,
+        "vote_count": 15
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/e7yQ3Iv3tkZ1eftZFwdQuYYLA73.jpg",
+        "genre_ids": [
+          10765,
+          16
+        ],
+        "id": 34738,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "あまつき",
+        "overview": "",
+        "popularity": 3.3735,
+        "poster_path": "/eb3fhxFX7RejmOaqYQtYfxLMoNB.jpg",
+        "first_air_date": "2008-04-04",
+        "name": "あまつき",
+        "vote_average": 6.1,
+        "vote_count": 7
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/7SuLI2zxU38scCrjVBHNKJNqeqb.jpg",
+        "genre_ids": [
+          10759,
+          16,
+          18,
+          10765
+        ],
+        "id": 34791,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "クレイモア",
+        "overview": "قصة الأنمي عن وحوش تسمى \"يوما\" تهاجم البشر وتلتهمهم، وفي المقابل قامت  إحدى المنظمات - يرمز إليها في المسلسل باسم \"المنظمة\" - بتطوير كائنات  تضاهي قوة اليوما ويمكنها قتلها أطلق عليها الناس اسم كلايمور، ولكن  المنظمة لا تعتمد هذا الاسم. الكلايمور عبارة عن بشر دمجوا بلحم ودم يوما.",
+        "popularity": 9.1061,
+        "poster_path": "/aIdsCf6XAzR2AmylK8PF22RUw1D.jpg",
+        "first_air_date": "2007-04-03",
+        "name": "كلايمور",
+        "vote_average": 8.138,
+        "vote_count": 354
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/z1XBM5cEyi3Qx5CmcmWxgEgXCYk.jpg",
+        "genre_ids": [
+          16,
+          10765,
+          35
+        ],
+        "id": 34797,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "ときめきトゥナイト",
+        "overview": "رانزي ايتوا فتاة مراهقة عادية ولكنها في الحقيقة ليست من بني البشر وتعيش حياة غريبة عجيبة فأمها مثلا مستذئبة وأباها مصاص دماء وهي تتمتع بقوى خارقة فهي متى عضت شيئا أو شخصا ما تحولت إلى شكله كأنها طبق الأصيل منه، وهي أما ان تتحول إلى اشخاص أو مواد جامدة مثل قطعة من الخبز. ولا تستطيع أن تعود إلى هيئتها الطبيعة إلا إذا عطست.\n\nلاقت رانزي في أول يوما لها في المدرسة شن الفتى الرياضي العاشق للملاكمة فتقع بحب هذا الفتى وتحاول الزواج به . لكن رانزي تواجهه معضلة كبيرة فأهلها لن يدعوها تحب واحد من بني البشر هذه هي قوانينهم تقضي بأن تتزوج من هو من بني جنسها الذي يسكن في قصر خلف الباب الممنوع أي في بلاد الأوهام. و فوق هذا كله توجد شخصية الفتاة يوكو ابنة المدير كاميا، التي تحاول هي جاهدة للنيل من رانزي فهي الخصم اللدود لها وتبذل المساعي في أن تدمر كل ما تفعله رانزي وتحاول مرارا النيل من المسكينة رانزي والسبب عائدا إلى شن الذي تحبه يوكو .",
+        "popularity": 3.3084,
+        "poster_path": "/3y6gjrUM4Iq3S3CeCIQ92yS4lfn.jpg",
+        "first_air_date": "1982-10-06",
+        "name": "رانزي المدهشة",
+        "vote_average": 8.4,
+        "vote_count": 5
+      }
+    ],
+    "total_pages": 2810,
+    "total_results": 56188
+  },
+  "videos": {
+    "results": []
+  }
+}

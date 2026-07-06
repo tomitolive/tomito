@@ -1,0 +1,946 @@
+{
+  "adult": false,
+  "backdrop_path": "/tc7canPSAn2X14hYi6Rl3gZm1o4.jpg",
+  "created_by": [
+    {
+      "id": 117443,
+      "credit_id": "5253851c19c2957940204dd0",
+      "name": "دك ولف",
+      "original_name": "Dick Wolf",
+      "gender": 2,
+      "profile_path": "/tRMEuYNVFjXYJ7gh1sGJSxq9Vwq.jpg"
+    }
+  ],
+  "episode_run_time": [],
+  "first_air_date": "1990-09-13",
+  "genres": [
+    {
+      "id": 80,
+      "name": "جريمة"
+    },
+    {
+      "id": 18,
+      "name": "دراما"
+    }
+  ],
+  "homepage": "http://www.nbc.com/law-order",
+  "id": 549,
+  "in_production": true,
+  "languages": [
+    "en"
+  ],
+  "last_air_date": "2026-01-22",
+  "last_episode_to_air": {
+    "id": 6862213,
+    "name": "الحلقة 12",
+    "overview": "",
+    "vote_average": 9.5,
+    "vote_count": 1,
+    "air_date": "2026-01-29",
+    "episode_number": 12,
+    "episode_type": "mid_season",
+    "production_code": "",
+    "runtime": 43,
+    "season_number": 25,
+    "show_id": 549,
+    "still_path": "/AmjY7Pdm6SlNWY0ESvnQxt6aPzK.jpg"
+  },
+  "name": "القانون ونظام",
+  "next_episode_to_air": {
+    "id": 6898746,
+    "name": "الحلقة 13",
+    "overview": "",
+    "vote_average": 0,
+    "vote_count": 0,
+    "air_date": "2026-02-26",
+    "episode_number": 13,
+    "episode_type": "standard",
+    "production_code": "",
+    "runtime": null,
+    "season_number": 25,
+    "show_id": 549,
+    "still_path": null
+  },
+  "networks": [
+    {
+      "id": 6,
+      "logo_path": "/cm111bsDVlYaC1foL0itvEI4yLG.png",
+      "name": "NBC",
+      "origin_country": "US"
+    }
+  ],
+  "number_of_episodes": 535,
+  "number_of_seasons": 25,
+  "origin_country": [
+    "US"
+  ],
+  "original_language": "en",
+  "original_name": "Law & Order",
+  "overview": "في حالات مستمدة من الأحداث الراهنة، يقوم رجال الشرطة بالتحقيق في جرائم خطيرة وغالباً ما تكون قاتلة، حيث يقومون بتحليل الأدلة واستجواب المشتبه بهم حتى يتم اعتقال شخص ما. ثم يقوم مكتب الادعاء ببناء قضية لإدانة الجاني من خلال إثبات إدانته بما يفوق الشك العادل. يعمل هذان الفريقان المتخصصان معًا على التنقل في جميع جوانب النظام القضائي الجنائي المعقد لجعل نيويورك مكانًا أكثر أمانًا.",
+  "popularity": 198.9144,
+  "poster_path": "/haJ9eHytVO3H3JooMJG1DiWwDNm.jpg",
+  "production_companies": [
+    {
+      "id": 25545,
+      "logo_path": "/8Lqf0okunSPAwBBL08Ua1IRe1xi.png",
+      "name": "Wolf Entertainment",
+      "origin_country": "US"
+    },
+    {
+      "id": 26727,
+      "logo_path": "/jeTxdjXhzgKZyLr3l9MllkTn3fy.png",
+      "name": "Universal Television",
+      "origin_country": "US"
+    },
+    {
+      "id": 8301,
+      "logo_path": "/zrcVDabl14MNfPwxL8DC2IyR12t.png",
+      "name": "Universal Media Studios",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    },
+    {
+      "iso_3166_1": "CA",
+      "name": "Canada"
+    },
+    {
+      "iso_3166_1": "SG",
+      "name": "Singapore"
+    }
+  ],
+  "seasons": [
+    {
+      "air_date": null,
+      "episode_count": 7,
+      "id": 1684,
+      "name": "العروض الخاصة",
+      "overview": "",
+      "poster_path": "/vVUVEqs0KwplqHvv2GyCj2tpMSr.jpg",
+      "season_number": 0,
+      "vote_average": 0
+    },
+    {
+      "air_date": "1990-09-13",
+      "episode_count": 22,
+      "id": 1664,
+      "name": "الموسم 1",
+      "overview": "",
+      "poster_path": "/hGrkBU5p60zZj9bMByo9cegZfhl.jpg",
+      "season_number": 1,
+      "vote_average": 7.4
+    },
+    {
+      "air_date": "1991-09-16",
+      "episode_count": 22,
+      "id": 1665,
+      "name": "الموسم 2",
+      "overview": "",
+      "poster_path": "/nykyEGoMsVPnyrnoUL0g93YJPQZ.jpg",
+      "season_number": 2,
+      "vote_average": 7.4
+    },
+    {
+      "air_date": "1992-09-22",
+      "episode_count": 22,
+      "id": 1666,
+      "name": "الموسم 3",
+      "overview": "",
+      "poster_path": "/emKji2D1tLAJsFad84ENA4PufI5.jpg",
+      "season_number": 3,
+      "vote_average": 7.5
+    },
+    {
+      "air_date": "1993-09-15",
+      "episode_count": 22,
+      "id": 1667,
+      "name": "الموسم 4",
+      "overview": "",
+      "poster_path": "/fiSP98l9G7zjC0sBWwQ02Nmhpub.jpg",
+      "season_number": 4,
+      "vote_average": 7.6
+    },
+    {
+      "air_date": "1994-09-21",
+      "episode_count": 23,
+      "id": 1668,
+      "name": "الموسم 5",
+      "overview": "",
+      "poster_path": "/v8yqfobOp6jSDomgcOnotfsGM2i.jpg",
+      "season_number": 5,
+      "vote_average": 7.6
+    },
+    {
+      "air_date": "1995-09-20",
+      "episode_count": 23,
+      "id": 1669,
+      "name": "الموسم 6",
+      "overview": "",
+      "poster_path": "/5GaJYO3BXCUaHKXr9e7wC1IARwo.jpg",
+      "season_number": 6,
+      "vote_average": 7.6
+    },
+    {
+      "air_date": "1996-09-18",
+      "episode_count": 23,
+      "id": 1671,
+      "name": "الموسم 7",
+      "overview": "",
+      "poster_path": "/mEGBAiPkZcp4GgPv7CQmFhOEWrK.jpg",
+      "season_number": 7,
+      "vote_average": 7.4
+    },
+    {
+      "air_date": "1997-09-24",
+      "episode_count": 24,
+      "id": 1670,
+      "name": "الموسم 8",
+      "overview": "",
+      "poster_path": "/caieRmySO32CyyoPydhxGh7iN33.jpg",
+      "season_number": 8,
+      "vote_average": 7.4
+    },
+    {
+      "air_date": "1998-09-23",
+      "episode_count": 24,
+      "id": 1672,
+      "name": "الموسم 9",
+      "overview": "",
+      "poster_path": "/OuntFFHJqftivArTHjnFu1jSPM.jpg",
+      "season_number": 9,
+      "vote_average": 7.4
+    },
+    {
+      "air_date": "1999-09-22",
+      "episode_count": 24,
+      "id": 1673,
+      "name": "الموسم 10",
+      "overview": "",
+      "poster_path": "/fnYm6dcs1bmYvl3afnGxofsVgyw.jpg",
+      "season_number": 10,
+      "vote_average": 7.3
+    },
+    {
+      "air_date": "2000-10-17",
+      "episode_count": 24,
+      "id": 1675,
+      "name": "الموسم 11",
+      "overview": "",
+      "poster_path": "/u5MyTy53EWtnsMQewECGfNDywme.jpg",
+      "season_number": 11,
+      "vote_average": 7.3
+    },
+    {
+      "air_date": "2001-09-25",
+      "episode_count": 24,
+      "id": 1674,
+      "name": "الموسم 12",
+      "overview": "",
+      "poster_path": "/xAazzYBfFquWWqes5dozpQ0x4jW.jpg",
+      "season_number": 12,
+      "vote_average": 7.5
+    },
+    {
+      "air_date": "2002-10-01",
+      "episode_count": 24,
+      "id": 1676,
+      "name": "الموسم 13",
+      "overview": "",
+      "poster_path": "/2DzgIJzKVY9OfYxRMJjJLIZRhfi.jpg",
+      "season_number": 13,
+      "vote_average": 7.5
+    },
+    {
+      "air_date": "2003-09-23",
+      "episode_count": 24,
+      "id": 1677,
+      "name": "الموسم 14",
+      "overview": "",
+      "poster_path": "/26ByCQKroHuBs7ZgbkwHTsHvU77.jpg",
+      "season_number": 14,
+      "vote_average": 7.2
+    },
+    {
+      "air_date": "2004-09-21",
+      "episode_count": 24,
+      "id": 1678,
+      "name": "الموسم 15",
+      "overview": "",
+      "poster_path": "/z07aBZ5euhdhl0hyzWhwU1mGsrN.jpg",
+      "season_number": 15,
+      "vote_average": 7.1
+    },
+    {
+      "air_date": "2005-09-20",
+      "episode_count": 22,
+      "id": 1680,
+      "name": "الموسم 16",
+      "overview": "",
+      "poster_path": "/vo1hHZ1Bpt7XOYDqab7rqw5VTZL.jpg",
+      "season_number": 16,
+      "vote_average": 7.2
+    },
+    {
+      "air_date": "2006-09-21",
+      "episode_count": 22,
+      "id": 1679,
+      "name": "الموسم 17",
+      "overview": "",
+      "poster_path": "/zjSZrjqz9f3n6XoPYpaIgzwDQT3.jpg",
+      "season_number": 17,
+      "vote_average": 7
+    },
+    {
+      "air_date": "2008-01-01",
+      "episode_count": 18,
+      "id": 1682,
+      "name": "الموسم 18",
+      "overview": "",
+      "poster_path": "/q0nVi8xzk7DHpeFnQ678f8asYxC.jpg",
+      "season_number": 18,
+      "vote_average": 7
+    },
+    {
+      "air_date": "2008-11-04",
+      "episode_count": 22,
+      "id": 1681,
+      "name": "الموسم 19",
+      "overview": "",
+      "poster_path": "/fIIoj3EzsHcgF9Yd0ISWKinmLX8.jpg",
+      "season_number": 19,
+      "vote_average": 7
+    },
+    {
+      "air_date": "2009-09-24",
+      "episode_count": 23,
+      "id": 1683,
+      "name": "الموسم 20",
+      "overview": "",
+      "poster_path": "/yoISWagCsb16Hnoi16Ot1nur2FV.jpg",
+      "season_number": 20,
+      "vote_average": 6.9
+    },
+    {
+      "air_date": "2022-02-23",
+      "episode_count": 10,
+      "id": 219379,
+      "name": "الموسم 21",
+      "overview": "",
+      "poster_path": "/l7qr5Q5iJXeja9iDmdXagoUZ0Vm.jpg",
+      "season_number": 21,
+      "vote_average": 7.6
+    },
+    {
+      "air_date": "2022-09-22",
+      "episode_count": 22,
+      "id": 299108,
+      "name": "الموسم 22",
+      "overview": "",
+      "poster_path": "/77OPlbsvX3pzoFbyfpcE3GXMCod.jpg",
+      "season_number": 22,
+      "vote_average": 7.7
+    },
+    {
+      "air_date": "2024-01-17",
+      "episode_count": 13,
+      "id": 366617,
+      "name": "الموسم 23",
+      "overview": "",
+      "poster_path": "/m9zTQr4TYS98UFSiA1k0mMfECPe.jpg",
+      "season_number": 23,
+      "vote_average": 8.5
+    },
+    {
+      "air_date": "2024-10-03",
+      "episode_count": 22,
+      "id": 401571,
+      "name": "الموسم 24",
+      "overview": "",
+      "poster_path": "/6vFL8S6Cci8s7SHWXz60xOisGBC.jpg",
+      "season_number": 24,
+      "vote_average": 8.3
+    },
+    {
+      "air_date": "2025-09-25",
+      "episode_count": 13,
+      "id": 467359,
+      "name": "الموسم 25",
+      "overview": "",
+      "poster_path": "/haJ9eHytVO3H3JooMJG1DiWwDNm.jpg",
+      "season_number": 25,
+      "vote_average": 8.7
+    }
+  ],
+  "spoken_languages": [
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Returning Series",
+  "tagline": "",
+  "type": "Scripted",
+  "vote_average": 7.345,
+  "vote_count": 663,
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 81316,
+        "known_for_department": "Acting",
+        "name": "ريد سكوت",
+        "original_name": "Reid Scott",
+        "popularity": 1.6159,
+        "profile_path": "/kBAeDUDA7XJRXFLGNALlpE5d3lA.jpg",
+        "character": "Vincent Riley",
+        "credit_id": "659f035c0f526500eeb36899",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 16307,
+        "known_for_department": "Acting",
+        "name": "Maura Tierney",
+        "original_name": "Maura Tierney",
+        "popularity": 5.6083,
+        "profile_path": "/4BCrwdHdC4iRSDimvkoYaXg2qki.jpg",
+        "character": "Jessica Brady",
+        "credit_id": "66e4ad4948089a189f6cdc24",
+        "order": 4
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3417,
+        "known_for_department": "Acting",
+        "name": "طوني غولدوين",
+        "original_name": "Tony Goldwyn",
+        "popularity": 2.9959,
+        "profile_path": "/ptm8SG4MYIMn0hnDl2YJ70Dwal5.jpg",
+        "character": "Nicholas Baxter",
+        "credit_id": "65d94ad2609750017da5f1c0",
+        "order": 6
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 12791,
+        "known_for_department": "Acting",
+        "name": "Hugh Dancy",
+        "original_name": "Hugh Dancy",
+        "popularity": 2.5867,
+        "profile_path": "/6UIiS3nxdNTbIo0G2kFNXpcDKhE.jpg",
+        "character": "Nolan Price",
+        "credit_id": "619d4beb03bf840061ffb2e8",
+        "order": 7
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1639904,
+        "known_for_department": "Acting",
+        "name": "Odelya Halevi",
+        "original_name": "Odelya Halevi",
+        "popularity": 0.7157,
+        "profile_path": "/26jv3dcS5Us8Ut13Tu9PmvT7uPh.jpg",
+        "character": "Samantha Maroun",
+        "credit_id": "61ba8db144a4240089420245",
+        "order": 9
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 117443,
+        "known_for_department": "Creator",
+        "name": "دك ولف",
+        "original_name": "Dick Wolf",
+        "popularity": 1.8673,
+        "profile_path": "/tRMEuYNVFjXYJ7gh1sGJSxq9Vwq.jpg",
+        "credit_id": "5253851c19c2957940204de8",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 169061,
+        "known_for_department": "Writing",
+        "name": "ديفيد شور",
+        "original_name": "David Shore",
+        "popularity": 1.958,
+        "profile_path": "/5xVWN3KCGtGjGkEIrHqHrx8UikG.jpg",
+        "credit_id": "5253851d19c2957940204efa",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 933119,
+        "known_for_department": "Production",
+        "name": "William M. Finkelstein",
+        "original_name": "William M. Finkelstein",
+        "popularity": 0.4252,
+        "profile_path": null,
+        "credit_id": "5253851d19c295794020500c",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 6448,
+        "known_for_department": "Directing",
+        "name": "Arthur Penn",
+        "original_name": "Arthur Penn",
+        "popularity": 0.776,
+        "profile_path": "/vHznIw0bSUwRQ2OjyDQDPWffmaM.jpg",
+        "credit_id": "5253852519c29579402054ee",
+        "department": "Production",
+        "job": "Executive Producer"
+      }
+    ]
+  },
+  "similar": {
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/q24iEvosBbsgLIIklsZloAxICRQ.jpg",
+        "genre_ids": [
+          18,
+          9648
+        ],
+        "id": 214993,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "하이드",
+        "overview": "تدور أحداث الدراما حول امرأة يختفي زوجها في ضروف غامضة، فتُقرر بمساعدة جارتها الغامضة البحث عن زوجها والكشف عن السر وراء اختفائه.",
+        "popularity": 1.9111,
+        "poster_path": "/mOtqwb3RITlcJlN5oxQrEx35cqy.jpg",
+        "first_air_date": "2024-03-23",
+        "name": "الاختفاء",
+        "vote_average": 7.625,
+        "vote_count": 8
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/jJMfTkvU2exHwCFoBHsIqwaHImh.jpg",
+        "genre_ids": [
+          18,
+          10765,
+          35
+        ],
+        "id": 215001,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "이 연애는 불가항력",
+        "overview": "يتشابك مصير محامٍ مقيّد بلعنة تعود إلى قرون من الزمن مع موظفة خدمة مدنية تملك مفتاح حريته… فتشتعل بينهما علاقة عاطفية غير متوقعة.",
+        "popularity": 9.5041,
+        "poster_path": "/6vJBIAnQ0dDqikESJCImEdCbKvT.jpg",
+        "first_air_date": "2023-08-23",
+        "name": "أنت قدري",
+        "vote_average": 8.099,
+        "vote_count": 218
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/v5nT1LPl6flAcNiNIEw21dPtTAb.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 1616,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "The $treet",
+        "overview": "",
+        "popularity": 3.5221,
+        "poster_path": "/tHdPAxHVU9I0bRJpINPz5x3o57j.jpg",
+        "first_air_date": "2000-11-01",
+        "name": "The $treet",
+        "vote_average": 5.4,
+        "vote_count": 7
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/bhG1XJ1fubbZkLnoBAxNrzzGXOg.jpg",
+        "genre_ids": [
+          18,
+          9648,
+          80
+        ],
+        "id": 1620,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "CSI: Miami",
+        "overview": "",
+        "popularity": 57.5361,
+        "poster_path": "/pNW64pjaHvf6purNaFhq4SHYRfl.jpg",
+        "first_air_date": "2002-09-23",
+        "name": "CSI: Miami",
+        "vote_average": 7.711,
+        "vote_count": 1671
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/o1oSRBiSwkim3xdK0OJ2LwpWL89.jpg",
+        "genre_ids": [
+          10751,
+          18,
+          80
+        ],
+        "id": 1625,
+        "origin_country": [
+          "CA",
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Sue Thomas: F.B.Eye",
+        "overview": "",
+        "popularity": 16.511,
+        "poster_path": "/5tHDB8vSOk6WB0rFufFUILxBKZz.jpg",
+        "first_air_date": "2002-10-13",
+        "name": "Sue Thomas: F.B.Eye",
+        "vote_average": 7,
+        "vote_count": 23
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/yAUMNGNqhDt017HvSg7ZzgjwbpV.jpg",
+        "genre_ids": [
+          18,
+          35,
+          10759
+        ],
+        "id": 1626,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Tequila and Bonetti",
+        "overview": "",
+        "popularity": 1.4026,
+        "poster_path": "/u1ekQHc1RByAA2CyNxz8a7Qslmb.jpg",
+        "first_air_date": "1992-01-17",
+        "name": "Tequila and Bonetti",
+        "vote_average": 6.455,
+        "vote_count": 12
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/q1dyExNv3AaWrJ9g9sIZGIL0uXX.jpg",
+        "genre_ids": [
+          18,
+          80
+        ],
+        "id": 30948,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "The Protector",
+        "overview": "",
+        "popularity": 1.4985,
+        "poster_path": "/v3cYsLksGX1baCYtn2AQa2R5HDR.jpg",
+        "first_air_date": "2011-06-12",
+        "name": "The Protector",
+        "vote_average": 8,
+        "vote_count": 11
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/dHMJFx5QAgNQ7BA349sk94KmFuh.jpg",
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 1721,
+        "origin_country": [
+          "US",
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "Keen Eddie",
+        "overview": "",
+        "popularity": 1.3977,
+        "poster_path": "/fpvxhAkMkK7Fb59myLDb9KoqA0z.jpg",
+        "first_air_date": "2003-06-03",
+        "name": "Keen Eddie",
+        "vote_average": 8,
+        "vote_count": 18
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/73ORqaD8SSVs3cPaXt0WuE4aWEM.jpg",
+        "genre_ids": [
+          80
+        ],
+        "id": 131672,
+        "origin_country": [
+          "FR"
+        ],
+        "original_language": "fr",
+        "original_name": "Face à face",
+        "overview": "",
+        "popularity": 5.1766,
+        "poster_path": "/7vndTAkC2Nhh4eNrTM9BBjhUsV1.jpg",
+        "first_air_date": "2022-03-15",
+        "name": "Face à face",
+        "vote_average": 6.6,
+        "vote_count": 13
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/51Hw58fMwJQKYJ6XYJIRQBP9EPA.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 62852,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Billions",
+        "overview": "مسلسل حول سياسات القوة في عالم التمويل العالي في نيويورك، حيث المحامي الأمريكي الذكي تشاك رودس، وملك الصندوق اللامع والطموح بوبي \"آكس\" أكسلرود في مسار تصادم متفجر ، حيث يستخدم كل منهما كل ما لديه من ذكاء وقوة وتأثير كبير للتغلب على الآخر.",
+        "popularity": 36.8552,
+        "poster_path": "/edwYPQdZE998d748AdwWLsfy0rl.jpg",
+        "first_air_date": "2016-01-17",
+        "name": "Billions",
+        "vote_average": 7.749,
+        "vote_count": 995
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          35,
+          18
+        ],
+        "id": 62871,
+        "origin_country": [
+          "DE"
+        ],
+        "original_language": "de",
+        "original_name": "Alles was Recht ist",
+        "overview": "",
+        "popularity": 0.322,
+        "poster_path": null,
+        "first_air_date": "1986-03-18",
+        "name": "Alles was Recht ist",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          18
+        ],
+        "id": 62873,
+        "origin_country": [
+          "DE"
+        ],
+        "original_language": "de",
+        "original_name": "Der Anwalt",
+        "overview": "",
+        "popularity": 0.8398,
+        "poster_path": null,
+        "first_air_date": "1976-04-01",
+        "name": "Der Anwalt",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/uvrhAnfsxDWu94XPQOjUOQSnyuY.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 62896,
+        "origin_country": [
+          "ES"
+        ],
+        "original_language": "es",
+        "original_name": "Acusados",
+        "overview": "",
+        "popularity": 1.2168,
+        "poster_path": "/xjxfAvmEinsAYwmFmNJbkyWpmFu.jpg",
+        "first_air_date": "2009-01-28",
+        "name": "Acusados",
+        "vote_average": 2.5,
+        "vote_count": 5
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 62897,
+        "origin_country": [
+          "ES"
+        ],
+        "original_language": "es",
+        "original_name": "LEX",
+        "overview": "",
+        "popularity": 0.6403,
+        "poster_path": "/xQQ5shN4yjYI22xyJwGDn9AWO1t.jpg",
+        "first_air_date": "2008-06-05",
+        "name": "LEX",
+        "vote_average": 3,
+        "vote_count": 2
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/dBh58h71ZMi7WJE4ZQr2xT9iW4i.jpg",
+        "genre_ids": [
+          18,
+          80
+        ],
+        "id": 62927,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Wicked City",
+        "overview": "",
+        "popularity": 1.8516,
+        "poster_path": "/myEcHo82olJ5HM5IC9hTCehSpIV.jpg",
+        "first_air_date": "2015-10-27",
+        "name": "Wicked City",
+        "vote_average": 5.9,
+        "vote_count": 46
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/5Bi8Ih20ukh6GJUhzvgxwZjqtdZ.jpg",
+        "genre_ids": [
+          80,
+          18,
+          9648
+        ],
+        "id": 62984,
+        "origin_country": [
+          "ES"
+        ],
+        "original_language": "es",
+        "original_name": "Los misterios de Laura",
+        "overview": "",
+        "popularity": 4.3716,
+        "poster_path": "/oiroIIo8vqepymHAYKIIlksiaPm.jpg",
+        "first_air_date": "2009-07-27",
+        "name": "Los misterios de Laura",
+        "vote_average": 7.5,
+        "vote_count": 33
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/7im02MkIIULW8PB6iqGGHom7qcN.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 30878,
+        "origin_country": [
+          "CA"
+        ],
+        "original_language": "fr",
+        "original_name": "Omertà, la loi du silence",
+        "overview": "",
+        "popularity": 1.1154,
+        "poster_path": "/85c6btR9ux9ZmoUIgfhRIOEoEAH.jpg",
+        "first_air_date": "1996-01-22",
+        "name": "Omertà, la loi du silence",
+        "vote_average": 8,
+        "vote_count": 4
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/layPSOJGckJv3PXZDIVluMq69mn.jpg",
+        "genre_ids": [
+          80,
+          18
+        ],
+        "id": 1438,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "The Wire",
+        "overview": "يستعرض المسلسل في قالب من اﻹثارة والتشويق عالم المخدرات المتشابك والمعقد والمركب في مدينة بالتيمور كما يروى من قبل تجارها ورجال الشرطة، ومشاكل كلا الطرفين.",
+        "popularity": 40.8282,
+        "poster_path": "/aA0RQBbTzxby13UeCdpdkGUtqxy.jpg",
+        "first_air_date": "2002-06-02",
+        "name": "السلك",
+        "vote_average": 8.614,
+        "vote_count": 2558
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/sh7GRlX4d7j3XSTeyGZnlKqkHGk.jpg",
+        "genre_ids": [
+          18,
+          35,
+          80
+        ],
+        "id": 1447,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Psych",
+        "overview": "تستأجر الشرطة محققًا مبتدئًا بعد أن دفعهم إلى التفكير في أن لديه قوى نفسية تساعد في حل الجرائم، وبمساعدة صديقه المقرب يتولى الثنائي سلسلة من القضايا المعقدة.",
+        "popularity": 37.7244,
+        "poster_path": "/rTmRKYKtkYVXcPb4k0naDTtaZXa.jpg",
+        "first_air_date": "2006-07-07",
+        "name": "Psych",
+        "vote_average": 7.906,
+        "vote_count": 930
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/oenEPUQI0ZgeaBWB5dYGrzrA9gN.jpg",
+        "genre_ids": [
+          80,
+          18,
+          9648
+        ],
+        "id": 1450,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "The Closer",
+        "overview": "",
+        "popularity": 50.6934,
+        "poster_path": "/q6FhABXGf3TaYKoKNwzGAEzW7bt.jpg",
+        "first_air_date": "2005-06-13",
+        "name": "The Closer",
+        "vote_average": 7.9,
+        "vote_count": 325
+      }
+    ],
+    "total_pages": 2629,
+    "total_results": 52576
+  },
+  "videos": {
+    "results": []
+  }
+}

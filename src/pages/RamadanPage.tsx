@@ -136,7 +136,7 @@ export default function RamadanPage() {
     }, [filteredSeries, visibleCount]);
 
     return (
-        <div className="min-h-screen bg-background text-foreground selection:bg-primary/30">
+        <div className="min-h-screen text-foreground selection:bg-primary/30">
             <SEO
                 title="مسلسلات رمضان 2026 - حصرياً على Supreme"
                 description="تغطية كاملة وحصرية لمسلسلات رمضان 2026. شاهد حلقاتك المفضلة بجودة عالية وسيرفرات سريعة."

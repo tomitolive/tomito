@@ -7,6 +7,14 @@ import { ContentRow } from "@/components/ContentRow";
 import { GenreFilters } from "@/components/GenreFilters";
 import { Button } from "@/components/ui/button";
 import { BackButton } from "@/components/BackButton";
+import { MovieCard } from "@/components/MovieCard";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import {
   fetchTVDetails,
   fetchSeasonDetails,
@@ -134,7 +142,7 @@ export default function WatchTV() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen">
         <Navbar />
         <div className="pt-20 flex items-center justify-center min-h-[60vh]">
           <div className="text-center">
@@ -148,7 +156,7 @@ export default function WatchTV() {
 
   if (!show) {
     return (
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen">
         <Navbar />
         <div className="pt-20 flex items-center justify-center min-h-[60vh]">
           <div className="text-center">
@@ -166,358 +174,306 @@ export default function WatchTV() {
   const currentEpisode = episodes.find((e) => e.episode_number === selectedEpisode);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen text-foreground pb-16">
       <Navbar />
+      <BackButton />
+      <div className="container mx-auto px-4 pt-32 max-w-7xl">
+        {/* Main Row: Video Player (Left) + Episodes/Seasons (Right) */}
+        <div className="flex flex-col lg:flex-row gap-8 mb-16 w-full">
+          
+          {/* Video Player Column */}
+          <div className="w-full lg:w-[70%] flex flex-col gap-6">
+            {/* Server Selection */}
+            <div className="flex items-center gap-4">
+              <label className="text-sm font-semibold text-foreground whitespace-nowrap">السيرفرات</label>
+              {(() => {
+              type UnifiedServer =
+                | { kind: 'tmdb'; server: VideoServer }
+                | { kind: 'direct'; id: string; name: string; url: string; badge?: string };
 
-      {/* Hero Background */}
-      <div
-        className="absolute inset-0 h-[50vh] bg-cover bg-center"
-        style={{ backgroundImage: `url(${getBackdropUrl(show.backdrop_path)})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background" />
-      </div>
+              const allServers: UnifiedServer[] = [
+                ...supremeServers
+                  .filter(s => !s.name.toLowerCase().includes("streamtape"))
+                  .map((s, i) => ({
+                    kind: 'direct' as const,
+                    id: `sup-${i}`,
+                    name: s.name,
+                    url: s.url,
+                    badge: 'إضافي',
+                  })),
+                ...TV_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
+              ];
 
-      {/* Content */}
-      <div className="relative pt-24 pb-8 container mx-auto px-4">
-        {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
-          <Button variant="ghost" size="icon" onClick={() => navigate(-1)} className="mr-2">
-            <ArrowRight className="w-4 h-4 rtl-flip" />
-          </Button>
-          <Link to="/" className="hover:text-primary transition-colors">{t("home")}</Link>
-          <ArrowRight className="w-4 h-4 rtl-flip" />
-          <Link to="/category/tv/all" className="hover:text-primary transition-colors">{t("tvShows")}</Link>
-          <ArrowRight className="w-4 h-4 rtl-flip" />
-          <span className="text-foreground">{show.name}</span>
-        </nav>
+              const activeEntry = allServers.find(s =>
+                s.kind === 'tmdb' ? s.server.id === activeServerId : s.id === activeServerId
+              ) || allServers[0];
 
-        {/* Show Info Row */}
-        <div className="flex flex-col lg:flex-row gap-8 mb-8">
-          {/* Poster */}
-          <div className="flex-shrink-0 w-48 lg:w-64 mx-auto lg:mx-0">
-            <img
-              src={getImageUrl(show.poster_path, "w500")}
-              alt={show.name}
-              className="w-full rounded-xl shadow-2xl"
-            />
+              const switchServer = (newId: string) => {
+                setActiveServerId(newId);
+                setUnifiedIframeKey(k => k + 1);
+                window.dispatchEvent(new CustomEvent('trigger-ad-popup'));
+              };
+
+              const getServerId = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.id : s.id;
+              const getServerName = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.name : s.name;
+
+              return (
+                <Select value={activeServerId} onValueChange={switchServer}>
+                  <SelectTrigger className="w-full h-12 bg-card/50 border-border/50 text-foreground font-semibold rounded-xl focus:ring-primary focus:ring-2 text-right rtl:text-right">
+                    <SelectValue placeholder="اختر السيرفر" />
+                  </SelectTrigger>
+                  <SelectContent className="bg-card border-border/50">
+                    {allServers.map((s) => {
+                      const sid = getServerId(s);
+                      const sname = getServerName(s);
+                      return (
+                        <SelectItem key={sid} value={sid} className="text-foreground font-semibold cursor-pointer transition-colors focus:bg-primary/20 rtl:flex-row-reverse">
+                          <div className="flex items-center gap-2 text-right">
+                            <span>{sname}</span>
+                          </div>
+                        </SelectItem>
+                      );
+                    })}
+                  </SelectContent>
+                </Select>
+              );
+            })()}
+            </div>
+
+            {/* Video Player */}
+            <div className="relative aspect-video rounded-2xl shadow-2xl overflow-hidden bg-black border border-border/30 ring-1 ring-border/20">
+              <iframe
+                key={unifiedIframeKey}
+                src={(() => {
+                  type UnifiedServer =
+                    | { kind: 'tmdb'; server: VideoServer }
+                    | { kind: 'direct'; id: string; name: string; url: string; badge?: string };
+
+                  const allServers: UnifiedServer[] = [
+                    ...supremeServers
+                      .filter(s => !s.name.toLowerCase().includes("streamtape"))
+                      .map((s, i) => ({
+                        kind: 'direct' as const,
+                        id: `sup-${i}`,
+                        name: s.name,
+                        url: s.url,
+                        badge: 'إضافي',
+                      })),
+                    ...TV_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
+                  ];
+
+                  const activeEntry = allServers.find(s =>
+                    s.kind === 'tmdb' ? s.server.id === activeServerId : s.id === activeServerId
+                  ) || allServers[0];
+
+                  if (activeServerId === TV_SERVERS[0].id && supremeServers.length > 0) {
+                    const firstSid = allServers[0].kind === 'tmdb' ? allServers[0].server.id : allServers[0].id;
+                    if (firstSid !== activeServerId) {
+                      setActiveServerId(firstSid);
+                    }
+                  }
+
+                  let iframeUrl = '';
+                  if (activeEntry.kind === 'tmdb' && show) {
+                    iframeUrl = getVideoUrl(activeEntry.server, show.id, 'tv', selectedSeason, selectedEpisode, imdbId || undefined, { autoplay: true });
+                  } else if (activeEntry.kind === 'direct') {
+                    iframeUrl = activeEntry.url;
+                  }
+                  return iframeUrl;
+                })()}
+                className="w-full h-full border-0"
+                allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
           </div>
 
-          {/* Info */}
-          <div className="flex-1">
-            <h1 className="text-3xl lg:text-4xl font-bold mb-2">{show.name}</h1>
-            {show.original_name !== show.name && (
-              <p className="text-lg text-muted-foreground mb-4">{show.original_name}</p>
-            )}
-
-            {/* Meta */}
-            <div className="flex flex-wrap items-center gap-4 mb-4">
-              <div className="rating-badge">
-                <Star className="w-4 h-4 fill-current" />
-                {show.vote_average?.toFixed(1)}
-              </div>
-              <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                <Clock className="w-4 h-4" />
-                {t("seasonsCount").replace("{count}", String(show.number_of_seasons))}
-              </div>
-              <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                {t("episodesCount").replace("{count}", String(show.number_of_episodes))}
-              </div>
-              {show.first_air_date && (
-                <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                  <Calendar className="w-4 h-4" />
-                  {new Date(show.first_air_date).getFullYear()}
+          {/* Episodes & Seasons Sidebar */}
+          <div className="w-full lg:w-[30%] flex flex-col gap-6">
+            {/* Season Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => setIsSeasonDropdownOpen(!isSeasonDropdownOpen)}
+                className="w-full flex items-center justify-between px-5 py-3 bg-card border border-border/50 rounded-xl hover:border-primary/50 hover:bg-card/80 transition-all duration-300 font-semibold"
+              >
+                <span className="text-sm">{t("seasonLabel")} {selectedSeason}</span>
+                <ChevronDown className={cn("w-4 h-4 transition-transform", isSeasonDropdownOpen && "rotate-180")} />
+              </button>
+              {isSeasonDropdownOpen && (
+                <div className="absolute top-full right-0 mt-2 w-full bg-card border border-border/50 rounded-xl shadow-2xl z-30 max-h-80 overflow-y-auto">
+                  {validSeasons.map((season) => (
+                    <button
+                      key={season.id}
+                      onClick={() => {
+                        setSelectedSeason(season.season_number);
+                        setSelectedEpisode(1);
+                        setIsSeasonDropdownOpen(false);
+                      }}
+                      className={cn(
+                        "w-full text-right px-5 py-3 hover:bg-muted/50 transition-colors text-sm font-medium",
+                        selectedSeason === season.season_number && "bg-primary text-primary-foreground"
+                      )}
+                    >
+                      {season.name} <span className="text-muted-foreground/70 text-xs">({t("episodesCount").replace("{count}", String(season.episode_count))})</span>
+                    </button>
+                  ))}
                 </div>
               )}
             </div>
 
+            {/* Current Episode Info */}
+            {currentEpisode && (
+              <div className="flex items-center gap-2 text-sm text-muted-foreground bg-card/50 px-4 py-2 rounded-lg border border-border/30">
+                <Play className="w-4 h-4 text-primary" />
+                <span className="line-clamp-1">الحلقة {selectedEpisode}: {currentEpisode.name}</span>
+              </div>
+            )}
+
+            {/* Episodes List */}
+            <div className="flex-1">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="w-1 h-5 bg-primary rounded-full" />
+                <h2 className="text-lg font-bold">{t("episodesInSeason").replace("{season}", String(selectedSeason))}</h2>
+              </div>
+              <div className="space-y-2 max-h-[500px] overflow-y-auto custom-scrollbar pr-2">
+                {episodes.map((episode) => (
+                  <button
+                    key={episode.id}
+                    onClick={() => setSelectedEpisode(episode.episode_number)}
+                    className={cn(
+                      "w-full flex items-center gap-3 p-3 rounded-xl transition-all duration-300 border-2 group hover:scale-[1.02]",
+                      selectedEpisode === episode.episode_number 
+                        ? "border-primary bg-primary/10 shadow-lg shadow-primary/10" 
+                        : "border-border/30 bg-card/50 hover:border-primary/50 hover:bg-card"
+                    )}
+                  >
+                    <div className="w-16 h-10 rounded-lg overflow-hidden flex-shrink-0 bg-muted relative">
+                      {episode.still_path ? (
+                        <img
+                          src={getImageUrl(episode.still_path, "w300")}
+                          alt={episode.name}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center">
+                          <Play className="w-5 h-5 text-muted-foreground/50" />
+                        </div>
+                      )}
+                    </div>
+                    <div className="flex-1 text-right">
+                      <p className="font-bold text-sm mb-0.5 line-clamp-1">{t("episodeLabel")} {episode.episode_number}</p>
+                      <p className="text-xs text-muted-foreground line-clamp-1">{episode.name}</p>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Section: RTL Info layout */}
+        <div className="w-full mb-16" dir="rtl">
+          {/* Title Section */}
+          <div className="mb-10">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4 text-foreground leading-tight tracking-tight">
+              {show.name}
+            </h1>
+            
+            <div className="flex flex-wrap items-center gap-4 text-base text-muted-foreground mb-6">
+              <span className="font-medium">{show.original_name}</span>
+              {show.first_air_date && (
+                <>
+                  <span className="w-1 h-1 rounded-full bg-border" />
+                  <span>{new Date(show.first_air_date).getFullYear()}</span>
+                </>
+              )}
+              {show.vote_average && (
+                <>
+                  <span className="w-1 h-1 rounded-full bg-border" />
+                  <div className="flex items-center gap-1.5">
+                    <Star className="w-4 h-4 fill-yellow-500 text-yellow-500" />
+                    <span className="font-semibold text-foreground">{show.vote_average.toFixed(1)}</span>
+                  </div>
+                </>
+              )}
+            </div>
+
             {/* Genres */}
-            <div className="flex flex-wrap gap-2 mb-4">
+            <div className="flex flex-wrap gap-3">
               {show.genres?.map((genre) => (
                 <Link
                   key={genre.id}
                   to={`/category/tv/${genre.id}`}
-                  className="genre-tag"
+                  className="px-4 py-2 bg-card/50 border border-border/50 rounded-lg hover:border-primary/50 hover:bg-card hover:text-primary transition-all duration-300 text-sm font-medium"
                 >
                   {genre.name}
                 </Link>
               ))}
             </div>
+          </div>
 
-            {/* Overview */}
-            <p className="text-muted-foreground leading-relaxed mb-6">
+          {/* Description */}
+          <div className="mb-12">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-4xl">
               {show.overview || t("noDescription")}
             </p>
-
-            {/* Cast */}
-            {cast.length > 0 && (
-              <div className="flex items-center gap-2 text-sm">
-                <Users className="w-4 h-4 text-muted-foreground" />
-                <span className="text-muted-foreground">{t("actorsLabel")}</span>
-                <div className="flex flex-wrap gap-1">
-                  {cast.slice(0, 5).map((actor, i) => (
-                    <Link
-                      key={actor.id}
-                      to={`/actor/${actor.id}`}
-                      className="text-primary hover:underline"
-                    >
-                      {actor.name}{i < 4 && cast.length > i + 1 ? "،" : ""}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
           </div>
-        </div>
 
-        {/* Season & Episode Selection */}
-        <div className="mb-6 flex flex-wrap gap-4">
-          {/* Season Dropdown */}
-          <div className="relative">
-            <button
-              onClick={() => setIsSeasonDropdownOpen(!isSeasonDropdownOpen)}
-              className="flex items-center gap-2 px-4 py-2 bg-secondary rounded-lg hover:bg-accent transition-colors"
-            >
-              {t("seasonLabel")} {selectedSeason}
-              <ChevronDown className={cn("w-4 h-4 transition-transform", isSeasonDropdownOpen && "rotate-180")} />
-            </button>
-            {isSeasonDropdownOpen && (
-              <div className="absolute top-full right-0 mt-2 w-48 bg-card border border-border rounded-lg shadow-xl z-20 max-h-64 overflow-y-auto">
-                {validSeasons.map((season) => (
-                  <button
-                    key={season.id}
-                    onClick={() => {
-                      setSelectedSeason(season.season_number);
-                      setSelectedEpisode(1);
-                      setIsSeasonDropdownOpen(false);
-                    }}
-                    className={cn(
-                      "w-full text-right px-4 py-2 hover:bg-accent transition-colors",
-                      selectedSeason === season.season_number && "bg-primary text-primary-foreground"
-                    )}
+          {/* Cast */}
+          {cast.length > 0 && (
+            <div className="mb-16">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-1 h-7 bg-primary rounded-full" />
+                <h2 className="text-2xl font-bold">{t("castMembers") || "طاقم العمل"}</h2>
+              </div>
+              <div className="flex gap-5 overflow-x-auto pb-8 hide-scrollbar">
+                {cast.map(actor => (
+                  <div 
+                    key={actor.id} 
+                    onClick={() => navigate(`/actor/${actor.id}`)} 
+                    className="cursor-pointer flex-shrink-0 w-32 text-center group"
                   >
-                    {season.name} ({t("episodesCount").replace("{count}", String(season.episode_count))})
-                  </button>
+                    <div className="w-24 h-24 mx-auto rounded-2xl overflow-hidden mb-4 border-2 border-transparent group-hover:border-primary transition-all duration-300 shadow-lg group-hover:shadow-xl group-hover:shadow-primary/20">
+                      <img 
+                        src={getImageUrl(actor.profile_path, "w500")} 
+                        alt={actor.name} 
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" 
+                      />
+                    </div>
+                    <div className="font-bold text-sm text-foreground line-clamp-1 group-hover:text-primary transition-colors">{actor.name}</div>
+                    <div className="text-xs text-muted-foreground line-clamp-1 mt-1">{actor.character}</div>
+                  </div>
                 ))}
               </div>
-            )}
-          </div>
-        </div>
-
-        {/* Video Player Selection */}
-        <div className="mb-8">
-          <div className="flex items-center gap-3 mb-4">
-            <Play className="w-5 h-5 text-primary" />
-            <h2 className="text-xl font-bold">
-              {t("seasonLabel")} {selectedSeason} - {t("episodeLabel")} {selectedEpisode}
-            </h2>
-            {currentEpisode && (
-              <span className="text-muted-foreground">| {currentEpisode.name}</span>
-            )}
-          </div>
-
-          {(() => {
-            // Build unified server list
-            type UnifiedServer =
-              | { kind: 'tmdb'; server: VideoServer }
-              | { kind: 'direct'; id: string; name: string; url: string; badge?: string };
-
-            const allServers: UnifiedServer[] = [
-              ...supremeServers
-                .filter(s => !s.name.toLowerCase().includes("streamtape"))
-                .map((s, i) => ({
-                  kind: 'direct' as const,
-                  id: `sup-${i}`,
-                  name: s.name,
-                  url: s.url,
-                  badge: 'إضافي',
-                })),
-              ...TV_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
-            ];
-
-            const activeEntry = allServers.find(s =>
-              s.kind === 'tmdb' ? s.server.id === activeServerId : s.id === activeServerId
-            ) || allServers[0];
-
-            // Auto-select first server if current one is default and supreme servers are available
-            if (activeServerId === TV_SERVERS[0].id && supremeServers.length > 0) {
-              const firstSid = allServers[0].kind === 'tmdb' ? allServers[0].server.id : allServers[0].id;
-              if (firstSid !== activeServerId) {
-                setActiveServerId(firstSid);
-              }
-            }
-
-            // Compute the iframe URL
-            let iframeUrl = '';
-            if (activeEntry.kind === 'tmdb' && show) {
-              // getVideoUrl(server, id, type, season, episode, imdbId, options)
-              // Note: TV_SERVERS are imported from lib/tmdb
-              iframeUrl = getVideoUrl(activeEntry.server, show.id, 'tv', selectedSeason, selectedEpisode, imdbId || undefined, { autoplay: true });
-            } else if (activeEntry.kind === 'direct') {
-              iframeUrl = activeEntry.url;
-            }
-
-            const switchServer = (newId: string) => {
-              setActiveServerId(newId);
-              setUnifiedIframeKey(k => k + 1);
-              // Trigger recruitment ad modal on server switch
-              window.dispatchEvent(new CustomEvent('trigger-ad-popup'));
-            };
-
-            const toggleFullscreen = async () => {
-              if (!unifiedContainerRef.current) return;
-              try {
-                if (!document.fullscreenElement) {
-                  await unifiedContainerRef.current.requestFullscreen();
-                } else {
-                  await document.exitFullscreen();
-                }
-              } catch (err) { console.error(err); }
-            };
-
-            const getServerId = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.id : s.id;
-            const getServerName = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.name : s.name;
-            const getBadge = (s: UnifiedServer): string | undefined => s.kind === 'direct' ? s.badge : undefined;
-
-            return (
-              <>
-                {/* Unified Server Selection */}
-                <div className="flex flex-wrap items-center gap-2 mb-4 justify-center">
-                  {allServers.map((s) => {
-                    const sid = getServerId(s);
-                    const sname = getServerName(s);
-                    const badge = getBadge(s);
-                    const isActive = sid === activeServerId;
-                    return (
-                      <button
-                        key={sid}
-                        onClick={() => switchServer(sid)}
-                        className={cn(
-                          "h-9 px-4 rounded-lg transition-all backdrop-blur-md shadow-sm border flex items-center gap-2 relative",
-                          isActive
-                            ? "bg-primary text-primary-foreground border-primary shadow-md"
-                            : "bg-secondary/50 text-muted-foreground hover:text-foreground border-border hover:bg-secondary"
-                        )}
-                      >
-                        <Server className="w-4 h-4" />
-                        <span className="text-xs font-bold uppercase tracking-wide">{sname}</span>
-                        {badge && (
-                          <span className={cn(
-                            "text-[8px] font-black px-1.5 py-0.5 rounded-full uppercase tracking-wider",
-                            isActive ? "bg-white/20 text-white" : "bg-primary/10 text-primary"
-                          )}>
-                            {badge}
-                          </span>
-                        )}
-                      </button>
-                    );
-                  })}
-                </div>
-
-                {/* Unified Video Player */}
-                <div className="max-w-4xl mx-auto relative group/player">
-                  <div
-                    ref={unifiedContainerRef}
-                    className={cn(
-                      "relative aspect-video rounded-xl shadow-2xl border border-border/50 overflow-hidden bg-black transition-all duration-300",
-                      unifiedFullscreen && "rounded-none border-0"
-                    )}
-                  >
-                    <iframe
-                      key={unifiedIframeKey}
-                      src={iframeUrl}
-                      className="w-full h-full border-0"
-                      allow="autoplay; encrypted-media; fullscreen; picture-in-picture; clipboard-write; web-share; accelerometer; gyroscope; focus-without-user-activation"
-                      referrerPolicy="origin"
-                      allowFullScreen
-                      scrolling="no"
-                      title={`${show.name} - ${getServerName(activeEntry)}`}
-                    />
-
-
-                    {/* Fullscreen Button */}
-                    <div className="absolute bottom-4 right-4 z-[9999] opacity-100 lg:opacity-0 lg:group-hover/player:opacity-100 transition-opacity pointer-events-none">
-                      <button
-                        onClick={(e) => { e.stopPropagation(); toggleFullscreen(); }}
-                        className="h-10 w-10 bg-black/40 hover:bg-black/60 text-white border border-white/10 backdrop-blur-md shadow-2xl rounded-full pointer-events-auto flex items-center justify-center"
-                      >
-                        {unifiedFullscreen ? <Minimize2 className="w-5 h-5" /> : <Maximize2 className="w-5 h-5" />}
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </>
-            );
-          })()}
-        </div>
-
-        {/* Episodes Grid */}
-        <div className="mb-8">
-          <h2 className="text-xl font-bold mb-4">{t("episodesInSeason").replace("{season}", String(selectedSeason))}</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
-            {episodes.map((episode) => (
-              <button
-                key={episode.id}
-                onClick={() => setSelectedEpisode(episode.episode_number)}
-                className={cn(
-                  "episode-card p-3 text-right",
-                  selectedEpisode === episode.episode_number && "border-primary bg-primary/10"
-                )}
-              >
-                <div className="aspect-video bg-muted rounded-md overflow-hidden mb-2">
-                  {episode.still_path ? (
-                    <img
-                      src={getImageUrl(episode.still_path, "w500")}
-                      alt={episode.name}
-                      className="w-full h-full object-cover"
-                    />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center">
-                      <Play className="w-8 h-8 text-muted-foreground" />
-                    </div>
-                  )}
-                </div>
-                <p className="font-medium text-sm line-clamp-1">{t("episodeLabel")} {episode.episode_number}</p>
-                <p className="text-xs text-muted-foreground line-clamp-1">{episode.name}</p>
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Cast Section */}
-        {cast.length > 0 && (
-          <div className="mb-8">
-            <h2 className="text-xl font-bold mb-4">{t("castMembers")}</h2>
-            <div className="flex gap-4 overflow-x-auto pb-4 hide-scrollbar">
-              {cast.map((actor) => (
-                <Link
-                  key={actor.id}
-                  to={`/actor/${actor.id}`}
-                  className="actor-card flex-shrink-0 w-28"
-                >
-                  <img
-                    src={getImageUrl(actor.profile_path, "w500")}
-                    alt={actor.name}
-                    className="w-20 h-20 rounded-full object-cover mx-auto"
-                  />
-                  <p className="text-sm font-medium text-center mt-2 line-clamp-1">{actor.name}</p>
-                  <p className="text-xs text-muted-foreground text-center line-clamp-1">{actor.character}</p>
-                </Link>
-              ))}
             </div>
-          </div>
-        )}
+          )}
 
-        {/* Similar Shows */}
-        {similar.length > 0 && (
-          <div className="mt-12">
-            <GenreFilters type="tv" />
-            <ContentRow title={t("similarTV")} items={similar} type="tv" />
+          {/* Similar Shows */}
+          {similar.length > 0 && (
+            <div className="border-t border-border/30 pt-16">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-1 h-7 bg-primary rounded-full" />
+                <h2 className="text-2xl font-bold">{t("similarTV") || "مسلسلات مشابهة"}</h2>
+              </div>
+              
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
+                {similar.slice(0, 12).map(sm => (
+                  <MovieCard key={sm.id} item={sm} type="tv" />
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+        
+        {/* Footer */}
+        <div className="pt-12 pb-8 border-t border-border/30 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-muted-foreground">
+          <div className="font-medium">© 2026 Tomito. All rights reserved.</div>
+          <div className="flex gap-8">
+            <Link to="/" className="hover:text-foreground transition-colors font-medium">{t("home")}</Link>
+            <Link to="/category/tv/all" className="hover:text-foreground transition-colors font-medium">{t("tvShows")}</Link>
           </div>
-        )}
+        </div>
       </div>
-
-      <Footer />
-      <BackButton />
     </div>
   );
 }

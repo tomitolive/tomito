@@ -1,0 +1,952 @@
+{
+  "adult": false,
+  "backdrop_path": "/oN4TQ1TxchynXlFiXFBL3NHLT54.jpg",
+  "belongs_to_collection": null,
+  "budget": 60900000,
+  "genres": [
+    {
+      "id": 16,
+      "name": "رسوم متحركة"
+    },
+    {
+      "id": 10751,
+      "name": "عائلي"
+    },
+    {
+      "id": 18,
+      "name": "دراما"
+    }
+  ],
+  "homepage": "",
+  "id": 1167307,
+  "imdb_id": "tt15678738",
+  "origin_country": [
+    "ZA",
+    "GB",
+    "US"
+  ],
+  "original_language": "en",
+  "original_title": "David",
+  "overview": "",
+  "popularity": 125.3076,
+  "poster_path": "/bESlrLOrsQ9gKzaGQGHXKOyIUtX.jpg",
+  "production_companies": [
+    {
+      "id": 30216,
+      "logo_path": "/AwgLu0qw2UifWdDYExBNlZXWwx.png",
+      "name": "Sunrise Productions",
+      "origin_country": "ZA"
+    },
+    {
+      "id": 206626,
+      "logo_path": null,
+      "name": "Slingshot USA",
+      "origin_country": ""
+    },
+    {
+      "id": 165435,
+      "logo_path": "/pDh2WDdOajWST9jlkFo6TOvETnB.png",
+      "name": "Angel Studios",
+      "origin_country": "US"
+    },
+    {
+      "id": 223271,
+      "logo_path": "/2Rc6Dvg3tpIfDzgQE6ycWxNj0kT.png",
+      "name": "2521 Entertainment",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    },
+    {
+      "iso_3166_1": "ZA",
+      "name": "South Africa"
+    }
+  ],
+  "release_date": "2025-12-14",
+  "revenue": 83092325,
+  "runtime": 109,
+  "spoken_languages": [
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Released",
+  "tagline": "",
+  "title": "David",
+  "video": false,
+  "vote_average": 8,
+  "vote_count": 64,
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2507851,
+        "known_for_department": "Acting",
+        "name": "Brandon Engman",
+        "original_name": "Brandon Engman",
+        "popularity": 3.2391,
+        "profile_path": "/9PhXVdDPb5NTEvD5dbFfTJnssQw.jpg",
+        "cast_id": 7,
+        "character": "Young David (voice)",
+        "credit_id": "659cfd1d55c1f400ee4f7332",
+        "order": 0
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1822256,
+        "known_for_department": "Acting",
+        "name": "Brian Stivale",
+        "original_name": "Brian Stivale",
+        "popularity": 0.1711,
+        "profile_path": "/ggNQronrHaUZnFZeolK0SGfW38V.jpg",
+        "cast_id": 16,
+        "character": "Samuel (voice)",
+        "credit_id": "68ee17fe4696ca4a02282921",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2805492,
+        "known_for_department": "Acting",
+        "name": "Shahar Taboch",
+        "original_name": "Shahar Taboch",
+        "popularity": 0.2178,
+        "profile_path": "/hpuiheYJrOU4HYczWgCJNeBPWlZ.jpg",
+        "cast_id": 17,
+        "character": "Ozem (voice)",
+        "credit_id": "68ee18166319a4d76cf121a8",
+        "order": 2
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1677363,
+        "known_for_department": "Acting",
+        "name": "Aaron Tavaler",
+        "original_name": "Aaron Tavaler",
+        "popularity": 0.0803,
+        "profile_path": null,
+        "cast_id": 22,
+        "character": "Nethanel (voice)",
+        "credit_id": "69811999abf39b2e2281beb8",
+        "order": 3
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 5981973,
+        "known_for_department": "Acting",
+        "name": "Hector",
+        "original_name": "Hector",
+        "popularity": 0.0168,
+        "profile_path": null,
+        "cast_id": 23,
+        "character": "Jesse (voice)",
+        "credit_id": "698119fc3c8349e841e061e1",
+        "order": 4
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1259893,
+        "known_for_department": "Acting",
+        "name": "Miri Mesika",
+        "original_name": "Miri Mesika",
+        "popularity": 0.369,
+        "profile_path": "/v9tqyqIfG6V9Ezix0Bienpco9B5.jpg",
+        "cast_id": 18,
+        "character": "Nitzevet (voice)",
+        "credit_id": "68ee182634cc5c70dd785526",
+        "order": 5
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4271307,
+        "known_for_department": "Acting",
+        "name": "Jack Wagman",
+        "original_name": "Jack Wagman",
+        "popularity": 0.0835,
+        "profile_path": null,
+        "cast_id": 24,
+        "character": "Abinadab (voice)",
+        "credit_id": "69811a38a199978754e9180c",
+        "order": 6
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 5981987,
+        "known_for_department": "Acting",
+        "name": "Jonathan Shaboo",
+        "original_name": "Jonathan Shaboo",
+        "popularity": 0.0168,
+        "profile_path": null,
+        "cast_id": 25,
+        "character": "Eliab (voice)",
+        "credit_id": "69811b12ef2df91598313fc1",
+        "order": 7
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 5705674,
+        "known_for_department": "Acting",
+        "name": "Sloan Lucas Muldown",
+        "original_name": "Sloan Lucas Muldown",
+        "popularity": 0.157,
+        "profile_path": "/4eQoD8TdgDB1UbCRwiyLw2nyYYg.jpg",
+        "cast_id": 13,
+        "character": "Young Zeruiah (voice)",
+        "credit_id": "68ee17c49c850800172829a2",
+        "order": 8
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 3732705,
+        "known_for_department": "Acting",
+        "name": "Mike Ciporkin",
+        "original_name": "Mike Ciporkin",
+        "popularity": 0.0214,
+        "profile_path": null,
+        "cast_id": 19,
+        "character": "Scout (voice)",
+        "credit_id": "68ee1848458355352b0d8253",
+        "order": 9
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 4770237,
+        "known_for_department": "Acting",
+        "name": "Katie Bernstein",
+        "original_name": "Katie Bernstein",
+        "popularity": 0.1232,
+        "profile_path": null,
+        "cast_id": 27,
+        "character": "Ahinoam (voice)",
+        "credit_id": "69811ca7261e749eca6ccdf1",
+        "order": 10
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 2384065,
+        "known_for_department": "Acting",
+        "name": "Lauren Daigle",
+        "original_name": "Lauren Daigle",
+        "popularity": 0.2289,
+        "profile_path": "/56btNdIze3EGyV9tKOF0I13I1Yo.jpg",
+        "cast_id": 15,
+        "character": "Rebecca (voice)",
+        "credit_id": "68ee17ee51e604d7772829a2",
+        "order": 11
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4364574,
+        "known_for_department": "Acting",
+        "name": "Mark Jacobson",
+        "original_name": "Mark Jacobson",
+        "popularity": 0.0784,
+        "profile_path": null,
+        "cast_id": 28,
+        "character": "Jonathan (voice)",
+        "credit_id": "69811d2893ad53870e313fbd",
+        "order": 12
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4249465,
+        "known_for_department": "Acting",
+        "name": "Nitzan Sitzer",
+        "original_name": "Nitzan Sitzer",
+        "popularity": 0.0214,
+        "profile_path": null,
+        "cast_id": 29,
+        "character": "Short Scribe",
+        "credit_id": "69811d5dad110a105d382c8e",
+        "order": 13
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 104477,
+        "known_for_department": "Acting",
+        "name": "Adam Meir",
+        "original_name": "Adam Meir",
+        "popularity": 0.0858,
+        "profile_path": "/jfZLKCKC341VNcp9GvKhrw7qOat.jpg",
+        "cast_id": 30,
+        "character": "Tall Scribe",
+        "credit_id": "69811d80a5a32d3df381be38",
+        "order": 14
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2967145,
+        "known_for_department": "Acting",
+        "name": "Adam Gold",
+        "original_name": "Adam Gold",
+        "popularity": 0.0672,
+        "profile_path": null,
+        "cast_id": 32,
+        "character": "Saul (voice)",
+        "credit_id": "69811e3d3523cee5654c9338",
+        "order": 15
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1502438,
+        "known_for_department": "Acting",
+        "name": "Asim Chaudhry",
+        "original_name": "Asim Chaudhry",
+        "popularity": 0.8131,
+        "profile_path": "/1F0DwOpxUAEpw5iovMHZ5Y1C8n6.jpg",
+        "cast_id": 8,
+        "character": "King Achish (voice)",
+        "credit_id": "68ee172b07406d29705eed06",
+        "order": 16
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3336156,
+        "known_for_department": "Acting",
+        "name": "Kamran Nikhad",
+        "original_name": "Kamran Nikhad",
+        "popularity": 0.0491,
+        "profile_path": null,
+        "cast_id": 26,
+        "character": "Goliath (voice)",
+        "credit_id": "69811bbfabc84e52e481be0a",
+        "order": 17
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3328683,
+        "known_for_department": "Acting",
+        "name": "Phil Wickham",
+        "original_name": "Phil Wickham",
+        "popularity": 0.2205,
+        "profile_path": "/6IHWUHlkejPlTIvTec5Y7kcbnbK.jpg",
+        "cast_id": 11,
+        "character": "Adult David (voice)",
+        "credit_id": "68ee178cff818a3bbf2829ae",
+        "order": 18
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 3192875,
+        "known_for_department": "Production",
+        "name": "David Rosenberg",
+        "original_name": "David Rosenberg",
+        "popularity": 0.0071,
+        "profile_path": null,
+        "cast_id": 33,
+        "character": "Doeg (voice)",
+        "credit_id": "69811ed64a40174b2881be5e",
+        "order": 19
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 86655,
+        "known_for_department": "Acting",
+        "name": "Ashley Boettcher",
+        "original_name": "Ashley Boettcher",
+        "popularity": 0.5703,
+        "profile_path": "/h4bdCoXgQH4s6KR1ejNuOFEyr4h.jpg",
+        "cast_id": 12,
+        "character": "Teen Zeruiah (voice)",
+        "credit_id": "68ee17b10af7ab01f9282a20",
+        "order": 20
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 971877,
+        "known_for_department": "Acting",
+        "name": "Mick Wingert",
+        "original_name": "Mick Wingert",
+        "popularity": 0.7364,
+        "profile_path": "/2Apga68BihekhCSPHNk5pXqC5Gq.jpg",
+        "cast_id": 9,
+        "character": "Zaydel (voice)",
+        "credit_id": "68ee175f422811bc9c7854d9",
+        "order": 21
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1657897,
+        "known_for_department": "Acting",
+        "name": "Mark Whitten",
+        "original_name": "Mark Whitten",
+        "popularity": 0.4675,
+        "profile_path": "/zcD76XCZ6zQ41C9j1lsttLbxbLE.jpg",
+        "cast_id": 10,
+        "character": "Abishal (voice)",
+        "credit_id": "68ee177b422811bc9c7854dd",
+        "order": 22
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4525197,
+        "known_for_department": "Acting",
+        "name": "Doron Rechlis",
+        "original_name": "Doron Rechlis",
+        "popularity": 0.07,
+        "profile_path": null,
+        "cast_id": 34,
+        "character": "Elhanan (voice)",
+        "credit_id": "69811f03f042705958e0611c",
+        "order": 23
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 4077894,
+        "known_for_department": "Acting",
+        "name": "Will De Renzy-Martin",
+        "original_name": "Will De Renzy-Martin",
+        "popularity": 0.2701,
+        "profile_path": "/74AfkMoDTvZZ2TX8FX7mjNjlhFA.jpg",
+        "cast_id": 14,
+        "character": "Viazatha (voice)",
+        "credit_id": "68ee17dbfe6d394d16a21add",
+        "order": 24
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2838796,
+        "known_for_department": "Production",
+        "name": "Phil Cunningham",
+        "original_name": "Phil Cunningham",
+        "popularity": 0.1209,
+        "profile_path": null,
+        "credit_id": "64e1b3b34a52f800c7a35297",
+        "department": "Directing",
+        "job": "Director"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2838796,
+        "known_for_department": "Production",
+        "name": "Phil Cunningham",
+        "original_name": "Phil Cunningham",
+        "popularity": 0.1209,
+        "profile_path": null,
+        "credit_id": "64e1b3f7a3b5e601da49166a",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2508883,
+        "known_for_department": "Directing",
+        "name": "Brent Dawes",
+        "original_name": "Brent Dawes",
+        "popularity": 0.2867,
+        "profile_path": null,
+        "credit_id": "64e1b3beaaec7103f9986075",
+        "department": "Directing",
+        "job": "Director"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 79065,
+        "known_for_department": "Acting",
+        "name": "Tim Tebow",
+        "original_name": "Tim Tebow",
+        "popularity": 0.287,
+        "profile_path": "/dVtk9rgfmPmSa7jKQybbde3mmVT.jpg",
+        "credit_id": "64e1b4085ab81a00ad2172ae",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2838798,
+        "known_for_department": "Production",
+        "name": "Jacqui Cunningham",
+        "original_name": "Jacqui Cunningham",
+        "popularity": 0.0256,
+        "profile_path": null,
+        "credit_id": "64e1b3e95ab81a011c2f745a",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1098740,
+        "known_for_department": "Sound",
+        "name": "Joseph Trapanese",
+        "original_name": "Joseph Trapanese",
+        "popularity": 2.8781,
+        "profile_path": "/3jh3094X5Usrsvd0QGMLP7EqwfI.jpg",
+        "credit_id": "68fc1b25f57d1caf913bf198",
+        "department": "Sound",
+        "job": "Original Music Composer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 5889556,
+        "known_for_department": "Editing",
+        "name": "Tom Scott",
+        "original_name": "Tom Scott",
+        "popularity": 0.0214,
+        "profile_path": null,
+        "credit_id": "694706aaee183a60c88cde7b",
+        "department": "Editing",
+        "job": "Editor"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2508883,
+        "known_for_department": "Directing",
+        "name": "Brent Dawes",
+        "original_name": "Brent Dawes",
+        "popularity": 0.2867,
+        "profile_path": null,
+        "credit_id": "6983ae310012c6ccec912945",
+        "department": "Writing",
+        "job": "Screenplay"
+      }
+    ]
+  },
+  "similar": {
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/nenJjvfe2Eq8uBMXFJnWj5mw4bi.jpg",
+        "genre_ids": [
+          16,
+          10751,
+          12,
+          14,
+          10749
+        ],
+        "id": 812,
+        "original_language": "en",
+        "original_title": "Aladdin",
+        "overview": "علاء الدين هو طفل شوارع يعيش في مدينة كبيرة مزدحمة مع صديقه المخلص القرد (آبو)، ليصادف في المدينة الأميرة ياسمين، ويحبها، فيذهب إلى السجن و يتورط في مؤامرة لحكم الأرض من تخطيط مستشار السلطان (جعفر) بمساعدة مصباح غامض.",
+        "popularity": 10.5113,
+        "poster_path": "/9rAXLFabztJgAErmRNE3wrcmKph.jpg",
+        "release_date": "1992-11-25",
+        "title": "علاء الدين",
+        "video": false,
+        "vote_average": 7.655,
+        "vote_count": 11815
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/vvcLSgiviCIU0J0UcwLqWdU8Iup.jpg",
+        "genre_ids": [
+          18,
+          10749,
+          10402
+        ],
+        "id": 824,
+        "original_language": "en",
+        "original_title": "Moulin Rouge!",
+        "overview": "يتم الاحتفال بالحب والإلهام الإبداعي في الملهى الليلي الباريسي سيء السمعة والمبهج والساحر ، على أعتاب القرن العشرين. شاعر شاب ، منغمس في عالم مولان روج المسكر ، يبدأ علاقة عاطفية مع نجم النادي الأكثر شهرة وجمالًا.",
+        "popularity": 4.9163,
+        "poster_path": "/2kjM5CUZRIU5yOANUowrbJcRL9L.jpg",
+        "release_date": "2001-05-18",
+        "title": "Moulin Rouge!",
+        "video": false,
+        "vote_average": 7.537,
+        "vote_count": 4762
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/mAiwpsDhLv8PdcBhMbkRbz3RS8l.jpg",
+        "genre_ids": [
+          16,
+          10751
+        ],
+        "id": 271928,
+        "original_language": "en",
+        "original_title": "VeggieTales: Sweetpea Beauty",
+        "overview": "",
+        "popularity": 2.5638,
+        "poster_path": "/wubOQpmleZsqRA1Tz0cia0RqTTz.jpg",
+        "release_date": "2010-08-03",
+        "title": "VeggieTales: Sweetpea Beauty",
+        "video": false,
+        "vote_average": 5.8,
+        "vote_count": 4
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          18,
+          10749
+        ],
+        "id": 271932,
+        "original_language": "en",
+        "original_title": "Wrestling",
+        "overview": "",
+        "popularity": 1.6062,
+        "poster_path": null,
+        "release_date": "2008-06-03",
+        "title": "Wrestling",
+        "video": false,
+        "vote_average": 2.5,
+        "vote_count": 2
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/oO55Z71apssUy4Cf0obsK2kX3oK.jpg",
+        "genre_ids": [
+          35,
+          10749,
+          18
+        ],
+        "id": 2976,
+        "original_language": "en",
+        "original_title": "Hairspray",
+        "overview": "",
+        "popularity": 3.1221,
+        "poster_path": "/fgMka3HtFvI5OgW1eYdR9XpySxH.jpg",
+        "release_date": "2007-07-19",
+        "title": "Hairspray",
+        "video": false,
+        "vote_average": 6.661,
+        "vote_count": 2584
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/5a5lJCew2hGBcd6abdMkomr9mos.jpg",
+        "genre_ids": [
+          35,
+          18,
+          10749
+        ],
+        "id": 3062,
+        "original_language": "en",
+        "original_title": "42nd Street",
+        "overview": "",
+        "popularity": 4.0007,
+        "poster_path": "/q4UEd8BL74zVsOOaJkKVMLMmdTg.jpg",
+        "release_date": "1933-03-11",
+        "title": "42nd Street",
+        "video": false,
+        "vote_average": 6.917,
+        "vote_count": 210
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/2apaxz6r8Sbgfuygxc98IH6V07U.jpg",
+        "genre_ids": [
+          80,
+          18,
+          35
+        ],
+        "id": 465322,
+        "original_language": "en",
+        "original_title": "Monday",
+        "overview": "",
+        "popularity": 1.2983,
+        "poster_path": "/uTvcUq9OSKYBsVOnIoYPO3s98EH.jpg",
+        "release_date": "2017-05-01",
+        "title": "Monday",
+        "video": false,
+        "vote_average": 10,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/lhxe4ZWLNLXuOTGBI9c8QDGSPFX.jpg",
+        "genre_ids": [
+          18,
+          10749
+        ],
+        "id": 464979,
+        "original_language": "ml",
+        "original_title": "ഹേയ് ജൂഡ്",
+        "overview": "",
+        "popularity": 0.1263,
+        "poster_path": "/rY0GOtDWGMi67722ThyvD9PJP67.jpg",
+        "release_date": "2018-02-02",
+        "title": "ഹേയ് ജൂഡ്",
+        "video": false,
+        "vote_average": 6.1,
+        "vote_count": 25
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/q1PuySDtRiKSgxAZjpIbFvvLOus.jpg",
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 2759,
+        "original_language": "en",
+        "original_title": "The Adventures of Priscilla, Queen of the Desert",
+        "overview": "",
+        "popularity": 1.9422,
+        "poster_path": "/kJ7syYXEJgSBmBfSnF3Can9cK1J.jpg",
+        "release_date": "1994-05-31",
+        "title": "The Adventures of Priscilla, Queen of the Desert",
+        "video": false,
+        "vote_average": 7.267,
+        "vote_count": 887
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/cEXolzCLhHQqKXKjDynH2svj0E4.jpg",
+        "genre_ids": [
+          18,
+          36
+        ],
+        "id": 2844,
+        "original_language": "en",
+        "original_title": "Riot at the Rite",
+        "overview": "",
+        "popularity": 0.1534,
+        "poster_path": "/4ZTTp7K1KAbVWKv8IlYFVSvYqa.jpg",
+        "release_date": "2005-10-18",
+        "title": "Riot at the Rite",
+        "video": false,
+        "vote_average": 9,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/85JRPLaapqqRFrtsfn9N6sdJ11o.jpg",
+        "genre_ids": [
+          35,
+          18,
+          10770
+        ],
+        "id": 270352,
+        "original_language": "en",
+        "original_title": "Company",
+        "overview": "",
+        "popularity": 1.6056,
+        "poster_path": "/7npe3hhv029SclMYxLZAh6bskhO.jpg",
+        "release_date": "1996-12-10",
+        "title": "Company",
+        "video": false,
+        "vote_average": 6.4,
+        "vote_count": 4
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/oPSDUtgVjFiWOve4e2dDZUpa50n.jpg",
+        "genre_ids": [
+          18,
+          10752,
+          10749
+        ],
+        "id": 265,
+        "original_language": "de",
+        "original_title": "Lili Marleen",
+        "overview": "",
+        "popularity": 5.5993,
+        "poster_path": "/xwYgW9G7SdJQmzvAAmrQw48WQtb.jpg",
+        "release_date": "1981-01-14",
+        "title": "Lili Marleen",
+        "video": false,
+        "vote_average": 6.431,
+        "vote_count": 87
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/aAL7kV0l3yZtbCFs7J8m4gXldqR.jpg",
+        "genre_ids": [
+          10751,
+          14,
+          35
+        ],
+        "id": 252,
+        "original_language": "en",
+        "original_title": "Willy Wonka & the Chocolate Factory",
+        "overview": "",
+        "popularity": 5.0253,
+        "poster_path": "/vmpsZkrs4Uvkp9r1atL8B3frA63.jpg",
+        "release_date": "1971-06-29",
+        "title": "Willy Wonka & the Chocolate Factory",
+        "video": false,
+        "vote_average": 7.483,
+        "vote_count": 3858
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/cSjccCESfkHq2AltVkY3WRYXqdg.jpg",
+        "genre_ids": [
+          53,
+          18,
+          10749
+        ],
+        "id": 850028,
+        "original_language": "en",
+        "original_title": "Alice, Darling",
+        "overview": "تذهب أليس لحضور حفل عيد ميلاد صديقتها، ولكن بمرور الوقت تصبح تحت ضغط شديد وخوف من حبيبها الذي تعاني من علاقتها به، ويبدأ الجميع في ملاحظة الأمر.",
+        "popularity": 6.7858,
+        "poster_path": "/3QpO7dxLXBdPgWpNLKvRNojz7bv.jpg",
+        "release_date": "2022-12-30",
+        "title": "أليس دارلينغ",
+        "video": false,
+        "vote_average": 5.6,
+        "vote_count": 282
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/pfG8KFgovnqRnK2n2mhYwKXhGBG.jpg",
+        "genre_ids": [
+          18,
+          10402,
+          10749
+        ],
+        "id": 43781,
+        "original_language": "en",
+        "original_title": "Orchestra Wives",
+        "overview": "",
+        "popularity": 2.0024,
+        "poster_path": "/bpsFY09nAQvyFF1HIOaCkfaNX4r.jpg",
+        "release_date": "1942-09-04",
+        "title": "Orchestra Wives",
+        "video": false,
+        "vote_average": 6.3,
+        "vote_count": 12
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/9sb3ZuRM7QM5ubaEk0cCJfv4JvN.jpg",
+        "genre_ids": [
+          10749,
+          18,
+          10402
+        ],
+        "id": 43350,
+        "original_language": "en",
+        "original_title": "Lili",
+        "overview": "",
+        "popularity": 0.9959,
+        "poster_path": "/1EhDKTAN2oL1L96pGOeaupm5XUt.jpg",
+        "release_date": "1953-03-10",
+        "title": "Lili",
+        "video": false,
+        "vote_average": 6.7,
+        "vote_count": 60
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/dLzwQw2MZghH1B1ztx19Op9Z0v4.jpg",
+        "genre_ids": [
+          35,
+          18,
+          10402
+        ],
+        "id": 43375,
+        "original_language": "en",
+        "original_title": "I'll See You in My Dreams",
+        "overview": "",
+        "popularity": 0.3152,
+        "poster_path": "/l7qBmXPwXUZRa17RI2M3MLbTnTV.jpg",
+        "release_date": "1951-12-06",
+        "title": "I'll See You in My Dreams",
+        "video": false,
+        "vote_average": 4.7,
+        "vote_count": 13
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/mNW9aLlqI9WvJMrvCbaNdpgxdkV.jpg",
+        "genre_ids": [
+          10749,
+          18,
+          10402
+        ],
+        "id": 43340,
+        "original_language": "en",
+        "original_title": "Young at Heart",
+        "overview": "",
+        "popularity": 0.967,
+        "poster_path": "/t4n74mKJAfx1ln1CTGSa9vxS1z6.jpg",
+        "release_date": "1954-12-01",
+        "title": "Young at Heart",
+        "video": false,
+        "vote_average": 6,
+        "vote_count": 43
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/isnJGDrfR9dIrHMsPTvHtJaGEpc.jpg",
+        "genre_ids": [
+          10402,
+          18
+        ],
+        "id": 504608,
+        "original_language": "en",
+        "original_title": "Rocketman",
+        "overview": "قصة حياة إلتون جون ، من السنوات التي قضاها معجزة في الأكاديمية الملكية للموسيقى من خلال شراكته الموسيقية المؤثرة والدائمة مع بيرني توبين.",
+        "popularity": 3.0902,
+        "poster_path": "/f4FF18ia7yTvHf2izNrHqBmgH8U.jpg",
+        "release_date": "2019-05-17",
+        "title": "Rocketman",
+        "video": false,
+        "vote_average": 7.306,
+        "vote_count": 4900
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/ob4OhJILoUD1Iwi8Vaz26HIUQeU.jpg",
+        "genre_ids": [
+          12,
+          16,
+          10751,
+          14
+        ],
+        "id": 898230,
+        "original_language": "ru",
+        "original_title": "Снежная Королева: Разморозка",
+        "overview": "",
+        "popularity": 0.7251,
+        "poster_path": "/wMDTF0rTc2MsXTWPqGxaobcPXdC.jpg",
+        "release_date": "2022-12-22",
+        "title": "Снежная Королева: Разморозка",
+        "video": false,
+        "vote_average": 5.5,
+        "vote_count": 4
+      }
+    ],
+    "total_pages": 18369,
+    "total_results": 367379
+  },
+  "videos": {
+    "results": []
+  }
+}

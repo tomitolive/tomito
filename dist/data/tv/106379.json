@@ -1,0 +1,1235 @@
+{
+  "adult": false,
+  "backdrop_path": "/cIgHBLTMbcIkS0yvIrUUVVKLdOz.jpg",
+  "created_by": [
+    {
+      "id": 1807680,
+      "credit_id": "636d3c8d8138310080844843",
+      "name": "Graham Wagner",
+      "original_name": "Graham Wagner",
+      "gender": 2,
+      "profile_path": "/5mQ8bOEe8z0rhNgATRgjS9NtjLI.jpg"
+    },
+    {
+      "id": 1612453,
+      "credit_id": "636d3c80f14dad007b260c70",
+      "name": "Geneva Robertson-Dworet",
+      "original_name": "Geneva Robertson-Dworet",
+      "gender": 1,
+      "profile_path": "/rtSFutIrgA1pmW1CO0NPzIsRFsP.jpg"
+    }
+  ],
+  "episode_run_time": [],
+  "first_air_date": "2024-04-10",
+  "genres": [
+    {
+      "id": 10759,
+      "name": "حركة ومغامرة"
+    },
+    {
+      "id": 10765,
+      "name": "خيال علمي وفانتازيا"
+    }
+  ],
+  "homepage": "https://www.amazon.com/dp/B0CN4HV16N",
+  "id": 106379,
+  "in_production": true,
+  "languages": [
+    "en"
+  ],
+  "last_air_date": "2026-02-03",
+  "last_episode_to_air": {
+    "id": 6468145,
+    "name": "ذا ستريب",
+    "overview": "ربما يكون الفوز مبالغاً فيه.",
+    "vote_average": 7.88,
+    "vote_count": 25,
+    "air_date": "2026-02-03",
+    "episode_number": 8,
+    "episode_type": "finale",
+    "production_code": "HNDO 208",
+    "runtime": 57,
+    "season_number": 2,
+    "show_id": 106379,
+    "still_path": "/43IgeZ32BT6fYCMLoQTqrYg0xKd.jpg"
+  },
+  "name": "Fallout",
+  "next_episode_to_air": null,
+  "networks": [
+    {
+      "id": 1024,
+      "logo_path": "/w7HfLNm9CWwRmAMU58udl2L7We7.png",
+      "name": "Prime Video",
+      "origin_country": ""
+    }
+  ],
+  "number_of_episodes": 16,
+  "number_of_seasons": 2,
+  "origin_country": [
+    "US"
+  ],
+  "original_language": "en",
+  "original_name": "Fallout",
+  "overview": "سلسلة Fallout مقتبسة عن واحدة من أعظمِ ألعاب الفيديو على الإطلاق تتناول موضوع ما يقتنيه الفرد أو لا يقتنيه، في عالم لم يتبقّ فيه شيئ. بعد مئتي عام على نهاية العالم، أجبرت قاطنة مسالمة في أحد الملاجئ على العودة إلى السطح، وكم كانت صدمتها كبيرة حين رأت الأرض القاحلة التي في انتظارها.",
+  "popularity": 188.2399,
+  "poster_path": "/ayfqD7hXWhKS1AFVy7Bkp1AnrEJ.jpg",
+  "production_companies": [
+    {
+      "id": 103490,
+      "logo_path": "/xnDEtomiDZ8aLOhokbeSqh8HI99.png",
+      "name": "Kilter Films",
+      "origin_country": "US"
+    },
+    {
+      "id": 137613,
+      "logo_path": "/g1zUaSoWV1yQhUBFPnmbO5tL7oI.png",
+      "name": "Bethesda Game Studios",
+      "origin_country": "US"
+    },
+    {
+      "id": 210099,
+      "logo_path": "/g5oRCNCi8kNVb8gEoSoIcqkhjmR.png",
+      "name": "Amazon MGM Studios",
+      "origin_country": "US"
+    },
+    {
+      "id": 6831,
+      "logo_path": "/fWSI4EjIDEEzCNJC8OTPX9Pdbxv.png",
+      "name": "Big Indie Pictures",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "seasons": [
+    {
+      "air_date": "2024-03-24",
+      "episode_count": 24,
+      "id": 391707,
+      "name": "العروض الخاصة",
+      "overview": "",
+      "poster_path": "/y7TMQf9rsHU4RcPkL5HUxio3Pry.jpg",
+      "season_number": 0,
+      "vote_average": 0
+    },
+    {
+      "air_date": "2024-04-10",
+      "episode_count": 8,
+      "id": 157128,
+      "name": "الموسم 1",
+      "overview": "",
+      "poster_path": "/umhZRQwBbDRWbrvLev4cz4GZBhr.jpg",
+      "season_number": 1,
+      "vote_average": 7.7
+    },
+    {
+      "air_date": "2025-12-16",
+      "episode_count": 8,
+      "id": 455510,
+      "name": "الموسم 2",
+      "overview": "ماذا تقولين يا آنسة ماكلين؟",
+      "poster_path": "/c15BtJxCXMrISLVmysdsnZUPQft.jpg",
+      "season_number": 2,
+      "vote_average": 6.9
+    }
+  ],
+  "spoken_languages": [
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Returning Series",
+  "tagline": "",
+  "type": "Scripted",
+  "vote_average": 8.144,
+  "vote_count": 2501,
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 989325,
+        "known_for_department": "Acting",
+        "name": "إيليا بورنيل",
+        "original_name": "Ella Purnell",
+        "popularity": 13.4449,
+        "profile_path": "/5PscK9HNXGFQMIxkpbR8ObB7vuR.jpg",
+        "character": "Lucy MacLean",
+        "credit_id": "6244b9ef9451e7005e7d3f49",
+        "order": 0
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1386221,
+        "known_for_department": "Acting",
+        "name": "Aaron Moten",
+        "original_name": "Aaron Moten",
+        "popularity": 5.4568,
+        "profile_path": "/h2CJjnDEy2nCbCy6dWzXLmZ4p47.jpg",
+        "character": "Maximus",
+        "credit_id": "62bb56f894631800506f51bc",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 57412,
+        "known_for_department": "Acting",
+        "name": "Moisés Arias",
+        "original_name": "Moisés Arias",
+        "popularity": 2.0131,
+        "profile_path": "/fc7krDmEA4VkIY4KOJjpMXGdsfg.jpg",
+        "character": "Norm MacLean",
+        "credit_id": "65ebdea25bce9e0149465351",
+        "order": 2
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1845809,
+        "known_for_department": "Acting",
+        "name": "Frances Turner",
+        "original_name": "Frances Turner",
+        "popularity": 2.1939,
+        "profile_path": "/ik2MNJFA2CzeuGtdwrpgUJaidef.jpg",
+        "character": "Barb Howard",
+        "credit_id": "66187b9290cf510162a19492",
+        "order": 3
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 6677,
+        "known_for_department": "Acting",
+        "name": "Kyle MacLachlan",
+        "original_name": "Kyle MacLachlan",
+        "popularity": 4.8084,
+        "profile_path": "/7gNyx8fYAUdOp2jpCEH3dyFbeV.jpg",
+        "character": "Overseer Hank MacLean",
+        "credit_id": "661a78e1daf57c01633f4ca1",
+        "order": 4
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 27740,
+        "known_for_department": "Acting",
+        "name": "Walton Goggins",
+        "original_name": "Walton Goggins",
+        "popularity": 6.7988,
+        "profile_path": "/5lcVMJbWrNDFiWa1WxK4oR8zwev.jpg",
+        "character": "The Ghoul / Cooper Howard",
+        "credit_id": "620ff2f9e0ca7f006aca85e4",
+        "order": 5
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 2015561,
+        "known_for_department": "Production",
+        "name": "Skye Wathen",
+        "original_name": "Skye Wathen",
+        "popularity": 0.0875,
+        "profile_path": null,
+        "credit_id": "661aac945ff34e017c599947",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 92499,
+        "known_for_department": "Crew",
+        "name": "Casey O'Neill",
+        "original_name": "Casey O'Neill",
+        "popularity": 0.5172,
+        "profile_path": "/aoT1prEjm2i4BYk2UUwYYhUtwTZ.jpg",
+        "credit_id": "661ab4dedaf57c017c3fd924",
+        "department": "Crew",
+        "job": "Stunt Coordinator"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2762680,
+        "known_for_department": "Camera",
+        "name": "Michael Romano",
+        "original_name": "Michael Romano",
+        "popularity": 0.4137,
+        "profile_path": "/vM9MaEjihIubmDVzcPpwmt5RNSy.jpg",
+        "credit_id": "68c0d0fe3c2b162ba21f5f24",
+        "department": "Camera",
+        "job": "Digital Imaging Technician"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 5883656,
+        "known_for_department": "Writing",
+        "name": "Chris Brady-Denton",
+        "original_name": "Chris Brady-Denton",
+        "popularity": 0.0536,
+        "profile_path": null,
+        "credit_id": "6943161a802672ec5d7f9339",
+        "department": "Writing",
+        "job": "Story Editor"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1747687,
+        "known_for_department": "Visual Effects",
+        "name": "Jay Worth",
+        "original_name": "Jay Worth",
+        "popularity": 0.1499,
+        "profile_path": null,
+        "credit_id": "69437246a63d509f3d36a70d",
+        "department": "Production",
+        "job": "Co-Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1237515,
+        "known_for_department": "Production",
+        "name": "Noreen O'Toole",
+        "original_name": "Noreen O'Toole",
+        "popularity": 0.7637,
+        "profile_path": null,
+        "credit_id": "694372abbc631a740bd5757d",
+        "department": "Production",
+        "job": "Co-Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1416512,
+        "known_for_department": "Production",
+        "name": "Owen Ellickson",
+        "original_name": "Owen Ellickson",
+        "popularity": 0.241,
+        "profile_path": null,
+        "credit_id": "694372d1845d1a5c82e6e739",
+        "department": "Production",
+        "job": "Co-Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1575063,
+        "known_for_department": "Writing",
+        "name": "Dave Hill",
+        "original_name": "Dave Hill",
+        "popularity": 0.4035,
+        "profile_path": null,
+        "credit_id": "6943732e2552dfcd0e705514",
+        "department": "Production",
+        "job": "Co-Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 77213,
+        "known_for_department": "Writing",
+        "name": "جين إسبينسون",
+        "original_name": "Jane Espenson",
+        "popularity": 2.0295,
+        "profile_path": "/lOLMAy3Ur9pSzF59J9Gsx05zJzK.jpg",
+        "credit_id": "69437414be883309dd8bc73f",
+        "department": "Production",
+        "job": "Consulting Producer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1953638,
+        "known_for_department": "Production",
+        "name": "Gretel Twombly",
+        "original_name": "Gretel Twombly",
+        "popularity": 0.2109,
+        "profile_path": null,
+        "credit_id": "6943743e24d1259dc8705535",
+        "department": "Production",
+        "job": "Co-Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1803705,
+        "known_for_department": "Production",
+        "name": "Jason Zorigian",
+        "original_name": "Jason Zorigian",
+        "popularity": 0.1761,
+        "profile_path": null,
+        "credit_id": "69437445494f22ea1cace05b",
+        "department": "Production",
+        "job": "Co-Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 4646490,
+        "known_for_department": "Editing",
+        "name": "Ali Comperchio",
+        "original_name": "Ali Comperchio",
+        "popularity": 0.0311,
+        "profile_path": null,
+        "credit_id": "69437454ba33cf9d1e8bc759",
+        "department": "Production",
+        "job": "Co-Producer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1322466,
+        "known_for_department": "Costume & Make-Up",
+        "name": "Stacy Horn",
+        "original_name": "Stacy Horn",
+        "popularity": 0.4304,
+        "profile_path": null,
+        "credit_id": "6943762aac43c7c2ec36a73f",
+        "department": "Costume & Make-Up",
+        "job": "Costume Supervisor"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 965666,
+        "known_for_department": "Costume & Make-Up",
+        "name": "Dayna Pink",
+        "original_name": "Dayna Pink",
+        "popularity": 0.3811,
+        "profile_path": "/gPUvJgDT4FbpUHnbffzklyymL8a.jpg",
+        "credit_id": "6943835d1a9f56df710fae63",
+        "department": "Costume & Make-Up",
+        "job": "Costume Design"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1123421,
+        "known_for_department": "Production",
+        "name": "Margot Lulick",
+        "original_name": "Margot Lulick",
+        "popularity": 0.311,
+        "profile_path": "/66FnkAZKI1nPNHzQoZqccWjR2jK.jpg",
+        "credit_id": "694383a9a4b32d57f3dec30f",
+        "department": "Production",
+        "job": "Unit Production Manager"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1190244,
+        "known_for_department": "Directing",
+        "name": "K.C. Colwell",
+        "original_name": "K.C. Colwell",
+        "popularity": 0.5501,
+        "profile_path": null,
+        "credit_id": "694383ccc96bb895eed57639",
+        "department": "Directing",
+        "job": "First Assistant Director"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1560964,
+        "known_for_department": "Directing",
+        "name": "Craig Comstock",
+        "original_name": "Craig Comstock",
+        "popularity": 0.2399,
+        "profile_path": null,
+        "credit_id": "694383d1e55445913138bbbf",
+        "department": "Directing",
+        "job": "Second Assistant Director"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1814699,
+        "known_for_department": "Sound",
+        "name": "Trygge Toven",
+        "original_name": "Trygge Toven",
+        "popularity": 0.1758,
+        "profile_path": null,
+        "credit_id": "66175c027d41aa017d003f0e",
+        "department": "Sound",
+        "job": "Music Supervisor"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1484972,
+        "known_for_department": "Sound",
+        "name": "Christopher Kaller",
+        "original_name": "Christopher Kaller",
+        "popularity": 0.1237,
+        "profile_path": null,
+        "credit_id": "66175bee1fd36f017cacd4dd",
+        "department": "Sound",
+        "job": "Music Editor"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 4646508,
+        "known_for_department": "Visual Effects",
+        "name": "Andrea Knoll",
+        "original_name": "Andrea Knoll",
+        "popularity": 0.0519,
+        "profile_path": null,
+        "credit_id": "66175bddf36a32017df930d7",
+        "department": "Visual Effects",
+        "job": "Visual Effects Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 4646503,
+        "known_for_department": "Writing",
+        "name": "Chaz Hawkins",
+        "original_name": "Chaz Hawkins",
+        "popularity": 0.1164,
+        "profile_path": "/g6APLDMNR1LBhrnYeJBnEdOB7vY.jpg",
+        "credit_id": "66175b1ec072a2014992e7cd",
+        "department": "Writing",
+        "job": "Executive Story Editor"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1497967,
+        "known_for_department": "Writing",
+        "name": "ليزا جوي",
+        "original_name": "Lisa Joy",
+        "popularity": 0.576,
+        "profile_path": "/3MfahHunri6zikX0kfK4oKHn6SJ.jpg",
+        "credit_id": "5f19a150abdafc00364d8464",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 527,
+        "known_for_department": "Writing",
+        "name": "جوناثان نولان",
+        "original_name": "Jonathan Nolan",
+        "popularity": 4.9141,
+        "profile_path": "/qd8d381vz2skpreY1BfVuSfLJts.jpg",
+        "credit_id": "5f19a187447f9c003636f66b",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1464120,
+        "known_for_department": "Production",
+        "name": "Athena Wickham",
+        "original_name": "Athena Wickham",
+        "popularity": 0.24,
+        "profile_path": "/nua2g9oaaZktWvySf6RNSkOjOUT.jpg",
+        "credit_id": "5f19a19f447f9c003636f705",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2720519,
+        "known_for_department": "Production",
+        "name": "James Altman",
+        "original_name": "James Altman",
+        "popularity": 0.083,
+        "profile_path": "/871kScLXu7zlWieYCvdSYxGYH9A.jpg",
+        "credit_id": "5f19a1b3c1ffbd0034709965",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 588616,
+        "known_for_department": "Acting",
+        "name": "تود هوارد",
+        "original_name": "Todd Howard",
+        "popularity": 0.285,
+        "profile_path": "/2SjHmcsTVbMkvwFhjnxVwia4F5M.jpg",
+        "credit_id": "5f19a1c0abdafc00374d1a7d",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1612453,
+        "known_for_department": "Writing",
+        "name": "Geneva Robertson-Dworet",
+        "original_name": "Geneva Robertson-Dworet",
+        "popularity": 0.6491,
+        "profile_path": "/rtSFutIrgA1pmW1CO0NPzIsRFsP.jpg",
+        "credit_id": "61d77d81e10f46008e7a879c",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1807680,
+        "known_for_department": "Writing",
+        "name": "Graham Wagner",
+        "original_name": "Graham Wagner",
+        "popularity": 0.6601,
+        "profile_path": "/5mQ8bOEe8z0rhNgATRgjS9NtjLI.jpg",
+        "credit_id": "61d77d942d1e4000425680d5",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 9041,
+        "known_for_department": "Art",
+        "name": "Howard Cummings",
+        "original_name": "Howard Cummings",
+        "popularity": 0.5192,
+        "profile_path": "/wdfpweH5G6FLoADbBEgjEC9zfJC.jpg",
+        "credit_id": "63ef339145765d00792edc95",
+        "department": "Art",
+        "job": "Production Design"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 10851,
+        "known_for_department": "Sound",
+        "name": "Ramin Djawadi",
+        "original_name": "Ramin Djawadi",
+        "popularity": 1.3361,
+        "profile_path": "/6O0Rew78fRUAa80KC2clejmJF26.jpg",
+        "credit_id": "65968b9360c51d7d659787a6",
+        "department": "Sound",
+        "job": "Original Music Composer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1123421,
+        "known_for_department": "Production",
+        "name": "Margot Lulick",
+        "original_name": "Margot Lulick",
+        "popularity": 0.311,
+        "profile_path": "/66FnkAZKI1nPNHzQoZqccWjR2jK.jpg",
+        "credit_id": "66175670c072a2017c9338bd",
+        "department": "Production",
+        "job": "Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 48070,
+        "known_for_department": "Editing",
+        "name": "Stephen Semel",
+        "original_name": "Stephen Semel",
+        "popularity": 0.4371,
+        "profile_path": null,
+        "credit_id": "661756927e12f00163f163a0",
+        "department": "Production",
+        "job": "Co-Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1229794,
+        "known_for_department": "Writing",
+        "name": "Karey Dornetto",
+        "original_name": "Karey Dornetto",
+        "popularity": 0.6017,
+        "profile_path": "/sPrX6dH05p69NQQTuPB79QnkYj7.jpg",
+        "credit_id": "661756aa1fd36f017caccede",
+        "department": "Production",
+        "job": "Co-Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1291827,
+        "known_for_department": "Writing",
+        "name": "Kieran Fitzgerald",
+        "original_name": "Kieran Fitzgerald",
+        "popularity": 0.3165,
+        "profile_path": "/le9TwSnh68l1ztWwhj9oQVOQgo0.jpg",
+        "credit_id": "661756fc0a517c017dff91e1",
+        "department": "Production",
+        "job": "Co-Executive Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 561,
+        "known_for_department": "Production",
+        "name": "John Papsidera",
+        "original_name": "John Papsidera",
+        "popularity": 1.4304,
+        "profile_path": "/egwEVyrAmdWhtuLqE5fcThZf41E.jpg",
+        "credit_id": "6617573ed133240163e3f8a6",
+        "department": "Production",
+        "job": "Casting"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1790518,
+        "known_for_department": "Production",
+        "name": "Kim A. Winther",
+        "original_name": "Kim A. Winther",
+        "popularity": 2.2594,
+        "profile_path": null,
+        "credit_id": "6617574cd133240163e3f8b9",
+        "department": "Production",
+        "job": "Casting"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1747687,
+        "known_for_department": "Visual Effects",
+        "name": "Jay Worth",
+        "original_name": "Jay Worth",
+        "popularity": 0.1499,
+        "profile_path": null,
+        "credit_id": "661757e3f36a320163f9091e",
+        "department": "Visual Effects",
+        "job": "Visual Effects Supervisor"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 2661449,
+        "known_for_department": "Production",
+        "name": "Crystal Whelan",
+        "original_name": "Crystal Whelan",
+        "popularity": 0.2412,
+        "profile_path": null,
+        "credit_id": "661759826b5fc201632833fb",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 2028344,
+        "known_for_department": "Production",
+        "name": "Halle Phillips",
+        "original_name": "Halle Phillips",
+        "popularity": 0.0789,
+        "profile_path": null,
+        "credit_id": "6617598c1fd36f017cacd218",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3405354,
+        "known_for_department": "Acting",
+        "name": "Emil Pagliarulo",
+        "original_name": "Emil Pagliarulo",
+        "popularity": 0.0352,
+        "profile_path": "/h3KHIAu2gpELOi91GKz0UYocxpU.jpg",
+        "credit_id": "661759a97e12f0017cf197c9",
+        "department": "Production",
+        "job": "Co-Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 4646496,
+        "known_for_department": "Production",
+        "name": "Istvan Pely",
+        "original_name": "Istvan Pely",
+        "popularity": 0.0625,
+        "profile_path": "/vJJnj30iFIma5myUogFfQJYsXZd.jpg",
+        "credit_id": "661759bbd133240149e3c8dd",
+        "department": "Production",
+        "job": "Co-Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 9041,
+        "known_for_department": "Art",
+        "name": "Howard Cummings",
+        "original_name": "Howard Cummings",
+        "popularity": 0.5192,
+        "profile_path": "/wdfpweH5G6FLoADbBEgjEC9zfJC.jpg",
+        "credit_id": "66175a640a517c0163ff6a01",
+        "department": "Production",
+        "job": "Co-Producer"
+      }
+    ]
+  },
+  "similar": {
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/yAUMNGNqhDt017HvSg7ZzgjwbpV.jpg",
+        "genre_ids": [
+          18,
+          35,
+          10759
+        ],
+        "id": 1626,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Tequila and Bonetti",
+        "overview": "",
+        "popularity": 1.4026,
+        "poster_path": "/u1ekQHc1RByAA2CyNxz8a7Qslmb.jpg",
+        "first_air_date": "1992-01-17",
+        "name": "Tequila and Bonetti",
+        "vote_average": 6.455,
+        "vote_count": 12
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/qgbJ0AySKABiTXHrxOyOhkXQImz.jpg",
+        "genre_ids": [
+          10759,
+          10765
+        ],
+        "id": 1649,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Sliders",
+        "overview": "",
+        "popularity": 17.2892,
+        "poster_path": "/9cBXIPl83fE2yQusoEt6vMpSjIJ.jpg",
+        "first_air_date": "1995-03-22",
+        "name": "Sliders",
+        "vote_average": 7.6,
+        "vote_count": 461
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/fpOOf60PD9DBLHcI47O1UGadO.jpg",
+        "genre_ids": [
+          10751,
+          10765
+        ],
+        "id": 1733,
+        "origin_country": [
+          "NZ"
+        ],
+        "original_language": "en",
+        "original_name": "Maddigan's Quest",
+        "overview": "",
+        "popularity": 0.6761,
+        "poster_path": "/cPpoHboPZk4qPvT5jjp0yuVq8n.jpg",
+        "first_air_date": "2006-01-26",
+        "name": "Maddigan's Quest",
+        "vote_average": 6.7,
+        "vote_count": 10
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/k94F4HFlijdvo4hg6jglvstXZnG.jpg",
+        "genre_ids": [
+          10759,
+          16,
+          10762,
+          10765,
+          35
+        ],
+        "id": 131713,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "真・女神転生 デビチル",
+        "overview": "",
+        "popularity": 1.8458,
+        "poster_path": "/jKdTxKWCbFtR84ld5HrrLlZbI3p.jpg",
+        "first_air_date": "2000-10-07",
+        "name": "真・女神転生 デビチル",
+        "vote_average": 10,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/fS2AKTDK0VwZo7dq9sG38D9cuu.jpg",
+        "genre_ids": [
+          10765,
+          18,
+          9648
+        ],
+        "id": 62822,
+        "origin_country": [
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "Humans",
+        "overview": "",
+        "popularity": 8.3343,
+        "poster_path": "/iBjjSGgnjAQBSQGO9pYIh7Gp2PO.jpg",
+        "first_air_date": "2015-06-14",
+        "name": "Humans",
+        "vote_average": 7.465,
+        "vote_count": 669
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/A2BqbbSs9E4emekdxdvWzLK6lpx.jpg",
+        "genre_ids": [
+          10765,
+          10759,
+          9648
+        ],
+        "id": 1449,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Mutant X",
+        "overview": "",
+        "popularity": 7.7979,
+        "poster_path": "/yiKg027jdpkSsguVBI9WqliNWez.jpg",
+        "first_air_date": "2001-10-06",
+        "name": "Mutant X",
+        "vote_average": 6.627,
+        "vote_count": 114
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/1uzziwsvfinDpPbRyKrdPhwm51m.jpg",
+        "genre_ids": [
+          10765,
+          18
+        ],
+        "id": 1473,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Earth 2",
+        "overview": "",
+        "popularity": 3.6655,
+        "poster_path": "/xJLHPptrbYimwuk8e7Q54LqVT0y.jpg",
+        "first_air_date": "1994-11-06",
+        "name": "Earth 2",
+        "vote_average": 6.774,
+        "vote_count": 84
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/dgnbZKJbqx6RPRK3C5vCMoNwkJ4.jpg",
+        "genre_ids": [
+          16,
+          35,
+          10759,
+          10762,
+          10765,
+          10751
+        ],
+        "id": 1534,
+        "origin_country": [
+          "GB",
+          "US",
+          "FR",
+          "CA"
+        ],
+        "original_language": "en",
+        "original_name": "Robotboy",
+        "overview": "روبوت بوي هو أحدث ابتكارات العالم الشهير البروفيسور موشيمو. خوفًا من أن يسرق عدوه اللدود الدكتور كاميكازي وتابعه الرئيسي قسطنطين روبوت بوي لاستخدامه في السيطرة على العالم، عهد البروفيسور موشيمو بروبوت بوي إلى تومي تورنبول، البالغ من العمر عشر سنوات، وهو أكبر معجبيه. وبينما يحميه تومي وصديقاه لولا وجاس، أو \"جي مان\" كما يُطلق على نفسه، يتعلم روبوت بوي كيف يتصرف ويتعامل كصبي حقيقي.",
+        "popularity": 2.7031,
+        "poster_path": "/iHhpCW2xCKnIgCJxfobcrvYiDMA.jpg",
+        "first_air_date": "2005-11-01",
+        "name": "الفتى الآلي",
+        "vote_average": 7.532,
+        "vote_count": 62
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/VBhAFiVcMENdP0Mn0JaOoCe4fy.jpg",
+        "genre_ids": [
+          10765,
+          18
+        ],
+        "id": 62669,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "오렌지 마말레이드",
+        "overview": "تدور دراما Orange Marmalade عن علاقات الحب بين المصاصي الدماء والبشر وتتحدث عن Baek Ma Ri وهو طالبة في الثانوي ومصاصة دماء تدرس في مدرسة كل الطلاب فيها بشر تحاول أن لا يكتشف أمرها لذلك تتصرف كفتاة عادية لكن في نفسها تكن ضغينة لكل الناس حولها الذين يتحدثون عن مصاصي الدماء بإستهتار وسخرية إلى أن تتعرف عن Jung Jae Min وهو فتى ذو شعبية كبيرة في المدرسة والذي سيقع في حبها",
+        "popularity": 1.5682,
+        "poster_path": "/kdzZQ3hLUdLfDz6Y5fYyaMzZI9N.jpg",
+        "first_air_date": "2015-05-15",
+        "name": "مربى البرتقال",
+        "vote_average": 6.9,
+        "vote_count": 35
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/hy1RtKGkqwg0rQOKQnFyXX69V46.jpg",
+        "genre_ids": [
+          10765,
+          10751
+        ],
+        "id": 62683,
+        "origin_country": [
+          "CA"
+        ],
+        "original_language": "en",
+        "original_name": "Annedroids",
+        "overview": "",
+        "popularity": 0.7245,
+        "poster_path": "/AeEDjd4SKDpJCQ9HNGNZ6qvyUhs.jpg",
+        "first_air_date": "2014-07-25",
+        "name": "Annedroids",
+        "vote_average": 8.2,
+        "vote_count": 5
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/y9cANZAKbytPjmFQKpD33vOpZZV.jpg",
+        "genre_ids": [
+          18,
+          10765
+        ],
+        "id": 62717,
+        "origin_country": [
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "Jonathan Strange & Mr Norrell",
+        "overview": "",
+        "popularity": 2.2566,
+        "poster_path": "/Aq6aqgHo3nzRTT84kV7DrJ8Ifyc.jpg",
+        "first_air_date": "2015-05-17",
+        "name": "Jonathan Strange & Mr Norrell",
+        "vote_average": 7.369,
+        "vote_count": 175
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/ptiSlEK0UhqUGQxeOlS3rn5FBSn.jpg",
+        "genre_ids": [
+          16,
+          10765
+        ],
+        "id": 62773,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "ゴッドイーター",
+        "overview": "",
+        "popularity": 6.3458,
+        "poster_path": "/sBtOc2W3FDDQlWEMD2QvGc6hUDU.jpg",
+        "first_air_date": "2015-07-12",
+        "name": "ゴッドイーター",
+        "vote_average": 7.24,
+        "vote_count": 145
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/uy6x1cJuuRReGfMnwGkRfCsD3Te.jpg",
+        "genre_ids": [
+          10759,
+          10765,
+          10762
+        ],
+        "id": 31606,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "天装戦隊ゴセイジャー",
+        "overview": "",
+        "popularity": 6.477,
+        "poster_path": "/eoRnlSWTPBcSuil3XMoFLFXtae4.jpg",
+        "first_air_date": "2010-02-14",
+        "name": "天装戦隊ゴセイジャー",
+        "vote_average": 7.1,
+        "vote_count": 13
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/hrP0p9YxlI1yT1niSxLVuFzFsnM.jpg",
+        "genre_ids": [
+          10765
+        ],
+        "id": 4783,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Island City",
+        "overview": "",
+        "popularity": 0.1948,
+        "poster_path": "/r7B4Y6RCl7JqD3MvX9vcwNcP7JO.jpg",
+        "first_air_date": "",
+        "name": "Island City",
+        "vote_average": 1,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/feRc8WCEcPBFTKQKjSPta5wLC3s.jpg",
+        "genre_ids": [
+          16,
+          10759,
+          10765,
+          35
+        ],
+        "id": 101271,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "ツインシグナル",
+        "overview": "",
+        "popularity": 1.2391,
+        "poster_path": "/xravHbyT68RqC0PS0pgPIcJmUJt.jpg",
+        "first_air_date": "1996-09-21",
+        "name": "ツインシグナル",
+        "vote_average": 8,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/FaOu2CM6WNMdO4WVtdLmNetDWS.jpg",
+        "genre_ids": [
+          18,
+          10759,
+          10765,
+          9648
+        ],
+        "id": 218623,
+        "origin_country": [
+          "TH"
+        ],
+        "original_language": "th",
+        "original_name": "4 MINUTES",
+        "overview": "",
+        "popularity": 2.7058,
+        "poster_path": "/rJpN87XowDwoLhb5eYX8eik7q2A.jpg",
+        "first_air_date": "2024-07-26",
+        "name": "4 MINUTES",
+        "vote_average": 8.1,
+        "vote_count": 25
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/7JeirKARV2zlM5mltt9sYbjgag0.jpg",
+        "genre_ids": [
+          10759,
+          18,
+          10765,
+          10768,
+          16
+        ],
+        "id": 218652,
+        "origin_country": [
+          "CN"
+        ],
+        "original_language": "zh",
+        "original_name": "超限猎兵凯能",
+        "overview": "",
+        "popularity": 0.3336,
+        "poster_path": "/gBYXaIs9uvNqkmi1H9Qq6CWB3e7.jpg",
+        "first_air_date": "2013-07-04",
+        "name": "超限猎兵凯能",
+        "vote_average": 8,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/rkh47tXNa0hmRE10mG5OxOuDhTe.jpg",
+        "genre_ids": [
+          10759,
+          16,
+          10765
+        ],
+        "id": 66730,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "ディバインゲート",
+        "overview": "",
+        "popularity": 3.7978,
+        "poster_path": "/fHjODQq2sOK9kGhO09XtBgToxzQ.jpg",
+        "first_air_date": "2016-01-08",
+        "name": "ディバインゲート",
+        "vote_average": 5.463,
+        "vote_count": 27
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/qsgIYlviFlOAjEPynZEWSm2TJfs.jpg",
+        "genre_ids": [
+          18,
+          10759,
+          10765
+        ],
+        "id": 33823,
+        "origin_country": [
+          "CN"
+        ],
+        "original_language": "zh",
+        "original_name": "仙剑奇侠传三",
+        "overview": "",
+        "popularity": 8.5313,
+        "poster_path": "/9VXvuxgb5AdkpygNNcREhk7ibro.jpg",
+        "first_air_date": "2009-06-28",
+        "name": "仙剑奇侠传三",
+        "vote_average": 7.9,
+        "vote_count": 42
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/jpw2IpnaR2xvpPSJItcUYglM6G1.jpg",
+        "genre_ids": [
+          10759,
+          16,
+          10762
+        ],
+        "id": 4914,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Cubix: Robots for Everyone",
+        "overview": "",
+        "popularity": 0.9164,
+        "poster_path": "/gA1KElDEEZ9RDNPRON9rrpMjAbV.jpg",
+        "first_air_date": "2001-08-11",
+        "name": "Cubix: Robots for Everyone",
+        "vote_average": 4.8,
+        "vote_count": 13
+      }
+    ],
+    "total_pages": 757,
+    "total_results": 15121
+  },
+  "videos": {
+    "results": []
+  }
+}

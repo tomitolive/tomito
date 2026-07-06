@@ -83,7 +83,7 @@ export default function Category() {
     };
 
     return (
-        <div className="min-h-screen bg-background">
+        <div className="min-h-screen">
             <Navbar />
             <div className="container mx-auto px-4 py-24">
                 <h1 className="text-3xl font-bold mb-8 capitalize">

@@ -1,0 +1,899 @@
+{
+  "adult": false,
+  "backdrop_path": "/qVmgq1KXBp6BF2EqYPPaUG9iUGy.jpg",
+  "created_by": [
+    {
+      "id": 61354,
+      "credit_id": "54e4718ec3a3684897002f30",
+      "name": "أنتوني هوروويتز",
+      "original_name": "Anthony Horowitz",
+      "gender": 2,
+      "profile_path": "/vaMCduuCGEz1ws3LyM6XTgrZdAM.jpg"
+    },
+    {
+      "id": 1428479,
+      "credit_id": "55d454f592514102cf0018bf",
+      "name": "Caroline Graham",
+      "original_name": "Caroline Graham",
+      "gender": 1,
+      "profile_path": null
+    }
+  ],
+  "episode_run_time": [
+    90
+  ],
+  "first_air_date": "1997-03-23",
+  "genres": [
+    {
+      "id": 80,
+      "name": "جريمة"
+    },
+    {
+      "id": 18,
+      "name": "دراما"
+    },
+    {
+      "id": 9648,
+      "name": "غموض"
+    }
+  ],
+  "homepage": "http://www.itv.com/midsomermurders/",
+  "id": 764,
+  "in_production": true,
+  "languages": [
+    "en"
+  ],
+  "last_air_date": "2025-12-30",
+  "last_episode_to_air": {
+    "id": 4938545,
+    "name": "الحلقة 2",
+    "overview": "",
+    "vote_average": 2.5,
+    "vote_count": 2,
+    "air_date": "2025-12-30",
+    "episode_number": 2,
+    "episode_type": "standard",
+    "production_code": "",
+    "runtime": 93,
+    "season_number": 24,
+    "show_id": 764,
+    "still_path": "/xo4Uqb4c7yLN1im7Iylxryoy9DX.jpg"
+  },
+  "name": "Midsomer Murders",
+  "next_episode_to_air": null,
+  "networks": [
+    {
+      "id": 9,
+      "logo_path": "/oz9pjTHnBUmlju8OkaTymhKbh6C.png",
+      "name": "ITV1",
+      "origin_country": "GB"
+    }
+  ],
+  "number_of_episodes": 144,
+  "number_of_seasons": 25,
+  "origin_country": [
+    "GB"
+  ],
+  "original_language": "en",
+  "original_name": "Midsomer Murders",
+  "overview": "",
+  "popularity": 129.5836,
+  "poster_path": "/pz7tsWxe0TTdfJnWPjZAEnrSl5M.jpg",
+  "production_companies": [
+    {
+      "id": 70930,
+      "logo_path": null,
+      "name": "Bentley Productions",
+      "origin_country": "GB"
+    },
+    {
+      "id": 3448,
+      "logo_path": "/dcA8JDfnnQPMaq8lv2CCiYrNe0S.png",
+      "name": "ITV",
+      "origin_country": "GB"
+    },
+    {
+      "id": 3324,
+      "logo_path": "/dqT3yOTlfJRmtvk52Ccd1O6dZ0A.png",
+      "name": "BBC",
+      "origin_country": "GB"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "GB",
+      "name": "United Kingdom"
+    }
+  ],
+  "seasons": [
+    {
+      "air_date": "2019-06-15",
+      "episode_count": 1,
+      "id": 215483,
+      "name": "العروض الخاصة",
+      "overview": "",
+      "poster_path": "/Aixn2IQnp2PSKQjprNMg7kvRcAv.jpg",
+      "season_number": 0,
+      "vote_average": 0
+    },
+    {
+      "air_date": "1997-03-23",
+      "episode_count": 5,
+      "id": 2250,
+      "name": "الموسم 1",
+      "overview": "",
+      "poster_path": "/hpigYNT9IzrxtfzI8EKpdi7JnlH.jpg",
+      "season_number": 1,
+      "vote_average": 6.9
+    },
+    {
+      "air_date": "1999-01-20",
+      "episode_count": 4,
+      "id": 2248,
+      "name": "الموسم 2",
+      "overview": "",
+      "poster_path": "/j1nfxSKvxQCTastdpeoYgT6npR8.jpg",
+      "season_number": 2,
+      "vote_average": 6.5
+    },
+    {
+      "air_date": "1999-12-31",
+      "episode_count": 4,
+      "id": 2249,
+      "name": "الموسم 3",
+      "overview": "",
+      "poster_path": "/biWRVCklKtmDHrIKYmGqOrG0jb8.jpg",
+      "season_number": 3,
+      "vote_average": 6.8
+    },
+    {
+      "air_date": "2000-09-10",
+      "episode_count": 6,
+      "id": 2247,
+      "name": "الموسم 4",
+      "overview": "",
+      "poster_path": "/4uiguW1OD3mUYmIyoq1H0igWWIW.jpg",
+      "season_number": 4,
+      "vote_average": 6.5
+    },
+    {
+      "air_date": "2002-06-16",
+      "episode_count": 4,
+      "id": 2252,
+      "name": "الموسم 5",
+      "overview": "",
+      "poster_path": "/kTzj1tmKYLLPI78V8u5ttRuT7QY.jpg",
+      "season_number": 5,
+      "vote_average": 7.1
+    },
+    {
+      "air_date": "2003-01-03",
+      "episode_count": 5,
+      "id": 2251,
+      "name": "الموسم 6",
+      "overview": "",
+      "poster_path": "/rKgN0olLl5QsACqqoMi7JC11M03.jpg",
+      "season_number": 6,
+      "vote_average": 6.8
+    },
+    {
+      "air_date": "2003-11-02",
+      "episode_count": 6,
+      "id": 2253,
+      "name": "الموسم 7",
+      "overview": "",
+      "poster_path": "/nkVRnMf3ea3bZaC3mSMmRFIpHrI.jpg",
+      "season_number": 7,
+      "vote_average": 7.1
+    },
+    {
+      "air_date": "2004-10-10",
+      "episode_count": 9,
+      "id": 2255,
+      "name": "الموسم 8",
+      "overview": "",
+      "poster_path": "/lvlGX9VutwIxcSqbncXG0U6qDB0.jpg",
+      "season_number": 8,
+      "vote_average": 7.5
+    },
+    {
+      "air_date": "2005-10-09",
+      "episode_count": 8,
+      "id": 2256,
+      "name": "الموسم 9",
+      "overview": "",
+      "poster_path": "/ktgbelJYRfECmvQaEdXnTVjFJRZ.jpg",
+      "season_number": 9,
+      "vote_average": 7.7
+    },
+    {
+      "air_date": "2006-11-12",
+      "episode_count": 8,
+      "id": 2246,
+      "name": "الموسم 10",
+      "overview": "",
+      "poster_path": "/mDlUc53Zi7CyVJNX8GhjHP1IGzJ.jpg",
+      "season_number": 10,
+      "vote_average": 7.4
+    },
+    {
+      "air_date": "2008-01-01",
+      "episode_count": 7,
+      "id": 2254,
+      "name": "الموسم 11",
+      "overview": "",
+      "poster_path": "/muJMsCgrXVOfdH42O3eTAe6OuRz.jpg",
+      "season_number": 11,
+      "vote_average": 6.8
+    },
+    {
+      "air_date": "2009-07-22",
+      "episode_count": 7,
+      "id": 2257,
+      "name": "الموسم 12",
+      "overview": "",
+      "poster_path": "/1au5yo7ZZluWpBsRyLCGhEDVOnG.jpg",
+      "season_number": 12,
+      "vote_average": 7.4
+    },
+    {
+      "air_date": "2010-02-10",
+      "episode_count": 8,
+      "id": 2258,
+      "name": "الموسم 13",
+      "overview": "",
+      "poster_path": "/vTUVfJsgBkZgYcDoodPlQ7qqTcj.jpg",
+      "season_number": 13,
+      "vote_average": 7.1
+    },
+    {
+      "air_date": "2011-03-23",
+      "episode_count": 8,
+      "id": 2260,
+      "name": "الموسم 14",
+      "overview": "",
+      "poster_path": "/oiXEyI8zC8vVz6WNL1BWY2rbL5L.jpg",
+      "season_number": 14,
+      "vote_average": 6.4
+    },
+    {
+      "air_date": "2012-02-01",
+      "episode_count": 6,
+      "id": 2261,
+      "name": "الموسم 15",
+      "overview": "",
+      "poster_path": "/kb1kHkNbxFtNPH3dOvkVi1F0eOJ.jpg",
+      "season_number": 15,
+      "vote_average": 7.5
+    },
+    {
+      "air_date": "2013-12-24",
+      "episode_count": 5,
+      "id": 59564,
+      "name": "الموسم 16",
+      "overview": "",
+      "poster_path": "/eSU5a0IC2OmuZfkwVHbMPqQss7p.jpg",
+      "season_number": 16,
+      "vote_average": 7.2
+    },
+    {
+      "air_date": "2015-01-28",
+      "episode_count": 4,
+      "id": 64697,
+      "name": "الموسم 17",
+      "overview": "",
+      "poster_path": "/tg4uPyxAcrt9Q1ToQuMnAdSe0VH.jpg",
+      "season_number": 17,
+      "vote_average": 7.1
+    },
+    {
+      "air_date": "2016-01-06",
+      "episode_count": 6,
+      "id": 73574,
+      "name": "الموسم 18",
+      "overview": "",
+      "poster_path": "/1CrMCFwqHI6vyLJNCbcG8zoNXpx.jpg",
+      "season_number": 18,
+      "vote_average": 7
+    },
+    {
+      "air_date": "2016-12-18",
+      "episode_count": 6,
+      "id": 82889,
+      "name": "الموسم 19",
+      "overview": "",
+      "poster_path": "/g3pky2CfUkCp9U5LTuEL1ue1gGs.jpg",
+      "season_number": 19,
+      "vote_average": 7.6
+    },
+    {
+      "air_date": "2019-03-10",
+      "episode_count": 6,
+      "id": 103790,
+      "name": "الموسم 20",
+      "overview": "",
+      "poster_path": "/w7zJifl9tDMf2Bp9vcmeFhFX86i.jpg",
+      "season_number": 20,
+      "vote_average": 5.8
+    },
+    {
+      "air_date": "2020-01-21",
+      "episode_count": 4,
+      "id": 137075,
+      "name": "الموسم 21",
+      "overview": "",
+      "poster_path": "/dPC6m7bthz7XvRcOKi6RpKqCyZS.jpg",
+      "season_number": 21,
+      "vote_average": 5.2
+    },
+    {
+      "air_date": "2021-04-04",
+      "episode_count": 6,
+      "id": 189178,
+      "name": "الموسم 22",
+      "overview": "",
+      "poster_path": "/h9Suh9wAkt6vsrdqM6uPAV8LGJx.jpg",
+      "season_number": 22,
+      "vote_average": 4.5
+    },
+    {
+      "air_date": "2024-04-14",
+      "episode_count": 4,
+      "id": 320311,
+      "name": "الموسم 23",
+      "overview": "",
+      "poster_path": "/s2mWBa39zMWeYod9l6blpaCt3Nh.jpg",
+      "season_number": 23,
+      "vote_average": 2.5
+    },
+    {
+      "air_date": "2025-12-29",
+      "episode_count": 4,
+      "id": 366708,
+      "name": "الموسم 24",
+      "overview": "",
+      "poster_path": "/A1rUQlUPo300IKCeVDINinoUWdf.jpg",
+      "season_number": 24,
+      "vote_average": 3.2
+    },
+    {
+      "air_date": null,
+      "episode_count": 4,
+      "id": 486338,
+      "name": "الموسم 25",
+      "overview": "",
+      "poster_path": "/30Ujr08k6dwxBA86o5ohVPL9Fc6.jpg",
+      "season_number": 25,
+      "vote_average": 1
+    }
+  ],
+  "spoken_languages": [
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Returning Series",
+  "tagline": "",
+  "type": "Scripted",
+  "vote_average": 7.503,
+  "vote_count": 339,
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 87097,
+        "known_for_department": "Acting",
+        "name": "Neil Dudgeon",
+        "original_name": "Neil Dudgeon",
+        "popularity": 3.9999,
+        "profile_path": "/bQ7KNoG80k91MZzVoQ1jMhxNX6s.jpg",
+        "character": "DCI John Barnaby",
+        "credit_id": "54c12b709251412489001c4f",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1332982,
+        "known_for_department": "Acting",
+        "name": "Nick Hendrix",
+        "original_name": "Nick Hendrix",
+        "popularity": 3.4391,
+        "profile_path": "/eHheRwz9nnfgP9JiHJxCvift91T.jpg",
+        "character": "DS Jamie Winter",
+        "credit_id": "5c517a280e0a2601d6c9bb29",
+        "order": 3
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1190276,
+        "known_for_department": "Acting",
+        "name": "Fiona Dolman",
+        "original_name": "Fiona Dolman",
+        "popularity": 1.4333,
+        "profile_path": "/uXOHx6wU4epLp7xOaax2PyB1zBR.jpg",
+        "character": "Sarah Barnaby",
+        "credit_id": "5253943019c29579402b6819",
+        "order": 14
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 30320,
+        "known_for_department": "Acting",
+        "name": "Annette Badland",
+        "original_name": "Annette Badland",
+        "popularity": 2.6728,
+        "profile_path": "/6ZoUX6K4WI2MZrhXb21vU5Mtc6P.jpg",
+        "character": "Fleur Perkins",
+        "credit_id": "656f3c023dc31300c4fb3ea3",
+        "order": 17
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1470768,
+        "known_for_department": "Sound",
+        "name": "Jim Parker",
+        "original_name": "Jim Parker",
+        "popularity": 0.7407,
+        "profile_path": null,
+        "credit_id": "5564a2af92514116cb0040d1",
+        "department": "Sound",
+        "job": "Original Music Composer"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1428479,
+        "known_for_department": "Writing",
+        "name": "Caroline Graham",
+        "original_name": "Caroline Graham",
+        "popularity": 0.2729,
+        "profile_path": null,
+        "credit_id": "54e4716fc3a368654c000eeb",
+        "department": "Writing",
+        "job": "Novel"
+      }
+    ]
+  },
+  "similar": {
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/t2fl4Po0H38ZYwzPboTTXhQ6v3Y.jpg",
+        "genre_ids": [
+          18,
+          9648
+        ],
+        "id": 214994,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "청담국제고등학교",
+        "overview": "",
+        "popularity": 4.5268,
+        "poster_path": "/7Wlxdu6Z1sYcti7xgbtLLmxRFOk.jpg",
+        "first_air_date": "2023-05-31",
+        "name": "청담국제고등학교",
+        "vote_average": 8.3,
+        "vote_count": 33
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/4YGnoxiNhK3biZciyohokAzYX63.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 1596,
+        "origin_country": [
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "Bergerac",
+        "overview": "",
+        "popularity": 10.8394,
+        "poster_path": "/1ZarXE2TfNYPl1ojXWov8wuqJTY.jpg",
+        "first_air_date": "1981-10-18",
+        "name": "Bergerac",
+        "vote_average": 6.7,
+        "vote_count": 21
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/cpdXg5n9ysVf6C5S1AbTvnObKQk.jpg",
+        "genre_ids": [
+          18,
+          80,
+          10759
+        ],
+        "id": 1654,
+        "origin_country": [
+          "CA",
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "The Sentinel",
+        "overview": "",
+        "popularity": 7.3511,
+        "poster_path": "/cj1moyLJKpmvR0fR9AqsZuXYxAm.jpg",
+        "first_air_date": "1996-03-20",
+        "name": "The Sentinel",
+        "vote_average": 7.098,
+        "vote_count": 66
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/jNmHcPQ3rK1oftbltbaUOgGgnV1.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 1669,
+        "origin_country": [
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "Oranges Are Not the Only Fruit",
+        "overview": "",
+        "popularity": 1.5364,
+        "poster_path": "/mMETYbPN7PJeSkEpKeOlSrzStTV.jpg",
+        "first_air_date": "1990-01-10",
+        "name": "Oranges Are Not the Only Fruit",
+        "vote_average": 6.5,
+        "vote_count": 26
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/jHGRO3VElAS7Z6vq5c31jQWO8kL.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 1684,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Night Stalker",
+        "overview": "",
+        "popularity": 1.6037,
+        "poster_path": "/coj4zrUDaYvfmV0cvlaB7kIaW4.jpg",
+        "first_air_date": "2005-09-29",
+        "name": "Night Stalker",
+        "vote_average": 5.1,
+        "vote_count": 14
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/1d9AMiLPitbLnYmAZmvWbk23gNb.jpg",
+        "genre_ids": [
+          18,
+          80
+        ],
+        "id": 1698,
+        "origin_country": [
+          "DE"
+        ],
+        "original_language": "de",
+        "original_name": "Der Kommissar",
+        "overview": "",
+        "popularity": 22.1364,
+        "poster_path": "/3jPtZ0ArpniildjPklBGawxING7.jpg",
+        "first_air_date": "1969-01-03",
+        "name": "Der Kommissar",
+        "vote_average": 7.889,
+        "vote_count": 9
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/6T19aRp9zLMghZo1dTEwoNyreNZ.jpg",
+        "genre_ids": [
+          16,
+          18,
+          80,
+          9648
+        ],
+        "id": 30981,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "MONSTER",
+        "overview": "تتكلم القصة عن جرائم وشخص يقف وراها وطبيب يقع ضحيه اتهام الشرطه له بأرتكاب الجرائم الطبيب اخطأ بالماضي ولكنه لم يترك خطأه وحاول اصلاحه بعد مرور عدة سنين وافنى نفسه لكي يصلح ما اخطأ به ينجرف جرّاح أعصاب ياباني لامع في عالم الظلام حين يحاول حلّ ألغاز سلسلة من جرائم القتل تتضمّن مريضًا قد عالجه ذات يوم وأنقذ حياته.",
+        "popularity": 26.9741,
+        "poster_path": "/o38ptRl2CvMVb6HZnstFLPcveDK.jpg",
+        "first_air_date": "2004-04-07",
+        "name": "الوحش",
+        "vote_average": 8.5,
+        "vote_count": 721
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/dHMJFx5QAgNQ7BA349sk94KmFuh.jpg",
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 1721,
+        "origin_country": [
+          "US",
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "Keen Eddie",
+        "overview": "",
+        "popularity": 1.3977,
+        "poster_path": "/fpvxhAkMkK7Fb59myLDb9KoqA0z.jpg",
+        "first_air_date": "2003-06-03",
+        "name": "Keen Eddie",
+        "vote_average": 8,
+        "vote_count": 18
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/gCo9Vcare7WQBKYsAn5rOAcFnP8.jpg",
+        "genre_ids": [
+          18,
+          80,
+          9648
+        ],
+        "id": 62823,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Scream: The TV Series",
+        "overview": "تطفو إلى السطح ذكريات من ماضي البلدة الغامض عندما يصبح أفراد مجموعة من المراهقين مشتبهًا فيهم ومستهدفين... بل وضحايا لقاتل متعطّش للدماء.",
+        "popularity": 9.5624,
+        "poster_path": "/cTRUcUnAydqboYfis0IhhY1edDt.jpg",
+        "first_air_date": "2015-06-30",
+        "name": "Scream",
+        "vote_average": 6.873,
+        "vote_count": 1146
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/52ZwPISbTjXJznyrLmRf8lV2yoT.jpg",
+        "genre_ids": [
+          18,
+          80
+        ],
+        "id": 62864,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Touching Evil",
+        "overview": "",
+        "popularity": 1.0542,
+        "poster_path": "/3dmBxixICLqLPeXqWTR0Js3kcM1.jpg",
+        "first_air_date": "2004-03-12",
+        "name": "Touching Evil",
+        "vote_average": 6.8,
+        "vote_count": 13
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/uvrhAnfsxDWu94XPQOjUOQSnyuY.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 62896,
+        "origin_country": [
+          "ES"
+        ],
+        "original_language": "es",
+        "original_name": "Acusados",
+        "overview": "",
+        "popularity": 1.2168,
+        "poster_path": "/xjxfAvmEinsAYwmFmNJbkyWpmFu.jpg",
+        "first_air_date": "2009-01-28",
+        "name": "Acusados",
+        "vote_average": 2.5,
+        "vote_count": 5
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/wImNeqxKsqmJ5OBw8j3I37GNFN3.jpg",
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 97546,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Ted Lasso",
+        "overview": "يحكي العمل قصة لاعب الكرة المتقاعد تيد لاسو، والذي يقرر السفر إلى المملكة المتحدة من أجل تدريب فريق فيكرة قدم في الدوري الممتاز يكافح من أجل البقاء.",
+        "popularity": 27.5917,
+        "poster_path": "/5fhZdwP1DVJ0FyVH6vrFdHwpXIn.jpg",
+        "first_air_date": "2020-08-14",
+        "name": "Ted Lasso",
+        "vote_average": 8.348,
+        "vote_count": 2207
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/layPSOJGckJv3PXZDIVluMq69mn.jpg",
+        "genre_ids": [
+          80,
+          18
+        ],
+        "id": 1438,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "The Wire",
+        "overview": "يستعرض المسلسل في قالب من اﻹثارة والتشويق عالم المخدرات المتشابك والمعقد والمركب في مدينة بالتيمور كما يروى من قبل تجارها ورجال الشرطة، ومشاكل كلا الطرفين.",
+        "popularity": 40.8282,
+        "poster_path": "/aA0RQBbTzxby13UeCdpdkGUtqxy.jpg",
+        "first_air_date": "2002-06-02",
+        "name": "السلك",
+        "vote_average": 8.614,
+        "vote_count": 2557
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/6d1yCaiI7AexmtGX2vORqEbZ0oV.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 1457,
+        "origin_country": [
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "Pride and Prejudice",
+        "overview": "",
+        "popularity": 10.5786,
+        "poster_path": "/7od3Mob2qu5lL1l5RsdV6xuEquw.jpg",
+        "first_air_date": "1995-09-24",
+        "name": "Pride and Prejudice",
+        "vote_average": 8.209,
+        "vote_count": 537
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/gTN0SAdXsDUE6SFFRo8QsJgXDIg.jpg",
+        "genre_ids": [
+          80,
+          9648,
+          18
+        ],
+        "id": 1486,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "21 Jump Street",
+        "overview": "",
+        "popularity": 12.9949,
+        "poster_path": "/9w2y0146P5EjLw63FHGWRRpqQ6v.jpg",
+        "first_air_date": "1987-04-12",
+        "name": "21 Jump Street",
+        "vote_average": 7.227,
+        "vote_count": 185
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          80,
+          9648
+        ],
+        "id": 62707,
+        "origin_country": [
+          "IN"
+        ],
+        "original_language": "hi",
+        "original_name": "व्योमकेश बक्शी",
+        "overview": "",
+        "popularity": 0.7395,
+        "poster_path": "/6Hudn4jiJArcg89UEDsF6gAvgWo.jpg",
+        "first_air_date": "1993-02-14",
+        "name": "व्योमकेश बक्शी",
+        "vote_average": 8.6,
+        "vote_count": 10
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/vw1cU63kblJNBZpeQHRY0MO4ZHX.jpg",
+        "genre_ids": [
+          18,
+          9648,
+          80
+        ],
+        "id": 62756,
+        "origin_country": [
+          "ES"
+        ],
+        "original_language": "es",
+        "original_name": "Víctor Ros",
+        "overview": "",
+        "popularity": 1.8749,
+        "poster_path": "/Ai5wFQ8KHGjlD9DKWazdDlMAeBq.jpg",
+        "first_air_date": "2015-01-12",
+        "name": "Víctor Ros",
+        "vote_average": 6.353,
+        "vote_count": 17
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/3BuxjPvrVNIW4vMH7sOgqXtRa40.jpg",
+        "genre_ids": [
+          18,
+          80
+        ],
+        "id": 97405,
+        "origin_country": [
+          "IS"
+        ],
+        "original_language": "is",
+        "original_name": "Brot",
+        "overview": "يعود محقِّق، يعاني من ماضٍ مؤلم، من \"أوسلو\" إلى موطنه \"آيسلندا\" لمساعدة شرطية متفانية في مطاردة قاتل متسلسل له صلة بصورة غامضة.",
+        "popularity": 2.5904,
+        "poster_path": "/gB4XrQeXlfSAaq49EjBYCmh2a2C.jpg",
+        "first_air_date": "2019-12-26",
+        "name": "جرائم فالهالا",
+        "vote_average": 6.657,
+        "vote_count": 137
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/a0XHDSttmQldXVX8YEoMFXLZJdG.jpg",
+        "genre_ids": [
+          80,
+          99
+        ],
+        "id": 247092,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Kill or Be Killed",
+        "overview": "",
+        "popularity": 0.7515,
+        "poster_path": "/9k8Jr67SMLlGyUcqZCuyy6CPGL7.jpg",
+        "first_air_date": "2024-03-02",
+        "name": "Kill or Be Killed",
+        "vote_average": 5,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/b9dpWPRe334gViVcfwqKSL0ug5F.jpg",
+        "genre_ids": [
+          99,
+          80
+        ],
+        "id": 248126,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Homicide",
+        "overview": "يعيد محققون ومدعون عامون النظر في أكثر قضايا القتل صعوبة من التي تولوها، في هذه السلسلة الوثائقية التي تدور حول جرائم قتل حقيقية تقشعر لها الأبدان، يقدمها مؤلف مسلسل Law & Order.",
+        "popularity": 1.3822,
+        "poster_path": "/byh0uHyYoGjkPL9ULhLyAbnfTPX.jpg",
+        "first_air_date": "2024-03-20",
+        "name": "جرائم قتل",
+        "vote_average": 7,
+        "vote_count": 23
+      }
+    ],
+    "total_pages": 2730,
+    "total_results": 54585
+  },
+  "videos": {
+    "results": []
+  }
+}

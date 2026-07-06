@@ -1,0 +1,1036 @@
+{
+  "adult": false,
+  "backdrop_path": "/jIArNHIekrCSVgdMbKPAXpPY03Y.jpg",
+  "created_by": [
+    {
+      "id": 5741,
+      "credit_id": "5256bdc619c2956ff6001be4",
+      "name": "مات غرينينغ",
+      "original_name": "Matt Groening",
+      "gender": 2,
+      "profile_path": "/2HmAw3AN93DGESPi3ibLZgBa8cT.jpg"
+    }
+  ],
+  "episode_run_time": [
+    22
+  ],
+  "first_air_date": "1989-12-17",
+  "genres": [
+    {
+      "id": 10751,
+      "name": "عائلي"
+    },
+    {
+      "id": 16,
+      "name": "رسوم متحركة"
+    },
+    {
+      "id": 35,
+      "name": "كوميديا"
+    }
+  ],
+  "homepage": "https://www.fox.com/detail/series/SER000852IRHK/the-simpsons",
+  "id": 456,
+  "in_production": true,
+  "languages": [
+    "en"
+  ],
+  "last_air_date": "2026-01-04",
+  "last_episode_to_air": {
+    "id": 6742196,
+    "name": "الحلقة 13",
+    "overview": "",
+    "vote_average": 8,
+    "vote_count": 5,
+    "air_date": "2026-01-04",
+    "episode_number": 13,
+    "episode_type": "standard",
+    "production_code": "37ABF07",
+    "runtime": 22,
+    "season_number": 37,
+    "show_id": 456,
+    "still_path": "/5r3gvfeXc9yhcymbcJZ0ZCeAwQf.jpg"
+  },
+  "name": "آل سيمبسون",
+  "next_episode_to_air": {
+    "id": 6878206,
+    "name": "الحلقة 14",
+    "overview": "",
+    "vote_average": 0,
+    "vote_count": 0,
+    "air_date": "2026-02-15",
+    "episode_number": 14,
+    "episode_type": "standard",
+    "production_code": "37ABF08",
+    "runtime": null,
+    "season_number": 37,
+    "show_id": 456,
+    "still_path": null
+  },
+  "networks": [
+    {
+      "id": 19,
+      "logo_path": "/1DSpHrWyOORkL9N2QHX7Adt31mQ.png",
+      "name": "FOX",
+      "origin_country": "US"
+    }
+  ],
+  "number_of_episodes": 803,
+  "number_of_seasons": 37,
+  "origin_country": [
+    "US"
+  ],
+  "original_language": "en",
+  "original_name": "The Simpsons",
+  "overview": "مغامرات ساخرة لعائلة متوسطة الدخل في مدينة سبرينقفيلدز الأمريكية  (للكبار فقط).",
+  "popularity": 209.9149,
+  "poster_path": "/voLbSUAVu1RfZWx0qeTFqVAixIO.jpg",
+  "production_companies": [
+    {
+      "id": 18,
+      "logo_path": "/uqhagSwM7NAkQWVCQhKTyoqF8XH.png",
+      "name": "Gracie Films",
+      "origin_country": "US"
+    },
+    {
+      "id": 1556,
+      "logo_path": "/31h94rG9hzjprXoYNy3L1ErUya2.png",
+      "name": "20th Century Fox Television",
+      "origin_country": "US"
+    },
+    {
+      "id": 154887,
+      "logo_path": "/wLFPu95hIMmyLR5hdtvYaMuK0tG.png",
+      "name": "20th Television Animation",
+      "origin_country": "US"
+    },
+    {
+      "id": 236166,
+      "logo_path": "/8rFlu5iytnjsciYXZDw90ktllCI.png",
+      "name": "20th Television",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "seasons": [
+    {
+      "air_date": "1987-04-17",
+      "episode_count": 82,
+      "id": 3581,
+      "name": "العروض الخاصة",
+      "overview": "",
+      "poster_path": "/oICoFoPJuEk5VJbEP2HYLEmEQi3.jpg",
+      "season_number": 0,
+      "vote_average": 0
+    },
+    {
+      "air_date": "1989-12-17",
+      "episode_count": 13,
+      "id": 3582,
+      "name": "الموسم 1",
+      "overview": "",
+      "poster_path": "/t544zSFUNyvmyeP4sHotlcEX3zH.jpg",
+      "season_number": 1,
+      "vote_average": 7.1
+    },
+    {
+      "air_date": "1990-10-11",
+      "episode_count": 22,
+      "id": 3583,
+      "name": "الموسم 2",
+      "overview": "",
+      "poster_path": "/bRyDlUQQafSoIT052jpjLBMe8TH.jpg",
+      "season_number": 2,
+      "vote_average": 7.5
+    },
+    {
+      "air_date": "1991-09-19",
+      "episode_count": 24,
+      "id": 3584,
+      "name": "الموسم 3",
+      "overview": "",
+      "poster_path": "/9ghmIhWJJuTx3UHyfVVBXQoUGvI.jpg",
+      "season_number": 3,
+      "vote_average": 7.5
+    },
+    {
+      "air_date": "1992-09-24",
+      "episode_count": 22,
+      "id": 3585,
+      "name": "الموسم 4",
+      "overview": "",
+      "poster_path": "/voqu5a4drV1CXMjjZ0Mkw35n26l.jpg",
+      "season_number": 4,
+      "vote_average": 7.7
+    },
+    {
+      "air_date": "1993-09-30",
+      "episode_count": 22,
+      "id": 3586,
+      "name": "الموسم 5",
+      "overview": "",
+      "poster_path": "/p8tRDtrkzquirArGp6S1b7Zxle3.jpg",
+      "season_number": 5,
+      "vote_average": 7.8
+    },
+    {
+      "air_date": "1994-09-04",
+      "episode_count": 25,
+      "id": 3587,
+      "name": "الموسم 6",
+      "overview": "",
+      "poster_path": "/qD20BnTxIdF1rcnX4BARmFshzKA.jpg",
+      "season_number": 6,
+      "vote_average": 7.7
+    },
+    {
+      "air_date": "1995-09-17",
+      "episode_count": 25,
+      "id": 3588,
+      "name": "الموسم 7",
+      "overview": "",
+      "poster_path": "/blCeZS6BmN3wwmF40fuCZSeFwbB.jpg",
+      "season_number": 7,
+      "vote_average": 7.7
+    },
+    {
+      "air_date": "1996-10-27",
+      "episode_count": 25,
+      "id": 3589,
+      "name": "الموسم 8",
+      "overview": "",
+      "poster_path": "/xLebCxRHSwXBW39a4OLmMSGChLs.jpg",
+      "season_number": 8,
+      "vote_average": 7.7
+    },
+    {
+      "air_date": "1997-09-21",
+      "episode_count": 25,
+      "id": 3590,
+      "name": "الموسم 9",
+      "overview": "",
+      "poster_path": "/6PTYyLD8bSiNZf1PFdCQ9JyiIFW.jpg",
+      "season_number": 9,
+      "vote_average": 7.3
+    },
+    {
+      "air_date": "1998-08-23",
+      "episode_count": 23,
+      "id": 3591,
+      "name": "الموسم 10",
+      "overview": "",
+      "poster_path": "/A77xKuxA13aXA1mQd6YLAaTIErK.jpg",
+      "season_number": 10,
+      "vote_average": 7.1
+    },
+    {
+      "air_date": "1999-09-26",
+      "episode_count": 22,
+      "id": 3592,
+      "name": "الموسم 11",
+      "overview": "",
+      "poster_path": "/7lgnlOENoCdub15UijLKTHawyhm.jpg",
+      "season_number": 11,
+      "vote_average": 6.9
+    },
+    {
+      "air_date": "2000-11-01",
+      "episode_count": 21,
+      "id": 3593,
+      "name": "الموسم 12",
+      "overview": "",
+      "poster_path": "/jfxiyjRLoQq9LavlFNRBgjuweg5.jpg",
+      "season_number": 12,
+      "vote_average": 6.9
+    },
+    {
+      "air_date": "2001-11-06",
+      "episode_count": 22,
+      "id": 3594,
+      "name": "الموسم 13",
+      "overview": "",
+      "poster_path": "/xflc3aV1SbP2bGeZNuu4AG6cIqH.jpg",
+      "season_number": 13,
+      "vote_average": 6.6
+    },
+    {
+      "air_date": "2002-11-03",
+      "episode_count": 22,
+      "id": 3595,
+      "name": "الموسم 14",
+      "overview": "",
+      "poster_path": "/9IowK57TpeO09D4B46jd4J3wjPO.jpg",
+      "season_number": 14,
+      "vote_average": 6.7
+    },
+    {
+      "air_date": "2003-11-02",
+      "episode_count": 22,
+      "id": 3596,
+      "name": "الموسم 15",
+      "overview": "",
+      "poster_path": "/svXs3ugVAoKSZoBQNUZ3sQIp1ly.jpg",
+      "season_number": 15,
+      "vote_average": 6.7
+    },
+    {
+      "air_date": "2004-11-07",
+      "episode_count": 21,
+      "id": 3597,
+      "name": "الموسم 16",
+      "overview": "",
+      "poster_path": "/ifjiG1gHGRyYmNDWRb9Ul9VCfEn.jpg",
+      "season_number": 16,
+      "vote_average": 6.6
+    },
+    {
+      "air_date": "2005-09-11",
+      "episode_count": 22,
+      "id": 3598,
+      "name": "الموسم 17",
+      "overview": "",
+      "poster_path": "/evIWfK3hKFIExETjv6L2YS9J8fw.jpg",
+      "season_number": 17,
+      "vote_average": 6.7
+    },
+    {
+      "air_date": "2006-09-10",
+      "episode_count": 22,
+      "id": 3599,
+      "name": "الموسم 18",
+      "overview": "",
+      "poster_path": "/kwb8AZAHyhn96dzn17mtTV3l8dl.jpg",
+      "season_number": 18,
+      "vote_average": 6.5
+    },
+    {
+      "air_date": "2007-09-23",
+      "episode_count": 20,
+      "id": 3600,
+      "name": "الموسم 19",
+      "overview": "",
+      "poster_path": "/nLKZJ1ozVvYFtaOynzkShE8wN4k.jpg",
+      "season_number": 19,
+      "vote_average": 6.6
+    },
+    {
+      "air_date": "2008-09-28",
+      "episode_count": 21,
+      "id": 3601,
+      "name": "الموسم 20",
+      "overview": "",
+      "poster_path": "/2CUdLX4K8fMlcdVPHUbciTYt4ri.jpg",
+      "season_number": 20,
+      "vote_average": 6.7
+    },
+    {
+      "air_date": "2009-09-27",
+      "episode_count": 23,
+      "id": 3602,
+      "name": "الموسم 21",
+      "overview": "",
+      "poster_path": "/fEykf9XN4Cn5tJ17pOD2PObdjoc.jpg",
+      "season_number": 21,
+      "vote_average": 6.5
+    },
+    {
+      "air_date": "2010-09-26",
+      "episode_count": 22,
+      "id": 3603,
+      "name": "الموسم 22",
+      "overview": "",
+      "poster_path": "/xUZeYO9NPkmXCcuRrr8PgXzk2Qd.jpg",
+      "season_number": 22,
+      "vote_average": 6.6
+    },
+    {
+      "air_date": "2011-09-25",
+      "episode_count": 22,
+      "id": 3604,
+      "name": "الموسم 23",
+      "overview": "",
+      "poster_path": "/wlQnKb3pHBxtMivCjcvM8TDpBbv.jpg",
+      "season_number": 23,
+      "vote_average": 6.6
+    },
+    {
+      "air_date": "2012-09-30",
+      "episode_count": 22,
+      "id": 3605,
+      "name": "الموسم 24",
+      "overview": "",
+      "poster_path": "/qGPFl3X6ukZ6fBQRiLxueLWQh9y.jpg",
+      "season_number": 24,
+      "vote_average": 6.6
+    },
+    {
+      "air_date": "2013-09-29",
+      "episode_count": 22,
+      "id": 3606,
+      "name": "الموسم 25",
+      "overview": "",
+      "poster_path": "/iwlh2yoia66MCaZEqybsLSt3OHa.jpg",
+      "season_number": 25,
+      "vote_average": 6.7
+    },
+    {
+      "air_date": "2014-09-28",
+      "episode_count": 22,
+      "id": 62103,
+      "name": "الموسم 26",
+      "overview": "",
+      "poster_path": "/9bGpb3vWygBogXpQBnTodFWaQte.jpg",
+      "season_number": 26,
+      "vote_average": 6.7
+    },
+    {
+      "air_date": "2015-09-27",
+      "episode_count": 22,
+      "id": 68067,
+      "name": "الموسم 27",
+      "overview": "",
+      "poster_path": "/aw26dkO0PnxD0EfYWXCMUQLFNbI.jpg",
+      "season_number": 27,
+      "vote_average": 6.6
+    },
+    {
+      "air_date": "2016-09-25",
+      "episode_count": 22,
+      "id": 80361,
+      "name": "الموسم 28",
+      "overview": "",
+      "poster_path": "/j4GZ2oH5PEWEyZkwuZ41OYLb30W.jpg",
+      "season_number": 28,
+      "vote_average": 6.3
+    },
+    {
+      "air_date": "2017-10-01",
+      "episode_count": 21,
+      "id": 91255,
+      "name": "الموسم 29",
+      "overview": "",
+      "poster_path": "/93JeevhHA93SpHZ5hxqJyOtB5Wf.jpg",
+      "season_number": 29,
+      "vote_average": 6.3
+    },
+    {
+      "air_date": "2018-09-30",
+      "episode_count": 23,
+      "id": 110088,
+      "name": "الموسم 30",
+      "overview": "",
+      "poster_path": "/l18xQsO27KFJwsj35JaAsG95dN7.jpg",
+      "season_number": 30,
+      "vote_average": 6
+    },
+    {
+      "air_date": "2019-09-29",
+      "episode_count": 22,
+      "id": 131143,
+      "name": "الموسم 31",
+      "overview": "",
+      "poster_path": "/1y2zzQhnAuFpRNovNMHWlubOaxw.jpg",
+      "season_number": 31,
+      "vote_average": 6.2
+    },
+    {
+      "air_date": "2020-09-27",
+      "episode_count": 22,
+      "id": 156684,
+      "name": "الموسم 32",
+      "overview": "",
+      "poster_path": "/ifvEta1mmPGLu3E6lFnPSJAyBhh.jpg",
+      "season_number": 32,
+      "vote_average": 6.5
+    },
+    {
+      "air_date": "2021-09-26",
+      "episode_count": 22,
+      "id": 184349,
+      "name": "الموسم 33",
+      "overview": "",
+      "poster_path": "/sjg9DQMgZzUA0Uqfw7eL89gFXOr.jpg",
+      "season_number": 33,
+      "vote_average": 6.4
+    },
+    {
+      "air_date": "2022-09-25",
+      "episode_count": 22,
+      "id": 296972,
+      "name": "الموسم 34",
+      "overview": "",
+      "poster_path": "/2C6Tuxep3eLeFB1vny8FIVXFIDz.jpg",
+      "season_number": 34,
+      "vote_average": 7
+    },
+    {
+      "air_date": "2023-10-01",
+      "episode_count": 18,
+      "id": 336243,
+      "name": "الموسم 35",
+      "overview": "",
+      "poster_path": "/s7EtmSmdN6ENGwJFfzu9Bn9cgSW.jpg",
+      "season_number": 35,
+      "vote_average": 7.8
+    },
+    {
+      "air_date": "2024-09-29",
+      "episode_count": 18,
+      "id": 384511,
+      "name": "الموسم 36",
+      "overview": "",
+      "poster_path": "/dl0S3pJSQUyBLPAOefMMujbtp4O.jpg",
+      "season_number": 36,
+      "vote_average": 6.9
+    },
+    {
+      "air_date": "2025-09-28",
+      "episode_count": 17,
+      "id": 467353,
+      "name": "الموسم 37",
+      "overview": "",
+      "poster_path": "/nRdwZjv3TJZm6Vht76BWiUaQpLQ.jpg",
+      "season_number": 37,
+      "vote_average": 7.2
+    }
+  ],
+  "spoken_languages": [
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Returning Series",
+  "tagline": "",
+  "type": "Scripted",
+  "vote_average": 8.013,
+  "vote_count": 10565,
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 198,
+        "known_for_department": "Acting",
+        "name": "دان كاستلانيتا",
+        "original_name": "Dan Castellaneta",
+        "popularity": 5.883,
+        "profile_path": "/AmeqWhP4A46AWkM4kVphg6jOTQX.jpg",
+        "character": "Homer Simpson / Abe Simpson / Barney Gumble / Krusty (voice)",
+        "credit_id": "5256bdc319c2956ff600157c",
+        "order": 0
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 199,
+        "known_for_department": "Acting",
+        "name": "جولي كافنر",
+        "original_name": "Julie Kavner",
+        "popularity": 1.6661,
+        "profile_path": "/87kSPYlWcHvqOVEkhdqxysiAf6w.jpg",
+        "character": "Marge Simpson / Patty Bouvier / Selma Bouvier (voice)",
+        "credit_id": "5256bdc319c2956ff60015a0",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 200,
+        "known_for_department": "Acting",
+        "name": "نانسي كارترايت",
+        "original_name": "Nancy Cartwright",
+        "popularity": 1.7599,
+        "profile_path": "/kJQEz3NAwHGdb2sQzAnBf1RmMV4.jpg",
+        "character": "Bart Simpson / Nelson Muntz / Ralph Wiggum (voice)",
+        "credit_id": "5256bdc319c2956ff6001554",
+        "order": 2
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 5586,
+        "known_for_department": "Acting",
+        "name": "ياردلي سميث",
+        "original_name": "Yeardley Smith",
+        "popularity": 1.607,
+        "profile_path": "/9AjPwbb3uz4GfgOPBYsy2ILvwkB.jpg",
+        "character": "Lisa Simpson (voice)",
+        "credit_id": "5256bdc319c2956ff60015ba",
+        "order": 3
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 5587,
+        "known_for_department": "Acting",
+        "name": "هانك آزاريا",
+        "original_name": "Hank Azaria",
+        "popularity": 2.7791,
+        "profile_path": "/yFDw4b0jucuFWNnGcBPfpYUtn16.jpg",
+        "character": "Moe Szyslak / Chief Wiggum / Apu / Comic Book Guy / Carl (voice)",
+        "credit_id": "5256bdc319c2956ff600167a",
+        "order": 4
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 6008,
+        "known_for_department": "Acting",
+        "name": "هاري شيرر",
+        "original_name": "Harry Shearer",
+        "popularity": 1.3872,
+        "profile_path": "/7PnGZGVKJNDTUv3DkbaMEnCseT0.jpg",
+        "character": "Ned Flanders / Mr. Burns / Smithers / Skinner / Lenny (voice)",
+        "credit_id": "5cf20dbe9251411cdbba646e",
+        "order": 6
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 531,
+        "known_for_department": "Sound",
+        "name": "داني إلفمان",
+        "original_name": "Danny Elfman",
+        "popularity": 1.8505,
+        "profile_path": "/bcpur9bF56nLxzFzZowipA2wZhy.jpg",
+        "credit_id": "60c132f7a284eb00298890dc",
+        "department": "Sound",
+        "job": "Main Title Theme Composer"
+      }
+    ]
+  },
+  "similar": {
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/d7oqsHVgoyqUs475EzOomeQAUhg.jpg",
+        "genre_ids": [
+          16,
+          10765
+        ],
+        "id": 129633,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "슈퍼 시크릿",
+        "overview": "",
+        "popularity": 0.1782,
+        "poster_path": "/8B50bslPGBnTwKmDZRKbORl00Tc.jpg",
+        "first_air_date": "2020-05-30",
+        "name": "슈퍼 시크릿",
+        "vote_average": 7,
+        "vote_count": 1
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/oX9RSH4fREUNDv8ojlNGFtwrTjS.jpg",
+        "genre_ids": [
+          10751,
+          10764
+        ],
+        "id": 129674,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Bake Squad",
+        "overview": "",
+        "popularity": 0.5019,
+        "poster_path": "/5RE1VcCBSr4MWTgC9L0Rk5SbDIF.jpg",
+        "first_air_date": "2021-08-11",
+        "name": "Bake Squad",
+        "vote_average": 7.4,
+        "vote_count": 15
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/tXPfLEpHejNZP6pR2kiwtTKgM5Q.jpg",
+        "genre_ids": [
+          10759,
+          18,
+          35,
+          10765
+        ],
+        "id": 129715,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "救星戦隊ワクセイバー",
+        "overview": "",
+        "popularity": 3.0283,
+        "poster_path": "/na8bbbmER8KISQKiWUvpBogs0Mf.jpg",
+        "first_air_date": "2021-07-02",
+        "name": "救星戦隊ワクセイバー",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/b583tO3P5ponsdBH4dZbYjml3iQ.jpg",
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 129748,
+        "origin_country": [
+          "KR"
+        ],
+        "original_language": "ko",
+        "original_name": "리필",
+        "overview": "",
+        "popularity": 0.7408,
+        "poster_path": "/b6Rgt1ZoWAdtOZmTjB7nvX1w175.jpg",
+        "first_air_date": "2019-03-23",
+        "name": "리필",
+        "vote_average": 8.2,
+        "vote_count": 9
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 283101,
+        "origin_country": [
+          "JP"
+        ],
+        "original_language": "ja",
+        "original_name": "あまえないでョ!",
+        "overview": "",
+        "popularity": 0.7531,
+        "poster_path": null,
+        "first_air_date": "1987-01-15",
+        "name": "あまえないでョ!",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/fMCewQBoRlPQOZcSmGJOf3cWDMO.jpg",
+        "genre_ids": [
+          16,
+          35
+        ],
+        "id": 283141,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Lil Kev",
+        "overview": "",
+        "popularity": 0.8839,
+        "poster_path": "/rnWr6Xr72Lsqf2JH52BdticR3Dc.jpg",
+        "first_air_date": "2025-03-06",
+        "name": "Lil Kev",
+        "vote_average": 7.714,
+        "vote_count": 7
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          35
+        ],
+        "id": 282702,
+        "origin_country": [
+          "FR"
+        ],
+        "original_language": "fr",
+        "original_name": "Previously",
+        "overview": "",
+        "popularity": 0.2744,
+        "poster_path": null,
+        "first_air_date": "2014-04-10",
+        "name": "Previously",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/fA9yHyUDkZJruf15vTrP8gGSn9Z.jpg",
+        "genre_ids": [
+          16,
+          35,
+          10759
+        ],
+        "id": 213424,
+        "origin_country": [
+          "CN"
+        ],
+        "original_language": "zh",
+        "original_name": "四格勇者",
+        "overview": "",
+        "popularity": 3.149,
+        "poster_path": "/hkNZwSpscq9AdKMYGpWp0sF359l.jpg",
+        "first_air_date": "2023-07-17",
+        "name": "四格勇者",
+        "vote_average": 6.8,
+        "vote_count": 4
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/msgQvKwgtgqSkQ5upqVljFPfkpg.jpg",
+        "genre_ids": [
+          16,
+          35
+        ],
+        "id": 130077,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Chicago Party Aunt",
+        "overview": "",
+        "popularity": 2.8985,
+        "poster_path": "/2iGvVnhvIpzyPLqK18LvgQ3PgPk.jpg",
+        "first_air_date": "2021-09-17",
+        "name": "Chicago Party Aunt",
+        "vote_average": 6.014,
+        "vote_count": 70
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          35
+        ],
+        "id": 29760,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "The Two of Us",
+        "overview": "",
+        "popularity": 1.0177,
+        "poster_path": null,
+        "first_air_date": "1981-04-06",
+        "name": "The Two of Us",
+        "vote_average": 5.5,
+        "vote_count": 2
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          35
+        ],
+        "id": 29761,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Good Time Harry",
+        "overview": "",
+        "popularity": 0.3546,
+        "poster_path": null,
+        "first_air_date": "1980-07-19",
+        "name": "Good Time Harry",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          35
+        ],
+        "id": 29799,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "All is Forgiven",
+        "overview": "",
+        "popularity": 1.1826,
+        "poster_path": "/jaNWU8sM1Fm87LYDHgmpxEsbAN8.jpg",
+        "first_air_date": "1986-03-20",
+        "name": "All is Forgiven",
+        "vote_average": 5,
+        "vote_count": 2
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          35
+        ],
+        "id": 29801,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "Too Something",
+        "overview": "",
+        "popularity": 0.8508,
+        "poster_path": null,
+        "first_air_date": "1995-10-01",
+        "name": "Too Something",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          35
+        ],
+        "id": 29810,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "FM",
+        "overview": "",
+        "popularity": 0.7884,
+        "poster_path": "/Ac974aU9Vy06gYWGc3VYU8A5Vgp.jpg",
+        "first_air_date": "1989-08-17",
+        "name": "FM",
+        "vote_average": 6,
+        "vote_count": 3
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/69zaw0bz3kgCdr9p8Cvo9t4Rzo9.jpg",
+        "genre_ids": [
+          18,
+          35
+        ],
+        "id": 32474,
+        "origin_country": [
+          "IN"
+        ],
+        "original_language": "hi",
+        "original_name": "सजन रे झूठ मत बोलो",
+        "overview": "",
+        "popularity": 15.2119,
+        "poster_path": "/54dPrGBdBdFya8W4rCw3GAl17cB.jpg",
+        "first_air_date": "2009-12-14",
+        "name": "सजन रे झूठ मत बोलो",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          35,
+          10751
+        ],
+        "id": 32547,
+        "origin_country": [
+          "CA"
+        ],
+        "original_language": "en",
+        "original_name": "Wingin' It",
+        "overview": "",
+        "popularity": 1.1188,
+        "poster_path": "/dZnbIvI80m8sBflYGZbeyODkiIN.jpg",
+        "first_air_date": "2010-04-03",
+        "name": "Wingin' It",
+        "vote_average": 5.8,
+        "vote_count": 6
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          35
+        ],
+        "id": 32556,
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_name": "The Gregory Hines Show",
+        "overview": "",
+        "popularity": 1.9054,
+        "poster_path": null,
+        "first_air_date": "1997-09-15",
+        "name": "The Gregory Hines Show",
+        "vote_average": 0,
+        "vote_count": 0
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/hDsxQqu1K2CCnJBTHTHXzUxPDfk.jpg",
+        "genre_ids": [
+          35,
+          10751
+        ],
+        "id": 32562,
+        "origin_country": [
+          "IT"
+        ],
+        "original_language": "it",
+        "original_name": "Casa Vianello",
+        "overview": "",
+        "popularity": 1.9921,
+        "poster_path": "/8F2KIxUaVLq06TLwIVwt7F0vVgJ.jpg",
+        "first_air_date": "1988-01-17",
+        "name": "Casa Vianello",
+        "vote_average": 5.8,
+        "vote_count": 9
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/4M6du5XGvbGSFRqstP7aS4l4N9L.jpg",
+        "genre_ids": [
+          35,
+          10763
+        ],
+        "id": 32580,
+        "origin_country": [
+          "GR"
+        ],
+        "original_language": "el",
+        "original_name": "Ράδιο Αρβύλα",
+        "overview": "",
+        "popularity": 45.9029,
+        "poster_path": "/u0NlPvjp1AmP6wzRassWnzSDcPq.jpg",
+        "first_air_date": "2008-04-14",
+        "name": "Ράδιο Αρβύλα",
+        "vote_average": 5.5,
+        "vote_count": 6
+      },
+      {
+        "adult": false,
+        "backdrop_path": null,
+        "genre_ids": [
+          35
+        ],
+        "id": 216918,
+        "origin_country": [
+          "GB"
+        ],
+        "original_language": "en",
+        "original_name": "Round the Horne",
+        "overview": "",
+        "popularity": 0.4972,
+        "poster_path": null,
+        "first_air_date": "1965-03-07",
+        "name": "Round the Horne",
+        "vote_average": 10,
+        "vote_count": 1
+      }
+    ],
+    "total_pages": 2280,
+    "total_results": 45592
+  },
+  "videos": {
+    "results": []
+  }
+}
