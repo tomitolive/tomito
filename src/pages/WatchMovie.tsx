@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { Play } from "lucide-react";
+import { Play, Maximize2, Minimize2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/Navbar";
 import { BackButton } from "@/components/BackButton";
 import { MovieCard } from "@/components/MovieCard";
@@ -42,6 +43,29 @@ export default function WatchMovie() {
   // ── Unified player state ──
   const [activeServerId, setActiveServerId] = useState<string>(MOVIE_SERVERS[0].id);
   const [unifiedIframeKey, setUnifiedIframeKey] = useState(0);
+  const [unifiedFullscreen, setUnifiedFullscreen] = useState(false);
+  const unifiedContainerRef = useRef<HTMLDivElement>(null);
+
+  // Sync fullscreen state with browser changes
+  useEffect(() => {
+    const handleFsChange = () => setUnifiedFullscreen(!!document.fullscreenElement);
+    document.addEventListener("fullscreenchange", handleFsChange);
+    return () => document.removeEventListener("fullscreenchange", handleFsChange);
+    
+  }, []);
+
+  const toggleUnifiedFullscreen = async () => {
+    if (!unifiedContainerRef.current) return;
+    try {
+      if (!document.fullscreenElement) {
+        await unifiedContainerRef.current.requestFullscreen();
+      } else {
+        await document.exitFullscreen();
+      }
+    } catch (err) {
+      console.error("Fullscreen error:", err);
+    }
+  };
 
   const supremeServers = useSupremeServers({
     movieTitle: movie?.title,
@@ -167,10 +191,16 @@ export default function WatchMovie() {
       <div className="container mx-auto px-4 pt-28">
         {/* Top Row: Video Player (70%) + Servers Sidebar (30%) */}
         <div className="flex flex-col-reverse lg:flex-row gap-6 mb-12 w-full max-w-7xl mx-auto">
-          
+
           {/* Video Player */}
           <div className="w-full lg:w-[70%]">
-            <div className="relative aspect-video rounded-xl shadow-2xl overflow-hidden bg-black border border-border/50">
+            <div
+              ref={unifiedContainerRef}
+              className={cn(
+                "relative group aspect-video rounded-xl shadow-2xl overflow-hidden bg-black border border-border/50 transition-all duration-300",
+                unifiedFullscreen && "rounded-none border-0"
+              )}
+            >
               <iframe
                 key={unifiedIframeKey}
                 src={iframeUrl}
@@ -178,6 +208,19 @@ export default function WatchMovie() {
                 allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
                 allowFullScreen
               />
+
+              {/* Floating Zoom Button - Bottom Right */}
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleUnifiedFullscreen();
+                }}
+                className="absolute bottom-2 right-2 z-[9999] h-8 w-8 bg-black/50 hover:bg-black/80 text-white border border-white/10 backdrop-blur-md shadow-2xl rounded-full transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center opacity-50 hover:opacity-100"
+              >
+                {unifiedFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
+              </Button>
             </div>
           </div>
 
@@ -238,7 +281,7 @@ export default function WatchMovie() {
                   )}>
                     <Play className={cn("w-3.5 h-3.5 ml-0.5", isActive ? "fill-current" : "")} />
                   </div>
-                  
+
                   <span className={cn(
                     "font-bold tracking-wide transition-colors text-[13px] leading-tight line-clamp-1 mb-1",
                     isActive ? "text-primary-foreground" : "text-foreground"
@@ -257,7 +300,7 @@ export default function WatchMovie() {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 text-foreground leading-tight text-right w-full">
             {movie.title}
           </h1>
-          
+
           {/* Original Title & Year */}
           <div className="text-lg text-muted-foreground mb-6 font-medium flex justify-start items-center gap-2 w-full text-right">
             <span>{movie.original_title}</span>
@@ -307,7 +350,7 @@ export default function WatchMovie() {
               <div className="flex items-center justify-between mb-8">
                 <h2 className="text-2xl font-bold text-foreground">{t("similarMovies") || "أفلام مشابهة"}</h2>
               </div>
-              
+
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 xl:gap-8">
                 {similar.slice(0, 6).map(sm => (
                   <MovieCard key={sm.id} item={sm} type="movie" />
@@ -316,7 +359,7 @@ export default function WatchMovie() {
             </div>
           )}
         </div>
-        
+
         {/* Footer */}
         <div className="mt-20 pt-8 pb-4 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground font-medium">
           <div>Copyright © 2026, Inc. All rights reserved</div>

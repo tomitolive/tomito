@@ -673,16 +673,7 @@ export const MOVIE_SERVERS: VideoServer[] = [
 ];
 
 export const TV_SERVERS: VideoServer[] = [
-    {
-    id: 'vidsrc_to',
-    name: '🌟 سيرفر 5',
-    baseUrl: 'https://vidsrc.to/embed/tv',
-    quality: 'HD',
-    icon: 'star',
-    color: '#16a085',
-    supportsSeasons: true,
-    format: '{id}/{season}/{episode}'
-  },
+   
   {
     id: 'vidsrc_embed',
     name: '🎬 vidsrc.ru',
@@ -720,6 +711,16 @@ export const TV_SERVERS: VideoServer[] = [
     quality: 'HD',
     icon: 'film',
     color: '#e74c3c',
+    supportsSeasons: true,
+    format: '{id}/{season}/{episode}'
+  },
+   {
+    id: 'vidsrc_to',
+    name: '🌟 سيرفر 5',
+    baseUrl: 'https://vidsrc.to/embed/tv',
+    quality: 'HD',
+    icon: 'star',
+    color: '#16a085',
     supportsSeasons: true,
     format: '{id}/{season}/{episode}'
   },

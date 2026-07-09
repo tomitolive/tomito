@@ -70,6 +70,19 @@ export default function WatchTV() {
     return () => document.removeEventListener("fullscreenchange", handleFsChange);
   }, []);
 
+  const toggleUnifiedFullscreen = async () => {
+    if (!unifiedContainerRef.current) return;
+    try {
+      if (!document.fullscreenElement) {
+        await unifiedContainerRef.current.requestFullscreen();
+      } else {
+        await document.exitFullscreen();
+      }
+    } catch (err) {
+      console.error("Fullscreen error:", err);
+    }
+  };
+
   const handleNavigate = (s: number, e: number) => {
     setSearchParams({ season: s.toString(), episode: e.toString() });
   };
@@ -180,68 +193,74 @@ export default function WatchTV() {
       <div className="container mx-auto px-4 pt-32 max-w-7xl">
         {/* Main Row: Video Player (Left) + Episodes/Seasons (Right) */}
         <div className="flex flex-col lg:flex-row gap-8 mb-16 w-full">
-          
+
           {/* Video Player Column */}
           <div className="w-full lg:w-[70%] flex flex-col gap-6">
             {/* Server Selection */}
             <div className="flex items-center gap-4">
               <label className="text-sm font-semibold text-foreground whitespace-nowrap">السيرفرات</label>
               {(() => {
-              type UnifiedServer =
-                | { kind: 'tmdb'; server: VideoServer }
-                | { kind: 'direct'; id: string; name: string; url: string; badge?: string };
+                type UnifiedServer =
+                  | { kind: 'tmdb'; server: VideoServer }
+                  | { kind: 'direct'; id: string; name: string; url: string; badge?: string };
 
-              const allServers: UnifiedServer[] = [
-                ...supremeServers
-                  .filter(s => !s.name.toLowerCase().includes("streamtape"))
-                  .map((s, i) => ({
-                    kind: 'direct' as const,
-                    id: `sup-${i}`,
-                    name: s.name,
-                    url: s.url,
-                    badge: 'إضافي',
-                  })),
-                ...TV_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
-              ];
+                const allServers: UnifiedServer[] = [
+                  ...supremeServers
+                    .filter(s => !s.name.toLowerCase().includes("streamtape"))
+                    .map((s, i) => ({
+                      kind: 'direct' as const,
+                      id: `sup-${i}`,
+                      name: s.name,
+                      url: s.url,
+                      badge: 'إضافي',
+                    })),
+                  ...TV_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
+                ];
 
-              const activeEntry = allServers.find(s =>
-                s.kind === 'tmdb' ? s.server.id === activeServerId : s.id === activeServerId
-              ) || allServers[0];
+                const activeEntry = allServers.find(s =>
+                  s.kind === 'tmdb' ? s.server.id === activeServerId : s.id === activeServerId
+                ) || allServers[0];
 
-              const switchServer = (newId: string) => {
-                setActiveServerId(newId);
-                setUnifiedIframeKey(k => k + 1);
-                window.dispatchEvent(new CustomEvent('trigger-ad-popup'));
-              };
+                const switchServer = (newId: string) => {
+                  setActiveServerId(newId);
+                  setUnifiedIframeKey(k => k + 1);
+                  window.dispatchEvent(new CustomEvent('trigger-ad-popup'));
+                };
 
-              const getServerId = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.id : s.id;
-              const getServerName = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.name : s.name;
+                const getServerId = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.id : s.id;
+                const getServerName = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.name : s.name;
 
-              return (
-                <Select value={activeServerId} onValueChange={switchServer}>
-                  <SelectTrigger className="w-full h-12 bg-card/50 border-border/50 text-foreground font-semibold rounded-xl focus:ring-primary focus:ring-2 text-right rtl:text-right">
-                    <SelectValue placeholder="اختر السيرفر" />
-                  </SelectTrigger>
-                  <SelectContent className="bg-card border-border/50">
-                    {allServers.map((s) => {
-                      const sid = getServerId(s);
-                      const sname = getServerName(s);
-                      return (
-                        <SelectItem key={sid} value={sid} className="text-foreground font-semibold cursor-pointer transition-colors focus:bg-primary/20 rtl:flex-row-reverse">
-                          <div className="flex items-center gap-2 text-right">
-                            <span>{sname}</span>
-                          </div>
-                        </SelectItem>
-                      );
-                    })}
-                  </SelectContent>
-                </Select>
-              );
-            })()}
+                return (
+                  <Select value={activeServerId} onValueChange={switchServer}>
+                    <SelectTrigger className="w-full h-12 bg-card/50 border-border/50 text-foreground font-semibold rounded-xl focus:ring-primary focus:ring-2 text-right rtl:text-right">
+                      <SelectValue placeholder="اختر السيرفر" />
+                    </SelectTrigger>
+                    <SelectContent className="bg-card border-border/50">
+                      {allServers.map((s) => {
+                        const sid = getServerId(s);
+                        const sname = getServerName(s);
+                        return (
+                          <SelectItem key={sid} value={sid} className="text-foreground font-semibold cursor-pointer transition-colors focus:bg-primary/20 rtl:flex-row-reverse">
+                            <div className="flex items-center gap-2 text-right">
+                              <span>{sname}</span>
+                            </div>
+                          </SelectItem>
+                        );
+                      })}
+                    </SelectContent>
+                  </Select>
+                );
+              })()}
             </div>
 
             {/* Video Player */}
-            <div className="relative aspect-video rounded-2xl shadow-2xl overflow-hidden bg-black border border-border/30 ring-1 ring-border/20">
+            <div
+              ref={unifiedContainerRef}
+              className={cn(
+                "relative group aspect-video rounded-2xl shadow-2xl overflow-hidden bg-black border border-border/30 ring-1 ring-border/20 transition-all duration-300",
+                unifiedFullscreen && "rounded-none border-0"
+              )}
+            >
               <iframe
                 key={unifiedIframeKey}
                 src={(() => {
@@ -285,6 +304,19 @@ export default function WatchTV() {
                 allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
                 allowFullScreen
               />
+
+              {/* Floating Zoom Button - Bottom Right */}
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleUnifiedFullscreen();
+                }}
+                className="absolute bottom-2 right-2 z-[9999] h-8 w-8 bg-black/50 hover:bg-black/80 text-white border border-white/10 backdrop-blur-md shadow-2xl rounded-full transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center opacity-50 hover:opacity-100"
+              >
+                {unifiedFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
+              </Button>
             </div>
           </div>
 
@@ -305,6 +337,7 @@ export default function WatchTV() {
                     <button
                       key={season.id}
                       onClick={() => {
+                        window.open("https://www.effectivecpmnetwork.com/yyfyhe2mhu?key=5c6adf2e336c9ff9cc1082a52dad7beb", "_blank");
                         setSelectedSeason(season.season_number);
                         setSelectedEpisode(1);
                         setIsSeasonDropdownOpen(false);
@@ -339,11 +372,15 @@ export default function WatchTV() {
                 {episodes.map((episode) => (
                   <button
                     key={episode.id}
-                    onClick={() => setSelectedEpisode(episode.episode_number)}
+                    onClick={() => {
+                      window.open("https://www.effectivecpmnetwork.com/yyfyhe2mhu?key=5c6adf2e336c9ff9cc1082a52dad7beb", "_blank");
+                      setSelectedEpisode(episode.episode_number)
+
+                    }}
                     className={cn(
                       "w-full flex items-center gap-3 p-3 rounded-xl transition-all duration-300 border-2 group hover:scale-[1.02]",
-                      selectedEpisode === episode.episode_number 
-                        ? "border-primary bg-primary/10 shadow-lg shadow-primary/10" 
+                      selectedEpisode === episode.episode_number
+                        ? "border-primary bg-primary/10 shadow-lg shadow-primary/10"
                         : "border-border/30 bg-card/50 hover:border-primary/50 hover:bg-card"
                     )}
                   >
@@ -378,7 +415,7 @@ export default function WatchTV() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4 text-foreground leading-tight tracking-tight">
               {show.name}
             </h1>
-            
+
             <div className="flex flex-wrap items-center gap-4 text-base text-muted-foreground mb-6">
               <span className="font-medium">{show.original_name}</span>
               {show.first_air_date && (
@@ -428,16 +465,16 @@ export default function WatchTV() {
               </div>
               <div className="flex gap-5 overflow-x-auto pb-8 hide-scrollbar">
                 {cast.map(actor => (
-                  <div 
-                    key={actor.id} 
-                    onClick={() => navigate(`/actor/${actor.id}`)} 
+                  <div
+                    key={actor.id}
+                    onClick={() => navigate(`/actor/${actor.id}`)}
                     className="cursor-pointer flex-shrink-0 w-32 text-center group"
                   >
                     <div className="w-24 h-24 mx-auto rounded-2xl overflow-hidden mb-4 border-2 border-transparent group-hover:border-primary transition-all duration-300 shadow-lg group-hover:shadow-xl group-hover:shadow-primary/20">
-                      <img 
-                        src={getImageUrl(actor.profile_path, "w500")} 
-                        alt={actor.name} 
-                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" 
+                      <img
+                        src={getImageUrl(actor.profile_path, "w500")}
+                        alt={actor.name}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                       />
                     </div>
                     <div className="font-bold text-sm text-foreground line-clamp-1 group-hover:text-primary transition-colors">{actor.name}</div>
@@ -455,7 +492,7 @@ export default function WatchTV() {
                 <div className="w-1 h-7 bg-primary rounded-full" />
                 <h2 className="text-2xl font-bold">{t("similarTV") || "مسلسلات مشابهة"}</h2>
               </div>
-              
+
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
                 {similar.slice(0, 12).map(sm => (
                   <MovieCard key={sm.id} item={sm} type="tv" />
@@ -464,7 +501,7 @@ export default function WatchTV() {
             </div>
           )}
         </div>
-        
+
         {/* Footer */}
         <div className="pt-12 pb-8 border-t border-border/30 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-muted-foreground">
           <div className="font-medium">© 2026 Tomito. All rights reserved.</div>
