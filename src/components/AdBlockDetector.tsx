@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Shield, ShieldOff, EyeOff, Chrome, RefreshCw } from "lucide-react";
+import { t } from "@/lib/tmdb";
 
 type DetectionReason = "adblock" | "incognito" | null;
 
@@ -112,13 +113,13 @@ export default function AdBlockDetector() {
             </div>
             <h2 className="text-xl font-bold text-white leading-snug">
               {isIncognito
-                ? "المتصفح الخفي غير مدعوم"
-                : "تم اكتشاف مانع الإعلانات"}
+                ? t("incognitoDetectedTitle" as any)
+                : t("adblockDetectedTitle" as any)}
             </h2>
             <p className="text-gray-400 text-sm leading-relaxed">
               {isIncognito
-                ? "يبدو أنك تستخدم وضع التصفح الخفي (Incognito). هذا الوضع يمنع الموقع من العمل بشكل صحيح."
-                : "يبدو أنك تستخدم إضافة لمنع الإعلانات (Ad Blocker). الإعلانات هي المصدر الوحيد الذي يُبقي هذا الموقع مجانياً للجميع."}
+                ? t("incognitoDetectedDesc" as any)
+                : t("adblockDetectedDesc" as any)}
             </p>
           </div>
 
@@ -128,20 +129,20 @@ export default function AdBlockDetector() {
           {/* Steps */}
           <div className="space-y-3">
             <p className="text-xs font-semibold text-primary uppercase tracking-wide">
-              {isIncognito ? "كيفية الحل" : "كيفية تعطيل مانع الإعلانات"}
+              {isIncognito ? t("incognitoHowToFix" as any) : t("adblockHowToFix" as any)}
             </p>
 
             {isIncognito ? (
               <>
-                <Step num={1} text='افتح متصفحك العادي (ليس وضع Incognito / Private)' />
-                <Step num={2} text='انسخ رابط الصفحة الحالية والصقه في المتصفح العادي' />
-                <Step num={3} text='استمتع بالمشاهدة دون أي قيود 🎬' />
+                <Step num={1} text={t("incognitoStep1" as any)} />
+                <Step num={2} text={t("incognitoStep2" as any)} />
+                <Step num={3} text={t("incognitoStep3" as any)} />
               </>
             ) : (
               <>
-                <Step num={1} text='ابحث عن أيقونة الدرع أو الإضافة في شريط أدوات المتصفح (بجانب شريط العنوان)' />
-                <Step num={2} text='اضغط عليها ثم اختر "تعطيل على هذا الموقع" أو "Pause on this site"' />
-                <Step num={3} text='أعد تحميل الصفحة بالضغط على زر التحديث أدناه' />
+                <Step num={1} text={t("adblockStep1" as any)} />
+                <Step num={2} text={t("adblockStep2" as any)} />
+                <Step num={3} text={t("adblockStep3" as any)} />
               </>
             )}
           </div>
@@ -156,13 +157,13 @@ export default function AdBlockDetector() {
               className="w-full max-w-[200px] flex items-center justify-center gap-2 py-3 rounded-xl bg-primary hover:bg-primary/90 text-white font-bold text-sm transition-all hover:scale-[1.02] active:scale-95 shadow-lg shadow-primary/20"
             >
               <RefreshCw className="w-4 h-4" />
-              تحديث الصفحة
+              {t("refreshPage" as any)}
             </button>
           </div>
 
           {/* Footer note */}
           <p className="text-center text-xs text-gray-600">
-            شكراً لدعمك الموقع ❤️ — الإعلانات تساعدنا في الاستمرار مجاناً
+            {t("thanksForSupport" as any)}
           </p>
         </div>
       </div>
