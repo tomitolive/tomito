@@ -241,7 +241,28 @@ export default function WatchTV() {
             </div>
 
             {/* Video Player */}
-            <div className="relative aspect-video rounded-2xl shadow-2xl overflow-hidden bg-black border border-border/30 ring-1 ring-border/20">
+            <div
+              ref={unifiedContainerRef}
+              className="relative aspect-video rounded-2xl shadow-2xl overflow-hidden bg-black border border-border/30 ring-1 ring-border/20"
+            >
+              {/* Fullscreen Button */}
+              <button
+                onClick={() => {
+                  if (!document.fullscreenElement) {
+                    unifiedContainerRef.current?.requestFullscreen();
+                  } else {
+                    document.exitFullscreen();
+                  }
+                }}
+                className="absolute bottom-3 right-3 z-20 flex items-center justify-center w-8 h-8 rounded-lg bg-black/60 hover:bg-black/90 text-white backdrop-blur-sm border border-white/20 transition-all duration-200 hover:scale-110 shadow-lg"
+                title={unifiedFullscreen ? "خروج من ملء الشاشة" : "ملء الشاشة"}
+              >
+                {unifiedFullscreen ? (
+                  <Minimize2 className="w-4 h-4" />
+                ) : (
+                  <Maximize2 className="w-4 h-4" />
+                )}
+              </button>
               <iframe
                 key={unifiedIframeKey}
                 src={(() => {

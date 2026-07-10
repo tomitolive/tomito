@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { Play } from "lucide-react";
+import { Play, Maximize2, Minimize2 } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { BackButton } from "@/components/BackButton";
 import { MovieCard } from "@/components/MovieCard";
@@ -42,6 +42,15 @@ export default function WatchMovie() {
   // ── Unified player state ──
   const [activeServerId, setActiveServerId] = useState<string>(MOVIE_SERVERS[0].id);
   const [unifiedIframeKey, setUnifiedIframeKey] = useState(0);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
+  // Sync fullscreen state with browser
+  useEffect(() => {
+    const handleFsChange = () => setIsFullscreen(!!document.fullscreenElement);
+    document.addEventListener("fullscreenchange", handleFsChange);
+    return () => document.removeEventListener("fullscreenchange", handleFsChange);
+  }, []);
 
   const supremeServers = useSupremeServers({
     movieTitle: movie?.title,
@@ -170,7 +179,28 @@ export default function WatchMovie() {
 
           {/* Video Player */}
           <div className="w-full lg:w-[70%]">
-            <div className="relative aspect-video rounded-xl shadow-2xl overflow-hidden bg-black border border-border/50">
+            <div
+              ref={containerRef}
+              className="relative aspect-video rounded-xl shadow-2xl overflow-hidden bg-black border border-border/50"
+            >
+              {/* Fullscreen Button */}
+              <button
+                onClick={() => {
+                  if (!document.fullscreenElement) {
+                    containerRef.current?.requestFullscreen();
+                  } else {
+                    document.exitFullscreen();
+                  }
+                }}
+                className="absolute bottom-3 right-3 z-20 flex items-center justify-center w-8 h-8 rounded-lg bg-black/60 hover:bg-black/90 text-white backdrop-blur-sm border border-white/20 transition-all duration-200 hover:scale-110 shadow-lg"
+                title={isFullscreen ? "خروج من ملء الشاشة" : "ملء الشاشة"}
+              >
+                {isFullscreen ? (
+                  <Minimize2 className="w-4 h-4" />
+                ) : (
+                  <Maximize2 className="w-4 h-4" />
+                )}
+              </button>
               <iframe
                 key={unifiedIframeKey}
                 src={iframeUrl}
