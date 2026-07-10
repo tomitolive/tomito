@@ -4,17 +4,9 @@ import { t } from "@/lib/tmdb";
 
 type DetectionReason = "adblock" | "incognito" | null;
 
+// Modern browsers: check storage quota (incognito has very limited quota)
+// Incognito detection removed to avoid false positives and allow users to see ads even in Incognito.
 async function detectIncognito(): Promise<boolean> {
-  // Modern browsers: check storage quota (incognito has very limited quota)
-  try {
-    if (navigator.storage && navigator.storage.estimate) {
-      const { quota } = await navigator.storage.estimate();
-      // In incognito, Chrome limits quota to ~120MB
-      if (quota !== undefined && quota < 200 * 1024 * 1024) {
-        return true;
-      }
-    }
-  } catch (_) {}
   return false;
 }
 
