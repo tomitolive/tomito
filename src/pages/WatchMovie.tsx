@@ -30,6 +30,7 @@ import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
 import { useSupremeServers } from "@/hooks/useSupremeServers";
 import { useExternalMovieData } from "@/hooks/useExternalMovieData";
+import { SEO } from "@/components/SEO";
 
 export default function WatchMovie() {
   const { id } = useParams<{ id: string }>();
@@ -98,7 +99,7 @@ export default function WatchMovie() {
         setImdbId(imdb);
 
         trackEvent({
-          action: "view_item",
+          action: "watch_movie",
           category: "Content",
           label: movieData.title,
           value: movieData.id,
@@ -186,6 +187,15 @@ export default function WatchMovie() {
 
   return (
     <div className="min-h-screen text-foreground pb-12">
+      <SEO
+        title={`شاهد فيلم ${movie.title} مترجم كامل اون لاين`}
+        description={`مشاهدة فيلم ${movie.title} مترجم كامل بجودة عالية HD. ${movie.overview?.substring(0, 150)}...`}
+        keywords={`${movie.title}, شاهد فيلم, فيلم مترجم, مشاهدة فيلم ${movie.title}, افلام مترجمة`}
+        ogTitle={`مشاهدة فيلم ${movie.title}`}
+        ogDescription={movie.overview || ''}
+        ogType="video.movie"
+        canonical={`https://tomito.xyz/movie/${id}/watch`}
+      />
       <Navbar />
       <BackButton />
       <div className="container mx-auto px-4 pt-28">

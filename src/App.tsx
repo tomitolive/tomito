@@ -55,7 +55,7 @@ function App() {
               <ScrollToTop />
               <NetworkAds />
               <GoogleAnalytics />
-              {/* {isMobile ? <AdPopup /> : <AdManager />} */}
+              {isMobile ? <AdPopup /> : <AdManager />}
               <Routes>
                 <Route path="/" element={<Home />} />
                 {/* Trailer pages - shown first when clicking on content */}

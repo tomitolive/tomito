@@ -103,7 +103,6 @@ export function MovieCard({
       e.stopPropagation();
       return;
     }
-    window.open("https://www.effectivecpmnetwork.com/yyfyhe2mhu?key=5c6adf2e336c9ff9cc1082a52dad7beb", "_blank");
     navigate(link);
   };
 

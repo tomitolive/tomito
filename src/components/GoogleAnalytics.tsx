@@ -17,7 +17,7 @@ const GoogleAnalytics = () => {
 
     useEffect(() => {
         pageview(location.pathname + location.search);
-    }, [location]);
+    }, [location.pathname, location.search]);
 
     return null;
 };

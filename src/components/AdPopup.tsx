@@ -1,11 +1,18 @@
 import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 /**
  * AdPopup component for mobile devices.
  * Injects a popunder script with a 24-hour cooldown.
  */
 const AdPopup: React.FC = () => {
+    const location = useLocation();
+
     useEffect(() => {
+        if (location.pathname === '/') {
+            return;
+        }
+
         const COOLDOWN_KEY = "lastMobileAdPop";
         const COOLDOWN_PERIOD = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
 

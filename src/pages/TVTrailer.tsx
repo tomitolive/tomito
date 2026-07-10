@@ -245,7 +245,6 @@ export default function TVTrailer() {
                                             size="lg"
                                             className="bg-primary hover:bg-primary/90 text-white shadow-[0_0_20px_rgba(var(--primary),0.4)] transition-all hover:scale-105 active:scale-95 px-8 py-6 text-lg font-bold"
                                             onClick={() => {
-                                                window.open("https://www.effectivecpmnetwork.com/yyfyhe2mhu?key=5c6adf2e336c9ff9cc1082a52dad7beb", "_blank");
                                                 navigate(`/tv/${tvShow.id}/watch`);
                                             }}
                                         >

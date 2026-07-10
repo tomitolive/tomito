@@ -19,8 +19,10 @@ export const event = ({ action, category, label, value }: {
 // Log page views
 export const pageview = (url: string) => {
     if (typeof window.gtag !== "undefined") {
-        window.gtag("config", GA_TRACKING_ID, {
+        window.gtag("event", "page_view", {
             page_path: url,
+            page_location: window.location.href,
+            page_title: document.title,
         });
     }
 };

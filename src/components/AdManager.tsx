@@ -26,7 +26,7 @@ const AdManager: React.FC = () => {
 
     // Reset overlay whenever the user navigates
     useEffect(() => {
-        resetAdState();
+      resetAdState();
     }, [location.pathname, resetAdState]);
 
     // Optional: Re-show the ad after a delay to fulfill "mora kola event"
@@ -62,7 +62,7 @@ const AdManager: React.FC = () => {
         setIsVisible(false);
     };
 
-    if (!isVisible) return null;
+    if (location.pathname === '/' || !isVisible) return null;
 
     return (
         <div

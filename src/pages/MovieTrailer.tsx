@@ -169,7 +169,6 @@ export default function MovieTrailer() {
                                             size="lg"
                                             className="bg-primary hover:bg-primary/90 text-white shadow-[0_0_20px_rgba(var(--primary),0.4)] transition-all hover:scale-105 active:scale-95 px-8 py-6 text-lg font-bold"
                                             onClick={() => {
-                                                window.open("https://www.effectivecpmnetwork.com/yyfyhe2mhu?key=5c6adf2e336c9ff9cc1082a52dad7beb", "_blank");
                                                 navigate(`/movie/${movie.id}/watch`);
                                             }}
                                         >
@@ -178,7 +177,7 @@ export default function MovieTrailer() {
                                         </Button>
                                     </div>
                                 </div>
-                            )}
+                             )}
                         </div>
 
                         {/* Watch Now Button - Positioned directly under trailer */}
@@ -186,7 +185,6 @@ export default function MovieTrailer() {
                             size="lg"
                             className="w-full bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white shadow-[0_10px_30px_rgba(var(--primary),0.3)] transition-all hover:scale-105 active:scale-95 px-6 py-8 text-xl font-bold group/btn"
                             onClick={() => {
-                                window.open("https://www.effectivecpmnetwork.com/yyfyhe2mhu?key=5c6adf2e336c9ff9cc1082a52dad7beb", "_blank");
                                 navigate(`/movie/${movie.id}/watch`);
                             }}
                         >
@@ -202,7 +200,7 @@ export default function MovieTrailer() {
                             <div className="space-y-4 mt-6 p-6 rounded-2xl bg-secondary/30 border border-border/50 backdrop-blur-sm">
                                 <h3 className="text-xl font-bold flex items-center gap-2">
                                     <Download className="w-6 h-6 text-primary" />
-                                    {t("downloadMovie") || "تحميل الفيلم"}
+                                    {t("downloadMovie" as any) || "تحميل الفيلم"}
                                 </h3>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                     {externalMovie.download_links.map((link, index) => (

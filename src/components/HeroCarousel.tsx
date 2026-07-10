@@ -139,7 +139,6 @@ export function HeroCarousel({ items, type = "movie", fullViewport = false }: He
               <Button asChild size="lg" className="gap-2 text-base rounded-full px-6">
                 <Link
                   to={link}
-                  onClick={() => window.open("https://www.effectivecpmnetwork.com/yyfyhe2mhu?key=5c6adf2e336c9ff9cc1082a52dad7beb", "_blank")}
                 >
                   <Play className="w-5 h-5 fill-current" />
                   {t("watchNow")}
@@ -148,7 +147,6 @@ export function HeroCarousel({ items, type = "movie", fullViewport = false }: He
               <Button asChild variant="outline" size="lg" className="gap-2 text-base rounded-full px-6">
                 <Link
                   to={link}
-                  onClick={() => window.open("https://www.effectivecpmnetwork.com/yyfyhe2mhu?key=5c6adf2e336c9ff9cc1082a52dad7beb", "_blank")}
                 >
                   <Info className="w-5 h-5" />
                   {t("moreInfo")}

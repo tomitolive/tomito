@@ -35,6 +35,7 @@ import {
 import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
 import { useSupremeServers } from "@/hooks/useSupremeServers";
+import { SEO } from "@/components/SEO";
 
 export default function WatchTV() {
   const { id } = useParams<{ id: string }>();
@@ -108,7 +109,7 @@ export default function WatchTV() {
         setImdbId(imdb);
 
         trackEvent({
-          action: "view_item",
+          action: "watch_tv",
           category: "Content",
           label: showData.name,
           value: showData.id,
@@ -188,6 +189,15 @@ export default function WatchTV() {
 
   return (
     <div className="min-h-screen text-foreground pb-16">
+      <SEO
+        title={`شاهد مسلسل ${show.name} الموسم ${selectedSeason} الحلقة ${selectedEpisode} مترجم`}
+        description={`مشاهدة مسلسل ${show.name} الموسم ${selectedSeason} الحلقة ${selectedEpisode} مترجم بجودة عالية. ${show.overview?.substring(0, 150)}...`}
+        keywords={`${show.name}, شاهد مسلسل, مسلسل مترجم, مشاهدة مسلسل ${show.name}, مسلسلات مترجمة`}
+        ogTitle={`مشاهدة مسلسل ${show.name} - الموسم ${selectedSeason} الحلقة ${selectedEpisode}`}
+        ogDescription={show.overview || ''}
+        ogType="video.tv_show"
+        canonical={`https://tomito.xyz/tv/${id}/watch?season=${selectedSeason}&episode=${selectedEpisode}`}
+      />
       <Navbar />
       <BackButton />
       <div className="container mx-auto px-4 pt-32 max-w-7xl">
