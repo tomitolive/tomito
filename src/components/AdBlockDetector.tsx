@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Shield, ShieldOff, EyeOff, Chrome, RefreshCw } from "lucide-react";
-import { t } from "@/lib/tmdb";
 
 type DetectionReason = "adblock" | "incognito" | null;
 
@@ -31,17 +30,6 @@ async function detectAdBlock(): Promise<boolean> {
   } catch (_) {
     return true;
   }
-}
-
-function Step({ num, text }: { num: number; text: string }) {
-  return (
-    <div className="flex items-start gap-3">
-      <div className="flex-shrink-0 w-7 h-7 rounded-full bg-primary flex items-center justify-center text-white text-sm font-bold">
-        {num}
-      </div>
-      <p className="text-sm text-gray-300 leading-relaxed pt-0.5">{text}</p>
-    </div>
-  );
 }
 
 export default function AdBlockDetector() {
@@ -77,8 +65,6 @@ export default function AdBlockDetector() {
 
   if (checking || !reason) return null;
 
-  const isIncognito = reason === "incognito";
-
   return (
     <div
       className="fixed inset-0 z-[99999] flex items-center justify-center p-4"
@@ -97,66 +83,77 @@ export default function AdBlockDetector() {
           {/* Icon + Title */}
           <div className="flex flex-col items-center text-center gap-3">
             <div className="w-16 h-16 rounded-2xl bg-primary/10 border border-primary/30 flex items-center justify-center">
-              {isIncognito ? (
-                <EyeOff className="w-8 h-8 text-primary" />
-              ) : (
-                <ShieldOff className="w-8 h-8 text-primary" />
-              )}
+              <ShieldOff className="w-8 h-8 text-primary" />
             </div>
             <h2 className="text-xl font-bold text-white leading-snug">
-              {isIncognito
-                ? t("incognitoDetectedTitle" as any)
-                : t("adblockDetectedTitle" as any)}
+              <span className="block mb-1">تم اكتشاف مانع الإعلانات</span>
+              <span className="block text-sm text-gray-400">Ad Blocker Detected</span>
             </h2>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              {isIncognito
-                ? t("incognitoDetectedDesc" as any)
-                : t("adblockDetectedDesc" as any)}
-            </p>
+            <div className="text-sm leading-relaxed">
+              <p className="text-gray-300">يبدو أنك تستخدم إضافة لمنع الإعلانات. الإعلانات هي المصدر الوحيد الذي يُبقي هذا الموقع مجانياً للجميع.</p>
+              <p className="text-gray-500 mt-1" dir="ltr">It seems you are using an Ad Blocker. Ads are the only source of income that keeps this site free for everyone.</p>
+            </div>
           </div>
 
           {/* Divider */}
           <div className="border-t border-white/10" />
 
           {/* Steps */}
-          <div className="space-y-3">
-            <p className="text-xs font-semibold text-primary uppercase tracking-wide">
-              {isIncognito ? t("incognitoHowToFix" as any) : t("adblockHowToFix" as any)}
-            </p>
+          <div className="space-y-4">
+            <div className="text-center">
+              <p className="text-xs font-semibold text-primary uppercase tracking-wide">كيفية تعطيل مانع الإعلانات</p>
+              <p className="text-[10px] text-gray-500 font-medium tracking-wider uppercase mt-1">How to disable AdBlock</p>
+            </div>
 
-            {isIncognito ? (
-              <>
-                <Step num={1} text={t("incognitoStep1" as any)} />
-                <Step num={2} text={t("incognitoStep2" as any)} />
-                <Step num={3} text={t("incognitoStep3" as any)} />
-              </>
-            ) : (
-              <>
-                <Step num={1} text={t("adblockStep1" as any)} />
-                <Step num={2} text={t("adblockStep2" as any)} />
-                <Step num={3} text={t("adblockStep3" as any)} />
-              </>
-            )}
+            <div className="space-y-4">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white text-sm font-bold mt-1">1</div>
+                <div>
+                  <p className="text-sm text-gray-200">ابحث عن أيقونة الدرع أو الإضافة في شريط أدوات المتصفح</p>
+                  <p className="text-xs text-gray-500 mt-1" dir="ltr">Look for the shield or extension icon in your browser toolbar</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white text-sm font-bold mt-1">2</div>
+                <div>
+                  <p className="text-sm text-gray-200">اضغط عليها ثم اختر "تعطيل على هذا الموقع" أو "Pause on this site"</p>
+                  <p className="text-xs text-gray-500 mt-1" dir="ltr">Click on it and select "Disable on this site" or "Pause on this site"</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white text-sm font-bold mt-1">3</div>
+                <div>
+                  <p className="text-sm text-gray-200">أعد تحميل الصفحة بالضغط على زر التحديث أدناه</p>
+                  <p className="text-xs text-gray-500 mt-1" dir="ltr">Reload the page by clicking the refresh button below</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Divider */}
           <div className="border-t border-white/10" />
 
           {/* Buttons */}
-          <div className="flex justify-center mt-4">
+          <div className="flex justify-center mt-4 pt-2">
             <button
               onClick={() => window.location.reload()}
-              className="w-full max-w-[200px] flex items-center justify-center gap-2 py-3 rounded-xl bg-primary hover:bg-primary/90 text-white font-bold text-sm transition-all hover:scale-[1.02] active:scale-95 shadow-lg shadow-primary/20"
+              className="w-full flex flex-col items-center justify-center gap-1 py-3 rounded-xl bg-primary hover:bg-primary/90 text-white font-bold text-sm transition-all hover:scale-[1.02] active:scale-95 shadow-lg shadow-primary/20"
             >
-              <RefreshCw className="w-4 h-4" />
-              {t("refreshPage" as any)}
+              <div className="flex items-center gap-2">
+                <RefreshCw className="w-4 h-4" />
+                <span>تحديث الصفحة</span>
+              </div>
+              <span className="text-[10px] opacity-70">Refresh Page</span>
             </button>
           </div>
 
           {/* Footer note */}
-          <p className="text-center text-xs text-gray-600">
-            {t("thanksForSupport" as any)}
-          </p>
+          <div className="text-center">
+            <p className="text-xs text-gray-400">شكراً لدعمك الموقع ❤️ — الإعلانات تساعدنا في الاستمرار مجاناً</p>
+            <p className="text-[10px] text-gray-500 mt-1">Thank you for supporting the site ❤️ — Ads help us stay free</p>
+          </div>
         </div>
       </div>
     </div>
