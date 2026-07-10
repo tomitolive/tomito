@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { Play, Maximize2, Minimize2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Play } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { BackButton } from "@/components/BackButton";
 import { MovieCard } from "@/components/MovieCard";
@@ -30,7 +29,6 @@ import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
 import { useSupremeServers } from "@/hooks/useSupremeServers";
 import { useExternalMovieData } from "@/hooks/useExternalMovieData";
-import { SEO } from "@/components/SEO";
 
 export default function WatchMovie() {
   const { id } = useParams<{ id: string }>();
@@ -44,29 +42,6 @@ export default function WatchMovie() {
   // ── Unified player state ──
   const [activeServerId, setActiveServerId] = useState<string>(MOVIE_SERVERS[0].id);
   const [unifiedIframeKey, setUnifiedIframeKey] = useState(0);
-  const [unifiedFullscreen, setUnifiedFullscreen] = useState(false);
-  const unifiedContainerRef = useRef<HTMLDivElement>(null);
-
-  // Sync fullscreen state with browser changes
-  useEffect(() => {
-    const handleFsChange = () => setUnifiedFullscreen(!!document.fullscreenElement);
-    document.addEventListener("fullscreenchange", handleFsChange);
-    return () => document.removeEventListener("fullscreenchange", handleFsChange);
-    
-  }, []);
-
-  const toggleUnifiedFullscreen = async () => {
-    if (!unifiedContainerRef.current) return;
-    try {
-      if (!document.fullscreenElement) {
-        await unifiedContainerRef.current.requestFullscreen();
-      } else {
-        await document.exitFullscreen();
-      }
-    } catch (err) {
-      console.error("Fullscreen error:", err);
-    }
-  };
 
   const supremeServers = useSupremeServers({
     movieTitle: movie?.title,
@@ -99,7 +74,7 @@ export default function WatchMovie() {
         setImdbId(imdb);
 
         trackEvent({
-          action: "watch_movie",
+          action: "view_item",
           category: "Content",
           label: movieData.title,
           value: movieData.id,
@@ -187,15 +162,6 @@ export default function WatchMovie() {
 
   return (
     <div className="min-h-screen text-foreground pb-12">
-      <SEO
-        title={`شاهد فيلم ${movie.title} مترجم كامل اون لاين`}
-        description={`مشاهدة فيلم ${movie.title} مترجم كامل بجودة عالية HD. ${movie.overview?.substring(0, 150)}...`}
-        keywords={`${movie.title}, شاهد فيلم, فيلم مترجم, مشاهدة فيلم ${movie.title}, افلام مترجمة`}
-        ogTitle={`مشاهدة فيلم ${movie.title}`}
-        ogDescription={movie.overview || ''}
-        ogType="video.movie"
-        canonical={`https://tomito.xyz/movie/${id}/watch`}
-      />
       <Navbar />
       <BackButton />
       <div className="container mx-auto px-4 pt-28">
@@ -204,13 +170,7 @@ export default function WatchMovie() {
 
           {/* Video Player */}
           <div className="w-full lg:w-[70%]">
-            <div
-              ref={unifiedContainerRef}
-              className={cn(
-                "relative group aspect-video rounded-xl shadow-2xl overflow-hidden bg-black border border-border/50 transition-all duration-300",
-                unifiedFullscreen && "rounded-none border-0"
-              )}
-            >
+            <div className="relative aspect-video rounded-xl shadow-2xl overflow-hidden bg-black border border-border/50">
               <iframe
                 key={unifiedIframeKey}
                 src={iframeUrl}
@@ -218,19 +178,6 @@ export default function WatchMovie() {
                 allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
                 allowFullScreen
               />
-
-              {/* Floating Zoom Button - Bottom Right */}
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  toggleUnifiedFullscreen();
-                }}
-                className="absolute bottom-2 right-2 z-[9999] h-8 w-8 bg-black/50 hover:bg-black/80 text-white border border-white/10 backdrop-blur-md shadow-2xl rounded-full transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center opacity-50 hover:opacity-100"
-              >
-                {unifiedFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
-              </Button>
             </div>
           </div>
 

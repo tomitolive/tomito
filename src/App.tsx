@@ -37,6 +37,7 @@ import SeriesDownloadList from "./pages/SeriesDownloadList";
 import { useIsMobile } from "./hooks/use-mobile";
 import { AIAssistant } from "./components/AIAssistant";
 import NetworkAds from "./components/NetworkAds";
+import AdBlockDetector from "./components/AdBlockDetector";
 
 
 
@@ -55,6 +56,7 @@ function App() {
               <ScrollToTop />
               <NetworkAds />
               <GoogleAnalytics />
+              <AdBlockDetector />
               {isMobile ? <AdPopup /> : <AdManager />}
               <Routes>
                 <Route path="/" element={<Home />} />

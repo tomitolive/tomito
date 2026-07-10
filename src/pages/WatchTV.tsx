@@ -35,7 +35,6 @@ import {
 import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
 import { useSupremeServers } from "@/hooks/useSupremeServers";
-import { SEO } from "@/components/SEO";
 
 export default function WatchTV() {
   const { id } = useParams<{ id: string }>();
@@ -71,19 +70,6 @@ export default function WatchTV() {
     return () => document.removeEventListener("fullscreenchange", handleFsChange);
   }, []);
 
-  const toggleUnifiedFullscreen = async () => {
-    if (!unifiedContainerRef.current) return;
-    try {
-      if (!document.fullscreenElement) {
-        await unifiedContainerRef.current.requestFullscreen();
-      } else {
-        await document.exitFullscreen();
-      }
-    } catch (err) {
-      console.error("Fullscreen error:", err);
-    }
-  };
-
   const handleNavigate = (s: number, e: number) => {
     setSearchParams({ season: s.toString(), episode: e.toString() });
   };
@@ -109,7 +95,7 @@ export default function WatchTV() {
         setImdbId(imdb);
 
         trackEvent({
-          action: "watch_tv",
+          action: "view_item",
           category: "Content",
           label: showData.name,
           value: showData.id,
@@ -189,15 +175,6 @@ export default function WatchTV() {
 
   return (
     <div className="min-h-screen text-foreground pb-16">
-      <SEO
-        title={`شاهد مسلسل ${show.name} الموسم ${selectedSeason} الحلقة ${selectedEpisode} مترجم`}
-        description={`مشاهدة مسلسل ${show.name} الموسم ${selectedSeason} الحلقة ${selectedEpisode} مترجم بجودة عالية. ${show.overview?.substring(0, 150)}...`}
-        keywords={`${show.name}, شاهد مسلسل, مسلسل مترجم, مشاهدة مسلسل ${show.name}, مسلسلات مترجمة`}
-        ogTitle={`مشاهدة مسلسل ${show.name} - الموسم ${selectedSeason} الحلقة ${selectedEpisode}`}
-        ogDescription={show.overview || ''}
-        ogType="video.tv_show"
-        canonical={`https://tomito.xyz/tv/${id}/watch?season=${selectedSeason}&episode=${selectedEpisode}`}
-      />
       <Navbar />
       <BackButton />
       <div className="container mx-auto px-4 pt-32 max-w-7xl">
@@ -264,13 +241,7 @@ export default function WatchTV() {
             </div>
 
             {/* Video Player */}
-            <div
-              ref={unifiedContainerRef}
-              className={cn(
-                "relative group aspect-video rounded-2xl shadow-2xl overflow-hidden bg-black border border-border/30 ring-1 ring-border/20 transition-all duration-300",
-                unifiedFullscreen && "rounded-none border-0"
-              )}
-            >
+            <div className="relative aspect-video rounded-2xl shadow-2xl overflow-hidden bg-black border border-border/30 ring-1 ring-border/20">
               <iframe
                 key={unifiedIframeKey}
                 src={(() => {
@@ -314,19 +285,6 @@ export default function WatchTV() {
                 allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
                 allowFullScreen
               />
-
-              {/* Floating Zoom Button - Bottom Right */}
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  toggleUnifiedFullscreen();
-                }}
-                className="absolute bottom-2 right-2 z-[9999] h-8 w-8 bg-black/50 hover:bg-black/80 text-white border border-white/10 backdrop-blur-md shadow-2xl rounded-full transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center opacity-50 hover:opacity-100"
-              >
-                {unifiedFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
-              </Button>
             </div>
           </div>
 
@@ -347,7 +305,6 @@ export default function WatchTV() {
                     <button
                       key={season.id}
                       onClick={() => {
-                        window.open("https://www.effectivecpmnetwork.com/yyfyhe2mhu?key=5c6adf2e336c9ff9cc1082a52dad7beb", "_blank");
                         setSelectedSeason(season.season_number);
                         setSelectedEpisode(1);
                         setIsSeasonDropdownOpen(false);
@@ -382,11 +339,7 @@ export default function WatchTV() {
                 {episodes.map((episode) => (
                   <button
                     key={episode.id}
-                    onClick={() => {
-                      window.open("https://www.effectivecpmnetwork.com/yyfyhe2mhu?key=5c6adf2e336c9ff9cc1082a52dad7beb", "_blank");
-                      setSelectedEpisode(episode.episode_number)
-
-                    }}
+                    onClick={() => setSelectedEpisode(episode.episode_number)}
                     className={cn(
                       "w-full flex items-center gap-3 p-3 rounded-xl transition-all duration-300 border-2 group hover:scale-[1.02]",
                       selectedEpisode === episode.episode_number
