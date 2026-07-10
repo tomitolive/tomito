@@ -53,7 +53,6 @@ function Step({ num, text }: { num: number; text: string }) {
 
 export default function AdBlockDetector() {
   const [reason, setReason] = useState<DetectionReason>(null);
-  const [dismissed, setDismissed] = useState(false);
   const [checking, setChecking] = useState(true);
 
   useEffect(() => {
@@ -83,7 +82,7 @@ export default function AdBlockDetector() {
     return () => { cancelled = true; };
   }, []);
 
-  if (checking || !reason || dismissed) return null;
+  if (checking || !reason) return null;
 
   const isIncognito = reason === "incognito";
 
@@ -151,19 +150,13 @@ export default function AdBlockDetector() {
           <div className="border-t border-white/10" />
 
           {/* Buttons */}
-          <div className="flex gap-3">
+          <div className="flex justify-center mt-4">
             <button
               onClick={() => window.location.reload()}
-              className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl bg-primary hover:bg-primary/90 text-white font-bold text-sm transition-all hover:scale-[1.02] active:scale-95 shadow-lg shadow-primary/20"
+              className="w-full max-w-[200px] flex items-center justify-center gap-2 py-3 rounded-xl bg-primary hover:bg-primary/90 text-white font-bold text-sm transition-all hover:scale-[1.02] active:scale-95 shadow-lg shadow-primary/20"
             >
               <RefreshCw className="w-4 h-4" />
               تحديث الصفحة
-            </button>
-            <button
-              onClick={() => setDismissed(true)}
-              className="flex-1 py-3 rounded-xl border border-white/10 text-gray-400 hover:text-white hover:border-white/20 font-semibold text-sm transition-all hover:scale-[1.02] active:scale-95"
-            >
-              متابعة بدون تعطيل
             </button>
           </div>
 
