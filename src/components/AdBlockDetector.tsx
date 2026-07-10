@@ -10,7 +10,18 @@ async function detectIncognito(): Promise<boolean> {
 }
 
 async function detectAdBlock(): Promise<boolean> {
-  // Method 1: Try loading a known ad script URL
+  let networkBlocked = false;
+  try {
+    await fetch("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", {
+      method: "HEAD",
+      mode: "no-cors",
+      cache: "no-store",
+    });
+  } catch (error) {
+    networkBlocked = true; // Blocked at the network level
+  }
+
+  let domBlocked = false;
   try {
     const bait = document.createElement("div");
     bait.className = "pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links ad-text adSense adBlock adContent adBanner adsbox adsbygoogle";
@@ -19,17 +30,18 @@ async function detectAdBlock(): Promise<boolean> {
 
     await new Promise((r) => setTimeout(r, 200));
 
-    const blocked =
+    domBlocked =
       bait.offsetHeight === 0 ||
       bait.offsetParent === null ||
       window.getComputedStyle(bait).display === "none" ||
       window.getComputedStyle(bait).visibility === "hidden";
 
     document.body.removeChild(bait);
-    return blocked;
   } catch (_) {
-    return true;
+    domBlocked = true;
   }
+
+  return networkBlocked || domBlocked;
 }
 
 export default function AdBlockDetector() {
