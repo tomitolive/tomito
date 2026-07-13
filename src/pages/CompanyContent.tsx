@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { ChevronRight, ArrowLeft } from "lucide-react";
+import { ChevronRight, ArrowLeft, ChevronLeft } from "lucide-react";
 import { fetchByCompany, t } from "@/lib/tmdb";
 import { PRODUCTION_COMPANIES } from "@/config/productionCompanies";
 import { MovieCard } from "@/components/MovieCard";
@@ -15,6 +15,8 @@ export default function CompanyContent() {
     const [tvShows, setTvShows] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
     const [activeTab, setActiveTab] = useState<"movie" | "tv">("movie");
+    const [currentPage, setCurrentPage] = useState(1);
+    const [totalPages, setTotalPages] = useState(1);
 
     const company = PRODUCTION_COMPANIES.find(c => c.id === Number(companyId));
 
@@ -24,11 +26,12 @@ export default function CompanyContent() {
             setLoading(true);
             try {
                 const [movieData, tvData] = await Promise.all([
-                    fetchByCompany("movie", companyId),
-                    fetchByCompany("tv", companyId)
+                    fetchByCompany("movie", companyId, currentPage),
+                    fetchByCompany("tv", companyId, currentPage)
                 ]);
                 setMovies(movieData.results || []);
                 setTvShows(tvData.results || []);
+                setTotalPages(Math.max(movieData.total_pages || 1, tvData.total_pages || 1));
             } catch (err) {
                 console.error("Failed to fetch company content:", err);
             } finally {
@@ -36,9 +39,14 @@ export default function CompanyContent() {
             }
         };
         loadData();
-    }, [companyId]);
+    }, [companyId, currentPage]);
 
     const displayContent = activeTab === "movie" ? movies : tvShows;
+
+    const handlePageChange = (newPage: number) => {
+        setCurrentPage(newPage);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 
     return (
         <div className="min-h-screen text-foreground">
@@ -96,20 +104,93 @@ export default function CompanyContent() {
                         ))}
                     </div>
                 ) : displayContent.length > 0 ? (
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 animate-fade-in">
-                        {displayContent.map((item, index) => (
-                            <div
-                                key={item.id}
-                                className="animate-slide-up"
-                                style={{ animationDelay: `${index * 50}ms` }}
-                            >
-                                <MovieCard
-                                    item={item as any}
-                                    type={activeTab}
-                                />
+                    <>
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 animate-fade-in">
+                            {displayContent.map((item, index) => (
+                                <div
+                                    key={item.id}
+                                    className="animate-slide-up"
+                                    style={{ animationDelay: `${index * 50}ms` }}
+                                >
+                                    <MovieCard
+                                        item={item as any}
+                                        type={activeTab}
+                                    />
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Pagination */}
+                        {totalPages > 1 && (
+                            <div className="flex justify-center items-center gap-2 mt-12 flex-wrap">
+                                <button
+                                    onClick={() => handlePageChange(1)}
+                                    disabled={currentPage === 1}
+                                    className="px-4 py-2 rounded-lg bg-secondary/30 border border-white/10 hover:bg-primary/20 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                                >
+                                    الأول
+                                </button>
+                                <button
+                                    onClick={() => handlePageChange(currentPage - 1)}
+                                    disabled={currentPage === 1}
+                                    className="px-4 py-2 rounded-lg bg-secondary/30 border border-white/10 hover:bg-primary/20 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center gap-1"
+                                >
+                                    <ChevronLeft className="w-4 h-4" />
+                                    السابق
+                                </button>
+
+                                {/* Page Numbers */}
+                                <div className="flex items-center gap-1">
+                                    {[...Array(Math.min(5, totalPages))].map((_, i) => {
+                                        let pageNum;
+                                        if (totalPages <= 5) {
+                                            pageNum = i + 1;
+                                        } else if (currentPage <= 3) {
+                                            pageNum = i + 1;
+                                        } else if (currentPage >= totalPages - 2) {
+                                            pageNum = totalPages - 4 + i;
+                                        } else {
+                                            pageNum = currentPage - 2 + i;
+                                        }
+
+                                        return (
+                                            <button
+                                                key={pageNum}
+                                                onClick={() => handlePageChange(pageNum)}
+                                                className={`w-10 h-10 rounded-lg font-bold transition-all ${
+                                                    currentPage === pageNum
+                                                        ? "bg-primary text-primary-foreground shadow-lg"
+                                                        : "bg-secondary/30 border border-white/10 hover:bg-primary/20"
+                                                }`}
+                                            >
+                                                {pageNum}
+                                            </button>
+                                        );
+                                    })}
+                                </div>
+
+                                <button
+                                    onClick={() => handlePageChange(currentPage + 1)}
+                                    disabled={currentPage === totalPages}
+                                    className="px-4 py-2 rounded-lg bg-secondary/30 border border-white/10 hover:bg-primary/20 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center gap-1"
+                                >
+                                    التالي
+                                    <ChevronRight className="w-4 h-4" />
+                                </button>
+                                <button
+                                    onClick={() => handlePageChange(totalPages)}
+                                    disabled={currentPage === totalPages}
+                                    className="px-4 py-2 rounded-lg bg-secondary/30 border border-white/10 hover:bg-primary/20 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                                >
+                                    الأخير
+                                </button>
+
+                                <span className="text-muted-foreground text-sm mr-4">
+                                    صفحة {currentPage} من {totalPages}
+                                </span>
                             </div>
-                        ))}
-                    </div>
+                        )}
+                    </>
                 ) : (
                     <div className="text-center py-20 bg-card/20 rounded-2xl border border-dashed border-white/10">
                         <p className="text-muted-foreground text-xl">
