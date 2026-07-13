@@ -1,2 +1,7 @@
 node_modules
 public/movies_vectors.json
+
+# Service account credentials (sensitive)
+mythical-module-493722-n6-e2da3325c496.json
+steel-operative-501617-t4-24b5f4d07697.json
+*.json.key
