@@ -23,8 +23,7 @@ import MovieTrailer from "./pages/MovieTrailer";
 import TVTrailer from "./pages/TVTrailer";
 import ActorPage from "./pages/ActorPage";
 import GoogleAnalytics from "./components/GoogleAnalytics";
-import AdPopup from "./components/AdPopup";
-import AdManager from "./components/AdManager";
+
 import CompanyContent from "./pages/CompanyContent";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -34,9 +33,7 @@ import { WatchRamadanPage } from "./pages/WatchRamadanPage";
 import { RamadanTrailerPage } from "./pages/RamadanTrailerPage";
 import { RamadanDownloadPage } from "./pages/RamadanDownloadPage";
 import SeriesDownloadList from "./pages/SeriesDownloadList";
-import { useIsMobile } from "./hooks/use-mobile";
 import { AIAssistant } from "./components/AIAssistant";
-import NetworkAds from "./components/NetworkAds";
 import AdBlockDetector from "./components/AdBlockDetector";
 
 
@@ -45,7 +42,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { TooltipProvider } from "./components/ui/tooltip";
 
 function App() {
-  const isMobile = useIsMobile();
+
   return (
     <HelmetProvider>
       <ThemeProvider>
@@ -54,10 +51,8 @@ function App() {
 
             <Router>
               <ScrollToTop />
-              <NetworkAds />
               <GoogleAnalytics />
               <AdBlockDetector />
-              {isMobile ? <AdPopup /> : <AdManager />}
               <Routes>
                 <Route path="/" element={<Home />} />
                 {/* Trailer pages - shown first when clicking on content */}
