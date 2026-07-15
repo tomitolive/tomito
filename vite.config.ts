@@ -14,18 +14,14 @@ export default defineConfig({
     port: 8080,
     host: true,
     proxy: {
-      '/api/cpa': {
-        target: 'https://www.cpagrip.com',
+      '/api/appsave': {
+        target: 'https://appsave.online',
         changeOrigin: true,
         secure: true,
-        rewrite: (path) => path.replace(/^\/api\/cpa/, ''),
+        rewrite: (path) => path.replace(/^\/api\/appsave/, '/api/v2'),
         configure: (proxy) => {
-          proxy.on('proxyReq', (proxyReq, req, res) => {
-            proxyReq.setHeader('Origin', 'https://www.cpagrip.com');
-            proxyReq.setHeader('Referer', 'https://www.cpagrip.com');
-          });
-          proxy.on('error', (err, req, res) => {
-            console.log('Proxy error:', err);
+          proxy.on('error', (err) => {
+            console.log('AppSave proxy error:', err);
           });
         }
       }

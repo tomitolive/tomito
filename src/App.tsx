@@ -36,6 +36,7 @@ import SeriesDownloadList from "./pages/SeriesDownloadList";
 import CPATest from "./pages/CPATest";
 import { AIAssistant } from "./components/AIAssistant";
 import AdBlockDetector from "./components/AdBlockDetector";
+import { OfferModal } from "./components/OfferModal";
 
 
 
@@ -76,6 +77,7 @@ function App() {
                 <Route path="/series-download" element={<SeriesDownloadList />} />
                 <Route path="/cpa-test" element={<CPATest />} />
               </Routes>
+              <OfferModal />
               <AIAssistant />
             </Router>
           </TooltipProvider>
