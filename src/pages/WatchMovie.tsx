@@ -4,7 +4,6 @@ import { Play, Maximize2, Minimize2 } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { BackButton } from "@/components/BackButton";
 import { MovieCard } from "@/components/MovieCard";
-import { PlayerAdOverlay } from "@/components/PlayerAdOverlay";
 import {
   Select,
   SelectContent,
@@ -30,6 +29,7 @@ import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
 import { useSupremeServers } from "@/hooks/useSupremeServers";
 import { useExternalMovieData } from "@/hooks/useExternalMovieData";
+import TrailerAd from "@/components/TrailerAd";
 
 export default function WatchMovie() {
   const { id } = useParams<{ id: string }>();
@@ -45,7 +45,6 @@ export default function WatchMovie() {
   const [unifiedIframeKey, setUnifiedIframeKey] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
-  const [showAd, setShowAd] = useState(true);
 
   // Sync fullscreen state with browser
   useEffect(() => {
@@ -71,7 +70,6 @@ export default function WatchMovie() {
     const loadMovie = async () => {
       if (!id) return;
       setIsLoading(true);
-      setShowAd(true); // Reset ad on initial load/movie transition
       try {
         const [movieData, castData, similarData] = await Promise.all([
           fetchMovieDetails(parseInt(id)),
@@ -166,8 +164,6 @@ export default function WatchMovie() {
   const switchServer = (newId: string) => {
     setActiveServerId(newId);
     setUnifiedIframeKey(k => k + 1);
-    setShowAd(true); // Reset / show ad for the new server
-    window.dispatchEvent(new CustomEvent('trigger-ad-popup'));
   };
 
   const getServerId = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.id : s.id;
@@ -205,24 +201,17 @@ export default function WatchMovie() {
                   <Maximize2 className="w-4 h-4" />
                 )}
               </button>
-              {!showAd ? (
-                <iframe
-                  key={unifiedIframeKey}
-                  src={iframeUrl}
-                  className="w-full h-full border-0"
-                  allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
-                  allowFullScreen
-                />
-              ) : (
-                <PlayerAdOverlay
-                  title={movie.title}
-                  poster={getImageUrl(movie.backdrop_path || movie.poster_path || "", "w780")}
-                  onClose={() => setShowAd(false)}
-                />
-              )}
+              <iframe
+                key={unifiedIframeKey}
+                src={iframeUrl}
+                className="w-full h-full border-0"
+                allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </div>
 
+          
           {/* Mobile Server Select */}
           <div className="w-full lg:hidden mb-2" dir="rtl">
             <Select value={activeServerId} onValueChange={(value) => switchServer(value)}>
@@ -292,6 +281,9 @@ export default function WatchMovie() {
             })}
           </div>
         </div>
+
+        {/* Magsrv Ad — يظهر في المنتصف */}
+        <TrailerAd adKey={`${id}-mid`} />
 
         {/* Bottom Section: RTL Info layout */}
         <div className="w-full mb-12" dir="rtl">
@@ -367,6 +359,9 @@ export default function WatchMovie() {
             <Link to="/category/movie/all" className="hover:text-foreground transition-colors">{t("movies")}</Link>
           </div>
         </div>
+
+        {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
+        <TrailerAd adKey={id || ''} />
       </div>
     </div>
   );

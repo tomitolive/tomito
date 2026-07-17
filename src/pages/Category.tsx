@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { Navbar } from "@/components/Navbar";
 import { BackButton } from "@/components/BackButton";
 import { Footer } from "@/components/Footer";
+import TrailerAd from "@/components/TrailerAd";
 import { MovieCard } from "@/components/MovieCard";
 import { fetchByGenre } from "@/lib/tmdb";
 
@@ -108,6 +109,9 @@ export default function Category() {
                         No more items to load
                     </div>
                 )}
+
+                {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
+                <TrailerAd adKey={`${type}-${genreId}`} />
             </div>
             <Footer />
             <BackButton />

@@ -3,6 +3,7 @@ import { Home as HomeIcon, Lock, Eye, FileText, Database } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SEO } from "@/components/SEO";
 import { Footer } from "@/components/Footer";
+import TrailerAd from "@/components/TrailerAd";
 import { BackButton } from "@/components/BackButton";
 
 export default function Privacy() {
@@ -103,6 +104,9 @@ export default function Privacy() {
                         <a href="/contact" className="text-primary font-bold hover:underline">عبر صفحة "اتصل بنا"</a>
                     </div>
                 </div>
+
+                {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
+                <TrailerAd adKey="privacy" />
             </div>
             <Footer />
             <BackButton />

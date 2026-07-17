@@ -34,9 +34,6 @@ import { RamadanTrailerPage } from "./pages/RamadanTrailerPage";
 import { RamadanDownloadPage } from "./pages/RamadanDownloadPage";
 import SeriesDownloadList from "./pages/SeriesDownloadList";
 import { AIAssistant } from "./components/AIAssistant";
-import AdBlockDetector from "./components/AdBlockDetector";
-import VastVideoAd from "./components/VastVideoAd";
-import MagsrvPopunderAd from "./components/MagsrvPopunderAd";
 
 
 
@@ -54,7 +51,7 @@ function App() {
             <Router>
               <ScrollToTop />
               <GoogleAnalytics />
-              <AdBlockDetector />
+
               <Routes>
                 <Route path="/" element={<Home />} />
                 {/* Trailer pages - shown first when clicking on content */}
@@ -76,8 +73,7 @@ function App() {
                 <Route path="/ramadan-download/:slug" element={<><RamadanDownloadPage /></>} />
                 <Route path="/series-download" element={<SeriesDownloadList />} />
               </Routes>
-              <VastVideoAd />
-              <MagsrvPopunderAd />
+
               <AIAssistant />
             </Router>
           </TooltipProvider>

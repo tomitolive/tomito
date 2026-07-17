@@ -4,6 +4,7 @@ import { Search, Play, Calendar, Star, TrendingUp, Sparkles, Loader2 } from "luc
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
+import TrailerAd from "@/components/TrailerAd";
 import { Button } from "@/components/ui/button";
 import { BackButton } from "@/components/BackButton";
 import { Input } from "@/components/ui/input";
@@ -273,6 +274,9 @@ export default function RamadanPage() {
                     </div>
                 )}
             </main>
+
+            {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
+            <TrailerAd adKey="ramadan" />
 
             <Footer />
             <BackButton />

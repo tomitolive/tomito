@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import TrailerAd from "@/components/TrailerAd";
 import { MovieCard } from "@/components/MovieCard";
 import { searchMulti } from "@/lib/tmdb";
 import { searchRamadan } from "@/lib/ramadan";
@@ -85,6 +86,9 @@ export default function Search() {
                         ))}
                     </div>
                 )}
+
+                {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
+                <TrailerAd adKey={query} />
             </div>
             <Footer />
         </div>

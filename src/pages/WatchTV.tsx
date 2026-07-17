@@ -3,12 +3,12 @@ import { useParams, useSearchParams, Link, useNavigate } from "react-router-dom"
 import { Play, Star, Clock, Calendar, ArrowRight, Users, ChevronDown, Maximize2, Minimize2, Settings2, Server, Sparkles } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import TrailerAd from "@/components/TrailerAd";
 import { ContentRow } from "@/components/ContentRow";
 import { GenreFilters } from "@/components/GenreFilters";
 import { Button } from "@/components/ui/button";
 import { BackButton } from "@/components/BackButton";
 import { MovieCard } from "@/components/MovieCard";
-import { PlayerAdOverlay } from "@/components/PlayerAdOverlay";
 import {
   Select,
   SelectContent,
@@ -61,7 +61,6 @@ export default function WatchTV() {
   const [unifiedIframeKey, setUnifiedIframeKey] = useState(0);
   const [unifiedFullscreen, setUnifiedFullscreen] = useState(false);
   const unifiedContainerRef = useRef<HTMLDivElement>(null);
-  const [showAd, setShowAd] = useState(true);
 
   const supremeServers = useSupremeServers({
     seriesName: show?.name,
@@ -86,7 +85,6 @@ export default function WatchTV() {
     const loadShow = async () => {
       if (!id) return;
       setIsLoading(true);
-      setShowAd(true); // Reset ad on initial load
       try {
         const [showData, castData, similarData] = await Promise.all([
           fetchTVDetails(parseInt(id)),
@@ -145,7 +143,6 @@ export default function WatchTV() {
     setSearchParams({ season: String(selectedSeason), episode: String(selectedEpisode) });
     // Reset player state when episode changes
     setUnifiedIframeKey(k => k + 1);
-    setShowAd(true); // Reset ad to show on episode change
   }, [selectedSeason, selectedEpisode, setSearchParams]);
 
   if (isLoading) {
@@ -214,8 +211,6 @@ export default function WatchTV() {
                 const switchServer = (newId: string) => {
                   setActiveServerId(newId);
                   setUnifiedIframeKey(k => k + 1);
-                  setShowAd(true); // Reset / show ad for new server
-                  window.dispatchEvent(new CustomEvent('trigger-ad-popup'));
                 };
 
                 const getServerId = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.id : s.id;
@@ -267,53 +262,45 @@ export default function WatchTV() {
                   <Maximize2 className="w-4 h-4" />
                 )}
               </button>
-              {!showAd ? (
-                <iframe
-                  key={unifiedIframeKey}
-                  src={(() => {
-                    const allServers: UnifiedServer[] = [
-                      ...supremeServers
-                        .filter(s => !s.name.toLowerCase().includes("streamtape"))
-                        .map((s, i) => ({
-                          kind: 'direct' as const,
-                          id: `sup-${i}`,
-                          name: s.name,
-                          url: s.url,
-                          badge: 'إضافي',
-                        })),
-                      ...TV_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
-                    ];
+              <iframe
+                key={unifiedIframeKey}
+                src={(() => {
+                  const allServers: UnifiedServer[] = [
+                    ...supremeServers
+                      .filter(s => !s.name.toLowerCase().includes("streamtape"))
+                      .map((s, i) => ({
+                        kind: 'direct' as const,
+                        id: `sup-${i}`,
+                        name: s.name,
+                        url: s.url,
+                        badge: 'إضافي',
+                      })),
+                    ...TV_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
+                  ];
 
-                    const activeEntry = allServers.find(s =>
-                      s.kind === 'tmdb' ? s.server.id === activeServerId : s.id === activeServerId
-                    ) || allServers[0];
+                  const activeEntry = allServers.find(s =>
+                    s.kind === 'tmdb' ? s.server.id === activeServerId : s.id === activeServerId
+                  ) || allServers[0];
 
-                    if (activeServerId === TV_SERVERS[0].id && supremeServers.length > 0) {
-                      const firstSid = allServers[0].kind === 'tmdb' ? allServers[0].server.id : allServers[0].id;
-                      if (firstSid !== activeServerId) {
-                        setActiveServerId(firstSid);
-                      }
+                  if (activeServerId === TV_SERVERS[0].id && supremeServers.length > 0) {
+                    const firstSid = allServers[0].kind === 'tmdb' ? allServers[0].server.id : allServers[0].id;
+                    if (firstSid !== activeServerId) {
+                      setActiveServerId(firstSid);
                     }
+                  }
 
-                    let iframeUrl = '';
-                    if (activeEntry.kind === 'tmdb' && show) {
-                      iframeUrl = getVideoUrl(activeEntry.server, show.id, 'tv', selectedSeason, selectedEpisode, imdbId || undefined, { autoplay: true });
-                    } else if (activeEntry.kind === 'direct') {
-                      iframeUrl = activeEntry.url;
-                    }
-                    return iframeUrl;
-                  })()}
-                  className="w-full h-full border-0"
-                  allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
-                  allowFullScreen
-                />
-              ) : (
-                <PlayerAdOverlay
-                  title={`الحلقة ${selectedEpisode} - ${show.name}`}
-                  poster={getImageUrl(show.backdrop_path || show.poster_path || "", "w780")}
-                  onClose={() => setShowAd(false)}
-                />
-              )}
+                  let iframeUrl = '';
+                  if (activeEntry.kind === 'tmdb' && show) {
+                    iframeUrl = getVideoUrl(activeEntry.server, show.id, 'tv', selectedSeason, selectedEpisode, imdbId || undefined, { autoplay: true });
+                  } else if (activeEntry.kind === 'direct') {
+                    iframeUrl = activeEntry.url;
+                  }
+                  return iframeUrl;
+                })()}
+                className="w-full h-full border-0"
+                allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </div>
 
@@ -399,6 +386,9 @@ export default function WatchTV() {
             </div>
           </div>
         </div>
+
+        {/* Magsrv Ad — يظهر في المنتصف */}
+        <TrailerAd adKey={`${id}-mid`} />
 
         {/* Bottom Section: RTL Info layout */}
         <div className="w-full mb-16" dir="rtl">
@@ -502,6 +492,9 @@ export default function WatchTV() {
             <Link to="/category/tv/all" className="hover:text-foreground transition-colors font-medium">{t("tvShows")}</Link>
           </div>
         </div>
+
+        {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
+        <TrailerAd adKey={id || ''} />
       </div>
     </div>
   );
