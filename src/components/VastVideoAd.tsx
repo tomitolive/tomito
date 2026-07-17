@@ -4,14 +4,12 @@ import { useLocation } from 'react-router-dom';
 const VAST_URL = 'https://s.magsrv.com/v1/vast.php?idz=5979286';
 const SKIP_AFTER = 8;
 
-// Pre-fetches the VAST ad so it's ready instantly when the page loads
 function prefetchVast(): Promise<string | null> {
   const bustUrl = `${VAST_URL}&_cb=${Date.now()}&_r=${Math.random()}`;
   return fetch(bustUrl, { cache: 'no-store' })
     .then((r) => r.text())
     .then((xml) => {
       const doc = new DOMParser().parseFromString(xml, 'text/xml');
-      // Try multiple selectors for different VAST versions
       const mediaFile =
         doc.querySelector('MediaFile[type="video/mp4"]') ||
         doc.querySelector('MediaFile');
@@ -25,29 +23,25 @@ export default function VastVideoAd() {
   const [videoSrc, setVideoSrc] = useState<string | null>(null);
   const [visible, setVisible] = useState(false);
   const [countdown, setCountdown] = useState(SKIP_AFTER);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const prefetchRef = useRef<Promise<string | null> | null>(null);
-  // Track the last pathname for which we already showed the ad
   const lastShownPath = useRef<string>('');
 
   // ── Prefetch the next ad immediately on route change ──────────────────────
   useEffect(() => {
-    // Don't show the same page twice
     if (lastShownPath.current === location.pathname) return;
     lastShownPath.current = location.pathname;
 
-    // Reset state
     setVisible(false);
     setVideoSrc(null);
     setCountdown(SKIP_AFTER);
     if (timerRef.current) clearInterval(timerRef.current);
 
-    // Start fetching immediately (no delay)
     prefetchRef.current = prefetchVast();
 
-    // Show ad as soon as video src is ready
     prefetchRef.current.then((src) => {
-      if (!src) return; // skip silently if no ad
+      if (!src) return;
       setVideoSrc(src);
       setVisible(true);
       setCountdown(SKIP_AFTER);
@@ -56,8 +50,26 @@ export default function VastVideoAd() {
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname]);
+
+  // ── AutoPlay guarantee & fallback ─────────────────────────────────────────
+  useEffect(() => {
+    if (visible && videoSrc && videoRef.current) {
+      const video = videoRef.current;
+      video.muted = false; // Try playing with sound first
+      
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Autoplay with sound was blocked, fallback to muted autoplay
+          video.muted = true;
+          video.play().catch((err) => {
+            console.error("Autoplay failed completely:", err);
+          });
+        });
+      }
+    }
+  }, [visible, videoSrc]);
 
   // ── Countdown ticker ──────────────────────────────────────────────────────
   useEffect(() => {
@@ -139,9 +151,9 @@ export default function VastVideoAd() {
             animation: 'vastSlideUp 0.25s cubic-bezier(0.34,1.56,0.64,1)',
           }}
         >
-          {/* Video — key=videoSrc forces a fresh mount on each new src */}
+          {/* Video */}
           <video
-            key={videoSrc}
+            ref={videoRef}
             src={videoSrc}
             autoPlay
             playsInline
