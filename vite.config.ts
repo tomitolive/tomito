@@ -13,19 +13,6 @@ export default defineConfig({
   server: {
     port: 8080,
     host: true,
-    proxy: {
-      '/api/appsave': {
-        target: 'https://appsave.online',
-        changeOrigin: true,
-        secure: true,
-        rewrite: (path) => path.replace(/^\/api\/appsave/, '/api/v2'),
-        configure: (proxy) => {
-          proxy.on('error', (err) => {
-            console.log('AppSave proxy error:', err);
-          });
-        }
-      }
-    }
   },
   base: '/', // Custom domain tomito.xyz
 })

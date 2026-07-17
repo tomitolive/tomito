@@ -33,10 +33,9 @@ import { WatchRamadanPage } from "./pages/WatchRamadanPage";
 import { RamadanTrailerPage } from "./pages/RamadanTrailerPage";
 import { RamadanDownloadPage } from "./pages/RamadanDownloadPage";
 import SeriesDownloadList from "./pages/SeriesDownloadList";
-import CPATest from "./pages/CPATest";
 import { AIAssistant } from "./components/AIAssistant";
 import AdBlockDetector from "./components/AdBlockDetector";
-import { OfferModal } from "./components/OfferModal";
+import VastVideoAd from "./components/VastVideoAd";
 
 
 
@@ -75,9 +74,8 @@ function App() {
                 <Route path="/watch-ramadan/:slug" element={<WatchRamadanPage />} />
                 <Route path="/ramadan-download/:slug" element={<><RamadanDownloadPage /></>} />
                 <Route path="/series-download" element={<SeriesDownloadList />} />
-                <Route path="/cpa-test" element={<CPATest />} />
               </Routes>
-              <OfferModal />
+              <VastVideoAd />
               <AIAssistant />
             </Router>
           </TooltipProvider>
