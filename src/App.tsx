@@ -36,6 +36,7 @@ import SeriesDownloadList from "./pages/SeriesDownloadList";
 import { AIAssistant } from "./components/AIAssistant";
 import AdBlockDetector from "./components/AdBlockDetector";
 import VastVideoAd from "./components/VastVideoAd";
+import MagsrvPopunderAd from "./components/MagsrvPopunderAd";
 
 
 
@@ -76,6 +77,7 @@ function App() {
                 <Route path="/series-download" element={<SeriesDownloadList />} />
               </Routes>
               <VastVideoAd />
+              <MagsrvPopunderAd />
               <AIAssistant />
             </Router>
           </TooltipProvider>

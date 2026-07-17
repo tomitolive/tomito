@@ -4,6 +4,7 @@ import { Play, Maximize2, Minimize2 } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { BackButton } from "@/components/BackButton";
 import { MovieCard } from "@/components/MovieCard";
+import { PlayerAdOverlay } from "@/components/PlayerAdOverlay";
 import {
   Select,
   SelectContent,
@@ -44,6 +45,7 @@ export default function WatchMovie() {
   const [unifiedIframeKey, setUnifiedIframeKey] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [showAd, setShowAd] = useState(true);
 
   // Sync fullscreen state with browser
   useEffect(() => {
@@ -69,6 +71,7 @@ export default function WatchMovie() {
     const loadMovie = async () => {
       if (!id) return;
       setIsLoading(true);
+      setShowAd(true); // Reset ad on initial load/movie transition
       try {
         const [movieData, castData, similarData] = await Promise.all([
           fetchMovieDetails(parseInt(id)),
@@ -163,6 +166,7 @@ export default function WatchMovie() {
   const switchServer = (newId: string) => {
     setActiveServerId(newId);
     setUnifiedIframeKey(k => k + 1);
+    setShowAd(true); // Reset / show ad for the new server
     window.dispatchEvent(new CustomEvent('trigger-ad-popup'));
   };
 
@@ -201,13 +205,21 @@ export default function WatchMovie() {
                   <Maximize2 className="w-4 h-4" />
                 )}
               </button>
-              <iframe
-                key={unifiedIframeKey}
-                src={iframeUrl}
-                className="w-full h-full border-0"
-                allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
-                allowFullScreen
-              />
+              {!showAd ? (
+                <iframe
+                  key={unifiedIframeKey}
+                  src={iframeUrl}
+                  className="w-full h-full border-0"
+                  allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+                  allowFullScreen
+                />
+              ) : (
+                <PlayerAdOverlay
+                  title={movie.title}
+                  poster={getImageUrl(movie.backdrop_path || movie.poster_path || "", "w780")}
+                  onClose={() => setShowAd(false)}
+                />
+              )}
             </div>
           </div>
 

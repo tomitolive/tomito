@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
+import TrailerAd from "@/components/TrailerAd";
 import { Play, Star, Clock, Calendar, ArrowRight, Users, Download, ExternalLink } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -179,6 +180,9 @@ export default function MovieTrailer() {
                                 </div>
                              )}
                         </div>
+
+                        {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
+                        <TrailerAd adKey={slug || ''} />
 
                         {/* Watch Now Button - Positioned directly under trailer */}
                         <Button

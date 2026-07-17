@@ -8,6 +8,7 @@ import { GenreFilters } from "@/components/GenreFilters";
 import { Button } from "@/components/ui/button";
 import { BackButton } from "@/components/BackButton";
 import { MovieCard } from "@/components/MovieCard";
+import { PlayerAdOverlay } from "@/components/PlayerAdOverlay";
 import {
   Select,
   SelectContent,
@@ -36,6 +37,10 @@ import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
 import { useSupremeServers } from "@/hooks/useSupremeServers";
 
+type UnifiedServer =
+  | { kind: 'tmdb'; server: VideoServer }
+  | { kind: 'direct'; id: string; name: string; url: string; badge?: string };
+
 export default function WatchTV() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
@@ -56,6 +61,7 @@ export default function WatchTV() {
   const [unifiedIframeKey, setUnifiedIframeKey] = useState(0);
   const [unifiedFullscreen, setUnifiedFullscreen] = useState(false);
   const unifiedContainerRef = useRef<HTMLDivElement>(null);
+  const [showAd, setShowAd] = useState(true);
 
   const supremeServers = useSupremeServers({
     seriesName: show?.name,
@@ -80,6 +86,7 @@ export default function WatchTV() {
     const loadShow = async () => {
       if (!id) return;
       setIsLoading(true);
+      setShowAd(true); // Reset ad on initial load
       try {
         const [showData, castData, similarData] = await Promise.all([
           fetchTVDetails(parseInt(id)),
@@ -138,6 +145,7 @@ export default function WatchTV() {
     setSearchParams({ season: String(selectedSeason), episode: String(selectedEpisode) });
     // Reset player state when episode changes
     setUnifiedIframeKey(k => k + 1);
+    setShowAd(true); // Reset ad to show on episode change
   }, [selectedSeason, selectedEpisode, setSearchParams]);
 
   if (isLoading) {
@@ -187,10 +195,6 @@ export default function WatchTV() {
             <div className="flex items-center gap-4">
               <label className="text-sm font-semibold text-foreground whitespace-nowrap">السيرفرات</label>
               {(() => {
-                type UnifiedServer =
-                  | { kind: 'tmdb'; server: VideoServer }
-                  | { kind: 'direct'; id: string; name: string; url: string; badge?: string };
-
                 const allServers: UnifiedServer[] = [
                   ...supremeServers
                     .filter(s => !s.name.toLowerCase().includes("streamtape"))
@@ -206,11 +210,11 @@ export default function WatchTV() {
 
                 const activeEntry = allServers.find(s =>
                   s.kind === 'tmdb' ? s.server.id === activeServerId : s.id === activeServerId
-                ) || allServers[0];
-
+                );
                 const switchServer = (newId: string) => {
                   setActiveServerId(newId);
                   setUnifiedIframeKey(k => k + 1);
+                  setShowAd(true); // Reset / show ad for new server
                   window.dispatchEvent(new CustomEvent('trigger-ad-popup'));
                 };
 
@@ -263,49 +267,53 @@ export default function WatchTV() {
                   <Maximize2 className="w-4 h-4" />
                 )}
               </button>
-              <iframe
-                key={unifiedIframeKey}
-                src={(() => {
-                  type UnifiedServer =
-                    | { kind: 'tmdb'; server: VideoServer }
-                    | { kind: 'direct'; id: string; name: string; url: string; badge?: string };
+              {!showAd ? (
+                <iframe
+                  key={unifiedIframeKey}
+                  src={(() => {
+                    const allServers: UnifiedServer[] = [
+                      ...supremeServers
+                        .filter(s => !s.name.toLowerCase().includes("streamtape"))
+                        .map((s, i) => ({
+                          kind: 'direct' as const,
+                          id: `sup-${i}`,
+                          name: s.name,
+                          url: s.url,
+                          badge: 'إضافي',
+                        })),
+                      ...TV_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
+                    ];
 
-                  const allServers: UnifiedServer[] = [
-                    ...supremeServers
-                      .filter(s => !s.name.toLowerCase().includes("streamtape"))
-                      .map((s, i) => ({
-                        kind: 'direct' as const,
-                        id: `sup-${i}`,
-                        name: s.name,
-                        url: s.url,
-                        badge: 'إضافي',
-                      })),
-                    ...TV_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
-                  ];
+                    const activeEntry = allServers.find(s =>
+                      s.kind === 'tmdb' ? s.server.id === activeServerId : s.id === activeServerId
+                    ) || allServers[0];
 
-                  const activeEntry = allServers.find(s =>
-                    s.kind === 'tmdb' ? s.server.id === activeServerId : s.id === activeServerId
-                  ) || allServers[0];
-
-                  if (activeServerId === TV_SERVERS[0].id && supremeServers.length > 0) {
-                    const firstSid = allServers[0].kind === 'tmdb' ? allServers[0].server.id : allServers[0].id;
-                    if (firstSid !== activeServerId) {
-                      setActiveServerId(firstSid);
+                    if (activeServerId === TV_SERVERS[0].id && supremeServers.length > 0) {
+                      const firstSid = allServers[0].kind === 'tmdb' ? allServers[0].server.id : allServers[0].id;
+                      if (firstSid !== activeServerId) {
+                        setActiveServerId(firstSid);
+                      }
                     }
-                  }
 
-                  let iframeUrl = '';
-                  if (activeEntry.kind === 'tmdb' && show) {
-                    iframeUrl = getVideoUrl(activeEntry.server, show.id, 'tv', selectedSeason, selectedEpisode, imdbId || undefined, { autoplay: true });
-                  } else if (activeEntry.kind === 'direct') {
-                    iframeUrl = activeEntry.url;
-                  }
-                  return iframeUrl;
-                })()}
-                className="w-full h-full border-0"
-                allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
-                allowFullScreen
-              />
+                    let iframeUrl = '';
+                    if (activeEntry.kind === 'tmdb' && show) {
+                      iframeUrl = getVideoUrl(activeEntry.server, show.id, 'tv', selectedSeason, selectedEpisode, imdbId || undefined, { autoplay: true });
+                    } else if (activeEntry.kind === 'direct') {
+                      iframeUrl = activeEntry.url;
+                    }
+                    return iframeUrl;
+                  })()}
+                  className="w-full h-full border-0"
+                  allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+                  allowFullScreen
+                />
+              ) : (
+                <PlayerAdOverlay
+                  title={`الحلقة ${selectedEpisode} - ${show.name}`}
+                  poster={getImageUrl(show.backdrop_path || show.poster_path || "", "w780")}
+                  onClose={() => setShowAd(false)}
+                />
+              )}
             </div>
           </div>
 

@@ -71,6 +71,18 @@ export default function VastVideoAd() {
     }
   }, [visible, videoSrc]);
 
+  // ── Manage body class for preventing ad overlaps ─────────────────────────
+  useEffect(() => {
+    if (visible) {
+      document.body.classList.add('vast-active');
+    } else {
+      document.body.classList.remove('vast-active');
+    }
+    return () => {
+      document.body.classList.remove('vast-active');
+    };
+  }, [visible]);
+
   // ── Countdown ticker ──────────────────────────────────────────────────────
   useEffect(() => {
     if (!visible) return;

@@ -425,5 +425,46 @@
   .rtl-flip {
     transform: scaleX(-1);
   }
+
+  /* Ad Containers (Responsive) */
+  .desktop-ad-container {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1.5rem auto;
+    min-height: 90px;
+  }
+
+  .mobile-ad-container {
+    display: none !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1.5rem auto;
+    min-height: 90px;
+  }
+
+  @media (max-width: 767px) {
+    .desktop-ad-container {
+      display: none !important;
+    }
+    .mobile-ad-container {
+      display: flex !important;
+    }
+  }
+
+  /* Prevent other banner/overlay ads from overlapping or conflicting with the VAST Video Ad */
+  body.vast-active .mobile-ad-container,
+  body.vast-active .desktop-ad-container,
+  body.vast-active ins,
+  body.vast-active iframe,
+  body.vast-active [class*="eas6a978"] {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    z-index: -9999 !important;
+  }
 }
 

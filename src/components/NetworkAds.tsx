@@ -17,16 +17,13 @@ export default function NetworkAds() {
       script.src = 'https://pl30308184.effectivecpmnetwork.com/b1/7c/90/b17c90534fca3de69eb209808a32e347.js';
       script.async = true;
       document.body.appendChild(script);
-
-      return () => {
-        if (document.body.contains(script)) {
-          document.body.removeChild(script);
-        }
-      };
     }, 2000); // 2 seconds delay
 
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+    };
   }, [location.pathname]);
 
   return null;
 }
+
