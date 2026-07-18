@@ -23,6 +23,7 @@ import MovieTrailer from "./pages/MovieTrailer";
 import TVTrailer from "./pages/TVTrailer";
 import ActorPage from "./pages/ActorPage";
 import GoogleAnalytics from "./components/GoogleAnalytics";
+import MobileAd from "./components/MobileAd";
 
 import CompanyContent from "./pages/CompanyContent";
 import About from "./pages/About";
@@ -51,6 +52,7 @@ function App() {
             <Router>
               <ScrollToTop />
               <GoogleAnalytics />
+              <MobileAd />
 
               <Routes>
                 <Route path="/" element={<Home />} />
