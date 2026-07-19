@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useParams, useSearchParams, Link, useNavigate } from "react-router-dom";
-import axios from "axios";
 import { Play, Star, Clock, Calendar, ArrowRight, Users, ChevronDown, Maximize2, Minimize2, Settings2, Server, Sparkles, Download, ChevronRight } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -53,20 +52,29 @@ async function fetchConsumetTV(
 ): Promise<string | null> {
   // Try all instances in parallel — first to return a valid source wins
   const races = CONSUMET_INSTANCES.map(async base => {
-    const infoRes = await axios.get(
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000);
+    signal.addEventListener('abort', () => { clearTimeout(timeout); controller.abort(); });
+
+    const infoRes = await fetch(
       `${base}/meta/tmdb/info/${showId}?type=tv`,
-      { signal, timeout: 8000 }
+      { signal: controller.signal }
     );
-    const episodeObj = infoRes.data?.episodes?.find(
+    if (!infoRes.ok) throw new Error('Info fetch failed');
+    const infoData = await infoRes.json();
+    const episodeObj = infoData?.episodes?.find(
       (ep: any) => ep.season === season && ep.number === episode
     );
     if (!episodeObj?.id) throw new Error('Episode not found');
 
-    const watchRes = await axios.get(
+    const watchRes = await fetch(
       `${base}/meta/tmdb/watch/${episodeObj.id}?id=${showId}`,
-      { signal, timeout: 8000 }
+      { signal: controller.signal }
     );
-    const sources = watchRes.data?.sources;
+    clearTimeout(timeout);
+    if (!watchRes.ok) throw new Error('Watch fetch failed');
+    const watchData = await watchRes.json();
+    const sources = watchData?.sources;
     if (sources && sources.length > 0) return sources[0].url as string;
     throw new Error('No sources');
   });
