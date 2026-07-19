@@ -393,6 +393,16 @@ const loadTopcima = async () => {
   const getServerId = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.id : s.id;
   const getServerName = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.name : s.name;
 
+  const toggleUnifiedFullscreen = () => {
+    if (!document.fullscreenElement) {
+      unifiedContainerRef.current?.requestFullscreen();
+    } else {
+      document.exitFullscreen();
+    }
+  };
+
+  const isTopCimaServer = activeEntry.kind === 'direct' && activeEntry.id.startsWith('topcima-');
+
   return (
     <div className="min-h-screen text-foreground pb-16">
       <Navbar />
@@ -455,6 +465,7 @@ const loadTopcima = async () => {
               )}
 
               {/* Floating Zoom Button - Bottom Right */}
+              {!isTopCimaServer && (
               <Button
                 variant="ghost"
                 size="icon"
@@ -466,6 +477,7 @@ const loadTopcima = async () => {
               >
                 {unifiedFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
               </Button>
+              )}
 
               {/* Download Button - Bottom Left */}
               
