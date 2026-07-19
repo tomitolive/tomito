@@ -1,8 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Server, Play, Maximize2, Minimize2 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { SupremeServer } from "@/hooks/useSupremeServers";
 import { Button } from "@/components/ui/button";
+
+export interface SupremeServer {
+    name: string;
+    url: string;
+    quality: string;
+}
 
 interface SupremePlayerProps {
     servers: SupremeServer[];

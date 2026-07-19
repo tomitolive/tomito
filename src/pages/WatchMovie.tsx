@@ -27,9 +27,9 @@ import {
 } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
-import { useSupremeServers } from "@/hooks/useSupremeServers";
-import { useExternalMovieData } from "@/hooks/useExternalMovieData";
 import TrailerAd from "@/components/TrailerAd";
+
+
 
 export default function WatchMovie() {
   const { id } = useParams<{ id: string }>();
@@ -53,18 +53,31 @@ export default function WatchMovie() {
     return () => document.removeEventListener("fullscreenchange", handleFsChange);
   }, []);
 
-  const supremeServers = useSupremeServers({
-    movieTitle: movie?.title,
-    movieTitleAr: movie?.ar_title
-  });
+  const [topcimaServers, setTopcimaServers] = useState<any[]>([]);
 
-  const { externalMovie } = useExternalMovieData(
-    movie?.title,
-    movie?.release_date ? new Date(movie.release_date).getFullYear().toString() : undefined,
-    movie?.ar_title
-  );
-
-  const externalWatchServers = externalMovie?.watch_servers || [];
+  useEffect(() => {
+    if (!id) return;
+const loadTopcima = async () => {
+        try {
+          const res = await fetch(`https://topcima-api.vercel.app/api/movie/${id}`);
+          const data = await res.json();
+          if (data && (data.watchServers || data.currentIframe)) {
+            const servers = data.watchServers ? [...data.watchServers] : [];
+            setTopcimaServers(servers);
+          const valid = servers.filter((s: any) => s.name && typeof s.name === 'string' && !s.name.toLowerCase().includes("streamtape"));
+          if (valid.length > 0) {
+            setActiveServerId('topcima-0');
+          }
+        } else {
+          setTopcimaServers([]);
+        }
+      } catch (err) {
+        console.error("TopCima fetch error:", err);
+        setTopcimaServers([]);
+      }
+    };
+    loadTopcima();
+  }, [id]);
 
   useEffect(() => {
     const loadMovie = async () => {
@@ -123,32 +136,19 @@ export default function WatchMovie() {
     | { kind: 'direct'; id: string; name: string; url: string; badge?: string };
 
   const allServers: UnifiedServer[] = [
-    ...externalWatchServers
-      .filter(s => s.name !== 'متعدد الجودات' && !s.name.toLowerCase().includes("streamtape"))
-      .map((s, i) => ({
+    ...topcimaServers
+      .filter((s: any) => s.name && typeof s.name === 'string' && !s.name.toLowerCase().includes("streamtape"))
+      .map((s: any, i: number) => ({
         kind: 'direct' as const,
-        id: `ext-${i}`,
+        id: `topcima-${i}`,
         name: s.name,
-        url: s.url,
-        badge: 'مزوّد آخر',
-      })),
-    ...supremeServers
-      .filter(s => !s.name.toLowerCase().includes("streamtape"))
-      .map((s, i) => ({
-        kind: 'direct' as const,
-        id: `sup-${i}`,
-        name: s.name,
-        url: s.url,
-        badge: 'إضافي',
+        url: s.iframeUrl || s.url,
+        badge: 'TopCima',
       })),
     ...MOVIE_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
   ];
 
-  const s5Index = allServers.findIndex(s => (s.kind === 'tmdb' && s.server.id === 'server_5') || (s.kind === 'direct' && s.name === 'سيرفر 5'));
-  if (s5Index > -1) {
-    const [s5] = allServers.splice(s5Index, 1);
-    allServers.unshift(s5);
-  }
+
 
   const activeEntry = allServers.find(s =>
     s.kind === 'tmdb' ? s.server.id === activeServerId : s.id === activeServerId
@@ -211,7 +211,7 @@ export default function WatchMovie() {
             </div>
           </div>
 
-          
+
           {/* Mobile Server Select */}
           <div className="w-full lg:hidden mb-2" dir="rtl">
             <Select value={activeServerId} onValueChange={(value) => switchServer(value)}>

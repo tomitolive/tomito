@@ -347,6 +347,17 @@
     }
   }
 
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   .skeleton-shimmer {
     background: linear-gradient(90deg,
         hsl(0 0% 18%) 0%,
@@ -356,6 +367,10 @@
         hsl(0 0% 18%) 100%);
     background-size: 1000px 100%;
     animation: shimmer 2s infinite linear;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.15s ease-out;
   }
 
   /* TV Navigation Focus Styles */

@@ -673,7 +673,7 @@ export const MOVIE_SERVERS: VideoServer[] = [
 ];
 
 export const TV_SERVERS: VideoServer[] = [
-   
+
   {
     id: 'vidsrc_embed',
     name: '🎬 vidsrc.ru',
@@ -714,7 +714,7 @@ export const TV_SERVERS: VideoServer[] = [
     supportsSeasons: true,
     format: '{id}/{season}/{episode}'
   },
-   {
+  {
     id: 'vidsrc_to',
     name: '🌟 سيرفر 5',
     baseUrl: 'https://vidsrc.to/embed/tv',
@@ -1051,6 +1051,7 @@ export const UI_TRANSLATIONS = {
     castMembers: "طاقم العمل",
     actorsLabel: "الممثلون:",
     watchMovie: "مشاهدة الفيلم",
+    downloadMovie: "تحميل الفيلم",
     watchTV: "مشاهدة المسلسل",
     similarMovies: "أفلام مشابهة",
     similarTV: "مسلسلات مشابهة",
@@ -1173,6 +1174,7 @@ export const UI_TRANSLATIONS = {
     castMembers: "Cast",
     actorsLabel: "Actors:",
     watchMovie: "Watch Movie",
+    downloadMovie: "Download Movie",
     watchTV: "Watch TV Show",
     similarMovies: "Similar Movies",
     similarTV: "Similar TV Shows",
@@ -1295,6 +1297,7 @@ export const UI_TRANSLATIONS = {
     castMembers: "Casting",
     actorsLabel: "Acteurs :",
     watchMovie: "Regarder le film",
+    downloadMovie: "Télécharger le film",
     watchTV: "Regarder la série",
     similarMovies: "Films similaires",
     similarTV: "Séries similaires",
@@ -1408,6 +1411,7 @@ export const UI_TRANSLATIONS = {
     castMembers: "Reparto",
     actorsLabel: "Actores:",
     watchMovie: "Ver película",
+    downloadMovie: "Descargar película",
     watchTV: "Ver serie",
     similarMovies: "Películas similares",
     similarTV: "Series similares",

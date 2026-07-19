@@ -22,7 +22,7 @@ import {
 import { cn, getIdFromSlug } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
 import { SEO } from "@/components/SEO";
-import { useExternalMovieData } from "@/hooks/useExternalMovieData";
+
 
 
 export default function MovieTrailer() {
@@ -34,11 +34,21 @@ export default function MovieTrailer() {
     const [trailerKey, setTrailerKey] = useState<string | null>(null);
     const [isLoading, setIsLoading] = useState(true);
 
-    const { externalMovie } = useExternalMovieData(
-        movie?.title,
-        movie?.release_date ? new Date(movie.release_date).getFullYear().toString() : undefined,
-        movie?.ar_title
-    );
+    const [topcimaData, setTopcimaData] = useState<any>(null);
+
+    useEffect(() => {
+        if (!movie?.id) return;
+        const loadTopcima = async () => {
+            try {
+                const res = await fetch(`https://topcima-api.vercel.app/api/movie/${movie.id}`);
+                const data = await res.json();
+                setTopcimaData(data);
+            } catch (err) {
+                console.error("TopCima fetch error:", err);
+            }
+        };
+        loadTopcima();
+    }, [movie?.id]);
 
     useEffect(() => {
         const loadMovie = async () => {
@@ -199,15 +209,14 @@ export default function MovieTrailer() {
                             </span>
                         </Button>
 
-                        {/* Download Section */}
-                        {externalMovie && externalMovie.download_links && externalMovie.download_links.length > 0 && (
+                        {topcimaData && topcimaData.downloadLinks && topcimaData.downloadLinks.length > 0 && (
                             <div className="space-y-4 mt-6 p-6 rounded-2xl bg-secondary/30 border border-border/50 backdrop-blur-sm">
                                 <h3 className="text-xl font-bold flex items-center gap-2">
                                     <Download className="w-6 h-6 text-primary" />
                                     {t("downloadMovie" as any) || "تحميل الفيلم"}
                                 </h3>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                                    {externalMovie.download_links.map((link, index) => (
+                                    {topcimaData.downloadLinks.map((link: any, index: number) => (
                                         <a
                                             key={index}
                                             href={link.url}
@@ -220,7 +229,7 @@ export default function MovieTrailer() {
                                                     <Download className="w-5 h-5" />
                                                 </div>
                                                 <div>
-                                                    <p className="font-bold text-sm">{link.host}</p>
+                                                    <p className="font-bold text-sm">{link.server || link.provider}</p>
                                                     <p className="text-xs text-muted-foreground">{link.quality}</p>
                                                 </div>
                                             </div>
