@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { Play, Maximize2, Minimize2 } from "lucide-react";
+import { Play, Maximize2, Minimize2, Download } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { BackButton } from "@/components/BackButton";
 import { MovieCard } from "@/components/MovieCard";
@@ -54,6 +54,8 @@ export default function WatchMovie() {
   }, []);
 
   const [topcimaServers, setTopcimaServers] = useState<any[]>([]);
+  const [downloadServers, setDownloadServers] = useState<any[]>([]);
+  const [showDownloadModal, setShowDownloadModal] = useState(false);
 
   useEffect(() => {
     if (!id) return;
@@ -64,16 +66,21 @@ const loadTopcima = async () => {
           if (data && (data.watchServers || data.currentIframe)) {
             const servers = data.watchServers ? [...data.watchServers] : [];
             setTopcimaServers(servers);
+            if (data.downloadLinks) {
+              setDownloadServers(data.downloadLinks);
+            }
           const valid = servers.filter((s: any) => s.name && typeof s.name === 'string' && !s.name.toLowerCase().includes("streamtape"));
           if (valid.length > 0) {
             setActiveServerId('topcima-0');
           }
         } else {
           setTopcimaServers([]);
+          setDownloadServers([]);
         }
       } catch (err) {
         console.error("TopCima fetch error:", err);
         setTopcimaServers([]);
+        setDownloadServers([]);
       }
     };
     loadTopcima();
@@ -169,6 +176,8 @@ const loadTopcima = async () => {
   const getServerId = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.id : s.id;
   const getServerName = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.name : s.name;
 
+  const isTopCimaServer = activeEntry.kind === 'direct' && activeEntry.id.startsWith('topcima-');
+
   return (
     <div className="min-h-screen text-foreground pb-12">
       <Navbar />
@@ -184,6 +193,7 @@ const loadTopcima = async () => {
               className="relative aspect-video rounded-xl shadow-2xl overflow-hidden bg-black border border-border/50"
             >
               {/* Fullscreen Button */}
+              {!isTopCimaServer && (
               <button
                 onClick={() => {
                   if (!document.fullscreenElement) {
@@ -201,6 +211,7 @@ const loadTopcima = async () => {
                   <Maximize2 className="w-4 h-4" />
                 )}
               </button>
+              )}
               <iframe
                 key={unifiedIframeKey}
                 src={iframeUrl}
@@ -209,6 +220,19 @@ const loadTopcima = async () => {
                 allowFullScreen
               />
             </div>
+
+            {/* Download Button Below Video */}
+            {downloadServers.length > 0 && (
+              <div className="mt-4" dir="rtl">
+                <button
+                  onClick={() => setShowDownloadModal(true)}
+                  className="flex items-center gap-2 px-5 py-2.5 bg-primary hover:bg-primary/90 text-white text-sm font-semibold rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] w-full justify-center"
+                >
+                  <Download className="w-4 h-4" />
+                  تحميل الفيلم
+                </button>
+              </div>
+            )}
           </div>
 
 
@@ -363,6 +387,59 @@ const loadTopcima = async () => {
         {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
         <TrailerAd adKey={id || ''} />
       </div>
+
+      {/* Download Modal */}
+      {showDownloadModal && (
+        <div
+          className="fixed inset-0 z-[10000] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in"
+          onClick={() => setShowDownloadModal(false)}
+        >
+          <div
+            className="w-full max-w-2xl bg-card border border-border/50 rounded-2xl shadow-2xl overflow-hidden max-h-[85vh] flex flex-col"
+            onClick={(e) => e.stopPropagation()}
+            dir="rtl"
+          >
+            {/* Modal Header */}
+            <div className="flex items-center justify-between px-6 py-4 border-b border-border/30 bg-card/80">
+              <div className="flex items-center gap-2">
+                <Download className="w-5 h-5 text-primary" />
+                <h3 className="text-lg font-bold text-foreground">تحميل {movie?.title}</h3>
+              </div>
+              <button
+                onClick={() => setShowDownloadModal(false)}
+                className="flex items-center justify-center w-8 h-8 rounded-full bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Modal Body */}
+            <div className="p-6 overflow-y-auto custom-scrollbar">
+              <p className="text-sm text-muted-foreground mb-4">اختر السيرفر المفضل لتحميل الفيلم:</p>
+              <div className="flex flex-wrap gap-3 justify-center sm:justify-start">
+                {downloadServers.map((s: any, i: number) => (
+                  <a
+                    key={i}
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-3 bg-primary/10 hover:bg-primary/20 text-primary text-sm font-semibold rounded-xl border border-primary/30 transition-all duration-300 hover:scale-[1.03] min-w-[140px] justify-center"
+                  >
+                    <Download className="w-4 h-4" />
+                    <span className="truncate">{s.server}</span>
+                    {s.quality && (
+                      <span className="text-[10px] bg-primary/20 text-primary px-1.5 py-0.5 rounded font-bold">{s.quality}</span>
+                    )}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
