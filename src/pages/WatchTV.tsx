@@ -189,13 +189,30 @@ export default function WatchTV() {
   const [topcimaServers, setTopcimaServers] = useState<any[]>([]);
   const [downloadServers, setDownloadServers] = useState<any[]>([]);
   const [showDownloadModal, setShowDownloadModal] = useState(false);
+  const [isAnime, setIsAnime] = useState(false);
 
   useEffect(() => {
     if (!id) return;
 const loadTopcima = async () => {
         try {
-          const res = await fetch(`https://topcima-api.vercel.app/api/tv/${id}/season/${selectedSeason}/episode/${selectedEpisode}`);
-          const data = await res.json();
+          let data: any = null;
+          // Try primary endpoint
+          const primaryPath = isAnime
+            ? `https://topcima-api.vercel.app/api/anime/${id}/season/${selectedSeason}/episode/${selectedEpisode}`
+            : `https://topcima-api.vercel.app/api/tv/${id}/season/${selectedSeason}/episode/${selectedEpisode}`;
+          let res = await fetch(primaryPath);
+          if (res.ok) {
+            data = await res.json();
+          }
+          // Fallback for anime "no-s" endpoint
+          if (!res.ok || !data?.watchServers?.length) {
+            if (isAnime) {
+              res = await fetch(`https://topcima-api.vercel.app/api/anime/${id}/episode/${selectedEpisode}`);
+              if (res.ok) {
+                data = await res.json();
+              }
+            }
+          }
           if (data && (data.watchServers || data.currentIframe)) {
             const servers = data.watchServers ? [...data.watchServers] : [];
             setTopcimaServers(servers);
@@ -217,7 +234,7 @@ const loadTopcima = async () => {
         }
       };
     loadTopcima();
-  }, [id, selectedSeason, selectedEpisode]);
+  }, [id, selectedSeason, selectedEpisode, isAnime]);
 
   // Sync fullscreen state with browser changes
   useEffect(() => {
@@ -265,6 +282,11 @@ const loadTopcima = async () => {
         setShow(showData);
         setCast(castData.slice(0, 10));
         setSimilar(similarData as TVShow[]);
+        // Detect anime by genre (Animation=16) or genre name
+        const animeGenreIds = [16];
+        const animeKeywords = ['animation', 'anime', 'cartoon'];
+        const isAnimeShow = showData.genres?.some(g => animeGenreIds.includes(g.id) || animeKeywords.includes(g.name?.toLowerCase()));
+        setIsAnime(isAnimeShow);
 
         // Fetch IMDB ID
         const imdb = await getImdbIdFromTmdb(parseInt(id), "tv");
