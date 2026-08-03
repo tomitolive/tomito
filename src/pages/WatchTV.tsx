@@ -662,8 +662,8 @@ const loadTopcima = async () => {
             </p>
           </div>
 
-          {/* NewAd - ad3 */}
-          <NewAd ad="ad3" />
+          {/* NewAd - ad2 */}
+          <NewAd ad="ad2" />
 
           {/* Cast */}
           {cast.length > 0 && (
@@ -721,8 +721,8 @@ const loadTopcima = async () => {
           </div>
         </div>
 
-        {/* NewAd - ad2 */}
-        <NewAd ad="ad2" />
+        {/* NewAd - ad3 */}
+        <NewAd ad="ad3" />
       </div>
       </div>
       </div>

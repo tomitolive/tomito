@@ -199,6 +199,9 @@ export default function TVDetail() {
                     <ContentRow title={t("similarTV")} items={tv.similar?.results || []} type="tv" />
                 </div>
 
+                {/* NewAd - ad1 */}
+                <NewAd ad="ad1" />
+
                 {/* NewAd - ad2 */}
                 <NewAd ad="ad2" />
                 

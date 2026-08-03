@@ -104,6 +104,9 @@ export default function Category() {
                     ))}
                 </div>
 
+                {/* NewAd - ad2 */}
+                <NewAd ad="ad2" />
+
                 {!hasMore && items.length > 0 && (
                     <div className="mt-8 text-center text-muted-foreground">
                         No more items to load

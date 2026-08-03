@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
 import { Button } from "@/components/ui/button";
 import { BackButton } from "@/components/BackButton";
+import NewAd from "@/components/NewAd";
 import {
     fetchTVDetails,
     fetchCredits,
@@ -257,6 +258,8 @@ export default function TVTrailer() {
                         </div>
 
                         {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
+                        {/* NewAd - ad1 */}
+                        <NewAd ad="ad1" />
 
                         {/* Watch Now Button - Positioned directly under trailer */}
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -366,6 +369,9 @@ export default function TVTrailer() {
                             className="w-full max-w-[280px] lg:max-w-[240px] rounded-xl shadow-2xl mx-auto"
                         />
 
+                        {/* NewAd - ad2 */}
+                        <NewAd ad="ad2" />
+
 
                     </div>
                 </div>
@@ -375,6 +381,9 @@ export default function TVTrailer() {
                         <ContentRow title={t("recommended")} items={similar} type="tv" />
                     </div>
                 )}
+
+                {/* NewAd - ad3 */}
+                <NewAd ad="ad3" />
 
 
                 {/* Download Section */}

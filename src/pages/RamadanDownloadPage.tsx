@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { BackButton } from "@/components/BackButton";
 import { PosterImage } from "@/components/PosterImage";
 import { cn } from "@/lib/utils";
+import NewAd from "@/components/NewAd";
 
 interface Episode {
     id: string;
@@ -230,7 +231,16 @@ export function RamadanDownloadPage() {
                 </div>
             </main>
 
+            {/* NewAd - ad1 */}
+            <NewAd ad="ad1" />
+
+            {/* NewAd - ad2 */}
+            <NewAd ad="ad2" />
+
             {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
+
+            {/* NewAd - ad3 */}
+            <NewAd ad="ad3" />
 
             <Footer />
             <BackButton />

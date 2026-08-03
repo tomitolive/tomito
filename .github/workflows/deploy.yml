@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    
+
       - name: Checkout code
         uses: actions/checkout@v3
 
@@ -35,6 +35,13 @@ jobs:
             --string-array-rotate true \
             --string-array-shuffle true \
             --string-array-threshold 0.75 \;
+
+      # 🟢 3. نقل الملفات الكبيرة إلى مجلد منفصل
+      - name: Move large data files
+        run: |
+          mkdir -p dist/data-large
+          mv dist/movies_data.json dist/data-large/ 2>/dev/null || true
+          mv dist/ramadan_2026_results.json dist/data-large/ 2>/dev/null || true
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

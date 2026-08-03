@@ -12,6 +12,7 @@ import { BackButton } from "@/components/BackButton";
 import { cn } from "@/lib/utils";
 import { searchTV, fetchSeasonDetails, TMDB_CONFIG } from "@/lib/tmdb";
 import { SupremePlayer } from "@/components/SupremePlayer";
+import NewAd from "@/components/NewAd";
 
 interface WatchServer {
     name: string;
@@ -353,7 +354,16 @@ export function WatchRamadanPage() {
                 </div >
             </main >
 
+            {/* NewAd - ad1 */}
+            <NewAd ad="ad1" />
+
+            {/* NewAd - ad2 */}
+            <NewAd ad="ad2" />
+
             {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
+
+            {/* NewAd - ad3 */}
+            <NewAd ad="ad3" />
 
             <Footer />
             <BackButton />

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { SEO } from "@/components/SEO";
 import { Footer } from "@/components/Footer";
 import { BackButton } from "@/components/BackButton";
+import NewAd from "@/components/NewAd";
 
 export default function Privacy() {
     const lastUpdated = new Date().toLocaleDateString('ar-EG', { year: 'numeric', month: 'long', day: 'numeric' });
@@ -52,6 +53,9 @@ export default function Privacy() {
                         </div>
                     </section>
 
+                    {/* NewAd - ad1 */}
+                    <NewAd ad="ad1" />
+
                     {/* Section 2 */}
                     <section className="p-8 rounded-3xl bg-card/50 border border-border backdrop-blur-sm">
                         <div className="flex items-center gap-4 mb-6">
@@ -70,6 +74,9 @@ export default function Privacy() {
                             </ul>
                         </div>
                     </section>
+
+                    {/* NewAd - ad2 */}
+                    <NewAd ad="ad2" />
 
                     {/* Section 3 */}
                     <section className="p-8 rounded-3xl bg-card/50 border border-border backdrop-blur-sm">
@@ -105,6 +112,9 @@ export default function Privacy() {
                 </div>
 
                 {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
+
+                {/* NewAd - ad3 */}
+                <NewAd ad="ad3" />
             </div>
             <Footer />
             <BackButton />

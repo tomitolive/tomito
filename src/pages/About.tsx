@@ -6,6 +6,7 @@ import Logo from "@/components/Logo";
 import { SEO } from "@/components/SEO";
 import { Footer } from "@/components/Footer";
 import { BackButton } from "@/components/BackButton";
+import NewAd from "@/components/NewAd";
 
 
 export default function About() {
@@ -44,6 +45,9 @@ export default function About() {
                         منصة Tomito هي وجهتكم الأولى لمشاهدة أحدث الأفلام والمسلسلات بجودة عالية وتجربة مستخدم فريدة. نحن نسعى لتقديم المحتوى الترفيهي لكل عشاق السينما والدراما في العالم العربي.
                     </p>
                 </section>
+
+                {/* NewAd - ad1 */}
+                <NewAd ad="ad1" />
 
                 {/* Features Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
@@ -88,6 +92,9 @@ export default function About() {
                     </div>
                 </div>
 
+                {/* NewAd - ad2 */}
+                <NewAd ad="ad2" />
+
                 {/* Mission Statement */}
                 <div className="bg-gradient-to-br from-primary/10 to-purple-500/10 rounded-3xl p-10 border border-primary/20 text-center">
                     <h2 className="text-3xl font-bold mb-6">رؤيتنا</h2>
@@ -97,6 +104,9 @@ export default function About() {
                 </div>
 
                 {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
+
+                {/* NewAd - ad3 */}
+                <NewAd ad="ad3" />
             </div>
             <Footer />
             <BackButton />

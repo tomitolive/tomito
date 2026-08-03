@@ -30,11 +30,28 @@ let ramadanData: SeriesItem[] | null = null;
 export async function getRamadanData(): Promise<SeriesItem[]> {
     if (ramadanData) return ramadanData;
     try {
-        const response = await fetch("/ramadan_2026_results.json");
-        ramadanData = await response.json();
-        return ramadanData || [];
+        // Try multiple sources for better reliability
+        const sources = [
+            "/ramadan_2026_results.json",
+            "/ramadan_2026_results_light.json",
+            "/data/ramadan.json",
+        ];
+
+        for (const source of sources) {
+            try {
+                const response = await fetch(source);
+                if (response.ok) {
+                    ramadanData = await response.json();
+                    return ramadanData || [];
+                }
+            } catch (e) {
+                console.warn(`Failed to fetch from ${source}:`, e);
+            }
+        }
+
+        throw new Error('All Ramadan data sources failed');
     } catch (error) {
-        console.error("Failed to load ramadan data:", error);
+        console.error("Failed to fetch Ramadan data:", error);
         return [];
     }
 }

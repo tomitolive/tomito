@@ -12,6 +12,7 @@ import { PosterImage } from "@/components/PosterImage";
 import { getImageUrl, searchMulti, searchTV, fetchSeasonDetails, TMDB_CONFIG } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
 import { SEO } from "@/components/SEO";
+import NewAd from "@/components/NewAd";
 
 // Utility to clean titles for better matching and TMDB searching
 const cleanTitle = (title: string): string => {
@@ -272,7 +273,16 @@ export function RamadanTrailerPage() {
                 </div>
             </main>
 
+            {/* NewAd - ad1 */}
+            <NewAd ad="ad1" />
+
             {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
+
+            {/* NewAd - ad2 */}
+            <NewAd ad="ad2" />
+
+            {/* NewAd - ad3 */}
+            <NewAd ad="ad3" />
 
             <Footer />
             <BackButton />

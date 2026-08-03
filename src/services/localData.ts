@@ -20,14 +20,27 @@ export async function getAllMovies(): Promise<Movie[]> {
     if (cachedMovies) return cachedMovies;
 
     try {
-        const response = await fetch('/movies_data.json');
-        if (!response.ok) {
-            throw new Error(`Failed to fetch movies: ${response.statusText}`);
+        // Try multiple sources for better reliability
+        const sources = [
+            '/movies_data.json',
+            '/data/movies.json',
+        ];
+
+        for (const source of sources) {
+            try {
+                const response = await fetch(source);
+                if (response.ok) {
+                    cachedMovies = await response.json();
+                    return cachedMovies;
+                }
+            } catch (e) {
+                console.warn(`Failed to fetch from ${source}:`, e);
+            }
         }
-        cachedMovies = await response.json();
-        return cachedMovies || [];
+
+        throw new Error('All movie data sources failed');
     } catch (error) {
-        console.error('Error loading movies data:', error);
+        console.error('Error fetching movies:', error);
         return [];
     }
 }

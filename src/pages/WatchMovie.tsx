@@ -341,6 +341,9 @@ const loadTopcima = async () => {
             {movie.overview || t("noDescription")}
           </p>
 
+          {/* NewAd - ad2 */}
+          <NewAd ad="ad2" />
+
           {/* Cast */}
           {cast.length > 0 && (
             <div className="mb-12">
@@ -384,8 +387,8 @@ const loadTopcima = async () => {
           </div>
         </div>
         
-        {/* NewAd - ad2 */}
-        <NewAd ad="ad2" />
+        {/* NewAd - ad3 */}
+        <NewAd ad="ad3" />
       </div>
 
 

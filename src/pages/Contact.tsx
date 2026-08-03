@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { SEO } from "@/components/SEO";
 import { BackButton } from "@/components/BackButton";
+import NewAd from "@/components/NewAd";
 
 
 export default function Contact() {
@@ -46,6 +47,8 @@ export default function Contact() {
                     </p>
                 </div>
 
+                {/* NewAd - ad1 */}
+                <NewAd ad="ad1" />
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
                     {/* Contact Info */}
@@ -126,7 +129,13 @@ export default function Contact() {
                     </div>
                 </div>
 
+                {/* NewAd - ad2 */}
+                <NewAd ad="ad2" />
+
                 {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
+
+                {/* NewAd - ad3 */}
+                <NewAd ad="ad3" />
             </div>
             <BackButton />
         </div>
