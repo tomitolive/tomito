@@ -33,7 +33,7 @@ const ADS = {
   ad7: {
     id: "container-673424a2e33d873f2de0db7bf4828fec",
     src: "https://pl30670419.effectivecpmnetwork.com/673424a2e33d873f2de0db7bf4828fec/invoke.js",
-    type: "invoke" | "ad7" | "ad8"
+    type: "invoke"
   },
   ad8: {
     src: "https://pl30670420.effectivecpmnetwork.com/18/b4/8f/18b48f3413123d1eb89b818441e833c6.js",
@@ -42,52 +42,69 @@ const ADS = {
 };
 
 interface NewAdProps {
-  ad?: "ad1" | "ad2" | "ad3" | "ad4" | "ad5" | "ad6";
+  ad?: "ad1" | "ad2" | "ad3" | "ad4" | "ad5" | "ad6" | "ad7" | "ad8";
 }
 
 export default function NewAd({ ad = "ad1" }: NewAdProps) {
   const adConfig = ADS[ad];
 
   useEffect(() => {
-    if (adConfig.type === "invoke") {
-      // Only inject script once per ad type
-      if (!document.querySelector(`script[src="${adConfig.src}"]`)) {
-        const script = document.createElement("script");
-        script.src = adConfig.src;
-        script.async = true;
-        script.setAttribute("data-cfasync", "false");
-        document.head.appendChild(script);
+    const loadScript = () => {
+      if (adConfig.type === "invoke") {
+        // Only inject script once per ad type
+        if (!document.querySelector(`script[src="${adConfig.src}"]`)) {
+          const script = document.createElement("script");
+          script.src = adConfig.src;
+          script.async = true;
+          script.setAttribute("data-cfasync", "false");
+          document.head.appendChild(script);
+        }
+      } else if (adConfig.type === "simple") {
+        // Simple scripts loaded globally once
+        if (!document.querySelector(`script[src="${adConfig.src}"]`)) {
+          const script = document.createElement("script");
+          script.src = adConfig.src;
+          document.head.appendChild(script);
+        }
       }
-    } else if (adConfig.type === "simple") {
-      // Simple scripts loaded globally once
-      if (!document.querySelector(`script[src="${adConfig.src}"]`)) {
-        const script = document.createElement("script");
-        script.src = adConfig.src;
-        document.head.appendChild(script);
-      }
-    }
+    };
+
+    // Load script immediately on mount
+    loadScript();
   }, [adConfig.src, adConfig.type]);
 
   if (adConfig.type === "simple") {
-    // Simple scripts don't need a container div
-    return null;
+    // Simple scripts don't need a container div but we still render a placeholder
+    return (
+      <div 
+        style={{ 
+          textAlign: "center", 
+          margin: "20px auto", 
+          overflow: "hidden", 
+          maxWidth: "728px", 
+          minHeight: "90px"
+        }}
+      />
+    );
   }
 
   // Only invoke type ads have an id
   const invokeAdConfig = adConfig as { id: string; src: string; type: string };
   
   return (
-    <div style={{ 
-      textAlign: "center", 
-      margin: "20px auto", 
-      overflow: "hidden", 
-      maxWidth: "728px", 
-      minHeight: "90px",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      gap: "10px"
-    }}>
+    <div 
+      style={{ 
+        textAlign: "center", 
+        margin: "20px auto", 
+        overflow: "hidden", 
+        maxWidth: "728px", 
+        minHeight: "90px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        gap: "10px"
+      }}
+    >
       <div id={invokeAdConfig.id} style={{ flex: 1, minWidth: 0 }}></div>
     </div>
   );

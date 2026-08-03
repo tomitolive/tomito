@@ -9,6 +9,7 @@ import { BackButton } from "@/components/BackButton";
 import { fetchMovieDetails, t } from "@/lib/tmdb";
 import { MovieSEO } from "@/components/SEO/MovieSEO";
 import { getMovieById, Movie as LocalMovie } from "@/services/localData";
+import NewAd from "@/components/NewAd";
 
 
 export default function MovieDetail() {
@@ -93,7 +94,11 @@ export default function MovieDetail() {
                     <ContentRow title={t("similarMovies")} items={movie.similar?.results || []} type="movie" />
                 </div>
 
-                {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
+                {/* NewAd - ad1 */}
+                <NewAd ad="ad1" />
+                
+                {/* NewAd - ad5 */}
+                <NewAd ad="ad5" />
             </div>
             <Footer />
             <BackButton />

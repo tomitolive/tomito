@@ -5,6 +5,7 @@ import { BackButton } from "@/components/BackButton";
 import { Footer } from "@/components/Footer";
 import { MovieCard } from "@/components/MovieCard";
 import { fetchByGenre } from "@/lib/tmdb";
+import NewAd from "@/components/NewAd";
 
 export default function Category() {
     const { type, genreId } = useParams();
@@ -109,7 +110,11 @@ export default function Category() {
                     </div>
                 )}
 
-                {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
+                {/* NewAd - ad3 */}
+                <NewAd ad="ad3" />
+                
+                {/* NewAd - ad7 */}
+                <NewAd ad="ad7" />
             </div>
             <Footer />
             <BackButton />

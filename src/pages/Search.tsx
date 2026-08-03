@@ -6,6 +6,7 @@ import { MovieCard } from "@/components/MovieCard";
 import { searchMulti } from "@/lib/tmdb";
 import { searchRamadan } from "@/lib/ramadan";
 import { event as trackEvent } from "@/lib/analytics";
+import NewAd from "@/components/NewAd";
 
 export default function Search() {
     const [searchParams] = useSearchParams();
@@ -86,7 +87,11 @@ export default function Search() {
                     </div>
                 )}
 
-                {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
+                {/* NewAd - ad4 */}
+                <NewAd ad="ad4" />
+                
+                {/* NewAd - ad8 */}
+                <NewAd ad="ad8" />
             </div>
             <Footer />
         </div>

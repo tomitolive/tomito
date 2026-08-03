@@ -27,6 +27,7 @@ import {
 } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
+import NewAd from "@/components/NewAd";
 
 
 
@@ -305,6 +306,9 @@ const loadTopcima = async () => {
           </div>
         </div>
 
+        {/* NewAd - ad1 */}
+        <NewAd ad="ad1" />
+
         {/* Bottom Section: RTL Info layout */}
         <div className="w-full mb-12" dir="rtl">
           {/* Title */}
@@ -379,6 +383,9 @@ const loadTopcima = async () => {
             <Link to="/category/movie/all" className="hover:text-foreground transition-colors">{t("movies")}</Link>
           </div>
         </div>
+        
+        {/* NewAd - ad2 */}
+        <NewAd ad="ad2" />
       </div>
 
 

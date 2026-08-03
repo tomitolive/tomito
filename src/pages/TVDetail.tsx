@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { fetchTVDetails, fetchSeasonDetails, t } from "@/lib/tmdb";
 import { MovieSEO } from "@/components/SEO/MovieSEO";
 import { getMovieById, Movie as LocalMovie } from "@/services/localData";
+import NewAd from "@/components/NewAd";
 
 
 export default function TVDetail() {
@@ -198,7 +199,11 @@ export default function TVDetail() {
                     <ContentRow title={t("similarTV")} items={tv.similar?.results || []} type="tv" />
                 </div>
 
-                {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
+                {/* NewAd - ad2 */}
+                <NewAd ad="ad2" />
+                
+                {/* NewAd - ad6 */}
+                <NewAd ad="ad6" />
             </div>
             <Footer />
             <BackButton />
