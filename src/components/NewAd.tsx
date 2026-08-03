@@ -42,7 +42,7 @@ const ADS = {
 };
 
 interface NewAdProps {
-  ad?: "ad1" | "ad2" | "ad3" | "ad4" | "ad5" | "ad6" | "ad7" | "ad8";
+  ad?: "ad1" | "ad2" | "ad3" | "ad7" | "ad8";
 }
 
 export default function NewAd({ ad = "ad1" }: NewAdProps) {

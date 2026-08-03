@@ -87,11 +87,11 @@ export default function Search() {
                     </div>
                 )}
 
-                {/* NewAd - ad4 */}
-                <NewAd ad="ad4" />
+                {/* NewAd - ad2 */}
+                <NewAd ad="ad2" />
                 
-                {/* NewAd - ad8 */}
-                <NewAd ad="ad8" />
+                {/* NewAd - ad3 */}
+                <NewAd ad="ad3" />
             </div>
             <Footer />
         </div>

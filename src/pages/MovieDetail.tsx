@@ -97,8 +97,8 @@ export default function MovieDetail() {
                 {/* NewAd - ad1 */}
                 <NewAd ad="ad1" />
                 
-                {/* NewAd - ad5 */}
-                <NewAd ad="ad5" />
+                {/* NewAd - ad7 */}
+                <NewAd ad="ad7" />
             </div>
             <Footer />
             <BackButton />

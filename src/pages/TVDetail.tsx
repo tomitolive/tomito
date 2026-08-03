@@ -202,8 +202,8 @@ export default function TVDetail() {
                 {/* NewAd - ad2 */}
                 <NewAd ad="ad2" />
                 
-                {/* NewAd - ad6 */}
-                <NewAd ad="ad6" />
+                {/* NewAd - ad3 */}
+                <NewAd ad="ad3" />
             </div>
             <Footer />
             <BackButton />

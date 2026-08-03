@@ -607,21 +607,20 @@ const loadTopcima = async () => {
                     )}
                   </button>
                 ))}
-              </div>
-            </div>
           </div>
         </div>
 
-        {/* NewAd - ad4 */}
-        <NewAd ad="ad4" />
+        {/* NewAd - ad1 */}
+        <NewAd ad="ad1" />
 
-        {/* Bottom Section: RTL Info layout */}
-        <div className="w-full mb-16" dir="rtl">
-          {/* Title Section */}
-          <div className="mb-10">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4 text-foreground leading-tight tracking-tight">
-              {show.name}
-            </h1>
+        <div className="container mx-auto px-4 py-8">
+          {/* RTL Info layout */}
+          <div className="w-full mb-16" dir="rtl">
+            {/* Title Section */}
+            <div className="mb-10">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4 text-foreground leading-tight tracking-tight">
+                {show.name}
+              </h1>
 
             <div className="flex flex-wrap items-center gap-4 text-base text-muted-foreground mb-6">
               <span className="font-medium">{show.original_name}</span>
@@ -711,6 +710,7 @@ const loadTopcima = async () => {
             </div>
           )}
         </div>
+        </div>
 
         {/* Footer */}
         <div className="pt-12 pb-8 border-t border-border/30 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-muted-foreground">
@@ -723,6 +723,8 @@ const loadTopcima = async () => {
 
         {/* NewAd - ad2 */}
         <NewAd ad="ad2" />
+      </div>
+      </div>
       </div>
 
       {/* Download Modal */}

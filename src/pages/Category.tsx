@@ -113,8 +113,8 @@ export default function Category() {
                 {/* NewAd - ad3 */}
                 <NewAd ad="ad3" />
                 
-                {/* NewAd - ad7 */}
-                <NewAd ad="ad7" />
+                {/* NewAd - ad1 */}
+                <NewAd ad="ad1" />
             </div>
             <Footer />
             <BackButton />

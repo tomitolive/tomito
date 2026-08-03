@@ -50,8 +50,8 @@ const Index = () => {
       {/* NewAd - ad1 */}
       <NewAd ad="ad1" />
       
-      {/* NewAd - ad5 */}
-      <NewAd ad="ad5" />
+      {/* NewAd - ad7 */}
+      <NewAd ad="ad7" />
 
       {/* Content Sections */}
       <div className="container mx-auto px-4 -mt-20 relative z-10">
@@ -93,9 +93,6 @@ const Index = () => {
       
       {/* NewAd - ad3 */}
       <NewAd ad="ad3" />
-      
-      {/* NewAd - ad6 */}
-      <NewAd ad="ad6" />
 
       <Footer />
     </div>
