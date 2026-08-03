@@ -44,16 +44,28 @@ const CONSUMET_INSTANCES = [
   'https://consumet.eltik.dev',
 ];
 
+// Simple cache for Consumet URLs
+const consumetCache = new Map<string, { url: string; timestamp: number }>();
+const CACHE_DURATION = 30 * 60 * 1000; // 30 minutes
+
 async function fetchConsumetTV(
   showId: string,
   season: number,
   episode: number,
   signal: AbortSignal
 ): Promise<string | null> {
+  const cacheKey = `${showId}-${season}-${episode}`;
+
+  // Check cache first
+  const cached = consumetCache.get(cacheKey);
+  if (cached && Date.now() - cached.timestamp < CACHE_DURATION) {
+    return cached.url;
+  }
+
   // Try all instances in parallel — first to return a valid source wins
   const races = CONSUMET_INSTANCES.map(async base => {
     const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 8000);
+    const timeout = setTimeout(() => controller.abort(), 5000); // Reduced from 8000 to 5000
     signal.addEventListener('abort', () => { clearTimeout(timeout); controller.abort(); });
 
     const infoRes = await fetch(
@@ -80,7 +92,10 @@ async function fetchConsumetTV(
   });
 
   try {
-    return await Promise.any(races);
+    const url = await Promise.any(races);
+    // Cache the result
+    consumetCache.set(cacheKey, { url, timestamp: Date.now() });
+    return url;
   } catch {
     return null;
   }
@@ -274,23 +289,21 @@ const loadTopcima = async () => {
       if (!id) return;
       setIsLoading(true);
       try {
-        const [showData, castData, similarData] = await Promise.all([
+        const [showData, castData, similarData, imdb] = await Promise.all([
           fetchTVDetails(parseInt(id)),
           fetchCredits("tv", parseInt(id)),
           fetchSimilar("tv", parseInt(id)),
+          getImdbIdFromTmdb(parseInt(id), "tv"),
         ]);
         setShow(showData);
         setCast(castData.slice(0, 10));
         setSimilar(similarData as TVShow[]);
+        setImdbId(imdb);
         // Detect anime by genre (Animation=16) or genre name
         const animeGenreIds = [16];
         const animeKeywords = ['animation', 'anime', 'cartoon'];
         const isAnimeShow = showData.genres?.some(g => animeGenreIds.includes(g.id) || animeKeywords.includes(g.name?.toLowerCase()));
         setIsAnime(isAnimeShow);
-
-        // Fetch IMDB ID
-        const imdb = await getImdbIdFromTmdb(parseInt(id), "tv");
-        setImdbId(imdb);
 
         trackEvent({
           action: "view_item",
@@ -429,17 +442,19 @@ const loadTopcima = async () => {
     <div className="min-h-screen text-foreground pb-16">
       <Navbar />
       <BackButton />
+      
+      {/* Main Container */}
       <div className="container mx-auto px-4 pt-32 max-w-[1600px]">
-        {/* Main Grid Layout for Desktop */}
+        
+        {/* TOP SECTION: Video Player & Sidebar (Grid) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-16 w-full">
-
-          {/* Video Player Column - Spans 8 columns on desktop */}
+          
+          {/* 1. Video Player Column (8 columns) */}
           <div className="lg:col-span-8 flex flex-col gap-6">
-            {/* Server Selection */}
             <div className="flex items-center gap-4">
               <label className="text-sm font-semibold text-foreground whitespace-nowrap">السيرفرات</label>
               <Select value={activeServerId} onValueChange={switchServer}>
-                <SelectTrigger className="w-full h-12 bg-card/50 border-border/50 text-foreground font-semibold rounded-xl focus:ring-primary focus:ring-2 text-right rtl:text-right">
+                <SelectTrigger className="w-full h-12 bg-card/50 border-border/50 text-foreground font-semibold rounded-xl focus:ring-primary focus:ring-2 text-right rtl:text-right rtl:text-right">
                   <SelectValue placeholder="اختر السيرفر" />
                 </SelectTrigger>
                 <SelectContent className="bg-card border-border/50">
@@ -458,7 +473,6 @@ const loadTopcima = async () => {
               </Select>
             </div>
 
-            {/* Video Player */}
             <div
               ref={unifiedContainerRef}
               className="relative aspect-video rounded-2xl shadow-2xl overflow-hidden bg-black border border-border/30 ring-1 ring-border/20"
@@ -475,7 +489,6 @@ const loadTopcima = async () => {
                 />
               )}
 
-              {/* Consumet Ready Badge */}
               {consumetReady && activeServerId !== 'consumet' && (
                 <button
                   onClick={() => { setActiveServerId('consumet'); setUnifiedIframeKey(k => k + 1); }}
@@ -486,26 +499,21 @@ const loadTopcima = async () => {
                 </button>
               )}
 
-              {/* Floating Zoom Button - Bottom Right */}
               {!isTopCimaServer && (
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  toggleUnifiedFullscreen();
-                }}
-                className="absolute bottom-2 right-2 z-[9999] h-8 w-8 bg-black/50 hover:bg-black/80 text-white border border-white/10 backdrop-blur-md shadow-2xl rounded-full transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center opacity-50 hover:opacity-100"
-              >
-                {unifiedFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
-              </Button>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    toggleUnifiedFullscreen();
+                  }}
+                  className="absolute bottom-2 right-2 z-[9999] h-8 w-8 bg-black/50 hover:bg-black/80 text-white border border-white/10 backdrop-blur-md shadow-2xl rounded-full transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center opacity-50 hover:opacity-100"
+                >
+                  {unifiedFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
+                </Button>
               )}
-
-              {/* Download Button - Bottom Left */}
-
             </div>
 
-            {/* Download Button Below Video */}
             {downloadServers.length > 0 && (
               <div className="mt-4" dir="rtl">
                 <button
@@ -519,9 +527,8 @@ const loadTopcima = async () => {
             )}
           </div>
 
-          {/* Episodes & Seasons Sidebar - Spans 4 columns on desktop */}
+          {/* 2. Episodes & Seasons Sidebar (4 columns) */}
           <div className="lg:col-span-4 flex flex-col gap-6">
-            {/* Season Dropdown */}
             <div className="relative">
               <button
                 onClick={() => setIsSeasonDropdownOpen(!isSeasonDropdownOpen)}
@@ -552,7 +559,6 @@ const loadTopcima = async () => {
               )}
             </div>
 
-            {/* Current Episode Info */}
             {currentEpisode && (
               <div className="flex items-center gap-2 text-sm text-muted-foreground bg-card/50 px-4 py-2 rounded-lg border border-border/30">
                 <Play className="w-4 h-4 text-primary" />
@@ -560,7 +566,6 @@ const loadTopcima = async () => {
               </div>
             )}
 
-            {/* Episodes List */}
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-1 h-5 bg-primary rounded-full" />
@@ -607,20 +612,20 @@ const loadTopcima = async () => {
                     )}
                   </button>
                 ))}
+              </div>
+            </div>
           </div>
-        </div>
+        </div> {/* <-- IMPORTANT: This closes the 12-column grid properly! */}
 
         {/* NewAd - ad1 */}
         <NewAd ad="ad1" />
 
-        <div className="container mx-auto px-4 py-8 max-w-[1600px]">
-          {/* RTL Info layout */}
-          <div className="w-full mb-16" dir="rtl">
-            {/* Title Section */}
-            <div className="mb-10">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4 text-foreground leading-tight tracking-tight">
-                {show.name}
-              </h1>
+        {/* BOTTOM SECTION: Show Info (Full Width) */}
+        <div className="w-full mb-16" dir="rtl">
+          <div className="mb-10">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4 text-foreground leading-tight tracking-tight">
+              {show.name}
+            </h1>
 
             <div className="flex flex-wrap items-center gap-4 text-base text-muted-foreground mb-6">
               <span className="font-medium">{show.original_name}</span>
@@ -641,7 +646,6 @@ const loadTopcima = async () => {
               )}
             </div>
 
-            {/* Genres */}
             <div className="flex flex-wrap gap-3">
               {show.genres?.map((genre) => (
                 <Link
@@ -655,17 +659,12 @@ const loadTopcima = async () => {
             </div>
           </div>
 
-          {/* Description */}
           <div className="mb-12">
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-5xl">
               {show.overview || t("noDescription")}
             </p>
           </div>
 
-          {/* NewAd - ad2 */}
-          <NewAd ad="ad2" />
-
-          {/* Cast */}
           {cast.length > 0 && (
             <div className="mb-16">
               <div className="flex items-center gap-3 mb-8">
@@ -694,14 +693,12 @@ const loadTopcima = async () => {
             </div>
           )}
 
-          {/* Similar Shows */}
           {similar.length > 0 && (
             <div className="border-t border-border/30 pt-16">
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-1 h-7 bg-primary rounded-full" />
                 <h2 className="text-2xl font-bold">{t("similarTV") || "مسلسلات مشابهة"}</h2>
               </div>
-
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-6">
                 {similar.slice(0, 16).map(sm => (
                   <MovieCard key={sm.id} item={sm} type="tv" />
@@ -709,7 +706,6 @@ const loadTopcima = async () => {
               </div>
             </div>
           )}
-        </div>
         </div>
 
         {/* Footer */}
@@ -723,8 +719,7 @@ const loadTopcima = async () => {
 
         {/* NewAd - ad3 */}
         <NewAd ad="ad3" />
-      </div>
-      </div>
+
       </div>
 
       {/* Download Modal */}
@@ -738,7 +733,6 @@ const loadTopcima = async () => {
             onClick={(e) => e.stopPropagation()}
             dir="rtl"
           >
-            {/* Modal Header */}
             <div className="flex items-center justify-between px-6 py-4 border-b border-border/30 bg-card/80">
               <div className="flex items-center gap-2">
                 <Download className="w-5 h-5 text-primary" />
@@ -754,8 +748,6 @@ const loadTopcima = async () => {
                 </svg>
               </button>
             </div>
-
-            {/* Modal Body - Flex wrap for desktop and mobile */}
             <div className="p-6 overflow-y-auto custom-scrollbar">
               <p className="text-sm text-muted-foreground mb-4">اختر السيرفر المفضل لتحميل الحلقة:</p>
               <div className="flex flex-wrap gap-3 justify-center sm:justify-start">

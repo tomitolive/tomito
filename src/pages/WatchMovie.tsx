@@ -91,16 +91,15 @@ const loadTopcima = async () => {
       if (!id) return;
       setIsLoading(true);
       try {
-        const [movieData, castData, similarData] = await Promise.all([
+        const [movieData, castData, similarData, imdb] = await Promise.all([
           fetchMovieDetails(parseInt(id)),
           fetchCredits("movie", parseInt(id)),
           fetchSimilar("movie", parseInt(id)),
+          getImdbIdFromTmdb(parseInt(id), "movie"),
         ]);
         setMovie(movieData);
         setCast(castData.slice(0, 10));
         setSimilar(similarData as Movie[]);
-
-        const imdb = await getImdbIdFromTmdb(parseInt(id), "movie");
         setImdbId(imdb);
 
         trackEvent({
@@ -340,9 +339,6 @@ const loadTopcima = async () => {
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-4xl text-right mb-12">
             {movie.overview || t("noDescription")}
           </p>
-
-          {/* NewAd - ad2 */}
-          <NewAd ad="ad2" />
 
           {/* Cast */}
           {cast.length > 0 && (

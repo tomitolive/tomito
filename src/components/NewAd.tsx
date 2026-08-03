@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const ADS = {
   ad1: {
@@ -43,8 +43,34 @@ interface NewAdProps {
 
 export default function NewAd({ ad = "ad1" }: NewAdProps) {
   const adConfig = ADS[ad];
+  const [isVisible, setIsVisible] = useState(false);
+  const adRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.disconnect();
+          }
+        });
+      },
+      {
+        rootMargin: "200px", // Start loading 200px before the ad comes into view
+      }
+    );
+
+    if (adRef.current) {
+      observer.observe(adRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!isVisible) return;
+
     const loadScript = () => {
       if (adConfig.type === "invoke") {
         // Only inject script once per ad type
@@ -58,15 +84,15 @@ export default function NewAd({ ad = "ad1" }: NewAdProps) {
       }
     };
 
-    // Load script immediately on mount
     loadScript();
-  }, [adConfig.src, adConfig.type]);
+  }, [isVisible, adConfig.src, adConfig.type]);
 
   // Only invoke type ads have an id
   const invokeAdConfig = adConfig as { id: string; src: string; type: string };
   
   return (
     <div 
+      ref={adRef}
       style={{ 
         textAlign: "center", 
         margin: "20px auto", 

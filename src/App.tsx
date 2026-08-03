@@ -34,6 +34,7 @@ import { RamadanTrailerPage } from "./pages/RamadanTrailerPage";
 import { RamadanDownloadPage } from "./pages/RamadanDownloadPage";
 import SeriesDownloadList from "./pages/SeriesDownloadList";
 import { AIAssistant } from "./components/AIAssistant";
+import AdBlockDetector from "./components/AdBlockDetector";
 
 
 
@@ -75,6 +76,7 @@ function App() {
               </Routes>
 
               <AIAssistant />
+              <AdBlockDetector />
             </Router>
           </TooltipProvider>
         </SpatialNavigationProvider>
