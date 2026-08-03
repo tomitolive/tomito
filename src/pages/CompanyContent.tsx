@@ -7,7 +7,6 @@ import { MovieCard } from "@/components/MovieCard";
 import { SkeletonCard } from "@/components/SkeletonCard";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import TrailerAd from "@/components/TrailerAd";
 import { BackButton } from "@/components/BackButton";
 
 export default function CompanyContent() {
@@ -202,7 +201,6 @@ export default function CompanyContent() {
             </main>
 
             {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
-            <TrailerAd adKey={companyId || ''} />
 
             <Footer />
             <BackButton />

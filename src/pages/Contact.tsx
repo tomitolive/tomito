@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { SEO } from "@/components/SEO";
-import TrailerAd from "@/components/TrailerAd";
 import { BackButton } from "@/components/BackButton";
 
 
@@ -128,7 +127,6 @@ export default function Contact() {
                 </div>
 
                 {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
-                <TrailerAd adKey="contact" />
             </div>
             <BackButton />
         </div>

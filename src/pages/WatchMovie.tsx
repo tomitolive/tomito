@@ -27,7 +27,6 @@ import {
 } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
-import TrailerAd from "@/components/TrailerAd";
 
 
 
@@ -306,9 +305,6 @@ const loadTopcima = async () => {
           </div>
         </div>
 
-        {/* Magsrv Ad — يظهر في المنتصف */}
-        <TrailerAd adKey={`${id}-mid`} />
-
         {/* Bottom Section: RTL Info layout */}
         <div className="w-full mb-12" dir="rtl">
           {/* Title */}
@@ -383,10 +379,8 @@ const loadTopcima = async () => {
             <Link to="/category/movie/all" className="hover:text-foreground transition-colors">{t("movies")}</Link>
           </div>
         </div>
-
-        {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
-        <TrailerAd adKey={id || ''} />
       </div>
+
 
       {/* Download Modal */}
       {showDownloadModal && (

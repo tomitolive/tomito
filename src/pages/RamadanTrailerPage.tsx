@@ -6,7 +6,6 @@ import {
 } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import TrailerAd from "@/components/TrailerAd";
 import { Button } from "@/components/ui/button";
 import { BackButton } from "@/components/BackButton";
 import { PosterImage } from "@/components/PosterImage";
@@ -274,7 +273,6 @@ export function RamadanTrailerPage() {
             </main>
 
             {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
-            <TrailerAd adKey={slug || ''} />
 
             <Footer />
             <BackButton />

@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import TrailerAd from "@/components/TrailerAd";
 import { ContentRow } from "@/components/ContentRow";
 import { Star, Clock, Calendar } from "lucide-react";
 import { VideoPlayer } from "@/components/VideoPlayer";
@@ -95,7 +94,6 @@ export default function MovieDetail() {
                 </div>
 
                 {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
-                <TrailerAd adKey={id || ''} />
             </div>
             <Footer />
             <BackButton />

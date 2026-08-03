@@ -3,7 +3,6 @@ import { useParams, Link } from "react-router-dom";
 import { ArrowRight, Calendar, MapPin, Star, Film, Tv } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import TrailerAd from "@/components/TrailerAd";
 import { MovieCard } from "@/components/MovieCard";
 import { Button } from "@/components/ui/button";
 import { BackButton } from "@/components/BackButton";
@@ -231,7 +230,6 @@ export default function ActorPage() {
       </div>
 
       {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
-      <TrailerAd adKey={id || ''} />
 
       <Footer />
       <BackButton />

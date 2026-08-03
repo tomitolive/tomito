@@ -3,7 +3,6 @@ import { useParams, useSearchParams, Link, useNavigate } from "react-router-dom"
 import { Play, Star, Clock, Calendar, ArrowRight, Users, ChevronDown, Maximize2, Minimize2, Settings2, Server, Sparkles, Download, ChevronRight } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import TrailerAd from "@/components/TrailerAd";
 import NewAd from "@/components/NewAd";
 import { ContentRow } from "@/components/ContentRow";
 import { GenreFilters } from "@/components/GenreFilters";
@@ -613,11 +612,8 @@ const loadTopcima = async () => {
           </div>
         </div>
 
-        {/* Magsrv Ad — يظهر في المنتصف */}
-        <TrailerAd adKey={`${id}-mid`} />
-
-        {/* NewAd - ad1 */}
-        <NewAd ad="ad1" />
+        {/* NewAd - ad4 */}
+        <NewAd ad="ad4" />
 
         {/* Bottom Section: RTL Info layout */}
         <div className="w-full mb-16" dir="rtl">
@@ -724,9 +720,6 @@ const loadTopcima = async () => {
             <Link to="/category/tv/all" className="hover:text-foreground transition-colors font-medium">{t("tvShows")}</Link>
           </div>
         </div>
-
-        {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
-        <TrailerAd adKey={id || ''} />
 
         {/* NewAd - ad2 */}
         <NewAd ad="ad2" />

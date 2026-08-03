@@ -5,7 +5,6 @@ import { t } from "@/lib/tmdb";
 import Logo from "@/components/Logo";
 import { SEO } from "@/components/SEO";
 import { Footer } from "@/components/Footer";
-import TrailerAd from "@/components/TrailerAd";
 import { BackButton } from "@/components/BackButton";
 
 
@@ -98,7 +97,6 @@ export default function About() {
                 </div>
 
                 {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
-                <TrailerAd adKey="about" />
             </div>
             <Footer />
             <BackButton />

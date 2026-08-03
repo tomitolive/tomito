@@ -1,6 +1,5 @@
 import { useEffect, useState, useMemo, useRef } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import TrailerAd from "@/components/TrailerAd";
 import { Play, Star, Calendar, ArrowRight, Users, Tv, Download, Server, ChevronDown } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -258,7 +257,6 @@ export default function TVTrailer() {
                         </div>
 
                         {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
-                        <TrailerAd adKey={slug || ''} />
 
                         {/* Watch Now Button - Positioned directly under trailer */}
                         <div className="flex flex-col sm:flex-row gap-4">

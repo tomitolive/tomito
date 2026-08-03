@@ -4,7 +4,6 @@ import { Search, Play, Calendar, Star, Download, Sparkles, Filter } from "lucide
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
-import TrailerAd from "@/components/TrailerAd";
 import { Button } from "@/components/ui/button";
 import { BackButton } from "@/components/BackButton";
 import { Input } from "@/components/ui/input";
@@ -259,7 +258,6 @@ export default function SeriesDownloadList() {
             </main>
 
             {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
-            <TrailerAd adKey="series-download" />
 
             <Footer />
             <BackButton />
