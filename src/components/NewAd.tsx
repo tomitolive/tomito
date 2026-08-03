@@ -29,6 +29,15 @@ const ADS = {
   ad6: {
     src: "https://pl30597550.effectivecpmnetwork.com/e9/97/d5/e997d5de88469fe50e1f491bdebf4d3e.js",
     type: "simple"
+  },
+  ad7: {
+    id: "container-673424a2e33d873f2de0db7bf4828fec",
+    src: "https://pl30670419.effectivecpmnetwork.com/673424a2e33d873f2de0db7bf4828fec/invoke.js",
+    type: "invoke" | "ad7" | "ad8"
+  },
+  ad8: {
+    src: "https://pl30670420.effectivecpmnetwork.com/18/b4/8f/18b48f3413123d1eb89b818441e833c6.js",
+    type: "simple"
   }
 };
 
