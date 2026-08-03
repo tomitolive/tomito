@@ -9,39 +9,238 @@ async function detectIncognito(): Promise<boolean> {
   return false;
 }
 
-async function detectAdBlock(): Promise<boolean> {
-  let networkBlocked = false;
-  try {
-    await fetch("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", {
-      method: "HEAD",
-      mode: "no-cors",
-      cache: "no-store",
-    });
-  } catch (error) {
-    networkBlocked = true; // Blocked at the network level
+// Multiple network detection methods
+async function detectNetworkBlock(): Promise<boolean> {
+  const adUrls = [
+    "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+    "https://googleads.g.doubleclick.net/pagead/ads",
+    "https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html",
+    "https://www.googletagmanager.com/gtag/js",
+  ];
+
+  let blockedCount = 0;
+
+  for (const url of adUrls) {
+    try {
+      await fetch(url, {
+        method: "HEAD",
+        mode: "no-cors",
+        cache: "no-store",
+        signal: AbortSignal.timeout(3000),
+      });
+    } catch (error) {
+      blockedCount++;
+    }
   }
 
-  let domBlocked = false;
+  // If more than half of the URLs are blocked, consider it adblock
+  return blockedCount >= Math.ceil(adUrls.length / 2);
+}
+
+// Advanced DOM bait detection with multiple patterns
+async function detectDOMBlock(): Promise<boolean> {
+  const baitClasses = [
+    "pub_300x250",
+    "pub_300x250m",
+    "pub_728x90",
+    "text-ad",
+    "textAd",
+    "text_ad",
+    "text_ads",
+    "text-ads",
+    "text-ad-links",
+    "ad-text",
+    "adSense",
+    "adBlock",
+    "adContent",
+    "adBanner",
+    "adsbox",
+    "adsbygoogle",
+    "google-ad",
+    "google_ads",
+    "google-ad-block",
+    "ad-placement",
+    "ad-sidebar",
+    "ad-banner",
+    "ad-container",
+    "ad-wrapper",
+    "ad-unit",
+    "ad-slot",
+    "ad-space",
+    "advertisement",
+    "banner-ad",
+    "sponsor-ad",
+  ];
+
+  const baitIds = [
+    "ad-banner",
+    "ad-sidebar",
+    "ad-container",
+    "google-ads",
+    "adsense",
+    "ad-block",
+  ];
+
+  let blockedCount = 0;
+  const baits: HTMLElement[] = [];
+
   try {
-    const bait = document.createElement("div");
-    bait.className = "pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links ad-text adSense adBlock adContent adBanner adsbox adsbygoogle";
-    bait.style.cssText = "position:absolute;top:-9999px;left:-9999px;width:1px;height:1px;";
-    document.body.appendChild(bait);
+    // Test with class-based baits
+    for (let i = 0; i < 3; i++) {
+      const bait = document.createElement("div");
+      bait.className = baitClasses.join(" ");
+      bait.style.cssText = "position:absolute;top:-9999px;left:-9999px;width:1px;height:1px;";
+      document.body.appendChild(bait);
+      baits.push(bait);
+    }
 
-    await new Promise((r) => setTimeout(r, 200));
+    // Test with id-based baits
+    for (const id of baitIds) {
+      const bait = document.createElement("div");
+      bait.id = id;
+      bait.style.cssText = "position:absolute;top:-9999px;left:-9999px;width:1px;height:1px;";
+      document.body.appendChild(bait);
+      baits.push(bait);
+    }
 
-    domBlocked =
-      bait.offsetHeight === 0 ||
-      bait.offsetParent === null ||
-      window.getComputedStyle(bait).display === "none" ||
-      window.getComputedStyle(bait).visibility === "hidden";
+    // Test with iframe bait
+    const iframeBait = document.createElement("iframe");
+    iframeBait.className = baitClasses.join(" ");
+    iframeBait.style.cssText = "position:absolute;top:-9999px;left:-9999px;width:1px;height:1px;";
+    document.body.appendChild(iframeBait);
+    baits.push(iframeBait);
 
-    document.body.removeChild(bait);
+    await new Promise((r) => setTimeout(r, 300));
+
+    for (const bait of baits) {
+      const computed = window.getComputedStyle(bait);
+      const isHidden =
+        bait.offsetHeight === 0 ||
+        bait.offsetParent === null ||
+        computed.display === "none" ||
+        computed.visibility === "hidden" ||
+        computed.opacity === "0" ||
+        computed.height === "0px" ||
+        computed.width === "0px";
+
+      if (isHidden) blockedCount++;
+    }
+
+    // Cleanup
+    for (const bait of baits) {
+      if (bait.parentNode) {
+        document.body.removeChild(bait);
+      }
+    }
+
+    // If more than half are blocked, consider it adblock
+    return blockedCount >= Math.ceil(baits.length / 2);
   } catch (_) {
-    domBlocked = true;
+    return true;
   }
+}
 
-  return networkBlocked || domBlocked;
+// Detect if ad scripts are blocked from loading
+async function detectScriptBlock(): Promise<boolean> {
+  try {
+    const script = document.createElement("script");
+    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+    script.async = true;
+    script.style.cssText = "position:absolute;top:-9999px;left:-9999px;";
+    
+    return new Promise<boolean>((resolve) => {
+      const timeout = setTimeout(() => {
+        if (script.parentNode) {
+          document.body.removeChild(script);
+        }
+        resolve(true); // If it doesn't load quickly, it's likely blocked
+      }, 2000);
+
+      script.onload = () => {
+        clearTimeout(timeout);
+        if (script.parentNode) {
+          document.body.removeChild(script);
+        }
+        resolve(false);
+      };
+
+      script.onerror = () => {
+        clearTimeout(timeout);
+        if (script.parentNode) {
+          document.body.removeChild(script);
+        }
+        resolve(true);
+      };
+
+      document.body.appendChild(script);
+    });
+  } catch (_) {
+    return true;
+  }
+}
+
+// Detect CSS rules that hide ads
+function detectCSSBlock(): Promise<boolean> {
+  return new Promise((resolve) => {
+    try {
+      const testElement = document.createElement("div");
+      testElement.className = "adsbox ad-banner advertisement";
+      testElement.style.cssText = "position:absolute;top:-9999px;left:-9999px;width:1px;height:1px;";
+      document.body.appendChild(testElement);
+
+      setTimeout(() => {
+        const computed = window.getComputedStyle(testElement);
+        const isHidden =
+          computed.display === "none" ||
+          computed.visibility === "hidden" ||
+          computed.opacity === "0" ||
+          computed.height === "0px" ||
+          computed.width === "0px";
+
+        if (testElement.parentNode) {
+          document.body.removeChild(testElement);
+        }
+        resolve(isHidden);
+      }, 100);
+    } catch (_) {
+      resolve(true);
+    }
+  });
+}
+
+// Detect if window properties are blocked
+function detectWindowBlock(): boolean {
+  try {
+    // Some adblockers block these properties
+    const testProps = ["google_adblock", "adblock_detected", "canRunAds"];
+    let blocked = false;
+
+    for (const prop of testProps) {
+      if (window[prop as keyof Window] !== undefined) {
+        blocked = true;
+      }
+    }
+
+    return blocked;
+  } catch (_) {
+    return false;
+  }
+}
+
+// Combined detection with multiple methods
+async function detectAdBlock(): Promise<boolean> {
+  const results = await Promise.all([
+    detectNetworkBlock(),
+    detectDOMBlock(),
+    detectScriptBlock(),
+    detectCSSBlock(),
+  ]);
+
+  const windowBlocked = detectWindowBlock();
+
+  // If any 2 or more methods detect adblock, consider it blocked
+  const blockedCount = results.filter(r => r).length + (windowBlocked ? 1 : 0);
+  return blockedCount >= 2;
 }
 
 export default function AdBlockDetector() {
