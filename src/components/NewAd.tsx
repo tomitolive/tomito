@@ -34,15 +34,11 @@ const ADS = {
     id: "container-673424a2e33d873f2de0db7bf4828fec",
     src: "https://pl30670419.effectivecpmnetwork.com/673424a2e33d873f2de0db7bf4828fec/invoke.js",
     type: "invoke"
-  },
-  ad8: {
-    src: "https://pl30670420.effectivecpmnetwork.com/18/b4/8f/18b48f3413123d1eb89b818441e833c6.js",
-    type: "simple"
   }
 };
 
 interface NewAdProps {
-  ad?: "ad1" | "ad2" | "ad3" | "ad7" | "ad8";
+  ad?: "ad1" | "ad2" | "ad3" | "ad7";
 }
 
 export default function NewAd({ ad = "ad1" }: NewAdProps) {
@@ -59,34 +55,12 @@ export default function NewAd({ ad = "ad1" }: NewAdProps) {
           script.setAttribute("data-cfasync", "false");
           document.head.appendChild(script);
         }
-      } else if (adConfig.type === "simple") {
-        // Simple scripts loaded globally once
-        if (!document.querySelector(`script[src="${adConfig.src}"]`)) {
-          const script = document.createElement("script");
-          script.src = adConfig.src;
-          document.head.appendChild(script);
-        }
       }
     };
 
     // Load script immediately on mount
     loadScript();
   }, [adConfig.src, adConfig.type]);
-
-  if (adConfig.type === "simple") {
-    // Simple scripts don't need a container div but we still render a placeholder
-    return (
-      <div 
-        style={{ 
-          textAlign: "center", 
-          margin: "20px auto", 
-          overflow: "hidden", 
-          maxWidth: "728px", 
-          minHeight: "90px"
-        }}
-      />
-    );
-  }
 
   // Only invoke type ads have an id
   const invokeAdConfig = adConfig as { id: string; src: string; type: string };
