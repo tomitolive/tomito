@@ -4,6 +4,7 @@ import { Play, Star, Clock, Calendar, ArrowRight, Users, ChevronDown, Maximize2,
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import TrailerAd from "@/components/TrailerAd";
+import NewAd from "@/components/NewAd";
 import { ContentRow } from "@/components/ContentRow";
 import { GenreFilters } from "@/components/GenreFilters";
 import { Button } from "@/components/ui/button";
@@ -615,6 +616,9 @@ const loadTopcima = async () => {
         {/* Magsrv Ad — يظهر في المنتصف */}
         <TrailerAd adKey={`${id}-mid`} />
 
+        {/* NewAd - ad1 */}
+        <NewAd ad="ad1" />
+
         {/* Bottom Section: RTL Info layout */}
         <div className="w-full mb-16" dir="rtl">
           {/* Title Section */}
@@ -662,6 +666,9 @@ const loadTopcima = async () => {
               {show.overview || t("noDescription")}
             </p>
           </div>
+
+          {/* NewAd - ad3 */}
+          <NewAd ad="ad3" />
 
           {/* Cast */}
           {cast.length > 0 && (
@@ -720,6 +727,9 @@ const loadTopcima = async () => {
 
         {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
         <TrailerAd adKey={id || ''} />
+
+        {/* NewAd - ad2 */}
+        <NewAd ad="ad2" />
       </div>
 
       {/* Download Modal */}
