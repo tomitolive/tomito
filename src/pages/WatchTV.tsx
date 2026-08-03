@@ -429,12 +429,12 @@ const loadTopcima = async () => {
     <div className="min-h-screen text-foreground pb-16">
       <Navbar />
       <BackButton />
-      <div className="container mx-auto px-4 pt-32 max-w-7xl">
-        {/* Main Row: Video Player (Left) + Episodes/Seasons (Right) */}
-        <div className="flex flex-col lg:flex-row gap-8 mb-16 w-full">
+      <div className="container mx-auto px-4 pt-32 max-w-[1600px]">
+        {/* Main Grid Layout for Desktop */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-16 w-full">
 
-          {/* Video Player Column */}
-          <div className="w-full lg:w-[70%] flex flex-col gap-6">
+          {/* Video Player Column - Spans 8 columns on desktop */}
+          <div className="lg:col-span-8 flex flex-col gap-6">
             {/* Server Selection */}
             <div className="flex items-center gap-4">
               <label className="text-sm font-semibold text-foreground whitespace-nowrap">السيرفرات</label>
@@ -502,7 +502,7 @@ const loadTopcima = async () => {
               )}
 
               {/* Download Button - Bottom Left */}
-              
+
             </div>
 
             {/* Download Button Below Video */}
@@ -519,8 +519,8 @@ const loadTopcima = async () => {
             )}
           </div>
 
-          {/* Episodes & Seasons Sidebar */}
-          <div className="w-full lg:w-[30%] flex flex-col gap-6">
+          {/* Episodes & Seasons Sidebar - Spans 4 columns on desktop */}
+          <div className="lg:col-span-4 flex flex-col gap-6">
             {/* Season Dropdown */}
             <div className="relative">
               <button
@@ -613,7 +613,7 @@ const loadTopcima = async () => {
         {/* NewAd - ad1 */}
         <NewAd ad="ad1" />
 
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-8 max-w-[1600px]">
           {/* RTL Info layout */}
           <div className="w-full mb-16" dir="rtl">
             {/* Title Section */}
@@ -657,7 +657,7 @@ const loadTopcima = async () => {
 
           {/* Description */}
           <div className="mb-12">
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-4xl">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-5xl">
               {show.overview || t("noDescription")}
             </p>
           </div>
@@ -672,12 +672,12 @@ const loadTopcima = async () => {
                 <div className="w-1 h-7 bg-primary rounded-full" />
                 <h2 className="text-2xl font-bold">{t("castMembers") || "طاقم العمل"}</h2>
               </div>
-              <div className="flex gap-5 overflow-x-auto pb-8 hide-scrollbar">
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-6">
                 {cast.map(actor => (
                   <div
                     key={actor.id}
                     onClick={() => navigate(`/actor/${actor.id}`)}
-                    className="cursor-pointer flex-shrink-0 w-32 text-center group"
+                    className="cursor-pointer text-center group"
                   >
                     <div className="w-24 h-24 mx-auto rounded-2xl overflow-hidden mb-4 border-2 border-transparent group-hover:border-primary transition-all duration-300 shadow-lg group-hover:shadow-xl group-hover:shadow-primary/20">
                       <img
@@ -702,8 +702,8 @@ const loadTopcima = async () => {
                 <h2 className="text-2xl font-bold">{t("similarTV") || "مسلسلات مشابهة"}</h2>
               </div>
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
-                {similar.slice(0, 12).map(sm => (
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-6">
+                {similar.slice(0, 16).map(sm => (
                   <MovieCard key={sm.id} item={sm} type="tv" />
                 ))}
               </div>
