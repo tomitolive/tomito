@@ -5,9 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContentRow } from "@/components/ContentRow";
 import { HeroCarousel } from "@/components/HeroCarousel";
-import { ProductionCompaniesBar } from "@/components/ProductionCompaniesBar";
 import { fetchPopular, fetchTrending, fetchNowPlaying, fetchOnTheAir, fetchTopRated, fetchBestUSContent, searchMulti, TMDB_CONFIG, t, HeroMediaItem } from "@/lib/tmdb";
-
 
 export default function Home() {
     const [popularMovies, setPopularMovies] = useState<any[]>([]);
@@ -20,6 +18,17 @@ export default function Home() {
     const [topRated, setTopRated] = useState<any[]>([]);
     const [heroItems, setHeroItems] = useState<HeroMediaItem[]>([]);
     const [loading, setLoading] = useState(true);
+
+    // Load popup script
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = 'https://pl30597544.profitableratecpmnetwork.com/c3/e8/93/c3e893c4344bbee9205294b8e255c444.js';
+        script.async = true;
+        document.body.appendChild(script);
+        return () => {
+            document.body.removeChild(script);
+        };
+    }, []);
 
     useEffect(() => {
         const loadData = async () => {
@@ -148,8 +157,6 @@ export default function Home() {
                 {/* Trending Section */}
                 <ContentRow title={t("trendingMovies")} items={trendingMovies} type="movie" />
 
-                {/* Production Companies Bar */}
-                <ProductionCompaniesBar />
 
                 {/* Latest Content Sections */}
                 <ContentRow title={t("latestMovies")} items={latestMovies} type="movie" />

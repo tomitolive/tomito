@@ -15,20 +15,43 @@ import { ThemeToggle } from "./ThemeToggle";
 
 const movieCategories = (translate: typeof t) => [
   { id: 28, name: translate("moviesAction" as any) || "أكشن", icon: Zap },
+  { id: 12, name: translate("moviesAdventure" as any) || "مغامرة", icon: Rocket },
+  { id: 16, name: translate("moviesAnimation" as any) || "رسوم متحركة", icon: Sparkles },
   { id: 35, name: translate("moviesComedy" as any) || "كوميديا", icon: Laugh },
+  { id: 80, name: translate("moviesCrime" as any) || "جريمة", icon: Search },
+  { id: 99, name: translate("moviesDocumentary" as any) || "وثائقي", icon: Clapperboard },
   { id: 18, name: translate("moviesDrama" as any) || "دراما", icon: Drama },
+  { id: 10751, name: translate("moviesFamily" as any) || "عائلي", icon: Users },
+  { id: 14, name: translate("moviesFantasy" as any) || "فانتازيا", icon: Sparkles },
+  { id: 36, name: translate("moviesHistory" as any) || "تاريخي", icon: Clapperboard },
   { id: 27, name: translate("moviesHorror" as any) || "رعب", icon: Ghost },
+  { id: 10402, name: translate("moviesMusic" as any) || "موسيقى", icon: Sparkles },
+  { id: 9648, name: translate("moviesMystery" as any) || "غموض", icon: Search },
   { id: 10749, name: translate("moviesRomance" as any) || "رومانسي", icon: Heart },
   { id: 878, name: translate("moviesSciFi" as any) || "خيال علمي", icon: Rocket },
+  { id: 10770, name: translate("moviesTVMovie" as any) || "فيلم تلفزيوني", icon: Tv },
+  { id: 53, name: translate("moviesThriller" as any) || "إثارة", icon: Swords },
+  { id: 10752, name: translate("moviesWar" as any) || "حرب", icon: Swords },
+  { id: 37, name: translate("moviesWestern" as any) || "غربي", icon: Clapperboard },
 ];
 
 const tvCategories = (translate: typeof t) => [
-  { id: 10759, name: translate("tvAction" as any) || "أكشن", icon: Swords },
+  { id: 10759, name: translate("tvActionAdventure" as any) || "أكشن ومغامرة", icon: Swords },
+  { id: 16, name: translate("tvAnimation" as any) || "رسوم متحركة", icon: Sparkles },
   { id: 35, name: translate("tvComedy" as any) || "كوميديا", icon: Laugh },
-  { id: 18, name: translate("tvDrama" as any) || "دراما", icon: Drama },
-  { id: 10765, name: translate("tvSciFi" as any) || "خيال علمي", icon: Sparkles },
   { id: 80, name: translate("tvCrime" as any) || "جريمة", icon: Search },
+  { id: 99, name: translate("tvDocumentary" as any) || "وثائقي", icon: Clapperboard },
+  { id: 18, name: translate("tvDrama" as any) || "دراما", icon: Drama },
   { id: 10751, name: translate("tvFamily" as any) || "عائلي", icon: Users },
+  { id: 10762, name: translate("tvKids" as any) || "أطفال", icon: Users },
+  { id: 9648, name: translate("tvMystery" as any) || "غموض", icon: Search },
+  { id: 10763, name: translate("tvNews" as any) || "أخبار", icon: Clapperboard },
+  { id: 10764, name: translate("tvReality" as any) || "واقع", icon: Tv },
+  { id: 10765, name: translate("tvSciFiFantasy" as any) || "خيال علمي وفانتازيا", icon: Sparkles },
+  { id: 10766, name: translate("tvSoap" as any) || "دراما تلفزيونية", icon: Drama },
+  { id: 10767, name: translate("tvTalk" as any) || "حوار", icon: Clapperboard },
+  { id: 10768, name: translate("tvWarPolitics" as any) || "حرب وسياسة", icon: Swords },
+  { id: 37, name: translate("tvWestern" as any) || "غربي", icon: Clapperboard },
 ];
 
 export function Navbar() {
@@ -130,11 +153,11 @@ export function Navbar() {
               </button>
               {activeDropdown === "movies" && (
                 <div
-                  className="absolute top-full right-0 mt-2 w-64 bg-card border border-border rounded-lg shadow-xl animate-fade-in p-2"
+                  className="absolute top-full right-0 mt-2 w-64 bg-card border border-border rounded-lg shadow-xl animate-fade-in p-2 max-h-96 overflow-y-auto lg:max-h-none lg:overflow-visible"
                   onMouseEnter={() => handleMouseEnter("movies")}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <div className="grid grid-cols-2 gap-1">
+                  <div className="grid grid-cols-2 lg:grid-cols-2 gap-1">
                     {movieCategories(t).map((cat) => (
                       <Link
                         key={cat.id}
@@ -171,11 +194,11 @@ export function Navbar() {
               </button>
               {activeDropdown === "tv" && (
                 <div
-                  className="absolute top-full right-0 mt-2 w-64 bg-card border border-border rounded-lg shadow-xl animate-fade-in p-2"
+                  className="absolute top-full right-0 mt-2 w-64 bg-card border border-border rounded-lg shadow-xl animate-fade-in p-2 max-h-96 overflow-y-auto lg:max-h-none lg:overflow-visible"
                   onMouseEnter={() => handleMouseEnter("tv")}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <div className="grid grid-cols-2 gap-2">
+                  <div className="grid grid-cols-2 lg:grid-cols-2 gap-2">
                     {tvCategories(t).map((cat) => (
                       <Link
                         key={cat.id}
@@ -299,8 +322,8 @@ export function Navbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden bg-card border-t border-border animate-slide-down">
-            <div className="py-4 space-y-4">
+          <div className="lg:hidden bg-card border-t border-border animate-slide-down max-h-[calc(100vh-4rem)] overflow-y-auto">
+            <div className="py-2 space-y-1">
               <Link
                 to="/"
                 className="flex items-center gap-3 px-4 py-2 hover:bg-accent rounded-lg transition-colors"
@@ -324,12 +347,12 @@ export function Navbar() {
                   />
                 </button>
                 {activeDropdown === "movies-mobile" && (
-                  <div className="mt-2 mr-8 space-y-1">
+                  <div className="mt-1 mr-8 space-y-0.5">
                     {movieCategories(t).map((cat) => (
                       <Link
                         key={cat.id}
                         to={`/category/movie/${cat.id}`}
-                        className="flex items-center gap-2 py-2 text-sm text-muted-foreground hover:text-foreground"
+                        className="flex items-center gap-2 py-1.5 text-sm text-muted-foreground hover:text-foreground"
                       >
                         {cat.icon && <cat.icon className="w-4 h-4" />}
                         {cat.name}
@@ -354,12 +377,12 @@ export function Navbar() {
                   />
                 </button>
                 {activeDropdown === "tv-mobile" && (
-                  <div className="mt-2 mr-8 space-y-1">
+                  <div className="mt-1 mr-8 space-y-0.5">
                     {tvCategories(t).map((cat) => (
                       <Link
                         key={cat.id}
                         to={`/category/tv/${cat.id}`}
-                        className="flex items-center gap-2 py-2 text-sm text-muted-foreground hover:text-foreground"
+                        className="flex items-center gap-2 py-1.5 text-sm text-muted-foreground hover:text-foreground"
                       >
                         {cat.icon && <cat.icon className="w-4 h-4" />}
                         {cat.name}

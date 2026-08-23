@@ -23,6 +23,17 @@ export default function CategoryPage() {
   const isAllCategory = genreId === "all";
   const currentGenre = genres.find((g) => g.id === parseInt(genreId || "0"));
 
+  // Load popup script
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://pl30597544.profitableratecpmnetwork.com/c3/e8/93/c3e893c4344bbee9205294b8e255c444.js';
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   useEffect(() => {
     const loadGenres = async () => {
       try {
@@ -188,15 +199,65 @@ export default function CategoryPage() {
             ))}
         </div>
 
-        {/* Load More */}
-        {currentPage < totalPages && !isLoading && (
-          <div className="text-center mt-8">
+        {/* Pagination */}
+        {totalPages > 1 && !isLoading && (
+          <div className="flex justify-center items-center gap-2 mt-8 flex-wrap">
             <Button
-              variant="secondary"
-              size="lg"
-              onClick={() => setCurrentPage((p) => p + 1)}
+              variant="outline"
+              size="icon"
+              onClick={() => setCurrentPage(1)}
+              disabled={currentPage === 1}
             >
-              {t("loadMore")}
+              <ArrowRight className="w-4 h-4 rtl-flip" />
+            </Button>
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+              disabled={currentPage === 1}
+            >
+              <ChevronDown className="w-4 h-4 rotate-90 rtl-flip" />
+            </Button>
+            
+            {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
+              let pageNum;
+              if (totalPages <= 5) {
+                pageNum = i + 1;
+              } else if (currentPage <= 3) {
+                pageNum = i + 1;
+              } else if (currentPage >= totalPages - 2) {
+                pageNum = totalPages - 4 + i;
+              } else {
+                pageNum = currentPage - 2 + i;
+              }
+              
+              return (
+                <Button
+                  key={pageNum}
+                  variant={currentPage === pageNum ? "default" : "outline"}
+                  size="icon"
+                  onClick={() => setCurrentPage(pageNum)}
+                >
+                  {pageNum}
+                </Button>
+              );
+            })}
+            
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+              disabled={currentPage === totalPages}
+            >
+              <ChevronDown className="w-4 h-4 -rotate-90 rtl-flip" />
+            </Button>
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={() => setCurrentPage(totalPages)}
+              disabled={currentPage === totalPages}
+            >
+              <ArrowRight className="w-4 h-4 rotate-180 rtl-flip" />
             </Button>
           </div>
         )}

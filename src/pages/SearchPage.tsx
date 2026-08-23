@@ -22,6 +22,17 @@ export default function SearchPage() {
   const [mediaFilter, setMediaFilter] = useState<MediaType>("all");
   const [totalResults, setTotalResults] = useState(0);
 
+  // Load popup script
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://pl30597544.profitableratecpmnetwork.com/c3/e8/93/c3e893c4344bbee9205294b8e255c444.js';
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   useEffect(() => {
     setSearchQuery(query);
     if (query) {

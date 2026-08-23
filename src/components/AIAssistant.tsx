@@ -187,12 +187,12 @@ export const AIAssistant: React.FC = () => {
                 <Button
                     onClick={() => setIsOpen(!isOpen)}
                     className={cn(
-                        "pointer-events-auto h-16 w-16 rounded-[1.8rem] shadow-[0_20px_50px_rgba(0,0,0,0.4)] transition-all duration-500 hover:scale-110 active:scale-95 group relative overflow-hidden bg-orange-500 text-white"
+                        "pointer-events-auto h-12 w-12 rounded-[1.2rem] shadow-[0_20px_50px_rgba(0,0,0,0.4)] transition-all duration-500 hover:scale-110 active:scale-95 group relative overflow-hidden bg-orange-500 text-white"
                     )}
                 >
                     <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                     <div className="flex items-center justify-center relative">
-                        <Bot className="w-9 h-9" />
+                        <Bot className="w-6 h-6" />
                     </div>
                 </Button>
             )}
