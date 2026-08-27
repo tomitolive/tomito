@@ -1,1608 +1,2854 @@
 // TMDB API Configuration
+
 export const TMDB_CONFIG = {
+
   API_KEY: import.meta.env.VITE_TMDB_API_KEY || "882e741f7283dc9ba1654d4692ec30f6",
+
   BASE_URL: import.meta.env.VITE_TMDB_BASE_URL || "https://api.themoviedb.org/3",
+
   IMG_URL: import.meta.env.VITE_TMDB_IMG_URL || "https://image.tmdb.org/t/p",
+
   // Default language settings
+
   DEFAULT_LANGUAGE: "ar",
+
   SUPPORTED_LANGUAGES: [
+
     { code: "ar", name: "العربية" },
+
     { code: "en", name: "English" },
+
     { code: "fr", name: "Français" },
+
     { code: "es", name: "Español" },
+
   ],
+
 } as const;
 
+
+
 // Language management
+
 export type Language = "ar" | "en" | "fr" | "es";
 
+
+
 export interface LanguageConfig {
+
   current: Language;
+
 }
+
+
 
 // Global language state
+
 let currentLanguage: Language = TMDB_CONFIG.DEFAULT_LANGUAGE as Language;
 
+
+
 export function setLanguage(lang: Language): void {
+
   currentLanguage = lang;
+
   if (typeof window !== 'undefined') {
+
     localStorage.setItem('preferredLanguage', lang);
+
     // Update HTML attributes
+
     document.documentElement.lang = lang;
+
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
   }
+
 }
+
+
 
 export function getCurrentLanguage(): Language {
+
   if (typeof window !== 'undefined') {
+
     const savedLang = localStorage.getItem('preferredLanguage') as Language;
+
     if (savedLang && ['ar', 'en', 'fr', 'es'].includes(savedLang)) {
+
       currentLanguage = savedLang;
+
     }
+
   }
+
   return currentLanguage;
+
 }
+
+
 
 // Initialize language from localStorage
+
 if (typeof window !== 'undefined') {
+
   const savedLang = localStorage.getItem('preferredLanguage') as Language;
+
   if (savedLang && ['ar', 'en', 'fr', 'es'].includes(savedLang)) {
+
     currentLanguage = savedLang;
+
     document.documentElement.lang = currentLanguage;
+
     document.documentElement.dir = currentLanguage === 'ar' ? 'rtl' : 'ltr';
+
   }
+
 }
+
+
 
 // Image URL functions
+
 export const getImageUrl = (path: string | null, size: "w500" | "w780" | "w1280" | "original" = "w500") => {
+
   if (!path) return "/placeholder.svg";
+
   return `${TMDB_CONFIG.IMG_URL}/${size}${path}`;
+
 };
+
+
 
 export const getBackdropUrl = (path: string | null) => {
+
   if (!path) return null;
+
   return `${TMDB_CONFIG.IMG_URL}/original${path}`;
+
 };
 
+
+
 // Types
+
 export interface Movie {
+
   id: number;
+
   title: string;
+
   original_title: string;
+
   overview: string;
+
   poster_path: string | null;
+
   backdrop_path: string | null;
+
   release_date: string;
+
   vote_average: number;
+
   vote_count: number;
+
   genre_ids: number[];
+
   adult: boolean;
+
   popularity: number;
+
   // حقول اللغة الإضافية
+
   ar_title?: string;
+
   en_title?: string;
+
   ar_overview?: string;
+
   en_overview?: string;
+
 }
+
+
 
 export interface TVShow {
+
   id: number;
+
   name: string;
+
   original_name: string;
+
   overview: string;
+
   poster_path: string | null;
+
   backdrop_path: string | null;
+
   first_air_date: string;
+
   vote_average: number;
+
   vote_count: number;
+
   genre_ids: number[];
+
   popularity: number;
+
   // حقول اللغة الإضافية
+
   ar_name?: string;
+
   en_name?: string;
+
   ar_overview?: string;
+
   en_overview?: string;
+
 }
+
+
 
 export interface Genre {
+
   id: number;
+
   name: string;
+
   ar_name?: string;
+
   en_name?: string;
+
 }
+
+
 
 export interface Cast {
+
   id: number;
+
   name: string;
+
   character: string;
+
   profile_path: string | null;
+
   order: number;
+
   ar_name?: string;
+
   en_name?: string;
+
   ar_character?: string;
+
   en_character?: string;
+
 }
+
+
 
 export interface Season {
+
   id: number;
+
   name: string;
+
   overview: string;
+
   poster_path: string | null;
+
   season_number: number;
+
   episode_count: number;
+
   air_date: string;
+
   ar_name?: string;
+
   en_name?: string;
+
   ar_overview?: string;
+
   en_overview?: string;
+
 }
+
+
 
 export interface Episode {
+
   id: number;
+
   name: string;
+
   overview: string;
+
   still_path: string | null;
+
   episode_number: number;
+
   season_number: number;
+
   air_date: string;
+
   vote_average: number;
+
   runtime: number;
+
   ar_name?: string;
+
   en_name?: string;
+
   ar_overview?: string;
+
   en_overview?: string;
+
 }
+
+
 
 export interface MovieDetails extends Movie {
+
   genres: Genre[];
+
   runtime: number;
+
   tagline: string;
+
   budget: number;
+
   revenue: number;
+
   imdb_id: string;
+
   ar_tagline?: string;
+
   en_tagline?: string;
+
 }
+
+
 
 export interface TVShowDetails extends TVShow {
+
   genres: Genre[];
+
   seasons: Season[];
+
   number_of_seasons: number;
+
   number_of_episodes: number;
+
   episode_run_time: number[];
+
   status: string;
+
 }
 
+
+
 // Helper functions for multilingual content
+
 // Helper functions for multilingual content
+
 export function getMovieTitle(movie: Movie): string {
+
   // Always return English/Original title as requested
+
   return movie.en_title || movie.title || movie.original_title;
+
 }
+
+
 
 export function getMovieOverview(movie: Movie): string {
+
   // Use the available localized overview or default to the main overview
+
   const lang = getCurrentLanguage();
+
   if (lang === 'ar' && movie.ar_overview) return movie.ar_overview;
+
   return movie.overview;
+
 }
+
+
 
 export function getTVShowName(tvShow: TVShow): string {
+
   // Always return English/Original name as requested
+
   return tvShow.en_name || tvShow.name || tvShow.original_name;
+
 }
+
+
 
 export function getTVShowOverview(tvShow: TVShow): string {
+
   // Use the available localized overview or default to the main overview
+
   const lang = getCurrentLanguage();
+
   if (lang === 'ar' && tvShow.ar_overview) return tvShow.ar_overview;
+
   return tvShow.overview;
+
 }
+
+
 
 export function getGenreName(genre: Genre): string {
+
   const lang = getCurrentLanguage();
+
   if (lang === 'ar' && genre.ar_name) return genre.ar_name;
+
   if (lang === 'en' && genre.en_name) return genre.en_name;
+
   return genre.name;
+
 }
 
+
+
 // Internal helper to merge English titles with Localized content
+
 async function fetchAndMergeLocale(url: string, page?: number) {
+
   const lang = getCurrentLanguage();
+
   const baseUrl = url.includes('?') ? url : `${url}?api_key=${TMDB_CONFIG.API_KEY}`;
+
   const pageParam = page ? `&page=${page}` : '';
 
+
+
   if (lang === 'en') {
+
     const response = await fetch(`${baseUrl}&language=en${pageParam}`);
+
     const data = await response.json();
+
     if (data.results) {
+
       data.results = data.results.map((item: any) => ({
+
         ...item,
+
         en_title: item.title || item.name,
+
         en_name: item.title || item.name,
+
       }));
+
     }
+
     return data;
+
   }
 
+
+
   const [localeResponse, enResponse] = await Promise.all([
+
     fetch(`${baseUrl}&language=${lang}${pageParam}`),
+
     fetch(`${baseUrl}&language=en${pageParam}`)
+
   ]);
+
+
 
   const [localeData, enData] = await Promise.all([localeResponse.json(), enResponse.json()]);
 
+
+
   if (!enData.results) return enData;
 
+
+
   const mergedResults = enData.results.map((item: any, index: number) => {
+
     const localeItem = localeData.results?.find((l: any) => l.id === item.id) || localeData.results?.[index];
+
     return {
+
       ...item,
+
       overview: localeItem?.overview || item.overview,
+
       ...(lang === 'ar' ? { ar_overview: localeItem?.overview } : {}),
+
       en_title: item.title || item.name,
+
       en_name: item.title || item.name,
+
       title: item.title || item.name,
+
       name: item.title || item.name
+
     };
+
   });
 
+
+
   return { ...enData, results: mergedResults };
+
 }
+
+
 
 export async function fetchTrending(mediaType: "movie" | "tv" = "movie", timeWindow: "day" | "week" = "week") {
+
   const url = `${TMDB_CONFIG.BASE_URL}/trending/${mediaType}/${timeWindow}?api_key=${TMDB_CONFIG.API_KEY}`;
+
   const data = await fetchAndMergeLocale(url);
+
   return data.results as (Movie | TVShow)[];
+
 }
+
+
 
 export async function fetchPopular(mediaType: "movie" | "tv" = "movie", page = 1) {
+
   const url = `${TMDB_CONFIG.BASE_URL}/${mediaType}/popular?api_key=${TMDB_CONFIG.API_KEY}`;
 
+
+
   const data = await fetchAndMergeLocale(url, page);
+
   if (data.results) {
+
     data.results = data.results.filter((item: any) =>
+
       item.name !== "Tagesschau" && item.original_name !== "Tagesschau"
+
     );
+
   }
+
   return data;
+
 }
 
+
+
 export async function fetchTopRated(mediaType: "movie" | "tv" = "movie", page = 1) {
+
   const url = `${TMDB_CONFIG.BASE_URL}/${mediaType}/top_rated?api_key=${TMDB_CONFIG.API_KEY}`;
+
   return fetchAndMergeLocale(url, page);
+
 }
+
+
 
 export type HeroMediaItem = (Movie | TVShow) & { mediaType: "movie" | "tv" };
 
+
+
 export async function fetchBestUSContent(limit = 10): Promise<HeroMediaItem[]> {
+
   const movieParams = `api_key=${TMDB_CONFIG.API_KEY}&sort_by=vote_average.desc&vote_count.gte=1000&with_origin_country=US`;
+
   const tvParams = `api_key=${TMDB_CONFIG.API_KEY}&sort_by=vote_average.desc&vote_count.gte=500&with_origin_country=US`;
 
+
+
   const [moviesData, tvData] = await Promise.all([
+
     fetchAndMergeLocale(`${TMDB_CONFIG.BASE_URL}/discover/movie?${movieParams}`),
+
     fetchAndMergeLocale(`${TMDB_CONFIG.BASE_URL}/discover/tv?${tvParams}`),
+
   ]);
+
+
 
   const movies: HeroMediaItem[] = (moviesData.results || []).map((item: Movie) => ({
+
     ...item,
+
     mediaType: "movie" as const,
+
   }));
+
   const tvShows: HeroMediaItem[] = (tvData.results || []).map((item: TVShow) => ({
+
     ...item,
+
     mediaType: "tv" as const,
+
   }));
+
+
 
   return [...movies, ...tvShows]
+
     .filter((item) => item.backdrop_path || item.poster_path)
+
     .sort((a, b) => (b.vote_average || 0) - (a.vote_average || 0))
+
     .slice(0, limit);
+
 }
+
+
 
 export async function fetchByGenre(mediaType: "movie" | "tv", genreId: number, page = 1) {
+
   const isAll = isNaN(genreId);
+
   const genreParam = isAll ? "" : `&with_genres=${genreId}`;
 
+
+
   const [arResponse, enResponse] = await Promise.all([
+
     fetch(`${TMDB_CONFIG.BASE_URL}/discover/${mediaType}?api_key=${TMDB_CONFIG.API_KEY}&language=ar${genreParam}&page=${page}`),
+
     fetch(`${TMDB_CONFIG.BASE_URL}/discover/${mediaType}?api_key=${TMDB_CONFIG.API_KEY}&language=en${genreParam}&page=${page}`)
+
   ]);
 
+
+
   const [arData, enData] = await Promise.all([arResponse.json(), enResponse.json()]);
+
+
 
   const mergedResults = enData.results.map((item: any, index: number) => {
+
     const arItem = arData.results[index];
+
     return {
+
       ...item,
+
       overview: arItem?.overview || item.overview,
+
       ar_overview: arItem?.overview,
+
       en_title: item.title || item.name,
+
       en_name: item.title || item.name,
+
       title: item.title || item.name,
+
       name: item.title || item.name
+
     };
+
   });
 
+
+
   return {
+
     results: mergedResults as (Movie | TVShow)[],
+
     total_pages: enData.total_pages,
+
     page: enData.page
+
   };
+
 }
+
+
 
 export async function fetchGenres(mediaType: "movie" | "tv" = "movie") {
+
   const lang = getCurrentLanguage();
+
   const response = await fetch(
+
     `${TMDB_CONFIG.BASE_URL}/genre/${mediaType}/list?api_key=${TMDB_CONFIG.API_KEY}&language=${lang}`
+
   );
+
   const data = await response.json();
+
   return data.genres as Genre[];
+
 }
+
+
 
 export async function fetchMovieDetails(id: number): Promise<MovieDetails> {
+
   const lang = getCurrentLanguage();
 
+
+
   if (lang === 'en') {
+
     const response = await fetch(`${TMDB_CONFIG.BASE_URL}/movie/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=en`);
+
     const data = await response.json();
+
     return { ...data, en_title: data.title, en_overview: data.overview } as MovieDetails;
+
   }
 
+
+
   const [localeData, englishData] = await Promise.all([
+
     fetch(`${TMDB_CONFIG.BASE_URL}/movie/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=${lang}`),
+
     fetch(`${TMDB_CONFIG.BASE_URL}/movie/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=en`)
+
   ]);
+
+
 
   const [localeResult, englishResult] = await Promise.all([
+
     localeData.json(),
+
     englishData.json()
+
   ]);
 
+
+
   return {
+
     ...englishResult,
+
     overview: localeResult.overview || englishResult.overview,
+
     title: englishResult.title, // Force English title
+
     ...(lang === 'ar' ? {
+
       ar_title: localeResult.title,
+
       ar_overview: localeResult.overview,
+
       ar_tagline: localeResult.tagline,
+
     } : {}),
+
     en_title: englishResult.title,
+
     en_overview: englishResult.overview,
+
     en_tagline: englishResult.tagline,
+
   } as MovieDetails;
+
 }
+
+
 
 export async function fetchTVDetails(id: number): Promise<TVShowDetails> {
+
   const lang = getCurrentLanguage();
+
+
 
   if (lang === 'en') {
+
     const response = await fetch(`${TMDB_CONFIG.BASE_URL}/tv/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=en`);
+
     const data = await response.json();
+
     return { ...data, en_name: data.name, en_overview: data.overview } as TVShowDetails;
+
   }
 
+
+
   const [localeData, englishData] = await Promise.all([
+
     fetch(`${TMDB_CONFIG.BASE_URL}/tv/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=${lang}`),
+
     fetch(`${TMDB_CONFIG.BASE_URL}/tv/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=en`)
+
   ]);
+
+
 
   const [localeResult, englishResult] = await Promise.all([
+
     localeData.json(),
+
     englishData.json()
+
   ]);
+
+
 
   return {
+
     ...englishResult,
+
     overview: localeResult.overview || englishResult.overview,
+
     name: englishResult.name, // Force English name
+
     ...(lang === 'ar' ? {
+
       ar_name: localeResult.name,
+
       ar_overview: localeResult.overview,
+
     } : {}),
+
     en_name: englishResult.name,
+
     en_overview: englishResult.overview,
+
     seasons: englishResult.seasons?.map((season: Season) => {
+
       const localeSeason = localeResult.seasons?.find((s: Season) => s.season_number === season.season_number);
+
       return {
+
         ...season,
+
         overview: localeSeason?.overview || season.overview,
+
       };
+
     }) || [],
+
   } as TVShowDetails;
+
 }
+
+
 
 export async function fetchCredits(mediaType: "movie" | "tv", id: number) {
+
   const lang = getCurrentLanguage();
+
   const response = await fetch(
+
     `${TMDB_CONFIG.BASE_URL}/${mediaType}/${id}/credits?api_key=${TMDB_CONFIG.API_KEY}&language=${lang}`
+
   );
+
   const data = await response.json();
+
   return data.cast as Cast[];
+
 }
 
+
+
 export async function fetchSeasonDetails(tvId: number, seasonNumber: number) {
+
   const [arResponse, enResponse] = await Promise.all([
+
     fetch(`${TMDB_CONFIG.BASE_URL}/tv/${tvId}/season/${seasonNumber}?api_key=${TMDB_CONFIG.API_KEY}&language=ar`),
+
     fetch(`${TMDB_CONFIG.BASE_URL}/tv/${tvId}/season/${seasonNumber}?api_key=${TMDB_CONFIG.API_KEY}&language=en`)
+
   ]);
+
+
 
   const [arData, enData] = await Promise.all([arResponse.json(), enResponse.json()]);
 
+
+
   const mergedEpisodes = enData.episodes?.map((episode: Episode, index: number) => {
+
     const arEpisode = arData.episodes?.find((e: Episode) => e.episode_number === episode.episode_number) || arData.episodes?.[index];
+
     return {
+
       ...episode,
+
       overview: arEpisode?.overview || episode.overview,
+
       ar_name: arEpisode?.name,
+
       ar_overview: arEpisode?.overview,
+
       en_name: episode.name,
+
       en_overview: episode.overview,
+
       name: episode.name, // Force English name
+
     };
+
   });
+
+
 
   return {
+
     episodes: mergedEpisodes as Episode[],
+
     name: enData.name, // English Season Name
+
     overview: arData.overview || enData.overview, // Arabic Overview
+
     poster_path: enData.poster_path, // English Poster
+
   };
+
 }
+
+
 
 export async function searchMulti(query: string, page = 1) {
+
   const url = `${TMDB_CONFIG.BASE_URL}/search/multi?api_key=${TMDB_CONFIG.API_KEY}&query=${encodeURIComponent(query)}`;
+
   return fetchAndMergeLocale(url, page);
+
 }
+
+
 
 export async function searchTV(query: string, page = 1) {
+
   const url = `${TMDB_CONFIG.BASE_URL}/search/tv?api_key=${TMDB_CONFIG.API_KEY}&query=${encodeURIComponent(query)}`;
+
   return fetchAndMergeLocale(url, page);
+
 }
+
+
 
 export async function fetchVideos(id: number, type: "movie" | "tv") {
+
   const response = await fetch(
+
     `${TMDB_CONFIG.BASE_URL}/${type}/${id}/videos?api_key=${TMDB_CONFIG.API_KEY}`
+
   );
+
   const data = await response.json();
+
   return data.results || [];
+
 }
 
-// Fetch available subtitles from TMDB
-export async function fetchAvailableSubtitles(id: number, type: "movie" | "tv") {
-  const response = await fetch(
-    `${TMDB_CONFIG.BASE_URL}/${type}/${id}/translations?api_key=${TMDB_CONFIG.API_KEY}`
-  );
-  const data = await response.json();
-  return data.translations || [];
-}
 
-// Get best Arabic subtitle for a work
-export function getBestArabicSubtitle(translations: any[]): string | null {
-  if (!translations || translations.length === 0) return null;
-
-  // Priority 1: Arabic (ar)
-  const arabic = translations.find(t => t.iso_639_1 === 'ar');
-  if (arabic) return 'ar';
-
-  // Priority 2: Arabic variants
-  const arabicVariants = translations.find(t => 
-    t.iso_639_1 === 'ar' || 
-    t.english_name?.toLowerCase().includes('arabic') ||
-    t.name?.toLowerCase().includes('arabic')
-  );
-  if (arabicVariants) return 'ar';
-
-  // Priority 3: Check for any Arabic-related language codes
-  const arabicRelated = translations.find(t => 
-    t.iso_639_1?.startsWith('ar') ||
-    t.english_name?.toLowerCase().includes('arab')
-  );
-  if (arabicRelated) return 'ar';
-
-  return null;
-}
 
 export async function fetchPersonDetails(id: number) {
+
   const lang = getCurrentLanguage();
+
   const response = await fetch(
+
     `${TMDB_CONFIG.BASE_URL}/person/${id}?api_key=${TMDB_CONFIG.API_KEY}&language=${lang}`
+
   );
+
   return response.json();
+
 }
+
+
 
 export async function fetchPersonCredits(id: number) {
+
   const lang = getCurrentLanguage();
+
   const response = await fetch(
+
     `${TMDB_CONFIG.BASE_URL}/person/${id}/combined_credits?api_key=${TMDB_CONFIG.API_KEY}&language=${lang}`
+
   );
+
   const data = await response.json();
+
   return data.cast;
+
 }
+
+
 
 export async function fetchSimilar(mediaType: "movie" | "tv", id: number) {
+
   const url = `${TMDB_CONFIG.BASE_URL}/${mediaType}/${id}/similar?api_key=${TMDB_CONFIG.API_KEY}`;
+
   const data = await fetchAndMergeLocale(url);
+
   return data.results as (Movie | TVShow)[];
+
 }
+
+
 
 export async function fetchNowPlaying(page = 1) {
+
   const url = `${TMDB_CONFIG.BASE_URL}/movie/now_playing?api_key=${TMDB_CONFIG.API_KEY}`;
+
   return fetchAndMergeLocale(url, page);
+
 }
+
+
 
 export async function fetchAiringToday(page = 1) {
+
   const url = `${TMDB_CONFIG.BASE_URL}/tv/airing_today?api_key=${TMDB_CONFIG.API_KEY}`;
+
   return fetchAndMergeLocale(url, page);
+
 }
+
+
 
 export async function fetchUpcoming(page = 1) {
+
   const url = `${TMDB_CONFIG.BASE_URL}/movie/upcoming?api_key=${TMDB_CONFIG.API_KEY}`;
+
   return fetchAndMergeLocale(url, page);
+
 }
+
+
 
 export async function fetchOnTheAir(page = 1) {
+
   const url = `${TMDB_CONFIG.BASE_URL}/tv/on_the_air?api_key=${TMDB_CONFIG.API_KEY}`;
+
   return fetchAndMergeLocale(url, page);
+
 }
+
+
 
 export async function fetchRecommendations(mediaType: "movie" | "tv", id: number, page = 1) {
+
   const url = `${TMDB_CONFIG.BASE_URL}/${mediaType}/${id}/recommendations?api_key=${TMDB_CONFIG.API_KEY}`;
+
   return fetchAndMergeLocale(url, page);
+
 }
+
+
 
 // Video servers configuration
+
 export interface VideoServer {
+
   id: string;
+
   name: string;
+
   en_name?: string;
+
   fr_name?: string;
+
   es_name?: string;
+
   movieUrl?: string; // For movie servers
+
   tvUrl?: string;    // For movie servers if they support both
+
   baseUrl?: string;  // For TV servers
+
   quality: string;
+
   icon: string;
+
   color?: string;
+
   description?: string;
+
   useIdType?: 'tmdb' | 'imdb';
+
   subtitles?: string;
+
   vip?: boolean;
+
   format?: string;
+
   supportsSeasons?: boolean;
+
   allowSubtitlesParam?: boolean;
+
   allowTmdb?: boolean;
+
   allowSeasonEpisode?: boolean;
+
   useTmdbParam?: boolean;
+
   supportsParams?: boolean;
+
   supportsImdbParam?: boolean;
+
   supportsTmdbParam?: boolean;
+
   supportsSubLang?: boolean;
+
   supportsAutoPlay?: boolean;
+
   domains?: string[];
+
   note_ar?: string;
+
   note_en?: string;
+
   note_fr?: string;
+
   note_es?: string;
+
 }
+
+
 
 export const MOVIE_SERVERS: VideoServer[] = [
-  {
-    id: 'vidsrc_sbs',
-    name: '🎬 vidsrc.sbs',
-    movieUrl: 'https://vidsrc.sbs/embed/movie/',
-    tvUrl: 'https://vidsrc.sbs/embed/tv/',
-    quality: 'HD',
-    icon: 'film',
-    color: '#e74c3c',
-    description: 'سيرفر جديد',
-    useIdType: 'tmdb'
-  },
-  {
-    id: 'vidsrc_sbs_pro',
-    name: '🔥 Pro',
-    movieUrl: 'https://vidsrc.sbs/embed/movie/',
-    tvUrl: 'https://vidsrc.sbs/embed/tv/',
-    quality: 'Pro',
-    icon: 'zap',
-    color: '#f39c12',
-    description: 'جودة Pro',
-    useIdType: 'tmdb'
-  },
-  {
-    id: 'vidsrc_sbs_multi',
-    name: '🌐 Multi',
-    movieUrl: 'https://vidsrc.sbs/embed/movie/',
-    tvUrl: 'https://vidsrc.sbs/embed/tv/',
-    quality: 'Multi',
-    icon: 'globe',
-    color: '#3498db',
-    description: 'جودة Multi',
-    useIdType: 'tmdb'
-  },
-  {
-    id: 'vidsrc_sbs_4k',
-    name: '📺 4K',
-    movieUrl: 'https://vidsrc.sbs/embed/movie/',
-    tvUrl: 'https://vidsrc.sbs/embed/tv/',
-    quality: '4K',
-    icon: 'monitor',
-    color: '#9b59b6',
-    description: 'جودة 4K',
-    useIdType: 'tmdb'
-  },
-  {
-    id: 'vidsrc_sbs_cinerc',
-    name: '🎬 Cinerc',
-    movieUrl: 'https://vidsrc.sbs/embed/movie/',
-    tvUrl: 'https://vidsrc.sbs/embed/tv/',
-    quality: 'Cinerc',
-    icon: 'film',
-    color: '#e74c3c',
-    description: 'جودة Cinerc',
-    useIdType: 'tmdb'
-  },
-  {
-    id: 'vidsrc_embed',
-    name: '🎬 vidsrc.ru',
-    movieUrl: 'https://vidsrc-embed.ru/embed/movie/',
-    tvUrl: 'https://vidsrc-embed.ru/embed/tv/',
-    quality: 'FHD',
-    icon: 'rocket',
-    color: '#e74c3c',
-    description: 'سيرفر سريع',
-    useIdType: 'tmdb'
-  },
-  {
-    id: 'vidsrc_to',
-    name: '🌟 سيرفر 2',
-    movieUrl: 'https://vidsrc.to/embed/movie/',
-    tvUrl: 'https://vidsrc.to/embed/tv/',
-    quality: 'HD',
-    icon: 'star',
-    color: '#16a085',
-    description: 'سيرفر احتياطي',
-    useIdType: 'tmdb'
-  },
-  {
-    id: 'vidsrc_me',
-    name: '🎯 سيرفر 3',
-    movieUrl: 'https://vidsrc.me/embed/movie/',
-    tvUrl: 'https://vidsrc.me/embed/tv/',
-    quality: 'HD',
-    icon: 'tv',
-    color: '#e67e22',
-    description: 'سيرفر احتياطي',
-    useIdType: 'tmdb'
-  }
+  { id: 'vidsrc2_ru', name: 'سيرفر الرئيسي 1', movieUrl: 'https://vidsrc2.ru/embed/movie/', tvUrl: 'https://vidsrc2.ru/embed/tv/', quality: 'HD', icon: 'star', color: '#16a085', useIdType: 'tmdb', subtitles: 'ar' },
+  { id: 'vidsrc_ir', name: 'سيرفر الرئيسي 2', movieUrl: 'https://vidsrc.ir/embed/movie/', tvUrl: 'https://vidsrc.ir/embed/tv/', quality: 'HD', icon: 'star', color: '#16a085', useIdType: 'tmdb', subtitles: 'ar' },
+  { id: 'vidsrcme_ru', name: 'سيرفر الرئيسي 3', movieUrl: 'https://vidsrcme.ru/embed/movie/', tvUrl: 'https://vidsrcme.ru/embed/tv/', quality: 'HD', icon: 'film', color: '#16a085', useIdType: 'tmdb', subtitles: 'ar' },
+  { id: 'vidsrcme_su', name: 'سيرفر الرئيسي 4', movieUrl: 'https://vidsrcme.su/embed/movie/', tvUrl: 'https://vidsrcme.su/embed/tv/', quality: 'HD', icon: 'film', color: '#16a085', useIdType: 'tmdb', subtitles: 'ar' },
+  { id: 'vidsrc_me_ru', name: 'سيرفر الرئيسي 5', movieUrl: 'https://vidsrc-me.ru/embed/movie/', tvUrl: 'https://vidsrc-me.ru/embed/tv/', quality: 'HD', icon: 'video', color: '#e74c3c', useIdType: 'tmdb', subtitles: 'ar' },
+  { id: 'vidsrc_me_su', name: 'سيرفر الرئيسي 6', movieUrl: 'https://vidsrc-me.su/embed/movie/', tvUrl: 'https://vidsrc-me.su/embed/tv/', quality: 'HD', icon: 'video', color: '#e74c3c', useIdType: 'tmdb', subtitles: 'ar' },
+  { id: 'vidsrc_embed_ru', name: 'سيرفر الرئيسي 7', movieUrl: 'https://vidsrc-embed.ru/embed/movie/', tvUrl: 'https://vidsrc-embed.ru/embed/tv/', quality: 'HD', icon: 'globe', color: '#e74c3c', useIdType: 'tmdb', subtitles: 'ar' },
+  { id: 'vidsrc_embed_su', name: 'سيرفر الرئيسي 8', movieUrl: 'https://vidsrc-embed.su/embed/movie/', tvUrl: 'https://vidsrc-embed.su/embed/tv/', quality: 'HD', icon: 'globe', color: '#e74c3c', useIdType: 'tmdb', subtitles: 'ar' },
+  { id: 'vsrc_su', name: 'سيرفر الرئيسي 9', movieUrl: 'https://vsrc.su/embed/movie/', tvUrl: 'https://vsrc.su/embed/tv/', quality: 'HD', icon: 'globe', color: '#e74c3c', useIdType: 'tmdb', subtitles: 'ar' }
 ];
+
+
 
 export const TV_SERVERS: VideoServer[] = [
-  {
-    id: 'vidsrc_sbs',
-    name: '🎬 vidsrc.sbs',
-    baseUrl: 'https://vidsrc.sbs/embed/tv',
-    quality: 'HD',
-    icon: 'film',
-    color: '#e74c3c',
-    supportsSeasons: true,
-    format: '{id}/{season}/{episode}'
-  },
-  {
-    id: 'vidsrc_sbs_pro',
-    name: '🔥 Pro',
-    baseUrl: 'https://vidsrc.sbs/embed/tv',
-    quality: 'Pro',
-    icon: 'zap',
-    color: '#f39c12',
-    supportsSeasons: true,
-    format: '{id}/{season}/{episode}'
-  },
-  {
-    id: 'vidsrc_sbs_multi',
-    name: '🌐 Multi',
-    baseUrl: 'https://vidsrc.sbs/embed/tv',
-    quality: 'Multi',
-    icon: 'globe',
-    color: '#3498db',
-    supportsSeasons: true,
-    format: '{id}/{season}/{episode}'
-  },
-  {
-    id: 'vidsrc_sbs_4k',
-    name: '📺 4K',
-    baseUrl: 'https://vidsrc.sbs/embed/tv',
-    quality: '4K',
-    icon: 'monitor',
-    color: '#9b59b6',
-    supportsSeasons: true,
-    format: '{id}/{season}/{episode}'
-  },
-  {
-    id: 'vidsrc_sbs_cinerc',
-    name: '🎬 Cinerc',
-    baseUrl: 'https://vidsrc.sbs/embed/tv',
-    quality: 'Cinerc',
-    icon: 'film',
-    color: '#e74c3c',
-    supportsSeasons: true,
-    format: '{id}/{season}/{episode}'
-  },
-  {
-    id: 'vidsrc_embed',
-    name: '🎬 vidsrc.ru',
-    baseUrl: 'https://vidsrc-embed.ru/embed/tv',
-    quality: 'HD',
-    icon: 'film',
-    color: '#e74c3c',
-    supportsSeasons: true,
-    format: '{id}/{season}/{episode}'
-  },
-  {
-    id: 'vidsrc_to',
-    name: '🌟 سيرفر 2',
-    baseUrl: 'https://vidsrc.to/embed/tv',
-    quality: 'HD',
-    icon: 'star',
-    color: '#16a085',
-    supportsSeasons: true,
-    format: '{id}/{season}/{episode}'
-  },
-  {
-    id: 'vidsrc_me',
-    name: '🎯 سيرفر 3',
-    baseUrl: 'https://vidsrc.me/embed/tv',
-    quality: 'HD',
-    icon: 'tv',
-    color: '#e67e22',
-    supportsSeasons: true,
-    format: '{id}/{season}/{episode}'
-  }
+  { id: 'vidsrc2_ru', name: '🎬 سيرفر الرئيسي 1', baseUrl: 'https://vidsrc2.ru/embed/tv', quality: 'HD', icon: 'film', color: '#e74c3c', supportsSeasons: true, format: '{id}/{season}/{episode}' },
+  { id: 'vidsrc_ir', name: '🎬 سيرفر الرئيسي 2', baseUrl: 'https://vidsrc.ir/embed/tv', quality: 'HD', icon: 'film', color: '#e74c3c', supportsSeasons: true, format: '{id}/{season}/{episode}' },
+  { id: 'vidsrcme_ru', name: '🎬 سيرفر الرئيسي 3', baseUrl: 'https://vidsrcme.ru/embed/tv', quality: 'HD', icon: 'film', color: '#e74c3c', supportsSeasons: true, format: '{id}/{season}/{episode}' },
+  { id: 'vidsrcme_su', name: '🎬 سيرفر الرئيسي 4', baseUrl: 'https://vidsrcme.su/embed/tv', quality: 'HD', icon: 'film', color: '#e74c3c', supportsSeasons: true, format: '{id}/{season}/{episode}' },
+  { id: 'vidsrc_me_ru', name: '🎬 سيرفر الرئيسي 5', baseUrl: 'https://vidsrc-me.ru/embed/tv', quality: 'HD', icon: 'film', color: '#e74c3c', supportsSeasons: true, format: '{id}/{season}/{episode}' },
+  { id: 'vidsrc_me_su', name: '🎬 سيرفر الرئيسي 6', baseUrl: 'https://vidsrc-me.su/embed/tv', quality: 'HD', icon: 'film', color: '#e74c3c', supportsSeasons: true, format: '{id}/{season}/{episode}' },
+  { id: 'vidsrc_embed_ru', name: '🎬 سيرفر الرئيسي 7', baseUrl: 'https://vidsrc-embed.ru/embed/tv', quality: 'HD', icon: 'film', color: '#e74c3c', supportsSeasons: true, format: '{id}/{season}/{episode}' },
+  { id: 'vidsrc_embed_su', name: '🎬 سيرفر الرئيسي 8', baseUrl: 'https://vidsrc-embed.su/embed/tv', quality: 'HD', icon: 'film', color: '#e74c3c', supportsSeasons: true, format: '{id}/{season}/{episode}' },
+  { id: 'vsrc_su', name: '🎬 سيرفر الرئيسي 9', baseUrl: 'https://vsrc.su/embed/tv', quality: 'HD', icon: 'film', color: '#e74c3c', supportsSeasons: true, format: '{id}/{season}/{episode}' }
 ];
 
+
+
 // Get server name based on current language
+
 export function getServerName(server: VideoServer): string {
+
   const lang = getCurrentLanguage();
+
   if (lang === 'ar') return server.name;
+
   if (lang === 'en' && server.en_name) return server.en_name;
+
   if (lang === 'fr' && server.fr_name) return server.fr_name;
+
   if (lang === 'es' && server.es_name) return server.es_name;
+
   return server.name;
+
 }
+
+
 
 // Combine all servers for general use
+
 export const ALL_SERVERS = [...MOVIE_SERVERS, ...TV_SERVERS];
 
+
+
 // Get server note based on current language
+
 export function getServerNote(server: VideoServer): string {
+
   const lang = getCurrentLanguage();
+
   if (lang === 'ar' && (server.note_ar || server.description)) return server.note_ar || server.description || '';
+
   if (lang === 'en' && server.note_en) return server.note_en;
+
   if (lang === 'fr' && server.note_fr) return server.note_fr;
+
   if (lang === 'es' && server.note_es) return server.note_es;
+
   return server.description || '';
+
 }
+
+
 
 // Get video URL with proper parameters
+
 export function getVideoUrl(
+
   server: VideoServer,
+
   id: number,
+
   type: "movie" | "tv",
+
   season?: number,
+
   episode?: number,
+
   imdbId?: string,
+
   options?: {
+
     autoplay?: boolean;
+
     autonext?: boolean;
+
     subtitleLang?: string;
+
     subtitleUrl?: string;
+
   }
+
 ): string {
+
   let baseUrl = '';
+
   const finalId = server.useIdType === 'imdb' ? (imdbId || id) : id;
 
+
+
   if (type === "movie") {
+
     baseUrl = server.movieUrl || "";
 
+
+
     // Handle specific server types and templates
-    if (server.id === 'server_1' || server.id === 'server_2') {
+
+    if (server.id.startsWith('vidsrc') || server.id === 'vsrc_su') {
+
       const url = `${baseUrl}${finalId}`;
-      return `${url}${url.includes('?') ? '&' : '?'}autoplay=1`;
+
+      return `${url}?autoplay=1&color=e50914&sub=ar&t=120&controls=0&audio=en&lang=en&ds_lang=ar`;
+
     }
+
+
+
+    if (server.id === 'server_1' || server.id === 'server_2') {
+
+      const url = `${baseUrl}${finalId}`;
+
+      return `${url}${url.includes('?') ? '&' : '?'}autoplay=1`;
+
+    }
+
+
 
     if (server.id === 'server_9') {
+
       const params = new URLSearchParams();
+
       params.append('tmdb', id.toString());
+
       if (imdbId) params.append('imdb', imdbId);
+
       if (options?.subtitleLang) params.append('ds_lang', options.subtitleLang);
+
       params.append('autoplay', '1');
+
       return `${baseUrl}?${params.toString()}`;
+
     }
+
+
 
     // Default: append ID to URL
+
     let url = "";
+
     if (baseUrl.endsWith('/') || baseUrl.endsWith('=')) {
+
       url = `${baseUrl}${finalId}`;
+
     } else {
+
       url = `${baseUrl}/${finalId}`;
+
     }
+
+
 
     return `${url}${url.includes('?') ? '&' : '?'}autoplay=1`;
+
   } else {
+
     // TV Show
+
     if (server.baseUrl && server.format) {
+
       // Use the format template for TV shows (mostly for TV_SERVERS list)
+
       let urlTemplate = server.format
+
         .replace('{id}', finalId.toString())
+
         .replace('{season}', (season || 1).toString())
+
         .replace('{episode}', (episode || 1).toString());
 
+
+
       const finalUrl = `${server.baseUrl}/${urlTemplate}`;
+
       
+
+      if (server.id.startsWith('vidsrc') || server.id === 'vsrc_su') {
+
+        return `${finalUrl}?autoplay=1&color=e50914&sub=ar&t=120&controls=0&audio=en&lang=en&ds_lang=ar`;
+
+      }
+
+
+
       return `${finalUrl}${finalUrl.includes('?') ? '&' : '?'}autoplay=1`;
+
     }
+
+
 
     // Traditional style (for movie servers that also support TV)
+
     baseUrl = server.tvUrl || "";
-    if (server.id === 'server_1' || server.id === 'server_2') {
-      const url = `${baseUrl}${finalId}`;
-      return `${url}${url.includes('?') ? '&' : '?'}autoplay=1`;
+
+
+
+    if (server.id.startsWith('vidsrc') || server.id === 'vsrc_su') {
+
+      return `${baseUrl}${finalId}/${season || 1}/${episode || 1}?autoplay=1&color=e50914&sub=ar&t=120&controls=0&audio=en&lang=en&ds_lang=ar`;
+
     }
+
+
+
+    if (server.id === 'server_1' || server.id === 'server_2') {
+
+      const url = `${baseUrl}${finalId}`;
+
+      return `${url}${url.includes('?') ? '&' : '?'}autoplay=1`;
+
+    }
+
+
 
     // Standard TMDB parameter style
+
     const params = new URLSearchParams();
+
     params.append('tmdb', id.toString());
+
     if (season !== undefined) params.append('season', season.toString());
+
     if (episode !== undefined) params.append('episode', episode.toString());
+
     params.append('autoplay', '1');
 
+
+
     const hasQuery = baseUrl.includes('?');
+
     return `${baseUrl}${hasQuery ? '&' : '?'}${params.toString()}`;
+
   }
+
 }
+
+
 
 // Get alternative domain for a server (for fallback)
+
 export function getAlternativeDomain(server: VideoServer): string | null {
+
   if (!server.domains || server.domains.length <= 1) return null;
+
   const currentDomain = new URL(server.movieUrl || server.baseUrl || "").hostname;
+
   const alternative = server.domains.find(domain => domain !== currentDomain);
+
   return alternative || null;
+
 }
+
+
 
 // Get server by ID
+
 export function getServerById(id: string): VideoServer | undefined {
+
   return ALL_SERVERS.find(server => server.id === id);
+
 }
+
+
 
 // Get available domains for all servers
+
 export function getAllDomains(): string[] {
+
   const domains: string[] = [];
+
   ALL_SERVERS.forEach(server => {
+
     if (server.domains) domains.push(...server.domains);
+
   });
+
   return [...new Set(domains)]; // Remove duplicates
+
 }
+
+
 
 // Check if a server is available
+
 export async function checkServerAvailability(server: VideoServer): Promise<boolean> {
+
   try {
+
     // Try to ping the domain
+
     const domain = server.domains[0];
+
     const response = await fetch(`https://${domain}/favicon.ico`, {
+
       method: 'HEAD',
+
       mode: 'no-cors',
+
       cache: 'no-cache'
+
     });
+
     return true;
+
   } catch (error) {
+
     console.warn(`Server ${server.name} is not available`);
+
     return false;
+
   }
+
 }
+
+
 
 // Get best available server (with fallback logic)
+
 export async function getBestAvailableServer(type: "movie" | "tv"): Promise<VideoServer> {
+
   const servers = type === 'movie' ? MOVIE_SERVERS : TV_SERVERS;
+
   // Try servers in order of preference
+
   for (const server of servers) {
+
     const isAvailable = await checkServerAvailability(server);
+
     if (isAvailable) {
+
       return server;
+
     }
+
   }
+
+
 
   // If all fail, return the first one as default
+
   return servers[0];
+
 }
+
+
 
 // Helper to get IMDB ID from TMDB API
+
 export async function getImdbIdFromTmdb(id: number, type: "movie" | "tv"): Promise<string | null> {
+
   try {
+
     const lang = getCurrentLanguage();
+
     const response = await fetch(
+
       `${TMDB_CONFIG.BASE_URL}/${type}/${id}/external_ids?api_key=${TMDB_CONFIG.API_KEY}&language=${lang}`
+
     );
+
     const data = await response.json();
+
     return data.imdb_id || null;
+
   } catch (error) {
+
     console.error("Failed to fetch IMDB ID:", error);
+
     return null;
+
   }
+
 }
+
+
 
 // Utility functions for language direction
+
 export function getTextDirection(): "rtl" | "ltr" {
+
   return getCurrentLanguage() === "ar" ? "rtl" : "ltr";
+
 }
+
+
 
 // Format numbers based on language
+
 export function formatNumber(num: number): string {
+
   const lang = getCurrentLanguage();
+
   if (lang === 'ar') {
+
     // تنسيق الأرقام باللغة العربية
+
     return new Intl.NumberFormat('ar-EG').format(num);
+
   }
+
   return new Intl.NumberFormat('en-US').format(num);
+
 }
+
+
 
 // Format date based on language
+
 export function formatDate(dateString: string): string {
+
   const lang = getCurrentLanguage();
+
   const date = new Date(dateString);
 
+
+
   if (lang === 'ar') {
+
     return date.toLocaleDateString('ar-EG', {
+
       year: 'numeric',
+
       month: 'long',
+
       day: 'numeric'
+
     });
+
   }
+
+
 
   return date.toLocaleDateString('en-US', {
+
     year: 'numeric',
+
     month: 'long',
+
     day: 'numeric'
+
   });
+
 }
+
+
 
 // Constants for UI translations
+
 export const UI_TRANSLATIONS = {
+
   ar: {
+
     home: "الرئيسية",
+
     trending: "الأكثر رواجاً",
+
     popular: "الأكثر شعبية",
+
     topRated: "الأعلى تقييماً",
+
     nowPlaying: "تعرض الآن",
+
     upcoming: "قريباً",
+
     seeAll: "عرض الكل",
+
     minutes: "دقيقة",
+
     seasons: "مواسم",
+
     episodes: "حلقات",
+
     cast: "طاقم التمثيل",
+
     similar: "مشابه",
+
     search: "بحث",
+
     movies: "أفلام",
+
     tvShows: "مسلسلات",
+
     watchNow: "شاهد الآن",
+
     moreInfo: "المزيد",
+
     noResults: "لا توجد نتائج",
+
     loading: "جاري التحميل...",
+
     chooseServer: "اختر السيرفر",
+
     server: "السيرفر",
+
     quality: "الجودة",
+
     subtitles: "الترجمة",
+
     autoPlay: "تشغيل تلقائي",
+
     autoNext: "التشغيل التلقائي التالي",
+
     changeServer: "تغيير السيرفر",
+
     serverNote: "ملاحظة",
+
     availableServers: "السيرفرات المتاحة",
+
     loadingServer: "جاري تحميل السيرفر...",
+
     searchPlaceholder: "ابحث عن فيلم أو مسلسل...",
+
     allMovies: "جميع الأفلام",
+
     allTVShows: "جميع المسلسلات",
+
     moviesAction: "أكشن",
+
     moviesAdventure: "مغامرة",
+
     moviesAnimation: "رسوم متحركة",
+
     moviesComedy: "كوميديا",
+
     moviesCrime: "جريمة",
+
     moviesDocumentary: "وثائقي",
+
     moviesDrama: "دراما",
+
     moviesFamily: "عائلي",
+
     moviesFantasy: "فانتازيا",
+
     moviesHistory: "تاريخي",
+
     moviesHorror: "رعب",
+
     moviesMusic: "موسيقى",
+
     moviesMystery: "غموض",
+
     moviesRomance: "رومانسي",
+
     moviesSciFi: "خيال علمي",
+
     moviesTVMovie: "فيلم تلفزيوني",
+
     moviesThriller: "إثارة",
+
     moviesWar: "حرب",
+
     moviesWestern: "غربي",
+
     tvActionAdventure: "أكشن ومغامرة",
+
     tvAnimation: "رسوم متحركة",
+
     tvComedy: "كوميديا",
+
     tvCrime: "جريمة",
+
     tvDocumentary: "وثائقي",
+
     tvDrama: "دراما",
+
     tvFamily: "عائلي",
+
     tvKids: "أطفال",
+
     tvMystery: "غموض",
+
     tvNews: "أخبار",
+
     tvReality: "واقع",
+
     tvSciFiFantasy: "خيال علمي وفانتازيا",
+
     tvSoap: "دراما تلفزيونية",
+
     tvTalk: "حوار",
+
     tvWarPolitics: "حرب وسياسة",
+
     tvWestern: "غربي",
+
     quickLinks: "روابط سريعة",
+
     aboutUs: "من نحن",
+
     contactUs: "اتصل بنا",
+
     privacyPolicy: "سياسة الخصوصية",
+
     copyright: "جميع الحقوق محفوظة ©",
+
     disclaimer: "هذا الموقع لا يستضيف أي محتوى على سيرفراته",
+
     popularMovies: "أفلام شائعة",
+
     popularTV: "مسلسلات شائعة",
+
     trendingMovies: "الأفلام الشائعة",
+
     trendingTV: "المسلسلات الشائعة",
+
     topRatedMovies: "أفضل الأفلام تقييماً",
+
     topRatedTV: "أفضل المسلسلات تقييماً",
+
     noDescription: "لا يوجد وصف متاح",
+
     filterByGenre: "تصفية حسب التصنيف",
+
     all: "الكل",
+
     loadMore: "تحميل المزيد",
+
     category: "تصنيف",
+
     searchResultsFor: "نتائج البحث عن",
+
     searchPlaceholderFull: "ابحث عن فيلم، مسلسل، أو ممثل...",
+
     resultsFound: "تم العثور على {count} نتيجة",
+
     searching: "جاري البحث...",
+
     startSearch: "ابدأ البحث",
+
     searchMoviesSeriesActors: "ابحث عن أفلامك ومسلسلاتك المفضلة",
+
     actors: "ممثلين",
+
     actor: "ممثل/ة",
+
     tryDifferentKeywords: "جرب البحث بكلمات مختلفة",
+
     movieNotFound: "الفيلم غير موجود",
+
     tvShowNotFound: "المسلسل غير موجود",
+
     backHome: "العودة للرئيسية",
+
     hoursShort: "س",
+
     minutesShort: "د",
+
     castMembers: "طاقم العمل",
+
     actorsLabel: "الممثلون:",
+
     watchMovie: "مشاهدة الفيلم",
+
     downloadMovie: "تحميل الفيلم",
+
     watchTV: "مشاهدة المسلسل",
+
     similarMovies: "أفلام مشابهة",
+
     similarTV: "مسلسلات مشابهة",
+
     episodesLabel: "الحلقات",
+
     seasonLabel: "الموسم",
+
     episodeLabel: "الحلقة",
+
     seasonsCount: "{count} مواسم",
+
     episodesCount: "{count} حلقة",
+
     episodesInSeason: "حلقات الموسم {season}",
+
     viewAll: "عرض الكل",
+
     movieGenres: "أنواع الأفلام",
+
     tvGenres: "أنواع المسلسلات",
+
     yearsShort: "سنة",
+
     popularity: "الشعبية",
+
     biography: "السيرة الذاتية",
+
     showLess: "عرض أقل",
+
     showMore: "عرض المزيد",
+
     works: "الأعمال",
+
     showingTopWorks: "يتم عرض أفضل {count} عمل من أصل {total}",
+
     pageNotFound: "الصفحة غير موجودة",
+
     notFoundText: "ربما تم نقل الصفحة التي تبحث عنها أو أنها لم تعد موجودة.",
+
     latestMovies: "أحدث الأفلام",
+
     latestSeries: "أحدث المسلسلات",
+
     newTVShows: "مسلسلات جديدة",
+
     opinion: "آراء",
+
     criticsChoice: "اختيارات النقاد",
+
     recommended: "مقترح لك",
+
     productionCompanies: "شركات الإنتاج العالمية",
+
     adblockDetectedTitle: "تم اكتشاف مانع الإعلانات",
+
     adblockDetectedDesc: "يبدو أنك تستخدم إضافة لمنع الإعلانات (Ad Blocker). الإعلانات هي المصدر الوحيد الذي يُبقي هذا الموقع مجانياً للجميع.",
+
     incognitoDetectedTitle: "المتصفح الخفي غير مدعوم",
+
     incognitoDetectedDesc: "يبدو أنك تستخدم وضع التصفح الخفي (Incognito). هذا الوضع يمنع الموقع من العمل بشكل صحيح.",
+
     adblockHowToFix: "كيفية تعطيل مانع الإعلانات",
+
     incognitoHowToFix: "كيفية الحل",
+
     adblockStep1: "ابحث عن أيقونة الدرع أو الإضافة في شريط أدوات المتصفح (بجانب شريط العنوان)",
+
     adblockStep2: "اضغط عليها ثم اختر \"تعطيل على هذا الموقع\" أو \"Pause on this site\"",
+
     adblockStep3: "أعد تحميل الصفحة بالضغط على زر التحديث أدناه",
+
     incognitoStep1: "افتح متصفحك العادي (ليس وضع Incognito / Private)",
+
     incognitoStep2: "انسخ رابط الصفحة الحالية والصقه في المتصفح العادي",
+
     incognitoStep3: "استمتع بالمشاهدة دون أي قيود 🎬",
+
     refreshPage: "تحديث الصفحة",
+
     thanksForSupport: "شكراً لدعمك الموقع ❤️ — الإعلانات تساعدنا في الاستمرار مجاناً",
+
   },
+
   en: {
+
     home: "Home",
+
     trending: "Trending",
+
     popular: "Popular",
+
     topRated: "Top Rated",
+
     nowPlaying: "Now Playing",
+
     upcoming: "Upcoming",
+
     seeAll: "See All",
+
     minutes: "min",
+
     seasons: "seasons",
+
     episodes: "episodes",
+
     cast: "Cast",
+
     similar: "Similar",
+
     search: "Search",
+
     movies: "Movies",
+
     tvShows: "TV Shows",
+
     watchNow: "Watch Now",
+
     moreInfo: "More Info",
+
     noResults: "No results found",
+
     loading: "Loading...",
+
     chooseServer: "Choose Server",
+
     server: "Server",
+
     quality: "Quality",
+
     subtitles: "Subtitles",
+
     autoPlay: "Auto Play",
+
     autoNext: "Auto Next",
+
     changeServer: "Change Server",
+
     serverNote: "Note",
+
     availableServers: "Available Servers",
+
     loadingServer: "Loading Server...",
+
     searchPlaceholder: "Search for a movie or TV show...",
+
     allMovies: "All Movies",
+
     allTVShows: "All TV Shows",
+
     moviesAction: "Action",
+
     moviesAdventure: "Adventure",
+
     moviesAnimation: "Animation",
+
     moviesComedy: "Comedy",
+
     moviesCrime: "Crime",
+
     moviesDocumentary: "Documentary",
+
     moviesDrama: "Drama",
+
     moviesFamily: "Family",
+
     moviesFantasy: "Fantasy",
+
     moviesHistory: "History",
+
     moviesHorror: "Horror",
+
     moviesMusic: "Music",
+
     moviesMystery: "Mystery",
+
     moviesRomance: "Romance",
+
     moviesSciFi: "Sci-Fi",
+
     moviesTVMovie: "TV Movie",
+
     moviesThriller: "Thriller",
+
     moviesWar: "War",
+
     moviesWestern: "Western",
+
     tvActionAdventure: "Action & Adventure",
+
     tvAnimation: "Animation",
+
     tvComedy: "Comedy",
+
     tvCrime: "Crime",
+
     tvDocumentary: "Documentary",
+
     tvDrama: "Drama",
+
     tvFamily: "Family",
+
     tvKids: "Kids",
+
     tvMystery: "Mystery",
+
     tvNews: "News",
+
     tvReality: "Reality",
+
     tvSciFiFantasy: "Sci-Fi & Fantasy",
+
     tvSoap: "Soap",
+
     tvTalk: "Talk",
+
     tvWarPolitics: "War & Politics",
+
     tvWestern: "Western",
+
     quickLinks: "Quick Links",
+
     aboutUs: "About Us",
+
     contactUs: "Contact Us",
+
     privacyPolicy: "Privacy Policy",
+
     copyright: "All rights reserved ©",
+
     disclaimer: "This site does not host any content on its servers",
+
     popularMovies: "Popular Movies",
+
     popularTV: "Popular TV Shows",
+
     trendingMovies: "Trending Movies",
+
     trendingTV: "Trending TV Shows",
+
     topRatedMovies: "Top Rated Movies",
+
     topRatedTV: "Top Rated TV Shows",
+
     noDescription: "No description available",
+
     filterByGenre: "Filter by Genre",
+
     all: "All",
+
     loadMore: "Load More",
+
     category: "Category",
+
     searchResultsFor: "Search results for",
+
     searchPlaceholderFull: "Search for a movie, TV show, or actor...",
+
     resultsFound: "{count} results found",
+
     searching: "Searching...",
+
     startSearch: "Start Searching",
+
     searchMoviesSeriesActors: "Search for your favorite movies and series",
+
     actors: "Actors",
+
     actor: "Actor",
+
     tryDifferentKeywords: "Try searching with different keywords",
+
     movieNotFound: "Movie not found",
+
     tvShowNotFound: "TV show not found",
+
     backHome: "Back to Home",
+
     hoursShort: "h",
+
     minutesShort: "m",
+
     castMembers: "Cast",
+
     actorsLabel: "Actors:",
+
     watchMovie: "Watch Movie",
+
     downloadMovie: "Download Movie",
+
     watchTV: "Watch TV Show",
+
     similarMovies: "Similar Movies",
+
     similarTV: "Similar TV Shows",
+
     episodesLabel: "Episodes",
+
     seasonLabel: "Season",
+
     episodeLabel: "Episode",
+
     seasonsCount: "{count} Seasons",
+
     episodesCount: "{count} Episodes",
+
     episodesInSeason: "Episodes in Season {season}",
+
     viewAll: "View All",
+
     movieGenres: "Movie Genres",
+
     tvGenres: "TV Genres",
+
     yearsShort: "y",
+
     popularity: "Popularity",
+
     biography: "Biography",
+
     showLess: "Show Less",
+
     showMore: "Show More",
+
     works: "Works",
+
     showingTopWorks: "Showing top {count} works out of {total}",
+
     pageNotFound: "Page Not Found",
+
     notFoundText: "The page you are looking for might have been moved or doesn't exist anymore.",
+
     latestMovies: "Latest Movies",
+
     latestSeries: "Latest TV Shows",
+
     newTVShows: "New TV Shows",
+
     opinion: "Opinions",
+
     criticsChoice: "Critics' Choice",
+
     recommended: "Recommended for You",
+
     productionCompanies: "Production Companies",
+
     adblockDetectedTitle: "Ad Blocker Detected",
+
     adblockDetectedDesc: "It seems you are using an Ad Blocker. Ads are the only source of income that keeps this site free for everyone.",
+
     incognitoDetectedTitle: "Incognito Mode Not Supported",
+
     incognitoDetectedDesc: "It seems you are using Incognito / Private browsing. This mode limits functionality.",
+
     adblockHowToFix: "How to disable AdBlock",
+
     incognitoHowToFix: "How to fix",
+
     adblockStep1: "Look for the shield or extension icon in your browser toolbar",
+
     adblockStep2: "Click on it and select \"Disable on this site\" or \"Pause on this site\"",
+
     adblockStep3: "Reload the page by clicking the refresh button below",
+
     incognitoStep1: "Open your normal browser (not Incognito / Private mode)",
+
     incognitoStep2: "Copy the current page URL and paste it in the normal browser",
+
     incognitoStep3: "Enjoy watching without restrictions 🎬",
+
     refreshPage: "Refresh Page",
+
     thanksForSupport: "Thank you for supporting the site ❤️ — Ads help us stay free",
+
   },
+
   fr: {
+
     home: "Accueil",
+
     trending: "Tendances",
+
     popular: "Populaire",
+
     topRated: "Mieux notés",
+
     nowPlaying: "En cours",
+
     upcoming: "À venir",
+
     seeAll: "Voir tout",
+
     minutes: "min",
+
     seasons: "saisons",
+
     episodes: "épisodes",
+
     cast: "Casting",
+
     similar: "Similaire",
+
     search: "Rechercher",
+
     movies: "Films",
+
     tvShows: "Séries TV",
+
     watchNow: "Regarder",
+
     moreInfo: "Plus d'infos",
+
     noResults: "Aucun résultat",
+
     loading: "Chargement...",
+
     chooseServer: "Choisir le serveur",
+
     server: "Serveur",
+
     quality: "Qualité",
+
     subtitles: "Sous-titres",
+
     autoPlay: "Lecture auto",
+
     autoNext: "Suivant auto",
+
     changeServer: "Changer de serveur",
+
     serverNote: "Remarque",
+
     availableServers: "Serveurs disponibles",
+
     loadingServer: "Chargement du serveur...",
+
     searchPlaceholder: "Rechercher un film ou une série...",
+
     allMovies: "Tous les films",
+
     allTVShows: "Toutes les séries",
+
     moviesAction: "Action",
+
     moviesAdventure: "Aventure",
+
     moviesAnimation: "Animation",
+
     moviesComedy: "Comédie",
+
     moviesCrime: "Crime",
+
     moviesDocumentary: "Documentaire",
+
     moviesDrama: "Drame",
+
     moviesFamily: "Famille",
+
     moviesFantasy: "Fantaisie",
+
     moviesHistory: "Historique",
+
     moviesHorror: "Horreur",
+
     moviesMusic: "Musique",
+
     moviesMystery: "Mystère",
+
     moviesRomance: "Romance",
+
     moviesSciFi: "Science-Fiction",
+
     moviesTVMovie: "Téléfilm",
+
     moviesThriller: "Thriller",
+
     moviesWar: "Guerre",
+
     moviesWestern: "Western",
+
     tvActionAdventure: "Action & Aventure",
+
     tvAnimation: "Animation",
+
     tvComedy: "Comédie",
+
     tvCrime: "Crime",
+
     tvDocumentary: "Documentaire",
+
     tvDrama: "Drame",
+
     tvFamily: "Famille",
+
     tvKids: "Enfants",
+
     tvMystery: "Mystère",
+
     tvNews: "Actualités",
+
     tvReality: "Réalité",
+
     tvSciFiFantasy: "Science-Fiction & Fantaisie",
+
     tvSoap: "Feuilleton",
+
     tvTalk: "Talk-show",
+
     tvWarPolitics: "Guerre & Politique",
+
     tvWestern: "Western",
+
     quickLinks: "Liens rapides",
+
     aboutUs: "À propos",
+
     contactUs: "Contactez-nous",
+
     privacyPolicy: "Politique de confidentialité",
+
     copyright: "Tous droits réservés ©",
+
     disclaimer: "Ce site n'héberge aucun contenu sur ses serveurs",
+
     popularMovies: "Films populaires",
+
     popularTV: "Séries populaires",
+
     trendingMovies: "Films Tendances",
+
     trendingTV: "Séries Tendances",
+
     topRatedMovies: "Films les mieux notés",
+
     topRatedTV: "Séries les mieux notées",
+
     noDescription: "Aucune description disponible",
+
     filterByGenre: "Filtrer par genre",
+
     all: "Tout",
+
     loadMore: "Charger plus",
+
     category: "Catégorie",
+
     searchResultsFor: "Résultats de recherche pour",
+
     searchPlaceholderFull: "Rechercher un film, une série ou un acteur...",
+
     resultsFound: "{count} résultats trouvés",
+
     searching: "Recherche en cours...",
+
     startSearch: "Commencer la recherche",
+
     searchMoviesSeriesActors: "Recherchez vos films et séries préférés",
+
     actors: "Acteurs",
+
     actor: "Acteur/trice",
+
     tryDifferentKeywords: "Essayez avec des mots-clés différents",
+
     movieNotFound: "Film non trouvé",
+
     tvShowNotFound: "Série non trouvée",
+
     backHome: "Retour à l'accueil",
+
     hoursShort: "h",
+
     minutesShort: "m",
+
     castMembers: "Casting",
+
     actorsLabel: "Acteurs :",
+
     watchMovie: "Regarder le film",
+
     downloadMovie: "Télécharger le film",
+
     watchTV: "Regarder la série",
+
     similarMovies: "Films similaires",
+
     similarTV: "Séries similaires",
+
     episodesLabel: "Épisodes",
+
     seasonLabel: "Saison",
+
     episodeLabel: "Épisode",
+
     seasonsCount: "{count} Saisons",
+
     episodesCount: "{count} Épisodes",
+
     episodesInSeason: "Épisodes de la saison {season}",
+
     viewAll: "Voir tout",
+
     movieGenres: "Genres de films",
+
     tvGenres: "Genres de séries",
+
     latestMovies: "Derniers Films",
+
     latestSeries: "Dernières Séries",
+
     newTVShows: "Nouvelles Séries",
+
     opinion: "Opinions",
+
     criticsChoice: "Choix des Critiques",
+
     recommended: "Recommandé pour vous",
+
     productionCompanies: "Sociétés de Production",
+
     adblockDetectedTitle: "Bloqueur de publicités détecté",
+
     adblockDetectedDesc: "Il semble que vous utilisiez un bloqueur de publicités. Les publicités sont la seule source de revenus qui nous permet de maintenir ce site gratuit.",
+
     incognitoDetectedTitle: "Navigation privée non supportée",
+
     incognitoDetectedDesc: "Il semble que vous utilisiez la navigation privée. Ce mode empêche le site de fonctionner correctement.",
+
     adblockHowToFix: "Comment désactiver le bloqueur",
+
     incognitoHowToFix: "Comment résoudre ce problème",
+
     adblockStep1: "Recherchez l'icône du bloqueur dans la barre d'outils de votre navigateur",
+
     adblockStep2: "Cliquez dessus et choisissez \"Désactiver pour ce site\" ou \"Pause\"",
+
     adblockStep3: "Rechargez la page en cliquant sur le bouton de rafraîchissement",
+
     incognitoStep1: "Ouvrez votre navigateur en mode normal (pas en navigation privée)",
+
     incognitoStep2: "Copiez l'URL de cette page et collez-la dans la fenêtre normale",
+
     incognitoStep3: "Profitez du visionnage sans restrictions 🎬",
+
     refreshPage: "Rafraîchir la page",
+
     thanksForSupport: "Merci de soutenir le site ❤️ — Les pubs nous aident à rester gratuits",
+
   },
+
   es: {
+
     home: "Inicio",
+
     trending: "Tendencias",
+
     popular: "Popular",
+
     topRated: "Mejor valorados",
+
     nowPlaying: "En cartelera",
+
     upcoming: "Próximamente",
+
     seeAll: "Ver todo",
+
     minutes: "min",
+
     seasons: "temporadas",
+
     episodes: "episodios",
+
     cast: "Reparto",
+
     similar: "Similar",
+
     search: "Buscar",
+
     movies: "Películas",
+
     tvShows: "Series TV",
+
     watchNow: "Ver ahora",
+
     moreInfo: "Más info",
+
     noResults: "No hay resultados",
+
     loading: "Cargando...",
+
     chooseServer: "Elegir servidor",
+
     server: "Servidor",
+
     quality: "Calidad",
+
     subtitles: "Subtítulos",
+
     autoPlay: "Reproducción auto",
+
     autoNext: "Siguiente auto",
+
     changeServer: "Cambiar servidor",
+
     serverNote: "Nota",
+
     availableServers: "Servidores disponibles",
+
     loadingServer: "Cargando servidor...",
+
     searchPlaceholder: "Buscar película o serie...",
+
     allMovies: "Todas las películas",
+
     allTVShows: "Todas las series",
+
     moviesAction: "Acción",
+
     moviesAdventure: "Aventura",
+
     moviesAnimation: "Animación",
+
     moviesComedy: "Comedia",
+
     moviesCrime: "Crimen",
+
     moviesDocumentary: "Documental",
+
     moviesDrama: "Drama",
+
     moviesFamily: "Familia",
+
     moviesFantasy: "Fantasía",
+
     moviesHistory: "Histórico",
+
     moviesHorror: "Terror",
+
     moviesMusic: "Música",
+
     moviesMystery: "Misterio",
+
     moviesRomance: "Romance",
+
     moviesSciFi: "Ciencia Ficción",
+
     moviesTVMovie: "Telefilme",
+
     moviesThriller: "Thriller",
+
     moviesWar: "Guerra",
+
     moviesWestern: "Western",
+
     tvActionAdventure: "Acción y Aventura",
+
     tvAnimation: "Animación",
+
     tvComedy: "Comedia",
+
     tvCrime: "Crimen",
+
     tvDocumentary: "Documental",
+
     tvDrama: "Drama",
+
     tvFamily: "Familia",
+
     tvKids: "Niños",
+
     tvMystery: "Misterio",
+
     tvNews: "Noticias",
+
     tvReality: "Reality",
+
     tvSciFiFantasy: "Ciencia Ficción y Fantasía",
+
     tvSoap: "Telenovela",
+
     tvTalk: "Talk Show",
+
     tvWarPolitics: "Guerra y Política",
+
     tvWestern: "Western",
+
     quickLinks: "Enlaces rápidos",
+
     aboutUs: "Sobre nosotros",
+
     contactUs: "Contáctenos",
+
     privacyPolicy: "Política de privacidad",
+
     copyright: "Todos los derechos reservados ©",
+
     disclaimer: "Este sitio no aloja ningún contenido en sus servidores",
+
     popularMovies: "Películas populares",
+
     popularTV: "Series populares",
+
     trendingMovies: "Películas populares",
+
     trendingTV: "Series populares",
+
     topRatedMovies: "Películas mejor valoradas",
+
     topRatedTV: "Series mejor valoradas",
+
     noDescription: "Sin descripción disponible",
+
     filterByGenre: "Filtrar por género",
+
     all: "Todo",
+
     loadMore: "Cargar más",
+
     category: "Categoría",
+
     searchResultsFor: "Resultados de búsqueda para",
+
     searchPlaceholderFull: "Buscar una película, serie o actor...",
+
     resultsFound: "{count} resultados encontrados",
+
     searching: "Buscando...",
+
     startSearch: "Empezar a buscar",
+
     searchMoviesSeriesActors: "Busca tus películas y series favoritas",
+
     actors: "Actores",
+
     actor: "Actor/riz",
+
     tryDifferentKeywords: "Intenta buscar con palabras diferentes",
+
     movieNotFound: "Película no encontrada",
+
     tvShowNotFound: "Serie no encontrada",
+
     backHome: "Volver al inicio",
+
     hoursShort: "h",
+
     minutesShort: "m",
+
     castMembers: "Reparto",
+
     actorsLabel: "Actores:",
+
     watchMovie: "Ver película",
+
     downloadMovie: "Descargar película",
+
     watchTV: "Ver serie",
+
     similarMovies: "Películas similares",
+
     similarTV: "Series similares",
+
     episodesLabel: "Episodios",
+
     seasonLabel: "Temporada",
+
     episodeLabel: "Episodio",
+
     seasonsCount: "{count} Temporadas",
+
     episodesCount: "{count} Episodios",
+
     episodesInSeason: "Episodios en la temporada {season}",
+
     viewAll: "Ver todo",
+
     movieGenres: "Géneros de películas",
+
     tvGenres: "Géneros de series",
+
     productionCompanies: "Productoras",
+
     adblockDetectedTitle: "Bloqueador de anuncios detectado",
+
     adblockDetectedDesc: "Parece que estás usando un bloqueador de anuncios. Los anuncios son la única fuente de ingresos.",
+
     incognitoDetectedTitle: "Modo incógnito no soportado",
+
     incognitoDetectedDesc: "Parece que estás navegando en modo incógnito. Este modo limita la funcionalidad.",
+
     adblockHowToFix: "Cómo desactivar AdBlock",
+
     incognitoHowToFix: "Cómo solucionarlo",
+
     adblockStep1: "Busca el ícono del escudo o extensión en tu navegador",
+
     adblockStep2: "Haz clic en él y selecciona \"Desactivar en este sitio\"",
+
     adblockStep3: "Recarga la página haciendo clic en el botón de abajo",
+
     incognitoStep1: "Abre tu navegador normal (no modo incógnito)",
+
     incognitoStep2: "Copia la URL actual y pégala en el navegador normal",
+
     incognitoStep3: "Disfruta viendo sin restricciones 🎬",
+
     refreshPage: "Actualizar página",
+
     thanksForSupport: "Gracias por apoyar el sitio ❤️ — Los anuncios nos ayudan a ser gratis",
+
   },
+
 };
 
+
+
 // Get UI translation based on current language
+
 export function t(key: keyof typeof UI_TRANSLATIONS.ar): string {
+
   const lang = getCurrentLanguage();
+
   return UI_TRANSLATIONS[lang][key] || key;
+
 }
+
+
 
 // Update the VideoPlayer component helper
+
 export function generateVideoIframe(
+
   server: VideoServer,
+
   id: number,
+
   type: "movie" | "tv",
+
   season?: number,
+
   episode?: number,
+
   imdbId?: string,
+
   options?: {
+
     autoplay?: boolean;
+
     autonext?: boolean;
+
     subtitleLang?: string;
+
     subtitleUrl?: string;
+
   }
+
 ): string {
+
   const url = getVideoUrl(server, id, type, season, episode, imdbId, options);
 
+
+
   return `
+
     <iframe 
+
       src="${url}"
+
       width="100%" 
+
       height="100%" 
+
       frameborder="0" 
+
       allowfullscreen
+
       allow="autoplay; encrypted-media"
+
       sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
+
     ></iframe>
+
   `;
+
 }
+
 export async function fetchByCompany(mediaType: "movie" | "tv", companyId: string, page = 1) {
+
   const url = `${TMDB_CONFIG.BASE_URL}/discover/${mediaType}?api_key=${TMDB_CONFIG.API_KEY}&with_companies=${companyId}`;
+
   return fetchAndMergeLocale(url, page);
+
 }
+
+
 
 export async function fetchRamadan2026() {
+
   try {
+
     const response = await fetch("/ramadan_2026_supreme.json");
+
     const data = await response.json();
 
+
+
     // Group episodes by series title
+
     const seriesMap = new Map<string, TVShow>();
 
+
+
     data.forEach((item: any) => {
+
       // Extract series title (e.g., "مسلسل درش" from "مسلسل درش الحلقة 3 الثالثة")
+
       const seriesTitleMatch = item.title.match(/^(?:مسلسل|برنامج)\s+(.+?)(?:\s+الحلقة|$)/);
+
       const seriesTitle = seriesTitleMatch ? seriesTitleMatch[0].trim() : item.title;
 
+
+
       if (!seriesMap.has(seriesTitle)) {
+
         seriesMap.set(seriesTitle, {
+
           id: item.id, // Using the ID of the first episode as a proxy
+
           name: seriesTitle,
+
           original_name: seriesTitle,
+
           overview: item.description,
+
           poster_path: item.poster.replace(/https:\/\/shaaheid4u\.net\/photos\/uploads\//, ""),
+
           backdrop_path: item.poster.replace(/https:\/\/shaaheid4u\.net\/photos\/uploads\//, ""),
+
           first_air_date: item.year || "2026",
+
           vote_average: 8.5, // Default rating as individual items don't have it
+
           vote_count: 0,
+
           genre_ids: [],
+
           popularity: 0,
+
         });
+
       }
+
     });
 
+
+
     return Array.from(seriesMap.values());
+
   } catch (error) {
+
     console.error("Failed to fetch Ramadan 2026 series:", error);
+
     return [];
+
   }
+
 }
+
+
 

@@ -23,9 +23,7 @@ import {
   t,
   MOVIE_SERVERS,
   VideoServer,
-  getVideoUrl,
-  fetchAvailableSubtitles,
-  getBestArabicSubtitle
+  getVideoUrl
 } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
@@ -41,32 +39,24 @@ export default function WatchMovie() {
   const [similar, setSimilar] = useState<Movie[]>([]);
   const [imdbId, setImdbId] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [subtitleLang, setSubtitleLang] = useState<string | null>(null);
 
   // ── Unified player state ──
-  const [activeServerId, setActiveServerId] = useState<string>('vidsrc_sbs');
+  const [activeServerId, setActiveServerId] = useState<string>(MOVIE_SERVERS[0].id);
   const [unifiedIframeKey, setUnifiedIframeKey] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
-  const [showSubtitleNotice, setShowSubtitleNotice] = useState(false);
+  const [showSubtitleNotice, setShowSubtitleNotice] = useState(true);
 
   // Sync fullscreen state with browser
   useEffect(() => {
+    const timer = setTimeout(() => setShowSubtitleNotice(false), 10000);
     const handleFsChange = () => setIsFullscreen(!!document.fullscreenElement);
     document.addEventListener("fullscreenchange", handleFsChange);
-    return () => document.removeEventListener("fullscreenchange", handleFsChange);
+    return () => {
+      document.removeEventListener("fullscreenchange", handleFsChange);
+      clearTimeout(timer);
+    };
   }, []);
-
-  // Show subtitle notice when iframe changes
-  useEffect(() => {
-    if (unifiedIframeKey > 0) {
-      setShowSubtitleNotice(true);
-      const timer = setTimeout(() => {
-        setShowSubtitleNotice(false);
-      }, 12000);
-      return () => clearTimeout(timer);
-    }
-  }, [unifiedIframeKey]);
 
   useEffect(() => {
     const loadMovie = async () => {
@@ -83,11 +73,6 @@ export default function WatchMovie() {
         setCast(castData.slice(0, 10));
         setSimilar(similarData as Movie[]);
         setImdbId(imdb);
-
-        // Fetch available subtitles and select best Arabic subtitle
-        const translations = await fetchAvailableSubtitles(parseInt(id), 'movie');
-        const bestArabic = getBestArabicSubtitle(translations);
-        setSubtitleLang(bestArabic);
 
         trackEvent({
           action: "view_item",
@@ -138,9 +123,7 @@ export default function WatchMovie() {
 
   let iframeUrl = '';
   if (activeEntry.kind === 'tmdb' && movie) {
-    iframeUrl = getVideoUrl(activeEntry.server, movie.id, 'movie', undefined, undefined, imdbId || undefined, { 
-      autoplay: true
-    });
+    iframeUrl = getVideoUrl(activeEntry.server, movie.id, 'movie', undefined, undefined, imdbId || undefined, { autoplay: true });
   } else if (activeEntry.kind === 'direct') {
     iframeUrl = activeEntry.url;
   }
@@ -169,6 +152,11 @@ export default function WatchMovie() {
               ref={containerRef}
               className="relative aspect-video rounded-xl shadow-2xl overflow-hidden bg-black border border-border/50"
             >
+              {showSubtitleNotice && (
+                <div className="absolute top-4 left-1/2 -translate-x-1/2 z-50 bg-black/80 text-white px-4 py-2 rounded-lg border border-primary/50 text-sm font-medium shadow-lg text-center backdrop-blur-sm rtl:text-right w-[90%] max-w-md pointer-events-none transition-opacity duration-1000">
+                  إذا لم تظهر الترجمة بشكل جيد المرجو الدخول إلى أيقونة CC أسفل يمين المُشغّل لتعديلها.
+                </div>
+              )}
               {/* Fullscreen Button */}
               {!isTopCimaServer && (
               <button
@@ -196,17 +184,6 @@ export default function WatchMovie() {
                 allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
                 allowFullScreen
               />
-
-              {showSubtitleNotice && (
-                <div className="absolute top-4 left-4 z-[9998] bg-black/80 text-white px-4 py-3 rounded-lg backdrop-blur-md border border-white/20 shadow-2xl animate-fade-in">
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                    <span className="text-sm font-medium">
-                      الفيديو يحتوي على ترجمة عربية - اضغط على زر CC أو Subtitle أو ترجمة لتفعيلها
-                    </span>
-                  </div>
-                </div>
-              )}
             </div>
           </div>
 
