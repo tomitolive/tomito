@@ -827,27 +827,7 @@ export function getVideoUrl(
       url = `${baseUrl}/${finalId}`;
     }
 
-    // Add quality and subtitle parameters for vidsrc.sbs variants
-    const separator = url.includes('?') ? '&' : '?';
-    let params = 'autoplay=1';
-    
-    if (server.id.startsWith('vidsrc_sbs')) {
-      params += '&sub_lang=ar';
-      params += '&audio=en'; // Set English audio as default
-      
-      // Add quality parameter based on server ID
-      if (server.id === 'vidsrc_sbs_pro') {
-        params += '&quality=pro';
-      } else if (server.id === 'vidsrc_sbs_multi') {
-        params += '&quality=multi';
-      } else if (server.id === 'vidsrc_sbs_4k') {
-        params += '&quality=4k';
-      } else if (server.id === 'vidsrc_sbs_cinerc') {
-        params += '&quality=cinerc';
-      }
-    }
-    
-    return `${url}${separator}${params}`;
+    return `${url}${url.includes('?') ? '&' : '?'}autoplay=1`;
   } else {
     // TV Show
     if (server.baseUrl && server.format) {
@@ -859,27 +839,7 @@ export function getVideoUrl(
 
       const finalUrl = `${server.baseUrl}/${urlTemplate}`;
       
-      // Add quality and subtitle parameters for vidsrc.sbs variants
-      const separator = finalUrl.includes('?') ? '&' : '?';
-      let params = 'autoplay=1';
-      
-      if (server.id.startsWith('vidsrc_sbs')) {
-        params += '&sub_lang=ar';
-        params += '&audio=en'; // Set English audio as default
-        
-        // Add quality parameter based on server ID
-        if (server.id === 'vidsrc_sbs_pro') {
-          params += '&quality=pro';
-        } else if (server.id === 'vidsrc_sbs_multi') {
-          params += '&quality=multi';
-        } else if (server.id === 'vidsrc_sbs_4k') {
-          params += '&quality=4k';
-        } else if (server.id === 'vidsrc_sbs_cinerc') {
-          params += '&quality=cinerc';
-        }
-      }
-      
-      return `${finalUrl}${separator}${params}`;
+      return `${finalUrl}${finalUrl.includes('?') ? '&' : '?'}autoplay=1`;
     }
 
     // Traditional style (for movie servers that also support TV)
