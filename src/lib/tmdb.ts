@@ -1226,7 +1226,7 @@ export function getVideoUrl(
 
       const url = `${baseUrl}${finalId}`;
 
-      return `${url}?autoplay=1&color=e50914&sub=ar&t=120&controls=0&audio=en&lang=en&ds_lang=ar`;
+      return `${url}?autoplay=1&ds_lang=ar`;
 
     }
 
@@ -1302,7 +1302,7 @@ export function getVideoUrl(
 
       if (server.id.startsWith('vidsrc') || server.id === 'vsrc_su') {
 
-        return `${finalUrl}?autoplay=1&color=e50914&sub=ar&t=120&controls=0&audio=en&lang=en&ds_lang=ar`;
+        return `${finalUrl}?autoplay=1&ds_lang=ar`;
 
       }
 
@@ -1322,7 +1322,7 @@ export function getVideoUrl(
 
     if (server.id.startsWith('vidsrc') || server.id === 'vsrc_su') {
 
-      return `${baseUrl}${finalId}/${season || 1}/${episode || 1}?autoplay=1&color=e50914&sub=ar&t=120&controls=0&audio=en&lang=en&ds_lang=ar`;
+      return `${baseUrl}${finalId}/${season || 1}/${episode || 1}?autoplay=1&ds_lang=ar`;
 
     }
 
