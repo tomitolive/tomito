@@ -198,15 +198,6 @@ export default function TVDetail() {
                 <div className="mt-20">
                     <ContentRow title={t("similarTV")} items={tv.similar?.results || []} type="tv" />
                 </div>
-
-                {/* NewAd - ad1 */}
-                <NewAd ad="ad1" />
-
-                {/* NewAd - ad2 */}
-                <NewAd ad="ad2" />
-                
-                {/* NewAd - ad3 */}
-                <NewAd ad="ad3" />
             </div>
             <Footer />
             <BackButton />

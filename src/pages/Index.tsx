@@ -3,7 +3,6 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { HeroCarousel } from "@/components/HeroCarousel";
 import { ContentRow } from "@/components/ContentRow";
-import NewAd from "@/components/NewAd";
 import { fetchTrending, fetchPopular, fetchTopRated, Movie, TVShow, t } from "@/lib/tmdb";
 
 const Index = () => {
@@ -46,12 +45,6 @@ const Index = () => {
 
       {/* Hero Section */}
       <HeroCarousel items={trending} type="movie" />
-      
-      {/* NewAd - ad1 */}
-      <NewAd ad="ad1" />
-      
-      {/* NewAd - ad7 */}
-      <NewAd ad="ad7" />
 
       {/* Content Sections */}
       <div className="container mx-auto px-4 -mt-20 relative z-10">
@@ -70,9 +63,6 @@ const Index = () => {
           isLoading={isLoading}
           showAll="/category/tv/all"
         />
-        
-        {/* NewAd - ad2 */}
-        <NewAd ad="ad2" />
 
         <ContentRow
           title={t("topRatedMovies")}
@@ -90,9 +80,6 @@ const Index = () => {
           showAll="/category/tv/all"
         />
       </div>
-      
-      {/* NewAd - ad3 */}
-      <NewAd ad="ad3" />
 
       <Footer />
     </div>

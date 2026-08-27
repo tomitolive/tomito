@@ -93,15 +93,6 @@ export default function MovieDetail() {
                 <div className="mt-12">
                     <ContentRow title={t("similarMovies")} items={movie.similar?.results || []} type="movie" />
                 </div>
-
-                {/* NewAd - ad1 */}
-                <NewAd ad="ad1" />
-                
-                {/* NewAd - ad7 */}
-                <NewAd ad="ad7" />
-                
-                {/* NewAd - ad3 */}
-                <NewAd ad="ad3" />
             </div>
             <Footer />
             <BackButton />

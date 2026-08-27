@@ -8,7 +8,6 @@ import { SkeletonCard } from "@/components/SkeletonCard";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { BackButton } from "@/components/BackButton";
-import NewAd from "@/components/NewAd";
 
 export default function CompanyContent() {
     const { companyId } = useParams<{ companyId: string }>();
@@ -80,9 +79,6 @@ export default function CompanyContent() {
                         </div>
                     </div>
                 </div>
-
-                {/* NewAd - ad1 */}
-                <NewAd ad="ad1" />
 
                 {/* Tabs Section */}
                 <div className="flex justify-center mb-8 bg-secondary/30 p-1 rounded-xl inline-flex w-auto mx-auto border border-white/5">
@@ -204,13 +200,7 @@ export default function CompanyContent() {
                 )}
             </main>
 
-            {/* NewAd - ad2 */}
-            <NewAd ad="ad2" />
-
             {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
-
-            {/* NewAd - ad3 */}
-            <NewAd ad="ad3" />
 
             <Footer />
             <BackButton />

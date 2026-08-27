@@ -481,5 +481,27 @@
     pointer-events: none !important;
     z-index: -9999 !important;
   }
+
+  /* Hide high z-index ad overlays from external video servers */
+  div[style*="z-index: 2147483647"],
+  div[style*="z-index:2147483647"],
+  div[style*="z-index: 9999999"],
+  div[style*="z-index:9999999"],
+  div[style*="pointer-events: none"][style*="position: absolute"][style*="top: 0px"][style*="left: 0px"] {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* Hide specific ad container classes */
+  [class*="fhujcsxogqn"],
+  [class*="ad-overlay"],
+  [class*="popup-overlay"] {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
 }
-
+

@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import { BackButton } from "@/components/BackButton";
 import { fetchPersonDetails, fetchPersonCredits, getImageUrl } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
-import NewAd from "@/components/NewAd";
 
 export default function ActorPage() {
   const { id } = useParams<{ id: string }>();
@@ -174,9 +173,6 @@ export default function ActorPage() {
           </div>
         </div>
 
-        {/* NewAd - ad1 */}
-        <NewAd ad="ad1" />
-
         {/* Filmography */}
         <div>
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
@@ -233,13 +229,7 @@ export default function ActorPage() {
         </div>
       </div>
 
-      {/* NewAd - ad2 */}
-      <NewAd ad="ad2" />
-
       {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
-
-      {/* NewAd - ad3 */}
-      <NewAd ad="ad3" />
 
       <Footer />
       <BackButton />

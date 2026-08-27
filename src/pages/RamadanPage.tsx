@@ -10,7 +10,6 @@ import { Input } from "@/components/ui/input";
 import { PosterImage } from "@/components/PosterImage";
 import { RamadanGridSkeleton } from "@/components/RamadanSkeleton";
 import { HeroCarousel } from "@/components/HeroCarousel";
-import NewAd from "@/components/NewAd";
 
 // Utility to clean titles
 const cleanTitle = (title: string): string => {
@@ -183,9 +182,6 @@ export default function RamadanPage() {
                 </div>
             </div>
 
-            {/* NewAd - ad1 */}
-            <NewAd ad="ad1" />
-
             <main className="container mx-auto px-4 py-20">
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 px-2">
                     <div className="space-y-2">
@@ -278,13 +274,7 @@ export default function RamadanPage() {
                 )}
             </main>
 
-            {/* NewAd - ad2 */}
-            <NewAd ad="ad2" />
-
             {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
-
-            {/* NewAd - ad3 */}
-            <NewAd ad="ad3" />
 
             <Footer />
             <BackButton />

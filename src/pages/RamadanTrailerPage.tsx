@@ -273,16 +273,7 @@ export function RamadanTrailerPage() {
                 </div>
             </main>
 
-            {/* NewAd - ad1 */}
-            <NewAd ad="ad1" />
-
             {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
-
-            {/* NewAd - ad2 */}
-            <NewAd ad="ad2" />
-
-            {/* NewAd - ad3 */}
-            <NewAd ad="ad3" />
 
             <Footer />
             <BackButton />

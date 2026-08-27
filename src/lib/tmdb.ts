@@ -468,6 +468,41 @@ export async function fetchVideos(id: number, type: "movie" | "tv") {
   return data.results || [];
 }
 
+// Fetch available subtitles from TMDB
+export async function fetchAvailableSubtitles(id: number, type: "movie" | "tv") {
+  const response = await fetch(
+    `${TMDB_CONFIG.BASE_URL}/${type}/${id}/translations?api_key=${TMDB_CONFIG.API_KEY}`
+  );
+  const data = await response.json();
+  return data.translations || [];
+}
+
+// Get best Arabic subtitle for a work
+export function getBestArabicSubtitle(translations: any[]): string | null {
+  if (!translations || translations.length === 0) return null;
+
+  // Priority 1: Arabic (ar)
+  const arabic = translations.find(t => t.iso_639_1 === 'ar');
+  if (arabic) return 'ar';
+
+  // Priority 2: Arabic variants
+  const arabicVariants = translations.find(t => 
+    t.iso_639_1 === 'ar' || 
+    t.english_name?.toLowerCase().includes('arabic') ||
+    t.name?.toLowerCase().includes('arabic')
+  );
+  if (arabicVariants) return 'ar';
+
+  // Priority 3: Check for any Arabic-related language codes
+  const arabicRelated = translations.find(t => 
+    t.iso_639_1?.startsWith('ar') ||
+    t.english_name?.toLowerCase().includes('arab')
+  );
+  if (arabicRelated) return 'ar';
+
+  return null;
+}
+
 export async function fetchPersonDetails(id: number) {
   const lang = getCurrentLanguage();
   const response = await fetch(
@@ -553,127 +588,146 @@ export interface VideoServer {
 
 export const MOVIE_SERVERS: VideoServer[] = [
   {
-    id: 'server_5',
-    name: 'سيرفر 5',
-    movieUrl: 'https://vidsrc.me/embed/movie/',
-    tvUrl: 'https://vidsrc.me/embed/tv/',
+    id: 'vidsrc_sbs',
+    name: '🎬 vidsrc.sbs',
+    movieUrl: 'https://vidsrc.sbs/embed/movie/',
+    tvUrl: 'https://vidsrc.sbs/embed/tv/',
     quality: 'HD',
-    icon: 'star',
-    color: '#16a085',
-    description: 'سيرفر احتياطي بديل',
-    useIdType: 'tmdb',
-    subtitles: 'ar'
+    icon: 'film',
+    color: '#e74c3c',
+    description: 'سيرفر جديد',
+    useIdType: 'tmdb'
   },
   {
-    id: 'server_6',
-    name: 'سيرفر الرئيسي',
-    movieUrl: 'https://moviesapi.club/movie/',
-    tvUrl: 'https://moviesapi.club/tv/',
-    quality: 'HD+',
-    icon: 'database',
-    color: '#e67e22',
-    description: 'سيرفر احتياطي كبير',
-    useIdType: 'tmdb',
-    subtitles: 'ar'
+    id: 'vidsrc_sbs_pro',
+    name: '🔥 Pro',
+    movieUrl: 'https://vidsrc.sbs/embed/movie/',
+    tvUrl: 'https://vidsrc.sbs/embed/tv/',
+    quality: 'Pro',
+    icon: 'zap',
+    color: '#f39c12',
+    description: 'جودة Pro',
+    useIdType: 'tmdb'
   },
   {
-    id: 'server_3',
-    name: 'سيرفر 2',
+    id: 'vidsrc_sbs_multi',
+    name: '🌐 Multi',
+    movieUrl: 'https://vidsrc.sbs/embed/movie/',
+    tvUrl: 'https://vidsrc.sbs/embed/tv/',
+    quality: 'Multi',
+    icon: 'globe',
+    color: '#3498db',
+    description: 'جودة Multi',
+    useIdType: 'tmdb'
+  },
+  {
+    id: 'vidsrc_sbs_4k',
+    name: '📺 4K',
+    movieUrl: 'https://vidsrc.sbs/embed/movie/',
+    tvUrl: 'https://vidsrc.sbs/embed/tv/',
+    quality: '4K',
+    icon: 'monitor',
+    color: '#9b59b6',
+    description: 'جودة 4K',
+    useIdType: 'tmdb'
+  },
+  {
+    id: 'vidsrc_sbs_cinerc',
+    name: '🎬 Cinerc',
+    movieUrl: 'https://vidsrc.sbs/embed/movie/',
+    tvUrl: 'https://vidsrc.sbs/embed/tv/',
+    quality: 'Cinerc',
+    icon: 'film',
+    color: '#e74c3c',
+    description: 'جودة Cinerc',
+    useIdType: 'tmdb'
+  },
+  {
+    id: 'vidsrc_embed',
+    name: '🎬 vidsrc.ru',
     movieUrl: 'https://vidsrc-embed.ru/embed/movie/',
     tvUrl: 'https://vidsrc-embed.ru/embed/tv/',
     quality: 'FHD',
     icon: 'rocket',
     color: '#e74c3c',
-    description: 'سيرفر احتياطي سريع',
-    useIdType: 'tmdb',
-    subtitles: 'ar'
+    description: 'سيرفر سريع',
+    useIdType: 'tmdb'
   },
   {
-    id: 'server_1',
-    name: 'VIP',
-    movieUrl: 'https://multiembed.mov/directstream.php?video_id=',
-    tvUrl: 'https://multiembed.mov/directstream.php?video_id=',
-    quality: 'VIP HD',
-    icon: 'crown',
-    color: '#9b59b6',
-    description: 'سيرفر VIP سريع مع جودة متعددة وترجمة',
-    useIdType: 'imdb',
-    subtitles: 'ar',
-    vip: true,
-    allowSubtitlesParam: true,
-    allowTmdb: true,
-    allowSeasonEpisode: true
-  },
-  {
-    id: 'server_2',
-    name: 'سيرفر 3',
-    movieUrl: 'https://multiembed.mov/directstream.php?video_id=',
-    tvUrl: 'https://multiembed.mov/directstream.php?video_id=',
-    quality: 'HD+',
-    icon: 'film',
-    description: 'سيرفر احتياطي مع ترجمة',
-    color: '#1abc9c',
-    useIdType: 'tmdb',
-    useTmdbParam: true,
-    subtitles: 'ar'
-  },
-  {
-    id: 'server_4',
-    name: 'سيرفر 4',
-    movieUrl: 'https://www.nontongo.win/embed/movie/',
-    tvUrl: 'https://www.nontongo.win/embed/tv/',
-    quality: 'HD',
-    icon: 'tv',
-    color: '#c0392b',
-    description: 'سيرفر احتياطي عربي',
-    useIdType: 'tmdb',
-    subtitles: 'ar'
-  },
-  {
-    id: 'server_7',
-    name: 'سيرفر 7',
-    movieUrl: 'https://www.2embed.cc/embed/',
-    tvUrl: 'https://www.2embed.cc/embedtv/',
-    quality: 'HD',
-    icon: 'sync',
-    color: '#27ae60',
-    description: 'سيرفر احتياطي موثوق',
-    useIdType: 'tmdb',
-    subtitles: 'ar'
-  },
-  {
-    id: 'server_8',
-    name: 'سيرفر 8',
+    id: 'vidsrc_to',
+    name: '🌟 سيرفر 2',
     movieUrl: 'https://vidsrc.to/embed/movie/',
     tvUrl: 'https://vidsrc.to/embed/tv/',
     quality: 'HD',
-    icon: 'video',
-    color: '#3498db',
-    description: 'سيرفر احتياطي عالي',
-    useIdType: 'tmdb',
-    subtitles: 'ar'
+    icon: 'star',
+    color: '#16a085',
+    description: 'سيرفر احتياطي',
+    useIdType: 'tmdb'
   },
   {
-    id: 'server_9',
-    name: 'جديد',
-    movieUrl: 'https://vidsrc-embed.ru/embed/movie',
-    tvUrl: 'https://vidsrc-embed.ru/embed/tv',
-    quality: 'FHD',
-    icon: 'globe',
-    color: '#8e44ad',
-    description: 'سيرفر جديد يدعم معلمات متقدمة',
-    useIdType: 'tmdb',
-    subtitles: 'ar',
-    supportsParams: true,
-    supportsImdbParam: true,
-    supportsTmdbParam: true,
-    supportsSubLang: true,
-    supportsAutoPlay: true
+    id: 'vidsrc_me',
+    name: '🎯 سيرفر 3',
+    movieUrl: 'https://vidsrc.me/embed/movie/',
+    tvUrl: 'https://vidsrc.me/embed/tv/',
+    quality: 'HD',
+    icon: 'tv',
+    color: '#e67e22',
+    description: 'سيرفر احتياطي',
+    useIdType: 'tmdb'
   }
 ];
 
 export const TV_SERVERS: VideoServer[] = [
-
+  {
+    id: 'vidsrc_sbs',
+    name: '🎬 vidsrc.sbs',
+    baseUrl: 'https://vidsrc.sbs/embed/tv',
+    quality: 'HD',
+    icon: 'film',
+    color: '#e74c3c',
+    supportsSeasons: true,
+    format: '{id}/{season}/{episode}'
+  },
+  {
+    id: 'vidsrc_sbs_pro',
+    name: '🔥 Pro',
+    baseUrl: 'https://vidsrc.sbs/embed/tv',
+    quality: 'Pro',
+    icon: 'zap',
+    color: '#f39c12',
+    supportsSeasons: true,
+    format: '{id}/{season}/{episode}'
+  },
+  {
+    id: 'vidsrc_sbs_multi',
+    name: '🌐 Multi',
+    baseUrl: 'https://vidsrc.sbs/embed/tv',
+    quality: 'Multi',
+    icon: 'globe',
+    color: '#3498db',
+    supportsSeasons: true,
+    format: '{id}/{season}/{episode}'
+  },
+  {
+    id: 'vidsrc_sbs_4k',
+    name: '📺 4K',
+    baseUrl: 'https://vidsrc.sbs/embed/tv',
+    quality: '4K',
+    icon: 'monitor',
+    color: '#9b59b6',
+    supportsSeasons: true,
+    format: '{id}/{season}/{episode}'
+  },
+  {
+    id: 'vidsrc_sbs_cinerc',
+    name: '🎬 Cinerc',
+    baseUrl: 'https://vidsrc.sbs/embed/tv',
+    quality: 'Cinerc',
+    icon: 'film',
+    color: '#e74c3c',
+    supportsSeasons: true,
+    format: '{id}/{season}/{episode}'
+  },
   {
     id: 'vidsrc_embed',
     name: '🎬 vidsrc.ru',
@@ -685,38 +739,8 @@ export const TV_SERVERS: VideoServer[] = [
     format: '{id}/{season}/{episode}'
   },
   {
-    id: 'vidsrc_embed_su',
-    name: '🎬 vidsrc.su',
-    baseUrl: 'https://vidsrc-embed.su/embed/tv',
-    quality: 'HD',
-    icon: 'film',
-    color: '#e74c3c',
-    supportsSeasons: true,
-    format: '{id}/{season}/{episode}'
-  },
-  {
-    id: 'vidsrcme_su',
-    name: '🎬 vidsrcme.su',
-    baseUrl: 'https://vidsrcme.su/embed/tv',
-    quality: 'HD',
-    icon: 'film',
-    color: '#e74c3c',
-    supportsSeasons: true,
-    format: '{id}/{season}/{episode}'
-  },
-  {
-    id: 'vsrc_su',
-    name: '🎬 vsrc.su',
-    baseUrl: 'https://vsrc.su/embed/tv',
-    quality: 'HD',
-    icon: 'film',
-    color: '#e74c3c',
-    supportsSeasons: true,
-    format: '{id}/{season}/{episode}'
-  },
-  {
     id: 'vidsrc_to',
-    name: '🌟 سيرفر 5',
+    name: '🌟 سيرفر 2',
     baseUrl: 'https://vidsrc.to/embed/tv',
     quality: 'HD',
     icon: 'star',
@@ -725,38 +749,8 @@ export const TV_SERVERS: VideoServer[] = [
     format: '{id}/{season}/{episode}'
   },
   {
-    id: 'hnembed',
-    name: '🎥 سيرفر 2',
-    baseUrl: 'https://hnembed.cc/embed/tv',
-    quality: 'HD',
-    icon: 'video',
-    color: '#3498db',
-    supportsSeasons: true,
-    format: '{id}/{season}/{episode}'
-  },
-  {
-    id: 'autoembed',
-    name: '🔄 سيرفر 3',
-    baseUrl: 'https://player.autoembed.cc/embed/tv',
-    quality: 'HD',
-    icon: 'sync',
-    color: '#8e44ad',
-    supportsSeasons: true,
-    format: '{id}/{season}/{episode}'
-  },
-  {
-    id: '2embed',
-    name: '🎞️ سيرفر 4',
-    baseUrl: 'https://www.2embed.cc/embedtv',
-    quality: 'HD',
-    icon: 'play-circle',
-    color: '#27ae60',
-    supportsSeasons: true,
-    format: '{id}/{season}/{episode}'
-  },
-  {
     id: 'vidsrc_me',
-    name: '🎯 سيرفر 6',
+    name: '🎯 سيرفر 3',
     baseUrl: 'https://vidsrc.me/embed/tv',
     quality: 'HD',
     icon: 'tv',
@@ -833,7 +827,26 @@ export function getVideoUrl(
       url = `${baseUrl}/${finalId}`;
     }
 
-    return `${url}${url.includes('?') ? '&' : '?'}autoplay=1`;
+    // Add quality and subtitle parameters for vidsrc.sbs variants
+    const separator = url.includes('?') ? '&' : '?';
+    let params = 'autoplay=1';
+    
+    if (server.id.startsWith('vidsrc_sbs')) {
+      params += '&sub_lang=ar';
+      
+      // Add quality parameter based on server ID
+      if (server.id === 'vidsrc_sbs_pro') {
+        params += '&quality=pro';
+      } else if (server.id === 'vidsrc_sbs_multi') {
+        params += '&quality=multi';
+      } else if (server.id === 'vidsrc_sbs_4k') {
+        params += '&quality=4k';
+      } else if (server.id === 'vidsrc_sbs_cinerc') {
+        params += '&quality=cinerc';
+      }
+    }
+    
+    return `${url}${separator}${params}`;
   } else {
     // TV Show
     if (server.baseUrl && server.format) {
@@ -844,7 +857,27 @@ export function getVideoUrl(
         .replace('{episode}', (episode || 1).toString());
 
       const finalUrl = `${server.baseUrl}/${urlTemplate}`;
-      return `${finalUrl}${finalUrl.includes('?') ? '&' : '?'}autoplay=1`;
+      
+      // Add quality and subtitle parameters for vidsrc.sbs variants
+      const separator = finalUrl.includes('?') ? '&' : '?';
+      let params = 'autoplay=1';
+      
+      if (server.id.startsWith('vidsrc_sbs')) {
+        params += '&sub_lang=ar';
+        
+        // Add quality parameter based on server ID
+        if (server.id === 'vidsrc_sbs_pro') {
+          params += '&quality=pro';
+        } else if (server.id === 'vidsrc_sbs_multi') {
+          params += '&quality=multi';
+        } else if (server.id === 'vidsrc_sbs_4k') {
+          params += '&quality=4k';
+        } else if (server.id === 'vidsrc_sbs_cinerc') {
+          params += '&quality=cinerc';
+        }
+      }
+      
+      return `${finalUrl}${separator}${params}`;
     }
 
     // Traditional style (for movie servers that also support TV)

@@ -31,148 +31,12 @@ import {
   t,
   TV_SERVERS,
   VideoServer,
-  getVideoUrl
+  getVideoUrl,
+  fetchAvailableSubtitles,
+  getBestArabicSubtitle
 } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
-
-
-// Multiple Consumet instances — races them to find the fastest working one
-const CONSUMET_INSTANCES = [
-  'https://api.consumet.org',
-  'https://consumet-api.netlify.app',
-  'https://consumet.eltik.dev',
-];
-
-// Simple cache for Consumet URLs
-const consumetCache = new Map<string, { url: string; timestamp: number }>();
-const CACHE_DURATION = 30 * 60 * 1000; // 30 minutes
-
-async function fetchConsumetTV(
-  showId: string,
-  season: number,
-  episode: number,
-  signal: AbortSignal
-): Promise<string | null> {
-  const cacheKey = `${showId}-${season}-${episode}`;
-
-  // Check cache first
-  const cached = consumetCache.get(cacheKey);
-  if (cached && Date.now() - cached.timestamp < CACHE_DURATION) {
-    return cached.url;
-  }
-
-  // Try all instances in parallel — first to return a valid source wins
-  const races = CONSUMET_INSTANCES.map(async base => {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 5000); // Reduced from 8000 to 5000
-    signal.addEventListener('abort', () => { clearTimeout(timeout); controller.abort(); });
-
-    const infoRes = await fetch(
-      `${base}/meta/tmdb/info/${showId}?type=tv`,
-      { signal: controller.signal }
-    );
-    if (!infoRes.ok) throw new Error('Info fetch failed');
-    const infoData = await infoRes.json();
-    const episodeObj = infoData?.episodes?.find(
-      (ep: any) => ep.season === season && ep.number === episode
-    );
-    if (!episodeObj?.id) throw new Error('Episode not found');
-
-    const watchRes = await fetch(
-      `${base}/meta/tmdb/watch/${episodeObj.id}?id=${showId}`,
-      { signal: controller.signal }
-    );
-    clearTimeout(timeout);
-    if (!watchRes.ok) throw new Error('Watch fetch failed');
-    const watchData = await watchRes.json();
-    const sources = watchData?.sources;
-    if (sources && sources.length > 0) return sources[0].url as string;
-    throw new Error('No sources');
-  });
-
-  try {
-    const url = await Promise.any(races);
-    // Cache the result
-    consumetCache.set(cacheKey, { url, timestamp: Date.now() });
-    return url;
-  } catch {
-    return null;
-  }
-}
-
-interface HlsPlayerProps {
-  url: string;
-  title: string;
-  isFullscreen: boolean;
-}
-
-function HlsPlayer({ url, title, isFullscreen }: HlsPlayerProps) {
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    let hls: any = null;
-
-    if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = url;
-    } else {
-      const scriptId = 'hls-js-script';
-      let script = document.getElementById(scriptId) as HTMLScriptElement;
-
-      const initHls = () => {
-        const Hls = (window as any).Hls;
-        if (Hls && Hls.isSupported()) {
-          hls = new Hls();
-          hls.loadSource(url);
-          hls.attachMedia(video);
-        } else {
-          video.src = url;
-        }
-      };
-
-      if (!script) {
-        script = document.createElement('script');
-        script.id = scriptId;
-        script.src = 'https://cdn.jsdelivr.net/npm/hls.js@latest';
-        script.async = true;
-        script.onload = initHls;
-        document.body.appendChild(script);
-      } else {
-        if ((window as any).Hls) {
-          initHls();
-        } else {
-          const prevOnload = script.onload;
-          script.onload = (e) => {
-            if (prevOnload) (prevOnload as any)(e);
-            initHls();
-          };
-        }
-      }
-    }
-
-    return () => {
-      if (hls) {
-        hls.destroy();
-      }
-    };
-  }, [url]);
-
-  return (
-    <div className="relative w-full h-full bg-black flex items-center justify-center">
-      <video
-        ref={videoRef}
-        controls
-        autoPlay
-        playsInline
-        className="w-full h-full object-contain"
-        title={title}
-      />
-    </div>
-  );
-}
 
 type UnifiedServer =
   | { kind: 'tmdb'; server: VideoServer }
@@ -192,64 +56,14 @@ export default function WatchTV() {
   const [isLoading, setIsLoading] = useState(true);
   const [isSeasonDropdownOpen, setIsSeasonDropdownOpen] = useState(false);
   const [currentServer, setCurrentServer] = useState<VideoServer>(TV_SERVERS[0]);
+  const [subtitleLang, setSubtitleLang] = useState<string | null>(null);
 
   // ── Unified player state ──
-  const [activeServerId, setActiveServerId] = useState<string>('vidsrc_to');
+  const [activeServerId, setActiveServerId] = useState<string>('vidsrc_sbs');
   const [unifiedIframeKey, setUnifiedIframeKey] = useState(0);
   const [unifiedFullscreen, setUnifiedFullscreen] = useState(false);
-  const [consumetUrl, setConsumetUrl] = useState<string | null>(null);
-  const [consumetReady, setConsumetReady] = useState(false);
+  const [showSubtitleNotice, setShowSubtitleNotice] = useState(false);
   const unifiedContainerRef = useRef<HTMLDivElement>(null);
-
-  const [topcimaServers, setTopcimaServers] = useState<any[]>([]);
-  const [downloadServers, setDownloadServers] = useState<any[]>([]);
-  const [showDownloadModal, setShowDownloadModal] = useState(false);
-  const [isAnime, setIsAnime] = useState(false);
-
-  useEffect(() => {
-    if (!id) return;
-const loadTopcima = async () => {
-        try {
-          let data: any = null;
-          // Try primary endpoint
-          const primaryPath = isAnime
-            ? `https://topcima-api.vercel.app/api/anime/${id}/season/${selectedSeason}/episode/${selectedEpisode}`
-            : `https://topcima-api.vercel.app/api/tv/${id}/season/${selectedSeason}/episode/${selectedEpisode}`;
-          let res = await fetch(primaryPath);
-          if (res.ok) {
-            data = await res.json();
-          }
-          // Fallback for anime "no-s" endpoint
-          if (!res.ok || !data?.watchServers?.length) {
-            if (isAnime) {
-              res = await fetch(`https://topcima-api.vercel.app/api/anime/${id}/episode/${selectedEpisode}`);
-              if (res.ok) {
-                data = await res.json();
-              }
-            }
-          }
-          if (data && (data.watchServers || data.currentIframe)) {
-            const servers = data.watchServers ? [...data.watchServers] : [];
-            setTopcimaServers(servers);
-            if (data.downloadLinks) {
-              setDownloadServers(data.downloadLinks);
-            }
-            const valid = servers.filter((s: any) => s.name && typeof s.name === 'string' && !s.name.toLowerCase().includes("streamtape"));
-            if (valid.length > 0) {
-              setActiveServerId('topcima-0');
-            }
-          } else {
-            setTopcimaServers([]);
-            setDownloadServers([]);
-          }
-        } catch (err) {
-          console.error("TopCima fetch error:", err);
-          setTopcimaServers([]);
-          setDownloadServers([]);
-        }
-      };
-    loadTopcima();
-  }, [id, selectedSeason, selectedEpisode, isAnime]);
 
   // Sync fullscreen state with browser changes
   useEffect(() => {
@@ -258,30 +72,20 @@ const loadTopcima = async () => {
     return () => document.removeEventListener("fullscreenchange", handleFsChange);
   }, []);
 
+  // Show subtitle notice when iframe changes
+  useEffect(() => {
+    if (unifiedIframeKey > 0) {
+      setShowSubtitleNotice(true);
+      const timer = setTimeout(() => {
+        setShowSubtitleNotice(false);
+      }, 12000);
+      return () => clearTimeout(timer);
+    }
+  }, [unifiedIframeKey]);
+
   const handleNavigate = (s: number, e: number) => {
     setSearchParams({ season: s.toString(), episode: e.toString() });
   };
-
-  // Fetch Consumet direct stream silently in background — races multiple instances
-  useEffect(() => {
-    if (!id) return;
-    setConsumetUrl(null);
-    setConsumetReady(false);
-    const controller = new AbortController();
-
-    fetchConsumetTV(id, selectedSeason, selectedEpisode, controller.signal).then(url => {
-      if (url) {
-        setConsumetUrl(url);
-        setConsumetReady(true);
-      } else {
-        console.info('All Consumet instances failed. Iframe fallback active.');
-      }
-    }).catch(() => {
-      console.info('Consumet fetch aborted or errored.');
-    });
-
-    return () => controller.abort();
-  }, [id, selectedSeason, selectedEpisode]);
 
   // Load initial data
   useEffect(() => {
@@ -299,11 +103,11 @@ const loadTopcima = async () => {
         setCast(castData.slice(0, 10));
         setSimilar(similarData as TVShow[]);
         setImdbId(imdb);
-        // Detect anime by genre (Animation=16) or genre name
-        const animeGenreIds = [16];
-        const animeKeywords = ['animation', 'anime', 'cartoon'];
-        const isAnimeShow = showData.genres?.some(g => animeGenreIds.includes(g.id) || animeKeywords.includes(g.name?.toLowerCase()));
-        setIsAnime(isAnimeShow);
+
+        // Fetch available subtitles and select best Arabic subtitle
+        const translations = await fetchAvailableSubtitles(parseInt(id), 'tv');
+        const bestArabic = getBestArabicSubtitle(translations);
+        setSubtitleLang(bestArabic);
 
         trackEvent({
           action: "view_item",
@@ -389,22 +193,6 @@ const loadTopcima = async () => {
     | { kind: 'direct'; id: string; name: string; url: string; badge?: string };
 
   const allServers: UnifiedServer[] = [
-    ...topcimaServers
-      .filter((s: any) => s.name && typeof s.name === 'string' && !s.name.toLowerCase().includes("streamtape"))
-      .map((s: any, i: number) => ({
-        kind: 'direct' as const,
-        id: `topcima-${i}`,
-        name: s.name,
-        url: s.iframeUrl || s.url,
-        badge: 'TopCima',
-      })),
-    {
-      kind: 'direct' as const,
-      id: 'consumet',
-      name: 'سيرفر مباشر (Consumet)',
-      url: consumetUrl || '',
-      badge: 'مباشر (بدون إعلانات)'
-    },
     ...TV_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
   ];
 
@@ -414,15 +202,16 @@ const loadTopcima = async () => {
 
   let iframeUrl = '';
   if (activeEntry.kind === 'tmdb' && show) {
-    iframeUrl = getVideoUrl(activeEntry.server, show.id, 'tv', selectedSeason, selectedEpisode, imdbId || undefined, { autoplay: true });
-  } else if (activeEntry.kind === 'direct' && activeEntry.id !== 'consumet') {
+    iframeUrl = getVideoUrl(activeEntry.server, show.id, 'tv', selectedSeason, selectedEpisode, imdbId || undefined, { 
+      autoplay: true
+    });
+  } else if (activeEntry.kind === 'direct') {
     iframeUrl = activeEntry.url;
   }
 
   const switchServer = (newId: string) => {
     setActiveServerId(newId);
     setUnifiedIframeKey(k => k + 1);
-    window.dispatchEvent(new CustomEvent('trigger-ad-popup'));
   };
 
   const getServerId = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.id : s.id;
@@ -477,30 +266,26 @@ const loadTopcima = async () => {
               ref={unifiedContainerRef}
               className="relative aspect-video rounded-2xl shadow-2xl overflow-hidden bg-black border border-border/30 ring-1 ring-border/20"
             >
-              {activeServerId === 'consumet' && consumetUrl ? (
-                <HlsPlayer url={consumetUrl} title={show.name} isFullscreen={unifiedFullscreen} />
-              ) : (
-                <iframe
-                  key={unifiedIframeKey}
-                  src={iframeUrl}
-                  className="w-full h-full border-0"
-                  allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
-                  allowFullScreen
-                />
+              <iframe
+                key={unifiedIframeKey}
+                src={iframeUrl}
+                className="w-full h-full border-0"
+                allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+                allowFullScreen
+              />
+
+              {showSubtitleNotice && (
+                <div className="absolute top-4 left-4 z-[9998] bg-black/80 text-white px-4 py-3 rounded-lg backdrop-blur-md border border-white/20 shadow-2xl animate-fade-in">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+                    <span className="text-sm font-medium">
+                      الفيديو يحتوي على ترجمة عربية - اضغط على زر CC أو Subtitle أو ترجمة لتفعيلها
+                    </span>
+                  </div>
+                </div>
               )}
 
-              {consumetReady && activeServerId !== 'consumet' && (
-                <button
-                  onClick={() => { setActiveServerId('consumet'); setUnifiedIframeKey(k => k + 1); }}
-                  className="absolute top-2 left-2 z-[9999] flex items-center gap-1.5 px-3 py-1.5 bg-green-600/90 hover:bg-green-500 text-white text-xs font-bold rounded-full backdrop-blur-sm shadow-lg transition-all duration-300 hover:scale-105 animate-pulse"
-                  dir="rtl"
-                >
-                  ✨ بث مباشر متاح — انقر للتبديل
-                </button>
-              )}
-
-              {!isTopCimaServer && (
-                <Button
+              <Button
                   variant="ghost"
                   size="icon"
                   onClick={(e) => {
@@ -511,20 +296,7 @@ const loadTopcima = async () => {
                 >
                   {unifiedFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
                 </Button>
-              )}
             </div>
-
-            {downloadServers.length > 0 && (
-              <div className="mt-4" dir="rtl">
-                <button
-                  onClick={() => setShowDownloadModal(true)}
-                  className="flex items-center gap-2 px-5 py-2.5 bg-primary hover:bg-primary/90 text-white text-sm font-semibold rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] w-full justify-center"
-                >
-                  <Download className="w-4 h-4" />
-                  تحميل الحلقة {selectedEpisode}
-                </button>
-              </div>
-            )}
           </div>
 
           {/* 2. Episodes & Seasons Sidebar (4 columns) */}
@@ -586,7 +358,7 @@ const loadTopcima = async () => {
                     <div className="w-16 h-10 rounded-lg overflow-hidden flex-shrink-0 bg-muted relative">
                       {episode.still_path ? (
                         <img
-                          src={getImageUrl(episode.still_path, "w300")}
+                          src={getImageUrl(episode.still_path, "w500")}
                           alt={episode.name}
                           className="w-full h-full object-cover"
                         />
@@ -600,16 +372,6 @@ const loadTopcima = async () => {
                       <p className="font-bold text-sm mb-0.5 line-clamp-1">{t("episodeLabel")} {episode.episode_number}</p>
                       <p className="text-xs text-muted-foreground line-clamp-1">{episode.name}</p>
                     </div>
-                    {selectedEpisode === episode.episode_number && downloadServers.length > 0 && (
-                      <button
-                        onClick={(e) => { e.stopPropagation(); setShowDownloadModal(true); }}
-                        className="flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 hover:bg-primary/20 text-primary text-sm font-medium rounded-lg border border-primary/30 transition-colors"
-                      >
-                        <Download className="w-4 h-4" />
-                        <span>تحميل</span>
-                        <ChevronRight className="w-4 h-4" />
-                      </button>
-                    )}
                   </button>
                 ))}
               </div>
@@ -722,55 +484,6 @@ const loadTopcima = async () => {
 
       </div>
 
-      {/* Download Modal */}
-      {showDownloadModal && (
-        <div
-          className="fixed inset-0 z-[10000] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in"
-          onClick={() => setShowDownloadModal(false)}
-        >
-          <div
-            className="w-full max-w-2xl bg-card border border-border/50 rounded-2xl shadow-2xl overflow-hidden max-h-[85vh] flex flex-col"
-            onClick={(e) => e.stopPropagation()}
-            dir="rtl"
-          >
-            <div className="flex items-center justify-between px-6 py-4 border-b border-border/30 bg-card/80">
-              <div className="flex items-center gap-2">
-                <Download className="w-5 h-5 text-primary" />
-                <h3 className="text-lg font-bold text-foreground">تحميل الحلقة {selectedEpisode}</h3>
-              </div>
-              <button
-                onClick={() => setShowDownloadModal(false)}
-                className="flex items-center justify-center w-8 h-8 rounded-full bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="18" y1="6" x2="6" y2="18" />
-                  <line x1="6" y1="6" x2="18" y2="18" />
-                </svg>
-              </button>
-            </div>
-            <div className="p-6 overflow-y-auto custom-scrollbar">
-              <p className="text-sm text-muted-foreground mb-4">اختر السيرفر المفضل لتحميل الحلقة:</p>
-              <div className="flex flex-wrap gap-3 justify-center sm:justify-start">
-                {downloadServers.map((s: any, i: number) => (
-                  <a
-                    key={i}
-                    href={s.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-3 bg-primary/10 hover:bg-primary/20 text-primary text-sm font-semibold rounded-xl border border-primary/30 transition-all duration-300 hover:scale-[1.03] min-w-[140px] justify-center"
-                  >
-                    <Download className="w-4 h-4" />
-                    <span className="truncate">{s.server}</span>
-                    {s.quality && (
-                      <span className="text-[10px] bg-primary/20 text-primary px-1.5 py-0.5 rounded font-bold">{s.quality}</span>
-                    )}
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-    </div>
+      </div>
   );
 }

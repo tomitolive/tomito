@@ -23,7 +23,9 @@ import {
   t,
   MOVIE_SERVERS,
   VideoServer,
-  getVideoUrl
+  getVideoUrl,
+  fetchAvailableSubtitles,
+  getBestArabicSubtitle
 } from "@/lib/tmdb";
 import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
@@ -39,12 +41,14 @@ export default function WatchMovie() {
   const [similar, setSimilar] = useState<Movie[]>([]);
   const [imdbId, setImdbId] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [subtitleLang, setSubtitleLang] = useState<string | null>(null);
 
   // ── Unified player state ──
-  const [activeServerId, setActiveServerId] = useState<string>(MOVIE_SERVERS[0].id);
+  const [activeServerId, setActiveServerId] = useState<string>('vidsrc_sbs');
   const [unifiedIframeKey, setUnifiedIframeKey] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [showSubtitleNotice, setShowSubtitleNotice] = useState(false);
 
   // Sync fullscreen state with browser
   useEffect(() => {
@@ -53,38 +57,16 @@ export default function WatchMovie() {
     return () => document.removeEventListener("fullscreenchange", handleFsChange);
   }, []);
 
-  const [topcimaServers, setTopcimaServers] = useState<any[]>([]);
-  const [downloadServers, setDownloadServers] = useState<any[]>([]);
-  const [showDownloadModal, setShowDownloadModal] = useState(false);
-
+  // Show subtitle notice when iframe changes
   useEffect(() => {
-    if (!id) return;
-const loadTopcima = async () => {
-        try {
-          const res = await fetch(`https://topcima-api.vercel.app/api/movie/${id}`);
-          const data = await res.json();
-          if (data && (data.watchServers || data.currentIframe)) {
-            const servers = data.watchServers ? [...data.watchServers] : [];
-            setTopcimaServers(servers);
-            if (data.downloadLinks) {
-              setDownloadServers(data.downloadLinks);
-            }
-          const valid = servers.filter((s: any) => s.name && typeof s.name === 'string' && !s.name.toLowerCase().includes("streamtape"));
-          if (valid.length > 0) {
-            setActiveServerId('topcima-0');
-          }
-        } else {
-          setTopcimaServers([]);
-          setDownloadServers([]);
-        }
-      } catch (err) {
-        console.error("TopCima fetch error:", err);
-        setTopcimaServers([]);
-        setDownloadServers([]);
-      }
-    };
-    loadTopcima();
-  }, [id]);
+    if (unifiedIframeKey > 0) {
+      setShowSubtitleNotice(true);
+      const timer = setTimeout(() => {
+        setShowSubtitleNotice(false);
+      }, 12000);
+      return () => clearTimeout(timer);
+    }
+  }, [unifiedIframeKey]);
 
   useEffect(() => {
     const loadMovie = async () => {
@@ -101,6 +83,11 @@ const loadTopcima = async () => {
         setCast(castData.slice(0, 10));
         setSimilar(similarData as Movie[]);
         setImdbId(imdb);
+
+        // Fetch available subtitles and select best Arabic subtitle
+        const translations = await fetchAvailableSubtitles(parseInt(id), 'movie');
+        const bestArabic = getBestArabicSubtitle(translations);
+        setSubtitleLang(bestArabic);
 
         trackEvent({
           action: "view_item",
@@ -142,19 +129,8 @@ const loadTopcima = async () => {
     | { kind: 'direct'; id: string; name: string; url: string; badge?: string };
 
   const allServers: UnifiedServer[] = [
-    ...topcimaServers
-      .filter((s: any) => s.name && typeof s.name === 'string' && !s.name.toLowerCase().includes("streamtape"))
-      .map((s: any, i: number) => ({
-        kind: 'direct' as const,
-        id: `topcima-${i}`,
-        name: s.name,
-        url: s.iframeUrl || s.url,
-        badge: 'TopCima',
-      })),
     ...MOVIE_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
   ];
-
-
 
   const activeEntry = allServers.find(s =>
     s.kind === 'tmdb' ? s.server.id === activeServerId : s.id === activeServerId
@@ -162,7 +138,9 @@ const loadTopcima = async () => {
 
   let iframeUrl = '';
   if (activeEntry.kind === 'tmdb' && movie) {
-    iframeUrl = getVideoUrl(activeEntry.server, movie.id, 'movie', undefined, undefined, imdbId || undefined, { autoplay: true });
+    iframeUrl = getVideoUrl(activeEntry.server, movie.id, 'movie', undefined, undefined, imdbId || undefined, { 
+      autoplay: true
+    });
   } else if (activeEntry.kind === 'direct') {
     iframeUrl = activeEntry.url;
   }
@@ -218,20 +196,18 @@ const loadTopcima = async () => {
                 allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
                 allowFullScreen
               />
-            </div>
 
-            {/* Download Button Below Video */}
-            {downloadServers.length > 0 && (
-              <div className="mt-4" dir="rtl">
-                <button
-                  onClick={() => setShowDownloadModal(true)}
-                  className="flex items-center gap-2 px-5 py-2.5 bg-primary hover:bg-primary/90 text-white text-sm font-semibold rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] w-full justify-center"
-                >
-                  <Download className="w-4 h-4" />
-                  تحميل الفيلم
-                </button>
-              </div>
-            )}
+              {showSubtitleNotice && (
+                <div className="absolute top-4 left-4 z-[9998] bg-black/80 text-white px-4 py-3 rounded-lg backdrop-blur-md border border-white/20 shadow-2xl animate-fade-in">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+                    <span className="text-sm font-medium">
+                      الفيديو يحتوي على ترجمة عربية - اضغط على زر CC أو Subtitle أو ترجمة لتفعيلها
+                    </span>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
 
 
@@ -304,9 +280,6 @@ const loadTopcima = async () => {
             })}
           </div>
         </div>
-
-        {/* NewAd - ad1 */}
-        <NewAd ad="ad1" />
 
         {/* Bottom Section: RTL Info layout */}
         <div className="w-full mb-12" dir="rtl">
@@ -382,64 +355,7 @@ const loadTopcima = async () => {
             <Link to="/category/movie/all" className="hover:text-foreground transition-colors">{t("movies")}</Link>
           </div>
         </div>
-        
-        {/* NewAd - ad3 */}
-        <NewAd ad="ad3" />
       </div>
-
-
-      {/* Download Modal */}
-      {showDownloadModal && (
-        <div
-          className="fixed inset-0 z-[10000] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in"
-          onClick={() => setShowDownloadModal(false)}
-        >
-          <div
-            className="w-full max-w-2xl bg-card border border-border/50 rounded-2xl shadow-2xl overflow-hidden max-h-[85vh] flex flex-col"
-            onClick={(e) => e.stopPropagation()}
-            dir="rtl"
-          >
-            {/* Modal Header */}
-            <div className="flex items-center justify-between px-6 py-4 border-b border-border/30 bg-card/80">
-              <div className="flex items-center gap-2">
-                <Download className="w-5 h-5 text-primary" />
-                <h3 className="text-lg font-bold text-foreground">تحميل {movie?.title}</h3>
-              </div>
-              <button
-                onClick={() => setShowDownloadModal(false)}
-                className="flex items-center justify-center w-8 h-8 rounded-full bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="18" y1="6" x2="6" y2="18" />
-                  <line x1="6" y1="6" x2="18" y2="18" />
-                </svg>
-              </button>
-            </div>
-
-            {/* Modal Body */}
-            <div className="p-6 overflow-y-auto custom-scrollbar">
-              <p className="text-sm text-muted-foreground mb-4">اختر السيرفر المفضل لتحميل الفيلم:</p>
-              <div className="flex flex-wrap gap-3 justify-center sm:justify-start">
-                {downloadServers.map((s: any, i: number) => (
-                  <a
-                    key={i}
-                    href={s.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-3 bg-primary/10 hover:bg-primary/20 text-primary text-sm font-semibold rounded-xl border border-primary/30 transition-all duration-300 hover:scale-[1.03] min-w-[140px] justify-center"
-                  >
-                    <Download className="w-4 h-4" />
-                    <span className="truncate">{s.server}</span>
-                    {s.quality && (
-                      <span className="text-[10px] bg-primary/20 text-primary px-1.5 py-0.5 rounded font-bold">{s.quality}</span>
-                    )}
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

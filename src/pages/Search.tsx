@@ -6,7 +6,6 @@ import { MovieCard } from "@/components/MovieCard";
 import { searchMulti } from "@/lib/tmdb";
 import { searchRamadan } from "@/lib/ramadan";
 import { event as trackEvent } from "@/lib/analytics";
-import NewAd from "@/components/NewAd";
 
 export default function Search() {
     const [searchParams] = useSearchParams();
@@ -97,15 +96,6 @@ export default function Search() {
                         ))}
                     </div>
                 )}
-
-                {/* NewAd - ad1 */}
-                <NewAd ad="ad1" />
-
-                {/* NewAd - ad2 */}
-                <NewAd ad="ad2" />
-                
-                {/* NewAd - ad3 */}
-                <NewAd ad="ad3" />
             </div>
             <Footer />
         </div>

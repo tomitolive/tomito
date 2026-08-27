@@ -23,17 +23,6 @@ export default function CategoryPage() {
   const isAllCategory = genreId === "all";
   const currentGenre = genres.find((g) => g.id === parseInt(genreId || "0"));
 
-  // Load popup script
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://pl30597544.profitableratecpmnetwork.com/c3/e8/93/c3e893c4344bbee9205294b8e255c444.js';
-    script.async = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   useEffect(() => {
     const loadGenres = async () => {
       try {

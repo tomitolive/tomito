@@ -10,7 +10,6 @@ import { Input } from "@/components/ui/input";
 import { PosterImage } from "@/components/PosterImage";
 import { cn, createSlugWithId } from "@/lib/utils";
 import { t } from "@/lib/tmdb";
-import NewAd from "@/components/NewAd";
 
 interface SeriesItem {
     tmdb_id: string;
@@ -184,9 +183,6 @@ export default function SeriesDownloadList() {
                 </div>
             </div>
 
-            {/* NewAd - ad1 */}
-            <NewAd ad="ad1" />
-
             <main className="container mx-auto px-4 py-12">
                 {/* Section Header */}
                 <div className="flex items-center justify-between mb-12 px-2">
@@ -261,13 +257,7 @@ export default function SeriesDownloadList() {
                 )}
             </main>
 
-            {/* NewAd - ad2 */}
-            <NewAd ad="ad2" />
-
             {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
-
-            {/* NewAd - ad3 */}
-            <NewAd ad="ad3" />
 
             <Footer />
             <BackButton />

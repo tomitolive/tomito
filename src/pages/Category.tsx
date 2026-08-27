@@ -7,7 +7,6 @@ import { MovieCard } from "@/components/MovieCard";
 import { fetchByGenre } from "@/lib/tmdb";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, ArrowRight } from "lucide-react";
-import NewAd from "@/components/NewAd";
 
 export default function Category() {
     const { type, genreId } = useParams();
@@ -15,17 +14,6 @@ export default function Category() {
     const [loading, setLoading] = useState(true);
     const [page, setPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
-
-    // Load popup script
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src = 'https://pl30597544.profitableratecpmnetwork.com/c3/e8/93/c3e893c4344bbee9205294b8e255c444.js';
-        script.async = true;
-        document.body.appendChild(script);
-        return () => {
-            document.body.removeChild(script);
-        };
-    }, []);
 
     // Reset when category changes
     useEffect(() => {

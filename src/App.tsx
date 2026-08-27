@@ -75,8 +75,6 @@ function App() {
                 <Route path="/series-download" element={<SeriesDownloadList />} />
               </Routes>
 
-              <AIAssistant />
-              <AdBlockDetector />
             </Router>
           </TooltipProvider>
         </SpatialNavigationProvider>

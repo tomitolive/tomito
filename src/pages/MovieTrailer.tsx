@@ -192,8 +192,6 @@ export default function MovieTrailer() {
                         </div>
 
                         {/* Magsrv Ad — يظهر مباشرة تحت الفيديو */}
-                        {/* NewAd - ad1 */}
-                        <NewAd ad="ad1" />
 
                         {/* Watch Now Button - Positioned directly under trailer */}
                         <Button
@@ -316,9 +314,6 @@ export default function MovieTrailer() {
                             className="w-full max-w-[280px] lg:max-w-[240px] rounded-xl shadow-2xl mx-auto"
                         />
 
-                        {/* NewAd - ad2 */}
-                        <NewAd ad="ad2" />
-
 
                     </div>
                 </div>
@@ -329,9 +324,6 @@ export default function MovieTrailer() {
                         <ContentRow title={t("similarMovies")} items={similar} type="movie" />
                     </div>
                 )}
-
-                {/* NewAd - ad3 */}
-                <NewAd ad="ad3" />
 
 
             </div>
