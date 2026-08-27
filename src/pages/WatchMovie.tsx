@@ -183,6 +183,7 @@ export default function WatchMovie() {
                 className="w-full h-full border-0"
                 allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
                 allowFullScreen
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>

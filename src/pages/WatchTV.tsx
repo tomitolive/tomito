@@ -514,6 +514,8 @@ export default function WatchTV() {
 
                 allowFullScreen
 
+                referrerPolicy="no-referrer"
+
               />
 
 
