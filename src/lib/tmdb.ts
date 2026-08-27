@@ -833,7 +833,7 @@ export function getVideoUrl(
     
     if (server.id.startsWith('vidsrc_sbs')) {
       params += '&sub_lang=ar';
-      params += '&audio=ar'; // Set Arabic audio as default
+      params += '&audio=en'; // Set English audio as default
       
       // Add quality parameter based on server ID
       if (server.id === 'vidsrc_sbs_pro') {
@@ -865,7 +865,7 @@ export function getVideoUrl(
       
       if (server.id.startsWith('vidsrc_sbs')) {
         params += '&sub_lang=ar';
-        params += '&audio=ar'; // Set Arabic audio as default
+        params += '&audio=en'; // Set English audio as default
         
         // Add quality parameter based on server ID
         if (server.id === 'vidsrc_sbs_pro') {
