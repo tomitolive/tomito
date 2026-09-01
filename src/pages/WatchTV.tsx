@@ -72,15 +72,25 @@ import { cn } from "@/lib/utils";
 
 import { event as trackEvent } from "@/lib/analytics";
 
+import { getMovieByTmdbId } from "@/lib/movies";
 
+interface SupabaseDbTV {
+  id?: number | string;
+  tmdb_id?: number;
+  season_number?: number;
+  episode_number?: number;
+  doodstream_watch_url?: string;
+  doodstream_download_url?: string;
+  embed_url?: string;
+  download_url?: string;
+  watch_url?: string;
+  doodstream_url?: string;
+  [key: string]: any;
+}
 
 type UnifiedServer =
-
   | { kind: 'tmdb'; server: VideoServer }
-
   | { kind: 'direct'; id: string; name: string; url: string; badge?: string };
-
-
 
 export default function WatchTV() {
 
@@ -91,6 +101,8 @@ export default function WatchTV() {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const [show, setShow] = useState<TVShowDetails | null>(null);
+
+  const [dbTv, setDbTv] = useState<SupabaseDbTV | null>(null);
 
   const [cast, setCast] = useState<Cast[]>([]);
 
@@ -233,6 +245,25 @@ export default function WatchTV() {
 
 
 
+  // Query Supabase by TMDB ID directly from 'movies' table
+  useEffect(() => {
+    const fetchDbMovie = async () => {
+      if (!id) return;
+      const dbData = await getMovieByTmdbId(parseInt(id), 'movies');
+      setDbTv(dbData);
+
+      if (dbData) {
+        const doodWatch = dbData.doodstream_watch_url || dbData.embed_url || dbData.watch_url || dbData.doodstream_url;
+        if (doodWatch) {
+          setActiveServerId('doodstream-tv-db');
+        }
+      }
+    };
+    fetchDbMovie();
+  }, [id]);
+
+
+
   // Load episodes when season changes
 
   useEffect(() => {
@@ -345,59 +376,46 @@ export default function WatchTV() {
 
 
 
-  type UnifiedServer =
+  const dbDoodWatchUrl = dbTv?.doodstream_watch_url || dbTv?.embed_url || dbTv?.watch_url || dbTv?.doodstream_url;
+  const dbDoodDownloadUrl = dbTv?.doodstream_download_url || dbTv?.download_url;
 
-    | { kind: 'tmdb'; server: VideoServer }
-
-    | { kind: 'direct'; id: string; name: string; url: string; badge?: string };
-
-
-
-  const allServers: UnifiedServer[] = [
-
-    ...TV_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
-
-  ];
-
-
-
-  const activeEntry = allServers.find(s =>
-
-    s.kind === 'tmdb' ? s.server.id === activeServerId : s.id === activeServerId
-
-  ) || allServers[0];
-
-
-
-  let iframeUrl = '';
-
-  if (activeEntry.kind === 'tmdb' && show) {
-
-    iframeUrl = getVideoUrl(activeEntry.server, show.id, 'tv', selectedSeason, selectedEpisode, imdbId || undefined, { autoplay: true });
-
-  } else if (activeEntry.kind === 'direct') {
-
-    iframeUrl = activeEntry.url;
-
+  const customDbServers: UnifiedServer[] = [];
+  if (dbDoodWatchUrl) {
+    customDbServers.push({
+      kind: 'direct',
+      id: 'doodstream-tv-db',
+      name: 'DoodStream (Fast)',
+      url: dbDoodWatchUrl,
+      badge: 'FHD'
+    });
   }
 
+  const allServers: UnifiedServer[] = [
+    ...customDbServers,
+    ...TV_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
+  ];
 
+  const activeEntry = allServers.find(s =>
+    s.kind === 'tmdb' ? s.server.id === activeServerId : s.id === activeServerId
+  ) || allServers[0];
+
+  let iframeUrl = '';
+  if (activeEntry.kind === 'tmdb' && show) {
+    iframeUrl = getVideoUrl(activeEntry.server, show.id, 'tv', selectedSeason, selectedEpisode, imdbId || undefined, { autoplay: true });
+  } else if (activeEntry.kind === 'direct') {
+    iframeUrl = activeEntry.url;
+  }
 
   const switchServer = (newId: string) => {
-
     setActiveServerId(newId);
-
     setUnifiedIframeKey(k => k + 1);
-
   };
 
-
-
   const getServerId = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.id : s.id;
-
   const getServerName = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.name : s.name;
 
-
+  const isDoodstreamServer = activeEntry.kind === 'direct' && (activeEntry.id.includes('doodstream') || activeEntry.url.includes('dood') || activeEntry.url.includes('ds2play'));
+  const hideFullscreenBtn = isDoodstreamServer;
 
   const toggleUnifiedFullscreen = () => {
 
@@ -427,19 +445,19 @@ export default function WatchTV() {
 
       <BackButton />
 
-      
+
 
       {/* Main Container */}
 
       <div className="container mx-auto px-4 pt-32 max-w-[1600px]">
 
-        
+
 
         {/* TOP SECTION: Video Player & Sidebar (Grid) */}
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-16 w-full">
 
-          
+
 
           {/* 1. Video Player Column (8 columns) */}
 
@@ -520,27 +538,19 @@ export default function WatchTV() {
 
 
 
-              <Button
-
+              {!hideFullscreenBtn && (
+                <Button
                   variant="ghost"
-
                   size="icon"
-
                   onClick={(e) => {
-
                     e.stopPropagation();
-
                     toggleUnifiedFullscreen();
-
                   }}
-
                   className="absolute bottom-2 right-2 z-[9999] h-8 w-8 bg-black/50 hover:bg-black/80 text-white border border-white/10 backdrop-blur-md shadow-2xl rounded-full transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center opacity-50 hover:opacity-100"
-
                 >
-
                   {unifiedFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
-
                 </Button>
+              )}
 
             </div>
 
@@ -719,12 +729,22 @@ export default function WatchTV() {
         <div className="w-full mb-16" dir="rtl">
 
           <div className="mb-10">
-
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4 text-foreground leading-tight tracking-tight">
-
-              {show.name}
-
-            </h1>
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight tracking-tight">
+                {show.name}
+              </h1>
+              {dbDoodDownloadUrl && (
+                <a
+                  href={dbDoodDownloadUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-bold hover:bg-primary/90 transition-all shadow-lg hover:scale-105 shrink-0 self-start md:self-auto"
+                >
+                  <Download className="w-5 h-5" />
+                  <span>تحميل الحلقة (DoodStream)</span>
+                </a>
+              )}
+            </div>
 
 
 
@@ -918,7 +938,7 @@ export default function WatchTV() {
 
 
 
-      </div>
+    </div>
 
   );
 

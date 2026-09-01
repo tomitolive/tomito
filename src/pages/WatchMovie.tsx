@@ -28,13 +28,25 @@ import {
 import { cn } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
 import NewAd from "@/components/NewAd";
+import { getMovieByTmdbId } from "@/lib/movies";
 
-
+interface SupabaseDbMovie {
+  id?: number | string;
+  tmdb_id?: number;
+  doodstream_watch_url?: string;
+  doodstream_download_url?: string;
+  embed_url?: string;
+  download_url?: string;
+  watch_url?: string;
+  doodstream_url?: string;
+  [key: string]: any;
+}
 
 export default function WatchMovie() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const [movie, setMovie] = useState<MovieDetails | null>(null);
+  const [dbMovie, setDbMovie] = useState<SupabaseDbMovie | null>(null);
   const [cast, setCast] = useState<Cast[]>([]);
   const [similar, setSimilar] = useState<Movie[]>([]);
   const [imdbId, setImdbId] = useState<string | null>(null);
@@ -63,16 +75,26 @@ export default function WatchMovie() {
       if (!id) return;
       setIsLoading(true);
       try {
-        const [movieData, castData, similarData, imdb] = await Promise.all([
+        const [movieData, castData, similarData, imdb, dbData] = await Promise.all([
           fetchMovieDetails(parseInt(id)),
           fetchCredits("movie", parseInt(id)),
           fetchSimilar("movie", parseInt(id)),
           getImdbIdFromTmdb(parseInt(id), "movie"),
+          getMovieByTmdbId(parseInt(id), "movies"),
         ]);
         setMovie(movieData);
         setCast(castData.slice(0, 10));
         setSimilar(similarData as Movie[]);
         setImdbId(imdb);
+        setDbMovie(dbData);
+
+        // If Supabase has Doodstream URL, auto-select it
+        if (dbData) {
+          const doodWatch = dbData.doodstream_watch_url || dbData.embed_url || dbData.watch_url || dbData.doodstream_url;
+          if (doodWatch) {
+            setActiveServerId('doodstream-db');
+          }
+        }
 
         trackEvent({
           action: "view_item",
@@ -113,9 +135,26 @@ export default function WatchMovie() {
     | { kind: 'tmdb'; server: VideoServer }
     | { kind: 'direct'; id: string; name: string; url: string; badge?: string };
 
+  // Check custom Doodstream / custom URLs from Supabase DB
+  const dbDoodWatchUrl = dbMovie?.doodstream_watch_url || dbMovie?.embed_url || dbMovie?.watch_url || dbMovie?.doodstream_url;
+  const dbDoodDownloadUrl = dbMovie?.doodstream_download_url || dbMovie?.download_url;
+
+  const customDbServers: UnifiedServer[] = [];
+  if (dbDoodWatchUrl) {
+    customDbServers.push({
+      kind: 'direct',
+      id: 'doodstream-db',
+      name: 'DoodStream (Fast)',
+      url: dbDoodWatchUrl,
+      badge: 'FHD'
+    });
+  }
+
   const allServers: UnifiedServer[] = [
+    ...customDbServers,
     ...MOVIE_SERVERS.map(s => ({ kind: 'tmdb' as const, server: s })),
   ];
+
 
   const activeEntry = allServers.find(s =>
     s.kind === 'tmdb' ? s.server.id === activeServerId : s.id === activeServerId
@@ -136,7 +175,8 @@ export default function WatchMovie() {
   const getServerId = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.id : s.id;
   const getServerName = (s: UnifiedServer) => s.kind === 'tmdb' ? s.server.name : s.name;
 
-  const isTopCimaServer = activeEntry.kind === 'direct' && activeEntry.id.startsWith('topcima-');
+  const isDoodstreamServer = activeEntry.kind === 'direct' && (activeEntry.id.includes('doodstream') || activeEntry.url.includes('dood') || activeEntry.url.includes('ds2play'));
+  const hideFullscreenBtn = isDoodstreamServer;
 
   return (
     <div className="min-h-screen text-foreground pb-12">
@@ -158,25 +198,25 @@ export default function WatchMovie() {
                 </div>
               )}
               {/* Fullscreen Button */}
-              {!isTopCimaServer && (
-              <button
-                onClick={() => {
-                  if (!document.fullscreenElement) {
-                    containerRef.current?.requestFullscreen();
-                  } else {
-                    document.exitFullscreen();
-                  }
-                }}
-                className="absolute bottom-3 right-3 z-20 flex items-center justify-center w-8 h-8 rounded-lg bg-black/60 hover:bg-black/90 text-white backdrop-blur-sm border border-white/20 transition-all duration-200 hover:scale-110 shadow-lg"
-                title={isFullscreen ? "خروج من ملء الشاشة" : "ملء الشاشة"}
-              >
-                {isFullscreen ? (
-                  <Minimize2 className="w-4 h-4" />
-                ) : (
-                  <Maximize2 className="w-4 h-4" />
-                )}
-              </button>
-              )}
+              {/* {!hideFullscreenBtn && ( */}
+                <button
+                  onClick={() => {
+                    if (!document.fullscreenElement) {
+                      containerRef.current?.requestFullscreen();
+                    } else {
+                      document.exitFullscreen();
+                    }
+                  }}
+                  className="absolute bottom-3 right-3 z-20 flex items-center justify-center w-8 h-8 rounded-lg bg-black/60 hover:bg-black/90 text-white backdrop-blur-sm border border-white/20 transition-all duration-200 hover:scale-110 shadow-lg"
+                  title={isFullscreen ? "خروج من ملء الشاشة" : "ملء الشاشة"}
+                >
+                  {isFullscreen ? (
+                    <Minimize2 className="w-4 h-4" />
+                  ) : (
+                    <Maximize2 className="w-4 h-4" />
+                  )}
+                </button>
+              {/* )} */}
               <iframe
                 key={unifiedIframeKey}
                 src={iframeUrl}
@@ -261,10 +301,23 @@ export default function WatchMovie() {
 
         {/* Bottom Section: RTL Info layout */}
         <div className="w-full mb-12" dir="rtl">
-          {/* Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 text-foreground leading-tight text-right w-full">
-            {movie.title}
-          </h1>
+          {/* Title & Download Button */}
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-3">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight text-right">
+              {movie.title}
+            </h1>
+            {dbDoodDownloadUrl && (
+              <a
+                href={dbDoodDownloadUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-bold hover:bg-primary/90 transition-all shadow-lg hover:scale-105 shrink-0 self-start md:self-auto"
+              >
+                <Download className="w-5 h-5" />
+                <span>تحميل الفيلم (DoodStream)</span>
+              </a>
+            )}
+          </div>
 
           {/* Original Title & Year */}
           <div className="text-lg text-muted-foreground mb-6 font-medium flex justify-start items-center gap-2 w-full text-right">
