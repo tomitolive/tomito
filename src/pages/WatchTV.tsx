@@ -72,7 +72,7 @@ import { cn } from "@/lib/utils";
 
 import { event as trackEvent } from "@/lib/analytics";
 
-import { getMovieByTmdbId } from "@/lib/movies";
+import { getMovieByTmdbId, getTVEpisodeByDetails } from "@/lib/movies";
 
 interface SupabaseDbTV {
   id?: number | string;
@@ -85,6 +85,8 @@ interface SupabaseDbTV {
   download_url?: string;
   watch_url?: string;
   doodstream_url?: string;
+  playmogo_url?: string;
+  vidsrc_url?: string;
   [key: string]: any;
 }
 
@@ -245,22 +247,33 @@ export default function WatchTV() {
 
 
 
-  // Query Supabase by TMDB ID directly from 'movies' table
+  // Query Supabase by TMDB ID, season, and episode from 'tv_episodes' table
   useEffect(() => {
-    const fetchDbMovie = async () => {
+    const fetchDbTvEpisode = async () => {
       if (!id) return;
-      const dbData = await getMovieByTmdbId(parseInt(id), 'movies');
+      setDbTv(null);
+      const dbData = await getTVEpisodeByDetails(
+        parseInt(id),
+        selectedSeason,
+        selectedEpisode,
+        'tv_episodes'
+      );
       setDbTv(dbData);
 
       if (dbData) {
-        const doodWatch = dbData.doodstream_watch_url || dbData.embed_url || dbData.watch_url || dbData.doodstream_url;
-        if (doodWatch) {
-          setActiveServerId('doodstream-tv-db');
+        const watchUrl = dbData.doodstream_url || dbData.doodstream_watch_url || dbData.playmogo_url || dbData.vidsrc_url || dbData.embed_url || dbData.watch_url;
+        if (watchUrl) {
+          const targetId = dbData.doodstream_url || dbData.doodstream_watch_url ? 'doodstream-tv-db' :
+            dbData.playmogo_url ? 'playmogo-tv-db' : 'vidsrc-tv-db';
+          setActiveServerId(targetId);
         }
+      } else {
+        setActiveServerId(TV_SERVERS[0].id);
       }
+      setUnifiedIframeKey(k => k + 1);
     };
-    fetchDbMovie();
-  }, [id]);
+    fetchDbTvEpisode();
+  }, [id, selectedSeason, selectedEpisode]);
 
 
 
@@ -376,8 +389,10 @@ export default function WatchTV() {
 
 
 
-  const dbDoodWatchUrl = dbTv?.doodstream_watch_url || dbTv?.embed_url || dbTv?.watch_url || dbTv?.doodstream_url;
+  const dbDoodWatchUrl = dbTv?.doodstream_url || dbTv?.doodstream_watch_url || dbTv?.embed_url || dbTv?.watch_url;
   const dbDoodDownloadUrl = dbTv?.doodstream_download_url || dbTv?.download_url;
+  const dbPlaymogoUrl = dbTv?.playmogo_url;
+  const dbVidsrcUrl = dbTv?.vidsrc_url;
 
   const customDbServers: UnifiedServer[] = [];
   if (dbDoodWatchUrl) {
@@ -387,6 +402,24 @@ export default function WatchTV() {
       name: 'DoodStream (Fast)',
       url: dbDoodWatchUrl,
       badge: 'FHD'
+    });
+  }
+  if (dbPlaymogoUrl) {
+    customDbServers.push({
+      kind: 'direct',
+      id: 'playmogo-tv-db',
+      name: 'PlayMogo (Server)',
+      url: dbPlaymogoUrl,
+      badge: 'HD'
+    });
+  }
+  if (dbVidsrcUrl) {
+    customDbServers.push({
+      kind: 'direct',
+      id: 'vidsrc-tv-db',
+      name: 'VidSrc (Server)',
+      url: dbVidsrcUrl,
+      badge: 'HD'
     });
   }
 

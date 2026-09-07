@@ -82,12 +82,12 @@ export async function getTVEpisodeByDetails(
     tmdbId: number | string,
     seasonNumber?: number,
     episodeNumber?: number,
-    tableName: string = 'episodes'
+    tableName: string = 'tv_episodes'
 ): Promise<any | null> {
     try {
-        console.log(`[Supabase Query] Searching ${tableName} for tmdb_id/tv_id: ${tmdbId}, S:${seasonNumber}, E:${episodeNumber}`);
+        console.log(`[Supabase Query] Searching ${tableName} for tmdb_id: ${tmdbId}, S:${seasonNumber}, E:${episodeNumber}`);
 
-        let query = supabase.from(tableName).select('*').or(`tmdb_id.eq.${tmdbId},tv_id.eq.${tmdbId},show_id.eq.${tmdbId}`);
+        let query = supabase.from(tableName).select('*').eq('tmdb_id', tmdbId);
 
         if (seasonNumber !== undefined) {
             query = query.eq('season_number', seasonNumber);
