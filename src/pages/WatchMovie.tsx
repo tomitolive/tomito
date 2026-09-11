@@ -25,7 +25,7 @@ import {
   VideoServer,
   getVideoUrl
 } from "@/lib/tmdb";
-import { cn } from "@/lib/utils";
+import { cn, fixEmbedUrl } from "@/lib/utils";
 import { event as trackEvent } from "@/lib/analytics";
 import NewAd from "@/components/NewAd";
 import { getMovieByTmdbId } from "@/lib/movies";
@@ -164,7 +164,7 @@ export default function WatchMovie() {
   if (activeEntry.kind === 'tmdb' && movie) {
     iframeUrl = getVideoUrl(activeEntry.server, movie.id, 'movie', undefined, undefined, imdbId || undefined, { autoplay: true });
   } else if (activeEntry.kind === 'direct') {
-    iframeUrl = activeEntry.url;
+    iframeUrl = fixEmbedUrl(activeEntry.url);
   }
 
   const switchServer = (newId: string) => {

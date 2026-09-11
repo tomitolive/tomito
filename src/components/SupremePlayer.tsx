@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Server, Play, Maximize2, Minimize2 } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn, fixEmbedUrl } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
 export interface SupremeServer {
@@ -97,7 +97,7 @@ export function SupremePlayer({ servers, title }: SupremePlayerProps) {
                 >
                     <iframe
                         key={iframeKey}
-                        src={currentServer.url}
+                        src={fixEmbedUrl(currentServer.url)}
                         className="w-full h-full border-0 rounded-xl"
                         allow="autoplay; encrypted-media; fullscreen; picture-in-picture; clipboard-write; web-share; accelerometer; gyroscope"
                         referrerPolicy="no-referrer-when-downgrade"

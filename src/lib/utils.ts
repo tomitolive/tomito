@@ -26,3 +26,19 @@ export function getIdFromSlug(slug: string): number | null {
   const match = slug.match(/^(\d+)/);
   return match ? parseInt(match[1]) : null;
 }
+
+const DOODSTREAM_MIRRORS: Record<string, string> = {
+  "doodstream.com": "playmogo.com",
+};
+
+export function fixEmbedUrl(url: string): string {
+  if (!url) return url;
+  const match = url.match(/^https?:\/\/([^/]+)(\/.*)?$/i);
+  if (!match) return url;
+  const host = match[1].toLowerCase();
+  const replacement = DOODSTREAM_MIRRORS[host];
+  if (!replacement) return url;
+  const cleanPath = match[2] || "";
+  const normalizedPath = cleanPath.replace(/^\/(?:embed|d)\//i, "/e/");
+  return `https://${replacement}${normalizedPath}`;
+}

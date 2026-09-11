@@ -68,7 +68,7 @@ import {
 
 } from "@/lib/tmdb";
 
-import { cn } from "@/lib/utils";
+import { cn, fixEmbedUrl } from "@/lib/utils";
 
 import { event as trackEvent } from "@/lib/analytics";
 
@@ -436,7 +436,7 @@ export default function WatchTV() {
   if (activeEntry.kind === 'tmdb' && show) {
     iframeUrl = getVideoUrl(activeEntry.server, show.id, 'tv', selectedSeason, selectedEpisode, imdbId || undefined, { autoplay: true });
   } else if (activeEntry.kind === 'direct') {
-    iframeUrl = activeEntry.url;
+    iframeUrl = fixEmbedUrl(activeEntry.url);
   }
 
   const switchServer = (newId: string) => {
